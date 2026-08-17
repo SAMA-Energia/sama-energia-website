@@ -10,9 +10,9 @@ This repo is the **single source of record** for the SAMA Energia public website
 
 ## Ownership
 
-Currently held under Martin Rautio's personal GitHub account as interim owner.
-To be transferred to the SAMA Energia GitHub organization once founded, per the
-founder term sheet.
+Held by the SAMA-Energia GitHub organization as interim holder (business
+attribution: SAMA Energia Oy, in formation), solely owned by Martin Rautio.
+Founder access to be added per the founder term sheet.
 
 ## Rules
 
