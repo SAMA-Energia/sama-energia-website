@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Energiasalvestid ja päikeseelekter ettevõtetele | SAMA Energia</title>
+<meta name="description" content="Ütleme kirjalikult, mida energiasalvesti teie objektil tegelikult toodab — enne kui midagi alla kirjutatakse. Energiasalvestid ja päikeseelekter ettevõtetele ja maaomanikele Eestis ja Soomes.">
+<meta property="og:title" content="Energiasalvestid ja päikeseelekter ettevõtetele | SAMA Energia">
+<meta property="og:description" content="Ütleme kirjalikult, mida energiasalvesti teie objektil tegelikult toodab — enne kui midagi alla kirjutatakse.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="et_EE">
+<link rel="alternate" hreflang="fi" href="https://samaenergia.fi/">
+<link rel="alternate" hreflang="et" href="https://samaenergia.fi/et/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23D18A44' d='M12 1 13.76 7.75 19.78 4.22 16.25 10.24 23 12 16.25 13.76 19.78 19.78 13.76 16.25 12 23 10.24 16.25 4.22 19.78 7.75 13.76 1 12 7.75 10.24 4.22 4.22 10.24 7.75 Z'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0E1519">
+<link href="/assets/fonts.css" rel="stylesheet">
+<style>
+/* Teema A — VERKKO/KUPARI, johdettu kaheksakand-tunnuksesta */
+:root{
+  --ink:#0D1712;
+  --panel:#152420;
+  --panel-2:#1D2F28;
+  --paper:#EBEDE8;
+  --white:#FFFFFF;
+  --signal:#D18A44;
+  --signal-hi:#E09A55;
+  --muted:#67736C;
+  --muted-lt:#99A69D;
+  --tx2:#3C4842;
+  --tx2d:#B7C3BA;
+  --tx1d:#CCD5CD;
+  --signal-ink:#A9663B;
+  --glass:rgba(13,23,18,.94);
+  --line:rgba(255,255,255,.14);
+  --line-dk:rgba(13,23,18,.16);
+  --wrap:1180px;
+  --gut:clamp(20px,5vw,64px);
+}
+/* Tuotantoteema: Ilta & Kupari 3.5 "Elävä Ilta" — muuttujat sulautettu; valaistuskerros tyylien lopussa. */
+:root{--ink:#0E1519;--panel:#18232B;--panel-2:#22303A;--paper:#EAEBE6;--signal:#D68F47;--signal-hi:#E8A45C;--signal-ink:#A9663B;--glass:rgba(14,21,25,.94);--muted:#6C7A85;--muted-lt:#9AA7B0;--tx2:#3B4850;--tx2d:#B6C0C7;--tx1d:#C9D1D7;--line-dk:rgba(14,21,25,.16)}
+
+/* Johdetut pintamuuttujat määritellään BODYLLA: teemaluokat (body.tX) ylikirjoittavat --ink/--paper
+   samalla elementillä, joten substituutio näkee teeman arvot. :rootissa ketjut jäätyivät teeman 1
+   väreihin — tämä oli 18.8. illalla havaitun teemasekaannuksen syy. */
+body{--dk:var(--ink);--dk-tx:var(--paper);--dk-hd:var(--white);--on-signal:var(--ink);--trace-mid:rgba(255,255,255,.18)}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:'Newsreader',Georgia,serif;
+  font-size:clamp(17px,1.05vw,19px);line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4,.disp{font-family:'Archivo',system-ui,sans-serif;letter-spacing:-.022em;line-height:1.04;font-weight:700}
+.mono{font-family:'IBM Plex Mono',monospace;font-variant-numeric:tabular-nums}
+a{color:inherit}
+/* Linkit nakyviksi molemmissa teemoissa ja molemmilla pinnoilla */
+main a:not(.btn){text-decoration:underline;text-decoration-color:var(--signal-ink);text-decoration-thickness:1.5px;text-underline-offset:3px}
+main a:not(.btn):hover{text-decoration-thickness:2.5px}
+main .dark a:not(.btn),main .hero a:not(.btn){text-decoration-color:var(--signal)}
+.legal a{display:inline;padding:0;color:var(--muted-lt);text-decoration:underline;text-decoration-color:var(--signal);text-underline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.dark{background:var(--dk);color:var(--dk-tx)}
+.dark h1,.dark h2,.dark h3{color:var(--dk-hd)}
+
+/* ---------- eyebrow ---------- */
+.eyebrow{
+  font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--muted);
+  display:flex;align-items:center;gap:12px;margin-bottom:24px;
+}
+.dark .eyebrow{color:var(--muted-lt)}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--signal);flex:none}
+
+/* ---------- nav ---------- */
+header{position:sticky;top:0;z-index:60;background:var(--glass);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;height:68px}
+.brand{font-family:'Archivo',sans-serif;font-weight:800;font-size:17px;letter-spacing:.12em;text-transform:uppercase;color:var(--dk-hd);text-decoration:none;white-space:nowrap}
+.brand span{color:var(--signal)}
+.menu{display:flex;gap:26px;align-items:center}
+.menu a{
+  font-family:'Archivo',sans-serif;font-size:13.5px;font-weight:500;letter-spacing:.01em;
+  color:var(--muted-lt);text-decoration:none;padding:6px 0;border-bottom:1px solid transparent;transition:.18s
+}
+.menu a:hover,.menu a.on{color:var(--dk-hd);border-bottom-color:var(--signal)}
+/* Navcta perii etusivun premium-CTA:n kuparikäsittelyn (liukuväri, viiste, valokantit, kiilto) */
+.navcta{
+  font-family:'Archivo',sans-serif;font-size:15px;font-weight:600;letter-spacing:.01em;
+  background:linear-gradient(180deg,var(--signal-hi) 0%,var(--signal) 52%,color-mix(in srgb,var(--signal) 80%,#000) 100%);
+  color:var(--on-signal)!important;padding:13px 24px;text-decoration:none;
+  border-bottom:none!important;white-space:nowrap;display:inline-block;transition:.18s;
+  clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.32),inset 0 -1px 0 rgba(0,0,0,.26);
+  position:relative;overflow:hidden
+}
+.navcta::before{
+  content:"";position:absolute;top:0;bottom:0;left:-45%;width:32%;
+  background:linear-gradient(105deg,transparent,rgba(255,255,255,.2),transparent);
+  transform:skewX(-18deg);transition:left .55s ease;pointer-events:none
+}
+.navcta:hover{
+  background:linear-gradient(180deg,color-mix(in srgb,var(--signal-hi) 82%,#fff) 0%,var(--signal) 55%,color-mix(in srgb,var(--signal) 78%,#000) 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.26)
+}
+.navcta:hover::before{left:115%}
+.navcta:active{box-shadow:inset 0 3px 8px rgba(0,0,0,.32)}
+.langsw{display:flex;gap:3px;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em}
+.langsw a{color:var(--muted-lt);text-decoration:none;padding:6px 8px;border:1px solid transparent;transition:.18s}
+.langsw a.cur{color:var(--dk-hd);border-color:var(--line)}
+.langsw a:hover{color:var(--dk-hd)}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--dk-tx);width:42px;height:38px;cursor:pointer;font-size:17px}
+@media(max-width:1120px){
+  .menu{position:fixed;inset:68px 0 auto 0;background:var(--dk);flex-direction:column;align-items:stretch;gap:0;padding:8px var(--gut) 26px;border-bottom:1px solid var(--line);display:none}
+  .menu.open{display:flex}
+  .menu a{padding:14px 0;border-bottom:1px solid var(--line)}
+  .navcta{margin-top:16px;text-align:center;padding:14px}
+  .burger{display:block}
+}
+
+/* ---------- hero ---------- */
+.hero{background:var(--dk);color:var(--dk-tx);padding:clamp(56px,9vw,104px) 0 0;position:relative;overflow:hidden}
+.hero h1{
+  font-size:clamp(38px,6.6vw,82px);font-weight:800;max-width:16ch;
+  color:var(--dk-hd);margin-bottom:26px
+}
+.hero .lede{font-size:clamp(18px,1.55vw,22px);max-width:54ch;color:var(--tx1d);line-height:1.58}
+.hero .lede strong{color:var(--dk-hd);font-weight:500}
+.herometa{
+  margin-top:36px;display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;
+  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-lt)
+}
+.btnrow{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.btn{
+  font-family:'Archivo',sans-serif;font-size:15px;font-weight:600;letter-spacing:.01em;
+  background:var(--signal);color:var(--on-signal);padding:15px 26px;text-decoration:none;display:inline-block;transition:.18s
+}
+.btn:hover{background:var(--signal-hi);transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--dk-tx);border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--signal);color:var(--dk-hd);background:transparent}
+.btn.dk{background:var(--ink);color:var(--paper)}
+.btn.dk:hover{background:var(--panel)}
+
+/* ---------- SIGNATURE: frequency instrument ---------- */
+.freq{margin-top:clamp(48px,7vw,84px);border-top:1px solid var(--line);padding-top:26px;padding-bottom:clamp(40px,6vw,64px)}
+.freqhead{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.freqhead .lab{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-lt)}
+.trace{width:100%;height:clamp(84px,11vw,130px);display:block}
+.trace path{fill:none;stroke:var(--signal);stroke-width:1.4;vector-effect:non-scaling-stroke}
+.trace .mid{stroke:var(--trace-mid);stroke-width:1;stroke-dasharray:3 5}
+.grids{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);margin-top:22px;border:1px solid var(--line)}
+.gcell{background:var(--dk);padding:18px 20px}
+.gcell .n{font-family:'IBM Plex Mono',monospace;font-size:clamp(26px,3.6vw,40px);font-weight:500;color:var(--dk-hd);line-height:1}
+.gcell .n em{font-style:normal;font-size:.45em;color:var(--muted-lt);margin-left:6px}
+.gcell .t{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--signal);margin-bottom:10px}
+.gcell .s{font-size:14px;color:var(--muted-lt);margin-top:8px;line-height:1.45}
+.freqnote{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);margin-top:14px;letter-spacing:.04em}
+@media(max-width:640px){.grids{grid-template-columns:1fr}}
+
+/* ---------- sections ---------- */
+section{padding:clamp(56px,8vw,104px) 0}
+.sec-title{font-size:clamp(28px,3.9vw,50px);max-width:22ch;margin-bottom:22px}
+.sec-lede{font-size:clamp(18px,1.4vw,21px);max-width:62ch;color:var(--tx2)}
+.dark .sec-lede{color:var(--tx2d)}
+.rule{height:1px;background:var(--line-dk);margin:0}
+.dark .rule{background:var(--line)}
+
+/* principles */
+.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dk);border:1px solid var(--line-dk);margin-top:52px}
+.tri > div{background:var(--paper);padding:clamp(26px,3vw,38px)}
+.tri h3{font-size:22px;margin-bottom:14px;letter-spacing:-.015em}
+.tri p{font-size:16.5px;color:var(--tx2);line-height:1.6}
+.tri .num{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:var(--signal-ink);margin-bottom:16px;display:block}
+.segico{width:26px;height:26px;display:block;margin-bottom:18px;fill:none;stroke:var(--signal-ink);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.doorlab{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:var(--signal);display:block;margin-bottom:14px}
+.sysdia{width:100%;height:auto;display:block}
+.sysdia rect,.sysdia line,.sysdia polyline,.sysdia circle{fill:none;stroke:var(--tx2d);stroke-width:1.5}
+.sysdia .bus{stroke-width:2.5}
+.sysdia .sigst{stroke:var(--signal)}
+.sysdia .ctrl{stroke:var(--signal);stroke-dasharray:4 5;stroke-width:1.2}
+.sysdia text{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;fill:var(--tx2d)}
+.sysdia .sig{fill:var(--signal);stroke:none}
+.duo{grid-template-columns:repeat(2,1fr)}
+@media(max-width:860px){.duo{grid-template-columns:1fr}}
+/* Hero-valokuva: kuvakerros + häivytykset. Häivytysgradientit ovat kuvakompositointia,
+   eivät käyttöliittymäkoristelua — tekstivyöhyke vasemmalla, saumaton liitos pintaan alhaalla. */
+.hero.heroimgd{position:relative;overflow:hidden}
+.heroimg{position:absolute;top:0;left:0;width:100%;height:66%;object-fit:cover;object-position:center 40%}
+.heroscrim{position:absolute;top:0;left:0;width:100%;height:66%;background:
+  linear-gradient(100deg,rgba(8,14,22,.62) 0%,rgba(8,14,22,.28) 46%,rgba(8,14,22,0) 70%),
+  linear-gradient(180deg,rgba(8,14,22,.2) 0%,rgba(8,14,22,0) 34%,var(--dk) 94%)}
+@media(max-width:700px){.heroimg,.heroscrim{height:58%}}
+.hero.heroimgd>.wrap{position:relative;z-index:1}
+@media(max-width:700px){.heroimg{object-position:70% 45%}}
+/* Konsepti-B siirrot: käyttötilat sysdia-kaaviossa (aurinko) + lähdetilastot (ajankohtaista) */
+/* Etusivu-uudistus: tarjooma + luokiteltu hyötyruudukko + referenssipaikka */
+.offer{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+@media(max-width:860px){.offer{grid-template-columns:1fr;gap:14px}}
+.offer>div{background:var(--paper);border:1.5px solid var(--line-dk);border-top:4px solid var(--signal);padding:24px 22px 22px;position:relative;transition:transform .3s cubic-bezier(.3,1.4,.5,1),border-color .25s}
+.offer>div:hover{transform:translateY(-3px);border-color:var(--signal-ink);border-top-color:var(--signal)}
+.onum{position:absolute;top:14px;right:16px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.1em;color:var(--signal-ink);opacity:.75}
+.ochip{width:48px;height:48px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:color-mix(in srgb,var(--signal) 13%,transparent);border:1px solid color-mix(in srgb,var(--signal) 32%,transparent)}
+.oico{width:28px;height:28px;fill:none;stroke:var(--signal-ink);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.offer b{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:12px;letter-spacing:.14em;color:var(--ink);display:block;margin-bottom:6px}
+.offer p{font-size:15px;color:var(--tx2);max-width:none}
+.bene{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:860px){.bene{grid-template-columns:1fr;gap:14px}}
+.bene>div{background:var(--paper);border:1.5px solid var(--line-dk);padding:26px 22px 20px;position:relative;transition:transform .3s cubic-bezier(.3,1.4,.5,1),border-color .25s}
+.bene>div::before{content:"";position:absolute;top:-1.5px;left:-1.5px;right:-1.5px;height:4px;transition:height .25s}
+.bene>div.c-las::before{background:#1F8A5B}
+.bene>div.c-ske::before{background:var(--signal)}
+.bene>div.c-koh::before{background:#4A6A82}
+.bene>div:hover{transform:translateY(-4px);border-color:var(--signal-ink)}
+.bene>div:hover::before{height:6px}
+.bene h4{font-family:'Archivo',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.01em;margin-bottom:8px}
+.bene p{font-size:14.5px;color:var(--tx2);max-width:none;min-height:66px}
+.brow{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px;padding-top:13px;border-top:1px solid var(--line-dk)}
+.tg{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;padding:4px 9px;font-weight:500;border:1px solid transparent}
+.tg.las{background:rgba(31,138,91,.13);color:#1F8A5B;border-color:rgba(31,138,91,.35)}
+.tg.ske{background:rgba(214,143,71,.15);color:var(--signal-ink);border-color:rgba(169,102,59,.4)}
+.tg.koh{background:rgba(74,106,130,.13);color:#4A6A82;border-color:rgba(74,106,130,.35)}
+.morelink{font-size:13.5px;font-weight:500;text-decoration:none;color:var(--signal-ink);white-space:nowrap}
+.morelink::after{content:"→";display:inline-block;margin-left:5px;transition:transform .3s cubic-bezier(.3,1.4,.5,1)}
+.bene>div:hover .morelink::after{transform:translateX(5px)}
+.refslot{border:1.5px solid var(--line-dk);border-left:4px solid var(--signal-ink);padding:18px 20px;margin-top:36px;max-width:660px}
+/* Tarjoomakorttien kuvat img-kerroksina (CSS-taustakuvien data-URIt suodattuvat esikatselussa;
+   hero todisti, että <img data:> toimii). Tumma peruspinta takaa luettavuuden, vaikka kuva puuttuisi.
+   Magnific: lJymyQFgv9 aurinko · ksgdLdf16B varasto · Cq5YueNEEy verkko.
+   Julkaisussa: irrota data-URIt tiedostoiksi assets/of-*.webp. */
+.offer>div{min-height:252px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;background:#10181E}
+.offer>div .ochip{margin-bottom:auto}
+.offer>div b{margin-top:14px;color:#F4F6F3}
+.offer>div .ochip,.offer>div b,.offer>div p{position:relative;z-index:1}
+.offer>div .onum{z-index:1;color:#E09A55;opacity:.9}
+.offer>div p{color:rgba(238,241,238,.85)}
+.offer>div .ochip{background:rgba(8,14,20,.5);border-color:rgba(224,154,85,.55)}
+.offer>div .oico{stroke:#E09A55}
+.ofimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.of-sun .ofimg{object-position:center 30%}
+.ofscrim{position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(8,14,20,.38) 0%,rgba(8,14,20,.84) 100%)}
+.of-batt .ofscrim{background:linear-gradient(180deg,rgba(8,14,20,.45) 0%,rgba(8,14,20,.84) 100%)}
+
+@media(prefers-reduced-motion:reduce){.bene>div,.bene>div::before,.morelink::after,.offer>div{transition:none}}
+.ops{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
+.ops button{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;padding:9px 15px;background:transparent;border:1px solid var(--line);color:var(--tx2d);cursor:pointer}
+.ops button.act{background:var(--signal);color:var(--on-signal);border-color:var(--signal)}
+.opsdia{width:100%;height:auto;display:block;margin-top:18px}
+.op-node{fill:var(--panel);stroke:var(--line);stroke-width:1.5}
+.op-node.op-sig{stroke:var(--signal)}
+.op-lbl{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;fill:var(--tx2d)}
+.op-path{fill:none;stroke:var(--line);stroke-width:2}
+.op-flow{fill:none;stroke:var(--signal);stroke-width:2.5;stroke-linecap:round;opacity:0;transition:opacity .35s}
+.op-flow.on{opacity:1;stroke-dasharray:7 12;animation:opdash 1.3s linear infinite}
+.op-flow.rv.on{animation:opdashrev 1.3s linear infinite}
+.op-fill{fill:var(--signal);opacity:.9;transition:height .5s ease,y .5s ease}
+#opVerkko{transition:opacity .35s}
+#opVerkko.off{opacity:.32}
+.opscap{margin-top:18px;color:var(--tx2d);font-size:16.5px;min-height:3em;max-width:56ch}
+@keyframes opdash{to{stroke-dashoffset:-38}}
+@keyframes opdashrev{to{stroke-dashoffset:38}}
+@media (prefers-reduced-motion:reduce){.op-flow.on{animation:none;stroke-dasharray:none}.op-fill{transition:none}}
+.statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dk);border:1px solid var(--line-dk);margin-top:18px}
+.statrow>div{background:var(--dk);padding:16px 14px}
+.statrow b{display:block;font-family:'IBM Plex Mono',monospace;font-size:clamp(19px,2.6vw,26px);font-weight:500;color:var(--signal);margin-bottom:6px}
+.statrow span{font-size:13px;color:var(--dk-tx);display:block}
+@media(max-width:640px){.statrow{grid-template-columns:1fr}}
+@media(max-width:860px){.tri{grid-template-columns:1fr}}
+
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:start}
+@media(max-width:860px){.split{grid-template-columns:1fr}}
+
+/* list */
+.checks{list-style:none;margin-top:26px}
+.checks li{padding:15px 0 15px 32px;border-bottom:1px solid var(--line-dk);position:relative;font-size:16.5px;line-height:1.55}
+.dark .checks li{border-bottom-color:var(--line)}
+.checks li::before{content:"";position:absolute;left:0;top:24px;width:14px;height:1px;background:var(--signal)}
+.checks li:last-child{border-bottom:none}
+
+/* process */
+.steps{margin-top:48px;border-top:1px solid var(--line-dk)}
+.step{display:grid;grid-template-columns:64px 1fr 190px;gap:24px;padding:26px 0;border-bottom:1px solid var(--line-dk);align-items:start}
+.step .idx{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--signal-ink);padding-top:4px;letter-spacing:.06em}
+.step h4{font-size:20px;margin-bottom:8px}
+.step p{font-size:16px;color:var(--tx2)}
+.step .dur{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--muted);letter-spacing:.06em;text-align:right;padding-top:6px}
+@media(max-width:760px){.step{grid-template-columns:44px 1fr}.step .dur{grid-column:2;text-align:left;padding-top:6px}}
+
+/* callout */
+.callout{background:var(--panel);color:var(--dk-tx);padding:clamp(28px,4vw,48px);border-left:3px solid var(--signal);margin-top:52px}
+.callout p{font-size:clamp(19px,1.9vw,26px);line-height:1.44;font-family:'Archivo',sans-serif;font-weight:500;letter-spacing:-.015em;color:var(--dk-hd)}
+.callout .sub{font-family:'Newsreader',serif;font-size:16.5px;color:var(--tx2d);margin-top:18px;font-weight:400;letter-spacing:0}
+
+/* table */
+.tbl{width:100%;border-collapse:collapse;margin-top:34px;font-size:15.5px}
+.tbl th{
+  font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+  text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--ink);color:var(--ink);font-weight:600;vertical-align:bottom
+}
+.dark .tbl th{color:var(--signal);border-bottom-color:var(--line)}
+.tbl td{padding:16px 14px 16px 0;border-bottom:1px solid var(--line-dk);vertical-align:top;line-height:1.5}
+.dark .tbl td{border-bottom-color:var(--line);color:var(--tx2d)}
+.tbl td:first-child{font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;white-space:nowrap}
+.dark .tbl td:first-child{color:var(--dk-hd)}
+@media(max-width:700px){
+  .tbl,.tbl tbody,.tbl tr,.tbl td{display:block;width:100%}
+  .tbl thead{display:none}
+  .tbl tr{border-bottom:1px solid var(--line-dk);padding:14px 0}
+  .tbl td{border:none;padding:3px 0}
+  .tbl td:first-child{margin-bottom:6px}
+}
+
+/* faq / accordion-ish blocks */
+.qa{border-top:1px solid var(--line-dk);margin-top:40px}
+.qa > div{border-bottom:1px solid var(--line-dk);padding:26px 0}
+.qa h4{font-size:19px;margin-bottom:10px}
+.qa p{font-size:16.5px;color:var(--tx2)}
+.dark .qa{border-top-color:var(--line)}
+.dark .qa > div{border-bottom-color:var(--line)}
+.dark .qa p{color:var(--tx2d)}
+
+/* form */
+.form{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.form .full{grid-column:1/-1}
+label{display:block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+input,select,textarea{
+  width:100%;padding:13px 14px;border:1px solid var(--line-dk);background:var(--white);
+  font-family:'Newsreader',serif;font-size:16px;color:var(--ink);border-radius:0
+}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--signal-ink);outline-offset:-1px;border-color:transparent}
+textarea{min-height:118px;resize:vertical}
+@media(max-width:640px){.form{grid-template-columns:1fr}}
+
+/* footer */
+footer{background:var(--dk);color:var(--muted-lt);padding:clamp(48px,6vw,76px) 0 32px;font-size:15px}
+.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:clamp(28px,4vw,56px)}
+footer h5{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--signal);margin-bottom:16px;font-weight:500}
+footer a{color:var(--muted-lt);text-decoration:none;display:block;padding:5px 0}
+footer a:hover{color:var(--dk-hd)}
+.legal{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.9;color:var(--muted);letter-spacing:.03em}
+@media(max-width:760px){.fgrid{grid-template-columns:1fr}}
+
+/* page switching */
+.page{display:none}
+.page.active{display:block}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+.skip{position:absolute;left:-9999px;background:var(--signal);color:var(--on-signal);padding:10px 16px;z-index:99}
+.skip:focus{left:var(--gut);top:10px}
+
+/* ===== KOE: MAGNEETTI-CTA · etusivun napit · POISTO: tämä lohko + samanniminen JS-lohko ===== */
+@media (hover:hover) and (pointer:fine){
+  #p-home .btn{transition:transform .5s cubic-bezier(.3,1.6,.5,1),background .18s;will-change:transform}
+  #p-home .btn::after{content:"→";display:inline-block;opacity:0;width:0;margin-left:0;transform:translateX(-8px);transition:opacity .2s,transform .3s cubic-bezier(.3,1.6,.5,1),margin-left .3s,width .3s}
+  #p-home .btn:hover::after{opacity:1;transform:none;margin-left:10px;width:.72em}
+  #p-home .btn:active{transform:scale(.965)!important}
+}
+@media (prefers-reduced-motion:reduce){
+  #p-home .btn,#p-home .btn::after{transition:none}
+}
+
+/* ===== KOE 2: PREMIUM-CTA · kupari materiaalina — liukuväri, viistetty kulma, valokantit.
+   HUOM: brändisäännöt kieltävät liukuvärit ja varjot; tämä lohko on tietoinen, helposti
+   peruttava kokeilu. POISTO: tämä lohko (magneetti-lohkot voivat jäädä). ===== */
+@media (hover:hover) and (pointer:fine), (hover:none){
+  #p-home .btn:not(.ghost):not(.dk){
+    background:linear-gradient(180deg,var(--signal-hi) 0%,var(--signal) 52%,color-mix(in srgb,var(--signal) 80%,#000) 100%);
+    clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.32),inset 0 -1px 0 rgba(0,0,0,.26);
+    position:relative;overflow:hidden;
+  }
+  #p-home .btn:not(.ghost):not(.dk):hover{
+    background:linear-gradient(180deg,color-mix(in srgb,var(--signal-hi) 82%,#fff) 0%,var(--signal) 55%,color-mix(in srgb,var(--signal) 78%,#000) 100%);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.26),0 12px 26px -14px color-mix(in srgb,var(--signal) 60%,transparent);
+  }
+  #p-home .btn:not(.ghost)::before{
+    content:"";position:absolute;top:0;bottom:0;left:-45%;width:32%;
+    background:linear-gradient(105deg,transparent,rgba(255,255,255,.2),transparent);
+    transform:skewX(-18deg);transition:left .55s ease;pointer-events:none;
+  }
+  #p-home .btn:not(.ghost):hover::before{left:115%}
+  #p-home .btn.ghost{
+    clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);
+    position:relative;
+  }
+  /* Viisteen reunaviiva: 1px-reunus ei voi seurata clip-pathin leikkausta, joten ääriviiva
+     suljetaan piirretyllä diagonaalilla, joka perii reunuksen värin myös hoverissa. */
+  #p-home .btn.ghost::before{
+    content:"";position:absolute;top:4.6px;right:-1.8px;width:14.6px;height:1.3px;
+    background:var(--line);transform:rotate(45deg);pointer-events:none;
+  }
+  #p-home .btn.ghost:hover::before{background:var(--signal)}
+  #p-home .btn.ghost:hover{
+    background:color-mix(in srgb,var(--signal) 12%,transparent);
+    border-color:var(--signal);
+  }
+  #p-home .btn.dk{
+    background:linear-gradient(180deg,var(--panel) 0%,var(--ink) 58%,color-mix(in srgb,var(--ink) 72%,#000) 100%);
+    clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.12),inset 0 -1px 0 rgba(0,0,0,.5);
+    position:relative;overflow:hidden;
+  }
+  #p-home .btn.dk:hover{
+    background:linear-gradient(180deg,var(--panel-2) 0%,var(--panel) 58%,var(--ink) 100%);
+  }
+  #p-home .btn:active{
+    box-shadow:inset 0 3px 8px rgba(0,0,0,.32)!important;
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  #p-home .btn::before{transition:none}
+}
+
+/* ===== ILTA & KUPARI 3.5 · VALAISTUSKERROS (entinen KOE 3, nyt tuotantoa) =====
+   Sama paletti kuin t3, päälle valaistuskerros: aamunkoiton pintagradientit, kuparihehku
+   aktiivisissa elementeissä, kevyt syvyys korteissa. POISTO: tämä lohko + 3.5-nappi. ===== */
+.hero{background:linear-gradient(180deg,#0A1118 0%,#0E1519 52%,#122029 100%);position:relative}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(900px 360px at 82% -12%,rgba(255,198,132,.085),transparent 58%)}
+.hero>.wrap{position:relative;z-index:1}
+.dark{background:linear-gradient(180deg,#111C24 0%,#0E1519 100%)}
+.gcell{box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+.tri>div,.bene>div,.offer>div{box-shadow:0 14px 34px -24px rgba(13,22,26,.45)}
+.trace path{filter:drop-shadow(0 0 4px rgba(246,190,122,.5))}
+.op-flow.on{filter:drop-shadow(0 0 3px rgba(246,190,122,.6))}
+.btn:not(.ghost){box-shadow:0 10px 24px -14px rgba(8,14,18,.55)}
+.hero h1{background:linear-gradient(105deg,#F4F5F2 30%,#C9D3CE 85%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+@media (prefers-reduced-motion:reduce){.trace path,.op-flow.on{filter:none}}
+</style>
+</head>
+<body class="t3">
+<a href="#main" class="skip">Liigu sisu juurde</a>
+
+<header>
+  <div class="wrap nav">
+    <a href="#/" class="brand"><img src="/assets/mark.webp" alt="" style="height:32px;width:auto;vertical-align:middle;margin-right:11px;margin-top:-3px">SAMA<span>·</span>ENERGIA</a>
+    <nav class="menu" id="menu">
+      <a href="#/energiasalvestid">Energiasalvestid</a>
+      <a href="#/paike-ja-aku">Päikeseelekter + aku</a>
+      <a href="#/reserviturud">Reserviturud</a>
+      <a href="#/protsess">Kuidas see kulgeb</a>
+      <a href="#/uudised">Uudised</a>
+      <a href="#/meist">Meist</a>
+      <a href="#/kontakt" class="navcta">Broneeri kaardistus</a>
+      <div class="langsw" aria-label="Keel / Kieli"><a href="/" lang="fi">FI</a><a href="/et/" class="cur" aria-current="true">EE</a></div>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menüü" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ══════════════════ AVALEHT ══════════════════ -->
+<div class="page" id="p-home">
+
+  <div class="hero heroimgd">
+    <img class="heroimg" src="/assets/hero.webp" alt="" aria-hidden="true">
+    <div class="heroscrim" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="eyebrow">Energiasalvestid ja päikeseelekter · ettevõtetele ja maaomanikele</p>
+      <h1>Ühine võrk.<br>Sõltumatu energia.</h1>
+      <p class="lede">Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame <strong>kirjalikult</strong>, enne kui midagi alla kirjutatakse.</p>
+      <div class="btnrow">
+        <a href="#/kontakt" class="btn">Broneerige objektikaardistus</a>
+        <a href="#/protsess" class="btn ghost">Vaadake, kuidas protsess kulgeb</a>
+      </div>
+
+      <!-- SIGNATURE -->
+      <div class="freq">
+        <div class="freqhead">
+          <span class="lab">Võrgusagedus — miks energiasalvesteid vajatakse</span>
+          <span class="lab">Illustratsioon sageduse kõikumisest</span>
+        </div>
+        <svg class="trace" viewBox="0 0 1200 130" preserveAspectRatio="none" aria-hidden="true">
+          <line class="mid" x1="0" y1="65" x2="1200" y2="65"></line>
+          <path id="wave" d=""></path>
+        </svg>
+        <p class="freqnote">50,000 Hz on elektrivõrgu tasakaal. Kui sagedus sellest kõrvale kaldub, ei ole tootmine ja tarbimine tasakaalus — ja põhivõrguettevõtted, Eestis Elering ja Soomes Fingrid, maksavad selle eest, et energiasalvestid taastavad tasakaalu sekunditega. Sellel reserviturud põhinevadki.</p>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Mida tarnime</p>
+      <div class="offer">
+        <div class="of-sun">
+          <img class="ofimg" src="/assets/of-aurinko.webp" alt="" aria-hidden="true"><span class="ofscrim" aria-hidden="true"></span>
+          <span class="onum">01</span><span class="ochip"><svg class="oico" viewBox="0 0 28 28" aria-hidden="true"><path d="M5 18 L9 8 H23 L19 18 Z"/><path d="M9.7 11.3 H21.7 M8.4 14.7 H20.4 M13.5 8 L11 18 M18 8 L15.5 18"/><path d="M12 18 v4 M16 18 v4 M9 22 h10"/></svg></span>
+          <b>PÄIKESEELEKTER</b>
+          <p>Paneelid, inverterid ja paigaldus — dimensioonitud teie tarbimise järgi.</p>
+        </div>
+        <div class="of-batt">
+          <img class="ofimg" src="/assets/of-varasto.webp" alt="" aria-hidden="true"><span class="ofscrim" aria-hidden="true"></span>
+          <span class="onum">02</span><span class="ochip"><svg class="oico" viewBox="0 0 28 28" aria-hidden="true"><rect x="4" y="8" width="17" height="13"/><path d="M21 12h3v5h-3"/><path d="M13.5 10.5 L10.5 15 h4 l-3 4.5" stroke-width="1.5"/></svg></span>
+          <b>ENERGIASALVESTID</b>
+          <p>Tööstusklassi akusüsteemid ja nende juhtimine.</p>
+        </div>
+        <div class="of-grid">
+          <img class="ofimg" src="/assets/of-verkko.webp" alt="" aria-hidden="true"><span class="ofscrim" aria-hidden="true"></span>
+          <span class="onum">03</span><span class="ochip"><svg class="oico" viewBox="0 0 28 28" aria-hidden="true"><path d="M2 15 h5 l3 -7 4 12 3 -8 2 3 h5"/><path d="M20 8 l4 -4 M24 8 V4 h-4"/></svg></span>
+          <b>RESERVITURU ÜHENDUS</b>
+          <p>Objekti liitmine reservituruga litsentseeritud agregaatori kaudu.</p>
+        </div>
+      </div>
+      <h2 class="sec-title" style="margin-top:clamp(40px,6vw,58px)">Mida see teie objektil tähendab.</h2>
+      <div class="bene" style="margin-top:36px">
+        <div class="c-las">
+          <h4>Võimsustasud alla</h4>
+          <p>Salvesti lõikab tarbimistipud — mõju on näha võrguarvel. Arvutatakse teie enda tarbimisandmetest.</p>
+          <div class="brow"><span class="tg las">ARVUTATAV</span><a class="morelink" href="#/energiasalvestid">Loe edasi</a></div>
+        </div>
+        <div class="c-las">
+          <h4>Börsielekter kasuks</h4>
+          <p>Laadimine odavatel tundidel, kasutus kallitel. Optimeerimise väärtus arvutatakse tegelikest hindadest.</p>
+          <div class="brow"><span class="tg las">ARVUTATAV</span><a class="morelink" href="#/energiasalvestid">Loe edasi</a></div>
+        </div>
+        <div class="c-las">
+          <h4>Liitumise laiendamine välditav</h4>
+          <p>Salvesti võib anda tippvõimsuse üle liitumispiiri — laiendamise vajadust hinnatakse enne hanget.</p>
+          <div class="brow"><span class="tg las">ARVUTATAV</span><a class="morelink" href="#/energiasalvestid">Loe edasi</a></div>
+        </div>
+        <div class="c-las">
+          <h4>Oma toodang omaks tarbeks</h4>
+          <p>Päikeseelektri ülejääk salvestisse ja kasutusse siis, kui see on kõige väärtuslikum.</p>
+          <div class="brow"><span class="tg las">ARVUTATAV</span><a class="morelink" href="#/paike-ja-aku">Loe edasi</a></div>
+        </div>
+        <div class="c-koh">
+          <h4>Varutoide rikete ajal</h4>
+          <p>Saartalitluseks projekteeritud süsteem toidab kriitilist koormust. Kinnitatakse objektipõhiselt.</p>
+          <div class="brow"><span class="tg koh">OBJEKTIPÕHINE</span><a class="morelink" href="#/paike-ja-aku">Loe edasi</a></div>
+        </div>
+        <div class="c-ske">
+          <h4>Reservitulu lisana</h4>
+          <p>Agregaatori hinnanguna ja stsenaariumidena — ka eeldusel, et hinnad poolituvad. Mitte kunagi lubadusena.</p>
+          <div class="brow"><span class="tg ske">STSENAARIUM</span><a class="morelink" href="#/reserviturud">Loe edasi</a></div>
+        </div>
+      </div>
+      <div class="btnrow" style="margin-top:38px"><a href="#/kontakt" class="btn">Broneerige objektikaardistus</a></div>
+    </div>
+  </section>
+
+  <div class="dark">
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">Kaks lähtekohta</p>
+        <h2 class="sec-title">Päikeseelekter olemas või mitte — alustame samast kohast: teie tarbimisandmetest.</h2>
+        <div class="split" style="margin-top:44px">
+          <div>
+            <span class="doorlab">TEIL ON PÄIKESEELEKTER JUBA OLEMAS</span>
+            <h3 style="font-size:22px;margin-bottom:14px">Aku parandab investeeringut, mille olete juba teinud.</h3>
+            <p style="color:var(--tx2d);font-size:17px">Liitumises olev tootmine eeldab enne pakkumist kirjalikke vastuseid neljale tehnilisele küsimusele: tagasitoite tõkestamine, võimsuse piiramine, mõõtmine ja käitumine side katkemisel. Meie teeme selle selgitustöö ja anname vastused kirjalikult.</p>
+            <div class="btnrow"><a href="#/paike-ja-aku" class="btn ghost">Lugege, kuidas see lahendatakse</a></div>
+          </div>
+          <div>
+            <span class="doorlab">ALUSTATE PUHTALT LEHELT</span>
+            <h3 style="font-size:22px;margin-bottom:14px">Projekteerime terviku ühe süsteemina.</h3>
+            <p style="color:var(--tx2d);font-size:17px">Päikeseelekter, energiasalvesti ja juhtimine dimensioonitakse koos teie tarbimisandmete põhjal. Algusest peale tervikuna projekteerituna ei jää midagi tagantjärele sobitada, vastutus on ühel osapoolel ja võrguettevõtte kooskõlastus taotletakse korraga.</p>
+            <div class="btnrow"><a href="#/kontakt" class="btn">Broneerige objektikaardistus</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Kellele</p>
+      <h2 class="sec-title">Alustame sealt, kus energia on väärtusvalik.</h2>
+      <div class="tri" style="margin-top:44px">
+        <div>
+          <svg class="segico" viewBox="0 0 28 28" aria-hidden="true"><path d="M23 5C14 5 7 9 6 18c0 0 0 5 5 5 9 0 12-9 12-18Z"/><path d="M6 23C10 15 15 10 21 7"/></svg>
+          <span class="num">VÄÄRTUSED EES</span>
+          <h3>Omanikud, kellel on veendumus</h3>
+          <p>Koolitus- ja retriidikeskused, ökokülad, väikesed hotellid, mahetalud, kultuurimajad. Otsustate ise, kust teie elekter tuleb ja kellega asju ajate.</p>
+        </div>
+        <div>
+          <svg class="segico" viewBox="0 0 28 28" aria-hidden="true"><path d="M4 20a10 10 0 0 1 20 0"/><path d="M14 20 20 11"/><path d="M4 20h20" opacity=".45"/></svg>
+          <span class="num">LIITUMINE PIIRI PEAL</span>
+          <h3>Maapiirkonna ettevõtted</h3>
+          <p>Viljakuivatid, meiereid, külmlaod, masinatöökojad, logistika maapiirkonna liitumistel. Aku võib liitumise tugevdamist aastate võrra edasi lükata, vähendada võimsustasusid ja aidata elektrikatkestusest üle.</p>
+        </div>
+        <div>
+          <svg class="segico" viewBox="0 0 28 28" aria-hidden="true"><path d="M4 24v-7h5v7"/><path d="M12 24V11h5v13"/><path d="M20 24V5h5v19"/><path d="M2 24h24" opacity=".45"/></svg>
+          <span class="num">MASTAAP</span>
+          <h3>Äri- ja tööstusobjektid</h3>
+          <p>Hotellid, hooldekinnisvara, tööstus, kinnisvaraportfellid. Tasuvusaeg, bilansihaldus ja tarnija, kes vastutab oma numbrite eest ka viiendal aastal.</p>
+        </div>
+      </div>
+      <div class="callout">
+        <p>Kui teil on pakkumine käes ja soovite teada, kas selle tasuvusnumber peab kokkupuutele tegelikkusega vastu — see on täpselt see töö, mida meie teeme.</p>
+        <p class="sub">Teeme seda sõltumata sellest, kas ostate meilt kunagi midagi.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Miks meid saab usaldada</p>
+      <h2 class="sec-title">Investeerimisotsust ei tehta kellegi sõna peale.</h2>
+      <p class="sec-lede" style="margin-top:16px">Seepärast tõendatakse tehnilised lahendused standarditega, seadmete omadused tootja kirjaliku kinnitusega ja liitumise tingimused võrguettevõtte enda vastusega. Iga number kannab oma allikat — ja see, mida me dokumenteerida ei saa, meie pakkumisse ei jõua.</p>
+      <div class="tri">
+        <div>
+          <span class="num">PÕHIMÕTE 01</span>
+          <h3>Sääst enne tulusid</h3>
+          <p>Võimsustasude alandamine ja börsihinna optimeerimine arvutatakse teie enda tarbimisandmetest. Need on arvutatavad, mitte äraarvatavad.</p>
+        </div>
+        <div>
+          <span class="num">PÕHIMÕTE 02</span>
+          <h3>Reservitulu on lisa, mitte lubadus</h3>
+          <p>Reservitulu võib olla märkimisväärne lisa — ja just seepärast näitame seda ausalt: agregaatori enda hinnanguna ja stsenaariumidena, ka eeldusel, et hinnad poolituvad. Arvutus peab vastu, isegi kui turg muutub.</p>
+        </div>
+        <div>
+          <span class="num">PÕHIMÕTE 03</span>
+          <h3>Võrguettevõtte seisukoht enne</h3>
+          <p>Suurim ebakindlus ei ole seade, vaid luba. Selgitame võrguettevõtte seisukoha välja enne, kui seote kapitali — mitte kasutuselevõtul, kus sama asja selgumine on kõige kallim.</p>
+        </div>
+      </div>
+      <p style="margin-top:36px;color:var(--tx2);font-size:16.5px;max-width:640px">Seadmevalik ei ole see otsus, mis asja lahendab — seadmestik on kõige lihtsam osa. Otsustavad küsimused lahendatakse enne seda ja edenemine on kirjeldatud samm-sammult: <a href="#/protsess">Kuidas see kulgeb</a>.</p>
+      <div class="refslot">
+        <p class="mono" style="font-size:10.5px;letter-spacing:.14em;color:var(--muted);margin-bottom:8px">REFERENTSID</p>
+        <p style="color:var(--tx2);font-size:15.5px;max-width:none">Esimesed objektid dokumenteeritakse siia mõõteandmetega — numbrid enne ja pärast, koos allikatega. Me ei avalda referentse, mida me ei saa tõendada.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="dark">
+    <section>
+      <div class="wrap" style="text-align:center;max-width:760px">
+        <h2 class="sec-title" style="max-width:none;margin:0 auto 16px">Alustame teie tarbimisandmetest.</h2>
+        <p class="sec-lede" style="margin:0 auto">Objektikaardistus on tasuta ega seo teid millegagi. Saate kirjaliku hinnangu — ja see jääb teile igal juhul.</p>
+        <div class="btnrow" style="justify-content:center"><a href="#/kontakt" class="btn">Broneerige objektikaardistus</a></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- ══════════════════ ENERGIASALVESTID ══════════════════ -->
+<div class="page" id="p-energiavarastot">
+  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+    <div class="wrap">
+      <p class="eyebrow">Energiasalvestid</p>
+      <h1 style="font-size:clamp(34px,5.4vw,66px)">Kaardistusest töötava, dokumenteeritud ja tootva süsteemini.</h1>
+      <p class="lede">Oleme tootjatest sõltumatud. Valime seadme objekti järgi ega sobita objekti seadmega, mida juhtume müüma. Kui parim lahendus teie objektile ei tule meilt, ütleme ka seda.</p>
+      <p class="mono" style="margin-top:20px;font-size:11px;letter-spacing:.14em;color:var(--muted-lt)">OBJEKTIKAARDISTUS → ANALÜÜSIPAKETT → TEOSTUS → ELUKAAR</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="steps" style="margin-top:0;border-top:none">
+        <div class="step">
+          <span class="idx">01</span>
+          <div>
+            <h4>Objektikaardistus</h4>
+            <p>Kogume standardvormiga teie liitumis- ja tarbimisandmed, analüüsime koormusprofiili ja anname esialgse hinnangu selle kohta, mida aku teie objektil teeks — sealhulgas selle, kas see näib võrguettevõtte vaatest teostatav.</p>
+            <p style="margin-top:12px;font-family:'Archivo',sans-serif;font-weight:600;font-size:16px">Mõnikord on vastus ei. Ütleme selle välja — ja olete kaotanud vestluse, mitte aasta.</p>
+          </div>
+          <span class="dur">Kiire · tasuta<br><em style="font-style:normal;opacity:.65;font-size:11px">ETAPID 01–02</em></span>
+        </div>
+        <div class="step">
+          <span class="idx">02</span>
+          <div>
+            <h4>Analüüsipakett</h4>
+            <p>Dokument, mis läheb teie juhatuse koosolekule ilma meieta. Säästuarvutus teie enda tarbimisandmetest koos arvutusmeetoditega. Dimensioneerimise põhjendus. Liitumisvõimsuse analüüs: kas salvesti saab liitumise laiendamise edasi lükata või ära hoida. Reservitulu agregaatori hinnanguna, kõrval stsenaarium hindade langusest. Riski- ja investeeringuanalüüs. Eeldused ja piirangud selgelt eristatud. Võrguettevõtte seisukoht kirjalikult. Rahastusvõimalused.</p>
+            <p style="margin-top:12px;color:var(--tx2)">Otsus tehakse koosolekul, kus müüjat ei ole. Esitlus sinna ei pääse — kirjalik analüüs pääseb: seda saab saata finantsjuhile, kahtluse alla seada ja kaitsta. Tavaliselt just see otsustabki.</p>
+          </div>
+          <span class="dur">Otsustav etapp<br><em style="font-style:normal;opacity:.65;font-size:11px">ETAPID 03–04</em></span>
+        </div>
+        <div class="step">
+          <span class="idx">03</span>
+          <div>
+            <h4>Teostus</h4>
+            <p>Seadmete hange. Paigalduse koordineerimine sertifitseeritud elektritööde ettevõtetega. Võrguettevõtte protsess päringust pinge sisselülitamiseni. Kasutuselevõtu dokumentatsioon. Liitumine reservituru agregaatoriga. Ajakava kinnitatakse seadmete saadavuse järgi.</p>
+            <p style="margin-top:12px;color:var(--tx2)">Saate põhjaliku üleandmispaketi — mitte kausta, mis pandi kiirustades kokku viimasel pärastlõunal.</p>
+          </div>
+          <span class="dur">4–12 nädalat<br><em style="font-style:normal;opacity:.65;font-size:11px">ETAPID 05–06</em></span>
+        </div>
+        <div class="step">
+          <span class="idx">04</span>
+          <div>
+            <h4>Elukaar</h4>
+            <p>Jõudluse seire meie antud analüüsiga võrreldes. Agregaatorisuhte haldus. Laiendamise planeerimine. Garantiiküsimused.</p>
+            <p style="margin-top:12px;color:var(--tx2)">Oleme kohal ka kolmandal aastal ja esimese aasta numbrid on endiselt kontrollitavad. See on teadlik piirang sellele, mida oleme valmis esimesel aastal lubama.</p>
+          </div>
+          <span class="dur">Pidev<br><em style="font-style:normal;opacity:.65;font-size:11px">ETAPP 07</em></span>
+        </div>
+      </div>
+      <p style="margin-top:28px;color:var(--tx2);font-size:15.5px">Need neli etappi on sama teekond, mille nädalatasandi järjekord ja kestused on kirjeldatud lehel <a href="#/protsess">Kuidas see kulgeb</a> — etapinumbrid viitavad sellele.</p>
+    </div>
+  </section>
+
+  <div class="dark">
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">Eraldi</p>
+        <div class="split">
+          <div><h2 class="sec-title">Konsultatsioon ilma seadmemüügita.</h2></div>
+          <div>
+            <p class="sec-lede">Kõik objektid ei vaja meilt seadet.</p>
+            <ul class="checks">
+              <li>Teostatavuse hindamine</li>
+              <li>Võrguettevõtte protsessi tugi</li>
+              <li>Tehnilise nõuetele vastavuse kontroll</li>
+              <li>Teistelt tarnijatelt saadud pakkumiste sõltumatu hindamine</li>
+            </ul>
+            <div class="btnrow"><a href="#/kontakt" class="btn">Võtke ühendust</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- ══════════════════ PÄIKE + AKU ══════════════════ -->
+<div class="page" id="p-aurinko">
+  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+    <div class="wrap">
+      <p class="eyebrow">Päikeseelekter + aku</p>
+      <h1 style="font-size:clamp(34px,5.4vw,66px)">Päike toodab.<br>Aku ajastab.</h1>
+      <p class="lede">Koos teevad need teie kinnistust tootja, kes kasutab oma elektrit siis, kui see on kõige väärtuslikum. Tarnime kogu süsteemi algusest peale — või täiendame seda, mis teil juba on.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Kaks teed sama süsteemini</p>
+      <div class="split" style="margin-top:34px">
+        <div>
+          <span class="num">ALUSTATE PUHTALT LEHELT</span>
+          <h3 style="font-size:22px;margin-bottom:12px">Kogu süsteem korraga.</h3>
+          <p style="color:var(--tx2);font-size:16.5px">Päikeseelekter, salvesti ja juhtimine projekteeritakse ühe tervikuna teie tarbimisandmetest. Tagantjärele sobitamist ei jää — kuidas, sellest allpool.</p>
+        </div>
+        <div>
+          <span class="num">TEIL ON PÄIKESEELEKTER JUBA OLEMAS</span>
+          <h3 style="font-size:22px;margin-bottom:12px">Aku täiendab investeeringut.</h3>
+          <p style="color:var(--tx2);font-size:16.5px">Neli tehnilist küsimust lahendatakse kirjalikult enne pakkumist. Seejärel on aku lisamine kontrollitud elektritehniline töö — küsimused ja lahendus allpool.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="dark">
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">Teil on päikeseelekter juba olemas</p>
+        <h2 class="sec-title">Neli küsimust, mis lahendatakse kõigepealt.</h2>
+        <div class="grids" style="margin-top:36px">
+          <div class="gcell"><div class="t">01 · Tagasitoide</div><div class="s" style="font-size:16px">Kuidas tagasitoide tõkestatakse, kui mõlemad toodavad?</div></div>
+          <div class="gcell"><div class="t">02 · Võimsuse piiramine</div><div class="s" style="font-size:16px">Kuidas olemasolevat tootmist piiratakse, kui kiiresti ja millega?</div></div>
+          <div class="gcell"><div class="t">03 · Mõõtmine</div><div class="s" style="font-size:16px">Kuidas korraldatakse mõõtmine liitumispunktis?</div></div>
+          <div class="gcell"><div class="t">04 · Side</div><div class="s" style="font-size:16px">Millisesse olekusse süsteem läheb, kui ühendus komponentide vahel katkeb?</div></div>
+        </div>
+
+        <div class="split" style="margin-top:clamp(40px,6vw,64px)">
+          <div>
+            <div class="ops" role="group" aria-label="Töörežiimid" style="margin-top:0;margin-bottom:18px">
+              <button type="button" data-s="sun" class="act">PÄEV</button>
+              <button type="button" data-s="peak">TIPP</button>
+              <button type="button" data-s="night">ÖÖ</button>
+              <button type="button" data-s="res">RESERV</button>
+              <button type="button" data-s="out">KATKESTUS</button>
+            </div>
+            <svg class="sysdia" viewBox="0 0 620 372" aria-hidden="true">
+              <rect x="20" y="34" width="150" height="52"/>
+              <text x="95" y="64" text-anchor="middle">PÄIKESEPANEELID</text>
+              <rect x="20" y="138" width="150" height="52"/>
+              <text x="95" y="168" text-anchor="middle">INVERTER</text>
+              <rect x="20" y="242" width="150" height="52"/>
+              <text x="95" y="268" text-anchor="middle">AKU</text>
+              <rect id="opFill" class="op-fill" x="24" y="276" width="142" height="12"/>
+              <line x1="95" y1="86" x2="95" y2="138"/>
+              <line x1="170" y1="164" x2="255" y2="164"/>
+              <line x1="170" y1="268" x2="255" y2="268"/>
+              <line class="bus" x1="255" y1="120" x2="255" y2="306"/>
+              <line x1="255" y1="120" x2="332" y2="120"/>
+              <circle class="sigst" cx="352" cy="120" r="20"/>
+              <text class="sig" x="352" y="125" text-anchor="middle">M</text>
+              <line x1="372" y1="120" x2="440" y2="120"/>
+              <g id="opVerkko">
+                <rect x="440" y="94" width="160" height="52"/>
+                <text x="520" y="115" text-anchor="middle">VÕRK</text>
+                <text x="520" y="131" text-anchor="middle" style="font-size:9px">LIITUMISPUNKT</text>
+              </g>
+              <rect x="210" y="306" width="90" height="46"/>
+              <text x="255" y="333" text-anchor="middle">HOONE</text>
+              <rect class="sigst" x="300" y="216" width="150" height="50"/>
+              <text class="sig" x="375" y="245" text-anchor="middle">KONTROLLER</text>
+              <polyline class="ctrl" points="352,216 352,140"/>
+              <polyline class="ctrl" points="300,246 226,246 226,282 170,282"/>
+              <polyline class="ctrl" points="300,231 210,231 210,178 170,178"/>
+              <path id="opSol" class="op-flow" d="M95 86 V138 M170 164 H251"/>
+              <path id="opBatt" class="op-flow" d="M170 268 H251"/>
+              <path id="opChg" class="op-flow rv" d="M170 268 H251"/>
+              <path id="opGrid" class="op-flow" d="M440 120 H374 M330 120 H259"/>
+              <path id="opRes" class="op-flow" d="M259 120 H330 M374 120 H440"/>
+              <path id="opLoad" class="op-flow" d="M255 236 V304"/>
+            </svg>
+            <p class="opscap" id="opsCap" style="font-size:15.5px;min-height:4em"></p>
+            <p class="mono" style="font-size:11px;letter-spacing:.08em;color:var(--muted-lt);margin-top:6px">MÕÕTMINE LIITUMISPUNKTIS TOIDAB KONTROLLERIT · SIDE KATKEMISEL LÄHEB SÜSTEEM OHUTUSSE OLEKUSSE</p>
+          </div>
+          <div>
+            <h3 style="font-size:22px;margin-bottom:14px">Mõõtmine liitumispunktis ja juhtimine, millel on tõrkekindel olek.</h3>
+            <p style="color:var(--tx2d);font-size:17px">Liitumispunkti paigaldatav mõõteseade jälgib võimsuse suunda ja suurust reaalajas ning edastab info kohalikule kontrollerile. Kui tootmine ähvardab võrku toita üle lubatu, piirab kontroller seda. Kui side katkeb, läheb süsteem ohutusse olekusse, mitte kontrollimatusse — ja just seda tahab võrguettevõte näha, enne kui ta midagi heaks kiidab.</p>
+            <p style="margin-top:16px;color:var(--tx2d);font-size:17px">Komponendid on standardtooted, saadaval väljakujunenud tarnijatelt lühikeste tarneaegadega. Paigalduse teeb alati sertifitseeritud elektritööde ettevõte.</p>
+            <p style="margin-top:18px;font-family:'Archivo',sans-serif;font-weight:600;font-size:18px;color:var(--dk-hd);letter-spacing:-.015em">Siin ei ole midagi eksootilist. Lahendus on standardtehnika — töö seisneb selle korralikus, eelnevas ja kirjalikus väljaselgitamises.</p>
+          </div>
+        </div>
+
+        <p class="eyebrow" style="margin-top:clamp(40px,6vw,60px)">Mida selgitame välja enne pakkumist</p>
+        <div class="split" style="margin-top:0">
+          <ul class="checks" style="margin-top:10px">
+            <li>Akusüsteemi ja teie olemasolevate inverterite ühilduvus</li>
+            <li>Kas aku kontroller võtab vastu väliseid võimsuse piiramise käske ja kuidas seda tõendatakse</li>
+            <li>Tagasitoite tõkestamine ja mõõtmine liitumispunktis</li>
+          </ul>
+          <ul class="checks" style="margin-top:10px">
+            <li>Käitumine side katkemisel — millisesse olekusse süsteem läheb</li>
+            <li>Kuidas aku ja olemasolev tootmine omavahel ning agregaatoriga koordineeritakse</li>
+            <li>Kas teie olemasolevas paigaldises on midagi muuta — ja mida</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <p>Kirjalikult. Tootjalt ja teie võrguettevõttelt. Enne kui esitame teile hinna.</p>
+        </div>
+        <div class="btnrow"><a href="#/kontakt" class="btn">Broneerige kaardistus oma objektile</a></div>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Päikeseelektrit veel ei ole?</p>
+      <h2 class="sec-title">Tervik tasub projekteerida korraga.</h2>
+      <p class="sec-lede">Tarnime ka kogu süsteemi: päikeseelektri, energiasalvesti ja juhtimise ühe projekteeritud tervikuna. Siis lahendatakse eelkirjeldatud küsimused projekteerimislaual — mitte tagantjärele selgitades.</p>
+      <div class="tri duo" style="margin-top:44px">
+        <div><span class="num">01 · ÜHISDIMENSIONEERIMINE</span><h3>Õige suurus mõlemale</h3><p>Tootmine ja salvesti dimensioonitakse samadest tarbimisandmetest — kumbki õiges suuruses ja teineteise jaoks.</p></div>
+        <div><span class="num">02 · ARHITEKTUUR</span><h3>Valik põhjendatakse</h3><p>Hübriidinverter või eraldi süsteem — lahendus valitakse objekti järgi ja põhjendatakse kirjalikult. Me ei ole seotud ühegi tootjaga.</p></div>
+        <div><span class="num">03 · ALGUSEST PEALE ÕIGESTI</span><h3>Võimsusjuhtimine sisse, mitte peale</h3><p>Tagasitoite haldus ja mõõtmine projekteeritakse süsteemi algusest peale, mitte ei sobitata tagantjärele.</p></div>
+        <div><span class="num">04 · ÜKS VASTUTAJA</span><h3>Üks projekt, üks tarne</h3><p>Üks võrguettevõtte protsess ja üks osapool, kes vastutab terviku eest — projekteerimisest kasutuselevõtu ja seireni.</p></div>
+      </div>
+      <div class="btnrow"><a href="#/kontakt" class="btn">Broneerige objektikaardistus</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════ RESERVITURUD ══════════════════ -->
+<div class="page" id="p-reservi">
+  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+    <div class="wrap">
+      <p class="eyebrow">Reserviturud · uuendatakse regulaarselt</p>
+      <h1 style="font-size:clamp(34px,5.4vw,66px)">Reserviturud: mis need on, mida need nõuavad ja mida me nende kohta ei luba</h1>
+      <p class="lede">See leht selgitab mehhanismi. Siin ei ole tulunumbreid — ja allpool ütleme, miks.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <p class="eyebrow">Põhiasi</p>
+          <h2 class="sec-title">Elektrivõrk on tasakaalus ainult siis, kui tootmine ja tarbimine on igal hetkel võrdsed.</h2>
+        </div>
+        <div>
+          <p class="sec-lede">Kui need ei ole, liigub sagedus. Põhjamaade ja Mandri-Euroopa süsteemis on eesmärk 50,000 Hz. Kui tarbimine ületab tootmise, sagedus langeb. Kui tootmine ületab tarbimise, sagedus tõuseb.</p>
+          <p style="margin-top:20px;color:var(--tx2)">Varem hoolitsesid selle eest suured jaamad, mis reguleerisid oma tootmist. Ilmastikust sõltuva tootmise kasvades ja reguleeritava võimsuse kadudes ostab põhivõrguettevõte seda reguleerimisvõimet turult — ka akudelt.</p>
+          <p style="margin-top:20px;color:var(--tx2)">Aku sobib siia erakordselt hästi, sest see reageerib sekunditega ning suudab võimsust nii vastu võtta kui ka anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="dark">
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">Tooted</p>
+        <h2 class="sec-title">Reservitooted ja mida igaüks akult nõuab</h2>
+        <p class="sec-lede">Eri tooted eeldavad eri reageerimiskiirust ja eri kestust. Kestus määrab aku energiamahu suhte võimsusse — see on koht, kus valesti dimensioonitud süsteem ei kõlba turule, mille jaoks see müüdi.</p>
+        <table class="tbl">
+          <thead>
+            <tr><th>Toode</th><th>Mida see teeb</th><th>Nõue akule</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>FCR-N</td>
+              <td>Sageduse pidev peenhäälestus normaalolukorras. Reageerib ka väikestele kõrvalekalletele.</td>
+              <td>Võime võimsust sümmeetriliselt nii võtta kui ka anda. Nõuab üldjuhul pikimat kestust mõlemas suunas.</td>
+            </tr>
+            <tr>
+              <td>FCR-D</td>
+              <td>Häirereserv. Aktiveerub alles siis, kui sagedus kaldub oluliselt kõrvale — näiteks kui suur tootmisüksus võrgust eraldub.</td>
+              <td>Kiire aktiveerumine, lühem kestus. Kõige tavalisem lähtekoht äri- ja tööstussuuruses akudele.</td>
+            </tr>
+            <tr>
+              <td>aFRR</td>
+              <td>Automaatne sageduse taastamine. Viib sageduse pärast FCR-i tagasi sihtväärtusele.</td>
+              <td>Pikem kestus ja pidev juhitavus. Nõuab rohkem energiat võimsuse suhtes.</td>
+            </tr>
+            <tr>
+              <td>mFRR</td>
+              <td>Manuaalne reserv. Aktiveeritakse käsu peale pikemaajalisteks olukordadeks.</td>
+              <td>Pikim kestus. Harvem ärisuuruses aku esmane toode.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin-top:26px;color:var(--tx2d);font-size:16px">Täpsed kestusnõuded ja tehnilised tingimused määrab põhivõrguettevõte — Eestis Elering, Soomes Fingrid — ja need muutuvad. Kasutame alati kehtivat tingimust, mitte mälu järgi numbrit.</p>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Kuidas objekt turule pääseb</p>
+      <div class="steps">
+        <div class="step">
+          <span class="idx">01</span>
+          <div><h4>Agregaator</h4><p>Üksik tööstusaku on liiga väike, et osaleda otse. Agregaator koondab mitu objekti üheks pakkumiseks turule, tegeleb pakkumisega ja jagab tulu. Agregaator — mitte seadmetarnija — määrab, millistesse toodetesse objekt kõlbab.</p></div>
+          <span class="dur">Kohustuslik</span>
+        </div>
+        <div class="step">
+          <span class="idx">02</span>
+          <div><h4>Eelkvalifitseerimine</h4><p>Põhivõrguettevõte nõuab, et üksus tõendaks toote tehnilistele nõuetele vastavust. See on mõõtmistega tõendatav protsess, mitte teavitamisasi.</p></div>
+          <span class="dur">Enne tulusid</span>
+        </div>
+        <div class="step">
+          <span class="idx">03</span>
+          <div><h4>Mõõtmine ja side</h4><p>Reaalajas mõõteandmete vahetus on osalemise eeldus. Suuremates objektides on nõuded rangemad.</p></div>
+          <span class="dur">Tehniline tingimus</span>
+        </div>
+        <div class="step">
+          <span class="idx">04</span>
+          <div><h4>Võrguettevõtte kooskõlastus</h4><p>Erinev protsess kui põhivõrguettevõtte oma. Jaotusvõrguettevõte otsustab liitumispõhiselt, mida liitumisse tohib ühendada ja millistel tingimustel.</p></div>
+          <span class="dur">Kõigepealt</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="dark">
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">Kõige olulisem koht sellel lehel</p>
+        <div class="split">
+          <div><h2 class="sec-title">Miks me ei avalda tulunumbreid</h2></div>
+          <div>
+            <p class="sec-lede">Iga akupakkumine sisaldab tasuvusnumbrit. Otsustav on, millistele eeldustele see on ehitatud — ja kes seisab nende taga ka viiendal aastal.</p>
+            <p style="margin-top:20px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Reservihinnad kõiguvad tundide kaupa</strong> ja kujunevad turul. Keegi ei tea ette, millised need on järgmisel aastal.</p>
+            <p style="margin-top:16px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Need on langustrendis.</strong> Suuremahuline salvestus tuleb nii Eesti kui ka Soome turule. Kui sada megavatti salvestusvõimsust tuleb reserviturule, surutakse hinnad kokku. See ei ole ennustus, vaid arvutus.</p>
+            <p style="margin-top:16px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Me ei tea, kuidas objekt kvalifitseerub</strong>, enne kui agregaator on seda hinnanud. Seda hinnangut ei ole olemas etapis, kus enamik pakkumisi kirjutatakse.</p>
+            <p style="margin-top:24px;font-family:'Archivo',sans-serif;font-weight:600;font-size:19px;color:var(--dk-hd);letter-spacing:-.015em">Number, mille meie anname, peab taluma kontrolli ka viiendal aastal. Seepärast ehitame arvutuse säästudele ja esitame reservitulu lisana: agregaatori enda hinnanguna, mille kõrval on stsenaarium sellest, mis juhtub, kui hinnad poolituvad.</p>
+            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Kui projekt toimib ainult siis, kui reservihinnad püsivad, ütleme seda. See tähendab, et projekt on habras, ja seda tasub teada enne allkirja, mitte teisel aastal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Praktiline tööriist</p>
+      <h2 class="sec-title">Kolm küsimust mis tahes tarnijale</h2>
+      <div class="qa">
+        <div><h4>1 · Eraldage sääst ja reservitulu. Milline on tasuvusaeg ainult säästudega?</h4><p>Eraldamine on hea arvutuse tunnus — ilma selleta ei saa tasuvusnumbrit hinnata.</p></div>
+        <div><h4>2 · Milline on tasuvusaeg, kui reservihinnad poolituvad?</h4><p>Vastus näitab, kas projekt on kestlik või sõltub turust, mida keegi ei kontrolli.</p></div>
+        <div><h4>3 · Kes koostas reservihinnangu ja mida ta on valmis kirjalikult kinnitama?</h4><p>Reservihinnang on kõige usaldusväärsem agregaatori enda omana — selle tegija omana, kes objekti lõpuks kvalifitseerib ja tulu välja maksab.</p></div>
+      </div>
+      <div class="callout">
+        <p>Need kolm küsimust eristavad analüüsi müügijutust. Hea tarnija vastab neile meeleldi — ja kirjalikult.</p>
+      </div>
+    </div>
+  </section>
+  <div class="dark">
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">Miks see on tähtsam kui üks objekt</p>
+        <div class="split">
+          <div>
+            <h2 class="sec-title">Iga meie paigaldatud aku on äriotsus. Koos on need midagi muud.</h2>
+          </div>
+          <div>
+            <p class="sec-lede">Veebruaris 2025 eraldusid Balti riigid Venemaa elektrivõrgust ja sünkroniseerusid Mandri-Euroopaga. Soome on osa Põhjamaade süsteemist. Neid kahte ühendavad kaablid Soome lahe all — kaablid, mida on kahjustatud juba rohkem kui korra.</p>
+            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Mõlemad süsteemid lisavad ilmastikust sõltuvat tootmist ja kaotavad reguleeritavat võimsust, mis neid varem tasakaalustas. Mõlemad vajavad sama asja: paindlikkust, hajutatuna, sekunditega reageerivana.</p>
+            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Üks suur aku on üks objekt ja üks tõrkepunkt. Kümme tuhat akut kümne tuhande tööstusliitumise taga — igaüks omanikule raha teenimas — on piirkondlik taristu, mida ei lõigata läbi ankruga ja mille omanikud on need, kes seda kasutavad.</p>
+            <p style="margin-top:24px;font-family:'Archivo',sans-serif;font-weight:600;font-size:19px;color:var(--dk-hd);letter-spacing:-.015em">Energiasõltumatust ei ehitata deklaratsioonidega. Selle ehitavad ettevõtted, kes paigaldavad aku, sest see teenib end tagasi — üks objekt korraga.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- ══════════════════ PROTSESS ══════════════════ -->
+<div class="page" id="p-prosessi">
+  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+    <div class="wrap">
+      <p class="eyebrow">Kuidas see kulgeb</p>
+      <h1 style="font-size:clamp(34px,5.4vw,66px)">Seitse etappi, ja kui kaua igaüks kestab.</h1>
+      <p class="lede">Iga objekt kulgeb ühtemoodi. See ei ole bürokraatia — just seepärast teame ette, mis juhtub järgmisena. Energiasalvestite lehe neli teenusetappi on seesama teekond, siin nädalate kaupa.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="steps" style="margin-top:0;border-top:none">
+        <div class="step"><span class="idx">01</span><div><h4>Kvalifitseerimine</h4><p>Täidate objektiandmete vormi: liitumisvõimsus, peakaitse, trafo võimsus, olemasolev tootmine, mõõtekorraldus, paigalduskoht ja kaugus peakilbist, kehtivad elektrilepingud. Analüüsime teie tarbimisandmeid.</p></div><span class="dur">≈ 1 nädal</span></div>
+        <div class="step"><span class="idx">02</span><div><h4>Tehniline eeluuring</h4><p>Dimensioneerimine, konfiguratsioon ja vajadusel olemasoleva tootmise hindamine.</p></div><span class="dur">≈ 1 nädal</span></div>
+        <div class="step"><span class="idx">03</span><div><h4>Võrguettevõtte eelpäring</h4><p>Teeme päringu ja saame kirjaliku seisukoha just teie liitumispunkti kohta. Teie allkirjastate volituse, meie ajame protsessi.</p><p style="margin-top:10px;font-family:'Archivo',sans-serif;font-weight:600;font-size:16px">Midagi ei hangita enne, kui see etapp on valmis.</p></div><span class="dur">2–6 nädalat</span></div>
+        <div class="step"><span class="idx">04</span><div><h4>Analüüsipakett</h4><p>Täielik kirjalik analüüs antakse üle. Käite selle sisemiselt läbi ja teete otsuse.</p></div><span class="dur">2–4 nädalat</span></div>
+        <div class="step"><span class="idx">05</span><div><h4>Pakkumine ja rahastus</h4><p>Astmeline pakkumine, rahastus korraldatud, kui nii soovite.</p></div><span class="dur">1–2 nädalat</span></div>
+        <div class="step"><span class="idx">06</span><div><h4>Teostus</h4><p>Tellimus, paigaldus, kasutuselevõtt, dokumenteerimine. Teie korraldate ligipääsu objektile. Koguajakava kinnitatakse pakkumises seadmete saadavuse järgi.</p></div><span class="dur">4–12 nädalat</span></div>
+        <div class="step"><span class="idx">07</span><div><h4>Turulepääs ja seire</h4><p>Liitumine agregaatoriga ja jõudluse seire meie antud analüüsiga võrreldes.</p></div><span class="dur">Pidev</span></div>
+      </div>
+
+      <div class="callout">
+        <p>Midagi ei hangita enne, kui võrguettevõte on lahenduse kirjalikult kinnitanud.</p>
+        <p class="sub">See on mõlemal turul suurim üksik põhjus ebaõnnestunud, hilinenud ja eelarvet ületanud akuprojektide taga. See on täielikult välditav ja vältimine ei maksa midagi muud kui õiget järjekorda. Seepärast on järjekord meil protsessi kindel osa, mitte paindekoht.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════ MEIST ══════════════════ -->
+<div class="page" id="p-meista">
+  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+    <div class="wrap">
+      <p class="eyebrow">Meist</p>
+      <h1 style="font-size:clamp(34px,5.4vw,66px)">Seade on muutunud kaubaks. Oskus mitte.</h1>
+      <p class="lede">Akusüsteemi võib hankida kust tahes. Väärtus sünnib sellest, et keegi ütleb ausalt, mida see teie objektil teeb, viib selle võrguettevõtte protsessist läbi, sobitab selle olemasoleva päikeseelektriga seda ohtu seadmata ja koostab dokumentatsiooni, mis peab kontrollile vastu ka kolme aasta pärast. See on meie töö.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <p class="eyebrow">Miks see ettevõte olemas on</p>
+          <h2 class="sec-title">Aus analüüs ja teostus samalt osapoolelt.</h2>
+        </div>
+        <div>
+          <p class="sec-lede">Turul on analüüs ja teostus tavaliselt eri kätes: nõustaja ei tarni ja tarnija analüüs on ehitatud oma toote ümber. Kumbki mudel on loogiline — aga kummaski ei saa klient samalt osapoolelt nii sõltumatut arvutust kui ka selle teostust.</p>
+          <p style="margin-top:20px;color:var(--tx2)">Eestis on energiasalvesti enamasti üks tooterida laias valikus ja tehing ehitatakse reservitulu prognoosi peale — numbri peale, mida keegi ei kontrolli. Meie ehitame selle säästudele.</p>
+          <p style="margin-top:22px;font-family:'Archivo',sans-serif;font-weight:600;font-size:19px;letter-spacing:-.015em">Meie teeme analüüsi ja teostame. Me ei müü midagi muud. Selles ongi kogu mõte.</p>
+        </div>
+      </div>
+
+      <div class="tri" style="margin-top:56px">
+        <div><span class="num">01</span><h3>Tootjatest sõltumatud</h3><p>Valime seadme objekti järgi. Meil ei ole oma toodet, mida prooviksime igasse tehingusse sobitada.</p></div>
+        <div><span class="num">02</span><h3>Kõik dokumenteeritud</h3><p>Tehnilised lahendused tõendatakse standarditega, seadmete omadused tootja kinnitusega ja liitumise tingimused võrguettevõtte vastusega.</p></div>
+        <div><span class="num">03</span><h3>Ütleme ka ei</h3><p>Kui aku teie objektile ei sobi, ütleme seda. Olete kaotanud ainult vestluse.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="dark">
+    <section>
+      <div class="wrap">
+        <div class="split">
+          <div>
+            <p class="eyebrow">Asutaja</p>
+            <h2 class="sec-title">Madis Maastik</h2>
+            <p class="sec-lede">Eestlane, elab Helsingis. Kaubanduslik ja tehniline töö tööstuslike energiasalvestite, päikeseelektri ja reserviturgudega Soomes ja Eestis.</p>
+          </div>
+          <div>
+            <p style="color:var(--tx2d);font-size:17px">Töö katab mõlemad turud: agregaatoripartnerlused, võrgunõuete täitmine olemasoleva tootmise kõrvale paigaldatavates akudes, tehniline dokumentatsioon neljas keeles ning reserviturul osalemise rahastusmudelid.</p>
+            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Läbiv joon on sama, millele see ettevõte on ehitatud: tööstuskliendid teevad väga suuri otsuseid väga õhukese dokumentatsiooni najal, ja see auk on suletav.</p>
+            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Teenindame Soome ja Eesti turge — Fingrid ja Elering, Caruna, Elenia, Helen, Vantaan Energia ja Elektrilevi — mõlemas keeles. Me ei ole Soome ettevõte, millel on eestikeelne leht.</p>
+            <div class="btnrow"><a href="#/kontakt" class="btn">Võtke ühendust</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- ══════════════════ KONTAKT ══════════════════ -->
+<div class="page" id="p-yhteys">
+  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+    <div class="wrap">
+      <p class="eyebrow">Kontakt</p>
+      <h1 style="font-size:clamp(34px,5.4vw,66px)">Alustame teie tarbimisandmetest.</h1>
+      <p class="lede">Kiireim viis selgitada, kas energiasalvesti teie objektile sobib, on objektikaardistus. Jätke oma andmed, siis saadame vormi ja ütleme, mida selleks vaja on.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <form class="form" id="ctForm" name="kohdekartoitus" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="kohdekartoitus">
+            <p hidden aria-hidden="true"><label>Jätke see väli tühjaks: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <div><label for="f1">Nimi</label><input id="f1" name="nimi" required></div>
+            <div><label for="f2">Ettevõte</label><input id="f2" name="yritys" required></div>
+            <div><label for="f3">E-post</label><input id="f3" type="email" name="email" required></div>
+            <div><label for="f4">Telefon</label><input id="f4" type="tel" name="puhelin"></div>
+            <div><label for="f5">Objekti asukoht</label><input id="f5" name="sijainti"></div>
+            <div><label for="f6">Peakaitse või aastatarbimine</label><input id="f6" name="kulutus" placeholder="nt 400 A või 900 MWh/a"></div>
+            <div class="full"><label for="f7">Kas objektil on päikeseelekter?</label>
+              <select id="f7" name="aurinko"><option>Ei</option><option>Jah</option><option>Kavandamisel</option><option>Ei tea</option></select>
+            </div>
+            <div class="full"><label for="f8">Sõnum</label><textarea id="f8" name="viesti"></textarea></div>
+            <div class="full"><button type="submit" id="ctSend" class="btn dk" style="border:none;cursor:pointer;font-family:'Archivo',sans-serif">Saada</button></div>
+            <p class="full" style="font-size:14.5px;color:var(--muted)">Töötleme teie saadetud andmeid, et teie pöördumisele vastata. <a href="#/andmekaitse">Andmekaitsetingimused</a>.</p>
+            <p class="full ok" id="ctOk" hidden style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1a7a3c">Aitäh — võtame ühendust tööpäeva jooksul.<em id="ctDemo" style="color:var(--muted)"> (Eelvaade: saatmine lülitatakse sisse avaldamisel.)</em></p>
+            <p class="full" id="ctErr" hidden style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#A8452E">Saatmine ei õnnestunud. Võite saata andmed ka otse e-postiga: <a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a>.</p>
+          </form>
+        </div>
+        <div>
+          <p class="eyebrow">Otse</p>
+          <p style="font-family:'Archivo',sans-serif;font-weight:700;font-size:26px;letter-spacing:-.02em">Madis Maastik</p>
+          <p class="mono" style="font-size:15px;margin-top:10px;color:var(--tx2)">+372 5391 6647</p>
+          <p class="mono" style="font-size:15px;color:var(--tx2)">WhatsApp +358 46 659 4879</p>
+          <p class="mono" style="font-size:15px;color:var(--tx2)"><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="wrap">
+      <p style="max-width:640px;color:var(--tx2);border-top:1px solid var(--line-dk);padding-top:22px;font-size:15.5px">Ehitame ka partnerivõrgustikku — elektriprojekteerijad, sertifitseeritud töövõtjad ja kinnisvaraarendajad: võtke ühendust sama vormiga.</p>
+    </div>
+  </section>
+
+</div>
+
+<!-- ══════════════════ UUDISED ══════════════════ -->
+<div class="page" id="p-ajankohtaista">
+  <div class="hero" style="padding-bottom:clamp(40px,6vw,64px)">
+    <div class="wrap">
+      <p class="eyebrow">Uudised</p>
+      <h1 style="font-size:clamp(32px,5vw,60px)">Mis turul toimub — koos allikatega.</h1>
+      <p class="lede">Me ei palu teil meid uskuda. Kogume siia esmaallikaid — põhivõrguettevõtete ja ametiasutuste enda avaldatut — ja ütleme lühidalt, miks need on tööstusobjekti omanikule olulised. Meie enda analüüsid avaldatakse sellel lehel.</p>
+    </div>
+  </div>
+  <section>
+    <div class="wrap" style="max-width:880px">
+      <p class="eyebrow">Lugemist mujalt</p>
+      <div class="qa" style="margin-top:14px">
+        <div>
+          <p class="mono" style="font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">Kohustus · tähtaeg 11.10.2026 · Direktiiv (EL) 2023/1791</p>
+          <h4>Energiaauditi kohustus laieneb: piir on edaspidi tarbimine, mitte ettevõtte suurus</h4>
+          <p>Uuendatud energiatõhususe direktiiv viib kohustusliku energiaauditi piiri ettevõtte suuruselt energiatarbimisele: üle 10 TJ ehk umbes 2 700 MWh aastas tarbivad ettevõtted peavad laskma teha energiaauditi 11.10.2026-ks, kui nad ei võta kasutusele sertifitseeritud energiajuhtimissüsteemi. <span class="mono" style="font-size:11px;color:var(--signal-ink)">[KONTROLLITAKSE: riikliku rakendamise üksikasjad]</span></p>
+          <p style="margin-top:12px;color:var(--tx2)">Miks see on oluline: audit toodab täpselt selle tarbimisandmestiku, millest salvesti- ja päikeseinvesteering dimensioonitakse. Sama kohustuse võib täita pelga sunnina — või ühtlasi ära kasutada.</p>
+        </div>
+        <div>
+          <p class="mono" style="font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">18.08.2026 · Fingrid · Pressiteade</p>
+          <h4><a href="https://www.fingrid.fi/ajankohtaista/tiedotteet/2026/sahkonkulutus-on-kaantymassa-voimakkaaseen-kasvuun--rinnalle-tarvitaan-lisaa-saatovoimaa/" target="_blank" rel="noopener noreferrer">Elektritarbimine on pöördumas tugevasse kasvu – kõrvale on vaja rohkem reguleerimisvõimsust (soome keeles)&nbsp;↗</a></h4>
+          <p>Fingridi andmetel tarbimise kasv kiireneb: ainuüksi andmekeskuste liitumislepinguid on ligi viie gigavati jagu, ja täies mahus teostudes tõstaks lepinguportfell Soome elektritarbimist ligi 40 protsenti 2025. aasta tasemest. Samas teates on ka teine number: elektrisalvestite liitumislepinguid on juba üle nelja gigavati. Nõudlus ja paindlikkus kasvavad seega võidu — just seepärast ei ehita me ühegi objekti tasuvust reservihindade peale.</p>
+          <p style="margin-top:12px">Teates on ka vaikne sõnum olemasolevate liitumiste omanikele: uusi liitumisi võib kohati tulla kaua oodata. Aku olemasoleva liitumise taga kasutab liitumist, mis teil juba on.</p>
+          <div class="statrow"><div><b>~5 GW</b><span>andmekeskuseprojekte liitumislepingutega</span></div><div><b>&gt;4 GW</b><span>elektrisalvesteid liitumisjärjekorras</span></div><div><b>+40 %</b><span>tarbimise kasv, kui lepinguportfell teostub</span></div></div>
+          <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:10px">ALLIKAS: FINGRID · PRESSITEADE 18.08.2026 · DOKUMENTEERITUD</p>
+        </div>
+      </div>
+      <p style="margin-top:30px;color:var(--tx2);font-size:16.5px">Loetelu täieneb sedamööda, kuidas olulisi avaldusi ilmub. Kui mõni neist tekitab küsimuse teie enda objekti kohta, on <a href="#/kontakt">objektikaardistus</a> kiireim viis vastus saada.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════ ANDMEKAITSE ══════════════════ -->
+<div class="page" id="p-tietosuoja">
+  <div class="hero" style="padding-bottom:clamp(40px,6vw,64px)">
+    <div class="wrap">
+      <p class="eyebrow">Andmekaitse</p>
+      <h1 style="font-size:clamp(32px,4.8vw,58px)">Andmekaitsetingimused</h1>
+      <p class="lede">Kogume ainult seda, mille ise meile annate. Me ei kasuta küpsiseid ega analüütikat. Siin on kirjas, mida töötleme, miks ja kui kaua.</p>
+    </div>
+  </div>
+  <section>
+    <div class="wrap" style="max-width:840px">
+      <div class="qa" style="margin-top:0">
+        <div><h4>Vastutav töötleja</h4><p>SAMA Energia Oy · Y-tunnus (Soome registrikood) 3647683-3 · madis.maastik@samaenergia.fi · +372 5391 6647.</p></div>
+        <div><h4>Milliseid andmeid töötleme</h4><p>Kontaktivormil antud andmed: nimi, ettevõte, e-post, telefon, objekti asukoht, liitumis- ja tarbimisandmed ning sõnum. Lisaks veebilehe tehniline serverilogi (sh IP-aadress ja ajatempel), mille majutusteenus toodab teenuse osutamiseks ja turvalisuse tagamiseks. Me ei kasuta küpsiseid, jälgimispiksleid ega analüütikat.</p></div>
+        <div><h4>Miks töötleme</h4><p>Et vastata teie pöördumisele ja valmistada ette teie soovitud kaardistust (lepingueelsed meetmed, isikuandmete kaitse üldmääruse artikli 6 lõike 1 punkt b) ning õigustatud huvi alusel (artikli 6 lõike 1 punkt f) kliendisuhte haldamiseks ja turvalisuse tagamiseks. Me ei kasuta andmeid muuks turunduseks ilma eraldi nõusolekuta.</p></div>
+        <div><h4>Kellele andmeid edastatakse</h4><p>Me ei müü ega anna andmeid turunduseks. Tehniliste volitatud töötlejatena tegutsevad veebilehe majutus- ja vormiteenus ning e-postiteenus. Kui teenusepakkuja töötleb andmeid väljaspool EL-i või EMP-d, kaitstakse edastust EL-i heakskiidetud mehhanismidega, nagu lepingu tüüptingimused või Data Privacy Framework.</p></div>
+        <div><h4>Kui kaua säilitame</h4><p>Säilitame pöördumisi kuni 24 kuud viimasest suhtlusest, kui asjaajamine ei jätku kliendisuhtena. Raamatupidamisseaduse alla kuuluv materjal säilitatakse seadusjärgse aja.</p></div>
+        <div><h4>Teie õigused</h4><p>Teil on õigus saada juurdepääs oma andmetele, nõuda nende parandamist, kustutamist, töötlemise piiramist või ülekandmist ning esitada vastuväiteid töötlemisele. Taotlused: madis.maastik@samaenergia.fi. Teil on ka õigus esitada kaebus järelevalveasutusele: Soome andmekaitsevolinik (tietosuoja.fi) või Eesti Andmekaitse Inspektsioon (aki.ee).</p></div>
+        <div><h4>Muudatused</h4><p>Uuendatud 18.08.2026. Kui tingimused muutuvad, on uusim versioon alati sellel lehel.</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a href="#/" class="brand" style="font-size:19px"><img src="/assets/mark.webp" alt="" style="height:36px;width:auto;vertical-align:middle;margin-right:12px;margin-top:-4px">SAMA<span>·</span>ENERGIA</a>
+        <p style="margin-top:18px;max-width:36ch;color:var(--muted-lt);font-size:16px">Energiasalvestid ja päikeseelekter ettevõtetele. Aus analüüs, võrguettevõtte kooskõlastus enne hanget, põhjalik dokumentatsioon.</p>
+        <p style="margin-top:20px" class="mono">SUOMI · EESTI</p>
+      </div>
+      <div>
+        <h5>Teenused</h5>
+        <a href="#/energiasalvestid">Energiasalvestid</a>
+        <a href="#/paike-ja-aku">Päikeseelekter + aku</a>
+        <a href="#/protsess">Kuidas see kulgeb</a>
+        <a href="#/kontakt">Objektikaardistus</a>
+      </div>
+      <div>
+        <h5>Teave</h5>
+        <a href="#/reserviturud">Reserviturud</a>
+        <a href="#/uudised">Uudised</a>
+        <a href="#/meist">Meist</a>
+        <a href="#/kontakt">Kontakt</a>
+        <a href="#/andmekaitse">Andmekaitsetingimused</a>
+      </div>
+    </div>
+    <div class="legal">
+      SAMA ENERGIA OY · Y-TUNNUS 3647683-3 · KMKR NR FI36476833 · ASUKOHT HELSINGI<br>
+      madis.maastik@samaenergia.fi · +372 5391 6647 · WHATSAPP +358 46 659 4879 · <a href="#/andmekaitse">ANDMEKAITSETINGIMUSED</a><br>
+      © 2026 SAMA Energia
+    </div>
+  </div>
+</footer>
+
+
+<script>
+/* ---------- hash router ---------- */
+var routes={
+  '#/':'p-home','':'p-home','#':'p-home',
+  '#/energiasalvestid':'p-energiavarastot',
+  '#/paike-ja-aku':'p-aurinko',
+  '#/reserviturud':'p-reservi',
+  '#/protsess':'p-prosessi',
+  '#/meist':'p-meista',
+  '#/kontakt':'p-yhteys',
+  '#/uudised':'p-ajankohtaista',
+  '#/andmekaitse':'p-tietosuoja'
+};
+var titles={
+  'p-home':'Energiasalvestid ja p\u00e4ikeseelekter ettev\u00f5tetele | SAMA Energia',
+  'p-energiavarastot':'Energiasalvestid \u2014 teenus | SAMA Energia',
+  'p-aurinko':'P\u00e4ikeseelekter + aku | SAMA Energia',
+  'p-reservi':'Reserviturud: mis need on ja mida need n\u00f5uavad | SAMA Energia',
+  'p-prosessi':'Kuidas akuprojekt kulgeb | SAMA Energia',
+  'p-meista':'Meist | SAMA Energia',
+  'p-yhteys':'Kontakt | SAMA Energia',
+  'p-ajankohtaista':'Uudised | SAMA Energia',
+  'p-tietosuoja':'Andmekaitsetingimused | SAMA Energia'
+};
+function show(id){
+  document.querySelectorAll('.page').forEach(function(p){p.classList.toggle('active',p.id===id)});
+  if(titles[id])document.title=titles[id];
+  document.querySelectorAll('.menu a').forEach(function(a){
+    a.classList.toggle('on',routes[a.getAttribute('href')]===id);
+  });
+  document.getElementById('menu').classList.remove('open');
+  document.getElementById('burger').setAttribute('aria-expanded','false');
+  window.scrollTo(0,0);
+}
+/* Sivunvaihto ei nojaa osoiteriviin, joten se toimii myös esikatseluymparistoissa;
+   oikealla sivustolla osoite paivittyy silti ja suorat linkit toimivat. */
+document.addEventListener('click',function(e){
+  var a=e.target.closest('a');if(!a)return;
+  var h=a.getAttribute('href');
+  if(h&&h.indexOf('#/')===0&&routes[h]){
+    e.preventDefault();show(routes[h]);
+    try{if(location.hash!==h)history.pushState(null,'',h)}catch(_){}
+  }
+});
+try{
+  window.addEventListener('hashchange',function(){show(routes[location.hash]||'p-home')});
+  show(routes[location.hash]||'p-home');
+}catch(_){show('p-home')}
+
+document.getElementById('burger').addEventListener('click',function(){
+  var m=document.getElementById('menu');
+  var open=m.classList.toggle('open');
+  this.setAttribute('aria-expanded',open?'true':'false');
+});
+
+/* Yhteydenottolomake — Netlify Forms. FORM_LIVE käännetään trueksi julkaisun yhteydessä;
+   siihen asti lomake toimii esikatselutilassa eikä lähetä mitään. */
+var FORM_LIVE=true;
+var cf=document.getElementById('ctForm');
+if(cf)cf.addEventListener('submit',function(e){
+  e.preventDefault();
+  var ok=document.getElementById('ctOk'),err=document.getElementById('ctErr'),
+      demo=document.getElementById('ctDemo'),btn=document.getElementById('ctSend');
+  err.hidden=true;
+  if(!FORM_LIVE){ok.hidden=false;return;}
+  demo.hidden=true;btn.disabled=true;btn.style.opacity='.6';
+  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},
+    body:new URLSearchParams(new FormData(cf)).toString()})
+  .then(function(r){
+    btn.disabled=false;btn.style.opacity='';
+    if(r.ok){ok.hidden=false;cf.reset();}else{err.hidden=false;}
+  })
+  .catch(function(){btn.disabled=false;btn.style.opacity='';err.hidden=false;});
+});
+
+
+
+/* ---------- signature: frequency trace ----------
+   Illustrative only. To make it live, poll Fingrid's open data API
+   (real-time frequency) and Elering's live API, then feed values in.
+   Time-based rAF scroll: renders at display refresh rate, pauses in
+   background tabs, honours prefers-reduced-motion. */
+(function(){
+  var path=document.getElementById('wave');
+  if(!path)return;
+  var W=1200,H=130,MID=65,SEG=5,N=242,pts=[],t=0;
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* Siemen 453912 — deterministinen satunnaisuus: jokainen lataus toistaa saman käyrän. */
+  var _s=453912>>>0;
+  function rnd(){_s|=0;_s=_s+0x6D2B79F5|0;var r=Math.imul(_s^_s>>>15,1|_s);r=r+Math.imul(r^r>>>7,61|r)^r;return((r^r>>>14)>>>0)/4294967296;}
+  function val(){
+    t++;
+    var base=Math.sin(t*0.07)*7+Math.sin(t*0.19)*4+Math.sin(t*0.031)*9;
+    var noise=(rnd()-0.5)*3.4;
+    var event=(rnd()<0.012)?(rnd()<0.5?-22:18):0;
+    return Math.max(10,Math.min(H-10,MID+base+noise+event));
+  }
+  for(var i=0;i<N;i++)pts.push(val());
+  function draw(off){
+    var d='M'+(0-off).toFixed(1)+' '+pts[0].toFixed(1);
+    for(var i=1;i<N;i++)d+=' L'+(i*SEG-off).toFixed(1)+' '+pts[i].toFixed(1);
+    path.setAttribute('d',d);
+  }
+  draw(0);
+  if(reduce)return;
+  var last=null,off=0;
+  function frame(now){
+    if(last===null)last=now;
+    var dt=Math.min(now-last,100);last=now;
+    off+=dt*0.05;
+    while(off>=SEG){off-=SEG;pts.shift();pts.push(val());}
+    draw(off);
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+
+/* ===== KONSEPTI-B SIIRROT: kuormituskäyrä + käyttötilakaavio ===== */
+(function(){
+  var cap=document.getElementById('opsCap');
+  if(!cap)return;
+  var F={sol:document.getElementById('opSol'),batt:document.getElementById('opBatt'),
+    chg:document.getElementById('opChg'),grid:document.getElementById('opGrid'),
+    res:document.getElementById('opRes'),load:document.getElementById('opLoad')};
+  var fill=document.getElementById('opFill');
+  var verkko=document.getElementById('opVerkko');
+  var TXT={
+    sun:'P\u00e4eval toodab p\u00e4ike. \u00dclej\u00e4\u00e4k ei l\u00e4he odavalt v\u00f5rku, vaid salvestisse omaks tarbeks.',
+    peak:'Tarbimistipu ajal salvesti t\u00fchjeneb ja v\u00f5rgust v\u00f5etav v\u00f5imsus p\u00fcsib v\u00f5imsuslae all.',
+    night:'\u00d6\u00f6sel ja odava hinna tundidel salvesti laeb. Energia liigub kallitele tundidele.',
+    res:'V\u00f5rgu sagedus kaldub k\u00f5rvale. Salvesti vastab sekunditega \u2014 reservitulu liigub agregaatori kaudu ja seda n\u00e4idatakse alati stsenaariumina, mitte lubadusena.',
+    out:'Saartalitluseks projekteeritud s\u00fcsteem toidab katkestuse ajal kriitilist koormust. See omadus ei kuulu igasse komplekti, vaid kinnitatakse objektip\u00f5hiselt.'};
+  var CFG={
+    sun:{on:['sol','load','chg'],lvl:.75,grid:true},
+    peak:{on:['grid','load','batt'],lvl:.45,grid:true},
+    night:{on:['grid','chg'],lvl:.92,grid:true},
+    res:{on:['batt','res'],lvl:.6,grid:true},
+    out:{on:['batt','load'],lvl:.35,grid:false}};
+  var btns=document.querySelectorAll('.ops button');
+  function set(st){
+    var c=CFG[st];
+    Object.keys(F).forEach(function(k){F[k].classList.toggle('on',c.on.indexOf(k)>=0);});
+    var hh=Math.round(10*c.lvl)+2;
+    fill.setAttribute('height',hh);fill.setAttribute('y',288-hh);
+    verkko.classList.toggle('off',!c.grid);
+    btns.forEach(function(b){b.classList.toggle('act',b.dataset.s===st);});
+    cap.textContent=TXT[st];
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.s);});});
+  set('sun');
+})();
+
+/* ===== KOE: MAGNEETTI-CTA · pari CSS-lohkolle tyylien lopussa · poista molemmat peruaksesi ===== */
+(function(){
+  if(!window.matchMedia('(hover:hover) and (pointer:fine)').matches)return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var R=110,MAX=7,raf=null,mx=0,my=0;
+  document.addEventListener('mousemove',function(e){
+    mx=e.clientX;my=e.clientY;
+    if(!raf)raf=requestAnimationFrame(update);
+  });
+  function update(){
+    raf=null;
+    var home=document.getElementById('p-home');
+    if(!home||!home.classList.contains('active'))return;
+    var btns=home.querySelectorAll('.btn');
+    for(var i=0;i<btns.length;i++){
+      var b=btns[i],r=b.getBoundingClientRect();
+      var dx=mx-(r.left+r.width/2),dy=my-(r.top+r.height/2);
+      var ox=Math.max(Math.abs(dx)-r.width/2,0),oy=Math.max(Math.abs(dy)-r.height/2,0);
+      var d=Math.sqrt(ox*ox+oy*oy);
+      if(d<R){
+        var c=Math.sqrt(dx*dx+dy*dy)||1,p=1-d/R;p*=p;
+        b.style.transition='transform .09s ease-out';
+        b.style.transform='translate('+(dx/c*p*MAX).toFixed(1)+'px,'+(dy/c*p*MAX).toFixed(1)+'px) scale('+(1+p*.03).toFixed(3)+')';
+      }else if(b.style.transform){
+        b.style.transition='';b.style.transform='';
+      }
+    }
+  }
+})();
+</script>
+</body>
+</html>
