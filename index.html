@@ -82,12 +82,31 @@ header{position:sticky;top:0;z-index:60;background:var(--glass);backdrop-filter:
   color:var(--muted-lt);text-decoration:none;padding:6px 0;border-bottom:1px solid transparent;transition:.18s
 }
 .menu a:hover,.menu a.on{color:var(--dk-hd);border-bottom-color:var(--signal)}
+/* Navcta perii etusivun premium-CTA:n kuparikäsittelyn (liukuväri, viiste, valokantit, kiilto) */
 .navcta{
-  font-family:'Archivo',sans-serif;font-size:14px;font-weight:600;letter-spacing:.01em;
-  background:var(--signal);color:var(--on-signal)!important;padding:12px 22px;text-decoration:none;
-  border-bottom:none!important;white-space:nowrap;display:inline-block;transition:.18s
+  font-family:'Archivo',sans-serif;font-size:15px;font-weight:600;letter-spacing:.01em;
+  background:linear-gradient(180deg,var(--signal-hi) 0%,var(--signal) 52%,color-mix(in srgb,var(--signal) 80%,#000) 100%);
+  color:var(--on-signal)!important;padding:13px 24px;text-decoration:none;
+  border-bottom:none!important;white-space:nowrap;display:inline-block;transition:.18s;
+  clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.32),inset 0 -1px 0 rgba(0,0,0,.26);
+  position:relative;overflow:hidden
 }
-.navcta:hover{background:var(--signal-hi);transform:translateY(-1px)}
+.navcta::before{
+  content:"";position:absolute;top:0;bottom:0;left:-45%;width:32%;
+  background:linear-gradient(105deg,transparent,rgba(255,255,255,.2),transparent);
+  transform:skewX(-18deg);transition:left .55s ease;pointer-events:none
+}
+.navcta:hover{
+  background:linear-gradient(180deg,color-mix(in srgb,var(--signal-hi) 82%,#fff) 0%,var(--signal) 55%,color-mix(in srgb,var(--signal) 78%,#000) 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.26)
+}
+.navcta:hover::before{left:115%}
+.navcta:active{box-shadow:inset 0 3px 8px rgba(0,0,0,.32)}
+.langsw{display:flex;gap:3px;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em}
+.langsw a{color:var(--muted-lt);text-decoration:none;padding:6px 8px;border:1px solid transparent;transition:.18s}
+.langsw a.cur{color:var(--dk-hd);border-color:var(--line)}
+.langsw a:hover{color:var(--dk-hd)}
 .burger{display:none;background:none;border:1px solid var(--line);color:var(--dk-tx);width:42px;height:38px;cursor:pointer;font-size:17px}
 @media(max-width:1120px){
   .menu{position:fixed;inset:68px 0 auto 0;background:var(--dk);flex-direction:column;align-items:stretch;gap:0;padding:8px var(--gut) 26px;border-bottom:1px solid var(--line);display:none}
@@ -393,7 +412,7 @@ footer a:hover{color:var(--dk-hd)}
   #p-home .btn::before{transition:none}
 }
 
-/* ===== ILTA & KUPARI 3.5 · VALAISTUSKERROS (entinen KOE 3, nyt tuotantoa) ===== */
+/* ===== ILTA & KUPARI 3.5 · VALAISTUSKERROS (entinen KOE 3, nyt tuotantoa) =====
    Sama paletti kuin t3, päälle valaistuskerros: aamunkoiton pintagradientit, kuparihehku
    aktiivisissa elementeissä, kevyt syvyys korteissa. POISTO: tämä lohko + 3.5-nappi. ===== */
 .hero{background:linear-gradient(180deg,#0A1118 0%,#0E1519 52%,#122029 100%);position:relative}
@@ -1252,7 +1271,7 @@ document.addEventListener('click',function(e){
   var h=a.getAttribute('href');
   if(h&&h.indexOf('#/')===0&&routes[h]){
     e.preventDefault();show(routes[h]);
-    try{history.replaceState(null,'',h)}catch(_){}
+    try{if(location.hash!==h)history.pushState(null,'',h)}catch(_){}
   }
 });
 try{
