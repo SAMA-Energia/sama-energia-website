@@ -1,4 +1,6 @@
-https://www.samaenergia.ee/*  https://samaenergia.fi/et/:splat  301!
-https://samaenergia.ee/*      https://samaenergia.fi/et/:splat  301!
+# .ee serves Estonian natively — rewrite root only (hash SPA; assets resolve at root)
+https://samaenergia.ee/ /et/index.html 200!
+https://www.samaenergia.ee/* https://samaenergia.ee/:splat 301!
+
 https://www.samaenergia.com/* https://samaenergia.fi/:splat     301!
 https://samaenergia.com/*     https://samaenergia.fi/:splat     301!
