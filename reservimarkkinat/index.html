@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- GENEROITU TIEDOSTO — älä muokkaa käsin. Lähde: src/fi.html · node scripts/build-pages.mjs -->
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reservimarkkinat: mitä ne ovat ja mitä ne vaativat | SAMA Energia</title>
+<meta name="description" content="Mitä reservimarkkinat ovat, mitä FCR-N, FCR-D, aFRR ja mFRR vaativat akulta, miten kohde pääsee markkinalle — ja miksi emme julkaise tuottolukuja.">
+<link rel="canonical" href="https://samaenergia.fi/reservimarkkinat/">
+<link rel="alternate" hreflang="fi-FI" href="https://samaenergia.fi/reservimarkkinat/">
+<link rel="alternate" hreflang="et-EE" href="https://samaenergia.fi/et/reserviturud/">
+<link rel="alternate" hreflang="x-default" href="https://samaenergia.fi/reservimarkkinat/">
+<meta property="og:title" content="Reservimarkkinat: mitä ne ovat ja mitä ne vaativat | SAMA Energia">
+<meta property="og:description" content="Mitä reservimarkkinat ovat, mitä FCR-N, FCR-D, aFRR ja mFRR vaativat akulta, miten kohde pääsee markkinalle — ja miksi emme julkaise tuottolukuja.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:url" content="https://samaenergia.fi/reservimarkkinat/">
+<!-- og:image jätetty tarkoituksella pois: odottaa tunnusmerkkipäätöstä -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23D18A44' d='M12 1 13.76 7.75 19.78 4.22 16.25 10.24 23 12 16.25 13.76 19.78 19.78 13.76 16.25 12 23 10.24 16.25 4.22 19.78 7.75 13.76 1 12 7.75 10.24 4.22 4.22 10.24 7.75 Z'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0E1519">
+<link href="/assets/fonts.css" rel="stylesheet">
+<link href="/assets/site.css" rel="stylesheet">
+</head>
+<body class="t3">
+<a href="#main" class="skip">Siirry sisältöön</a>
+
+<header>
+  <div class="wrap nav">
+    <a href="/" class="brand"><img src="/assets/mark.webp" alt="" style="height:32px;width:auto;vertical-align:middle;margin-right:11px;margin-top:-3px">SAMA<span>·</span>ENERGIA</a>
+    <nav class="menu" id="menu">
+      <a href="/energiavarastot/">Energiavarastot</a>
+      <a href="/aurinko-ja-akku/">Aurinkosähkö + akku</a>
+      <a href="/reservimarkkinat/" class="on">Reservimarkkinat</a>
+      <a href="/prosessi/">Näin se etenee</a>
+      <a href="/ajankohtaista/">Ajankohtaista</a>
+      <a href="/meista/">Meistä</a>
+      <a href="/yhteystiedot/" class="navcta">Varaa kartoitus</a>
+      <div class="langsw" aria-label="Kieli / Keel"><a href="/" class="cur" aria-current="true">FI</a><a href="/et/reserviturud/" lang="et">EE</a></div>
+    </nav>
+    <button class="burger" id="burger" aria-label="Valikko" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="main">
+<div class="page active" id="p-reservi">
+  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+    <div class="wrap">
+      <p class="eyebrow">Reservimarkkinat · päivitetään säännöllisesti</p>
+      <h1 style="font-size:clamp(34px,5.4vw,66px)">Reservimarkkinat: mitä ne ovat, mitä ne vaativat ja mitä emme niistä lupaa</h1>
+      <p class="lede">Tämä sivu selittää mekanismin. Se ei sisällä tuottolukuja — ja alempana kerromme, miksi.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <p class="eyebrow">Perusasia</p>
+          <h2 class="sec-title">Sähköverkko on tasapainossa vain silloin, kun tuotanto ja kulutus ovat yhtä suuret joka hetki.</h2>
+        </div>
+        <div>
+          <p class="sec-lede">Kun ne eivät ole, taajuus liikkuu. Pohjoismaisessa ja mannereurooppalaisessa järjestelmässä tavoite on 50,000 Hz. Jos kulutus ylittää tuotannon, taajuus laskee. Jos tuotanto ylittää kulutuksen, taajuus nousee.</p>
+          <p style="margin-top:20px;color:var(--tx2)">Ennen tämä hoidettiin suurilla laitoksilla, jotka säätivät tuotantoaan. Sääriippuvaisen tuotannon kasvaessa ja säädettävän kapasiteetin poistuessa kantaverkkoyhtiö ostaa tätä säätökykyä markkinoilta — myös akuilta.</p>
+          <p style="margin-top:20px;color:var(--tx2)">Akku sopii tähän poikkeuksellisen hyvin, koska se reagoi sekunneissa ja voi sekä ottaa vastaan että syöttää.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="dark">
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">Tuotteet</p>
+        <h2 class="sec-title">Reservituotteet ja mitä kukin vaatii akulta</h2>
+        <p class="sec-lede">Eri tuotteet edellyttävät eri reaktionopeutta ja eri kestoa. Kesto määrää akun energiamitoituksen suhteessa tehoon — tämä on se kohta, jossa väärin mitoitettu järjestelmä ei kelpaa siihen markkinaan, jolle se myytiin.</p>
+        <table class="tbl">
+          <thead>
+            <tr><th>Tuote</th><th>Mitä se tekee</th><th>Vaatimus akulta</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>FCR-N</td>
+              <td>Taajuuden jatkuva hienosäätö normaalitilanteessa. Reagoi pieniinkin poikkeamiin.</td>
+              <td>Kyky sekä ottaa että antaa tehoa symmetrisesti. Vaatii tyypillisesti pisintä kestoa molempiin suuntiin.</td>
+            </tr>
+            <tr>
+              <td>FCR-D</td>
+              <td>Häiriöreservi. Aktivoituu vasta, kun taajuus poikkeaa merkittävästi — esimerkiksi kun suuri tuotantoyksikkö irtoaa verkosta.</td>
+              <td>Nopea aktivoituminen, lyhyempi kesto. Yleisin lähtökohta yritys- ja teollisuuskokoluokan akuille.</td>
+            </tr>
+            <tr>
+              <td>aFRR</td>
+              <td>Automaattinen taajuuden palautus. Vie taajuuden takaisin tavoitearvoon FCR:n jälkeen.</td>
+              <td>Pidempi kesto ja jatkuva ohjattavuus. Vaatii enemmän energiaa suhteessa tehoon.</td>
+            </tr>
+            <tr>
+              <td>mFRR</td>
+              <td>Manuaalinen reservi. Aktivoidaan käskystä pidempikestoisiin tilanteisiin.</td>
+              <td>Pisin kesto. Harvemmin yrityskokoluokan akun ensisijainen tuote.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin-top:26px;color:var(--tx2d);font-size:16px">Tarkat kestovaatimukset ja tekniset ehdot määrittelee kantaverkkoyhtiö — Suomessa Fingrid, Virossa Elering — ja ne muuttuvat. Käytämme aina voimassa olevaa ehtoa emmekä muistinvaraista lukua.</p>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Miten kohde pääsee markkinalle</p>
+      <div class="steps">
+        <div class="step">
+          <span class="idx">01</span>
+          <div><h4>Aggregaattori</h4><p>Yksittäinen teollisuusakku on liian pieni osallistuakseen suoraan. Aggregaattori kokoaa useita kohteita yhdeksi tarjoukseksi markkinalle, hoitaa tarjoamisen ja jakaa tuoton. Aggregaattori — ei laitetoimittaja — määrittää mihin tuotteisiin kohde kelpaa.</p></div>
+          <span class="dur">Pakollinen</span>
+        </div>
+        <div class="step">
+          <span class="idx">02</span>
+          <div><h4>Esikvalifiointi</h4><p>Kantaverkkoyhtiö edellyttää, että yksikkö osoittaa täyttävänsä tuotteen tekniset vaatimukset. Tämä on mittauksin todennettava prosessi, ei ilmoitusasia.</p></div>
+          <span class="dur">Ennen tuloja</span>
+        </div>
+        <div class="step">
+          <span class="idx">03</span>
+          <div><h4>Mittaus ja tiedonsiirto</h4><p>Reaaliaikainen mittaustiedon vaihto on edellytys osallistumiselle. Suuremmissa kohteissa vaatimukset ovat tiukemmat.</p></div>
+          <span class="dur">Tekninen ehto</span>
+        </div>
+        <div class="step">
+          <span class="idx">04</span>
+          <div><h4>Verkkoyhtiön hyväksyntä</h4><p>Eri prosessi kuin kantaverkkoyhtiön. Jakeluverkkoyhtiö päättää liittymäkohtaisesti, mitä liittymään saa kytkeä ja millä ehdoilla.</p></div>
+          <span class="dur">Ensin</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="dark">
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">Tärkein kohta tällä sivulla</p>
+        <div class="split">
+          <div><h2 class="sec-title">Miksi emme julkaise tuottolukuja</h2></div>
+          <div>
+            <p class="sec-lede">Jokainen akkutarjous sisältää takaisinmaksuluvun. Ratkaisevaa on, mille oletuksille se on rakennettu — ja kuka seisoo niiden takana vielä viidentenä vuonna.</p>
+            <p style="margin-top:20px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Reservihinnat vaihtelevat tunneittain</strong> ja määräytyvät markkinalla. Kukaan ei tiedä ennalta, mitä ne ovat ensi vuonna.</p>
+            <p style="margin-top:16px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Ne ovat laskusuunnassa.</strong> Suuren mittakaavan varastointi tulee sekä Suomen että Viron markkinoille. Kun sata megawattia varastointikapasiteettia tulee reservimarkkinalle, hinnat puristuvat. Se ei ole ennuste vaan laskutoimitus.</p>
+            <p style="margin-top:16px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Emme tiedä, miten kohde kvalifioituu</strong>, ennen kuin aggregaattori on sen arvioinut. Se arvio ei ole olemassa siinä vaiheessa, kun useimmat tarjoukset kirjoitetaan.</p>
+            <p style="margin-top:24px;font-family:'Archivo',sans-serif;font-weight:600;font-size:19px;color:var(--dk-hd);letter-spacing:-.015em">Luvun, jonka annamme, on kestettävä tarkastelu vielä viidentenä vuonna. Siksi rakennamme laskelman säästöille ja esitämme reservitulon lisänä: aggregaattorin omana arviona, jonka rinnalla on skenaario siitä, mitä tapahtuu, jos hinnat puolittuvat.</p>
+            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Jos hanke toimii vain silloin, kun reservihinnat pitävät, sanomme sen. Se tarkoittaa, että hanke on hauras, ja se kannattaa tietää ennen allekirjoitusta eikä toisena vuonna.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Käytännön työkalu</p>
+      <h2 class="sec-title">Kolme kysymystä mille tahansa toimittajalle</h2>
+      <div class="qa">
+        <div><h4>1 · Erottele säästöt ja reservitulo. Mikä on takaisinmaksu pelkillä säästöillä?</h4><p>Erottelu on hyvän laskelman tuntomerkki — ilman sitä takaisinmaksulukua ei voi arvioida.</p></div>
+        <div><h4>2 · Mikä takaisinmaksu on, jos reservihinnat puolittuvat?</h4><p>Vastaus kertoo, onko hanke kestävä vai riippuuko se markkinasta, jota kukaan ei hallitse.</p></div>
+        <div><h4>3 · Kuka tuotti reserviarvion ja mitä hän on valmis laittamaan kirjallisesti?</h4><p>Reserviarvio on luotettavimmillaan aggregaattorin omana — sen tekijän, joka kohteen lopulta kvalifioi ja tuoton tilittää.</p></div>
+      </div>
+      <div class="callout">
+        <p>Nämä kolme kysymystä erottavat analyysin myyntipuheesta. Hyvä toimittaja vastaa niihin mielellään — ja kirjallisesti.</p>
+      </div>
+    </div>
+  </section>
+  <div class="dark">
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">Miksi tämä on tärkeämpää kuin yksi kohde</p>
+        <div class="split">
+          <div>
+            <h2 class="sec-title">Jokainen asentamamme akku on liiketoimintapäätös. Yhdessä ne ovat jotain muuta.</h2>
+          </div>
+          <div>
+            <p class="sec-lede">Helmikuussa 2025 Baltian maat irtautuivat Venäjän sähköverkosta ja synkronoituivat Manner-Euroopan kanssa. Suomi on osa pohjoismaista järjestelmää. Näitä kahta yhdistävät kaapelit Suomenlahden alla — kaapelit, joita on vaurioitettu jo useammin kuin kerran.</p>
+            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Molemmat järjestelmät lisäävät sääriippuvaista tuotantoa ja menettävät säädettävää kapasiteettia, joka ennen tasapainotti niitä. Molemmat tarvitsevat samaa asiaa: joustoa, hajautettuna, sekunneissa reagoivana.</p>
+            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Yksi suuri akku on yksi kohde ja yksi vikaantumispiste. Kymmenentuhatta akkua kymmenentuhannen teollisuusliittymän takana — jokainen tuottaen omistajalleen rahaa — on alueellista infrastruktuuria, jota ei katkaista ankkurilla ja jonka omistavat ne, jotka sitä käyttävät.</p>
+            <p style="margin-top:24px;font-family:'Archivo',sans-serif;font-weight:600;font-size:19px;color:var(--dk-hd);letter-spacing:-.015em">Energiaomavaraisuutta ei rakenneta julistuksilla. Sen rakentavat yritykset, jotka asentavat akun, koska se maksaa itsensä takaisin — yksi kohde kerrallaan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a href="/" class="brand" style="font-size:19px"><img src="/assets/mark.webp" alt="" style="height:36px;width:auto;vertical-align:middle;margin-right:12px;margin-top:-4px">SAMA<span>·</span>ENERGIA</a>
+        <p style="margin-top:18px;max-width:36ch;color:var(--muted-lt);font-size:16px">Energiavarastot ja aurinkosähkö yrityksille. Rehellinen analyysi, verkkoyhtiön hyväksyntä ennen hankintaa, kattava dokumentaatio.</p>
+        <p style="margin-top:20px" class="mono">SUOMI · EESTI</p>
+      </div>
+      <div>
+        <h5>Palvelut</h5>
+        <a href="/energiavarastot/">Energiavarastot</a>
+        <a href="/aurinko-ja-akku/">Aurinkosähkö + akku</a>
+        <a href="/prosessi/">Näin se etenee</a>
+        <a href="/yhteystiedot/">Kohdekartoitus</a>
+      </div>
+      <div>
+        <h5>Tietoa</h5>
+        <a href="/reservimarkkinat/">Reservimarkkinat</a>
+        <a href="/ajankohtaista/">Ajankohtaista</a>
+        <a href="/meista/">Meistä</a>
+        <a href="/yhteystiedot/">Yhteystiedot</a>
+        <a href="/tietosuoja/">Tietosuojaseloste</a>
+      </div>
+    </div>
+    <div class="legal">
+      SAMA ENERGIA OY · Y-TUNNUS 3647683-3 · ALV-NRO FI36476833 · KOTIPAIKKA HELSINKI<br>
+      madis.maastik@samaenergia.fi · +372 5391 6647 · WHATSAPP +358 46 659 4879 · <a href="/tietosuoja/">TIETOSUOJASELOSTE</a><br>
+      © 2026 SAMA Energia
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="/assets/site.js"></script>
+</body>
+</html>

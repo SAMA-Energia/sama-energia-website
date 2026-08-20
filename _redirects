@@ -1,4 +1,12 @@
+# Domainit: .ee-host laskeutuu ET-sivuille, .com FI-sivuille (301!).
+# Vanhat #/-osoitteet eivät näy palvelimelle — etusivujen inline-shim hoitaa ne.
 https://www.samaenergia.ee/*  https://samaenergia.fi/et/:splat  301!
 https://samaenergia.ee/*      https://samaenergia.fi/et/:splat  301!
 https://www.samaenergia.com/* https://samaenergia.fi/:splat     301!
 https://samaenergia.com/*     https://samaenergia.fi/:splat     301!
+
+# Lähde- ja työkalutiedostoja ei tarjoilla julkisesti
+/src/*      /404.html  404!
+/scripts/*  /404.html  404!
+/CLAUDE.md  /404.html  404!
+/README.md  /404.html  404!

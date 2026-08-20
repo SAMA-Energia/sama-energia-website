@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- GENEROITU TIEDOSTO — älä muokkaa käsin. Lähde: src/fi.html · node scripts/build-pages.mjs -->
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yhteystiedot ja kohdekartoitus | SAMA Energia</title>
+<meta name="description" content="Nopein tapa selvittää, sopiiko energiavarasto kohteeseenne, on maksuton kohdekartoitus. Jättäkää tietonne lomakkeella, niin otamme yhteyttä.">
+<link rel="canonical" href="https://samaenergia.fi/yhteystiedot/">
+<link rel="alternate" hreflang="fi-FI" href="https://samaenergia.fi/yhteystiedot/">
+<link rel="alternate" hreflang="et-EE" href="https://samaenergia.fi/et/kontakt/">
+<link rel="alternate" hreflang="x-default" href="https://samaenergia.fi/yhteystiedot/">
+<meta property="og:title" content="Yhteystiedot ja kohdekartoitus | SAMA Energia">
+<meta property="og:description" content="Nopein tapa selvittää, sopiiko energiavarasto kohteeseenne, on maksuton kohdekartoitus. Jättäkää tietonne lomakkeella, niin otamme yhteyttä.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fi_FI">
+<meta property="og:url" content="https://samaenergia.fi/yhteystiedot/">
+<!-- og:image jätetty tarkoituksella pois: odottaa tunnusmerkkipäätöstä -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23D18A44' d='M12 1 13.76 7.75 19.78 4.22 16.25 10.24 23 12 16.25 13.76 19.78 19.78 13.76 16.25 12 23 10.24 16.25 4.22 19.78 7.75 13.76 1 12 7.75 10.24 4.22 4.22 10.24 7.75 Z'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0E1519">
+<link href="/assets/fonts.css" rel="stylesheet">
+<link href="/assets/site.css" rel="stylesheet">
+</head>
+<body class="t3">
+<a href="#main" class="skip">Siirry sisältöön</a>
+
+<header>
+  <div class="wrap nav">
+    <a href="/" class="brand"><img src="/assets/mark.webp" alt="" style="height:32px;width:auto;vertical-align:middle;margin-right:11px;margin-top:-3px">SAMA<span>·</span>ENERGIA</a>
+    <nav class="menu" id="menu">
+      <a href="/energiavarastot/">Energiavarastot</a>
+      <a href="/aurinko-ja-akku/">Aurinkosähkö + akku</a>
+      <a href="/reservimarkkinat/">Reservimarkkinat</a>
+      <a href="/prosessi/">Näin se etenee</a>
+      <a href="/ajankohtaista/">Ajankohtaista</a>
+      <a href="/meista/">Meistä</a>
+      <a href="/yhteystiedot/" class="navcta">Varaa kartoitus</a>
+      <div class="langsw" aria-label="Kieli / Keel"><a href="/" class="cur" aria-current="true">FI</a><a href="/et/kontakt/" lang="et">EE</a></div>
+    </nav>
+    <button class="burger" id="burger" aria-label="Valikko" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="main">
+<div class="page active" id="p-yhteys">
+  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+    <div class="wrap">
+      <p class="eyebrow">Yhteystiedot</p>
+      <h1 style="font-size:clamp(34px,5.4vw,66px)">Aloitetaan kulutustiedoistanne.</h1>
+      <p class="lede">Nopein tapa selvittää, sopiiko energiavarasto kohteeseenne, on kohdekartoitus. Jättäkää tietonne, niin lähetämme lomakkeen ja kerromme, mitä siihen tarvitaan.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <form class="form" id="ctForm" name="kohdekartoitus" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="kohdekartoitus">
+            <p hidden aria-hidden="true"><label>Jättäkää tämä kenttä tyhjäksi: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <div><label for="f1">Nimi</label><input id="f1" name="nimi" required></div>
+            <div><label for="f2">Yritys</label><input id="f2" name="yritys" required></div>
+            <div><label for="f3">Sähköposti</label><input id="f3" type="email" name="email" required></div>
+            <div><label for="f4">Puhelin</label><input id="f4" type="tel" name="puhelin"></div>
+            <div><label for="f5">Kohteen sijainti</label><input id="f5" name="sijainti"></div>
+            <div><label for="f6">Pääsulake tai vuosikulutus</label><input id="f6" name="kulutus" placeholder="esim. 400 A tai 900 MWh/v"></div>
+            <div class="full"><label for="f7">Onko kohteessa aurinkosähköä?</label>
+              <select id="f7" name="aurinko"><option>Ei</option><option>Kyllä</option><option>Suunnitteilla</option><option>En tiedä</option></select>
+            </div>
+            <div class="full"><label for="f8">Viesti</label><textarea id="f8" name="viesti"></textarea></div>
+            <div class="full"><button type="submit" id="ctSend" class="btn dk" style="border:none;cursor:pointer;font-family:'Archivo',sans-serif">Lähetä</button></div>
+            <p class="full" style="font-size:14.5px;color:var(--muted)">Käsittelemme lähettämänne tiedot vastataksemme yhteydenottoonne. <a href="/tietosuoja/">Tietosuojaseloste</a>.</p>
+            <p class="full ok" id="ctOk" hidden style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1a7a3c">Kiitos — palaamme asiaan arkipäivän kuluessa.<em id="ctDemo" style="color:var(--muted)"> (Esikatselu: lähetys kytketään päälle julkaisun yhteydessä.)</em></p>
+            <p class="full" id="ctErr" hidden style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#A8452E">Lähetys ei onnistunut. Voitte lähettää tiedot myös suoraan sähköpostilla: <a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a>.</p>
+          </form>
+        </div>
+        <div>
+          <p class="eyebrow">Suoraan</p>
+          <p style="font-family:'Archivo',sans-serif;font-weight:700;font-size:26px;letter-spacing:-.02em">Madis Maastik</p>
+          <p class="mono" style="font-size:15px;margin-top:10px;color:var(--tx2)">+372 5391 6647</p>
+          <p class="mono" style="font-size:15px;color:var(--tx2)">WhatsApp +358 46 659 4879</p>
+          <p class="mono" style="font-size:15px;color:var(--tx2)"><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a></p>
+
+          <!-- Ladattavat-osio palautetaan, kun kohdetietolomake- ja prosessi-PDF:t ovat olemassa -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="wrap">
+      <p style="max-width:640px;color:var(--tx2);border-top:1px solid var(--line-dk);padding-top:22px;font-size:15.5px">Rakennamme myös kumppaniverkostoa — sähkösuunnittelijat, sertifioidut urakoitsijat ja kiinteistökehittäjät: ottakaa yhteyttä samalla lomakkeella.</p>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a href="/" class="brand" style="font-size:19px"><img src="/assets/mark.webp" alt="" style="height:36px;width:auto;vertical-align:middle;margin-right:12px;margin-top:-4px">SAMA<span>·</span>ENERGIA</a>
+        <p style="margin-top:18px;max-width:36ch;color:var(--muted-lt);font-size:16px">Energiavarastot ja aurinkosähkö yrityksille. Rehellinen analyysi, verkkoyhtiön hyväksyntä ennen hankintaa, kattava dokumentaatio.</p>
+        <p style="margin-top:20px" class="mono">SUOMI · EESTI</p>
+      </div>
+      <div>
+        <h5>Palvelut</h5>
+        <a href="/energiavarastot/">Energiavarastot</a>
+        <a href="/aurinko-ja-akku/">Aurinkosähkö + akku</a>
+        <a href="/prosessi/">Näin se etenee</a>
+        <a href="/yhteystiedot/">Kohdekartoitus</a>
+      </div>
+      <div>
+        <h5>Tietoa</h5>
+        <a href="/reservimarkkinat/">Reservimarkkinat</a>
+        <a href="/ajankohtaista/">Ajankohtaista</a>
+        <a href="/meista/">Meistä</a>
+        <a href="/yhteystiedot/">Yhteystiedot</a>
+        <a href="/tietosuoja/">Tietosuojaseloste</a>
+      </div>
+    </div>
+    <div class="legal">
+      SAMA ENERGIA OY · Y-TUNNUS 3647683-3 · ALV-NRO FI36476833 · KOTIPAIKKA HELSINKI<br>
+      madis.maastik@samaenergia.fi · +372 5391 6647 · WHATSAPP +358 46 659 4879 · <a href="/tietosuoja/">TIETOSUOJASELOSTE</a><br>
+      © 2026 SAMA Energia
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="/assets/site.js"></script>
+</body>
+</html>

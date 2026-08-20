@@ -1,0 +1,416 @@
+/* Teema A — VERKKO/KUPARI, johdettu kaheksakand-tunnuksesta */
+:root{
+  --ink:#0D1712;
+  --panel:#152420;
+  --panel-2:#1D2F28;
+  --paper:#EBEDE8;
+  --white:#FFFFFF;
+  --signal:#D18A44;
+  --signal-hi:#E09A55;
+  --muted:#67736C;
+  --muted-lt:#99A69D;
+  --tx2:#3C4842;
+  --tx2d:#B7C3BA;
+  --tx1d:#CCD5CD;
+  --signal-ink:#A9663B;
+  --glass:rgba(13,23,18,.94);
+  --line:rgba(255,255,255,.14);
+  --line-dk:rgba(13,23,18,.16);
+  --wrap:1180px;
+  --gut:clamp(20px,5vw,64px);
+}
+/* Tuotantoteema: Ilta & Kupari 3.5 "Elävä Ilta" — muuttujat sulautettu; valaistuskerros tyylien lopussa. */
+:root{--ink:#0E1519;--panel:#18232B;--panel-2:#22303A;--paper:#EAEBE6;--signal:#D68F47;--signal-hi:#E8A45C;--signal-ink:#A9663B;--glass:rgba(14,21,25,.94);--muted:#6C7A85;--muted-lt:#9AA7B0;--tx2:#3B4850;--tx2d:#B6C0C7;--tx1d:#C9D1D7;--line-dk:rgba(14,21,25,.16)}
+
+/* Johdetut pintamuuttujat määritellään BODYLLA: teemaluokat (body.tX) ylikirjoittavat --ink/--paper
+   samalla elementillä, joten substituutio näkee teeman arvot. :rootissa ketjut jäätyivät teeman 1
+   väreihin — tämä oli 18.8. illalla havaitun teemasekaannuksen syy. */
+body{--dk:var(--ink);--dk-tx:var(--paper);--dk-hd:var(--white);--on-signal:var(--ink);--trace-mid:rgba(255,255,255,.18)}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:'Newsreader',Georgia,serif;
+  font-size:clamp(17px,1.05vw,19px);line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4,.disp{font-family:'Archivo',system-ui,sans-serif;letter-spacing:-.022em;line-height:1.04;font-weight:700}
+.mono{font-family:'IBM Plex Mono',monospace;font-variant-numeric:tabular-nums}
+a{color:inherit}
+/* Linkit nakyviksi molemmissa teemoissa ja molemmilla pinnoilla */
+main a:not(.btn){text-decoration:underline;text-decoration-color:var(--signal-ink);text-decoration-thickness:1.5px;text-underline-offset:3px}
+main a:not(.btn):hover{text-decoration-thickness:2.5px}
+main .dark a:not(.btn),main .hero a:not(.btn){text-decoration-color:var(--signal)}
+.legal a{display:inline;padding:0;color:var(--muted-lt);text-decoration:underline;text-decoration-color:var(--signal);text-underline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.dark{background:var(--dk);color:var(--dk-tx)}
+.dark h1,.dark h2,.dark h3{color:var(--dk-hd)}
+
+/* ---------- eyebrow ---------- */
+.eyebrow{
+  font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--muted);
+  display:flex;align-items:center;gap:12px;margin-bottom:24px;
+}
+.dark .eyebrow{color:var(--muted-lt)}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--signal);flex:none}
+
+/* ---------- nav ---------- */
+header{position:sticky;top:0;z-index:60;background:var(--glass);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;height:68px}
+.brand{font-family:'Archivo',sans-serif;font-weight:800;font-size:17px;letter-spacing:.12em;text-transform:uppercase;color:var(--dk-hd);text-decoration:none;white-space:nowrap;flex-shrink:0}
+.brand span{color:var(--signal)}
+.menu{display:flex;gap:18px;align-items:center}
+.menu a{
+  font-family:'Archivo',sans-serif;font-size:13.5px;font-weight:500;letter-spacing:.01em;
+  color:var(--muted-lt);text-decoration:none;padding:6px 0;border-bottom:1px solid transparent;transition:.18s;white-space:nowrap
+}
+.menu a:hover,.menu a.on{color:var(--dk-hd);border-bottom-color:var(--signal)}
+/* Navcta perii etusivun premium-CTA:n kuparikäsittelyn (liukuväri, viiste, valokantit, kiilto) */
+.navcta{
+  font-family:'Archivo',sans-serif;font-size:15px;font-weight:600;letter-spacing:.01em;
+  background:linear-gradient(180deg,var(--signal-hi) 0%,var(--signal) 52%,color-mix(in srgb,var(--signal) 80%,#000) 100%);
+  color:var(--on-signal)!important;padding:12px 26px 12px 22px;text-decoration:none;flex-shrink:0;
+  border-bottom:none!important;white-space:nowrap;display:inline-block;transition:.18s;
+  clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.32),inset 0 -1px 0 rgba(0,0,0,.26);
+  position:relative;overflow:hidden
+}
+.navcta::before{
+  content:"";position:absolute;top:0;bottom:0;left:-45%;width:32%;
+  background:linear-gradient(105deg,transparent,rgba(255,255,255,.2),transparent);
+  transform:skewX(-18deg);transition:left .55s ease;pointer-events:none
+}
+.navcta:hover{
+  background:linear-gradient(180deg,color-mix(in srgb,var(--signal-hi) 82%,#fff) 0%,var(--signal) 55%,color-mix(in srgb,var(--signal) 78%,#000) 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.26)
+}
+.navcta:hover::before{left:115%}
+.navcta:active{box-shadow:inset 0 3px 8px rgba(0,0,0,.32)}
+.langsw{display:flex;gap:3px;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em}
+.langsw a{color:var(--muted-lt);text-decoration:none;padding:6px 8px;border:1px solid transparent;transition:.18s}
+.langsw a.cur{color:var(--dk-hd);border-color:var(--line)}
+.langsw a:hover{color:var(--dk-hd)}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--dk-tx);width:42px;height:38px;cursor:pointer;font-size:17px}
+@media(max-width:1320px){
+  .menu{position:fixed;inset:68px 0 auto 0;background:var(--dk);flex-direction:column;align-items:stretch;gap:0;padding:8px var(--gut) 26px;border-bottom:1px solid var(--line);display:none}
+  .menu.open{display:flex}
+  .menu a{padding:14px 0;border-bottom:1px solid var(--line)}
+  .navcta{margin-top:16px;text-align:center;padding:14px}
+  /* Kielivalinta burger-valikossa: .menu a nollaa vaakapehmusteen, joten palautetaan se */
+  .menu .langsw{margin-top:20px;gap:10px}
+  .menu .langsw a{padding:11px 18px;border:1px solid var(--line)}
+  .burger{display:block}
+}
+
+/* ---------- hero ---------- */
+.hero{background:var(--dk);color:var(--dk-tx);padding:clamp(56px,9vw,104px) 0 0;position:relative;overflow:hidden}
+.hero h1{
+  font-size:clamp(38px,6.6vw,82px);font-weight:800;max-width:16ch;
+  color:var(--dk-hd);margin-bottom:26px
+}
+.hero .lede{font-size:clamp(18px,1.55vw,22px);max-width:54ch;color:var(--tx1d);line-height:1.58}
+.hero .lede strong{color:var(--dk-hd);font-weight:500}
+.herometa{
+  margin-top:36px;display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;
+  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-lt)
+}
+.btnrow{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.btn{
+  font-family:'Archivo',sans-serif;font-size:15px;font-weight:600;letter-spacing:.01em;
+  background:var(--signal);color:var(--on-signal);padding:15px 26px;text-decoration:none;display:inline-block;transition:.18s
+}
+.btn:hover{background:var(--signal-hi);transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--dk-tx);border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--signal);color:var(--dk-hd);background:transparent}
+.btn.dk{background:var(--ink);color:var(--paper)}
+.btn.dk:hover{background:var(--panel)}
+
+/* ---------- SIGNATURE: frequency instrument ---------- */
+.freq{margin-top:clamp(48px,7vw,84px);border-top:1px solid var(--line);padding-top:26px;padding-bottom:clamp(40px,6vw,64px)}
+.freqhead{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.freqhead .lab{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-lt)}
+.trace{width:100%;height:clamp(84px,11vw,130px);display:block}
+.trace path{fill:none;stroke:var(--signal);stroke-width:1.4;vector-effect:non-scaling-stroke}
+.trace .mid{stroke:var(--trace-mid);stroke-width:1;stroke-dasharray:3 5}
+.grids{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);margin-top:22px;border:1px solid var(--line)}
+.gcell{background:var(--dk);padding:18px 20px}
+.gcell .n{font-family:'IBM Plex Mono',monospace;font-size:clamp(26px,3.6vw,40px);font-weight:500;color:var(--dk-hd);line-height:1}
+.gcell .n em{font-style:normal;font-size:.45em;color:var(--muted-lt);margin-left:6px}
+.gcell .t{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--signal);margin-bottom:10px}
+.gcell .s{font-size:14px;color:var(--muted-lt);margin-top:8px;line-height:1.45}
+.freqnote{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);margin-top:14px;letter-spacing:.04em}
+@media(max-width:640px){.grids{grid-template-columns:1fr}}
+
+/* ---------- sections ---------- */
+section{padding:clamp(56px,8vw,104px) 0}
+.sec-title{font-size:clamp(28px,3.9vw,50px);max-width:22ch;margin-bottom:22px}
+.sec-lede{font-size:clamp(18px,1.4vw,21px);max-width:62ch;color:var(--tx2)}
+.dark .sec-lede{color:var(--tx2d)}
+.rule{height:1px;background:var(--line-dk);margin:0}
+.dark .rule{background:var(--line)}
+
+/* principles */
+.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dk);border:1px solid var(--line-dk);margin-top:52px}
+.tri > div{background:var(--paper);padding:clamp(26px,3vw,38px)}
+.tri h3{font-size:22px;margin-bottom:14px;letter-spacing:-.015em}
+.tri p{font-size:16.5px;color:var(--tx2);line-height:1.6}
+.tri .num{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:var(--signal-ink);margin-bottom:16px;display:block}
+.segico{width:26px;height:26px;display:block;margin-bottom:18px;fill:none;stroke:var(--signal-ink);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.doorlab{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:var(--signal);display:block;margin-bottom:14px}
+.sysdia{width:100%;height:auto;display:block}
+.sysdia rect,.sysdia line,.sysdia polyline,.sysdia circle{fill:none;stroke:var(--tx2d);stroke-width:1.5}
+.sysdia .bus{stroke-width:2.5}
+.sysdia .sigst{stroke:var(--signal)}
+.sysdia .ctrl{stroke:var(--signal);stroke-dasharray:4 5;stroke-width:1.2}
+.sysdia text{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;fill:var(--tx2d)}
+.sysdia .sig{fill:var(--signal);stroke:none}
+.duo{grid-template-columns:repeat(2,1fr)}
+@media(max-width:860px){.duo{grid-template-columns:1fr}}
+/* Hero-valokuva: kuvakerros + häivytykset. Häivytysgradientit ovat kuvakompositointia,
+   eivät käyttöliittymäkoristelua — tekstivyöhyke vasemmalla, saumaton liitos pintaan alhaalla. */
+.hero.heroimgd{position:relative;overflow:hidden}
+.heroimg{position:absolute;top:0;left:0;width:100%;height:66%;object-fit:cover;object-position:center 40%}
+.heroscrim{position:absolute;top:0;left:0;width:100%;height:66%;background:
+  linear-gradient(100deg,rgba(8,14,22,.62) 0%,rgba(8,14,22,.28) 46%,rgba(8,14,22,0) 70%),
+  linear-gradient(180deg,rgba(8,14,22,.2) 0%,rgba(8,14,22,0) 34%,var(--dk) 94%)}
+@media(max-width:700px){.heroimg,.heroscrim{height:58%}}
+.hero.heroimgd>.wrap{position:relative;z-index:1}
+@media(max-width:700px){.heroimg{object-position:70% 45%}}
+/* Konsepti-B siirrot: käyttötilat sysdia-kaaviossa (aurinko) + lähdetilastot (ajankohtaista) */
+/* Etusivu-uudistus: tarjooma + luokiteltu hyötyruudukko + referenssipaikka */
+.offer{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+@media(max-width:860px){.offer{grid-template-columns:1fr;gap:14px}}
+.offer>div{background:var(--paper);border:1.5px solid var(--line-dk);border-top:4px solid var(--signal);padding:24px 22px 22px;position:relative;transition:transform .3s cubic-bezier(.3,1.4,.5,1),border-color .25s}
+.offer>div:hover{transform:translateY(-3px);border-color:var(--signal-ink);border-top-color:var(--signal)}
+.onum{position:absolute;top:14px;right:16px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.1em;color:var(--signal-ink);opacity:.75}
+.ochip{width:48px;height:48px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:color-mix(in srgb,var(--signal) 13%,transparent);border:1px solid color-mix(in srgb,var(--signal) 32%,transparent)}
+.oico{width:28px;height:28px;fill:none;stroke:var(--signal-ink);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.offer b{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:12px;letter-spacing:.14em;color:var(--ink);display:block;margin-bottom:6px}
+.offer p{font-size:15px;color:var(--tx2);max-width:none}
+.bene{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:860px){.bene{grid-template-columns:1fr;gap:14px}}
+.bene>div{background:var(--paper);border:1.5px solid var(--line-dk);padding:26px 22px 20px;position:relative;transition:transform .3s cubic-bezier(.3,1.4,.5,1),border-color .25s}
+.bene>div::before{content:"";position:absolute;top:-1.5px;left:-1.5px;right:-1.5px;height:4px;transition:height .25s}
+.bene>div.c-las::before{background:#1F8A5B}
+.bene>div.c-ske::before{background:var(--signal)}
+.bene>div.c-koh::before{background:#4A6A82}
+.bene>div:hover{transform:translateY(-4px);border-color:var(--signal-ink)}
+.bene>div:hover::before{height:6px}
+.bene h4{font-family:'Archivo',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.01em;margin-bottom:8px}
+.bene p{font-size:14.5px;color:var(--tx2);max-width:none;min-height:66px}
+.brow{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px;padding-top:13px;border-top:1px solid var(--line-dk)}
+.tg{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;padding:4px 9px;font-weight:500;border:1px solid transparent}
+.tg.las{background:rgba(31,138,91,.13);color:#1F8A5B;border-color:rgba(31,138,91,.35)}
+.tg.ske{background:rgba(214,143,71,.15);color:var(--signal-ink);border-color:rgba(169,102,59,.4)}
+.tg.koh{background:rgba(74,106,130,.13);color:#4A6A82;border-color:rgba(74,106,130,.35)}
+.morelink{font-size:13.5px;font-weight:500;text-decoration:none;color:var(--signal-ink);white-space:nowrap}
+.morelink::after{content:"→";display:inline-block;margin-left:5px;transition:transform .3s cubic-bezier(.3,1.4,.5,1)}
+.bene>div:hover .morelink::after{transform:translateX(5px)}
+.refslot{border:1.5px solid var(--line-dk);border-left:4px solid var(--signal-ink);padding:18px 20px;margin-top:36px;max-width:660px}
+/* Tarjoomakorttien kuvat img-kerroksina (CSS-taustakuvien data-URIt suodattuvat esikatselussa;
+   hero todisti, että <img data:> toimii). Tumma peruspinta takaa luettavuuden, vaikka kuva puuttuisi.
+   Magnific: lJymyQFgv9 aurinko · ksgdLdf16B varasto · Cq5YueNEEy verkko.
+   Julkaisussa: irrota data-URIt tiedostoiksi assets/of-*.webp. */
+.offer>div{min-height:252px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;background:#10181E}
+.offer>div .ochip{margin-bottom:auto}
+.offer>div b{margin-top:14px;color:#F4F6F3}
+.offer>div .ochip,.offer>div b,.offer>div p{position:relative;z-index:1}
+.offer>div .onum{z-index:1;color:#E09A55;opacity:.9}
+.offer>div p{color:rgba(238,241,238,.85)}
+.offer>div .ochip{background:rgba(8,14,20,.5);border-color:rgba(224,154,85,.55)}
+.offer>div .oico{stroke:#E09A55}
+.ofimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.of-sun .ofimg{object-position:center 30%}
+.ofscrim{position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(8,14,20,.38) 0%,rgba(8,14,20,.84) 100%)}
+.of-batt .ofscrim{background:linear-gradient(180deg,rgba(8,14,20,.45) 0%,rgba(8,14,20,.84) 100%)}
+
+@media(prefers-reduced-motion:reduce){.bene>div,.bene>div::before,.morelink::after,.offer>div{transition:none}}
+.ops{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
+.ops button{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;padding:9px 15px;background:transparent;border:1px solid var(--line);color:var(--tx2d);cursor:pointer}
+.ops button.act{background:var(--signal);color:var(--on-signal);border-color:var(--signal)}
+.opsdia{width:100%;height:auto;display:block;margin-top:18px}
+.op-node{fill:var(--panel);stroke:var(--line);stroke-width:1.5}
+.op-node.op-sig{stroke:var(--signal)}
+.op-lbl{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;fill:var(--tx2d)}
+.op-path{fill:none;stroke:var(--line);stroke-width:2}
+.op-flow{fill:none;stroke:var(--signal);stroke-width:2.5;stroke-linecap:round;opacity:0;transition:opacity .35s}
+.op-flow.on{opacity:1;stroke-dasharray:7 12;animation:opdash 1.3s linear infinite}
+.op-flow.rv.on{animation:opdashrev 1.3s linear infinite}
+.op-fill{fill:var(--signal);opacity:.9;transition:height .5s ease,y .5s ease}
+#opVerkko{transition:opacity .35s}
+#opVerkko.off{opacity:.32}
+.opscap{margin-top:18px;color:var(--tx2d);font-size:16.5px;min-height:3em;max-width:56ch}
+@keyframes opdash{to{stroke-dashoffset:-38}}
+@keyframes opdashrev{to{stroke-dashoffset:38}}
+@media (prefers-reduced-motion:reduce){.op-flow.on{animation:none;stroke-dasharray:none}.op-fill{transition:none}}
+.statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dk);border:1px solid var(--line-dk);margin-top:18px}
+.statrow>div{background:var(--dk);padding:16px 14px}
+.statrow b{display:block;font-family:'IBM Plex Mono',monospace;font-size:clamp(19px,2.6vw,26px);font-weight:500;color:var(--signal);margin-bottom:6px}
+.statrow span{font-size:13px;color:var(--dk-tx);display:block}
+@media(max-width:640px){.statrow{grid-template-columns:1fr}}
+@media(max-width:860px){.tri{grid-template-columns:1fr}}
+
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:start}
+@media(max-width:860px){.split{grid-template-columns:1fr}}
+
+/* list */
+.checks{list-style:none;margin-top:26px}
+.checks li{padding:15px 0 15px 32px;border-bottom:1px solid var(--line-dk);position:relative;font-size:16.5px;line-height:1.55}
+.dark .checks li{border-bottom-color:var(--line)}
+.checks li::before{content:"";position:absolute;left:0;top:24px;width:14px;height:1px;background:var(--signal)}
+.checks li:last-child{border-bottom:none}
+
+/* process */
+.steps{margin-top:48px;border-top:1px solid var(--line-dk)}
+.step{display:grid;grid-template-columns:64px 1fr 190px;gap:24px;padding:26px 0;border-bottom:1px solid var(--line-dk);align-items:start}
+.step .idx{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--signal-ink);padding-top:4px;letter-spacing:.06em}
+.step h4{font-size:20px;margin-bottom:8px}
+.step p{font-size:16px;color:var(--tx2)}
+.step .dur{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--muted);letter-spacing:.06em;text-align:right;padding-top:6px}
+@media(max-width:760px){.step{grid-template-columns:44px 1fr}.step .dur{grid-column:2;text-align:left;padding-top:6px}}
+
+/* callout */
+.callout{background:var(--panel);color:var(--dk-tx);padding:clamp(28px,4vw,48px);border-left:3px solid var(--signal);margin-top:52px}
+.callout p{font-size:clamp(19px,1.9vw,26px);line-height:1.44;font-family:'Archivo',sans-serif;font-weight:500;letter-spacing:-.015em;color:var(--dk-hd)}
+.callout .sub{font-family:'Newsreader',serif;font-size:16.5px;color:var(--tx2d);margin-top:18px;font-weight:400;letter-spacing:0}
+
+/* table */
+.tbl{width:100%;border-collapse:collapse;margin-top:34px;font-size:15.5px}
+.tbl th{
+  font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+  text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--ink);color:var(--ink);font-weight:600;vertical-align:bottom
+}
+.dark .tbl th{color:var(--signal);border-bottom-color:var(--line)}
+.tbl td{padding:16px 14px 16px 0;border-bottom:1px solid var(--line-dk);vertical-align:top;line-height:1.5}
+.dark .tbl td{border-bottom-color:var(--line);color:var(--tx2d)}
+.tbl td:first-child{font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;white-space:nowrap}
+.dark .tbl td:first-child{color:var(--dk-hd)}
+@media(max-width:700px){
+  .tbl,.tbl tbody,.tbl tr,.tbl td{display:block;width:100%}
+  .tbl thead{display:none}
+  .tbl tr{border-bottom:1px solid var(--line-dk);padding:14px 0}
+  .tbl td{border:none;padding:3px 0}
+  .tbl td:first-child{margin-bottom:6px}
+}
+
+/* faq / accordion-ish blocks */
+.qa{border-top:1px solid var(--line-dk);margin-top:40px}
+.qa > div{border-bottom:1px solid var(--line-dk);padding:26px 0}
+.qa h4{font-size:19px;margin-bottom:10px}
+.qa p{font-size:16.5px;color:var(--tx2)}
+.dark .qa{border-top-color:var(--line)}
+.dark .qa > div{border-bottom-color:var(--line)}
+.dark .qa p{color:var(--tx2d)}
+
+/* form */
+.form{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.form .full{grid-column:1/-1}
+label{display:block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+input,select,textarea{
+  width:100%;padding:13px 14px;border:1px solid var(--line-dk);background:var(--white);
+  font-family:'Newsreader',serif;font-size:16px;color:var(--ink);border-radius:0
+}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--signal-ink);outline-offset:-1px;border-color:transparent}
+textarea{min-height:118px;resize:vertical}
+@media(max-width:640px){.form{grid-template-columns:1fr}}
+
+/* footer */
+footer{background:var(--dk);color:var(--muted-lt);padding:clamp(48px,6vw,76px) 0 32px;font-size:15px}
+.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:clamp(28px,4vw,56px)}
+footer h5{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--signal);margin-bottom:16px;font-weight:500}
+footer a{color:var(--muted-lt);text-decoration:none;display:block;padding:5px 0}
+footer a:hover{color:var(--dk-hd)}
+.legal{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.9;color:var(--muted);letter-spacing:.03em}
+@media(max-width:760px){.fgrid{grid-template-columns:1fr}}
+
+/* page switching */
+.page{display:none}
+.page.active{display:block}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+.skip{position:absolute;left:-9999px;background:var(--signal);color:var(--on-signal);padding:10px 16px;z-index:99}
+.skip:focus{left:var(--gut);top:10px}
+
+/* ===== KOE: MAGNEETTI-CTA · etusivun napit · POISTO: tämä lohko + samanniminen JS-lohko ===== */
+@media (hover:hover) and (pointer:fine){
+  #p-home .btn{transition:transform .5s cubic-bezier(.3,1.6,.5,1),background .18s;will-change:transform}
+  #p-home .btn::after{content:"→";display:inline-block;opacity:0;width:0;margin-left:0;transform:translateX(-8px);transition:opacity .2s,transform .3s cubic-bezier(.3,1.6,.5,1),margin-left .3s,width .3s}
+  #p-home .btn:hover::after{opacity:1;transform:none;margin-left:10px;width:.72em}
+  #p-home .btn:active{transform:scale(.965)!important}
+}
+@media (prefers-reduced-motion:reduce){
+  #p-home .btn,#p-home .btn::after{transition:none}
+}
+
+/* ===== KOE 2: PREMIUM-CTA · kupari materiaalina — liukuväri, viistetty kulma, valokantit.
+   HUOM: brändisäännöt kieltävät liukuvärit ja varjot; tämä lohko on tietoinen, helposti
+   peruttava kokeilu. POISTO: tämä lohko (magneetti-lohkot voivat jäädä). ===== */
+@media (hover:hover) and (pointer:fine), (hover:none){
+  #p-home .btn:not(.ghost):not(.dk){
+    background:linear-gradient(180deg,var(--signal-hi) 0%,var(--signal) 52%,color-mix(in srgb,var(--signal) 80%,#000) 100%);
+    clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.32),inset 0 -1px 0 rgba(0,0,0,.26);
+    position:relative;overflow:hidden;
+  }
+  #p-home .btn:not(.ghost):not(.dk):hover{
+    background:linear-gradient(180deg,color-mix(in srgb,var(--signal-hi) 82%,#fff) 0%,var(--signal) 55%,color-mix(in srgb,var(--signal) 78%,#000) 100%);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.26),0 12px 26px -14px color-mix(in srgb,var(--signal) 60%,transparent);
+  }
+  #p-home .btn:not(.ghost)::before{
+    content:"";position:absolute;top:0;bottom:0;left:-45%;width:32%;
+    background:linear-gradient(105deg,transparent,rgba(255,255,255,.2),transparent);
+    transform:skewX(-18deg);transition:left .55s ease;pointer-events:none;
+  }
+  #p-home .btn:not(.ghost):hover::before{left:115%}
+  #p-home .btn.ghost{
+    clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);
+    position:relative;
+  }
+  /* Viisteen reunaviiva: 1px-reunus ei voi seurata clip-pathin leikkausta, joten ääriviiva
+     suljetaan piirretyllä diagonaalilla, joka perii reunuksen värin myös hoverissa. */
+  #p-home .btn.ghost::before{
+    content:"";position:absolute;top:4.6px;right:-1.8px;width:14.6px;height:1.3px;
+    background:var(--line);transform:rotate(45deg);pointer-events:none;
+  }
+  #p-home .btn.ghost:hover::before{background:var(--signal)}
+  #p-home .btn.ghost:hover{
+    background:color-mix(in srgb,var(--signal) 12%,transparent);
+    border-color:var(--signal);
+  }
+  #p-home .btn.dk{
+    background:linear-gradient(180deg,var(--panel) 0%,var(--ink) 58%,color-mix(in srgb,var(--ink) 72%,#000) 100%);
+    clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.12),inset 0 -1px 0 rgba(0,0,0,.5);
+    position:relative;overflow:hidden;
+  }
+  #p-home .btn.dk:hover{
+    background:linear-gradient(180deg,var(--panel-2) 0%,var(--panel) 58%,var(--ink) 100%);
+  }
+  #p-home .btn:active{
+    box-shadow:inset 0 3px 8px rgba(0,0,0,.32)!important;
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  #p-home .btn::before{transition:none}
+}
+
+/* ===== ILTA & KUPARI 3.5 · VALAISTUSKERROS (entinen KOE 3, nyt tuotantoa) =====
+   Sama paletti kuin t3, päälle valaistuskerros: aamunkoiton pintagradientit, kuparihehku
+   aktiivisissa elementeissä, kevyt syvyys korteissa. POISTO: tämä lohko + 3.5-nappi. ===== */
+.hero{background:linear-gradient(180deg,#0A1118 0%,#0E1519 52%,#122029 100%);position:relative}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(900px 360px at 82% -12%,rgba(255,198,132,.085),transparent 58%)}
+.hero>.wrap{position:relative;z-index:1}
+.dark{background:linear-gradient(180deg,#111C24 0%,#0E1519 100%)}
+.gcell{box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+.tri>div,.bene>div,.offer>div{box-shadow:0 14px 34px -24px rgba(13,22,26,.45)}
+.trace path{filter:drop-shadow(0 0 4px rgba(246,190,122,.5))}
+.op-flow.on{filter:drop-shadow(0 0 3px rgba(246,190,122,.6))}
+.btn:not(.ghost){box-shadow:0 10px 24px -14px rgba(8,14,18,.55)}
+.hero h1{background:linear-gradient(105deg,#F4F5F2 30%,#C9D3CE 85%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+@media (prefers-reduced-motion:reduce){.trace path,.op-flow.on{filter:none}}

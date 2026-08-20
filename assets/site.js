@@ -1,0 +1,132 @@
+/* SAMA Energia — jaettu sivuskripti (FI + ET).
+   Kielikohtaiset tekstit asuvat HTML:ssä (mm. data-cap-attribuutit), eivät tässä tiedostossa.
+   Entinen hash-reititin on poistettu: jokainen sivu on oma URL-osoitteensa. */
+
+document.getElementById('burger').addEventListener('click',function(){
+  var m=document.getElementById('menu');
+  var open=m.classList.toggle('open');
+  this.setAttribute('aria-expanded',open?'true':'false');
+});
+
+/* Yhteydenottolomake — Netlify Forms. FORM_LIVE käännetään trueksi julkaisun yhteydessä;
+   siihen asti lomake toimii esikatselutilassa eikä lähetä mitään. */
+var FORM_LIVE=true;
+var cf=document.getElementById('ctForm');
+if(cf)cf.addEventListener('submit',function(e){
+  e.preventDefault();
+  var ok=document.getElementById('ctOk'),err=document.getElementById('ctErr'),
+      demo=document.getElementById('ctDemo'),btn=document.getElementById('ctSend');
+  err.hidden=true;
+  if(!FORM_LIVE){ok.hidden=false;return;}
+  demo.hidden=true;btn.disabled=true;btn.style.opacity='.6';
+  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},
+    body:new URLSearchParams(new FormData(cf)).toString()})
+  .then(function(r){
+    btn.disabled=false;btn.style.opacity='';
+    if(r.ok){ok.hidden=false;cf.reset();}else{err.hidden=false;}
+  })
+  .catch(function(){btn.disabled=false;btn.style.opacity='';err.hidden=false;});
+});
+
+/* ---------- signature: frequency trace ----------
+   Illustrative only. To make it live, poll Fingrid's open data API
+   (real-time frequency) and Elering's live API, then feed values in.
+   Time-based rAF scroll: renders at display refresh rate, pauses in
+   background tabs, honours prefers-reduced-motion. */
+(function(){
+  var path=document.getElementById('wave');
+  if(!path)return;
+  var W=1200,H=130,MID=65,SEG=5,N=242,pts=[],t=0;
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* Siemen 453912 — deterministinen satunnaisuus: jokainen lataus toistaa saman käyrän. */
+  var _s=453912>>>0;
+  function rnd(){_s|=0;_s=_s+0x6D2B79F5|0;var r=Math.imul(_s^_s>>>15,1|_s);r=r+Math.imul(r^r>>>7,61|r)^r;return((r^r>>>14)>>>0)/4294967296;}
+  function val(){
+    t++;
+    var base=Math.sin(t*0.07)*7+Math.sin(t*0.19)*4+Math.sin(t*0.031)*9;
+    var noise=(rnd()-0.5)*3.4;
+    var event=(rnd()<0.012)?(rnd()<0.5?-22:18):0;
+    return Math.max(10,Math.min(H-10,MID+base+noise+event));
+  }
+  for(var i=0;i<N;i++)pts.push(val());
+  function draw(off){
+    var d='M'+(0-off).toFixed(1)+' '+pts[0].toFixed(1);
+    for(var i=1;i<N;i++)d+=' L'+(i*SEG-off).toFixed(1)+' '+pts[i].toFixed(1);
+    path.setAttribute('d',d);
+  }
+  draw(0);
+  if(reduce)return;
+  var last=null,off=0;
+  function frame(now){
+    if(last===null)last=now;
+    var dt=Math.min(now-last,100);last=now;
+    off+=dt*0.05;
+    while(off>=SEG){off-=SEG;pts.shift();pts.push(val());}
+    draw(off);
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+
+/* ===== KONSEPTI-B SIIRROT: kuormituskäyrä + käyttötilakaavio =====
+   Tilojen kuvaustekstit tulevat nappien data-cap-attribuuteista (kielikohtaiset). */
+(function(){
+  var cap=document.getElementById('opsCap');
+  if(!cap)return;
+  var F={sol:document.getElementById('opSol'),batt:document.getElementById('opBatt'),
+    chg:document.getElementById('opChg'),grid:document.getElementById('opGrid'),
+    res:document.getElementById('opRes'),load:document.getElementById('opLoad')};
+  var fill=document.getElementById('opFill');
+  var verkko=document.getElementById('opVerkko');
+  var CFG={
+    sun:{on:['sol','load','chg'],lvl:.75,grid:true},
+    peak:{on:['grid','load','batt'],lvl:.45,grid:true},
+    night:{on:['grid','chg'],lvl:.92,grid:true},
+    res:{on:['batt','res'],lvl:.6,grid:true},
+    out:{on:['batt','load'],lvl:.35,grid:false}};
+  var btns=document.querySelectorAll('.ops button');
+  function set(st){
+    var c=CFG[st];
+    Object.keys(F).forEach(function(k){F[k].classList.toggle('on',c.on.indexOf(k)>=0);});
+    var hh=Math.round(10*c.lvl)+2;
+    fill.setAttribute('height',hh);fill.setAttribute('y',288-hh);
+    verkko.classList.toggle('off',!c.grid);
+    btns.forEach(function(b){
+      var act=b.dataset.s===st;
+      b.classList.toggle('act',act);
+      if(act)cap.textContent=b.dataset.cap||'';
+    });
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.s);});});
+  set('sun');
+})();
+
+/* ===== KOE: MAGNEETTI-CTA · pari CSS-lohkolle tyylien lopussa · poista molemmat peruaksesi ===== */
+(function(){
+  if(!window.matchMedia('(hover:hover) and (pointer:fine)').matches)return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var R=110,MAX=7,raf=null,mx=0,my=0;
+  document.addEventListener('mousemove',function(e){
+    mx=e.clientX;my=e.clientY;
+    if(!raf)raf=requestAnimationFrame(update);
+  });
+  function update(){
+    raf=null;
+    var home=document.getElementById('p-home');
+    if(!home||!home.classList.contains('active'))return;
+    var btns=home.querySelectorAll('.btn');
+    for(var i=0;i<btns.length;i++){
+      var b=btns[i],r=b.getBoundingClientRect();
+      var dx=mx-(r.left+r.width/2),dy=my-(r.top+r.height/2);
+      var ox=Math.max(Math.abs(dx)-r.width/2,0),oy=Math.max(Math.abs(dy)-r.height/2,0);
+      var d=Math.sqrt(ox*ox+oy*oy);
+      if(d<R){
+        var c=Math.sqrt(dx*dx+dy*dy)||1,p=1-d/R;p*=p;
+        b.style.transition='transform .09s ease-out';
+        b.style.transform='translate('+(dx/c*p*MAX).toFixed(1)+'px,'+(dy/c*p*MAX).toFixed(1)+'px) scale('+(1+p*.03).toFixed(3)+')';
+      }else if(b.style.transform){
+        b.style.transition='';b.style.transform='';
+      }
+    }
+  }
+})();
