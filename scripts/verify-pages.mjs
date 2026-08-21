@@ -31,8 +31,13 @@ const pages = [
 let errors = 0;
 const err = msg => { errors++; console.error('VIRHE: ' + msg); };
 
+const ET_SET = new Set(ET.filter(Boolean));
+
 function resolves(path) {
-  const clean = path.split('#')[0].split('?')[0];
+  let clean = path.split('#')[0].split('?')[0];
+  /* paljas ET-slug palvellaan et/-kansiosta _redirectsin yleisellä uudelleenkirjoituksella */
+  const seg = clean.split('/')[1];
+  if (ET_SET.has(seg)) clean = '/et' + clean;
   const abs = join(ROOT, clean.replace(/^\//, ''));
   if (existsSync(abs)) {
     const st = statSync(abs);
@@ -80,9 +85,12 @@ for (const p of pages) {
   const noindex = html.includes('<meta name="robots" content="noindex">');
   if (UNLISTED.has(p.slug) && !noindex) err(`${where} — noindex puuttuu kiitossivulta`);
   if (!UNLISTED.has(p.slug) && noindex) err(`${where} — noindex ei kuulu tälle sivulle`);
+  // näkyvissä URL:eissä ei /et/-etuliitettä — millään sivulla
+  if (/(?:href|action)="\/et\//.test(html)) err(`${where} — /et/-etuliitteinen linkki julkaistussa HTML:ssä`);
+
   // kiitossivuihin ei linkitetä navigaatiosta eikä jalasta
   if (!UNLISTED.has(p.slug)) {
-    for (const s of ['/kiitos/', '/et/aitah/']) {
+    for (const s of ['/kiitos/', '/aitah/', '/et/aitah/']) {
       const re = new RegExp(`<(nav|footer)[\\s\\S]*?href="${s.replace(/\//g, '\\/')}"[\\s\\S]*?</\\1>`);
       if (re.test(html)) err(`${where} — kiitossivu linkitetty navigaatiossa/jalassa (${s})`);
     }
@@ -162,12 +170,36 @@ if (!fiForm || !etForm) err('Netlify-lomake puuttuu yhteyssivulta');
 else {
   if (fiForm.name !== 'kohdekartoitus' || etForm.name !== 'kohdekartoitus') err('lomakkeen nimi väärin');
   if (fiForm.action !== '/kiitos/') err(`FI-lomakkeen action väärin: ${fiForm.action}`);
-  if (etForm.action !== '/et/aitah/') err(`ET-lomakkeen action väärin: ${etForm.action}`);
+  if (etForm.action !== '/aitah/') err(`ET-lomakkeen action väärin: ${etForm.action}`);
   if (!fiForm.hidden || !etForm.hidden) err('form-name-piilokenttä puuttuu');
   if (!fiForm.honeypot || !etForm.honeypot) err('honeypot puuttuu');
   if (fiForm.fields !== etForm.fields) err(`lomakekentät eroavat kielittäin:\n  FI: ${fiForm.fields}\n  ET: ${etForm.fields}`);
   if (fiForm.required !== 'email,nimi' || etForm.required !== 'email,nimi') {
     err(`pakollisina oltava täsmälleen nimi + email — FI: [${fiForm.required}] ET: [${etForm.required}]`);
+  }
+}
+
+// FI- ja ET-slugijoukkojen on oltava erilliset — muuten _redirectsin yleinen
+// ET-uudelleenkirjoitus voisi varjostaa FI-sivun (kova ehto)
+const overlap = FI.filter(s => s && ET.includes(s));
+if (overlap.length) err(`FI- ja ET-slugit leikkaavat: ${overlap} — yleiset uudelleenkirjoitukset varjostaisivat FI-sivuja`);
+
+// jokaisella ET-slugilla on _redirectsissä yleinen uudelleenkirjoitus JA .fi-hostin 301:t;
+// jokainen ET-sivun sisäinen linkki osuu tunnettuun sääntöön
+{
+  const rules = readFileSync(join(ROOT, '_redirects'), 'utf8');
+  for (const s of ET_SET) {
+    if (!new RegExp(`^/${s}/\\*\\s+/et/${s}/:splat\\s+200\\s*$`, 'm').test(rules)) err(`_redirects: yleinen uudelleenkirjoitus puuttuu slugilta ${s}`);
+    if (!rules.includes(`https://samaenergia.fi/${s}/*`)) err(`_redirects: .fi-hostin 301 puuttuu slugilta ${s}`);
+    if (!rules.includes(`https://www.samaenergia.fi/${s}/*`)) err(`_redirects: www..fi-hostin 301 puuttuu slugilta ${s}`);
+  }
+  for (const p of pages.filter(p => p.lang === 'et')) {
+    const html = readFileSync(join(ROOT, p.url.replace(/^\//, ''), 'index.html'), 'utf8');
+    for (const m of html.matchAll(/(?:href|action)="(\/[^"]*)"/g)) {
+      const seg = m[1].split('/')[1]?.split('#')[0]?.split('?')[0] ?? '';
+      const ok = seg === '' || seg === 'assets' || ET_SET.has(seg);
+      if (!ok) err(`${p.url} — ET-sivun sisäiselle linkille ${m[1]} ei ole uudelleenkirjoitussääntöä`);
+    }
   }
 }
 
@@ -204,9 +236,12 @@ try {
   else for (const c of man.changes) {
     if (!['new', 'changed'].includes(c.kind)) { err(`review.json: tuntematon kind "${c.kind}"`); continue; }
     if (c.kind === 'changed' && typeof c.prev !== 'string') err(`review.json: ${c.page} ${c.sectionId} — prev-teksti puuttuu`);
-    const pg = pages.find(p => p.url === c.page);
+    /* manifestissa NÄKYVÄT polut: ET-alasivut paljaalla slugilla -> tiedosto et/-kansiosta */
+    const seg = c.page.split('/')[1] ?? '';
+    const filePage = ET_SET.has(seg) ? '/et' + c.page : c.page;
+    const pg = pages.find(p => p.url === filePage);
     if (!pg) { err(`review.json: tuntematon sivu ${c.page}`); continue; }
-    const html = readFileSync(join(ROOT, c.page.replace(/^\//, ''), 'index.html'), 'utf8');
+    const html = readFileSync(join(ROOT, filePage.replace(/^\//, ''), 'index.html'), 'utf8');
     if (!html.includes(`id="${c.sectionId}"`)) err(`review.json: osiota ${c.sectionId} ei ole sivulla ${c.page}`);
   }
 } catch (e) {

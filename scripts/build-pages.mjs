@@ -244,11 +244,14 @@ function renderPage(lang, page, source, annotatedHtml) {
   const pageHtml = cleanOpen + annotatedHtml.slice(page.openTag.length);
 
   /* navigaatio: aktiivinen linkki + kielivalitsin ristiin vastinsivulle */
+  /* ET-lähteen sisäiset linkit ovat NÄKYVIÄ URL:ejä ilman /et/-etuliitettä
+     (et/-kansio on vain tiedostosijainti uudelleenkirjoituksen takana) */
+  const visUrl = lang === 'et' ? (page.slug ? `/${page.slug}/` : '/') : url;
   let pre = source.preMain;
   const menuStart = pre.indexOf('<nav class="menu"');
   const menuEnd = pre.indexOf('</nav>', menuStart);
   let menu = pre.slice(menuStart, menuEnd);
-  menu = menu.replace(`<a href="${url}">`, `<a href="${url}" class="on">`);
+  menu = menu.replace(`<a href="${visUrl}">`, `<a href="${visUrl}" class="on">`);
   /* kielivalitsin osoittaa vastinsivun KANONISEEN hostiin (absoluuttinen URL):
      tuotannossa oikea host heti; branch-esikatselussa hyppää tuotantoon — tiedostettu. */
   menu = lang === 'fi'
@@ -424,8 +427,18 @@ function buildReviewManifest(langData) {
 
       const curText = normalizeCurrent(source.full);
       const hunks = diffHunks(baseText, curText, tmp, lang);
+      const baseLines = baseText.split('\n');
+      const curLines = curText.split('\n');
+      /* Hunkki, jonka TEKSTISISÄLTÖ on muuttumaton (vain attribuutti-, tagi- tai
+         kommenttimuutos, esim. linkkien uudelleenkirjoitus), ei leimaa osiota —
+         katselmus näyttäisi muuten "muuttuneen" osion tyhjällä sanadiffillä. */
+      const hunkTextSame = h => {
+        const oldT = textOf(baseLines.slice(h.oldStart - 1, h.oldStart - 1 + h.oldCount).join(' '));
+        const newT = textOf(curLines.slice(h.newStart - 1, h.newStart - 1 + h.newCount).join(' '));
+        return oldT === newT;
+      };
       const flagHunks = hunks
-        .filter(h => h.newCount > 0)
+        .filter(h => h.newCount > 0 && !hunkTextSame(h))
         .map(h => ({ ...h, kind: h.oldCount === 0 ? 'new' : 'changed' }));
 
       /* rivinumero -> sivu -> osio */
@@ -456,7 +469,6 @@ function buildReviewManifest(langData) {
       }
 
       /* muuttuneille osioille talteen aiempi tekstisisältö (sanadiffi selaimessa) */
-      const baseLines = baseText.split('\n');
       for (const [key, kind] of seen) {
         const [page, sectionId] = key.split('|');
         const entry = { page, sectionId, kind };
@@ -512,7 +524,11 @@ for (const lang of Object.keys(LANGS)) {
     emit(url.replace(/^\//, '') + 'index.html', renderPage(lang, page, source, html));
     /* sitemapiin kanoninen URL: FI .fi-hostilla, ET .ee-hostilla ilman /et/-etuliitettä */
     if (!UNLISTED.has(page.slug)) allUrls.push(lang === 'fi' ? BASE + url : etCanonical(page.slug));
-    pageMeta.push({ url, start: page.start, end: page.end, units });
+    /* katselmusmanifestiin NÄKYVÄ polku: ET-alasivut paljaalla slugilla (esikatselun
+       yleinen uudelleenkirjoitus palvelee ne siellä), ET-etusivu /et/ (ainoa polku,
+       jolla se on esikatselussa katsottavissa — juurisääntö on hostikohtainen) */
+    const revUrl = lang === 'fi' ? url : (page.slug ? `/${page.slug}/` : '/et/');
+    pageMeta.push({ url: revUrl, start: page.start, end: page.end, units });
   }
   langData.push({ lang, source, pageMeta });
 }
