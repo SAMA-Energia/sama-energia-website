@@ -34,7 +34,10 @@
       <a href="/et/protsess/">Kuidas see kulgeb</a>
       <a href="/et/uudised/" class="on">Uudised</a>
       <a href="/et/meist/">Meist</a>
-      <a href="/et/kontakt/" class="navcta">Broneeri kaardistus</a>
+      <!-- CTA-verb "Küsi", mitte "Broneeri": broneerimissüsteemi ei ole — vorm viib ühenduse
+           võtmiseni. Võimalik hilisem täiendus: ise majutatud kalender (ilma kolmanda osapoole
+           manusteta), misjärel verb võib naasta broneerimise juurde. Sama muudatus FI-allikas. -->
+      <a href="/et/kontakt/" class="navcta">Küsi kaardistust</a>
       <div class="langsw" aria-label="Keel / Kieli"><a href="/ajankohtaista/" lang="fi">FI</a><a href="/et/" class="cur" aria-current="true">EE</a></div>
     </nav>
     <button class="burger" id="burger" aria-label="Menüü" aria-expanded="false">☰</button>
@@ -43,22 +46,38 @@
 
 <main id="main">
 <div class="page active" id="p-ajankohtaista">
-  <div class="hero" style="padding-bottom:clamp(40px,6vw,64px)">
+  <div id="rev-uudised-1" class="hero" style="padding-bottom:clamp(40px,6vw,64px)">
     <div class="wrap">
       <p class="eyebrow">Uudised</p>
       <h1 style="font-size:clamp(32px,5vw,60px)">Mis turul toimub — koos allikatega.</h1>
       <p class="lede">Me ei palu teil meid uskuda. Kogume siia esmaallikaid — põhivõrguettevõtete ja ametiasutuste enda avaldatut — ja ütleme lühidalt, miks need on tööstusobjekti omanikule olulised. Meie enda analüüsid avaldatakse sellel lehel.</p>
     </div>
   </div>
-  <section>
+  <section id="rev-uudised-2">
     <div class="wrap" style="max-width:880px">
       <p class="eyebrow">Lugemist mujalt</p>
+      <!-- Järjekord teadlik: Eesti turu uudised eespool, üldeuroopalik ja Soome järel. -->
       <div class="qa" style="margin-top:14px">
         <div>
+          <p class="mono" style="font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">Tähtaeg 31.12.2026 · Elering · Hinnakiri ja tüüptingimused</p>
+          <h4><a href="https://elering.ee/hinnakiri-ja-tuuptingimused" target="_blank" rel="noopener noreferrer">Salvestusüksuse mõõtmise üleminekuperiood lõpeb 31.12.2026&nbsp;↗</a></h4>
+          <p>Eleringi tingimuste järgi võib energiasalvestusüksuse mõõtmine üleminekuperioodil 01.01.2026–31.12.2026 tugineda erisustele standardnõuetest. Pärast seda peab mõõtelahendus vastama nõuetele täies mahus — ja nõuetekohane mõõtmine on ühtlasi eeldus, et salvestatud ja võrku tagastatud energia võrgutasu käsitletaks õigesti.</p>
+          <p style="margin-top:12px;color:var(--tx2)">Miks see on oluline: kui salvesti on plaanis, on mõõtelahendus lihtsam projekteerida kohe õigesti kui hiljem ümber ehitada. See on aus kiirustamise põhjus — avalik ja dokumenteeritud tähtaeg, mitte müügivõte. Iga objekti puhul kontrollime kehtivat tingimust, mitte mälu järgi numbrit.</p>
+          <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:10px">ALLIKAS: ELERING · HINNAKIRI JA TÜÜPTINGIMUSED · DOKUMENTEERITUD</p>
+        </div>
+        <div>
+          <p class="mono" style="font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">Jõustus 01.01.2026 · ELTS § 71 lg 10¹ · Riigi Teataja</p>
+          <h4><a href="https://www.riigiteataja.ee/akt/264412?leiaKehtiv" target="_blank" rel="noopener noreferrer">Võrgutasu topeltarvestus salvestatud energialt lõppes&nbsp;↗</a></h4>
+          <p>Elektrituruseaduse § 71 lõike 10¹ kohaselt ei arvestata alates 01.01.2026 võrgutasu energialt, mille salvestusüksus salvestab ja võrku tagastab. Seni maksis salvesti võrgutasu sisuliselt kaks korda — nii laadides kui ka tagastades. Vabastus eeldab seaduses ja võrguettevõtja tingimustes sätestatud eelduste täitmist, sealhulgas nõuetekohast mõõtmist.</p>
+          <p style="margin-top:12px;color:var(--tx2)">Miks see on oluline: topeltarvestus oli üks suuremaid Eesti salvestiprojektide tasuvust koormanud tegureid. Selle lõppemine muudab arvutust iga objekti kasuks — aga ainult siis, kui mõõtmine on korraldatud nõuetekohaselt (vt eelmine punkt).</p>
+          <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:10px">ALLIKAS: RIIGI TEATAJA · ELEKTRITURUSEADUS § 71 LG 10¹ · DOKUMENTEERITUD</p>
+        </div>
+        <div>
           <p class="mono" style="font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">Kohustus · tähtaeg 11.10.2026 · Direktiiv (EL) 2023/1791</p>
-          <h4>Energiaauditi kohustus laieneb: piir on edaspidi tarbimine, mitte ettevõtte suurus</h4>
+          <h4><a href="https://eur-lex.europa.eu/legal-content/ET/TXT/?uri=CELEX:32023L1791" target="_blank" rel="noopener noreferrer">Energiaauditi kohustus laieneb: piir on edaspidi tarbimine, mitte ettevõtte suurus&nbsp;↗</a></h4>
           <p>Uuendatud energiatõhususe direktiiv viib kohustusliku energiaauditi piiri ettevõtte suuruselt energiatarbimisele: üle 10 TJ ehk umbes 2 700 MWh aastas tarbivad ettevõtted peavad laskma teha energiaauditi 11.10.2026-ks, kui nad ei võta kasutusele sertifitseeritud energiajuhtimissüsteemi.</p>
-          <p style="margin-top:12px;color:var(--tx2)">Miks see on oluline: audit toodab täpselt selle tarbimisandmestiku, millest salvesti- ja päikeseinvesteering dimensioonitakse. Sama kohustuse võib täita pelga sunnina — või ühtlasi ära kasutada.</p>
+          <p style="margin-top:12px;color:var(--tx2)">Miks see on oluline: audit toodab täpselt selle tarbimisandmestiku, millest salvesti- ja päikeseinvesteering dimensioneeritakse. Sama kohustuse võib täita pelga sunnina — või ühtlasi ära kasutada.</p>
+          <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:10px">ALLIKAS: DIREKTIIV (EL) 2023/1791, ARTIKKEL 11 · EUR-LEX · DOKUMENTEERITUD</p>
         </div>
         <div>
           <p class="mono" style="font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">18.08.2026 · Fingrid · Pressiteade</p>

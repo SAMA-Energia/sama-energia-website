@@ -1,0 +1,114 @@
+{
+ "changes": [
+  {
+   "page": "/",
+   "sectionId": "rev-etusivu-1",
+   "kind": "changed"
+  },
+  {
+   "page": "/",
+   "sectionId": "rev-etusivu-2",
+   "kind": "changed"
+  },
+  {
+   "page": "/",
+   "sectionId": "rev-etusivu-3",
+   "kind": "changed"
+  },
+  {
+   "page": "/",
+   "sectionId": "rev-etusivu-6",
+   "kind": "changed"
+  },
+  {
+   "page": "/energiavarastot/",
+   "sectionId": "rev-energiavarastot-3",
+   "kind": "new"
+  },
+  {
+   "page": "/aurinko-ja-akku/",
+   "sectionId": "rev-aurinko-ja-akku-3",
+   "kind": "changed"
+  },
+  {
+   "page": "/aurinko-ja-akku/",
+   "sectionId": "rev-aurinko-ja-akku-4",
+   "kind": "changed"
+  },
+  {
+   "page": "/yhteystiedot/",
+   "sectionId": "rev-yhteystiedot-2",
+   "kind": "changed"
+  },
+  {
+   "page": "/kiitos/",
+   "sectionId": "rev-kiitos-1",
+   "kind": "new"
+  },
+  {
+   "page": "/ajankohtaista/",
+   "sectionId": "rev-ajankohtaista-2",
+   "kind": "changed"
+  },
+  {
+   "page": "/et/",
+   "sectionId": "rev-etusivu-1",
+   "kind": "changed"
+  },
+  {
+   "page": "/et/",
+   "sectionId": "rev-etusivu-2",
+   "kind": "changed"
+  },
+  {
+   "page": "/et/",
+   "sectionId": "rev-etusivu-3",
+   "kind": "changed"
+  },
+  {
+   "page": "/et/",
+   "sectionId": "rev-etusivu-6",
+   "kind": "changed"
+  },
+  {
+   "page": "/et/energiasalvestid/",
+   "sectionId": "rev-energiasalvestid-3",
+   "kind": "new"
+  },
+  {
+   "page": "/et/energiasalvestid/",
+   "sectionId": "rev-energiasalvestid-4",
+   "kind": "new"
+  },
+  {
+   "page": "/et/paike-ja-aku/",
+   "sectionId": "rev-paike-ja-aku-3",
+   "kind": "changed"
+  },
+  {
+   "page": "/et/paike-ja-aku/",
+   "sectionId": "rev-paike-ja-aku-4",
+   "kind": "changed"
+  },
+  {
+   "page": "/et/reserviturud/",
+   "sectionId": "rev-reserviturud-3",
+   "kind": "changed"
+  },
+  {
+   "page": "/et/kontakt/",
+   "sectionId": "rev-kontakt-2",
+   "kind": "changed"
+  },
+  {
+   "page": "/et/aitah/",
+   "sectionId": "rev-aitah-1",
+   "kind": "new"
+  },
+  {
+   "page": "/et/uudised/",
+   "sectionId": "rev-uudised-2",
+   "kind": "changed"
+  }
+ ]
+}

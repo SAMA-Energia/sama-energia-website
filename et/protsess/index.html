@@ -34,7 +34,10 @@
       <a href="/et/protsess/" class="on">Kuidas see kulgeb</a>
       <a href="/et/uudised/">Uudised</a>
       <a href="/et/meist/">Meist</a>
-      <a href="/et/kontakt/" class="navcta">Broneeri kaardistus</a>
+      <!-- CTA-verb "Küsi", mitte "Broneeri": broneerimissüsteemi ei ole — vorm viib ühenduse
+           võtmiseni. Võimalik hilisem täiendus: ise majutatud kalender (ilma kolmanda osapoole
+           manusteta), misjärel verb võib naasta broneerimise juurde. Sama muudatus FI-allikas. -->
+      <a href="/et/kontakt/" class="navcta">Küsi kaardistust</a>
       <div class="langsw" aria-label="Keel / Kieli"><a href="/prosessi/" lang="fi">FI</a><a href="/et/" class="cur" aria-current="true">EE</a></div>
     </nav>
     <button class="burger" id="burger" aria-label="Menüü" aria-expanded="false">☰</button>
@@ -43,7 +46,7 @@
 
 <main id="main">
 <div class="page active" id="p-prosessi">
-  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+  <div id="rev-protsess-1" class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
     <div class="wrap">
       <p class="eyebrow">Kuidas see kulgeb</p>
       <h1 style="font-size:clamp(34px,5.4vw,66px)">Seitse etappi, ja kui kaua igaüks kestab.</h1>
@@ -51,7 +54,7 @@
     </div>
   </div>
 
-  <section>
+  <section id="rev-protsess-2">
     <div class="wrap">
       <div class="steps" style="margin-top:0;border-top:none">
         <div class="step"><span class="idx">01</span><div><h4>Kvalifitseerimine</h4><p>Täidate objektiandmete vormi: liitumisvõimsus, peakaitse, trafo võimsus, olemasolev tootmine, mõõtekorraldus, paigalduskoht ja kaugus peakilbist, kehtivad elektrilepingud. Analüüsime teie tarbimisandmeid.</p></div><span class="dur">≈ 1 nädal</span></div>

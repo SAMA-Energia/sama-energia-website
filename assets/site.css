@@ -414,3 +414,18 @@ footer a:hover{color:var(--dk-hd)}
 .btn:not(.ghost){box-shadow:0 10px 24px -14px rgba(8,14,18,.55)}
 .hero h1{background:linear-gradient(105deg,#F4F5F2 30%,#C9D3CE 85%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 @media (prefers-reduced-motion:reduce){.trace path,.op-flow.on{filter:none}}
+
+/* ---------- lomakkeen kenttämerkinnät: pakollinen / valinnainen ---------- */
+label .fnote{font-weight:400;text-transform:none;letter-spacing:.04em;color:var(--muted)}
+label .fnote.rq{color:var(--signal-ink)}
+.formsub{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--signal-ink);margin-top:14px;padding-top:18px;border-top:1px solid var(--line-dk)}
+.formsub span{color:var(--muted);text-transform:none;letter-spacing:.04em}
+
+/* ---------- katselmustila (?review=1) ----------
+   Luokat lisätään VAIN client-side site.js:stä review.json-manifestin perusteella.
+   Näitä ei saa koskaan esiintyä staattisessa HTML:ssä (verify-pages.mjs valvoo). */
+.rev-mark{position:relative;outline:2px dashed var(--signal);outline-offset:4px}
+.rev-lab{position:absolute;top:10px;right:10px;z-index:6;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;padding:3px 8px;background:var(--signal);color:var(--on-signal)}
+.rev-banner{position:fixed;left:0;right:0;bottom:0;z-index:95;background:var(--glass);backdrop-filter:blur(10px);border-top:1px solid var(--line);color:var(--muted-lt);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;padding:9px var(--gut);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.rev-banner b{color:var(--signal);font-weight:500}
+.rev-banner a{color:var(--dk-tx);text-decoration:underline;text-decoration-color:var(--signal);text-underline-offset:3px}

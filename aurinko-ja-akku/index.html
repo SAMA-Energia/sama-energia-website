@@ -34,7 +34,10 @@
       <a href="/prosessi/">Näin se etenee</a>
       <a href="/ajankohtaista/">Ajankohtaista</a>
       <a href="/meista/">Meistä</a>
-      <a href="/yhteystiedot/" class="navcta">Varaa kartoitus</a>
+      <!-- CTA-verbi "Pyydä", ei "Varaa": varsinaista ajanvarausjärjestelmää ei ole — lomake johtaa
+           yhteydenottoon. Mahdollinen myöhempi parannus: itse isännöity kalenteri (ei kolmannen
+           osapuolen upotuksia), jolloin verbi voi palata varaamiseen. Sama muutos ET-lähteessä. -->
+      <a href="/yhteystiedot/" class="navcta">Pyydä kartoitus</a>
       <div class="langsw" aria-label="Kieli / Keel"><a href="/" class="cur" aria-current="true">FI</a><a href="/et/paike-ja-aku/" lang="et">EE</a></div>
     </nav>
     <button class="burger" id="burger" aria-label="Valikko" aria-expanded="false">☰</button>
@@ -43,7 +46,7 @@
 
 <main id="main">
 <div class="page active" id="p-aurinko">
-  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+  <div id="rev-aurinko-ja-akku-1" class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
     <div class="wrap">
       <p class="eyebrow">Aurinkosähkö + akku</p>
       <h1 style="font-size:clamp(34px,5.4vw,66px)">Aurinko tuottaa.<br>Akku ajoittaa.</h1>
@@ -51,7 +54,7 @@
     </div>
   </div>
 
-  <section>
+  <section id="rev-aurinko-ja-akku-2">
     <div class="wrap">
       <p class="eyebrow">Kaksi tietä samaan järjestelmään</p>
       <div class="split" style="margin-top:34px">
@@ -71,7 +74,7 @@
 
 
   <div class="dark">
-    <section>
+    <section id="rev-aurinko-ja-akku-3">
       <div class="wrap">
         <p class="eyebrow">Teillä on jo aurinkosähkö</p>
         <h2 class="sec-title">Neljä kysymystä, jotka ratkaistaan ensin.</h2>
@@ -153,12 +156,12 @@
         <div class="callout">
           <p>Kirjallisesti. Valmistajalta ja verkkoyhtiöltänne. Ennen kuin esitämme teille hintaa.</p>
         </div>
-        <div class="btnrow"><a href="/yhteystiedot/" class="btn">Varaa kartoitus kohteeseenne</a></div>
+        <div class="btnrow"><a href="/yhteystiedot/" class="btn">Pyydä kartoitus kohteeseenne</a></div>
       </div>
     </section>
   </div>
 
-  <section>
+  <section id="rev-aurinko-ja-akku-4">
     <div class="wrap">
       <p class="eyebrow">Ei vielä aurinkosähköä?</p>
       <h2 class="sec-title">Kokonaisuus kannattaa suunnitella kerralla.</h2>
@@ -169,7 +172,7 @@
         <div><span class="num">03 · ALUSTA ASTI OIKEIN</span><h3>Tehonhallinta sisään, ei päälle</h3><p>Takasyötön hallinta ja mittaus suunnitellaan järjestelmään alusta asti, eikä niitä soviteta jälkikäteen.</p></div>
         <div><span class="num">04 · YKSI VASTUUTAHO</span><h3>Yksi suunnitelma, yksi toimitus</h3><p>Yksi verkkoyhtiöprosessi ja yksi taho, joka vastaa kokonaisuudesta — suunnittelusta käyttöönottoon ja seurantaan.</p></div>
       </div>
-      <div class="btnrow"><a href="/yhteystiedot/" class="btn">Varaa kohdekartoitus</a></div>
+      <div class="btnrow"><a href="/yhteystiedot/" class="btn">Pyydä kohdekartoitus</a></div>
     </div>
   </section>
 </div>

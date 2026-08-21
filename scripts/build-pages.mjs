@@ -4,21 +4,24 @@
  *
  * Lähteet:  src/fi.html ja src/et.html (yksi lähdetiedosto per kieli).
  * Tuottaa:  / ja /<slug>/index.html (FI), /et/ ja /et/<slug>/index.html (ET),
- *           sitemap.xml sekä _headers (CSP-hash etusivujen hash-shimille).
+ *           sitemap.xml, _headers (CSP-hash etusivujen hash-shimille) sekä
+ *           assets/review.json (katselmustilan manifesti: lähteiden diff origin/mainiin).
  * Ajo:      node scripts/build-pages.mjs   (ei npm-riippuvuuksia)
  *
  * Generoidut tiedostot committoidaan — Netlify julkaisee repon sellaisenaan,
  * build-vaihetta ei ole palvelimella.
  */
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, mkdtempSync, rmSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { dirname, join } from 'node:path';
+import { tmpdir } from 'node:os';
+import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
 /* TODO (2026-08-20): canonical- ja hreflang-URL:t osoittavat .fi-hostiin myös
-   ET-sivuilla, koska samaenergia.ee 301-ohjaa tänne eikä palvele sisältöä.
+   ET-sivuilla, koska samaenergia.ee ei vielä palvele monisivusisältöä natiivisti.
    Kun OÜ on perustettu ja .ee palvelee natiivisti, vaihda ET-sivujen BASE
    (canonical + hreflang + sitemap) .ee-hostiin. */
 const BASE = 'https://samaenergia.fi';
@@ -35,13 +38,18 @@ const PAIRS = [
   ['yhteystiedot', 'kontakt'],
   ['ajankohtaista', 'uudised'],
   ['tietosuoja', 'andmekaitse'],
+  ['kiitos', 'aitah'],
 ];
+/* Lomakkeen kiitossivut: generoidaan ja paritetaan, mutta ei sitemapiin,
+   ei legacy-shimiin eikä navigaatioon. Sivuilla on data-noindex="1". */
+const UNLISTED = new Set(['kiitos', 'aitah']);
+
 const FI_TO_ET = new Map(PAIRS);
 const ET_TO_FI = new Map(PAIRS.map(([f, e]) => [e, f]));
 
 const LANGS = {
-  fi: { src: 'src/fi.html', htmlLang: 'fi', ogLocale: 'fi_FI', url: s => (s ? `/${s}/` : '/') },
-  et: { src: 'src/et.html', htmlLang: 'et', ogLocale: 'et_EE', url: s => (s ? `/et/${s}/` : '/et/') },
+  fi: { src: 'src/fi.html', legacySrc: 'index.html', htmlLang: 'fi', ogLocale: 'fi_FI', url: s => (s ? `/${s}/` : '/') },
+  et: { src: 'src/et.html', legacySrc: 'et/index.html', htmlLang: 'et', ogLocale: 'et_EE', url: s => (s ? `/et/${s}/` : '/et/') },
 };
 const fiUrl = s => LANGS.fi.url(s);
 const etUrl = s => LANGS.et.url(s);
@@ -50,7 +58,7 @@ const etUrl = s => LANGS.et.url(s);
    Vain tunnetut polut (whitelist); kaikki muu jätetään huomiotta.
    Sama skripti molemmilla etusivuilla -> yksi CSP-hash. */
 const SHIM_MAP = Object.fromEntries(
-  PAIRS.filter(([f]) => f).flatMap(([f, e]) => [
+  PAIRS.filter(([f]) => f && !UNLISTED.has(f)).flatMap(([f, e]) => [
     [`#/${f}`, fiUrl(f)],
     [`#/${e}`, etUrl(e)],
   ]),
@@ -67,12 +75,16 @@ function parseSource(file) {
   const bodyOpen = html.indexOf('<body class="t3">');
   const bodyClose = html.lastIndexOf('</body>');
   if (bodyOpen < 0 || bodyClose < 0) throw new Error(`${file}: <body class="t3"> puuttuu`);
-  const body = html.slice(bodyOpen + '<body class="t3">'.length, bodyClose);
+  const bodyStart = bodyOpen + '<body class="t3">'.length;
+  const body = html.slice(bodyStart, bodyClose);
 
   const mainOpen = body.indexOf('<main id="main">');
   const mainClose = body.lastIndexOf('</main>');
   if (mainOpen < 0 || mainClose < 0) throw new Error(`${file}: <main id="main"> puuttuu`);
   return {
+    full: html,
+    /* mainInnerin absoluuttinen offset koko tiedostossa — katselmusdiffin rivikartoitusta varten */
+    mainAbs: bodyStart + mainOpen + '<main id="main">'.length,
     preMain: body.slice(0, mainOpen),
     mainInner: body.slice(mainOpen + '<main id="main">'.length, mainClose),
     postMain: body.slice(mainClose + '</main>'.length),
@@ -103,7 +115,10 @@ function extractPages(mainInner, file) {
       slug: attr('data-slug'),
       title: attr('data-title'),
       desc: attr('data-desc'),
+      noindex: / data-noindex="1"/.test(m[2]),
       openTag: m[0],
+      start: m.index,
+      end,
       html: mainInner.slice(m.index, end),
     });
   }
@@ -111,9 +126,28 @@ function extractPages(mainInner, file) {
   return pages;
 }
 
+/* Osioiden id:t katselmustilaa varten: hero-divit ja <section>-elementit saavat
+   vakaan id:n (olemassa oleva id säilyy). Sama funktio tuottaa sekä sivun HTML:n
+   että manifestin osiorajat, joten ne eivät voi erota toisistaan. */
+function annotateSections(pageHtml, slug) {
+  const key = slug || 'etusivu';
+  let n = 0;
+  const units = [];
+  /* huom: class="hero" tai "hero jotain" — EI esim. "heroscrim" (etuliiteosuma) */
+  const html = pageHtml.replace(/<section\b[^>]*>|<div class="hero(?:"|\s[^"]*")[^>]*>/g, (tag, off) => {
+    n++;
+    const existing = /\bid="([^"]+)"/.exec(tag);
+    const id = existing ? existing[1] : `rev-${key}-${n}`;
+    units.push({ id, offset: off });
+    if (existing) return tag;
+    return tag.replace(/^<(section|div)/, `<$1 id="${id}"`);
+  });
+  return { html, units };
+}
+
 /* ---------- sivun kokoaminen ---------- */
 
-function renderPage(lang, page, source) {
+function renderPage(lang, page, source, annotatedHtml) {
   const L = LANGS[lang];
   const url = L.url(page.slug);
   const isFront = page.slug === '';
@@ -124,8 +158,8 @@ function renderPage(lang, page, source) {
   /* sivun oma div aktiiviseksi; authoring-attribuutit pois julkaistusta sivusta */
   const cleanOpen = page.openTag
     .replace('class="page"', 'class="page active"')
-    .replace(/ data-(slug|title|desc)="[^"]*"/g, '');
-  const pageHtml = cleanOpen + page.html.slice(page.openTag.length);
+    .replace(/ data-(slug|title|desc|noindex)="[^"]*"/g, '');
+  const pageHtml = cleanOpen + annotatedHtml.slice(page.openTag.length);
 
   /* navigaatio: aktiivinen linkki + kielivalitsin ristiin vastinsivulle */
   let pre = source.preMain;
@@ -139,6 +173,7 @@ function renderPage(lang, page, source) {
   pre = pre.slice(0, menuStart) + menu + pre.slice(menuEnd);
 
   const shim = isFront ? `<script>${SHIM}</script>\n` : '';
+  const robots = page.noindex ? `\n<meta name="robots" content="noindex">` : '';
 
   return `<!DOCTYPE html>
 <!-- GENEROITU TIEDOSTO — älä muokkaa käsin. Lähde: ${L.src} · node scripts/build-pages.mjs -->
@@ -147,7 +182,7 @@ function renderPage(lang, page, source) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${page.title}</title>
-<meta name="description" content="${page.desc}">
+<meta name="description" content="${page.desc}">${robots}
 <link rel="canonical" href="${BASE}${url}">
 <link rel="alternate" hreflang="fi-FI" href="${BASE}${fi}">
 <link rel="alternate" hreflang="et-EE" href="${BASE}${et}">
@@ -172,6 +207,125 @@ ${shim}<script src="/assets/site.js"></script>
 `;
 }
 
+/* ---------- katselmustilan manifesti (assets/review.json) ----------
+   Diffaa lähdetiedostot origin/mainia vasten ja kartoittaa muuttuneet rivit
+   ympäröivään osioon. Mainissa diff on tyhjä -> tyhjä manifesti -> ei vaikutusta.
+   Ei koskaan kaada buildia: virhetilanteessa kirjoitetaan tyhjä manifesti + huomautus. */
+
+function git(args) {
+  const r = spawnSync('git', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 32 * 1024 * 1024 });
+  return r;
+}
+
+/* Legacy-normalisointi: jos origin/mainilla ei vielä ole src/-tiedostoja, verrataan
+   vanhaan yksisivulähteeseen. Linkit ja polut normalisoidaan, jotta pelkät
+   URL-migraation mekaaniset muutokset eivät näy "muutoksina" katselmuksessa. */
+function normalizeLegacy(text, lang) {
+  const map = { '#/': lang === 'fi' ? '/' : '/et/' };
+  for (const [f, e] of PAIRS) {
+    if (!f || UNLISTED.has(f)) continue;
+    map[`#/${f}`] = fiUrl(f);
+    map[`#/${e}`] = etUrl(e);
+  }
+  return text
+    .replace(/href="(#\/[^"]*|#\/)"/g, (m, h) => (map[h] ? `href="${map[h]}"` : m))
+    .replace(/(src|href)="assets\//g, '$1="/assets/');
+}
+
+/* Nykylähteestä riisutaan authoring-attribuutit ennen diffiä (rivimäärä ei muutu),
+   jotta pelkkä attribuutti ei leimaa osiota muuttuneeksi legacy-vertailussa. */
+function normalizeCurrent(text) {
+  return text
+    .replace(/ data-(slug|title|desc|noindex)="[^"]*"/g, '')
+    .replace(/ data-cap="[^"]*"/g, '');
+}
+
+function changedLines(baseText, curText, tmp, tag) {
+  const a = join(tmp, `base-${tag}`);
+  const b = join(tmp, `cur-${tag}`);
+  writeFileSync(a, baseText);
+  writeFileSync(b, curText);
+  const r = git(['diff', '--no-index', '--unified=0', '--', a, b]);
+  if (r.status !== 0 && r.status !== 1) throw new Error(`git diff epäonnistui: ${r.stderr}`);
+  const out = [];
+  for (const m of (r.stdout || '').matchAll(/^@@ -\d+(?:,(\d+))? \+(\d+)(?:,(\d+))? @@/gm)) {
+    const oldCount = m[1] === undefined ? 1 : Number(m[1]);
+    const start = Number(m[2]);
+    const count = m[3] === undefined ? 1 : Number(m[3]);
+    if (count === 0) continue; // pelkkä poisto — ei riviä uudessa tiedostossa
+    out.push({ start, count, kind: oldCount === 0 ? 'new' : 'changed' });
+  }
+  return out;
+}
+
+/* Rivit, jotka ovat pelkkää HTML-kommenttia: eivät näy sivulla, joten ne eivät
+   saa leimata osiota muuttuneeksi katselmuksessa. */
+function commentOnlyLines(text) {
+  const stripped = text.replace(/<!--[\s\S]*?-->/g, m => m.replace(/[^\n]/g, ' '));
+  const a = text.split('\n'), b = stripped.split('\n'), set = new Set();
+  for (let i = 0; i < a.length; i++) if (a[i].trim() && !b[i].trim()) set.add(i + 1);
+  return set;
+}
+
+function buildReviewManifest(langData) {
+  const manifest = { changes: [] };
+  const tmp = mkdtempSync(join(tmpdir(), 'sama-review-'));
+  try {
+    for (const { lang, source, pageMeta } of langData) {
+      const L = LANGS[lang];
+      let baseR = git(['show', `origin/main:${L.src}`]);
+      let baseText = null;
+      if (baseR.status === 0) baseText = baseR.stdout;
+      else {
+        const legacyR = git(['show', `origin/main:${L.legacySrc}`]);
+        if (legacyR.status === 0) baseText = normalizeLegacy(legacyR.stdout, lang);
+      }
+      if (baseText === null) throw new Error(`origin/main-vertailukohtaa ei löytynyt (${L.src})`);
+
+      const curText = normalizeCurrent(source.full);
+      const hunks = changedLines(baseText, curText, tmp, lang);
+
+      /* rivinumero -> sivu -> osio */
+      const lineOf = abs => source.full.slice(0, abs).split('\n').length;
+      const pages = pageMeta.map(p => ({
+        url: p.url,
+        startLine: lineOf(source.mainAbs + p.start),
+        endLine: lineOf(source.mainAbs + p.end),
+        units: p.units.map(u => ({ id: u.id, line: lineOf(source.mainAbs + p.start + u.offset) })),
+      }));
+
+      const comments = commentOnlyLines(source.full);
+      const seen = new Map(); // "url|id" -> kind
+      for (const h of hunks) {
+        for (let line = h.start; line < h.start + h.count; line++) {
+          if (comments.has(line)) continue;
+          const pg = pages.find(p => line >= p.startLine && line <= p.endLine);
+          if (!pg) continue;
+          let unit = null;
+          for (const u of pg.units) if (u.line <= line) unit = u; else break;
+          if (!unit) continue;
+          const key = `${pg.url}|${unit.id}`;
+          /* osio on "new" vain jos sen avausrivi itsessään on lisätty rivi */
+          const isNew = h.kind === 'new' && unit.line >= h.start && unit.line < h.start + h.count;
+          if (!seen.has(key)) seen.set(key, isNew ? 'new' : 'changed');
+          else if (seen.get(key) === 'new' && !isNew) seen.set(key, 'new');
+        }
+      }
+      for (const [key, kind] of seen) {
+        const [page, sectionId] = key.split('|');
+        manifest.changes.push({ page, sectionId, kind });
+      }
+    }
+  } catch (e) {
+    manifest.changes = [];
+    manifest.note = `katselmusdiff ei käytettävissä: ${e.message}`;
+    console.warn('HUOM: ' + manifest.note);
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+  return manifest;
+}
+
 /* ---------- ajo ---------- */
 
 const written = [];
@@ -183,6 +337,7 @@ function emit(relPath, content) {
 }
 
 const allUrls = [];
+const langData = [];
 for (const lang of Object.keys(LANGS)) {
   const L = LANGS[lang];
   const source = parseSource(L.src);
@@ -194,14 +349,18 @@ for (const lang of Object.keys(LANGS)) {
     throw new Error(`${L.src}: slugit eivät vastaa PAIRS-taulua.\n  odotettu: ${expected}\n  löytyi:   ${actual}`);
   }
 
+  const pageMeta = [];
   for (const page of pages) {
     const url = L.url(page.slug);
-    emit(url.replace(/^\//, '') + 'index.html', renderPage(lang, page, source));
-    allUrls.push(url);
+    const { html, units } = annotateSections(page.html, page.slug);
+    emit(url.replace(/^\//, '') + 'index.html', renderPage(lang, page, source, html));
+    if (!UNLISTED.has(page.slug)) allUrls.push(url);
+    pageMeta.push({ url, start: page.start, end: page.end, units });
   }
+  langData.push({ lang, source, pageMeta });
 }
 
-/* sitemap.xml — molemmat kielet */
+/* sitemap.xml — molemmat kielet; kiitossivut (noindex) jätetään pois */
 allUrls.sort();
 emit('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -219,5 +378,9 @@ emit('_headers', `# GENEROITU: node scripts/build-pages.mjs — älä muokkaa k�
   Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-${SHIM_HASH}'; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
 `);
 
-console.log(`OK — ${written.length} tiedostoa:`);
+/* assets/review.json — katselmustilan manifesti */
+const manifest = buildReviewManifest(langData);
+emit('assets/review.json', JSON.stringify(manifest, null, 1) + '\n');
+
+console.log(`OK — ${written.length} tiedostoa (review-osioita: ${manifest.changes.length}):`);
 for (const f of written) console.log('  ' + f);

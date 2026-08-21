@@ -34,7 +34,10 @@
       <a href="/prosessi/">Näin se etenee</a>
       <a href="/ajankohtaista/">Ajankohtaista</a>
       <a href="/meista/" class="on">Meistä</a>
-      <a href="/yhteystiedot/" class="navcta">Varaa kartoitus</a>
+      <!-- CTA-verbi "Pyydä", ei "Varaa": varsinaista ajanvarausjärjestelmää ei ole — lomake johtaa
+           yhteydenottoon. Mahdollinen myöhempi parannus: itse isännöity kalenteri (ei kolmannen
+           osapuolen upotuksia), jolloin verbi voi palata varaamiseen. Sama muutos ET-lähteessä. -->
+      <a href="/yhteystiedot/" class="navcta">Pyydä kartoitus</a>
       <div class="langsw" aria-label="Kieli / Keel"><a href="/" class="cur" aria-current="true">FI</a><a href="/et/meist/" lang="et">EE</a></div>
     </nav>
     <button class="burger" id="burger" aria-label="Valikko" aria-expanded="false">☰</button>
@@ -43,7 +46,7 @@
 
 <main id="main">
 <div class="page active" id="p-meista">
-  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+  <div id="rev-meista-1" class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
     <div class="wrap">
       <p class="eyebrow">Meistä</p>
       <h1 style="font-size:clamp(34px,5.4vw,66px)">Laite on muuttunut hyödykkeeksi. Osaaminen ei.</h1>
@@ -51,7 +54,7 @@
     </div>
   </div>
 
-  <section>
+  <section id="rev-meista-2">
     <div class="wrap">
       <div class="split">
         <div>
@@ -74,7 +77,7 @@
   </section>
 
   <div class="dark">
-    <section>
+    <section id="rev-meista-3">
       <div class="wrap">
         <div class="split">
           <div>

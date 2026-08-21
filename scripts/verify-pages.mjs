@@ -15,8 +15,10 @@ import { fileURLToPath } from 'node:url';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const BASE = 'https://samaenergia.fi';
 
-const FI = ['', 'energiavarastot', 'aurinko-ja-akku', 'reservimarkkinat', 'prosessi', 'meista', 'yhteystiedot', 'ajankohtaista', 'tietosuoja'];
-const ET = ['', 'energiasalvestid', 'paike-ja-aku', 'reserviturud', 'protsess', 'meist', 'kontakt', 'uudised', 'andmekaitse'];
+const FI = ['', 'energiavarastot', 'aurinko-ja-akku', 'reservimarkkinat', 'prosessi', 'meista', 'yhteystiedot', 'ajankohtaista', 'tietosuoja', 'kiitos'];
+const ET = ['', 'energiasalvestid', 'paike-ja-aku', 'reserviturud', 'protsess', 'meist', 'kontakt', 'uudised', 'andmekaitse', 'aitah'];
+/* kiitossivut: noindex, ei sitemapissa, ei navigaatiossa, ei legacy-shimissä */
+const UNLISTED = new Set(['kiitos', 'aitah']);
 const pages = [
   ...FI.map((s, i) => ({ lang: 'fi', slug: s, url: s ? `/${s}/` : '/', pair: ET[i] ? `/et/${ET[i]}/` : '/et/' })),
   ...ET.map((s, i) => ({ lang: 'et', slug: s, url: s ? `/et/${s}/` : '/et/', pair: FI[i] ? `/${FI[i]}/` : '/' })),
@@ -71,6 +73,21 @@ for (const p of pages) {
   if (count(html, /property="og:title"/g) !== 1 || count(html, /property="og:description"/g) !== 1) err(`${where} — og-metat väärin`);
   if (/og:image/.test(html) && !/og:image jätetty/.test(html)) err(`${where} — og:image ei kuulu vielä sivuille`);
 
+  // kiitossivut noindex; muut eivät
+  const noindex = html.includes('<meta name="robots" content="noindex">');
+  if (UNLISTED.has(p.slug) && !noindex) err(`${where} — noindex puuttuu kiitossivulta`);
+  if (!UNLISTED.has(p.slug) && noindex) err(`${where} — noindex ei kuulu tälle sivulle`);
+  // kiitossivuihin ei linkitetä navigaatiosta eikä jalasta
+  if (!UNLISTED.has(p.slug)) {
+    for (const s of ['/kiitos/', '/et/aitah/']) {
+      const re = new RegExp(`<(nav|footer)[\\s\\S]*?href="${s.replace(/\//g, '\\/')}"[\\s\\S]*?</\\1>`);
+      if (re.test(html)) err(`${where} — kiitossivu linkitetty navigaatiossa/jalassa (${s})`);
+    }
+  }
+
+  // katselmustilan luokat eivät saa esiintyä staattisessa HTML:ssä (vain client-side)
+  if (/rev-mark|rev-lab|rev-banner/.test(html)) err(`${where} — katselmusmerkintöjä staattisessa HTML:ssä`);
+
   // kaikki sisäiset linkit ja resurssit osoittavat olemassa oleviin tiedostoihin
   for (const m of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
     const u = m[1];
@@ -95,15 +112,20 @@ for (const p of pages) {
   if (!isFront && inline !== 0) err(`${where} — alasivulla ei saa olla inline-skriptejä, oli ${inline}`);
 }
 
-// Netlify-lomake: molemmilla kielillä, identtiset kenttänimet ja lomakenimi
+// Netlify-lomake: molemmilla kielillä, identtiset kenttänimet ja lomakenimi,
+// action-kiitossivu no-JS-varapoluksi, pakollisina vain nimi + email
 const formFields = html => {
   const form = /<form[^>]*data-netlify="true"[\s\S]*?<\/form>/.exec(html)?.[0];
   if (!form) return null;
+  const controls = [...form.matchAll(/<(?:input|select|textarea)\b[^>]*/g)].map(m => m[0]);
+  const nameOf = c => /\bname="([^"]+)"/.exec(c)?.[1];
   return {
     name: /<form[^>]*\bname="([^"]+)"/.exec(form)?.[1],
+    action: /<form[^>]*\baction="([^"]+)"/.exec(form)?.[1],
     hidden: form.includes('name="form-name" value="kohdekartoitus"'),
     honeypot: /netlify-honeypot="bot-field"/.test(form) && form.includes('name="bot-field"'),
-    fields: [...form.matchAll(/name="([^"]+)"/g)].map(m => m[1]).sort().join(','),
+    fields: controls.map(nameOf).filter(Boolean).sort().join(','),
+    required: controls.filter(c => /\brequired\b/.test(c)).map(nameOf).sort().join(','),
   };
 };
 const fiForm = formFields(readFileSync(join(ROOT, 'yhteystiedot/index.html'), 'utf8'));
@@ -111,16 +133,21 @@ const etForm = formFields(readFileSync(join(ROOT, 'et/kontakt/index.html'), 'utf
 if (!fiForm || !etForm) err('Netlify-lomake puuttuu yhteyssivulta');
 else {
   if (fiForm.name !== 'kohdekartoitus' || etForm.name !== 'kohdekartoitus') err('lomakkeen nimi väärin');
+  if (fiForm.action !== '/kiitos/') err(`FI-lomakkeen action väärin: ${fiForm.action}`);
+  if (etForm.action !== '/et/aitah/') err(`ET-lomakkeen action väärin: ${etForm.action}`);
   if (!fiForm.hidden || !etForm.hidden) err('form-name-piilokenttä puuttuu');
   if (!fiForm.honeypot || !etForm.honeypot) err('honeypot puuttuu');
   if (fiForm.fields !== etForm.fields) err(`lomakekentät eroavat kielittäin:\n  FI: ${fiForm.fields}\n  ET: ${etForm.fields}`);
+  if (fiForm.required !== 'email,nimi' || etForm.required !== 'email,nimi') {
+    err(`pakollisina oltava täsmälleen nimi + email — FI: [${fiForm.required}] ET: [${etForm.required}]`);
+  }
 }
 
-// sitemap kattaa täsmälleen kaikki sivut
+// sitemap kattaa täsmälleen kaikki julkiset sivut (kiitossivut pois)
 const sitemap = readFileSync(join(ROOT, 'sitemap.xml'), 'utf8');
 const smUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]).sort();
-const expect = pages.map(p => BASE + p.url).sort();
-if (JSON.stringify(smUrls) !== JSON.stringify(expect)) err('sitemap.xml ei vastaa sivujoukkoa');
+const expect = pages.filter(p => !UNLISTED.has(p.slug)).map(p => BASE + p.url).sort();
+if (JSON.stringify(smUrls) !== JSON.stringify(expect)) err('sitemap.xml ei vastaa sivujoukkoa (kiitossivujen pitää jäädä pois)');
 if (!readFileSync(join(ROOT, 'robots.txt'), 'utf8').includes('Sitemap: ' + BASE + '/sitemap.xml')) err('robots.txt ei viittaa sitemapiin');
 
 // CSP-hash vastaa etusivujen shimiä, molempien etusivujen shim identtinen
@@ -132,9 +159,27 @@ const headers = readFileSync(join(ROOT, '_headers'), 'utf8');
 if (!headers.includes(`'sha256-${hash}'`)) err('_headers-CSP-hash ei vastaa shimiä');
 if (headers.includes("script-src 'self' 'unsafe-inline'")) err("CSP sallii yhä 'unsafe-inline' -skriptit");
 
-// shim kattaa kaikki vanhat slugit
-for (const s of [...FI, ...ET].filter(Boolean)) {
+// shim kattaa kaikki vanhat slugit (kiitossivut eivät ole legacy-polkuja)
+for (const s of [...FI, ...ET].filter(s => s && !UNLISTED.has(s))) {
   if (!shimFi?.includes(`"#/${s}"`)) err(`shim ei tunne vanhaa polkua #/${s}`);
+}
+for (const s of UNLISTED) {
+  if (shimFi?.includes(`"#/${s}"`)) err(`shimissä ylimääräinen polku #/${s}`);
+}
+
+// katselmusmanifesti: olemassa, jäsentyy, viittaa olemassa oleviin sivuihin ja osioihin
+try {
+  const man = JSON.parse(readFileSync(join(ROOT, 'assets/review.json'), 'utf8'));
+  if (!Array.isArray(man.changes)) err('review.json: changes ei ole taulukko');
+  else for (const c of man.changes) {
+    if (!['new', 'changed'].includes(c.kind)) { err(`review.json: tuntematon kind "${c.kind}"`); continue; }
+    const pg = pages.find(p => p.url === c.page);
+    if (!pg) { err(`review.json: tuntematon sivu ${c.page}`); continue; }
+    const html = readFileSync(join(ROOT, c.page.replace(/^\//, ''), 'index.html'), 'utf8');
+    if (!html.includes(`id="${c.sectionId}"`)) err(`review.json: osiota ${c.sectionId} ei ole sivulla ${c.page}`);
+  }
+} catch (e) {
+  err('review.json puuttuu tai ei jäsenny: ' + e.message);
 }
 
 if (errors) { console.error(`\n${errors} virhettä.`); process.exit(1); }

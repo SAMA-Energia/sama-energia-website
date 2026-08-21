@@ -34,7 +34,10 @@
       <a href="/et/protsess/">Kuidas see kulgeb</a>
       <a href="/et/uudised/">Uudised</a>
       <a href="/et/meist/">Meist</a>
-      <a href="/et/kontakt/" class="navcta">Broneeri kaardistus</a>
+      <!-- CTA-verb "Küsi", mitte "Broneeri": broneerimissüsteemi ei ole — vorm viib ühenduse
+           võtmiseni. Võimalik hilisem täiendus: ise majutatud kalender (ilma kolmanda osapoole
+           manusteta), misjärel verb võib naasta broneerimise juurde. Sama muudatus FI-allikas. -->
+      <a href="/et/kontakt/" class="navcta">Küsi kaardistust</a>
       <div class="langsw" aria-label="Keel / Kieli"><a href="/energiavarastot/" lang="fi">FI</a><a href="/et/" class="cur" aria-current="true">EE</a></div>
     </nav>
     <button class="burger" id="burger" aria-label="Menüü" aria-expanded="false">☰</button>
@@ -43,7 +46,7 @@
 
 <main id="main">
 <div class="page active" id="p-energiavarastot">
-  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+  <div id="rev-energiasalvestid-1" class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
     <div class="wrap">
       <p class="eyebrow">Energiasalvestid</p>
       <h1 style="font-size:clamp(34px,5.4vw,66px)">Kaardistusest töötava, dokumenteeritud ja tootva süsteemini.</h1>
@@ -52,7 +55,7 @@
     </div>
   </div>
 
-  <section>
+  <section id="rev-energiasalvestid-2">
     <div class="wrap">
       <div class="steps" style="margin-top:0;border-top:none">
         <div class="step">
@@ -96,8 +99,55 @@
     </div>
   </section>
 
+  <!-- VÕIMSUSTASU NÄIDISARVUTUS. Tariifinumbrid on teadlikult [KONTROLLITAKSE]-kohatäited:
+       Martin kleebib täpsed arvud numbriregistrist enne main-i mestimist — MITTE täita mälu järgi.
+       Kaks poolt hoitakse rangelt lahus: DOKUMENTEERITUD (tariif, allikaga) ja MODELLEERITUD
+       (eeldus koormusprofiilist). Tulemus alati vahemikuna. Ei tarnijanimesid, ei reservitulu. -->
+  <section id="rev-energiasalvestid-3">
+    <div class="wrap">
+      <p class="eyebrow">Võimsustasu näidisarvutus</p>
+      <h2 class="sec-title">Mida tipuvõimsuse piiramine keskpinge tööstusobjektil tähendab.</h2>
+      <p class="sec-lede">Näide: keskpinge tööstusobjekt, 125 kW / ~250 kWh klassi konteinersalvesti, tipukoormuse silumine Elektrilevi võrgutariifide vastu. Kaks poolt on teadlikult lahus — mis on dokumenteeritud ja mis on modelleeritud.</p>
+      <div class="split" style="margin-top:44px">
+        <div>
+          <span class="tg las" style="display:inline-block;margin-bottom:16px">DOKUMENTEERITUD</span>
+          <h3 style="font-size:22px;margin-bottom:12px">Elektrilevi tariifikomponendid</h3>
+          <ul class="checks">
+            <li>Tarbimiskoha kasutusvõimsus: <span class="mono">[X,XX €/kW kuus — KONTROLLITAKSE: Elektrilevi hinnakiri, Konkurentsiameti otsus 02.03.2026 nr 7-3/2026-028]</span></li>
+            <li>Võrguühenduse kasutusvõimsus: <span class="mono">[X,XX €/kW kuus — KONTROLLITAKSE: sama allikas]</span></li>
+            <li>Pakett: keskpinge, võimsuspõhine komponent — <span class="mono">[pakett täpsustatakse samast hinnakirjast]</span></li>
+          </ul>
+          <p style="margin-top:16px;color:var(--tx2);font-size:15.5px">Võimsustasu arvestatakse mõõdetud tipuvõimsusest. See on tariifitabeli rida, mitte hinnang — seepärast on see pool arvutusest dokumenteeritud, allikas kaasas.</p>
+        </div>
+        <div>
+          <span class="tg ske" style="display:inline-block;margin-bottom:16px">MODELLEERITUD</span>
+          <h3 style="font-size:22px;margin-bottom:12px">Eeldatav tipu vähenemine</h3>
+          <p style="color:var(--tx2);font-size:16.5px">Arvutuse teine pool on eeldus: kui palju suudab 125 kW salvesti kuu tippu tegelikult maha lõigata. See sõltub koormusprofiilist — sellest, kui teravad ja kui pikad teie tipud on. Näites kasutame eeldust <span class="mono">[XX–XX kW]</span>, mis tuleb selgelt märgistada eeldusena, mitte lubadusena.</p>
+          <p style="margin-top:16px;color:var(--tx2);font-size:16.5px">Tegelik number ei tule meilt ega tabelist — see arvutatakse teie enda 15-minutilise intervalli tarbimisandmetest.</p>
+        </div>
+      </div>
+      <div class="callout">
+        <p>Aastane mõju võimsustasule: <span class="mono">[X XXX – X XXX € aastas]</span> — vahemik, mitte punkthinnang.</p>
+        <p class="sub">Just seda kontrollib tasuta objektikaardistus teie enda tarbimisandmete põhjal — enne kui midagi alla kirjutatakse.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RAHASTUS: võimalus, mitte lubadus. Rahastaja tingimusi ei ole veel dokumenteeritud —
+       plokk uuendatakse siduvasse sõnastusse alles siis, kui tingimused on kantud
+       numbriregistrisse. Ei rahastajanimesid, ei intresse, ei makseridu, ei kindlust
+       väitvaid verbe. Sama reegel FI-vastes. -->
+  <section id="rev-energiasalvestid-4" style="padding-top:0">
+    <div class="wrap">
+      <div class="refslot">
+        <p class="mono" style="font-size:10.5px;letter-spacing:.14em;color:var(--muted);margin-bottom:8px">RAHASTUS</p>
+        <p style="color:var(--tx2);font-size:15.5px;max-width:none">Hange võib olla võimalik ka ilma ettemaksuta rahastuspartneri kaudu — selgitame võimalused välja objektikaardistuse käigus. Eesmärk on, et kuumakse jääks modelleeritud kuusäästust väiksemaks.</p>
+      </div>
+    </div>
+  </section>
+
   <div class="dark">
-    <section>
+    <section id="rev-energiasalvestid-5">
       <div class="wrap">
         <p class="eyebrow">Eraldi</p>
         <div class="split">

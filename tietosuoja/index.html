@@ -34,7 +34,10 @@
       <a href="/prosessi/">Näin se etenee</a>
       <a href="/ajankohtaista/">Ajankohtaista</a>
       <a href="/meista/">Meistä</a>
-      <a href="/yhteystiedot/" class="navcta">Varaa kartoitus</a>
+      <!-- CTA-verbi "Pyydä", ei "Varaa": varsinaista ajanvarausjärjestelmää ei ole — lomake johtaa
+           yhteydenottoon. Mahdollinen myöhempi parannus: itse isännöity kalenteri (ei kolmannen
+           osapuolen upotuksia), jolloin verbi voi palata varaamiseen. Sama muutos ET-lähteessä. -->
+      <a href="/yhteystiedot/" class="navcta">Pyydä kartoitus</a>
       <div class="langsw" aria-label="Kieli / Keel"><a href="/" class="cur" aria-current="true">FI</a><a href="/et/andmekaitse/" lang="et">EE</a></div>
     </nav>
     <button class="burger" id="burger" aria-label="Valikko" aria-expanded="false">☰</button>
@@ -43,14 +46,14 @@
 
 <main id="main">
 <div class="page active" id="p-tietosuoja">
-  <div class="hero" style="padding-bottom:clamp(40px,6vw,64px)">
+  <div id="rev-tietosuoja-1" class="hero" style="padding-bottom:clamp(40px,6vw,64px)">
     <div class="wrap">
       <p class="eyebrow">Tietosuoja</p>
       <h1 style="font-size:clamp(32px,4.8vw,58px)">Tietosuojaseloste</h1>
       <p class="lede">Keräämme vain sen, minkä annatte meille itse. Emme käytä evästeitä emmekä analytiikkaa. Tässä kerrotaan, mitä käsittelemme, miksi ja kuinka kauan.</p>
     </div>
   </div>
-  <section>
+  <section id="rev-tietosuoja-2">
     <div class="wrap" style="max-width:840px">
       <div class="qa" style="margin-top:0">
         <div><h4>Rekisterinpitäjä</h4><p>SAMA Energia Oy · Y-tunnus 3647683-3 · madis.maastik@samaenergia.fi · +372 5391 6647.</p></div>

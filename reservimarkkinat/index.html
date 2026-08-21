@@ -34,7 +34,10 @@
       <a href="/prosessi/">Näin se etenee</a>
       <a href="/ajankohtaista/">Ajankohtaista</a>
       <a href="/meista/">Meistä</a>
-      <a href="/yhteystiedot/" class="navcta">Varaa kartoitus</a>
+      <!-- CTA-verbi "Pyydä", ei "Varaa": varsinaista ajanvarausjärjestelmää ei ole — lomake johtaa
+           yhteydenottoon. Mahdollinen myöhempi parannus: itse isännöity kalenteri (ei kolmannen
+           osapuolen upotuksia), jolloin verbi voi palata varaamiseen. Sama muutos ET-lähteessä. -->
+      <a href="/yhteystiedot/" class="navcta">Pyydä kartoitus</a>
       <div class="langsw" aria-label="Kieli / Keel"><a href="/" class="cur" aria-current="true">FI</a><a href="/et/reserviturud/" lang="et">EE</a></div>
     </nav>
     <button class="burger" id="burger" aria-label="Valikko" aria-expanded="false">☰</button>
@@ -43,7 +46,7 @@
 
 <main id="main">
 <div class="page active" id="p-reservi">
-  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+  <div id="rev-reservimarkkinat-1" class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
     <div class="wrap">
       <p class="eyebrow">Reservimarkkinat · päivitetään säännöllisesti</p>
       <h1 style="font-size:clamp(34px,5.4vw,66px)">Reservimarkkinat: mitä ne ovat, mitä ne vaativat ja mitä emme niistä lupaa</h1>
@@ -51,7 +54,7 @@
     </div>
   </div>
 
-  <section>
+  <section id="rev-reservimarkkinat-2">
     <div class="wrap">
       <div class="split">
         <div>
@@ -68,7 +71,7 @@
   </section>
 
   <div class="dark">
-    <section>
+    <section id="rev-reservimarkkinat-3">
       <div class="wrap">
         <p class="eyebrow">Tuotteet</p>
         <h2 class="sec-title">Reservituotteet ja mitä kukin vaatii akulta</h2>
@@ -105,7 +108,7 @@
     </section>
   </div>
 
-  <section>
+  <section id="rev-reservimarkkinat-4">
     <div class="wrap">
       <p class="eyebrow">Miten kohde pääsee markkinalle</p>
       <div class="steps">
@@ -134,7 +137,7 @@
   </section>
 
   <div class="dark">
-    <section>
+    <section id="rev-reservimarkkinat-5">
       <div class="wrap">
         <p class="eyebrow">Tärkein kohta tällä sivulla</p>
         <div class="split">
@@ -152,7 +155,7 @@
     </section>
   </div>
 
-  <section>
+  <section id="rev-reservimarkkinat-6">
     <div class="wrap">
       <p class="eyebrow">Käytännön työkalu</p>
       <h2 class="sec-title">Kolme kysymystä mille tahansa toimittajalle</h2>
@@ -167,7 +170,7 @@
     </div>
   </section>
   <div class="dark">
-    <section>
+    <section id="rev-reservimarkkinat-7">
       <div class="wrap">
         <p class="eyebrow">Miksi tämä on tärkeämpää kuin yksi kohde</p>
         <div class="split">

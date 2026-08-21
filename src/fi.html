@@ -22,7 +22,10 @@
       <a href="/prosessi/">Näin se etenee</a>
       <a href="/ajankohtaista/">Ajankohtaista</a>
       <a href="/meista/">Meistä</a>
-      <a href="/yhteystiedot/" class="navcta">Varaa kartoitus</a>
+      <!-- CTA-verbi "Pyydä", ei "Varaa": varsinaista ajanvarausjärjestelmää ei ole — lomake johtaa
+           yhteydenottoon. Mahdollinen myöhempi parannus: itse isännöity kalenteri (ei kolmannen
+           osapuolen upotuksia), jolloin verbi voi palata varaamiseen. Sama muutos ET-lähteessä. -->
+      <a href="/yhteystiedot/" class="navcta">Pyydä kartoitus</a>
       <div class="langsw" aria-label="Kieli / Keel"><a href="/" class="cur" aria-current="true">FI</a><a href="/et/" lang="et">EE</a></div>
     </nav>
     <button class="burger" id="burger" aria-label="Valikko" aria-expanded="false">☰</button>
@@ -45,7 +48,7 @@
       <h1>Yhteinen verkko.<br>Itsenäinen energia.</h1>
       <p class="lede">Rakennamme yritysten energiaomavaraisuutta: aurinkosähkö, energiavarastot ja ohjaus tekevät liittymästänne aktiivisen osan sähköjärjestelmää. Ja mitä se kohteessanne oikeasti tuottaa — siihen vastaamme <strong>kirjallisesti</strong>, ennen kuin mitään allekirjoitetaan.</p>
       <div class="btnrow">
-        <a href="/yhteystiedot/" class="btn">Varaa kohdekartoitus</a>
+        <a href="/yhteystiedot/" class="btn">Pyydä kohdekartoitus</a>
         <a href="/prosessi/" class="btn ghost">Katso miten prosessi etenee</a>
       </div>
 
@@ -125,7 +128,7 @@
           <div class="brow"><span class="tg ske">SKENAARIO</span><a class="morelink" href="/reservimarkkinat/">Lue lisää</a></div>
         </div>
       </div>
-      <div class="btnrow" style="margin-top:38px"><a href="/yhteystiedot/" class="btn">Varaa kohdekartoitus</a></div>
+      <div class="btnrow" style="margin-top:38px"><a href="/yhteystiedot/" class="btn">Pyydä kohdekartoitus</a></div>
     </div>
   </section>
 
@@ -147,7 +150,7 @@
             <span class="doorlab">ALOITATTE PUHTAALTA PÖYDÄLTÄ</span>
             <h3 style="font-size:22px;margin-bottom:14px">Suunnittelemme kokonaisuuden yhtenä järjestelmänä.</h3>
             <p style="color:var(--tx2d);font-size:17px">Aurinkosähkö, energiavarasto ja ohjaus mitoitetaan yhdessä kulutustietojenne pohjalta. Alusta asti kokonaisuutena suunniteltuna mitään ei sovita jälkikäteen, vastuu on yhdellä taholla ja verkkoyhtiön hyväksyntä haetaan kerralla.</p>
-            <div class="btnrow"><a href="/yhteystiedot/" class="btn">Varaa kohdekartoitus</a></div>
+            <div class="btnrow"><a href="/yhteystiedot/" class="btn">Pyydä kohdekartoitus</a></div>
           </div>
         </div>
       </div>
@@ -222,7 +225,7 @@
       <div class="wrap" style="text-align:center;max-width:760px">
         <h2 class="sec-title" style="max-width:none;margin:0 auto 16px">Aloitetaan kulutustiedoistanne.</h2>
         <p class="sec-lede" style="margin:0 auto">Kohdekartoitus on maksuton eikä sido teitä mihinkään. Saatte kirjallisen näkemyksen — ja pidätte sen joka tapauksessa.</p>
-        <div class="btnrow" style="justify-content:center"><a href="/yhteystiedot/" class="btn">Varaa kohdekartoitus</a></div>
+        <div class="btnrow" style="justify-content:center"><a href="/yhteystiedot/" class="btn">Pyydä kohdekartoitus</a></div>
       </div>
     </section>
   </div>
@@ -280,6 +283,19 @@
         </div>
       </div>
       <p style="margin-top:28px;color:var(--tx2);font-size:15.5px">Nämä neljä vaihetta ovat sama matka, jonka viikkotason järjestys ja kestot on kuvattu sivulla <a href="/prosessi/">Näin se etenee</a> — vaihenumerot viittaavat siihen.</p>
+    </div>
+  </section>
+
+  <!-- RAHOITUS: mahdollisuus, ei lupaus. Rahoittajan ehtoja ei ole vielä dokumentoitu —
+       tämä lohko päivitetään sitovaan muotoon vasta, kun ehdot on kirjattu lukurekisteriin.
+       Ei rahoittajanimiä, ei korkoja, ei maksuerälukuja, ei varmuutta väittäviä verbejä
+       ("järjestämme", "tarjoamme"). Sama sääntö ET-vastineessa. -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="refslot">
+        <p class="mono" style="font-size:10.5px;letter-spacing:.14em;color:var(--muted);margin-bottom:8px">RAHOITUS</p>
+        <p style="color:var(--tx2);font-size:15.5px;max-width:none">Hankinta voi olla mahdollinen myös ilman etumaksua rahoituskumppanin kautta — selvitämme vaihtoehdot kohdekartoituksen yhteydessä. Tavoite on, että kuukausierä jää mallinnetun kuukausisäästön alle.</p>
+      </div>
     </div>
   </section>
 
@@ -417,7 +433,7 @@
         <div class="callout">
           <p>Kirjallisesti. Valmistajalta ja verkkoyhtiöltänne. Ennen kuin esitämme teille hintaa.</p>
         </div>
-        <div class="btnrow"><a href="/yhteystiedot/" class="btn">Varaa kartoitus kohteeseenne</a></div>
+        <div class="btnrow"><a href="/yhteystiedot/" class="btn">Pyydä kartoitus kohteeseenne</a></div>
       </div>
     </section>
   </div>
@@ -433,7 +449,7 @@
         <div><span class="num">03 · ALUSTA ASTI OIKEIN</span><h3>Tehonhallinta sisään, ei päälle</h3><p>Takasyötön hallinta ja mittaus suunnitellaan järjestelmään alusta asti, eikä niitä soviteta jälkikäteen.</p></div>
         <div><span class="num">04 · YKSI VASTUUTAHO</span><h3>Yksi suunnitelma, yksi toimitus</h3><p>Yksi verkkoyhtiöprosessi ja yksi taho, joka vastaa kokonaisuudesta — suunnittelusta käyttöönottoon ja seurantaan.</p></div>
       </div>
-      <div class="btnrow"><a href="/yhteystiedot/" class="btn">Varaa kohdekartoitus</a></div>
+      <div class="btnrow"><a href="/yhteystiedot/" class="btn">Pyydä kohdekartoitus</a></div>
     </div>
   </section>
 </div>
@@ -680,22 +696,32 @@
     <div class="wrap">
       <div class="split">
         <div>
-          <form class="form" id="ctForm" name="kohdekartoitus" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <!-- Lomake: action = staattinen kiitossivu, jotta lähetys toimii myös ilman JS:ää
+               (site.js sieppaa lähetyksen AJAXiksi ja käyttää samaa polkua varapolkuna).
+               Kenttänimet identtiset FI/ET — molemmat kielet syöttävät samaa Netlify-lomaketta. -->
+          <form class="form" id="ctForm" name="kohdekartoitus" method="POST" action="/kiitos/" data-netlify="true" netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="kohdekartoitus">
             <p hidden aria-hidden="true"><label>Jättäkää tämä kenttä tyhjäksi: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
-            <div><label for="f1">Nimi</label><input id="f1" name="nimi" required></div>
-            <div><label for="f2">Yritys</label><input id="f2" name="yritys" required></div>
-            <div><label for="f3">Sähköposti</label><input id="f3" type="email" name="email" required></div>
-            <div><label for="f4">Puhelin</label><input id="f4" type="tel" name="puhelin"></div>
-            <div><label for="f5">Kohteen sijainti</label><input id="f5" name="sijainti"></div>
-            <div><label for="f6">Pääsulake tai vuosikulutus</label><input id="f6" name="kulutus" placeholder="esim. 400 A tai 900 MWh/v"></div>
-            <div class="full"><label for="f7">Onko kohteessa aurinkosähköä?</label>
-              <select id="f7" name="aurinko"><option>Ei</option><option>Kyllä</option><option>Suunnitteilla</option><option>En tiedä</option></select>
+            <div><label for="f1">Nimi <span class="fnote rq">· pakollinen</span></label><input id="f1" name="nimi" required autocomplete="name"></div>
+            <div><label for="f3">Sähköposti <span class="fnote rq">· pakollinen</span></label><input id="f3" type="email" name="email" required autocomplete="email"></div>
+            <div><label for="f2">Yritys <span class="fnote">· valinnainen</span></label><input id="f2" name="yritys" autocomplete="organization"></div>
+            <div><label for="f4">Puhelin <span class="fnote">· valinnainen</span></label><input id="f4" type="tel" inputmode="tel" name="puhelin" autocomplete="tel"></div>
+            <p class="full formsub">Nämä nopeuttavat arviota <span>· kaikki valinnaisia</span></p>
+            <div><label for="f5">Kohteen sijainti <span class="fnote">· valinnainen</span></label><input id="f5" name="sijainti"></div>
+            <div><label for="f6">Pääsulake tai liittymisteho <span class="fnote">· valinnainen</span></label><input id="f6" name="liittymisteho" placeholder="esim. 400 A tai 250 kW"></div>
+            <div><label for="f9">Vuosikulutus <span class="fnote">· valinnainen</span></label><input id="f9" name="vuosikulutus" placeholder="esim. 900 MWh/v"></div>
+            <div><label for="f10">Verkkoyhtiö <span class="fnote">· valinnainen</span></label><input id="f10" name="verkkoyhtio" placeholder="esim. Elenia"></div>
+            <div><label for="f7">Onko kohteessa aurinkosähköä? <span class="fnote">· valinnainen</span></label>
+              <select id="f7" name="aurinko"><option value="">—</option><option>Ei</option><option>Kyllä</option><option>Suunnitteilla</option></select>
             </div>
-            <div class="full"><label for="f8">Viesti</label><textarea id="f8" name="viesti"></textarea></div>
+            <div><label for="f11">Jos on: teho (kWp) <span class="fnote">· valinnainen</span></label><input id="f11" name="aurinko-kwp" inputmode="numeric" placeholder="esim. 120"></div>
+            <div class="full"><label for="f12">Toivottu yhteydenottotapa <span class="fnote">· valinnainen</span></label>
+              <select id="f12" name="yhteydenotto"><option value="">—</option><option>Sähköposti</option><option>Puhelin</option><option>WhatsApp</option></select>
+            </div>
+            <div class="full"><label for="f8">Viesti <span class="fnote">· valinnainen</span></label><textarea id="f8" name="viesti"></textarea></div>
             <div class="full"><button type="submit" id="ctSend" class="btn dk" style="border:none;cursor:pointer;font-family:'Archivo',sans-serif">Lähetä</button></div>
             <p class="full" style="font-size:14.5px;color:var(--muted)">Käsittelemme lähettämänne tiedot vastataksemme yhteydenottoonne. <a href="/tietosuoja/">Tietosuojaseloste</a>.</p>
-            <p class="full ok" id="ctOk" hidden style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1a7a3c">Kiitos — palaamme asiaan arkipäivän kuluessa.<em id="ctDemo" style="color:var(--muted)"> (Esikatselu: lähetys kytketään päälle julkaisun yhteydessä.)</em></p>
+            <p class="full ok" id="ctOk" hidden style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1a7a3c">Kiitos — palaamme asiaan arkipäivän kuluessa.</p>
             <p class="full" id="ctErr" hidden style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#A8452E">Lähetys ei onnistunut. Voitte lähettää tiedot myös suoraan sähköpostilla: <a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a>.</p>
           </form>
         </div>
@@ -719,6 +745,22 @@
 
 </div>
 
+<!-- ══════════════════ KIITOS (lomakkeen kiitossivu — ei navigaatiossa, ei sitemapissa, noindex) ══════════════════ -->
+<div class="page" id="p-kiitos" data-slug="kiitos" data-noindex="1" data-title="Kiitos yhteydenotosta | SAMA Energia" data-desc="Viestinne on vastaanotettu. Palaamme asiaan arkipäivän kuluessa.">
+  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+    <div class="wrap">
+      <p class="eyebrow">Kiitos</p>
+      <h1 style="font-size:clamp(34px,5.4vw,66px)">Viestinne on perillä.</h1>
+      <p class="lede">Palaamme asiaan arkipäivän kuluessa. Jos asia on kiireellinen, tavoitatte meidät suoraan:</p>
+      <p class="mono" style="margin-top:22px;font-size:15px;color:var(--tx1d)"><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a></p>
+      <p class="mono" style="font-size:15px;color:var(--tx1d)">+372 5391 6647 · WhatsApp +358 46 659 4879</p>
+      <div class="btnrow">
+        <a href="/" class="btn ghost">Takaisin etusivulle</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- ══════════════════ AJANKOHTAISTA ══════════════════ -->
 <div class="page" id="p-ajankohtaista" data-slug="ajankohtaista" data-title="Ajankohtaista: markkinakatsaus lähteineen | SAMA Energia" data-desc="Mitä sähkömarkkinalla tapahtuu — ensisijaisia lähteitä kantaverkkoyhtiöiltä ja viranomaisilta sekä lyhyesti, miksi ne ovat teollisuuskohteen omistajalle merkityksellisiä.">
   <div class="hero" style="padding-bottom:clamp(40px,6vw,64px)">
@@ -734,9 +776,10 @@
       <div class="qa" style="margin-top:14px">
         <div>
           <p class="mono" style="font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">Velvoite · määräpäivä 11.10.2026 · Direktiivi (EU) 2023/1791</p>
-          <h4>Energiakatselmusvelvoite laajenee: raja on jatkossa kulutus, ei yrityksen koko</h4>
+          <h4><a href="https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32023L1791" target="_blank" rel="noopener noreferrer">Energiakatselmusvelvoite laajenee: raja on jatkossa kulutus, ei yrityksen koko&nbsp;↗</a></h4>
           <p>Uudistettu energiatehokkuusdirektiivi siirtää pakollisen energiakatselmuksen rajan yrityksen koosta energiankulutukseen: yli 10 TJ eli noin 2 700 MWh vuodessa kuluttavien yritysten on teetettävä energiakatselmus 11.10.2026 mennessä, elleivät ne ota käyttöön sertifioitua energianhallintajärjestelmää.</p>
           <p style="margin-top:12px;color:var(--tx2)">Miksi tämä on merkityksellistä: katselmus tuottaa juuri sen kulutusdatan, josta varasto- ja aurinkoinvestointi mitoitetaan. Saman velvoitteen voi hoitaa pelkkänä pakkona — tai käyttää samalla hyödyksi.</p>
+          <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:10px">LÄHDE: DIREKTIIVI (EU) 2023/1791, 11 ARTIKLA · EUR-LEX · DOKUMENTOITU</p>
         </div>
         <div>
           <p class="mono" style="font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">18.08.2026 · Fingrid · Tiedote</p>

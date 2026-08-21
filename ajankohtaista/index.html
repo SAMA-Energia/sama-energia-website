@@ -34,7 +34,10 @@
       <a href="/prosessi/">Näin se etenee</a>
       <a href="/ajankohtaista/" class="on">Ajankohtaista</a>
       <a href="/meista/">Meistä</a>
-      <a href="/yhteystiedot/" class="navcta">Varaa kartoitus</a>
+      <!-- CTA-verbi "Pyydä", ei "Varaa": varsinaista ajanvarausjärjestelmää ei ole — lomake johtaa
+           yhteydenottoon. Mahdollinen myöhempi parannus: itse isännöity kalenteri (ei kolmannen
+           osapuolen upotuksia), jolloin verbi voi palata varaamiseen. Sama muutos ET-lähteessä. -->
+      <a href="/yhteystiedot/" class="navcta">Pyydä kartoitus</a>
       <div class="langsw" aria-label="Kieli / Keel"><a href="/" class="cur" aria-current="true">FI</a><a href="/et/uudised/" lang="et">EE</a></div>
     </nav>
     <button class="burger" id="burger" aria-label="Valikko" aria-expanded="false">☰</button>
@@ -43,22 +46,23 @@
 
 <main id="main">
 <div class="page active" id="p-ajankohtaista">
-  <div class="hero" style="padding-bottom:clamp(40px,6vw,64px)">
+  <div id="rev-ajankohtaista-1" class="hero" style="padding-bottom:clamp(40px,6vw,64px)">
     <div class="wrap">
       <p class="eyebrow">Ajankohtaista</p>
       <h1 style="font-size:clamp(32px,5vw,60px)">Mitä markkinalla tapahtuu — lähteineen.</h1>
       <p class="lede">Emme pyydä teitä uskomaan meitä. Kokoamme tähän ensisijaisia lähteitä — kantaverkkoyhtiöiden ja viranomaisten omia julkaisuja — ja kerromme lyhyesti, miksi ne ovat teollisuuskohteen omistajalle merkityksellisiä. Omat analyysimme julkaistaan tällä sivulla.</p>
     </div>
   </div>
-  <section>
+  <section id="rev-ajankohtaista-2">
     <div class="wrap" style="max-width:880px">
       <p class="eyebrow">Luettavaa muualla</p>
       <div class="qa" style="margin-top:14px">
         <div>
           <p class="mono" style="font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">Velvoite · määräpäivä 11.10.2026 · Direktiivi (EU) 2023/1791</p>
-          <h4>Energiakatselmusvelvoite laajenee: raja on jatkossa kulutus, ei yrityksen koko</h4>
+          <h4><a href="https://eur-lex.europa.eu/legal-content/FI/TXT/?uri=CELEX:32023L1791" target="_blank" rel="noopener noreferrer">Energiakatselmusvelvoite laajenee: raja on jatkossa kulutus, ei yrityksen koko&nbsp;↗</a></h4>
           <p>Uudistettu energiatehokkuusdirektiivi siirtää pakollisen energiakatselmuksen rajan yrityksen koosta energiankulutukseen: yli 10 TJ eli noin 2 700 MWh vuodessa kuluttavien yritysten on teetettävä energiakatselmus 11.10.2026 mennessä, elleivät ne ota käyttöön sertifioitua energianhallintajärjestelmää.</p>
           <p style="margin-top:12px;color:var(--tx2)">Miksi tämä on merkityksellistä: katselmus tuottaa juuri sen kulutusdatan, josta varasto- ja aurinkoinvestointi mitoitetaan. Saman velvoitteen voi hoitaa pelkkänä pakkona — tai käyttää samalla hyödyksi.</p>
+          <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:10px">LÄHDE: DIREKTIIVI (EU) 2023/1791, 11 ARTIKLA · EUR-LEX · DOKUMENTOITU</p>
         </div>
         <div>
           <p class="mono" style="font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">18.08.2026 · Fingrid · Tiedote</p>

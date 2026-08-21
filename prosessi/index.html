@@ -34,7 +34,10 @@
       <a href="/prosessi/" class="on">Näin se etenee</a>
       <a href="/ajankohtaista/">Ajankohtaista</a>
       <a href="/meista/">Meistä</a>
-      <a href="/yhteystiedot/" class="navcta">Varaa kartoitus</a>
+      <!-- CTA-verbi "Pyydä", ei "Varaa": varsinaista ajanvarausjärjestelmää ei ole — lomake johtaa
+           yhteydenottoon. Mahdollinen myöhempi parannus: itse isännöity kalenteri (ei kolmannen
+           osapuolen upotuksia), jolloin verbi voi palata varaamiseen. Sama muutos ET-lähteessä. -->
+      <a href="/yhteystiedot/" class="navcta">Pyydä kartoitus</a>
       <div class="langsw" aria-label="Kieli / Keel"><a href="/" class="cur" aria-current="true">FI</a><a href="/et/protsess/" lang="et">EE</a></div>
     </nav>
     <button class="burger" id="burger" aria-label="Valikko" aria-expanded="false">☰</button>
@@ -43,7 +46,7 @@
 
 <main id="main">
 <div class="page active" id="p-prosessi">
-  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+  <div id="rev-prosessi-1" class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
     <div class="wrap">
       <p class="eyebrow">Näin se etenee</p>
       <h1 style="font-size:clamp(34px,5.4vw,66px)">Seitsemän vaihetta, ja kauanko kukin kestää.</h1>
@@ -51,7 +54,7 @@
     </div>
   </div>
 
-  <section>
+  <section id="rev-prosessi-2">
     <div class="wrap">
       <div class="steps" style="margin-top:0;border-top:none">
         <div class="step"><span class="idx">01</span><div><h4>Kvalifiointi</h4><p>Täytätte kohdetietolomakkeen: liittymisteho, pääsulake, muuntajan teho, olemassa oleva tuotanto, mittausjärjestely, asennuspaikka ja etäisyys pääkeskukseen, voimassa olevat sähkösopimukset. Analysoimme kulutustietonne.</p></div><span class="dur">≈ 1 viikko</span></div>

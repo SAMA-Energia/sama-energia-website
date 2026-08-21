@@ -8,24 +8,29 @@ document.getElementById('burger').addEventListener('click',function(){
   this.setAttribute('aria-expanded',open?'true':'false');
 });
 
-/* Yhteydenottolomake — Netlify Forms. FORM_LIVE käännetään trueksi julkaisun yhteydessä;
-   siihen asti lomake toimii esikatselutilassa eikä lähetä mitään. */
-var FORM_LIVE=true;
+/* Yhteydenottolomake — Netlify Forms.
+   Ensisijaisesti AJAX (onnistumisviesti näytetään paikallaan). Jos AJAX epäonnistuu,
+   varapolkuna natiivi lähetys lomakkeen action-kiitossivulle — ei umpikujaa.
+   Ilman JS:ää selain lähettää suoraan actioniin, joten lomake toimii myös silloin. */
 var cf=document.getElementById('ctForm');
 if(cf)cf.addEventListener('submit',function(e){
   e.preventDefault();
   var ok=document.getElementById('ctOk'),err=document.getElementById('ctErr'),
-      demo=document.getElementById('ctDemo'),btn=document.getElementById('ctSend');
-  err.hidden=true;
-  if(!FORM_LIVE){ok.hidden=false;return;}
-  demo.hidden=true;btn.disabled=true;btn.style.opacity='.6';
+      btn=document.getElementById('ctSend');
+  err.hidden=true;btn.disabled=true;btn.style.opacity='.6';
+  function fallback(){
+    /* submit() ei laukaise submit-tapahtumaa uudelleen, joten silmukkaa ei synny.
+       Jos natiivi lähetyskin kaatuu synkronisesti, näytetään virhe + suora sähköposti. */
+    try{cf.submit();}
+    catch(_){btn.disabled=false;btn.style.opacity='';err.hidden=false;}
+  }
   fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},
     body:new URLSearchParams(new FormData(cf)).toString()})
   .then(function(r){
-    btn.disabled=false;btn.style.opacity='';
-    if(r.ok){ok.hidden=false;cf.reset();}else{err.hidden=false;}
+    if(r.ok){btn.disabled=false;btn.style.opacity='';ok.hidden=false;cf.reset();}
+    else{fallback();}
   })
-  .catch(function(){btn.disabled=false;btn.style.opacity='';err.hidden=false;});
+  .catch(fallback);
 });
 
 /* ---------- signature: frequency trace ----------
@@ -129,4 +134,50 @@ if(cf)cf.addEventListener('submit',function(e){
       }
     }
   }
+})();
+
+/* ---------- katselmustila (?review=1) ----------
+   Korostaa luonnoksessa muuttuneet osiot assets/review.json-manifestin perusteella
+   (manifestin kirjoittaa scripts/build-pages.mjs vertaamalla lähteitä origin/mainiin).
+   Ilman review=1-parametria tai tyhjällä manifestilla tämä polku ei tee eikä lataa mitään —
+   siksi tila on vaaraton myös mainissa, vaikka manifest kulkee mukana. */
+(function(){
+  if(!/[?&]review=1(?:&|$)/.test(location.search))return;
+  fetch('/assets/review.json')
+  .then(function(r){return r.json()})
+  .then(function(man){
+    var list=(man&&man.changes)||[];
+    if(!list.length)return;
+    var here=location.pathname;
+    list.forEach(function(c){
+      if(c.page!==here)return;
+      var el=document.getElementById(c.sectionId);
+      if(!el||el.classList.contains('rev-mark'))return;
+      el.classList.add('rev-mark');
+      var lab=document.createElement('span');
+      lab.className='rev-lab';
+      lab.textContent=c.kind==='new'?'UUSI':'MUUTETTU';
+      el.appendChild(lab);
+    });
+    var pages=[];
+    list.forEach(function(c){if(pages.indexOf(c.page)<0)pages.push(c.page)});
+    var b=document.createElement('div');
+    b.className='rev-banner';
+    var head=document.createElement('b');
+    head.textContent='KATSELMUS · MUUTTUNEET SIVUT:';
+    b.appendChild(head);
+    pages.forEach(function(p){
+      var a=document.createElement('a');
+      a.href=p+'?review=1';
+      a.textContent=p;
+      b.appendChild(a);
+    });
+    document.body.appendChild(b);
+    /* review=1 säilyy sisäisissä linkeissä, jotta tila kestää navigoinnin */
+    document.querySelectorAll('a[href^="/"]').forEach(function(a){
+      var h=a.getAttribute('href');
+      if(h.indexOf('review=1')<0)a.setAttribute('href',h+(h.indexOf('?')<0?'?review=1':'&review=1'));
+    });
+  })
+  .catch(function(){});
 })();

@@ -19,6 +19,11 @@ This repo is the **single source of record** for the SAMA Energia public website
 - **Generate** all pages, `sitemap.xml`, and `_headers`:
   `node scripts/build-pages.mjs`
 - **Verify** before committing: `node scripts/verify-pages.mjs`
+- **Review mode**: open `https://draft--samaenergia.netlify.app/?review=1` to see
+  draft changes vs production highlighted (copper outlines + UUSI/MUUTETTU labels,
+  banner lists changed pages). The build writes `assets/review.json` by diffing
+  `src/` against `origin/main`; on `main` the diff is empty, and without the
+  `?review=1` parameter the mode loads nothing — inert by construction.
 - Never edit generated files by hand (`index.html`, `<slug>/index.html`,
   `et/**`, `sitemap.xml`, `_headers`) — they are overwritten by the build.
 

@@ -34,7 +34,10 @@
       <a href="/et/protsess/">Kuidas see kulgeb</a>
       <a href="/et/uudised/">Uudised</a>
       <a href="/et/meist/" class="on">Meist</a>
-      <a href="/et/kontakt/" class="navcta">Broneeri kaardistus</a>
+      <!-- CTA-verb "Küsi", mitte "Broneeri": broneerimissüsteemi ei ole — vorm viib ühenduse
+           võtmiseni. Võimalik hilisem täiendus: ise majutatud kalender (ilma kolmanda osapoole
+           manusteta), misjärel verb võib naasta broneerimise juurde. Sama muudatus FI-allikas. -->
+      <a href="/et/kontakt/" class="navcta">Küsi kaardistust</a>
       <div class="langsw" aria-label="Keel / Kieli"><a href="/meista/" lang="fi">FI</a><a href="/et/" class="cur" aria-current="true">EE</a></div>
     </nav>
     <button class="burger" id="burger" aria-label="Menüü" aria-expanded="false">☰</button>
@@ -43,7 +46,7 @@
 
 <main id="main">
 <div class="page active" id="p-meista">
-  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+  <div id="rev-meist-1" class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
     <div class="wrap">
       <p class="eyebrow">Meist</p>
       <h1 style="font-size:clamp(34px,5.4vw,66px)">Seade on muutunud kaubaks. Oskus mitte.</h1>
@@ -51,7 +54,7 @@
     </div>
   </div>
 
-  <section>
+  <section id="rev-meist-2">
     <div class="wrap">
       <div class="split">
         <div>
@@ -74,7 +77,7 @@
   </section>
 
   <div class="dark">
-    <section>
+    <section id="rev-meist-3">
       <div class="wrap">
         <div class="split">
           <div>
@@ -85,6 +88,9 @@
           <div>
             <p style="color:var(--tx2d);font-size:17px">Töö katab mõlemad turud: agregaatoripartnerlused, võrgunõuete täitmine olemasoleva tootmise kõrvale paigaldatavates akudes, tehniline dokumentatsioon neljas keeles ning reserviturul osalemise rahastusmudelid.</p>
             <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Läbiv joon on sama, millele see ettevõte on ehitatud: tööstuskliendid teevad väga suuri otsuseid väga õhukese dokumentatsiooni najal, ja see auk on suletav.</p>
+            <!-- MADIS: lause "Me ei ole Soome ettevõte, millel on eestikeelne leht" on praegu
+                 vastuolus .fi/et-URLiga ja jaluses ainult Oy-ga. Sinu otsus: kas pehmendada kohe
+                 või oodata, kuni OÜ on asutatud ja .ee teenindab natiivselt. Teksti ei muudetud. -->
             <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Teenindame Soome ja Eesti turge — Fingrid ja Elering, Caruna, Elenia, Helen, Vantaan Energia ja Elektrilevi — mõlemas keeles. Me ei ole Soome ettevõte, millel on eestikeelne leht.</p>
             <div class="btnrow"><a href="/et/kontakt/" class="btn">Võtke ühendust</a></div>
           </div>

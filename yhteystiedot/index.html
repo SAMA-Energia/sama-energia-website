@@ -34,7 +34,10 @@
       <a href="/prosessi/">Näin se etenee</a>
       <a href="/ajankohtaista/">Ajankohtaista</a>
       <a href="/meista/">Meistä</a>
-      <a href="/yhteystiedot/" class="navcta">Varaa kartoitus</a>
+      <!-- CTA-verbi "Pyydä", ei "Varaa": varsinaista ajanvarausjärjestelmää ei ole — lomake johtaa
+           yhteydenottoon. Mahdollinen myöhempi parannus: itse isännöity kalenteri (ei kolmannen
+           osapuolen upotuksia), jolloin verbi voi palata varaamiseen. Sama muutos ET-lähteessä. -->
+      <a href="/yhteystiedot/" class="navcta">Pyydä kartoitus</a>
       <div class="langsw" aria-label="Kieli / Keel"><a href="/" class="cur" aria-current="true">FI</a><a href="/et/kontakt/" lang="et">EE</a></div>
     </nav>
     <button class="burger" id="burger" aria-label="Valikko" aria-expanded="false">☰</button>
@@ -43,7 +46,7 @@
 
 <main id="main">
 <div class="page active" id="p-yhteys">
-  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+  <div id="rev-yhteystiedot-1" class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
     <div class="wrap">
       <p class="eyebrow">Yhteystiedot</p>
       <h1 style="font-size:clamp(34px,5.4vw,66px)">Aloitetaan kulutustiedoistanne.</h1>
@@ -51,26 +54,36 @@
     </div>
   </div>
 
-  <section>
+  <section id="rev-yhteystiedot-2">
     <div class="wrap">
       <div class="split">
         <div>
-          <form class="form" id="ctForm" name="kohdekartoitus" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <!-- Lomake: action = staattinen kiitossivu, jotta lähetys toimii myös ilman JS:ää
+               (site.js sieppaa lähetyksen AJAXiksi ja käyttää samaa polkua varapolkuna).
+               Kenttänimet identtiset FI/ET — molemmat kielet syöttävät samaa Netlify-lomaketta. -->
+          <form class="form" id="ctForm" name="kohdekartoitus" method="POST" action="/kiitos/" data-netlify="true" netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="kohdekartoitus">
             <p hidden aria-hidden="true"><label>Jättäkää tämä kenttä tyhjäksi: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
-            <div><label for="f1">Nimi</label><input id="f1" name="nimi" required></div>
-            <div><label for="f2">Yritys</label><input id="f2" name="yritys" required></div>
-            <div><label for="f3">Sähköposti</label><input id="f3" type="email" name="email" required></div>
-            <div><label for="f4">Puhelin</label><input id="f4" type="tel" name="puhelin"></div>
-            <div><label for="f5">Kohteen sijainti</label><input id="f5" name="sijainti"></div>
-            <div><label for="f6">Pääsulake tai vuosikulutus</label><input id="f6" name="kulutus" placeholder="esim. 400 A tai 900 MWh/v"></div>
-            <div class="full"><label for="f7">Onko kohteessa aurinkosähköä?</label>
-              <select id="f7" name="aurinko"><option>Ei</option><option>Kyllä</option><option>Suunnitteilla</option><option>En tiedä</option></select>
+            <div><label for="f1">Nimi <span class="fnote rq">· pakollinen</span></label><input id="f1" name="nimi" required autocomplete="name"></div>
+            <div><label for="f3">Sähköposti <span class="fnote rq">· pakollinen</span></label><input id="f3" type="email" name="email" required autocomplete="email"></div>
+            <div><label for="f2">Yritys <span class="fnote">· valinnainen</span></label><input id="f2" name="yritys" autocomplete="organization"></div>
+            <div><label for="f4">Puhelin <span class="fnote">· valinnainen</span></label><input id="f4" type="tel" inputmode="tel" name="puhelin" autocomplete="tel"></div>
+            <p class="full formsub">Nämä nopeuttavat arviota <span>· kaikki valinnaisia</span></p>
+            <div><label for="f5">Kohteen sijainti <span class="fnote">· valinnainen</span></label><input id="f5" name="sijainti"></div>
+            <div><label for="f6">Pääsulake tai liittymisteho <span class="fnote">· valinnainen</span></label><input id="f6" name="liittymisteho" placeholder="esim. 400 A tai 250 kW"></div>
+            <div><label for="f9">Vuosikulutus <span class="fnote">· valinnainen</span></label><input id="f9" name="vuosikulutus" placeholder="esim. 900 MWh/v"></div>
+            <div><label for="f10">Verkkoyhtiö <span class="fnote">· valinnainen</span></label><input id="f10" name="verkkoyhtio" placeholder="esim. Elenia"></div>
+            <div><label for="f7">Onko kohteessa aurinkosähköä? <span class="fnote">· valinnainen</span></label>
+              <select id="f7" name="aurinko"><option value="">—</option><option>Ei</option><option>Kyllä</option><option>Suunnitteilla</option></select>
             </div>
-            <div class="full"><label for="f8">Viesti</label><textarea id="f8" name="viesti"></textarea></div>
+            <div><label for="f11">Jos on: teho (kWp) <span class="fnote">· valinnainen</span></label><input id="f11" name="aurinko-kwp" inputmode="numeric" placeholder="esim. 120"></div>
+            <div class="full"><label for="f12">Toivottu yhteydenottotapa <span class="fnote">· valinnainen</span></label>
+              <select id="f12" name="yhteydenotto"><option value="">—</option><option>Sähköposti</option><option>Puhelin</option><option>WhatsApp</option></select>
+            </div>
+            <div class="full"><label for="f8">Viesti <span class="fnote">· valinnainen</span></label><textarea id="f8" name="viesti"></textarea></div>
             <div class="full"><button type="submit" id="ctSend" class="btn dk" style="border:none;cursor:pointer;font-family:'Archivo',sans-serif">Lähetä</button></div>
             <p class="full" style="font-size:14.5px;color:var(--muted)">Käsittelemme lähettämänne tiedot vastataksemme yhteydenottoonne. <a href="/tietosuoja/">Tietosuojaseloste</a>.</p>
-            <p class="full ok" id="ctOk" hidden style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1a7a3c">Kiitos — palaamme asiaan arkipäivän kuluessa.<em id="ctDemo" style="color:var(--muted)"> (Esikatselu: lähetys kytketään päälle julkaisun yhteydessä.)</em></p>
+            <p class="full ok" id="ctOk" hidden style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1a7a3c">Kiitos — palaamme asiaan arkipäivän kuluessa.</p>
             <p class="full" id="ctErr" hidden style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#A8452E">Lähetys ei onnistunut. Voitte lähettää tiedot myös suoraan sähköpostilla: <a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a>.</p>
           </form>
         </div>
@@ -86,7 +99,7 @@
       </div>
     </div>
   </section>
-  <section style="padding-top:0">
+  <section id="rev-yhteystiedot-3" style="padding-top:0">
     <div class="wrap">
       <p style="max-width:640px;color:var(--tx2);border-top:1px solid var(--line-dk);padding-top:22px;font-size:15.5px">Rakennamme myös kumppaniverkostoa — sähkösuunnittelijat, sertifioidut urakoitsijat ja kiinteistökehittäjät: ottakaa yhteyttä samalla lomakkeella.</p>
     </div>
