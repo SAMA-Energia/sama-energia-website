@@ -4,17 +4,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Energiasalvestid — teenus | SAMA Energia</title>
-<meta name="description" content="Energiasalvestid teenusena: objektikaardistus, analüüsipakett, teostus ja elukaar. Oleme tootjatest sõltumatud — valime seadme objekti järgi, mitte objekti seadme järgi.">
-<link rel="canonical" href="https://samaenergia.fi/et/energiasalvestid/">
+<title>Tööstuse energiasalvestid — kaardistusest kasutuselevõtuni | SAMA Energia</title>
+<meta name="description" content="Sõltumatu dimensioneerimine, kirjalik säästuarvutus teie enda tarbimisandmetest ja võrguettevõtte seisukoht enne hanget.">
+<link rel="canonical" href="https://samaenergia.ee/energiasalvestid/">
 <link rel="alternate" hreflang="fi-FI" href="https://samaenergia.fi/energiavarastot/">
-<link rel="alternate" hreflang="et-EE" href="https://samaenergia.fi/et/energiasalvestid/">
+<link rel="alternate" hreflang="et-EE" href="https://samaenergia.ee/energiasalvestid/">
 <link rel="alternate" hreflang="x-default" href="https://samaenergia.fi/energiavarastot/">
-<meta property="og:title" content="Energiasalvestid — teenus | SAMA Energia">
-<meta property="og:description" content="Energiasalvestid teenusena: objektikaardistus, analüüsipakett, teostus ja elukaar. Oleme tootjatest sõltumatud — valime seadme objekti järgi, mitte objekti seadme järgi.">
+<meta property="og:title" content="Tööstuse energiasalvestid — kaardistusest kasutuselevõtuni | SAMA Energia">
+<meta property="og:description" content="Sõltumatu dimensioneerimine, kirjalik säästuarvutus teie enda tarbimisandmetest ja võrguettevõtte seisukoht enne hanget.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="et_EE">
-<meta property="og:url" content="https://samaenergia.fi/et/energiasalvestid/">
+<meta property="og:url" content="https://samaenergia.ee/energiasalvestid/">
 <!-- og:image jätetty tarkoituksella pois: odottaa tunnusmerkkipäätöstä -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23D18A44' d='M12 1 13.76 7.75 19.78 4.22 16.25 10.24 23 12 16.25 13.76 19.78 19.78 13.76 16.25 12 23 10.24 16.25 4.22 19.78 7.75 13.76 1 12 7.75 10.24 4.22 4.22 10.24 7.75 Z'/%3E%3C/svg%3E">
 <meta name="theme-color" content="#0E1519">
@@ -38,7 +38,7 @@
            võtmiseni. Võimalik hilisem täiendus: ise majutatud kalender (ilma kolmanda osapoole
            manusteta), misjärel verb võib naasta broneerimise juurde. Sama muudatus FI-allikas. -->
       <a href="/et/kontakt/" class="navcta">Küsi kaardistust</a>
-      <div class="langsw" aria-label="Keel / Kieli"><a href="/energiavarastot/" lang="fi">FI</a><a href="/et/" class="cur" aria-current="true">EE</a></div>
+      <div class="langsw" aria-label="Keel / Kieli"><a href="https://samaenergia.fi/energiavarastot/" lang="fi">FI</a><a href="/et/" class="cur" aria-current="true">EE</a></div>
     </nav>
     <button class="burger" id="burger" aria-label="Menüü" aria-expanded="false">☰</button>
   </div>
@@ -99,40 +99,95 @@
     </div>
   </section>
 
-  <!-- VÕIMSUSTASU NÄIDISARVUTUS. Tariifinumbrid on dokumenteeritud: Elektrilevi võrguteenuse
-       hinnakiri, kehtiv alates 01.06.2026, käibemaksuta, kooskõlastatud Konkurentsiameti
-       02.03.2026 otsusega nr 7-3/2026-028. Kaks poolt hoitakse rangelt lahus: DOKUMENTEERITUD
-       (tariif, allikaga) ja MODELLEERITUD (eeldus koormusprofiilist). Tulemus alati vahemikuna.
-       Ei tarnijanimesid, ei reservitulu.
-       MADIS — kinnita: (1) paketivalik VKL2 (vs VKA2 3,50/3,64 või Aeg-variandid) ja
-       (2) modelleeritud vähenduse vahemik 60–100 kW selle kabinetiklassi kohta. -->
-  <section id="rev-energiasalvestid-3">
+  <!-- VÕIMSUSTASU NÄIDISARVUTUS — Madise autoritekst (2026-08-21), talon tyylissä,
+       DOKUMENTEERITUD/MODELLEERITUD-leimat säilytetty. Paketivalik: VKL5 (Madise otsus,
+       korvaa aiemman VKL2-luonnoksen ja 60–100 kW -kysymyksen). Korjaukset MADIS-kommentein. -->
+  <section id="voimsustasu">
     <div class="wrap">
       <p class="eyebrow">Võimsustasu näidisarvutus</p>
-      <h2 class="sec-title">Mida tipuvõimsuse piiramine keskpinge tööstusobjektil tähendab.</h2>
-      <p class="sec-lede">Näide: keskpinge tööstusobjekt, 125 kW / ~250 kWh klassi konteinersalvesti, tipukoormuse silumine Elektrilevi võrgutariifide vastu. Kaks poolt on teadlikult lahus — mis on dokumenteeritud ja mis on modelleeritud.</p>
+      <h2 class="sec-title">Me ei avalda tulunumbreid, mida keegi ei kontrolli. Võimsustasu on teistsugune.</h2>
+      <p class="sec-lede">Määr on avalik, mehhanism on avalik ja mõju arvutatakse teie enda tunniandmetest. Allpool on näidisarvutus keskpinge tööstusobjektile — dokumenteeritud pool ja selgelt märgistatud eeldused eraldi.</p>
+
       <div class="split" style="margin-top:44px">
         <div>
           <span class="tg las" style="display:inline-block;margin-bottom:16px">DOKUMENTEERITUD</span>
-          <h3 style="font-size:22px;margin-bottom:12px">Elektrilevi tariifikomponendid — pakett Keskpingel liinil VKL2</h3>
+          <h3 style="font-size:22px;margin-bottom:12px">Kuidas Elektrilevi võimsustasu arvestab</h3>
           <ul class="checks">
-            <li>Võrguühenduse kasutusvõimsus: <span class="mono">3,61 €/kW kuus</span> — komponent, millel see näidisarvutus jookseb</li>
-            <li>Tarbimiskoha kasutusvõimsus: <span class="mono">3,75 €/kW kuus</span></li>
-            <li>Hinnad käibemaksuta · hinnakiri kehtiv alates 01.06.2026 · kooskõlastatud Konkurentsiameti 02.03.2026 otsusega nr 7-3/2026-028</li>
+            <li>Arvestuse alus on tunni keskmine võimsus — mõõdetud, mitte hetkeline tipp.</li>
+            <li>Tasu võetakse kuu maksimaalse tunnikeskmise alusel ja mõõtmine algab iga kuu nullist — salvesti teenib 12 korda aastas.</li>
+            <li>VKL5: võrguühenduse kasutusvõimsus <span class="mono">3,48 €/kW kuus</span> käibemaksuta → <span class="mono">41,76 €/kW aastas</span>.</li>
           </ul>
-          <p style="margin-top:16px;color:var(--tx2);font-size:15.5px">Kasutusvõimsuse tasu arvestatakse kalendrikuu suurimast mõõdetud tunni keskmisest võimsusest — just seepärast vähendab tipu silumine seda tasu otse. See on tariifitabeli rida, mitte hinnang.</p>
+          <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:14px">ALLIKAS: ELEKTRILEVI VÕRGUTEENUSE HINNAKIRI, KEHTIB ALATES 1.06.2026 · KONKURENTSIAMETI OTSUS NR 7-3/2026-028 (02.03.2026) · DOKUMENTEERITUD</p>
         </div>
         <div>
           <span class="tg ske" style="display:inline-block;margin-bottom:16px">MODELLEERITUD</span>
-          <h3 style="font-size:22px;margin-bottom:12px">Eeldatav tipu vähenemine</h3>
-          <p style="color:var(--tx2);font-size:16.5px">Arvutuse teine pool on eeldus: kui palju suudab 125 kW / ~250 kWh salvesti kuu tippu tegelikult maha lõigata. See sõltub koormusprofiilist — sellest, kui teravad ja kui pikad teie tipud on. Näites kasutame modelleeritud eeldust <span class="mono">60–100 kW</span> — see on eeldus, mitte lubadus.</p>
-          <p style="margin-top:16px;color:var(--tx2);font-size:16.5px">Tegelik number ei tule meilt ega tabelist — see arvutatakse teie enda 15-minutilise intervalli tarbimisandmetest.</p>
+          <h3 style="font-size:22px;margin-bottom:12px">Näidisobjekt — eeldused eraldi</h3>
+          <ul class="checks">
+            <li>Keskpinge tööstusobjekt 6–35 kV liinil, pakett VKL5</li>
+            <li>Kuu tipp 480 kW, tavavõimsus ~350 kW</li>
+            <li>Tipud hommikuse käivituse ajal, kestus kuni 1,5 h</li>
+            <li>Salvesti 125 kW / 2 h (~250 kWh kasutatav)</li>
+            <li>Siht: tipp alla 380 kW — 100 kW lõige, 25 kW varu</li>
+          </ul>
         </div>
       </div>
-      <div class="callout">
-        <p>Aastane mõju võrguühenduse kasutusvõimsuse tasule: <span class="mono">3,61 €/kW kuus × 12 ≈ 43 €/kW aastas</span> → 60–100 kW vähenduse juures ligikaudu <span class="mono">2 600 – 4 300 € aastas</span> (käibemaksuta) — vahemik, mitte punkthinnang.</p>
-        <p class="sub">Just seda kontrollib tasuta objektikaardistus teie enda tarbimisandmete põhjal — enne kui midagi alla kirjutatakse.</p>
+
+      <table class="tbl">
+        <thead>
+          <tr><th>Samm</th><th>Väärtus</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Kuu tipp enne</td><td>480 kW</td></tr>
+          <tr><td>Siht pärast lõiget</td><td>380 kW — lõige 100 kW</td></tr>
+          <tr><td>Energiakontroll</td><td>100 kW × 1,5 h = 150 kWh ≤ ~250 kWh kasutatav → teostatav</td></tr>
+          <tr><td>Määr</td><td>3,48 €/kW kuus (VKL5, võrguühenduse kasutusvõimsus, käibemaksuta)</td></tr>
+          <tr><td>Sääst kuus</td><td>100 kW × 3,48 € = 348 €</td></tr>
+          <tr><td>Sääst aastas</td><td><b>4 176 €</b> — ainult kasutusvõimsuse komponent</td></tr>
+        </tbody>
+      </table>
+
+      <p class="eyebrow" style="margin-top:clamp(40px,6vw,56px)">Mida see näide ei sisalda</p>
+      <div class="qa" style="margin-top:0">
+        <div><h4>Reservitulu</h4><p>Alati eraldi ja stsenaariumidena, mitte selle arvutuse sees. <a href="/et/reserviturud/">Miks, loe siit →</a></p></div>
+        <!-- MADIS: "Miks, loe siit →" viitab /et/reserviturud-lehele (parandus c). -->
+        <div><h4>Börsihinna optimeerimine ja tipuaja edastamise vahe</h4><p>VKL5 talvine tipuaeg 2,06 s/kWh vs öö 0,75 s/kWh → 1,31 senti lisahooba iga nihutatud kWh kohta. Eraldi rida, mitte selle näite osa.</p></div>
+        <div><h4>Akukaod</h4><p>Salvestamisel ja tagastamisel kaob 10–15% energiast — see arvestatakse täisarvutuses sisse.</p></div>
+        <div><h4>Teie objekt</h4><p>Tipu kestus teie objektil määrab, kas salvesti energia jätkub — sellepärast arvutame lõpliku numbri teie enda tunniandmetest, mitte näitest.</p></div>
       </div>
+
+      <p class="eyebrow" style="margin-top:clamp(40px,6vw,56px)">Kaks lisahooba samast hinnakirjast</p>
+      <div class="tri duo" style="margin-top:24px">
+        <div><span class="num">01 · LÄBILASKEVÕIME</span><h3>Üle 630 kW osa</h3><p>Läbilaskevõime tasu 630 kW ületavalt osalt on 0,32 €/kW kuus — tipu lõikamine võib vähendada ka seda rida.</p></div>
+        <!-- MADIS: kehatekstissäsi VKL5 tarbimiskoha määräksi oli merkitty 3,75 €/kW kuus —
+             hinnakirjan mukaan VKL5 = 3,61 (3,75 on VKL2:n määrä; oma liitetaulukkosi on oikein).
+             Käytetty 3,61 (parandus a). -->
+        <div><span class="num">02 · SUMMAARNE ARVESTUS</span><h3>Mitu liitumispunkti</h3><p>Mitme liitumispunktiga tarbimiskoha võimsust arvestatakse summaarselt — VKL5 tarbimiskoha kasutusvõimsuse määr on 3,61 €/kW kuus.</p></div>
+      </div>
+
+      <div class="callout">
+        <p>Just seda kontrollib tasuta objektikaardistus teie enda tarbimisandmete põhjal — enne kui midagi alla kirjutatakse.</p>
+        <p class="sub">Näide on illustratsioon mehhanismist. Teie number arvutatakse teie tunniandmetest ja antakse kirjalikult.</p>
+      </div>
+      <!-- MADIS: CTA "Broneerige objektikaardistus" → "Küsige objektikaardistust" (parandus b). -->
+      <div class="btnrow"><a href="/et/kontakt/" class="btn">Küsige objektikaardistust</a></div>
+      <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:18px">KÕIK MÄÄRAD: ELEKTRILEVI VÕRGUTEENUSE HINNAKIRI 1.06.2026 · KONKURENTSIAMETI OTSUS NR 7-3/2026-028 · KÄIBEMAKSUTA · DOKUMENTEERITUD</p>
+
+      <p class="eyebrow" style="margin-top:clamp(40px,6vw,56px)">Lisa: võrguühenduse kasutusvõimsuse määrad paketiti</p>
+      <table class="tbl">
+        <thead>
+          <tr><th>Pakett</th><th>€/kW kuus</th><th>€/kW aastas</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>VMA2</td><td>2,45</td><td>29,40</td></tr>
+          <tr><td>VMA5</td><td>2,35</td><td>28,20</td></tr>
+          <tr><td>VMA9</td><td>1,80</td><td>21,60</td></tr>
+          <tr><td>VKL2</td><td>3,61</td><td>43,32</td></tr>
+          <tr><td>VKL5</td><td>3,48</td><td>41,76</td></tr>
+          <tr><td>VKA2</td><td>3,50</td><td>42,00</td></tr>
+          <tr><td>VKA5</td><td>3,38</td><td>40,56</td></tr>
+          <tr><td>Mega (VKA4/VKL4)</td><td>2,60</td><td>31,20</td></tr>
+        </tbody>
+      </table>
     </div>
   </section>
 

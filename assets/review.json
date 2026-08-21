@@ -42,6 +42,12 @@
    "prev": "Ei vielä aurinkosähköä? Kokonaisuus kannattaa suunnitella kerralla. Toimitamme myös koko järjestelmän: aurinkosähkön, energiavaraston ja ohjauksen yhtenä suunniteltuna kokonaisuutena. Silloin edellä kuvatut kysymykset ratkaistaan suunnittelupöydällä — ei jälkikäteen selvittämällä. 01 · YHTEISMITOITUSOikea koko molemmilleTuotanto ja varasto mitoitetaan samoista kulutustiedoista — kumpikin oikean kokoiseksi ja toisiaan varten. 02 · ARKKITEHTUURIValinta perustellaanHybridi-invertteri vai erillinen järjestelmä — ratkaisu valitaan kohteen mukaan ja perustellaan kirjallisesti. Emme ole sidottuja yhteenkään valmistajaan. 03 · ALUSTA ASTI OIKEINTehonhallinta sisään, ei päälleTakasyötön hallinta ja mittaus suunnitellaan järjestelmään alusta asti, eikä niitä soviteta jälkikäteen. 04 · YKSI VASTUUTAHOYksi suunnitelma, yksi toimitusYksi verkkoyhtiöprosessi ja yksi taho, joka vastaa kokonaisuudesta — suunnittelusta käyttöönottoon ja seurantaan. Varaa kohdekartoitus"
   },
   {
+   "page": "/reservimarkkinat/",
+   "sectionId": "rev-reservimarkkinat-5",
+   "kind": "changed",
+   "prev": "Tärkein kohta tällä sivulla Miksi emme julkaise tuottolukuja Jokainen akkutarjous sisältää takaisinmaksuluvun. Ratkaisevaa on, mille oletuksille se on rakennettu — ja kuka seisoo niiden takana vielä viidentenä vuonna. Reservihinnat vaihtelevat tunneittain ja määräytyvät markkinalla. Kukaan ei tiedä ennalta, mitä ne ovat ensi vuonna. Ne ovat laskusuunnassa. Suuren mittakaavan varastointi tulee sekä Suomen että Viron markkinoille. Kun sata megawattia varastointikapasiteettia tulee reservimarkkinalle, hinnat puristuvat. Se ei ole ennuste vaan laskutoimitus. Emme tiedä, miten kohde kvalifioituu, ennen kuin aggregaattori on sen arvioinut. Se arvio ei ole olemassa siinä vaiheessa, kun useimmat tarjoukset kirjoitetaan. Luvun, jonka annamme, on kestettävä tarkastelu vielä viidentenä vuonna. Siksi rakennamme laskelman säästöille ja esitämme reservitulon lisänä: aggregaattorin omana arviona, jonka rinnalla on skenaario siitä, mitä tapahtuu, jos hinnat puolittuvat. Jos hanke toimii vain silloin, kun reservihinnat pitävät, sanomme sen. Se tarkoittaa, että hanke on hauras, ja se kannattaa tietää ennen allekirjoitusta eikä toisena vuonna."
+  },
+  {
    "page": "/yhteystiedot/",
    "sectionId": "rev-yhteystiedot-2",
    "kind": "changed",
@@ -84,7 +90,7 @@
   },
   {
    "page": "/et/energiasalvestid/",
-   "sectionId": "rev-energiasalvestid-3",
+   "sectionId": "voimsustasu",
    "kind": "new"
   },
   {
@@ -109,6 +115,17 @@
    "sectionId": "rev-reserviturud-3",
    "kind": "changed",
    "prev": "Tooted Reservitooted ja mida igaüks akult nõuab Eri tooted eeldavad eri reageerimiskiirust ja eri kestust. Kestus määrab aku energiamahu suhte võimsusse — see on koht, kus valesti dimensioonitud süsteem ei kõlba turule, mille jaoks see müüdi. ToodeMida see teebNõue akule FCR-N Sageduse pidev peenhäälestus normaalolukorras. Reageerib ka väikestele kõrvalekalletele. Võime võimsust sümmeetriliselt nii võtta kui ka anda. Nõuab üldjuhul pikimat kestust mõlemas suunas. FCR-D Häirereserv. Aktiveerub alles siis, kui sagedus kaldub oluliselt kõrvale — näiteks kui suur tootmisüksus võrgust eraldub. Kiire aktiveerumine, lühem kestus. Kõige tavalisem lähtekoht äri- ja tööstussuuruses akudele. aFRR Automaatne sageduse taastamine. Viib sageduse pärast FCR-i tagasi sihtväärtusele. Pikem kestus ja pidev juhitavus. Nõuab rohkem energiat võimsuse suhtes. mFRR Manuaalne reserv. Aktiveeritakse käsu peale pikemaajalisteks olukordadeks. Pikim kestus. Harvem ärisuuruses aku esmane toode. Täpsed kestusnõuded ja tehnilised tingimused määrab põhivõrguettevõte — Eestis Elering, Soomes Fingrid — ja need muutuvad. Kasutame alati kehtivat tingimust, mitte mälu järgi numbrit."
+  },
+  {
+   "page": "/et/reserviturud/",
+   "sectionId": "rev-reserviturud-5",
+   "kind": "changed",
+   "prev": "Kõige olulisem koht sellel lehel Miks me ei avalda tulunumbreid Iga akupakkumine sisaldab tasuvusnumbrit. Otsustav on, millistele eeldustele see on ehitatud — ja kes seisab nende taga ka viiendal aastal. Reservihinnad kõiguvad tundide kaupa ja kujunevad turul. Keegi ei tea ette, millised need on järgmisel aastal. Need on langustrendis. Suuremahuline salvestus tuleb nii Eesti kui ka Soome turule. Kui sada megavatti salvestusvõimsust tuleb reserviturule, surutakse hinnad kokku. See ei ole ennustus, vaid arvutus. Me ei tea, kuidas objekt kvalifitseerub, enne kui agregaator on seda hinnanud. Seda hinnangut ei ole olemas etapis, kus enamik pakkumisi kirjutatakse. Number, mille meie anname, peab taluma kontrolli ka viiendal aastal. Seepärast ehitame arvutuse säästudele ja esitame reservitulu lisana: agregaatori enda hinnanguna, mille kõrval on stsenaarium sellest, mis juhtub, kui hinnad poolituvad. Kui projekt toimib ainult siis, kui reservihinnad püsivad, ütleme seda. See tähendab, et projekt on habras, ja seda tasub teada enne allkirja, mitte teisel aastal."
+  },
+  {
+   "page": "/et/reserviturud/",
+   "sectionId": "rev-reserviturud-6",
+   "kind": "new"
   },
   {
    "page": "/et/kontakt/",

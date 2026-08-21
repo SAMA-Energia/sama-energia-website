@@ -92,7 +92,7 @@
         <div class="c-las">
           <h4>Võimsustasud alla</h4>
           <p>Salvesti lõikab tarbimistipud — mõju on näha võrguarvel. Arvutatakse teie enda tarbimisandmetest.</p>
-          <div class="brow"><span class="tg las">ARVUTATAV</span><a class="morelink" href="/et/energiasalvestid/">Loe edasi</a></div>
+          <div class="brow"><span class="tg las">ARVUTATAV</span><a class="morelink" href="/et/energiasalvestid/#voimsustasu">Loe edasi</a></div>
         </div>
         <div class="c-las">
           <h4>Börsielekter kasuks</h4>
@@ -220,7 +220,7 @@
 </div>
 
 <!-- ══════════════════ ENERGIASALVESTID ══════════════════ -->
-<div class="page" id="p-energiavarastot" data-slug="energiasalvestid" data-title="Energiasalvestid — teenus | SAMA Energia" data-desc="Energiasalvestid teenusena: objektikaardistus, analüüsipakett, teostus ja elukaar. Oleme tootjatest sõltumatud — valime seadme objekti järgi, mitte objekti seadme järgi.">
+<div class="page" id="p-energiavarastot" data-slug="energiasalvestid" data-title="Tööstuse energiasalvestid — kaardistusest kasutuselevõtuni | SAMA Energia" data-desc="Sõltumatu dimensioneerimine, kirjalik säästuarvutus teie enda tarbimisandmetest ja võrguettevõtte seisukoht enne hanget.">
   <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
     <div class="wrap">
       <p class="eyebrow">Energiasalvestid</p>
@@ -274,40 +274,95 @@
     </div>
   </section>
 
-  <!-- VÕIMSUSTASU NÄIDISARVUTUS. Tariifinumbrid on dokumenteeritud: Elektrilevi võrguteenuse
-       hinnakiri, kehtiv alates 01.06.2026, käibemaksuta, kooskõlastatud Konkurentsiameti
-       02.03.2026 otsusega nr 7-3/2026-028. Kaks poolt hoitakse rangelt lahus: DOKUMENTEERITUD
-       (tariif, allikaga) ja MODELLEERITUD (eeldus koormusprofiilist). Tulemus alati vahemikuna.
-       Ei tarnijanimesid, ei reservitulu.
-       MADIS — kinnita: (1) paketivalik VKL2 (vs VKA2 3,50/3,64 või Aeg-variandid) ja
-       (2) modelleeritud vähenduse vahemik 60–100 kW selle kabinetiklassi kohta. -->
-  <section>
+  <!-- VÕIMSUSTASU NÄIDISARVUTUS — Madise autoritekst (2026-08-21), talon tyylissä,
+       DOKUMENTEERITUD/MODELLEERITUD-leimat säilytetty. Paketivalik: VKL5 (Madise otsus,
+       korvaa aiemman VKL2-luonnoksen ja 60–100 kW -kysymyksen). Korjaukset MADIS-kommentein. -->
+  <section id="voimsustasu">
     <div class="wrap">
       <p class="eyebrow">Võimsustasu näidisarvutus</p>
-      <h2 class="sec-title">Mida tipuvõimsuse piiramine keskpinge tööstusobjektil tähendab.</h2>
-      <p class="sec-lede">Näide: keskpinge tööstusobjekt, 125 kW / ~250 kWh klassi konteinersalvesti, tipukoormuse silumine Elektrilevi võrgutariifide vastu. Kaks poolt on teadlikult lahus — mis on dokumenteeritud ja mis on modelleeritud.</p>
+      <h2 class="sec-title">Me ei avalda tulunumbreid, mida keegi ei kontrolli. Võimsustasu on teistsugune.</h2>
+      <p class="sec-lede">Määr on avalik, mehhanism on avalik ja mõju arvutatakse teie enda tunniandmetest. Allpool on näidisarvutus keskpinge tööstusobjektile — dokumenteeritud pool ja selgelt märgistatud eeldused eraldi.</p>
+
       <div class="split" style="margin-top:44px">
         <div>
           <span class="tg las" style="display:inline-block;margin-bottom:16px">DOKUMENTEERITUD</span>
-          <h3 style="font-size:22px;margin-bottom:12px">Elektrilevi tariifikomponendid — pakett Keskpingel liinil VKL2</h3>
+          <h3 style="font-size:22px;margin-bottom:12px">Kuidas Elektrilevi võimsustasu arvestab</h3>
           <ul class="checks">
-            <li>Võrguühenduse kasutusvõimsus: <span class="mono">3,61 €/kW kuus</span> — komponent, millel see näidisarvutus jookseb</li>
-            <li>Tarbimiskoha kasutusvõimsus: <span class="mono">3,75 €/kW kuus</span></li>
-            <li>Hinnad käibemaksuta · hinnakiri kehtiv alates 01.06.2026 · kooskõlastatud Konkurentsiameti 02.03.2026 otsusega nr 7-3/2026-028</li>
+            <li>Arvestuse alus on tunni keskmine võimsus — mõõdetud, mitte hetkeline tipp.</li>
+            <li>Tasu võetakse kuu maksimaalse tunnikeskmise alusel ja mõõtmine algab iga kuu nullist — salvesti teenib 12 korda aastas.</li>
+            <li>VKL5: võrguühenduse kasutusvõimsus <span class="mono">3,48 €/kW kuus</span> käibemaksuta → <span class="mono">41,76 €/kW aastas</span>.</li>
           </ul>
-          <p style="margin-top:16px;color:var(--tx2);font-size:15.5px">Kasutusvõimsuse tasu arvestatakse kalendrikuu suurimast mõõdetud tunni keskmisest võimsusest — just seepärast vähendab tipu silumine seda tasu otse. See on tariifitabeli rida, mitte hinnang.</p>
+          <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:14px">ALLIKAS: ELEKTRILEVI VÕRGUTEENUSE HINNAKIRI, KEHTIB ALATES 1.06.2026 · KONKURENTSIAMETI OTSUS NR 7-3/2026-028 (02.03.2026) · DOKUMENTEERITUD</p>
         </div>
         <div>
           <span class="tg ske" style="display:inline-block;margin-bottom:16px">MODELLEERITUD</span>
-          <h3 style="font-size:22px;margin-bottom:12px">Eeldatav tipu vähenemine</h3>
-          <p style="color:var(--tx2);font-size:16.5px">Arvutuse teine pool on eeldus: kui palju suudab 125 kW / ~250 kWh salvesti kuu tippu tegelikult maha lõigata. See sõltub koormusprofiilist — sellest, kui teravad ja kui pikad teie tipud on. Näites kasutame modelleeritud eeldust <span class="mono">60–100 kW</span> — see on eeldus, mitte lubadus.</p>
-          <p style="margin-top:16px;color:var(--tx2);font-size:16.5px">Tegelik number ei tule meilt ega tabelist — see arvutatakse teie enda 15-minutilise intervalli tarbimisandmetest.</p>
+          <h3 style="font-size:22px;margin-bottom:12px">Näidisobjekt — eeldused eraldi</h3>
+          <ul class="checks">
+            <li>Keskpinge tööstusobjekt 6–35 kV liinil, pakett VKL5</li>
+            <li>Kuu tipp 480 kW, tavavõimsus ~350 kW</li>
+            <li>Tipud hommikuse käivituse ajal, kestus kuni 1,5 h</li>
+            <li>Salvesti 125 kW / 2 h (~250 kWh kasutatav)</li>
+            <li>Siht: tipp alla 380 kW — 100 kW lõige, 25 kW varu</li>
+          </ul>
         </div>
       </div>
-      <div class="callout">
-        <p>Aastane mõju võrguühenduse kasutusvõimsuse tasule: <span class="mono">3,61 €/kW kuus × 12 ≈ 43 €/kW aastas</span> → 60–100 kW vähenduse juures ligikaudu <span class="mono">2 600 – 4 300 € aastas</span> (käibemaksuta) — vahemik, mitte punkthinnang.</p>
-        <p class="sub">Just seda kontrollib tasuta objektikaardistus teie enda tarbimisandmete põhjal — enne kui midagi alla kirjutatakse.</p>
+
+      <table class="tbl">
+        <thead>
+          <tr><th>Samm</th><th>Väärtus</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Kuu tipp enne</td><td>480 kW</td></tr>
+          <tr><td>Siht pärast lõiget</td><td>380 kW — lõige 100 kW</td></tr>
+          <tr><td>Energiakontroll</td><td>100 kW × 1,5 h = 150 kWh ≤ ~250 kWh kasutatav → teostatav</td></tr>
+          <tr><td>Määr</td><td>3,48 €/kW kuus (VKL5, võrguühenduse kasutusvõimsus, käibemaksuta)</td></tr>
+          <tr><td>Sääst kuus</td><td>100 kW × 3,48 € = 348 €</td></tr>
+          <tr><td>Sääst aastas</td><td><b>4 176 €</b> — ainult kasutusvõimsuse komponent</td></tr>
+        </tbody>
+      </table>
+
+      <p class="eyebrow" style="margin-top:clamp(40px,6vw,56px)">Mida see näide ei sisalda</p>
+      <div class="qa" style="margin-top:0">
+        <div><h4>Reservitulu</h4><p>Alati eraldi ja stsenaariumidena, mitte selle arvutuse sees. <a href="/et/reserviturud/">Miks, loe siit →</a></p></div>
+        <!-- MADIS: "Miks, loe siit →" viitab /et/reserviturud-lehele (parandus c). -->
+        <div><h4>Börsihinna optimeerimine ja tipuaja edastamise vahe</h4><p>VKL5 talvine tipuaeg 2,06 s/kWh vs öö 0,75 s/kWh → 1,31 senti lisahooba iga nihutatud kWh kohta. Eraldi rida, mitte selle näite osa.</p></div>
+        <div><h4>Akukaod</h4><p>Salvestamisel ja tagastamisel kaob 10–15% energiast — see arvestatakse täisarvutuses sisse.</p></div>
+        <div><h4>Teie objekt</h4><p>Tipu kestus teie objektil määrab, kas salvesti energia jätkub — sellepärast arvutame lõpliku numbri teie enda tunniandmetest, mitte näitest.</p></div>
       </div>
+
+      <p class="eyebrow" style="margin-top:clamp(40px,6vw,56px)">Kaks lisahooba samast hinnakirjast</p>
+      <div class="tri duo" style="margin-top:24px">
+        <div><span class="num">01 · LÄBILASKEVÕIME</span><h3>Üle 630 kW osa</h3><p>Läbilaskevõime tasu 630 kW ületavalt osalt on 0,32 €/kW kuus — tipu lõikamine võib vähendada ka seda rida.</p></div>
+        <!-- MADIS: kehatekstissäsi VKL5 tarbimiskoha määräksi oli merkitty 3,75 €/kW kuus —
+             hinnakirjan mukaan VKL5 = 3,61 (3,75 on VKL2:n määrä; oma liitetaulukkosi on oikein).
+             Käytetty 3,61 (parandus a). -->
+        <div><span class="num">02 · SUMMAARNE ARVESTUS</span><h3>Mitu liitumispunkti</h3><p>Mitme liitumispunktiga tarbimiskoha võimsust arvestatakse summaarselt — VKL5 tarbimiskoha kasutusvõimsuse määr on 3,61 €/kW kuus.</p></div>
+      </div>
+
+      <div class="callout">
+        <p>Just seda kontrollib tasuta objektikaardistus teie enda tarbimisandmete põhjal — enne kui midagi alla kirjutatakse.</p>
+        <p class="sub">Näide on illustratsioon mehhanismist. Teie number arvutatakse teie tunniandmetest ja antakse kirjalikult.</p>
+      </div>
+      <!-- MADIS: CTA "Broneerige objektikaardistus" → "Küsige objektikaardistust" (parandus b). -->
+      <div class="btnrow"><a href="/et/kontakt/" class="btn">Küsige objektikaardistust</a></div>
+      <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:18px">KÕIK MÄÄRAD: ELEKTRILEVI VÕRGUTEENUSE HINNAKIRI 1.06.2026 · KONKURENTSIAMETI OTSUS NR 7-3/2026-028 · KÄIBEMAKSUTA · DOKUMENTEERITUD</p>
+
+      <p class="eyebrow" style="margin-top:clamp(40px,6vw,56px)">Lisa: võrguühenduse kasutusvõimsuse määrad paketiti</p>
+      <table class="tbl">
+        <thead>
+          <tr><th>Pakett</th><th>€/kW kuus</th><th>€/kW aastas</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>VMA2</td><td>2,45</td><td>29,40</td></tr>
+          <tr><td>VMA5</td><td>2,35</td><td>28,20</td></tr>
+          <tr><td>VMA9</td><td>1,80</td><td>21,60</td></tr>
+          <tr><td>VKL2</td><td>3,61</td><td>43,32</td></tr>
+          <tr><td>VKL5</td><td>3,48</td><td>41,76</td></tr>
+          <tr><td>VKA2</td><td>3,50</td><td>42,00</td></tr>
+          <tr><td>VKA5</td><td>3,38</td><td>40,56</td></tr>
+          <tr><td>Mega (VKA4/VKL4)</td><td>2,60</td><td>31,20</td></tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
@@ -347,7 +402,7 @@
 </div>
 
 <!-- ══════════════════ PÄIKE + AKU ══════════════════ -->
-<div class="page" id="p-aurinko" data-slug="paike-ja-aku" data-title="Päikeseelekter + aku | SAMA Energia" data-desc="Päike toodab, aku ajastab. Tarnime kogu süsteemi või täiendame olemasolevat päikeseelektrit akuga — neli tehnilist küsimust lahendatakse kirjalikult enne pakkumist.">
+<div class="page" id="p-aurinko" data-slug="paike-ja-aku" data-title="Päikeseelekter + aku — üks süsteem | SAMA Energia" data-desc="Aku olemasoleva päikeseelektri kõrvale või kogu süsteem korraga. Neli tehnilist küsimust lahendatakse kirjalikult enne pakkumist.">
   <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
     <div class="wrap">
       <p class="eyebrow">Päikeseelekter + aku</p>
@@ -479,7 +534,7 @@
 </div>
 
 <!-- ══════════════════ RESERVITURUD ══════════════════ -->
-<div class="page" id="p-reservi" data-slug="reserviturud" data-title="Reserviturud: mis need on ja mida need nõuavad | SAMA Energia" data-desc="Mis on reserviturud, mida FCR-N, FCR-D, aFRR ja mFRR akult nõuavad, kuidas objekt turule pääseb — ja miks me tulunumbreid ei avalda.">
+<div class="page" id="p-reservi" data-slug="reserviturud" data-title="Reserviturud: FCR, aFRR ja mFRR selgitatuna | SAMA Energia" data-desc="Mida reservitooted akult nõuavad, kuidas objekt turule pääseb — ja miks me tulunumbreid ei avalda.">
   <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
     <div class="wrap">
       <p class="eyebrow">Reserviturud · uuendatakse regulaarselt</p>
@@ -579,7 +634,10 @@
           <div>
             <p class="sec-lede">Iga akupakkumine sisaldab tasuvusnumbrit. Otsustav on, millistele eeldustele see on ehitatud — ja kes seisab nende taga ka viiendal aastal.</p>
             <p style="margin-top:20px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Reservihinnad kõiguvad tundide kaupa</strong> ja kujunevad turul. Keegi ei tea ette, millised need on järgmisel aastal.</p>
-            <p style="margin-top:16px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Need on langustrendis.</strong> Suuremahuline salvestus tuleb nii Eesti kui ka Soome turule. Kui sada megavatti salvestusvõimsust tuleb reserviturule, surutakse hinnad kokku. See ei ole ennustus, vaid arvutus.</p>
+            <!-- MADIS: allaolev lõik on sinu autoritekst sõna-sõnalt (asendab varasema
+                 "langustrendis"-raamistuse). Püsipakkumine kogu reserviosa ümberkirjutuseks
+                 mõlemas keeles on teada — see lõik on esimene samm. -->
+            <p style="margin-top:16px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Vajadus kasvab. Hind ühiku kohta surutakse lähiaastatel kokku.</strong> Pärast Venemaa sagedusalast väljumist vastutab Eesti ise oma süsteemi tasakaalu eest — Elering hangib sagedusreserve kasvavas mahus ja alates 2026. aastast maksab selle eest iga Eesti elektritarbija oma arvel. See vajadus on struktuurne ja kasvab. Samal ajal tuleb mõlemale turule suuremahuline salvestus kiiremini, kui turg süveneb, ja see surub ühikuhinda. See on faas, mitte languse lugu: pärast tasakaalustumist premeerib turg efektiivseid varasid — aga tänaseid hindu me homsesse arvutusse ei kirjuta. Sellepärast ehitame tasuvuse säästudele ja näitame reservitulu stsenaariumidena, ka poolitunud hindadega. Kasvav paindlikkusturg jääb teie objektile lisaväärtuseks, mille te omandate — mitte eelduseks, millest projekt sõltub.</p>
             <p style="margin-top:16px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Me ei tea, kuidas objekt kvalifitseerub</strong>, enne kui agregaator on seda hinnanud. Seda hinnangut ei ole olemas etapis, kus enamik pakkumisi kirjutatakse.</p>
             <p style="margin-top:24px;font-family:'Archivo',sans-serif;font-weight:600;font-size:19px;color:var(--dk-hd);letter-spacing:-.015em">Number, mille meie anname, peab taluma kontrolli ka viiendal aastal. Seepärast ehitame arvutuse säästudele ja esitame reservitulu lisana: agregaatori enda hinnanguna, mille kõrval on stsenaarium sellest, mis juhtub, kui hinnad poolituvad.</p>
             <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Kui projekt toimib ainult siis, kui reservihinnad püsivad, ütleme seda. See tähendab, et projekt on habras, ja seda tasub teada enne allkirja, mitte teisel aastal.</p>
@@ -588,6 +646,19 @@
       </div>
     </section>
   </div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Miks reservivajadus kasvab</p>
+      <h2 class="sec-title">Kolm dokumenteeritud märki samast struktuursest vajadusest.</h2>
+      <ul class="checks" style="margin-top:36px">
+        <li>Tasakaalustamisvõimsuse kulu tuleb alates 01.01.2026 iga Eesti elektritarbija arvele omaette reana.<br><span class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted)">ALLIKAS: <a href="https://elering.ee/tasakaalustamisvoimsuse-kulu" target="_blank" rel="noopener noreferrer">ELERING — TASAKAALUSTAMISVÕIMSUSE KULU&nbsp;↗</a> · DOKUMENTEERITUD</span></li>
+        <li>Elering plaanib sagedusreservide hanget — Eestis suurusjärgus 250–400 MW.<br><span class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted)">ALLIKAS: <a href="https://www.err.ee/1609161400/elering-plaanib-kuni-400-megavatist-sagedusreservide-hanget" target="_blank" rel="noopener noreferrer">ERR 2026&nbsp;↗</a> · DOKUMENTEERITUD</span></li>
+        <li>Juhitava võimsuse vajadus kasvab Eleringi varustuskindluse aruande järgi umbes 1300 MW-lt (2030) umbes 2100 MW-le (2035).<br><span class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted)">ALLIKAS: <a href="https://elering.ee/sites/default/files/public/varustuskindluse%20konverentsid/2025/Elering_VKA_2025_veeb-1.pdf" target="_blank" rel="noopener noreferrer">ELERING — VARUSTUSKINDLUSE ARUANNE 2025 (PDF)&nbsp;↗</a> · DOKUMENTEERITUD</span></li>
+      </ul>
+      <p style="margin-top:26px;color:var(--tx2);font-size:16px">Vajadus on struktuurne. Hind ühiku kohta on turu asi — ja just sellepärast näitame reservitulu alati stsenaariumidena, mitte lubadusena.</p>
+    </div>
+  </section>
 
   <section>
     <div class="wrap">
@@ -624,7 +695,7 @@
 </div>
 
 <!-- ══════════════════ PROTSESS ══════════════════ -->
-<div class="page" id="p-prosessi" data-slug="protsess" data-title="Kuidas akuprojekt kulgeb | SAMA Energia" data-desc="Akuprojekti seitse etappi kvalifitseerimisest seireni koos kestustega. Midagi ei hangita, enne kui võrguettevõte on lahenduse kirjalikult kinnitanud.">
+<div class="page" id="p-prosessi" data-slug="protsess" data-title="Kuidas akuprojekt kulgeb — seitse etappi | SAMA Energia" data-desc="Kvalifitseerimisest kasutuselevõtuni: etapid, kestused ja miks midagi ei hangita enne võrguettevõtte kirjalikku seisukohta.">
   <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
     <div class="wrap">
       <p class="eyebrow">Kuidas see kulgeb</p>
@@ -654,7 +725,7 @@
 </div>
 
 <!-- ══════════════════ MEIST ══════════════════ -->
-<div class="page" id="p-meista" data-slug="meist" data-title="Meist — analüüs ja teostus samalt tegijalt | SAMA Energia" data-desc="SAMA Energia teeb ausa analüüsi ja viib selle ellu. Tootjatest sõltumatud, kõik dokumenteeritud — teenindame Soome ja Eesti turgu mõlemas keeles.">
+<div class="page" id="p-meista" data-slug="meist" data-title="Meist | SAMA Energia" data-desc="Aus analüüs ja teostus samalt tegijalt. Teenindame Soome ja Eesti turgu mõlemas keeles.">
   <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
     <div class="wrap">
       <p class="eyebrow">Meist</p>
@@ -710,7 +781,9 @@
 </div>
 
 <!-- ══════════════════ KONTAKT ══════════════════ -->
-<div class="page" id="p-yhteys" data-slug="kontakt" data-title="Kontakt ja objektikaardistus | SAMA Energia" data-desc="Kiireim viis selgitada, kas energiasalvesti teie objektile sobib, on tasuta objektikaardistus. Jätke oma andmed vormile, siis võtame ühendust.">
+<!-- MADIS: sinu pealkirjamustand "Broneeri objektikaardistus" → "Küsi objektikaardistust" —
+     juba avaldatud CTA-aususe otsuse järgi (broneerimissüsteemi ei ole). -->
+<div class="page" id="p-yhteys" data-slug="kontakt" data-title="Küsi objektikaardistust | SAMA Energia" data-desc="Tasuta objektikaardistus: kirjalik hinnang selle kohta, mida energiasalvesti teie objektil teeks. Ei kohusta millekski.">
   <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
     <div class="wrap">
       <p class="eyebrow">Kontakt</p>
@@ -787,7 +860,7 @@
 </div>
 
 <!-- ══════════════════ UUDISED ══════════════════ -->
-<div class="page" id="p-ajankohtaista" data-slug="uudised" data-title="Uudised: turuülevaade koos allikatega | SAMA Energia" data-desc="Mis elektriturul toimub — esmaallikad põhivõrguettevõtetelt ja ametiasutustelt ning lühidalt, miks need on tööstusobjekti omanikule olulised.">
+<div class="page" id="p-ajankohtaista" data-slug="uudised" data-title="Uudised energiaturult — koos allikatega | SAMA Energia" data-desc="Põhivõrguettevõtete ja ametiasutuste esmaseid avaldusi ja mida need tööstusobjekti omanikule tähendavad.">
   <div class="hero" style="padding-bottom:clamp(40px,6vw,64px)">
     <div class="wrap">
       <p class="eyebrow">Uudised</p>
@@ -836,7 +909,7 @@
 </div>
 
 <!-- ══════════════════ ANDMEKAITSE ══════════════════ -->
-<div class="page" id="p-tietosuoja" data-slug="andmekaitse" data-title="Andmekaitsetingimused | SAMA Energia" data-desc="SAMA Energia andmekaitsetingimused: mida töötleme, miks ja kui kaua. Me ei kasuta küpsiseid ega analüütikat.">
+<div class="page" id="p-tietosuoja" data-slug="andmekaitse" data-title="Andmekaitsetingimused | SAMA Energia" data-desc="Mida töötleme, miks ja kui kaua. Ei küpsiseid, ei analüütikat.">
   <div class="hero" style="padding-bottom:clamp(40px,6vw,64px)">
     <div class="wrap">
       <p class="eyebrow">Andmekaitse</p>

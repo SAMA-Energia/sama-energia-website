@@ -20,11 +20,13 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
-/* TODO (2026-08-20): canonical- ja hreflang-URL:t osoittavat .fi-hostiin myös
-   ET-sivuilla, koska samaenergia.ee ei vielä palvele monisivusisältöä natiivisti.
-   Kun OÜ on perustettu ja .ee palvelee natiivisti, vaihda ET-sivujen BASE
-   (canonical + hreflang + sitemap) .ee-hostiin. */
 const BASE = 'https://samaenergia.fi';
+/* ET-sivujen kanoninen host (Phase 2, päätös 2026-08-21): samaenergia.ee palvelee
+   eestinkielisen sisällön natiivisti Netlify-rewritellä (_redirects: ee/* -> /et/:splat),
+   joten ET-kanoniset osoitteet ovat .ee-hostilla ILMAN /et/-etuliitettä.
+   Tämä vakio ohjaa canonicalit, hreflangit, sitemapin, kielivalitsimen ja shimin. */
+const ET_BASE = 'https://samaenergia.ee';
+const etCanonical = s => ET_BASE + (s ? `/${s}/` : '/');
 
 /* Slugiparit FI ↔ ET (kielivalitsin ja hreflang; tyhjä slug = etusivu).
    Lähde: entiset hash-reititystaulut. */
@@ -59,12 +61,89 @@ const etUrl = s => LANGS.et.url(s);
    Sama skripti molemmilla etusivuilla -> yksi CSP-hash. */
 const SHIM_MAP = Object.fromEntries(
   PAIRS.filter(([f]) => f && !UNLISTED.has(f)).flatMap(([f, e]) => [
-    [`#/${f}`, fiUrl(f)],
-    [`#/${e}`, etUrl(e)],
+    [`#/${f}`, BASE + fiUrl(f)],
+    [`#/${e}`, etCanonical(e)],
   ]),
 );
 const SHIM = `(function(){var m=${JSON.stringify(SHIM_MAP)};var t=m[location.hash];if(t)location.replace(t)})()`;
-const SHIM_HASH = createHash('sha256').update(SHIM, 'utf8').digest('base64');
+
+/* Kaikkien generoitujen inline-skriptien (shim + JSON-LD-datalohkot) CSP-hashit.
+   JSON-LD (type=application/ld+json) on datalohko eikä suoritu, joten script-src ei
+   sitä käytännössä koske — hashit listataan silti, jotta mikään selainten
+   tulkintaero ei koskaan kaadu CSP:hen. */
+const INLINE_HASHES = new Set();
+const cspHash = s => { INLINE_HASHES.add(createHash('sha256').update(s, 'utf8').digest('base64')); return s; };
+cspHash(SHIM);
+
+/* ---------- rakenteinen data (JSON-LD) ----------
+   Organization/ProfessionalService etusivuille; FAQPage reservi- ja aurinko+akku-sivuille.
+   FAQ-tekstit poimitaan sivun omasta HTML:stä, jotta merkintä vastaa näkyvää tekstiä. */
+
+function orgJsonLd(lang, canon) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ProfessionalService',
+    name: 'SAMA Energia',
+    legalName: 'SAMA Energia Oy',
+    vatID: 'FI36476833',
+    url: canon,
+    address: { '@type': 'PostalAddress', addressLocality: 'Helsinki', addressCountry: 'FI' },
+    areaServed: [{ '@type': 'Country', name: 'Finland' }, { '@type': 'Country', name: 'Estonia' }],
+    founder: { '@type': 'Person', name: 'Madis Maastik' },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+372 5391 6647',
+      email: 'madis.maastik@samaenergia.fi',
+      contactType: 'customer service',
+      availableLanguage: ['fi', 'et'],
+    },
+  };
+}
+
+function faqJsonLd(pairs) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: pairs.map(([q, a]) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
+  };
+}
+
+/* Reservisivu: kolmen toimittajakysymyksen qa-lohko (h4 + p -parit) */
+function reserveFaq(pageHtml, src) {
+  /* vain numeroidut toimittajakysymykset ("1 · …") — sivun muut h4+p-parit (esim. vaiheet) eivät kuulu FAQ:hun */
+  const pairs = [...pageHtml.matchAll(/<div><h4>(\d · [\s\S]*?)<\/h4><p>([\s\S]*?)<\/p><\/div>/g)]
+    .map(m => [textOf(m[1]), textOf(m[2])]);
+  if (pairs.length !== 3) throw new Error(`${src}: reservisivulta odotettiin 3 kysymys-vastausparia, löytyi ${pairs.length}`);
+  return faqJsonLd(pairs);
+}
+
+/* Aurinko+akku: neljä teknistä kysymystä (gcell-ruudukko); vastauksena sivun oma
+   ratkaisukappale (h3 + ensimmäinen kappale ruudukon jälkeen) — sama kaikille neljälle,
+   koska sivu vastaa niihin yhtenä kokonaisuutena. */
+function aurinkoFaq(pageHtml, src) {
+  const qs = [...pageHtml.matchAll(/<div class="gcell"><div class="t">[^<]*<\/div><div class="s"[^>]*>([\s\S]*?)<\/div><\/div>/g)]
+    .map(m => textOf(m[1]));
+  if (qs.length !== 4) throw new Error(`${src}: aurinko+akku-sivulta odotettiin 4 kysymystä, löytyi ${qs.length}`);
+  const after = pageHtml.slice(pageHtml.indexOf('class="grids"'));
+  const ans = /<h3[^>]*>([\s\S]*?)<\/h3>\s*<p[^>]*>([\s\S]*?)<\/p>/.exec(after.slice(after.indexOf('</svg>')));
+  if (!ans) throw new Error(`${src}: aurinko+akku-sivun ratkaisukappaletta ei löytynyt`);
+  const answer = textOf(ans[1]) + ' ' + textOf(ans[2]);
+  return faqJsonLd(qs.map(q => [q, answer]));
+}
+
+function jsonLdFor(page, lang, canon) {
+  let data = null;
+  if (page.id === 'p-home') data = orgJsonLd(lang, canon);
+  else if (page.id === 'p-reservi') data = reserveFaq(page.html, LANGS[lang].src);
+  else if (page.id === 'p-aurinko') data = aurinkoFaq(page.html, LANGS[lang].src);
+  if (!data) return '';
+  const json = cspHash(JSON.stringify(data));
+  return `<script type="application/ld+json">${json}</script>\n`;
+}
 
 const ICON = `<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23D18A44' d='M12 1 13.76 7.75 19.78 4.22 16.25 10.24 23 12 16.25 13.76 19.78 19.78 13.76 16.25 12 23 10.24 16.25 4.22 19.78 7.75 13.76 1 12 7.75 10.24 4.22 4.22 10.24 7.75 Z'/%3E%3C/svg%3E">`;
 
@@ -152,8 +231,11 @@ function renderPage(lang, page, source, annotatedHtml) {
   const url = L.url(page.slug);
   const isFront = page.slug === '';
   const pairSlug = lang === 'fi' ? FI_TO_ET.get(page.slug) : ET_TO_FI.get(page.slug);
-  const fi = fiUrl(lang === 'fi' ? page.slug : pairSlug ?? '');
-  const et = etUrl(lang === 'et' ? page.slug : pairSlug ?? '');
+  const fiSlug = lang === 'fi' ? page.slug : (pairSlug ?? '');
+  const etSlug = lang === 'et' ? page.slug : (pairSlug ?? '');
+  const fiAbs = BASE + fiUrl(fiSlug);
+  const etAbs = etCanonical(etSlug);
+  const canon = lang === 'fi' ? fiAbs : etAbs;
 
   /* sivun oma div aktiiviseksi; authoring-attribuutit pois julkaistusta sivusta */
   const cleanOpen = page.openTag
@@ -167,13 +249,16 @@ function renderPage(lang, page, source, annotatedHtml) {
   const menuEnd = pre.indexOf('</nav>', menuStart);
   let menu = pre.slice(menuStart, menuEnd);
   menu = menu.replace(`<a href="${url}">`, `<a href="${url}" class="on">`);
+  /* kielivalitsin osoittaa vastinsivun KANONISEEN hostiin (absoluuttinen URL):
+     tuotannossa oikea host heti; branch-esikatselussa hyppää tuotantoon — tiedostettu. */
   menu = lang === 'fi'
-    ? menu.replace('<a href="/et/" lang="et">EE</a>', `<a href="${et}" lang="et">EE</a>`)
-    : menu.replace('<a href="/" lang="fi">FI</a>', `<a href="${fi}" lang="fi">FI</a>`);
+    ? menu.replace('<a href="/et/" lang="et">EE</a>', `<a href="${etAbs}" lang="et">EE</a>`)
+    : menu.replace('<a href="/" lang="fi">FI</a>', `<a href="${fiAbs}" lang="fi">FI</a>`);
   pre = pre.slice(0, menuStart) + menu + pre.slice(menuEnd);
 
   const shim = isFront ? `<script>${SHIM}</script>\n` : '';
   const robots = page.noindex ? `\n<meta name="robots" content="noindex">` : '';
+  const jsonld = jsonLdFor(page, lang, canon);
 
   return `<!DOCTYPE html>
 <!-- GENEROITU TIEDOSTO — älä muokkaa käsin. Lähde: ${L.src} · node scripts/build-pages.mjs -->
@@ -183,17 +268,17 @@ function renderPage(lang, page, source, annotatedHtml) {
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${page.title}</title>
 <meta name="description" content="${page.desc}">${robots}
-<link rel="canonical" href="${BASE}${url}">
-<link rel="alternate" hreflang="fi-FI" href="${BASE}${fi}">
-<link rel="alternate" hreflang="et-EE" href="${BASE}${et}">
-<link rel="alternate" hreflang="x-default" href="${BASE}${fi}">
+<link rel="canonical" href="${canon}">
+<link rel="alternate" hreflang="fi-FI" href="${fiAbs}">
+<link rel="alternate" hreflang="et-EE" href="${etAbs}">
+<link rel="alternate" hreflang="x-default" href="${fiAbs}">
 <meta property="og:title" content="${page.title}">
 <meta property="og:description" content="${page.desc}">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="${LANGS[lang].ogLocale}">
-<meta property="og:url" content="${BASE}${url}">
+<meta property="og:url" content="${canon}">
 <!-- og:image jätetty tarkoituksella pois: odottaa tunnusmerkkipäätöstä -->
-${ICON}
+${jsonld}${ICON}
 <meta name="theme-color" content="#0E1519">
 <link href="/assets/fonts.css" rel="stylesheet">
 <link href="/assets/site.css" rel="stylesheet">
@@ -406,7 +491,8 @@ for (const lang of Object.keys(LANGS)) {
     const url = L.url(page.slug);
     const { html, units } = annotateSections(page.html, page.slug);
     emit(url.replace(/^\//, '') + 'index.html', renderPage(lang, page, source, html));
-    if (!UNLISTED.has(page.slug)) allUrls.push(url);
+    /* sitemapiin kanoninen URL: FI .fi-hostilla, ET .ee-hostilla ilman /et/-etuliitettä */
+    if (!UNLISTED.has(page.slug)) allUrls.push(lang === 'fi' ? BASE + url : etCanonical(page.slug));
     pageMeta.push({ url, start: page.start, end: page.end, units });
   }
   langData.push({ lang, source, pageMeta });
@@ -416,18 +502,20 @@ for (const lang of Object.keys(LANGS)) {
 allUrls.sort();
 emit('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${allUrls.map(u => `  <url><loc>${BASE}${u}</loc></url>`).join('\n')}
+${allUrls.map(u => `  <url><loc>${u}</loc></url>`).join('\n')}
 </urlset>
 `);
 
-/* _headers — CSP sallii inline-skripteistä vain hash-shimin (hash-lähde, ei 'unsafe-inline') */
-emit('_headers', `# GENEROITU: node scripts/build-pages.mjs — älä muokkaa käsin (CSP-hash lasketaan shimistä)
+/* _headers — CSP sallii inline-lohkoista vain generoidut (shim + JSON-LD) hash-lähteinä,
+   ei 'unsafe-inline'. HUOM: emit-järjestys vaatii, että kaikki sivut on generoitu ennen tätä. */
+const hashList = [...INLINE_HASHES].sort().map(h => `'sha256-${h}'`).join(' ');
+emit('_headers', `# GENEROITU: node scripts/build-pages.mjs — älä muokkaa käsin (CSP-hashit lasketaan inline-lohkoista)
 /*
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
-  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-${SHIM_HASH}'; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' ${hashList}; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
 `);
 
 /* assets/review.json — katselmustilan manifesti */

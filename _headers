@@ -1,7 +1,7 @@
-# GENEROITU: node scripts/build-pages.mjs — älä muokkaa käsin (CSP-hash lasketaan shimistä)
+# GENEROITU: node scripts/build-pages.mjs — älä muokkaa käsin (CSP-hashit lasketaan inline-lohkoista)
 /*
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
-  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-Tvfh1PpMjuo7QrejJ31WiqPxiA9AFZcca67g089UZ6A='; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-4mx0V6HnU1aFruWb1xJnUOS7LJFfl75N1G4iDiXsKYQ=' 'sha256-JKDSuGKRJcJ5igZpcZdZUNA3ZQY0dkG21TnCfgs8TLw=' 'sha256-RxpEu7EZIMlOPA/vcgEA1hFtqT/LtdeLyiGNDIWgAPA=' 'sha256-i0iffux5NWqEpjnFjVz7WSwqeuSn7RIwguq/BEX2jCs=' 'sha256-keh4tlY0nqEWCH5eHc7ZikWICDPUEvhrObLIk3WZVhU=' 'sha256-labPS4oY/7hv2J2JdGAN8CaybzoWPmwlYSMoLFUj6W8=' 'sha256-tYa12F+R4QQBEhFjY9n53KyJIN9yZvQhBKlhePLuqX8='; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'

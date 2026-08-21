@@ -14,6 +14,10 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const BASE = 'https://samaenergia.fi';
+/* ET-kanoninen host — pidettävä samana kuin build-pages.mjs:n ET_BASE */
+const ET_BASE = 'https://samaenergia.ee';
+/* sivun kanoninen absoluuttinen URL: FI .fi-hostilla, ET .ee-hostilla ilman /et/-etuliitettä */
+const abs = (lang, url) => (lang === 'fi' ? BASE + url : ET_BASE + (url === '/et/' ? '/' : url.replace(/^\/et/, '')));
 
 const FI = ['', 'energiavarastot', 'aurinko-ja-akku', 'reservimarkkinat', 'prosessi', 'meista', 'yhteystiedot', 'ajankohtaista', 'tietosuoja', 'kiitos'];
 const ET = ['', 'energiasalvestid', 'paike-ja-aku', 'reserviturud', 'protsess', 'meist', 'kontakt', 'uudised', 'andmekaitse', 'aitah'];
@@ -54,20 +58,19 @@ for (const p of pages) {
   if (count(html, /<meta name="description"/g) !== 1) err(`${where} — description-määrä ≠ 1`);
   if (count(html, /<link rel="canonical"/g) !== 1) err(`${where} — canonical-määrä ≠ 1`);
   const canon = /<link rel="canonical" href="([^"]+)">/.exec(html)?.[1];
-  if (canon !== BASE + p.url) err(`${where} — canonical väärin: ${canon}`);
+  if (canon !== abs(p.lang, p.url)) err(`${where} — canonical väärin: ${canon} (odotettu ${abs(p.lang, p.url)})`);
 
   // tyhjät tai jaetut otsikot/kuvaukset
   const title = /<title>([^<]*)<\/title>/.exec(html)?.[1] ?? '';
   const desc = /<meta name="description" content="([^"]*)"/.exec(html)?.[1] ?? '';
   if (!title.trim() || !desc.trim()) err(`${where} — tyhjä title tai description`);
 
-  // hreflang-pari + x-default
-  const self = p.lang === 'fi' ? 'fi-FI' : 'et-EE';
-  const other = p.lang === 'fi' ? 'et-EE' : 'fi-FI';
-  if (!html.includes(`<link rel="alternate" hreflang="${self}" href="${BASE}${p.url}">`)) err(`${where} — oma hreflang (${self}) väärin`);
-  if (!html.includes(`<link rel="alternate" hreflang="${other}" href="${BASE}${p.pair}">`)) err(`${where} — vastinkielen hreflang väärin (odotettu ${p.pair})`);
-  const xdef = p.lang === 'fi' ? p.url : p.pair;
-  if (!html.includes(`<link rel="alternate" hreflang="x-default" href="${BASE}${xdef}">`)) err(`${where} — x-default väärin`);
+  // hreflang-kolmikko: fi-FI .fi-hostilla, et-EE .ee-hostilla, x-default = FI-sivu
+  const fiAbs = p.lang === 'fi' ? abs('fi', p.url) : abs('fi', p.pair);
+  const etAbs = p.lang === 'et' ? abs('et', p.url) : abs('et', p.pair);
+  if (!html.includes(`<link rel="alternate" hreflang="fi-FI" href="${fiAbs}">`)) err(`${where} — hreflang fi-FI väärin (odotettu ${fiAbs})`);
+  if (!html.includes(`<link rel="alternate" hreflang="et-EE" href="${etAbs}">`)) err(`${where} — hreflang et-EE väärin (odotettu ${etAbs})`);
+  if (!html.includes(`<link rel="alternate" hreflang="x-default" href="${fiAbs}">`)) err(`${where} — x-default väärin`);
 
   // og:title/og:description
   if (count(html, /property="og:title"/g) !== 1 || count(html, /property="og:description"/g) !== 1) err(`${where} — og-metat väärin`);
@@ -104,16 +107,31 @@ for (const p of pages) {
   // ladattavat resurssit vain omalta palvelimelta (sisältölinkit <a>-elementeissä ja
   // oma host canonical/hreflang-metassa ovat sallittuja)
   for (const m of html.matchAll(/<(script|link|img|iframe|source|video|audio)\b[^>]*?(?:src|href)="((https?:)?\/\/[^"]*)"/g)) {
-    if (m[2].startsWith(BASE + '/')) continue;
+    if (m[2].startsWith(BASE + '/') || m[2].startsWith(ET_BASE + '/')) continue;
     err(`${where} — kolmannen osapuolen resurssi: ${m[0].slice(0, 100)}`);
   }
   if (/<form\b[^>]*action="https?:/.test(html)) err(`${where} — lomake postittaa ulos`);
 
-  // inline-skripti vain etusivuilla, ja vain yksi (shim)
+  // inline-skripti vain etusivuilla, ja vain yksi (shim); JSON-LD on erillinen datalohko
   const inline = count(html, /<script>/g);
   const isFront = p.slug === '';
   if (isFront && inline !== 1) err(`${where} — etusivulla oltava täsmälleen 1 inline-skripti (shim), oli ${inline}`);
   if (!isFront && inline !== 0) err(`${where} — alasivulla ei saa olla inline-skriptejä, oli ${inline}`);
+
+  // JSON-LD: etusivut (Organization) + reservi- ja aurinko-sivut (FAQPage), ei muualla
+  const ldBlocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
+  const wantsLd = isFront || ['reservimarkkinat', 'reserviturud', 'aurinko-ja-akku', 'paike-ja-aku'].includes(p.slug);
+  if (wantsLd && ldBlocks.length !== 1) err(`${where} — JSON-LD-lohkoja ${ldBlocks.length}, odotettu 1`);
+  if (!wantsLd && ldBlocks.length !== 0) err(`${where} — odottamaton JSON-LD-lohko`);
+  for (const b of ldBlocks) {
+    try {
+      const d = JSON.parse(b[1]);
+      const want = isFront ? 'ProfessionalService' : 'FAQPage';
+      if (d['@type'] !== want) err(`${where} — JSON-LD @type ${d['@type']}, odotettu ${want}`);
+      const h = createHash('sha256').update(b[1], 'utf8').digest('base64');
+      if (!readFileSync(join(ROOT, '_headers'), 'utf8').includes(`'sha256-${h}'`)) err(`${where} — JSON-LD-hash puuttuu CSP:stä`);
+    } catch (e) { err(`${where} — JSON-LD ei jäsenny: ${e.message}`); }
+  }
 }
 
 // Netlify-lomake: molemmilla kielillä, identtiset kenttänimet ja lomakenimi,
@@ -150,7 +168,7 @@ else {
 // sitemap kattaa täsmälleen kaikki julkiset sivut (kiitossivut pois)
 const sitemap = readFileSync(join(ROOT, 'sitemap.xml'), 'utf8');
 const smUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]).sort();
-const expect = pages.filter(p => !UNLISTED.has(p.slug)).map(p => BASE + p.url).sort();
+const expect = pages.filter(p => !UNLISTED.has(p.slug)).map(p => abs(p.lang, p.url)).sort();
 if (JSON.stringify(smUrls) !== JSON.stringify(expect)) err('sitemap.xml ei vastaa sivujoukkoa (kiitossivujen pitää jäädä pois)');
 if (!readFileSync(join(ROOT, 'robots.txt'), 'utf8').includes('Sitemap: ' + BASE + '/sitemap.xml')) err('robots.txt ei viittaa sitemapiin');
 
@@ -191,3 +209,7 @@ try {
 
 if (errors) { console.error(`\n${errors} virhettä.`); process.exit(1); }
 console.log(`OK — ${pages.length} sivua tarkistettu, ei virheitä.`);
+console.log(`HUOM (soft-404): staattisesti ei voi todentaa, että tuntematon polku palauttaa aidon
+HTTP 404:n eikä 200:aa — tarkista tuotannossa julkaisun jälkeen:
+  curl -sI https://samaenergia.fi/ei-ole-olemassa/ | head -1   (odotettu: 404)
+  curl -sI https://samaenergia.ee/pole-olemas/ | head -1       (odotettu: 404)`);
