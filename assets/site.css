@@ -20,7 +20,7 @@
   --gut:clamp(20px,5vw,64px);
 }
 /* Tuotantoteema: Ilta & Kupari 3.5 "Elävä Ilta" — muuttujat sulautettu; valaistuskerros tyylien lopussa. */
-:root{--ink:#0E1519;--panel:#18232B;--panel-2:#22303A;--paper:#EAEBE6;--signal:#D68F47;--signal-hi:#E8A45C;--signal-ink:#A9663B;--glass:rgba(14,21,25,.94);--muted:#6C7A85;--muted-lt:#9AA7B0;--tx2:#3B4850;--tx2d:#B6C0C7;--tx1d:#C9D1D7;--line-dk:rgba(14,21,25,.16)}
+:root{--ink:#0E1519;--panel:#18232B;--panel-2:#22303A;--paper:#EAEBE6;--signal:#D68F47;--signal-hi:#E8A45C;--signal-ink:#96552F;--glass:rgba(14,21,25,.94);--muted:#5A6874;--muted-lt:#9AA7B0;--tx2:#3B4850;--tx2d:#B6C0C7;--tx1d:#C9D1D7;--line-dk:rgba(14,21,25,.16)}
 
 /* Johdetut pintamuuttujat määritellään BODYLLA: teemaluokat (body.tX) ylikirjoittavat --ink/--paper
    samalla elementillä, joten substituutio näkee teeman arvot. :rootissa ketjut jäätyivät teeman 1
@@ -140,7 +140,7 @@ header{position:sticky;top:0;z-index:60;background:var(--glass);backdrop-filter:
 .gcell .n em{font-style:normal;font-size:.45em;color:var(--muted-lt);margin-left:6px}
 .gcell .t{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--signal);margin-bottom:10px}
 .gcell .s{font-size:14px;color:var(--muted-lt);margin-top:8px;line-height:1.45}
-.freqnote{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);margin-top:14px;letter-spacing:.04em}
+.freqnote{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted-lt);margin-top:14px;letter-spacing:.04em}
 @media(max-width:640px){.grids{grid-template-columns:1fr}}
 
 /* ---------- sections ---------- */
@@ -202,7 +202,7 @@ section{padding:clamp(56px,8vw,104px) 0}
 .bene p{font-size:14.5px;color:var(--tx2);max-width:none;min-height:66px}
 .brow{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px;padding-top:13px;border-top:1px solid var(--line-dk)}
 .tg{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;padding:4px 9px;font-weight:500;border:1px solid transparent}
-.tg.las{background:rgba(31,138,91,.13);color:#1F8A5B;border-color:rgba(31,138,91,.35)}
+.tg.las{background:rgba(31,138,91,.13);color:#157148;border-color:rgba(31,138,91,.35)}
 .tg.ske{background:rgba(214,143,71,.15);color:var(--signal-ink);border-color:rgba(169,102,59,.4)}
 .tg.koh{background:rgba(74,106,130,.13);color:#4A6A82;border-color:rgba(74,106,130,.35)}
 .morelink{font-size:13.5px;font-weight:500;text-decoration:none;color:var(--signal-ink);white-space:nowrap}
@@ -323,7 +323,7 @@ footer{background:var(--dk);color:var(--muted-lt);padding:clamp(48px,6vw,76px) 0
 footer .fh{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--signal);margin-bottom:16px;font-weight:500}
 footer a{color:var(--muted-lt);text-decoration:none;display:block;padding:5px 0}
 footer a:hover{color:var(--dk-hd)}
-.legal{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.9;color:var(--muted);letter-spacing:.03em}
+.legal{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.9;color:var(--muted-lt);letter-spacing:.03em}
 @media(max-width:760px){.fgrid{grid-template-columns:1fr}}
 
 /* page switching */

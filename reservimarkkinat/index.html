@@ -15,10 +15,13 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fi_FI">
 <meta property="og:url" content="https://samaenergia.fi/reservimarkkinat/">
-<!-- og:image jätetty tarkoituksella pois: odottaa tunnusmerkkipäätöstä -->
+
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"1 · Erottele säästöt ja reservitulo. Mikä on takaisinmaksu pelkillä säästöillä?","acceptedAnswer":{"@type":"Answer","text":"Erottelu on hyvän laskelman tuntomerkki — ilman sitä takaisinmaksulukua ei voi arvioida."}},{"@type":"Question","name":"2 · Mikä takaisinmaksu on, jos reservihinnat puolittuvat?","acceptedAnswer":{"@type":"Answer","text":"Vastaus kertoo, onko hanke kestävä vai riippuuko se markkinasta, jota kukaan ei hallitse."}},{"@type":"Question","name":"3 · Kuka tuotti reserviarvion ja mitä hän on valmis laittamaan kirjallisesti?","acceptedAnswer":{"@type":"Answer","text":"Reserviarvio on luotettavimmillaan aggregaattorin omana — sen tekijän, joka kohteen lopulta kvalifioi ja tuoton tilittää."}}]}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23D18A44' d='M12 1 13.76 7.75 19.78 4.22 16.25 10.24 23 12 16.25 13.76 19.78 19.78 13.76 16.25 12 23 10.24 16.25 4.22 19.78 7.75 13.76 1 12 7.75 10.24 4.22 4.22 10.24 7.75 Z'/%3E%3C/svg%3E">
 <meta name="theme-color" content="#0E1519">
+<link rel="preload" href="/assets/fonts/archivo-700-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/archivo-800-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/newsreader-400-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link href="/assets/fonts.css" rel="stylesheet">
 <link href="/assets/site.css" rel="stylesheet">
 </head>
@@ -35,9 +38,7 @@
       <a href="/prosessi/">Näin se etenee</a>
       <a href="/ajankohtaista/">Ajankohtaista</a>
       <a href="/meista/">Meistä</a>
-      <!-- CTA-verbi "Pyydä", ei "Varaa": varsinaista ajanvarausjärjestelmää ei ole — lomake johtaa
-           yhteydenottoon. Mahdollinen myöhempi parannus: itse isännöity kalenteri (ei kolmannen
-           osapuolen upotuksia), jolloin verbi voi palata varaamiseen. Sama muutos ET-lähteessä. -->
+      
       <a href="/yhteystiedot/" class="navcta">Pyydä kartoitus</a>
       <div class="langsw" aria-label="Kieli / Keel"><a href="/" class="cur" aria-current="true">FI</a><a href="https://samaenergia.ee/reserviturud/" lang="et">EE</a></div>
     </nav>
@@ -146,10 +147,7 @@
           <div>
             <p class="sec-lede">Jokainen akkutarjous sisältää takaisinmaksuluvun. Ratkaisevaa on, mille oletuksille se on rakennettu — ja kuka seisoo niiden takana vielä viidentenä vuonna.</p>
             <p style="margin-top:20px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Reservihinnat vaihtelevat tunneittain</strong> ja määräytyvät markkinalla. Kukaan ei tiedä ennalta, mitä ne ovat ensi vuonna.</p>
-            <!-- MADIS: sama kahden käyrän kehystys kuin ET-sivulla (tarve kasvaa + yksikköhinta
-                 puristuu), rakennettu vain sivustolla jo dokumentoiduista ankkureista (Fingridin
-                 >4 GW:n liittymisjono, lähde Ajankohtaista-sivulla). Pysyvä tarjouksesi
-                 kirjoittaa koko reserviosuus uusiksi molemmilla kielillä on tiedossa. -->
+            
             <p style="margin-top:16px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Tarve kasvaa — ja yksikköhinta puristuu.</strong> Säätökyvyn tarve kasvaa rakenteellisesti molemmissa järjestelmissä. Samaan aikaan varastointia tulee markkinalle nopeammin kuin markkina syvenee — pelkästään Fingridin liittymisjonossa on yli neljän gigawatin edestä sähkövarastoja (<a href="/ajankohtaista/">lähde Ajankohtaista-sivulla</a>). Tämä on vaihe, ei laskutarina: tasapainottumisen jälkeen markkina palkitsee tehokkaat varat — mutta tämän päivän hintoja emme kirjoita huomisen laskelmaan.</p>
             <p style="margin-top:16px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Emme tiedä, miten kohde kvalifioituu</strong>, ennen kuin aggregaattori on sen arvioinut. Se arvio ei ole olemassa siinä vaiheessa, kun useimmat tarjoukset kirjoitetaan.</p>
             <p style="margin-top:24px;font-family:'Archivo',sans-serif;font-weight:600;font-size:19px;color:var(--dk-hd);letter-spacing:-.015em">Luvun, jonka annamme, on kestettävä tarkastelu vielä viidentenä vuonna. Siksi rakennamme laskelman säästöille ja esitämme reservitulon lisänä: aggregaattorin omana arviona, jonka rinnalla on skenaario siitä, mitä tapahtuu, jos hinnat puolittuvat.</p>
@@ -226,8 +224,6 @@
     </div>
   </div>
 </footer>
-
-
 
 <script src="/assets/site.js"></script>
 </body>

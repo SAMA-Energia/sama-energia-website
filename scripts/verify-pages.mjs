@@ -88,6 +88,12 @@ for (const p of pages) {
     }
   }
 
+  // kommentit riisuttu julkaisusta: vain generointimerkintä saa jäädä
+  const comments = html.match(/<!--[\s\S]*?-->/g) ?? [];
+  if (comments.length !== 1 || !comments[0].includes('GENEROITU')) {
+    err(`${where} — kommentteja julkaistussa HTML:ssä ${comments.length} kpl (sallittu vain GENEROITU-merkintä)`);
+  }
+
   // katselmustilan luokat eivät saa esiintyä staattisessa HTML:ssä (vain client-side)
   if (/rev-mark|rev-lab|rev-banner|rev-diff|rev-del|rev-ins|rev-toggle|rev-add|rev-hide-del/.test(html)) err(`${where} — katselmusmerkintöjä staattisessa HTML:ssä`);
 

@@ -15,10 +15,14 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="et_EE">
 <meta property="og:url" content="https://samaenergia.ee/">
-<!-- og:image jätetty tarkoituksella pois: odottaa tunnusmerkkipäätöstä -->
+
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"SAMA Energia","legalName":"SAMA Energia Oy","vatID":"FI36476833","url":"https://samaenergia.ee/","address":{"@type":"PostalAddress","addressLocality":"Helsinki","addressCountry":"FI"},"areaServed":[{"@type":"Country","name":"Finland"},{"@type":"Country","name":"Estonia"}],"founder":{"@type":"Person","name":"Madis Maastik"},"contactPoint":{"@type":"ContactPoint","telephone":"+372 5391 6647","email":"madis.maastik@samaenergia.fi","contactType":"customer service","availableLanguage":["fi","et"]}}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23D18A44' d='M12 1 13.76 7.75 19.78 4.22 16.25 10.24 23 12 16.25 13.76 19.78 19.78 13.76 16.25 12 23 10.24 16.25 4.22 19.78 7.75 13.76 1 12 7.75 10.24 4.22 4.22 10.24 7.75 Z'/%3E%3C/svg%3E">
 <meta name="theme-color" content="#0E1519">
+<link rel="preload" href="/assets/fonts/archivo-700-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/archivo-800-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/newsreader-400-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/hero.webp" as="image" fetchpriority="high">
 <link href="/assets/fonts.css" rel="stylesheet">
 <link href="/assets/site.css" rel="stylesheet">
 </head>
@@ -35,9 +39,7 @@
       <a href="/et/protsess/">Kuidas see kulgeb</a>
       <a href="/et/uudised/">Uudised</a>
       <a href="/et/meist/">Meist</a>
-      <!-- CTA-verb "Küsi", mitte "Broneeri": broneerimissüsteemi ei ole — vorm viib ühenduse
-           võtmiseni. Võimalik hilisem täiendus: ise majutatud kalender (ilma kolmanda osapoole
-           manusteta), misjärel verb võib naasta broneerimise juurde. Sama muudatus FI-allikas. -->
+      
       <a href="/et/kontakt/" class="navcta">Küsi kaardistust</a>
       <div class="langsw" aria-label="Keel / Kieli"><a href="https://samaenergia.fi/" lang="fi">FI</a><a href="/et/" class="cur" aria-current="true">EE</a></div>
     </nav>
@@ -60,7 +62,6 @@
         <a href="/et/protsess/" class="btn ghost">Vaadake, kuidas protsess kulgeb</a>
       </div>
 
-      <!-- SIGNATURE -->
       <div class="freq">
         <div class="freqhead">
           <span class="lab">Võrgusagedus — miks energiasalvesteid vajatakse</span>
@@ -262,7 +263,6 @@
     </div>
   </div>
 </footer>
-
 
 <script>(function(){var m={"#/energiavarastot":"https://samaenergia.fi/energiavarastot/","#/energiasalvestid":"https://samaenergia.ee/energiasalvestid/","#/aurinko-ja-akku":"https://samaenergia.fi/aurinko-ja-akku/","#/paike-ja-aku":"https://samaenergia.ee/paike-ja-aku/","#/reservimarkkinat":"https://samaenergia.fi/reservimarkkinat/","#/reserviturud":"https://samaenergia.ee/reserviturud/","#/prosessi":"https://samaenergia.fi/prosessi/","#/protsess":"https://samaenergia.ee/protsess/","#/meista":"https://samaenergia.fi/meista/","#/meist":"https://samaenergia.ee/meist/","#/yhteystiedot":"https://samaenergia.fi/yhteystiedot/","#/kontakt":"https://samaenergia.ee/kontakt/","#/ajankohtaista":"https://samaenergia.fi/ajankohtaista/","#/uudised":"https://samaenergia.ee/uudised/","#/tietosuoja":"https://samaenergia.fi/tietosuoja/","#/andmekaitse":"https://samaenergia.ee/andmekaitse/"};var t=m[location.hash];if(t)location.replace(t)})()</script>
 <script src="/assets/site.js"></script>

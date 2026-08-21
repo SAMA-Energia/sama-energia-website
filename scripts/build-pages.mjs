@@ -260,8 +260,16 @@ function renderPage(lang, page, source, annotatedHtml) {
   const robots = page.noindex ? `\n<meta name="robots" content="noindex">` : '';
   const jsonld = jsonLdFor(page, lang, canon);
 
-  return `<!DOCTYPE html>
-<!-- GENEROITU TIEDOSTO — älä muokkaa käsin. Lähde: ${L.src} · node scripts/build-pages.mjs -->
+  /* Kriittiset esilataukset: otsikko- ja leipäfontit (latin-osajoukot kattavat
+     suomen/viron perusmerkit; latin-ext latautuu tarvittaessa) + etusivujen hero-kuva. */
+  const preloads = [
+    '<link rel="preload" href="/assets/fonts/archivo-700-normal-latin.woff2" as="font" type="font/woff2" crossorigin>',
+    '<link rel="preload" href="/assets/fonts/archivo-800-normal-latin.woff2" as="font" type="font/woff2" crossorigin>',
+    '<link rel="preload" href="/assets/fonts/newsreader-400-normal-latin.woff2" as="font" type="font/woff2" crossorigin>',
+    ...(isFront ? ['<link rel="preload" href="/assets/hero.webp" as="image" fetchpriority="high">'] : []),
+  ].join('\n');
+
+  const doc = `<!DOCTYPE html>
 <html lang="${L.htmlLang}">
 <head>
 <meta charset="utf-8">
@@ -280,6 +288,7 @@ function renderPage(lang, page, source, annotatedHtml) {
 <!-- og:image jätetty tarkoituksella pois: odottaa tunnusmerkkipäätöstä -->
 ${jsonld}${ICON}
 <meta name="theme-color" content="#0E1519">
+${preloads}
 <link href="/assets/fonts.css" rel="stylesheet">
 <link href="/assets/site.css" rel="stylesheet">
 </head>
@@ -290,6 +299,16 @@ ${shim}<script src="/assets/site.js"></script>
 </body>
 </html>
 `;
+  /* Julkaistuista sivuista riisutaan HTML-kommentit (työkommentit, MADIS-merkinnät ym.
+     jäävät vain lähteisiin); ainoaksi kommentiksi lisätään generointimerkintä.
+     verify-pages.mjs valvoo, että muita kommentteja ei ole. */
+  const stripped = doc
+    .replace(/<!--[\s\S]*?-->/g, '')
+    .replace(/\n[ \t]*\n([ \t]*\n)+/g, '\n\n');
+  return stripped.replace(
+    '<!DOCTYPE html>\n',
+    `<!DOCTYPE html>\n<!-- GENEROITU TIEDOSTO — älä muokkaa käsin. Lähde: ${L.src} · node scripts/build-pages.mjs -->\n`,
+  );
 }
 
 /* ---------- katselmustilan manifesti (assets/review.json) ----------
