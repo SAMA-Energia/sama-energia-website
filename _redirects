@@ -1,7 +1,16 @@
-# Domainit: .ee-host laskeutuu ET-sivuille, .com FI-sivuille (301!).
+# Hostisäännöt ensin — järjestyksellä on väliä.
+# samaenergia.ee palvelee eestinkielisen sisällön natiivisti (Phase 2, päätös 2026-08-21):
+# .fi:n /et/-polut ohjataan .ee-hostille, .ee-host uudelleenkirjoitetaan /et/-sisältöön.
 # Vanhat #/-osoitteet eivät näy palvelimelle — etusivujen inline-shim hoitaa ne.
-https://www.samaenergia.ee/*  https://samaenergia.fi/et/:splat  301!
-https://samaenergia.ee/*      https://samaenergia.fi/et/:splat  301!
+https://samaenergia.fi/et/*      https://samaenergia.ee/:splat  301!
+https://www.samaenergia.fi/et/*  https://samaenergia.ee/:splat  301!
+# Juuri on pakotettava (200!): muuten FI-etusivun staattinen index.html varjostaisi säännön.
+https://samaenergia.ee/          /et/index.html                 200!
+# Muut .ee-polut ilman pakkoa: ET-slugit eivät törmää staattisiin tiedostoihin,
+# joten sääntö osuu niihin — mutta /assets/, robots.txt ym. tarjoillaan suoraan.
+https://samaenergia.ee/*         /et/:splat                     200
+https://www.samaenergia.ee/*     https://samaenergia.ee/:splat  301!
+
 https://www.samaenergia.com/* https://samaenergia.fi/:splat     301!
 https://samaenergia.com/*     https://samaenergia.fi/:splat     301!
 
