@@ -26,8 +26,20 @@
   },
   {
    "page": "/energiavarastot/",
+   "sectionId": "rev-energiavarastot-2",
+   "kind": "changed",
+   "prev": "01 Kohdekartoitus Keräämme vakiolomakkeella liittymä- ja kulutustietonne, analysoimme kuormitusprofiilin ja annamme alustavan näkemyksen siitä, mitä akku kohteessanne tekisi — mukaan lukien sen, näyttääkö se verkkoyhtiön näkökulmasta toteutuskelpoiselta. Joskus vastaus on ei. Sanomme sen, ja olette menettänyt keskustelun ettekä vuotta. Nopea · maksutonVAIHEET 01–02 02 Analyysipaketti Dokumentti, joka menee hallituksenne kokoukseen ilman meitä. Säästölaskelma omista kulutustiedoistanne laskentatapoineen. Mitoituksen perustelu. Liittymätehon tarkastelu: voiko varasto siirtää tai välttää liittymän laajennuksen. Reservitulo aggregaattorin arviona, rinnalla skenaario hintojen laskusta. Riski- ja investointianalyysi. Oletukset ja rajaukset selkeästi eriteltyinä. Verkkoyhtiön tilanne kirjallisena. Rahoitusvaihtoehdot. Päätös tehdään kokouksessa, jossa myyjä ei ole läsnä. Esitys ei pääse sinne — kirjallinen analyysi pääsee: sen voi lähettää talousjohtajalle, kyseenalaistaa ja puolustaa. Yleensä juuri se ratkaisee. Ratkaiseva vaiheVAIHEET 03–04 03 Toteutus Laitehankinta. Asennuksen koordinointi sertifioitujen sähköurakoitsijoiden kanssa. Verkkoyhtiöprosessi kyselystä jännitteen kytkemiseen. Käyttöönottodokumentaatio. Liittyminen reservimarkkinoiden aggregaattoriin. Aikataulu vahvistetaan laitteiden saatavuuden mukaan. Saatte kattavan luovutuspaketin — ette kansiota, joka kasattiin kiireessä viimeisenä iltapäivänä. 4–12 viikkoaVAIHEET 05–06 04 Elinkaari Suorituskyvyn seuranta antamaamme analyysiin verrattuna. Aggregaattorisuhteen hallinta. Laajennussuunnittelu. Takuuasiat. Olemme paikalla myös kolmantena vuonna, ja ensimmäisen vuoden luvut ovat edelleen tarkistettavissa. Se on tietoinen rajoite sille, mitä olemme valmiita lupaamaan ensimmäisenä vuonna. JatkuvaVAIHE 07 Nämä neljä vaihetta ovat sama matka, jonka viikkotason järjestys ja kestot on kuvattu sivulla Näin se etenee — vaihenumerot viittaavat siihen."
+  },
+  {
+   "page": "/energiavarastot/",
    "sectionId": "rev-energiavarastot-3",
    "kind": "new"
+  },
+  {
+   "page": "/aurinko-ja-akku/",
+   "sectionId": "rev-aurinko-ja-akku-2",
+   "kind": "changed",
+   "prev": "Kaksi tietä samaan järjestelmään ALOITATTE PUHTAALTA PÖYDÄLTÄ Koko järjestelmä kerralla. Aurinkosähkö, varasto ja ohjaus suunnitellaan yhtenä kokonaisuutena kulutustiedoistanne. Jälkikäteen sovitettavaa ei jää — miten, kerrotaan alempana. TEILLÄ ON JO AURINKOSÄHKÖ Akku täydentää investoinnin. Neljä teknistä kysymystä ratkaistaan kirjallisesti ennen tarjousta. Sen jälkeen akun lisääminen on hallittu sähkötekninen työ — kysymykset ja ratkaisu alla."
   },
   {
    "page": "/aurinko-ja-akku/",
@@ -43,9 +55,27 @@
   },
   {
    "page": "/reservimarkkinat/",
+   "sectionId": "rev-reservimarkkinat-4",
+   "kind": "changed",
+   "prev": "Miten kohde pääsee markkinalle 01 AggregaattoriYksittäinen teollisuusakku on liian pieni osallistuakseen suoraan. Aggregaattori kokoaa useita kohteita yhdeksi tarjoukseksi markkinalle, hoitaa tarjoamisen ja jakaa tuoton. Aggregaattori — ei laitetoimittaja — määrittää mihin tuotteisiin kohde kelpaa. Pakollinen 02 EsikvalifiointiKantaverkkoyhtiö edellyttää, että yksikkö osoittaa täyttävänsä tuotteen tekniset vaatimukset. Tämä on mittauksin todennettava prosessi, ei ilmoitusasia. Ennen tuloja 03 Mittaus ja tiedonsiirtoReaaliaikainen mittaustiedon vaihto on edellytys osallistumiselle. Suuremmissa kohteissa vaatimukset ovat tiukemmat. Tekninen ehto 04 Verkkoyhtiön hyväksyntäEri prosessi kuin kantaverkkoyhtiön. Jakeluverkkoyhtiö päättää liittymäkohtaisesti, mitä liittymään saa kytkeä ja millä ehdoilla. Ensin"
+  },
+  {
+   "page": "/reservimarkkinat/",
    "sectionId": "rev-reservimarkkinat-5",
    "kind": "changed",
    "prev": "Tärkein kohta tällä sivulla Miksi emme julkaise tuottolukuja Jokainen akkutarjous sisältää takaisinmaksuluvun. Ratkaisevaa on, mille oletuksille se on rakennettu — ja kuka seisoo niiden takana vielä viidentenä vuonna. Reservihinnat vaihtelevat tunneittain ja määräytyvät markkinalla. Kukaan ei tiedä ennalta, mitä ne ovat ensi vuonna. Ne ovat laskusuunnassa. Suuren mittakaavan varastointi tulee sekä Suomen että Viron markkinoille. Kun sata megawattia varastointikapasiteettia tulee reservimarkkinalle, hinnat puristuvat. Se ei ole ennuste vaan laskutoimitus. Emme tiedä, miten kohde kvalifioituu, ennen kuin aggregaattori on sen arvioinut. Se arvio ei ole olemassa siinä vaiheessa, kun useimmat tarjoukset kirjoitetaan. Luvun, jonka annamme, on kestettävä tarkastelu vielä viidentenä vuonna. Siksi rakennamme laskelman säästöille ja esitämme reservitulon lisänä: aggregaattorin omana arviona, jonka rinnalla on skenaario siitä, mitä tapahtuu, jos hinnat puolittuvat. Jos hanke toimii vain silloin, kun reservihinnat pitävät, sanomme sen. Se tarkoittaa, että hanke on hauras, ja se kannattaa tietää ennen allekirjoitusta eikä toisena vuonna."
+  },
+  {
+   "page": "/reservimarkkinat/",
+   "sectionId": "rev-reservimarkkinat-6",
+   "kind": "changed",
+   "prev": "Käytännön työkalu Kolme kysymystä mille tahansa toimittajalle 1 · Erottele säästöt ja reservitulo. Mikä on takaisinmaksu pelkillä säästöillä?Erottelu on hyvän laskelman tuntomerkki — ilman sitä takaisinmaksulukua ei voi arvioida. 2 · Mikä takaisinmaksu on, jos reservihinnat puolittuvat?Vastaus kertoo, onko hanke kestävä vai riippuuko se markkinasta, jota kukaan ei hallitse. 3 · Kuka tuotti reserviarvion ja mitä hän on valmis laittamaan kirjallisesti?Reserviarvio on luotettavimmillaan aggregaattorin omana — sen tekijän, joka kohteen lopulta kvalifioi ja tuoton tilittää. Nämä kolme kysymystä erottavat analyysin myyntipuheesta. Hyvä toimittaja vastaa niihin mielellään — ja kirjallisesti."
+  },
+  {
+   "page": "/prosessi/",
+   "sectionId": "rev-prosessi-2",
+   "kind": "changed",
+   "prev": "01KvalifiointiTäytätte kohdetietolomakkeen: liittymisteho, pääsulake, muuntajan teho, olemassa oleva tuotanto, mittausjärjestely, asennuspaikka ja etäisyys pääkeskukseen, voimassa olevat sähkösopimukset. Analysoimme kulutustietonne.≈ 1 viikko 02Tekninen esiselvitysMitoitus, konfiguraatio ja tarvittaessa olemassa olevan tuotannon arviointi.≈ 1 viikko 03Verkkoyhtiön ennakkoselvitysTeemme kyselyn ja saamme kirjallisen kannan juuri teidän liittymäpisteestänne. Te allekirjoitatte valtuutuksen, me hoidamme prosessin.Mitään ei hankita, ennen kuin tämä vaihe on valmis.2–6 viikkoa 04AnalyysipakettiTäysi kirjallinen analyysi toimitetaan. Käytte sen läpi sisäisesti ja teette päätöksen.2–4 viikkoa 05Tarjous ja rahoitusPorrastettu tarjous, rahoitus järjestettynä, jos niin haluatte.1–2 viikkoa 06ToteutusTilaus, asennus, käyttöönotto, dokumentointi. Te järjestätte pääsyn kohteeseen. Kokonaisaikataulu vahvistetaan tarjouksessa laitteiden saatavuuden mukaan.4–12 viikkoa 07Markkinoille pääsy ja seurantaLiittyminen aggregaattoriin ja suorituskyvyn seuranta antamaamme analyysiin verrattuna.Jatkuva Mitään ei hankita, ennen kuin verkkoyhtiö on vahvistanut ratkaisun kirjallisesti. Tämä on molemmilla markkinoilla suurin yksittäinen syy epäonnistuneisiin, viivästyneisiin ja budjetin ylittäneisiin akkuhankkeisiin. Se on täysin vältettävissä, eikä välttäminen maksa mitään muuta kuin oikean järjestyksen. Siksi järjestys on meillä prosessin kiinteä osa, ei joustokohta."
   },
   {
    "page": "/yhteystiedot/",
@@ -63,6 +93,12 @@
    "sectionId": "rev-ajankohtaista-2",
    "kind": "changed",
    "prev": "Luettavaa muualla Velvoite · määräpäivä 11.10.2026 · Direktiivi (EU) 2023/1791 Energiakatselmusvelvoite laajenee: raja on jatkossa kulutus, ei yrityksen koko Uudistettu energiatehokkuusdirektiivi siirtää pakollisen energiakatselmuksen rajan yrityksen koosta energiankulutukseen: yli 10 TJ eli noin 2 700 MWh vuodessa kuluttavien yritysten on teetettävä energiakatselmus 11.10.2026 mennessä, elleivät ne ota käyttöön sertifioitua energianhallintajärjestelmää. Miksi tämä on merkityksellistä: katselmus tuottaa juuri sen kulutusdatan, josta varasto- ja aurinkoinvestointi mitoitetaan. Saman velvoitteen voi hoitaa pelkkänä pakkona — tai käyttää samalla hyödyksi. 18.08.2026 · Fingrid · Tiedote Sähkönkulutus on kääntymässä voimakkaaseen kasvuun – rinnalle tarvitaan lisää säätövoimaa ↗ Fingridin mukaan kulutuksen kasvu voimistuu: pelkästään datakeskushankkeiden liittymissopimuksia on lähes viiden gigawatin edestä, ja täysimääräisesti toteutuessaan sopimuskanta nostaisi Suomen sähkönkulutusta lähes 40 prosenttia vuoden 2025 tasosta. Samassa tiedotteessa on toinenkin luku: sähkövarastojen liittymissopimuksia on jo yli neljän gigawatin edestä. Kysyntä ja jousto kasvavat siis kilpaa — juuri siksi emme rakenna yhdenkään kohteen takaisinmaksua reservihintojen varaan. Tiedotteessa on myös hiljainen viesti olemassa olevien liittymien omistajille: uusia liittymiä voi paikoin joutua odottamaan pitkään. Akku olemassa olevan liittymän takana hyödyntää liittymää, joka teillä jo on. ~5 GWdatakeskushankkeita liittymissopimuksin>4 GWsähkövarastoja liittymisjonossa+40 %kulutuksen kasvu, jos sopimuskanta toteutuu LÄHDE: FINGRID · TIEDOTE 18.08.2026 · DOKUMENTOITU Lista täydentyy sitä mukaa kuin merkittäviä julkaisuja ilmestyy. Jos jokin niistä herättää kysymyksen omasta kohteestanne, kohdekartoitus on nopein tapa saada vastaus."
+  },
+  {
+   "page": "/tietosuoja/",
+   "sectionId": "rev-tietosuoja-2",
+   "kind": "changed",
+   "prev": "RekisterinpitäjäSAMA Energia Oy · Y-tunnus 3647683-3 · madis.maastik@samaenergia.fi · +372 5391 6647. Mitä tietoja käsittelemmeYhteydenottolomakkeella antamanne tiedot: nimi, yritys, sähköposti, puhelin, kohteen sijainti, liittymä- ja kulutustiedot sekä viesti. Lisäksi sivuston tekninen palvelinloki (mm. IP-osoite ja aikaleima), jonka ylläpitopalvelu tuottaa palvelun toimittamiseksi ja tietoturvan varmistamiseksi. Emme käytä evästeitä, seurantapikseleitä emmekä analytiikkaa. Miksi käsittelemmeVastataksemme yhteydenottoonne ja valmistellaksemme pyytämäänne kartoitusta (sopimusta edeltävät toimet, yleisen tietosuoja-asetuksen 6 artiklan 1 kohdan b alakohta) sekä oikeutetun edun perusteella (6 artiklan 1 kohdan f alakohta) asiakassuhteen hoitamiseksi ja tietoturvan varmistamiseksi. Emme käytä tietoja muuhun markkinointiin ilman erillistä suostumusta. Kenelle tietoja siirretäänEmme myy emmekä luovuta tietoja markkinointiin. Teknisinä käsittelijöinä toimivat sivuston ylläpito- ja lomakepalvelu sekä sähköpostipalvelu. Jos palveluntarjoaja käsittelee tietoja EU- tai ETA-alueen ulkopuolella, siirto suojataan EU:n hyväksymillä mekanismeilla, kuten vakiosopimuslausekkeilla tai Data Privacy Framework -järjestelyllä. Kuinka kauan säilytämmeSäilytämme yhteydenottoja enintään 24 kuukautta viimeisestä yhteydenpidosta, ellei asiointi jatku asiakkuutena. Kirjanpitolain piiriin kuuluva aineisto säilytetään lakisääteisen ajan. OikeutenneTeillä on oikeus saada pääsy tietoihinne, pyytää niiden oikaisua, poistoa, käsittelyn rajoittamista tai siirtoa sekä vastustaa käsittelyä. Pyynnöt: madis.maastik@samaenergia.fi. Teillä on myös oikeus tehdä valitus valvontaviranomaiselle: Tietosuojavaltuutetun toimisto, tietosuoja.fi. MuutoksetPäivitetty 18.08.2026. Jos seloste muuttuu, uusin versio on aina tällä sivulla."
   },
   {
    "page": "/et/",
@@ -90,6 +126,12 @@
   },
   {
    "page": "/et/energiasalvestid/",
+   "sectionId": "rev-energiasalvestid-2",
+   "kind": "changed",
+   "prev": "01 Objektikaardistus Kogume standardvormiga teie liitumis- ja tarbimisandmed, analüüsime koormusprofiili ja anname esialgse hinnangu selle kohta, mida aku teie objektil teeks — sealhulgas selle, kas see näib võrguettevõtte vaatest teostatav. Mõnikord on vastus ei. Ütleme selle välja — ja olete kaotanud vestluse, mitte aasta. Kiire · tasutaETAPID 01–02 02 Analüüsipakett Dokument, mis läheb teie juhatuse koosolekule ilma meieta. Säästuarvutus teie enda tarbimisandmetest koos arvutusmeetoditega. Dimensioneerimise põhjendus. Liitumisvõimsuse analüüs: kas salvesti saab liitumise laiendamise edasi lükata või ära hoida. Reservitulu agregaatori hinnanguna, kõrval stsenaarium hindade langusest. Riski- ja investeeringuanalüüs. Eeldused ja piirangud selgelt eristatud. Võrguettevõtte seisukoht kirjalikult. Rahastusvõimalused. Otsus tehakse koosolekul, kus müüjat ei ole. Esitlus sinna ei pääse — kirjalik analüüs pääseb: seda saab saata finantsjuhile, kahtluse alla seada ja kaitsta. Tavaliselt just see otsustabki. Otsustav etappETAPID 03–04 03 Teostus Seadmete hange. Paigalduse koordineerimine sertifitseeritud elektritööde ettevõtetega. Võrguettevõtte protsess päringust pinge sisselülitamiseni. Kasutuselevõtu dokumentatsioon. Liitumine reservituru agregaatoriga. Ajakava kinnitatakse seadmete saadavuse järgi. Saate põhjaliku üleandmispaketi — mitte kausta, mis pandi kiirustades kokku viimasel pärastlõunal. 4–12 nädalatETAPID 05–06 04 Elukaar Jõudluse seire meie antud analüüsiga võrreldes. Agregaatorisuhte haldus. Laiendamise planeerimine. Garantiiküsimused. Oleme kohal ka kolmandal aastal ja esimese aasta numbrid on endiselt kontrollitavad. See on teadlik piirang sellele, mida oleme valmis esimesel aastal lubama. PidevETAPP 07 Need neli etappi on sama teekond, mille nädalatasandi järjekord ja kestused on kirjeldatud lehel Kuidas see kulgeb — etapinumbrid viitavad sellele."
+  },
+  {
+   "page": "/et/energiasalvestid/",
    "sectionId": "voimsustasu",
    "kind": "new"
   },
@@ -97,6 +139,12 @@
    "page": "/et/energiasalvestid/",
    "sectionId": "rev-energiasalvestid-4",
    "kind": "new"
+  },
+  {
+   "page": "/et/paike-ja-aku/",
+   "sectionId": "rev-paike-ja-aku-2",
+   "kind": "changed",
+   "prev": "Kaks teed sama süsteemini ALUSTATE PUHTALT LEHELT Kogu süsteem korraga. Päikeseelekter, salvesti ja juhtimine projekteeritakse ühe tervikuna teie tarbimisandmetest. Tagantjärele sobitamist ei jää — kuidas, sellest allpool. TEIL ON PÄIKESEELEKTER JUBA OLEMAS Aku täiendab investeeringut. Neli tehnilist küsimust lahendatakse kirjalikult enne pakkumist. Seejärel on aku lisamine kontrollitud elektritehniline töö — küsimused ja lahendus allpool."
   },
   {
    "page": "/et/paike-ja-aku/",
@@ -118,6 +166,12 @@
   },
   {
    "page": "/et/reserviturud/",
+   "sectionId": "rev-reserviturud-4",
+   "kind": "changed",
+   "prev": "Kuidas objekt turule pääseb 01 AgregaatorÜksik tööstusaku on liiga väike, et osaleda otse. Agregaator koondab mitu objekti üheks pakkumiseks turule, tegeleb pakkumisega ja jagab tulu. Agregaator — mitte seadmetarnija — määrab, millistesse toodetesse objekt kõlbab. Kohustuslik 02 EelkvalifitseeriminePõhivõrguettevõte nõuab, et üksus tõendaks toote tehnilistele nõuetele vastavust. See on mõõtmistega tõendatav protsess, mitte teavitamisasi. Enne tulusid 03 Mõõtmine ja sideReaalajas mõõteandmete vahetus on osalemise eeldus. Suuremates objektides on nõuded rangemad. Tehniline tingimus 04 Võrguettevõtte kooskõlastusErinev protsess kui põhivõrguettevõtte oma. Jaotusvõrguettevõte otsustab liitumispõhiselt, mida liitumisse tohib ühendada ja millistel tingimustel. Kõigepealt"
+  },
+  {
+   "page": "/et/reserviturud/",
    "sectionId": "rev-reserviturud-5",
    "kind": "changed",
    "prev": "Kõige olulisem koht sellel lehel Miks me ei avalda tulunumbreid Iga akupakkumine sisaldab tasuvusnumbrit. Otsustav on, millistele eeldustele see on ehitatud — ja kes seisab nende taga ka viiendal aastal. Reservihinnad kõiguvad tundide kaupa ja kujunevad turul. Keegi ei tea ette, millised need on järgmisel aastal. Need on langustrendis. Suuremahuline salvestus tuleb nii Eesti kui ka Soome turule. Kui sada megavatti salvestusvõimsust tuleb reserviturule, surutakse hinnad kokku. See ei ole ennustus, vaid arvutus. Me ei tea, kuidas objekt kvalifitseerub, enne kui agregaator on seda hinnanud. Seda hinnangut ei ole olemas etapis, kus enamik pakkumisi kirjutatakse. Number, mille meie anname, peab taluma kontrolli ka viiendal aastal. Seepärast ehitame arvutuse säästudele ja esitame reservitulu lisana: agregaatori enda hinnanguna, mille kõrval on stsenaarium sellest, mis juhtub, kui hinnad poolituvad. Kui projekt toimib ainult siis, kui reservihinnad püsivad, ütleme seda. See tähendab, et projekt on habras, ja seda tasub teada enne allkirja, mitte teisel aastal."
@@ -126,6 +180,18 @@
    "page": "/et/reserviturud/",
    "sectionId": "rev-reserviturud-6",
    "kind": "new"
+  },
+  {
+   "page": "/et/reserviturud/",
+   "sectionId": "rev-reserviturud-7",
+   "kind": "changed",
+   "prev": "Praktiline tööriist Kolm küsimust mis tahes tarnijale 1 · Eraldage sääst ja reservitulu. Milline on tasuvusaeg ainult säästudega?Eraldamine on hea arvutuse tunnus — ilma selleta ei saa tasuvusnumbrit hinnata. 2 · Milline on tasuvusaeg, kui reservihinnad poolituvad?Vastus näitab, kas projekt on kestlik või sõltub turust, mida keegi ei kontrolli. 3 · Kes koostas reservihinnangu ja mida ta on valmis kirjalikult kinnitama?Reservihinnang on kõige usaldusväärsem agregaatori enda omana — selle tegija omana, kes objekti lõpuks kvalifitseerib ja tulu välja maksab. Need kolm küsimust eristavad analüüsi müügijutust. Hea tarnija vastab neile meeleldi — ja kirjalikult."
+  },
+  {
+   "page": "/et/protsess/",
+   "sectionId": "rev-protsess-2",
+   "kind": "changed",
+   "prev": "01KvalifitseerimineTäidate objektiandmete vormi: liitumisvõimsus, peakaitse, trafo võimsus, olemasolev tootmine, mõõtekorraldus, paigalduskoht ja kaugus peakilbist, kehtivad elektrilepingud. Analüüsime teie tarbimisandmeid.≈ 1 nädal 02Tehniline eeluuringDimensioneerimine, konfiguratsioon ja vajadusel olemasoleva tootmise hindamine.≈ 1 nädal 03Võrguettevõtte eelpäringTeeme päringu ja saame kirjaliku seisukoha just teie liitumispunkti kohta. Teie allkirjastate volituse, meie ajame protsessi.Midagi ei hangita enne, kui see etapp on valmis.2–6 nädalat 04AnalüüsipakettTäielik kirjalik analüüs antakse üle. Käite selle sisemiselt läbi ja teete otsuse.2–4 nädalat 05Pakkumine ja rahastusAstmeline pakkumine, rahastus korraldatud, kui nii soovite.1–2 nädalat 06TeostusTellimus, paigaldus, kasutuselevõtt, dokumenteerimine. Teie korraldate ligipääsu objektile. Koguajakava kinnitatakse pakkumises seadmete saadavuse järgi.4–12 nädalat 07Turulepääs ja seireLiitumine agregaatoriga ja jõudluse seire meie antud analüüsiga võrreldes.Pidev Midagi ei hangita enne, kui võrguettevõte on lahenduse kirjalikult kinnitanud. See on mõlemal turul suurim üksik põhjus ebaõnnestunud, hilinenud ja eelarvet ületanud akuprojektide taga. See on täielikult välditav ja vältimine ei maksa midagi muud kui õiget järjekorda. Seepärast on järjekord meil protsessi kindel osa, mitte paindekoht."
   },
   {
    "page": "/et/kontakt/",
@@ -143,6 +209,12 @@
    "sectionId": "rev-uudised-2",
    "kind": "changed",
    "prev": "Lugemist mujalt Kohustus · tähtaeg 11.10.2026 · Direktiiv (EL) 2023/1791 Energiaauditi kohustus laieneb: piir on edaspidi tarbimine, mitte ettevõtte suurus Uuendatud energiatõhususe direktiiv viib kohustusliku energiaauditi piiri ettevõtte suuruselt energiatarbimisele: üle 10 TJ ehk umbes 2 700 MWh aastas tarbivad ettevõtted peavad laskma teha energiaauditi 11.10.2026-ks, kui nad ei võta kasutusele sertifitseeritud energiajuhtimissüsteemi. Miks see on oluline: audit toodab täpselt selle tarbimisandmestiku, millest salvesti- ja päikeseinvesteering dimensioonitakse. Sama kohustuse võib täita pelga sunnina — või ühtlasi ära kasutada. 18.08.2026 · Fingrid · Pressiteade Elektritarbimine on pöördumas tugevasse kasvu – kõrvale on vaja rohkem reguleerimisvõimsust (soome keeles) ↗ Fingridi andmetel tarbimise kasv kiireneb: ainuüksi andmekeskuste liitumislepinguid on ligi viie gigavati jagu, ja täies mahus teostudes tõstaks lepinguportfell Soome elektritarbimist ligi 40 protsenti 2025. aasta tasemest. Samas teates on ka teine number: elektrisalvestite liitumislepinguid on juba üle nelja gigavati. Nõudlus ja paindlikkus kasvavad seega võidu — just seepärast ei ehita me ühegi objekti tasuvust reservihindade peale. Teates on ka vaikne sõnum olemasolevate liitumiste omanikele: uusi liitumisi võib kohati tulla kaua oodata. Aku olemasoleva liitumise taga kasutab liitumist, mis teil juba on. ~5 GWandmekeskuseprojekte liitumislepingutega>4 GWelektrisalvesteid liitumisjärjekorras+40 %tarbimise kasv, kui lepinguportfell teostub ALLIKAS: FINGRID · PRESSITEADE 18.08.2026 · DOKUMENTEERITUD Loetelu täieneb sedamööda, kuidas olulisi avaldusi ilmub. Kui mõni neist tekitab küsimuse teie enda objekti kohta, on objektikaardistus kiireim viis vastus saada."
+  },
+  {
+   "page": "/et/andmekaitse/",
+   "sectionId": "rev-andmekaitse-2",
+   "kind": "changed",
+   "prev": "Vastutav töötlejaSAMA Energia Oy · Y-tunnus (Soome registrikood) 3647683-3 · madis.maastik@samaenergia.fi · +372 5391 6647. Milliseid andmeid töötlemeKontaktivormil antud andmed: nimi, ettevõte, e-post, telefon, objekti asukoht, liitumis- ja tarbimisandmed ning sõnum. Lisaks veebilehe tehniline serverilogi (sh IP-aadress ja ajatempel), mille majutusteenus toodab teenuse osutamiseks ja turvalisuse tagamiseks. Me ei kasuta küpsiseid, jälgimispiksleid ega analüütikat. Miks töötlemeEt vastata teie pöördumisele ja valmistada ette teie soovitud kaardistust (lepingueelsed meetmed, isikuandmete kaitse üldmääruse artikli 6 lõike 1 punkt b) ning õigustatud huvi alusel (artikli 6 lõike 1 punkt f) kliendisuhte haldamiseks ja turvalisuse tagamiseks. Me ei kasuta andmeid muuks turunduseks ilma eraldi nõusolekuta. Kellele andmeid edastatakseMe ei müü ega anna andmeid turunduseks. Tehniliste volitatud töötlejatena tegutsevad veebilehe majutus- ja vormiteenus ning e-postiteenus. Kui teenusepakkuja töötleb andmeid väljaspool EL-i või EMP-d, kaitstakse edastust EL-i heakskiidetud mehhanismidega, nagu lepingu tüüptingimused või Data Privacy Framework. Kui kaua säilitameSäilitame pöördumisi kuni 24 kuud viimasest suhtlusest, kui asjaajamine ei jätku kliendisuhtena. Raamatupidamisseaduse alla kuuluv materjal säilitatakse seadusjärgse aja. Teie õigusedTeil on õigus saada juurdepääs oma andmetele, nõuda nende parandamist, kustutamist, töötlemise piiramist või ülekandmist ning esitada vastuväiteid töötlemisele. Taotlused: madis.maastik@samaenergia.fi. Teil on ka õigus esitada kaebus järelevalveasutusele: Soome andmekaitsevolinik (tietosuoja.fi) või Eesti Andmekaitse Inspektsioon (aki.ee). MuudatusedUuendatud 18.08.2026. Kui tingimused muutuvad, on uusim versioon alati sellel lehel."
   }
  ]
 }

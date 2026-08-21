@@ -114,8 +114,8 @@ function faqJsonLd(pairs) {
 
 /* Reservisivu: kolmen toimittajakysymyksen qa-lohko (h4 + p -parit) */
 function reserveFaq(pageHtml, src) {
-  /* vain numeroidut toimittajakysymykset ("1 · …") — sivun muut h4+p-parit (esim. vaiheet) eivät kuulu FAQ:hun */
-  const pairs = [...pageHtml.matchAll(/<div><h4>(\d · [\s\S]*?)<\/h4><p>([\s\S]*?)<\/p><\/div>/g)]
+  /* vain numeroidut toimittajakysymykset ("1 · …") — sivun muut otsikko+p-parit (esim. vaiheet) eivät kuulu FAQ:hun */
+  const pairs = [...pageHtml.matchAll(/<div><h3>(\d · [\s\S]*?)<\/h3><p>([\s\S]*?)<\/p><\/div>/g)]
     .map(m => [textOf(m[1]), textOf(m[2])]);
   if (pairs.length !== 3) throw new Error(`${src}: reservisivulta odotettiin 3 kysymys-vastausparia, löytyi ${pairs.length}`);
   return faqJsonLd(pairs);
@@ -515,6 +515,7 @@ emit('_headers', `# GENEROITU: node scripts/build-pages.mjs — älä muokkaa k�
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
   Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' ${hashList}; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
 `);
 

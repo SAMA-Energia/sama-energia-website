@@ -26,7 +26,7 @@
 
 <header>
   <div class="wrap nav">
-    <a href="/" class="brand"><img src="/assets/mark.webp" alt="" style="height:32px;width:auto;vertical-align:middle;margin-right:11px;margin-top:-3px">SAMA<span>·</span>ENERGIA</a>
+    <a href="/" class="brand"><img src="/assets/mark.webp" alt="" width="95" height="96" style="height:32px;width:auto;vertical-align:middle;margin-right:11px;margin-top:-3px">SAMA<span>·</span>ENERGIA</a>
     <nav class="menu" id="menu">
       <a href="/energiavarastot/">Energiavarastot</a>
       <a href="/aurinko-ja-akku/">Aurinkosähkö + akku</a>
@@ -83,8 +83,8 @@
             <div class="full"><label for="f8">Viesti <span class="fnote">· valinnainen</span></label><textarea id="f8" name="viesti"></textarea></div>
             <div class="full"><button type="submit" id="ctSend" class="btn dk" style="border:none;cursor:pointer;font-family:'Archivo',sans-serif">Lähetä</button></div>
             <p class="full" style="font-size:14.5px;color:var(--muted)">Käsittelemme lähettämänne tiedot vastataksemme yhteydenottoonne. <a href="/tietosuoja/">Tietosuojaseloste</a>.</p>
-            <p class="full ok" id="ctOk" hidden style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1a7a3c">Kiitos — palaamme asiaan arkipäivän kuluessa.</p>
-            <p class="full" id="ctErr" hidden style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#A8452E">Lähetys ei onnistunut. Voitte lähettää tiedot myös suoraan sähköpostilla: <a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a>.</p>
+            <p class="full ok" id="ctOk" hidden role="status" aria-live="polite" style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1a7a3c">Kiitos — palaamme asiaan arkipäivän kuluessa.</p>
+            <p class="full" id="ctErr" hidden role="status" aria-live="polite" style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#A8452E">Lähetys ei onnistunut. Voitte lähettää tiedot myös suoraan sähköpostilla: <a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a>.</p>
           </form>
         </div>
         <div>
@@ -112,19 +112,19 @@
   <div class="wrap">
     <div class="fgrid">
       <div>
-        <a href="/" class="brand" style="font-size:19px"><img src="/assets/mark.webp" alt="" style="height:36px;width:auto;vertical-align:middle;margin-right:12px;margin-top:-4px">SAMA<span>·</span>ENERGIA</a>
+        <a href="/" class="brand" style="font-size:19px"><img src="/assets/mark.webp" alt="" width="95" height="96" style="height:36px;width:auto;vertical-align:middle;margin-right:12px;margin-top:-4px">SAMA<span>·</span>ENERGIA</a>
         <p style="margin-top:18px;max-width:36ch;color:var(--muted-lt);font-size:16px">Energiavarastot ja aurinkosähkö yrityksille. Rehellinen analyysi, verkkoyhtiön hyväksyntä ennen hankintaa, kattava dokumentaatio.</p>
         <p style="margin-top:20px" class="mono">SUOMI · EESTI</p>
       </div>
       <div>
-        <h5>Palvelut</h5>
+        <p class="fh">Palvelut</p>
         <a href="/energiavarastot/">Energiavarastot</a>
         <a href="/aurinko-ja-akku/">Aurinkosähkö + akku</a>
         <a href="/prosessi/">Näin se etenee</a>
         <a href="/yhteystiedot/">Kohdekartoitus</a>
       </div>
       <div>
-        <h5>Tietoa</h5>
+        <p class="fh">Tietoa</p>
         <a href="/reservimarkkinat/">Reservimarkkinat</a>
         <a href="/ajankohtaista/">Ajankohtaista</a>
         <a href="/meista/">Meistä</a>
