@@ -435,3 +435,9 @@ label .fnote.rq{color:var(--signal-ink)}
 .rev-diff{position:absolute;inset:0;z-index:7;overflow:auto;background:var(--paper);color:var(--tx2);padding:clamp(18px,3vw,36px);font-family:'Newsreader',Georgia,serif;font-size:15.5px;line-height:1.75;cursor:pointer;border:1px dashed var(--signal)}
 .rev-del{color:#A8452E;text-decoration:line-through;text-decoration-thickness:1.5px;opacity:.8}
 .rev-ins{color:var(--signal-ink);font-weight:600}
+/* paikan päällä -annotaatiot: lisätyt sanat kuparilla korostettuna omassa kohdassaan,
+   poistot pieninä yliviivattuina merkkeinä poistokohdassaan */
+.rev-add{background:color-mix(in srgb,var(--signal) 20%,transparent);box-shadow:inset 0 -2px 0 var(--signal);border-radius:2px}
+.rev-del-mark{color:#A8452E;text-decoration:line-through;text-decoration-thickness:1.5px;font-size:.82em;opacity:.72;margin:0 .18em}
+.rev-hide-del .rev-del-mark{display:none}
+.rev-toggle[aria-pressed="true"]{background:var(--signal);color:var(--on-signal)}

@@ -86,7 +86,7 @@ for (const p of pages) {
   }
 
   // katselmustilan luokat eivät saa esiintyä staattisessa HTML:ssä (vain client-side)
-  if (/rev-mark|rev-lab|rev-banner|rev-diff|rev-del|rev-ins|rev-toggle/.test(html)) err(`${where} — katselmusmerkintöjä staattisessa HTML:ssä`);
+  if (/rev-mark|rev-lab|rev-banner|rev-diff|rev-del|rev-ins|rev-toggle|rev-add|rev-hide-del/.test(html)) err(`${where} — katselmusmerkintöjä staattisessa HTML:ssä`);
 
   // kohatäitteitä ei saa jäädä julkaistuun sisältöön
   if (/KONTROLLITAKSE|TARKISTETAAN/.test(html)) err(`${where} — KONTROLLITAKSE/TARKISTETAAN-merkintä jäljellä`);

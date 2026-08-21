@@ -277,11 +277,14 @@ function mapNewToOld(line, hunks, isEnd) {
   return line - delta;
 }
 
-/* HTML -> pelkkä tekstisisältö (sanadiffin vertailupohja selaimen textContentia vastaavasti) */
+/* HTML -> pelkkä tekstisisältö. Tagit ja kommentit korvataan TYHJÄLLÄ, ei välilyönnillä:
+   selaimen tekstisolmukävely liimaa tagirajan yli vierekkäiset merkit yhteen
+   (esim. <strong>sana</strong>, -> "sana,"), ja sanadiffin molempien puolten on
+   jäsennyttävä täsmälleen samoin — muuten raja kohinaa vääriä muutospareja. */
 function textOf(html) {
   return html
-    .replace(/<!--[\s\S]*?-->/g, ' ')
-    .replace(/<[^>]+>/g, ' ')
+    .replace(/<!--[\s\S]*?-->/g, '')
+    .replace(/<[^>]+>/g, '')
     .replace(/&nbsp;/g, ' ')
     .replace(/&amp;/g, '&')
     .replace(/&lt;/g, '<')

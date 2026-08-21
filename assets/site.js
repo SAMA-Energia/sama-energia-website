@@ -144,6 +144,17 @@ if(cf)cf.addEventListener('submit',function(e){
 (function(){
   if(!/[?&]review=1(?:&|$)/.test(location.search))return;
 
+  /* ===== Puhtaat apufunktiot — DOM-vapaita, jotta sama logiikka on ajettavissa
+     Node-simulaationa (scripts/simulate-review.mjs viipaloi nämä tiedostosta). ===== */
+
+  /* Sama jäsennin molemmille puolille: sana = yhtenäinen ei-tyhjä merkkijono,
+     välimerkit osana sanaansa. Palauttaa sanat + merkkivälit alkuperäistekstissä. */
+  function tokenizeWithPos(text){
+    var wds=[],pos=[],re=/[^\s\u00a0]+/g,m;
+    while((m=re.exec(text||''))){wds.push(m[0]);pos.push([m.index,m.index+m[0].length]);}
+    return {words:wds,pos:pos};
+  }
+
   /* Sanadiffi (LCS, ei riippuvuuksia): ['=',sana] / ['-',poistettu] / ['+',lisätty].
      Yhteinen alku ja loppu leikataan ensin pois; jos jäljelle jäävä DP-taulu olisi
      kohtuuttoman suuri, palataan karkeaan "vanha pois, uusi tilalle" -näkymään. */
@@ -173,23 +184,142 @@ if(cf)cf.addEventListener('submit',function(e){
     for(i=a.length-e;i<a.length;i++)out.push(['=',a[i]]);
     return out;
   }
-  function words(t){t=(t||'').replace(/\u00a0/g,' ').replace(/\s+/g,' ').trim();return t?t.split(' '):[];}
 
-  /* Peittokerros: sivun oikeaa merkkausta ei muuteta — diffi elää omassa overlayssa */
-  function toggleDiff(el,prev,cur){
-    var ex=el.querySelector('.rev-diff');
-    if(ex){ex.remove();return;}
+  /* Diffistä DOM-riippumattomat annotaatio-operaatiot:
+     addRanges = lisättyjen sanojen merkkivälit nykytekstissä (vierekkäiset lisäykset
+     yhdistetään, kun väli on pelkkää tyhjää eikä väliin osu poistomerkkiä);
+     markers   = poistomerkit ankkuroituina seuraavan nykysanan alkukohtaan
+     (Infinity = poisto osion lopussa). */
+  function computeOps(diff,tok,concat){
+    var addRanges=[],markers=[],ci=0,pend=[];
+    function flush(at){if(pend.length){markers.push({at:at,text:pend.join(' ')});pend=[];}}
+    diff.forEach(function(t){
+      if(t[0]==='-'){pend.push(t[1]);return;}
+      var range=tok.pos[ci],hadPend=pend.length>0;
+      flush(range[0]);
+      if(t[0]==='+'){
+        var last=addRanges[addRanges.length-1];
+        if(!hadPend&&last&&/^[\s\u00a0]*$/.test(concat.slice(last[1],range[0])))last[1]=range[1];
+        else addRanges.push([range[0],range[1]]);
+      }
+      ci++;
+    });
+    flush(Infinity);
+    return {addRanges:addRanges,markers:markers};
+  }
+
+  /* ===== DOM-osuus ===== */
+
+  /* Osion tekstisolmut dokumenttijärjestyksessä. Skriptit, tyylit ja omat
+     katselmuselementit ohitetaan; piilotettu sisältö (esim. hunajapurkki) pidetään
+     mukana, jotta sanavirta vastaa manifestin prev-tekstin laskentatapaa. */
+  function collectNodes(el){
+    var nodes=[],w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,{acceptNode:function(n){
+      var p=n.parentElement;
+      if(!p||p.closest('script,style,template,.rev-lab,.rev-add,.rev-del-mark,.rev-diff'))return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;}});
+    while(w.nextNode())nodes.push(w.currentNode);
+    return nodes;
+  }
+  /* SVG:n <text>-solmuun ei voi upottaa HTML-spania — sellainen solmu lasketaan
+     sanavirtaan mutta jätetään koskematta (kaaviot eivät saa hajota). */
+  function isLocked(n){
+    var p=n.parentElement;return !!(p&&p.namespaceURI&&p.namespaceURI.indexOf('2000/svg')>=0);
+  }
+  function mkAdd(text){var s=document.createElement('span');s.className='rev-add';s.textContent=text;return s;}
+  function mkDel(text){var s=document.createElement('span');s.className='rev-del-mark';s.setAttribute('aria-hidden','true');s.textContent=text;return s;}
+
+  function undoRecords(records){
+    records.forEach(function(r){
+      if(r.type==='wrap'){
+        r.parent.insertBefore(r.original,r.inserted[0]);
+        r.inserted.forEach(function(n){if(n.parentNode===r.parent)r.parent.removeChild(n);});
+      }else if(r.node.parentNode)r.node.parentNode.removeChild(r.node);
+    });
+  }
+
+  /* Annotointi paikan päällä: osio renderöityy täsmälleen suunnitellusti; lisätyt
+     sanat kääritään spaniin siellä missä ne ovat, poistot upotetaan pieninä
+     yliviivattuina merkkeinä poistokohtaansa. Elementtirakennetta ei koskaan muuteta —
+     vain tekstisolmuja korvataan, ja alkuperäiset solmuobjektit säilytetään talteen,
+     joten purku palauttaa DOM:n tavulleen ennalleen.
+     Paluuarvo: records-taulukko, 'overlay' (eheystarkistus petti) tai null (ohita). */
+  function annotate(el,prev,lab){
+    var nodes=collectNodes(el);
+    var offs=[],concat='';
+    nodes.forEach(function(n){offs.push(concat.length);concat+=n.nodeValue;});
+    var tok=tokenizeWithPos(concat);
+    if(tok.words.length<10)return null; /* olennaisesti ei-tekstiosio: ääriviiva riittää */
+    /* eheystarkistus: kävelyn on katettava sama sanamäärä kuin textContentin (ilman nimiötä) */
+    var expect=tokenizeWithPos(el.textContent).words.length-tokenizeWithPos(lab?lab.textContent:'').words.length;
+    if(tok.words.length!==expect)return 'overlay';
+    var ops=computeOps(wordDiff(tokenizeWithPos(prev).words,tok.words),tok,concat);
+    if(!ops.addRanges.length&&!ops.markers.length)return null;
+    var records=[];
+    try{
+      nodes.forEach(function(n,idx){
+        if(isLocked(n))return;
+        var ns=offs[idx],ne=ns+n.nodeValue.length,items=[];
+        ops.markers.forEach(function(mk){if(mk.at>=ns&&mk.at<ne)items.push({p:mk.at-ns,type:'del',text:mk.text});});
+        ops.addRanges.forEach(function(r){
+          var s=Math.max(r[0],ns),e=Math.min(r[1],ne);
+          /* solmurajan yli jatkuvasta lisäysjaksosta ei käärintää pelkälle tyhjälle */
+          if(s<e&&!/^[\s\u00a0]*$/.test(n.nodeValue.slice(s-ns,e-ns)))items.push({p:s-ns,e:e-ns,type:'add'});
+        });
+        if(!items.length)return;
+        items.sort(function(a,b){return a.p-b.p||(a.type==='del'?-1:1);});
+        var frag=document.createDocumentFragment(),cur=0,txt=n.nodeValue,ins=[];
+        function push(nd){frag.appendChild(nd);ins.push(nd);}
+        items.forEach(function(it){
+          if(it.p>cur){push(document.createTextNode(txt.slice(cur,it.p)));cur=it.p;}
+          if(it.type==='del')push(mkDel(it.text));
+          else if(it.e>cur){push(mkAdd(txt.slice(Math.max(it.p,cur),it.e)));cur=it.e;}
+        });
+        if(cur<txt.length)push(document.createTextNode(txt.slice(cur)));
+        var parent=n.parentNode;
+        parent.insertBefore(frag,n);
+        parent.removeChild(n);
+        records.push({type:'wrap',parent:parent,original:n,inserted:ins});
+      });
+      ops.markers.forEach(function(mk){
+        if(mk.at!==Infinity)return;
+        var sp=mkDel(mk.text);el.appendChild(sp);records.push({type:'ins',node:sp});
+      });
+    }catch(_){
+      undoRecords(records);
+      return 'overlay';
+    }
+    return records.length?records:null;
+  }
+
+  /* Varapolku: vanha peittokerros litistettynä tekstidiffina — käytössä vain,
+     jos paikan päällä -annotointi ei läpäise eheystarkistusta. Hiljainen alennus. */
+  function overlayDiff(el,prev){
+    var concat='';collectNodes(el).forEach(function(n){concat+=n.nodeValue;});
     var d=document.createElement('div');
     d.className='rev-diff';
-    wordDiff(words(prev),words(cur)).forEach(function(t){
+    wordDiff(tokenizeWithPos(prev).words,tokenizeWithPos(concat).words).forEach(function(t){
       var sp=document.createElement('span');
       if(t[0]==='-')sp.className='rev-del';
       else if(t[0]==='+')sp.className='rev-ins';
       sp.textContent=t[1]+' ';
       d.appendChild(sp);
     });
-    d.addEventListener('click',function(e){e.stopPropagation();d.remove();});
     el.appendChild(d);
+    return d;
+  }
+
+  function toggleSection(mk){
+    if(mk.kind==='new')return; /* uusi osio: pelkkä UUSI-ääriviiva, ei sanakohinaa */
+    if(mk.state){
+      if(mk.state.overlay)mk.state.overlay.remove();
+      else undoRecords(mk.state.records);
+      mk.state=null;
+      return;
+    }
+    var r=annotate(mk.el,mk.prev,mk.lab);
+    if(r==='overlay')mk.state={overlay:overlayDiff(mk.el,mk.prev)};
+    else if(r)mk.state={records:r};
   }
 
   fetch('/assets/review.json')
@@ -203,17 +333,16 @@ if(cf)cf.addEventListener('submit',function(e){
       if(c.page!==here)return;
       var el=document.getElementById(c.sectionId);
       if(!el||el.classList.contains('rev-mark'))return;
-      /* nykyteksti talteen ENNEN kuin overlay/nimiö lisätään elementtiin */
-      var cur=(el.textContent||'');
       el.classList.add('rev-mark');
       var lab=document.createElement('span');
       lab.className='rev-lab';
-      lab.textContent=(c.kind==='new'?'UUSI':'MUUTETTU')+' · DIFF';
+      lab.textContent=c.kind==='new'?'UUSI':'MUUTETTU · DIFF';
       el.appendChild(lab);
-      marked.push({el:el,prev:c.prev||'',cur:cur});
+      var mk={el:el,prev:c.prev||'',kind:c.kind,lab:lab,state:null};
+      marked.push(mk);
       el.addEventListener('click',function(e){
-        if(e.target.closest('a,button,input,select,textarea,.rev-diff'))return;
-        toggleDiff(el,c.prev||'',cur);
+        if(e.target.closest('a,button,input,select,textarea'))return;
+        toggleSection(mk);
       });
     });
     var pages=[];
@@ -230,6 +359,15 @@ if(cf)cf.addEventListener('submit',function(e){
       b.appendChild(a);
     });
     if(marked.length){
+      /* poistojen näyttö/piilotus — oletuksena päällä */
+      var rd=document.createElement('button');
+      rd.type='button';rd.className='rev-toggle';rd.setAttribute('aria-pressed','true');
+      rd.textContent='NÄYTÄ POISTOT / SHOW REMOVALS';
+      rd.addEventListener('click',function(){
+        var hidden=document.body.classList.toggle('rev-hide-del');
+        rd.setAttribute('aria-pressed',hidden?'false':'true');
+      });
+      b.appendChild(rd);
       var on=false;
       var tg=document.createElement('button');
       tg.type='button';tg.className='rev-toggle';
@@ -238,9 +376,8 @@ if(cf)cf.addEventListener('submit',function(e){
         on=!on;
         tg.textContent=on?'PIILOTA MUUTOKSET / HIDE DIFFS':'NÄYTÄ KAIKKI MUUTOKSET / SHOW ALL DIFFS';
         marked.forEach(function(mk){
-          var ex=mk.el.querySelector('.rev-diff');
-          if(on&&!ex)toggleDiff(mk.el,mk.prev,mk.cur);
-          if(!on&&ex)ex.remove();
+          if(on&&!mk.state&&mk.kind!=='new')toggleSection(mk);
+          if(!on&&mk.state)toggleSection(mk);
         });
       });
       b.appendChild(tg);
