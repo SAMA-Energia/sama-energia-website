@@ -3,22 +3,26 @@
   {
    "page": "/",
    "sectionId": "rev-etusivu-1",
-   "kind": "changed"
+   "kind": "changed",
+   "prev": "Energiavarastot ja aurinkosähkö · yrityksille ja maanomistajille Yhteinen verkko. Itsenäinen energia. Rakennamme yritysten energiaomavaraisuutta: aurinkosähkö, energiavarastot ja ohjaus tekevät liittymästänne aktiivisen osan sähköjärjestelmää. Ja mitä se kohteessanne oikeasti tuottaa — siihen vastaamme kirjallisesti , ennen kuin mitään allekirjoitetaan. Varaa kohdekartoitus Katso miten prosessi etenee Verkon taajuus — miksi energiavarastoja tarvitaan Havainnekuva taajuuden vaihtelusta 50,000 Hz on sähköverkon tasapaino. Kun taajuus poikkeaa siitä, tuotanto ja kulutus eivät kohtaa — ja kantaverkkoyhtiöt, Suomessa Fingrid ja Virossa Elering, maksavat siitä, että energiavarastot palauttavat tasapainon sekunneissa. Siihen reservimarkkinat perustuvat."
   },
   {
    "page": "/",
    "sectionId": "rev-etusivu-2",
-   "kind": "changed"
+   "kind": "changed",
+   "prev": "Mitä toimitamme 01 AURINKOSÄHKÖ Paneelit, invertterit ja asennus — mitoitettuna kulutukseenne. 02 ENERGIAVARASTOT Teollisuusluokan akkujärjestelmät ja niiden ohjaus. 03 RESERVIMARKKINAYHTEYS Kohteen liittäminen reservimarkkinoille lisensoidun aggregaattorin kautta. Mitä se tarkoittaa kohteessanne. Tehomaksut alas Varasto leikkaa kulutushuiput — vaikutus näkyy verkkolaskulla. Lasketaan teidän omista kulutustiedoistanne. LASKETTAVISSA Lue lisää Pörssisähkö eduksi Lataus halvoilla tunneilla, käyttö kalliilla. Optimoinnin arvo lasketaan toteutuneista hinnoista. LASKETTAVISSA Lue lisää Liittymän laajennus vältettävissä Varasto voi antaa huipputehon liittymän yli — laajennuksen tarve arvioidaan ennen hankintaa. LASKETTAVISSA Lue lisää Oma tuotanto omaan käyttöön Aurinkosähkön ylijäämä varastoon ja käyttöön silloin, kun se on arvokkainta. LASKETTAVISSA Lue lisää Varavoima häiriöissä Saarekekäyttöön suunniteltu järjestelmä syöttää kriittistä kuormaa. Vahvistetaan kohdekohtaisesti. KOHDEKOHTAINEN Lue lisää Reservitulo lisänä Aggregaattorin arviona ja skenaarioina — myös oletuksella, että hinnat puolittuvat. Ei koskaan lupauksena. SKENAARIO Lue lisää Varaa kohdekartoitus"
   },
   {
    "page": "/",
    "sectionId": "rev-etusivu-3",
-   "kind": "changed"
+   "kind": "changed",
+   "prev": "Kaksi lähtötilannetta Aurinkosähköä tai ei — aloitamme samasta paikasta: kulutustiedoistanne. TEILLÄ ON JO AURINKOSÄHKÖ Akku parantaa investointia, jonka olette jo tehneet. Liittymässä oleva tuotanto edellyttää kirjallisia vastauksia neljään tekniseen kysymykseen ennen tarjousta: takasyötön esto, tehonrajoitus, mittaus ja toiminta tiedonsiirron katketessa. Me teemme sen selvitystyön ja annamme vastaukset kirjallisesti. Lue miten se ratkaistaan ALOITATTE PUHTAALTA PÖYDÄLTÄ Suunnittelemme kokonaisuuden yhtenä järjestelmänä. Aurinkosähkö, energiavarasto ja ohjaus mitoitetaan yhdessä kulutustietojenne pohjalta. Alusta asti kokonaisuutena suunniteltuna mitään ei sovita jälkikäteen, vastuu on yhdellä taholla ja verkkoyhtiön hyväksyntä haetaan kerralla. Varaa kohdekartoitus"
   },
   {
    "page": "/",
    "sectionId": "rev-etusivu-6",
-   "kind": "changed"
+   "kind": "changed",
+   "prev": "Aloitetaan kulutustiedoistanne. Kohdekartoitus on maksuton eikä sido teitä mihinkään. Saatte kirjallisen näkemyksen — ja pidätte sen joka tapauksessa. Varaa kohdekartoitus"
   },
   {
    "page": "/energiavarastot/",
@@ -28,17 +32,20 @@
   {
    "page": "/aurinko-ja-akku/",
    "sectionId": "rev-aurinko-ja-akku-3",
-   "kind": "changed"
+   "kind": "changed",
+   "prev": "Teillä on jo aurinkosähkö Neljä kysymystä, jotka ratkaistaan ensin. 01 · Takasyöttö Miten takasyöttö estetään, kun molemmat tuottavat? 02 · Tehonrajoitus Miten olemassa olevaa tuotantoa rajoitetaan, kuinka nopeasti ja millä? 03 · Mittaus Miten mittaus järjestetään liittymäpisteessä? 04 · Tiedonsiirto Mihin tilaan järjestelmä asettuu, kun yhteys komponenttien välillä katkeaa? PÄIVÄ HUIPPU YÖ RESERVI KATKOS AURINKOPANEELIT INVERTTERI AKKU M VERKKO LIITTYMÄPISTE KIINTEISTÖ OHJAIN MITTAUS LIITTYMÄPISTEESSÄ SYÖTTÄÄ OHJAINTA · YHTEYDEN KATKETESSA JÄRJESTELMÄ ASETTUU TURVALLISEEN TILAAN Mittaus liittymäpisteessä ja ohjaus, jolla on vikaturvallinen tila. Liittymäpisteeseen asennettava mittausyksikkö seuraa tehon suuntaa ja suuruutta reaaliajassa ja syöttää tiedon paikalliselle ohjaimelle. Kun tuotanto uhkaa syöttää verkkoon yli sallitun, ohjain rajoittaa sitä. Jos tiedonsiirto katkeaa, järjestelmä asettuu turvalliseen tilaan eikä hallitsemattomaan — ja juuri sen verkkoyhtiö haluaa nähdä, ennen kuin se hyväksyy mitään. Komponentit ovat vakiotuotteita, saatavilla vakiintuneilta suomalaisilta toimittajilta lyhyillä toimitusajoilla. Asennuksen toteuttaa aina sertifioitu sähköurakoitsija. Tässä ei ole mitään eksoottista. Ratkaisu on vakiotekniikkaa — työ on sen selvittämisessä kunnolla, etukäteen ja kirjallisesti. Mitä selvitämme ennen tarjousta Akkujärjestelmän ja olemassa olevien inverttereidenne yhteensopivuus Ottaako akun ohjain vastaan ulkoisia tehonrajoituskäskyjä ja miten ne osoitetaan Takasyötön esto ja mittaus liittymäpisteessä Toiminta tiedonsiirron katketessa — mihin tilaan järjestelmä asettuu Miten akku ja olemassa oleva tuotanto koordinoidaan keskenään ja aggregaattorin kanssa Onko olemassa olevassa asennuksessanne jotakin muutettavaa — ja mitä Kirjallisesti. Valmistajalta ja verkkoyhtiöltänne. Ennen kuin esitämme teille hintaa. Varaa kartoitus kohteeseenne"
   },
   {
    "page": "/aurinko-ja-akku/",
    "sectionId": "rev-aurinko-ja-akku-4",
-   "kind": "changed"
+   "kind": "changed",
+   "prev": "Ei vielä aurinkosähköä? Kokonaisuus kannattaa suunnitella kerralla. Toimitamme myös koko järjestelmän: aurinkosähkön, energiavaraston ja ohjauksen yhtenä suunniteltuna kokonaisuutena. Silloin edellä kuvatut kysymykset ratkaistaan suunnittelupöydällä — ei jälkikäteen selvittämällä. 01 · YHTEISMITOITUS Oikea koko molemmille Tuotanto ja varasto mitoitetaan samoista kulutustiedoista — kumpikin oikean kokoiseksi ja toisiaan varten. 02 · ARKKITEHTUURI Valinta perustellaan Hybridi-invertteri vai erillinen järjestelmä — ratkaisu valitaan kohteen mukaan ja perustellaan kirjallisesti. Emme ole sidottuja yhteenkään valmistajaan. 03 · ALUSTA ASTI OIKEIN Tehonhallinta sisään, ei päälle Takasyötön hallinta ja mittaus suunnitellaan järjestelmään alusta asti, eikä niitä soviteta jälkikäteen. 04 · YKSI VASTUUTAHO Yksi suunnitelma, yksi toimitus Yksi verkkoyhtiöprosessi ja yksi taho, joka vastaa kokonaisuudesta — suunnittelusta käyttöönottoon ja seurantaan. Varaa kohdekartoitus"
   },
   {
    "page": "/yhteystiedot/",
    "sectionId": "rev-yhteystiedot-2",
-   "kind": "changed"
+   "kind": "changed",
+   "prev": "Jättäkää tämä kenttä tyhjäksi: Nimi Yritys Sähköposti Puhelin Kohteen sijainti Pääsulake tai vuosikulutus Onko kohteessa aurinkosähköä? Ei Kyllä Suunnitteilla En tiedä Viesti Lähetä Käsittelemme lähettämänne tiedot vastataksemme yhteydenottoonne. Tietosuojaseloste . Kiitos — palaamme asiaan arkipäivän kuluessa. (Esikatselu: lähetys kytketään päälle julkaisun yhteydessä.) Lähetys ei onnistunut. Voitte lähettää tiedot myös suoraan sähköpostilla: madis.maastik@samaenergia.fi . Suoraan Madis Maastik +372 5391 6647 WhatsApp +358 46 659 4879 madis.maastik@samaenergia.fi"
   },
   {
    "page": "/kiitos/",
@@ -48,27 +55,32 @@
   {
    "page": "/ajankohtaista/",
    "sectionId": "rev-ajankohtaista-2",
-   "kind": "changed"
+   "kind": "changed",
+   "prev": "Luettavaa muualla Velvoite · määräpäivä 11.10.2026 · Direktiivi (EU) 2023/1791 Energiakatselmusvelvoite laajenee: raja on jatkossa kulutus, ei yrityksen koko Uudistettu energiatehokkuusdirektiivi siirtää pakollisen energiakatselmuksen rajan yrityksen koosta energiankulutukseen: yli 10 TJ eli noin 2 700 MWh vuodessa kuluttavien yritysten on teetettävä energiakatselmus 11.10.2026 mennessä, elleivät ne ota käyttöön sertifioitua energianhallintajärjestelmää. Miksi tämä on merkityksellistä: katselmus tuottaa juuri sen kulutusdatan, josta varasto- ja aurinkoinvestointi mitoitetaan. Saman velvoitteen voi hoitaa pelkkänä pakkona — tai käyttää samalla hyödyksi. 18.08.2026 · Fingrid · Tiedote Sähkönkulutus on kääntymässä voimakkaaseen kasvuun – rinnalle tarvitaan lisää säätövoimaa ↗ Fingridin mukaan kulutuksen kasvu voimistuu: pelkästään datakeskushankkeiden liittymissopimuksia on lähes viiden gigawatin edestä, ja täysimääräisesti toteutuessaan sopimuskanta nostaisi Suomen sähkönkulutusta lähes 40 prosenttia vuoden 2025 tasosta. Samassa tiedotteessa on toinenkin luku: sähkövarastojen liittymissopimuksia on jo yli neljän gigawatin edestä. Kysyntä ja jousto kasvavat siis kilpaa — juuri siksi emme rakenna yhdenkään kohteen takaisinmaksua reservihintojen varaan. Tiedotteessa on myös hiljainen viesti olemassa olevien liittymien omistajille: uusia liittymiä voi paikoin joutua odottamaan pitkään. Akku olemassa olevan liittymän takana hyödyntää liittymää, joka teillä jo on. ~5 GW datakeskushankkeita liittymissopimuksin >4 GW sähkövarastoja liittymisjonossa +40 % kulutuksen kasvu, jos sopimuskanta toteutuu LÄHDE: FINGRID · TIEDOTE 18.08.2026 · DOKUMENTOITU Lista täydentyy sitä mukaa kuin merkittäviä julkaisuja ilmestyy. Jos jokin niistä herättää kysymyksen omasta kohteestanne, kohdekartoitus on nopein tapa saada vastaus."
   },
   {
    "page": "/et/",
    "sectionId": "rev-etusivu-1",
-   "kind": "changed"
+   "kind": "changed",
+   "prev": "Energiasalvestid ja päikeseelekter · ettevõtetele ja maaomanikele Ühine võrk. Sõltumatu energia. Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame kirjalikult , enne kui midagi alla kirjutatakse. Broneerige objektikaardistus Vaadake, kuidas protsess kulgeb Võrgusagedus — miks energiasalvesteid vajatakse Illustratsioon sageduse kõikumisest 50,000 Hz on elektrivõrgu tasakaal. Kui sagedus sellest kõrvale kaldub, ei ole tootmine ja tarbimine tasakaalus — ja põhivõrguettevõtted, Eestis Elering ja Soomes Fingrid, maksavad selle eest, et energiasalvestid taastavad tasakaalu sekunditega. Sellel reserviturud põhinevadki."
   },
   {
    "page": "/et/",
    "sectionId": "rev-etusivu-2",
-   "kind": "changed"
+   "kind": "changed",
+   "prev": "Mida tarnime 01 PÄIKESEELEKTER Paneelid, inverterid ja paigaldus — dimensioonitud teie tarbimise järgi. 02 ENERGIASALVESTID Tööstusklassi akusüsteemid ja nende juhtimine. 03 RESERVITURU ÜHENDUS Objekti liitmine reservituruga litsentseeritud agregaatori kaudu. Mida see teie objektil tähendab. Võimsustasud alla Salvesti lõikab tarbimistipud — mõju on näha võrguarvel. Arvutatakse teie enda tarbimisandmetest. ARVUTATAV Loe edasi Börsielekter kasuks Laadimine odavatel tundidel, kasutus kallitel. Optimeerimise väärtus arvutatakse tegelikest hindadest. ARVUTATAV Loe edasi Liitumise laiendamine välditav Salvesti võib anda tippvõimsuse üle liitumispiiri — laiendamise vajadust hinnatakse enne hanget. ARVUTATAV Loe edasi Oma toodang omaks tarbeks Päikeseelektri ülejääk salvestisse ja kasutusse siis, kui see on kõige väärtuslikum. ARVUTATAV Loe edasi Varutoide rikete ajal Saartalitluseks projekteeritud süsteem toidab kriitilist koormust. Kinnitatakse objektipõhiselt. OBJEKTIPÕHINE Loe edasi Reservitulu lisana Agregaatori hinnanguna ja stsenaariumidena — ka eeldusel, et hinnad poolituvad. Mitte kunagi lubadusena. STSENAARIUM Loe edasi Broneerige objektikaardistus"
   },
   {
    "page": "/et/",
    "sectionId": "rev-etusivu-3",
-   "kind": "changed"
+   "kind": "changed",
+   "prev": "Kaks lähtekohta Päikeseelekter olemas või mitte — alustame samast kohast: teie tarbimisandmetest. TEIL ON PÄIKESEELEKTER JUBA OLEMAS Aku parandab investeeringut, mille olete juba teinud. Liitumises olev tootmine eeldab enne pakkumist kirjalikke vastuseid neljale tehnilisele küsimusele: tagasitoite tõkestamine, võimsuse piiramine, mõõtmine ja käitumine side katkemisel. Meie teeme selle selgitustöö ja anname vastused kirjalikult. Lugege, kuidas see lahendatakse ALUSTATE PUHTALT LEHELT Projekteerime terviku ühe süsteemina. Päikeseelekter, energiasalvesti ja juhtimine dimensioonitakse koos teie tarbimisandmete põhjal. Algusest peale tervikuna projekteerituna ei jää midagi tagantjärele sobitada, vastutus on ühel osapoolel ja võrguettevõtte kooskõlastus taotletakse korraga. Broneerige objektikaardistus"
   },
   {
    "page": "/et/",
    "sectionId": "rev-etusivu-6",
-   "kind": "changed"
+   "kind": "changed",
+   "prev": "Alustame teie tarbimisandmetest. Objektikaardistus on tasuta ega seo teid millegagi. Saate kirjaliku hinnangu — ja see jääb teile igal juhul. Broneerige objektikaardistus"
   },
   {
    "page": "/et/energiasalvestid/",
@@ -83,22 +95,26 @@
   {
    "page": "/et/paike-ja-aku/",
    "sectionId": "rev-paike-ja-aku-3",
-   "kind": "changed"
+   "kind": "changed",
+   "prev": "Teil on päikeseelekter juba olemas Neli küsimust, mis lahendatakse kõigepealt. 01 · Tagasitoide Kuidas tagasitoide tõkestatakse, kui mõlemad toodavad? 02 · Võimsuse piiramine Kuidas olemasolevat tootmist piiratakse, kui kiiresti ja millega? 03 · Mõõtmine Kuidas korraldatakse mõõtmine liitumispunktis? 04 · Side Millisesse olekusse süsteem läheb, kui ühendus komponentide vahel katkeb? PÄEV TIPP ÖÖ RESERV KATKESTUS PÄIKESEPANEELID INVERTER AKU M VÕRK LIITUMISPUNKT HOONE KONTROLLER MÕÕTMINE LIITUMISPUNKTIS TOIDAB KONTROLLERIT · SIDE KATKEMISEL LÄHEB SÜSTEEM OHUTUSSE OLEKUSSE Mõõtmine liitumispunktis ja juhtimine, millel on tõrkekindel olek. Liitumispunkti paigaldatav mõõteseade jälgib võimsuse suunda ja suurust reaalajas ning edastab info kohalikule kontrollerile. Kui tootmine ähvardab võrku toita üle lubatu, piirab kontroller seda. Kui side katkeb, läheb süsteem ohutusse olekusse, mitte kontrollimatusse — ja just seda tahab võrguettevõte näha, enne kui ta midagi heaks kiidab. Komponendid on standardtooted, saadaval väljakujunenud tarnijatelt lühikeste tarneaegadega. Paigalduse teeb alati sertifitseeritud elektritööde ettevõte. Siin ei ole midagi eksootilist. Lahendus on standardtehnika — töö seisneb selle korralikus, eelnevas ja kirjalikus väljaselgitamises. Mida selgitame välja enne pakkumist Akusüsteemi ja teie olemasolevate inverterite ühilduvus Kas aku kontroller võtab vastu väliseid võimsuse piiramise käske ja kuidas seda tõendatakse Tagasitoite tõkestamine ja mõõtmine liitumispunktis Käitumine side katkemisel — millisesse olekusse süsteem läheb Kuidas aku ja olemasolev tootmine omavahel ning agregaatoriga koordineeritakse Kas teie olemasolevas paigaldises on midagi muuta — ja mida Kirjalikult. Tootjalt ja teie võrguettevõttelt. Enne kui esitame teile hinna. Broneerige kaardistus oma objektile"
   },
   {
    "page": "/et/paike-ja-aku/",
    "sectionId": "rev-paike-ja-aku-4",
-   "kind": "changed"
+   "kind": "changed",
+   "prev": "Päikeseelektrit veel ei ole? Tervik tasub projekteerida korraga. Tarnime ka kogu süsteemi: päikeseelektri, energiasalvesti ja juhtimise ühe projekteeritud tervikuna. Siis lahendatakse eelkirjeldatud küsimused projekteerimislaual — mitte tagantjärele selgitades. 01 · ÜHISDIMENSIONEERIMINE Õige suurus mõlemale Tootmine ja salvesti dimensioonitakse samadest tarbimisandmetest — kumbki õiges suuruses ja teineteise jaoks. 02 · ARHITEKTUUR Valik põhjendatakse Hübriidinverter või eraldi süsteem — lahendus valitakse objekti järgi ja põhjendatakse kirjalikult. Me ei ole seotud ühegi tootjaga. 03 · ALGUSEST PEALE ÕIGESTI Võimsusjuhtimine sisse, mitte peale Tagasitoite haldus ja mõõtmine projekteeritakse süsteemi algusest peale, mitte ei sobitata tagantjärele. 04 · ÜKS VASTUTAJA Üks projekt, üks tarne Üks võrguettevõtte protsess ja üks osapool, kes vastutab terviku eest — projekteerimisest kasutuselevõtu ja seireni. Broneerige objektikaardistus"
   },
   {
    "page": "/et/reserviturud/",
    "sectionId": "rev-reserviturud-3",
-   "kind": "changed"
+   "kind": "changed",
+   "prev": "Tooted Reservitooted ja mida igaüks akult nõuab Eri tooted eeldavad eri reageerimiskiirust ja eri kestust. Kestus määrab aku energiamahu suhte võimsusse — see on koht, kus valesti dimensioonitud süsteem ei kõlba turule, mille jaoks see müüdi. Toode Mida see teeb Nõue akule FCR-N Sageduse pidev peenhäälestus normaalolukorras. Reageerib ka väikestele kõrvalekalletele. Võime võimsust sümmeetriliselt nii võtta kui ka anda. Nõuab üldjuhul pikimat kestust mõlemas suunas. FCR-D Häirereserv. Aktiveerub alles siis, kui sagedus kaldub oluliselt kõrvale — näiteks kui suur tootmisüksus võrgust eraldub. Kiire aktiveerumine, lühem kestus. Kõige tavalisem lähtekoht äri- ja tööstussuuruses akudele. aFRR Automaatne sageduse taastamine. Viib sageduse pärast FCR-i tagasi sihtväärtusele. Pikem kestus ja pidev juhitavus. Nõuab rohkem energiat võimsuse suhtes. mFRR Manuaalne reserv. Aktiveeritakse käsu peale pikemaajalisteks olukordadeks. Pikim kestus. Harvem ärisuuruses aku esmane toode. Täpsed kestusnõuded ja tehnilised tingimused määrab põhivõrguettevõte — Eestis Elering, Soomes Fingrid — ja need muutuvad. Kasutame alati kehtivat tingimust, mitte mälu järgi numbrit."
   },
   {
    "page": "/et/kontakt/",
    "sectionId": "rev-kontakt-2",
-   "kind": "changed"
+   "kind": "changed",
+   "prev": "Jätke see väli tühjaks: Nimi Ettevõte E-post Telefon Objekti asukoht Peakaitse või aastatarbimine Kas objektil on päikeseelekter? Ei Jah Kavandamisel Ei tea Sõnum Saada Töötleme teie saadetud andmeid, et teie pöördumisele vastata. Andmekaitsetingimused . Aitäh — võtame ühendust tööpäeva jooksul. (Eelvaade: saatmine lülitatakse sisse avaldamisel.) Saatmine ei õnnestunud. Võite saata andmed ka otse e-postiga: madis.maastik@samaenergia.fi . Otse Madis Maastik +372 5391 6647 WhatsApp +358 46 659 4879 madis.maastik@samaenergia.fi"
   },
   {
    "page": "/et/aitah/",
@@ -108,7 +124,8 @@
   {
    "page": "/et/uudised/",
    "sectionId": "rev-uudised-2",
-   "kind": "changed"
+   "kind": "changed",
+   "prev": "Lugemist mujalt Kohustus · tähtaeg 11.10.2026 · Direktiiv (EL) 2023/1791 Energiaauditi kohustus laieneb: piir on edaspidi tarbimine, mitte ettevõtte suurus Uuendatud energiatõhususe direktiiv viib kohustusliku energiaauditi piiri ettevõtte suuruselt energiatarbimisele: üle 10 TJ ehk umbes 2 700 MWh aastas tarbivad ettevõtted peavad laskma teha energiaauditi 11.10.2026-ks, kui nad ei võta kasutusele sertifitseeritud energiajuhtimissüsteemi. Miks see on oluline: audit toodab täpselt selle tarbimisandmestiku, millest salvesti- ja päikeseinvesteering dimensioonitakse. Sama kohustuse võib täita pelga sunnina — või ühtlasi ära kasutada. 18.08.2026 · Fingrid · Pressiteade Elektritarbimine on pöördumas tugevasse kasvu – kõrvale on vaja rohkem reguleerimisvõimsust (soome keeles) ↗ Fingridi andmetel tarbimise kasv kiireneb: ainuüksi andmekeskuste liitumislepinguid on ligi viie gigavati jagu, ja täies mahus teostudes tõstaks lepinguportfell Soome elektritarbimist ligi 40 protsenti 2025. aasta tasemest. Samas teates on ka teine number: elektrisalvestite liitumislepinguid on juba üle nelja gigavati. Nõudlus ja paindlikkus kasvavad seega võidu — just seepärast ei ehita me ühegi objekti tasuvust reservihindade peale. Teates on ka vaikne sõnum olemasolevate liitumiste omanikele: uusi liitumisi võib kohati tulla kaua oodata. Aku olemasoleva liitumise taga kasutab liitumist, mis teil juba on. ~5 GW andmekeskuseprojekte liitumislepingutega >4 GW elektrisalvesteid liitumisjärjekorras +40 % tarbimise kasv, kui lepinguportfell teostub ALLIKAS: FINGRID · PRESSITEADE 18.08.2026 · DOKUMENTEERITUD Loetelu täieneb sedamööda, kuidas olulisi avaldusi ilmub. Kui mõni neist tekitab küsimuse teie enda objekti kohta, on objektikaardistus kiireim viis vastus saada."
   }
  ]
 }

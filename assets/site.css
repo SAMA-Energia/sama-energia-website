@@ -429,3 +429,9 @@ label .fnote.rq{color:var(--signal-ink)}
 .rev-banner{position:fixed;left:0;right:0;bottom:0;z-index:95;background:var(--glass);backdrop-filter:blur(10px);border-top:1px solid var(--line);color:var(--muted-lt);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;padding:9px var(--gut);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
 .rev-banner b{color:var(--signal);font-weight:500}
 .rev-banner a{color:var(--dk-tx);text-decoration:underline;text-decoration-color:var(--signal);text-underline-offset:3px}
+.rev-mark{cursor:pointer}
+.rev-toggle{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;padding:5px 10px;background:transparent;border:1px solid var(--signal);color:var(--signal);cursor:pointer;transition:.18s}
+.rev-toggle:hover{background:var(--signal);color:var(--on-signal)}
+.rev-diff{position:absolute;inset:0;z-index:7;overflow:auto;background:var(--paper);color:var(--tx2);padding:clamp(18px,3vw,36px);font-family:'Newsreader',Georgia,serif;font-size:15.5px;line-height:1.75;cursor:pointer;border:1px dashed var(--signal)}
+.rev-del{color:#A8452E;text-decoration:line-through;text-decoration-thickness:1.5px;opacity:.8}
+.rev-ins{color:var(--signal-ink);font-weight:600}

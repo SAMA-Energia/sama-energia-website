@@ -143,21 +143,78 @@ if(cf)cf.addEventListener('submit',function(e){
    siksi tila on vaaraton myös mainissa, vaikka manifest kulkee mukana. */
 (function(){
   if(!/[?&]review=1(?:&|$)/.test(location.search))return;
+
+  /* Sanadiffi (LCS, ei riippuvuuksia): ['=',sana] / ['-',poistettu] / ['+',lisätty].
+     Yhteinen alku ja loppu leikataan ensin pois; jos jäljelle jäävä DP-taulu olisi
+     kohtuuttoman suuri, palataan karkeaan "vanha pois, uusi tilalle" -näkymään. */
+  function wordDiff(a,b){
+    var s=0;while(s<a.length&&s<b.length&&a[s]===b[s])s++;
+    var e=0;while(e<a.length-s&&e<b.length-s&&a[a.length-1-e]===b[b.length-1-e])e++;
+    var A=a.slice(s,a.length-e),B=b.slice(s,b.length-e);
+    var n=A.length,m=B.length,out=[],i,j;
+    for(i=0;i<s;i++)out.push(['=',a[i]]);
+    if(n*m>4000000){
+      for(i=0;i<n;i++)out.push(['-',A[i]]);
+      for(j=0;j<m;j++)out.push(['+',B[j]]);
+    }else{
+      var W=m+1,dp=new Int32Array((n+1)*W);
+      for(i=n-1;i>=0;i--)for(j=m-1;j>=0;j--){
+        dp[i*W+j]=A[i]===B[j]?dp[(i+1)*W+j+1]+1:Math.max(dp[(i+1)*W+j],dp[i*W+j+1]);
+      }
+      i=0;j=0;
+      while(i<n&&j<m){
+        if(A[i]===B[j]){out.push(['=',A[i]]);i++;j++;}
+        else if(dp[(i+1)*W+j]>=dp[i*W+j+1]){out.push(['-',A[i]]);i++;}
+        else{out.push(['+',B[j]]);j++;}
+      }
+      while(i<n){out.push(['-',A[i]]);i++;}
+      while(j<m){out.push(['+',B[j]]);j++;}
+    }
+    for(i=a.length-e;i<a.length;i++)out.push(['=',a[i]]);
+    return out;
+  }
+  function words(t){t=(t||'').replace(/\u00a0/g,' ').replace(/\s+/g,' ').trim();return t?t.split(' '):[];}
+
+  /* Peittokerros: sivun oikeaa merkkausta ei muuteta — diffi elää omassa overlayssa */
+  function toggleDiff(el,prev,cur){
+    var ex=el.querySelector('.rev-diff');
+    if(ex){ex.remove();return;}
+    var d=document.createElement('div');
+    d.className='rev-diff';
+    wordDiff(words(prev),words(cur)).forEach(function(t){
+      var sp=document.createElement('span');
+      if(t[0]==='-')sp.className='rev-del';
+      else if(t[0]==='+')sp.className='rev-ins';
+      sp.textContent=t[1]+' ';
+      d.appendChild(sp);
+    });
+    d.addEventListener('click',function(e){e.stopPropagation();d.remove();});
+    el.appendChild(d);
+  }
+
   fetch('/assets/review.json')
   .then(function(r){return r.json()})
   .then(function(man){
     var list=(man&&man.changes)||[];
     if(!list.length)return;
     var here=location.pathname;
+    var marked=[];
     list.forEach(function(c){
       if(c.page!==here)return;
       var el=document.getElementById(c.sectionId);
       if(!el||el.classList.contains('rev-mark'))return;
+      /* nykyteksti talteen ENNEN kuin overlay/nimiö lisätään elementtiin */
+      var cur=(el.textContent||'');
       el.classList.add('rev-mark');
       var lab=document.createElement('span');
       lab.className='rev-lab';
-      lab.textContent=c.kind==='new'?'UUSI':'MUUTETTU';
+      lab.textContent=(c.kind==='new'?'UUSI':'MUUTETTU')+' · DIFF';
       el.appendChild(lab);
+      marked.push({el:el,prev:c.prev||'',cur:cur});
+      el.addEventListener('click',function(e){
+        if(e.target.closest('a,button,input,select,textarea,.rev-diff'))return;
+        toggleDiff(el,c.prev||'',cur);
+      });
     });
     var pages=[];
     list.forEach(function(c){if(pages.indexOf(c.page)<0)pages.push(c.page)});
@@ -172,6 +229,22 @@ if(cf)cf.addEventListener('submit',function(e){
       a.textContent=p;
       b.appendChild(a);
     });
+    if(marked.length){
+      var on=false;
+      var tg=document.createElement('button');
+      tg.type='button';tg.className='rev-toggle';
+      tg.textContent='NÄYTÄ KAIKKI MUUTOKSET / SHOW ALL DIFFS';
+      tg.addEventListener('click',function(){
+        on=!on;
+        tg.textContent=on?'PIILOTA MUUTOKSET / HIDE DIFFS':'NÄYTÄ KAIKKI MUUTOKSET / SHOW ALL DIFFS';
+        marked.forEach(function(mk){
+          var ex=mk.el.querySelector('.rev-diff');
+          if(on&&!ex)toggleDiff(mk.el,mk.prev,mk.cur);
+          if(!on&&ex)ex.remove();
+        });
+      });
+      b.appendChild(tg);
+    }
     document.body.appendChild(b);
     /* review=1 säilyy sisäisissä linkeissä, jotta tila kestää navigoinnin */
     document.querySelectorAll('a[href^="/"]').forEach(function(a){

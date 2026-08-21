@@ -240,7 +240,7 @@ function normalizeCurrent(text) {
     .replace(/ data-cap="[^"]*"/g, '');
 }
 
-function changedLines(baseText, curText, tmp, tag) {
+function diffHunks(baseText, curText, tmp, tag) {
   const a = join(tmp, `base-${tag}`);
   const b = join(tmp, `cur-${tag}`);
   writeFileSync(a, baseText);
@@ -248,14 +248,47 @@ function changedLines(baseText, curText, tmp, tag) {
   const r = git(['diff', '--no-index', '--unified=0', '--', a, b]);
   if (r.status !== 0 && r.status !== 1) throw new Error(`git diff epäonnistui: ${r.stderr}`);
   const out = [];
-  for (const m of (r.stdout || '').matchAll(/^@@ -\d+(?:,(\d+))? \+(\d+)(?:,(\d+))? @@/gm)) {
-    const oldCount = m[1] === undefined ? 1 : Number(m[1]);
-    const start = Number(m[2]);
-    const count = m[3] === undefined ? 1 : Number(m[3]);
-    if (count === 0) continue; // pelkkä poisto — ei riviä uudessa tiedostossa
-    out.push({ start, count, kind: oldCount === 0 ? 'new' : 'changed' });
+  for (const m of (r.stdout || '').matchAll(/^@@ -(\d+)(?:,(\d+))? \+(\d+)(?:,(\d+))? @@/gm)) {
+    out.push({
+      oldStart: Number(m[1]),
+      oldCount: m[2] === undefined ? 1 : Number(m[2]),
+      newStart: Number(m[3]),
+      newCount: m[4] === undefined ? 1 : Number(m[4]),
+    });
   }
   return out;
+}
+
+/* Kuvaa nykytiedoston rivin vastinriville vertailupohjassa diff-hunkkien avulla.
+   Hunkin sisällä osuva rivi kuvataan hunkin vanhan puolen alkuun (tai loppuun,
+   kun haetaan osion loppurajaa) — katselmusdiffille riittävä tarkkuus. */
+function mapNewToOld(line, hunks, isEnd) {
+  let delta = 0; // vanha rivi = uusi rivi - delta
+  for (const h of hunks) {
+    if (h.newCount === 0) {
+      if (line > h.newStart) delta += -h.oldCount;
+      else break;
+    } else if (line >= h.newStart + h.newCount) {
+      delta += h.newCount - h.oldCount;
+    } else if (line >= h.newStart) {
+      return isEnd ? h.oldStart + Math.max(h.oldCount - 1, 0) : h.oldStart;
+    } else break;
+  }
+  return line - delta;
+}
+
+/* HTML -> pelkkä tekstisisältö (sanadiffin vertailupohja selaimen textContentia vastaavasti) */
+function textOf(html) {
+  return html
+    .replace(/<!--[\s\S]*?-->/g, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 /* Rivit, jotka ovat pelkkää HTML-kommenttia: eivät näy sivulla, joten ne eivät
@@ -283,7 +316,10 @@ function buildReviewManifest(langData) {
       if (baseText === null) throw new Error(`origin/main-vertailukohtaa ei löytynyt (${L.src})`);
 
       const curText = normalizeCurrent(source.full);
-      const hunks = changedLines(baseText, curText, tmp, lang);
+      const hunks = diffHunks(baseText, curText, tmp, lang);
+      const flagHunks = hunks
+        .filter(h => h.newCount > 0)
+        .map(h => ({ ...h, kind: h.oldCount === 0 ? 'new' : 'changed' }));
 
       /* rivinumero -> sivu -> osio */
       const lineOf = abs => source.full.slice(0, abs).split('\n').length;
@@ -296,8 +332,8 @@ function buildReviewManifest(langData) {
 
       const comments = commentOnlyLines(source.full);
       const seen = new Map(); // "url|id" -> kind
-      for (const h of hunks) {
-        for (let line = h.start; line < h.start + h.count; line++) {
+      for (const h of flagHunks) {
+        for (let line = h.newStart; line < h.newStart + h.newCount; line++) {
           if (comments.has(line)) continue;
           const pg = pages.find(p => line >= p.startLine && line <= p.endLine);
           if (!pg) continue;
@@ -306,14 +342,27 @@ function buildReviewManifest(langData) {
           if (!unit) continue;
           const key = `${pg.url}|${unit.id}`;
           /* osio on "new" vain jos sen avausrivi itsessään on lisätty rivi */
-          const isNew = h.kind === 'new' && unit.line >= h.start && unit.line < h.start + h.count;
+          const isNew = h.kind === 'new' && unit.line >= h.newStart && unit.line < h.newStart + h.newCount;
           if (!seen.has(key)) seen.set(key, isNew ? 'new' : 'changed');
           else if (seen.get(key) === 'new' && !isNew) seen.set(key, 'new');
         }
       }
+
+      /* muuttuneille osioille talteen aiempi tekstisisältö (sanadiffi selaimessa) */
+      const baseLines = baseText.split('\n');
       for (const [key, kind] of seen) {
         const [page, sectionId] = key.split('|');
-        manifest.changes.push({ page, sectionId, kind });
+        const entry = { page, sectionId, kind };
+        if (kind === 'changed') {
+          const pg = pages.find(p => p.url === page);
+          const idx = pg.units.findIndex(u => u.id === sectionId);
+          const startLine = pg.units[idx].line;
+          const endLine = idx + 1 < pg.units.length ? pg.units[idx + 1].line - 1 : pg.endLine;
+          const oS = mapNewToOld(startLine, hunks, false);
+          const oE = mapNewToOld(endLine, hunks, true);
+          entry.prev = textOf(baseLines.slice(Math.max(oS - 1, 0), oE).join('\n'));
+        }
+        manifest.changes.push(entry);
       }
     }
   } catch (e) {

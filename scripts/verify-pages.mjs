@@ -86,7 +86,11 @@ for (const p of pages) {
   }
 
   // katselmustilan luokat eivät saa esiintyä staattisessa HTML:ssä (vain client-side)
-  if (/rev-mark|rev-lab|rev-banner/.test(html)) err(`${where} — katselmusmerkintöjä staattisessa HTML:ssä`);
+  if (/rev-mark|rev-lab|rev-banner|rev-diff|rev-del|rev-ins|rev-toggle/.test(html)) err(`${where} — katselmusmerkintöjä staattisessa HTML:ssä`);
+
+  // kohatäitteitä ei saa jäädä julkaistuun sisältöön
+  if (/KONTROLLITAKSE|TARKISTETAAN/.test(html)) err(`${where} — KONTROLLITAKSE/TARKISTETAAN-merkintä jäljellä`);
+  if (/\[X[,X\s–]|\[XX–XX/.test(html)) err(`${where} — [X,XX]-tyyppinen kohatäite jäljellä`);
 
   // kaikki sisäiset linkit ja resurssit osoittavat olemassa oleviin tiedostoihin
   for (const m of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
@@ -167,12 +171,15 @@ for (const s of UNLISTED) {
   if (shimFi?.includes(`"#/${s}"`)) err(`shimissä ylimääräinen polku #/${s}`);
 }
 
-// katselmusmanifesti: olemassa, jäsentyy, viittaa olemassa oleviin sivuihin ja osioihin
+// katselmusmanifesti: olemassa, jäsentyy, kohtuukokoinen, viittaa olemassa oleviin sivuihin ja osioihin
 try {
-  const man = JSON.parse(readFileSync(join(ROOT, 'assets/review.json'), 'utf8'));
+  const raw = readFileSync(join(ROOT, 'assets/review.json'), 'utf8');
+  if (raw.length > 200_000) err(`review.json liian suuri (${raw.length} tavua > 200 kt)`);
+  const man = JSON.parse(raw);
   if (!Array.isArray(man.changes)) err('review.json: changes ei ole taulukko');
   else for (const c of man.changes) {
     if (!['new', 'changed'].includes(c.kind)) { err(`review.json: tuntematon kind "${c.kind}"`); continue; }
+    if (c.kind === 'changed' && typeof c.prev !== 'string') err(`review.json: ${c.page} ${c.sectionId} — prev-teksti puuttuu`);
     const pg = pages.find(p => p.url === c.page);
     if (!pg) { err(`review.json: tuntematon sivu ${c.page}`); continue; }
     const html = readFileSync(join(ROOT, c.page.replace(/^\//, ''), 'index.html'), 'utf8');

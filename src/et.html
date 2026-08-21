@@ -274,10 +274,13 @@
     </div>
   </section>
 
-  <!-- VÕIMSUSTASU NÄIDISARVUTUS. Tariifinumbrid on teadlikult [KONTROLLITAKSE]-kohatäited:
-       Martin kleebib täpsed arvud numbriregistrist enne main-i mestimist — MITTE täita mälu järgi.
-       Kaks poolt hoitakse rangelt lahus: DOKUMENTEERITUD (tariif, allikaga) ja MODELLEERITUD
-       (eeldus koormusprofiilist). Tulemus alati vahemikuna. Ei tarnijanimesid, ei reservitulu. -->
+  <!-- VÕIMSUSTASU NÄIDISARVUTUS. Tariifinumbrid on dokumenteeritud: Elektrilevi võrguteenuse
+       hinnakiri, kehtiv alates 01.06.2026, käibemaksuta, kooskõlastatud Konkurentsiameti
+       02.03.2026 otsusega nr 7-3/2026-028. Kaks poolt hoitakse rangelt lahus: DOKUMENTEERITUD
+       (tariif, allikaga) ja MODELLEERITUD (eeldus koormusprofiilist). Tulemus alati vahemikuna.
+       Ei tarnijanimesid, ei reservitulu.
+       MADIS — kinnita: (1) paketivalik VKL2 (vs VKA2 3,50/3,64 või Aeg-variandid) ja
+       (2) modelleeritud vähenduse vahemik 60–100 kW selle kabinetiklassi kohta. -->
   <section>
     <div class="wrap">
       <p class="eyebrow">Võimsustasu näidisarvutus</p>
@@ -286,23 +289,23 @@
       <div class="split" style="margin-top:44px">
         <div>
           <span class="tg las" style="display:inline-block;margin-bottom:16px">DOKUMENTEERITUD</span>
-          <h3 style="font-size:22px;margin-bottom:12px">Elektrilevi tariifikomponendid</h3>
+          <h3 style="font-size:22px;margin-bottom:12px">Elektrilevi tariifikomponendid — pakett Keskpingel liinil VKL2</h3>
           <ul class="checks">
-            <li>Tarbimiskoha kasutusvõimsus: <span class="mono">[X,XX €/kW kuus — KONTROLLITAKSE: Elektrilevi hinnakiri, Konkurentsiameti otsus 02.03.2026 nr 7-3/2026-028]</span></li>
-            <li>Võrguühenduse kasutusvõimsus: <span class="mono">[X,XX €/kW kuus — KONTROLLITAKSE: sama allikas]</span></li>
-            <li>Pakett: keskpinge, võimsuspõhine komponent — <span class="mono">[pakett täpsustatakse samast hinnakirjast]</span></li>
+            <li>Võrguühenduse kasutusvõimsus: <span class="mono">3,61 €/kW kuus</span> — komponent, millel see näidisarvutus jookseb</li>
+            <li>Tarbimiskoha kasutusvõimsus: <span class="mono">3,75 €/kW kuus</span></li>
+            <li>Hinnad käibemaksuta · hinnakiri kehtiv alates 01.06.2026 · kooskõlastatud Konkurentsiameti 02.03.2026 otsusega nr 7-3/2026-028</li>
           </ul>
-          <p style="margin-top:16px;color:var(--tx2);font-size:15.5px">Võimsustasu arvestatakse mõõdetud tipuvõimsusest. See on tariifitabeli rida, mitte hinnang — seepärast on see pool arvutusest dokumenteeritud, allikas kaasas.</p>
+          <p style="margin-top:16px;color:var(--tx2);font-size:15.5px">Kasutusvõimsuse tasu arvestatakse kalendrikuu suurimast mõõdetud tunni keskmisest võimsusest — just seepärast vähendab tipu silumine seda tasu otse. See on tariifitabeli rida, mitte hinnang.</p>
         </div>
         <div>
           <span class="tg ske" style="display:inline-block;margin-bottom:16px">MODELLEERITUD</span>
           <h3 style="font-size:22px;margin-bottom:12px">Eeldatav tipu vähenemine</h3>
-          <p style="color:var(--tx2);font-size:16.5px">Arvutuse teine pool on eeldus: kui palju suudab 125 kW salvesti kuu tippu tegelikult maha lõigata. See sõltub koormusprofiilist — sellest, kui teravad ja kui pikad teie tipud on. Näites kasutame eeldust <span class="mono">[XX–XX kW]</span>, mis tuleb selgelt märgistada eeldusena, mitte lubadusena.</p>
+          <p style="color:var(--tx2);font-size:16.5px">Arvutuse teine pool on eeldus: kui palju suudab 125 kW / ~250 kWh salvesti kuu tippu tegelikult maha lõigata. See sõltub koormusprofiilist — sellest, kui teravad ja kui pikad teie tipud on. Näites kasutame modelleeritud eeldust <span class="mono">60–100 kW</span> — see on eeldus, mitte lubadus.</p>
           <p style="margin-top:16px;color:var(--tx2);font-size:16.5px">Tegelik number ei tule meilt ega tabelist — see arvutatakse teie enda 15-minutilise intervalli tarbimisandmetest.</p>
         </div>
       </div>
       <div class="callout">
-        <p>Aastane mõju võimsustasule: <span class="mono">[X XXX – X XXX € aastas]</span> — vahemik, mitte punkthinnang.</p>
+        <p>Aastane mõju võrguühenduse kasutusvõimsuse tasule: <span class="mono">3,61 €/kW kuus × 12 ≈ 43 €/kW aastas</span> → 60–100 kW vähenduse juures ligikaudu <span class="mono">2 600 – 4 300 € aastas</span> (käibemaksuta) — vahemik, mitte punkthinnang.</p>
         <p class="sub">Just seda kontrollib tasuta objektikaardistus teie enda tarbimisandmete põhjal — enne kui midagi alla kirjutatakse.</p>
       </div>
     </div>
