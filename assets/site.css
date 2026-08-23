@@ -234,6 +234,14 @@ section{padding:clamp(56px,8vw,104px) 0}
 .of-sun .ofimg{object-position:center 30%}
 .ofscrim{position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(8,14,20,.38) 0%,rgba(8,14,20,.84) 100%)}
 .of-batt .ofscrim{background:linear-gradient(180deg,rgba(8,14,20,.45) 0%,rgba(8,14,20,.84) 100%)}
+/* Tarjoomakortit linkkeinä (stretched link): koko kortti klikattava, saavutettava
+   nimi = kortin otsikko, ei sisäkkäisiä ankkureita. Ankkuri pysyy staattisena,
+   jotta ::before-venytys asemoituu korttiin (position:relative). Hover-vihje:
+   olemassa oleva nosto + hiljainen nuoli otsikkoon (morelink-kieli). */
+main a.offerlink{text-decoration:none;color:inherit;position:static}
+.offerlink::before{content:"";position:absolute;inset:0;z-index:2}
+.offerlink b::after{content:"→";display:inline-block;margin-left:8px;opacity:0;transform:translateX(-4px);transition:opacity .2s,transform .3s cubic-bezier(.3,1.4,.5,1)}
+.offer>div:hover .offerlink b::after,.offerlink:focus-visible b::after{opacity:1;transform:none}
 
 @media(prefers-reduced-motion:reduce){.bene>div,.bene>div::before,.morelink::after,.offer>div{transition:none}}
 .ops{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
