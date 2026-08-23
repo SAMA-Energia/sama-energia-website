@@ -80,19 +80,29 @@ if(cf)cf.addEventListener('submit',function(e){
   if(!cap)return;
   var F={sol:document.getElementById('opSol'),batt:document.getElementById('opBatt'),
     chg:document.getElementById('opChg'),grid:document.getElementById('opGrid'),
-    res:document.getElementById('opRes'),load:document.getElementById('opLoad')};
+    res:document.getElementById('opRes')};
   var fill=document.getElementById('opFill');
   var verkko=document.getElementById('opVerkko');
+  /* bus: pystyväylän dynaaminen virtauskerros — jänne ja suunta tilakohtaisesti
+     (res piirtyy 268→120, jolloin katkoviiva-animaatio kulkee ylöspäin = syöttö verkkoon) */
   var CFG={
-    sun:{on:['sol','load','chg'],lvl:.75,grid:true},
-    peak:{on:['grid','load','batt'],lvl:.45,grid:true},
-    night:{on:['grid','chg'],lvl:.92,grid:true},
-    res:{on:['batt','res'],lvl:.6,grid:true},
-    out:{on:['batt','load'],lvl:.35,grid:false}};
+    sun:{on:['sol','chg'],bus:'164,304',lvl:.75,grid:true},
+    peak:{on:['grid','batt'],bus:'120,304',lvl:.45,grid:true},
+    night:{on:['grid','chg'],bus:'120,268',lvl:.92,grid:true},
+    res:{on:['batt','res'],bus:'268,120',lvl:.6,grid:true},
+    out:{on:['batt'],bus:'268,304',lvl:.35,grid:false}};
   var btns=document.querySelectorAll('.ops button');
   function set(st){
     var c=CFG[st];
-    Object.keys(F).forEach(function(k){F[k].classList.toggle('on',c.on.indexOf(k)>=0);});
+    Object.keys(F).forEach(function(k){if(F[k])F[k].classList.toggle('on',c.on.indexOf(k)>=0);});
+    var bus=document.getElementById('opBus');
+    if(bus){
+      if(c.bus){
+        var p=c.bus.split(',');
+        bus.setAttribute('d','M255 '+p[0]+' V'+p[1]);
+        bus.classList.add('on');
+      }else bus.classList.remove('on');
+    }
     var hh=Math.round(10*c.lvl)+2;
     fill.setAttribute('height',hh);fill.setAttribute('y',288-hh);
     verkko.classList.toggle('off',!c.grid);
