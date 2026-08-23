@@ -29,6 +29,28 @@ https://www.samaenergia.fi/andmekaitse/*       https://samaenergia.ee/andmekaits
 https://samaenergia.fi/aitah/*                 https://samaenergia.ee/aitah/:splat             301!
 https://www.samaenergia.fi/aitah/*             https://samaenergia.ee/aitah/:splat             301!
 
+# FI-osoitteet eivät koskaan palvele .ee-hostilla (peilisääntö yllä olevalle:
+# duplikaattihostitarjoilu pois — canonicalit lievensivät, ohjaus poistaa).
+# verify-pages.mjs valvoo, että joukko pysyy täydellisenä slugiparitaulua vasten.
+https://samaenergia.ee/energiavarastot/*       https://samaenergia.fi/energiavarastot/:splat   301!
+https://www.samaenergia.ee/energiavarastot/*   https://samaenergia.fi/energiavarastot/:splat   301!
+https://samaenergia.ee/aurinko-ja-akku/*       https://samaenergia.fi/aurinko-ja-akku/:splat   301!
+https://www.samaenergia.ee/aurinko-ja-akku/*   https://samaenergia.fi/aurinko-ja-akku/:splat   301!
+https://samaenergia.ee/reservimarkkinat/*      https://samaenergia.fi/reservimarkkinat/:splat  301!
+https://www.samaenergia.ee/reservimarkkinat/*  https://samaenergia.fi/reservimarkkinat/:splat  301!
+https://samaenergia.ee/prosessi/*              https://samaenergia.fi/prosessi/:splat          301!
+https://www.samaenergia.ee/prosessi/*          https://samaenergia.fi/prosessi/:splat          301!
+https://samaenergia.ee/ajankohtaista/*         https://samaenergia.fi/ajankohtaista/:splat     301!
+https://www.samaenergia.ee/ajankohtaista/*     https://samaenergia.fi/ajankohtaista/:splat     301!
+https://samaenergia.ee/meista/*                https://samaenergia.fi/meista/:splat            301!
+https://www.samaenergia.ee/meista/*            https://samaenergia.fi/meista/:splat            301!
+https://samaenergia.ee/yhteystiedot/*          https://samaenergia.fi/yhteystiedot/:splat      301!
+https://www.samaenergia.ee/yhteystiedot/*      https://samaenergia.fi/yhteystiedot/:splat      301!
+https://samaenergia.ee/tietosuoja/*            https://samaenergia.fi/tietosuoja/:splat        301!
+https://www.samaenergia.ee/tietosuoja/*        https://samaenergia.fi/tietosuoja/:splat        301!
+https://samaenergia.ee/kiitos/*                https://samaenergia.fi/kiitos/:splat            301!
+https://www.samaenergia.ee/kiitos/*            https://samaenergia.fi/kiitos/:splat            301!
+
 # /et/-URL-avaruus .ee-hostilla kuolee ohjauksella, ei 404:llä.
 https://samaenergia.ee/et/*      https://samaenergia.ee/:splat  301!
 # Juuri on pakotettava (200!): muuten FI-etusivun staattinen index.html varjostaisi säännön.

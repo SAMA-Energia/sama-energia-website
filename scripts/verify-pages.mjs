@@ -209,6 +209,13 @@ if (overlap.length) err(`FI- ja ET-slugit leikkaavat: ${overlap} — yleiset uud
     if (!rules.includes(`https://samaenergia.fi/${s}/*`)) err(`_redirects: .fi-hostin 301 puuttuu slugilta ${s}`);
     if (!rules.includes(`https://www.samaenergia.fi/${s}/*`)) err(`_redirects: www..fi-hostin 301 puuttuu slugilta ${s}`);
   }
+  // peilisuunta: FI-slugit eivät palvele .ee-hostilla — jokaiselle FI-slugille
+  // .ee- ja www..ee-hostin 301 .fi-hostille. Joukon on pysyttävä täydellisenä
+  // slugiparitaulua vasten: uusi sivu ilman peilisääntöjä kaataa buildin.
+  for (const s of FI.filter(Boolean)) {
+    if (!new RegExp(`^https://samaenergia\\.ee/${s}/\\*\\s+https://samaenergia\\.fi/${s}/:splat\\s+301!\\s*$`, 'm').test(rules)) err(`_redirects: .ee-hostin 301 .fi:lle puuttuu FI-slugilta ${s}`);
+    if (!new RegExp(`^https://www\\.samaenergia\\.ee/${s}/\\*\\s+https://samaenergia\\.fi/${s}/:splat\\s+301!\\s*$`, 'm').test(rules)) err(`_redirects: www..ee-hostin 301 .fi:lle puuttuu FI-slugilta ${s}`);
+  }
   for (const p of pages.filter(p => p.lang === 'et')) {
     const html = readFileSync(join(ROOT, p.url.replace(/^\//, ''), 'index.html'), 'utf8');
     for (const m of html.matchAll(/(?:href|action)="(\/[^"]*)"/g)) {
