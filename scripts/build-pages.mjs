@@ -145,7 +145,8 @@ function jsonLdFor(page, lang, canon) {
   return `<script type="application/ld+json">${json}</script>\n`;
 }
 
-const ICON = `<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23D18A44' d='M12 1 13.76 7.75 19.78 4.22 16.25 10.24 23 12 16.25 13.76 19.78 19.78 13.76 16.25 12 23 10.24 16.25 4.22 19.78 7.75 13.76 1 12 7.75 10.24 4.22 4.22 10.24 7.75 Z'/%3E%3C/svg%3E">`;
+/* Kaheksakand-favicon: Sügav Salu --signal (ent. kupari %23D18A44) */
+const ICON = `<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%236FBF63' d='M12 1 13.76 7.75 19.78 4.22 16.25 10.24 23 12 16.25 13.76 19.78 19.78 13.76 16.25 12 23 10.24 16.25 4.22 19.78 7.75 13.76 1 12 7.75 10.24 4.22 4.22 10.24 7.75 Z'/%3E%3C/svg%3E">`;
 
 /* ---------- lähteen paloittelu ---------- */
 
@@ -290,7 +291,7 @@ function renderPage(lang, page, source, annotatedHtml) {
 <meta property="og:url" content="${canon}">
 <!-- og:image jätetty tarkoituksella pois: odottaa tunnusmerkkipäätöstä -->
 ${jsonld}${ICON}
-<meta name="theme-color" content="#0E1519">
+<meta name="theme-color" content="#0A130D">
 ${preloads}
 <link href="/assets/fonts.css" rel="stylesheet">
 <link href="/assets/site.css" rel="stylesheet">

@@ -1,26 +1,32 @@
-/* Teema A — VERKKO/KUPARI, johdettu kaheksakand-tunnuksesta */
+/* Tuotantoteema: Sügav Salu — korvaa Ilta & Kupari 3.5:n (Teema A -lohko poistettu,
+   yleisarvot --line/--wrap/--gut sulautettu tähän). PERUSTAJAN PÄÄTÖS (Martin
+   2026-08-23), Madisen katselmus draft-haarassa avoinna. Kaksisävysääntö: vihreä
+   (--signal*) = dokumentoitu/toiminta, meripihka (--amber*) = mallinnettu/oletus/
+   tarkistettava. Kontrastiportti: --signal-ink (spek. #2F7C3B) ja --amber-ink
+   (spek. #96552F) tummennettu AA-tasolle 4.5:1 uudella paperilla. */
 :root{
-  --ink:#0D1712;
-  --panel:#152420;
-  --panel-2:#1D2F28;
-  --paper:#EBEDE8;
-  --white:#FFFFFF;
-  --signal:#D18A44;
-  --signal-hi:#E09A55;
-  --muted:#67736C;
-  --muted-lt:#99A69D;
-  --tx2:#3C4842;
-  --tx2d:#B7C3BA;
-  --tx1d:#CCD5CD;
-  --signal-ink:#A9663B;
-  --glass:rgba(13,23,18,.94);
+  --ink:#0A130D;
+  --panel:#0F1A13;
+  --panel-2:#17271C;
+  --paper:#DFE8DA;
+  --white:#F1F6EC;
+  --signal:#6FBF63;
+  --signal-hi:#92DA86;
+  --signal-ink:#2B7136;
+  --muted:#556353;
+  --muted-lt:#98AD97;
+  --tx2:#334336;
+  --tx2d:#B4C4B2;
+  --tx1d:#C8D8C6;
+  --glass:rgba(10,19,13,.94);
   --line:rgba(255,255,255,.14);
-  --line-dk:rgba(13,23,18,.16);
+  --line-dk:rgba(10,19,13,.18);
+  --amber:#D68F47;
+  --amber-hi:#E8A45C;
+  --amber-ink:#8C4F2C;
   --wrap:1180px;
   --gut:clamp(20px,5vw,64px);
 }
-/* Tuotantoteema: Ilta & Kupari 3.5 "Elävä Ilta" — muuttujat sulautettu; valaistuskerros tyylien lopussa. */
-:root{--ink:#0E1519;--panel:#18232B;--panel-2:#22303A;--paper:#EAEBE6;--signal:#D68F47;--signal-hi:#E8A45C;--signal-ink:#96552F;--glass:rgba(14,21,25,.94);--muted:#5A6874;--muted-lt:#9AA7B0;--tx2:#3B4850;--tx2d:#B6C0C7;--tx1d:#C9D1D7;--line-dk:rgba(14,21,25,.16)}
 
 /* Johdetut pintamuuttujat määritellään BODYLLA: teemaluokat (body.tX) ylikirjoittavat --ink/--paper
    samalla elementillä, joten substituutio näkee teeman arvot. :rootissa ketjut jäätyivät teeman 1
@@ -194,7 +200,7 @@ section{padding:clamp(56px,8vw,104px) 0}
 .bene>div{background:var(--paper);border:1.5px solid var(--line-dk);padding:26px 22px 20px;position:relative;transition:transform .3s cubic-bezier(.3,1.4,.5,1),border-color .25s}
 .bene>div::before{content:"";position:absolute;top:-1.5px;left:-1.5px;right:-1.5px;height:4px;transition:height .25s}
 .bene>div.c-las::before{background:#1F8A5B}
-.bene>div.c-ske::before{background:var(--signal)}
+.bene>div.c-ske::before{background:var(--amber)}
 .bene>div.c-koh::before{background:#4A6A82}
 .bene>div:hover{transform:translateY(-4px);border-color:var(--signal-ink)}
 .bene>div:hover::before{height:6px}
@@ -202,9 +208,12 @@ section{padding:clamp(56px,8vw,104px) 0}
 .bene p{font-size:14.5px;color:var(--tx2);max-width:none;min-height:66px}
 .brow{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px;padding-top:13px;border-top:1px solid var(--line-dk)}
 .tg{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;padding:4px 9px;font-weight:500;border:1px solid transparent}
-.tg.las{background:rgba(31,138,91,.13);color:#157148;border-color:rgba(31,138,91,.35)}
-.tg.ske{background:rgba(214,143,71,.15);color:var(--signal-ink);border-color:rgba(169,102,59,.4)}
-.tg.koh{background:rgba(74,106,130,.13);color:#4A6A82;border-color:rgba(74,106,130,.35)}
+.tg.las{background:rgba(31,138,91,.13);color:#136843;border-color:rgba(31,138,91,.35)}
+/* ske/MODELLEERITUD = meripihkaperhe (mallinnettu/oletus) — kaksisävysääntö */
+.tg.ske{background:rgba(214,143,71,.15);background:color-mix(in srgb,var(--amber) 15%,transparent);color:var(--amber-ink);border-color:rgba(140,79,44,.4);border-color:color-mix(in srgb,var(--amber-ink) 40%,transparent)}
+.tg.koh{background:rgba(74,106,130,.13);color:#3F5A6E;border-color:rgba(74,106,130,.35)}
+/* KONTROLLITAKSE/TARKISTETAAN-tyyppiset varoitusmerkinnät: meripihkaperhe (tarkistettava oletus) */
+.tg.chk{background:rgba(214,143,71,.15);background:color-mix(in srgb,var(--amber) 15%,transparent);color:var(--amber-ink);border-color:rgba(140,79,44,.4);border-color:color-mix(in srgb,var(--amber-ink) 40%,transparent)}
 .morelink{font-size:13.5px;font-weight:500;text-decoration:none;color:var(--signal-ink);white-space:nowrap}
 .morelink::after{content:"→";display:inline-block;margin-left:5px;transition:transform .3s cubic-bezier(.3,1.4,.5,1)}
 .bene>div:hover .morelink::after{transform:translateX(5px)}
@@ -217,10 +226,10 @@ section{padding:clamp(56px,8vw,104px) 0}
 .offer>div .ochip{margin-bottom:auto}
 .offer>div b{margin-top:14px;color:#F4F6F3}
 .offer>div .ochip,.offer>div b,.offer>div p{position:relative;z-index:1}
-.offer>div .onum{z-index:1;color:#E09A55;opacity:.9}
+.offer>div .onum{z-index:1;color:var(--signal-hi);opacity:.9}
 .offer>div p{color:rgba(238,241,238,.85)}
-.offer>div .ochip{background:rgba(8,14,20,.5);border-color:rgba(224,154,85,.55)}
-.offer>div .oico{stroke:#E09A55}
+.offer>div .ochip{background:rgba(8,14,20,.5);border-color:rgba(146,218,134,.55);border-color:color-mix(in srgb,var(--signal-hi) 55%,transparent)}
+.offer>div .oico{stroke:var(--signal-hi)}
 .ofimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .of-sun .ofimg{object-position:center 30%}
 .ofscrim{position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(8,14,20,.38) 0%,rgba(8,14,20,.84) 100%)}
@@ -400,20 +409,24 @@ footer a:hover{color:var(--dk-hd)}
   #p-home .btn::before{transition:none}
 }
 
-/* ===== ILTA & KUPARI 3.5 · VALAISTUSKERROS (entinen KOE 3, nyt tuotantoa) =====
-   Sama paletti kuin t3, päälle valaistuskerros: aamunkoiton pintagradientit, kuparihehku
-   aktiivisissa elementeissä, kevyt syvyys korteissa. POISTO: tämä lohko + 3.5-nappi. ===== */
-.hero{background:linear-gradient(180deg,#0A1118 0%,#0E1519 52%,#122029 100%);position:relative}
-.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(900px 360px at 82% -12%,rgba(255,198,132,.085),transparent 58%)}
+/* ===== SÜGAV SALU · VALAISTUSKERROS (peritty Ilta & Kupari 3.5:n rakenteesta) =====
+   Pintagradientit ja hehkut johdettu teemamuuttujista: metsänvihreä hehku aktiivisissa
+   elementeissä, kevyt syvyys korteissa. rgba-arvot ovat color-mix-fallbackeja. ===== */
+.hero{background:linear-gradient(180deg,#09110B 0%,#0A130D 52%,#142319 100%);background:linear-gradient(180deg,color-mix(in srgb,var(--ink) 88%,#000) 0%,var(--ink) 52%,color-mix(in srgb,var(--panel-2) 78%,var(--ink)) 100%);position:relative}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(900px 360px at 82% -12%,rgba(146,218,134,.08),transparent 58%);background:radial-gradient(900px 360px at 82% -12%,color-mix(in srgb,var(--signal-hi) 8%,transparent),transparent 58%)}
 .hero>.wrap{position:relative;z-index:1}
-.dark{background:linear-gradient(180deg,#111C24 0%,#0E1519 100%)}
+.dark{background:linear-gradient(180deg,var(--panel) 0%,var(--ink) 100%)}
 .gcell{box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
-.tri>div,.bene>div,.offer>div{box-shadow:0 14px 34px -24px rgba(13,22,26,.45)}
-.trace path{filter:drop-shadow(0 0 4px rgba(246,190,122,.5))}
-.op-flow.on{filter:drop-shadow(0 0 3px rgba(246,190,122,.6))}
-.btn:not(.ghost){box-shadow:0 10px 24px -14px rgba(8,14,18,.55)}
-.hero h1{background:linear-gradient(105deg,#F4F5F2 30%,#C9D3CE 85%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.tri>div,.bene>div,.offer>div{box-shadow:0 14px 34px -24px rgba(10,19,13,.45)}
+.trace path{filter:drop-shadow(0 0 4px rgba(146,218,134,.5))}
+.op-flow.on{filter:drop-shadow(0 0 3px rgba(146,218,134,.6))}
+.btn:not(.ghost){box-shadow:0 10px 24px -14px rgba(5,12,8,.55)}
+.hero h1{background:linear-gradient(105deg,var(--white) 30%,var(--tx1d) 85%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 @media (prefers-reduced-motion:reduce){.trace path,.op-flow.on{filter:none}}
+
+/* Reunavinjetti: kiinteä kehyshäivytys koko näkymän yli — syventää Sügav Salun
+   metsätunnelmaa. Ei osu navigaatioon (z 60) eikä katselmuspalkkiin (z 95). */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;background:radial-gradient(125% 110% at 50% 42%,transparent 52%,rgba(5,12,8,.2) 84%,rgba(5,12,8,.38) 100%)}
 
 /* ---------- lomakkeen kenttämerkinnät: pakollinen / valinnainen ---------- */
 label .fnote{font-weight:400;text-transform:none;letter-spacing:.04em;color:var(--muted)}
@@ -424,20 +437,21 @@ label .fnote.rq{color:var(--signal-ink)}
 /* ---------- katselmustila (?review=1) ----------
    Luokat lisätään VAIN client-side site.js:stä review.json-manifestin perusteella.
    Näitä ei saa koskaan esiintyä staattisessa HTML:ssä (verify-pages.mjs valvoo). */
-.rev-mark{position:relative;outline:2px dashed var(--signal);outline-offset:4px}
-.rev-lab{position:absolute;top:10px;right:10px;z-index:6;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;padding:3px 8px;background:var(--signal);color:var(--on-signal)}
+.rev-mark{position:relative;outline:2px dashed var(--amber);outline-offset:4px}
+.rev-lab{position:absolute;top:10px;right:10px;z-index:6;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;padding:3px 8px;background:var(--amber);color:var(--ink)}
 .rev-banner{position:fixed;left:0;right:0;bottom:0;z-index:95;background:var(--glass);backdrop-filter:blur(10px);border-top:1px solid var(--line);color:var(--muted-lt);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;padding:9px var(--gut);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
-.rev-banner b{color:var(--signal);font-weight:500}
-.rev-banner a{color:var(--dk-tx);text-decoration:underline;text-decoration-color:var(--signal);text-underline-offset:3px}
+.rev-banner b{color:var(--amber);font-weight:500}
+.rev-banner a{color:var(--dk-tx);text-decoration:underline;text-decoration-color:var(--amber);text-underline-offset:3px}
 .rev-mark{cursor:pointer}
-.rev-toggle{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;padding:5px 10px;background:transparent;border:1px solid var(--signal);color:var(--signal);cursor:pointer;transition:.18s}
-.rev-toggle:hover{background:var(--signal);color:var(--on-signal)}
-.rev-diff{position:absolute;inset:0;z-index:7;overflow:auto;background:var(--paper);color:var(--tx2);padding:clamp(18px,3vw,36px);font-family:'Newsreader',Georgia,serif;font-size:15.5px;line-height:1.75;cursor:pointer;border:1px dashed var(--signal)}
+.rev-toggle{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;padding:5px 10px;background:transparent;border:1px solid var(--amber);color:var(--amber);cursor:pointer;transition:.18s}
+.rev-toggle:hover{background:var(--amber);color:var(--ink)}
+.rev-diff{position:absolute;inset:0;z-index:7;overflow:auto;background:var(--paper);color:var(--tx2);padding:clamp(18px,3vw,36px);font-family:'Newsreader',Georgia,serif;font-size:15.5px;line-height:1.75;cursor:pointer;border:1px dashed var(--amber)}
 .rev-del{color:#A8452E;text-decoration:line-through;text-decoration-thickness:1.5px;opacity:.8}
-.rev-ins{color:var(--signal-ink);font-weight:600}
-/* paikan päällä -annotaatiot: lisätyt sanat kuparilla korostettuna omassa kohdassaan,
-   poistot pieninä yliviivattuina merkkeinä poistokohdassaan */
-.rev-add{background:color-mix(in srgb,var(--signal) 20%,transparent);box-shadow:inset 0 -2px 0 var(--signal);border-radius:2px}
+.rev-ins{color:var(--amber-ink);font-weight:600}
+/* paikan päällä -annotaatiot: lisätyt sanat meripihkalla korostettuna omassa kohdassaan
+   (katselmus = tarkistettava ehdotus -> meripihkaperhe), poistot pieninä yliviivattuina
+   merkkeinä poistokohdassaan */
+.rev-add{background:rgba(214,143,71,.2);background:color-mix(in srgb,var(--amber) 20%,transparent);box-shadow:inset 0 -2px 0 var(--amber);border-radius:2px}
 .rev-del-mark{color:#A8452E;text-decoration:line-through;text-decoration-thickness:1.5px;font-size:.82em;opacity:.72;margin:0 .18em}
 .rev-hide-del .rev-del-mark{display:none}
-.rev-toggle[aria-pressed="true"]{background:var(--signal);color:var(--on-signal)}
+.rev-toggle[aria-pressed="true"]{background:var(--amber);color:var(--ink)}
