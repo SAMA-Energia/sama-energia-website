@@ -224,53 +224,94 @@
   <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
     <div class="wrap">
       <p class="eyebrow">Energiasalvestid</p>
-      <h1 style="font-size:clamp(34px,5.4vw,66px)">Kaardistusest töötava, dokumenteeritud ja tootva süsteemini.</h1>
+      <!-- MADIS: uus battery-first h1 (Martin 2026-08-23) — keelekontroll. Senine h1
+           kolis teekonnaosio sissejuhatuseks allpool. -->
+      <h1 style="font-size:clamp(34px,5.4vw,66px)">Tööstuslik energiasalvesti — dimensioneeritud teie enda tarbimisandmetest.</h1>
       <p class="lede">Oleme tootjatest sõltumatud. Valime seadme objekti järgi ega sobita objekti seadmega, mida juhtume müüma. Kui parim lahendus teie objektile ei tule meilt, ütleme ka seda.</p>
       <p class="mono" style="margin-top:20px;font-size:11px;letter-spacing:.14em;color:var(--muted-lt)">OBJEKTIKAARDISTUS → ANALÜÜSIPAKETT → TEOSTUS → ELUKAAR</p>
     </div>
   </div>
 
+  <!-- MADIS: kogu osio "Mida saate" on uus (Martin 2026-08-23) — keelekontroll.
+       Lävi "~100 kW" kannab KONTROLLITAKSE-märgist teadlikult (kinnitatakse enne
+       main-merget); verify-pages.mjs waiver katab selle. Lingitekstid
+       "Lugege, kuidas see lahendatakse" ja fraas "neli tehnilist küsimust
+       lahendatakse kirjalikult enne pakkumist" on saidil juba olemas. -->
   <section>
     <div class="wrap">
-      <div class="steps" style="margin-top:0;border-top:none">
-        <div class="step">
-          <span class="idx">01</span>
-          <div>
-            <h2>Objektikaardistus</h2>
-            <p>Kogume standardvormiga teie liitumis- ja tarbimisandmed, analüüsime koormusprofiili ja anname esialgse hinnangu selle kohta, mida aku teie objektil teeks — sealhulgas selle, kas see näib võrguettevõtte vaatest teostatav.</p>
-            <p style="margin-top:12px;font-family:'Archivo',sans-serif;font-weight:600;font-size:16px">Mõnikord on vastus ei. Ütleme selle välja — ja olete kaotanud vestluse, mitte aasta.</p>
-          </div>
-          <span class="dur">Kiire · tasuta<br><em style="font-style:normal;opacity:.65;font-size:11px">ETAPID 01–02</em></span>
+      <p class="eyebrow">Mida saate</p>
+      <div class="qa grid">
+        <div>
+          <h2>Võimsustasu alla</h2>
+          <p>Salvesti lõikab tarbimistipud — mõju arvutatakse teie enda tunniandmetest, mitte keskmisest näitest.</p>
+          <p style="margin-top:12px"><a class="morelink" href="#voimsustasu">Näidisarvutus sellel lehel</a></p>
         </div>
-        <div class="step">
-          <span class="idx">02</span>
-          <div>
-            <h2>Analüüsipakett</h2>
-            <p>Dokument, mis läheb teie juhatuse koosolekule ilma meieta. Säästuarvutus teie enda tarbimisandmetest koos arvutusmeetoditega. Dimensioneerimise põhjendus. Liitumisvõimsuse analüüs: kas salvesti saab liitumise laiendamise edasi lükata või ära hoida. Reservitulu agregaatori hinnanguna, kõrval stsenaarium hindade langusest. Riski- ja investeeringuanalüüs. Eeldused ja piirangud selgelt eristatud. Võrguettevõtte seisukoht kirjalikult. Rahastusvõimalused.</p>
-            <p style="margin-top:12px;color:var(--tx2)">Otsus tehakse koosolekul, kus müüjat ei ole. Esitlus sinna ei pääse — kirjalik analüüs pääseb: seda saab saata finantsjuhile, kahtluse alla seada ja kaitsta. Tavaliselt just see otsustabki.</p>
-          </div>
-          <span class="dur">Otsustav etapp<br><em style="font-style:normal;opacity:.65;font-size:11px">ETAPID 03–04</em></span>
+        <div>
+          <h2>Päikeseelekter + salvesti — üks süsteem</h2>
+          <p>Päikeseelekter ja salvesti projekteeritakse ühe süsteemina — neli tehnilist küsimust lahendatakse kirjalikult enne pakkumist.</p>
+          <p style="margin-top:12px"><a class="morelink" href="/paike-ja-aku/">Lugege, kuidas see lahendatakse</a></p>
         </div>
-        <div class="step">
-          <span class="idx">03</span>
-          <div>
-            <h2>Teostus</h2>
-            <p>Seadmete hange. Paigalduse koordineerimine sertifitseeritud elektritööde ettevõtetega. Võrguettevõtte protsess päringust pinge sisselülitamiseni. Kasutuselevõtu dokumentatsioon. Liitumine reservituru agregaatoriga. Ajakava kinnitatakse seadmete saadavuse järgi.</p>
-            <p style="margin-top:12px;color:var(--tx2)">Saate põhjaliku üleandmispaketi — mitte kausta, mis pandi kiirustades kokku viimasel pärastlõunal.</p>
-          </div>
-          <span class="dur">4–12 nädalat<br><em style="font-style:normal;opacity:.65;font-size:11px">ETAPID 05–06</em></span>
-        </div>
-        <div class="step">
-          <span class="idx">04</span>
-          <div>
-            <h2>Elukaar</h2>
-            <p>Jõudluse seire meie antud analüüsiga võrreldes. Agregaatorisuhte haldus. Laiendamise planeerimine. Garantiiküsimused.</p>
-            <p style="margin-top:12px;color:var(--tx2)">Oleme kohal ka kolmandal aastal ja esimese aasta numbrid on endiselt kontrollitavad. See on teadlik piirang sellele, mida oleme valmis esimesel aastal lubama.</p>
-          </div>
-          <span class="dur">Pidev<br><em style="font-style:normal;opacity:.65;font-size:11px">ETAPP 07</em></span>
+        <div>
+          <h2>Reservivalmidus</h2>
+          <p>Süsteem projekteeritakse reservituru nõuetele — tulu näidatakse alati stsenaariumina, mitte lubadusena.</p>
+          <p style="margin-top:12px"><a class="morelink" href="/reserviturud/">Reserviturud — mis need on</a></p>
         </div>
       </div>
-      <p style="margin-top:28px;color:var(--tx2);font-size:15.5px">Need neli etappi on sama teekond, mille nädalatasandi järjekord ja kestused on kirjeldatud lehel <a href="/protsess/">Kuidas see kulgeb</a> — etapinumbrid viitavad sellele.</p>
+      <p style="margin-top:26px;color:var(--tx2);font-size:16px">Tüüpiline objekt: keskpinge või suur madalpinge liitumine, kuutipud alates ~100 kW <span class="tg chk">KONTROLLITAKSE</span></p>
+    </div>
+  </section>
+
+  <!-- MADIS: kogu osio "Süsteem ise" on uus (Martin 2026-08-23) — tähendus Martini
+       labori mustandist v20, täpne eesti sõnastus sinu keelekontrolli pass.
+       Numbrid 125 kW / ~250 kWh / ~2 h on samad, mis allpool näidisarvutuses. -->
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Süsteem ise</p>
+      <h2 class="sec-title">Mis seade see on — võimsus, energia ja kestus.</h2>
+      <div class="split" style="margin-top:44px">
+        <div>
+          <h3 style="font-size:22px;margin-bottom:12px">kW on kiirus, kWh on maht.</h3>
+          <p style="color:var(--tx2);font-size:16.5px">Võimsus (kW) ütleb, kui suurt koormust salvesti korraga kannab; energia (kWh) ütleb, kui kaua ta seda jaksab. Nende suhe on kestus: 125 kW võimsusega ja ~250 kWh kasutatava energiaga salvesti töötab täisvõimsusel umbes 2 tundi. Tipu lõikamiseks peab kestus katma teie tipu pikkuse — sellepärast dimensioneeritakse mõlemad teie enda tunniandmetest.</p>
+        </div>
+        <div>
+          <h3 style="font-size:22px;margin-bottom:12px">Kabinett või konteiner.</h3>
+          <p style="color:var(--tx2);font-size:16.5px">Väiksemad süsteemid on külmikusuurused kabinetid, suuremad merekonteineri mõõdus üksused. Seade valitakse objekti järgi ja valik põhjendatakse kirjalikult — me ei ole seotud ühegi tootjaga.</p>
+        </div>
+      </div>
+      <p style="margin-top:26px;color:var(--tx2);font-size:16px">Süsteem paigaldatakse õue, seda juhitakse reaalajas liitumispunkti mõõtmise järgi ning võrguettevõtte kirjalik seisukoht hangitakse enne, kui midagi ostetakse.</p>
+    </div>
+  </section>
+
+  <!-- MADIS: teekonna tihendus (Martin 2026-08-23) — neli täisetappi asendatud
+       kiipidega. Allkirjalaused on sõna-sõnalt senisest tekstist (sinu pass juba
+       kattis need); UUED stringid on rubriik "Kuidas selleni jõuame" ja lingirida
+       "Kogu protsess — etapid ja kestused". Sissejuhatuslause = endine h1. -->
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Kuidas selleni jõuame</p>
+      <h2 class="sec-title">Kaardistusest töötava, dokumenteeritud ja tootva süsteemini.</h2>
+      <div class="qa grid" style="margin-top:36px">
+        <div>
+          <h3>01 · Objektikaardistus</h3>
+          <p>Mõnikord on vastus ei. Ütleme selle välja — ja olete kaotanud vestluse, mitte aasta.</p>
+          <p style="margin-top:12px"><a class="morelink" href="/protsess/">Kogu protsess — etapid ja kestused</a></p>
+        </div>
+        <div>
+          <h3>02 · Analüüsipakett</h3>
+          <p>Otsus tehakse koosolekul, kus müüjat ei ole. Esitlus sinna ei pääse — kirjalik analüüs pääseb: seda saab saata finantsjuhile, kahtluse alla seada ja kaitsta.</p>
+          <p style="margin-top:12px"><a class="morelink" href="/protsess/">Kogu protsess — etapid ja kestused</a></p>
+        </div>
+        <div>
+          <h3>03 · Teostus</h3>
+          <p>Saate põhjaliku üleandmispaketi — mitte kausta, mis pandi kiirustades kokku viimasel pärastlõunal.</p>
+          <p style="margin-top:12px"><a class="morelink" href="/protsess/">Kogu protsess — etapid ja kestused</a></p>
+        </div>
+        <div>
+          <h3>04 · Elukaar</h3>
+          <p>Oleme kohal ka kolmandal aastal ja esimese aasta numbrid on endiselt kontrollitavad.</p>
+          <p style="margin-top:12px"><a class="morelink" href="/protsess/">Kogu protsess — etapid ja kestused</a></p>
+        </div>
+      </div>
     </div>
   </section>
 

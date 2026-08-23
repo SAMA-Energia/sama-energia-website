@@ -236,53 +236,121 @@
   <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
     <div class="wrap">
       <p class="eyebrow">Energiavarastot</p>
-      <h1 style="font-size:clamp(34px,5.4vw,66px)">Kartoituksesta toimivaan, dokumentoituun ja tuottavaan järjestelmään.</h1>
+      <!-- MADIS: uusi battery-first h1 (Martin 2026-08-23) — kielentarkistus. Entinen h1
+           siirtyi matkaosion johdannoksi alemmas. -->
+      <h1 style="font-size:clamp(34px,5.4vw,66px)">Teollisuuden energiavarasto — mitoitettuna teidän omista kulutustiedoistanne.</h1>
       <p class="lede">Olemme riippumattomia valmistajista. Valitsemme laitteen kohteeseen emmekä sovita kohdetta laitteeseen, jota satumme myymään. Jos paras ratkaisu kohteeseenne ei tule meiltä, sanomme senkin.</p>
       <p class="mono" style="margin-top:20px;font-size:11px;letter-spacing:.14em;color:var(--muted-lt)">KOHDEKARTOITUS → ANALYYSIPAKETTI → TOTEUTUS → ELINKAARI</p>
     </div>
   </div>
 
+  <!-- MADIS: koko osio "Mitä saatte" on uusi (Martin 2026-08-23) — kielentarkistus.
+       Kynnys "~100 kW" kantaa TARKISTETAAN-merkinnän tietoisesti (vahvistetaan ennen
+       main-mergeä); verify-pages.mjs-waiver kattaa sen. Linkkiteksti "Lue miten se
+       ratkaistaan" on sivustolla jo olemassa. -->
   <section>
     <div class="wrap">
-      <div class="steps" style="margin-top:0;border-top:none">
-        <div class="step">
-          <span class="idx">01</span>
-          <div>
-            <h2>Kohdekartoitus</h2>
-            <p>Keräämme vakiolomakkeella liittymä- ja kulutustietonne, analysoimme kuormitusprofiilin ja annamme alustavan näkemyksen siitä, mitä akku kohteessanne tekisi — mukaan lukien sen, näyttääkö se verkkoyhtiön näkökulmasta toteutuskelpoiselta.</p>
-            <p style="margin-top:12px;font-family:'Archivo',sans-serif;font-weight:600;font-size:16px">Joskus vastaus on ei. Sanomme sen, ja olette menettänyt keskustelun ettekä vuotta.</p>
-          </div>
-          <span class="dur">Nopea · maksuton<br><em style="font-style:normal;opacity:.65;font-size:11px">VAIHEET 01–02</em></span>
+      <p class="eyebrow">Mitä saatte</p>
+      <div class="qa grid">
+        <div>
+          <h2>Tehomaksut alas</h2>
+          <p>Varasto leikkaa kulutushuiput — vaikutus lasketaan teidän omista tuntitiedoistanne, ei keskimääräisestä esimerkistä.</p>
+          <p style="margin-top:12px"><a class="morelink" href="#tehomaksu">Tehomaksu-esimerkki alempana</a></p>
         </div>
-        <div class="step">
-          <span class="idx">02</span>
-          <div>
-            <h2>Analyysipaketti</h2>
-            <p>Dokumentti, joka menee hallituksenne kokoukseen ilman meitä. Säästölaskelma omista kulutustiedoistanne laskentatapoineen. Mitoituksen perustelu. Liittymätehon tarkastelu: voiko varasto siirtää tai välttää liittymän laajennuksen. Reservitulo aggregaattorin arviona, rinnalla skenaario hintojen laskusta. Riski- ja investointianalyysi. Oletukset ja rajaukset selkeästi eriteltyinä. Verkkoyhtiön tilanne kirjallisena. Rahoitusvaihtoehdot.</p>
-            <p style="margin-top:12px;color:var(--tx2)">Päätös tehdään kokouksessa, jossa myyjä ei ole läsnä. Esitys ei pääse sinne — kirjallinen analyysi pääsee: sen voi lähettää talousjohtajalle, kyseenalaistaa ja puolustaa. Yleensä juuri se ratkaisee.</p>
-          </div>
-          <span class="dur">Ratkaiseva vaihe<br><em style="font-style:normal;opacity:.65;font-size:11px">VAIHEET 03–04</em></span>
+        <div>
+          <h2>Aurinkosähkö + varasto — yksi järjestelmä</h2>
+          <p>Aurinkosähkö ja varasto suunnitellaan yhtenä järjestelmänä — neljä teknistä kysymystä ratkaistaan kirjallisesti ennen tarjousta.</p>
+          <p style="margin-top:12px"><a class="morelink" href="/aurinko-ja-akku/">Lue miten se ratkaistaan</a></p>
         </div>
-        <div class="step">
-          <span class="idx">03</span>
-          <div>
-            <h2>Toteutus</h2>
-            <p>Laitehankinta. Asennuksen koordinointi sertifioitujen sähköurakoitsijoiden kanssa. Verkkoyhtiöprosessi kyselystä jännitteen kytkemiseen. Käyttöönottodokumentaatio. Liittyminen reservimarkkinoiden aggregaattoriin. Aikataulu vahvistetaan laitteiden saatavuuden mukaan.</p>
-            <p style="margin-top:12px;color:var(--tx2)">Saatte kattavan luovutuspaketin — ette kansiota, joka kasattiin kiireessä viimeisenä iltapäivänä.</p>
-          </div>
-          <span class="dur">4–12 viikkoa<br><em style="font-style:normal;opacity:.65;font-size:11px">VAIHEET 05–06</em></span>
-        </div>
-        <div class="step">
-          <span class="idx">04</span>
-          <div>
-            <h2>Elinkaari</h2>
-            <p>Suorituskyvyn seuranta antamaamme analyysiin verrattuna. Aggregaattorisuhteen hallinta. Laajennussuunnittelu. Takuuasiat.</p>
-            <p style="margin-top:12px;color:var(--tx2)">Olemme paikalla myös kolmantena vuonna, ja ensimmäisen vuoden luvut ovat edelleen tarkistettavissa. Se on tietoinen rajoite sille, mitä olemme valmiita lupaamaan ensimmäisenä vuonna.</p>
-          </div>
-          <span class="dur">Jatkuva<br><em style="font-style:normal;opacity:.65;font-size:11px">VAIHE 07</em></span>
+        <div>
+          <h2>Reservivalmius</h2>
+          <p>Järjestelmä suunnitellaan reservimarkkinoiden vaatimuksiin — tuotto näytetään aina skenaariona, ei lupauksena.</p>
+          <p style="margin-top:12px"><a class="morelink" href="/reservimarkkinat/">Reservimarkkinat — mitä ne ovat</a></p>
         </div>
       </div>
-      <p style="margin-top:28px;color:var(--tx2);font-size:15.5px">Nämä neljä vaihetta ovat sama matka, jonka viikkotason järjestys ja kestot on kuvattu sivulla <a href="/prosessi/">Näin se etenee</a> — vaihenumerot viittaavat siihen.</p>
+      <p style="margin-top:26px;color:var(--tx2);font-size:16px">Tyypillinen kohde: keskijännite- tai suuri pienjänniteliittymä, kuukausihuiput alkaen ~100 kW <span class="tg chk">TARKISTETAAN</span></p>
+    </div>
+  </section>
+
+  <!-- MADIS: koko osio "Järjestelmä itse" on uusi (Martin 2026-08-23) — merkitys
+       Martinin labramustannoksesta v20, tarkka sanamuoto sinun kielentarkistuksesi.
+       Luvut 125 kW / ~250 kWh / ~2 h ovat samat kuin ET-sivun näidisarvutuksessa. -->
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Järjestelmä itse</p>
+      <h2 class="sec-title">Mikä laite tämä on — teho, energia ja kesto.</h2>
+      <div class="split" style="margin-top:44px">
+        <div>
+          <h3 style="font-size:22px;margin-bottom:12px">kW on nopeus, kWh on määrä.</h3>
+          <p style="color:var(--tx2);font-size:16.5px">Teho (kW) kertoo, kuinka suurta kuormaa varasto kantaa kerrallaan; energia (kWh) kertoo, kuinka pitkään se jaksaa. Niiden suhde on kesto: 125 kW:n teholla ja ~250 kWh:n käytettävällä energialla varasto toimii täydellä teholla noin 2 tuntia. Huipun leikkaamiseksi keston on katettava huippunne pituus — siksi molemmat mitoitetaan teidän omista tuntitiedoistanne.</p>
+        </div>
+        <div>
+          <h3 style="font-size:22px;margin-bottom:12px">Kaappi tai kontti.</h3>
+          <p style="color:var(--tx2);font-size:16.5px">Pienemmät järjestelmät ovat jääkaappikokoisia kaappeja, suuremmat merikontin mittaisia yksiköitä. Laite valitaan kohteen mukaan ja valinta perustellaan kirjallisesti — emme ole sidottuja yhteenkään valmistajaan.</p>
+        </div>
+      </div>
+      <p style="margin-top:26px;color:var(--tx2);font-size:16px">Järjestelmä asennetaan ulos, sitä ohjataan reaaliajassa liittymäpisteen mittauksen perusteella, ja verkkoyhtiön kirjallinen kanta hankitaan ennen kuin mitään ostetaan.</p>
+    </div>
+  </section>
+
+  <!-- MADIS: matkan tiivistys (Martin 2026-08-23) — neljä täysvaihetta korvattu
+       chipeillä. Allekirjoituslauseet sanasta sanaan entisestä tekstistä (passisi
+       kattoi ne jo); UUDET stringit ovat rubriikki "Näin etenemme" ja linkkirivi
+       "Koko prosessi — vaiheet ja kestot". Johdantolause = entinen h1. -->
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Näin etenemme</p>
+      <h2 class="sec-title">Kartoituksesta toimivaan, dokumentoituun ja tuottavaan järjestelmään.</h2>
+      <div class="qa grid" style="margin-top:36px">
+        <div>
+          <h3>01 · Kohdekartoitus</h3>
+          <p>Joskus vastaus on ei. Sanomme sen, ja olette menettänyt keskustelun ettekä vuotta.</p>
+          <p style="margin-top:12px"><a class="morelink" href="/prosessi/">Koko prosessi — vaiheet ja kestot</a></p>
+        </div>
+        <div>
+          <h3>02 · Analyysipaketti</h3>
+          <p>Päätös tehdään kokouksessa, jossa myyjä ei ole läsnä. Esitys ei pääse sinne — kirjallinen analyysi pääsee: sen voi lähettää talousjohtajalle, kyseenalaistaa ja puolustaa.</p>
+          <p style="margin-top:12px"><a class="morelink" href="/prosessi/">Koko prosessi — vaiheet ja kestot</a></p>
+        </div>
+        <div>
+          <h3>03 · Toteutus</h3>
+          <p>Saatte kattavan luovutuspaketin — ette kansiota, joka kasattiin kiireessä viimeisenä iltapäivänä.</p>
+          <p style="margin-top:12px"><a class="morelink" href="/prosessi/">Koko prosessi — vaiheet ja kestot</a></p>
+        </div>
+        <div>
+          <h3>04 · Elinkaari</h3>
+          <p>Olemme paikalla myös kolmantena vuonna, ja ensimmäisen vuoden luvut ovat edelleen tarkistettavissa.</p>
+          <p style="margin-top:12px"><a class="morelink" href="/prosessi/">Koko prosessi — vaiheet ja kestot</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MADIS: koko osio "Tehomaksu-esimerkki" on uusi (Martin 2026-08-23) — kielentarkistus.
+       Määrä on tietoisesti [X,XX]-kohatäite (TARKISTETAAN: verkkoyhtiön tehosiirtohinnasto) —
+       ei keksittyjä lukuja; verify-pages.mjs-waiver kattaa sen.
+       VALINTA — Helen Sähköverkko / Caruna / Elenia ankkuriksi? -->
+  <section id="tehomaksu">
+    <div class="wrap">
+      <p class="eyebrow">Tehomaksu-esimerkki</p>
+      <h2 class="sec-title">Emme julkaise tuottolukuja, joita kukaan ei hallitse. Tehomaksu on eri asia.</h2>
+      <p class="sec-lede">Hinta on julkinen, mekanismi on julkinen ja vaikutus lasketaan teidän omista tuntitiedoistanne. Alla dokumentoitu puoli ja selkeästi merkityt oletukset erikseen.</p>
+      <div class="split" style="margin-top:44px">
+        <div>
+          <span class="tg las" style="display:inline-block;margin-bottom:16px">DOKUMENTOITU</span>
+          <h3 style="font-size:22px;margin-bottom:12px">Miten verkkoyhtiö laskuttaa tehosta</h3>
+          <ul class="checks">
+            <li>Tehomaksullisissa siirtotuotteissa laskutuksen peruste on tyypillisesti tunnin keskiteho — mitattu, ei hetkellinen huippu.</li>
+            <li>Maksu peritään kuukauden suurimman tuntikeskitehon mukaan ja mittaus alkaa joka kuukausi nollasta — varasto ansaitsee 12 kertaa vuodessa.</li>
+            <li>Määrä: [X,XX €/kW/kk — TARKISTETAAN: verkkoyhtiön tehosiirtohinnasto]</li>
+          </ul>
+        </div>
+        <div>
+          <span class="tg ske" style="display:inline-block;margin-bottom:16px">MALLINNETTU</span>
+          <h3 style="font-size:22px;margin-bottom:12px">Teidän lukunne lasketaan teidän datastanne</h3>
+          <p style="color:var(--tx2);font-size:16.5px">Vaikutus riippuu huippunne korkeudesta, kestosta ja toistuvuudesta. Täysi esimerkkilasku laaditaan, kun ankkuriverkkoyhtiön hinnasto on valittu ja dokumentoitu — teidän kohteenne luku lasketaan aina teidän omista tuntitiedoistanne ja annetaan kirjallisesti.</p>
+        </div>
+      </div>
     </div>
   </section>
 

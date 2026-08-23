@@ -19,6 +19,16 @@ const ET_BASE = 'https://samaenergia.ee';
 /* sivun kanoninen absoluuttinen URL: FI .fi-hostilla, ET .ee-hostilla ilman /et/-etuliitettä */
 const abs = (lang, url) => (lang === 'fi' ? BASE + url : ET_BASE + (url === '/et/' ? '/' : url.replace(/^\/et/, '')));
 
+/* Tietoiset kohatäitteet draft-haaralla (Martinin päätös 2026-08-23, batch-ohje 5b/5f):
+   nämä sivu+merkintä-parit EIVÄT kaada buildia, mutta jokainen tulostetaan äänekkäästi
+   joka ajossa. TYHJENNETTÄVÄ (arvot täytettävä ja rivit poistettava) ennen main-mergeä —
+   kaikki listan ulkopuoliset kohatäitteet kaatavat buildin edelleen. */
+const PLACEHOLDER_WAIVERS = [
+  { page: '/energiavarastot/', token: 'TARKISTETAAN', max: 2 },        // ~100 kW -kynnys + tehomaksun määrä
+  { page: '/energiavarastot/', token: '[X-PLACEHOLDER]', max: 1 },     // [X,XX €/kW/kk] tehomaksun määrä
+  { page: '/et/energiasalvestid/', token: 'KONTROLLITAKSE', max: 1 },  // ~100 kW lävi
+];
+
 const FI = ['', 'energiavarastot', 'aurinko-ja-akku', 'reservimarkkinat', 'prosessi', 'meista', 'yhteystiedot', 'ajankohtaista', 'tietosuoja', 'kiitos'];
 const ET = ['', 'energiasalvestid', 'paike-ja-aku', 'reserviturud', 'protsess', 'meist', 'kontakt', 'uudised', 'andmekaitse', 'aitah'];
 /* kiitossivut: noindex, ei sitemapissa, ei navigaatiossa, ei legacy-shimissä */
@@ -105,9 +115,19 @@ for (const p of pages) {
   // katselmustilan luokat eivät saa esiintyä staattisessa HTML:ssä (vain client-side)
   if (/rev-mark|rev-lab|rev-banner|rev-diff|rev-del|rev-ins|rev-toggle|rev-add|rev-hide-del/.test(html)) err(`${where} — katselmusmerkintöjä staattisessa HTML:ssä`);
 
-  // kohatäitteitä ei saa jäädä julkaistuun sisältöön
-  if (/KONTROLLITAKSE|TARKISTETAAN/.test(html)) err(`${where} — KONTROLLITAKSE/TARKISTETAAN-merkintä jäljellä`);
-  if (/\[X[,X\s–]|\[XX–XX/.test(html)) err(`${where} — [X,XX]-tyyppinen kohatäite jäljellä`);
+  // kohatäitteitä ei saa jäädä julkaistuun sisältöön — paitsi PLACEHOLDER_WAIVERS-listan
+  // tietoiset merkinnät (äänekäs varoitus joka ajossa, tyhjennettävä ennen main-mergeä)
+  const placeholderCounts = [
+    ['KONTROLLITAKSE', (html.match(/KONTROLLITAKSE/g) ?? []).length],
+    ['TARKISTETAAN', (html.match(/TARKISTETAAN/g) ?? []).length],
+    ['[X-PLACEHOLDER]', (html.match(/\[X[,X\s–]|\[XX–XX/g) ?? []).length],
+  ];
+  for (const [token, n] of placeholderCounts) {
+    if (!n) continue;
+    const w = PLACEHOLDER_WAIVERS.find(w => w.page === p.url && w.token === token);
+    if (!w || n > w.max) err(`${where} — ${token}-kohatäite jäljellä (${n} kpl, waiver kattaa ${w ? w.max : 0})`);
+    else console.warn(`HUOM (waiver): ${where} — ${n} × ${token} tietoisesti jäljellä — tyhjennettävä ennen main-mergeä`);
+  }
 
   // kaikki sisäiset linkit ja resurssit osoittavat olemassa oleviin tiedostoihin
   for (const m of html.matchAll(/(?:href|src)="([^"]+)"/g)) {

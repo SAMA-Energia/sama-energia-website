@@ -26,8 +26,39 @@
   },
   {
    "page": "/energiavarastot/",
+   "sectionId": "rev-energiavarastot-1",
+   "kind": "changed",
+   "prev": "Energiavarastot Kartoituksesta toimivaan, dokumentoituun ja tuottavaan järjestelmään. Olemme riippumattomia valmistajista. Valitsemme laitteen kohteeseen emmekä sovita kohdetta laitteeseen, jota satumme myymään. Jos paras ratkaisu kohteeseenne ei tule meiltä, sanomme senkin. KOHDEKARTOITUS → ANALYYSIPAKETTI → TOTEUTUS → ELINKAARI"
+  },
+  {
+   "page": "/energiavarastot/",
+   "sectionId": "rev-energiavarastot-2",
+   "kind": "changed",
+   "prev": "01 Kohdekartoitus Keräämme vakiolomakkeella liittymä- ja kulutustietonne, analysoimme kuormitusprofiilin ja annamme alustavan näkemyksen siitä, mitä akku kohteessanne tekisi — mukaan lukien sen, näyttääkö se verkkoyhtiön näkökulmasta toteutuskelpoiselta. Joskus vastaus on ei. Sanomme sen, ja olette menettänyt keskustelun ettekä vuotta. Nopea · maksutonVAIHEET 01–02 02 Analyysipaketti Dokumentti, joka menee hallituksenne kokoukseen ilman meitä. Säästölaskelma omista kulutustiedoistanne laskentatapoineen. Mitoituksen perustelu. Liittymätehon tarkastelu: voiko varasto siirtää tai välttää liittymän laajennuksen. Reservitulo aggregaattorin arviona, rinnalla skenaario hintojen laskusta. Riski- ja investointianalyysi. Oletukset ja rajaukset selkeästi eriteltyinä. Verkkoyhtiön tilanne kirjallisena. Rahoitusvaihtoehdot. Päätös tehdään kokouksessa, jossa myyjä ei ole läsnä. Esitys ei pääse sinne — kirjallinen analyysi pääsee: sen voi lähettää talousjohtajalle, kyseenalaistaa ja puolustaa. Yleensä juuri se ratkaisee. Ratkaiseva vaiheVAIHEET 03–04 03 Toteutus Laitehankinta. Asennuksen koordinointi sertifioitujen sähköurakoitsijoiden kanssa. Verkkoyhtiöprosessi kyselystä jännitteen kytkemiseen. Käyttöönottodokumentaatio. Liittyminen reservimarkkinoiden aggregaattoriin. Aikataulu vahvistetaan laitteiden saatavuuden mukaan. Saatte kattavan luovutuspaketin — ette kansiota, joka kasattiin kiireessä viimeisenä iltapäivänä. 4–12 viikkoaVAIHEET 05–06 04 Elinkaari Suorituskyvyn seuranta antamaamme analyysiin verrattuna. Aggregaattorisuhteen hallinta. Laajennussuunnittelu. Takuuasiat. Olemme paikalla myös kolmantena vuonna, ja ensimmäisen vuoden luvut ovat edelleen tarkistettavissa. Se on tietoinen rajoite sille, mitä olemme valmiita lupaamaan ensimmäisenä vuonna. JatkuvaVAIHE 07"
+  },
+  {
+   "page": "/energiavarastot/",
    "sectionId": "rev-energiavarastot-3",
-   "kind": "new"
+   "kind": "changed",
+   "prev": "04 Elinkaari Suorituskyvyn seuranta antamaamme analyysiin verrattuna. Aggregaattorisuhteen hallinta. Laajennussuunnittelu. Takuuasiat. Olemme paikalla myös kolmantena vuonna, ja ensimmäisen vuoden luvut ovat edelleen tarkistettavissa. Se on tietoinen rajoite sille, mitä olemme valmiita lupaamaan ensimmäisenä vuonna. JatkuvaVAIHE 07"
+  },
+  {
+   "page": "/energiavarastot/",
+   "sectionId": "rev-energiavarastot-4",
+   "kind": "changed",
+   "prev": "04 Elinkaari Suorituskyvyn seuranta antamaamme analyysiin verrattuna. Aggregaattorisuhteen hallinta. Laajennussuunnittelu. Takuuasiat. Olemme paikalla myös kolmantena vuonna, ja ensimmäisen vuoden luvut ovat edelleen tarkistettavissa. Se on tietoinen rajoite sille, mitä olemme valmiita lupaamaan ensimmäisenä vuonna. JatkuvaVAIHE 07"
+  },
+  {
+   "page": "/energiavarastot/",
+   "sectionId": "tehomaksu",
+   "kind": "changed",
+   "prev": "04 Elinkaari Suorituskyvyn seuranta antamaamme analyysiin verrattuna. Aggregaattorisuhteen hallinta. Laajennussuunnittelu. Takuuasiat. Olemme paikalla myös kolmantena vuonna, ja ensimmäisen vuoden luvut ovat edelleen tarkistettavissa. Se on tietoinen rajoite sille, mitä olemme valmiita lupaamaan ensimmäisenä vuonna. JatkuvaVAIHE 07 Nämä neljä vaihetta ovat sama matka, jonka viikkotason järjestys ja kestot on kuvattu sivulla Näin se etenee — vaihenumerot viittaavat siihen."
+  },
+  {
+   "page": "/energiavarastot/",
+   "sectionId": "rev-energiavarastot-6",
+   "kind": "changed",
+   "prev": "Nämä neljä vaihetta ovat sama matka, jonka viikkotason järjestys ja kestot on kuvattu sivulla Näin se etenee — vaihenumerot viittaavat siihen."
   },
   {
    "page": "/aurinko-ja-akku/",
@@ -90,9 +121,27 @@
   },
   {
    "page": "/energiasalvestid/",
+   "sectionId": "rev-energiasalvestid-1",
+   "kind": "changed",
+   "prev": "Energiasalvestid Kaardistusest töötava, dokumenteeritud ja tootva süsteemini. Oleme tootjatest sõltumatud. Valime seadme objekti järgi ega sobita objekti seadmega, mida juhtume müüma. Kui parim lahendus teie objektile ei tule meilt, ütleme ka seda. OBJEKTIKAARDISTUS → ANALÜÜSIPAKETT → TEOSTUS → ELUKAAR"
+  },
+  {
+   "page": "/energiasalvestid/",
    "sectionId": "rev-energiasalvestid-2",
    "kind": "changed",
-   "prev": "01 Objektikaardistus Kogume standardvormiga teie liitumis- ja tarbimisandmed, analüüsime koormusprofiili ja anname esialgse hinnangu selle kohta, mida aku teie objektil teeks — sealhulgas selle, kas see näib võrguettevõtte vaatest teostatav. Mõnikord on vastus ei. Ütleme selle välja — ja olete kaotanud vestluse, mitte aasta. Kiire · tasutaETAPID 01–02 02 Analüüsipakett Dokument, mis läheb teie juhatuse koosolekule ilma meieta. Säästuarvutus teie enda tarbimisandmetest koos arvutusmeetoditega. Dimensioneerimise põhjendus. Liitumisvõimsuse analüüs: kas salvesti saab liitumise laiendamise edasi lükata või ära hoida. Reservitulu agregaatori hinnanguna, kõrval stsenaarium hindade langusest. Riski- ja investeeringuanalüüs. Eeldused ja piirangud selgelt eristatud. Võrguettevõtte seisukoht kirjalikult. Rahastusvõimalused. Otsus tehakse koosolekul, kus müüjat ei ole. Esitlus sinna ei pääse — kirjalik analüüs pääseb: seda saab saata finantsjuhile, kahtluse alla seada ja kaitsta. Tavaliselt just see otsustabki. Otsustav etappETAPID 03–04 03 Teostus Seadmete hange. Paigalduse koordineerimine sertifitseeritud elektritööde ettevõtetega. Võrguettevõtte protsess päringust pinge sisselülitamiseni. Kasutuselevõtu dokumentatsioon. Liitumine reservituru agregaatoriga. Ajakava kinnitatakse seadmete saadavuse järgi. Saate põhjaliku üleandmispaketi — mitte kausta, mis pandi kiirustades kokku viimasel pärastlõunal. 4–12 nädalatETAPID 05–06 04 Elukaar Jõudluse seire meie antud analüüsiga võrreldes. Agregaatorisuhte haldus. Laiendamise planeerimine. Garantiiküsimused. Oleme kohal ka kolmandal aastal ja esimese aasta numbrid on endiselt kontrollitavad. See on teadlik piirang sellele, mida oleme valmis esimesel aastal lubama. PidevETAPP 07 Need neli etappi on sama teekond, mille nädalatasandi järjekord ja kestused on kirjeldatud lehel Kuidas see kulgeb — etapinumbrid viitavad sellele."
+   "prev": "01 Objektikaardistus Kogume standardvormiga teie liitumis- ja tarbimisandmed, analüüsime koormusprofiili ja anname esialgse hinnangu selle kohta, mida aku teie objektil teeks — sealhulgas selle, kas see näib võrguettevõtte vaatest teostatav. Mõnikord on vastus ei. Ütleme selle välja — ja olete kaotanud vestluse, mitte aasta. Kiire · tasutaETAPID 01–02 02 Analüüsipakett Dokument, mis läheb teie juhatuse koosolekule ilma meieta. Säästuarvutus teie enda tarbimisandmetest koos arvutusmeetoditega. Dimensioneerimise põhjendus. Liitumisvõimsuse analüüs: kas salvesti saab liitumise laiendamise edasi lükata või ära hoida. Reservitulu agregaatori hinnanguna, kõrval stsenaarium hindade langusest. Riski- ja investeeringuanalüüs. Eeldused ja piirangud selgelt eristatud. Võrguettevõtte seisukoht kirjalikult. Rahastusvõimalused. Otsus tehakse koosolekul, kus müüjat ei ole. Esitlus sinna ei pääse — kirjalik analüüs pääseb: seda saab saata finantsjuhile, kahtluse alla seada ja kaitsta. Tavaliselt just see otsustabki. Otsustav etappETAPID 03–04 03 Teostus Seadmete hange. Paigalduse koordineerimine sertifitseeritud elektritööde ettevõtetega. Võrguettevõtte protsess päringust pinge sisselülitamiseni. Kasutuselevõtu dokumentatsioon. Liitumine reservituru agregaatoriga. Ajakava kinnitatakse seadmete saadavuse järgi. Saate põhjaliku üleandmispaketi — mitte kausta, mis pandi kiirustades kokku viimasel pärastlõunal. 4–12 nädalatETAPID 05–06 04 Elukaar Jõudluse seire meie antud analüüsiga võrreldes. Agregaatorisuhte haldus. Laiendamise planeerimine. Garantiiküsimused. Oleme kohal ka kolmandal aastal ja esimese aasta numbrid on endiselt kontrollitavad. See on teadlik piirang sellele, mida oleme valmis esimesel aastal lubama. PidevETAPP 07"
+  },
+  {
+   "page": "/energiasalvestid/",
+   "sectionId": "rev-energiasalvestid-3",
+   "kind": "changed",
+   "prev": "04 Elukaar Jõudluse seire meie antud analüüsiga võrreldes. Agregaatorisuhte haldus. Laiendamise planeerimine. Garantiiküsimused. Oleme kohal ka kolmandal aastal ja esimese aasta numbrid on endiselt kontrollitavad. See on teadlik piirang sellele, mida oleme valmis esimesel aastal lubama. PidevETAPP 07 Need neli etappi on sama teekond, mille nädalatasandi järjekord ja kestused on kirjeldatud lehel Kuidas see kulgeb — etapinumbrid viitavad sellele."
+  },
+  {
+   "page": "/energiasalvestid/",
+   "sectionId": "rev-energiasalvestid-4",
+   "kind": "changed",
+   "prev": "Need neli etappi on sama teekond, mille nädalatasandi järjekord ja kestused on kirjeldatud lehel Kuidas see kulgeb — etapinumbrid viitavad sellele."
   },
   {
    "page": "/energiasalvestid/",
@@ -102,7 +151,7 @@
   },
   {
    "page": "/energiasalvestid/",
-   "sectionId": "rev-energiasalvestid-4",
+   "sectionId": "rev-energiasalvestid-6",
    "kind": "changed",
    "prev": "Need neli etappi on sama teekond, mille nädalatasandi järjekord ja kestused on kirjeldatud lehel Kuidas see kulgeb — etapinumbrid viitavad sellele."
   },
