@@ -40,25 +40,31 @@
    "page": "/energiavarastot/",
    "sectionId": "rev-energiavarastot-3",
    "kind": "changed",
-   "prev": "04 Elinkaari Suorituskyvyn seuranta antamaamme analyysiin verrattuna. Aggregaattorisuhteen hallinta. Laajennussuunnittelu. Takuuasiat. Olemme paikalla myös kolmantena vuonna, ja ensimmäisen vuoden luvut ovat edelleen tarkistettavissa. Se on tietoinen rajoite sille, mitä olemme valmiita lupaamaan ensimmäisenä vuonna. JatkuvaVAIHE 07"
+   "prev": "04 Elinkaari Suorituskyvyn seuranta antamaamme analyysiin verrattuna. Aggregaattorisuhteen hallinta. Laajennussuunnittelu. Takuuasiat. Olemme paikalla myös kolmantena vuonna, ja ensimmäisen vuoden luvut ovat edelleen tarkistettavissa. Se on tietoinen rajoite sille, mitä olemme valmiita lupaamaan ensimmäisenä vuonna. JatkuvaVAIHE 07 Nämä neljä vaihetta ovat sama matka, jonka viikkotason järjestys ja kestot on kuvattu sivulla Näin se etenee — vaihenumerot viittaavat siihen."
   },
   {
    "page": "/energiavarastot/",
    "sectionId": "rev-energiavarastot-4",
    "kind": "changed",
-   "prev": "04 Elinkaari Suorituskyvyn seuranta antamaamme analyysiin verrattuna. Aggregaattorisuhteen hallinta. Laajennussuunnittelu. Takuuasiat. Olemme paikalla myös kolmantena vuonna, ja ensimmäisen vuoden luvut ovat edelleen tarkistettavissa. Se on tietoinen rajoite sille, mitä olemme valmiita lupaamaan ensimmäisenä vuonna. JatkuvaVAIHE 07"
+   "prev": "Nämä neljä vaihetta ovat sama matka, jonka viikkotason järjestys ja kestot on kuvattu sivulla Näin se etenee — vaihenumerot viittaavat siihen."
   },
   {
    "page": "/energiavarastot/",
    "sectionId": "tehomaksu",
    "kind": "changed",
-   "prev": "04 Elinkaari Suorituskyvyn seuranta antamaamme analyysiin verrattuna. Aggregaattorisuhteen hallinta. Laajennussuunnittelu. Takuuasiat. Olemme paikalla myös kolmantena vuonna, ja ensimmäisen vuoden luvut ovat edelleen tarkistettavissa. Se on tietoinen rajoite sille, mitä olemme valmiita lupaamaan ensimmäisenä vuonna. JatkuvaVAIHE 07 Nämä neljä vaihetta ovat sama matka, jonka viikkotason järjestys ja kestot on kuvattu sivulla Näin se etenee — vaihenumerot viittaavat siihen."
+   "prev": "Nämä neljä vaihetta ovat sama matka, jonka viikkotason järjestys ja kestot on kuvattu sivulla Näin se etenee — vaihenumerot viittaavat siihen."
   },
   {
    "page": "/energiavarastot/",
    "sectionId": "rev-energiavarastot-6",
    "kind": "changed",
    "prev": "Nämä neljä vaihetta ovat sama matka, jonka viikkotason järjestys ja kestot on kuvattu sivulla Näin se etenee — vaihenumerot viittaavat siihen."
+  },
+  {
+   "page": "/energiavarastot/",
+   "sectionId": "konsultointi",
+   "kind": "changed",
+   "prev": "Erikseen Konsultointi ilman laitekauppaa. Kaikki kohteet eivät tarvitse meiltä laitetta. Toteutettavuuden arviointi Verkkoyhtiöprosessin tuki Teknisen vaatimustenmukaisuuden tarkastus Muilta toimittajilta saatujen tarjousten riippumaton arviointi Ota yhteyttä"
   },
   {
    "page": "/aurinko-ja-akku/",
@@ -172,6 +178,12 @@
    "sectionId": "rev-energiasalvestid-6",
    "kind": "changed",
    "prev": "Need neli etappi on sama teekond, mille nädalatasandi järjekord ja kestused on kirjeldatud lehel Kuidas see kulgeb — etapinumbrid viitavad sellele."
+  },
+  {
+   "page": "/energiasalvestid/",
+   "sectionId": "konsultatsioon",
+   "kind": "changed",
+   "prev": "Eraldi Konsultatsioon ilma seadmemüügita. Kõik objektid ei vaja meilt seadet. Teostatavuse hindamine Võrguettevõtte protsessi tugi Tehnilise nõuetele vastavuse kontroll Teistelt tarnijatelt saadud pakkumiste sõltumatu hindamine Võtke ühendust"
   },
   {
    "page": "/paike-ja-aku/",
