@@ -8,6 +8,24 @@ document.getElementById('burger').addEventListener('click',function(){
   this.setAttribute('aria-expanded',open?'true':'false');
 });
 
+/* Kielivalitsin esikatseluhostilla: langsw-linkit ovat kanonisia tuotanto-URL:eja
+   (samaenergia.fi / samaenergia.ee) — oikein tuotannossa, kuolleita
+   *.netlify.app-esikatselussa ennen mergeä. Ajossa — lähteitä ja julkaistuja
+   hrefejä muuttamatta — kirjoitetaan VAIN .langsw-ankkurit hostin sisäisiksi:
+   .fi/<slug>/ -> /<slug>/ ja .ee/<slug>/ -> /et/<slug>/ (/et/-polut ovat
+   turvallisin sisäinen muoto tällä hostilla; paljaat ET-slugit toimisivat myös
+   yleisten uudelleenkirjoitusten kautta). Tuotantohostit eivät koskaan osu
+   ehtoon; ilman JS:ää esikatselun kielivalitsin vie tuotantoon kuten ennenkin.
+   Lohko on ENNEN katselmustilaa, jotta ?review=1 säilyy myös näissä linkeissä. */
+(function(){
+  if(!/\.netlify\.app$/.test(location.hostname))return;
+  document.querySelectorAll('.langsw a').forEach(function(a){
+    var m=/^https:\/\/(?:www\.)?samaenergia\.(fi|ee)(\/.*)$/.exec(a.getAttribute('href')||'');
+    if(!m)return;
+    a.setAttribute('href',m[1]==='fi'?m[2]:(m[2]==='/'?'/et/':'/et'+m[2]));
+  });
+})();
+
 /* Yhteydenottolomake — Netlify Forms.
    Ensisijaisesti AJAX (onnistumisviesti näytetään paikallaan). Jos AJAX epäonnistuu,
    varapolkuna natiivi lähetys lomakkeen action-kiitossivulle — ei umpikujaa.
