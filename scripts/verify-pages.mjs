@@ -19,15 +19,11 @@ const ET_BASE = 'https://samaenergia.ee';
 /* sivun kanoninen absoluuttinen URL: FI .fi-hostilla, ET .ee-hostilla ilman /et/-etuliitettä */
 const abs = (lang, url) => (lang === 'fi' ? BASE + url : ET_BASE + (url === '/et/' ? '/' : url.replace(/^\/et/, '')));
 
-/* Tietoiset kohatäitteet draft-haaralla (Martinin päätös 2026-08-23, batch-ohje 5b/5f):
-   nämä sivu+merkintä-parit EIVÄT kaada buildia, mutta jokainen tulostetaan äänekkäästi
-   joka ajossa. TYHJENNETTÄVÄ (arvot täytettävä ja rivit poistettava) ennen main-mergeä —
-   kaikki listan ulkopuoliset kohatäitteet kaatavat buildin edelleen. */
-const PLACEHOLDER_WAIVERS = [
-  { page: '/energiavarastot/', token: 'TARKISTETAAN', max: 2 },        // ~100 kW -kynnys + tehomaksun määrä
-  { page: '/energiavarastot/', token: '[X-PLACEHOLDER]', max: 1 },     // [X,XX €/kW/kk] tehomaksun määrä
-  { page: '/et/energiasalvestid/', token: 'KONTROLLITAKSE', max: 1 },  // ~100 kW lävi
-];
+/* Tietoiset kohatäitteet draft-haaralla: sivu+merkintä-parit, jotka EIVÄT kaada buildia
+   mutta tulostetaan äänekkäästi joka ajossa. Lista TYHJENNETTIIN pre-freeze-vaiheessa
+   2026-08-23 (Helen-ankkuri täytetty, kynnysleimoista päätetty) — kaikki kohatäitteet
+   kaatavat buildin taas. Uusi waiver vain perustajan päätöksellä, syy kommenttiin. */
+const PLACEHOLDER_WAIVERS = [];
 
 const FI = ['', 'energiavarastot', 'aurinko-ja-akku', 'reservimarkkinat', 'prosessi', 'meista', 'yhteystiedot', 'ajankohtaista', 'tietosuoja', 'kiitos'];
 const ET = ['', 'energiasalvestid', 'paike-ja-aku', 'reserviturud', 'protsess', 'meist', 'kontakt', 'uudised', 'andmekaitse', 'aitah'];

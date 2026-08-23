@@ -268,7 +268,9 @@
           <p style="margin-top:12px"><a class="morelink" href="/reservimarkkinat/">Reservimarkkinat — mitä ne ovat</a></p>
         </div>
       </div>
-      <p style="margin-top:26px;color:var(--tx2);font-size:16px">Tyypillinen kohde: keskijännite- tai suuri pienjänniteliittymä, kuukausihuiput alkaen ~100 kW <span class="tg chk">TARKISTETAAN</span></p>
+      <!-- PÄÄTÖS (Martin, pre-freeze): TARKISTETAAN-leima poistettu — kynnys julkaistaan
+           likiarvona (~), lopullinen sanamuoto kielentarkistuksessa. -->
+      <p style="margin-top:26px;color:var(--tx2);font-size:16px">Tyypillinen kohde: keskijännite- tai suuri pienjänniteliittymä, kuukausihuiput alkaen ~100 kW</p>
     </div>
   </section>
 
@@ -325,31 +327,89 @@
     </div>
   </section>
 
-  <!-- MADIS: koko osio "Tehomaksu-esimerkki" on uusi (Martin 2026-08-23) — kielentarkistus.
-       Määrä on tietoisesti [X,XX]-kohatäite (TARKISTETAAN: verkkoyhtiön tehosiirtohinnasto) —
-       ei keksittyjä lukuja; verify-pages.mjs-waiver kattaa sen.
-       VALINTA — Helen Sähköverkko / Caruna / Elenia ankkuriksi? -->
+  <!-- MADIS: Tehomaksu-esimerkki täytetty (Martin, pre-freeze 2026-08-23) — kielentarkistus
+       koko osiolle. ANKKURI: Helen Sähköverkko — vaihda tähän jos toinen DSO. Jos ankkuri
+       vaihtuu, vaihtuvat TÄSMÄLLEEN nämä: (1) DOKUMENTOITU-kortin kolmas bulleti (määrät)
+       ja mittaussääntöbulletit, (2) taulukon rivit Tehomaksu / Säästö kuukaudessa /
+       Säästö vuodessa / 1.10.2026 alkaen, (3) "Kaksi huomiota" -kortit, (4) LÄHDE-rivit,
+       (5) DSO:n nimi h3:ssa ja sec-ledessä. Mallinnettu kohde, energiatarkistus ja
+       poissulkulista EIVÄT ole DSO-sidonnaisia.
+       TUOTELUOKKA (vahvista): Keskijännitetehosiirto 10/20 kV. Pienjänniteliittymälle
+       vastaava tuote on Pienjännitetehosiirto: tehomaksu 4,85 €/kW/kk (1.4.2026),
+       5,33 €/kW/kk (1.10.2026), perusmaksu 28,00 €/kk.
+       LÄHTEET (haettu 23.8.2026, helensahkoverkko.fi/globalassets/hinnastot-ja-sopimusehdot/hsv/):
+       "Sähkön verkkopalveluhinnasto", voimassa 1.4.2026 alkaen (hsv-sahkon-verkkopalvelumaksut-1.4.2026.pdf)
+       ja voimassa 1.10.2026 alkaen (hsv-sahkon-verkkopalvelumaksut-1.10.2026.pdf), alv 0 %.
+       Mittaussääntö hinnastosta sanatarkasti: "Laskutusteho on kuukauden suurin aikavälillä
+       maanantaista perjantaihin klo 7–21 mitattu tunnin keskiteho." Tehomaksu voimassa
+       vuoden kaikkina kuukausina. HUOM: sääntö EI ole sama kuin Elektrilevillä (ikkuna!)
+       eikä Helenin Aikasiirrossa (siellä kolmanneksi suurin tunti). -->
   <section id="tehomaksu">
     <div class="wrap">
       <p class="eyebrow">Tehomaksu-esimerkki</p>
       <h2 class="sec-title">Emme julkaise tuottolukuja, joita kukaan ei hallitse. Tehomaksu on eri asia.</h2>
-      <p class="sec-lede">Hinta on julkinen, mekanismi on julkinen ja vaikutus lasketaan teidän omista tuntitiedoistanne. Alla dokumentoitu puoli ja selkeästi merkityt oletukset erikseen.</p>
+      <p class="sec-lede">Hinta on julkinen, mekanismi on julkinen ja vaikutus lasketaan teidän omista tuntitiedoistanne. Alla dokumentoitu puoli ja selkeästi merkityt oletukset erikseen — esimerkki keskijänniteliittymälle Helen Sähköverkon jakelualueella.</p>
+
       <div class="split" style="margin-top:44px">
         <div>
           <span class="tg las" style="display:inline-block;margin-bottom:16px">DOKUMENTOITU</span>
-          <h3 style="font-size:22px;margin-bottom:12px">Miten verkkoyhtiö laskuttaa tehosta</h3>
+          <h3 style="font-size:22px;margin-bottom:12px">Miten Helen Sähköverkko laskuttaa tehosta</h3>
           <ul class="checks">
-            <li>Tehomaksullisissa siirtotuotteissa laskutuksen peruste on tyypillisesti tunnin keskiteho — mitattu, ei hetkellinen huippu.</li>
-            <li>Maksu peritään kuukauden suurimman tuntikeskitehon mukaan ja mittaus alkaa joka kuukausi nollasta — varasto ansaitsee 12 kertaa vuodessa.</li>
-            <li>Määrä: [X,XX €/kW/kk — TARKISTETAAN: verkkoyhtiön tehosiirtohinnasto]</li>
+            <li>Laskutusteho on kuukauden suurin arkisin maanantaista perjantaihin klo 7–21 mitattu tunnin keskiteho — mitattu keskiarvo, ei hetkellinen huippu. Illan, yön ja viikonlopun huiput eivät nosta laskutustehoa.</li>
+            <li>Mittaus alkaa joka kuukausi nollasta ja tehomaksu peritään vuoden kaikkina kuukausina — leikkauksen mahdollisuus toistuu 12 kertaa vuodessa.</li>
+            <li>Keskijännitetehosiirto: tehomaksu <span class="mono">3,97 €/kW kuukaudessa</span> ilman arvonlisäveroa → <span class="mono">47,64 €/kW vuodessa</span>; perusmaksu 188,83 €/kk. 1.10.2026 alkaen tehomaksu on <span class="mono">4,25 €/kW kuukaudessa</span>.</li>
           </ul>
+          <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:14px">LÄHDE: HELEN SÄHKÖVERKKO OY · SÄHKÖN VERKKOPALVELUHINNASTO, VOIMASSA 1.4.2026 ALKAEN JA 1.10.2026 ALKAEN · ALV 0 % · DOKUMENTOITU</p>
         </div>
         <div>
           <span class="tg ske" style="display:inline-block;margin-bottom:16px">MALLINNETTU</span>
-          <h3 style="font-size:22px;margin-bottom:12px">Teidän lukunne lasketaan teidän datastanne</h3>
-          <p style="color:var(--tx2);font-size:16.5px">Vaikutus riippuu huippunne korkeudesta, kestosta ja toistuvuudesta. Täysi esimerkkilasku laaditaan, kun ankkuriverkkoyhtiön hinnasto on valittu ja dokumentoitu — teidän kohteenne luku lasketaan aina teidän omista tuntitiedoistanne ja annetaan kirjallisesti.</p>
+          <h3 style="font-size:22px;margin-bottom:12px">Esimerkkikohde — oletukset erikseen</h3>
+          <ul class="checks">
+            <li>Keskijänniteliittymä Helen Sähköverkon alueella, tuote Keskijännitetehosiirto</li>
+            <li>Kuukauden huippu 480 kW, tavanomainen teho ~350 kW</li>
+            <li>Huiput arkiaamujen käynnistyksissä — laskutusikkunan sisällä — kesto enintään 1,5 h</li>
+            <li>Varasto 125 kW / 2 h (~250 kWh käytettävissä)</li>
+            <li>Tavoite: huippu alle 380 kW — 100 kW leikkaus, 25 kW marginaali</li>
+            <li>Leikkauksen onnistuminen joka kuukausi riippuu kuormitusprofiilista — vuositulos siksi haarukkana</li>
+          </ul>
         </div>
       </div>
+
+      <table class="tbl">
+        <thead>
+          <tr><th>Vaihe</th><th>Arvo</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Kuukauden huippu ennen</td><td>480 kW</td></tr>
+          <tr><td>Tavoite leikkauksen jälkeen</td><td>380 kW — leikkaus 100 kW</td></tr>
+          <tr><td>Energiatarkistus</td><td>100 kW × 1,5 h = 150 kWh ≤ ~250 kWh käytettävissä → toteutettavissa</td></tr>
+          <tr><td>Tehomaksu</td><td>3,97 €/kW kuukaudessa (Keskijännitetehosiirto, ilman arvonlisäveroa)</td></tr>
+          <tr><td>Säästö kuukaudessa</td><td>100 kW × 3,97 € = 397 €</td></tr>
+          <tr><td>Säästö vuodessa</td><td><b>3 970–4 764 €</b> — mallinnettu onnistuminen 10–12 kuukautena; vain tehomaksukomponentti</td></tr>
+          <tr><td>1.10.2026 alkaen</td><td>tehomaksu 4,25 €/kW/kk → 425 €/kk eli 10–12 kuukaudella 4 250–5 100 €/v</td></tr>
+        </tbody>
+      </table>
+
+      <p class="eyebrow" style="margin-top:clamp(40px,6vw,56px)">Mitä tämä esimerkki ei sisällä</p>
+      <div class="qa" style="margin-top:0">
+        <div><h3>Reservitulo</h3><p>Aina erikseen ja skenaarioina, ei tämän laskelman sisällä. <a href="/reservimarkkinat/">Miksi, lue tästä →</a></p></div>
+        <div><h3>Pörssisähkön optimointi ja siirron aikaporrastus</h3><p>Talvipäivän siirtomaksu 1,52 c/kWh vs. muun ajan 0,68 c/kWh → 0,84 sentin lisävipu jokaiselle talviarkipäivästä pois siirretylle kilowattitunnille. Oma rivinsä, ei tämän esimerkin osa.</p></div>
+        <div><h3>Akkuhäviöt</h3><p>Varastoinnissa ja purkamisessa häviää 10–15 % energiasta — täysi laskelma ottaa sen huomioon.</p></div>
+        <div><h3>Teidän kohteenne</h3><p>Huipun kesto ja ajoittuminen laskutusikkunaan ratkaisevat, riittääkö varaston energia — siksi lopullinen luku lasketaan teidän omista tuntitiedoistanne, ei esimerkistä.</p></div>
+      </div>
+
+      <p class="eyebrow" style="margin-top:clamp(40px,6vw,56px)">Kaksi huomiota samasta hinnastosta</p>
+      <div class="tri duo" style="margin-top:24px">
+        <div><span class="num">01 · LASKUTUSIKKUNA</span><h3>Vain arkisin klo 7–21</h3><p>Laskutusteho mitataan vain maanantaista perjantaihin klo 7–21. Ilta-, yö- ja viikonloppuhuiput eivät nosta tehomaksua — kuorman siirto ikkunan ulkopuolelle on varaston rinnalla toinen keino.</p></div>
+        <div><span class="num">02 · HINNASTOMUUTOS 1.10.2026</span><h3>3,97 → 4,25 €/kW/kk</h3><p>Tehomaksu nousee 1.10.2026. Sama leikkaus säästää jatkossa enemmän — dokumentoitu hinnastomuutos, ei ennuste.</p></div>
+      </div>
+
+      <div class="callout">
+        <p>Juuri tämän tarkistaa maksuton kohdekartoitus teidän omista kulutustiedoistanne — ennen kuin mitään allekirjoitetaan.</p>
+        <p class="sub">Esimerkki havainnollistaa mekanismin. Teidän lukunne lasketaan teidän tuntitiedoistanne ja annetaan kirjallisesti.</p>
+      </div>
+      <div class="btnrow"><a href="/yhteystiedot/" class="btn">Pyydä kohdekartoitus</a></div>
+      <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:18px">KAIKKI MÄÄRÄT: HELEN SÄHKÖVERKKO OY, SÄHKÖN VERKKOPALVELUHINNASTO 1.4.2026 / 1.10.2026 · ALV 0 % · DOKUMENTOITU</p>
     </div>
   </section>
 
