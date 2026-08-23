@@ -357,56 +357,57 @@ footer a:hover{color:var(--dk-hd)}
   #p-home .btn,#p-home .btn::after{transition:none}
 }
 
-/* ===== KOE 2: PREMIUM-CTA · kupari materiaalina — liukuväri, viistetty kulma, valokantit.
-   HUOM: brändisäännöt kieltävät liukuvärit ja varjot; tämä lohko on tietoinen, helposti
-   peruttava kokeilu. POISTO: tämä lohko (magneetti-lohkot voivat jäädä). ===== */
+/* ===== VALGUSKLAAS: viistetty CTA-kieli koko sivustolle (ent. KOE 2, oli #p-home-
+   rajattu) — .btn:not(.ghost) perii .navcta-reseptin: 3-portainen pystygradientti
+   --signal-perheellä, clip-path-viiste 10px, sisävalokantit, kiiltopyyhkäisy,
+   hover-nosto (perusluokassa), :active-painuma. .navcta itse ennallaan. ===== */
 @media (hover:hover) and (pointer:fine), (hover:none){
-  #p-home .btn:not(.ghost):not(.dk){
+  .btn:not(.ghost):not(.dk){
     background:linear-gradient(180deg,var(--signal-hi) 0%,var(--signal) 52%,color-mix(in srgb,var(--signal) 80%,#000) 100%);
     clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);
     box-shadow:inset 0 1px 0 rgba(255,255,255,.32),inset 0 -1px 0 rgba(0,0,0,.26);
     position:relative;overflow:hidden;
   }
-  #p-home .btn:not(.ghost):not(.dk):hover{
+  .btn:not(.ghost):not(.dk):hover{
     background:linear-gradient(180deg,color-mix(in srgb,var(--signal-hi) 82%,#fff) 0%,var(--signal) 55%,color-mix(in srgb,var(--signal) 78%,#000) 100%);
     box-shadow:inset 0 1px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.26),0 12px 26px -14px color-mix(in srgb,var(--signal) 60%,transparent);
   }
-  #p-home .btn:not(.ghost)::before{
+  .btn:not(.ghost)::before{
     content:"";position:absolute;top:0;bottom:0;left:-45%;width:32%;
     background:linear-gradient(105deg,transparent,rgba(255,255,255,.2),transparent);
     transform:skewX(-18deg);transition:left .55s ease;pointer-events:none;
   }
-  #p-home .btn:not(.ghost):hover::before{left:115%}
-  #p-home .btn.ghost{
+  .btn:not(.ghost):hover::before{left:115%}
+  .btn.ghost{
     clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);
     position:relative;
   }
   /* Viisteen reunaviiva: 1px-reunus ei voi seurata clip-pathin leikkausta, joten ääriviiva
      suljetaan piirretyllä diagonaalilla, joka perii reunuksen värin myös hoverissa. */
-  #p-home .btn.ghost::before{
+  .btn.ghost::before{
     content:"";position:absolute;top:4.6px;right:-1.8px;width:14.6px;height:1.3px;
     background:var(--line);transform:rotate(45deg);pointer-events:none;
   }
-  #p-home .btn.ghost:hover::before{background:var(--signal)}
-  #p-home .btn.ghost:hover{
+  .btn.ghost:hover::before{background:var(--signal)}
+  .btn.ghost:hover{
     background:color-mix(in srgb,var(--signal) 12%,transparent);
     border-color:var(--signal);
   }
-  #p-home .btn.dk{
+  .btn.dk{
     background:linear-gradient(180deg,var(--panel) 0%,var(--ink) 58%,color-mix(in srgb,var(--ink) 72%,#000) 100%);
     clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);
     box-shadow:inset 0 1px 0 rgba(255,255,255,.12),inset 0 -1px 0 rgba(0,0,0,.5);
     position:relative;overflow:hidden;
   }
-  #p-home .btn.dk:hover{
+  .btn.dk:hover{
     background:linear-gradient(180deg,var(--panel-2) 0%,var(--panel) 58%,var(--ink) 100%);
   }
-  #p-home .btn:active{
+  .btn:active{
     box-shadow:inset 0 3px 8px rgba(0,0,0,.32)!important;
   }
 }
 @media (prefers-reduced-motion:reduce){
-  #p-home .btn::before{transition:none}
+  .btn::before{transition:none}
 }
 
 /* ===== SÜGAV SALU · VALAISTUSKERROS (peritty Ilta & Kupari 3.5:n rakenteesta) =====
@@ -455,3 +456,78 @@ label .fnote.rq{color:var(--signal-ink)}
 .rev-del-mark{color:#A8452E;text-decoration:line-through;text-decoration-thickness:1.5px;font-size:.82em;opacity:.72;margin:0 .18em}
 .rev-hide-del .rev-del-mark{display:none}
 .rev-toggle[aria-pressed="true"]{background:var(--amber);color:var(--ink)}
+
+/* ===== VALGUSKLAAS · sivuston oletusdesign (ei body-luokkaporttia — tämä ON tyyli) =====
+   Aurora-pesut, lasikortit, lasihelmi-indeksit ja pilleri-kestot. Kaikki muuttuja-
+   vetoista; jokaista color-mixiä edeltää rgba-fallback vanhemmille selaimille.
+   DARK GUARD lohkon lopussa: .dark-esivanhemman sisällä kaikki tämä nollataan. ===== */
+
+/* aurora-pesu vaaleille osioille */
+main section{position:relative;
+  background:
+    radial-gradient(56% 42% at 12% 6%,rgba(111,191,99,.15),transparent 58%),
+    radial-gradient(48% 40% at 90% 30%,rgba(10,19,13,.12),transparent 62%);
+  background:
+    radial-gradient(56% 42% at 12% 6%,color-mix(in srgb,var(--signal) 15%,transparent),transparent 58%),
+    radial-gradient(48% 40% at 90% 30%,color-mix(in srgb,var(--ink) 12%,transparent),transparent 62%)}
+
+/* lasikortit */
+.step,.split>div,.tri>div,.qa>div{
+  padding:30px;border-radius:14px;
+  background:linear-gradient(150deg,rgba(241,246,236,.85),rgba(241,246,236,.55));
+  background:linear-gradient(150deg,color-mix(in srgb,var(--white) 85%,transparent),color-mix(in srgb,var(--white) 55%,transparent));
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border:1px solid rgba(241,246,236,.92);
+  border:1px solid color-mix(in srgb,var(--white) 92%,transparent);
+  box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 22px 50px -34px rgba(10,19,13,.45);
+  box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 22px 50px -34px color-mix(in srgb,var(--ink) 45%,transparent);
+}
+/* korttisäiliöt: välit korttien ehdoilla, perityt hiusviivat pois */
+.tri{gap:20px;background:none;border:none}
+.steps{display:grid;gap:20px;border-top:none}
+.qa{display:grid;gap:20px;border-top:none}
+/* moduuliruudukko uusille chip-osioille (Mida saate / matkatiivistelmä) */
+.qa.grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+
+/* vaiheen indeksi: 34px lasihelmi */
+.step .idx{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  padding:0;font-size:12px;letter-spacing:.04em;color:var(--signal-ink);border:1px solid var(--signal-ink);
+  background:radial-gradient(circle at 32% 28%,var(--white) 20%,rgba(111,191,99,.3));
+  background:radial-gradient(circle at 32% 28%,var(--white) 20%,color-mix(in srgb,var(--signal) 30%,transparent))}
+/* vaiheen kesto: lasipilleri */
+.step .dur{background:rgba(241,246,236,.85);background:color-mix(in srgb,var(--white) 85%,transparent);
+  border:1px solid rgba(43,113,54,.3);border:1px solid color-mix(in srgb,var(--signal-ink) 30%,transparent);
+  border-radius:999px;padding:7px 14px;text-align:center;justify-self:end;align-self:start}
+@media(max-width:760px){.step .dur{justify-self:start}}
+
+/* taulukot lasipintana */
+.tbl{border-collapse:separate;border-spacing:0;border-radius:14px;overflow:hidden;
+  background:linear-gradient(150deg,rgba(241,246,236,.85),rgba(241,246,236,.55));
+  background:linear-gradient(150deg,color-mix(in srgb,var(--white) 85%,transparent),color-mix(in srgb,var(--white) 55%,transparent));
+  border:1px solid rgba(241,246,236,.92);
+  border:1px solid color-mix(in srgb,var(--white) 92%,transparent);
+  box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 22px 50px -34px rgba(10,19,13,.45)}
+.tbl th{padding:14px 16px}
+.tbl td{padding:16px}
+.tbl tr:last-child td{border-bottom:none}
+@media(max-width:700px){.tbl td{padding:3px 16px}.tbl td:first-child{padding-top:12px}}
+
+/* hero-kulmakarvat kuvaherooissa: luettavuus valokuvan päällä */
+.heroimgd .eyebrow{color:#F2F5F0;text-shadow:0 1px 5px rgba(8,13,19,.8),0 1px 14px rgba(8,13,19,.5)}
+
+/* ---------- DARK GUARD (pakollinen): tummien pintojen sisällä lasikerros pois —
+   Konsultatsioon-osioiden ja reservitaulukoiden on renderöityävä täsmälleen kuten ennen */
+.dark section{background:none}
+.dark .step,.dark .split>div,.dark .tri>div,.dark .qa>div{
+  background:none;border:none;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;border-radius:0;padding:0}
+.dark .qa{display:block;border-top:1px solid var(--line)}
+.dark .qa>div{padding:26px 0;border-bottom:1px solid var(--line)}
+.dark .steps{display:block;border-top:1px solid var(--line)}
+.dark .step{padding:26px 0;border-bottom:1px solid var(--line)}
+.dark .step .idx{width:auto;height:auto;border-radius:0;background:none;border:none;display:block;
+  padding-top:4px;font-size:13px;color:var(--signal)}
+.dark .step .dur{background:none;border:none;border-radius:0;padding:6px 0 0;text-align:right;justify-self:auto;align-self:auto}
+.dark .tbl{background:none;border:none;box-shadow:none;border-radius:0;border-collapse:collapse}
+.dark .tbl th{padding:12px 14px 12px 0}
+.dark .tbl td{padding:16px 14px 16px 0}
+.dark .tbl tr:last-child td{border-bottom:1px solid var(--line)}
