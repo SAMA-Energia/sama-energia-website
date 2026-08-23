@@ -79,6 +79,24 @@
    "prev": "Tärkein kohta tällä sivulla Miksi emme julkaise tuottolukuja Jokainen akkutarjous sisältää takaisinmaksuluvun. Ratkaisevaa on, mille oletuksille se on rakennettu — ja kuka seisoo niiden takana vielä viidentenä vuonna. Reservihinnat vaihtelevat tunneittain ja määräytyvät markkinalla. Kukaan ei tiedä ennalta, mitä ne ovat ensi vuonna. Ne ovat laskusuunnassa. Suuren mittakaavan varastointi tulee sekä Suomen että Viron markkinoille. Kun sata megawattia varastointikapasiteettia tulee reservimarkkinalle, hinnat puristuvat. Se ei ole ennuste vaan laskutoimitus. Emme tiedä, miten kohde kvalifioituu, ennen kuin aggregaattori on sen arvioinut. Se arvio ei ole olemassa siinä vaiheessa, kun useimmat tarjoukset kirjoitetaan. Luvun, jonka annamme, on kestettävä tarkastelu vielä viidentenä vuonna. Siksi rakennamme laskelman säästöille ja esitämme reservitulon lisänä: aggregaattorin omana arviona, jonka rinnalla on skenaario siitä, mitä tapahtuu, jos hinnat puolittuvat. Jos hanke toimii vain silloin, kun reservihinnat pitävät, sanomme sen. Se tarkoittaa, että hanke on hauras, ja se kannattaa tietää ennen allekirjoitusta eikä toisena vuonna."
   },
   {
+   "page": "/reservimarkkinat/",
+   "sectionId": "rev-reservimarkkinat-7",
+   "kind": "changed",
+   "prev": "Miksi tämä on tärkeämpää kuin yksi kohde Jokainen asentamamme akku on liiketoimintapäätös. Yhdessä ne ovat jotain muuta. Helmikuussa 2025 Baltian maat irtautuivat Venäjän sähköverkosta ja synkronoituivat Manner-Euroopan kanssa. Suomi on osa pohjoismaista järjestelmää. Näitä kahta yhdistävät kaapelit Suomenlahden alla — kaapelit, joita on vaurioitettu jo useammin kuin kerran. Molemmat järjestelmät lisäävät sääriippuvaista tuotantoa ja menettävät säädettävää kapasiteettia, joka ennen tasapainotti niitä. Molemmat tarvitsevat samaa asiaa: joustoa, hajautettuna, sekunneissa reagoivana. Yksi suuri akku on yksi kohde ja yksi vikaantumispiste. Kymmenentuhatta akkua kymmenentuhannen teollisuusliittymän takana — jokainen tuottaen omistajalleen rahaa — on alueellista infrastruktuuria, jota ei katkaista ankkurilla ja jonka omistavat ne, jotka sitä käyttävät. Energiaomavaraisuutta ei rakenneta julistuksilla. Sen rakentavat yritykset, jotka asentavat akun, koska se maksaa itsensä takaisin — yksi kohde kerrallaan."
+  },
+  {
+   "page": "/prosessi/",
+   "sectionId": "rev-prosessi-2",
+   "kind": "changed",
+   "prev": "01KvalifiointiTäytätte kohdetietolomakkeen: liittymisteho, pääsulake, muuntajan teho, olemassa oleva tuotanto, mittausjärjestely, asennuspaikka ja etäisyys pääkeskukseen, voimassa olevat sähkösopimukset. Analysoimme kulutustietonne.≈ 1 viikko 02Tekninen esiselvitysMitoitus, konfiguraatio ja tarvittaessa olemassa olevan tuotannon arviointi.≈ 1 viikko 03Verkkoyhtiön ennakkoselvitysTeemme kyselyn ja saamme kirjallisen kannan juuri teidän liittymäpisteestänne. Te allekirjoitatte valtuutuksen, me hoidamme prosessin.Mitään ei hankita, ennen kuin tämä vaihe on valmis.2–6 viikkoa 04AnalyysipakettiTäysi kirjallinen analyysi toimitetaan. Käytte sen läpi sisäisesti ja teette päätöksen.2–4 viikkoa 05Tarjous ja rahoitusPorrastettu tarjous, rahoitus järjestettynä, jos niin haluatte.1–2 viikkoa 06ToteutusTilaus, asennus, käyttöönotto, dokumentointi. Te järjestätte pääsyn kohteeseen. Kokonaisaikataulu vahvistetaan tarjouksessa laitteiden saatavuuden mukaan.4–12 viikkoa 07Markkinoille pääsy ja seurantaLiittyminen aggregaattoriin ja suorituskyvyn seuranta antamaamme analyysiin verrattuna.Jatkuva Mitään ei hankita, ennen kuin verkkoyhtiö on vahvistanut ratkaisun kirjallisesti. Tämä on molemmilla markkinoilla suurin yksittäinen syy epäonnistuneisiin, viivästyneisiin ja budjetin ylittäneisiin akkuhankkeisiin. Se on täysin vältettävissä, eikä välttäminen maksa mitään muuta kuin oikean järjestyksen. Siksi järjestys on meillä prosessin kiinteä osa, ei joustokohta."
+  },
+  {
+   "page": "/yhteystiedot/",
+   "sectionId": "rev-yhteystiedot-1",
+   "kind": "changed",
+   "prev": "Yhteystiedot Aloitetaan kulutustiedoistanne. Nopein tapa selvittää, sopiiko energiavarasto kohteeseenne, on kohdekartoitus. Jättäkää tietonne, niin lähetämme lomakkeen ja kerromme, mitä siihen tarvitaan."
+  },
+  {
    "page": "/yhteystiedot/",
    "sectionId": "rev-yhteystiedot-2",
    "kind": "changed",
@@ -183,6 +201,24 @@
    "page": "/reserviturud/",
    "sectionId": "rev-reserviturud-6",
    "kind": "new"
+  },
+  {
+   "page": "/reserviturud/",
+   "sectionId": "rev-reserviturud-8",
+   "kind": "changed",
+   "prev": "Miks see on tähtsam kui üks objekt Iga meie paigaldatud aku on äriotsus. Koos on need midagi muud. Veebruaris 2025 eraldusid Balti riigid Venemaa elektrivõrgust ja sünkroniseerusid Mandri-Euroopaga. Soome on osa Põhjamaade süsteemist. Neid kahte ühendavad kaablid Soome lahe all — kaablid, mida on kahjustatud juba rohkem kui korra. Mõlemad süsteemid lisavad ilmastikust sõltuvat tootmist ja kaotavad reguleeritavat võimsust, mis neid varem tasakaalustas. Mõlemad vajavad sama asja: paindlikkust, hajutatuna, sekunditega reageerivana. Üks suur aku on üks objekt ja üks tõrkepunkt. Kümme tuhat akut kümne tuhande tööstusliitumise taga — igaüks omanikule raha teenimas — on piirkondlik taristu, mida ei lõigata läbi ankruga ja mille omanikud on need, kes seda kasutavad. Energiasõltumatust ei ehitata deklaratsioonidega. Selle ehitavad ettevõtted, kes paigaldavad aku, sest see teenib end tagasi — üks objekt korraga."
+  },
+  {
+   "page": "/protsess/",
+   "sectionId": "rev-protsess-2",
+   "kind": "changed",
+   "prev": "01KvalifitseerimineTäidate objektiandmete vormi: liitumisvõimsus, peakaitse, trafo võimsus, olemasolev tootmine, mõõtekorraldus, paigalduskoht ja kaugus peakilbist, kehtivad elektrilepingud. Analüüsime teie tarbimisandmeid.≈ 1 nädal 02Tehniline eeluuringDimensioneerimine, konfiguratsioon ja vajadusel olemasoleva tootmise hindamine.≈ 1 nädal 03Võrguettevõtte eelpäringTeeme päringu ja saame kirjaliku seisukoha just teie liitumispunkti kohta. Teie allkirjastate volituse, meie ajame protsessi.Midagi ei hangita enne, kui see etapp on valmis.2–6 nädalat 04AnalüüsipakettTäielik kirjalik analüüs antakse üle. Käite selle sisemiselt läbi ja teete otsuse.2–4 nädalat 05Pakkumine ja rahastusAstmeline pakkumine, rahastus korraldatud, kui nii soovite.1–2 nädalat 06TeostusTellimus, paigaldus, kasutuselevõtt, dokumenteerimine. Teie korraldate ligipääsu objektile. Koguajakava kinnitatakse pakkumises seadmete saadavuse järgi.4–12 nädalat 07Turulepääs ja seireLiitumine agregaatoriga ja jõudluse seire meie antud analüüsiga võrreldes.Pidev Midagi ei hangita enne, kui võrguettevõte on lahenduse kirjalikult kinnitanud. See on mõlemal turul suurim üksik põhjus ebaõnnestunud, hilinenud ja eelarvet ületanud akuprojektide taga. See on täielikult välditav ja vältimine ei maksa midagi muud kui õiget järjekorda. Seepärast on järjekord meil protsessi kindel osa, mitte paindekoht."
+  },
+  {
+   "page": "/kontakt/",
+   "sectionId": "rev-kontakt-1",
+   "kind": "changed",
+   "prev": "Kontakt Alustame teie tarbimisandmetest. Kiireim viis selgitada, kas energiasalvesti teie objektile sobib, on objektikaardistus. Jätke oma andmed, siis saadame vormi ja ütleme, mida selleks vaja on."
   },
   {
    "page": "/kontakt/",
