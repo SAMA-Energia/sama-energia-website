@@ -1,6 +1,86 @@
-# .ee serves Estonian natively — rewrite root only (hash SPA; assets resolve at root)
-https://samaenergia.ee/ /et/index.html 200!
-https://www.samaenergia.ee/* https://samaenergia.ee/:splat 301!
+# Hostisäännöt ensin — järjestyksellä on väliä.
+# ET-sisällön näkyvät URL:t ovat ILMAN /et/-etuliitettä; et/-kansio on vain
+# tiedostosijainti uudelleenkirjoitusten takana, ei koskaan näkyvä osoite.
+# Vanhat #/-osoitteet eivät näy palvelimelle — etusivujen inline-shim hoitaa ne.
+
+# Vanhat julkaistut /et/-linkit .fi-hostilla ohjautuvat ikuisesti .ee-hostin
+# paljaisiin polkuihin (/et/ -> juureen, /et/slug/ -> /slug/).
+https://samaenergia.fi/et/*      https://samaenergia.ee/:splat  301!
+https://www.samaenergia.fi/et/*  https://samaenergia.ee/:splat  301!
+
+# ET-osoitteet eivät koskaan palvele FI-hostilla (slugit build-pages.mjs:n PAIRS-taulusta;
+# verify-pages.mjs valvoo, että jokaisella ET-linkillä on sääntö).
+https://samaenergia.fi/energiasalvestid/*      https://samaenergia.ee/energiasalvestid/:splat  301!
+https://www.samaenergia.fi/energiasalvestid/*  https://samaenergia.ee/energiasalvestid/:splat  301!
+https://samaenergia.fi/paike-ja-aku/*          https://samaenergia.ee/paike-ja-aku/:splat      301!
+https://www.samaenergia.fi/paike-ja-aku/*      https://samaenergia.ee/paike-ja-aku/:splat      301!
+https://samaenergia.fi/reserviturud/*          https://samaenergia.ee/reserviturud/:splat      301!
+https://www.samaenergia.fi/reserviturud/*      https://samaenergia.ee/reserviturud/:splat      301!
+https://samaenergia.fi/protsess/*              https://samaenergia.ee/protsess/:splat          301!
+https://www.samaenergia.fi/protsess/*          https://samaenergia.ee/protsess/:splat          301!
+https://samaenergia.fi/uudised/*               https://samaenergia.ee/uudised/:splat           301!
+https://www.samaenergia.fi/uudised/*           https://samaenergia.ee/uudised/:splat           301!
+https://samaenergia.fi/meist/*                 https://samaenergia.ee/meist/:splat             301!
+https://www.samaenergia.fi/meist/*             https://samaenergia.ee/meist/:splat             301!
+https://samaenergia.fi/kontakt/*               https://samaenergia.ee/kontakt/:splat           301!
+https://www.samaenergia.fi/kontakt/*           https://samaenergia.ee/kontakt/:splat           301!
+https://samaenergia.fi/andmekaitse/*           https://samaenergia.ee/andmekaitse/:splat       301!
+https://www.samaenergia.fi/andmekaitse/*       https://samaenergia.ee/andmekaitse/:splat       301!
+https://samaenergia.fi/aitah/*                 https://samaenergia.ee/aitah/:splat             301!
+https://www.samaenergia.fi/aitah/*             https://samaenergia.ee/aitah/:splat             301!
+
+# FI-osoitteet eivät koskaan palvele .ee-hostilla (peilisääntö yllä olevalle:
+# duplikaattihostitarjoilu pois — canonicalit lievensivät, ohjaus poistaa).
+# verify-pages.mjs valvoo, että joukko pysyy täydellisenä slugiparitaulua vasten.
+https://samaenergia.ee/energiavarastot/*       https://samaenergia.fi/energiavarastot/:splat   301!
+https://www.samaenergia.ee/energiavarastot/*   https://samaenergia.fi/energiavarastot/:splat   301!
+https://samaenergia.ee/aurinko-ja-akku/*       https://samaenergia.fi/aurinko-ja-akku/:splat   301!
+https://www.samaenergia.ee/aurinko-ja-akku/*   https://samaenergia.fi/aurinko-ja-akku/:splat   301!
+https://samaenergia.ee/reservimarkkinat/*      https://samaenergia.fi/reservimarkkinat/:splat  301!
+https://www.samaenergia.ee/reservimarkkinat/*  https://samaenergia.fi/reservimarkkinat/:splat  301!
+https://samaenergia.ee/prosessi/*              https://samaenergia.fi/prosessi/:splat          301!
+https://www.samaenergia.ee/prosessi/*          https://samaenergia.fi/prosessi/:splat          301!
+https://samaenergia.ee/ajankohtaista/*         https://samaenergia.fi/ajankohtaista/:splat     301!
+https://www.samaenergia.ee/ajankohtaista/*     https://samaenergia.fi/ajankohtaista/:splat     301!
+https://samaenergia.ee/meista/*                https://samaenergia.fi/meista/:splat            301!
+https://www.samaenergia.ee/meista/*            https://samaenergia.fi/meista/:splat            301!
+https://samaenergia.ee/yhteystiedot/*          https://samaenergia.fi/yhteystiedot/:splat      301!
+https://www.samaenergia.ee/yhteystiedot/*      https://samaenergia.fi/yhteystiedot/:splat      301!
+https://samaenergia.ee/tietosuoja/*            https://samaenergia.fi/tietosuoja/:splat        301!
+https://www.samaenergia.ee/tietosuoja/*        https://samaenergia.fi/tietosuoja/:splat        301!
+https://samaenergia.ee/kiitos/*                https://samaenergia.fi/kiitos/:splat            301!
+https://www.samaenergia.ee/kiitos/*            https://samaenergia.fi/kiitos/:splat            301!
+
+# /et/-URL-avaruus .ee-hostilla kuolee ohjauksella, ei 404:llä.
+https://samaenergia.ee/et/*      https://samaenergia.ee/:splat  301!
+# Juuri on pakotettava (200!): muuten FI-etusivun staattinen index.html varjostaisi säännön.
+https://samaenergia.ee/          /et/index.html                 200!
+# Muut .ee-polut ilman pakkoa: ET-slugit eivät törmää staattisiin tiedostoihin,
+# joten sääntö osuu niihin — mutta /assets/, robots.txt ym. tarjoillaan suoraan.
+https://samaenergia.ee/*         /et/:splat                     200
+https://www.samaenergia.ee/*     https://samaenergia.ee/:splat  301!
 
 https://www.samaenergia.com/* https://samaenergia.fi/:splat     301!
 https://samaenergia.com/*     https://samaenergia.fi/:splat     301!
+
+# Yleiset, hostittomat uudelleenkirjoitukset kaikkien hostisääntöjen JÄLKEEN:
+# paljas ET-slug noutaa sisällön et/-hyllyltä. Ei pakotettu, joten staattiset
+# tiedostot ohittavat säännön; FI- ja ET-slugit ovat erilliset joukot (verify valvoo),
+# joten FI-sivu ei voi varjostua. Tekee myös draft-esikatselusta navigoitavan
+# samoilla kanonisen muotoisilla URL:eilla kuin tuotanto.
+/energiasalvestid/*  /et/energiasalvestid/:splat  200
+/paike-ja-aku/*      /et/paike-ja-aku/:splat      200
+/reserviturud/*      /et/reserviturud/:splat      200
+/protsess/*          /et/protsess/:splat          200
+/uudised/*           /et/uudised/:splat           200
+/meist/*             /et/meist/:splat             200
+/kontakt/*           /et/kontakt/:splat           200
+/andmekaitse/*       /et/andmekaitse/:splat       200
+/aitah/*             /et/aitah/:splat             200
+
+# Lähde- ja työkalutiedostoja ei tarjoilla julkisesti
+/src/*      /404.html  404!
+/scripts/*  /404.html  404!
+/docs/*     /404.html  404!
+/CLAUDE.md  /404.html  404!
+/README.md  /404.html  404!

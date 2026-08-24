@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="et">
+<!-- SAMA Energia — eestikeelne sait (ET).
+     Tämä on lähdetiedosto — sitä ei julkaista sellaisenaan.
+     Julkaistavat sivut generoidaan: node scripts/build-pages.mjs
+     Sivukohtaiset otsikot ja kuvaukset: data-title / data-desc kunkin .page-divin attribuutteina.
+     Käyttötilakaavion kuvaustekstit: data-cap kunkin .ops-napin attribuuttina. -->
+<head>
+<meta charset="utf-8">
+<title>SAMA Energia — lähde (et)</title>
+</head>
+<body class="t3">
+<a href="#main" class="skip">Liigu sisu juurde</a>
+
+<header>
+  <div class="wrap nav">
+    <a href="/" class="brand"><img src="/assets/mark.webp" alt="" width="95" height="96" style="height:32px;width:auto;vertical-align:middle;margin-right:11px;margin-top:-3px">SAMA<span>·</span>ENERGIA</a>
+    <nav class="menu" id="menu">
+      <a href="/energiasalvestid/">Energiasalvestid</a>
+      <a href="/paike-ja-aku/">Päikeseelekter + aku</a>
+      <a href="/reserviturud/">Reserviturud</a>
+      <a href="/protsess/">Kuidas see kulgeb</a>
+      <a href="/uudised/">Uudised</a>
+      <a href="/meist/">Meist</a>
+      <!-- CTA-verb "Küsi", mitte "Broneeri": broneerimissüsteemi ei ole — vorm viib ühenduse
+           võtmiseni. Võimalik hilisem täiendus: ise majutatud kalender (ilma kolmanda osapoole
+           manusteta), misjärel verb võib naasta broneerimise juurde. Sama muudatus FI-allikas. -->
+      <a href="/kontakt/" class="navcta">Küsi kaardistust</a>
+      <div class="langsw" aria-label="Keel / Kieli"><a href="/" lang="fi">FI</a><a href="/" class="cur" aria-current="true">EE</a></div>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menüü" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ══════════════════ AVALEHT ══════════════════ -->
+<div class="page" id="p-home" data-slug="" data-title="Energiasalvestid ja päikeseelekter ettevõtetele | SAMA Energia" data-desc="Ütleme kirjalikult, mida energiasalvesti teie objektil tegelikult toodab — enne kui midagi alla kirjutatakse. Energiasalvestid ja päikeseelekter ettevõtetele ja maaomanikele Eestis ja Soomes.">
+
+  <div class="hero heroimgd">
+    <img class="heroimg" src="/assets/hero.webp" alt="" aria-hidden="true" width="1344" height="752" fetchpriority="high">
+    <div class="heroscrim" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="eyebrow">Energiasalvestid ja päikeseelekter · ettevõtetele ja maaomanikele</p>
+      <!-- OTSUS (Martin, pre-freeze 2026-08-23): mood-slogan h1 säilib teadliku erandina
+           subject-first-reeglist (avaleht = brändipind); lede kannab subjekti. -->
+      <h1>Ühine võrk.<br>Sõltumatu energia.</h1>
+      <p class="lede">Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame <strong>kirjalikult</strong>, enne kui midagi alla kirjutatakse.</p>
+      <div class="btnrow">
+        <a href="/kontakt/" class="btn">Küsige objektikaardistust</a>
+        <a href="/protsess/" class="btn ghost">Vaadake, kuidas protsess kulgeb</a>
+      </div>
+
+      <!-- SIGNATURE -->
+      <div class="freq">
+        <div class="freqhead">
+          <span class="lab">Võrgusagedus — miks energiasalvesteid vajatakse</span>
+          <span class="lab">Illustratsioon sageduse kõikumisest</span>
+        </div>
+        <svg class="trace" viewBox="0 0 1200 130" preserveAspectRatio="none" aria-hidden="true">
+          <line class="mid" x1="0" y1="65" x2="1200" y2="65"></line>
+          <path id="wave" d=""></path>
+        </svg>
+        <p class="freqnote">50,000 Hz on elektrivõrgu tasakaal. Kui sagedus sellest kõrvale kaldub, ei ole tootmine ja tarbimine tasakaalus — ja põhivõrguettevõtted, Eestis Elering ja Soomes Fingrid, maksavad selle eest, et energiasalvestid taastavad tasakaalu sekunditega. Sellel reserviturud põhinevadki.</p>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Mida tarnime</p>
+      <div class="offer">
+        <div class="of-sun">
+          <img class="ofimg" src="/assets/of-aurinko.webp" alt="" aria-hidden="true" width="800" height="533" loading="lazy"><span class="ofscrim" aria-hidden="true"></span>
+          <span class="onum">01</span><span class="ochip"><svg class="oico" viewBox="0 0 28 28" aria-hidden="true"><path d="M5 18 L9 8 H23 L19 18 Z"/><path d="M9.7 11.3 H21.7 M8.4 14.7 H20.4 M13.5 8 L11 18 M18 8 L15.5 18"/><path d="M12 18 v4 M16 18 v4 M9 22 h10"/></svg></span>
+          <a class="offerlink" href="/paike-ja-aku/"><b>PÄIKESEELEKTER</b></a>
+          <p>Paneelid, inverterid ja paigaldus — dimensioneeritud teie tarbimise järgi.</p>
+        </div>
+        <div class="of-batt">
+          <img class="ofimg" src="/assets/of-varasto.webp" alt="" aria-hidden="true" width="800" height="533" loading="lazy"><span class="ofscrim" aria-hidden="true"></span>
+          <span class="onum">02</span><span class="ochip"><svg class="oico" viewBox="0 0 28 28" aria-hidden="true"><rect x="4" y="8" width="17" height="13"/><path d="M21 12h3v5h-3"/><path d="M13.5 10.5 L10.5 15 h4 l-3 4.5" stroke-width="1.5"/></svg></span>
+          <a class="offerlink" href="/energiasalvestid/"><b>ENERGIASALVESTID</b></a>
+          <p>Tööstusklassi akusüsteemid ja nende juhtimine.</p>
+        </div>
+        <div class="of-grid">
+          <img class="ofimg" src="/assets/of-verkko.webp" alt="" aria-hidden="true" width="800" height="533" loading="lazy"><span class="ofscrim" aria-hidden="true"></span>
+          <span class="onum">03</span><span class="ochip"><svg class="oico" viewBox="0 0 28 28" aria-hidden="true"><path d="M2 15 h5 l3 -7 4 12 3 -8 2 3 h5"/><path d="M20 8 l4 -4 M24 8 V4 h-4"/></svg></span>
+          <a class="offerlink" href="/reserviturud/"><b>RESERVITURU ÜHENDUS</b></a>
+          <p>Objekti liitmine reservituruga litsentseeritud agregaatori kaudu.</p>
+        </div>
+      </div>
+      <h2 class="sec-title" style="margin-top:clamp(40px,6vw,58px)">Mida see teie objektil tähendab.</h2>
+      <div class="bene" style="margin-top:36px">
+        <div class="c-las">
+          <h3>Võimsustasud alla</h3>
+          <p>Salvesti lõikab tarbimistipud — mõju on näha võrguarvel. Arvutatakse teie enda tarbimisandmetest.</p>
+          <div class="brow"><span class="tg las">ARVUTATAV</span><a class="morelink" href="/energiasalvestid/#voimsustasu">Loe edasi</a></div>
+        </div>
+        <div class="c-las">
+          <h3>Börsielekter kasuks</h3>
+          <p>Laadimine odavatel tundidel, kasutus kallitel. Optimeerimise väärtus arvutatakse tegelikest hindadest.</p>
+          <div class="brow"><span class="tg las">ARVUTATAV</span><a class="morelink" href="/energiasalvestid/">Loe edasi</a></div>
+        </div>
+        <div class="c-las">
+          <h3>Liitumise laiendamine välditav</h3>
+          <p>Salvesti võib anda tippvõimsuse üle liitumispiiri — laiendamise vajadust hinnatakse enne hanget.</p>
+          <div class="brow"><span class="tg las">ARVUTATAV</span><a class="morelink" href="/energiasalvestid/">Loe edasi</a></div>
+        </div>
+        <div class="c-las">
+          <h3>Oma toodang omaks tarbeks</h3>
+          <p>Päikeseelektri ülejääk salvestisse ja kasutusse siis, kui see on kõige väärtuslikum.</p>
+          <div class="brow"><span class="tg las">ARVUTATAV</span><a class="morelink" href="/paike-ja-aku/">Loe edasi</a></div>
+        </div>
+        <div class="c-koh">
+          <h3>Varutoide rikete ajal</h3>
+          <p>Saartalitluseks projekteeritud süsteem toidab kriitilist koormust. Kinnitatakse objektipõhiselt.</p>
+          <div class="brow"><span class="tg koh">OBJEKTIPÕHINE</span><a class="morelink" href="/paike-ja-aku/">Loe edasi</a></div>
+        </div>
+        <div class="c-ske">
+          <h3>Reservitulu lisana</h3>
+          <p>Agregaatori hinnanguna ja stsenaariumidena — ka eeldusel, et hinnad poolituvad. Mitte kunagi lubadusena.</p>
+          <div class="brow"><span class="tg ske">STSENAARIUM</span><a class="morelink" href="/reserviturud/">Loe edasi</a></div>
+        </div>
+      </div>
+      <div class="btnrow" style="margin-top:38px"><a href="/kontakt/" class="btn">Küsige objektikaardistust</a></div>
+    </div>
+  </section>
+
+  <div class="dark">
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">Kaks lähtekohta</p>
+        <h2 class="sec-title">Päikeseelekter olemas või mitte — alustame samast kohast: teie tarbimisandmetest.</h2>
+        <div class="split" style="margin-top:44px">
+          <div>
+            <span class="doorlab">TEIL ON PÄIKESEELEKTER JUBA OLEMAS</span>
+            <h3 style="font-size:22px;margin-bottom:14px">Aku parandab investeeringut, mille olete juba teinud.</h3>
+            <p style="color:var(--tx2d);font-size:17px">Liitumises olev tootmine eeldab enne pakkumist kirjalikke vastuseid neljale tehnilisele küsimusele: tagasitoite tõkestamine, võimsuse piiramine, mõõtmine ja käitumine side katkemisel. Meie teeme selle selgitustöö ja anname vastused kirjalikult.</p>
+            <div class="btnrow"><a href="/paike-ja-aku/" class="btn ghost">Lugege, kuidas see lahendatakse</a></div>
+          </div>
+          <div>
+            <span class="doorlab">ALUSTATE PUHTALT LEHELT</span>
+            <h3 style="font-size:22px;margin-bottom:14px">Projekteerime terviku ühe süsteemina.</h3>
+            <p style="color:var(--tx2d);font-size:17px">Päikeseelekter, energiasalvesti ja juhtimine dimensioneeritakse koos teie tarbimisandmete põhjal. Algusest peale tervikuna projekteerituna ei jää midagi tagantjärele sobitada, vastutus on ühel osapoolel ja võrguettevõtte kooskõlastus taotletakse korraga.</p>
+            <div class="btnrow"><a href="/kontakt/" class="btn">Küsige objektikaardistust</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Kellele</p>
+      <h2 class="sec-title">Alustame sealt, kus energia on väärtusvalik.</h2>
+      <div class="tri" style="margin-top:44px">
+        <div>
+          <svg class="segico" viewBox="0 0 28 28" aria-hidden="true"><path d="M23 5C14 5 7 9 6 18c0 0 0 5 5 5 9 0 12-9 12-18Z"/><path d="M6 23C10 15 15 10 21 7"/></svg>
+          <span class="num">VÄÄRTUSED EES</span>
+          <h3>Omanikud, kellel on veendumus</h3>
+          <p>Koolitus- ja retriidikeskused, ökokülad, väikesed hotellid, mahetalud, kultuurimajad. Otsustate ise, kust teie elekter tuleb ja kellega asju ajate.</p>
+        </div>
+        <div>
+          <svg class="segico" viewBox="0 0 28 28" aria-hidden="true"><path d="M4 20a10 10 0 0 1 20 0"/><path d="M14 20 20 11"/><path d="M4 20h20" opacity=".45"/></svg>
+          <span class="num">LIITUMINE PIIRI PEAL</span>
+          <h3>Maapiirkonna ettevõtted</h3>
+          <p>Viljakuivatid, meiereid, külmlaod, masinatöökojad, logistika maapiirkonna liitumistel. Aku võib liitumise tugevdamist aastate võrra edasi lükata, vähendada võimsustasusid ja aidata elektrikatkestusest üle.</p>
+        </div>
+        <div>
+          <svg class="segico" viewBox="0 0 28 28" aria-hidden="true"><path d="M4 24v-7h5v7"/><path d="M12 24V11h5v13"/><path d="M20 24V5h5v19"/><path d="M2 24h24" opacity=".45"/></svg>
+          <span class="num">MASTAAP</span>
+          <h3>Äri- ja tööstusobjektid</h3>
+          <p>Hotellid, hooldekinnisvara, tööstus, kinnisvaraportfellid. Tasuvusaeg, bilansihaldus ja tarnija, kes vastutab oma numbrite eest ka viiendal aastal.</p>
+        </div>
+      </div>
+      <div class="callout">
+        <p>Kui teil on pakkumine käes ja soovite teada, kas selle tasuvusnumber peab kokkupuutele tegelikkusega vastu — see on täpselt see töö, mida meie teeme.</p>
+        <p class="sub">Teeme seda sõltumata sellest, kas ostate meilt kunagi midagi.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Miks meid saab usaldada</p>
+      <h2 class="sec-title">Investeerimisotsust ei tehta kellegi sõna peale.</h2>
+      <p class="sec-lede" style="margin-top:16px">Seepärast tõendatakse tehnilised lahendused standarditega, seadmete omadused tootja kirjaliku kinnitusega ja liitumise tingimused võrguettevõtte enda vastusega. Iga number kannab oma allikat — ja see, mida me dokumenteerida ei saa, meie pakkumisse ei jõua.</p>
+      <div class="tri">
+        <div>
+          <span class="num">PÕHIMÕTE 01</span>
+          <h3>Sääst enne tulusid</h3>
+          <p>Võimsustasude alandamine ja börsihinna optimeerimine arvutatakse teie enda tarbimisandmetest. Need on arvutatavad, mitte äraarvatavad.</p>
+        </div>
+        <div>
+          <span class="num">PÕHIMÕTE 02</span>
+          <h3>Reservitulu on lisa, mitte lubadus</h3>
+          <p>Reservitulu võib olla märkimisväärne lisa — ja just seepärast näitame seda ausalt: agregaatori enda hinnanguna ja stsenaariumidena, ka eeldusel, et hinnad poolituvad. Arvutus peab vastu, isegi kui turg muutub.</p>
+        </div>
+        <div>
+          <span class="num">PÕHIMÕTE 03</span>
+          <h3>Võrguettevõtte seisukoht enne</h3>
+          <p>Suurim ebakindlus ei ole seade, vaid luba. Selgitame võrguettevõtte seisukoha välja enne, kui seote kapitali — mitte kasutuselevõtul, kus sama asja selgumine on kõige kallim.</p>
+        </div>
+      </div>
+      <p style="margin-top:36px;color:var(--tx2);font-size:16.5px;max-width:640px">Seadmevalik ei ole see otsus, mis asja lahendab — seadmestik on kõige lihtsam osa. Otsustavad küsimused lahendatakse enne seda ja edenemine on kirjeldatud samm-sammult: <a href="/protsess/">Kuidas see kulgeb</a>.</p>
+      <div class="refslot">
+        <p class="mono" style="font-size:10.5px;letter-spacing:.14em;color:var(--muted);margin-bottom:8px">REFERENTSID</p>
+        <p style="color:var(--tx2);font-size:15.5px;max-width:none">Esimesed objektid dokumenteeritakse siia mõõteandmetega — numbrid enne ja pärast, koos allikatega. Me ei avalda referentse, mida me ei saa tõendada.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="dark">
+    <section>
+      <div class="wrap" style="text-align:center;max-width:760px">
+        <h2 class="sec-title" style="max-width:none;margin:0 auto 16px">Alustame teie tarbimisandmetest.</h2>
+        <p class="sec-lede" style="margin:0 auto">Objektikaardistus on tasuta ega seo teid millegagi. Saate kirjaliku hinnangu — ja see jääb teile igal juhul.</p>
+        <div class="btnrow" style="justify-content:center"><a href="/kontakt/" class="btn">Küsige objektikaardistust</a></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- ══════════════════ ENERGIASALVESTID ══════════════════ -->
+<div class="page" id="p-energiavarastot" data-slug="energiasalvestid" data-title="Tööstuslikud energiasalvestid — kaardistusest kasutuselevõtuni | SAMA Energia" data-desc="Sõltumatu dimensioneerimine, kirjalik säästuarvutus teie tarbimisandmetest ja võrguettevõtte seisukoht enne hanget.">
+  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+    <div class="wrap">
+      <p class="eyebrow">Energiasalvestid</p>
+      <!-- MADIS: uus battery-first h1 (Martin 2026-08-23) — keelekontroll. Senine h1
+           kolis teekonnaosio sissejuhatuseks allpool. -->
+      <h1 style="font-size:clamp(34px,5.4vw,66px)">Tööstuslik energiasalvesti — dimensioneeritud teie enda tarbimisandmetest.</h1>
+      <p class="lede">Oleme tootjatest sõltumatud. Valime seadme objekti järgi ega sobita objekti seadmega, mida juhtume müüma. Kui parim lahendus teie objektile ei tule meilt, ütleme ka seda.</p>
+      <p class="mono" style="margin-top:20px;font-size:11px;letter-spacing:.14em;color:var(--muted-lt)">OBJEKTIKAARDISTUS → ANALÜÜSIPAKETT → TEOSTUS → ELUKAAR</p>
+    </div>
+  </div>
+
+  <!-- MADIS: kogu osio "Mida saate" on uus (Martin 2026-08-23) — keelekontroll.
+       Lävi "~100 kW" kannab KONTROLLITAKSE-märgist teadlikult (kinnitatakse enne
+       main-merget); verify-pages.mjs waiver katab selle. Lingitekstid
+       "Lugege, kuidas see lahendatakse" ja fraas "neli tehnilist küsimust
+       lahendatakse kirjalikult enne pakkumist" on saidil juba olemas. -->
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Mida saate</p>
+      <div class="qa grid">
+        <div>
+          <h2>Võimsustasu alla</h2>
+          <p>Salvesti lõikab tarbimistipud — mõju arvutatakse teie enda tunniandmetest, mitte keskmisest näitest.</p>
+          <p style="margin-top:12px"><a class="morelink" href="#voimsustasu">Näidisarvutus sellel lehel</a></p>
+        </div>
+        <div>
+          <h2>Päikeseelekter + salvesti — üks süsteem</h2>
+          <p>Päikeseelekter ja salvesti projekteeritakse ühe süsteemina — neli tehnilist küsimust lahendatakse kirjalikult enne pakkumist.</p>
+          <p style="margin-top:12px"><a class="morelink" href="/paike-ja-aku/">Lugege, kuidas see lahendatakse</a></p>
+        </div>
+        <div>
+          <h2>Reservivalmidus</h2>
+          <p>Süsteem projekteeritakse reservituru nõuetele — tulu näidatakse alati stsenaariumina, mitte lubadusena.</p>
+          <p style="margin-top:12px"><a class="morelink" href="/reserviturud/">Reserviturud — mis need on</a></p>
+        </div>
+      </div>
+      <!-- OTSUS (Martin, pre-freeze): KONTROLLITAKSE-märgis eemaldatud — lävi avaldatakse
+           ligikaudsena (~), lõplik sõnastus keelekontrollis. -->
+      <p style="margin-top:26px;color:var(--tx2);font-size:16px">Tüüpiline objekt: keskpinge või suur madalpinge liitumine, kuutipud alates ~100 kW</p>
+    </div>
+  </section>
+
+  <!-- MADIS: kogu osio "Süsteem ise" on uus (Martin 2026-08-23) — tähendus Martini
+       labori mustandist v20, täpne eesti sõnastus sinu keelekontrolli pass.
+       Numbrid 125 kW / ~250 kWh / ~2 h on samad, mis allpool näidisarvutuses. -->
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Süsteem ise</p>
+      <h2 class="sec-title">Mis seade see on — võimsus, energia ja kestus.</h2>
+      <div class="split" style="margin-top:44px">
+        <div>
+          <h3 style="font-size:22px;margin-bottom:12px">kW on kiirus, kWh on maht.</h3>
+          <p style="color:var(--tx2);font-size:16.5px">Võimsus (kW) ütleb, kui suurt koormust salvesti korraga kannab; energia (kWh) ütleb, kui kaua ta seda jaksab. Nende suhe on kestus: 125 kW võimsusega ja ~250 kWh kasutatava energiaga salvesti töötab täisvõimsusel umbes 2 tundi. Tipu lõikamiseks peab kestus katma teie tipu pikkuse — sellepärast dimensioneeritakse mõlemad teie enda tunniandmetest.</p>
+        </div>
+        <div>
+          <h3 style="font-size:22px;margin-bottom:12px">Kabinett või konteiner.</h3>
+          <p style="color:var(--tx2);font-size:16.5px">Väiksemad süsteemid on külmikusuurused kabinetid, suuremad merekonteineri mõõdus üksused. Seade valitakse objekti järgi ja valik põhjendatakse kirjalikult — me ei ole seotud ühegi tootjaga.</p>
+        </div>
+      </div>
+      <p style="margin-top:26px;color:var(--tx2);font-size:16px">Süsteem paigaldatakse õue, seda juhitakse reaalajas liitumispunkti mõõtmise järgi ning võrguettevõtte kirjalik seisukoht hangitakse enne, kui midagi ostetakse.</p>
+    </div>
+  </section>
+
+  <!-- MADIS: teekonna tihendus (Martin 2026-08-23) — neli täisetappi asendatud
+       kiipidega. Allkirjalaused on sõna-sõnalt senisest tekstist (sinu pass juba
+       kattis need); UUED stringid on rubriik "Kuidas selleni jõuame" ja lingirida
+       "Kogu protsess — etapid ja kestused". Sissejuhatuslause = endine h1. -->
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Kuidas selleni jõuame</p>
+      <h2 class="sec-title">Kaardistusest töötava, dokumenteeritud ja tootva süsteemini.</h2>
+      <div class="qa grid" style="margin-top:36px">
+        <div>
+          <h3>01 · Objektikaardistus</h3>
+          <p>Mõnikord on vastus ei. Ütleme selle välja — ja olete kaotanud vestluse, mitte aasta.</p>
+        </div>
+        <div>
+          <h3>02 · Analüüsipakett</h3>
+          <p>Otsus tehakse koosolekul, kus müüjat ei ole. Esitlus sinna ei pääse — kirjalik analüüs pääseb: seda saab saata finantsjuhile, kahtluse alla seada ja kaitsta.</p>
+        </div>
+        <div>
+          <h3>03 · Teostus</h3>
+          <p>Saate põhjaliku üleandmispaketi — mitte kausta, mis pandi kiirustades kokku viimasel pärastlõunal.</p>
+        </div>
+        <div>
+          <h3>04 · Elukaar</h3>
+          <p>Oleme kohal ka kolmandal aastal ja esimese aasta numbrid on endiselt kontrollitavad.</p>
+        </div>
+      </div>
+      <!-- OTSUS b4 (Martin, pre-freeze): kiibipõhised lingiread eemaldatud,
+           üks lingirida ruudustiku järel. -->
+      <p style="margin-top:26px"><a class="morelink" href="/protsess/">Kogu protsess — etapid ja kestused</a></p>
+    </div>
+  </section>
+
+  <!-- VÕIMSUSTASU NÄIDISARVUTUS — Madise autoritekst (2026-08-21), talon tyylissä,
+       DOKUMENTEERITUD/MODELLEERITUD-leimat säilytetty. Paketivalik: VKL5 (Madise otsus,
+       korvaa aiemman VKL2-luonnoksen ja 60–100 kW -kysymyksen). Korjaukset MADIS-kommentein. -->
+  <section id="voimsustasu">
+    <div class="wrap">
+      <p class="eyebrow">Võimsustasu näidisarvutus</p>
+      <h2 class="sec-title">Me ei avalda tulunumbreid, mida keegi ei kontrolli. Võimsustasu on teistsugune.</h2>
+      <p class="sec-lede">Määr on avalik, mehhanism on avalik ja mõju arvutatakse teie enda tunniandmetest. Allpool on näidisarvutus keskpinge tööstusobjektile — dokumenteeritud pool ja selgelt märgistatud eeldused eraldi.</p>
+
+      <div class="split" style="margin-top:44px">
+        <div>
+          <span class="tg las" style="display:inline-block;margin-bottom:16px">DOKUMENTEERITUD</span>
+          <h3 style="font-size:22px;margin-bottom:12px">Kuidas Elektrilevi võimsustasu arvestab</h3>
+          <ul class="checks">
+            <li>Arvestuse alus on tunni keskmine võimsus — mõõdetud, mitte hetkeline tipp.</li>
+            <li>Tasu võetakse kuu maksimaalse tunnikeskmise alusel ja mõõtmine algab iga kuu nullist — salvesti teenib 12 korda aastas.</li>
+            <li>VKL5: võrguühenduse kasutusvõimsus <span class="mono">3,48 €/kW kuus</span> käibemaksuta → <span class="mono">41,76 €/kW aastas</span>.</li>
+          </ul>
+          <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:14px">ALLIKAS: ELEKTRILEVI VÕRGUTEENUSE HINNAKIRI, KEHTIB ALATES 1.06.2026 · KONKURENTSIAMETI OTSUS NR 7-3/2026-028 (02.03.2026) · DOKUMENTEERITUD</p>
+        </div>
+        <div>
+          <span class="tg ske" style="display:inline-block;margin-bottom:16px">MODELLEERITUD</span>
+          <h3 style="font-size:22px;margin-bottom:12px">Näidisobjekt — eeldused eraldi</h3>
+          <ul class="checks">
+            <li>Keskpinge tööstusobjekt 6–35 kV liinil, pakett VKL5</li>
+            <li>Kuu tipp 480 kW, tavavõimsus ~350 kW</li>
+            <li>Tipud hommikuse käivituse ajal, kestus kuni 1,5 h</li>
+            <li>Salvesti 125 kW / 2 h (~250 kWh kasutatav)</li>
+            <li>Siht: tipp alla 380 kW — 100 kW lõige, 25 kW varu</li>
+          </ul>
+        </div>
+      </div>
+
+      <table class="tbl">
+        <thead>
+          <tr><th>Samm</th><th>Väärtus</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Kuu tipp enne</td><td>480 kW</td></tr>
+          <tr><td>Siht pärast lõiget</td><td>380 kW — lõige 100 kW</td></tr>
+          <tr><td>Energiakontroll</td><td>100 kW × 1,5 h = 150 kWh ≤ ~250 kWh kasutatav → teostatav</td></tr>
+          <tr><td>Määr</td><td>3,48 €/kW kuus (VKL5, võrguühenduse kasutusvõimsus, käibemaksuta)</td></tr>
+          <tr><td>Sääst kuus</td><td>100 kW × 3,48 € = 348 €</td></tr>
+          <tr><td>Sääst aastas</td><td><b>4 176 €</b> — ainult kasutusvõimsuse komponent</td></tr>
+        </tbody>
+      </table>
+
+      <p class="eyebrow" style="margin-top:clamp(40px,6vw,56px)">Mida see näide ei sisalda</p>
+      <div class="qa" style="margin-top:0">
+        <div><h3>Reservitulu</h3><p>Alati eraldi ja stsenaariumidena, mitte selle arvutuse sees. <a href="/reserviturud/">Miks, loe siit →</a></p></div>
+        <!-- MADIS: "Miks, loe siit →" viitab /et/reserviturud-lehele (parandus c). -->
+        <div><h3>Börsihinna optimeerimine ja tipuaja edastamise vahe</h3><p>VKL5 talvine tipuaeg 2,06 s/kWh vs öö 0,75 s/kWh → 1,31 senti lisahooba iga nihutatud kWh kohta. Eraldi rida, mitte selle näite osa.</p></div>
+        <div><h3>Akukaod</h3><p>Salvestamisel ja tagastamisel kaob 10–15% energiast — see arvestatakse täisarvutuses sisse.</p></div>
+        <div><h3>Teie objekt</h3><p>Tipu kestus teie objektil määrab, kas salvesti energia jätkub — sellepärast arvutame lõpliku numbri teie enda tunniandmetest, mitte näitest.</p></div>
+      </div>
+
+      <p class="eyebrow" style="margin-top:clamp(40px,6vw,56px)">Kaks lisahooba samast hinnakirjast</p>
+      <div class="tri duo" style="margin-top:24px">
+        <div><span class="num">01 · LÄBILASKEVÕIME</span><h3>Üle 630 kW osa</h3><p>Läbilaskevõime tasu 630 kW ületavalt osalt on 0,32 €/kW kuus — tipu lõikamine võib vähendada ka seda rida.</p></div>
+        <!-- MADIS: kehatekstissäsi VKL5 tarbimiskoha määräksi oli merkitty 3,75 €/kW kuus —
+             hinnakirjan mukaan VKL5 = 3,61 (3,75 on VKL2:n määrä; oma liitetaulukkosi on oikein).
+             Käytetty 3,61 (parandus a). -->
+        <div><span class="num">02 · SUMMAARNE ARVESTUS</span><h3>Mitu liitumispunkti</h3><p>Mitme liitumispunktiga tarbimiskoha võimsust arvestatakse summaarselt — VKL5 tarbimiskoha kasutusvõimsuse määr on 3,61 €/kW kuus.</p></div>
+      </div>
+
+      <div class="callout">
+        <p>Just seda kontrollib tasuta objektikaardistus teie enda tarbimisandmete põhjal — enne kui midagi alla kirjutatakse.</p>
+        <p class="sub">Näide on illustratsioon mehhanismist. Teie number arvutatakse teie tunniandmetest ja antakse kirjalikult.</p>
+      </div>
+      <!-- MADIS: CTA "Broneerige objektikaardistus" → "Küsige objektikaardistust" (parandus b). -->
+      <div class="btnrow"><a href="/kontakt/" class="btn">Küsige objektikaardistust</a></div>
+      <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:18px">KÕIK MÄÄRAD: ELEKTRILEVI VÕRGUTEENUSE HINNAKIRI 1.06.2026 · KONKURENTSIAMETI OTSUS NR 7-3/2026-028 · KÄIBEMAKSUTA · DOKUMENTEERITUD</p>
+
+      <p class="eyebrow" style="margin-top:clamp(40px,6vw,56px)">Lisa: võrguühenduse kasutusvõimsuse määrad paketiti</p>
+      <table class="tbl">
+        <thead>
+          <tr><th>Pakett</th><th>€/kW kuus</th><th>€/kW aastas</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>VMA2</td><td>2,45</td><td>29,40</td></tr>
+          <tr><td>VMA5</td><td>2,35</td><td>28,20</td></tr>
+          <tr><td>VMA9</td><td>1,80</td><td>21,60</td></tr>
+          <tr><td>VKL2</td><td>3,61</td><td>43,32</td></tr>
+          <tr><td>VKL5</td><td>3,48</td><td>41,76</td></tr>
+          <tr><td>VKA2</td><td>3,50</td><td>42,00</td></tr>
+          <tr><td>VKA5</td><td>3,38</td><td>40,56</td></tr>
+          <tr><td>Mega (VKA4/VKL4)</td><td>2,60</td><td>31,20</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- RAHASTUS: võimalus, mitte lubadus. Rahastaja tingimusi ei ole veel dokumenteeritud —
+       plokk uuendatakse siduvasse sõnastusse alles siis, kui tingimused on kantud
+       numbriregistrisse. Ei rahastajanimesid, ei intresse, ei makseridu, ei kindlust
+       väitvaid verbe. Sama reegel FI-vastes. -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="refslot">
+        <p class="mono" style="font-size:10.5px;letter-spacing:.14em;color:var(--muted);margin-bottom:8px">RAHASTUS</p>
+        <p style="color:var(--tx2);font-size:15.5px;max-width:none">Hange võib olla võimalik ka ilma ettemaksuta rahastuspartneri kaudu — selgitame võimalused välja objektikaardistuse käigus. Eesmärk on, et kuumakse jääks modelleeritud kuusäästust väiksemaks.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="dark">
+    <!-- Ankur-id (auditi kiirvõit a5): teise arvamuse / pakkumise ülevaatuse
+         omanikuosa — avalehe callout ja reservilehe tööriist lingivad siia
+         hilisemas etapis (roadmap c12). -->
+    <section id="konsultatsioon">
+      <div class="wrap">
+        <p class="eyebrow">Eraldi</p>
+        <div class="split">
+          <div><h2 class="sec-title">Konsultatsioon ilma seadmemüügita.</h2></div>
+          <div>
+            <p class="sec-lede">Kõik objektid ei vaja meilt seadet.</p>
+            <ul class="checks">
+              <li>Teostatavuse hindamine</li>
+              <li>Võrguettevõtte protsessi tugi</li>
+              <li>Tehnilise nõuetele vastavuse kontroll</li>
+              <li>Teistelt tarnijatelt saadud pakkumiste sõltumatu hindamine</li>
+            </ul>
+            <div class="btnrow"><a href="/kontakt/" class="btn">Küsige objektikaardistust</a><a href="/kontakt/" class="btn ghost">Võtke ühendust</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- ══════════════════ PÄIKE + AKU ══════════════════ -->
+<div class="page" id="p-aurinko" data-slug="paike-ja-aku" data-title="Päikeseelekter + aku — üks süsteem | SAMA Energia" data-desc="Aku olemasoleva päikeseelektri kõrvale või kogu süsteem korraga. Neli tehnilist küsimust lahendatakse kirjalikult enne pakkumist.">
+  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+    <div class="wrap">
+      <p class="eyebrow">Päikeseelekter + aku</p>
+      <h1 style="font-size:clamp(34px,5.4vw,66px)">Päike toodab.<br>Aku ajastab.</h1>
+      <p class="lede">Koos teevad need teie kinnistust tootja, kes kasutab oma elektrit siis, kui see on kõige väärtuslikum. Tarnime kogu süsteemi algusest peale — või täiendame seda, mis teil juba on.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Kaks teed sama süsteemini</p>
+      <div class="split" style="margin-top:34px">
+        <div>
+          <span class="num">ALUSTATE PUHTALT LEHELT</span>
+          <h2 style="font-size:22px;margin-bottom:12px">Kogu süsteem korraga.</h2>
+          <p style="color:var(--tx2);font-size:16.5px">Päikeseelekter, salvesti ja juhtimine projekteeritakse ühe tervikuna teie tarbimisandmetest. Tagantjärele sobitamist ei jää — kuidas, sellest allpool.</p>
+        </div>
+        <div>
+          <span class="num">TEIL ON PÄIKESEELEKTER JUBA OLEMAS</span>
+          <h2 style="font-size:22px;margin-bottom:12px">Aku täiendab investeeringut.</h2>
+          <p style="color:var(--tx2);font-size:16.5px">Neli tehnilist küsimust lahendatakse kirjalikult enne pakkumist. Seejärel on aku lisamine kontrollitud elektritehniline töö — küsimused ja lahendus allpool.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="dark">
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">Teil on päikeseelekter juba olemas</p>
+        <h2 class="sec-title">Neli küsimust, mis lahendatakse kõigepealt.</h2>
+        <div class="grids" style="margin-top:36px">
+          <div class="gcell"><div class="t">01 · Tagasitoide</div><div class="s" style="font-size:16px">Kuidas tagasitoide tõkestatakse, kui mõlemad toodavad?</div></div>
+          <div class="gcell"><div class="t">02 · Võimsuse piiramine</div><div class="s" style="font-size:16px">Kuidas olemasolevat tootmist piiratakse, kui kiiresti ja millega?</div></div>
+          <div class="gcell"><div class="t">03 · Mõõtmine</div><div class="s" style="font-size:16px">Kuidas korraldatakse mõõtmine liitumispunktis?</div></div>
+          <div class="gcell"><div class="t">04 · Side</div><div class="s" style="font-size:16px">Millisesse olekusse süsteem läheb, kui ühendus komponentide vahel katkeb?</div></div>
+        </div>
+
+        <div class="split" style="margin-top:clamp(40px,6vw,64px)">
+          <div>
+            <div class="ops" role="group" aria-label="Töörežiimid" style="margin-top:0;margin-bottom:18px">
+              <button type="button" data-s="sun" data-cap="Päeval toodab päike. Ülejääk ei lähe odavalt võrku, vaid salvestisse omaks tarbeks." class="act">PÄEV</button>
+              <button type="button" data-s="peak" data-cap="Tarbimistipu ajal salvesti tühjeneb ja võrgust võetav võimsus püsib võimsuslae all.">TIPP</button>
+              <button type="button" data-s="night" data-cap="Öösel ja odava hinna tundidel salvesti laeb. Energia liigub kallitele tundidele.">ÖÖ</button>
+              <button type="button" data-s="res" data-cap="Võrgu sagedus kaldub kõrvale. Salvesti vastab sekunditega — reservitulu liigub agregaatori kaudu ja seda näidatakse alati stsenaariumina, mitte lubadusena.">RESERV</button>
+              <button type="button" data-s="out" data-cap="Saartalitluseks projekteeritud süsteem toidab katkestuse ajal kriitilist koormust. See omadus ei kuulu igasse komplekti, vaid kinnitatakse objektipõhiselt.">KATKESTUS</button>
+            </div>
+            <svg class="sysdia" viewBox="0 0 620 372" aria-hidden="true">
+              <rect x="20" y="34" width="150" height="52"/>
+              <text x="95" y="64" text-anchor="middle">PÄIKESEPANEELID</text>
+              <rect x="20" y="138" width="150" height="52"/>
+              <text x="95" y="168" text-anchor="middle">INVERTER</text>
+              <rect x="20" y="242" width="150" height="52"/>
+              <text x="95" y="268" text-anchor="middle">AKU</text>
+              <rect id="opFill" class="op-fill" x="24" y="276" width="142" height="12"/>
+              <line x1="95" y1="86" x2="95" y2="138"/>
+              <line x1="170" y1="164" x2="255" y2="164"/>
+              <line x1="170" y1="268" x2="255" y2="268"/>
+              <line class="bus" x1="255" y1="120" x2="255" y2="306"/>
+              <line x1="255" y1="120" x2="332" y2="120"/>
+              <circle class="sigst" cx="352" cy="120" r="20"/>
+              <text class="sig" x="352" y="125" text-anchor="middle">M</text>
+              <line x1="372" y1="120" x2="440" y2="120"/>
+              <g id="opVerkko">
+                <rect x="440" y="94" width="160" height="52"/>
+                <text x="520" y="115" text-anchor="middle">VÕRK</text>
+                <text x="520" y="131" text-anchor="middle" style="font-size:9px">LIITUMISPUNKT</text>
+              </g>
+              <rect x="210" y="306" width="90" height="46"/>
+              <text x="255" y="333" text-anchor="middle">HOONE</text>
+              <rect class="sigst" x="300" y="216" width="150" height="50"/>
+              <text class="sig" x="375" y="245" text-anchor="middle">KONTROLLER</text>
+              <polyline class="ctrl" points="352,216 352,140"/>
+              <polyline class="ctrl" points="300,246 226,246 226,282 170,282"/>
+              <polyline class="ctrl" points="300,231 210,231 210,178 170,178"/>
+              <path id="opSol" class="op-flow" d="M95 86 V138 M170 164 H251"/>
+              <path id="opBatt" class="op-flow" d="M170 268 H251"/>
+              <path id="opChg" class="op-flow rv" d="M170 268 H251"/>
+              <path id="opGrid" class="op-flow" d="M440 120 H374 M330 120 H259"/>
+              <path id="opRes" class="op-flow" d="M259 120 H330 M374 120 H440"/>
+              <path id="opBus" class="op-flow" d="M255 120 V304"/>
+            </svg>
+            <p class="opscap" id="opsCap" style="font-size:15.5px;min-height:4em"></p>
+            <p class="mono" style="font-size:11px;letter-spacing:.08em;color:var(--muted-lt);margin-top:6px">MÕÕTMINE LIITUMISPUNKTIS TOIDAB KONTROLLERIT · SIDE KATKEMISEL LÄHEB SÜSTEEM OHUTUSSE OLEKUSSE</p>
+          </div>
+          <div>
+            <h3 style="font-size:22px;margin-bottom:14px">Mõõtmine liitumispunktis ja juhtimine, millel on tõrkekindel olek.</h3>
+            <p style="color:var(--tx2d);font-size:17px">Liitumispunkti paigaldatav mõõteseade jälgib võimsuse suunda ja suurust reaalajas ning edastab info kohalikule kontrollerile. Kui tootmine ähvardab võrku toita üle lubatu, piirab kontroller seda. Kui side katkeb, läheb süsteem ohutusse olekusse, mitte kontrollimatusse — ja just seda tahab võrguettevõte näha, enne kui ta midagi heaks kiidab.</p>
+            <p style="margin-top:16px;color:var(--tx2d);font-size:17px">Komponendid on standardtooted, saadaval väljakujunenud tarnijatelt lühikeste tarneaegadega. Paigalduse teeb alati sertifitseeritud elektritööde ettevõte.</p>
+            <p style="margin-top:18px;font-family:'Archivo',sans-serif;font-weight:600;font-size:18px;color:var(--dk-hd);letter-spacing:-.015em">Siin ei ole midagi eksootilist. Lahendus on standardtehnika — töö seisneb selle korralikus, eelnevas ja kirjalikus väljaselgitamises.</p>
+          </div>
+        </div>
+
+        <p class="eyebrow" style="margin-top:clamp(40px,6vw,60px)">Mida selgitame välja enne pakkumist</p>
+        <div class="split" style="margin-top:0">
+          <ul class="checks" style="margin-top:10px">
+            <li>Akusüsteemi ja teie olemasolevate inverterite ühilduvus</li>
+            <li>Kas aku kontroller võtab vastu väliseid võimsuse piiramise käske ja kuidas seda tõendatakse</li>
+            <li>Tagasitoite tõkestamine ja mõõtmine liitumispunktis</li>
+          </ul>
+          <ul class="checks" style="margin-top:10px">
+            <li>Käitumine side katkemisel — millisesse olekusse süsteem läheb</li>
+            <li>Kuidas aku ja olemasolev tootmine omavahel ning agregaatoriga koordineeritakse</li>
+            <li>Kas teie olemasolevas paigaldises on midagi muuta — ja mida</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <p>Kirjalikult. Tootjalt ja teie võrguettevõttelt. Enne kui esitame teile hinna.</p>
+        </div>
+        <div class="btnrow"><a href="/kontakt/" class="btn">Küsige kaardistust oma objektile</a></div>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Päikeseelektrit veel ei ole?</p>
+      <h2 class="sec-title">Tervik tasub projekteerida korraga.</h2>
+      <p class="sec-lede">Tarnime ka kogu süsteemi: päikeseelektri, energiasalvesti ja juhtimise ühe projekteeritud tervikuna. Siis lahendatakse eelkirjeldatud küsimused projekteerimislaual — mitte tagantjärele selgitades.</p>
+      <div class="tri duo" style="margin-top:44px">
+        <div><span class="num">01 · ÜHISDIMENSIONEERIMINE</span><h3>Õige suurus mõlemale</h3><p>Tootmine ja salvesti dimensioneeritakse samadest tarbimisandmetest — kumbki õiges suuruses ja teineteise jaoks.</p></div>
+        <div><span class="num">02 · ARHITEKTUUR</span><h3>Valik põhjendatakse</h3><p>Hübriidinverter või eraldi süsteem — lahendus valitakse objekti järgi ja põhjendatakse kirjalikult. Me ei ole seotud ühegi tootjaga.</p></div>
+        <div><span class="num">03 · ALGUSEST PEALE ÕIGESTI</span><h3>Võimsusjuhtimine sisse, mitte peale</h3><p>Tagasitoite haldus ja mõõtmine projekteeritakse süsteemi algusest peale, mitte ei sobitata tagantjärele.</p></div>
+        <div><span class="num">04 · ÜKS VASTUTAJA</span><h3>Üks projekt, üks tarne</h3><p>Üks võrguettevõtte protsess ja üks osapool, kes vastutab terviku eest — projekteerimisest kasutuselevõtu ja seireni.</p></div>
+      </div>
+      <div class="btnrow"><a href="/kontakt/" class="btn">Küsige objektikaardistust</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════ RESERVITURUD ══════════════════ -->
+<div class="page" id="p-reservi" data-slug="reserviturud" data-title="Reserviturud: FCR, aFRR ja mFRR selgitatuna | SAMA Energia" data-desc="Mida reservitooted akult nõuavad, kuidas objekt turule pääseb — ja miks me tulunumbreid ei avalda.">
+  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+    <div class="wrap">
+      <p class="eyebrow">Reserviturud · uuendatakse regulaarselt</p>
+      <h1 style="font-size:clamp(34px,5.4vw,66px)">Reserviturud: mis need on, mida need nõuavad ja mida me nende kohta ei luba</h1>
+      <p class="lede">See leht selgitab mehhanismi. Siin ei ole tulunumbreid — ja allpool ütleme, miks.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <p class="eyebrow">Põhiasi</p>
+          <h2 class="sec-title">Elektrivõrk on tasakaalus ainult siis, kui tootmine ja tarbimine on igal hetkel võrdsed.</h2>
+        </div>
+        <div>
+          <p class="sec-lede">Kui need ei ole, liigub sagedus. Põhjamaade ja Mandri-Euroopa süsteemis on eesmärk 50,000 Hz. Kui tarbimine ületab tootmise, sagedus langeb. Kui tootmine ületab tarbimise, sagedus tõuseb.</p>
+          <p style="margin-top:20px;color:var(--tx2)">Varem hoolitsesid selle eest suured jaamad, mis reguleerisid oma tootmist. Ilmastikust sõltuva tootmise kasvades ja reguleeritava võimsuse kadudes ostab põhivõrguettevõte seda reguleerimisvõimet turult — ka akudelt.</p>
+          <p style="margin-top:20px;color:var(--tx2)">Aku sobib siia erakordselt hästi, sest see reageerib sekunditega ning suudab võimsust nii vastu võtta kui ka anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="dark">
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">Tooted</p>
+        <h2 class="sec-title">Reservitooted ja mida igaüks akult nõuab</h2>
+        <p class="sec-lede">Eri tooted eeldavad eri reageerimiskiirust ja eri kestust. Kestus määrab aku energiamahu suhte võimsusse — see on koht, kus valesti dimensioneeritud süsteem ei kõlba turule, mille jaoks see müüdi.</p>
+        <table class="tbl">
+          <thead>
+            <tr><th>Toode</th><th>Mida see teeb</th><th>Nõue akule</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>FCR-N</td>
+              <td>Sageduse pidev peenhäälestus normaalolukorras. Reageerib ka väikestele kõrvalekalletele.</td>
+              <td>Võime võimsust sümmeetriliselt nii võtta kui ka anda. Nõuab üldjuhul pikimat kestust mõlemas suunas.</td>
+            </tr>
+            <tr>
+              <td>FCR-D</td>
+              <td>Häirereserv. Aktiveerub alles siis, kui sagedus kaldub oluliselt kõrvale — näiteks kui suur tootmisüksus võrgust eraldub.</td>
+              <td>Kiire aktiveerumine, lühem kestus. Kõige tavalisem lähtekoht äri- ja tööstussuuruses akudele.</td>
+            </tr>
+            <tr>
+              <td>aFRR</td>
+              <td>Automaatne sageduse taastamine. Viib sageduse pärast FCR-i tagasi sihtväärtusele.</td>
+              <td>Pikem kestus ja pidev juhitavus. Nõuab rohkem energiat võimsuse suhtes.</td>
+            </tr>
+            <tr>
+              <td>mFRR</td>
+              <td>Manuaalne reserv. Aktiveeritakse käsu peale pikemaajalisteks olukordadeks.</td>
+              <td>Pikim kestus. Harvem ärisuuruses aku esmane toode.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin-top:26px;color:var(--tx2d);font-size:16px">Täpsed kestusnõuded ja tehnilised tingimused määrab põhivõrguettevõte — Eestis Elering, Soomes Fingrid — ja need muutuvad. Kasutame alati kehtivat tingimust, mitte mälu järgi numbrit.</p>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Kuidas objekt turule pääseb</p>
+      <div class="steps">
+        <div class="step">
+          <span class="idx">01</span>
+          <div><h2>Agregaator</h2><p>Üksik tööstusaku on liiga väike, et osaleda otse. Agregaator koondab mitu objekti üheks pakkumiseks turule, tegeleb pakkumisega ja jagab tulu. Agregaator — mitte seadmetarnija — määrab, millistesse toodetesse objekt kõlbab.</p></div>
+          <span class="dur">Kohustuslik</span>
+        </div>
+        <div class="step">
+          <span class="idx">02</span>
+          <div><h2>Eelkvalifitseerimine</h2><p>Põhivõrguettevõte nõuab, et üksus tõendaks toote tehnilistele nõuetele vastavust. See on mõõtmistega tõendatav protsess, mitte teavitamisasi.</p></div>
+          <span class="dur">Enne tulusid</span>
+        </div>
+        <div class="step">
+          <span class="idx">03</span>
+          <div><h2>Mõõtmine ja side</h2><p>Reaalajas mõõteandmete vahetus on osalemise eeldus. Suuremates objektides on nõuded rangemad.</p></div>
+          <span class="dur">Tehniline tingimus</span>
+        </div>
+        <div class="step">
+          <span class="idx">04</span>
+          <div><h2>Võrguettevõtte kooskõlastus</h2><p>Erinev protsess kui põhivõrguettevõtte oma. Jaotusvõrguettevõte otsustab liitumispõhiselt, mida liitumisse tohib ühendada ja millistel tingimustel.</p></div>
+          <span class="dur">Kõigepealt</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="dark">
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">Kõige olulisem koht sellel lehel</p>
+        <div class="split">
+          <div><h2 class="sec-title">Miks me ei avalda tulunumbreid</h2></div>
+          <div>
+            <p class="sec-lede">Iga akupakkumine sisaldab tasuvusnumbrit. Otsustav on, millistele eeldustele see on ehitatud — ja kes seisab nende taga ka viiendal aastal.</p>
+            <p style="margin-top:20px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Reservihinnad kõiguvad tundide kaupa</strong> ja kujunevad turul. Keegi ei tea ette, millised need on järgmisel aastal.</p>
+            <!-- MADIS: allaolev lõik on sinu autoritekst sõna-sõnalt (asendab varasema
+                 "langustrendis"-raamistuse). Püsipakkumine kogu reserviosa ümberkirjutuseks
+                 mõlemas keeles on teada — see lõik on esimene samm. -->
+            <p style="margin-top:16px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Vajadus kasvab. Hind ühiku kohta surutakse lähiaastatel kokku.</strong> Pärast Venemaa sagedusalast väljumist vastutab Eesti ise oma süsteemi tasakaalu eest — Elering hangib sagedusreserve kasvavas mahus ja alates 2026. aastast maksab selle eest iga Eesti elektritarbija oma arvel. See vajadus on struktuurne ja kasvab. Samal ajal tuleb mõlemale turule suuremahuline salvestus kiiremini, kui turg süveneb, ja see surub ühikuhinda. See on faas, mitte languse lugu: pärast tasakaalustumist premeerib turg efektiivseid varasid — aga tänaseid hindu me homsesse arvutusse ei kirjuta. Sellepärast ehitame tasuvuse säästudele ja näitame reservitulu stsenaariumidena, ka poolitunud hindadega. Kasvav paindlikkusturg jääb teie objektile lisaväärtuseks, mille te omandate — mitte eelduseks, millest projekt sõltub.</p>
+            <p style="margin-top:16px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Me ei tea, kuidas objekt kvalifitseerub</strong>, enne kui agregaator on seda hinnanud. Seda hinnangut ei ole olemas etapis, kus enamik pakkumisi kirjutatakse.</p>
+            <p style="margin-top:24px;font-family:'Archivo',sans-serif;font-weight:600;font-size:19px;color:var(--dk-hd);letter-spacing:-.015em">Number, mille meie anname, peab taluma kontrolli ka viiendal aastal. Seepärast ehitame arvutuse säästudele ja esitame reservitulu lisana: agregaatori enda hinnanguna, mille kõrval on stsenaarium sellest, mis juhtub, kui hinnad poolituvad.</p>
+            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Kui projekt toimib ainult siis, kui reservihinnad püsivad, ütleme seda. See tähendab, et projekt on habras, ja seda tasub teada enne allkirja, mitte teisel aastal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Miks reservivajadus kasvab</p>
+      <h2 class="sec-title">Kolm dokumenteeritud märki samast struktuursest vajadusest.</h2>
+      <!-- MADIS: statrow lisatud (auditi kiirvõit a6) — numbrid sõna-sõnalt allolevatest
+           dokumenteeritud punktidest, allikaread püsivad punktide juures. Siltide
+           lühisõnastus on uus — keelekontroll. -->
+      <div class="statrow" style="margin-top:36px">
+        <div><b>01.01.2026</b><span>tasakaalustamisvõimsuse kulu igal arvel omaette reana</span></div>
+        <div><b>250–400 MW</b><span>Eleringi plaanitav sagedusreservide hange</span></div>
+        <div><b>1300→2100 MW</b><span>juhitava võimsuse vajadus 2030→2035</span></div>
+      </div>
+      <ul class="checks" style="margin-top:26px">
+        <li>Tasakaalustamisvõimsuse kulu tuleb alates 01.01.2026 iga Eesti elektritarbija arvele omaette reana.<br><span class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted)">ALLIKAS: <a href="https://elering.ee/tasakaalustamisvoimsuse-kulu" target="_blank" rel="noopener noreferrer">ELERING — TASAKAALUSTAMISVÕIMSUSE KULU&nbsp;↗</a> · DOKUMENTEERITUD</span></li>
+        <li>Elering plaanib sagedusreservide hanget — Eestis suurusjärgus 250–400 MW.<br><span class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted)">ALLIKAS: <a href="https://www.err.ee/1609161400/elering-plaanib-kuni-400-megavatist-sagedusreservide-hanget" target="_blank" rel="noopener noreferrer">ERR 2026&nbsp;↗</a> · DOKUMENTEERITUD</span></li>
+        <li>Juhitava võimsuse vajadus kasvab Eleringi varustuskindluse aruande järgi umbes 1300 MW-lt (2030) umbes 2100 MW-le (2035).<br><span class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted)">ALLIKAS: <a href="https://elering.ee/sites/default/files/public/varustuskindluse%20konverentsid/2025/Elering_VKA_2025_veeb-1.pdf" target="_blank" rel="noopener noreferrer">ELERING — VARUSTUSKINDLUSE ARUANNE 2025 (PDF)&nbsp;↗</a> · DOKUMENTEERITUD</span></li>
+      </ul>
+      <p style="margin-top:26px;color:var(--tx2);font-size:16px">Vajadus on struktuurne. Hind ühiku kohta on turu asi — ja just sellepärast näitame reservitulu alati stsenaariumidena, mitte lubadusena.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Praktiline tööriist</p>
+      <h2 class="sec-title">Kolm küsimust mis tahes tarnijale</h2>
+      <div class="qa">
+        <div><h3>1 · Eraldage sääst ja reservitulu. Milline on tasuvusaeg ainult säästudega?</h3><p>Eraldamine on hea arvutuse tunnus — ilma selleta ei saa tasuvusnumbrit hinnata.</p></div>
+        <div><h3>2 · Milline on tasuvusaeg, kui reservihinnad poolituvad?</h3><p>Vastus näitab, kas projekt on kestlik või sõltub turust, mida keegi ei kontrolli.</p></div>
+        <div><h3>3 · Kes koostas reservihinnangu ja mida ta on valmis kirjalikult kinnitama?</h3><p>Reservihinnang on kõige usaldusväärsem agregaatori enda omana — selle tegija omana, kes objekti lõpuks kvalifitseerib ja tulu välja maksab.</p></div>
+      </div>
+      <div class="callout">
+        <p>Need kolm küsimust eristavad analüüsi müügijutust. Hea tarnija vastab neile meeleldi — ja kirjalikult.</p>
+      </div>
+    </div>
+  </section>
+  <div class="dark">
+    <section>
+      <div class="wrap">
+        <p class="eyebrow">Miks see on tähtsam kui üks objekt</p>
+        <div class="split">
+          <div>
+            <h2 class="sec-title">Iga meie paigaldatud aku on äriotsus. Koos on need midagi muud.</h2>
+          </div>
+          <div>
+            <p class="sec-lede">Veebruaris 2025 eraldusid Balti riigid Venemaa elektrivõrgust ja sünkroniseerusid Mandri-Euroopaga. Soome on osa Põhjamaade süsteemist. Neid kahte ühendavad kaablid Soome lahe all — kaablid, mida on kahjustatud juba rohkem kui korra.</p>
+            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Mõlemad süsteemid lisavad ilmastikust sõltuvat tootmist ja kaotavad reguleeritavat võimsust, mis neid varem tasakaalustas. Mõlemad vajavad sama asja: paindlikkust, hajutatuna, sekunditega reageerivana.</p>
+            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Üks suur aku on üks objekt ja üks tõrkepunkt. Kümme tuhat akut kümne tuhande tööstusliitumise taga — igaüks omanikule raha teenimas — on piirkondlik taristu, mida ei lõigata läbi ankruga ja mille omanikud on need, kes seda kasutavad.</p>
+            <p style="margin-top:24px;font-family:'Archivo',sans-serif;font-weight:600;font-size:19px;color:var(--dk-hd);letter-spacing:-.015em">Energiasõltumatust ei ehitata deklaratsioonidega. Selle ehitavad ettevõtted, kes paigaldavad aku, sest see teenib end tagasi — üks objekt korraga.</p>
+          </div>
+        </div>
+        <div class="btnrow" style="margin-top:38px"><a href="/kontakt/" class="btn">Küsige objektikaardistust</a></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- ══════════════════ PROTSESS ══════════════════ -->
+<div class="page" id="p-prosessi" data-slug="protsess" data-title="Kuidas akuprojekt kulgeb — seitse etappi | SAMA Energia" data-desc="Kvalifitseerimisest kasutuselevõtuni: etapid, kestused ja miks midagi ei hangita enne võrguettevõtte kirjalikku seisukohta.">
+  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+    <div class="wrap">
+      <p class="eyebrow">Kuidas see kulgeb</p>
+      <h1 style="font-size:clamp(34px,5.4vw,66px)">Seitse etappi, ja kui kaua igaüks kestab.</h1>
+      <p class="lede">Iga objekt kulgeb ühtemoodi. See ei ole bürokraatia — just seepärast teame ette, mis juhtub järgmisena. Energiasalvestite lehe neli teenusetappi on seesama teekond, siin nädalate kaupa.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="steps" style="margin-top:0;border-top:none">
+        <div class="step"><span class="idx">01</span><div><h2>Kvalifitseerimine</h2><p>Täidate objektiandmete vormi: liitumisvõimsus, peakaitse, trafo võimsus, olemasolev tootmine, mõõtekorraldus, paigalduskoht ja kaugus peakilbist, kehtivad elektrilepingud. Analüüsime teie tarbimisandmeid.</p></div><span class="dur">≈ 1 nädal</span></div>
+        <div class="step"><span class="idx">02</span><div><h2>Tehniline eeluuring</h2><p>Dimensioneerimine, konfiguratsioon ja vajadusel olemasoleva tootmise hindamine.</p></div><span class="dur">≈ 1 nädal</span></div>
+        <div class="step"><span class="idx">03</span><div><h2>Võrguettevõtte eelpäring</h2><p>Teeme päringu ja saame kirjaliku seisukoha just teie liitumispunkti kohta. Teie allkirjastate volituse, meie ajame protsessi.</p><p style="margin-top:10px;font-family:'Archivo',sans-serif;font-weight:600;font-size:16px">Midagi ei hangita enne, kui see etapp on valmis.</p></div><span class="dur">2–6 nädalat</span></div>
+        <div class="step"><span class="idx">04</span><div><h2>Analüüsipakett</h2><p>Täielik kirjalik analüüs antakse üle. Käite selle sisemiselt läbi ja teete otsuse.</p></div><span class="dur">2–4 nädalat</span></div>
+        <!-- MADIS: etapi 05 rahastuslubadus vahetatud võimalusregistrisse (Martin
+             2026-08-23) — sama reegel kui RAHASTUS-plokis: ei kindlust väitvaid verbe
+             enne, kui rahastaja tingimused on dokumenteeritud. Keelekontroll. -->
+        <div class="step"><span class="idx">05</span><div><h2>Pakkumine ja rahastus</h2><p>Astmeline pakkumine. Rahastus rahastuspartneri kaudu võib olla võimalik — selgitame võimalused välja, kui nii soovite.</p></div><span class="dur">1–2 nädalat</span></div>
+        <div class="step"><span class="idx">06</span><div><h2>Teostus</h2><p>Tellimus, paigaldus, kasutuselevõtt, dokumenteerimine. Teie korraldate ligipääsu objektile. Koguajakava kinnitatakse pakkumises seadmete saadavuse järgi.</p></div><span class="dur">4–12 nädalat</span></div>
+        <div class="step"><span class="idx">07</span><div><h2>Turulepääs ja seire</h2><p>Liitumine agregaatoriga ja jõudluse seire meie antud analüüsiga võrreldes.</p></div><span class="dur">Pidev</span></div>
+      </div>
+
+      <div class="callout">
+        <p>Midagi ei hangita enne, kui võrguettevõte on lahenduse kirjalikult kinnitanud.</p>
+        <p class="sub">See on mõlemal turul suurim üksik põhjus ebaõnnestunud, hilinenud ja eelarvet ületanud akuprojektide taga. See on täielikult välditav ja vältimine ei maksa midagi muud kui õiget järjekorda. Seepärast on järjekord meil protsessi kindel osa, mitte paindekoht.</p>
+      </div>
+      <div class="btnrow"><a href="/kontakt/" class="btn">Küsige objektikaardistust</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════ MEIST ══════════════════ -->
+<div class="page" id="p-meista" data-slug="meist" data-title="Meist | SAMA Energia" data-desc="Aus analüüs ja teostus samalt osapoolelt. Teenindame Eesti ja Soome turge mõlemas keeles.">
+  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+    <div class="wrap">
+      <p class="eyebrow">Meist</p>
+      <h1 style="font-size:clamp(34px,5.4vw,66px)">Seade on muutunud kaubaks. Oskus mitte.</h1>
+      <p class="lede">Akusüsteemi võib hankida kust tahes. Väärtus sünnib sellest, et keegi ütleb ausalt, mida see teie objektil teeb, viib selle võrguettevõtte protsessist läbi, sobitab selle olemasoleva päikeseelektriga seda ohtu seadmata ja koostab dokumentatsiooni, mis peab kontrollile vastu ka kolme aasta pärast. See on meie töö.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <p class="eyebrow">Miks see ettevõte olemas on</p>
+          <h2 class="sec-title">Aus analüüs ja teostus samalt osapoolelt.</h2>
+        </div>
+        <div>
+          <p class="sec-lede">Turul on analüüs ja teostus tavaliselt eri kätes: nõustaja ei tarni ja tarnija analüüs on ehitatud oma toote ümber. Kumbki mudel on loogiline — aga kummaski ei saa klient samalt osapoolelt nii sõltumatut arvutust kui ka selle teostust.</p>
+          <p style="margin-top:20px;color:var(--tx2)">Eestis on energiasalvesti enamasti üks tooterida laias valikus ja tehing ehitatakse reservitulu prognoosi peale — numbri peale, mida keegi ei kontrolli. Meie ehitame selle säästudele.</p>
+          <p style="margin-top:22px;font-family:'Archivo',sans-serif;font-weight:600;font-size:19px;letter-spacing:-.015em">Meie teeme analüüsi ja teostame. Me ei müü midagi muud. Selles ongi kogu mõte.</p>
+        </div>
+      </div>
+
+      <div class="tri" style="margin-top:56px">
+        <div><span class="num">01</span><h3>Tootjatest sõltumatud</h3><p>Valime seadme objekti järgi. Meil ei ole oma toodet, mida prooviksime igasse tehingusse sobitada.</p></div>
+        <div><span class="num">02</span><h3>Kõik dokumenteeritud</h3><p>Tehnilised lahendused tõendatakse standarditega, seadmete omadused tootja kinnitusega ja liitumise tingimused võrguettevõtte vastusega.</p></div>
+        <div><span class="num">03</span><h3>Ütleme ka ei</h3><p>Kui aku teie objektile ei sobi, ütleme seda. Olete kaotanud ainult vestluse.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="dark">
+    <section>
+      <div class="wrap">
+        <div class="split">
+          <div>
+            <p class="eyebrow">Asutaja</p>
+            <h2 class="sec-title">Madis Maastik</h2>
+            <p class="sec-lede">Eestlane, elab Helsingis. Kaubanduslik ja tehniline töö tööstuslike energiasalvestite, päikeseelektri ja reserviturgudega Soomes ja Eestis.</p>
+          </div>
+          <div>
+            <p style="color:var(--tx2d);font-size:17px">Töö katab mõlemad turud: agregaatoripartnerlused, võrgunõuete täitmine olemasoleva tootmise kõrvale paigaldatavates akudes, tehniline dokumentatsioon neljas keeles ning reserviturul osalemise rahastusmudelid.</p>
+            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Läbiv joon on sama, millele see ettevõte on ehitatud: tööstuskliendid teevad väga suuri otsuseid väga õhukese dokumentatsiooni najal, ja see auk on suletav.</p>
+            <!-- MADIS: lause "Me ei ole Soome ettevõte, millel on eestikeelne leht" on praegu
+                 vastuolus .fi/et-URLiga ja jaluses ainult Oy-ga. Sinu otsus: kas pehmendada kohe
+                 või oodata, kuni OÜ on asutatud ja .ee teenindab natiivselt. Teksti ei muudetud. -->
+            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Teenindame Soome ja Eesti turge — Fingrid ja Elering, Caruna, Elenia, Helen, Vantaan Energia ja Elektrilevi — mõlemas keeles. Me ei ole Soome ettevõte, millel on eestikeelne leht.</p>
+            <div class="btnrow"><a href="/kontakt/" class="btn">Võtke ühendust</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- ══════════════════ KONTAKT ══════════════════ -->
+<!-- MADIS: sinu pealkirjamustand "Broneeri objektikaardistus" → "Küsi objektikaardistust" —
+     juba avaldatud CTA-aususe otsuse järgi (broneerimissüsteemi ei ole). -->
+<div class="page" id="p-yhteys" data-slug="kontakt" data-title="Küsi objektikaardistust | SAMA Energia" data-desc="Tasuta objektikaardistus: kirjalik hinnang, mida energiasalvesti teie objektil teeks. Ei seo millegagi.">
+  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+    <div class="wrap">
+      <p class="eyebrow">Kontakt</p>
+      <h1 style="font-size:clamp(34px,5.4vw,66px)">Alustame teie tarbimisandmetest.</h1>
+      <!-- MADIS: lede parandatud (Martin 2026-08-23) — endine lubas "saadame vormi",
+           kuigi vormiväljad on otse all. Keelekontroll. -->
+      <p class="lede">Kiireim viis selgitada, kas energiasalvesti teie objektile sobib, on objektikaardistus. Väljad on allpool — kohustuslikud on ainult nimi ja e-post, ülejäänud kiirendavad hinnangut.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <!-- Vorm: action = staatiline tänuleht, et saatmine töötaks ka ilma JS-ita
+               (site.js püüab saatmise AJAXiks ja kasutab sama teed varuteena).
+               Väljanimed identsed FI/ET — mõlemad keeled toidavad sama Netlify-vormi. -->
+          <form class="form" id="ctForm" name="kohdekartoitus" method="POST" action="/aitah/" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="kohdekartoitus">
+            <p hidden aria-hidden="true"><label>Jätke see väli tühjaks: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <div><label for="f1">Nimi <span class="fnote rq">· kohustuslik</span></label><input id="f1" name="nimi" required autocomplete="name"></div>
+            <div><label for="f3">E-post <span class="fnote rq">· kohustuslik</span></label><input id="f3" type="email" name="email" required autocomplete="email"></div>
+            <div><label for="f2">Ettevõte <span class="fnote">· valikuline</span></label><input id="f2" name="yritys" autocomplete="organization"></div>
+            <div><label for="f4">Telefon <span class="fnote">· valikuline</span></label><input id="f4" type="tel" inputmode="tel" name="puhelin" autocomplete="tel"></div>
+            <p class="full formsub">Need kiirendavad hinnangut <span>· kõik valikulised</span></p>
+            <div><label for="f5">Objekti asukoht <span class="fnote">· valikuline</span></label><input id="f5" name="sijainti"></div>
+            <div><label for="f6">Peakaitse või liitumisvõimsus <span class="fnote">· valikuline</span></label><input id="f6" name="liittymisteho" placeholder="nt 400 A või 250 kW"></div>
+            <div><label for="f9">Aastane tarbimine <span class="fnote">· valikuline</span></label><input id="f9" name="vuosikulutus" placeholder="nt 900 MWh/a"></div>
+            <div><label for="f10">Võrguettevõte <span class="fnote">· valikuline</span></label><input id="f10" name="verkkoyhtio" placeholder="nt Elektrilevi"></div>
+            <div><label for="f7">Kas objektil on päikeseelekter? <span class="fnote">· valikuline</span></label>
+              <select id="f7" name="aurinko"><option value="">—</option><option>Ei</option><option>Jah</option><option>Kavandamisel</option></select>
+            </div>
+            <div><label for="f11">Kui jah: võimsus (kWp) <span class="fnote">· valikuline</span></label><input id="f11" name="aurinko-kwp" inputmode="numeric" placeholder="nt 120"></div>
+            <div class="full"><label for="f12">Eelistatud kontaktiviis <span class="fnote">· valikuline</span></label>
+              <select id="f12" name="yhteydenotto"><option value="">—</option><option>E-post</option><option>Telefon</option><option>WhatsApp</option></select>
+            </div>
+            <div class="full"><label for="f8">Sõnum <span class="fnote">· valikuline</span></label><textarea id="f8" name="viesti"></textarea></div>
+            <div class="full"><button type="submit" id="ctSend" class="btn dk" style="border:none;cursor:pointer;font-family:'Archivo',sans-serif">Saada</button></div>
+            <p class="full" style="font-size:14.5px;color:var(--muted)">Töötleme teie saadetud andmeid, et teie pöördumisele vastata. <a href="/andmekaitse/">Andmekaitsetingimused</a>.</p>
+            <p class="full ok" id="ctOk" hidden role="status" aria-live="polite" style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1a7a3c">Aitäh — võtame ühendust tööpäeva jooksul.</p>
+            <p class="full" id="ctErr" hidden role="status" aria-live="polite" style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#A8452E">Saatmine ei õnnestunud. Võite saata andmed ka otse e-postiga: <a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a>.</p>
+          </form>
+        </div>
+        <div>
+          <p class="eyebrow">Otse</p>
+          <p style="font-family:'Archivo',sans-serif;font-weight:700;font-size:26px;letter-spacing:-.02em">Madis Maastik</p>
+          <p class="mono" style="font-size:15px;margin-top:10px;color:var(--tx2)">+372 5391 6647</p>
+          <p class="mono" style="font-size:15px;color:var(--tx2)">WhatsApp +358 46 659 4879</p>
+          <p class="mono" style="font-size:15px;color:var(--tx2)"><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="wrap">
+      <p style="max-width:640px;color:var(--tx2);border-top:1px solid var(--line-dk);padding-top:22px;font-size:15.5px">Ehitame ka partnerivõrgustikku — elektriprojekteerijad, sertifitseeritud töövõtjad ja kinnisvaraarendajad: võtke ühendust sama vormiga.</p>
+    </div>
+  </section>
+
+</div>
+
+<!-- ══════════════════ AITÄH (vormi tänuleht — ei ole navigatsioonis ega sitemapis, noindex) ══════════════════ -->
+<div class="page" id="p-kiitos" data-slug="aitah" data-noindex="1" data-title="Aitäh pöördumise eest | SAMA Energia" data-desc="Teie sõnum on vastu võetud. Vastame tööpäeva jooksul.">
+  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
+    <div class="wrap">
+      <p class="eyebrow">Aitäh</p>
+      <h1 style="font-size:clamp(34px,5.4vw,66px)">Teie sõnum on kohal.</h1>
+      <p class="lede">Vastame tööpäeva jooksul. Kui asi on kiireloomuline, saate meid kätte otse:</p>
+      <p class="mono" style="margin-top:22px;font-size:15px;color:var(--tx1d)"><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a></p>
+      <p class="mono" style="font-size:15px;color:var(--tx1d)">+372 5391 6647 · WhatsApp +358 46 659 4879</p>
+      <div class="btnrow">
+        <a href="/protsess/" class="btn ghost">Kuidas see kulgeb</a>
+        <a href="/" class="btn ghost">Tagasi avalehele</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ UUDISED ══════════════════ -->
+<div class="page" id="p-ajankohtaista" data-slug="uudised" data-title="Uudised energiaturult — koos allikatega | SAMA Energia" data-desc="Põhivõrguettevõtete ja ametiasutuste esmaallikad ja mida need tööstusobjekti omanikule tähendavad.">
+  <div class="hero" style="padding-bottom:clamp(40px,6vw,64px)">
+    <div class="wrap">
+      <p class="eyebrow">Uudised</p>
+      <h1 style="font-size:clamp(32px,5vw,60px)">Mis turul toimub — koos allikatega.</h1>
+      <p class="lede">Me ei palu teil meid uskuda. Kogume siia esmaallikaid — põhivõrguettevõtete ja ametiasutuste enda avaldatut — ja ütleme lühidalt, miks need on tööstusobjekti omanikule olulised. Meie enda analüüsid avaldatakse sellel lehel.</p>
+    </div>
+  </div>
+  <section>
+    <div class="wrap" style="max-width:880px">
+      <p class="eyebrow">Lugemist mujalt</p>
+      <!-- Järjekord teadlik: Eesti turu uudised eespool, üldeuroopalik ja Soome järel. -->
+      <div class="qa" style="margin-top:14px">
+        <div>
+          <p class="mono" style="font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">Tähtaeg 31.12.2026 · Elering · Hinnakiri ja tüüptingimused</p>
+          <h2><a href="https://elering.ee/hinnakiri-ja-tuuptingimused" target="_blank" rel="noopener noreferrer">Salvestusüksuse mõõtmise üleminekuperiood lõpeb 31.12.2026&nbsp;↗</a></h2>
+          <p>Eleringi tingimuste järgi võib energiasalvestusüksuse mõõtmine üleminekuperioodil 01.01.2026–31.12.2026 tugineda erisustele standardnõuetest. Pärast seda peab mõõtelahendus vastama nõuetele täies mahus — ja nõuetekohane mõõtmine on ühtlasi eeldus, et salvestatud ja võrku tagastatud energia võrgutasu käsitletaks õigesti.</p>
+          <p style="margin-top:12px;color:var(--tx2)">Miks see on oluline: kui salvesti on plaanis, on mõõtelahendus lihtsam projekteerida kohe õigesti kui hiljem ümber ehitada. See on aus kiirustamise põhjus — avalik ja dokumenteeritud tähtaeg, mitte müügivõte. Iga objekti puhul kontrollime kehtivat tingimust, mitte mälu järgi numbrit.</p>
+          <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:10px">ALLIKAS: ELERING · HINNAKIRI JA TÜÜPTINGIMUSED · DOKUMENTEERITUD</p>
+        </div>
+        <div>
+          <p class="mono" style="font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">Jõustus 01.01.2026 · ELTS § 71 lg 10¹ · Riigi Teataja</p>
+          <h2><a href="https://www.riigiteataja.ee/akt/264412?leiaKehtiv" target="_blank" rel="noopener noreferrer">Võrgutasu topeltarvestus salvestatud energialt lõppes&nbsp;↗</a></h2>
+          <p>Elektrituruseaduse § 71 lõike 10¹ kohaselt ei arvestata alates 01.01.2026 võrgutasu energialt, mille salvestusüksus salvestab ja võrku tagastab. Seni maksis salvesti võrgutasu sisuliselt kaks korda — nii laadides kui ka tagastades. Vabastus eeldab seaduses ja võrguettevõtja tingimustes sätestatud eelduste täitmist, sealhulgas nõuetekohast mõõtmist.</p>
+          <p style="margin-top:12px;color:var(--tx2)">Miks see on oluline: topeltarvestus oli üks suuremaid Eesti salvestiprojektide tasuvust koormanud tegureid. Selle lõppemine muudab arvutust iga objekti kasuks — aga ainult siis, kui mõõtmine on korraldatud nõuetekohaselt (vt eelmine punkt).</p>
+          <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:10px">ALLIKAS: RIIGI TEATAJA · ELEKTRITURUSEADUS § 71 LG 10¹ · DOKUMENTEERITUD</p>
+        </div>
+        <div>
+          <p class="mono" style="font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">Kohustus · tähtaeg 11.10.2026 · Direktiiv (EL) 2023/1791</p>
+          <h2><a href="https://eur-lex.europa.eu/legal-content/ET/TXT/?uri=CELEX:32023L1791" target="_blank" rel="noopener noreferrer">Energiaauditi kohustus laieneb: piir on edaspidi tarbimine, mitte ettevõtte suurus&nbsp;↗</a></h2>
+          <p>Uuendatud energiatõhususe direktiiv viib kohustusliku energiaauditi piiri ettevõtte suuruselt energiatarbimisele: üle 10 TJ ehk umbes 2 700 MWh aastas tarbivad ettevõtted peavad laskma teha energiaauditi 11.10.2026-ks, kui nad ei võta kasutusele sertifitseeritud energiajuhtimissüsteemi.</p>
+          <p style="margin-top:12px;color:var(--tx2)">Miks see on oluline: audit toodab täpselt selle tarbimisandmestiku, millest salvesti- ja päikeseinvesteering dimensioneeritakse. Sama kohustuse võib täita pelga sunnina — või ühtlasi ära kasutada.</p>
+          <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:10px">ALLIKAS: DIREKTIIV (EL) 2023/1791, ARTIKKEL 11 · EUR-LEX · DOKUMENTEERITUD</p>
+        </div>
+        <div>
+          <p class="mono" style="font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">18.08.2026 · Fingrid · Pressiteade</p>
+          <h2><a href="https://www.fingrid.fi/ajankohtaista/tiedotteet/2026/sahkonkulutus-on-kaantymassa-voimakkaaseen-kasvuun--rinnalle-tarvitaan-lisaa-saatovoimaa/" target="_blank" rel="noopener noreferrer">Elektritarbimine on pöördumas tugevasse kasvu – kõrvale on vaja rohkem reguleerimisvõimsust (soome keeles)&nbsp;↗</a></h2>
+          <p>Fingridi andmetel tarbimise kasv kiireneb: ainuüksi andmekeskuste liitumislepinguid on ligi viie gigavati jagu, ja täies mahus teostudes tõstaks lepinguportfell Soome elektritarbimist ligi 40 protsenti 2025. aasta tasemest. Samas teates on ka teine number: elektrisalvestite liitumislepinguid on juba üle nelja gigavati. Nõudlus ja paindlikkus kasvavad seega võidu — just seepärast ei ehita me ühegi objekti tasuvust reservihindade peale.</p>
+          <p style="margin-top:12px">Teates on ka vaikne sõnum olemasolevate liitumiste omanikele: uusi liitumisi võib kohati tulla kaua oodata. Aku olemasoleva liitumise taga kasutab liitumist, mis teil juba on.</p>
+          <div class="statrow"><div><b>~5 GW</b><span>andmekeskuseprojekte liitumislepingutega</span></div><div><b>&gt;4 GW</b><span>elektrisalvesteid liitumisjärjekorras</span></div><div><b>+40 %</b><span>tarbimise kasv, kui lepinguportfell teostub</span></div></div>
+          <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:10px">ALLIKAS: FINGRID · PRESSITEADE 18.08.2026 · DOKUMENTEERITUD</p>
+        </div>
+      </div>
+      <p style="margin-top:30px;color:var(--tx2);font-size:16.5px">Loetelu täieneb sedamööda, kuidas olulisi avaldusi ilmub. Kui mõni neist tekitab küsimuse teie enda objekti kohta, on <a href="/kontakt/">objektikaardistus</a> kiireim viis vastus saada.</p>
+      <div class="btnrow"><a href="/kontakt/" class="btn">Küsige objektikaardistust</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════ ANDMEKAITSE ══════════════════ -->
+<div class="page" id="p-tietosuoja" data-slug="andmekaitse" data-title="Andmekaitsetingimused | SAMA Energia" data-desc="Mida töötleme, miks ja kui kaua. Ei küpsiseid, ei analüütikat.">
+  <div class="hero" style="padding-bottom:clamp(40px,6vw,64px)">
+    <div class="wrap">
+      <p class="eyebrow">Andmekaitse</p>
+      <h1 style="font-size:clamp(32px,4.8vw,58px)">Andmekaitsetingimused</h1>
+      <p class="lede">Kogume ainult seda, mille ise meile annate. Me ei kasuta küpsiseid ega analüütikat. Siin on kirjas, mida töötleme, miks ja kui kaua.</p>
+    </div>
+  </div>
+  <section>
+    <div class="wrap" style="max-width:840px">
+      <div class="qa" style="margin-top:0">
+        <div><h2>Vastutav töötleja</h2><p>SAMA Energia Oy · Y-tunnus (Soome registrikood) 3647683-3 · <a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a> · +372 5391 6647.</p></div>
+        <div><h2>Milliseid andmeid töötleme</h2><p>Kontaktivormil antud andmed: nimi, ettevõte, e-post, telefon, objekti asukoht, liitumis- ja tarbimisandmed ning sõnum. Lisaks veebilehe tehniline serverilogi (sh IP-aadress ja ajatempel), mille majutusteenus toodab teenuse osutamiseks ja turvalisuse tagamiseks. Me ei kasuta küpsiseid, jälgimispiksleid ega analüütikat.</p></div>
+        <div><h2>Miks töötleme</h2><p>Et vastata teie pöördumisele ja valmistada ette teie soovitud kaardistust (lepingueelsed meetmed, isikuandmete kaitse üldmääruse artikli 6 lõike 1 punkt b) ning õigustatud huvi alusel (artikli 6 lõike 1 punkt f) kliendisuhte haldamiseks ja turvalisuse tagamiseks. Me ei kasuta andmeid muuks turunduseks ilma eraldi nõusolekuta.</p></div>
+        <div><h2>Kellele andmeid edastatakse</h2><p>Me ei müü ega anna andmeid turunduseks. Tehniliste volitatud töötlejatena tegutsevad veebilehe majutus- ja vormiteenus ning e-postiteenus. Kui teenusepakkuja töötleb andmeid väljaspool EL-i või EMP-d, kaitstakse edastust EL-i heakskiidetud mehhanismidega, nagu lepingu tüüptingimused või Data Privacy Framework.</p></div>
+        <div><h2>Kui kaua säilitame</h2><p>Säilitame pöördumisi kuni 24 kuud viimasest suhtlusest, kui asjaajamine ei jätku kliendisuhtena. Raamatupidamisseaduse alla kuuluv materjal säilitatakse seadusjärgse aja.</p></div>
+        <div><h2>Teie õigused</h2><p>Teil on õigus saada juurdepääs oma andmetele, nõuda nende parandamist, kustutamist, töötlemise piiramist või ülekandmist ning esitada vastuväiteid töötlemisele. Taotlused: <a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a>. Teil on ka õigus esitada kaebus järelevalveasutusele: Soome andmekaitsevolinik (tietosuoja.fi) või Eesti Andmekaitse Inspektsioon (aki.ee).</p></div>
+        <div><h2>Muudatused</h2><p>Uuendatud 18.08.2026. Kui tingimused muutuvad, on uusim versioon alati sellel lehel.</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a href="/" class="brand" style="font-size:19px"><img src="/assets/mark.webp" alt="" width="95" height="96" style="height:36px;width:auto;vertical-align:middle;margin-right:12px;margin-top:-4px">SAMA<span>·</span>ENERGIA</a>
+        <p style="margin-top:18px;max-width:36ch;color:var(--muted-lt);font-size:16px">Energiasalvestid ja päikeseelekter ettevõtetele. Aus analüüs, võrguettevõtte kooskõlastus enne hanget, põhjalik dokumentatsioon.</p>
+        <p style="margin-top:20px" class="mono">SUOMI · EESTI</p>
+      </div>
+      <div>
+        <p class="fh">Teenused</p>
+        <a href="/energiasalvestid/">Energiasalvestid</a>
+        <a href="/paike-ja-aku/">Päikeseelekter + aku</a>
+        <a href="/protsess/">Kuidas see kulgeb</a>
+        <a href="/kontakt/">Objektikaardistus</a>
+      </div>
+      <div>
+        <p class="fh">Teave</p>
+        <a href="/reserviturud/">Reserviturud</a>
+        <a href="/uudised/">Uudised</a>
+        <a href="/meist/">Meist</a>
+        <a href="/kontakt/">Kontakt</a>
+        <a href="/andmekaitse/">Andmekaitsetingimused</a>
+      </div>
+    </div>
+    <div class="legal">
+      SAMA ENERGIA OY · Y-TUNNUS 3647683-3 · KMKR NR FI36476833 · ASUKOHT HELSINGI<br>
+      madis.maastik@samaenergia.fi · +372 5391 6647 · WHATSAPP +358 46 659 4879 · <a href="/andmekaitse/">ANDMEKAITSETINGIMUSED</a><br>
+      © 2026 SAMA Energia
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

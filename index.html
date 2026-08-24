@@ -1,453 +1,46 @@
 <!DOCTYPE html>
+<!-- GENEROITU TIEDOSTO — älä muokkaa käsin. Lähde: src/fi.html · node scripts/build-pages.mjs -->
 <html lang="fi">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Energiavarastot ja aurinkosähkö yrityksille | SAMA Energia</title>
 <meta name="description" content="Kerromme kirjallisesti, mitä energiavarasto oikeasti tuottaa kohteessanne — ennen kuin mitään allekirjoitetaan. Energiavarastot ja aurinkosähkö yrityksille ja maanomistajille Suomessa ja Virossa.">
+<link rel="canonical" href="https://samaenergia.fi/">
+<link rel="alternate" hreflang="fi-FI" href="https://samaenergia.fi/">
+<link rel="alternate" hreflang="et-EE" href="https://samaenergia.ee/">
+<link rel="alternate" hreflang="x-default" href="https://samaenergia.fi/">
 <meta property="og:title" content="Energiavarastot ja aurinkosähkö yrityksille | SAMA Energia">
-<meta property="og:description" content="Kerromme kirjallisesti, mitä energiavarasto oikeasti tuottaa kohteessanne — ennen kuin mitään allekirjoitetaan.">
+<meta property="og:description" content="Kerromme kirjallisesti, mitä energiavarasto oikeasti tuottaa kohteessanne — ennen kuin mitään allekirjoitetaan. Energiavarastot ja aurinkosähkö yrityksille ja maanomistajille Suomessa ja Virossa.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fi_FI">
-<link rel="alternate" hreflang="fi" href="https://samaenergia.fi/">
-<link rel="alternate" hreflang="et" href="https://samaenergia.ee/">
-<link rel="canonical" href="https://samaenergia.fi/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23D18A44' d='M12 1 13.76 7.75 19.78 4.22 16.25 10.24 23 12 16.25 13.76 19.78 19.78 13.76 16.25 12 23 10.24 16.25 4.22 19.78 7.75 13.76 1 12 7.75 10.24 4.22 4.22 10.24 7.75 Z'/%3E%3C/svg%3E">
-<meta name="theme-color" content="#0E1519">
-<link href="assets/fonts.css" rel="stylesheet">
-<style>
-/* Teema A — VERKKO/KUPARI, johdettu kaheksakand-tunnuksesta */
-:root{
-  --ink:#0D1712;
-  --panel:#152420;
-  --panel-2:#1D2F28;
-  --paper:#EBEDE8;
-  --white:#FFFFFF;
-  --signal:#D18A44;
-  --signal-hi:#E09A55;
-  --muted:#67736C;
-  --muted-lt:#99A69D;
-  --tx2:#3C4842;
-  --tx2d:#B7C3BA;
-  --tx1d:#CCD5CD;
-  --signal-ink:#A9663B;
-  --glass:rgba(13,23,18,.94);
-  --line:rgba(255,255,255,.14);
-  --line-dk:rgba(13,23,18,.16);
-  --wrap:1180px;
-  --gut:clamp(20px,5vw,64px);
-}
-/* Tuotantoteema: Ilta & Kupari 3.5 "Elävä Ilta" — muuttujat sulautettu; valaistuskerros tyylien lopussa. */
-:root{--ink:#0E1519;--panel:#18232B;--panel-2:#22303A;--paper:#EAEBE6;--signal:#D68F47;--signal-hi:#E8A45C;--signal-ink:#A9663B;--glass:rgba(14,21,25,.94);--muted:#6C7A85;--muted-lt:#9AA7B0;--tx2:#3B4850;--tx2d:#B6C0C7;--tx1d:#C9D1D7;--line-dk:rgba(14,21,25,.16)}
+<meta property="og:url" content="https://samaenergia.fi/">
 
-/* Johdetut pintamuuttujat määritellään BODYLLA: teemaluokat (body.tX) ylikirjoittavat --ink/--paper
-   samalla elementillä, joten substituutio näkee teeman arvot. :rootissa ketjut jäätyivät teeman 1
-   väreihin — tämä oli 18.8. illalla havaitun teemasekaannuksen syy. */
-body{--dk:var(--ink);--dk-tx:var(--paper);--dk-hd:var(--white);--on-signal:var(--ink);--trace-mid:rgba(255,255,255,.18)}
-
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  background:var(--paper);color:var(--ink);
-  font-family:'Newsreader',Georgia,serif;
-  font-size:clamp(17px,1.05vw,19px);line-height:1.62;
-  -webkit-font-smoothing:antialiased;
-}
-h1,h2,h3,h4,.disp{font-family:'Archivo',system-ui,sans-serif;letter-spacing:-.022em;line-height:1.04;font-weight:700}
-.mono{font-family:'IBM Plex Mono',monospace;font-variant-numeric:tabular-nums}
-a{color:inherit}
-/* Linkit nakyviksi molemmissa teemoissa ja molemmilla pinnoilla */
-main a:not(.btn){text-decoration:underline;text-decoration-color:var(--signal-ink);text-decoration-thickness:1.5px;text-underline-offset:3px}
-main a:not(.btn):hover{text-decoration-thickness:2.5px}
-main .dark a:not(.btn),main .hero a:not(.btn){text-decoration-color:var(--signal)}
-.legal a{display:inline;padding:0;color:var(--muted-lt);text-decoration:underline;text-decoration-color:var(--signal);text-underline-offset:3px}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
-.dark{background:var(--dk);color:var(--dk-tx)}
-.dark h1,.dark h2,.dark h3{color:var(--dk-hd)}
-
-/* ---------- eyebrow ---------- */
-.eyebrow{
-  font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;
-  letter-spacing:.18em;text-transform:uppercase;color:var(--muted);
-  display:flex;align-items:center;gap:12px;margin-bottom:24px;
-}
-.dark .eyebrow{color:var(--muted-lt)}
-.eyebrow::before{content:"";width:22px;height:1px;background:var(--signal);flex:none}
-
-/* ---------- nav ---------- */
-header{position:sticky;top:0;z-index:60;background:var(--glass);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;height:68px}
-.brand{font-family:'Archivo',sans-serif;font-weight:800;font-size:17px;letter-spacing:.12em;text-transform:uppercase;color:var(--dk-hd);text-decoration:none;white-space:nowrap;flex-shrink:0}
-.brand span{color:var(--signal)}
-.menu{display:flex;gap:18px;align-items:center}
-.menu a{
-  font-family:'Archivo',sans-serif;font-size:13.5px;font-weight:500;letter-spacing:.01em;
-  color:var(--muted-lt);text-decoration:none;padding:6px 0;border-bottom:1px solid transparent;transition:.18s;white-space:nowrap
-}
-.menu a:hover,.menu a.on{color:var(--dk-hd);border-bottom-color:var(--signal)}
-/* Navcta perii etusivun premium-CTA:n kuparikäsittelyn (liukuväri, viiste, valokantit, kiilto) */
-.navcta{
-  font-family:'Archivo',sans-serif;font-size:15px;font-weight:600;letter-spacing:.01em;
-  background:linear-gradient(180deg,var(--signal-hi) 0%,var(--signal) 52%,color-mix(in srgb,var(--signal) 80%,#000) 100%);
-  color:var(--on-signal)!important;padding:12px 26px 12px 22px;text-decoration:none;flex-shrink:0;
-  border-bottom:none!important;white-space:nowrap;display:inline-block;transition:.18s;
-  clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.32),inset 0 -1px 0 rgba(0,0,0,.26);
-  position:relative;overflow:hidden
-}
-.navcta::before{
-  content:"";position:absolute;top:0;bottom:0;left:-45%;width:32%;
-  background:linear-gradient(105deg,transparent,rgba(255,255,255,.2),transparent);
-  transform:skewX(-18deg);transition:left .55s ease;pointer-events:none
-}
-.navcta:hover{
-  background:linear-gradient(180deg,color-mix(in srgb,var(--signal-hi) 82%,#fff) 0%,var(--signal) 55%,color-mix(in srgb,var(--signal) 78%,#000) 100%);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.26)
-}
-.navcta:hover::before{left:115%}
-.navcta:active{box-shadow:inset 0 3px 8px rgba(0,0,0,.32)}
-.langsw{display:flex;gap:3px;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em}
-.langsw a{color:var(--muted-lt);text-decoration:none;padding:6px 8px;border:1px solid transparent;transition:.18s}
-.langsw a.cur{color:var(--dk-hd);border-color:var(--line)}
-.langsw a:hover{color:var(--dk-hd)}
-.burger{display:none;background:none;border:1px solid var(--line);color:var(--dk-tx);width:42px;height:38px;cursor:pointer;font-size:17px}
-@media(max-width:1320px){
-  .menu{position:fixed;inset:68px 0 auto 0;background:var(--dk);flex-direction:column;align-items:stretch;gap:0;padding:8px var(--gut) 26px;border-bottom:1px solid var(--line);display:none}
-  .menu.open{display:flex}
-  .menu a{padding:14px 0;border-bottom:1px solid var(--line)}
-  .navcta{margin-top:16px;text-align:center;padding:14px}
-  /* Kielivalinta burger-valikossa: .menu a nollaa vaakapehmusteen, joten palautetaan se */
-  .menu .langsw{margin-top:20px;gap:10px}
-  .menu .langsw a{padding:11px 18px;border:1px solid var(--line)}
-  .burger{display:block}
-}
-
-/* ---------- hero ---------- */
-.hero{background:var(--dk);color:var(--dk-tx);padding:clamp(56px,9vw,104px) 0 0;position:relative;overflow:hidden}
-.hero h1{
-  font-size:clamp(38px,6.6vw,82px);font-weight:800;max-width:16ch;
-  color:var(--dk-hd);margin-bottom:26px
-}
-.hero .lede{font-size:clamp(18px,1.55vw,22px);max-width:54ch;color:var(--tx1d);line-height:1.58}
-.hero .lede strong{color:var(--dk-hd);font-weight:500}
-.herometa{
-  margin-top:36px;display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;
-  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-lt)
-}
-.btnrow{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
-.btn{
-  font-family:'Archivo',sans-serif;font-size:15px;font-weight:600;letter-spacing:.01em;
-  background:var(--signal);color:var(--on-signal);padding:15px 26px;text-decoration:none;display:inline-block;transition:.18s
-}
-.btn:hover{background:var(--signal-hi);transform:translateY(-1px)}
-.btn.ghost{background:transparent;color:var(--dk-tx);border:1px solid var(--line)}
-.btn.ghost:hover{border-color:var(--signal);color:var(--dk-hd);background:transparent}
-.btn.dk{background:var(--ink);color:var(--paper)}
-.btn.dk:hover{background:var(--panel)}
-
-/* ---------- SIGNATURE: frequency instrument ---------- */
-.freq{margin-top:clamp(48px,7vw,84px);border-top:1px solid var(--line);padding-top:26px;padding-bottom:clamp(40px,6vw,64px)}
-.freqhead{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:14px}
-.freqhead .lab{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-lt)}
-.trace{width:100%;height:clamp(84px,11vw,130px);display:block}
-.trace path{fill:none;stroke:var(--signal);stroke-width:1.4;vector-effect:non-scaling-stroke}
-.trace .mid{stroke:var(--trace-mid);stroke-width:1;stroke-dasharray:3 5}
-.grids{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);margin-top:22px;border:1px solid var(--line)}
-.gcell{background:var(--dk);padding:18px 20px}
-.gcell .n{font-family:'IBM Plex Mono',monospace;font-size:clamp(26px,3.6vw,40px);font-weight:500;color:var(--dk-hd);line-height:1}
-.gcell .n em{font-style:normal;font-size:.45em;color:var(--muted-lt);margin-left:6px}
-.gcell .t{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--signal);margin-bottom:10px}
-.gcell .s{font-size:14px;color:var(--muted-lt);margin-top:8px;line-height:1.45}
-.freqnote{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);margin-top:14px;letter-spacing:.04em}
-@media(max-width:640px){.grids{grid-template-columns:1fr}}
-
-/* ---------- sections ---------- */
-section{padding:clamp(56px,8vw,104px) 0}
-.sec-title{font-size:clamp(28px,3.9vw,50px);max-width:22ch;margin-bottom:22px}
-.sec-lede{font-size:clamp(18px,1.4vw,21px);max-width:62ch;color:var(--tx2)}
-.dark .sec-lede{color:var(--tx2d)}
-.rule{height:1px;background:var(--line-dk);margin:0}
-.dark .rule{background:var(--line)}
-
-/* principles */
-.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dk);border:1px solid var(--line-dk);margin-top:52px}
-.tri > div{background:var(--paper);padding:clamp(26px,3vw,38px)}
-.tri h3{font-size:22px;margin-bottom:14px;letter-spacing:-.015em}
-.tri p{font-size:16.5px;color:var(--tx2);line-height:1.6}
-.tri .num{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:var(--signal-ink);margin-bottom:16px;display:block}
-.segico{width:26px;height:26px;display:block;margin-bottom:18px;fill:none;stroke:var(--signal-ink);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.doorlab{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:var(--signal);display:block;margin-bottom:14px}
-.sysdia{width:100%;height:auto;display:block}
-.sysdia rect,.sysdia line,.sysdia polyline,.sysdia circle{fill:none;stroke:var(--tx2d);stroke-width:1.5}
-.sysdia .bus{stroke-width:2.5}
-.sysdia .sigst{stroke:var(--signal)}
-.sysdia .ctrl{stroke:var(--signal);stroke-dasharray:4 5;stroke-width:1.2}
-.sysdia text{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;fill:var(--tx2d)}
-.sysdia .sig{fill:var(--signal);stroke:none}
-.duo{grid-template-columns:repeat(2,1fr)}
-@media(max-width:860px){.duo{grid-template-columns:1fr}}
-/* Hero-valokuva: kuvakerros + häivytykset. Häivytysgradientit ovat kuvakompositointia,
-   eivät käyttöliittymäkoristelua — tekstivyöhyke vasemmalla, saumaton liitos pintaan alhaalla. */
-.hero.heroimgd{position:relative;overflow:hidden}
-.heroimg{position:absolute;top:0;left:0;width:100%;height:66%;object-fit:cover;object-position:center 40%}
-.heroscrim{position:absolute;top:0;left:0;width:100%;height:66%;background:
-  linear-gradient(100deg,rgba(8,14,22,.62) 0%,rgba(8,14,22,.28) 46%,rgba(8,14,22,0) 70%),
-  linear-gradient(180deg,rgba(8,14,22,.2) 0%,rgba(8,14,22,0) 34%,var(--dk) 94%)}
-@media(max-width:700px){.heroimg,.heroscrim{height:58%}}
-.hero.heroimgd>.wrap{position:relative;z-index:1}
-@media(max-width:700px){.heroimg{object-position:70% 45%}}
-/* Konsepti-B siirrot: käyttötilat sysdia-kaaviossa (aurinko) + lähdetilastot (ajankohtaista) */
-/* Etusivu-uudistus: tarjooma + luokiteltu hyötyruudukko + referenssipaikka */
-.offer{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
-@media(max-width:860px){.offer{grid-template-columns:1fr;gap:14px}}
-.offer>div{background:var(--paper);border:1.5px solid var(--line-dk);border-top:4px solid var(--signal);padding:24px 22px 22px;position:relative;transition:transform .3s cubic-bezier(.3,1.4,.5,1),border-color .25s}
-.offer>div:hover{transform:translateY(-3px);border-color:var(--signal-ink);border-top-color:var(--signal)}
-.onum{position:absolute;top:14px;right:16px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.1em;color:var(--signal-ink);opacity:.75}
-.ochip{width:48px;height:48px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:color-mix(in srgb,var(--signal) 13%,transparent);border:1px solid color-mix(in srgb,var(--signal) 32%,transparent)}
-.oico{width:28px;height:28px;fill:none;stroke:var(--signal-ink);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-.offer b{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:12px;letter-spacing:.14em;color:var(--ink);display:block;margin-bottom:6px}
-.offer p{font-size:15px;color:var(--tx2);max-width:none}
-.bene{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-@media(max-width:860px){.bene{grid-template-columns:1fr;gap:14px}}
-.bene>div{background:var(--paper);border:1.5px solid var(--line-dk);padding:26px 22px 20px;position:relative;transition:transform .3s cubic-bezier(.3,1.4,.5,1),border-color .25s}
-.bene>div::before{content:"";position:absolute;top:-1.5px;left:-1.5px;right:-1.5px;height:4px;transition:height .25s}
-.bene>div.c-las::before{background:#1F8A5B}
-.bene>div.c-ske::before{background:var(--signal)}
-.bene>div.c-koh::before{background:#4A6A82}
-.bene>div:hover{transform:translateY(-4px);border-color:var(--signal-ink)}
-.bene>div:hover::before{height:6px}
-.bene h4{font-family:'Archivo',sans-serif;font-weight:600;font-size:17px;letter-spacing:-.01em;margin-bottom:8px}
-.bene p{font-size:14.5px;color:var(--tx2);max-width:none;min-height:66px}
-.brow{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px;padding-top:13px;border-top:1px solid var(--line-dk)}
-.tg{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;padding:4px 9px;font-weight:500;border:1px solid transparent}
-.tg.las{background:rgba(31,138,91,.13);color:#1F8A5B;border-color:rgba(31,138,91,.35)}
-.tg.ske{background:rgba(214,143,71,.15);color:var(--signal-ink);border-color:rgba(169,102,59,.4)}
-.tg.koh{background:rgba(74,106,130,.13);color:#4A6A82;border-color:rgba(74,106,130,.35)}
-.morelink{font-size:13.5px;font-weight:500;text-decoration:none;color:var(--signal-ink);white-space:nowrap}
-.morelink::after{content:"→";display:inline-block;margin-left:5px;transition:transform .3s cubic-bezier(.3,1.4,.5,1)}
-.bene>div:hover .morelink::after{transform:translateX(5px)}
-.refslot{border:1.5px solid var(--line-dk);border-left:4px solid var(--signal-ink);padding:18px 20px;margin-top:36px;max-width:660px}
-/* Tarjoomakorttien kuvat img-kerroksina (CSS-taustakuvien data-URIt suodattuvat esikatselussa;
-   hero todisti, että <img data:> toimii). Tumma peruspinta takaa luettavuuden, vaikka kuva puuttuisi.
-   Magnific: lJymyQFgv9 aurinko · ksgdLdf16B varasto · Cq5YueNEEy verkko.
-   Julkaisussa: irrota data-URIt tiedostoiksi assets/of-*.webp. */
-.offer>div{min-height:252px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;background:#10181E}
-.offer>div .ochip{margin-bottom:auto}
-.offer>div b{margin-top:14px;color:#F4F6F3}
-.offer>div .ochip,.offer>div b,.offer>div p{position:relative;z-index:1}
-.offer>div .onum{z-index:1;color:#E09A55;opacity:.9}
-.offer>div p{color:rgba(238,241,238,.85)}
-.offer>div .ochip{background:rgba(8,14,20,.5);border-color:rgba(224,154,85,.55)}
-.offer>div .oico{stroke:#E09A55}
-.ofimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
-.of-sun .ofimg{object-position:center 30%}
-.ofscrim{position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(8,14,20,.38) 0%,rgba(8,14,20,.84) 100%)}
-.of-batt .ofscrim{background:linear-gradient(180deg,rgba(8,14,20,.45) 0%,rgba(8,14,20,.84) 100%)}
-
-@media(prefers-reduced-motion:reduce){.bene>div,.bene>div::before,.morelink::after,.offer>div{transition:none}}
-.ops{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
-.ops button{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;padding:9px 15px;background:transparent;border:1px solid var(--line);color:var(--tx2d);cursor:pointer}
-.ops button.act{background:var(--signal);color:var(--on-signal);border-color:var(--signal)}
-.opsdia{width:100%;height:auto;display:block;margin-top:18px}
-.op-node{fill:var(--panel);stroke:var(--line);stroke-width:1.5}
-.op-node.op-sig{stroke:var(--signal)}
-.op-lbl{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;fill:var(--tx2d)}
-.op-path{fill:none;stroke:var(--line);stroke-width:2}
-.op-flow{fill:none;stroke:var(--signal);stroke-width:2.5;stroke-linecap:round;opacity:0;transition:opacity .35s}
-.op-flow.on{opacity:1;stroke-dasharray:7 12;animation:opdash 1.3s linear infinite}
-.op-flow.rv.on{animation:opdashrev 1.3s linear infinite}
-.op-fill{fill:var(--signal);opacity:.9;transition:height .5s ease,y .5s ease}
-#opVerkko{transition:opacity .35s}
-#opVerkko.off{opacity:.32}
-.opscap{margin-top:18px;color:var(--tx2d);font-size:16.5px;min-height:3em;max-width:56ch}
-@keyframes opdash{to{stroke-dashoffset:-38}}
-@keyframes opdashrev{to{stroke-dashoffset:38}}
-@media (prefers-reduced-motion:reduce){.op-flow.on{animation:none;stroke-dasharray:none}.op-fill{transition:none}}
-.statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dk);border:1px solid var(--line-dk);margin-top:18px}
-.statrow>div{background:var(--dk);padding:16px 14px}
-.statrow b{display:block;font-family:'IBM Plex Mono',monospace;font-size:clamp(19px,2.6vw,26px);font-weight:500;color:var(--signal);margin-bottom:6px}
-.statrow span{font-size:13px;color:var(--dk-tx);display:block}
-@media(max-width:640px){.statrow{grid-template-columns:1fr}}
-@media(max-width:860px){.tri{grid-template-columns:1fr}}
-
-/* split */
-.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:start}
-@media(max-width:860px){.split{grid-template-columns:1fr}}
-
-/* list */
-.checks{list-style:none;margin-top:26px}
-.checks li{padding:15px 0 15px 32px;border-bottom:1px solid var(--line-dk);position:relative;font-size:16.5px;line-height:1.55}
-.dark .checks li{border-bottom-color:var(--line)}
-.checks li::before{content:"";position:absolute;left:0;top:24px;width:14px;height:1px;background:var(--signal)}
-.checks li:last-child{border-bottom:none}
-
-/* process */
-.steps{margin-top:48px;border-top:1px solid var(--line-dk)}
-.step{display:grid;grid-template-columns:64px 1fr 190px;gap:24px;padding:26px 0;border-bottom:1px solid var(--line-dk);align-items:start}
-.step .idx{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--signal-ink);padding-top:4px;letter-spacing:.06em}
-.step h4{font-size:20px;margin-bottom:8px}
-.step p{font-size:16px;color:var(--tx2)}
-.step .dur{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--muted);letter-spacing:.06em;text-align:right;padding-top:6px}
-@media(max-width:760px){.step{grid-template-columns:44px 1fr}.step .dur{grid-column:2;text-align:left;padding-top:6px}}
-
-/* callout */
-.callout{background:var(--panel);color:var(--dk-tx);padding:clamp(28px,4vw,48px);border-left:3px solid var(--signal);margin-top:52px}
-.callout p{font-size:clamp(19px,1.9vw,26px);line-height:1.44;font-family:'Archivo',sans-serif;font-weight:500;letter-spacing:-.015em;color:var(--dk-hd)}
-.callout .sub{font-family:'Newsreader',serif;font-size:16.5px;color:var(--tx2d);margin-top:18px;font-weight:400;letter-spacing:0}
-
-/* table */
-.tbl{width:100%;border-collapse:collapse;margin-top:34px;font-size:15.5px}
-.tbl th{
-  font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
-  text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--ink);color:var(--ink);font-weight:600;vertical-align:bottom
-}
-.dark .tbl th{color:var(--signal);border-bottom-color:var(--line)}
-.tbl td{padding:16px 14px 16px 0;border-bottom:1px solid var(--line-dk);vertical-align:top;line-height:1.5}
-.dark .tbl td{border-bottom-color:var(--line);color:var(--tx2d)}
-.tbl td:first-child{font-family:'Archivo',sans-serif;font-weight:600;font-size:15px;white-space:nowrap}
-.dark .tbl td:first-child{color:var(--dk-hd)}
-@media(max-width:700px){
-  .tbl,.tbl tbody,.tbl tr,.tbl td{display:block;width:100%}
-  .tbl thead{display:none}
-  .tbl tr{border-bottom:1px solid var(--line-dk);padding:14px 0}
-  .tbl td{border:none;padding:3px 0}
-  .tbl td:first-child{margin-bottom:6px}
-}
-
-/* faq / accordion-ish blocks */
-.qa{border-top:1px solid var(--line-dk);margin-top:40px}
-.qa > div{border-bottom:1px solid var(--line-dk);padding:26px 0}
-.qa h4{font-size:19px;margin-bottom:10px}
-.qa p{font-size:16.5px;color:var(--tx2)}
-.dark .qa{border-top-color:var(--line)}
-.dark .qa > div{border-bottom-color:var(--line)}
-.dark .qa p{color:var(--tx2d)}
-
-/* form */
-.form{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
-.form .full{grid-column:1/-1}
-label{display:block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
-input,select,textarea{
-  width:100%;padding:13px 14px;border:1px solid var(--line-dk);background:var(--white);
-  font-family:'Newsreader',serif;font-size:16px;color:var(--ink);border-radius:0
-}
-input:focus,select:focus,textarea:focus{outline:2px solid var(--signal-ink);outline-offset:-1px;border-color:transparent}
-textarea{min-height:118px;resize:vertical}
-@media(max-width:640px){.form{grid-template-columns:1fr}}
-
-/* footer */
-footer{background:var(--dk);color:var(--muted-lt);padding:clamp(48px,6vw,76px) 0 32px;font-size:15px}
-.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:clamp(28px,4vw,56px)}
-footer h5{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--signal);margin-bottom:16px;font-weight:500}
-footer a{color:var(--muted-lt);text-decoration:none;display:block;padding:5px 0}
-footer a:hover{color:var(--dk-hd)}
-.legal{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.9;color:var(--muted);letter-spacing:.03em}
-@media(max-width:760px){.fgrid{grid-template-columns:1fr}}
-
-/* page switching */
-.page{display:none}
-.page.active{display:block}
-:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
-@media(prefers-reduced-motion:reduce){
-  *{animation:none!important;transition:none!important}
-  html{scroll-behavior:auto}
-}
-.skip{position:absolute;left:-9999px;background:var(--signal);color:var(--on-signal);padding:10px 16px;z-index:99}
-.skip:focus{left:var(--gut);top:10px}
-
-/* ===== KOE: MAGNEETTI-CTA · etusivun napit · POISTO: tämä lohko + samanniminen JS-lohko ===== */
-@media (hover:hover) and (pointer:fine){
-  #p-home .btn{transition:transform .5s cubic-bezier(.3,1.6,.5,1),background .18s;will-change:transform}
-  #p-home .btn::after{content:"→";display:inline-block;opacity:0;width:0;margin-left:0;transform:translateX(-8px);transition:opacity .2s,transform .3s cubic-bezier(.3,1.6,.5,1),margin-left .3s,width .3s}
-  #p-home .btn:hover::after{opacity:1;transform:none;margin-left:10px;width:.72em}
-  #p-home .btn:active{transform:scale(.965)!important}
-}
-@media (prefers-reduced-motion:reduce){
-  #p-home .btn,#p-home .btn::after{transition:none}
-}
-
-/* ===== KOE 2: PREMIUM-CTA · kupari materiaalina — liukuväri, viistetty kulma, valokantit.
-   HUOM: brändisäännöt kieltävät liukuvärit ja varjot; tämä lohko on tietoinen, helposti
-   peruttava kokeilu. POISTO: tämä lohko (magneetti-lohkot voivat jäädä). ===== */
-@media (hover:hover) and (pointer:fine), (hover:none){
-  #p-home .btn:not(.ghost):not(.dk){
-    background:linear-gradient(180deg,var(--signal-hi) 0%,var(--signal) 52%,color-mix(in srgb,var(--signal) 80%,#000) 100%);
-    clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);
-    box-shadow:inset 0 1px 0 rgba(255,255,255,.32),inset 0 -1px 0 rgba(0,0,0,.26);
-    position:relative;overflow:hidden;
-  }
-  #p-home .btn:not(.ghost):not(.dk):hover{
-    background:linear-gradient(180deg,color-mix(in srgb,var(--signal-hi) 82%,#fff) 0%,var(--signal) 55%,color-mix(in srgb,var(--signal) 78%,#000) 100%);
-    box-shadow:inset 0 1px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.26),0 12px 26px -14px color-mix(in srgb,var(--signal) 60%,transparent);
-  }
-  #p-home .btn:not(.ghost)::before{
-    content:"";position:absolute;top:0;bottom:0;left:-45%;width:32%;
-    background:linear-gradient(105deg,transparent,rgba(255,255,255,.2),transparent);
-    transform:skewX(-18deg);transition:left .55s ease;pointer-events:none;
-  }
-  #p-home .btn:not(.ghost):hover::before{left:115%}
-  #p-home .btn.ghost{
-    clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);
-    position:relative;
-  }
-  /* Viisteen reunaviiva: 1px-reunus ei voi seurata clip-pathin leikkausta, joten ääriviiva
-     suljetaan piirretyllä diagonaalilla, joka perii reunuksen värin myös hoverissa. */
-  #p-home .btn.ghost::before{
-    content:"";position:absolute;top:4.6px;right:-1.8px;width:14.6px;height:1.3px;
-    background:var(--line);transform:rotate(45deg);pointer-events:none;
-  }
-  #p-home .btn.ghost:hover::before{background:var(--signal)}
-  #p-home .btn.ghost:hover{
-    background:color-mix(in srgb,var(--signal) 12%,transparent);
-    border-color:var(--signal);
-  }
-  #p-home .btn.dk{
-    background:linear-gradient(180deg,var(--panel) 0%,var(--ink) 58%,color-mix(in srgb,var(--ink) 72%,#000) 100%);
-    clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);
-    box-shadow:inset 0 1px 0 rgba(255,255,255,.12),inset 0 -1px 0 rgba(0,0,0,.5);
-    position:relative;overflow:hidden;
-  }
-  #p-home .btn.dk:hover{
-    background:linear-gradient(180deg,var(--panel-2) 0%,var(--panel) 58%,var(--ink) 100%);
-  }
-  #p-home .btn:active{
-    box-shadow:inset 0 3px 8px rgba(0,0,0,.32)!important;
-  }
-}
-@media (prefers-reduced-motion:reduce){
-  #p-home .btn::before{transition:none}
-}
-
-/* ===== ILTA & KUPARI 3.5 · VALAISTUSKERROS (entinen KOE 3, nyt tuotantoa) =====
-   Sama paletti kuin t3, päälle valaistuskerros: aamunkoiton pintagradientit, kuparihehku
-   aktiivisissa elementeissä, kevyt syvyys korteissa. POISTO: tämä lohko + 3.5-nappi. ===== */
-.hero{background:linear-gradient(180deg,#0A1118 0%,#0E1519 52%,#122029 100%);position:relative}
-.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(900px 360px at 82% -12%,rgba(255,198,132,.085),transparent 58%)}
-.hero>.wrap{position:relative;z-index:1}
-.dark{background:linear-gradient(180deg,#111C24 0%,#0E1519 100%)}
-.gcell{box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
-.tri>div,.bene>div,.offer>div{box-shadow:0 14px 34px -24px rgba(13,22,26,.45)}
-.trace path{filter:drop-shadow(0 0 4px rgba(246,190,122,.5))}
-.op-flow.on{filter:drop-shadow(0 0 3px rgba(246,190,122,.6))}
-.btn:not(.ghost){box-shadow:0 10px 24px -14px rgba(8,14,18,.55)}
-.hero h1{background:linear-gradient(105deg,#F4F5F2 30%,#C9D3CE 85%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-@media (prefers-reduced-motion:reduce){.trace path,.op-flow.on{filter:none}}
-</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"SAMA Energia","legalName":"SAMA Energia Oy","vatID":"FI36476833","url":"https://samaenergia.fi/","address":{"@type":"PostalAddress","addressLocality":"Helsinki","addressCountry":"FI"},"areaServed":[{"@type":"Country","name":"Finland"},{"@type":"Country","name":"Estonia"}],"founder":{"@type":"Person","name":"Madis Maastik"},"contactPoint":{"@type":"ContactPoint","telephone":"+372 5391 6647","email":"madis.maastik@samaenergia.fi","contactType":"customer service","availableLanguage":["fi","et"]}}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%236FBF63' d='M12 1 13.76 7.75 19.78 4.22 16.25 10.24 23 12 16.25 13.76 19.78 19.78 13.76 16.25 12 23 10.24 16.25 4.22 19.78 7.75 13.76 1 12 7.75 10.24 4.22 4.22 10.24 7.75 Z'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0A130D">
+<link rel="preload" href="/assets/fonts/archivo-700-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/archivo-800-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/newsreader-400-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/hero.webp" as="image" fetchpriority="high">
+<link href="/assets/fonts.css" rel="stylesheet">
+<link href="/assets/site.css" rel="stylesheet">
 </head>
 <body class="t3">
 <a href="#main" class="skip">Siirry sisältöön</a>
 
 <header>
   <div class="wrap nav">
-    <a href="#/" class="brand"><img src="assets/mark.webp" alt="" style="height:32px;width:auto;vertical-align:middle;margin-right:11px;margin-top:-3px">SAMA<span>·</span>ENERGIA</a>
+    <a href="/" class="brand"><img src="/assets/mark.webp" alt="" width="95" height="96" style="height:32px;width:auto;vertical-align:middle;margin-right:11px;margin-top:-3px">SAMA<span>·</span>ENERGIA</a>
     <nav class="menu" id="menu">
-      <a href="#/energiavarastot">Energiavarastot</a>
-      <a href="#/aurinko-ja-akku">Aurinkosähkö + akku</a>
-      <a href="#/reservimarkkinat">Reservimarkkinat</a>
-      <a href="#/prosessi">Näin se etenee</a>
-      <a href="#/ajankohtaista">Ajankohtaista</a>
-      <a href="#/meista">Meistä</a>
-      <a href="#/yhteystiedot" class="navcta">Varaa kartoitus</a>
+      <a href="/energiavarastot/">Energiavarastot</a>
+      <a href="/aurinko-ja-akku/">Aurinkosähkö + akku</a>
+      <a href="/reservimarkkinat/">Reservimarkkinat</a>
+      <a href="/prosessi/">Näin se etenee</a>
+      <a href="/ajankohtaista/">Ajankohtaista</a>
+      <a href="/meista/">Meistä</a>
+      
+      <a href="/yhteystiedot/" class="navcta">Pyydä kartoitus</a>
       <div class="langsw" aria-label="Kieli / Keel"><a href="/" class="cur" aria-current="true">FI</a><a href="https://samaenergia.ee/" lang="et">EE</a></div>
     </nav>
     <button class="burger" id="burger" aria-label="Valikko" aria-expanded="false">☰</button>
@@ -455,31 +48,22 @@ footer a:hover{color:var(--dk-hd)}
 </header>
 
 <main id="main">
+<div class="page active" id="p-home">
 
-<!-- ══════════════════ ETUSIVU ══════════════════ -->
-<div class="page" id="p-home">
-
-  <div class="hero heroimgd">
-    <!-- Hero-kuva: Magnific creation rgUUJVTxtc · talvi-ilta, voimajohdot ja sähköasema.
-         Julkaisussa: irrota data-URI tiedostoksi assets/hero.webp ja tee 2x-suurennos
-         retinaa varten (simulate_cost ensin). Kuparinvärinen valo kuvassa = brändin glow-aste. -->
-    <img class="heroimg" src="assets/hero.webp" alt="" aria-hidden="true">
+  <div id="rev-etusivu-1" class="hero heroimgd">
+    
+    <img class="heroimg" src="/assets/hero.webp" alt="" aria-hidden="true" width="1344" height="752" fetchpriority="high">
     <div class="heroscrim" aria-hidden="true"></div>
     <div class="wrap">
       <p class="eyebrow">Energiavarastot ja aurinkosähkö · yrityksille ja maanomistajille</p>
+      
       <h1>Yhteinen verkko.<br>Itsenäinen energia.</h1>
       <p class="lede">Rakennamme yritysten energiaomavaraisuutta: aurinkosähkö, energiavarastot ja ohjaus tekevät liittymästänne aktiivisen osan sähköjärjestelmää. Ja mitä se kohteessanne oikeasti tuottaa — siihen vastaamme <strong>kirjallisesti</strong>, ennen kuin mitään allekirjoitetaan.</p>
       <div class="btnrow">
-        <a href="#/yhteystiedot" class="btn">Varaa kohdekartoitus</a>
-        <a href="#/prosessi" class="btn ghost">Katso miten prosessi etenee</a>
+        <a href="/yhteystiedot/" class="btn">Pyydä kohdekartoitus</a>
+        <a href="/prosessi/" class="btn ghost">Katso miten prosessi etenee</a>
       </div>
 
-      <!-- Paikanpitäjäkuva: kõrgepingeliin suomalaisessa metsämaisemassa, kaheksakand taivaalla.
-           Piirretty teemamuuttujilla, joten se värittyy jokaisen teeman mukana.
-           Korvataan myöhemmin oikealla valokuvalla tai videolla. -->
-
-
-      <!-- SIGNATURE -->
       <div class="freq">
         <div class="freqhead">
           <span class="lab">Verkon taajuus — miksi energiavarastoja tarvitaan</span>
@@ -494,70 +78,68 @@ footer a:hover{color:var(--dk-hd)}
     </div>
   </div>
 
-  <section>
+  <section id="rev-etusivu-2">
     <div class="wrap">
       <p class="eyebrow">Mitä toimitamme</p>
       <div class="offer">
         <div class="of-sun">
-          <img class="ofimg" src="assets/of-aurinko.webp" alt="" aria-hidden="true"><span class="ofscrim" aria-hidden="true"></span>
+          <img class="ofimg" src="/assets/of-aurinko.webp" alt="" aria-hidden="true" width="800" height="533" loading="lazy"><span class="ofscrim" aria-hidden="true"></span>
           <span class="onum">01</span><span class="ochip"><svg class="oico" viewBox="0 0 28 28" aria-hidden="true"><path d="M5 18 L9 8 H23 L19 18 Z"/><path d="M9.7 11.3 H21.7 M8.4 14.7 H20.4 M13.5 8 L11 18 M18 8 L15.5 18"/><path d="M12 18 v4 M16 18 v4 M9 22 h10"/></svg></span>
-          <b>AURINKOSÄHKÖ</b>
+          <a class="offerlink" href="/aurinko-ja-akku/"><b>AURINKOSÄHKÖ</b></a>
           <p>Paneelit, invertterit ja asennus — mitoitettuna kulutukseenne.</p>
         </div>
         <div class="of-batt">
-          <img class="ofimg" src="assets/of-varasto.webp" alt="" aria-hidden="true"><span class="ofscrim" aria-hidden="true"></span>
+          <img class="ofimg" src="/assets/of-varasto.webp" alt="" aria-hidden="true" width="800" height="533" loading="lazy"><span class="ofscrim" aria-hidden="true"></span>
           <span class="onum">02</span><span class="ochip"><svg class="oico" viewBox="0 0 28 28" aria-hidden="true"><rect x="4" y="8" width="17" height="13"/><path d="M21 12h3v5h-3"/><path d="M13.5 10.5 L10.5 15 h4 l-3 4.5" stroke-width="1.5"/></svg></span>
-          <b>ENERGIAVARASTOT</b>
+          <a class="offerlink" href="/energiavarastot/"><b>ENERGIAVARASTOT</b></a>
           <p>Teollisuusluokan akkujärjestelmät ja niiden ohjaus.</p>
         </div>
         <div class="of-grid">
-          <img class="ofimg" src="assets/of-verkko.webp" alt="" aria-hidden="true"><span class="ofscrim" aria-hidden="true"></span>
+          <img class="ofimg" src="/assets/of-verkko.webp" alt="" aria-hidden="true" width="800" height="533" loading="lazy"><span class="ofscrim" aria-hidden="true"></span>
           <span class="onum">03</span><span class="ochip"><svg class="oico" viewBox="0 0 28 28" aria-hidden="true"><path d="M2 15 h5 l3 -7 4 12 3 -8 2 3 h5"/><path d="M20 8 l4 -4 M24 8 V4 h-4"/></svg></span>
-          <b>RESERVIMARKKINAYHTEYS</b>
+          <a class="offerlink" href="/reservimarkkinat/"><b>RESERVIMARKKINAYHTEYS</b></a>
           <p>Kohteen liittäminen reservimarkkinoille lisensoidun aggregaattorin kautta.</p>
         </div>
       </div>
       <h2 class="sec-title" style="margin-top:clamp(40px,6vw,58px)">Mitä se tarkoittaa kohteessanne.</h2>
       <div class="bene" style="margin-top:36px">
         <div class="c-las">
-          <h4>Tehomaksut alas</h4>
+          <h3>Tehomaksut alas</h3>
           <p>Varasto leikkaa kulutushuiput — vaikutus näkyy verkkolaskulla. Lasketaan teidän omista kulutustiedoistanne.</p>
-          <div class="brow"><span class="tg las">LASKETTAVISSA</span><a class="morelink" href="#/energiavarastot">Lue lisää</a></div>
+          <div class="brow"><span class="tg las">LASKETTAVISSA</span><a class="morelink" href="/energiavarastot/#tehomaksu">Lue lisää</a></div>
         </div>
         <div class="c-las">
-          <h4>Pörssisähkö eduksi</h4>
+          <h3>Pörssisähkö eduksi</h3>
           <p>Lataus halvoilla tunneilla, käyttö kalliilla. Optimoinnin arvo lasketaan toteutuneista hinnoista.</p>
-          <div class="brow"><span class="tg las">LASKETTAVISSA</span><a class="morelink" href="#/energiavarastot">Lue lisää</a></div>
+          <div class="brow"><span class="tg las">LASKETTAVISSA</span><a class="morelink" href="/energiavarastot/">Lue lisää</a></div>
         </div>
         <div class="c-las">
-          <h4>Liittymän laajennus vältettävissä</h4>
+          <h3>Liittymän laajennus vältettävissä</h3>
           <p>Varasto voi antaa huipputehon liittymän yli — laajennuksen tarve arvioidaan ennen hankintaa.</p>
-          <div class="brow"><span class="tg las">LASKETTAVISSA</span><a class="morelink" href="#/energiavarastot">Lue lisää</a></div>
+          <div class="brow"><span class="tg las">LASKETTAVISSA</span><a class="morelink" href="/energiavarastot/">Lue lisää</a></div>
         </div>
         <div class="c-las">
-          <h4>Oma tuotanto omaan käyttöön</h4>
+          <h3>Oma tuotanto omaan käyttöön</h3>
           <p>Aurinkosähkön ylijäämä varastoon ja käyttöön silloin, kun se on arvokkainta.</p>
-          <div class="brow"><span class="tg las">LASKETTAVISSA</span><a class="morelink" href="#/aurinko-ja-akku">Lue lisää</a></div>
+          <div class="brow"><span class="tg las">LASKETTAVISSA</span><a class="morelink" href="/aurinko-ja-akku/">Lue lisää</a></div>
         </div>
         <div class="c-koh">
-          <h4>Varavoima häiriöissä</h4>
+          <h3>Varavoima häiriöissä</h3>
           <p>Saarekekäyttöön suunniteltu järjestelmä syöttää kriittistä kuormaa. Vahvistetaan kohdekohtaisesti.</p>
-          <div class="brow"><span class="tg koh">KOHDEKOHTAINEN</span><a class="morelink" href="#/aurinko-ja-akku">Lue lisää</a></div>
+          <div class="brow"><span class="tg koh">KOHDEKOHTAINEN</span><a class="morelink" href="/aurinko-ja-akku/">Lue lisää</a></div>
         </div>
         <div class="c-ske">
-          <h4>Reservitulo lisänä</h4>
+          <h3>Reservitulo lisänä</h3>
           <p>Aggregaattorin arviona ja skenaarioina — myös oletuksella, että hinnat puolittuvat. Ei koskaan lupauksena.</p>
-          <div class="brow"><span class="tg ske">SKENAARIO</span><a class="morelink" href="#/reservimarkkinat">Lue lisää</a></div>
+          <div class="brow"><span class="tg ske">SKENAARIO</span><a class="morelink" href="/reservimarkkinat/">Lue lisää</a></div>
         </div>
       </div>
-      <div class="btnrow" style="margin-top:38px"><a href="#/yhteystiedot" class="btn">Varaa kohdekartoitus</a></div>
+      <div class="btnrow" style="margin-top:38px"><a href="/yhteystiedot/" class="btn">Pyydä kohdekartoitus</a></div>
     </div>
   </section>
 
-
-
   <div class="dark">
-    <section>
+    <section id="rev-etusivu-3">
       <div class="wrap">
         <p class="eyebrow">Kaksi lähtötilannetta</p>
         <h2 class="sec-title">Aurinkosähköä tai ei — aloitamme samasta paikasta: kulutustiedoistanne.</h2>
@@ -566,20 +148,20 @@ footer a:hover{color:var(--dk-hd)}
             <span class="doorlab">TEILLÄ ON JO AURINKOSÄHKÖ</span>
             <h3 style="font-size:22px;margin-bottom:14px">Akku parantaa investointia, jonka olette jo tehneet.</h3>
             <p style="color:var(--tx2d);font-size:17px">Liittymässä oleva tuotanto edellyttää kirjallisia vastauksia neljään tekniseen kysymykseen ennen tarjousta: takasyötön esto, tehonrajoitus, mittaus ja toiminta tiedonsiirron katketessa. Me teemme sen selvitystyön ja annamme vastaukset kirjallisesti.</p>
-            <div class="btnrow"><a href="#/aurinko-ja-akku" class="btn ghost">Lue miten se ratkaistaan</a></div>
+            <div class="btnrow"><a href="/aurinko-ja-akku/" class="btn ghost">Lue miten se ratkaistaan</a></div>
           </div>
           <div>
             <span class="doorlab">ALOITATTE PUHTAALTA PÖYDÄLTÄ</span>
             <h3 style="font-size:22px;margin-bottom:14px">Suunnittelemme kokonaisuuden yhtenä järjestelmänä.</h3>
             <p style="color:var(--tx2d);font-size:17px">Aurinkosähkö, energiavarasto ja ohjaus mitoitetaan yhdessä kulutustietojenne pohjalta. Alusta asti kokonaisuutena suunniteltuna mitään ei sovita jälkikäteen, vastuu on yhdellä taholla ja verkkoyhtiön hyväksyntä haetaan kerralla.</p>
-            <div class="btnrow"><a href="#/yhteystiedot" class="btn">Varaa kohdekartoitus</a></div>
+            <div class="btnrow"><a href="/yhteystiedot/" class="btn">Pyydä kohdekartoitus</a></div>
           </div>
         </div>
       </div>
     </section>
   </div>
 
-  <section>
+  <section id="rev-etusivu-4">
     <div class="wrap">
       <p class="eyebrow">Kenelle</p>
       <h2 class="sec-title">Aloitamme sieltä, missä energia on arvovalinta.</h2>
@@ -610,9 +192,7 @@ footer a:hover{color:var(--dk-hd)}
     </div>
   </section>
 
-
-
-  <section>
+  <section id="rev-etusivu-5">
     <div class="wrap">
       <p class="eyebrow">Miksi meihin voi luottaa</p>
       <h2 class="sec-title">Investointipäätöstä ei tehdä kenenkään sanan varassa.</h2>
@@ -634,7 +214,7 @@ footer a:hover{color:var(--dk-hd)}
           <p>Suurin epävarmuus ei ole laite vaan lupa. Selvitämme verkkoyhtiön kannan, ennen kuin sidotte pääomaa — ei käyttöönotossa, jossa saman asian selviäminen on kalleimmillaan.</p>
         </div>
       </div>
-      <p style="margin-top:36px;color:var(--tx2);font-size:16.5px;max-width:640px">Laitevalinta ei ole se päätös, joka ratkaisee — laitteisto on helpoin osa. Ratkaisevat kysymykset ratkaistaan ennen sitä, ja eteneminen on kuvattu vaihe vaiheelta: <a href="#/prosessi">Näin se etenee</a>.</p>
+      <p style="margin-top:36px;color:var(--tx2);font-size:16.5px;max-width:640px">Laitevalinta ei ole se päätös, joka ratkaisee — laitteisto on helpoin osa. Ratkaisevat kysymykset ratkaistaan ennen sitä, ja eteneminen on kuvattu vaihe vaiheelta: <a href="/prosessi/">Näin se etenee</a>.</p>
       <div class="refslot">
         <p class="mono" style="font-size:10.5px;letter-spacing:.14em;color:var(--muted);margin-bottom:8px">REFERENSSIT</p>
         <p style="color:var(--tx2);font-size:15.5px;max-width:none">Ensimmäiset kohteet dokumentoidaan tähän mittausdatalla — luvut ennen ja jälkeen, lähteineen. Emme julkaise referenssejä, joita emme voi todentaa.</p>
@@ -643,781 +223,50 @@ footer a:hover{color:var(--dk-hd)}
   </section>
 
   <div class="dark">
-    <section>
+    <section id="rev-etusivu-6">
       <div class="wrap" style="text-align:center;max-width:760px">
         <h2 class="sec-title" style="max-width:none;margin:0 auto 16px">Aloitetaan kulutustiedoistanne.</h2>
         <p class="sec-lede" style="margin:0 auto">Kohdekartoitus on maksuton eikä sido teitä mihinkään. Saatte kirjallisen näkemyksen — ja pidätte sen joka tapauksessa.</p>
-        <div class="btnrow" style="justify-content:center"><a href="#/yhteystiedot" class="btn">Varaa kohdekartoitus</a></div>
+        <div class="btnrow" style="justify-content:center"><a href="/yhteystiedot/" class="btn">Pyydä kohdekartoitus</a></div>
       </div>
     </section>
   </div>
 </div>
-
-<!-- ══════════════════ ENERGIAVARASTOT ══════════════════ -->
-<div class="page" id="p-energiavarastot">
-  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
-    <div class="wrap">
-      <p class="eyebrow">Energiavarastot</p>
-      <h1 style="font-size:clamp(34px,5.4vw,66px)">Kartoituksesta toimivaan, dokumentoituun ja tuottavaan järjestelmään.</h1>
-      <p class="lede">Olemme riippumattomia valmistajista. Valitsemme laitteen kohteeseen emmekä sovita kohdetta laitteeseen, jota satumme myymään. Jos paras ratkaisu kohteeseenne ei tule meiltä, sanomme senkin.</p>
-      <p class="mono" style="margin-top:20px;font-size:11px;letter-spacing:.14em;color:var(--muted-lt)">KOHDEKARTOITUS → ANALYYSIPAKETTI → TOTEUTUS → ELINKAARI</p>
-    </div>
-  </div>
-
-  <section>
-    <div class="wrap">
-      <div class="steps" style="margin-top:0;border-top:none">
-        <div class="step">
-          <span class="idx">01</span>
-          <div>
-            <h4>Kohdekartoitus</h4>
-            <p>Keräämme vakiolomakkeella liittymä- ja kulutustietonne, analysoimme kuormitusprofiilin ja annamme alustavan näkemyksen siitä, mitä akku kohteessanne tekisi — mukaan lukien sen, näyttääkö se verkkoyhtiön näkökulmasta toteutuskelpoiselta.</p>
-            <p style="margin-top:12px;font-family:'Archivo',sans-serif;font-weight:600;font-size:16px">Joskus vastaus on ei. Sanomme sen, ja olette menettänyt keskustelun ettekä vuotta.</p>
-          </div>
-          <span class="dur">Nopea · maksuton<br><em style="font-style:normal;opacity:.65;font-size:11px">VAIHEET 01–02</em></span>
-        </div>
-        <div class="step">
-          <span class="idx">02</span>
-          <div>
-            <h4>Analyysipaketti</h4>
-            <p>Dokumentti, joka menee hallituksenne kokoukseen ilman meitä. Säästölaskelma omista kulutustiedoistanne laskentatapoineen. Mitoituksen perustelu. Liittymätehon tarkastelu: voiko varasto siirtää tai välttää liittymän laajennuksen. Reservitulo aggregaattorin arviona, rinnalla skenaario hintojen laskusta. Riski- ja investointianalyysi. Oletukset ja rajaukset selkeästi eriteltyinä. Verkkoyhtiön tilanne kirjallisena. Rahoitusvaihtoehdot.</p>
-            <p style="margin-top:12px;color:var(--tx2)">Päätös tehdään kokouksessa, jossa myyjä ei ole läsnä. Esitys ei pääse sinne — kirjallinen analyysi pääsee: sen voi lähettää talousjohtajalle, kyseenalaistaa ja puolustaa. Yleensä juuri se ratkaisee.</p>
-          </div>
-          <span class="dur">Ratkaiseva vaihe<br><em style="font-style:normal;opacity:.65;font-size:11px">VAIHEET 03–04</em></span>
-        </div>
-        <div class="step">
-          <span class="idx">03</span>
-          <div>
-            <h4>Toteutus</h4>
-            <p>Laitehankinta. Asennuksen koordinointi sertifioitujen sähköurakoitsijoiden kanssa. Verkkoyhtiöprosessi kyselystä jännitteen kytkemiseen. Käyttöönottodokumentaatio. Liittyminen reservimarkkinoiden aggregaattoriin. Aikataulu vahvistetaan laitteiden saatavuuden mukaan.</p>
-            <p style="margin-top:12px;color:var(--tx2)">Saatte kattavan luovutuspaketin — ette kansiota, joka kasattiin kiireessä viimeisenä iltapäivänä.</p>
-          </div>
-          <span class="dur">4–12 viikkoa<br><em style="font-style:normal;opacity:.65;font-size:11px">VAIHEET 05–06</em></span>
-        </div>
-        <div class="step">
-          <span class="idx">04</span>
-          <div>
-            <h4>Elinkaari</h4>
-            <p>Suorituskyvyn seuranta antamaamme analyysiin verrattuna. Aggregaattorisuhteen hallinta. Laajennussuunnittelu. Takuuasiat.</p>
-            <p style="margin-top:12px;color:var(--tx2)">Olemme paikalla myös kolmantena vuonna, ja ensimmäisen vuoden luvut ovat edelleen tarkistettavissa. Se on tietoinen rajoite sille, mitä olemme valmiita lupaamaan ensimmäisenä vuonna.</p>
-          </div>
-          <span class="dur">Jatkuva<br><em style="font-style:normal;opacity:.65;font-size:11px">VAIHE 07</em></span>
-        </div>
-      </div>
-      <p style="margin-top:28px;color:var(--tx2);font-size:15.5px">Nämä neljä vaihetta ovat sama matka, jonka viikkotason järjestys ja kestot on kuvattu sivulla <a href="#/prosessi">Näin se etenee</a> — vaihenumerot viittaavat siihen.</p>
-    </div>
-  </section>
-
-  <div class="dark">
-    <section>
-      <div class="wrap">
-        <p class="eyebrow">Erikseen</p>
-        <div class="split">
-          <div><h2 class="sec-title">Konsultointi ilman laitekauppaa.</h2></div>
-          <div>
-            <p class="sec-lede">Kaikki kohteet eivät tarvitse meiltä laitetta.</p>
-            <ul class="checks">
-              <li>Toteutettavuuden arviointi</li>
-              <li>Verkkoyhtiöprosessin tuki</li>
-              <li>Teknisen vaatimustenmukaisuuden tarkastus</li>
-              <li>Muilta toimittajilta saatujen tarjousten riippumaton arviointi</li>
-            </ul>
-            <div class="btnrow"><a href="#/yhteystiedot" class="btn">Ota yhteyttä</a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-</div>
-
-<!-- ══════════════════ AURINKO + AKKU ══════════════════ -->
-<div class="page" id="p-aurinko">
-  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
-    <div class="wrap">
-      <p class="eyebrow">Aurinkosähkö + akku</p>
-      <h1 style="font-size:clamp(34px,5.4vw,66px)">Aurinko tuottaa.<br>Akku ajoittaa.</h1>
-      <p class="lede">Yhdessä ne tekevät kiinteistöstänne tuottajan, joka käyttää oman sähkönsä silloin, kun se on arvokkainta. Toimitamme koko järjestelmän alusta asti — tai täydennämme sen, joka teillä jo on.</p>
-    </div>
-  </div>
-
-  <section>
-    <div class="wrap">
-      <p class="eyebrow">Kaksi tietä samaan järjestelmään</p>
-      <div class="split" style="margin-top:34px">
-        <div>
-          <span class="num">ALOITATTE PUHTAALTA PÖYDÄLTÄ</span>
-          <h3 style="font-size:22px;margin-bottom:12px">Koko järjestelmä kerralla.</h3>
-          <p style="color:var(--tx2);font-size:16.5px">Aurinkosähkö, varasto ja ohjaus suunnitellaan yhtenä kokonaisuutena kulutustiedoistanne. Jälkikäteen sovitettavaa ei jää — miten, kerrotaan alempana.</p>
-        </div>
-        <div>
-          <span class="num">TEILLÄ ON JO AURINKOSÄHKÖ</span>
-          <h3 style="font-size:22px;margin-bottom:12px">Akku täydentää investoinnin.</h3>
-          <p style="color:var(--tx2);font-size:16.5px">Neljä teknistä kysymystä ratkaistaan kirjallisesti ennen tarjousta. Sen jälkeen akun lisääminen on hallittu sähkötekninen työ — kysymykset ja ratkaisu alla.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <div class="dark">
-    <section>
-      <div class="wrap">
-        <p class="eyebrow">Teillä on jo aurinkosähkö</p>
-        <h2 class="sec-title">Neljä kysymystä, jotka ratkaistaan ensin.</h2>
-        <div class="grids" style="margin-top:36px">
-          <div class="gcell"><div class="t">01 · Takasyöttö</div><div class="s" style="font-size:16px">Miten takasyöttö estetään, kun molemmat tuottavat?</div></div>
-          <div class="gcell"><div class="t">02 · Tehonrajoitus</div><div class="s" style="font-size:16px">Miten olemassa olevaa tuotantoa rajoitetaan, kuinka nopeasti ja millä?</div></div>
-          <div class="gcell"><div class="t">03 · Mittaus</div><div class="s" style="font-size:16px">Miten mittaus järjestetään liittymäpisteessä?</div></div>
-          <div class="gcell"><div class="t">04 · Tiedonsiirto</div><div class="s" style="font-size:16px">Mihin tilaan järjestelmä asettuu, kun yhteys komponenttien välillä katkeaa?</div></div>
-        </div>
-
-        <div class="split" style="margin-top:clamp(40px,6vw,64px)">
-          <div>
-            <div class="ops" role="group" aria-label="Käyttötilat" style="margin-top:0;margin-bottom:18px">
-              <button type="button" data-s="sun" class="act">PÄIVÄ</button>
-              <button type="button" data-s="peak">HUIPPU</button>
-              <button type="button" data-s="night">YÖ</button>
-              <button type="button" data-s="res">RESERVI</button>
-              <button type="button" data-s="out">KATKOS</button>
-            </div>
-            <svg class="sysdia" viewBox="0 0 620 372" aria-hidden="true">
-              <rect x="20" y="34" width="150" height="52"/>
-              <text x="95" y="64" text-anchor="middle">AURINKOPANEELIT</text>
-              <rect x="20" y="138" width="150" height="52"/>
-              <text x="95" y="168" text-anchor="middle">INVERTTERI</text>
-              <rect x="20" y="242" width="150" height="52"/>
-              <text x="95" y="268" text-anchor="middle">AKKU</text>
-              <rect id="opFill" class="op-fill" x="24" y="276" width="142" height="12"/>
-              <line x1="95" y1="86" x2="95" y2="138"/>
-              <line x1="170" y1="164" x2="255" y2="164"/>
-              <line x1="170" y1="268" x2="255" y2="268"/>
-              <line class="bus" x1="255" y1="120" x2="255" y2="306"/>
-              <line x1="255" y1="120" x2="332" y2="120"/>
-              <circle class="sigst" cx="352" cy="120" r="20"/>
-              <text class="sig" x="352" y="125" text-anchor="middle">M</text>
-              <line x1="372" y1="120" x2="440" y2="120"/>
-              <g id="opVerkko">
-                <rect x="440" y="94" width="160" height="52"/>
-                <text x="520" y="115" text-anchor="middle">VERKKO</text>
-                <text x="520" y="131" text-anchor="middle" style="font-size:9px">LIITTYMÄPISTE</text>
-              </g>
-              <rect x="210" y="306" width="90" height="46"/>
-              <text x="255" y="333" text-anchor="middle">KIINTEISTÖ</text>
-              <rect class="sigst" x="300" y="216" width="150" height="50"/>
-              <text class="sig" x="375" y="245" text-anchor="middle">OHJAIN</text>
-              <polyline class="ctrl" points="352,216 352,140"/>
-              <polyline class="ctrl" points="300,246 226,246 226,282 170,282"/>
-              <polyline class="ctrl" points="300,231 210,231 210,178 170,178"/>
-              <path id="opSol" class="op-flow" d="M95 86 V138 M170 164 H251"/>
-              <path id="opBatt" class="op-flow" d="M170 268 H251"/>
-              <path id="opChg" class="op-flow rv" d="M170 268 H251"/>
-              <path id="opGrid" class="op-flow" d="M440 120 H374 M330 120 H259"/>
-              <path id="opRes" class="op-flow" d="M259 120 H330 M374 120 H440"/>
-              <path id="opLoad" class="op-flow" d="M255 236 V304"/>
-            </svg>
-            <p class="opscap" id="opsCap" style="font-size:15.5px;min-height:4em"></p>
-            <p class="mono" style="font-size:11px;letter-spacing:.08em;color:var(--muted-lt);margin-top:6px">MITTAUS LIITTYMÄPISTEESSÄ SYÖTTÄÄ OHJAINTA · YHTEYDEN KATKETESSA JÄRJESTELMÄ ASETTUU TURVALLISEEN TILAAN</p>
-          </div>
-          <div>
-            <h3 style="font-size:22px;margin-bottom:14px">Mittaus liittymäpisteessä ja ohjaus, jolla on vikaturvallinen tila.</h3>
-            <p style="color:var(--tx2d);font-size:17px">Liittymäpisteeseen asennettava mittausyksikkö seuraa tehon suuntaa ja suuruutta reaaliajassa ja syöttää tiedon paikalliselle ohjaimelle. Kun tuotanto uhkaa syöttää verkkoon yli sallitun, ohjain rajoittaa sitä. Jos tiedonsiirto katkeaa, järjestelmä asettuu turvalliseen tilaan eikä hallitsemattomaan — ja juuri sen verkkoyhtiö haluaa nähdä, ennen kuin se hyväksyy mitään.</p>
-            <p style="margin-top:16px;color:var(--tx2d);font-size:17px">Komponentit ovat vakiotuotteita, saatavilla vakiintuneilta suomalaisilta toimittajilta lyhyillä toimitusajoilla. Asennuksen toteuttaa aina sertifioitu sähköurakoitsija.</p>
-            <p style="margin-top:18px;font-family:'Archivo',sans-serif;font-weight:600;font-size:18px;color:var(--dk-hd);letter-spacing:-.015em">Tässä ei ole mitään eksoottista. Ratkaisu on vakiotekniikkaa — työ on sen selvittämisessä kunnolla, etukäteen ja kirjallisesti.</p>
-          </div>
-        </div>
-
-        <p class="eyebrow" style="margin-top:clamp(40px,6vw,60px)">Mitä selvitämme ennen tarjousta</p>
-        <div class="split" style="margin-top:0">
-          <ul class="checks" style="margin-top:10px">
-            <li>Akkujärjestelmän ja olemassa olevien inverttereidenne yhteensopivuus</li>
-            <li>Ottaako akun ohjain vastaan ulkoisia tehonrajoituskäskyjä ja miten ne osoitetaan</li>
-            <li>Takasyötön esto ja mittaus liittymäpisteessä</li>
-          </ul>
-          <ul class="checks" style="margin-top:10px">
-            <li>Toiminta tiedonsiirron katketessa — mihin tilaan järjestelmä asettuu</li>
-            <li>Miten akku ja olemassa oleva tuotanto koordinoidaan keskenään ja aggregaattorin kanssa</li>
-            <li>Onko olemassa olevassa asennuksessanne jotakin muutettavaa — ja mitä</li>
-          </ul>
-        </div>
-        <div class="callout">
-          <p>Kirjallisesti. Valmistajalta ja verkkoyhtiöltänne. Ennen kuin esitämme teille hintaa.</p>
-        </div>
-        <div class="btnrow"><a href="#/yhteystiedot" class="btn">Varaa kartoitus kohteeseenne</a></div>
-      </div>
-    </section>
-  </div>
-
-  <section>
-    <div class="wrap">
-      <p class="eyebrow">Ei vielä aurinkosähköä?</p>
-      <h2 class="sec-title">Kokonaisuus kannattaa suunnitella kerralla.</h2>
-      <p class="sec-lede">Toimitamme myös koko järjestelmän: aurinkosähkön, energiavaraston ja ohjauksen yhtenä suunniteltuna kokonaisuutena. Silloin edellä kuvatut kysymykset ratkaistaan suunnittelupöydällä — ei jälkikäteen selvittämällä.</p>
-      <div class="tri duo" style="margin-top:44px">
-        <div><span class="num">01 · YHTEISMITOITUS</span><h3>Oikea koko molemmille</h3><p>Tuotanto ja varasto mitoitetaan samoista kulutustiedoista — kumpikin oikean kokoiseksi ja toisiaan varten.</p></div>
-        <div><span class="num">02 · ARKKITEHTUURI</span><h3>Valinta perustellaan</h3><p>Hybridi-invertteri vai erillinen järjestelmä — ratkaisu valitaan kohteen mukaan ja perustellaan kirjallisesti. Emme ole sidottuja yhteenkään valmistajaan.</p></div>
-        <div><span class="num">03 · ALUSTA ASTI OIKEIN</span><h3>Tehonhallinta sisään, ei päälle</h3><p>Takasyötön hallinta ja mittaus suunnitellaan järjestelmään alusta asti, eikä niitä soviteta jälkikäteen.</p></div>
-        <div><span class="num">04 · YKSI VASTUUTAHO</span><h3>Yksi suunnitelma, yksi toimitus</h3><p>Yksi verkkoyhtiöprosessi ja yksi taho, joka vastaa kokonaisuudesta — suunnittelusta käyttöönottoon ja seurantaan.</p></div>
-      </div>
-      <div class="btnrow"><a href="#/yhteystiedot" class="btn">Varaa kohdekartoitus</a></div>
-    </div>
-  </section>
-</div>
-
-<!-- ══════════════════ RESERVIMARKKINAT ══════════════════ -->
-<div class="page" id="p-reservi">
-  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
-    <div class="wrap">
-      <p class="eyebrow">Reservimarkkinat · päivitetään säännöllisesti</p>
-      <h1 style="font-size:clamp(34px,5.4vw,66px)">Reservimarkkinat: mitä ne ovat, mitä ne vaativat ja mitä emme niistä lupaa</h1>
-      <p class="lede">Tämä sivu selittää mekanismin. Se ei sisällä tuottolukuja — ja alempana kerromme, miksi.</p>
-    </div>
-  </div>
-
-  <section>
-    <div class="wrap">
-      <div class="split">
-        <div>
-          <p class="eyebrow">Perusasia</p>
-          <h2 class="sec-title">Sähköverkko on tasapainossa vain silloin, kun tuotanto ja kulutus ovat yhtä suuret joka hetki.</h2>
-        </div>
-        <div>
-          <p class="sec-lede">Kun ne eivät ole, taajuus liikkuu. Pohjoismaisessa ja mannereurooppalaisessa järjestelmässä tavoite on 50,000 Hz. Jos kulutus ylittää tuotannon, taajuus laskee. Jos tuotanto ylittää kulutuksen, taajuus nousee.</p>
-          <p style="margin-top:20px;color:var(--tx2)">Ennen tämä hoidettiin suurilla laitoksilla, jotka säätivät tuotantoaan. Sääriippuvaisen tuotannon kasvaessa ja säädettävän kapasiteetin poistuessa kantaverkkoyhtiö ostaa tätä säätökykyä markkinoilta — myös akuilta.</p>
-          <p style="margin-top:20px;color:var(--tx2)">Akku sopii tähän poikkeuksellisen hyvin, koska se reagoi sekunneissa ja voi sekä ottaa vastaan että syöttää.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="dark">
-    <section>
-      <div class="wrap">
-        <p class="eyebrow">Tuotteet</p>
-        <h2 class="sec-title">Reservituotteet ja mitä kukin vaatii akulta</h2>
-        <p class="sec-lede">Eri tuotteet edellyttävät eri reaktionopeutta ja eri kestoa. Kesto määrää akun energiamitoituksen suhteessa tehoon — tämä on se kohta, jossa väärin mitoitettu järjestelmä ei kelpaa siihen markkinaan, jolle se myytiin.</p>
-        <table class="tbl">
-          <thead>
-            <tr><th>Tuote</th><th>Mitä se tekee</th><th>Vaatimus akulta</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>FCR-N</td>
-              <td>Taajuuden jatkuva hienosäätö normaalitilanteessa. Reagoi pieniinkin poikkeamiin.</td>
-              <td>Kyky sekä ottaa että antaa tehoa symmetrisesti. Vaatii tyypillisesti pisintä kestoa molempiin suuntiin.</td>
-            </tr>
-            <tr>
-              <td>FCR-D</td>
-              <td>Häiriöreservi. Aktivoituu vasta, kun taajuus poikkeaa merkittävästi — esimerkiksi kun suuri tuotantoyksikkö irtoaa verkosta.</td>
-              <td>Nopea aktivoituminen, lyhyempi kesto. Yleisin lähtökohta yritys- ja teollisuuskokoluokan akuille.</td>
-            </tr>
-            <tr>
-              <td>aFRR</td>
-              <td>Automaattinen taajuuden palautus. Vie taajuuden takaisin tavoitearvoon FCR:n jälkeen.</td>
-              <td>Pidempi kesto ja jatkuva ohjattavuus. Vaatii enemmän energiaa suhteessa tehoon.</td>
-            </tr>
-            <tr>
-              <td>mFRR</td>
-              <td>Manuaalinen reservi. Aktivoidaan käskystä pidempikestoisiin tilanteisiin.</td>
-              <td>Pisin kesto. Harvemmin yrityskokoluokan akun ensisijainen tuote.</td>
-            </tr>
-          </tbody>
-        </table>
-        <p style="margin-top:26px;color:var(--tx2d);font-size:16px">Tarkat kestovaatimukset ja tekniset ehdot määrittelee kantaverkkoyhtiö — Suomessa Fingrid, Virossa Elering — ja ne muuttuvat. Käytämme aina voimassa olevaa ehtoa emmekä muistinvaraista lukua.</p>
-      </div>
-    </section>
-  </div>
-
-  <section>
-    <div class="wrap">
-      <p class="eyebrow">Miten kohde pääsee markkinalle</p>
-      <div class="steps">
-        <div class="step">
-          <span class="idx">01</span>
-          <div><h4>Aggregaattori</h4><p>Yksittäinen teollisuusakku on liian pieni osallistuakseen suoraan. Aggregaattori kokoaa useita kohteita yhdeksi tarjoukseksi markkinalle, hoitaa tarjoamisen ja jakaa tuoton. Aggregaattori — ei laitetoimittaja — määrittää mihin tuotteisiin kohde kelpaa.</p></div>
-          <span class="dur">Pakollinen</span>
-        </div>
-        <div class="step">
-          <span class="idx">02</span>
-          <div><h4>Esikvalifiointi</h4><p>Kantaverkkoyhtiö edellyttää, että yksikkö osoittaa täyttävänsä tuotteen tekniset vaatimukset. Tämä on mittauksin todennettava prosessi, ei ilmoitusasia.</p></div>
-          <span class="dur">Ennen tuloja</span>
-        </div>
-        <div class="step">
-          <span class="idx">03</span>
-          <div><h4>Mittaus ja tiedonsiirto</h4><p>Reaaliaikainen mittaustiedon vaihto on edellytys osallistumiselle. Suuremmissa kohteissa vaatimukset ovat tiukemmat.</p></div>
-          <span class="dur">Tekninen ehto</span>
-        </div>
-        <div class="step">
-          <span class="idx">04</span>
-          <div><h4>Verkkoyhtiön hyväksyntä</h4><p>Eri prosessi kuin kantaverkkoyhtiön. Jakeluverkkoyhtiö päättää liittymäkohtaisesti, mitä liittymään saa kytkeä ja millä ehdoilla.</p></div>
-          <span class="dur">Ensin</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="dark">
-    <section>
-      <div class="wrap">
-        <p class="eyebrow">Tärkein kohta tällä sivulla</p>
-        <div class="split">
-          <div><h2 class="sec-title">Miksi emme julkaise tuottolukuja</h2></div>
-          <div>
-            <p class="sec-lede">Jokainen akkutarjous sisältää takaisinmaksuluvun. Ratkaisevaa on, mille oletuksille se on rakennettu — ja kuka seisoo niiden takana vielä viidentenä vuonna.</p>
-            <p style="margin-top:20px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Reservihinnat vaihtelevat tunneittain</strong> ja määräytyvät markkinalla. Kukaan ei tiedä ennalta, mitä ne ovat ensi vuonna.</p>
-            <p style="margin-top:16px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Ne ovat laskusuunnassa.</strong> Suuren mittakaavan varastointi tulee sekä Suomen että Viron markkinoille. Kun sata megawattia varastointikapasiteettia tulee reservimarkkinalle, hinnat puristuvat. Se ei ole ennuste vaan laskutoimitus.</p>
-            <p style="margin-top:16px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Emme tiedä, miten kohde kvalifioituu</strong>, ennen kuin aggregaattori on sen arvioinut. Se arvio ei ole olemassa siinä vaiheessa, kun useimmat tarjoukset kirjoitetaan.</p>
-            <p style="margin-top:24px;font-family:'Archivo',sans-serif;font-weight:600;font-size:19px;color:var(--dk-hd);letter-spacing:-.015em">Luvun, jonka annamme, on kestettävä tarkastelu vielä viidentenä vuonna. Siksi rakennamme laskelman säästöille ja esitämme reservitulon lisänä: aggregaattorin omana arviona, jonka rinnalla on skenaario siitä, mitä tapahtuu, jos hinnat puolittuvat.</p>
-            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Jos hanke toimii vain silloin, kun reservihinnat pitävät, sanomme sen. Se tarkoittaa, että hanke on hauras, ja se kannattaa tietää ennen allekirjoitusta eikä toisena vuonna.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <section>
-    <div class="wrap">
-      <p class="eyebrow">Käytännön työkalu</p>
-      <h2 class="sec-title">Kolme kysymystä mille tahansa toimittajalle</h2>
-      <div class="qa">
-        <div><h4>1 · Erottele säästöt ja reservitulo. Mikä on takaisinmaksu pelkillä säästöillä?</h4><p>Erottelu on hyvän laskelman tuntomerkki — ilman sitä takaisinmaksulukua ei voi arvioida.</p></div>
-        <div><h4>2 · Mikä takaisinmaksu on, jos reservihinnat puolittuvat?</h4><p>Vastaus kertoo, onko hanke kestävä vai riippuuko se markkinasta, jota kukaan ei hallitse.</p></div>
-        <div><h4>3 · Kuka tuotti reserviarvion ja mitä hän on valmis laittamaan kirjallisesti?</h4><p>Reserviarvio on luotettavimmillaan aggregaattorin omana — sen tekijän, joka kohteen lopulta kvalifioi ja tuoton tilittää.</p></div>
-      </div>
-      <div class="callout">
-        <p>Nämä kolme kysymystä erottavat analyysin myyntipuheesta. Hyvä toimittaja vastaa niihin mielellään — ja kirjallisesti.</p>
-      </div>
-    </div>
-  </section>
-  <div class="dark">
-    <section>
-      <div class="wrap">
-        <p class="eyebrow">Miksi tämä on tärkeämpää kuin yksi kohde</p>
-        <div class="split">
-          <div>
-            <h2 class="sec-title">Jokainen asentamamme akku on liiketoimintapäätös. Yhdessä ne ovat jotain muuta.</h2>
-          </div>
-          <div>
-            <p class="sec-lede">Helmikuussa 2025 Baltian maat irtautuivat Venäjän sähköverkosta ja synkronoituivat Manner-Euroopan kanssa. Suomi on osa pohjoismaista järjestelmää. Näitä kahta yhdistävät kaapelit Suomenlahden alla — kaapelit, joita on vaurioitettu jo useammin kuin kerran.</p>
-            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Molemmat järjestelmät lisäävät sääriippuvaista tuotantoa ja menettävät säädettävää kapasiteettia, joka ennen tasapainotti niitä. Molemmat tarvitsevat samaa asiaa: joustoa, hajautettuna, sekunneissa reagoivana.</p>
-            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Yksi suuri akku on yksi kohde ja yksi vikaantumispiste. Kymmenentuhatta akkua kymmenentuhannen teollisuusliittymän takana — jokainen tuottaen omistajalleen rahaa — on alueellista infrastruktuuria, jota ei katkaista ankkurilla ja jonka omistavat ne, jotka sitä käyttävät.</p>
-            <p style="margin-top:24px;font-family:'Archivo',sans-serif;font-weight:600;font-size:19px;color:var(--dk-hd);letter-spacing:-.015em">Energiaomavaraisuutta ei rakenneta julistuksilla. Sen rakentavat yritykset, jotka asentavat akun, koska se maksaa itsensä takaisin — yksi kohde kerrallaan.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-</div>
-
-<!-- ══════════════════ PROSESSI ══════════════════ -->
-<div class="page" id="p-prosessi">
-  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
-    <div class="wrap">
-      <p class="eyebrow">Näin se etenee</p>
-      <h1 style="font-size:clamp(34px,5.4vw,66px)">Seitsemän vaihetta, ja kauanko kukin kestää.</h1>
-      <p class="lede">Jokainen kohde etenee samalla tavalla. Se ei ole byrokratiaa — juuri siksi tiedämme etukäteen, mitä tapahtuu seuraavaksi. Energiavarastot-sivun neljä palveluvaihetta ovat tämä sama matka, tässä viikkotasolla.</p>
-    </div>
-  </div>
-
-  <section>
-    <div class="wrap">
-      <div class="steps" style="margin-top:0;border-top:none">
-        <div class="step"><span class="idx">01</span><div><h4>Kvalifiointi</h4><p>Täytätte kohdetietolomakkeen: liittymisteho, pääsulake, muuntajan teho, olemassa oleva tuotanto, mittausjärjestely, asennuspaikka ja etäisyys pääkeskukseen, voimassa olevat sähkösopimukset. Analysoimme kulutustietonne.</p></div><span class="dur">≈ 1 viikko</span></div>
-        <div class="step"><span class="idx">02</span><div><h4>Tekninen esiselvitys</h4><p>Mitoitus, konfiguraatio ja tarvittaessa olemassa olevan tuotannon arviointi.</p></div><span class="dur">≈ 1 viikko</span></div>
-        <div class="step"><span class="idx">03</span><div><h4>Verkkoyhtiön ennakkoselvitys</h4><p>Teemme kyselyn ja saamme kirjallisen kannan juuri teidän liittymäpisteestänne. Te allekirjoitatte valtuutuksen, me hoidamme prosessin.</p><p style="margin-top:10px;font-family:'Archivo',sans-serif;font-weight:600;font-size:16px">Mitään ei hankita, ennen kuin tämä vaihe on valmis.</p></div><span class="dur">2–6 viikkoa</span></div>
-        <div class="step"><span class="idx">04</span><div><h4>Analyysipaketti</h4><p>Täysi kirjallinen analyysi toimitetaan. Käytte sen läpi sisäisesti ja teette päätöksen.</p></div><span class="dur">2–4 viikkoa</span></div>
-        <div class="step"><span class="idx">05</span><div><h4>Tarjous ja rahoitus</h4><p>Porrastettu tarjous, rahoitus järjestettynä, jos niin haluatte.</p></div><span class="dur">1–2 viikkoa</span></div>
-        <div class="step"><span class="idx">06</span><div><h4>Toteutus</h4><p>Tilaus, asennus, käyttöönotto, dokumentointi. Te järjestätte pääsyn kohteeseen. Kokonaisaikataulu vahvistetaan tarjouksessa laitteiden saatavuuden mukaan.</p></div><span class="dur">4–12 viikkoa</span></div>
-        <div class="step"><span class="idx">07</span><div><h4>Markkinoille pääsy ja seuranta</h4><p>Liittyminen aggregaattoriin ja suorituskyvyn seuranta antamaamme analyysiin verrattuna.</p></div><span class="dur">Jatkuva</span></div>
-      </div>
-
-      <div class="callout">
-        <p>Mitään ei hankita, ennen kuin verkkoyhtiö on vahvistanut ratkaisun kirjallisesti.</p>
-        <p class="sub">Tämä on molemmilla markkinoilla suurin yksittäinen syy epäonnistuneisiin, viivästyneisiin ja budjetin ylittäneisiin akkuhankkeisiin. Se on täysin vältettävissä, eikä välttäminen maksa mitään muuta kuin oikean järjestyksen. Siksi järjestys on meillä prosessin kiinteä osa, ei joustokohta.</p>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ══════════════════ MEISTÄ ══════════════════ -->
-<div class="page" id="p-meista">
-  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
-    <div class="wrap">
-      <p class="eyebrow">Meistä</p>
-      <h1 style="font-size:clamp(34px,5.4vw,66px)">Laite on muuttunut hyödykkeeksi. Osaaminen ei.</h1>
-      <p class="lede">Akkujärjestelmän voi hankkia mistä tahansa. Arvo syntyy siitä, että joku kertoo rehellisesti, mitä se kohteessanne tekee, vie sen verkkoyhtiön prosessin läpi, sovittaa sen olemassa olevaan aurinkosähköön sitä vaarantamatta ja tuottaa dokumentaation, joka kestää tarkastelun kolmen vuoden päästä. Se on meidän työmme.</p>
-    </div>
-  </div>
-
-  <section>
-    <div class="wrap">
-      <div class="split">
-        <div>
-          <p class="eyebrow">Miksi tämä yritys on olemassa</p>
-          <h2 class="sec-title">Rehellinen analyysi ja toteutus samalta taholta.</h2>
-        </div>
-        <div>
-          <p class="sec-lede">Markkinalla analyysi ja toteutus ovat yleensä eri käsissä: neuvonantaja ei toimita, ja toimittajan analyysi rakentuu oman tuotteen ympärille. Kumpikin malli on looginen — mutta kummassakaan asiakas ei saa samalta taholta sekä riippumatonta laskelmaa että sen toteutusta.</p>
-          <p style="margin-top:20px;color:var(--tx2)">Virossa energiavarasto on useimmiten yksi tuoterivi laajassa valikoimassa, ja kauppa rakennetaan reservituloennusteen varaan — luvun, jota kukaan ei hallitse. Me rakennamme sen säästöille.</p>
-          <p style="margin-top:22px;font-family:'Archivo',sans-serif;font-weight:600;font-size:19px;letter-spacing:-.015em">Me teemme analyysin ja toteutamme. Emme myy mitään muuta. Siinä on koko ajatus.</p>
-        </div>
-      </div>
-
-      <div class="tri" style="margin-top:56px">
-        <div><span class="num">01</span><h3>Riippumattomia valmistajista</h3><p>Valitsemme laitteen kohteeseen. Meillä ei ole omaa tuotetta, jota yrittäisimme sovittaa jokaiseen kauppaan.</p></div>
-        <div><span class="num">02</span><h3>Kaikki dokumentoituna</h3><p>Tekniset ratkaisut osoitetaan standardeilla, laiteominaisuudet valmistajan vahvistuksella ja liittymän ehdot verkkoyhtiön vastauksella.</p></div>
-        <div><span class="num">03</span><h3>Sanomme myös ei</h3><p>Jos akku ei sovi kohteeseenne, sanomme sen. Olette menettänyt vain keskustelun.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="dark">
-    <section>
-      <div class="wrap">
-        <div class="split">
-          <div>
-            <p class="eyebrow">Perustaja</p>
-            <h2 class="sec-title">Madis Maastik</h2>
-            <p class="sec-lede">Virolainen, asuu Helsingissä. Kaupallinen ja tekninen työ teollisten energiavarastojen, aurinkosähkön ja reservimarkkinoiden parissa Suomessa ja Virossa.</p>
-          </div>
-          <div>
-            <p style="color:var(--tx2d);font-size:17px">Työ kattaa molemmat markkinat: aggregaattorikumppanuudet, verkkovaatimusten täyttäminen olemassa olevan tuotannon rinnalle asennettavissa akuissa, tekninen dokumentaatio neljällä kielellä sekä reservimarkkinoille osallistumisen rahoitusmallit.</p>
-            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Kantava juonne on sama, jolle tämä yritys on rakennettu: teollisuusasiakkaat tekevät hyvin suuria päätöksiä hyvin ohuen dokumentaation varassa, ja se aukko on suljettavissa.</p>
-            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Palvelemme Suomen ja Viron markkinoita — Fingrid ja Elering, Caruna, Elenia, Helen, Vantaan Energia ja Elektrilevi — kummallakin kielellä. Emme ole suomalainen yritys, jolla on vironkielinen sivu.</p>
-            <div class="btnrow"><a href="#/yhteystiedot" class="btn">Ota yhteyttä</a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-</div>
-
-<!-- ══════════════════ YHTEYSTIEDOT ══════════════════ -->
-<div class="page" id="p-yhteys">
-  <div class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
-    <div class="wrap">
-      <p class="eyebrow">Yhteystiedot</p>
-      <h1 style="font-size:clamp(34px,5.4vw,66px)">Aloitetaan kulutustiedoistanne.</h1>
-      <p class="lede">Nopein tapa selvittää, sopiiko energiavarasto kohteeseenne, on kohdekartoitus. Jättäkää tietonne, niin lähetämme lomakkeen ja kerromme, mitä siihen tarvitaan.</p>
-    </div>
-  </div>
-
-  <section>
-    <div class="wrap">
-      <div class="split">
-        <div>
-          <form class="form" id="ctForm" name="kohdekartoitus" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="kohdekartoitus">
-            <p hidden aria-hidden="true"><label>Jättäkää tämä kenttä tyhjäksi: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
-            <div><label for="f1">Nimi</label><input id="f1" name="nimi" required></div>
-            <div><label for="f2">Yritys</label><input id="f2" name="yritys" required></div>
-            <div><label for="f3">Sähköposti</label><input id="f3" type="email" name="email" required></div>
-            <div><label for="f4">Puhelin</label><input id="f4" type="tel" name="puhelin"></div>
-            <div><label for="f5">Kohteen sijainti</label><input id="f5" name="sijainti"></div>
-            <div><label for="f6">Pääsulake tai vuosikulutus</label><input id="f6" name="kulutus" placeholder="esim. 400 A tai 900 MWh/v"></div>
-            <div class="full"><label for="f7">Onko kohteessa aurinkosähköä?</label>
-              <select id="f7" name="aurinko"><option>Ei</option><option>Kyllä</option><option>Suunnitteilla</option><option>En tiedä</option></select>
-            </div>
-            <div class="full"><label for="f8">Viesti</label><textarea id="f8" name="viesti"></textarea></div>
-            <div class="full"><button type="submit" id="ctSend" class="btn dk" style="border:none;cursor:pointer;font-family:'Archivo',sans-serif">Lähetä</button></div>
-            <p class="full" style="font-size:14.5px;color:var(--muted)">Käsittelemme lähettämänne tiedot vastataksemme yhteydenottoonne. <a href="#/tietosuoja">Tietosuojaseloste</a>.</p>
-            <p class="full ok" id="ctOk" hidden style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#1a7a3c">Kiitos — palaamme asiaan arkipäivän kuluessa.<em id="ctDemo" style="color:var(--muted)"> (Esikatselu: lähetys kytketään päälle julkaisun yhteydessä.)</em></p>
-            <p class="full" id="ctErr" hidden style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#A8452E">Lähetys ei onnistunut. Voitte lähettää tiedot myös suoraan sähköpostilla: <a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a>.</p>
-          </form>
-        </div>
-        <div>
-          <p class="eyebrow">Suoraan</p>
-          <p style="font-family:'Archivo',sans-serif;font-weight:700;font-size:26px;letter-spacing:-.02em">Madis Maastik</p>
-          <p class="mono" style="font-size:15px;margin-top:10px;color:var(--tx2)">+372 5391 6647</p>
-          <p class="mono" style="font-size:15px;color:var(--tx2)">WhatsApp +358 46 659 4879</p>
-          <p class="mono" style="font-size:15px;color:var(--tx2)"><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a></p>
-
-          <!-- Ladattavat-osio palautetaan, kun kohdetietolomake- ja prosessi-PDF:t ovat olemassa -->
-        </div>
-      </div>
-    </div>
-  </section>
-  <section style="padding-top:0">
-    <div class="wrap">
-      <p style="max-width:640px;color:var(--tx2);border-top:1px solid var(--line-dk);padding-top:22px;font-size:15.5px">Rakennamme myös kumppaniverkostoa — sähkösuunnittelijat, sertifioidut urakoitsijat ja kiinteistökehittäjät: ottakaa yhteyttä samalla lomakkeella.</p>
-    </div>
-  </section>
-
-</div>
-
-<!-- ══════════════════ AJANKOHTAISTA ══════════════════ -->
-<div class="page" id="p-ajankohtaista">
-  <div class="hero" style="padding-bottom:clamp(40px,6vw,64px)">
-    <div class="wrap">
-      <p class="eyebrow">Ajankohtaista</p>
-      <h1 style="font-size:clamp(32px,5vw,60px)">Mitä markkinalla tapahtuu — lähteineen.</h1>
-      <p class="lede">Emme pyydä teitä uskomaan meitä. Kokoamme tähän ensisijaisia lähteitä — kantaverkkoyhtiöiden ja viranomaisten omia julkaisuja — ja kerromme lyhyesti, miksi ne ovat teollisuuskohteen omistajalle merkityksellisiä. Omat analyysimme julkaistaan tällä sivulla.</p>
-    </div>
-  </div>
-  <section>
-    <div class="wrap" style="max-width:880px">
-      <p class="eyebrow">Luettavaa muualla</p>
-      <div class="qa" style="margin-top:14px">
-        <div>
-          <p class="mono" style="font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">Velvoite · määräpäivä 11.10.2026 · Direktiivi (EU) 2023/1791</p>
-          <h4>Energiakatselmusvelvoite laajenee: raja on jatkossa kulutus, ei yrityksen koko</h4>
-          <p>Uudistettu energiatehokkuusdirektiivi siirtää pakollisen energiakatselmuksen rajan yrityksen koosta energiankulutukseen: yli 10 TJ eli noin 2 700 MWh vuodessa kuluttavien yritysten on teetettävä energiakatselmus 11.10.2026 mennessä, elleivät ne ota käyttöön sertifioitua energianhallintajärjestelmää.</p>
-          <p style="margin-top:12px;color:var(--tx2)">Miksi tämä on merkityksellistä: katselmus tuottaa juuri sen kulutusdatan, josta varasto- ja aurinkoinvestointi mitoitetaan. Saman velvoitteen voi hoitaa pelkkänä pakkona — tai käyttää samalla hyödyksi.</p>
-        </div>
-        <div>
-          <p class="mono" style="font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">18.08.2026 · Fingrid · Tiedote</p>
-          <h4><a href="https://www.fingrid.fi/ajankohtaista/tiedotteet/2026/sahkonkulutus-on-kaantymassa-voimakkaaseen-kasvuun--rinnalle-tarvitaan-lisaa-saatovoimaa/" target="_blank" rel="noopener noreferrer">Sähkönkulutus on kääntymässä voimakkaaseen kasvuun – rinnalle tarvitaan lisää säätövoimaa&nbsp;↗</a></h4>
-          <p>Fingridin mukaan kulutuksen kasvu voimistuu: pelkästään datakeskushankkeiden liittymissopimuksia on lähes viiden gigawatin edestä, ja täysimääräisesti toteutuessaan sopimuskanta nostaisi Suomen sähkönkulutusta lähes 40 prosenttia vuoden 2025 tasosta. Samassa tiedotteessa on toinenkin luku: sähkövarastojen liittymissopimuksia on jo yli neljän gigawatin edestä. Kysyntä ja jousto kasvavat siis kilpaa — juuri siksi emme rakenna yhdenkään kohteen takaisinmaksua reservihintojen varaan.</p>
-          <p style="margin-top:12px">Tiedotteessa on myös hiljainen viesti olemassa olevien liittymien omistajille: uusia liittymiä voi paikoin joutua odottamaan pitkään. Akku olemassa olevan liittymän takana hyödyntää liittymää, joka teillä jo on.</p>
-          <div class="statrow"><div><b>~5 GW</b><span>datakeskushankkeita liittymissopimuksin</span></div><div><b>&gt;4 GW</b><span>sähkövarastoja liittymisjonossa</span></div><div><b>+40 %</b><span>kulutuksen kasvu, jos sopimuskanta toteutuu</span></div></div>
-          <p class="mono" style="font-size:10.5px;letter-spacing:.1em;color:var(--muted);margin-top:10px">LÄHDE: FINGRID · TIEDOTE 18.08.2026 · DOKUMENTOITU</p>
-        </div>
-      </div>
-      <p style="margin-top:30px;color:var(--tx2);font-size:16.5px">Lista täydentyy sitä mukaa kuin merkittäviä julkaisuja ilmestyy. Jos jokin niistä herättää kysymyksen omasta kohteestanne, <a href="#/yhteystiedot">kohdekartoitus</a> on nopein tapa saada vastaus.</p>
-    </div>
-  </section>
-</div>
-
-<!-- ══════════════════ TIETOSUOJA ══════════════════ -->
-<div class="page" id="p-tietosuoja">
-  <div class="hero" style="padding-bottom:clamp(40px,6vw,64px)">
-    <div class="wrap">
-      <p class="eyebrow">Tietosuoja</p>
-      <h1 style="font-size:clamp(32px,4.8vw,58px)">Tietosuojaseloste</h1>
-      <p class="lede">Keräämme vain sen, minkä annatte meille itse. Emme käytä evästeitä emmekä analytiikkaa. Tässä kerrotaan, mitä käsittelemme, miksi ja kuinka kauan.</p>
-    </div>
-  </div>
-  <section>
-    <div class="wrap" style="max-width:840px">
-      <div class="qa" style="margin-top:0">
-        <div><h4>Rekisterinpitäjä</h4><p>SAMA Energia Oy · Y-tunnus 3647683-3 · madis.maastik@samaenergia.fi · +372 5391 6647.</p></div>
-        <div><h4>Mitä tietoja käsittelemme</h4><p>Yhteydenottolomakkeella antamanne tiedot: nimi, yritys, sähköposti, puhelin, kohteen sijainti, liittymä- ja kulutustiedot sekä viesti. Lisäksi sivuston tekninen palvelinloki (mm. IP-osoite ja aikaleima), jonka ylläpitopalvelu tuottaa palvelun toimittamiseksi ja tietoturvan varmistamiseksi. Emme käytä evästeitä, seurantapikseleitä emmekä analytiikkaa.</p></div>
-        <div><h4>Miksi käsittelemme</h4><p>Vastataksemme yhteydenottoonne ja valmistellaksemme pyytämäänne kartoitusta (sopimusta edeltävät toimet, yleisen tietosuoja-asetuksen 6 artiklan 1 kohdan b alakohta) sekä oikeutetun edun perusteella (6 artiklan 1 kohdan f alakohta) asiakassuhteen hoitamiseksi ja tietoturvan varmistamiseksi. Emme käytä tietoja muuhun markkinointiin ilman erillistä suostumusta.</p></div>
-        <div><h4>Kenelle tietoja siirretään</h4><p>Emme myy emmekä luovuta tietoja markkinointiin. Teknisinä käsittelijöinä toimivat sivuston ylläpito- ja lomakepalvelu sekä sähköpostipalvelu. Jos palveluntarjoaja käsittelee tietoja EU- tai ETA-alueen ulkopuolella, siirto suojataan EU:n hyväksymillä mekanismeilla, kuten vakiosopimuslausekkeilla tai Data Privacy Framework -järjestelyllä.</p></div>
-        <div><h4>Kuinka kauan säilytämme</h4><p>Säilytämme yhteydenottoja enintään 24 kuukautta viimeisestä yhteydenpidosta, ellei asiointi jatku asiakkuutena. Kirjanpitolain piiriin kuuluva aineisto säilytetään lakisääteisen ajan.</p></div>
-        <div><h4>Oikeutenne</h4><p>Teillä on oikeus saada pääsy tietoihinne, pyytää niiden oikaisua, poistoa, käsittelyn rajoittamista tai siirtoa sekä vastustaa käsittelyä. Pyynnöt: madis.maastik@samaenergia.fi. Teillä on myös oikeus tehdä valitus valvontaviranomaiselle: Tietosuojavaltuutetun toimisto, tietosuoja.fi.</p></div>
-        <div><h4>Muutokset</h4><p>Päivitetty 18.08.2026. Jos seloste muuttuu, uusin versio on aina tällä sivulla.</p></div>
-      </div>
-    </div>
-  </section>
-</div>
-
 </main>
 
 <footer>
   <div class="wrap">
     <div class="fgrid">
       <div>
-        <a href="#/" class="brand" style="font-size:19px"><img src="assets/mark.webp" alt="" style="height:36px;width:auto;vertical-align:middle;margin-right:12px;margin-top:-4px">SAMA<span>·</span>ENERGIA</a>
+        <a href="/" class="brand" style="font-size:19px"><img src="/assets/mark.webp" alt="" width="95" height="96" style="height:36px;width:auto;vertical-align:middle;margin-right:12px;margin-top:-4px">SAMA<span>·</span>ENERGIA</a>
         <p style="margin-top:18px;max-width:36ch;color:var(--muted-lt);font-size:16px">Energiavarastot ja aurinkosähkö yrityksille. Rehellinen analyysi, verkkoyhtiön hyväksyntä ennen hankintaa, kattava dokumentaatio.</p>
         <p style="margin-top:20px" class="mono">SUOMI · EESTI</p>
       </div>
       <div>
-        <h5>Palvelut</h5>
-        <a href="#/energiavarastot">Energiavarastot</a>
-        <a href="#/aurinko-ja-akku">Aurinkosähkö + akku</a>
-        <a href="#/prosessi">Näin se etenee</a>
-        <a href="#/yhteystiedot">Kohdekartoitus</a>
+        <p class="fh">Palvelut</p>
+        <a href="/energiavarastot/">Energiavarastot</a>
+        <a href="/aurinko-ja-akku/">Aurinkosähkö + akku</a>
+        <a href="/prosessi/">Näin se etenee</a>
+        <a href="/yhteystiedot/">Kohdekartoitus</a>
       </div>
       <div>
-        <h5>Tietoa</h5>
-        <a href="#/reservimarkkinat">Reservimarkkinat</a>
-        <a href="#/ajankohtaista">Ajankohtaista</a>
-        <a href="#/meista">Meistä</a>
-        <a href="#/yhteystiedot">Yhteystiedot</a>
-        <a href="#/tietosuoja">Tietosuojaseloste</a>
+        <p class="fh">Tietoa</p>
+        <a href="/reservimarkkinat/">Reservimarkkinat</a>
+        <a href="/ajankohtaista/">Ajankohtaista</a>
+        <a href="/meista/">Meistä</a>
+        <a href="/yhteystiedot/">Yhteystiedot</a>
+        <a href="/tietosuoja/">Tietosuojaseloste</a>
       </div>
     </div>
     <div class="legal">
       SAMA ENERGIA OY · Y-TUNNUS 3647683-3 · ALV-NRO FI36476833 · KOTIPAIKKA HELSINKI<br>
-      madis.maastik@samaenergia.fi · +372 5391 6647 · WHATSAPP +358 46 659 4879 · <a href="#/tietosuoja">TIETOSUOJASELOSTE</a><br>
+      madis.maastik@samaenergia.fi · +372 5391 6647 · WHATSAPP +358 46 659 4879 · <a href="/tietosuoja/">TIETOSUOJASELOSTE</a><br>
       © 2026 SAMA Energia
     </div>
   </div>
 </footer>
 
-
-
-<script>
-/* ---------- hash router ---------- */
-var routes={
-  '#/':'p-home','':'p-home','#':'p-home',
-  '#/energiavarastot':'p-energiavarastot',
-  '#/aurinko-ja-akku':'p-aurinko',
-  '#/reservimarkkinat':'p-reservi',
-  '#/prosessi':'p-prosessi',
-  '#/meista':'p-meista',
-  '#/yhteystiedot':'p-yhteys',
-  '#/ajankohtaista':'p-ajankohtaista',
-  '#/tietosuoja':'p-tietosuoja'
-};
-var titles={
-  'p-home':'Energiavarastot ja aurinkosähkö yrityksille | SAMA Energia',
-  'p-energiavarastot':'Energiavarastot — palvelu | SAMA Energia',
-  'p-aurinko':'Aurinkosähkö + akku | SAMA Energia',
-  'p-reservi':'Reservimarkkinat: mitä ne ovat ja mitä ne vaativat | SAMA Energia',
-  'p-prosessi':'Näin akkuhanke etenee | SAMA Energia',
-  'p-meista':'Meistä | SAMA Energia',
-  'p-yhteys':'Yhteystiedot | SAMA Energia',
-  'p-ajankohtaista':'Ajankohtaista | SAMA Energia',
-  'p-tietosuoja':'Tietosuojaseloste | SAMA Energia'
-};
-function show(id){
-  document.querySelectorAll('.page').forEach(function(p){p.classList.toggle('active',p.id===id)});
-  if(titles[id])document.title=titles[id];
-  document.querySelectorAll('.menu a').forEach(function(a){
-    a.classList.toggle('on',routes[a.getAttribute('href')]===id);
-  });
-  document.getElementById('menu').classList.remove('open');
-  document.getElementById('burger').setAttribute('aria-expanded','false');
-  window.scrollTo(0,0);
-}
-/* Sivunvaihto ei nojaa osoiteriviin, joten se toimii myös esikatseluymparistoissa;
-   oikealla sivustolla osoite paivittyy silti ja suorat linkit toimivat. */
-document.addEventListener('click',function(e){
-  var a=e.target.closest('a');if(!a)return;
-  var h=a.getAttribute('href');
-  if(h&&h.indexOf('#/')===0&&routes[h]){
-    e.preventDefault();show(routes[h]);
-    try{if(location.hash!==h)history.pushState(null,'',h)}catch(_){}
-  }
-});
-try{
-  window.addEventListener('hashchange',function(){show(routes[location.hash]||'p-home')});
-  show(routes[location.hash]||'p-home');
-}catch(_){show('p-home')}
-
-document.getElementById('burger').addEventListener('click',function(){
-  var m=document.getElementById('menu');
-  var open=m.classList.toggle('open');
-  this.setAttribute('aria-expanded',open?'true':'false');
-});
-
-/* Yhteydenottolomake — Netlify Forms. FORM_LIVE käännetään trueksi julkaisun yhteydessä;
-   siihen asti lomake toimii esikatselutilassa eikä lähetä mitään. */
-var FORM_LIVE=true;
-var cf=document.getElementById('ctForm');
-if(cf)cf.addEventListener('submit',function(e){
-  e.preventDefault();
-  var ok=document.getElementById('ctOk'),err=document.getElementById('ctErr'),
-      demo=document.getElementById('ctDemo'),btn=document.getElementById('ctSend');
-  err.hidden=true;
-  if(!FORM_LIVE){ok.hidden=false;return;}
-  demo.hidden=true;btn.disabled=true;btn.style.opacity='.6';
-  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},
-    body:new URLSearchParams(new FormData(cf)).toString()})
-  .then(function(r){
-    btn.disabled=false;btn.style.opacity='';
-    if(r.ok){ok.hidden=false;cf.reset();}else{err.hidden=false;}
-  })
-  .catch(function(){btn.disabled=false;btn.style.opacity='';err.hidden=false;});
-});
-
-
-
-/* ---------- signature: frequency trace ----------
-   Illustrative only. To make it live, poll Fingrid's open data API
-   (real-time frequency) and Elering's live API, then feed values in.
-   Time-based rAF scroll: renders at display refresh rate, pauses in
-   background tabs, honours prefers-reduced-motion. */
-(function(){
-  var path=document.getElementById('wave');
-  if(!path)return;
-  var W=1200,H=130,MID=65,SEG=5,N=242,pts=[],t=0;
-  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  /* Siemen 453912 — deterministinen satunnaisuus: jokainen lataus toistaa saman käyrän. */
-  var _s=453912>>>0;
-  function rnd(){_s|=0;_s=_s+0x6D2B79F5|0;var r=Math.imul(_s^_s>>>15,1|_s);r=r+Math.imul(r^r>>>7,61|r)^r;return((r^r>>>14)>>>0)/4294967296;}
-  function val(){
-    t++;
-    var base=Math.sin(t*0.07)*7+Math.sin(t*0.19)*4+Math.sin(t*0.031)*9;
-    var noise=(rnd()-0.5)*3.4;
-    var event=(rnd()<0.012)?(rnd()<0.5?-22:18):0;
-    return Math.max(10,Math.min(H-10,MID+base+noise+event));
-  }
-  for(var i=0;i<N;i++)pts.push(val());
-  function draw(off){
-    var d='M'+(0-off).toFixed(1)+' '+pts[0].toFixed(1);
-    for(var i=1;i<N;i++)d+=' L'+(i*SEG-off).toFixed(1)+' '+pts[i].toFixed(1);
-    path.setAttribute('d',d);
-  }
-  draw(0);
-  if(reduce)return;
-  var last=null,off=0;
-  function frame(now){
-    if(last===null)last=now;
-    var dt=Math.min(now-last,100);last=now;
-    off+=dt*0.05;
-    while(off>=SEG){off-=SEG;pts.shift();pts.push(val());}
-    draw(off);
-    requestAnimationFrame(frame);
-  }
-  requestAnimationFrame(frame);
-})();
-
-/* ===== KONSEPTI-B SIIRROT: kuormituskäyrä + käyttötilakaavio ===== */
-(function(){
-  var cap=document.getElementById('opsCap');
-  if(!cap)return;
-  var F={sol:document.getElementById('opSol'),batt:document.getElementById('opBatt'),
-    chg:document.getElementById('opChg'),grid:document.getElementById('opGrid'),
-    res:document.getElementById('opRes'),load:document.getElementById('opLoad')};
-  var fill=document.getElementById('opFill');
-  var verkko=document.getElementById('opVerkko');
-  var TXT={
-    sun:'P\u00e4iv\u00e4ll\u00e4 aurinko tuottaa. Ylij\u00e4\u00e4m\u00e4 ei mene halvalla verkkoon vaan varastoon omaan k\u00e4ytt\u00f6\u00f6n.',
-    peak:'Kulutushuipun aikana varasto purkaa, ja verkosta otettava teho pysyy tehokaton alapuolella.',
-    night:'Y\u00f6ll\u00e4 ja halvan hinnan tunteina varasto lataa. Energia siirtyy kalliille tunneille.',
-    res:'Verkon taajuus poikkeaa. Varasto vastaa sekunneissa \u2014 reservitulo kulkee aggregaattorin kautta ja n\u00e4ytet\u00e4\u00e4n aina skenaariona, ei lupauksena.',
-    out:'Saarekek\u00e4ytt\u00f6\u00f6n suunniteltu j\u00e4rjestelm\u00e4 sy\u00f6tt\u00e4\u00e4 katkon aikana kriittist\u00e4 kuormaa. Ominaisuus ei kuulu jokaiseen kokoonpanoon, vaan se vahvistetaan kohdekohtaisesti.'};
-  var CFG={
-    sun:{on:['sol','load','chg'],lvl:.75,grid:true},
-    peak:{on:['grid','load','batt'],lvl:.45,grid:true},
-    night:{on:['grid','chg'],lvl:.92,grid:true},
-    res:{on:['batt','res'],lvl:.6,grid:true},
-    out:{on:['batt','load'],lvl:.35,grid:false}};
-  var btns=document.querySelectorAll('.ops button');
-  function set(st){
-    var c=CFG[st];
-    Object.keys(F).forEach(function(k){F[k].classList.toggle('on',c.on.indexOf(k)>=0);});
-    var hh=Math.round(10*c.lvl)+2;
-    fill.setAttribute('height',hh);fill.setAttribute('y',288-hh);
-    verkko.classList.toggle('off',!c.grid);
-    btns.forEach(function(b){b.classList.toggle('act',b.dataset.s===st);});
-    cap.textContent=TXT[st];
-  }
-  btns.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.s);});});
-  set('sun');
-})();
-
-/* ===== KOE: MAGNEETTI-CTA · pari CSS-lohkolle tyylien lopussa · poista molemmat peruaksesi ===== */
-(function(){
-  if(!window.matchMedia('(hover:hover) and (pointer:fine)').matches)return;
-  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-  var R=110,MAX=7,raf=null,mx=0,my=0;
-  document.addEventListener('mousemove',function(e){
-    mx=e.clientX;my=e.clientY;
-    if(!raf)raf=requestAnimationFrame(update);
-  });
-  function update(){
-    raf=null;
-    var home=document.getElementById('p-home');
-    if(!home||!home.classList.contains('active'))return;
-    var btns=home.querySelectorAll('.btn');
-    for(var i=0;i<btns.length;i++){
-      var b=btns[i],r=b.getBoundingClientRect();
-      var dx=mx-(r.left+r.width/2),dy=my-(r.top+r.height/2);
-      var ox=Math.max(Math.abs(dx)-r.width/2,0),oy=Math.max(Math.abs(dy)-r.height/2,0);
-      var d=Math.sqrt(ox*ox+oy*oy);
-      if(d<R){
-        var c=Math.sqrt(dx*dx+dy*dy)||1,p=1-d/R;p*=p;
-        b.style.transition='transform .09s ease-out';
-        b.style.transform='translate('+(dx/c*p*MAX).toFixed(1)+'px,'+(dy/c*p*MAX).toFixed(1)+'px) scale('+(1+p*.03).toFixed(3)+')';
-      }else if(b.style.transform){
-        b.style.transition='';b.style.transform='';
-      }
-    }
-  }
-})();
-</script>
+<script>(function(){var m={"#/energiavarastot":"https://samaenergia.fi/energiavarastot/","#/energiasalvestid":"https://samaenergia.ee/energiasalvestid/","#/aurinko-ja-akku":"https://samaenergia.fi/aurinko-ja-akku/","#/paike-ja-aku":"https://samaenergia.ee/paike-ja-aku/","#/reservimarkkinat":"https://samaenergia.fi/reservimarkkinat/","#/reserviturud":"https://samaenergia.ee/reserviturud/","#/prosessi":"https://samaenergia.fi/prosessi/","#/protsess":"https://samaenergia.ee/protsess/","#/meista":"https://samaenergia.fi/meista/","#/meist":"https://samaenergia.ee/meist/","#/yhteystiedot":"https://samaenergia.fi/yhteystiedot/","#/kontakt":"https://samaenergia.ee/kontakt/","#/ajankohtaista":"https://samaenergia.fi/ajankohtaista/","#/uudised":"https://samaenergia.ee/uudised/","#/tietosuoja":"https://samaenergia.fi/tietosuoja/","#/andmekaitse":"https://samaenergia.ee/andmekaitse/"};var t=m[location.hash];if(t)location.replace(t)})()</script>
+<script src="/assets/site.js"></script>
 </body>
 </html>
