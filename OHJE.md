@@ -37,6 +37,18 @@ muudatused kaovad.
 Kui muudatuste komplekt on valmis, anna **Martinile** teada. Ainult tema
 avaldab (draft → main → samaenergia.fi / samaenergia.ee).
 
+### Avaldamine — asutajatele
+
+1. Ava github.com-is haru **`draft`** → nupp **Contribute** →
+   **Open pull request** → **Create pull request** (siht: `main`).
+2. Oota, kuni kontroll **`build-verify`** läheb roheliseks ✓.
+3. Vajuta **Merge pull request** — toodang on samaenergia.fi / .ee peal
+   ~2 minutiga.
+
+Punane ✗ tähendab, et build keeldus sisust (nt kohatäide, katkine link või
+vananenud genereeritud lehed) — paranda draftis või küsi abi. Merge'ida
+saavad ainult asutajad.
+
 ### Reeglid
 
 - Ära muuda genereeritud lehti ega `assets/site.css`-i ilma eelneva
@@ -81,6 +93,18 @@ katoavat.
 
 Kun muutoskokonaisuus on valmis, kerro **Martinille**. Vain hän julkaisee
 (draft → main → samaenergia.fi / samaenergia.ee).
+
+### Julkaisu — perustajille
+
+1. Avaa github.comissa haara **`draft`** → painike **Contribute** →
+   **Open pull request** → **Create pull request** (kohde: `main`).
+2. Odota, että tarkistus **`build-verify`** muuttuu vihreäksi ✓.
+3. Paina **Merge pull request** — tuotanto on samaenergia.fi / .ee -osoitteissa
+   ~2 minuutissa.
+
+Punainen ✗ tarkoittaa, että build kieltäytyi sisällöstä (esim. kohatäyte,
+rikkinäinen linkki tai vanhentuneet generoidut sivut) — korjaa draftissa tai
+kysy apua. Vain perustajat voivat mergata.
 
 ### Säännöt
 
