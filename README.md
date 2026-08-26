@@ -3,6 +3,10 @@
 This repo is the **single source of record** for the SAMA Energia public website
 (samaenergia.fi / samaenergia.ee / samaenergia.com).
 
+**Non-developer contributors: see [OHJE.md](OHJE.md)** (Estonian + Finnish) —
+edit `src/et.html` / `src/fi.html` in the browser on the `draft` branch; a
+GitHub Action builds the pages for you.
+
 ## Deployment
 
 - Deployed via **Netlify auto-deploy from `main`**.

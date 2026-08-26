@@ -84,3 +84,4 @@ https://samaenergia.com/*     https://samaenergia.fi/:splat     301!
 /docs/*     /404.html  404!
 /CLAUDE.md  /404.html  404!
 /README.md  /404.html  404!
+/OHJE.md    /404.html  404!
