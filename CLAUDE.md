@@ -19,10 +19,12 @@ All customer-facing text is Finnish or Estonian and requires a
 
 ## Content rules that bind this repo
 
-- No partner names.
-- No individual bios.
-- No track-record claims.
-- No figures without a documented source.
+- Partner names permitted ONLY in the Kumppanit section of the FI meistä page
+  (founder decision 28.08.2026, Martin); banned everywhere else, including .ee,
+  until further decision.
+- Team bios permitted as of 28.08.2026 (founder decision, Martin).
+- No track-record claims. (Retained in full force.)
+- No figures without a documented source. (Retained in full force.)
 
 When in doubt, leave it out and flag it.
 

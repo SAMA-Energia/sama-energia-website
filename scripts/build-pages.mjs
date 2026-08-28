@@ -311,7 +311,7 @@ ${shim}<script src="/assets/site.js"></script>
     .replace(/\n[ \t]*\n([ \t]*\n)+/g, '\n\n');
   return stripped.replace(
     '<!DOCTYPE html>\n',
-    `<!DOCTYPE html>\n<!-- GENEROITU TIEDOSTO — älä muokkaa käsin. Lähde: ${L.src} · node scripts/build-pages.mjs -->\n`,
+    `<!DOCTYPE html>\n<!-- GENEROITU TIEDOSTO — ÄLÄ MUOKKAA TÄTÄ TIEDOSTOA: kaikki tekstit muokataan tiedostoissa src/fi.html ja src/et.html; build ylikirjoittaa tämän tiedoston. / GENEREERITUD FAIL — ÄRA MUUDA SEDA FAILI: kõik tekstid muudetakse failides src/et.html ja src/fi.html; build kirjutab selle faili üle. Lähde/allikas: ${L.src} · node scripts/build-pages.mjs -->\n`,
   );
 }
 

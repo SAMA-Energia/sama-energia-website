@@ -1,0 +1,73 @@
+# SAMA Energia — draft-haaran automaattinen sivugenerointi.
+#
+# Miksi: tekstintekijät muokkaavat vain src/fi.html + src/et.html selaimessa,
+# eivätkä voi ajaa buildia — tämä workflow generoi sivut heidän puolestaan.
+#
+# - Ajaa draft-haaran pusheissa sekä draftiin JA mainiin osoittavissa PR:issä —
+#   ei koskaan mainin pusheissa.
+# - Jos verify epäonnistuu, ajo epäonnistuu näkyvästi (punainen X) eikä committoi mitään
+#   (commit-askel on verifyn jälkeen; kaatunut askel keskeyttää työn).
+# - MAIN-PR:t (julkaisu): PELKKÄ TARKISTUS — build + verify + "generoitu tuloste
+#   vastaa lähteitä" -vertailu. Ei koskaan auto-commitia main-suuntaan.
+#   Pakollinen status-check haaransuojaukseen: "build-verify".
+# - Silmukkasuoja: GITHUB_TOKENilla tehdyt pushit eivät käynnistä uusia workflow-ajoja
+#   (GitHubin sisäänrakennettu esto) + alla oleva actor-vahti + tyhjä diff ohitetaan.
+# - PR:issä ei koskaan commitia (fork-PR:n token on joka tapauksessa lukuoikeuksinen).
+name: build-draft
+
+on:
+  push:
+    branches: [draft]
+  pull_request:
+    branches: [draft, main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-draft-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build-verify:
+    name: build-verify
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # koko historia: build-pages.mjs diffaa lähteet origin/mainia vasten (review.json)
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generoi sivut
+        run: node scripts/build-pages.mjs
+
+      - name: Tarkista invariantit
+        run: node scripts/verify-pages.mjs
+
+      - name: "Main-PR: generoidun tulosteen on vastattava lähteitä (pelkkä tarkistus)"
+        if: github.event_name == 'pull_request' && github.base_ref == 'main'
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "::error::Generoitu tuloste ei vastaa lähteitä. Korjaus: pushaa draftiin (tai aja build-draft-workflow draftissa uudelleen), jolloin Action generoi ja committoi sivut — PR päivittyy itsestään. Näin käy myös, jos main on liikkunut draftin viimeisen buildin jälkeen (esim. hotfix)."
+            git status --porcelain
+            exit 1
+          fi
+          echo "Generoitu tuloste vastaa lähteitä — julkaisukelpoinen."
+
+      - name: Committoi generoitu tuloste takaisin draftiin
+        if: github.event_name == 'push'
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Ei muutoksia — generoitu tuloste on jo ajan tasalla."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Automaattinen sivugenerointi"
+          git push origin HEAD:draft
