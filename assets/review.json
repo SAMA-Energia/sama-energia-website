@@ -1,3 +1,28 @@
 {
- "changes": []
+ "changes": [
+  {
+   "page": "/meista/",
+   "sectionId": "rev-meista-2",
+   "kind": "changed",
+   "prev": "Miksi tämä yritys on olemassa Rehellinen analyysi ja toteutus samalta taholta. Markkinalla analyysi ja toteutus ovat yleensä eri käsissä: neuvonantaja ei toimita, ja toimittajan analyysi rakentuu oman tuotteen ympärille. Kumpikin malli on looginen — mutta kummassakaan asiakas ei saa samalta taholta sekä riippumatonta laskelmaa että sen toteutusta. Virossa energiavarasto on useimmiten yksi tuoterivi laajassa valikoimassa, ja kauppa rakennetaan reservituloennusteen varaan — luvun, jota kukaan ei hallitse. Me rakennamme sen säästöille. Me teemme analyysin ja toteutamme. Emme myy mitään muuta. Siinä on koko ajatus. 01Riippumattomia valmistajistaValitsemme laitteen kohteeseen. Meillä ei ole omaa tuotetta, jota yrittäisimme sovittaa jokaiseen kauppaan. 02Kaikki dokumentoitunaTekniset ratkaisut osoitetaan standardeilla, laiteominaisuudet valmistajan vahvistuksella ja liittymän ehdot verkkoyhtiön vastauksella. 03Sanomme myös eiJos akku ei sovi kohteeseenne, sanomme sen. Olette menettänyt vain keskustelun."
+  },
+  {
+   "page": "/meista/",
+   "sectionId": "rev-meista-3",
+   "kind": "changed",
+   "prev": "Perustaja Madis Maastik Virolainen, asuu Helsingissä. Kaupallinen ja tekninen työ teollisten energiavarastojen, aurinkosähkön ja reservimarkkinoiden parissa Suomessa ja Virossa. Työ kattaa molemmat markkinat: aggregaattorikumppanuudet, verkkovaatimusten täyttäminen olemassa olevan tuotannon rinnalle asennettavissa akuissa, tekninen dokumentaatio neljällä kielellä sekä reservimarkkinoille osallistumisen rahoitusmallit. Kantava juonne on sama, jolle tämä yritys on rakennettu: teollisuusasiakkaat tekevät hyvin suuria päätöksiä hyvin ohuen dokumentaation varassa, ja se aukko on suljettavissa. Palvelemme Suomen ja Viron markkinoita — Fingrid ja Elering, Caruna, Elenia, Helen, Vantaan Energia ja Elektrilevi — kummallakin kielellä. Emme ole suomalainen yritys, jolla on vironkielinen sivu. Ota yhteyttä"
+  },
+  {
+   "page": "/meista/",
+   "sectionId": "kumppanit",
+   "kind": "changed",
+   "prev": ""
+  },
+  {
+   "page": "/meist/",
+   "sectionId": "rev-meist-3",
+   "kind": "changed",
+   "prev": "Asutaja Madis Maastik Eestlane, elab Helsingis. Kaubanduslik ja tehniline töö tööstuslike energiasalvestite, päikeseelektri ja reserviturgudega Soomes ja Eestis. Töö katab mõlemad turud: agregaatoripartnerlused, võrgunõuete täitmine olemasoleva tootmise kõrvale paigaldatavates akudes, tehniline dokumentatsioon neljas keeles ning reserviturul osalemise rahastusmudelid. Läbiv joon on sama, millele see ettevõte on ehitatud: tööstuskliendid teevad väga suuri otsuseid väga õhukese dokumentatsiooni najal, ja see auk on suletav. Teenindame Soome ja Eesti turge — Fingrid ja Elering, Caruna, Elenia, Helen, Vantaan Energia ja Elektrilevi — mõlemas keeles. Me ei ole Soome ettevõte, millel on eestikeelne leht. Võtke ühendust"
+  }
+ ]
 }
