@@ -678,11 +678,10 @@ SuomiJSM Automaatiosähkö OySähköasennukset ja käyttöönotto · Pirkanmaa
 Sähköurakoitsija Sastamalasta, varasto Tampereella. Aurinkosähkö, akustot ja reservimarkkina-akut, lämpöpumput ja sähköautojen lataus.jsmautomaatiosahko.fi
 
 Rahoitus
-Arviossa näytämme omarahoituksen ja leasingin rinnakkain, samoilla luvuilla.
+Emme ole sidoksissa yhteen rahoittajaan. Arviossa näytämme omarahoituksen ja leasingin rinnakkain, samoilla luvuilla.
 
-Svea
-ViroSvea Finance ASLeasing ja osamaksu yrityksille
-Svea Bank -konserniin kuuluva rahoittaja Virossa.svea.com
+Leasing tai omarahoitusRahoitus järjestetään kohteen mukaan
+Leasingrahoitus on mahdollista järjestää yritysrahoittajien kautta Suomessa ja Virossa. Rahoittaja ja ehdot valitaan kohteen ja ostajan mukaan, ja ne kirjataan arvioon ennen allekirjoitusta. Oman pääoman ja leasingin vertailu on arviossa samoilla luvuilla, jotta päätös on helppo.
 
 Yritys paperilla.
 
@@ -1558,11 +1557,10 @@ SoomeJSM Automaatiosähkö OyElektripaigaldus ja käikulaskmine · Pirkanmaa
 Elektritööde ettevõte Sastamalast, ladu Tamperes. Päikeseelekter, akusüsteemid ja reservituru akud, soojuspumbad ja elektriautode laadimine.jsmautomaatiosahko.fi
 
 Rahastus
-Hinnangus näitame omafinantseeringu ja liisingu kõrvuti, samade numbrite pealt.
+Me ei ole seotud ühe rahastajaga. Hinnangus näitame omafinantseeringu ja liisingu kõrvuti, samade numbrite pealt.
 
-Svea
-EestiSvea Finance ASLiising ja järelmaks äriklientidele
-Svea Bank gruppi kuuluv rahastaja Eestis.svea.com
+Liising või omafinantseeringRahastus korraldatakse objekti järgi
+Liisingrahastus on võimalik korraldada ärirahastajate kaudu Eestis ja Soomes. Rahastaja ja tingimused valitakse objekti ja ostja järgi ning kirjutatakse hinnangusse enne allkirja. Omakapitali ja liisingu võrdlus on hinnangus samade numbrite pealt, et otsus oleks lihtne.
 
 Ettevõte paberil.
 

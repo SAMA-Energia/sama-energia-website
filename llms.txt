@@ -33,8 +33,10 @@ What the company says about itself, in its own documented positioning:
   committed, financing shown as own capital versus leasing on the same figures.
   A reply within two business days.
 - Delivery partners named on the site: Ralos Oy (battery units, stock in
-  Tampere), JSM Automaatiosähkö Oy (electrical installation and commissioning),
-  Svea Finance AS (leasing in Estonia).
+  Tampere) and JSM Automaatiosähkö Oy (electrical installation and commissioning).
+  Financing is not tied to any single provider: leasing can be arranged through
+  business financiers in Finland and Estonia and is compared with own capital on
+  the same figures in the written assessment.
 - Sources cited on the site include Fingrid's reserve-market material (e.g.
   "Energiavarastot reservimarkkinoilla", 10 February 2025: share of prequalified
   capacity from energy storage FCR-N 29 %, FCR-D 13 % up / 18 % down, FFR 54 %),
