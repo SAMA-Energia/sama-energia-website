@@ -1,59 +1,79 @@
 # SAMA Energia
 
-> Status: internal draft in English, written for AI crawlers and answer engines.
-> Pending founder review — this file is not customer-facing copy. The customer-facing
-> content is in Finnish (samaenergia.fi) and Estonian (samaenergia.ee).
+> Status: English summary written for AI crawlers and answer engines. This file is not
+> customer-facing copy: the customer-facing content is in Finnish (samaenergia.fi) and
+> Estonian (samaenergia.ee). The full text of every public page in both languages is in
+> https://samaenergia.fi/llms-full.txt (generated from the same HTML that is served).
 
-SAMA Energia Oy (VAT FI36476833, domiciled in Helsinki, Finland; company in
-formation phase for an Estonian OÜ) is an independent battery energy storage
-(BESS) and solar PV integrator serving industrial and commercial sites in
-Finland and Estonia, in both Finnish and Estonian.
+SAMA Energia Oy (Finnish business ID 3647683-3, VAT FI36476833, domiciled in
+Helsinki, Finland) is an integrator (EPC) of industrial battery energy storage
+and solar PV for businesses and landowners in Finland and Estonia. The company
+surveys, designs, procures and builds the systems and connects them to the
+reserve markets of the transmission system operators Fingrid (Finland) and
+Elering (Estonia) through an aggregator. Founders: Martin Rautio (CEO) and
+Madis Maastik (sales director). Site updated 3 September 2026 (design v5).
 
-What distinguishes the company, in its own documented positioning:
+What the company says about itself, in its own documented positioning:
 
-- Integrator, not an equipment brand and not an aggregator: manufacturer-
-  independent sizing, the device is chosen for the site rather than the site
-  fitted to a device.
-- Savings first: the business case is built on peak-shaving of grid capacity
-  charges and spot-price optimization, computed from the customer's own
-  15-minute/hourly metering data — never from generic assumptions.
-- Reserve-market income (FCR-N, FCR-D, aFRR, mFRR via Fingrid/Elering) is
-  always presented separately, as aggregator-sourced scenarios including a
-  halved-price scenario. It is never promised and never the premise a project
-  depends on.
-- The distribution grid operator's (DSO) written position on the connection is
-  obtained before any procurement — stated as the largest single avoidable
-  cause of failed battery projects.
-- Provenance doctrine: every published figure carries its documented source
-  (tariff sheets, TSO publications, legislation); what cannot be documented is
-  not published. No analytics, no cookies, no third-party scripts on the site.
+- One battery, four jobs: peak shaving of the grid capacity charge, buying
+  electricity in cheap spot-price hours, reserve-market income for standing
+  ready, and backup power. No solar or own generation is required; an existing
+  grid connection is enough.
+- Reserve markets (FFR, FCR-N, FCR-D, aFRR, mFRR in Finland; FCR, aFRR, mFRR in
+  Estonia) pay for availability. A single industrial battery reaches the market
+  through an aggregator: VENI Energia in Finland, Soleron Energy in Estonia.
+  Backup power requires an installation designed for island operation and a
+  separated critical circuit; it is assessed site by site.
+- Reserve income is never guaranteed: the written assessment shows a low, medium
+  and high scenario, and keeps the capacity-charge and spot-price savings on a
+  separate line because they do not depend on reserve prices.
+- The first product is a free site survey and a written assessment: every figure
+  with its source and date, the customer's own hourly consumption data as the
+  basis, the distribution grid operator's position before any capital is
+  committed, financing shown as own capital versus leasing on the same figures.
+  A reply within two business days.
+- Delivery partners named on the site: Ralos Oy (battery units, stock in
+  Tampere), JSM Automaatiosähkö Oy (electrical installation and commissioning),
+  Svea Finance AS (leasing in Estonia).
+- Sources cited on the site include Fingrid's reserve-market material (e.g.
+  "Energiavarastot reservimarkkinoilla", 10 February 2025: share of prequalified
+  capacity from energy storage FCR-N 29 %, FCR-D 13 % up / 18 % down, FFR 54 %),
+  Fingrid's 24 September 2025 release on connection restrictions in southern
+  Finland until 2029, and Elering's balancing-capacity cost (3.73 EUR/MWh in
+  2026, 2.97 EUR/MWh from 2027).
+- Privacy posture: no cookies, no analytics, no third-party scripts, fonts
+  self-hosted. The contact form is the only place personal data is collected.
 
 ## Pages — Finnish (https://samaenergia.fi)
 
-- https://samaenergia.fi/ : Front page — energy storage and solar PV for businesses and landowners.
-- https://samaenergia.fi/energiavarastot/ : Storage as a service — site survey, written analysis package, delivery, lifecycle.
-- https://samaenergia.fi/aurinko-ja-akku/ : Solar + battery as one system; the four technical questions resolved in writing before any offer.
-- https://samaenergia.fi/reservimarkkinat/ : Reserve markets (FCR/aFRR/mFRR) explained; why no income figures are published.
-- https://samaenergia.fi/prosessi/ : The seven project phases with durations; nothing is procured before the DSO's written position.
-- https://samaenergia.fi/ajankohtaista/ : Market news with primary sources (TSO and regulator publications).
-- https://samaenergia.fi/meista/ : About — honest analysis and delivery from the same party, both markets, both languages.
+- https://samaenergia.fi/ : Front page — "Itsenäinen energia. Itseohjautuva akku." One battery, three cash flows plus backup power; how the four steps work; who it suits; FAQ; site-survey form.
+- https://samaenergia.fi/aurinkosahko/ : Solar PV for businesses, sized by consumption, not roof area; solar plus battery.
+- https://samaenergia.fi/energiavarastot/ : Industrial energy storage: one device, four jobs; a battery's day; what is delivered and why now.
+- https://samaenergia.fi/reservimarkkinat/ : Reserve markets explained; four sourced reasons; how income is estimated; honest about reserve prices; what the company votes for.
+- https://samaenergia.fi/veni-energia/ : What an aggregator does, how joining Fingrid's reserve markets proceeds, and the Finnish aggregator partner VENI Energia.
+- https://samaenergia.fi/palvelut/ : Services — free site survey, written assessment, project management, monitoring; the four rules of every assessment.
+- https://samaenergia.fi/meista/ : About — why the company was founded, who is accountable for what, the partner network, company facts.
+- https://samaenergia.fi/ajankohtaista/ : Reviews with sources and dates.
+- https://samaenergia.fi/ajankohtaista/liityntarajoitus-2029/ : Review: no new storage connections in southern Finland before 2029 — your connection already exists.
 - https://samaenergia.fi/yhteystiedot/ : Contact and free site survey request.
 - https://samaenergia.fi/tietosuoja/ : Privacy statement (no cookies, no analytics).
 
 ## Pages — Estonian (https://samaenergia.ee)
 
-- https://samaenergia.ee/ : Esileht — energiasalvestid ja päikeseelekter ettevõtetele ja maaomanikele.
-- https://samaenergia.ee/energiasalvestid/ : Salvestid teenusena; sisaldab dokumenteeritud võimsustasu näidisarvutust (Elektrilevi tariifid).
-- https://samaenergia.ee/paike-ja-aku/ : Päikeseelekter + aku ühe süsteemina; neli tehnilist küsimust enne pakkumist.
-- https://samaenergia.ee/reserviturud/ : Reserviturud selgitatuna; miks tulunumbreid ei avaldata.
-- https://samaenergia.ee/protsess/ : Akuprojekti seitse etappi kestustega.
-- https://samaenergia.ee/uudised/ : Uudised esmaallikatega (Elering, ELTS, EL-i direktiivid).
-- https://samaenergia.ee/meist/ : Meist — aus analüüs ja teostus samalt osapoolelt.
-- https://samaenergia.ee/kontakt/ : Kontakt ja tasuta objektikaardistuse küsimine.
+- https://samaenergia.ee/ : Avaleht — "Iseseisev energia. Isejuhtiv aku." Üks salvesti, kolm rahavoogu, varutoide; neli sammu; kellele; KKK; hindamisvorm.
+- https://samaenergia.ee/paikeseelekter/ : Päikeseelekter ettevõtetele, mõõdetud tarbimise järgi; päike ja aku koos.
+- https://samaenergia.ee/energiasalvestid/ : Tööstuslik energiasalvesti: üks seade, neli tööd; aku päev; mida tarnime ja miks nüüd.
+- https://samaenergia.ee/reserviturg/ : Reserviturg lihtsalt seletatuna; neli allikatega põhjust; kuidas tulu hinnatakse; ausalt reservihindadest.
+- https://samaenergia.ee/soleron-energy/ : Mida agregaator teeb, kuidas liitumine Eleringi reservituruga käib, ja Eesti agregaatoripartner Soleron Energy.
+- https://samaenergia.ee/teenused/ : Teenused — tasuta hindamine, kirjalik hinnang, projektijuhtimine, seire; neli reeglit.
+- https://samaenergia.ee/meist/ : Meist — miks ettevõte tehti, kes mille eest vastutab, võrgustik, ettevõte paberil.
+- https://samaenergia.ee/ulevaated/ : Ülevaated koos allikate ja kuupäevadega.
+- https://samaenergia.ee/ulevaated/reservitasu-2026/ : Ülevaade: alates 2026 maksate reservide eest — kummal pool arvet te olete.
+- https://samaenergia.ee/kontakt/ : Kontakt ja tasuta hindamise küsimine.
 - https://samaenergia.ee/andmekaitse/ : Andmekaitsetingimused.
 
 ## Contact
 
-- Founder: Madis Maastik
-- Email: madis.maastik@samaenergia.fi
-- Phone: +372 5391 6647 · WhatsApp +358 46 659 4879
+- Madis Maastik, sales director and founder: madis.maastik@samaenergia.fi · +358 449 654 614 · WhatsApp +358 46 659 4879
+- Martin Rautio, CEO and founder: martin.rautio@samaenergia.fi · +358 40 701 9099
+- General: info@samaenergia.fi

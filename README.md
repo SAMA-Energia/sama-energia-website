@@ -19,17 +19,33 @@ GitHub Action builds the pages for you.
 - **Edit** `src/fi.html` (Finnish) and `src/et.html` (Estonian) — one source
   file per language. Per-page titles/descriptions live in `data-title` /
   `data-desc` attributes on each `.page` div.
-- Shared styles/scripts: `assets/site.css`, `assets/site.js`.
-- **Generate** all pages, `sitemap.xml`, and `_headers`:
-  `node scripts/build-pages.mjs`
+- Shared styles/scripts: `assets/site.css`, `assets/site.js` (design system v5,
+  03.09.2026: gold/typographic, Newsreader + IBM Plex Sans).
+- **Generate** all pages, both 404 pages, `sitemap.xml`, `llms-full.txt` and
+  `_headers`: `node scripts/build-pages.mjs`
 - **Verify** before committing: `node scripts/verify-pages.mjs`
 - **Review mode**: open `https://draft--samaenergia.netlify.app/?review=1` to see
-  draft changes vs production highlighted (copper outlines + UUSI/MUUTETTU labels,
+  draft changes vs production highlighted (gold outlines + UUSI/MUUTETTU labels,
   banner lists changed pages). The build writes `assets/review.json` by diffing
   `src/` against `origin/main`; on `main` the diff is empty, and without the
   `?review=1` parameter the mode loads nothing — inert by construction.
 - Never edit generated files by hand (`index.html`, `<slug>/index.html`,
-  `et/**`, `sitemap.xml`, `_headers`) — they are overwritten by the build.
+  `et/**`, `404.html`, `sitemap.xml`, `llms-full.txt`, `_headers`) — they are
+  overwritten by the build.
+
+Fonts are self-hosted (`assets/fonts/`, from the `@fontsource-variable/newsreader`
+and `@fontsource/ibm-plex-sans` npm packages, SIL OFL) and declared in
+`assets/fonts.css` with `font-display: swap`; the build preloads the two display
+faces and the body face, and no page makes a third-party request. The two
+Open Graph images `assets/og-fi.png` / `assets/og-et.png` (1200×630) are
+rendered from a small HTML template with headless Chrome and committed; the
+build emits `og:image` and `twitter:card` on every page. `llms-full.txt` is
+generated from the same page HTML that is served (plain text of every public
+page, one `# Title — URL` heading per page) next to the hand-written English
+`llms.txt`. Articles are *unpaired* pages — each language has its own — listed
+in `UNPAIRED` in `scripts/build-pages.mjs` and written as nested slugs
+(`ajankohtaista/<slug>`, `ulevaated/<slug>`); they get canonical, og and a
+self-referencing hreflang, and appear in the sitemap.
 
 ## Ownership
 
