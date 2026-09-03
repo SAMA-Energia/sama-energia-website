@@ -106,20 +106,21 @@
         <p class="lead" style="margin-top:22px">Elektrivõrk peab olema igal sekundil tasakaalus. Kui tootmine ja tarbimine lahku lähevad, ostab Elering turult kiiret abi ja maksab selle eest, et abi on olemas, iga päev järgmise päeva jaoks. Akud on selle töö kiireimad tegijad: nad laevad ülejäägi endasse ja annavad selle puudujääki sekunditega. Ühe tehase aku pääseb turule agregaatori kaudu, kes kogub väiksemad akud üheks vähemalt ühemegavatiseks pakkumiseks.</p>
       </div>
       <div class="sizing reveal" aria-hidden="true">
-        <svg viewBox="0 0 440 230" fill="none">
+        <svg viewBox="0 0 440 230" fill="none" class="chart-scale">
+          <defs><style>.lab{font:600 11px 'IBM Plex Sans',sans-serif;letter-spacing:.06em}.hz{font:500 13px 'IBM Plex Sans',sans-serif}.sec{font:400 11.5px 'IBM Plex Sans',sans-serif}.flow{font:500 11.5px 'IBM Plex Sans',sans-serif}</style></defs>
           <path d="M206 150h28l-14-64z" fill="#F3EEE1" stroke="#8B857A" stroke-width="1.2" stroke-linejoin="round"/>
           <rect x="150" y="150" width="140" height="6" rx="3" fill="#F3EEE1" stroke="#8B857A" stroke-width="1"/>
           <g class="beam-loop" style="transform-origin:220px 82px"><rect x="80" y="79" width="280" height="6" rx="3" fill="#C9A227"/><circle cx="220" cy="82" r="7" fill="#fff" stroke="#C9A227" stroke-width="2"/></g>
-          <g class="pan-loop-l"><path d="M88 85v28M118 85v28" stroke="#8B857A" stroke-width="1"/><path d="M74 113h58l-5 14H79z" fill="#FFFDF7" stroke="#8B857A" stroke-width="1.2" stroke-linejoin="round"/><circle cx="93" cy="102" r="6" fill="#C9A227"/><path d="M108 108l5-13 5 13" stroke="#1F1C18" stroke-width="1.5" stroke-linecap="round"/><text x="103" y="146" text-anchor="middle" style="font:600 11px 'IBM Plex Sans',sans-serif;fill:#7A746A;letter-spacing:.06em">TOOTMINE</text></g>
-          <g class="pan-loop-r"><path d="M322 85v28M352 85v28" stroke="#8B857A" stroke-width="1"/><path d="M308 113h58l-5 14h-48z" fill="#FFFDF7" stroke="#8B857A" stroke-width="1.2" stroke-linejoin="round"/><path d="M322 108v-11h8v5h8v-7h8v13" stroke="#1F1C18" stroke-width="1.5" stroke-linejoin="round"/><text x="337" y="146" text-anchor="middle" style="font:600 11px 'IBM Plex Sans',sans-serif;fill:#7A746A;letter-spacing:.06em">TARBIMINE</text></g>
+          <g class="pan-loop-l"><path d="M88 85v28M118 85v28" stroke="#8B857A" stroke-width="1"/><path d="M74 113h58l-5 14H79z" fill="#FFFDF7" stroke="#8B857A" stroke-width="1.2" stroke-linejoin="round"/><circle cx="93" cy="102" r="6" fill="#C9A227"/><path d="M108 108l5-13 5 13" stroke="#1F1C18" stroke-width="1.5" stroke-linecap="round"/><text x="103" y="146" text-anchor="middle" class="lab" fill="#7A746A">TOOTMINE</text></g>
+          <g class="pan-loop-r"><path d="M322 85v28M352 85v28" stroke="#8B857A" stroke-width="1"/><path d="M308 113h58l-5 14h-48z" fill="#FFFDF7" stroke="#8B857A" stroke-width="1.2" stroke-linejoin="round"/><path d="M322 108v-11h8v5h8v-7h8v13" stroke="#1F1C18" stroke-width="1.5" stroke-linejoin="round"/><text x="337" y="146" text-anchor="middle" class="lab" fill="#7A746A">TARBIMINE</text></g>
           <rect x="204" y="176" width="32" height="16" rx="3" stroke="#B08A1E" stroke-width="1.5" fill="#fff"/><rect x="236" y="180" width="3" height="8" rx="1" fill="#B08A1E"/>
           <rect class="batt-fill" x="207" y="179" width="12" height="10" rx="1.5" fill="#C9A227"/>
-          <text x="220" y="210" text-anchor="middle" style="font:600 11px 'IBM Plex Sans',sans-serif;fill:#8A6A12;letter-spacing:.06em">AKU</text>
+          <text x="220" y="210" text-anchor="middle" class="lab" fill="#8A6A12">AKU</text>
           <circle class="flow-down" cx="200" cy="176" r="4" fill="#C9A227"/><circle class="flow-up" cx="240" cy="176" r="4" fill="#B08A1E"/>
-          <text class="lbl-charge" x="150" y="190" text-anchor="end" style="font:500 11.5px 'IBM Plex Sans',sans-serif;fill:#8A6A12">ülejääk endasse: aku laeb</text>
-          <text class="lbl-discharge" x="290" y="190" text-anchor="start" style="font:500 11.5px 'IBM Plex Sans',sans-serif;fill:#8A6A12">puudujääk täis: aku annab</text>
-          <text x="220" y="30" text-anchor="middle" style="font:500 13px 'IBM Plex Sans',sans-serif;fill:#1F1C18">50 Hz = tasakaal</text>
-          <text x="220" y="48" text-anchor="middle" style="font:400 11.5px 'IBM Plex Sans',sans-serif;fill:#7A746A">kui kaalukauss kaldub, reageerib aku esimesena ja toob selle tasakaalu tagasi</text>
+          <text class="lbl-charge flow sec" x="150" y="190" text-anchor="end" fill="#8A6A12">ülejääk endasse: aku laeb</text>
+          <text class="lbl-discharge flow sec" x="290" y="190" text-anchor="start" fill="#8A6A12">puudujääk täis: aku annab</text>
+          <text x="220" y="30" text-anchor="middle" class="hz" fill="#1F1C18">50 Hz = tasakaal</text>
+          <text x="220" y="48" text-anchor="middle" class="sec" fill="#7A746A">kui kaalukauss kaldub, reageerib aku esimesena ja toob selle tasakaalu tagasi</text>
         </svg>
         <p class="caption" style="text-align:center;margin-top:10px">Aku tasakaalustab, Elering maksab valmisoleku eest. Sama juhtub teie objektil sadu kordi päevas, automaatselt.</p>
       </div>
@@ -186,21 +187,21 @@
         <div class="hero-cta" style="margin-top:26px"><a class="btn btn-primary" href="/kontakt/">Küsi tasuta hindamist <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg></a><a class="btn btn-ghost" href="/soleron-energy/">Kuidas Soleron Energy töötab</a></div>
       </div>
       <div class="sizing reveal" aria-hidden="true">
-        <svg viewBox="0 0 440 300" fill="none">
+        <svg viewBox="0 0 470 300" fill="none" class="chart-yield">
           <defs><style>.sl{font:500 12px 'IBM Plex Sans',sans-serif;fill:#1F1C18}.ss{font:400 11px 'IBM Plex Sans',sans-serif;fill:#7A746A}.sb{font:600 13px 'IBM Plex Sans',sans-serif;fill:#8A6A12}</style><linearGradient id="gg2" x1="0" x2="1"><stop offset="0" stop-color="#F3EEE1"/><stop offset="1" stop-color="#C9A227"/></linearGradient></defs>
-          <rect x="24" y="40" width="130" height="78" rx="10" fill="#FBF7EA" stroke="#D8D0BC"/>
-          <text x="89" y="66" text-anchor="middle" class="sl">Inverter</text><text x="89" y="92" text-anchor="middle" style="font:500 26px 'Newsreader',serif;fill:#8A6A12">1 MW</text><text x="89" y="108" text-anchor="middle" class="ss">võimsus = kui palju</text>
-          <rect x="24" y="136" width="130" height="78" rx="10" fill="#FBF7EA" stroke="#D8D0BC"/>
-          <text x="89" y="162" text-anchor="middle" class="sl">Aku</text><text x="89" y="188" text-anchor="middle" style="font:500 26px 'Newsreader',serif;fill:#8A6A12">2 MWh</text><text x="89" y="204" text-anchor="middle" class="ss">maht = kui kaua</text>
-          <path d="M154 79h40M154 175h40M194 79v96" stroke="#C9A227" stroke-width="1.6"/><path d="M194 127h44" stroke="#C9A227" stroke-width="1.6" stroke-dasharray="4 4"/>
-          <rect x="238" y="96" width="92" height="62" rx="10" fill="#F6EED3" stroke="#C9A227" stroke-width="1.4"/>
+          <rect x="24" y="40" width="160" height="78" rx="10" fill="#FBF7EA" stroke="#D8D0BC"/>
+          <text x="104" y="66" text-anchor="middle" class="sl">Inverter</text><text x="104" y="92" text-anchor="middle" style="font:500 26px 'Newsreader',serif;fill:#8A6A12">1 MW</text><text x="104" y="111" text-anchor="middle" class="ss">võimsus = kui palju</text>
+          <rect x="24" y="136" width="160" height="78" rx="10" fill="#FBF7EA" stroke="#D8D0BC"/>
+          <text x="104" y="162" text-anchor="middle" class="sl">Aku</text><text x="104" y="188" text-anchor="middle" style="font:500 26px 'Newsreader',serif;fill:#8A6A12">2 MWh</text><text x="104" y="207" text-anchor="middle" class="ss">maht = kui kaua</text>
+          <path d="M184 79h10M184 175h10M194 79v96" stroke="#C9A227" stroke-width="1.6"/><path d="M194 127h32" stroke="#C9A227" stroke-width="1.6" stroke-dasharray="4 4"/>
+          <rect x="226" y="96" width="116" height="62" rx="10" fill="#F6EED3" stroke="#C9A227" stroke-width="1.4"/>
           <text x="284" y="122" text-anchor="middle" class="sl">Agregaator</text><text x="284" y="140" text-anchor="middle" class="ss">Soleron Energy</text>
-          <g stroke="#C9A227" stroke-width="1.6"><path d="M330 116h30l20-30h30"/><path d="M330 127h30l20 0h30"/><path d="M330 138h30l20 30h30"/></g>
+          <g stroke="#C9A227" stroke-width="1.6"><path d="M342 116h18l20-30h30"/><path d="M342 127h18l20 0h30"/><path d="M342 138h18l20 30h30"/></g>
           <g class="sl"><text x="414" y="90">FCR</text><text x="414" y="131">aFRR</text><text x="414" y="172">mFRR</text></g>
           <text x="284" y="78" text-anchor="middle" class="ss">iga tund kõige tasuvamasse reservi</text>
-          <text x="24" y="250" class="sb">JUHTIMISE ULATUS</text><text x="416" y="250" text-anchor="end" class="sb">TULU</text>
-          <rect x="24" y="258" width="392" height="10" rx="5" fill="url(#gg2)"/>
-          <text x="24" y="288" class="ss">osaline</text><text x="416" y="288" text-anchor="end" class="ss">täielik juhtimine = rohkem tulu</text>
+          <text x="24" y="250" class="sb">JUHTIMISE ULATUS</text><text x="446" y="250" text-anchor="end" class="sb">TULU</text>
+          <rect x="24" y="258" width="422" height="10" rx="5" fill="url(#gg2)"/>
+          <text x="24" y="288" class="ss">osaline</text><text x="446" y="288" text-anchor="end" class="ss">täielik juhtimine = rohkem tulu</text>
         </svg>
       </div>
     </div>

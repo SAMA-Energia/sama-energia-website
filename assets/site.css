@@ -104,7 +104,7 @@ p{margin:0}
 .hero::before{content:"";position:absolute;inset:auto -10% -50% auto;width:56vw;height:56vw;max-width:860px;max-height:860px;background:radial-gradient(closest-side,rgba(221,185,78,.14),rgba(221,185,78,0) 70%);pointer-events:none}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,84px);align-items:end;position:relative;z-index:1}
 .hero-bg{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
-.hero-bg svg{position:absolute;left:0;right:0;bottom:0;width:100%;height:38%;-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 42%,#000 100%);mask-image:linear-gradient(180deg,transparent 0%,#000 42%,#000 100%)}
+.hero-bg svg{position:absolute;left:0;right:0;bottom:0;width:100%;height:30%;-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 42%,#000 100%);mask-image:linear-gradient(180deg,transparent 0%,#000 42%,#000 100%)}
 .hero-bg .trace{fill:none;stroke:var(--gold);stroke-width:1.1;opacity:.34;stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 3.2s var(--ease) .3s forwards}
 .hero-bg .trace.t2{opacity:.14;animation-delay:.5s;animation-duration:3.8s}
 .hero-bg .trace.t3{opacity:.08;animation-delay:.7s;animation-duration:4.4s}
@@ -163,7 +163,7 @@ p{margin:0}
 /* ---------- tables ---------- */
 .tbl-wrap{margin-top:40px;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--paper)}
 .tbl-wrap .tbl-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px;padding:20px 24px;border-bottom:1px solid var(--line);background:var(--paper-2)}
-.tbl-wrap .tbl-head h3{font-size:22px;font-family:var(--font-display);font-weight:500}
+.tbl-wrap .tbl-head h2,.tbl-wrap .tbl-head h3{font-size:22px;font-family:var(--font-display);font-weight:500;line-height:1.25;letter-spacing:-.01em}
 .tbl-wrap .tbl-head .src{margin:0}
 .tbl-scroll{overflow-x:auto}
 table.tbl{width:100%;border-collapse:collapse;font-size:15px;line-height:1.45;min-width:640px}
@@ -176,7 +176,7 @@ table.tbl td.no{color:var(--gold-deep)}
 table.tbl td .chip{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:999px;background:var(--gold-soft);color:var(--gold-deep);font:500 12.5px/1 var(--font-body)}
 .reserve .tbl-wrap,.band-night .tbl-wrap{background:var(--night-2);border-color:var(--night-line)}
 .reserve .tbl-wrap .tbl-head{background:var(--night-3);border-color:var(--night-line)}
-.reserve .tbl-wrap .tbl-head h3{color:var(--night-ink)}
+.reserve .tbl-wrap .tbl-head h2,.reserve .tbl-wrap .tbl-head h3{color:var(--night-ink)}
 .band-night .tbl-wrap .tbl-head{background:var(--night-3);border-color:var(--night-line)}
 .reserve table.tbl th,.band-night table.tbl th{color:var(--night-ink-2);border-color:var(--night-line)}
 .reserve table.tbl td,.band-night table.tbl td{color:var(--night-ink-2);border-color:var(--night-line)}
@@ -718,6 +718,26 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
   .chart .bar{transform:none}
   .beam,.pan-l,.pan-r{transform:none}
   .soc{transform:scaleX(.7)}
+}
+
+/* ---------- kuvitukset kapeilla näytöillä ----------
+   SVG-kaaviot skaalautuvat viewBoxin mukaan; alle 600 px:n näytöllä toissijaiset selitteet
+   (.ns/.ss/.sec/.gs/.bs) piilotetaan ja ensisijaiset nostetaan niin, että ne piirtyvät ≥ 10 px.
+   Akun päivä -kaavio (900 yksikköä leveä) piirtyy alle 600 px:n leveydellä ilman tekstejä:
+   selite (.legend) ja .day-notes kertovat sarjat ja kellonajat sen alla. */
+@media (max-width:900px){
+  .hero-bg svg{height:13%} /* pinotussa herossa aaltoviiva jää alareunan tyhjään tilaan, ei nappien tai merkkien taakse */
+}
+@media (max-width:600px){
+  .chart-day .ph,.chart-day .ax,.chart-day .tt{display:none}
+  .chart-structure .ns{display:none}
+  .chart-structure .nl{font-size:15.5px}
+  .chart-scale .sec{display:none}
+  .chart-scale .lab,.chart-scale .hz{font-size:15px}
+  .chart-yield .ss{display:none}
+  .chart-yield .sl,.chart-yield .sb{font-size:16px}
+  .chart-figure .gs,.chart-figure .bs{display:none}
+  .chart-figure .gl,.chart-figure .bl{font-size:21px}
 }
 
 /* ---------- skip-linkki ---------- */
