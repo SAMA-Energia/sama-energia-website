@@ -7,7 +7,7 @@
 
 Itsenäinen energia. Itseohjautuva akku.
 
-Teollinen energiavarasto leikkaa tehomaksua, ostaa sähkön halvoilla tunneilla ja tuottaa Fingridin reservimarkkinoilla valmiudesta. Täysin automaattisesti, ilman että kenenkään teillä tarvitsee tehdä mitään. Mitä se tarkoittaa juuri teidän kohteessanne, kerromme kirjallisesti ennen kuin allekirjoitatte mitään.
+Teollinen energiavarasto leikkaa tehomaksua, ostaa sähkön halvoilla tunneilla ja tuottaa Fingridin reservimarkkinoilla valmiudesta. Täysin automaattisesti, ilman että teidän tarvitsee tehdä mitään. Mitä se tarkoittaa juuri teidän kohteessanne, kerromme kirjallisesti ennen kuin allekirjoitatte mitään.
 
 Pyydä maksuton kartoitus
 Näin se etenee
@@ -16,7 +16,7 @@ MaksutonEi sitoumuksiaKirjallinen arvio
 
 Sähkö maksaa. Epävarmuus maksaa enemmän.
 
-Tehomaksu, tuntihinta, verkkoyhtiön ehdot, reservimarkkinat, vuosittain muuttuvat maksut ja lait, rahoitus. Jokainen niistä vaikuttaa sähkökuluunne, mutta kukaan ei kokoa niitä yhteen teidän kohteenne osalta. Siksi isot päätökset tehdään tuntumalla, tai jätetään tekemättä.
+Tehomaksu, tuntihinta, verkkoyhtiön ehdot, reservimarkkinat, vuosittain muuttuvat maksut ja lait, rahoitus. Jokainen niistä vaikuttaa sähkökuluunne, mutta kukaan ei kokoa niitä yhteen teidän kohteenne osalta. Siksi isot päätökset tehdään tuntumalla tai jätetään tekemättä.
 
 Kokonaiskuva siitä, mitä markkinoilla tapahtuu ja mihin suuntaan ne liikkuvat.
 
@@ -56,7 +56,7 @@ Kriittiset laitteet jatkavat, kun verkko pettää: kuivuri, kylmävarasto tai tu
 
 Energiavarastot
 
-Onko kohteessa aurinkosähköä, tai suunnitteilla? Akku tekee siitä paremman investoinnin: oma tuotanto omaan käyttöön, ylijäämä varastoon, ja sama akku reserveihin.Aurinkosähkö yrityksille
+Onko kohteessa aurinkosähköä tai onko se suunnitteilla? Akku tekee siitä paremman investoinnin: oma tuotanto omaan käyttöön, ylijäämä varastoon, ja sama akku reserveihin.Aurinkosähkö yrityksille
 
 Fingrid maksaa siitä, että akkunne on valmiina.
 
@@ -119,11 +119,11 @@ Aurinkopuistot ja kiinteistösalkut
 Olemassa oleva tuotanto saa varastosta toisen tulonlähteen, ja salkku saa yhden kumppanin, joka laskee kaikki kohteet läpi.
 Auringon kanssa vielä parempi
 
-Ettekö löytänyt omaa kohdettanne? Kuvailkaa se meille, kerromme rehellisesti, kannattaako akku teillä.Pyydä kartoitus
+Ettekö löytäneet omaa kohdettanne? Kuvailkaa se meille, kerromme rehellisesti, kannattaako akku teillä.Pyydä kartoitus
 
 Emme myy laitetta. Etsimme teille markkinoiden parhaan ratkaisun.
 
-Ymmärrämme kohteenne, tunnemme markkinan ja käytämme omaa verkostoamme, jotta tarjous on juuri teidän tarpeeseenne, ei toimittajan varastoon, mitoitettu.
+Ymmärrämme kohteenne, tunnemme markkinan ja käytämme omaa verkostoamme, jotta tarjous on mitoitettu juuri teidän tarpeeseenne, ei toimittajan varastoon.
 
 Ymmärrämme kohteenne
 
@@ -201,7 +201,7 @@ Verkkoyhtiö
 Onko kohteessa aurinkosähköä?—EiKylläSuunnitteilla
 
 Pyydä maksuton kartoitus
-Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen, tietosuojaseloste.
+Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen. Lue tietosuojaseloste.
 
 Lähetys ei onnistunut. Voitte lähettää tiedot myös suoraan sähköpostilla: madis.maastik@samaenergia.fi.
 
@@ -317,7 +317,7 @@ Suurkuluttajalle akku ei ole tulevaisuuden hanke vaan tämän päivän tulonläh
 
 Pyydä maksuton kartoitus Aggregaattorikumppanimme VENI Energia
 
-~1 500 MWreserviä Fingrid hankkii keskimäärin joka tunnille, ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW lisää
+~1 500 MWreserviä Fingrid hankkii keskimäärin joka tunnille ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW lisää
 
 29 % · 54 %energiavarastojen osuus FCR-N- ja FFR-reservien todennetusta kapasiteetista, helmikuu 2025
 
@@ -374,7 +374,7 @@ Invertterin teho ja kapasiteetti ratkaisevat. Tuotto arvioidaan akun invertterin
 
 Mitä täydemmin aggregaattori ohjaa, sitä enemmän tuottoa. Kun VENI Energia ohjaa akkua kokonaan, se voi viedä joka tunnin kannattavimpaan reserviin (FCR-D, FCR-N, FFR, aFRR) ja ottaa markkinasta maksimin. Osittainen ohjaus tuottaa vähemmän.
 
-Strategia tehdään teidän etunne mukaan. Jos myytte omaa aurinkosähköä, tarvitsette akkua omiin huippuihin tai varavoimaksi, strategia rakennetaan sen ympärille. Aggregaattori optimoi, mutta teidän ehdoillanne ja teidän hyväksenne.
+Strategia tehdään teidän etunne mukaan. Jos myytte omaa aurinkosähköä tai tarvitsette akkua omiin huippuihin tai varavoimaksi, strategia rakennetaan sen ympärille. Aggregaattori optimoi, mutta teidän ehdoillanne ja teidän hyväksenne.
 
 Toteutuneet tuotot käydään läpi yhdessä. VENI Energian esitys näyttää, mitä vastaavat akut ovat Suomessa tuottaneet. Käymme sen läpi kartoituksessa ja sovitamme luvut teidän kohteeseenne, kirjallisesti ja kolmena skenaariona.
 
@@ -391,7 +391,7 @@ Teidän ei tarvitse seurata markkinaa. Aggregaattorin automaattinen ohjaus vie a
 MMMadis Maastik, myyntijohtaja ja perustaja
 SAMA Energia
 
-Me rakennamme järjestelmän, aggregaattorin ohjelmisto hoitaa kaupankäynnin, ja te nautitte optimoiduista energiakuluista. Kartoituksesta käyttöönottoon ja seurantaan, yhdellä yhteyshenkilöllä.
+Me rakennamme järjestelmän, aggregaattorin ohjelmisto hoitaa kaupankäynnin, ja te saatte optimoidut energiakulut. Kartoituksesta käyttöönottoon ja seurantaan, yhdellä yhteyshenkilöllä.
 
 VENI Energia, aggregaattorikumppanimme
 Liittää kohteenne Fingridin reservimarkkinoille, ohjaa akkua automaattisesti ja tilittää tuoton. Toteutuneet tuotot näytämme VENI Energian esityksestä kartoituksessa.
@@ -421,7 +421,7 @@ Pyydä maksuton kartoitus
 
 Etusivu›Reservimarkkinat›Aggregaattori: VENI Energia
 
-Aggregaattori vie akkunne markkinoille. Suomessa se on VENI Energia.
+Aggregaattori vie akkunne markkinoille. Kumppanimme Suomessa on VENI Energia.
 
 Fingridin reservimarkkinoille ei osallistu yksittäinen tehdas vaan reservitoimittaja, joka kokoaa monta kohdetta yhdeksi tarjoukseksi, läpäisee Fingridin kokeet ja ohjaa akkuja automaattisesti. Tällä sivulla kerromme, mitä aggregaattori tekee, miten liittyminen etenee ja kuka on kumppanimme Suomessa.
 
@@ -475,7 +475,7 @@ Asia · Ilman aggregaattoria · Aggregaattorin kanssa
 
 Markkinoillepääsy · Pienin tarjous 1 MW (FCR-N 0,1 MW): yksi 125 kW:n akku ei riitä · Useiden kohteiden akut kootaan yhdeksi tarjoukseksi
 
-Sopimukset ja kokeet Fingridin kanssa · Reservitoimittajan sopimus, säätökokeet ja dokumentaatio itse · Aggregaattori on reservitoimittaja ja hoitaa kokeet
+Sopimukset ja kokeet Fingridin kanssa · Reservitoimittajan sopimus, säätökokeet ja dokumentaatio itse · Aggregaattori toimii reservitoimittajana tai sen kautta ja hoitaa kokeet
 
 Tarjoukset joka päivälle · Oma päivystys ja markkinaseuranta · Ohjelmisto tarjoaa ja vaihtaa tuotetta automaattisesti
 
@@ -498,7 +498,7 @@ VENI liittää kohteenne Fingridin reservimarkkinoille, ohjaa akkua automaattise
 
 Teidän ehdoillannestrategia asiakkaan edun mukaan
 
-Jos myytte omaa aurinkosähköä, tarvitsette akkua omiin huippuihin tai varavoimaksi, ohjausstrategia rakennetaan sen ympärille. Aggregaattori optimoi markkinaa vasten, mutta rajat ja tavoitteet asetatte te, ja ne kirjataan arvioon ennen allekirjoitusta.
+Jos myytte omaa aurinkosähköä tai tarvitsette akkua omiin huippuihin tai varavoimaksi, ohjausstrategia rakennetaan sen ympärille. Aggregaattori optimoi markkinaa vasten, mutta rajat ja tavoitteet asetatte te, ja ne kirjataan arvioon ennen allekirjoitusta.
 
 Kysymykset, jotka kysytään ennen sopimusta.
 
@@ -685,7 +685,7 @@ Leasingrahoitus on mahdollista järjestää yritysrahoittajien kautta Suomessa j
 
 Yritys paperilla.
 
-Kun ostonne, kirjanpitonne tai juristinne kysyy, tästä.
+Tiedot, joita hankintanne, kirjanpitonne tai juristinne tarvitsee.
 
 Yritys
 SAMA Energia OyY-tunnus 3647683-3 · ALV-tunnus FI36476833
@@ -749,7 +749,7 @@ Lyhyemmät huomiot julkaisemme LinkedInissä.Tällä sivulla ovat pidemmät kats
 LinkedIn
 
 Mikä aihe auttaisi teidän päätöstänne?
-Kirjoittakaa info@samaenergia.fi. Vastaamme kirjallisesti, ja jos kysymys koskee montaa, siitä tulee seuraava katsaus.
+Kirjoittakaa osoitteeseen info@samaenergia.fi. Vastaamme kirjallisesti, ja jos kysymys koskee monia, siitä tulee seuraava katsaus.
 
 Pyydä maksuton kartoitus
 
@@ -852,7 +852,7 @@ Verkkoyhtiö
 Onko kohteessa aurinkosähköä?—EiKylläSuunnitteilla
 
 Pyydä maksuton kartoitus
-Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen, tietosuojaseloste.
+Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen. Lue tietosuojaseloste.
 
 Lähetys ei onnistunut. Voitte lähettää tiedot myös suoraan sähköpostilla: madis.maastik@samaenergia.fi.
 
@@ -893,7 +893,7 @@ Päivitetty 03.09.2026. Jos seloste muuttuu, uusin versio on aina tällä sivull
 
 Iseseisev energia. Isejuhtiv aku.
 
-Tööstuslik energiasalvesti lõikab võimsustasu, ostab elektri odavatel tundidel ja teenib Eleringi reserviturul valmisoleku eest. Täielikult automaatselt, ilma et keegi teie majast peaks midagi tegema. Mida see just teie objektil tähendab, ütleme kirjalikult, enne kui te midagi allkirjastate.
+Tööstuslik energiasalvesti lõikab võimsustasu, ostab elektri odavatel tundidel ja teenib Eleringi reserviturul valmisoleku eest. Täielikult automaatselt, ilma et teie peaksite midagi tegema. Mida see just teie objektil tähendab, ütleme kirjalikult, enne kui te midagi allkirjastate.
 
 Küsi tasuta hindamist
 Kuidas see käib
@@ -902,7 +902,7 @@ TasutaKohustustetaKirjalik hinnang
 
 Elekter maksab. Teadmatus maksab rohkem.
 
-Võimsustasu, tunnihind, võrguettevõtja tingimused, reserviturg, igal aastal muutuvad tasud ja seadused, rahastus. Igaüks neist mõjutab teie elektrikulu, aga keegi ei pane neid teie objekti jaoks kokku. Sellepärast tehakse suuri otsuseid tunde järgi, või jäetakse tegemata.
+Võimsustasu, tunnihind, võrguettevõtja tingimused, reserviturg, igal aastal muutuvad tasud ja seadused, rahastus. Igaüks neist mõjutab teie elektrikulu, aga keegi ei pane neid teie objekti jaoks kokku. Sellepärast tehakse suuri otsuseid tunde järgi või jäetakse tegemata.
 
 Terviklik ülevaade sellest, mis turul toimub ja mis suunas see liigub.
 
@@ -1009,7 +1009,7 @@ Ei leidnud oma objekti? Kirjeldage seda meile, ütleme ausalt, kas aku tasub end
 
 Me ei müü seadet. Otsime teile turu parima lahenduse.
 
-Mõistame teie objekti, tunneme turgu ja kasutame oma võrgustikku, et pakkumine oleks mõõdetud teie vajaduse, mitte tarnija lao järgi.
+Mõistame teie objekti, tunneme turgu ja kasutame oma võrgustikku, et pakkumine oleks dimensioneeritud teie vajaduse, mitte tarnija lao järgi.
 
 Mõistame teie objekti
 Tarbimisandmed, liitumine, tootmise rütm ja eesmärgid enne. Alles siis seadmed. Sellepärast algab kõik tasuta hindamisest.
@@ -1084,7 +1084,7 @@ Võrguettevõtja
 Kas objektil on päikeseelekter?—EiJahPlaanis
 
 Küsi tasuta hindamist
-Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hindamiseks, privaatsuspoliitika.
+Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hindamiseks. Vaadake andmekaitsetingimusi.
 
 Saatmine ei õnnestunud. Võite saata andmed ka otse e-postiga: madis.maastik@samaenergia.fi.
 
@@ -1096,18 +1096,18 @@ Kui teil on tarbimisandmed või pakkumine käepärast, saatke need kohe aadressi
 
 Avaleht›Päikeseelekter
 
-Päikeseelekter ettevõtetele, mõõdetud tarbimise järgi.
+Päikeseelekter ettevõtetele, dimensioneeritud tarbimise järgi.
 
-Paneelid, inverterid ja paigaldus, mõõdetud teie tarbimise, mitte katuse suuruse järgi. Ja kui päike ja aku töötavad koos, läheb oma toodang omaks tarbeks, ülejääk salvestisse ja sama aku reserviturule.
+Paneelid, inverterid ja paigaldus, dimensioneeritud teie tarbimise, mitte katuse suuruse järgi. Ja kui päike ja aku töötavad koos, läheb oma toodang omaks tarbeks, ülejääk salvestisse ja sama aku reserviturule.
 
 Küsi tasuta hindamist
 
-Tarbiminemõõtmise lähtekoht, mitte katuse suurus: võimalikult suur osa toodangust omaks tarbeks
+Tarbiminedimensioneerimise lähtekoht, mitte katuse suurus: võimalikult suur osa toodangust omaks tarbeks
 
 Päike + akukeskpäevane ülejääk õhtusse, tipud maha, ja sama aku Eleringi reservidesse
 
 Oma toodang omaks tarbeks
-Päikeseelekter tasub end kõige paremini ära siis, kui see ise ära kasutatakse. Mõõdame süsteemi teie tarbimisprofiili järgi, et võimalikult vähe läheks odavalt võrku.
+Päikeseelekter tasub end kõige paremini ära siis, kui see ise ära kasutatakse. Dimensioneerime süsteemi teie tarbimisprofiili järgi, et võimalikult vähe läheks odavalt võrku.
 
 Päike ja aku koos
 Aku nihutab keskpäevase ülejäägi õhtusse, lõikab tipud ja teenib reserviturul. Kui päikeseelekter on juba olemas, teeb aku sellest parema investeeringu.
@@ -1132,7 +1132,7 @@ Küsi tasuta hindamist
 
 125 kW / 261 kWhühe Ralos Beast üksuse võimsus ja maht: LFP-keemia, välispaigalduseks sobiv kapp
 
-1 MW / 2 MWhtüüpiline 1:2 mõõt suuremal objektil: võimsus ütleb, kui palju reservi saate pakkuda, maht, kui kaua
+1 MW / 2 MWhtüüpiline 1:2 suhe suuremal objektil: võimsus ütleb, kui palju reservi saate pakkuda, maht, kui kaua
 
 Allikas: Ralos Oy, Ralos Beast · loetud 2.9.2026
 
@@ -1157,7 +1157,7 @@ Kuidas aku päev välja näeb.
 
 Teie tarbimineVõimsustasu piirTipp, mille aku maha lõikabBörsihind (tund)Aku ootab, teenib reserviturul
 
-00–05Aku laeb siis, kui börsihind on päeva madalaim. Sama energia müüakse hiljem tagasi kallilt või kasutatakse tipu ajal.
+00–05Aku laeb siis, kui börsihind on päeva madalaim. Sama energia müüakse hiljem kallilt või kasutatakse tipu ajal.
 
 07–09Hommikune käivitustipp ei jõua võrguarvele: aku annab puuduva võimsuse ise. Võimsustasu arvestatakse tipu järgi, seega just see hetk maksab.
 
@@ -1172,13 +1172,13 @@ Mida me tarnime, ja miks just nüüd.
 Seadmed valime teie objekti järgi, mitte lao. Aga ajastus on osa lahendusest: praegu on Soome laost saadaval turul end tõestanud akusid väga hea hinnaga.
 
 Tööstusklassi akusüsteem ja inverter
-Välispaigalduseks sobiv kapp, inverter ja juhtimine. Suurusjärk 125 kW üksusest mitme megavatini, mõõdetuna liitumise ja tarbimisprofiili järgi.
+Välispaigalduseks sobiv kapp, inverter ja juhtimine. Suurusjärk 125 kW üksusest mitme megavatini, dimensioneerituna liitumise ja tarbimisprofiili järgi.
 
 Paigaldus ja käikulaskmine
 Paigaldust juhib meie paigaldusjuht Viljar Petersell, kes on päikesesüsteeme ehitanud üle kuue aasta. Load, dokumentatsioon ja võrguettevõtjaga suhtlus käivad meie kaudu.
 
 Tarne nädalates, mitte kuudes
-Osa seadmeid on laos Soomes (Ralos Oy, Tampere), mis lühendab tarneaja nädalateni. Kui turg ja hind on paigas, tasub liikuda, ja meie ütleme, millal nad seda on.
+Osa seadmeid on laos Soomes (Ralos Oy, Tampere), mis lühendab tarneaja nädalateni. Kui turg ja hind on paigas, tasub liikuda, ja meie ütleme, millal need seda on.
 
 Korduma kippuvad küsimused
 
@@ -1198,7 +1198,7 @@ Reserviturg: tööstuslik aku teenib juba täna.
 
 Suurtarbijale ei ole aku tuleviku projekt, vaid tänane tuluallikas. Elering maksab valmisoleku eest, juhtimine on automaatne ja liitumine, mida aku vajab, on teil juba olemas.
 
-Küsi tasuta hindamist Meie agregaator Soleron Energy
+Küsi tasuta hindamist Meie agregaatoripartner Soleron Energy
 
 76 MW · ~500 MWFCR-i ja aFRR-i, mida Elering ostab iga tunni jaoks, mõlemas suunas, juuli 2026
 
@@ -1243,9 +1243,9 @@ Pikaajaline nõudlus: Eesti hoiab oma sagedust nüüd ise
 8. veebruaril 2025 lahkusid Balti riigid Venemaa võrgust lõplikult ja sünkroniseerusid 9. veebruaril 2025 Mandri-Euroopa võrguga. Sellest hetkest ostab Elering sagedusreservi ise: juulis 2026 iga tunni kohta 76 MW FCR-i ja ligi 500 MW aFRR-i mõlemas suunas. Mida rohkem tuult ja päikest võrku tuleb, seda rohkem reservi vajatakse. See nõudlus ei ole mööduv.
 Allikas: Elering, sagedusreservide turu kokkuvõtted · juuli 2026
 
-1 MW / 2 MWhnäidissuurus, mõõdetakse objekti järgi
+1 MW / 2 MWhnäidissuurus, dimensioneeritakse objekti järgi
 
-Näiteks: 1 MW / 2 MWh salvesti olemasoleva tööstushoone liitumise taga pääseb turule kuudega, osaleb agregaatori kaudu Eleringi reservides ja lõikab samal ajal objekti enda tarbimistipud. Sama loogika töötab 125 kW üksusest mitme megavatini: õige suurus mõõdetakse liitumise ja tarbimisprofiili järgi.
+Näiteks: 1 MW / 2 MWh salvesti olemasoleva tööstushoone liitumise taga pääseb turule kuudega, osaleb agregaatori kaudu Eleringi reservides ja lõikab samal ajal objekti enda tarbimistipud. Sama loogika töötab 125 kW üksusest mitme megavatini: õige suurus dimensioneeritakse liitumise ja tarbimisprofiili järgi.
 
 Kuidas tulu hinnatakse.
 
@@ -1253,9 +1253,9 @@ Inverteri võimsus ja aku maht on määravad. Tulu hinnatakse aku inverteri või
 
 Mida täielikumalt agregaator juhib, seda rohkem tulu. Kui agregaator juhib akut tervikuna, saab ta viia iga tunni kõige tasuvamasse reservi ja võtta turust maksimumi. Osaline juhtimine teenib vähem.
 
-Strateegia tehakse teie huvides. Kui müüte oma päikeseelektrit, vajate akut oma tippude jaoks või varutoiteks, ehitatakse strateegia selle ümber. Agregaator optimeerib, aga teie tingimustel ja teie kasuks.
+Strateegia tehakse teie huvides. Kui müüte oma päikeseelektrit või vajate akut oma tippude jaoks või varutoiteks, ehitatakse strateegia selle ümber. Agregaator optimeerib, aga teie tingimustel ja teie kasuks.
 
-Eestis hindame iga objekti personaalselt. Eesti reserviturg on Soome omast noorem ja meie agregaator Soleron Energy töötab iga objektiga eraldi: valmis tuluesitlust siin ei ole, on turu seis ja teie objekti arvud. Hinnangu teeme koos nendega, teie aku võimsuse ja mahu järgi, ning numbrid tulevad kirjalikus hinnangus kolme stsenaariumina, mitte reklaamis. Soleroni enda avaldatud ülevaated turu kohta on avalikud ja me viitame neile.
+Eestis hindame iga objekti personaalselt. Eesti reserviturg on Soome omast noorem ja meie agregaatoripartner Soleron Energy töötab iga objektiga eraldi: valmis tuluesitlust siin ei ole, on turu seis ja teie objekti arvud. Hinnangu teeme koos nendega, teie aku võimsuse ja mahu järgi, ning numbrid tulevad kirjalikus hinnangus kolme stsenaariumina, mitte reklaamis. Soleroni enda avaldatud ülevaated turu kohta on avalikud ja me viitame neile.
 
 Küsi tasuta hindamist Kuidas Soleron Energy töötab
 
@@ -1270,7 +1270,7 @@ Teie ei pea turgu jälgima. Agregaatori automaatne juhtimine viib aku iga tund k
 MMMadis Maastik, müügijuht ja asutaja
 SAMA Energia
 
-Meie ehitame süsteemi, agregaatori tarkvara teeb kauplemise, ja teie naudite optimeeritud energiakulu. Hindamisest käivitamise ja seireni, ühe kontaktiga.
+Meie ehitame süsteemi, agregaatori tarkvara teeb kauplemise, ja teie saate optimeeritud energiakulu. Hindamisest käivitamise ja seireni, ühe kontaktiga.
 
 Soleron Energy, meie agregaatoripartner
 Liidab teie objekti Eleringi reservituruga, juhib akut automaatselt ja maksab tulu välja. Eestis hindab Soleron iga objekti personaalselt, ja meie teeme selle koos nendega.
@@ -1300,7 +1300,7 @@ Küsi tasuta hindamist
 
 Avaleht›Reserviturg›Agregaator: Soleron Energy
 
-Agregaator viib teie aku turule. Eestis on see Soleron Energy.
+Agregaator viib teie aku turule. Meie partner Eestis on Soleron Energy.
 
 Eleringi reserviturul ei osale üksik tehas, vaid tasakaalustamisteenuse pakkuja, kes kogub mitu objekti üheks pakkumiseks, läbib Eleringi eelkvalifitseerimise ja juhib akusid automaatselt. Sellel lehel selgitame, mida agregaator teeb, kuidas liitumine käib ja kes on meie partner Eestis.
 
@@ -1354,7 +1354,7 @@ Teema · Ilma agregaatorita · Agregaatoriga
 
 Turule pääs · Miinimumpakkumine 1 MW: ühest 125 kW akust ei piisa · Mitme objekti akud kogutakse üheks pakkumiseks
 
-Leping ja katsed Eleringiga · Teenusepakkuja leping, bilansivastutus, eelkvalifitseerimine ja dokumentatsioon ise · Agregaator on teenusepakkuja ja korraldab katsed
+Leping ja katsed Eleringiga · Teenusepakkuja leping, bilansivastutus, eelkvalifitseerimine ja dokumentatsioon ise · Agregaator tegutseb teenusepakkujana või selle kaudu ja korraldab katsed
 
 Pakkumised igaks päevaks · Oma valve ja turujälgimine · Tarkvara pakub ja vahetab toodet automaatselt
 
@@ -1377,7 +1377,7 @@ Eesti reserviturg on Soome omast noorem ja Soleron töötab iga objektiga eraldi
 
 Teie tingimustelstrateegia kliendi huvides
 
-Kui müüte oma päikeseelektrit, vajate akut oma tippude jaoks või varutoiteks, ehitatakse juhtimisstrateegia selle ümber. Agregaator optimeerib turu vastu, aga piirid ja eesmärgid seate teie, ja need kirjutatakse hinnangusse enne allkirja.
+Kui müüte oma päikeseelektrit või vajate akut oma tippude jaoks või varutoiteks, ehitatakse juhtimisstrateegia selle ümber. Agregaator optimeerib turu vastu, aga piirid ja eesmärgid seate teie, ja need kirjutatakse hinnangusse enne allkirja.
 
 Küsimused, mis küsitakse enne lepingut.
 
@@ -1446,7 +1446,7 @@ Reservitulu analüüsitult, mitte arvatult
 Näitame madalat, keskmist ja kõrget stsenaariumi, sest turg muutub. Stsenaariumid tulevad sellest, mida Elering tegelikult hangib ja mis on tulemas, mitte kellegi tundest.
 
 Võrguettevõtja seisukoht enne kapitali
-Tehnilised tingimused ja liitumise vastus on käes enne, kui te raha välja panete. Ootamised on hinnangus eraldi välja toodud.
+Tehnilised tingimused ja liitumise vastus on käes enne, kui te raha välja panete. Ooteajad on hinnangus eraldi välja toodud.
 
 Juhime projekti algusest lõpuni
 Seadmed valime teie objekti järgi, koostöös maaletoojatega. Paigaldus, load, dokumentatsioon ja ülevaade käivad ühe kontakti kaudu.
@@ -1516,7 +1516,7 @@ Martin Rautio
 Tegevjuht · asutaja
 
 Vastutab: säästuarvutused, pakkumised ja projektide koordineerimine. Tema käest tuleb hinnangu majanduslik osa ja tema vastutab selle eest, et arvud peavad.
-Hariduselt rahvusvahelise ärijuhtimise tradenom (BBA).
+Hariduselt rahvusvahelise ärijuhtimise bakalaureus (BBA).
 martin.rautio@samaenergia.fi
 +358 40 701 9099
 
@@ -1564,7 +1564,7 @@ Liisingrahastus on võimalik korraldada ärirahastajate kaudu Eestis ja Soomes. 
 
 Ettevõte paberil.
 
-Kui teie ost, raamatupidamine või jurist küsib, siis siit.
+Andmed, mida teie hankeosakond, raamatupidaja või jurist küsib.
 
 Ettevõte
 SAMA Energia OySoome registrikood (Y-tunnus) 3647683-3 · KMKR-nr FI36476833
@@ -1611,11 +1611,11 @@ Kümme küsimust, mis tuleb agregaatorilepingust enne allkirja üles otsida
 
 Juhtimise piirid, prioriteedid, tulu jagamine, lepingu kestus ja ülesütlemine. Mida lepingust lugeda, et aku jääks teie akuks.
 
-TulekulMõõtmine
+TulekulDimensioneerimine
 
-1 MW / 2 MWh: miks 1:2 on tüüpiline mõõt ja millal see ei sobi
+1 MW / 2 MWh: miks 1:2 on tüüpiline suhe ja millal see ei sobi
 
-Inverteri võimsus ja aku maht otsustavad, millistesse reservidesse aku pääseb ja kui kauaks. Millal tasub mõõta teisiti.
+Inverteri võimsus ja aku maht otsustavad, millistesse reservidesse aku pääseb ja kui kauaks. Millal tasub dimensioneerida teisiti.
 
 TulekulObjektitüübid
 
@@ -1628,7 +1628,7 @@ Lühemad märkused avaldame LinkedInis.Siin lehel on pikemad ülevaated, mida sa
 LinkedIn
 
 Milline teema aitaks teie otsust?
-Kirjutage info@samaenergia.fi. Vastame kirjalikult, ja kui küsimus puudutab paljusid, saab sellest järgmine ülevaade.
+Kirjutage aadressile info@samaenergia.fi. Vastame kirjalikult, ja kui küsimus puudutab paljusid, saab sellest järgmine ülevaade.
 
 Küsi tasuta hindamist
 
@@ -1654,7 +1654,7 @@ Mida see teie arvel tähendab
 
 Arvutus on lihtne ja te saate selle ise teha: võtke oma aastane tarbimine megavatt-tundides ja korrutage 3,73-ga. 900 MWh aastas teeb ligikaudu 3 400 eurot (km-ta) aastas ainult selle ühe rea eest. 5 000 MWh teeb ligikaudu 18 700 eurot (km-ta). See ei ole ennustus ega pakkumine, vaid avaldatud tariifi korrutamine teie enda tarbimisega.
 
-Suurele tarbijale ei ole see arve suurim rida. Aga see on rida, mis eelmisel aastal puudus, ja mis ütleb midagi olulisemat: Eestis on nüüd hind ka valmisolekul, mitte ainult energial.
+Suurele tarbijale ei ole see arve suurim rida. Aga see on rida, mis eelmisel aastal puudus ja mis ütleb midagi olulisemat: Eestis on nüüd hind ka valmisolekul, mitte ainult energial.
 
 Sama rida, kaks poolt: tarbija maksab, valmisolek saab.
 
@@ -1737,7 +1737,7 @@ Võrguettevõtja
 Kas objektil on päikeseelekter?—EiJahPlaanis
 
 Küsi tasuta hindamist
-Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hindamiseks, privaatsuspoliitika.
+Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hindamiseks. Vaadake andmekaitsetingimusi.
 
 Saatmine ei õnnestunud. Võite saata andmed ka otse e-postiga: madis.maastik@samaenergia.fi.
 
@@ -1760,7 +1760,7 @@ Milliseid andmeid töötleme
 Kontaktivormil antud andmed: nimi, ettevõte, e-post, telefon, objekti asukoht, liitumis- ja tarbimisandmed ning sõnum. Lisaks veebilehe tehniline serverilogi (sh IP-aadress ja ajatempel), mille majutusteenus toodab teenuse osutamiseks ja turvalisuse tagamiseks. Me ei kasuta küpsiseid, jälgimispiksleid ega analüütikat.
 
 Miks töötleme
-Et vastata teie pöördumisele ja valmistada ette teie soovitud kaardistust (lepingueelsed meetmed, isikuandmete kaitse üldmääruse artikli 6 lõike 1 punkt b) ning õigustatud huvi alusel (artikli 6 lõike 1 punkt f) kliendisuhte haldamiseks ja turvalisuse tagamiseks. Me ei kasuta andmeid muuks turunduseks ilma eraldi nõusolekuta.
+Et vastata teie pöördumisele ja valmistada ette teie soovitud hindamist (lepingueelsed meetmed, isikuandmete kaitse üldmääruse artikli 6 lõike 1 punkt b) ning õigustatud huvi alusel (artikli 6 lõike 1 punkt f) kliendisuhte haldamiseks ja turvalisuse tagamiseks. Me ei kasuta andmeid muuks turunduseks ilma eraldi nõusolekuta.
 
 Kellele andmeid edastatakse
 Me ei müü ega anna andmeid turunduseks. Tehniliste volitatud töötlejatena tegutsevad veebilehe majutus- ja vormiteenus ning e-postiteenus. Kui teenusepakkuja töötleb andmeid väljaspool EL-i või EMP-d, kaitstakse edastust EL-i heakskiidetud mehhanismidega, nagu lepingu tüüptingimused või Data Privacy Framework.
