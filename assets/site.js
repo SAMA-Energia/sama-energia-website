@@ -1,166 +1,118 @@
-/* SAMA Energia — jaettu sivuskripti (FI + ET).
-   Kielikohtaiset tekstit asuvat HTML:ssä (mm. data-cap-attribuutit), eivät tässä tiedostossa.
-   Entinen hash-reititin on poistettu: jokainen sivu on oma URL-osoitteensa. */
-
-document.getElementById('burger').addEventListener('click',function(){
-  var m=document.getElementById('menu');
-  var open=m.classList.toggle('open');
-  this.setAttribute('aria-expanded',open?'true':'false');
-});
-
-/* Kielivalitsin esikatseluhostilla: langsw-linkit ovat kanonisia tuotanto-URL:eja
-   (samaenergia.fi / samaenergia.ee) — oikein tuotannossa, kuolleita
-   *.netlify.app-esikatselussa ennen mergeä. Ajossa — lähteitä ja julkaistuja
-   hrefejä muuttamatta — kirjoitetaan VAIN .langsw-ankkurit hostin sisäisiksi:
-   .fi/<slug>/ -> /<slug>/ ja .ee/<slug>/ -> /et/<slug>/ (/et/-polut ovat
-   turvallisin sisäinen muoto tällä hostilla; paljaat ET-slugit toimisivat myös
-   yleisten uudelleenkirjoitusten kautta). Tuotantohostit eivät koskaan osu
-   ehtoon; ilman JS:ää esikatselun kielivalitsin vie tuotantoon kuten ennenkin.
-   Lohko on ENNEN katselmustilaa, jotta ?review=1 säilyy myös näissä linkeissä. */
+/* SAMA Energia — jaettu sivuskripti (FI + ET). Ulkoasu v5 — 03.09.2026.
+   Kielikohtaiset tekstit asuvat HTML:ssä, eivät tässä tiedostossa.
+   Jokainen sivu on oma URL-osoitteensa: hash-reititintä ei ole.
+   Kaikki tekstisisältö on palvelimelta; tämä skripti lisää vain käytöstä
+   (valikot, paljastukset, lomakkeen AJAX-lähetys) eikä ole edellytys sisällölle. */
 (function(){
-  if(!/\.netlify\.app$/.test(location.hostname))return;
-  document.querySelectorAll('.langsw a').forEach(function(a){
-    var m=/^https:\/\/(?:www\.)?samaenergia\.(fi|ee)(\/.*)$/.exec(a.getAttribute('href')||'');
-    if(!m)return;
-    a.setAttribute('href',m[1]==='fi'?m[2]:(m[2]==='/'?'/et/':'/et'+m[2]));
-  });
-})();
-
-/* Yhteydenottolomake — Netlify Forms.
-   Ensisijaisesti AJAX (onnistumisviesti näytetään paikallaan). Jos AJAX epäonnistuu,
-   varapolkuna natiivi lähetys lomakkeen action-kiitossivulle — ei umpikujaa.
-   Ilman JS:ää selain lähettää suoraan actioniin, joten lomake toimii myös silloin. */
-var cf=document.getElementById('ctForm');
-if(cf)cf.addEventListener('submit',function(e){
-  e.preventDefault();
-  var ok=document.getElementById('ctOk'),err=document.getElementById('ctErr'),
-      btn=document.getElementById('ctSend');
-  err.hidden=true;btn.disabled=true;btn.style.opacity='.6';
-  function fallback(){
-    /* submit() ei laukaise submit-tapahtumaa uudelleen, joten silmukkaa ei synny.
-       Jos natiivi lähetyskin kaatuu synkronisesti, näytetään virhe + suora sähköposti. */
-    try{cf.submit();}
-    catch(_){btn.disabled=false;btn.style.opacity='';err.hidden=false;}
-  }
-  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},
-    body:new URLSearchParams(new FormData(cf)).toString()})
-  .then(function(r){
-    if(r.ok){btn.disabled=false;btn.style.opacity='';ok.hidden=false;cf.reset();}
-    else{fallback();}
-  })
-  .catch(fallback);
-});
-
-/* ---------- signature: frequency trace ----------
-   Illustrative only. To make it live, poll Fingrid's open data API
-   (real-time frequency) and Elering's live API, then feed values in.
-   Time-based rAF scroll: renders at display refresh rate, pauses in
-   background tabs, honours prefers-reduced-motion. */
-(function(){
-  var path=document.getElementById('wave');
-  if(!path)return;
-  var W=1200,H=130,MID=65,SEG=5,N=242,pts=[],t=0;
+  var d=document,h=d.documentElement,b=d.body;
+  h.classList.add('js');
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  /* Siemen 453912 — deterministinen satunnaisuus: jokainen lataus toistaa saman käyrän. */
-  var _s=453912>>>0;
-  function rnd(){_s|=0;_s=_s+0x6D2B79F5|0;var r=Math.imul(_s^_s>>>15,1|_s);r=r+Math.imul(r^r>>>7,61|r)^r;return((r^r>>>14)>>>0)/4294967296;}
-  function val(){
-    t++;
-    var base=Math.sin(t*0.07)*7+Math.sin(t*0.19)*4+Math.sin(t*0.031)*9;
-    var noise=(rnd()-0.5)*3.4;
-    var event=(rnd()<0.012)?(rnd()<0.5?-22:18):0;
-    return Math.max(10,Math.min(H-10,MID+base+noise+event));
-  }
-  for(var i=0;i<N;i++)pts.push(val());
-  function draw(off){
-    var d='M'+(0-off).toFixed(1)+' '+pts[0].toFixed(1);
-    for(var i=1;i<N;i++)d+=' L'+(i*SEG-off).toFixed(1)+' '+pts[i].toFixed(1);
-    path.setAttribute('d',d);
-  }
-  draw(0);
-  if(reduce)return;
-  var last=null,off=0;
-  function frame(now){
-    if(last===null)last=now;
-    var dt=Math.min(now-last,100);last=now;
-    off+=dt*0.05;
-    while(off>=SEG){off-=SEG;pts.shift();pts.push(val());}
-    draw(off);
-    requestAnimationFrame(frame);
-  }
-  requestAnimationFrame(frame);
-})();
 
-/* ===== KONSEPTI-B SIIRROT: kuormituskäyrä + käyttötilakaavio =====
-   Tilojen kuvaustekstit tulevat nappien data-cap-attribuuteista (kielikohtaiset). */
-(function(){
-  var cap=document.getElementById('opsCap');
-  if(!cap)return;
-  var F={sol:document.getElementById('opSol'),batt:document.getElementById('opBatt'),
-    chg:document.getElementById('opChg'),grid:document.getElementById('opGrid'),
-    res:document.getElementById('opRes')};
-  var fill=document.getElementById('opFill');
-  var verkko=document.getElementById('opVerkko');
-  /* bus: pystyväylän dynaaminen virtauskerros — jänne ja suunta tilakohtaisesti
-     (res piirtyy 268→120, jolloin katkoviiva-animaatio kulkee ylöspäin = syöttö verkkoon) */
-  var CFG={
-    sun:{on:['sol','chg'],bus:'164,304',lvl:.75,grid:true},
-    peak:{on:['grid','batt'],bus:'120,304',lvl:.45,grid:true},
-    night:{on:['grid','chg'],bus:'120,268',lvl:.92,grid:true},
-    res:{on:['batt','res'],bus:'268,120',lvl:.6,grid:true},
-    out:{on:['batt'],bus:'268,304',lvl:.35,grid:false}};
-  var btns=document.querySelectorAll('.ops button');
-  function set(st){
-    var c=CFG[st];
-    Object.keys(F).forEach(function(k){if(F[k])F[k].classList.toggle('on',c.on.indexOf(k)>=0);});
-    var bus=document.getElementById('opBus');
-    if(bus){
-      if(c.bus){
-        var p=c.bus.split(',');
-        bus.setAttribute('d','M255 '+p[0]+' V'+p[1]);
-        bus.classList.add('on');
-      }else bus.classList.remove('on');
+  /* ---------- paljastus vieritettäessä (.reveal) + .watch-osiot ----------
+     Elementit piilotetaan vasta täällä (luokka .pre), joten ilman JS:ää kaikki näkyy.
+     Turvaverkko: 1,4 s kuluttua kaikki näkyvillä oleva paljastetaan joka tapauksessa. */
+  var revs=[].slice.call(d.querySelectorAll('.reveal')),safety;
+  function settle(){
+    d.querySelectorAll('.reveal.pre').forEach(function(el){if(el.getBoundingClientRect().top<window.innerHeight*1.05)el.classList.remove('pre');});
+    d.querySelectorAll('.watch:not(.in-view)').forEach(function(el){var r=el.getBoundingClientRect();if(r.top<window.innerHeight*1.05&&r.bottom>0)el.classList.add('in-view');});
+  }
+  if('IntersectionObserver' in window&&!reduce){
+    revs.forEach(function(el){if(el.getBoundingClientRect().top>window.innerHeight*0.92)el.classList.add('pre');});
+    var io=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('pre');io.unobserve(en.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:0.08});
+    revs.forEach(function(el){io.observe(el);});
+    var io2=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in-view');io2.unobserve(en.target);}});},{threshold:0.2});
+    d.querySelectorAll('.watch').forEach(function(el){io2.observe(el);});
+    safety=setTimeout(settle,1400);
+    window.addEventListener('scroll',function(){clearTimeout(safety);safety=setTimeout(settle,600);},{passive:true});
+  }else{
+    d.querySelectorAll('.watch').forEach(function(el){el.classList.add('in-view');});
+  }
+
+  /* ---------- otsakkeen varjo + kiinnitetty CTA (mobiili) ---------- */
+  var header=d.querySelector('.header'),sticky=d.getElementById('sticky-cta');
+  function onScroll(){
+    var y=window.scrollY||h.scrollTop;
+    if(header)header.classList.toggle('is-stuck',y>8);
+    if(sticky){
+      var hero=d.querySelector('.hero, .subhero'),closer=d.querySelector('.closer');
+      var past=hero?y>(hero.offsetTop+hero.offsetHeight-120):y>300;
+      var atForm=closer&&(closer.getBoundingClientRect().top<window.innerHeight*0.6);
+      sticky.classList.toggle('show',past&&!atForm);
     }
-    var hh=Math.round(10*c.lvl)+2;
-    fill.setAttribute('height',hh);fill.setAttribute('y',288-hh);
-    verkko.classList.toggle('off',!c.grid);
-    btns.forEach(function(b){
-      var act=b.dataset.s===st;
-      b.classList.toggle('act',act);
-      if(act)cap.textContent=b.dataset.cap||'';
-    });
   }
-  btns.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.s);});});
-  set('sun');
-})();
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
 
-/* ===== KOE: MAGNEETTI-CTA · pari CSS-lohkolle tyylien lopussa · poista molemmat peruaksesi ===== */
-(function(){
-  if(!window.matchMedia('(hover:hover) and (pointer:fine)').matches)return;
-  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-  var R=110,MAX=7,raf=null,mx=0,my=0;
-  document.addEventListener('mousemove',function(e){
-    mx=e.clientX;my=e.clientY;
-    if(!raf)raf=requestAnimationFrame(update);
+  /* ---------- pudotusvalikot (klikkaus/kosketus + näppäimistö; hover CSS:ssä) ---------- */
+  d.querySelectorAll('.nav .dd').forEach(function(dd){
+    var btn=dd.querySelector('button');
+    btn.addEventListener('click',function(e){e.stopPropagation();var was=dd.classList.contains('open');closeDds();if(!was){dd.classList.add('open');btn.setAttribute('aria-expanded','true');}});
+    dd.addEventListener('keydown',function(e){if(e.key==='Escape'){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}});
+    dd.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',function(){dd.classList.remove('open');btn.setAttribute('aria-expanded','false');});});
   });
-  function update(){
-    raf=null;
-    var home=document.getElementById('p-home');
-    if(!home||!home.classList.contains('active'))return;
-    var btns=home.querySelectorAll('.btn');
-    for(var i=0;i<btns.length;i++){
-      var b=btns[i],r=b.getBoundingClientRect();
-      var dx=mx-(r.left+r.width/2),dy=my-(r.top+r.height/2);
-      var ox=Math.max(Math.abs(dx)-r.width/2,0),oy=Math.max(Math.abs(dy)-r.height/2,0);
-      var d=Math.sqrt(ox*ox+oy*oy);
-      if(d<R){
-        var c=Math.sqrt(dx*dx+dy*dy)||1,p=1-d/R;p*=p;
-        b.style.transition='transform .09s ease-out';
-        b.style.transform='translate('+(dx/c*p*MAX).toFixed(1)+'px,'+(dy/c*p*MAX).toFixed(1)+'px) scale('+(1+p*.03).toFixed(3)+')';
-      }else if(b.style.transform){
-        b.style.transition='';b.style.transform='';
+  function closeDds(){d.querySelectorAll('.nav .dd.open').forEach(function(dd){dd.classList.remove('open');dd.querySelector('button').setAttribute('aria-expanded','false');});}
+  d.addEventListener('click',closeDds);
+  d.addEventListener('keydown',function(e){if(e.key==='Escape')closeDds();});
+
+  /* ---------- mobiilivalikko ---------- */
+  var mb=d.querySelector('.menu-btn'),mn=d.getElementById('mobile-nav');
+  if(mb&&mn){
+    mb.addEventListener('click',function(){var open=mn.classList.toggle('open');mb.setAttribute('aria-expanded',open?'true':'false');b.style.overflow=open?'hidden':'';});
+    mn.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mn.classList.remove('open');mb.setAttribute('aria-expanded','false');b.style.overflow='';});});
+    d.addEventListener('keydown',function(e){if(e.key==='Escape'&&mn.classList.contains('open')){mn.classList.remove('open');mb.setAttribute('aria-expanded','false');b.style.overflow='';mb.focus();}});
+  }
+
+  /* ---------- kaavioiden vihjetekstit ---------- */
+  d.querySelectorAll('.chart').forEach(function(ch){
+    var tip=ch.querySelector('.tip');if(!tip)return;
+    ch.querySelectorAll('.bar[data-v]').forEach(function(bar){
+      bar.addEventListener('mouseenter',function(){var r=bar.getBoundingClientRect(),c=ch.getBoundingClientRect();tip.textContent=bar.getAttribute('data-v');tip.style.left=(r.left-c.left+r.width/2)+'px';tip.style.top=(r.top-c.top-30)+'px';tip.classList.add('show');});
+      bar.addEventListener('mouseleave',function(){tip.classList.remove('show');});
+    });
+  });
+
+  /* ---------- UKK: yksi auki kerrallaan ---------- */
+  var dets=d.querySelectorAll('.faq details');
+  dets.forEach(function(dt){dt.addEventListener('toggle',function(){if(dt.open){dets.forEach(function(o){if(o!==dt)o.open=false;});}});});
+
+  /* ---------- kohdekartoituslomake — Netlify Forms ----------
+     Ensisijaisesti AJAX (kiitosteksti näytetään paikallaan, .sent). Jos AJAX epäonnistuu,
+     varapolkuna natiivi lähetys lomakkeen action-kiitossivulle — ei umpikujaa.
+     Ilman JS:ää selain lähettää suoraan actioniin (natiivi validointi), joten lomake toimii myös silloin.
+     Sama käsittelijä molemmille lomakkeille (etusivu #ctFormHome, yhteyssivu #ctForm). */
+  d.querySelectorAll('form[data-netlify]').forEach(function(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var btn=form.querySelector('button[type="submit"]'),err=form.querySelector('.err');
+      if(err)err.hidden=true;
+      if(btn){btn.disabled=true;btn.style.opacity='.6';}
+      function restore(){if(btn){btn.disabled=false;btn.style.opacity='';}}
+      function fallback(){
+        /* submit() ei laukaise submit-tapahtumaa uudelleen, joten silmukkaa ei synny. */
+        try{form.submit();}
+        catch(_){restore();if(err)err.hidden=false;}
       }
-    }
+      fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},
+        body:new URLSearchParams(new FormData(form)).toString()})
+      .then(function(r){
+        if(r.ok){restore();form.classList.add('sent');form.reset();var ok=form.querySelector('.ok');if(ok)ok.scrollIntoView({block:'center'});}
+        else fallback();
+      })
+      .catch(fallback);
+    });
+  });
+
+  /* ---------- kielivalitsin esikatseluhostilla ----------
+     .lang-linkit ovat kanonisia tuotanto-URL:eja (samaenergia.fi / samaenergia.ee) — oikein
+     tuotannossa, kuolleita *.netlify.app-esikatselussa ennen mergeä. Ajossa — lähteitä ja
+     julkaistuja hrefejä muuttamatta — kirjoitetaan VAIN .lang-ankkurit hostin sisäisiksi:
+     .fi/<slug>/ -> /<slug>/ ja .ee/<slug>/ -> /et/<slug>/. Tuotantohostit eivät koskaan osu ehtoon. */
+  if(/\.netlify\.app$/.test(location.hostname)){
+    d.querySelectorAll('.lang a').forEach(function(a){
+      var m=/^https:\/\/(?:www\.)?samaenergia\.(fi|ee)(\/.*)$/.exec(a.getAttribute('href')||'');
+      if(!m)return;
+      a.setAttribute('href',m[1]==='fi'?m[2]:(m[2]==='/'?'/et/':'/et'+m[2]));
+    });
   }
 })();
 
