@@ -4,227 +4,274 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Reservimarkkinat: FCR, aFRR ja mFRR selitettynä | SAMA Energia</title>
-<meta name="description" content="Mitä reservituotteet vaativat akulta, miten kohde pääsee markkinalle — ja miksi emme julkaise tuottolukuja.">
+<title>Reservimarkkinat — SAMA Energia</title>
+<meta name="description" content="Mitä Fingridin reservimarkkinat ovat, miten teollinen akku pääsee niille aggregaattorin kautta ja miten tuotto arvioidaan kolmena skenaariona, lähteineen.">
 <link rel="canonical" href="https://samaenergia.fi/reservimarkkinat/">
 <link rel="alternate" hreflang="fi-FI" href="https://samaenergia.fi/reservimarkkinat/">
-<link rel="alternate" hreflang="et-EE" href="https://samaenergia.ee/reserviturud/">
+<link rel="alternate" hreflang="et-EE" href="https://samaenergia.ee/reserviturg/">
 <link rel="alternate" hreflang="x-default" href="https://samaenergia.fi/reservimarkkinat/">
-<meta property="og:title" content="Reservimarkkinat: FCR, aFRR ja mFRR selitettynä | SAMA Energia">
-<meta property="og:description" content="Mitä reservituotteet vaativat akulta, miten kohde pääsee markkinalle — ja miksi emme julkaise tuottolukuja.">
+<meta property="og:title" content="Reservimarkkinat — SAMA Energia">
+<meta property="og:description" content="Mitä Fingridin reservimarkkinat ovat, miten teollinen akku pääsee niille aggregaattorin kautta ja miten tuotto arvioidaan kolmena skenaariona, lähteineen.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fi_FI">
 <meta property="og:url" content="https://samaenergia.fi/reservimarkkinat/">
-
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"1 · Erottele säästöt ja reservitulo. Mikä on takaisinmaksu pelkillä säästöillä?","acceptedAnswer":{"@type":"Answer","text":"Erottelu on hyvän laskelman tuntomerkki — ilman sitä takaisinmaksulukua ei voi arvioida."}},{"@type":"Question","name":"2 · Mikä takaisinmaksu on, jos reservihinnat puolittuvat?","acceptedAnswer":{"@type":"Answer","text":"Vastaus kertoo, onko hanke kestävä vai riippuuko se markkinasta, jota kukaan ei hallitse."}},{"@type":"Question","name":"3 · Kuka tuotti reserviarvion ja mitä hän on valmis laittamaan kirjallisesti?","acceptedAnswer":{"@type":"Answer","text":"Reserviarvio on luotettavimmillaan aggregaattorin omana — sen tekijän, joka kohteen lopulta kvalifioi ja tuoton tilittää."}}]}</script>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%236FBF63' d='M12 1 13.76 7.75 19.78 4.22 16.25 10.24 23 12 16.25 13.76 19.78 19.78 13.76 16.25 12 23 10.24 16.25 4.22 19.78 7.75 13.76 1 12 7.75 10.24 4.22 4.22 10.24 7.75 Z'/%3E%3C/svg%3E">
-<meta name="theme-color" content="#0A130D">
-<link rel="preload" href="/assets/fonts/archivo-700-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/archivo-800-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/newsreader-400-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:image" content="https://samaenergia.fi/assets/og-fi.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Etusivu","item":"https://samaenergia.fi/"},{"@type":"ListItem","position":2,"name":"Reservimarkkinat","item":"https://samaenergia.fi/reservimarkkinat/"}]}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23C9A227' d='M12 1 13.76 7.75 19.78 4.22 16.25 10.24 23 12 16.25 13.76 19.78 19.78 13.76 16.25 12 23 10.24 16.25 4.22 19.78 7.75 13.76 1 12 7.75 10.24 4.22 4.22 10.24 7.75 Z'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="preload" href="/assets/fonts/newsreader-latin-variable-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/newsreader-latin-variable-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link href="/assets/fonts.css" rel="stylesheet">
 <link href="/assets/site.css" rel="stylesheet">
 </head>
 <body class="t3">
 <a href="#main" class="skip">Siirry sisältöön</a>
 
-<header>
-  <div class="wrap nav">
-    <a href="/" class="brand"><img src="/assets/mark.webp" alt="" width="95" height="96" style="height:32px;width:auto;vertical-align:middle;margin-right:11px;margin-top:-3px">SAMA<span>·</span>ENERGIA</a>
-    <nav class="menu" id="menu">
-      <a href="/energiavarastot/">Energiavarastot</a>
-      <a href="/aurinko-ja-akku/">Aurinkosähkö + akku</a>
-      <a href="/reservimarkkinat/" class="on">Reservimarkkinat</a>
-      <a href="/prosessi/">Näin se etenee</a>
-      <a href="/ajankohtaista/">Ajankohtaista</a>
-      <a href="/meista/">Meistä</a>
-      
-      <a href="/yhteystiedot/" class="navcta">Pyydä kartoitus</a>
-      <div class="langsw" aria-label="Kieli / Keel"><a href="/" class="cur" aria-current="true">FI</a><a href="https://samaenergia.ee/reserviturud/" lang="et">EE</a></div>
+<header class="header" id="top">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="SAMA Energia — etusivu"><img src="/assets/mark.png" alt="SAMA Energia" width="149" height="38"></a>
+    <nav class="nav" aria-label="Päävalikko">
+      <div class="dd" data-nav="ratkaisut">
+        <button type="button" aria-haspopup="true" aria-expanded="false">Ratkaisut <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></button>
+        <div class="menu">
+          <a href="/aurinkosahko/"><i><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4L7 17M17 7l1.4-1.4"/></svg></i><span>Aurinkosähkö<small>Paneelit ja invertterit kulutuksenne mukaan</small></span></a>
+          <a href="/energiavarastot/"><i><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="15" height="10" rx="2"/><path d="M19 10h2v4h-2M7 10v4M11 10v4"/></svg></i><span>Energiavarastot<small>Teollisuusluokan akustot ja ohjaus</small></span></a>
+          <a href="/reservimarkkinat/"><i><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg></i><span>Reservimarkkinat<small>Liittäminen Fingridin reserveihin aggregaattorin kautta</small></span></a>
+          <a href="/palvelut/"><i><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h7"/></svg></i><span>Palvelut<small>Kartoitus, kirjallinen arvio, projektinjohto, seuranta</small></span></a>
+        </div>
+      </div>
+      <div class="dd active" data-nav="reservimarkkinat">
+        <button type="button" aria-haspopup="true" aria-expanded="false">Reservimarkkinat <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></button>
+        <div class="menu">
+          <a href="/reservimarkkinat/"><i><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg></i><span>Reservimarkkinat selkokielellä<small>Miksi Fingrid maksaa valmiudesta ja miten tuotto arvioidaan</small></span></a>
+          <a href="/veni-energia/"><i><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="7" height="6" rx="1"/><rect x="14" y="5" width="7" height="6" rx="1"/><rect x="8.5" y="14" width="7" height="6" rx="1"/><path d="M6.5 11v3h11v-3"/></svg></i><span>Aggregaattori: VENI Energia<small>Mitä aggregaattori tekee ja miten liittyminen etenee</small></span></a>
+        </div>
+      </div>
+      <a href="/ajankohtaista/" data-nav="ajankohtaista">Ajankohtaista</a>
+      <a href="/meista/" data-nav="meista">Meistä</a>
+      <a href="/yhteystiedot/" data-nav="yhteystiedot">Yhteystiedot</a>
     </nav>
-    <button class="burger" id="burger" aria-label="Valikko" aria-expanded="false">☰</button>
+    <div class="header-right">
+      <div class="lang" aria-label="Kieli / Keel"><a href="https://samaenergia.ee/reserviturg/" lang="et">EE</a><a href="/" aria-current="page" lang="fi">FI</a></div>
+      <a class="btn btn-primary" href="/yhteystiedot/">Pyydä maksuton kartoitus</a>
+      <button class="menu-btn" aria-label="Avaa valikko" aria-expanded="false" aria-controls="mobile-nav"><span></span></button>
+    </div>
   </div>
+
 </header>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobiilivalikko">
+  <a href="/">Etusivu</a>
+  <div class="grp">Ratkaisut</div>
+  <a class="sub" href="/aurinkosahko/">Aurinkosähkö</a>
+  <a class="sub" href="/energiavarastot/">Energiavarastot</a>
+  <a class="sub" href="/reservimarkkinat/">Reservimarkkinat</a>
+  <a class="sub" href="/palvelut/">Palvelut</a>
+  <div class="grp">Reservimarkkinat</div>
+  <a class="sub" href="/reservimarkkinat/">Reservimarkkinat selkokielellä</a>
+  <a class="sub" href="/veni-energia/">Aggregaattori: VENI Energia</a>
+  <a href="/ajankohtaista/">Ajankohtaista</a>
+  <a href="/meista/">Meistä</a>
+  <a href="/yhteystiedot/">Yhteystiedot</a>
+  <a class="btn btn-primary" href="/yhteystiedot/">Pyydä maksuton kartoitus</a>
+  <div class="lang" aria-label="Kieli / Keel"><a href="https://samaenergia.ee/reserviturg/" lang="et">EE</a><a href="/" aria-current="page" lang="fi">FI</a></div>
+</nav>
 
 <main id="main">
-<div class="page active" id="p-reservi">
-  <div id="rev-reservimarkkinat-1" class="hero" style="padding-bottom:clamp(48px,7vw,84px)">
-    <div class="wrap">
-      <p class="eyebrow">Reservimarkkinat · päivitetään säännöllisesti</p>
-      <h1 style="font-size:clamp(34px,5.4vw,66px)">Reservimarkkinat: mitä ne ovat, mitä ne vaativat ja mitä emme niistä lupaa</h1>
-      <p class="lede">Tämä sivu selittää mekanismin. Se ei sisällä tuottolukuja — ja alempana kerromme, miksi.</p>
+<div class="page" id="p-reservi">
+<section id="rev-reservimarkkinat-1" class="subhero">
+  <div class="wrap">
+    <div>
+      <p class="crumbs"><a href="/">Etusivu</a><span>›</span><span>Reservimarkkinat</span></p>
+      <h1>Reservimarkkinat: teollinen akku tuottaa jo <em>tänään.</em></h1>
+      <p class="lead">Suurkuluttajalle akku ei ole tulevaisuuden hanke vaan tämän päivän tulonlähde. Fingrid maksaa valmiudesta, ohjaus on automaattista, ja liittymä, jota akku tarvitsee, on teillä jo olemassa.</p>
+      <div class="hero-cta" style="margin-top:26px"><a class="btn btn-primary" href="/yhteystiedot/">Pyydä maksuton kartoitus <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg></a><a class="btn btn-ghost" href="/veni-energia/">Aggregaattorikumppanimme VENI Energia</a></div>
+    </div>
+    <div class="facts reveal" aria-label="Kaksi lukua reservimarkkinoilta">
+      <div><b>~1 500 MW</b><span>reserviä Fingrid hankkii keskimäärin joka tunnille, ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW lisää</span></div>
+      <div><b>29 % · 54 %</b><span>energiavarastojen osuus FCR-N- ja FFR-reservien todennetusta kapasiteetista, helmikuu 2025</span></div>
+      <p class="src">Lähteet: <a href="https://www.fingrid.fi/globalassets/reservimarkkinat-tutuiksi-webinaari-11.6.2025-1.pdf" target="_blank" rel="noopener">Fingrid</a> · 11.6.2025; <a href="https://www.fingrid.fi/globalassets/dokumentit/fi/yhtio/toimikunnat/markkinatoimikunta/smtk125_-smtk-2025-1-energiavarastot-reservimarkkinoilla.pdf" target="_blank" rel="noopener">Fingrid</a> · 10.2.2025</p>
     </div>
   </div>
+</section>
 
-  <section id="rev-reservimarkkinat-2">
-    <div class="wrap">
-      <div class="split">
-        <div>
-          <p class="eyebrow">Perusasia</p>
-          <h2 class="sec-title">Sähköverkko on tasapainossa vain silloin, kun tuotanto ja kulutus ovat yhtä suuret joka hetki.</h2>
-        </div>
-        <div>
-          <p class="sec-lede">Kun ne eivät ole, taajuus liikkuu. Pohjoismaisessa ja mannereurooppalaisessa järjestelmässä tavoite on 50,000 Hz. Jos kulutus ylittää tuotannon, taajuus laskee. Jos tuotanto ylittää kulutuksen, taajuus nousee.</p>
-          <p style="margin-top:20px;color:var(--tx2)">Ennen tämä hoidettiin suurilla laitoksilla, jotka säätivät tuotantoaan. Sääriippuvaisen tuotannon kasvaessa ja säädettävän kapasiteetin poistuessa kantaverkkoyhtiö ostaa tätä säätökykyä markkinoilta — myös akuilta.</p>
-          <p style="margin-top:20px;color:var(--tx2)">Akku sopii tähän poikkeuksellisen hyvin, koska se reagoi sekunneissa ja voi sekä ottaa vastaan että syöttää.</p>
-        </div>
+<section class="section watch" id="selko">
+  <div class="wrap">
+    <div class="reserve-intro">
+      <div>
+        <h2>Reservimarkkinat <em>selkokielellä.</em></h2>
+        <p class="lead" style="margin-top:22px">Sähköverkon on oltava tasapainossa joka sekunti. Kun tuotanto ja kulutus erkanevat, Fingrid ostaa markkinoilta nopeaa apua ja maksaa siitä, että apu on olemassa. Akut ovat tämän työn nopeimpia tekijöitä: ne lataavat ylijäämän talteen ja purkavat sen vajeeseen sekunneissa. Yhden tehtaan akku pääsee markkinoille aggregaattorin kautta, joka kokoaa pienemmät akut yhdeksi tarjoukseksi.</p>
+      </div>
+      <div class="sizing reveal" aria-hidden="true">
+        <svg viewBox="0 0 440 230" fill="none">
+          <path d="M206 150h28l-14-64z" fill="#F3EEE1" stroke="#8B857A" stroke-width="1.2" stroke-linejoin="round"/>
+          <rect x="150" y="150" width="140" height="6" rx="3" fill="#F3EEE1" stroke="#8B857A" stroke-width="1"/>
+          <g class="beam-loop" style="transform-origin:220px 82px"><rect x="80" y="79" width="280" height="6" rx="3" fill="#C9A227"/><circle cx="220" cy="82" r="7" fill="#fff" stroke="#C9A227" stroke-width="2"/></g>
+          <g class="pan-loop-l"><path d="M88 85v28M118 85v28" stroke="#8B857A" stroke-width="1"/><path d="M74 113h58l-5 14H79z" fill="#FFFDF7" stroke="#8B857A" stroke-width="1.2" stroke-linejoin="round"/><circle cx="93" cy="102" r="6" fill="#C9A227"/><path d="M108 108l5-13 5 13" stroke="#1F1C18" stroke-width="1.5" stroke-linecap="round"/><text x="103" y="146" text-anchor="middle" style="font:600 11px 'IBM Plex Sans',sans-serif;fill:#7A746A;letter-spacing:.06em">TUOTANTO</text></g>
+          <g class="pan-loop-r"><path d="M322 85v28M352 85v28" stroke="#8B857A" stroke-width="1"/><path d="M308 113h58l-5 14h-48z" fill="#FFFDF7" stroke="#8B857A" stroke-width="1.2" stroke-linejoin="round"/><path d="M322 108v-11h8v5h8v-7h8v13" stroke="#1F1C18" stroke-width="1.5" stroke-linejoin="round"/><text x="337" y="146" text-anchor="middle" style="font:600 11px 'IBM Plex Sans',sans-serif;fill:#7A746A;letter-spacing:.06em">KULUTUS</text></g>
+          
+          <rect x="204" y="176" width="32" height="16" rx="3" stroke="#B08A1E" stroke-width="1.5" fill="#fff"/><rect x="236" y="180" width="3" height="8" rx="1" fill="#B08A1E"/>
+          <rect class="batt-fill" x="207" y="179" width="12" height="10" rx="1.5" fill="#C9A227"/>
+          <text x="220" y="210" text-anchor="middle" style="font:600 11px 'IBM Plex Sans',sans-serif;fill:#8A6A12;letter-spacing:.06em">AKKU</text>
+          
+          <circle class="flow-down" cx="200" cy="176" r="4" fill="#C9A227"/>
+          <circle class="flow-up" cx="240" cy="176" r="4" fill="#B08A1E"/>
+          <text class="lbl-charge" x="150" y="190" text-anchor="end" style="font:500 11.5px 'IBM Plex Sans',sans-serif;fill:#8A6A12">ylijäämä talteen: akku lataa</text>
+          <text class="lbl-discharge" x="290" y="190" text-anchor="start" style="font:500 11.5px 'IBM Plex Sans',sans-serif;fill:#8A6A12">vaje täyteen: akku purkaa</text>
+          <text x="220" y="30" text-anchor="middle" style="font:500 13px 'IBM Plex Sans',sans-serif;fill:#1F1C18">50 Hz = tasapaino</text>
+          <text x="220" y="48" text-anchor="middle" style="font:400 11.5px 'IBM Plex Sans',sans-serif;fill:#7A746A">kun vaaka kallistuu, akku reagoi ensimmäisenä ja tuo sen takaisin tasoihin</text>
+        </svg>
+        <p class="caption" style="text-align:center;margin-top:10px">Akku tasapainottaa, Fingrid maksaa valmiudesta. Sama tapahtuu kohteessanne satoja kertoja päivässä, automaattisesti.</p>
       </div>
     </div>
-  </section>
 
-  <div class="dark">
-    <section id="rev-reservimarkkinat-3">
-      <div class="wrap">
-        <p class="eyebrow">Tuotteet</p>
-        <h2 class="sec-title">Reservituotteet ja mitä kukin vaatii akulta</h2>
-        <p class="sec-lede">Eri tuotteet edellyttävät eri reaktionopeutta ja eri kestoa. Kesto määrää akun energiamitoituksen suhteessa tehoon — tämä on se kohta, jossa väärin mitoitettu järjestelmä ei kelpaa siihen markkinaan, jolle se myytiin.</p>
+    <div class="tbl-wrap reveal">
+      <div class="tbl-head"><h3>Viisi reserviä, joita Fingrid ostaa</h3><p class="src">Lähde: <a href="https://www.fingrid.fi/globalassets/reservimarkkinat-tutuiksi-webinaari-11.6.2025-1.pdf" target="_blank" rel="noopener">Fingrid, Reservimarkkinat tutuiksi</a> · 11.6.2025: „Ylläpidosta maksetaan korvaus siitä, että reservi on käytettävissä.“</p></div>
+      <div class="tbl-scroll">
         <table class="tbl">
-          <thead>
-            <tr><th>Tuote</th><th>Mitä se tekee</th><th>Vaatimus akulta</th></tr>
-          </thead>
+          <thead><tr><th>Reservi</th><th>Mitä verkko tarvitsee</th><th>Kuinka nopeasti</th><th>Miten akku tuottaa</th></tr></thead>
           <tbody>
-            <tr>
-              <td>FCR-N</td>
-              <td>Taajuuden jatkuva hienosäätö normaalitilanteessa. Reagoi pieniinkin poikkeamiin.</td>
-              <td>Kyky sekä ottaa että antaa tehoa symmetrisesti. Vaatii tyypillisesti pisintä kestoa molempiin suuntiin.</td>
-            </tr>
-            <tr>
-              <td>FCR-D</td>
-              <td>Häiriöreservi. Aktivoituu vasta, kun taajuus poikkeaa merkittävästi — esimerkiksi kun suuri tuotantoyksikkö irtoaa verkosta.</td>
-              <td>Nopea aktivoituminen, lyhyempi kesto. Yleisin lähtökohta yritys- ja teollisuuskokoluokan akuille.</td>
-            </tr>
-            <tr>
-              <td>aFRR</td>
-              <td>Automaattinen taajuuden palautus. Vie taajuuden takaisin tavoitearvoon FCR:n jälkeen.</td>
-              <td>Pidempi kesto ja jatkuva ohjattavuus. Vaatii enemmän energiaa suhteessa tehoon.</td>
-            </tr>
-            <tr>
-              <td>mFRR</td>
-              <td>Manuaalinen reservi. Aktivoidaan käskystä pidempikestoisiin tilanteisiin.</td>
-              <td>Pisin kesto. Harvemmin yrityskokoluokan akun ensisijainen tuote.</td>
-            </tr>
+            <tr><td>FFR</td><td>Nopein apu, kun taajuus putoaa äkillisesti</td><td>Alle sekunnissa</td><td>Valmiuskorvaus tunneilta, joina akku on markkinalla</td></tr>
+            <tr><td>FCR-D</td><td>Häiriöreservi: pysäyttää taajuuden poikkeaman ylös tai alas</td><td>Sekunneissa</td><td>Valmiuskorvaus, aktivointeja harvoin</td></tr>
+            <tr><td>FCR-N</td><td>Käyttöreservi: pitää taajuuden jatkuvasti 50 Hz:n tuntumassa</td><td>Sekunneissa, jatkuvasti</td><td>Valmiuskorvaus ja energiakorvaus käytöstä</td></tr>
+            <tr><td>aFRR</td><td>Palauttaa tasapainon automaattisesti poikkeaman jälkeen</td><td>Minuuteissa</td><td>Valmiuskorvaus ja energiakorvaus aktivoinnista</td></tr>
+            <tr><td>mFRR</td><td>Kattaa suuremmat ja pidemmät poikkeamat, manuaalisesti käynnistettävä</td><td>Vartin sisällä</td><td>Energiakorvaus aktivoinnista, kapasiteettimarkkinalla myös valmiudesta</td></tr>
           </tbody>
         </table>
-        <p style="margin-top:26px;color:var(--tx2d);font-size:16px">Tarkat kestovaatimukset ja tekniset ehdot määrittelee kantaverkkoyhtiö — Suomessa Fingrid, Virossa Elering — ja ne muuttuvat. Käytämme aina voimassa olevaa ehtoa emmekä muistinvaraista lukua.</p>
-      </div>
-    </section>
-  </div>
-
-  <section id="rev-reservimarkkinat-4">
-    <div class="wrap">
-      <p class="eyebrow">Miten kohde pääsee markkinalle</p>
-      <div class="steps">
-        <div class="step">
-          <span class="idx">01</span>
-          <div><h2>Aggregaattori</h2><p>Yksittäinen teollisuusakku on liian pieni osallistuakseen suoraan. Aggregaattori kokoaa useita kohteita yhdeksi tarjoukseksi markkinalle, hoitaa tarjoamisen ja jakaa tuoton. Aggregaattori — ei laitetoimittaja — määrittää mihin tuotteisiin kohde kelpaa.</p></div>
-          <span class="dur">Pakollinen</span>
-        </div>
-        <div class="step">
-          <span class="idx">02</span>
-          <div><h2>Esikvalifiointi</h2><p>Kantaverkkoyhtiö edellyttää, että yksikkö osoittaa täyttävänsä tuotteen tekniset vaatimukset. Tämä on mittauksin todennettava prosessi, ei ilmoitusasia.</p></div>
-          <span class="dur">Ennen tuloja</span>
-        </div>
-        <div class="step">
-          <span class="idx">03</span>
-          <div><h2>Mittaus ja tiedonsiirto</h2><p>Reaaliaikainen mittaustiedon vaihto on edellytys osallistumiselle. Suuremmissa kohteissa vaatimukset ovat tiukemmat.</p></div>
-          <span class="dur">Tekninen ehto</span>
-        </div>
-        <div class="step">
-          <span class="idx">04</span>
-          <div><h2>Verkkoyhtiön hyväksyntä</h2><p>Eri prosessi kuin kantaverkkoyhtiön. Jakeluverkkoyhtiö päättää liittymäkohtaisesti, mitä liittymään saa kytkeä ja millä ehdoilla.</p></div>
-          <span class="dur">Ensin</span>
-        </div>
       </div>
     </div>
-  </section>
-
-  <div class="dark">
-    <section id="rev-reservimarkkinat-5">
-      <div class="wrap">
-        <p class="eyebrow">Tärkein kohta tällä sivulla</p>
-        <div class="split">
-          <div><h2 class="sec-title">Miksi emme julkaise tuottolukuja</h2></div>
-          <div>
-            <p class="sec-lede">Jokainen akkutarjous sisältää takaisinmaksuluvun. Ratkaisevaa on, mille oletuksille se on rakennettu — ja kuka seisoo niiden takana vielä viidentenä vuonna.</p>
-            <p style="margin-top:20px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Reservihinnat vaihtelevat tunneittain</strong> ja määräytyvät markkinalla. Kukaan ei tiedä ennalta, mitä ne ovat ensi vuonna.</p>
-            
-            <p style="margin-top:16px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Tarve kasvaa — ja yksikköhinta puristuu.</strong> Säätökyvyn tarve kasvaa rakenteellisesti molemmissa järjestelmissä. Samaan aikaan varastointia tulee markkinalle nopeammin kuin markkina syvenee — pelkästään Fingridin liittymisjonossa on yli neljän gigawatin edestä sähkövarastoja (<a href="/ajankohtaista/">lähde Ajankohtaista-sivulla</a>). Tämä on vaihe, ei laskutarina: tasapainottumisen jälkeen markkina palkitsee tehokkaat varat — mutta tämän päivän hintoja emme kirjoita huomisen laskelmaan.</p>
-            <p style="margin-top:16px;color:var(--tx2d);font-size:17px"><strong style="color:var(--dk-hd);font-weight:500">Emme tiedä, miten kohde kvalifioituu</strong>, ennen kuin aggregaattori on sen arvioinut. Se arvio ei ole olemassa siinä vaiheessa, kun useimmat tarjoukset kirjoitetaan.</p>
-            <p style="margin-top:24px;font-family:'Archivo',sans-serif;font-weight:600;font-size:19px;color:var(--dk-hd);letter-spacing:-.015em">Luvun, jonka annamme, on kestettävä tarkastelu vielä viidentenä vuonna. Siksi rakennamme laskelman säästöille ja esitämme reservitulon lisänä: aggregaattorin omana arviona, jonka rinnalla on skenaario siitä, mitä tapahtuu, jos hinnat puolittuvat.</p>
-            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Jos hanke toimii vain silloin, kun reservihinnat pitävät, sanomme sen. Se tarkoittaa, että hanke on hauras, ja se kannattaa tietää ennen allekirjoitusta eikä toisena vuonna.</p>
-          </div>
-        </div>
-      </div>
-    </section>
   </div>
+</section>
 
-  <section id="rev-reservimarkkinat-6">
-    <div class="wrap">
-      <p class="eyebrow">Käytännön työkalu</p>
-      <h2 class="sec-title">Kolme kysymystä mille tahansa toimittajalle</h2>
-      <div class="qa">
-        <div><h3>1 · Erottele säästöt ja reservitulo. Mikä on takaisinmaksu pelkillä säästöillä?</h3><p>Erottelu on hyvän laskelman tuntomerkki — ilman sitä takaisinmaksulukua ei voi arvioida.</p></div>
-        <div><h3>2 · Mikä takaisinmaksu on, jos reservihinnat puolittuvat?</h3><p>Vastaus kertoo, onko hanke kestävä vai riippuuko se markkinasta, jota kukaan ei hallitse.</p></div>
-        <div><h3>3 · Kuka tuotti reserviarvion ja mitä hän on valmis laittamaan kirjallisesti?</h3><p>Reserviarvio on luotettavimmillaan aggregaattorin omana — sen tekijän, joka kohteen lopulta kvalifioi ja tuoton tilittää.</p></div>
+<section class="section band-warm watch" id="neljä-syytä">
+  <div class="wrap">
+    <div class="intro-split">
+      <h2>Neljä syytä, miksi akku kannattaa <em>nyt</em>, ei ensi vuonna.</h2>
+      <p class="lead">Kaikki neljä perustuvat Fingridin ja Eleringin omiin lukuihin, ei meidän arvioihimme. Lähteet ovat jokaisen kohdan alla.</p>
+    </div>
+    <div class="benefits">
+      <article class="benefit reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M9.5 10.5h3.5a1.5 1.5 0 0 1 0 3h-2a1.5 1.5 0 0 0 0 3H14"/></svg></div>
+        <div><h3>Uusi tulovirta: Fingrid maksaa teille</h3><p>Akku muuttaa kuluerän tulonlähteeksi. Fingrid maksaa joka tunti siitä, että akkunne on valmiina tasapainottamaan verkkoa, ja erikseen siitä, kun sitä käytetään. Fingrid hankkii tunneittain keskimäärin 1 500 MW reserviä ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW lisää.</p><p class="src">Lähde: <a href="https://www.fingrid.fi/globalassets/reservimarkkinat-tutuiksi-webinaari-11.6.2025-1.pdf" target="_blank" rel="noopener">Fingrid, Reservimarkkinat tutuiksi</a> · 11.6.2025</p></div>
+      </article>
+      <article class="benefit reveal d1">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div><h3>Todistettu ja turvallinen: akut kannattelevat verkkoa jo nyt</h3><p>Tämä ei ole kokeilu vaan verkon arkea. Helmikuussa 2025 energiavarastojen osuus säätökokein todennetusta kapasiteetista oli FCR-N-reservissä 29 %, FCR-D-reservissä 13 % (ylös) ja 18 % (alas) sekä FFR-reservissä 54 %, ja Fingridin mukaan osuus kasvaa. Sama tekniikka, samat markkinat, sama aggregaattori kuin isoilla toimijoilla, teidän kokoluokassanne.</p><p class="src">Lähde: <a href="https://www.fingrid.fi/globalassets/dokumentit/fi/yhtio/toimikunnat/markkinatoimikunta/smtk125_-smtk-2025-1-energiavarastot-reservimarkkinoilla.pdf" target="_blank" rel="noopener">Fingrid, Energiavarastot reservimarkkinoilla</a> · 10.2.2025</p></div>
+      </article>
+      <article class="benefit reveal d2">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3L5 14h6l-1 7 9-12h-6z"/></svg></div>
+        <div><h3>Nopeus ja epäreilu etu: ohitatte 30 000 MW:n jonon</h3><p>Fingrid on sopinut noin 1 800 MW:n akkuliitynnöistä, kyselyjä on yli 30 000 MW, ja Etelä-Suomessa uusia varastoliityntöjä ei tehdä ennen vuotta 2029. Akku teidän liittymänne takana ei tarvitse uutta kantaverkkoliityntää: se käyttää liittymää, joka on jo olemassa, ja pääsee markkinoille kuukausissa, ei vuosissa.</p><p class="src">Lähde: <a href="https://www.sttinfo.fi/tiedote/71476598/fingrid-varmistaa-siirtokapasiteettia-sahkonkulutuksen-kasvulle-ja-uusille-teollisille-investoinneille-sahkovarastojen-liityntarajoitusta-jatketaan-etela-suomessa?publisherId=69819787&lang=fi" target="_blank" rel="noopener">Fingrid, tiedote</a> · 24.9.2025</p></div>
+      </article>
+      <article class="benefit reveal d3">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div>
+        <div><h3>Pitkäaikainen kysyntä: koko alue tarvitsee reserviä</h3><p>Baltian maat irtautuivat Venäjän verkosta 8.2.2025 ja synkronoituivat Manner-Eurooppaan 9.2.2025. Siitä lähtien Elering ostaa taajuusreservit itse: heinäkuussa 2026 joka tunnille 76 MW FCR:ää ja lähes 500 MW aFRR:ää kumpaankin suuntaan. Kun tuuli- ja aurinkovoiman osuus kasvaa, reservien tarve kasvaa koko alueella. Kysyntä ei ole ohimenevä.</p><p class="src">Lähde: <a href="https://elering.ee/sagedusreservide-turu-kokkuvotted" target="_blank" rel="noopener">Elering, taajuusreservimarkkinoiden yhteenvedot</a> · heinäkuu 2026</p></div>
+      </article>
+    </div>
+    <div class="example reveal">
+      <div class="big">1 MW / 2 MWh<small>esimerkkikoko, mitoitetaan kohteen mukaan</small></div>
+      <p><b>Esimerkiksi:</b> 1 MW / 2 MWh akkuvarasto olemassa olevan teollisuuskiinteistön liittymän takana pääsee markkinoille kuukausissa, osallistuu aggregaattorin kautta FCR-D- ja muihin reserveihin ja leikkaa samalla kohteen omat kulutushuiput. Sama logiikka toimii 125 kW:n yksiköstä useisiin megawatteihin: oikea koko mitoitetaan liittymän ja kulutusprofiilin mukaan.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tuotto">
+  <div class="wrap">
+    <div class="yield">
+      <div>
+        <h2>Miten tuotto <em>arvioidaan.</em></h2>
+        <ol>
+          <li><span><b>Invertterin teho ja kapasiteetti ratkaisevat.</b> Tuotto arvioidaan akun invertterin tehosta (MW) ja kapasiteetista (MWh). Tyypillinen mitoitus on 1:2, esimerkiksi 1 MW / 2 MWh: teho kertoo, paljonko reserviä voitte tarjota, kapasiteetti, kuinka pitkään.</span></li>
+          <li><span><b>Mitä täydemmin aggregaattori ohjaa, sitä enemmän tuottoa.</b> Kun VENI Energia ohjaa akkua kokonaan, se voi viedä joka tunnin kannattavimpaan reserviin (FCR-D, FCR-N, FFR, aFRR) ja ottaa markkinasta maksimin. Osittainen ohjaus tuottaa vähemmän.</span></li>
+          <li><span><b>Strategia tehdään teidän etunne mukaan.</b> Jos myytte omaa aurinkosähköä, tarvitsette akkua omiin huippuihin tai varavoimaksi, strategia rakennetaan sen ympärille. Aggregaattori optimoi, mutta teidän ehdoillanne ja teidän hyväksenne.</span></li>
+          <li><span><b>Toteutuneet tuotot käydään läpi yhdessä.</b> VENI Energian esitys näyttää, mitä vastaavat akut ovat Suomessa tuottaneet. Käymme sen läpi kartoituksessa ja sovitamme luvut teidän kohteeseenne, kirjallisesti ja kolmena skenaariona.</span></li>
+        </ol>
+        <div class="hero-cta" style="margin-top:26px"><a class="btn btn-primary" href="/yhteystiedot/">Pyydä maksuton kartoitus <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg></a><a class="btn btn-ghost" href="/veni-energia/">Miten VENI Energia toimii</a></div>
       </div>
-      <div class="callout">
-        <p>Nämä kolme kysymystä erottavat analyysin myyntipuheesta. Hyvä toimittaja vastaa niihin mielellään — ja kirjallisesti.</p>
+      <div class="sizing reveal" aria-hidden="true">
+        <svg viewBox="0 0 440 300" fill="none">
+          <defs><style>.sl{font:500 12px 'IBM Plex Sans',sans-serif;fill:#1F1C18}.ss{font:400 11px 'IBM Plex Sans',sans-serif;fill:#7A746A}.sb{font:600 13px 'IBM Plex Sans',sans-serif;fill:#8A6A12}</style></defs>
+          <rect x="24" y="40" width="130" height="78" rx="10" fill="#FBF7EA" stroke="#D8D0BC"/>
+          <text x="89" y="66" text-anchor="middle" class="sl">Invertteri</text><text x="89" y="92" text-anchor="middle" style="font:500 26px 'Newsreader',serif;fill:#8A6A12">1 MW</text><text x="89" y="108" text-anchor="middle" class="ss">teho = kuinka paljon</text>
+          <rect x="24" y="136" width="130" height="78" rx="10" fill="#FBF7EA" stroke="#D8D0BC"/>
+          <text x="89" y="162" text-anchor="middle" class="sl">Akku</text><text x="89" y="188" text-anchor="middle" style="font:500 26px 'Newsreader',serif;fill:#8A6A12">2 MWh</text><text x="89" y="204" text-anchor="middle" class="ss">kapasiteetti = kuinka pitkään</text>
+          <path d="M154 79h40M154 175h40M194 79v96" stroke="#C9A227" stroke-width="1.6"/>
+          <path d="M194 127h44" stroke="#C9A227" stroke-width="1.6" stroke-dasharray="4 4"/>
+          <rect x="238" y="96" width="92" height="62" rx="10" fill="#F6EED3" stroke="#C9A227" stroke-width="1.4"/>
+          <text x="284" y="122" text-anchor="middle" class="sl">Aggregaattori</text><text x="284" y="140" text-anchor="middle" class="ss">VENI Energia</text>
+          <g stroke="#C9A227" stroke-width="1.6"><path d="M330 110h30l20-38h30"/><path d="M330 120h30l20-14h30"/><path d="M330 134h30l20 14h30"/><path d="M330 144h30l20 38h30"/></g>
+          <g class="sl"><text x="414" y="76">FFR</text><text x="414" y="110">FCR-D</text><text x="414" y="152">FCR-N</text><text x="414" y="186">aFRR</text></g>
+          <text x="284" y="78" text-anchor="middle" class="ss">joka tunti kannattavimpaan reserviin</text>
+          
+          <text x="24" y="250" class="sb">OHJAUSASTE</text><text x="416" y="250" text-anchor="end" class="sb">TUOTTO</text>
+          <rect x="24" y="258" width="392" height="10" rx="5" fill="#F3EEE1"/>
+          <rect x="24" y="258" width="392" height="10" rx="5" fill="url(#gg)"/>
+          <defs><linearGradient id="gg" x1="0" x2="1"><stop offset="0" stop-color="#F3EEE1"/><stop offset="1" stop-color="#C9A227"/></linearGradient></defs>
+          <text x="24" y="288" class="ss">osittainen</text><text x="416" y="288" text-anchor="end" class="ss">täysi ohjaus = enemmän tuottoa</text>
+        </svg>
       </div>
     </div>
-  </section>
-  <div class="dark">
-    <section id="rev-reservimarkkinat-7">
-      <div class="wrap">
-        <p class="eyebrow">Miksi tämä on tärkeämpää kuin yksi kohde</p>
-        <div class="split">
-          <div>
-            <h2 class="sec-title">Jokainen asentamamme akku on liiketoimintapäätös. Yhdessä ne ovat jotain muuta.</h2>
-          </div>
-          <div>
-            <p class="sec-lede">Helmikuussa 2025 Baltian maat irtautuivat Venäjän sähköverkosta ja synkronoituivat Manner-Euroopan kanssa. Suomi on osa pohjoismaista järjestelmää. Näitä kahta yhdistävät kaapelit Suomenlahden alla — kaapelit, joita on vaurioitettu jo useammin kuin kerran.</p>
-            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Molemmat järjestelmät lisäävät sääriippuvaista tuotantoa ja menettävät säädettävää kapasiteettia, joka ennen tasapainotti niitä. Molemmat tarvitsevat samaa asiaa: joustoa, hajautettuna, sekunneissa reagoivana.</p>
-            <p style="margin-top:20px;color:var(--tx2d);font-size:17px">Yksi suuri akku on yksi kohde ja yksi vikaantumispiste. Kymmenentuhatta akkua kymmenentuhannen teollisuusliittymän takana — jokainen tuottaen omistajalleen rahaa — on alueellista infrastruktuuria, jota ei katkaista ankkurilla ja jonka omistavat ne, jotka sitä käyttävät.</p>
-            <p style="margin-top:24px;font-family:'Archivo',sans-serif;font-weight:600;font-size:19px;color:var(--dk-hd);letter-spacing:-.015em">Energiaomavaraisuutta ei rakenneta julistuksilla. Sen rakentavat yritykset, jotka asentavat akun, koska se maksaa itsensä takaisin — yksi kohde kerrallaan.</p>
-          </div>
-        </div>
-        <div class="btnrow" style="margin-top:38px"><a href="/yhteystiedot/" class="btn">Pyydä kohdekartoitus</a></div>
-      </div>
-    </section>
   </div>
+</section>
+
+<section class="section band-warm" id="rehellisesti">
+  <div class="wrap">
+    <div class="honest">
+      <div class="text reveal">
+        <h2 style="margin-bottom:22px">Rehellisesti <em>reservihinnoista.</em></h2>
+        <p><strong>Hinnat vaihtelevat.</strong> Reservin hinta muodostuu markkinoilla joka päivä, ja markkina, jolle tulee lisää tarjoajia, ei pysy paikallaan. Siksi emme lupaa lukua, jota kukaan ei tiedä. Arviomme perustuu siihen, mitä Fingrid oikeasti hankkii ja mitä on tulossa, ja näytämme sen kolmena skenaariona, kirjallisesti.</p>
+        <p><strong>Teidän ei tarvitse seurata markkinaa.</strong> Aggregaattorin automaattinen ohjaus vie akun joka tunti kannattavimpaan reserviin, FCR-D:hen, FFR:ään tai muihin, ja vaihtaa tuotetta, kun hinnat liikkuvat. Te näette tuloksen seurantanäkymästä. Se on koko idea: itseohjautuva akku.</p>
+      </div>
+      <div>
+        <figure class="quote light reveal d1">
+          <blockquote>„Aina ei mene huonommin kuin pelätään. Joskus menee paremmin kuin toivotaan. Meidän työmme on auttaa teitä päättämään tietoisesti: ei pelosta eikä uskosta, vaan omien lukujenne pohjalta.“</blockquote>
+          <figcaption><span class="avatar">MM</span><span>Madis Maastik, myyntijohtaja ja perustaja<br>SAMA Energia</span></figcaption>
+        </figure>
+        <div class="wrapup reveal d2"><b>Me rakennamme järjestelmän, aggregaattorin ohjelmisto hoitaa kaupankäynnin, ja te nautitte optimoiduista energiakuluista.</b> Kartoituksesta käyttöönottoon ja seurantaan, yhdellä yhteyshenkilöllä.</div>
+      </div>
+    </div>
+    <div class="partner-card reveal" style="margin-top:36px">
+      <div><h3>VENI Energia, aggregaattorikumppanimme</h3><p>Liittää kohteenne Fingridin reservimarkkinoille, ohjaa akkua automaattisesti ja tilittää tuoton. Toteutuneet tuotot näytämme VENI Energian esityksestä kartoituksessa.</p></div>
+      <a class="btn btn-ghost" href="/veni-energia/">Lue lisää <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="aanestamme">
+  <div class="wrap">
+    <div class="vote reveal">
+      <div>
+        <h2>Mitä me <em>äänestämme.</em></h2>
+        <p class="lead">Jokainen tänne rakennettu akku on pieni askel yhteen suuntaan: energia, joka tuotetaan, varastoidaan ja jota ohjataan täällä, täkäläisten yritysten käsissä. Tässä emme ole neutraaleja.</p>
+        <p class="lead" style="margin-top:14px">Siksi sanomme myös rehellisesti ei, kun akku ei kohteessanne kannata. Väärä investointi vahingoittaa juuri sitä asiaa, jonka puolesta äänestämme.</p>
+      </div>
+      <div class="cols">
+        <div><b>Riippumattomuus</b><p>Fingrid arvioi tarvitsevansa viiden vuoden päästä 1 200 MW nykyistä enemmän reserviä. Se kapasiteetti rakennetaan joka tapauksessa. Kysymys on vain siitä, seisooko se suomalaisten yritysten omien liittymien takana vai ostetaanko se muualta. Huoltovarmuus ei ole julistus vaan laitteita, jotka ovat fyysisesti täällä ja reagoivat sekunneissa.</p><p class="src">Lähde: <a href="https://www.fingrid.fi/globalassets/reservimarkkinat-tutuiksi-webinaari-11.6.2025-1.pdf" target="_blank" rel="noopener">Fingrid, Reservimarkkinat tutuiksi</a> · 11.6.2025</p></div>
+        <div><b>Vauraus</b><p>Reservin ylläpidosta maksetaan korvaus joka tunnilta, ja se raha menee sille, joka reservin tarjoaa. Jos tarjoajia ovat vain suuret rahastot, raha lähtee alueelta. Jos tarjoajia ovat sastamalalainen konepaja, hämäläinen viljankuivaamo ja tamperelainen kiinteistö, raha jää tänne ja investoidaan tänne uudelleen. Meidän kantamme on tiedossa.</p><p class="src">Lähde: <a href="https://www.fingrid.fi/globalassets/dokumentit/fi/yhtio/toimikunnat/markkinatoimikunta/smtk125_-smtk-2025-1-energiavarastot-reservimarkkinoilla.pdf" target="_blank" rel="noopener">Fingrid, Energiavarastot reservimarkkinoilla</a> · 10.2.2025</p></div>
+        <div><b>Vapaus</b><p>Yritys, joka pystyy varastoimaan ja ajoittamaan oman energiansa, ei ole yhden tunnin hinnan armoilla. Maa, jossa tällaisia yrityksiä on tuhat, ei ole yhdenkään toimittajan armoilla. Sama logiikka kahdessa kokoluokassa, ja se on syy siihen, miksi tämä työ on isompi asia kuin yksi laite yhden rakennuksen vieressä.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rev-reservimarkkinat-7" class="cta-strip"><div class="wrap"><div class="box"><div><h2>Katsotaan, mitä akku tuottaisi <em>teidän</em> liittymänne takana.</h2><p>Maksuton kartoitus, kirjallinen arvio kolmena skenaariona, ei sitoumuksia.</p></div><div class="acts"><a class="btn btn-primary btn-lg" href="/yhteystiedot/">Pyydä maksuton kartoitus <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg></a></div></div></div></section>
 </div>
 </main>
 
-<footer>
+<footer class="footer">
   <div class="wrap">
-    <div class="fgrid">
-      <div>
-        <a href="/" class="brand" style="font-size:19px"><img src="/assets/mark.webp" alt="" width="95" height="96" style="height:36px;width:auto;vertical-align:middle;margin-right:12px;margin-top:-4px">SAMA<span>·</span>ENERGIA</a>
-        <p style="margin-top:18px;max-width:36ch;color:var(--muted-lt);font-size:16px">Energiavarastot ja aurinkosähkö yrityksille. Rehellinen analyysi, verkkoyhtiön hyväksyntä ennen hankintaa, kattava dokumentaatio.</p>
-        <p style="margin-top:20px" class="mono">SUOMI · EESTI</p>
-      </div>
-      <div>
-        <p class="fh">Palvelut</p>
-        <a href="/energiavarastot/">Energiavarastot</a>
-        <a href="/aurinko-ja-akku/">Aurinkosähkö + akku</a>
-        <a href="/prosessi/">Näin se etenee</a>
-        <a href="/yhteystiedot/">Kohdekartoitus</a>
-      </div>
-      <div>
-        <p class="fh">Tietoa</p>
-        <a href="/reservimarkkinat/">Reservimarkkinat</a>
-        <a href="/ajankohtaista/">Ajankohtaista</a>
-        <a href="/meista/">Meistä</a>
-        <a href="/yhteystiedot/">Yhteystiedot</a>
-        <a href="/tietosuoja/">Tietosuojaseloste</a>
-      </div>
+    <div class="top">
+      <div><a class="logo" href="/" aria-label="SAMA Energia"><img src="/assets/mark-night.png" alt="SAMA Energia" width="133" height="34"></a><p class="tagline">Aurinkosähkö, teolliset energiavarastot ja reservimarkkinaliityntä yrityksille Suomessa ja Virossa.</p></div>
+      <div><p class="fh">Yhteystiedot</p><ul><li><a href="mailto:info@samaenergia.fi">info@samaenergia.fi</a></li><li><a href="tel:+358449654614">+358 449 654 614</a></li><li>SAMA Energia Oy · Helsinki</li><li>Y-tunnus 3647683-3 · ALV-tunnus FI36476833</li></ul></div>
+      <div><p class="fh">Ratkaisut</p><ul><li><a href="/aurinkosahko/">Aurinkosähkö</a></li><li><a href="/energiavarastot/">Energiavarastot</a></li><li><a href="/reservimarkkinat/">Reservimarkkinat</a></li><li><a href="/veni-energia/">Aggregaattori: VENI Energia</a></li><li><a href="/palvelut/">Palvelut</a></li></ul></div>
+      <div><p class="fh">Yritys</p><ul><li><a href="/meista/">Meistä</a></li><li><a href="/yhteystiedot/">Yhteystiedot</a></li><li><a href="/ajankohtaista/">Ajankohtaista</a></li><li><a href="/tietosuoja/">Tietosuoja</a></li></ul></div>
     </div>
-    <div class="legal">
-      SAMA ENERGIA OY · Y-TUNNUS 3647683-3 · ALV-NRO FI36476833 · KOTIPAIKKA HELSINKI<br>
-      madis.maastik@samaenergia.fi · +358 449 654 614 · WHATSAPP +358 46 659 4879 · <a href="/tietosuoja/">TIETOSUOJASELOSTE</a><br>
-      © 2026 SAMA Energia
-    </div>
+    <div class="bottom"><span>© 2026 SAMA Energia Oy</span><div class="lang" aria-label="Kieli / Keel"><a href="https://samaenergia.ee/reserviturg/" lang="et">EE</a><a href="/" aria-current="page" lang="fi">FI</a></div></div>
   </div>
 </footer>
+<div class="sticky-cta" id="sticky-cta"><a class="btn btn-primary" href="/yhteystiedot/">Pyydä maksuton kartoitus</a></div>
 
 <script src="/assets/site.js"></script>
 </body>

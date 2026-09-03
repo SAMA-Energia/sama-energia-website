@@ -1,28 +1,517 @@
 {
  "changes": [
   {
-   "page": "/meista/",
-   "sectionId": "rev-meista-2",
+   "page": "/",
+   "sectionId": "etusivu",
    "kind": "changed",
-   "prev": "Miksi perustimme tämän yhtiön Ennen kuin myin akkuja itselleni, myin niitä jonkun toisen lukuun. Tarjoukset rakennettiin reservituloennusteen varaan — luvun, jota kukaan ei hallitse. Sen päällä seisoi takaisinmaksulaskelma, jonka perusteella joku teki kolmensadantuhannen euron päätöksen. Asiakas kysyi: pitääkö tämä paikkansa? Vastaus oli: tuollainen on ennuste. Kukaan ei valehdellut. Mutta kukaan ei myöskään pannut nimeään alle. Se oli lähisyy. Kauempi on isompi. Fingrid kertoi elokuussa: liittymissopimuksin varmistettuja datakeskushankkeita lähes 5 GW, sähkökattilahankkeita yli 3 GW, kulutus voi kasvaa jopa 40 % vuoteen 2030. Samaan aikaan säätövoimaa on poistunut järjestelmästä, ja verkon vahvistaminen kestää vuosia kauemmin kuin kysynnän kasvu. Lähde: Fingrid, elokuu 2026. Verkko rakennetaan uudelleen. Se ei ole enää kysymys. Kysymys on, kenen omistuksessa solmut ovat. Jos vastaus on suuret keskitetyt laitokset, jokainen katto ja tuotantorakennus jää passiiviseksi kuluttajaksi järjestelmässä, joka kiristyy ja kallistuu. Jos vastaus on ne, jotka niiden päällä työskentelevät, sama katto muuttuu tuottavaksi solmuksi — ja saa siitä maksun. Eikä hyöty ole vain omistajan. Mitä enemmän hajautettua joustoa verkossa on, sitä enemmän sinne mahtuu aurinkoa ja tuulta. Itsenäisyys ja yhteinen verkko eivät ole vastakohtia. Sähköverkko pysyy pystyssä vain tasapainossa, joka sekunti, 50,000 hertsissä. Siitä on myös nimi: sama tarkoittaa suomeksi ja viroksi samaa asiaa — ja sanskritiksi tasapainoa. Siksi SAMA on olemassa: riippumaton yhtiö ilman valmistajabonuksia, jotka pakottaisivat saman laitteen jokaiseen kohteeseen, ja ilman aggregaattorisopimusta, joka vaatisi toistamaan jonkun toisen lukuja. Lupauksemme on yksi: vastaamme kirjallisesti, ennen kuin mitään allekirjoitetaan. 01Riippumattomia valmistajistaValitsemme laitteen kohteeseen. Meillä ei ole omaa tuotetta, jota yrittäisimme sovittaa jokaiseen kauppaan. 02Kaikki dokumentoitunaTekniset ratkaisut osoitetaan standardeilla, laiteominaisuudet valmistajan vahvistuksella ja liittymän ehdot verkkoyhtiön vastauksella. 03Sanomme myös eiJos akku ei sovi kohteeseenne, sanomme sen. Olette menettänyt vain keskustelun. Kuka työn tekee Madis Maastik — perustaja Virolainen, asuu Helsingissä. Kaupallinen ja tekninen työ teollisten energiavarastojen, aurinkosähkön ja reservimarkkinoiden parissa Suomessa ja Virossa. Työ kattaa molemmat markkinat: aggregaattorikumppanuudet, verkkovaatimusten täyttäminen olemassa olevan tuotannon rinnalle asennettavissa akuissa, tekninen dokumentaatio neljällä kielellä sekä reservimarkkinoille osallistumisen rahoitusmallit. Kantava juonne on sama, jolle tämä yritys on rakennettu: teollisuusasiakkaat tekevät hyvin suuria päätöksiä hyvin ohuen dokumentaation varassa, ja se aukko on suljettavissa. Palvelemme Suomen ja Viron markkinoita — Fingrid ja Elering, Caruna, Elenia, Helen, Vantaan Energia ja Elektrilevi — kummallakin kielellä. Emme ole suomalainen yritys, jolla on vironkielinen sivu. madis.maastik@samaenergia.fi · +358 449 654 614"
+   "prev": "Energiavarastot ja aurinkosähkö · yrityksille ja maanomistajille Yhteinen verkko.Itsenäinen energia. Rakennamme yritysten energiaomavaraisuutta: aurinkosähkö, energiavarastot ja ohjaus tekevät liittymästänne aktiivisen osan sähköjärjestelmää. Ja mitä se kohteessanne oikeasti tuottaa — siihen vastaamme kirjallisesti, ennen kuin mitään allekirjoitetaan. Pyydä kohdekartoitus Katso miten prosessi etenee"
+  },
+  {
+   "page": "/",
+   "sectionId": "epavarmuus",
+   "kind": "new"
+  },
+  {
+   "page": "/",
+   "sectionId": "ratkaisu",
+   "kind": "new"
+  },
+  {
+   "page": "/",
+   "sectionId": "reservi-teaser",
+   "kind": "new"
+  },
+  {
+   "page": "/",
+   "sectionId": "nain",
+   "kind": "new"
+  },
+  {
+   "page": "/",
+   "sectionId": "kenelle",
+   "kind": "new"
+  },
+  {
+   "page": "/",
+   "sectionId": "miksi-sama",
+   "kind": "new"
+  },
+  {
+   "page": "/",
+   "sectionId": "ukk",
+   "kind": "new"
+  },
+  {
+   "page": "/",
+   "sectionId": "kartoitus",
+   "kind": "new"
+  },
+  {
+   "page": "/aurinkosahko/",
+   "sectionId": "rev-aurinkosahko-1",
+   "kind": "new"
+  },
+  {
+   "page": "/aurinkosahko/",
+   "sectionId": "rev-aurinkosahko-2",
+   "kind": "new"
+  },
+  {
+   "page": "/aurinkosahko/",
+   "sectionId": "rev-aurinkosahko-3",
+   "kind": "new"
+  },
+  {
+   "page": "/energiavarastot/",
+   "sectionId": "rev-energiavarastot-1",
+   "kind": "new"
+  },
+  {
+   "page": "/energiavarastot/",
+   "sectionId": "rev-energiavarastot-2",
+   "kind": "new"
+  },
+  {
+   "page": "/energiavarastot/",
+   "sectionId": "paiva",
+   "kind": "new"
+  },
+  {
+   "page": "/energiavarastot/",
+   "sectionId": "toimitus",
+   "kind": "new"
+  },
+  {
+   "page": "/energiavarastot/",
+   "sectionId": "ukk",
+   "kind": "new"
+  },
+  {
+   "page": "/energiavarastot/",
+   "sectionId": "rev-energiavarastot-6",
+   "kind": "new"
+  },
+  {
+   "page": "/reservimarkkinat/",
+   "sectionId": "rev-reservimarkkinat-1",
+   "kind": "new"
+  },
+  {
+   "page": "/reservimarkkinat/",
+   "sectionId": "selko",
+   "kind": "new"
+  },
+  {
+   "page": "/reservimarkkinat/",
+   "sectionId": "neljä-syytä",
+   "kind": "new"
+  },
+  {
+   "page": "/reservimarkkinat/",
+   "sectionId": "tuotto",
+   "kind": "new"
+  },
+  {
+   "page": "/reservimarkkinat/",
+   "sectionId": "rehellisesti",
+   "kind": "new"
+  },
+  {
+   "page": "/reservimarkkinat/",
+   "sectionId": "aanestamme",
+   "kind": "new"
+  },
+  {
+   "page": "/reservimarkkinat/",
+   "sectionId": "rev-reservimarkkinat-7",
+   "kind": "new"
+  },
+  {
+   "page": "/veni-energia/",
+   "sectionId": "rev-veni-energia-1",
+   "kind": "new"
+  },
+  {
+   "page": "/veni-energia/",
+   "sectionId": "rev-veni-energia-2",
+   "kind": "new"
+  },
+  {
+   "page": "/veni-energia/",
+   "sectionId": "liittyminen",
+   "kind": "new"
+  },
+  {
+   "page": "/veni-energia/",
+   "sectionId": "veni",
+   "kind": "new"
+  },
+  {
+   "page": "/veni-energia/",
+   "sectionId": "agg-ukk",
+   "kind": "new"
+  },
+  {
+   "page": "/veni-energia/",
+   "sectionId": "rev-veni-energia-6",
+   "kind": "new"
+  },
+  {
+   "page": "/palvelut/",
+   "sectionId": "rev-palvelut-1",
+   "kind": "new"
+  },
+  {
+   "page": "/palvelut/",
+   "sectionId": "rev-palvelut-2",
+   "kind": "new"
+  },
+  {
+   "page": "/palvelut/",
+   "sectionId": "rev-palvelut-3",
+   "kind": "new"
+  },
+  {
+   "page": "/palvelut/",
+   "sectionId": "rev-palvelut-4",
+   "kind": "new"
   },
   {
    "page": "/meista/",
-   "sectionId": "rev-meista-3",
+   "sectionId": "rev-meista-1",
+   "kind": "new"
+  },
+  {
+   "page": "/meista/",
+   "sectionId": "miksi",
+   "kind": "new"
+  },
+  {
+   "page": "/meista/",
+   "sectionId": "kuka",
+   "kind": "new"
+  },
+  {
+   "page": "/meista/",
+   "sectionId": "verkosto",
+   "kind": "new"
+  },
+  {
+   "page": "/meista/",
+   "sectionId": "yritys",
+   "kind": "new"
+  },
+  {
+   "page": "/meista/",
+   "sectionId": "rev-meista-6",
+   "kind": "new"
+  },
+  {
+   "page": "/ajankohtaista/",
+   "sectionId": "rev-ajankohtaista-1",
+   "kind": "new"
+  },
+  {
+   "page": "/ajankohtaista/",
+   "sectionId": "rev-ajankohtaista-2",
+   "kind": "new"
+  },
+  {
+   "page": "/ajankohtaista/",
+   "sectionId": "rev-ajankohtaista-3",
+   "kind": "new"
+  },
+  {
+   "page": "/ajankohtaista/liityntarajoitus-2029/",
+   "sectionId": "rev-ajankohtaista-liityntarajoitus-2029-1",
+   "kind": "new"
+  },
+  {
+   "page": "/ajankohtaista/liityntarajoitus-2029/",
+   "sectionId": "rev-ajankohtaista-liityntarajoitus-2029-2",
+   "kind": "new"
+  },
+  {
+   "page": "/yhteystiedot/",
+   "sectionId": "rev-yhteystiedot-1",
+   "kind": "new"
+  },
+  {
+   "page": "/yhteystiedot/",
+   "sectionId": "rev-yhteystiedot-2",
+   "kind": "new"
+  },
+  {
+   "page": "/kiitos/",
+   "sectionId": "rev-kiitos-1",
+   "kind": "new"
+  },
+  {
+   "page": "/tietosuoja/",
+   "sectionId": "rev-tietosuoja-1",
+   "kind": "new"
+  },
+  {
+   "page": "/tietosuoja/",
+   "sectionId": "rev-tietosuoja-2",
    "kind": "changed",
-   "prev": "Kuka työn tekee Madis Maastik — perustaja Virolainen, asuu Helsingissä. Kaupallinen ja tekninen työ teollisten energiavarastojen, aurinkosähkön ja reservimarkkinoiden parissa Suomessa ja Virossa. Työ kattaa molemmat markkinat: aggregaattorikumppanuudet, verkkovaatimusten täyttäminen olemassa olevan tuotannon rinnalle asennettavissa akuissa, tekninen dokumentaatio neljällä kielellä sekä reservimarkkinoille osallistumisen rahoitusmallit. Kantava juonne on sama, jolle tämä yritys on rakennettu: teollisuusasiakkaat tekevät hyvin suuria päätöksiä hyvin ohuen dokumentaation varassa, ja se aukko on suljettavissa. Palvelemme Suomen ja Viron markkinoita — Fingrid ja Elering, Caruna, Elenia, Helen, Vantaan Energia ja Elektrilevi — kummallakin kielellä. Emme ole suomalainen yritys, jolla on vironkielinen sivu. madis.maastik@samaenergia.fi · +358 449 654 614 Martin Rautio — perustaja Vastaa säästölaskelmista, tarjouksista ja projektien koordinoinnista. Koulutukseltaan kansainvälisen liiketoiminnan tradenomi (BBA). martin.rautio@samaenergia.fi · +358 40 701 9099 Viljar Petersell — asennus Aurinkosähkö- ja aurinkokattoasennukset. Kokenut asentaja: yli kuusi vuotta aurinkosähköjärjestelmien rakentamista yritys- ja yksityiskohteissa. Taustaltaan peltiseppä, kokemusta suurista kohteista. +358 40 635 3245"
+   "prev": "RekisterinpitäjäSAMA Energia Oy · Y-tunnus 3647683-3 · madis.maastik@samaenergia.fi · +358 449 654 614. Mitä tietoja käsittelemmeYhteydenottolomakkeella antamanne tiedot: nimi, yritys, sähköposti, puhelin, kohteen sijainti, liittymä- ja kulutustiedot sekä viesti. Lisäksi sivuston tekninen palvelinloki (mm. IP-osoite ja aikaleima), jonka ylläpitopalvelu tuottaa palvelun toimittamiseksi ja tietoturvan varmistamiseksi. Emme käytä evästeitä, seurantapikseleitä emmekä analytiikkaa. Miksi käsittelemmeVastataksemme yhteydenottoonne ja valmistellaksemme pyytämäänne kartoitusta (sopimusta edeltävät toimet, yleisen tietosuoja-asetuksen 6 artiklan 1 kohdan b alakohta) sekä oikeutetun edun perusteella (6 artiklan 1 kohdan f alakohta) asiakassuhteen hoitamiseksi ja tietoturvan varmistamiseksi. Emme käytä tietoja muuhun markkinointiin ilman erillistä suostumusta. Kenelle tietoja siirretäänEmme myy emmekä luovuta tietoja markkinointiin. Teknisinä käsittelijöinä toimivat sivuston ylläpito- ja lomakepalvelu sekä sähköpostipalvelu. Jos palveluntarjoaja käsittelee tietoja EU- tai ETA-alueen ulkopuolella, siirto suojataan EU:n hyväksymillä mekanismeilla, kuten vakiosopimuslausekkeilla tai Data Privacy Framework -järjestelyllä. Kuinka kauan säilytämmeSäilytämme yhteydenottoja enintään 24 kuukautta viimeisestä yhteydenpidosta, ellei asiointi jatku asiakkuutena. Kirjanpitolain piiriin kuuluva aineisto säilytetään lakisääteisen ajan. OikeutenneTeillä on oikeus saada pääsy tietoihinne, pyytää niiden oikaisua, poistoa, käsittelyn rajoittamista tai siirtoa sekä vastustaa käsittelyä. Pyynnöt: madis.maastik@samaenergia.fi. Teillä on myös oikeus tehdä valitus valvontaviranomaiselle: Tietosuojavaltuutetun toimisto, tietosuoja.fi. MuutoksetPäivitetty 18.08.2026. Jos seloste muuttuu, uusin versio on aina tällä sivulla."
+  },
+  {
+   "page": "/et/",
+   "sectionId": "avaleht",
+   "kind": "new"
+  },
+  {
+   "page": "/et/",
+   "sectionId": "teadmatus",
+   "kind": "new"
+  },
+  {
+   "page": "/et/",
+   "sectionId": "lahendus",
+   "kind": "new"
+  },
+  {
+   "page": "/et/",
+   "sectionId": "reservi-teaser",
+   "kind": "new"
+  },
+  {
+   "page": "/et/",
+   "sectionId": "kuidas",
+   "kind": "new"
+  },
+  {
+   "page": "/et/",
+   "sectionId": "kellele",
+   "kind": "new"
+  },
+  {
+   "page": "/et/",
+   "sectionId": "miks-sama",
+   "kind": "new"
+  },
+  {
+   "page": "/et/",
+   "sectionId": "kkk",
+   "kind": "new"
+  },
+  {
+   "page": "/et/",
+   "sectionId": "hindamine",
+   "kind": "new"
+  },
+  {
+   "page": "/paikeseelekter/",
+   "sectionId": "rev-paikeseelekter-1",
+   "kind": "new"
+  },
+  {
+   "page": "/paikeseelekter/",
+   "sectionId": "rev-paikeseelekter-2",
+   "kind": "new"
+  },
+  {
+   "page": "/paikeseelekter/",
+   "sectionId": "rev-paikeseelekter-3",
+   "kind": "new"
+  },
+  {
+   "page": "/energiasalvestid/",
+   "sectionId": "rev-energiasalvestid-1",
+   "kind": "new"
+  },
+  {
+   "page": "/energiasalvestid/",
+   "sectionId": "rev-energiasalvestid-2",
+   "kind": "new"
+  },
+  {
+   "page": "/energiasalvestid/",
+   "sectionId": "oopaev",
+   "kind": "new"
+  },
+  {
+   "page": "/energiasalvestid/",
+   "sectionId": "tarne",
+   "kind": "new"
+  },
+  {
+   "page": "/energiasalvestid/",
+   "sectionId": "kkk",
+   "kind": "new"
+  },
+  {
+   "page": "/energiasalvestid/",
+   "sectionId": "rev-energiasalvestid-6",
+   "kind": "new"
+  },
+  {
+   "page": "/reserviturg/",
+   "sectionId": "rev-reserviturg-1",
+   "kind": "new"
+  },
+  {
+   "page": "/reserviturg/",
+   "sectionId": "lihtsalt",
+   "kind": "new"
+  },
+  {
+   "page": "/reserviturg/",
+   "sectionId": "neli-pohjust",
+   "kind": "new"
+  },
+  {
+   "page": "/reserviturg/",
+   "sectionId": "tulu",
+   "kind": "new"
+  },
+  {
+   "page": "/reserviturg/",
+   "sectionId": "ausalt",
+   "kind": "new"
+  },
+  {
+   "page": "/reserviturg/",
+   "sectionId": "haaletame",
+   "kind": "new"
+  },
+  {
+   "page": "/reserviturg/",
+   "sectionId": "rev-reserviturg-7",
+   "kind": "new"
+  },
+  {
+   "page": "/soleron-energy/",
+   "sectionId": "rev-soleron-energy-1",
+   "kind": "new"
+  },
+  {
+   "page": "/soleron-energy/",
+   "sectionId": "rev-soleron-energy-2",
+   "kind": "new"
+  },
+  {
+   "page": "/soleron-energy/",
+   "sectionId": "liitumine",
+   "kind": "new"
+  },
+  {
+   "page": "/soleron-energy/",
+   "sectionId": "soleron",
+   "kind": "new"
+  },
+  {
+   "page": "/soleron-energy/",
+   "sectionId": "agg-kkk",
+   "kind": "new"
+  },
+  {
+   "page": "/soleron-energy/",
+   "sectionId": "rev-soleron-energy-6",
+   "kind": "new"
+  },
+  {
+   "page": "/teenused/",
+   "sectionId": "rev-teenused-1",
+   "kind": "new"
+  },
+  {
+   "page": "/teenused/",
+   "sectionId": "rev-teenused-2",
+   "kind": "new"
+  },
+  {
+   "page": "/teenused/",
+   "sectionId": "rev-teenused-3",
+   "kind": "new"
+  },
+  {
+   "page": "/teenused/",
+   "sectionId": "rev-teenused-4",
+   "kind": "new"
   },
   {
    "page": "/meist/",
-   "sectionId": "rev-meist-2",
-   "kind": "changed",
-   "prev": "Miks me selle ettevõtte asutasime Enne kui ma müüsin akusid endale, müüsin ma neid kellegi teise jaoks. Töötasin energiamüügis mõlemal pool lahte ja nägin lähedalt, kuidas neid tehinguid tehakse. Pakkumine ehitati reservitulu prognoosile — numbrile, mida ei kontrolli mitte keegi. Ei müüja, ei ostja, ei agregaator. Selle numbri peal seisis tasuvusarvutus, mille põhjal inimene tegi kolmesaja tuhande euro otsuse. Klient küsis: kas see peab paika? Vastus oli: selline on prognoos. Keegi ei valetanud. Aga keegi ei pannud ka oma nime alla. See oli lähedane põhjus. Kaugem on suurem. Meie regioonis ehitatakse praegu üles midagi, millest räägitakse hämmastavalt vähe. Narvas töötab Euroopa esimene tehas, kus haruldastest muldmetallidest saavad püsimagnetid ühes ahelas — magnet on elektrimootori süda, ja elektrimootor on robot, tuulik, auto, pump. Soome maapõues on kogu akutehnoloogia mineraalide spekter. Andmekeskused otsivad kohta, kus on külm ja kus elektrit jätkub. Kõik see vajab üht ja sama asja: võimsust võrgus. Ja võrgu ehitamine võtab aastaid rohkem aega kui nõudluse kasv. Nii et võrk ehitatakse ümber. See ei ole enam küsimus. Küsimus on, kelle omanduses on sõlmed. Kui vastus on „suurte tsentraalsete jaamade\", siis jääb iga katus, iga tootmishoone ja iga talu passiivseks tarbijaks süsteemis, mis läheb kitsamaks ja kallimaks. Kui vastus on „nende, kes seal peal töötavad\", siis muutub sama katus tootvaks sõlmeks. Ta toodab, salvestab ja annab võimsust siis, kui süsteem seda vajab — ja saab selle eest makstud. Ja see ei ole ainult omaniku kasu. Mida rohkem hajutatud salvestust võrgus on, seda rohkem päikest ja tuult sinna üldse mahub. Iseseisvus ja ühine võrk ei ole vastandid — need on sama liigutus. Meie esivanemad said aru, et inimene on ökosüsteemi osa, mitte selle vallutaja. Elektrivõrk töötab täpselt sama loogikaga: ta püsib ainult tasakaalus, iga sekund, 50,000 hertsil. Sellest on ka nimi. Sama tähendab eesti ja soome keeles sama asja — ja sanskritis tasakaalu. Sellepärast SAMA olemas ongi: sõltumatu ettevõte ilma tootjaboonusteta, mis sunniks sama seadme igasse objekti, ja ilma agregaatorilepinguta, mis nõuaks meilt kellegi teise numbrite kordamist. Meie lubadus on üks: vastame kirjalikult, enne kui midagi alla kirjutatakse. Säästu arvutame teie enda tarbimisandmetest — see on arvutatav, mitte arvatav. Reservitulu näitame stsenaariumidena, sealhulgas eeldusel, et hinnad poolduvad. Võrguettevõtte seisukoha selgitame välja enne, kui te kapitali seote. Ja kui aku teie objektile ei sobi, ütleme seda. Te olete kaotanud ühe vestluse. 01Tootjatest sõltumatudValime seadme objekti järgi. Meil ei ole oma toodet, mida prooviksime igasse tehingusse sobitada. 02Kõik dokumenteeritudTehnilised lahendused tõendatakse standarditega, seadmete omadused tootja kinnitusega ja liitumise tingimused võrguettevõtte vastusega. 03Ütleme ka eiKui aku teie objektile ei sobi, ütleme seda. Olete kaotanud ainult vestluse. Kes teeb töö ära Madis Maastik — asutaja Eestlane, elab Helsingis. Kaubanduslik ja tehniline töö tööstuslike energiasalvestite, päikeseelektri ja reserviturgudega Soomes ja Eestis. Töö katab mõlemad turud: agregaatoripartnerlused, võrgunõuete täitmine olemasoleva tootmise kõrvale paigaldatavates akudes, tehniline dokumentatsioon neljas keeles ning reserviturul osalemise rahastusmudelid. Läbiv joon on sama, millele see ettevõte on ehitatud: tööstuskliendid teevad väga suuri otsuseid väga õhukese dokumentatsiooni najal, ja see auk on suletav. Teenindame Soome ja Eesti turge — Fingrid ja Elering, Caruna, Elenia, Helen, Vantaan Energia ja Elektrilevi — mõlemas keeles. Me ei ole Soome ettevõte, millel on eestikeelne leht. madis.maastik@samaenergia.fi · +358 449 654 614"
+   "sectionId": "rev-meist-1",
+   "kind": "new"
   },
   {
    "page": "/meist/",
-   "sectionId": "rev-meist-3",
+   "sectionId": "miks",
+   "kind": "new"
+  },
+  {
+   "page": "/meist/",
+   "sectionId": "kes",
+   "kind": "new"
+  },
+  {
+   "page": "/meist/",
+   "sectionId": "vorgustik",
+   "kind": "new"
+  },
+  {
+   "page": "/meist/",
+   "sectionId": "ettevote",
+   "kind": "new"
+  },
+  {
+   "page": "/meist/",
+   "sectionId": "rev-meist-6",
+   "kind": "new"
+  },
+  {
+   "page": "/ulevaated/",
+   "sectionId": "rev-ulevaated-1",
+   "kind": "new"
+  },
+  {
+   "page": "/ulevaated/",
+   "sectionId": "rev-ulevaated-2",
+   "kind": "new"
+  },
+  {
+   "page": "/ulevaated/",
+   "sectionId": "rev-ulevaated-3",
+   "kind": "new"
+  },
+  {
+   "page": "/ulevaated/reservitasu-2026/",
+   "sectionId": "rev-ulevaated-reservitasu-2026-1",
+   "kind": "new"
+  },
+  {
+   "page": "/ulevaated/reservitasu-2026/",
+   "sectionId": "rev-ulevaated-reservitasu-2026-2",
+   "kind": "new"
+  },
+  {
+   "page": "/kontakt/",
+   "sectionId": "rev-kontakt-1",
+   "kind": "new"
+  },
+  {
+   "page": "/kontakt/",
+   "sectionId": "rev-kontakt-2",
+   "kind": "new"
+  },
+  {
+   "page": "/aitah/",
+   "sectionId": "rev-aitah-1",
+   "kind": "new"
+  },
+  {
+   "page": "/andmekaitse/",
+   "sectionId": "rev-andmekaitse-1",
+   "kind": "new"
+  },
+  {
+   "page": "/andmekaitse/",
+   "sectionId": "rev-andmekaitse-2",
    "kind": "changed",
-   "prev": "Kes teeb töö ära Madis Maastik — asutaja Eestlane, elab Helsingis. Kaubanduslik ja tehniline töö tööstuslike energiasalvestite, päikeseelektri ja reserviturgudega Soomes ja Eestis. Töö katab mõlemad turud: agregaatoripartnerlused, võrgunõuete täitmine olemasoleva tootmise kõrvale paigaldatavates akudes, tehniline dokumentatsioon neljas keeles ning reserviturul osalemise rahastusmudelid. Läbiv joon on sama, millele see ettevõte on ehitatud: tööstuskliendid teevad väga suuri otsuseid väga õhukese dokumentatsiooni najal, ja see auk on suletav. Teenindame Soome ja Eesti turge — Fingrid ja Elering, Caruna, Elenia, Helen, Vantaan Energia ja Elektrilevi — mõlemas keeles. Me ei ole Soome ettevõte, millel on eestikeelne leht. madis.maastik@samaenergia.fi · +358 449 654 614 Martin Rautio — asutaja Vastutab säästuanalüüside, pakkumiste ja projektide koordineerimise eest. Hariduselt rahvusvahelise äri bakalaureus (BBA). martin.rautio@samaenergia.fi · +358 40 701 9099 Viljar Petersell — paigaldus Päikesepaneelide ja päikesekatuste paigaldustööd. Kogenud paigaldaja: üle kuue aasta päikesesüsteemide ehitamist nii äri- kui erasektoris. Taustalt plekksepp, suuremahuliste tööde kogemusega. +358 40 635 3245 Võtke ühendust"
+   "prev": "Vastutav töötlejaSAMA Energia Oy · Y-tunnus (Soome registrikood) 3647683-3 · madis.maastik@samaenergia.fi · +358 449 654 614. Milliseid andmeid töötlemeKontaktivormil antud andmed: nimi, ettevõte, e-post, telefon, objekti asukoht, liitumis- ja tarbimisandmed ning sõnum. Lisaks veebilehe tehniline serverilogi (sh IP-aadress ja ajatempel), mille majutusteenus toodab teenuse osutamiseks ja turvalisuse tagamiseks. Me ei kasuta küpsiseid, jälgimispiksleid ega analüütikat. Miks töötlemeEt vastata teie pöördumisele ja valmistada ette teie soovitud kaardistust (lepingueelsed meetmed, isikuandmete kaitse üldmääruse artikli 6 lõike 1 punkt b) ning õigustatud huvi alusel (artikli 6 lõike 1 punkt f) kliendisuhte haldamiseks ja turvalisuse tagamiseks. Me ei kasuta andmeid muuks turunduseks ilma eraldi nõusolekuta. Kellele andmeid edastatakseMe ei müü ega anna andmeid turunduseks. Tehniliste volitatud töötlejatena tegutsevad veebilehe majutus- ja vormiteenus ning e-postiteenus. Kui teenusepakkuja töötleb andmeid väljaspool EL-i või EMP-d, kaitstakse edastust EL-i heakskiidetud mehhanismidega, nagu lepingu tüüptingimused või Data Privacy Framework. Kui kaua säilitameSäilitame pöördumisi kuni 24 kuud viimasest suhtlusest, kui asjaajamine ei jätku kliendisuhtena. Raamatupidamisseaduse alla kuuluv materjal säilitatakse seadusjärgse aja. Teie õigusedTeil on õigus saada juurdepääs oma andmetele, nõuda nende parandamist, kustutamist, töötlemise piiramist või ülekandmist ning esitada vastuväiteid töötlemisele. Taotlused: madis.maastik@samaenergia.fi. Teil on ka õigus esitada kaebus järelevalveasutusele: Soome andmekaitsevolinik (tietosuoja.fi) või Eesti Andmekaitse Inspektsioon (aki.ee). MuudatusedUuendatud 18.08.2026. Kui tingimused muutuvad, on uusim versioon alati sellel lehel."
   }
  ]
 }
