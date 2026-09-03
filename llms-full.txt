@@ -421,7 +421,7 @@ Pyydä maksuton kartoitus
 
 Etusivu›Reservimarkkinat›Aggregaattori: VENI Energia
 
-Aggregaattori vie akkunne markkinoille. Kumppanimme Suomessa on VENI Energia.
+Aggregaattori vie akkunne markkinoille. Meillä se on VENI Energia.
 
 Fingridin reservimarkkinoille ei osallistu yksittäinen tehdas vaan reservitoimittaja, joka kokoaa monta kohdetta yhdeksi tarjoukseksi, läpäisee Fingridin kokeet ja ohjaa akkuja automaattisesti. Tällä sivulla kerromme, mitä aggregaattori tekee, miten liittyminen etenee ja kuka on kumppanimme Suomessa.
 
@@ -1300,7 +1300,7 @@ Küsi tasuta hindamist
 
 Avaleht›Reserviturg›Agregaator: Soleron Energy
 
-Agregaator viib teie aku turule. Meie partner Eestis on Soleron Energy.
+Agregaator viib teie aku turule. Meie partner on Soleron Energy.
 
 Eleringi reserviturul ei osale üksik tehas, vaid tasakaalustamisteenuse pakkuja, kes kogub mitu objekti üheks pakkumiseks, läbib Eleringi eelkvalifitseerimise ja juhib akusid automaatselt. Sellel lehel selgitame, mida agregaator teeb, kuidas liitumine käib ja kes on meie partner Eestis.
 
