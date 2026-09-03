@@ -1,16 +1,11 @@
-/* SAMA Energia — jaettu sivuskripti (FI + ET). Ulkoasu v5 — 03.09.2026.
-   Kielikohtaiset tekstit asuvat HTML:ssä, eivät tässä tiedostossa.
-   Jokainen sivu on oma URL-osoitteensa: hash-reititintä ei ole.
-   Kaikki tekstisisältö on palvelimelta; tämä skripti lisää vain käytöstä
-   (valikot, paljastukset, lomakkeen AJAX-lähetys) eikä ole edellytys sisällölle. */
+/* SAMA Energia — jaettu sivuskripti (FI + ET), ulkoasu v5 — 03.09.2026. Tekstit asuvat HTML:ssä.
+   Jokainen sivu on oma URL: hash-reititintä ei ole. Skripti lisää vain käytöstä, sisältö ei riipu siitä. */
 (function(){
   var d=document,h=d.documentElement,b=d.body;
   h.classList.add('js');
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- paljastus vieritettäessä (.reveal) + .watch-osiot ----------
-     Elementit piilotetaan vasta täällä (luokka .pre), joten ilman JS:ää kaikki näkyy.
-     Turvaverkko: 1,4 s kuluttua kaikki näkyvillä oleva paljastetaan joka tapauksessa. */
+  /* ---------- paljastus (.reveal) + .watch: piilotus vasta täällä (.pre), turvaverkko 1,4 s ---------- */
   var revs=[].slice.call(d.querySelectorAll('.reveal')),safety;
   function settle(){
     d.querySelectorAll('.reveal.pre').forEach(function(el){if(el.getBoundingClientRect().top<window.innerHeight*1.05)el.classList.remove('pre');});
@@ -75,11 +70,8 @@
   var dets=d.querySelectorAll('.faq details');
   dets.forEach(function(dt){dt.addEventListener('toggle',function(){if(dt.open){dets.forEach(function(o){if(o!==dt)o.open=false;});}});});
 
-  /* ---------- kohdekartoituslomake — Netlify Forms ----------
-     Ensisijaisesti AJAX (kiitosteksti näytetään paikallaan, .sent). Jos AJAX epäonnistuu,
-     varapolkuna natiivi lähetys lomakkeen action-kiitossivulle — ei umpikujaa.
-     Ilman JS:ää selain lähettää suoraan actioniin (natiivi validointi), joten lomake toimii myös silloin.
-     Sama käsittelijä molemmille lomakkeille (etusivu #ctFormHome, yhteyssivu #ctForm). */
+  /* ---------- kohdekartoituslomake — Netlify Forms: AJAX (.sent), varapolkuna natiivi lähetys
+     action-kiitossivulle; ilman JS:ää selain lähettää suoraan actioniin. Molemmat lomakkeet. */
   d.querySelectorAll('form[data-netlify]').forEach(function(form){
     form.addEventListener('submit',function(e){
       e.preventDefault();
@@ -102,11 +94,8 @@
     });
   });
 
-  /* ---------- kielivalitsin esikatseluhostilla ----------
-     .lang-linkit ovat kanonisia tuotanto-URL:eja (samaenergia.fi / samaenergia.ee) — oikein
-     tuotannossa, kuolleita *.netlify.app-esikatselussa ennen mergeä. Ajossa — lähteitä ja
-     julkaistuja hrefejä muuttamatta — kirjoitetaan VAIN .lang-ankkurit hostin sisäisiksi:
-     .fi/<slug>/ -> /<slug>/ ja .ee/<slug>/ -> /et/<slug>/. Tuotantohostit eivät koskaan osu ehtoon. */
+  /* ---------- kielivalitsin *.netlify.app-esikatselussa: kanoniset tuotanto-URL:t kirjoitetaan
+     ajossa hostin sisäisiksi (.fi/<slug>/ -> /<slug>/, .ee/<slug>/ -> /et/<slug>/) ---------- */
   if(/\.netlify\.app$/.test(location.hostname)){
     d.querySelectorAll('.lang a').forEach(function(a){
       var m=/^https:\/\/(?:www\.)?samaenergia\.(fi|ee)(\/.*)$/.exec(a.getAttribute('href')||'');
@@ -327,16 +316,30 @@
     });
     var pages=[];
     list.forEach(function(c){if(pages.indexOf(c.page)<0)pages.push(c.page)});
+    /* Alapalkki oletuksena kokoon taitettu (mobiilissa lista veisi puolet näytöstä); tila
+       sessionStoragessa (sama-rev-banner = open | hidden), ilman tallennusta kiinni kaikilla leveyksillä. */
+    var KEY='sama-rev-banner',stored=null;
+    try{stored=sessionStorage.getItem(KEY);}catch(_){}
+    if(stored==='hidden')return;
     var b=document.createElement('div');
     b.className='rev-banner';
+    var row=document.createElement('div');
+    row.className='rev-row';
+    var hb=document.createElement('button');
+    hb.type='button';hb.className='rev-head';hb.setAttribute('aria-controls','rev-body');
+    var cl=document.createElement('button');
+    cl.type='button';cl.className='rev-close';cl.setAttribute('aria-label','Piilota katselmuspalkki');cl.textContent='\u00d7';
+    row.appendChild(hb);row.appendChild(cl);
+    var body=document.createElement('div');
+    body.className='rev-body';body.id='rev-body';
     var head=document.createElement('b');
-    head.textContent='KATSELMUS · MUUTTUNEET SIVUT:';
-    b.appendChild(head);
+    head.textContent='MUUTTUNEET SIVUT:';
+    body.appendChild(head);
     pages.forEach(function(p){
       var a=document.createElement('a');
       a.href=p+'?review=1';
       a.textContent=p;
-      b.appendChild(a);
+      body.appendChild(a);
     });
     if(marked.length){
       /* poistojen näyttö/piilotus — oletuksena päällä */
@@ -347,7 +350,7 @@
         var hidden=document.body.classList.toggle('rev-hide-del');
         rd.setAttribute('aria-pressed',hidden?'false':'true');
       });
-      b.appendChild(rd);
+      body.appendChild(rd);
       var on=false;
       var tg=document.createElement('button');
       tg.type='button';tg.className='rev-toggle';
@@ -360,9 +363,25 @@
           if(!on&&mk.state)toggleSection(mk);
         });
       });
-      b.appendChild(tg);
+      body.appendChild(tg);
     }
+    function setOpen(open){
+      body.hidden=!open;
+      hb.setAttribute('aria-expanded',open?'true':'false');
+      hb.textContent='KATSELMUS \u00b7 '+pages.length+' muuttunutta sivua '+(open?'\u25be':'\u25b8');
+      try{if(open)sessionStorage.setItem(KEY,'open');else sessionStorage.removeItem(KEY);}catch(_){}
+    }
+    hb.addEventListener('click',function(){setOpen(body.hidden);});
+    cl.addEventListener('click',function(){
+      b.parentNode.removeChild(b);
+      document.body.classList.remove('rev-has-banner');
+      try{sessionStorage.setItem(KEY,'hidden');}catch(_){}
+    });
+    b.appendChild(row);b.appendChild(body);
+    setOpen(stored==='open');
     document.body.appendChild(b);
+    /* runko saa palkin korkeuden verran alapehmustetta (jalan viimeiset linkit eivät jää alle) */
+    document.body.classList.add('rev-has-banner');
     /* review=1 säilyy sisäisissä linkeissä, jotta tila kestää navigoinnin */
     document.querySelectorAll('a[href^="/"]').forEach(function(a){
       var h=a.getAttribute('href');

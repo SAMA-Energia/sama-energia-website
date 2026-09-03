@@ -741,7 +741,16 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
    Väripari: kulta (ehdotus) / punainen (poisto). */
 .rev-mark{position:relative;outline:2px dashed var(--gold-2);outline-offset:4px;cursor:pointer}
 .rev-lab{position:absolute;top:10px;right:10px;z-index:6;font:600 10px/1.4 var(--font-body);letter-spacing:.14em;padding:3px 8px;background:var(--gold-2);color:#fff}
-.rev-banner{position:fixed;left:0;right:0;bottom:0;z-index:95;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-top:1px solid var(--line);color:var(--ink-2);font:500 11px/1.4 var(--font-body);letter-spacing:.06em;padding:9px var(--gutter);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.rev-banner{position:fixed;left:0;right:0;bottom:0;z-index:95;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-top:1px solid var(--line);color:var(--ink-2);font:500 11px/1.4 var(--font-body);letter-spacing:.06em;padding:0 var(--gutter)}
+/* kokoon taitettu rivi: otsikkonappi + sulje; sisältö (sivulista + napit) omassa lohkossaan, enintään 45 vh */
+.rev-row{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:38px}
+.rev-head{flex:1;min-width:0;font:600 11px/1.4 var(--font-body);letter-spacing:.06em;color:var(--gold-deep);background:none;border:0;padding:8px 0;margin:0;cursor:pointer;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rev-close{flex:none;width:32px;height:32px;font:500 20px/1 var(--font-body);color:var(--ink-2);background:none;border:0;border-radius:6px;cursor:pointer}
+.rev-close:hover{background:var(--paper-2);color:var(--ink)}
+.rev-body{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;padding:8px 0 12px;border-top:1px solid var(--line);max-height:45vh;overflow:auto}
+.rev-body[hidden]{display:none}
+.rev-has-banner{padding-bottom:40px}
+.rev-has-banner .sticky-cta{bottom:40px}
 .rev-banner b{color:var(--gold-deep);font-weight:600}
 .rev-banner a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--gold-2);text-underline-offset:3px}
 .rev-toggle{font:600 10px/1.4 var(--font-body);letter-spacing:.12em;padding:5px 10px;background:transparent;border:1px solid var(--gold-2);color:var(--gold-deep);cursor:pointer;transition:.18s}
