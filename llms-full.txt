@@ -16,7 +16,7 @@ MaksutonEi sitoumuksiaKirjallinen arvio
 
 Yksi varasto. Kolme kassavirtaa. Tarvittaessa varavoima.
 
-Akku ei tee vain yhtä asiaa: se leikkaa huiput, ostaa halvalla ja on verkolle valmiina, samaan aikaan. Aurinkopaneeleja tai omaa tuotantoa siihen ei tarvita. Liittymä riittää.
+Akku ei tee vain yhtä asiaa: se leikkaa huiput, ostaa halvalla ja on verkolle valmiina. Aurinkopaneeleja tai omaa tuotantoa siihen ei tarvita. Liittymä riittää.
 
 Tehomaksu alas
 Akku leikkaa kulutushuiput ennen kuin ne päätyvät verkkolaskulle. Se on ensimmäinen rivi, joka laskullanne muuttuu.
@@ -29,7 +29,7 @@ Lataa halvoilla tunneilla, purkaa kalliilla. Joka päivä, automaattisesti, tuot
 Miten akun päivä näyttää
 
 Reservimarkkinatulo
-Fingrid maksaa verkon tasapainottamiseen valmiina olevista akuista, myös niinä tunteina, jolloin akku vain odottaa. Liittyminen tapahtuu aggregaattorin ja reservitoimittajan kautta.
+Fingrid maksaa verkon tasapainottamiseen valmiina olevista akuista, myös niinä tunteina, jolloin akku vain odottaa. Liittyminen tapahtuu aggregaattorin kautta.
 
 Reservimarkkinat selkokielellä
 
@@ -64,7 +64,7 @@ Kokonaiskuva siitä, mitä markkinoilla tapahtuu ja mihin suuntaan ne liikkuvat.
 
 Taloudelliset mahdollisuudet teidän kohteessanne, kirjallisesti ja lähteineen.
 
-Älykäs energianhallinta, joka muuttaa liittymän kuluerästä omaisuudeksi.
+Suositus siitä, kannattaako akku teillä — ja minkä kokoinen.
 
 Viisi tekijää, yksi arvio — teidän kohteenne luvuilla.
 
@@ -76,7 +76,7 @@ Pyydä toinen mielipide
 
 Kohteet, joissa akku maksaa itsensä nopeimmin takaisin.
 
-Yhteinen piirre on iso liittymä ja vaihteleva tai kausiluonteinen kulutus. Aurinkoa ei tarvita. Liittymä, joka seisoo suurimman osan vuodesta puolityhjänä, on itsessään omaisuus, joka tuottaa reservimarkkinoilla.
+Yhteinen piirre on iso liittymä ja vaihteleva tai kausiluonteinen kulutus. Liittymä, joka seisoo suurimman osan vuodesta puolityhjänä, on itsessään omaisuus, joka tuottaa reservimarkkinoilla.
 
 Iso liittymä, vähän käyttöä
 
@@ -89,14 +89,14 @@ Koneiden käynnistykset, kompressorit ja vuorotyö tekevät huippuja, jotka akku
 Ilman aurinkoa
 
 Hotellit ja hoivakiinteistöt
-Ympärivuorokautinen kulutus, keittiö ja lämmitys, ja velvollisuus, ettei sähkö katkea koskaan. Varavoima on tässä yhtä tärkeä kuin säästö.
+Ympärivuorokautinen kulutus, keittiö ja lämmitys — ja velvollisuus siitä, ettei sähkö katkea koskaan. Varavoima on tässä yhtä tärkeä kuin säästö.
 Ilman aurinkoa
 
 Aurinkopuistot ja kiinteistösalkut
 Olemassa oleva tuotanto saa varastosta toisen tulonlähteen, ja salkku saa yhden kumppanin, joka laskee kaikki kohteet läpi.
 Auringon kanssa vielä parempi
 
-Ettekö löytäneet omaa kohdettanne? Kuvailkaa se meille, kerromme rehellisesti, kannattaako akku teillä.Pyydä kartoitus
+Ettekö löytäneet omaa kohdettanne? Kuvailkaa se meille, niin kerromme rehellisesti, kannattaako akku teillä.Pyydä kartoitus
 
 Neljä askelta kulutustiedoista reservituloon.
 
@@ -114,7 +114,7 @@ Laitteet kohteen mukaan, luvat ja dokumentaatio meidän kauttamme
 04Reservimarkkinoille ja seurantaan
 Aggregaattori vie akun markkinoille, te seuraatte tuottoa
 
-Ensimmäinen askel ei sido mihinkään. Kysely ja kulutustiedot, ja tiedätte kahdessa arkipäivässä, kannattaako ja miten jatkaa.
+Ensimmäinen askel ei sido mihinkään. Kysely ja kulutustiedot — ja kahdessa arkipäivässä tiedätte, kannattaako ja miten jatkaa.
 
 Näin projekti etenee, vaihe vaiheelta
 
@@ -534,7 +534,7 @@ Me johdamme, te näette tilanteen
 Aggregaattori liittää akun reservimarkkinoille reservitoimittajan kautta. Te näette säästön ja tuoton omasta seurantanäkymästänne, selkokielellä, ei taulukkona.
 Tuotto alkaa liittämisen jälkeen
 
-Ensimmäinen askel ei sido mihinkään. Kysely ja kulutustiedot, ja tiedätte kahdessa arkipäivässä, kannattaako ja miten jatkaa.
+Ensimmäinen askel ei sido mihinkään. Kysely ja kulutustiedot — ja kahdessa arkipäivässä tiedätte, kannattaako ja miten jatkaa.
 Pyydä maksuton kartoitus
 
 Neljä sääntöä, joiden mukaan jokainen arvio syntyy.
@@ -576,7 +576,7 @@ Onko rahoitusta saatavilla?
 Kyllä. Leasingrahoitus on mahdollista järjestää, ja arviossa näytämme omarahoituksen ja leasingin vertailun samoilla luvuilla, jotta päätös on helppo.
 
 Ensimmäinen askel on maksuton.
-Kysely ja kulutustiedot, ja tiedätte kahdessa arkipäivässä, kannattaako ja miten jatkaa.
+Kysely ja kulutustiedot — ja kahdessa arkipäivässä tiedätte, kannattaako ja miten jatkaa.
 
 Pyydä maksuton kartoitus
 
@@ -887,7 +887,7 @@ TasutaKohustustetaKirjalik hinnang
 
 Üks salvesti. Kolm rahavoogu. Vajadusel varutoide.
 
-Aku ei tee ainult ühte asja: ta lõikab tipud, ostab odavalt ja on võrgule valmis, samal ajal. Päikesepaneele ega oma tootmist selleks vaja ei ole. Piisab liitumisest.
+Aku ei tee ainult ühte asja: ta lõikab tipud, ostab odavalt ja on võrgule valmis. Päikesepaneele ega oma tootmist selleks vaja ei ole. Piisab liitumisest.
 
 Võimsustasu alla
 Aku lõikab tarbimistipud maha enne, kui need võrguarvele jõuavad. See on esimene rida, mis teie arvel muutub.
@@ -935,7 +935,7 @@ Terviklik ülevaade sellest, mis turul toimub ja mis suunas see liigub.
 
 Majanduslikud võimalused teie objektil, kirjalikult ja allikatega.
 
-Tark energiamajandamine, mis muudab liitumise kuluartiklist varaks.
+Soovitus, kas aku tasub end teil ära — ja kui suur see peaks olema.
 
 Viis tegurit, üks hinnang — teie objekti numbritega.
 
@@ -947,7 +947,7 @@ Küsi teist arvamust
 
 Objektid, kus aku end kõige kiiremini ära tasub.
 
-Ühine joon on suur liitumine ja kõikuv või hooajaline tarbimine. Päikest pole vaja. Liitumine, mis seisab suurema osa aastast pooltühjana, on ise vara, mis reserviturul teenib.
+Ühine joon on suur liitumine ja kõikuv või hooajaline tarbimine. Liitumine, mis seisab suurema osa aastast pooltühjana, on ise vara, mis reserviturul teenib.
 
 Suur liitumine, vähe kasutust
 
@@ -960,14 +960,14 @@ Masinate käivitused, kompressorid ja vahetustega töö tekitavad tippe, mida ak
 Ilma päikeseta
 
 Hotellid ja hooldekodud
-Ööpäevaringne tarbimine, köök ja küte, ning kohustus, et elekter ei kaoks kunagi. Varutoide on siin sama tähtis kui sääst.
+Ööpäevaringne tarbimine, köök ja küte — ja kohustus, et elekter ei kaoks kunagi. Varutoide on siin sama tähtis kui sääst.
 Ilma päikeseta
 
 Päikesepargid ja kinnisvaraportfellid
 Olemasolev tootmine saab salvestiga teise tuluallika, ja portfell saab ühe partneri, kes kõik objektid läbi arvutab.
 Päikesega veel parem
 
-Ei leidnud oma objekti? Kirjeldage seda meile, ütleme ausalt, kas aku tasub end teil ära.Küsi hindamist
+Ei leidnud oma objekti? Kirjeldage seda meile, siis ütleme ausalt, kas aku tasub end teil ära.Küsi hindamist
 
 Neli sammu tarbimisandmetest reservituru tuluni.
 
@@ -985,7 +985,7 @@ Seadmed objekti järgi, load ja dokumentatsioon meie kaudu
 04Reservituru liitumine ja seire
 Agregaator viib aku turule, teie jälgite tulu
 
-Esimene samm ei kohusta millekski. Küsimustik ja tarbimisandmed, ja te teate kahe tööpäevaga, kas ja kuidas edasi minna.
+Esimene samm ei kohusta millekski. Küsimustik ja tarbimisandmed — ja kahe tööpäevaga teate, kas ja kuidas edasi minna.
 
 Kuidas projekt käib, samm sammult
 
@@ -1401,7 +1401,7 @@ Meie juhime, teie näete ülevaadet
 Agregaator, Eleringiga lepingu sõlminud teenusepakkuja, liidab aku reservituruga. Teie näete säästu ja tulu oma seirevaatest, arusaadavalt, mitte tabelina.
 Tulu algab pärast liitumist
 
-Esimene samm ei kohusta millekski. Küsimustik ja tarbimisandmed, ja te teate kahe tööpäevaga, kas ja kuidas edasi minna.
+Esimene samm ei kohusta millekski. Küsimustik ja tarbimisandmed — ja kahe tööpäevaga teate, kas ja kuidas edasi minna.
 Küsi tasuta hindamist
 
 Neli reeglit, mille järgi iga hinnang valmib.
@@ -1443,7 +1443,7 @@ Kas rahastust on võimalik saada?
 Jah. Liisingrahastus on võimalik korraldada, ja hinnangus näitame omafinantseeringu ja liisingu võrdlust samade numbrite pealt, et otsus oleks lihtne.
 
 Esimene samm on tasuta.
-Küsimustik ja tarbimisandmed, ja te teate kahe tööpäevaga, kas ja kuidas edasi minna.
+Küsimustik ja tarbimisandmed — ja kahe tööpäevaga teate, kas ja kuidas edasi minna.
 
 Küsi tasuta hindamist
 
