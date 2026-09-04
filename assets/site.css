@@ -217,6 +217,12 @@ table.tbl td .chip{display:inline-flex;align-items:center;gap:6px;padding:5px 10
 .step .who{margin-top:12px;font:500 13.5px/1.4 var(--font-body);color:var(--gold-deep)}
 .process-cta{margin-top:52px;display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;padding:26px 30px;border-radius:var(--r);background:var(--paper);border:1px solid var(--line)}
 .process-cta p{color:var(--ink-2);flex:1;min-width:240px}
+/* etusivun askeleet tiivistettynä (v5.1, 04.09.2026): neljä siruriviä, kuvaukset Palvelut-sivulla */
+.step-chips{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.step-chips li{display:flex;align-items:center;gap:12px;min-width:0;padding:14px 20px;border:1px solid var(--line-2);border-radius:999px;background:var(--paper);font:500 15px/1.35 var(--font-body);color:var(--ink);word-break:keep-all;overflow-wrap:normal;hyphens:none}
+.step-chips li span{flex:none;font:600 12px/1 ui-monospace,'SF Mono',Menlo,Consolas,monospace;letter-spacing:.08em;color:var(--gold-deep)}
+@media (max-width:720px){.step-chips{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:420px){.step-chips{grid-template-columns:1fr}}
 
 /* ---------- reserve market (dark, photo) ---------- */
 .reserve{background:var(--night);color:var(--night-ink);position:relative;overflow:hidden}
@@ -451,7 +457,7 @@ a.partner:hover{transform:translateY(-2px);box-shadow:0 20px 34px -28px rgba(31,
 .cta-strip .acts{display:flex;flex-wrap:wrap;gap:12px}
 .value .more{margin-top:auto;padding-top:6px;font:600 13.5px/1 var(--font-body);color:var(--gold-deep);display:inline-flex;align-items:center;gap:6px}
 .value .more svg{width:14px;height:14px}
-.solar-strip{margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding:18px 22px;border:1px solid var(--line);border-radius:var(--r);background:var(--paper-2);font-size:15.5px;color:var(--ink-2)}
+.solar-strip{margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding:18px 22px 18px 26px;border:1px solid var(--line);border-left:3px solid var(--gold-2);border-radius:var(--r);background:var(--paper-2);font-size:15.5px;color:var(--ink-2)}
 .solar-strip b{color:var(--ink)}
 
 /* reserve teaser (front page) */

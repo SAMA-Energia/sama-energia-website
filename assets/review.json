@@ -8,11 +8,6 @@
   },
   {
    "page": "/",
-   "sectionId": "epavarmuus",
-   "kind": "new"
-  },
-  {
-   "page": "/",
    "sectionId": "ratkaisu",
    "kind": "new"
   },
@@ -23,7 +18,7 @@
   },
   {
    "page": "/",
-   "sectionId": "nain",
+   "sectionId": "epavarmuus",
    "kind": "new"
   },
   {
@@ -33,7 +28,7 @@
   },
   {
    "page": "/",
-   "sectionId": "miksi-sama",
+   "sectionId": "nain",
    "kind": "new"
   },
   {
@@ -173,7 +168,12 @@
   },
   {
    "page": "/palvelut/",
-   "sectionId": "rev-palvelut-4",
+   "sectionId": "ukk",
+   "kind": "new"
+  },
+  {
+   "page": "/palvelut/",
+   "sectionId": "rev-palvelut-5",
    "kind": "new"
   },
   {
@@ -260,12 +260,8 @@
   {
    "page": "/et/",
    "sectionId": "avaleht",
-   "kind": "new"
-  },
-  {
-   "page": "/et/",
-   "sectionId": "teadmatus",
-   "kind": "new"
+   "kind": "changed",
+   "prev": "Energiasalvestid ja päikeseelekter · ettevõtetele ja maaomanikele Ühine võrk.Sõltumatu energia. Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame kirjalikult, enne kui midagi alla kirjutatakse. Küsige objektikaardistust Vaadake, kuidas protsess kulgeb"
   },
   {
    "page": "/et/",
@@ -279,7 +275,7 @@
   },
   {
    "page": "/et/",
-   "sectionId": "kuidas",
+   "sectionId": "teadmatus",
    "kind": "new"
   },
   {
@@ -289,7 +285,7 @@
   },
   {
    "page": "/et/",
-   "sectionId": "miks-sama",
+   "sectionId": "kuidas",
    "kind": "new"
   },
   {
@@ -429,7 +425,12 @@
   },
   {
    "page": "/teenused/",
-   "sectionId": "rev-teenused-4",
+   "sectionId": "kkk",
+   "kind": "new"
+  },
+  {
+   "page": "/teenused/",
+   "sectionId": "rev-teenused-5",
    "kind": "new"
   },
   {

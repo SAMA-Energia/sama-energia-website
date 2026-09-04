@@ -7,32 +7,14 @@
 
 Itsenäinen energia. Itseohjautuva akku.
 
-Teollinen energiavarasto leikkaa tehomaksua, ostaa sähkön halvoilla tunneilla ja tuottaa Fingridin reservimarkkinoilla valmiudesta. Täysin automaattisesti, ilman että teidän tarvitsee tehdä mitään. Mitä se tarkoittaa juuri teidän kohteessanne, kerromme kirjallisesti ennen kuin allekirjoitatte mitään.
+Teollinen energiavarasto leikkaa tehomaksua, ostaa sähkön halvoilla tunneilla ja tuottaa Fingridin reservimarkkinoilla valmiudesta — automaattisesti. Mitä se tarkoittaa teidän kohteessanne, kerromme kirjallisesti ennen kuin allekirjoitatte mitään.
 
 Pyydä maksuton kartoitus
 Näin se etenee
 
 MaksutonEi sitoumuksiaKirjallinen arvio
 
-Sähkö maksaa. Epävarmuus maksaa enemmän.
-
-Tehomaksu, tuntihinta, verkkoyhtiön ehdot, reservimarkkinat, vuosittain muuttuvat maksut ja lait, rahoitus. Jokainen niistä vaikuttaa sähkökuluunne, mutta kukaan ei kokoa niitä yhteen teidän kohteenne osalta. Siksi isot päätökset tehdään tuntumalla tai jätetään tekemättä.
-
-Kokonaiskuva siitä, mitä markkinoilla tapahtuu ja mihin suuntaan ne liikkuvat.
-
-Taloudelliset mahdollisuudet teidän kohteessanne, kirjallisesti ja lähteineen.
-
-Älykäs energianhallinta, joka muuttaa liittymän kuluerästä omaisuudeksi.
-
-Viisi asiaa, jotka vaikuttavat sähkökuluunne. Arviomme kokoaa ne yhteen dokumenttiin, teidän kohteenne luvuilla.
-
-Tarjous jo kädessä?
-
-Tarkistamme, kestääkö sen takaisinmaksu todellisuuden. Maksutta, samoista kulutustiedoista, joiden varassa päätöksenne oikeasti tehdään. Jos tarjous on hyvä, sanomme senkin.
-
-Pyydä toinen mielipide
-
-Yksi varasto. Kolme kassavirtaa. Varavoima kaupan päälle.
+Yksi varasto. Kolme kassavirtaa. Tarvittaessa varavoima.
 
 Akku ei tee vain yhtä asiaa: se leikkaa huiput, ostaa halvalla ja on verkolle valmiina, samaan aikaan. Aurinkopaneeleja tai omaa tuotantoa siihen ei tarvita. Liittymä riittää.
 
@@ -69,33 +51,28 @@ Ohjaus on automaattista: aggregaattori vie akun joka tunti kannattavimpaan reser
 Ei uutta liityntää: akku käyttää liittymää, joka teillä jo on.
 
 Reservimarkkinat selkokielellä
-Pyydä maksuton kartoitus
 
 Akku tasapainottaa, Fingrid maksaa valmiudesta. Sama tapahtuu satoja kertoja päivässä, automaattisesti.
 
 Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025
 
-Neljä askelta kulutustiedoista reservituloon.
-Teillä on koko projektin ajan yksi yhteyshenkilö. Me johdamme, dokumentoimme ja pidämme teidät ajan tasalla. Te teette päätökset.
+Viisi tekijää, yksi laskelma.
 
-01Maksuton kohdekartoitus
-Täytätte lyhyen kyselyn, me luemme tuntikohtaiset kulutustietonne ja käymme liittymispisteen läpi. Paikan päällä tai etänä.
-Teidän aikaanne: noin 20 minuuttia
+Tehomaksu, tuntihinta, verkkoyhtiön ehdot, reservimarkkinat, vuosittain muuttuvat maksut ja lait, rahoitus. Jokainen niistä vaikuttaa sähkökuluunne, mutta kukaan ei kokoa niitä yhteen teidän kohteenne osalta. Siksi isot päätökset tehdään tuntumalla tai jätetään tekemättä.
 
-02Kirjallinen arvio
-Luvut lähteineen, verkkoyhtiön kanta, reservimarkkinaskenaariot ja rahoitusvaihtoehdot. Yksi dokumentti, jonka voitte itse tarkistaa.
-Ennen allekirjoitusta, ei sitoumuksia
+Kokonaiskuva siitä, mitä markkinoilla tapahtuu ja mihin suuntaan ne liikkuvat.
 
-03Asennus ja liittäminen
-Laitteet valitaan kohteenne, ei varaston mukaan. Asennus, luvat ja dokumentaatio kulkevat meidän kauttamme, yhdessä asennuskumppanimme kanssa.
-Me johdamme, te näette tilanteen
+Taloudelliset mahdollisuudet teidän kohteessanne, kirjallisesti ja lähteineen.
 
-04Reservimarkkinoille ja seurantaan
-Aggregaattori liittää akun reservimarkkinoille reservitoimittajan kautta. Te näette säästön ja tuoton omasta seurantanäkymästänne, selkokielellä, ei taulukkona.
-Tuotto alkaa liittämisen jälkeen
+Älykäs energianhallinta, joka muuttaa liittymän kuluerästä omaisuudeksi.
 
-Ensimmäinen askel ei sido mihinkään. Kysely ja kulutustiedot, ja tiedätte kahdessa arkipäivässä, kannattaako ja miten jatkaa.
-Pyydä maksuton kartoitus
+Viisi tekijää, yksi arvio — teidän kohteenne luvuilla.
+
+Tarjous jo kädessä?
+
+Tarkistamme, kestääkö sen takaisinmaksu todellisuuden. Maksutta, samoista kulutustiedoista, joiden varassa päätöksenne oikeasti tehdään. Jos tarjous on hyvä, sanomme senkin.
+
+Pyydä toinen mielipide
 
 Kohteet, joissa akku maksaa itsensä nopeimmin takaisin.
 
@@ -121,23 +98,21 @@ Auringon kanssa vielä parempi
 
 Ettekö löytäneet omaa kohdettanne? Kuvailkaa se meille, kerromme rehellisesti, kannattaako akku teillä.Pyydä kartoitus
 
-Emme myy vain laitetta. Etsimme teille markkinoiden parhaan ratkaisun.
+Neljä askelta kulutustiedoista reservituloon.
 
-Ymmärrämme kohteenne, tunnemme markkinan ja käytämme omaa verkostoamme, jotta tarjous on mitoitettu juuri teidän tarpeeseenne, ei toimittajan varastoon.
+Emme myy vain laitetta. Etsimme teille markkinoiden parhaan ratkaisun — ja johdamme projektin kartoituksesta seurantaan yhdellä yhteyshenkilöllä.
 
-Ymmärrämme kohteenne
+01Maksuton kohdekartoitus
 
-Kulutustiedot, liittymä, tuotannon rytmi ja tavoitteet ensin. Vasta sitten laitteet. Siksi kaikki alkaa maksuttomasta kartoituksesta.
+02Kirjallinen arvio
 
-Tunnemme markkinan
+03Asennus ja liittäminen
 
-Olemme analysoineet markkinan ja nähneet eri toimittajat. Valitsemme laitteet ja kumppanit teidän etunne mukaan, yhdessä maahantuojien kanssa, ja kerromme aina, kenen kanssa toimimme.
+04Reservimarkkinoille ja seurantaan
 
-Ajoitus on osa ratkaisua
+Ensimmäinen askel ei sido mihinkään. Kysely ja kulutustiedot, ja tiedätte kahdessa arkipäivässä, kannattaako ja miten jatkaa.
 
-Juuri nyt Suomessa on varastosta saatavilla markkinoilla todistettuja akkuja erittäin hyvään hintaan, ja toimitusaika lasketaan viikoissa. Siksi tarjoamme niitä nyt, emme ensi vuonna.
-
-Ketkä työn tekevät, ja keiden kanssa.Meistä ja kumppaneista Palvelut ja periaatteet
+Näin projekti etenee, vaihe vaiheelta
 
 Vaikeat kysymykset, rehelliset vastaukset.
 
@@ -146,23 +121,24 @@ Jos kysymyksenne ei ole tässä, kysykää suoraan. Vastaamme kirjallisesti.
 Pyydä maksuton kartoitus
 
 Voiko reservimarkkinatulon taata?
-Taata ei voi kukaan: reservin hinta muodostuu markkinoilla joka päivä, ja markkina, jolle tulee lisää tarjoajia, ei pysy paikallaan. Mutta voimme tehdä jotain hyödyllisempää kuin luvata. Näytämme, mitä markkinoilla oikeasti tapahtuu ja mitä on tulossa: mitä Fingrid hankkii, mitä tuotteita tulee lisää, paljonko varastoja verkkoon tulee, miten maksut muuttuvat. Ja näytämme, miten teidän päätöksenne muokkaa tätä markkinaa. Fingrid tarvitsee viidessä vuodessa 1 200 MW lisää reserviä, ja se kapasiteetti rakennetaan joka tapauksessa jonnekin. Akku teidän liittymänne takana on osa sitä ja ääni sen puolesta, että kapasiteetti seisoo täällä, tuotto jää tänne eikä yritys ole yhden tunnin tai yhden toimittajan varassa. Päätös tehdään omiin vahvuuksiin nojaten: iso liittymä, vaihteleva kulutus, oma tuotanto.
-Kirjallisessa arviossa on kolme skenaariota, matala, keskimääräinen ja korkea, ja erillisellä rivillä tehomaksu- ja pörssisähkösäästö, joka ei riipu markkinasta. Näin päätös syntyy tietoisesti: ei pelosta eikä uskosta, vaan omista luvuistanne.
+Taata ei voi kukaan: reservin hinta muodostuu markkinoilla joka päivä, ja markkina, jolle tulee lisää tarjoajia, ei pysy paikallaan. Siksi emme lupaa lukua. Kirjallisessa arviossa on kolme skenaariota — matala, keskimääräinen ja korkea — ja erillisellä rivillä tehomaksu- ja pörssisähkösäästö, joka ei riipu markkinasta. Näin päätös syntyy tietoisesti: ei pelosta eikä uskosta, vaan omista luvuistanne.
+Miten reservihinnat muodostuvat
 
 Tarvitseeko akku aurinkopaneeleja tai omaa tuotantoa?
 Ei. Kaikki kolme kassavirtaa (tehomaksu, pörssisähkö, reservitulo) toimivat ilman aurinkoa. Liittymä riittää. Jos aurinkopaneelit ovat olemassa tai suunnitteilla, mukaan tulee neljäs mahdollisuus: oman tuotannon varastointi omaan käyttöön.
+Aurinkosähkö ja akku yhdessä
 
 Mitä maksuton kartoitus sisältää?
 Lyhyen kyselyn kulutustottumuksistanne ja kohteestanne, tuntikohtaisten kulutustietojenne analyysin ja liittymispisteen tarkastuksen. Tuloksena on kirjallinen arvio: kannattaako akku kohteessanne, minkä kokoinen sen pitäisi olla ja mistä tuotto koostuu. Sitoumuksia ei synny.
+Näin kartoitus etenee
 
 Paljonko tällainen järjestelmä maksaa?
 Arviossa on haarukka, joka riippuu liittymänne koosta ja kulutusprofiilistanne, ei yhtä toiveikasta lukua. Kaikki, mikä vaikuttaa hintaan, on avattu samassa dokumentissa.
+Mistä hinta muodostuu
 
 Kuka hoitaa asiat verkkoyhtiön kanssa?
 Me. Tekniset ehdot ja verkkoyhtiön kanta ovat kirjallisesti kädessä ennen kuin allekirjoitatte mitään, ei sen jälkeen.
-
-Onko rahoitusta saatavilla?
-Kyllä. Leasingrahoitus on mahdollista järjestää, ja arviossa näytämme omarahoituksen ja leasingin vertailun samoilla luvuilla, jotta päätös on helppo.
+Neljä sääntöä, joiden mukaan arvio syntyy
 
 Aloitetaan kulutustiedoistanne.
 
@@ -398,11 +374,11 @@ Liittää kohteenne Fingridin reservimarkkinoille, ohjaa akkua automaattisesti j
 
 Lue lisää
 
-Mitä me äänestämme.
+Mihin me uskomme.
 
 Jokainen tänne rakennettu akku on pieni askel yhteen suuntaan: energia, joka tuotetaan, varastoidaan ja jota ohjataan täällä, täkäläisten yritysten käsissä. Tässä emme ole neutraaleja.
 
-Siksi sanomme myös rehellisesti ei, kun akku ei kohteessanne kannata. Väärä investointi vahingoittaa juuri sitä asiaa, jonka puolesta äänestämme.
+Siksi sanomme myös rehellisesti ei, kun akku ei kohteessanne kannata. Väärä investointi vahingoittaa juuri sitä, mihin uskomme.
 
 RiippumattomuusFingrid arvioi tarvitsevansa viiden vuoden päästä 1 200 MW nykyistä enemmän reserviä. Se kapasiteetti rakennetaan joka tapauksessa. Kysymys on vain siitä, seisooko se suomalaisten yritysten omien liittymien takana vai ostetaanko se muualta. Huoltovarmuus ei ole julistus vaan laitteita, jotka ovat fyysisesti täällä ja reagoivat sekunneissa.
 Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025
@@ -589,6 +565,11 @@ Laskelma teidän omista tuntikohtaisista kulutustiedoistanne
 Verkkoyhtiön kanta kädessä ennen pääoman sitomista
 
 Reservimarkkinoiden logiikka selitetty, tulo analysoitu skenaarioina
+
+Usein kysyttyä
+
+Onko rahoitusta saatavilla?
+Kyllä. Leasingrahoitus on mahdollista järjestää, ja arviossa näytämme omarahoituksen ja leasingin vertailun samoilla luvuilla, jotta päätös on helppo.
 
 Ensimmäinen askel on maksuton.
 Kysely ja kulutustiedot, ja tiedätte kahdessa arkipäivässä, kannattaako ja miten jatkaa.
@@ -893,32 +874,14 @@ Päivitetty 03.09.2026. Jos seloste muuttuu, uusin versio on aina tällä sivull
 
 Iseseisev energia. Isejuhtiv aku.
 
-Tööstuslik energiasalvesti lõikab võimsustasu, ostab elektri odavatel tundidel ja teenib Eleringi reserviturul valmisoleku eest. Täielikult automaatselt, ilma et teie peaksite midagi tegema. Mida see just teie objektil tähendab, ütleme kirjalikult, enne kui te midagi allkirjastate.
+Tööstuslik energiasalvesti lõikab võimsustasu, ostab elektri odavatel tundidel ja teenib Eleringi reserviturul valmisoleku eest — automaatselt. Mida see teie objektil tähendab, ütleme kirjalikult, enne kui te midagi allkirjastate.
 
 Küsi tasuta hindamist
 Kuidas see käib
 
 TasutaKohustustetaKirjalik hinnang
 
-Elekter maksab. Teadmatus maksab rohkem.
-
-Võimsustasu, tunnihind, võrguettevõtja tingimused, reserviturg, igal aastal muutuvad tasud ja seadused, rahastus. Igaüks neist mõjutab teie elektrikulu, aga keegi ei pane neid teie objekti jaoks kokku. Sellepärast tehakse suuri otsuseid tunde järgi või jäetakse tegemata.
-
-Terviklik ülevaade sellest, mis turul toimub ja mis suunas see liigub.
-
-Majanduslikud võimalused teie objektil, kirjalikult ja allikatega.
-
-Tark energiamajandamine, mis muudab liitumise kuluartiklist varaks.
-
-Viis asja, mis teie elektrikulu mõjutavad. Meie hinnang paneb need ühte dokumenti, teie objekti numbritega.
-
-Pakkumine juba käes?
-
-Kontrollime, kas selle tasuvus peab reaalsusele vastu. Tasuta, samade tarbimisandmete pealt, mille alusel teie otsus tegelikult tehakse. Kui pakkumine on hea, ütleme ka seda.
-
-Küsi teist arvamust
-
-Üks salvesti. Kolm rahavoogu. Varutoide pealekauba.
+Üks salvesti. Kolm rahavoogu. Vajadusel varutoide.
 
 Aku ei tee ainult ühte asja: ta lõikab tipud, ostab odavalt ja on võrgule valmis, samal ajal. Päikesepaneele ega oma tootmist selleks vaja ei ole. Piisab liitumisest.
 
@@ -949,7 +912,6 @@ Alates 2026 maksab iga Eesti tarbija reservide eest. Aku omanik on sellel arvel 
 1. jaanuarist 2026 on elektriarvel uus rida, tasakaalustamisvõimsuse kulu, millega Elering ostab sagedusreservid kiiretelt elektrijaamadelt ja akudelt. Eesti hoiab oma võrgu sagedust ise alates 2025. aasta veebruarist, ja aku teie liitumise taga on selle turu üks kiiremaid pakkujaid: ilma uue liitumiseta, agregaatori kaudu, kuudega.
 
 Loe, kuidas aku Eesti reserviturul teenib
-Küsi tasuta hindamist
 
 Tasakaalustamisvõimsuse kulu 20263,73 €/MWh
 
@@ -961,27 +923,23 @@ Iga tarbija maksab, valmis olev aku saab.
 
 Allikas: Elering, tasakaalustamisvõimsuse kulu · 2026
 
-Neli sammu tarbimisandmetest reservituru tuluni.
-Teil on kogu projekti vältel üks kontakt. Meie juhime, dokumenteerime ja anname ülevaate. Teie teete otsused.
+Viis tegurit, üks arvutus.
 
-01Tasuta hindamine
-Täidate lühikese küsimustiku, meie loeme teie tunnipõhised tarbimisandmed ja vaatame liitumispunkti üle. Kohapeal või kaugelt.
-Teie aeg: umbes 20 minutit
+Võimsustasu, tunnihind, võrguettevõtja tingimused, reserviturg, igal aastal muutuvad tasud ja seadused, rahastus. Igaüks neist mõjutab teie elektrikulu, aga keegi ei pane neid teie objekti jaoks kokku. Sellepärast tehakse suuri otsuseid tunde järgi või jäetakse tegemata.
 
-02Kirjalik hinnang
-Arvud koos allikatega, võrguettevõtja seisukoht, reservituru stsenaariumid ja rahastusvariandid. Üks dokument, mida saate ise kontrollida.
-Enne allkirja, kohustusteta
+Terviklik ülevaade sellest, mis turul toimub ja mis suunas see liigub.
 
-03Paigaldus ja liitumine
-Seadmed valime teie objekti, mitte lao järgi. Paigaldus, load ja dokumentatsioon käivad meie kaudu, koos meie paigalduspartneritega.
-Meie juhime, teie näete ülevaadet
+Majanduslikud võimalused teie objektil, kirjalikult ja allikatega.
 
-04Reservituru liitumine ja seire
-Agregaator, Eleringiga lepingu sõlminud teenusepakkuja, liidab aku reservituruga. Teie näete säästu ja tulu oma seirevaatest, arusaadavalt, mitte tabelina.
-Tulu algab pärast liitumist
+Tark energiamajandamine, mis muudab liitumise kuluartiklist varaks.
 
-Esimene samm ei kohusta millekski. Küsimustik ja tarbimisandmed, ja te teate kahe tööpäevaga, kas ja kuidas edasi minna.
-Küsi tasuta hindamist
+Viis tegurit, üks hinnang — teie objekti numbritega.
+
+Pakkumine juba käes?
+
+Kontrollime, kas selle tasuvus peab reaalsusele vastu. Tasuta, samade tarbimisandmete pealt, mille alusel teie otsus tegelikult tehakse. Kui pakkumine on hea, ütleme ka seda.
+
+Küsi teist arvamust
 
 Objektid, kus aku end kõige kiiremini ära tasub.
 
@@ -1007,20 +965,21 @@ Päikesega veel parem
 
 Ei leidnud oma objekti? Kirjeldage seda meile, ütleme ausalt, kas aku tasub end teil ära.Küsi hindamist
 
-Me ei müü ainult seadet. Otsime teile turu parima lahenduse.
+Neli sammu tarbimisandmetest reservituru tuluni.
 
-Mõistame teie objekti, tunneme turgu ja kasutame oma võrgustikku, et pakkumine oleks dimensioneeritud teie vajaduse, mitte tarnija lao järgi.
+Me ei müü ainult seadet. Otsime teile turu parima lahenduse — ja juhime projekti hindamisest seireni ühe kontaktiga.
 
-Mõistame teie objekti
-Tarbimisandmed, liitumine, tootmise rütm ja eesmärgid enne. Alles siis seadmed. Sellepärast algab kõik tasuta hindamisest.
+01Tasuta hindamine
 
-Tunneme turgu
-Oleme turu läbi analüüsinud ja eri tarnijaid näinud. Valime seadmed ja partnerid teie huvides, koostöös maaletoojatega, ja ütleme alati, kellega koos me töötame.
+02Kirjalik hinnang
 
-Ajastus on osa lahendusest
-Praegu on Soome laost saadaval turul end tõestanud akusid väga hea hinnaga ja tarneaeg on nädalates. Sellepärast pakume neid nüüd, mitte järgmisel aastal.
+03Paigaldus ja liitumine
 
-Kes töö teevad, ja kellega koos.Meist ja partneritest Teenused ja põhimõtted
+04Reservituru liitumine ja seire
+
+Esimene samm ei kohusta millekski. Küsimustik ja tarbimisandmed, ja te teate kahe tööpäevaga, kas ja kuidas edasi minna.
+
+Kuidas projekt käib, samm sammult
 
 Rasked küsimused, ausad vastused.
 
@@ -1029,23 +988,24 @@ Kui teie küsimust siin pole, küsige otse. Vastame kirjalikult.
 Küsi tasuta hindamist
 
 Kas reservituru tulu saab garanteerida?
-Garanteerida ei saa keegi: reservi hind kujuneb turul iga päev ja turg, kuhu tuleb pakkujaid juurde, ei püsi paigal. Aga me saame teha midagi kasulikumat kui lubada. Me näitame, mis turul tegelikult toimub ja mis on tulemas: mida Elering hangib, millised tooted lisanduvad, kui palju salvesteid võrku tuleb, kuidas tasud muutuvad. Ja me näitame, kuidas teie otsus seda turgu kujundab. Eesti hoiab alates 2025. aastast oma võrgu sagedust ise, ja seda hoiab füüsiline võimsus, mis seisab siin. Iga aku Eesti ettevõtte liitumise taga on tükk sellest võimsusest ja hääl selle poolt, et energia oleks siinne, jõukus jääks siia ja ettevõtted ei sõltuks ühest tunnist ega ühest tarnijast. Otsus tehakse oma tugevustele toetudes: suur liitumine, kõikuv tarbimine, oma toodang.
-Kirjalikus hinnangus on kolm stsenaariumi, madal, keskmine ja kõrge, ning eraldi real võimsustasu ja börsihinna sääst, mis turust ei sõltu. Nii sünnib otsus teadlikult: mitte hirmust ega uskumisest, vaid teie enda numbrite pealt.
+Garanteerida ei saa keegi: reservi hind kujuneb turul iga päev ja turg, kuhu tuleb pakkujaid juurde, ei püsi paigal. Sellepärast me numbrit ei luba. Kirjalikus hinnangus on kolm stsenaariumi — madal, keskmine ja kõrge — ning eraldi real võimsustasu ja börsihinna sääst, mis turust ei sõltu. Nii sünnib otsus teadlikult: mitte hirmust ega uskumisest, vaid teie enda numbrite pealt.
+Kuidas reservihinnad kujunevad
 
 Kas aku vajab päikesepaneele või oma tootmist?
 Ei. Kõik kolm rahavoogu (võimsustasu, börsihind, reservitulu) töötavad ilma päikeseta. Piisab liitumisest. Kui päikesepaneelid on olemas või plaanis, lisandub neljas võimalus: oma toodangu salvestamine omaks tarbeks.
+Päike ja aku koos
 
 Mida tasuta hindamine sisaldab?
 Lühikest küsimustikku teie tarbimisharjumuste ja objekti kohta, teie tunnipõhiste tarbimisandmete analüüsi ja liitumispunkti ülevaatust. Tulemuseks on kirjalik hinnang: kas aku tasub end teie objektil ära, kui suur see peaks olema ja millest tulu koosneb. Kohustusi ei teki.
+Kuidas hindamine käib
 
 Kui palju selline süsteem maksab?
 Hinnangus on vahemik, mis sõltub teie liitumise suurusest ja tarbimisprofiilist, mitte üks lootusrikas number. Kõik, mis hinda mõjutab, on samas dokumendis lahti kirjutatud.
+Millest hind koosneb
 
 Kes ajab võrguettevõtjaga asju?
 Meie. Tehnilised tingimused ja võrguettevõtja seisukoht on kirjalikult käes enne, kui te midagi allkirjastate, mitte pärast.
-
-Kas rahastust on võimalik saada?
-Jah. Liisingrahastus on võimalik korraldada, ja hinnangus näitame omafinantseeringu ja liisingu võrdlust samade numbrite pealt, et otsus oleks lihtne.
+Neli reeglit, mille järgi hinnang valmib
 
 Alustame teie tarbimisandmetest.
 
@@ -1277,11 +1237,11 @@ Liidab teie objekti Eleringi reservituruga, juhib akut automaatselt ja maksab tu
 
 Loe lähemalt
 
-Mille poolt me hääletame.
+Millesse me usume.
 
 Iga aku, mis siia ehitatakse, on väike samm ühes suunas: energia, mis toodetakse, salvestatakse ja mida juhitakse siinsamas, siinsete ettevõtete käes. Selles me ei ole neutraalsed.
 
-Sellepärast ütleme ka ausalt ei, kui aku teie objektil end ära ei tasu. Vale investeering kahjustab täpselt sama asja, mille poolt me hääletame.
+Sellepärast ütleme ka ausalt ei, kui aku teie objektil end ära ei tasu. Vale investeering kahjustab täpselt seda, millesse me usume.
 
 Iseseisvus8. veebruaril 2025 lahkusid Balti riigid Venemaa sagedusalast ja sünkroniseerusid 9. veebruaril 2025 Mandri-Euroopa võrguga; Eesti hoiab oma võrgu sagedust nüüd ise. Sagedust ei hoia lubadused ega lepingud, vaid füüsiline võimsus, mis seisab siin ja reageerib sekunditega. Iga aku Eesti ettevõtte liitumise taga on tükk seda võimsust, ja see tükk kuulub meile endile.
 Allikas: Elering, sagedusreservide turu kokkuvõtted · juuli 2026
@@ -1468,6 +1428,11 @@ Arvutus teie enda tunnipõhistest tarbimisandmetest
 Võrguettevõtja seisukoht käes enne kapitali sidumist
 
 Reservituru loogika selgitatud, tulu analüüsitud stsenaariumidena
+
+Korduma kippuvad küsimused
+
+Kas rahastust on võimalik saada?
+Jah. Liisingrahastus on võimalik korraldada, ja hinnangus näitame omafinantseeringu ja liisingu võrdlust samade numbrite pealt, et otsus oleks lihtne.
 
 Esimene samm on tasuta.
 Küsimustik ja tarbimisandmed, ja te teate kahe tööpäevaga, kas ja kuidas edasi minna.
