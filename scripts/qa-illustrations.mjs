@@ -5,7 +5,7 @@
  * Mittaa jokaisen SVG-kuvituksen tekstit (getBBox) molemmilla kielillä kolmella leveydellä
  * (1440 / 768 / 390) ja liputtaa: teksti viewBoxin ulkopuolella, tekstit päällekkäin, teksti
  * vuotaa omasta laatikostaan tai ympyrästään, alle 10 px:n teksti 390 px:n leveydellä, hero-
- * aaltoviiva otsikon tai nappien takana, HTML-kaavioiden (.queue, .day-notes, .legend,
+ * aaltoviiva ingressin tai nappien takana (otsikon takana se kulkee tarkoituksella), HTML-kaavioiden (.queue, .day-notes, .legend,
  * .structure, askelkiskon .steps) leikkautuminen. Rajaa lisäksi jokaisesta kuvituksesta PNG:n ja kokoaa
  * ennen/jälkeen-vertailuarkit.
  *
@@ -82,8 +82,9 @@ const ILLUS = [
   { n: 7, name: 'yield', sel: '.yield .sizing svg' },
   { n: 8, name: 'figure', sel: '.article .figure svg' },
   { n: 9, name: 'html', sel: '.queue, .day-notes, .day .legend, .structure, .steps', html: true },
+  { n: 10, name: 'system', sel: '.hero-art svg' },
 ];
-const NAMES = { 1: 'Hero trace (etusivu)', 2: 'Viisi tekijää (etusivu)', 3: 'Kassavirtakorttien sparklinet (etusivu)', 4: 'Vaaka: etusivun kortti + reservisivun .sizing', 5: 'Kohdepiktogrammit (etusivu)', 6: 'Akun päivä (energiavarastot / energiasalvestid)', 7: 'Tuoton arviointi (reservimarkkinat / reserviturg)', 8: 'Artikkelin kuvio (liityntärajoitus 2029 / reservitasu 2026)', 9: 'HTML-kaaviot (.queue, .day-notes, .legend, .structure, .steps)' };
+const NAMES = { 1: 'Hero trace (etusivu)', 2: 'Viisi tekijää (etusivu)', 3: 'Kassavirtakorttien sparklinet (etusivu)', 4: 'Vaaka: etusivun kortti + reservisivun .sizing', 5: 'Kohdepiktogrammit (etusivu)', 6: 'Akun päivä (energiavarastot / energiasalvestid)', 7: 'Tuoton arviointi (reservimarkkinat / reserviturg)', 8: 'Artikkelin kuvio (liityntärajoitus 2029 / reservitasu 2026)', 9: 'HTML-kaaviot (.queue, .day-notes, .legend, .structure, .steps)', 10: 'Järjestelmäpiirros (etusivun hero)' };
 
 /* Selaimessa ajettava mittaus: SVG-tekstien bboxit vs. viewBox, toisensa ja edeltävä muoto. */
 function measure(node, arg) {
@@ -121,11 +122,12 @@ function measure(node, arg) {
     }
     if (width === 390 && a.render < 10) flags.push({ el: a.text, problem: 'font < 10px at 390', numbers: `${a.fs}px × ${scale.toFixed(3)} = ${a.render}px` });
   }
-  /* hero-aaltoviiva on koriste: raportoi päällekkäisyys otsikon, ingressin, nappien ja merkkien kanssa */
+  /* hero-aaltoviiva on koriste: raportoi päällekkäisyys ingressin, nappien ja merkkien kanssa.
+     Otsikon (h1) takana se kulkee tarkoituksella (v5.3, 04.09.2026) — sen kontrasti mitataan erikseen pikseleistä, ei tässä. */
   if (svg.closest('.hero-bg')) {
     let ys = []; for (const p of svg.querySelectorAll('path.trace, line.base')) { const d = p.getAttribute('d'); if (d) for (const m of d.matchAll(/-?\d+(?:\.\d+)?\s+(-?\d+(?:\.\d+)?)/g)) ys.push(+m[1]); else ys.push(+p.getAttribute('y1'), +p.getAttribute('y2')); }
     const sy = R.height / vb.height; const band = { top: R.top + Math.min(...ys) * sy - 2, bottom: R.top + Math.max(...ys) * sy + 2 };
-    for (const sel of ['.hero h1', '.hero .lead', '.hero-cta', '.hero .badges']) { const t = document.querySelector(sel); if (!t) continue; const T = t.getBoundingClientRect(); if (T.bottom > band.top && T.top < band.bottom) flags.push({ el: sel, problem: 'hero trace strokes overlap text', numbers: `text ${Math.round(T.top)}–${Math.round(T.bottom)} vs trace band ${Math.round(band.top)}–${Math.round(band.bottom)}` }); }
+    for (const sel of ['.hero .lead', '.hero-cta', '.hero .badges']) { const t = document.querySelector(sel); if (!t) continue; const T = t.getBoundingClientRect(); if (T.bottom > band.top && T.top < band.bottom) flags.push({ el: sel, problem: 'hero trace strokes overlap text', numbers: `text ${Math.round(T.top)}–${Math.round(T.bottom)} vs trace band ${Math.round(band.top)}–${Math.round(band.bottom)}` }); }
   }
   return { vb: [vb.x, vb.y, vb.width, vb.height], scale: +scale.toFixed(3), rect: { w: Math.round(R.width), h: Math.round(R.height) }, texts: info, flags };
 }
@@ -144,8 +146,10 @@ async function runMeasure(chromium, SET) {
         const els = await page.$$(il.sel);
         for (let k = 0; k < els.length; k++) {
           const el = els[k];
+          if (!(await el.isVisible())) continue; /* esim. heron järjestelmäpiirros on alle 700 px:n leveydellä display:none */
           await el.scrollIntoViewIfNeeded();
           await page.waitForTimeout(1700); /* reveal-animaatiot ja viivat loppuun */
+          await el.evaluate(e => e.getAnimations().forEach(a => a.pause())); /* elementin oma loputon animaatio (heron taajuusjäljen ajelehdinta) estäisi rajauksen: Playwright odottaa vakaata sijaintia */
           const suffix = els.length > 1 ? String.fromCharCode(97 + k) : '';
           const file = join(OUT, lang, `${pg.slug}-${il.n}${suffix}-${width}-${SET}.png`);
           try { await el.screenshot({ path: file }); } catch (e) { rows.push({ page: pg.slug, lang, width, il: il.name + suffix, el: '', problem: 'screenshot failed', numbers: e.message.slice(0, 60) }); }
@@ -174,7 +178,7 @@ async function runContact(chromium) {
   if (!files.fi.length && !files.et.length) { console.error('Ei kuvia — aja ensin `before` ja/tai `after`.'); process.exit(2); }
   const browser = await chromium.launch({ channel: 'chrome' });
   const page = await browser.newPage({ viewport: { width: 1600, height: 900 }, deviceScaleFactor: 1 });
-  for (const n of [1, 2, 3, 4, 5, 6, 7, 8, 9]) {
+  for (const n of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) {
     const keys = new Set();
     for (const lang of ['fi', 'et']) for (const f of files[lang]) { const m = new RegExp(`^(.+)-${n}([a-z]?)-(1440|390)-(before|after)\\.png$`).exec(f); if (m) keys.add(`${lang}|${m[1]}|${m[2]}`); }
     if (!keys.size) continue;
