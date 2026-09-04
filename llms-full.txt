@@ -121,7 +121,7 @@ Auringon kanssa vielä parempi
 
 Ettekö löytäneet omaa kohdettanne? Kuvailkaa se meille, kerromme rehellisesti, kannattaako akku teillä.Pyydä kartoitus
 
-Emme myy laitetta. Etsimme teille markkinoiden parhaan ratkaisun.
+Emme myy vain laitetta. Etsimme teille markkinoiden parhaan ratkaisun.
 
 Ymmärrämme kohteenne, tunnemme markkinan ja käytämme omaa verkostoamme, jotta tarjous on mitoitettu juuri teidän tarpeeseenne, ei toimittajan varastoon.
 
@@ -529,7 +529,7 @@ Etusivu›Palvelut
 
 Kartoitus, kirjallinen arvio, projektinjohto, seuranta.
 
-Emme myy laitetta. Johdamme projektinne alusta loppuun ja vastaamme luvuista: jokainen luku kirjallisesti, lähteineen, ennen allekirjoitusta.
+Emme myy vain laitetta. Johdamme projektinne alusta loppuun ja vastaamme luvuista: jokainen luku kirjallisesti, lähteineen, ennen allekirjoitusta.
 
 2 arkipäivääkartoituksen vastausaika: tiedätte, kannattaako ja miten jatkaa
 
@@ -1007,7 +1007,7 @@ Päikesega veel parem
 
 Ei leidnud oma objekti? Kirjeldage seda meile, ütleme ausalt, kas aku tasub end teil ära.Küsi hindamist
 
-Me ei müü seadet. Otsime teile turu parima lahenduse.
+Me ei müü ainult seadet. Otsime teile turu parima lahenduse.
 
 Mõistame teie objekti, tunneme turgu ja kasutame oma võrgustikku, et pakkumine oleks dimensioneeritud teie vajaduse, mitte tarnija lao järgi.
 
@@ -1408,7 +1408,7 @@ Avaleht›Teenused
 
 Hindamine, kirjalik hinnang, projektijuhtimine, seire.
 
-Me ei müü seadet. Juhime teie projekti algusest lõpuni ja vastutame arvude eest: iga arv kirjalikult, allikaga, enne allkirja.
+Me ei müü ainult seadet. Juhime teie projekti algusest lõpuni ja vastutame arvude eest: iga arv kirjalikult, allikaga, enne allkirja.
 
 2 tööpäevahindamise vastamisaeg: te teate, kas ja kuidas edasi minna
 
