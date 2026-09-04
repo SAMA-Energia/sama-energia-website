@@ -6,7 +6,7 @@
  * (1440 / 768 / 390) ja liputtaa: teksti viewBoxin ulkopuolella, tekstit päällekkäin, teksti
  * vuotaa omasta laatikostaan tai ympyrästään, alle 10 px:n teksti 390 px:n leveydellä, hero-
  * aaltoviiva otsikon tai nappien takana, HTML-kaavioiden (.queue, .day-notes, .legend,
- * .structure) leikkautuminen. Rajaa lisäksi jokaisesta kuvituksesta PNG:n ja kokoaa
+ * .structure, askelkiskon .steps) leikkautuminen. Rajaa lisäksi jokaisesta kuvituksesta PNG:n ja kokoaa
  * ennen/jälkeen-vertailuarkit.
  *
  * Ajo (generoitujen sivujen päällä, eli buildin jälkeen):
@@ -69,8 +69,8 @@ function serve() {
 
 /* ---------- mitattavat sivut ja kuvitukset ---------- */
 const PAGES = {
-  fi: [{ slug: 'home', url: '/' }, { slug: 'reservimarkkinat', url: '/reservimarkkinat/' }, { slug: 'energiavarastot', url: '/energiavarastot/' }, { slug: 'liityntarajoitus-2029', url: '/ajankohtaista/liityntarajoitus-2029/' }],
-  et: [{ slug: 'home', url: '/et/' }, { slug: 'reserviturg', url: '/reserviturg/' }, { slug: 'energiasalvestid', url: '/energiasalvestid/' }, { slug: 'reservitasu-2026', url: '/ulevaated/reservitasu-2026/' }],
+  fi: [{ slug: 'home', url: '/' }, { slug: 'reservimarkkinat', url: '/reservimarkkinat/' }, { slug: 'energiavarastot', url: '/energiavarastot/' }, { slug: 'palvelut', url: '/palvelut/' }, { slug: 'liityntarajoitus-2029', url: '/ajankohtaista/liityntarajoitus-2029/' }],
+  et: [{ slug: 'home', url: '/et/' }, { slug: 'reserviturg', url: '/reserviturg/' }, { slug: 'energiasalvestid', url: '/energiasalvestid/' }, { slug: 'teenused', url: '/teenused/' }, { slug: 'reservitasu-2026', url: '/ulevaated/reservitasu-2026/' }],
 };
 const ILLUS = [
   { n: 1, name: 'hero-trace', sel: '.hero-bg svg' },
@@ -81,9 +81,9 @@ const ILLUS = [
   { n: 6, name: 'day', sel: '.day svg' },
   { n: 7, name: 'yield', sel: '.yield .sizing svg' },
   { n: 8, name: 'figure', sel: '.article .figure svg' },
-  { n: 9, name: 'html', sel: '.queue, .day-notes, .day .legend, .structure', html: true },
+  { n: 9, name: 'html', sel: '.queue, .day-notes, .day .legend, .structure, .steps', html: true },
 ];
-const NAMES = { 1: 'Hero trace (etusivu)', 2: 'Viisi tekijää (etusivu)', 3: 'Kassavirtakorttien sparklinet (etusivu)', 4: 'Vaaka: etusivun kortti + reservisivun .sizing', 5: 'Kohdepiktogrammit (etusivu)', 6: 'Akun päivä (energiavarastot / energiasalvestid)', 7: 'Tuoton arviointi (reservimarkkinat / reserviturg)', 8: 'Artikkelin kuvio (liityntärajoitus 2029 / reservitasu 2026)', 9: 'HTML-kaaviot (.queue, .day-notes, .legend, .structure)' };
+const NAMES = { 1: 'Hero trace (etusivu)', 2: 'Viisi tekijää (etusivu)', 3: 'Kassavirtakorttien sparklinet (etusivu)', 4: 'Vaaka: etusivun kortti + reservisivun .sizing', 5: 'Kohdepiktogrammit (etusivu)', 6: 'Akun päivä (energiavarastot / energiasalvestid)', 7: 'Tuoton arviointi (reservimarkkinat / reserviturg)', 8: 'Artikkelin kuvio (liityntärajoitus 2029 / reservitasu 2026)', 9: 'HTML-kaaviot (.queue, .day-notes, .legend, .structure, .steps)' };
 
 /* Selaimessa ajettava mittaus: SVG-tekstien bboxit vs. viewBox, toisensa ja edeltävä muoto. */
 function measure(node, arg) {

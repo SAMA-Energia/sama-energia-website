@@ -113,7 +113,7 @@
   },
   {
    "page": "/reservimarkkinat/",
-   "sectionId": "aanestamme",
+   "sectionId": "uskomme",
    "kind": "new"
   },
   {
@@ -370,7 +370,7 @@
   },
   {
    "page": "/reserviturg/",
-   "sectionId": "haaletame",
+   "sectionId": "usume",
    "kind": "new"
   },
   {

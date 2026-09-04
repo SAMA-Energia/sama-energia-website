@@ -103,12 +103,16 @@ Neljä askelta kulutustiedoista reservituloon.
 Emme myy vain laitetta. Etsimme teille markkinoiden parhaan ratkaisun — ja johdamme projektin kartoituksesta seurantaan yhdellä yhteyshenkilöllä.
 
 01Maksuton kohdekartoitus
+Tuntikohtaiset kulutustietonne, 20 minuuttia teiltä
 
 02Kirjallinen arvio
+Luvut lähteineen ja verkkoyhtiön kanta, ennen allekirjoitusta
 
 03Asennus ja liittäminen
+Laitteet kohteen mukaan, luvat ja dokumentaatio meidän kauttamme
 
 04Reservimarkkinoille ja seurantaan
+Aggregaattori vie akun markkinoille, te seuraatte tuottoa
 
 Ensimmäinen askel ei sido mihinkään. Kysely ja kulutustiedot, ja tiedätte kahdessa arkipäivässä, kannattaako ja miten jatkaa.
 
@@ -970,12 +974,16 @@ Neli sammu tarbimisandmetest reservituru tuluni.
 Me ei müü ainult seadet. Otsime teile turu parima lahenduse — ja juhime projekti hindamisest seireni ühe kontaktiga.
 
 01Tasuta hindamine
+Teie tunnipõhised tarbimisandmed, 20 minutit teie aega
 
 02Kirjalik hinnang
+Arvud allikatega ja võrguettevõtja seisukoht, enne allkirja
 
 03Paigaldus ja liitumine
+Seadmed objekti järgi, load ja dokumentatsioon meie kaudu
 
 04Reservituru liitumine ja seire
+Agregaator viib aku turule, teie jälgite tulu
 
 Esimene samm ei kohusta millekski. Küsimustik ja tarbimisandmed, ja te teate kahe tööpäevaga, kas ja kuidas edasi minna.
 

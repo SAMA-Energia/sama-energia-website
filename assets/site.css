@@ -132,6 +132,7 @@ p{margin:0}
 .hook .q{font-family:var(--font-display);font-size:26px;font-weight:500;letter-spacing:-.01em;white-space:nowrap}
 .hook .q span{color:var(--gold)}
 .hook p{color:var(--night-ink-2);font-size:15.5px}
+.hook .btn{justify-self:end}
 /* pain icon motion */
 .rise-bar{transform-box:fill-box;transform-origin:bottom;animation:risebar 3.6s var(--ease) infinite}
 @keyframes risebar{0%,15%{transform:scaleY(.55)}60%,85%{transform:scaleY(1)}100%{transform:scaleY(.55)}}
@@ -204,7 +205,7 @@ table.tbl td .chip{display:inline-flex;align-items:center;gap:6px;padding:5px 10
 .steps{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
 .steps::before{content:"";position:absolute;left:0;right:0;top:27px;height:2px;background:var(--line)}
 .steps .track{position:absolute;left:0;top:27px;height:2px;background:var(--gold-grad);width:0;transition:width 1.6s var(--ease)}
-.in-view .steps .track{width:100%}
+.steps.in-view .track,.in-view .steps .track{width:100%} /* .steps on itse .watch-elementti: in-view tulee siihen, ei esi-isään (korjattu 04.09.2026) */
 .step{position:relative;padding-top:76px}
 .step .dot{position:absolute;left:0;top:0;width:56px;height:56px;border-radius:16px;background:var(--paper);border:1px solid var(--line-2);display:flex;align-items:center;justify-content:center;transition:background .4s,border-color .4s,box-shadow .4s}
 .step .dot svg{width:26px;height:26px;stroke:var(--ink-3);transition:stroke .4s}
@@ -217,12 +218,6 @@ table.tbl td .chip{display:inline-flex;align-items:center;gap:6px;padding:5px 10
 .step .who{margin-top:12px;font:500 13.5px/1.4 var(--font-body);color:var(--gold-deep)}
 .process-cta{margin-top:52px;display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;padding:26px 30px;border-radius:var(--r);background:var(--paper);border:1px solid var(--line)}
 .process-cta p{color:var(--ink-2);flex:1;min-width:240px}
-/* etusivun askeleet tiivistettynä (v5.1, 04.09.2026): neljä siruriviä, kuvaukset Palvelut-sivulla */
-.step-chips{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.step-chips li{display:flex;align-items:center;gap:12px;min-width:0;padding:14px 20px;border:1px solid var(--line-2);border-radius:999px;background:var(--paper);font:500 15px/1.35 var(--font-body);color:var(--ink);word-break:keep-all;overflow-wrap:normal;hyphens:none}
-.step-chips li span{flex:none;font:600 12px/1 ui-monospace,'SF Mono',Menlo,Consolas,monospace;letter-spacing:.08em;color:var(--gold-deep)}
-@media (max-width:720px){.step-chips{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:420px){.step-chips{grid-template-columns:1fr}}
 
 /* ---------- reserve market (dark, photo) ---------- */
 .reserve{background:var(--night);color:var(--night-ink);position:relative;overflow:hidden}
@@ -348,6 +343,7 @@ a.partner:hover{transform:translateY(-2px);box-shadow:0 20px 34px -28px rgba(31,
 .faq summary::-webkit-details-marker{display:none}
 .faq summary .plus{width:30px;height:30px;border-radius:50%;border:1px solid var(--line-2);display:flex;align-items:center;justify-content:center;flex:none;transition:transform .3s var(--ease),background .3s,border-color .3s}
 .faq summary .plus svg{width:14px;height:14px}
+.faq details[open] summary{color:var(--gold-deep)}
 .faq details[open] summary .plus{transform:rotate(45deg);background:var(--ink);border-color:var(--ink);color:#fff}
 .faq details p{padding:0 48px 24px 0;color:var(--ink-2);font-size:16px;line-height:1.55;max-width:62ch}
 .faq details p + p{margin-top:-10px}
@@ -690,6 +686,7 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
   .section-head{grid-template-columns:1fr;gap:14px}
   .hook{grid-template-columns:1fr;gap:10px}
   .hook .q{white-space:normal}
+  .hook .btn{width:100%;justify-self:stretch}
   .compare{grid-template-columns:1fr}
   .compare-col + .compare-col{border-left:0;border-top:1px solid var(--line)}
   .reserve-view,.faq,.closer .wrap{grid-template-columns:1fr}
