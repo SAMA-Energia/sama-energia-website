@@ -99,48 +99,26 @@ p{margin:0}
 .menu-btn span::before{top:-6px}.menu-btn span::after{top:6px}
 .mobile-nav{display:none}
 
-/* ---------- hero (v5.3, 04.09.2026: teksti vasemmalla, järjestelmäpiirros oikealla, taajuusjälki otsikon viimeisen rivin takana) ---------- */
-.hero{--h1:clamp(46px,4.9vw,72px);padding:clamp(56px,7vw,108px) 0 clamp(56px,7vw,96px);position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+/* ---------- hero ---------- */
+.hero{padding:clamp(56px,7vw,108px) 0 clamp(56px,7vw,96px);position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
 .hero::before{content:"";position:absolute;inset:auto -10% -50% auto;width:56vw;height:56vw;max-width:860px;max-height:860px;background:radial-gradient(closest-side,rgba(221,185,78,.14),rgba(221,185,78,0) 70%);pointer-events:none}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,55fr) minmax(0,42fr);gap:3%;align-items:center;position:relative;z-index:1}
-.hero-text,.hero-art{min-width:0}
-.hero-head{position:relative}
-.hero h1{margin:0;font-size:var(--h1);line-height:.98;letter-spacing:-.025em}
-.hero h1 em{white-space:nowrap}
-/* Taajuusjälki: 0-korkuinen lohko heti otsikon jälkeen, svg ankkuroitu otsikon alareunaan niin, että jälki kulkee viimeisen rivin takana.
-   Leveys 150vw keskitettynä palstaan peittää heron koko leveyden (hero leikkaa ylimenevän). z-index -1 = tekstin alla, .wrap-pinon sisällä. */
-.hero-bg{position:relative;height:0;z-index:-1;pointer-events:none}
-.hero-bg svg{position:absolute;max-width:none;left:50%;top:calc(var(--h1) * -1.82);width:150vw;height:calc(var(--h1) * 2);margin-left:-75vw;animation:hdrift 60s linear 1.2s infinite alternate}
-.hero-bg .trace{fill:none;stroke:var(--gold-2);stroke-width:1.2;opacity:.28;stroke-dasharray:1600;stroke-dashoffset:1600;animation:hdraw 1.2s var(--ease) forwards}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,84px);align-items:end;position:relative;z-index:1}
+.hero-bg{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.hero-bg svg{position:absolute;left:0;right:0;bottom:0;width:100%;height:30%;animation:hdrift 60s linear 1.2s infinite alternate;-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 42%,#000 100%);mask-image:linear-gradient(180deg,transparent 0%,#000 42%,#000 100%)}
+.hero-bg .trace{fill:none;stroke:var(--gold-2);stroke-width:1.2;opacity:.28;stroke-dasharray:1600;stroke-dashoffset:1600;animation:hdraw 1.2s var(--ease) forwards} /* viiva: mitattu 04.09.2026 — gold-2 .28 / 1.2 px piirtyy hieman tummempana kuin 68b24c9:n gold .34 / 1.1 px; piirtyy kerran latauksessa (1,2 s), sitten hidas ajelehdinta (hdrift) */
 .hero-bg .trace.t2,.hero-bg .trace.t3{opacity:.12}
-.hero-bg .base{display:none} /* perusviiva näyttäisi otsikon takana yliviivaukselta */
 @keyframes hdraw{to{stroke-dashoffset:0}}
 @keyframes hdrift{to{transform:translateX(-40px)}}
-.hero .col{border-top:2px solid var(--gold);padding-top:24px;margin-top:28px}
+.hero-bg .base{stroke:var(--line-2);stroke-width:1;opacity:.45}
+.hero h1{margin:0;max-width:13ch;font-size:clamp(46px,6.6vw,96px);line-height:.98;letter-spacing:-.025em}
+.hero h1 em{white-space:nowrap}
+.hero .col{border-top:2px solid var(--gold);padding-top:24px}
 .hero .lead{margin-bottom:28px;max-width:46ch}
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
 .hero .badges{margin-top:20px}
 .hero-anim{animation:up .7s var(--ease) both}
 .hero-anim:nth-child(2){animation-delay:.08s}.hero-anim:nth-child(3){animation-delay:.16s}.hero-anim:nth-child(4){animation-delay:.24s}.hero-anim:nth-child(5){animation-delay:.32s}
 @keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-
-/* ---------- järjestelmäpiirros (hero): aurinkosähkö, energiavarasto, liittymä, verkko — piirtyy latauksessa 1,4 s, tekstit häivytetään perään ---------- */
-.hero-art{position:relative;z-index:1}
-.hero-art svg{width:100%;height:auto;overflow:visible}
-.chart-system .o{fill:#fff;stroke:var(--gold-deep);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-.chart-system .w{fill:none;stroke:var(--gold-deep);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-.chart-system .g{stroke:var(--line-2);stroke-width:1.4}
-.chart-system .p{fill:none;stroke:var(--gold);stroke-width:1.6;stroke-dasharray:5 6;stroke-linecap:round}
-.chart-system .nd{fill:#fff;stroke:var(--line-2);stroke-width:1.4}
-.chart-system .ar{fill:var(--gold-2)}
-.chart-system .sc{fill:none;stroke:var(--line-2);stroke-width:1.2}
-.chart-system .sf{fill:var(--gold)}
-.chart-system .d{stroke-dasharray:1;stroke-dashoffset:1;animation:hdraw .8s var(--ease) forwards} /* pathLength="1" -> kaikki muodot piirtyvät samassa ajassa */
-.chart-system .s1 .d{animation-delay:.05s}.chart-system .s2 .d{animation-delay:.25s}.chart-system .s3 .d{animation-delay:.45s}.chart-system .s4 .d{animation-delay:.6s}
-.chart-system .cpr{transform-box:view-box;transform-origin:70px 0;transform:scaleX(0);animation:hgrow 1.2s var(--ease) .2s forwards} /* katkoviivan paljastus vasemmalta oikealle */
-.chart-system .lb,.chart-system .sc,.chart-system .sf{opacity:0;animation:hfade .5s ease 1.35s forwards}
-@keyframes hgrow{to{transform:scaleX(1)}}
-@keyframes hfade{to{opacity:1}}
 
 /* ---------- pain ---------- */
 .pains{display:grid;gap:14px}
@@ -669,9 +647,6 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
   .header .btn-primary{display:none}
 }
 @media (max-width:1100px){
-  .hero{--h1:clamp(46px,6.6vw,96px)}
-  .hero .wrap{grid-template-columns:1fr;gap:0}
-  .hero-art{max-width:520px;margin-top:36px}
   .values,.segments,.principles,.principles.three{grid-template-columns:repeat(2,1fr)}
   .steps{grid-template-columns:repeat(2,1fr);gap:40px 28px}
   .steps::before,.steps .track{display:none}
@@ -701,10 +676,10 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
   .mobile-nav .lang{align-self:flex-start;margin-top:16px}
   .mobile-nav .lang a{padding:7px 11px;border-bottom:0;font:500 12px/1 var(--font-body);color:var(--ink-3)}
   .mobile-nav .lang a[aria-current]{background:var(--ink);color:#fff}
-  .hero{--h1:clamp(40px,11vw,54px);padding:36px 0 44px}
-  .hero h1{max-width:none}
-  .hero .col{padding-top:20px;margin-top:22px}
-  .hero-art{margin-top:30px}
+  .hero{padding:36px 0 44px}
+  .hero .wrap{grid-template-columns:1fr;gap:26px}
+  .hero h1{font-size:clamp(40px,11vw,54px);max-width:none}
+  .hero .col{padding-top:20px}
   .hero .lead{font-size:17px;margin-bottom:26px}
   .hero-cta .btn{width:100%}
   .section{padding:64px 0}
@@ -723,9 +698,6 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
   .sticky-cta.show{transform:none}
   .sticky-cta .btn{width:100%;padding:16px}
   .day{padding:18px 14px 16px}
-}
-@media (max-width:700px){
-  .hero-art{display:none} /* kapealla piirros pois, taajuusjälki jää */
 }
 @media (max-width:600px){
   .hide-m{display:none}
@@ -750,9 +722,6 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
   .beam,.pan-l,.pan-r{transform:none}
   .soc{transform:scaleX(.7)}
   .hero-bg .trace{stroke-dashoffset:0}
-  .chart-system .d{stroke-dashoffset:0}
-  .chart-system .cpr{transform:none}
-  .chart-system .lb,.chart-system .sc,.chart-system .sf{opacity:1}
 }
 
 /* ---------- kuvitukset kapeilla näytöillä ----------
@@ -760,6 +729,9 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
    (.ns/.ss/.sec/.gs/.bs) piilotetaan ja ensisijaiset nostetaan niin, että ne piirtyvät ≥ 10 px.
    Akun päivä -kaavio (900 yksikköä leveä) piirtyy alle 600 px:n leveydellä ilman tekstejä:
    selite (.legend) ja .day-notes kertovat sarjat ja kellonajat sen alla. */
+@media (max-width:900px){
+  .hero-bg svg{height:13%} /* pinotussa herossa aaltoviiva jää alareunan tyhjään tilaan, ei nappien tai merkkien taakse */
+}
 @media (max-width:600px){
   .chart-day .ph,.chart-day .ax,.chart-day .tt{display:none}
   .chart-structure .ns{display:none}
@@ -786,9 +758,6 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
   .steps .track{width:100%}
   .hero-bg .trace{stroke-dashoffset:0;animation:none}
   .hero-bg svg{animation:none}
-  .chart-system .d{stroke-dashoffset:0;animation:none}
-  .chart-system .cpr{transform:none;animation:none}
-  .chart-system .lb,.chart-system .sc,.chart-system .sf{opacity:1;animation:none}
 }
 
 /* ---------- katselmustila (?review=1) ----------

@@ -260,7 +260,8 @@
   {
    "page": "/et/",
    "sectionId": "avaleht",
-   "kind": "new"
+   "kind": "changed",
+   "prev": "Energiasalvestid ja päikeseelekter · ettevõtetele ja maaomanikele Ühine võrk.Sõltumatu energia. Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame kirjalikult, enne kui midagi alla kirjutatakse. Küsige objektikaardistust Vaadake, kuidas protsess kulgeb"
   },
   {
    "page": "/et/",
