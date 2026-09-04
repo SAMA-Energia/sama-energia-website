@@ -24,6 +24,8 @@ GitHub Action builds the pages for you.
 - **Generate** all pages, both 404 pages, `sitemap.xml`, `llms-full.txt` and
   `_headers`: `node scripts/build-pages.mjs`
 - **Verify** before committing: `node scripts/verify-pages.mjs`
+- **Illustration QA** (optional, not part of the build; needs Chrome + `playwright-core`, e.g. `npm i -g playwright-core`):
+  `node scripts/qa-illustrations.mjs before|after` measures every SVG illustration (text bboxes vs. viewBox, overlaps, mobile font size) and crops it; `… contact` builds before/after contact sheets. Output in `qa/illustrations/` (git-ignored).
 - **Review mode**: open `https://draft--samaenergia.netlify.app/?review=1` to see
   draft changes vs production highlighted (gold outlines + UUSI/MUUTETTU labels,
   banner lists changed pages). The build writes `assets/review.json` by diffing
