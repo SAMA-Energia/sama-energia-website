@@ -429,6 +429,28 @@ a.partner:hover{transform:translateY(-2px);box-shadow:0 20px 34px -28px rgba(31,
 .pain-point svg{width:22px;height:22px;flex:none;margin-top:2px}
 .pain-point b{color:var(--ink);font-weight:600}
 .intro-split{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:32px clamp(32px,5vw,72px);align-items:end;margin-bottom:clamp(36px,4.5vw,56px)}
+/* Ratkaisu/Lahendus: otsikko + ingressi vasemmalla päällekkäin, järjestelmäpiirros oikealla (≈46 %), keskitetty tekstilohkoon; ≤900 piirros täysleveänä ingressin ja korttien väliin */
+.intro-system{grid-template-columns:minmax(0,54fr) minmax(0,46fr);align-items:center}
+.intro-system .lead{max-width:52ch}
+.system svg{width:100%;height:auto;overflow:visible}
+/* ---------- järjestelmäpiirros (hub): akku keskellä, kaikki liittyy pääkeskuksen kiskoon — piirtyy, kun .system.watch saa in-view-luokan ---------- */
+.chart-system .o{fill:#fff;stroke:var(--gold-deep);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.chart-system .w{fill:none;stroke:var(--gold-deep);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.chart-system .b{fill:none;stroke:var(--gold-deep);stroke-width:2.2;stroke-linecap:round}
+.chart-system .p{fill:none;stroke:var(--gold);stroke-width:1.6;stroke-dasharray:5 6;stroke-linecap:round}
+.chart-system .ml{fill:none;stroke:var(--line-2);stroke-width:1.2;stroke-dasharray:3 5}
+.chart-system .nd{fill:#fff;stroke:var(--line-2);stroke-width:1.4}
+.chart-system .ar{fill:var(--gold-2)}
+.chart-system .sc{fill:none;stroke:var(--line-2);stroke-width:1.2}
+.chart-system .sf{fill:var(--gold)}
+.chart-system .d{stroke-dasharray:1;transition:stroke-dashoffset .8s var(--ease)} /* pathLength="1": kaikki muodot piirtyvät samassa ajassa */
+.chart-system .s2 .d{transition-delay:.15s}.chart-system .s3 .d{transition-delay:.35s}.chart-system .s4 .d{transition-delay:.5s}.chart-system .s5 .d{transition-delay:.65s}
+.chart-system .ml{transition-delay:.9s}
+.chart-system .cpr{transform-box:view-box;transform-origin:112px 190px;transition:transform .9s var(--ease) .7s}
+.chart-system .lb,.chart-system .sc,.chart-system .sf{transition:opacity .5s ease 1.3s}
+.js .watch:not(.in-view) .chart-system .d{stroke-dashoffset:1}
+.js .watch:not(.in-view) .chart-system .cpr{transform:scale(0)}
+.js .watch:not(.in-view) .chart-system .lb,.js .watch:not(.in-view) .chart-system .sc,.js .watch:not(.in-view) .chart-system .sf{opacity:0}
 .caption{font-size:13.5px;color:var(--ink-3);line-height:1.5}
 
 /* ---------- alasivut (jokainen sivu on oma URL; .page-div on aina näkyvissä) ---------- */
@@ -742,6 +764,8 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
   .chart-yield .sl,.chart-yield .sb{font-size:16px}
   .chart-figure .gs,.chart-figure .bs{display:none}
   .chart-figure .gl,.chart-figure .bl{font-size:21px}
+  .chart-system .ns{display:none}
+  .chart-system .nl{font-size:16.5px}
 }
 
 /* ---------- skip-linkki ---------- */
@@ -753,6 +777,9 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
   .reveal,.pre,.js .reveal.pre{opacity:1 !important;transform:none !important}
   .header,.sticky-cta,.mobile-nav,.skip,.rev-banner{display:none !important}
   .js .watch:not(.in-view) .structure .node,.js .watch:not(.in-view) .structure .link{opacity:1 !important;transform:none !important}
+  .js .watch:not(.in-view) .chart-system .d{stroke-dashoffset:0 !important}
+  .js .watch:not(.in-view) .chart-system .cpr{transform:none !important}
+  .js .watch:not(.in-view) .chart-system .lb,.js .watch:not(.in-view) .chart-system .sc,.js .watch:not(.in-view) .chart-system .sf{opacity:1 !important}
   .js .teaser.watch:not(.in-view) .queue .fill{width:var(--w)}
   .js .chart .bar{transform:none}
   .steps .track{width:100%}
