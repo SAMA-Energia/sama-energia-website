@@ -258,6 +258,8 @@ const PRELOADS = [
   '<link rel="preload" href="/assets/fonts/newsreader-latin-variable-italic.woff2" as="font" type="font/woff2" crossorigin>',
   '<link rel="preload" href="/assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>',
 ].join('\n');
+/* Etusivujen hero-kuvakokeilu (05.09.2026): kuva on LCP-ehdokas, esiladataan vain etusivuilla. */
+const HERO_IMG_PRELOAD = '<link rel="preload" as="image" href="/assets/hero-voimalinja-sky.webp" fetchpriority="high">';
 
 /* ---------- lähteen paloittelu ---------- */
 
@@ -352,7 +354,7 @@ function chrome(lang, source, page, fiAbs, etAbs) {
   return { pre, post };
 }
 
-function head(lang, { title, desc, canon, fiAbs, etAbs, unpaired, noindex, jsonld }) {
+function head(lang, { title, desc, canon, fiAbs, etAbs, unpaired, noindex, jsonld, front }) {
   const L = LANGS[lang];
   const ogAbs = (lang === 'fi' ? BASE : ET_BASE) + L.og;
   const alternates = unpaired
@@ -373,7 +375,7 @@ ${canon ? `<link rel="canonical" href="${canon}">\n${alternates.join('\n')}` : '
 <meta name="twitter:card" content="summary_large_image">
 ${jsonld}${ICON}
 ${THEME}
-${PRELOADS}
+${PRELOADS}${front ? '\n' + HERO_IMG_PRELOAD : ''}
 <link href="/assets/fonts.css" rel="stylesheet">
 <link href="/assets/site.css" rel="stylesheet">`;
 }
@@ -412,7 +414,7 @@ function renderPage(lang, page, source, annotatedHtml) {
   const doc = `<!DOCTYPE html>
 <html lang="${L.htmlLang}">
 <head>
-${head(lang, { title: page.title, desc: page.desc, canon, fiAbs, etAbs, unpaired, noindex: page.noindex, jsonld })}
+${head(lang, { title: page.title, desc: page.desc, canon, fiAbs, etAbs, unpaired, noindex: page.noindex, jsonld, front: isFront })}
 </head>
 <body class="t3">${pre}<main id="main">
 ${pageHtml}

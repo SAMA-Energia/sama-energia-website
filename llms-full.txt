@@ -10,7 +10,7 @@ Itsenäinen energia. Itseohjautuva akku.
 Teollinen energiavarasto leikkaa tehomaksua, ostaa sähkön halvoilla tunneilla ja tuottaa Fingridin reservimarkkinoilla valmiudesta — automaattisesti. Mitä se tarkoittaa teidän kohteessanne, kerromme kirjallisesti ennen kuin allekirjoitatte mitään.
 
 Pyydä maksuton kartoitus
-Mistä raha tulee
+Miten akku toimii?
 
 MaksutonEi sitoumuksiaKirjallinen arvio
 
@@ -56,23 +56,23 @@ Akku tasapainottaa, Fingrid maksaa valmiudesta. Sama tapahtuu satoja kertoja pä
 
 Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025
 
-Viisi tekijää, yksi laskelma.
+Monta tekijää, yksi laskelma.
 
-Kohteenne on keskellä. Ympärillä viisi tekijää, jokaisella omat ehtonsa: verkkoyhtiön tehomaksu, pörssin tuntihinta, Fingridin valmiuskorvaus, joka vuosi muuttuvat maksut ja lait, rahoitus. Me luemme ne kaikki yhdestä lähteestä — teidän kulutustiedoistanne — ja kirjoitamme yhden laskelman. Siinä on:
+Sama akku tuottaa eri kohteissa eri summan. Summa riippuu kulutuksestanne ja liittymästänne — ja ehdoista, jotka muut asettavat. Siksi emme arvaa lukua. Laskemme sen teidän kulutustiedoistanne. Laskelmassa on:
 
-Kaikki viisi samassa laskelmassa, lähteineen ja päivämäärineen.
+Tehomaksu- ja pörssisähkösäästö, jokainen luku lähteineen.
 
 Reservitulo kolmena skenaariona, ei yhtenä lupauksena.
 
-Suositus: kannattaako akku teillä — ja minkä kokoinen.
+Suositus: kannattaako akku teillä ja minkä kokoinen.
 
-Maksuton, kahdessa arkipäivässä. Pyydä maksuton kartoitus
+Kahdessa arkipäivässä, ilman sitoumuksia. Pyydä maksuton kartoitus
 
-Viisi tekijää, yksi laskelma — teidän kohteenne luvuilla.
+Teidän tietonne keskellä, muiden ehdot ympärillä — yksi laskelma.
 
 Tarjous jo kädessä?
 
-Tarkistamme, onko siinä kaikki viisi tekijää — ja kestääkö sen takaisinmaksu todellisuuden. Maksutta, samoista kulutustiedoista, joiden varassa päätöksenne oikeasti tehdään. Jos tarjous on hyvä, sanomme senkin.
+Luemme sen läpi maksutta: onko säästö laskettu teidän kulutustiedoistanne, onko reservitulo skenaario vai lupaus, onko verkkoyhtiöltä kysytty. Jos tarjous on hyvä, sanomme senkin.
 
 Pyydä toinen mielipide
 
@@ -883,7 +883,7 @@ Iseseisev energia. Isejuhtiv aku.
 Tööstuslik energiasalvesti lõikab võimsustasu, ostab elektri odavatel tundidel ja teenib Eleringi reserviturul valmisoleku eest — automaatselt. Mida see teie objektil tähendab, ütleme kirjalikult, enne kui te midagi allkirjastate.
 
 Küsi tasuta hindamist
-Kust raha tuleb
+Kuidas aku toimib?
 
 TasutaKohustustetaKirjalik hinnang
 
@@ -929,23 +929,23 @@ Iga tarbija maksab, valmis olev aku saab.
 
 Allikas: Elering, tasakaalustamisvõimsuse kulu · 2026
 
-Viis tegurit, üks arvutus.
+Palju tegureid, üks arvutus.
 
-Teie objekt on keskel. Ümber viis tegurit, igaühel omad tingimused: võrguettevõtja võimsustasu, börsi tunnihind, Eleringi valmisolekutasu, igal aastal muutuvad tasud ja seadused, rahastus. Meie loeme need kõik ühest allikast — teie tarbimisandmetest — ja kirjutame ühe arvutuse. Selles on:
+Sama aku annab eri objektidel eri tulemuse. Tulemus sõltub teie tarbimisest ja liitumisest — ja tingimustest, mille seavad teised. Sellepärast me numbrit ei arva. Arvutame selle teie tarbimisandmetest. Arvutuses on:
 
-Kõik viis ühes arvutuses, allikate ja kuupäevadega.
+Võimsustasu ja börsielektri sääst, iga arv koos allikaga.
 
 Reservitulu kolme stsenaariumina, mitte ühe lubadusena.
 
-Soovitus, kas aku tasub end teil ära — ja kui suur see peaks olema.
+Soovitus: kas aku tasub end teil ära ja kui suur see peaks olema.
 
-Tasuta, kahe tööpäevaga. Küsi tasuta hindamist
+Kahe tööpäevaga, kohustusteta. Küsi tasuta hindamist
 
-Viis tegurit, üks arvutus — teie objekti numbritega.
+Teie andmed keskel, teiste tingimused ümber — üks arvutus.
 
 Pakkumine juba käes?
 
-Kontrollime, kas selles on kõik viis tegurit — ja kas selle tasuvus peab reaalsusele vastu. Tasuta, samade tarbimisandmete pealt, mille alusel teie otsus tegelikult tehakse. Kui pakkumine on hea, ütleme ka seda.
+Loeme selle tasuta läbi: kas sääst on arvutatud teie tarbimisandmetest, kas reservitulu on stsenaarium või lubadus, kas võrguettevõtjalt on küsitud. Kui pakkumine on hea, ütleme ka seda.
 
 Küsi teist arvamust
 

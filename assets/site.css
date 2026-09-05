@@ -28,7 +28,7 @@ button{font:inherit}
 :focus-visible{outline:2px solid var(--gold-2);outline-offset:3px;border-radius:4px}
 h1,h2,h3,h4{font-family:var(--font-display);margin:0;text-wrap:balance;letter-spacing:-.01em;font-weight:500}
 h1{font-size:clamp(42px,5.8vw,76px);line-height:1.0;font-weight:500;letter-spacing:-.02em}
-h2{font-size:clamp(32px,3.8vw,50px);line-height:1.06;font-weight:500;letter-spacing:-.015em}
+h2{font-size:clamp(36px,3.8vw,50px);line-height:1.06;font-weight:500;letter-spacing:-.015em} /* mobiilin lattia 32 -> 36 px (05.09.2026); maksimi 50 px ennallaan */
 h2 em,h1 em{font-style:italic;font-weight:500;color:var(--gold-2)}
 .band-night h2 em,.reserve h2 em{color:var(--gold)}
 h3{font-size:22px;line-height:1.25;font-weight:600;font-family:var(--font-body);letter-spacing:-.01em}
@@ -102,6 +102,13 @@ p{margin:0}
 /* ---------- hero ---------- */
 .hero{padding:clamp(56px,7vw,108px) 0 clamp(56px,7vw,96px);position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
 .hero::before{content:"";position:absolute;inset:auto -10% -50% auto;width:56vw;height:56vw;max-width:860px;max-height:860px;background:radial-gradient(closest-side,rgba(221,185,78,.14),rgba(221,185,78,0) 70%);pointer-events:none}
+/* Kokeilu 05.09.2026 (draft): valokuvatausta (voimalinja, taivas-rajaus). Yksi luokka herossa — poistamalla .hero-photo palaa taajuusjälki; svg-merkkaus jää paikalleen. */
+.hero.hero-photo{background:
+  linear-gradient(180deg,var(--paper) 0%,rgba(255,255,255,.9) 30%,rgba(255,255,255,.35) 60%,rgba(255,255,255,0) 100%),
+  linear-gradient(90deg,rgba(255,255,255,0) 55%,rgba(255,255,255,.6) 100%),
+  url(/assets/hero-voimalinja-sky.webp) center bottom/cover no-repeat} /* oikean reunan verho .45 -> .6 (§4c-säätö: pylväät ingressin ja merkkien takana) */
+.hero.hero-photo .hero-bg{display:none}
+.hero-photo .btn-ghost{background:rgba(255,255,255,.7)} /* §4c-säätö: haamupainikkeen teksti kuvan päällä */
 .hero .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,84px);align-items:end;position:relative;z-index:1}
 .hero-bg{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
 .hero-bg svg{position:absolute;left:0;right:0;bottom:0;width:100%;height:30%;animation:hdrift 60s linear 1.2s infinite alternate;-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 42%,#000 100%);mask-image:linear-gradient(180deg,transparent 0%,#000 42%,#000 100%)}
@@ -354,7 +361,7 @@ a.partner:hover{transform:translateY(-2px);box-shadow:0 20px 34px -28px rgba(31,
 /* ---------- closer / form ---------- */
 .closer{position:relative;overflow:hidden}
 .closer::before{content:"";position:absolute;left:-10%;top:-30%;width:50vw;height:50vw;max-width:800px;max-height:800px;background:radial-gradient(closest-side,rgba(221,185,78,.20),rgba(221,185,78,0) 70%);pointer-events:none}
-.closer h1{font-size:clamp(32px,3.8vw,50px);line-height:1.06;letter-spacing:-.015em}
+.closer h1{font-size:clamp(36px,3.8vw,50px);line-height:1.06;letter-spacing:-.015em}
 .closer .wrap{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(32px,5vw,80px);align-items:center;position:relative}
 .closer ul{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px}
 .closer li{display:flex;gap:12px;align-items:flex-start;color:var(--ink-2);font-size:16px}
@@ -709,7 +716,7 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
   .mobile-nav .lang a[aria-current]{background:var(--ink);color:#fff}
   .hero{padding:36px 0 44px}
   .hero .wrap{grid-template-columns:1fr;gap:26px}
-  .hero h1{font-size:clamp(40px,11vw,54px);max-width:none}
+  .hero h1{font-size:clamp(40px,11.4vw,54px);max-width:none} /* 11.4vw = suurin arvo, jolla FI-otsikko pysyy kahdella rivillä 360/390/430 (05.09.2026) */
   .hero .col{padding-top:20px}
   .hero .lead{font-size:17px;margin-bottom:26px}
   .hero-cta .btn{width:100%}
