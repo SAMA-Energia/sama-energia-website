@@ -10,7 +10,7 @@ Itsenäinen energia. Itseohjautuva akku.
 Teollinen energiavarasto leikkaa tehomaksua, ostaa sähkön halvoilla tunneilla ja tuottaa Fingridin reservimarkkinoilla valmiudesta — automaattisesti. Mitä se tarkoittaa teidän kohteessanne, kerromme kirjallisesti ennen kuin allekirjoitatte mitään.
 
 Pyydä maksuton kartoitus
-Näin se etenee
+Mistä raha tulee
 
 MaksutonEi sitoumuksiaKirjallinen arvio
 
@@ -881,7 +881,7 @@ Iseseisev energia. Isejuhtiv aku.
 Tööstuslik energiasalvesti lõikab võimsustasu, ostab elektri odavatel tundidel ja teenib Eleringi reserviturul valmisoleku eest — automaatselt. Mida see teie objektil tähendab, ütleme kirjalikult, enne kui te midagi allkirjastate.
 
 Küsi tasuta hindamist
-Kuidas see käib
+Kust raha tuleb
 
 TasutaKohustustetaKirjalik hinnang
 
