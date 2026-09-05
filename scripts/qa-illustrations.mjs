@@ -82,9 +82,9 @@ const ILLUS = [
   { n: 7, name: 'yield', sel: '.yield .sizing svg' },
   { n: 8, name: 'figure', sel: '.article .figure svg' },
   { n: 9, name: 'html', sel: '.queue, .day-notes, .day .legend, .structure, .steps', html: true },
-  { n: 10, name: 'system', sel: '.system svg' },
+  { n: 10, name: 'system', sel: '.subhero .system svg' },
 ];
-const NAMES = { 1: 'Hero trace (etusivu)', 2: 'Viisi tekijää (etusivu)', 3: 'Kassavirtakorttien sparklinet (etusivu)', 4: 'Vaaka: etusivun kortti + reservisivun .sizing', 5: 'Kohdepiktogrammit (etusivu)', 6: 'Akun päivä (energiavarastot / energiasalvestid)', 7: 'Tuoton arviointi (reservimarkkinat / reserviturg)', 8: 'Artikkelin kuvio (liityntärajoitus 2029 / reservitasu 2026)', 9: 'HTML-kaaviot (.queue, .day-notes, .legend, .structure, .steps)', 10: 'Järjestelmäpiirros (etusivun Ratkaisu/Lahendus)' };
+const NAMES = { 1: 'Hero trace (etusivu)', 2: 'Viisi tekijää (etusivu)', 3: 'Kassavirtakorttien sparklinet (etusivu)', 4: 'Vaaka: etusivun kortti + reservisivun .sizing', 5: 'Kohdepiktogrammit (etusivu)', 6: 'Akun päivä (energiavarastot / energiasalvestid)', 7: 'Tuoton arviointi (reservimarkkinat / reserviturg)', 8: 'Artikkelin kuvio (liityntärajoitus 2029 / reservitasu 2026)', 9: 'HTML-kaaviot (.queue, .day-notes, .legend, .structure, .steps)', 10: 'Järjestelmäpiirros (Energiavarastot / Energiasalvestid)' };
 
 /* Selaimessa ajettava mittaus: SVG-tekstien bboxit vs. viewBox, toisensa ja edeltävä muoto. */
 function measure(node, arg) {

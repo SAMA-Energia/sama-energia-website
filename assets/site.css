@@ -110,7 +110,7 @@ p{margin:0}
 @keyframes hdraw{to{stroke-dashoffset:0}}
 @keyframes hdrift{to{transform:translateX(-40px)}}
 .hero-bg .base{stroke:var(--line-2);stroke-width:1;opacity:.45}
-.hero h1{margin:0;max-width:13ch;font-size:clamp(46px,6.6vw,96px);line-height:.98;letter-spacing:-.025em}
+.hero h1{margin:0;max-width:13ch;font-size:clamp(46px,6.6vw,96px);line-height:1.03;letter-spacing:-.025em} /* riviväli .98 -> 1.03 (05.09.2026): "energia."-g:n alapidennys ja "Itseohjautuva"-h:n yläpidennys koskettivat toisiaan; 1.03 on pienin arvo, joka antaa ≥ 4 px pikseleistä mitattuna 1440:ssä */
 .hero h1 em{white-space:nowrap}
 .hero .col{border-top:2px solid var(--gold);padding-top:24px}
 .hero .lead{margin-bottom:28px;max-width:46ch}
@@ -429,11 +429,8 @@ a.partner:hover{transform:translateY(-2px);box-shadow:0 20px 34px -28px rgba(31,
 .pain-point svg{width:22px;height:22px;flex:none;margin-top:2px}
 .pain-point b{color:var(--ink);font-weight:600}
 .intro-split{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:32px clamp(32px,5vw,72px);align-items:end;margin-bottom:clamp(36px,4.5vw,56px)}
-/* Ratkaisu/Lahendus: otsikko + ingressi vasemmalla päällekkäin, järjestelmäpiirros oikealla (≈46 %), keskitetty tekstilohkoon; ≤900 piirros täysleveänä ingressin ja korttien väliin */
-.intro-system{grid-template-columns:minmax(0,54fr) minmax(0,46fr);align-items:center}
-.intro-system .lead{max-width:52ch}
 .system svg{width:100%;height:auto;overflow:visible}
-/* ---------- järjestelmäpiirros (hub): akku keskellä, kaikki liittyy pääkeskuksen kiskoon — piirtyy, kun .system.watch saa in-view-luokan ---------- */
+/* ---------- järjestelmäpiirros (hub, Energiavarastot/Energiasalvestid-sivun hero): akku keskellä, kaikki liittyy pääkeskuksen kiskoon — piirtyy, kun .system.watch saa in-view-luokan ---------- */
 .chart-system .o{fill:#fff;stroke:var(--gold-deep);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .chart-system .w{fill:none;stroke:var(--gold-deep);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .chart-system .b{fill:none;stroke:var(--gold-deep);stroke-width:2.2;stroke-linecap:round}
@@ -466,6 +463,17 @@ a.partner:hover{transform:translateY(-2px);box-shadow:0 20px 34px -28px rgba(31,
 .subhero .facts b{font:500 22px/1 var(--font-display);color:var(--gold-deep);white-space:nowrap}
 .subhero .facts .src{grid-column:1/-1;font-size:12.5px}
 .subhero.plain .wrap{display:block}
+/* Energiavarastot/Energiasalvestid: teksti vasemmalla (≈52 %), järjestelmäpiirros oikealla (≈44 %) ja mitoituslaatat lähteineen suoraan sen alla; ≤1100 pinottuna: teksti, piirros, laatat */
+.subhero-system .wrap{grid-template-columns:minmax(0,52fr) minmax(0,44fr);grid-template-rows:auto auto;align-items:start}
+.subhero-system .wrap > div:first-child{grid-row:1/3;align-self:center}
+.subhero-system .system,.subhero-system .facts{grid-column:2}
+.subhero-system .facts{margin-top:8px}
+@media (max-width:1099px){ /* ≥ 1100 px kaksi palstaa, sen alle pinottuna */
+  .subhero-system .wrap{grid-template-columns:1fr}
+  .subhero-system .wrap > div:first-child{grid-row:auto}
+  .subhero-system .system,.subhero-system .facts{grid-column:auto}
+  .subhero-system .system{margin-top:8px}
+}
 .nav > a.active,.nav .dd.active > button{color:var(--ink)}
 .nav > a.active::after,.nav .dd.active > button::after{transform:scaleX(1)}
 .cta-strip{padding:clamp(48px,6vw,72px) 0;background:var(--paper-2);border-top:1px solid var(--line)}
