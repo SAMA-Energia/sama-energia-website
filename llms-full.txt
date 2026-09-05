@@ -58,19 +58,21 @@ Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025
 
 Viisi tekijää, yksi laskelma.
 
-Tehomaksu, tuntihinta, verkkoyhtiön ehdot, reservimarkkinat, vuosittain muuttuvat maksut ja lait, rahoitus. Jokainen niistä vaikuttaa sähkökuluunne, mutta kukaan ei kokoa niitä yhteen teidän kohteenne osalta. Siksi isot päätökset tehdään tuntumalla tai jätetään tekemättä.
+Kohteenne on keskellä. Ympärillä viisi tekijää, jokaisella omat ehtonsa: verkkoyhtiön tehomaksu, pörssin tuntihinta, Fingridin valmiuskorvaus, joka vuosi muuttuvat maksut ja lait, rahoitus. Me luemme ne kaikki yhdestä lähteestä — teidän kulutustiedoistanne — ja kirjoitamme yhden laskelman. Siinä on:
 
-Kokonaiskuva siitä, mitä markkinoilla tapahtuu ja mihin suuntaan ne liikkuvat.
+Kaikki viisi samassa laskelmassa, lähteineen ja päivämäärineen.
 
-Taloudelliset mahdollisuudet teidän kohteessanne, kirjallisesti ja lähteineen.
+Reservitulo kolmena skenaariona, ei yhtenä lupauksena.
 
-Suositus siitä, kannattaako akku teillä — ja minkä kokoinen.
+Suositus: kannattaako akku teillä — ja minkä kokoinen.
 
-Viisi tekijää, yksi arvio — teidän kohteenne luvuilla.
+Maksuton, kahdessa arkipäivässä. Pyydä maksuton kartoitus
+
+Viisi tekijää, yksi laskelma — teidän kohteenne luvuilla.
 
 Tarjous jo kädessä?
 
-Tarkistamme, kestääkö sen takaisinmaksu todellisuuden. Maksutta, samoista kulutustiedoista, joiden varassa päätöksenne oikeasti tehdään. Jos tarjous on hyvä, sanomme senkin.
+Tarkistamme, onko siinä kaikki viisi tekijää — ja kestääkö sen takaisinmaksu todellisuuden. Maksutta, samoista kulutustiedoista, joiden varassa päätöksenne oikeasti tehdään. Jos tarjous on hyvä, sanomme senkin.
 
 Pyydä toinen mielipide
 
@@ -929,19 +931,21 @@ Allikas: Elering, tasakaalustamisvõimsuse kulu · 2026
 
 Viis tegurit, üks arvutus.
 
-Võimsustasu, tunnihind, võrguettevõtja tingimused, reserviturg, igal aastal muutuvad tasud ja seadused, rahastus. Igaüks neist mõjutab teie elektrikulu, aga keegi ei pane neid teie objekti jaoks kokku. Sellepärast tehakse suuri otsuseid tunde järgi või jäetakse tegemata.
+Teie objekt on keskel. Ümber viis tegurit, igaühel omad tingimused: võrguettevõtja võimsustasu, börsi tunnihind, Eleringi valmisolekutasu, igal aastal muutuvad tasud ja seadused, rahastus. Meie loeme need kõik ühest allikast — teie tarbimisandmetest — ja kirjutame ühe arvutuse. Selles on:
 
-Terviklik ülevaade sellest, mis turul toimub ja mis suunas see liigub.
+Kõik viis ühes arvutuses, allikate ja kuupäevadega.
 
-Majanduslikud võimalused teie objektil, kirjalikult ja allikatega.
+Reservitulu kolme stsenaariumina, mitte ühe lubadusena.
 
 Soovitus, kas aku tasub end teil ära — ja kui suur see peaks olema.
 
-Viis tegurit, üks hinnang — teie objekti numbritega.
+Tasuta, kahe tööpäevaga. Küsi tasuta hindamist
+
+Viis tegurit, üks arvutus — teie objekti numbritega.
 
 Pakkumine juba käes?
 
-Kontrollime, kas selle tasuvus peab reaalsusele vastu. Tasuta, samade tarbimisandmete pealt, mille alusel teie otsus tegelikult tehakse. Kui pakkumine on hea, ütleme ka seda.
+Kontrollime, kas selles on kõik viis tegurit — ja kas selle tasuvus peab reaalsusele vastu. Tasuta, samade tarbimisandmete pealt, mille alusel teie otsus tegelikult tehakse. Kui pakkumine on hea, ütleme ka seda.
 
 Küsi teist arvamust
 
