@@ -145,7 +145,7 @@ function orgJsonLd(lang, canon) {
     url: canon,
     logo: BASE + '/assets/mark.png',
     image: (lang === 'fi' ? BASE : ET_BASE) + LANGS[lang].og,
-    address: { '@type': 'PostalAddress', addressLocality: 'Helsinki', addressCountry: 'FI' },
+    address: { '@type': 'PostalAddress', streetAddress: 'Sörnäisten Rantatie 33 C', postalCode: '00500', addressLocality: 'Helsinki', addressCountry: 'FI' },
     areaServed: [{ '@type': 'Country', name: 'Finland' }, { '@type': 'Country', name: 'Estonia' }],
     availableLanguage: ['fi', 'et'],
     founder: [

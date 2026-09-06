@@ -142,6 +142,13 @@ Paljonko tällainen järjestelmä maksaa?
 Arviossa on haarukka, joka riippuu liittymänne koosta ja kulutusprofiilistanne, ei yhtä toiveikasta lukua. Kaikki, mikä vaikuttaa hintaan, on avattu samassa dokumentissa.
 Mistä hinta muodostuu
 
+Kauanko projekti kestää?
+Kartoituksesta käyttöönottoon kuluu tyypillisesti viikkoja, ei kuukausia — laitteet ovat varastosta saatavilla. Verkkoyhtiön vastausaika on oma eränsä: se eritellään arviossa erikseen, jotta se ei tule yllätyksenä.
+Näin projekti etenee
+
+Entä huolto ja takuu?
+Takuuehdot, huoltovälit ja se, kenelle soitatte, kirjataan samaan dokumenttiin lukujen kanssa. Ne riippuvat valitusta laitteesta, ja laite valitaan kohteenne mukaan.
+
 Kuka hoitaa asiat verkkoyhtiön kanssa?
 Me. Tekniset ehdot ja verkkoyhtiön kanta ovat kirjallisesti kädessä ennen kuin allekirjoitatte mitään, ei sen jälkeen.
 Neljä sääntöä, joiden mukaan arvio syntyy
@@ -621,9 +628,9 @@ madis.maastik@samaenergia.fi
 
 MR
 Martin Rautio
-Toimitusjohtaja · perustaja
+Talousjohtaja · perustaja
 
-Vastaa: säästölaskelmat, tarjoukset ja projektien koordinointi. Häneltä tulee arvion taloudellinen osa, ja hän vastaa siitä, että luvut kestävät.
+Vastaa: säästölaskelmat, tarjoukset ja projektien koordinointi. Häneltä tulee arvioon taloudellinen osa.
 Koulutukseltaan kansainvälisen liiketoiminnan tradenomi (BBA).
 martin.rautio@samaenergia.fi
 +358 40 701 9099
@@ -856,7 +863,7 @@ Tietosuojaseloste
 Keräämme vain sen, minkä annatte meille itse. Emme käytä evästeitä emmekä analytiikkaa. Tässä kerrotaan, mitä käsittelemme, miksi ja kuinka kauan.
 
 Rekisterinpitäjä
-SAMA Energia Oy · Y-tunnus 3647683-3 · ALV-tunnus FI36476833 · madis.maastik@samaenergia.fi · +358 449 654 614.
+SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · Y-tunnus 3647683-3 · ALV-tunnus FI36476833 · madis.maastik@samaenergia.fi · +358 449 654 614.
 
 Mitä tietoja käsittelemme
 Yhteydenottolomakkeella antamanne tiedot: nimi, yritys, sähköposti, puhelin, kohteen sijainti, liittymä- ja kulutustiedot sekä viesti. Lisäksi sivuston tekninen palvelinloki (mm. IP-osoite ja aikaleima), jonka ylläpitopalvelu tuottaa palvelun toimittamiseksi ja tietoturvan varmistamiseksi. Emme käytä evästeitä, seurantapikseleitä emmekä analytiikkaa.
@@ -1014,6 +1021,13 @@ Kuidas hindamine käib
 Kui palju selline süsteem maksab?
 Hinnangus on vahemik, mis sõltub teie liitumise suurusest ja tarbimisprofiilist, mitte üks lootusrikas number. Kõik, mis hinda mõjutab, on samas dokumendis lahti kirjutatud.
 Millest hind koosneb
+
+Kui kaua projekt kestab?
+Hindamisest käivitamiseni kulub tavaliselt nädalaid, mitte kuid — seadmed on laost saadaval. Võrguettevõtja vastamisaeg on omaette asi: see tuuakse hinnangus eraldi välja, et see ei tuleks üllatusena.
+Nii projekt edeneb
+
+Aga hooldus ja garantii?
+Garantiitingimused, hooldusvälbad ja see, kellele helistate, kirjutatakse samasse dokumenti arvudega. Need sõltuvad valitud seadmest ja seade valitakse teie objekti järgi.
 
 Kes ajab võrguettevõtjaga asju?
 Meie. Tehnilised tingimused ja võrguettevõtja seisukoht on kirjalikult käes enne, kui te midagi allkirjastate, mitte pärast.
@@ -1490,9 +1504,9 @@ madis.maastik@samaenergia.fi
 
 MR
 Martin Rautio
-Tegevjuht · asutaja
+Finantsjuht · asutaja
 
-Vastutab: säästuarvutused, pakkumised ja projektide koordineerimine. Tema käest tuleb hinnangu majanduslik osa ja tema vastutab selle eest, et arvud peavad.
+Vastutab: säästuarvutused, pakkumised ja projektide koordineerimine. Tema käest tuleb hinnangu majanduslik osa.
 Hariduselt rahvusvahelise ärijuhtimise bakalaureus (BBA).
 martin.rautio@samaenergia.fi
 +358 40 701 9099
@@ -1731,7 +1745,7 @@ Andmekaitsetingimused
 Kogume ainult seda, mille ise meile annate. Me ei kasuta küpsiseid ega analüütikat. Siin on kirjas, mida töötleme, miks ja kui kaua.
 
 Vastutav töötleja
-SAMA Energia Oy · Soome registrikood (Y-tunnus) 3647683-3 · KMKR-nr FI36476833 · madis.maastik@samaenergia.fi · +358 449 654 614.
+SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsingi, Soome · Soome registrikood (Y-tunnus) 3647683-3 · KMKR-nr FI36476833 · madis.maastik@samaenergia.fi · +358 449 654 614.
 
 Milliseid andmeid töötleme
 Kontaktivormil antud andmed: nimi, ettevõte, e-post, telefon, objekti asukoht, liitumis- ja tarbimisandmed ning sõnum. Lisaks veebilehe tehniline serverilogi (sh IP-aadress ja ajatempel), mille majutusteenus toodab teenuse osutamiseks ja turvalisuse tagamiseks. Me ei kasuta küpsiseid, jälgimispiksleid ega analüütikat.

@@ -10,7 +10,7 @@ Helsinki, Finland) is an integrator (EPC) of industrial battery energy storage
 and solar PV for businesses and landowners in Finland and Estonia. The company
 surveys, designs, procures and builds the systems and connects them to the
 reserve markets of the transmission system operators Fingrid (Finland) and
-Elering (Estonia) through an aggregator. Founders: Martin Rautio (CEO) and
+Elering (Estonia) through an aggregator. Founders: Martin Rautio (CFO) and
 Madis Maastik (sales director). Site updated 3 September 2026 (design v5).
 
 What the company says about itself, in its own documented positioning:
@@ -77,5 +77,5 @@ What the company says about itself, in its own documented positioning:
 ## Contact
 
 - Madis Maastik, sales director and founder: madis.maastik@samaenergia.fi · +358 449 654 614 · WhatsApp +358 46 659 4879
-- Martin Rautio, CEO and founder: martin.rautio@samaenergia.fi · +358 40 701 9099
+- Martin Rautio, CFO and founder: martin.rautio@samaenergia.fi · +358 40 701 9099
 - General: info@samaenergia.fi
