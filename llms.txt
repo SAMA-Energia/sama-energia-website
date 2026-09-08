@@ -69,10 +69,10 @@ What the company says about itself, in its own documented positioning:
 - https://samaenergia.ee/soleron-energy/ : Mida agregaator teeb, kuidas liitumine Eleringi reservituruga käib, ja Eesti agregaatoripartner Soleron Energy.
 - https://samaenergia.ee/teenused/ : Teenused — tasuta hindamine, kirjalik hinnang, projektijuhtimine, seire; neli reeglit.
 - https://samaenergia.ee/meist/ : Meist — miks ettevõte tehti, kes mille eest vastutab, võrgustik, ettevõte paberil.
-- https://samaenergia.ee/ulevaated/ : Ülevaated koos allikate ja kuupäevadega.
-- https://samaenergia.ee/ulevaated/reservitasu-2026/ : Ülevaade: alates 2026 maksate reservide eest — kummal pool arvet te olete.
+- https://samaenergia.ee/uudised/ : Uudised koos allikate ja kuupäevadega.
+- https://samaenergia.ee/uudised/reservitasu-2026/ : Ülevaade: alates 2026 maksate reservide eest — kummal pool arvet te olete.
 - https://samaenergia.ee/kontakt/ : Kontakt ja tasuta hindamise küsimine.
-- https://samaenergia.ee/andmekaitse/ : Andmekaitsetingimused.
+- https://samaenergia.ee/andmekaitse/ : Privaatsuspoliitika (privacy statement).
 
 ## Contact
 

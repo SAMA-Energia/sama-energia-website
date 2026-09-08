@@ -39,6 +39,8 @@ All customer-facing text is Finnish or Estonian and requires a
   must not be reintroduced (see the project's Decision Log; do not name them
   here). Financing is described generically: leasing or own capital, compared
   on the same figures in the written assessment.
+- Partner names permitted: VENI Energia, Soleron Energy, Ralos Oy, JSM Automaatiosähkö Oy, and Scanoffice Oy on the Finnish site only — founder decision 08.09.2026.
+- verify-pages.mjs carries content guards for figures and titles corrected on 03.09/06.09/08.09; a guard is removed only by a founder decision recorded in the project’s Decision Log.
 - Team titles and personal contact numbers as published on Meistä/Meist are
   approved — founder decision 03.09.2026.
 - Team bios permitted as of 28.08.2026 (founder decision, Martin).

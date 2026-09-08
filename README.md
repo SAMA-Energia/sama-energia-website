@@ -46,7 +46,7 @@ generated from the same page HTML that is served (plain text of every public
 page, one `# Title — URL` heading per page) next to the hand-written English
 `llms.txt`. Articles are *unpaired* pages — each language has its own — listed
 in `UNPAIRED` in `scripts/build-pages.mjs` and written as nested slugs
-(`ajankohtaista/<slug>`, `ulevaated/<slug>`); they get canonical, og and a
+(`ajankohtaista/<slug>`, `uudised/<slug>`); they get canonical, og and a
 self-referencing hreflang, and appear in the sitemap.
 
 ## Ownership

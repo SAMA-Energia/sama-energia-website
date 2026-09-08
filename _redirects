@@ -21,8 +21,10 @@ https://samaenergia.ee/paike-ja-aku/*         https://samaenergia.ee/paikeseelek
 https://www.samaenergia.ee/paike-ja-aku/*     https://samaenergia.ee/paikeseelekter/           301!
 https://samaenergia.ee/reserviturud/*         https://samaenergia.ee/reserviturg/              301!
 https://www.samaenergia.ee/reserviturud/*     https://samaenergia.ee/reserviturg/              301!
-https://samaenergia.ee/uudised/*              https://samaenergia.ee/ulevaated/                301!
-https://www.samaenergia.ee/uudised/*          https://samaenergia.ee/ulevaated/                301!
+# 08.09.2026 (perustajan päätös): ET-uutissivun slugi ulevaated -> uudised. Sääntö on käännetty
+# päinvastoin kuin ennen; :splat-jatke pitää myös artikkelin /ulevaated/reservitasu-2026/ voimassa.
+https://samaenergia.ee/ulevaated/*            https://samaenergia.ee/uudised/:splat            301!
+https://www.samaenergia.ee/ulevaated/*        https://samaenergia.ee/uudised/:splat            301!
 
 # ET-osoitteet eivät koskaan palvele FI-hostilla (uudet slugit build-pages.mjs:n PAIRS/UNPAIRED-
 # tauluista + vanhat, jotka ketjuttuvat .ee-hostilla yllä oleviin ohjauksiin).
@@ -38,8 +40,8 @@ https://samaenergia.fi/teenused/*             https://samaenergia.ee/teenused/:s
 https://www.samaenergia.fi/teenused/*         https://samaenergia.ee/teenused/:splat           301!
 https://samaenergia.fi/meist/*                https://samaenergia.ee/meist/:splat              301!
 https://www.samaenergia.fi/meist/*            https://samaenergia.ee/meist/:splat              301!
-https://samaenergia.fi/ulevaated/*            https://samaenergia.ee/ulevaated/:splat          301!
-https://www.samaenergia.fi/ulevaated/*        https://samaenergia.ee/ulevaated/:splat          301!
+https://samaenergia.fi/uudised/*              https://samaenergia.ee/uudised/:splat            301!
+https://www.samaenergia.fi/uudised/*          https://samaenergia.ee/uudised/:splat            301!
 https://samaenergia.fi/kontakt/*              https://samaenergia.ee/kontakt/:splat            301!
 https://www.samaenergia.fi/kontakt/*          https://samaenergia.ee/kontakt/:splat            301!
 https://samaenergia.fi/andmekaitse/*          https://samaenergia.ee/andmekaitse/:splat        301!
@@ -52,8 +54,8 @@ https://samaenergia.fi/reserviturud/*         https://samaenergia.ee/reservituru
 https://www.samaenergia.fi/reserviturud/*     https://samaenergia.ee/reserviturud/:splat       301!
 https://samaenergia.fi/protsess/*             https://samaenergia.ee/protsess/:splat           301!
 https://www.samaenergia.fi/protsess/*         https://samaenergia.ee/protsess/:splat           301!
-https://samaenergia.fi/uudised/*              https://samaenergia.ee/uudised/:splat            301!
-https://www.samaenergia.fi/uudised/*          https://samaenergia.ee/uudised/:splat            301!
+https://samaenergia.fi/ulevaated/*            https://samaenergia.ee/uudised/:splat            301!
+https://www.samaenergia.fi/ulevaated/*        https://samaenergia.ee/uudised/:splat            301!
 
 # FI-osoitteet eivät koskaan palvele .ee-hostilla (peilisääntö yllä olevalle:
 # duplikaattihostitarjoilu pois — canonicalit lievensivät, ohjaus poistaa).
@@ -99,7 +101,7 @@ https://samaenergia.com/*                     https://samaenergia.fi/:splat     
 
 # Yleiset, hostittomat uudelleenkirjoitukset kaikkien hostisääntöjen JÄLKEEN:
 # paljas ET-slug noutaa sisällön et/-hyllyltä (myös sisäkkäiset slugit, esim.
-# /ulevaated/reservitasu-2026/ -> /et/ulevaated/reservitasu-2026/). Ei pakotettu, joten
+# /uudised/reservitasu-2026/ -> /et/uudised/reservitasu-2026/). Ei pakotettu, joten
 # staattiset tiedostot ohittavat säännön; FI- ja ET-slugit ovat erilliset joukot (verify
 # valvoo), joten FI-sivu ei voi varjostua. Tekee myös draft-esikatselusta navigoitavan
 # samoilla kanonisen muotoisilla URL:eilla kuin tuotanto.
@@ -109,7 +111,7 @@ https://samaenergia.com/*                     https://samaenergia.fi/:splat     
 /soleron-energy/*                             /et/soleron-energy/:splat                        200
 /teenused/*                                   /et/teenused/:splat                              200
 /meist/*                                      /et/meist/:splat                                 200
-/ulevaated/*                                  /et/ulevaated/:splat                             200
+/uudised/*                                    /et/uudised/:splat                               200
 /kontakt/*                                    /et/kontakt/:splat                               200
 /andmekaitse/*                                /et/andmekaitse/:splat                           200
 /aitah/*                                      /et/aitah/:splat                                 200

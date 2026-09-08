@@ -40,22 +40,32 @@ const PAIRS = [
   ['veni-energia', 'soleron-energy'],
   ['palvelut', 'teenused'],
   ['meista', 'meist'],
-  ['ajankohtaista', 'ulevaated'],
+  ['ajankohtaista', 'uudised'],
   ['yhteystiedot', 'kontakt'],
   ['tietosuoja', 'andmekaitse'],
   ['kiitos', 'aitah'],
 ];
 /* Parittomat sivut (artikkelit: kummallakin kielellä eri artikkeli): canonical + og,
    hreflang vain itseensä + x-default, mukana sitemapissa. Sisäkkäinen slug -> alikansio. */
-const UNPAIRED = { fi: ['ajankohtaista/liityntarajoitus-2029'], et: ['ulevaated/reservitasu-2026'] };
+const UNPAIRED = { fi: ['ajankohtaista/liityntarajoitus-2029'], et: ['uudised/reservitasu-2026'] };
 /* Lomakkeen kiitossivut: generoidaan ja paritetaan, mutta ei sitemapiin, ei llms-full.txt:hen,
    ei legacy-shimiin eikä navigaatioon. Sivuilla on data-noindex="1". */
 const UNLISTED = new Set(['kiitos', 'aitah']);
 /* Ennen v5:tä julkaistut slugit -> uudet (legacy-hash-shim; _redirects hoitaa oikeat URL:t). */
 const LEGACY = {
   fi: { 'aurinko-ja-akku': 'aurinkosahko', 'prosessi': 'palvelut' },
-  et: { 'paike-ja-aku': 'paikeseelekter', 'reserviturud': 'reserviturg', 'protsess': 'teenused', 'uudised': 'ulevaated' },
+  et: { 'paike-ja-aku': 'paikeseelekter', 'reserviturud': 'reserviturg', 'protsess': 'teenused', 'ulevaated': 'uudised' },
 };
+
+/* Kolmas kieli (08.09.2026): yksittäinen .page voi olla muulla kielellä kuin lähdetiedostonsa,
+   attribuutilla data-lang="en". Sivu asuu sen lähdetiedoston hostilla jossa se on (FI-lähde ->
+   samaenergia.fi), sillä ei ole kieliparia — sen on oltava UNPAIRED-listalla, jolloin hreflang
+   osoittaa vain itseensä + x-default. Ei valikkokorostusta; kielivalitsin osoittaa etusivuille. */
+const PAGE_LANGS = { en: { htmlLang: 'en', ogLocale: 'en_GB', hreflang: 'en' } };
+/* Sivun kielimetatiedot: oletuksena lähdetiedoston kieli, data-lang ohittaa. */
+const langMeta = (lang, docLang) => (docLang === lang
+  ? { htmlLang: LANGS[lang].htmlLang, ogLocale: LANGS[lang].ogLocale, hreflang: lang === 'fi' ? 'fi-FI' : 'et-EE' }
+  : PAGE_LANGS[docLang]);
 
 const FI_TO_ET = new Map(PAIRS);
 const ET_TO_FI = new Map(PAIRS.map(([f, e]) => [e, f]));
@@ -74,7 +84,7 @@ const publicSlugs = lang => [
 /* Päävalikon aktiivinen kohta: sivu -> data-nav-avain (pudotusvalikko tai suora linkki). */
 const NAV_KEY = {
   fi: { 'aurinkosahko': 'ratkaisut', 'energiavarastot': 'ratkaisut', 'palvelut': 'ratkaisut', 'reservimarkkinat': 'reservimarkkinat', 'veni-energia': 'reservimarkkinat', 'ajankohtaista': 'ajankohtaista', 'ajankohtaista/liityntarajoitus-2029': 'ajankohtaista', 'meista': 'meista', 'yhteystiedot': 'yhteystiedot' },
-  et: { 'paikeseelekter': 'lahendused', 'energiasalvestid': 'lahendused', 'teenused': 'lahendused', 'reserviturg': 'reserviturg', 'soleron-energy': 'reserviturg', 'ulevaated': 'ulevaated', 'ulevaated/reservitasu-2026': 'ulevaated', 'meist': 'meist', 'kontakt': 'kontakt' },
+  et: { 'paikeseelekter': 'lahendused', 'energiasalvestid': 'lahendused', 'teenused': 'lahendused', 'reserviturg': 'reserviturg', 'soleron-energy': 'reserviturg', 'uudised': 'uudised', 'uudised/reservitasu-2026': 'uudised', 'meist': 'meist', 'kontakt': 'kontakt' },
 };
 
 /* Legacy-hash-shim: vanhat #/-osoitteet (sekä v4:n että v5-luonnoksen #/slug-muodot) ohjataan
@@ -209,7 +219,7 @@ function isoDate(visible, lang, src) {
   if (!m || mi < 0) throw new Error(`${src}: artikkelin päivämäärää ei voi jäsentää: "${visible}"`);
   return `${m[3]}-${String(mi + 1).padStart(2, '0')}-${m[1].padStart(2, '0')}`;
 }
-function articleJsonLd(page, lang, canon, src) {
+function articleJsonLd(page, lang, canon, src, docLang = lang) {
   const h1 = /<h1[^>]*>([\s\S]*?)<\/h1>/.exec(page.html);
   const meta = /<div class="ameta">([\s\S]*?)<\/div>/.exec(page.html);
   if (!h1 || !meta) throw new Error(`${src}: artikkelin h1 tai ameta puuttuu (${page.slug})`);
@@ -224,7 +234,7 @@ function articleJsonLd(page, lang, canon, src) {
     description: page.desc,
     datePublished: date,
     dateModified: date,
-    inLanguage: lang,
+    inLanguage: docLang,
     mainEntityOfPage: { '@type': 'WebPage', '@id': canon },
     image: (lang === 'fi' ? BASE : ET_BASE) + LANGS[lang].og,
     author: { '@type': 'Person', name: 'Madis Maastik', jobTitle: lang === 'fi' ? 'Myyntijohtaja ja perustaja' : 'Müügijuht ja asutaja' },
@@ -232,7 +242,7 @@ function articleJsonLd(page, lang, canon, src) {
   };
 }
 
-function jsonLdFor(page, lang, canon) {
+function jsonLdFor(page, lang, canon, docLang = lang) {
   const src = LANGS[lang].src;
   const blocks = [];
   if (page.id === 'p-home') blocks.push(orgJsonLd(lang, canon));
@@ -241,7 +251,7 @@ function jsonLdFor(page, lang, canon) {
     if (!bc) throw new Error(`${src}: alasivulta ${page.slug} puuttuu murupolku (.crumbs)`);
     blocks.push(bc);
   }
-  if (page.id.startsWith('p-art-')) blocks.push(articleJsonLd(page, lang, canon, src));
+  if (page.id.startsWith('p-art-')) blocks.push(articleJsonLd(page, lang, canon, src, docLang));
   const faq = faqJsonLd(page.html, src);
   if (faq) blocks.push(faq);
   return blocks.map(b => `<script type="application/ld+json">${cspHash(JSON.stringify(b))}</script>\n`).join('');
@@ -303,9 +313,13 @@ function extractPages(mainInner, file) {
       if (!a) throw new Error(`${file}: ${m[1]} — ${name} puuttuu`);
       return a[1];
     };
+    const attrOpt = name => new RegExp(`${name}="([^"]*)"`).exec(m[2])?.[1];
+    const docLang = attrOpt('data-lang');
+    if (docLang && !PAGE_LANGS[docLang]) throw new Error(`${file}: ${m[1]} — tuntematon data-lang="${docLang}"`);
     pages.push({
       id: m[1],
       slug: attr('data-slug'),
+      docLang,
       title: attr('data-title'),
       desc: attr('data-desc'),
       noindex: / data-noindex="1"/.test(m[2]),
@@ -345,7 +359,9 @@ function chrome(lang, source, page, fiAbs, etAbs) {
     : s.split('<a href="/" lang="fi">FI</a>').join(`<a href="${fiAbs}" lang="fi">FI</a>`));
   let pre = swap(source.preMain);
   const post = swap(source.postMain);
-  const key = page && NAV_KEY[lang][page.slug];
+  /* kolmannen kielen sivu ei korosta valikkoa eikä merkitse kieltä nykyiseksi */
+  if (page && page.docLang) { pre = pre.split(' aria-current="page" lang="fi"').join(' lang="fi"').split(' aria-current="page" lang="et"').join(' lang="et"'); }
+  const key = page && !page.docLang && NAV_KEY[lang][page.slug];
   if (key) {
     pre = pre
       .replace(`<div class="dd" data-nav="${key}">`, `<div class="dd active" data-nav="${key}">`)
@@ -354,11 +370,12 @@ function chrome(lang, source, page, fiAbs, etAbs) {
   return { pre, post };
 }
 
-function head(lang, { title, desc, canon, fiAbs, etAbs, unpaired, noindex, jsonld, front }) {
+function head(lang, { title, desc, canon, fiAbs, etAbs, unpaired, noindex, jsonld, front, docLang = lang }) {
   const L = LANGS[lang];
+  const M = langMeta(lang, docLang);
   const ogAbs = (lang === 'fi' ? BASE : ET_BASE) + L.og;
   const alternates = unpaired
-    ? [`<link rel="alternate" hreflang="${lang === 'fi' ? 'fi-FI' : 'et-EE'}" href="${canon}">`, `<link rel="alternate" hreflang="x-default" href="${canon}">`]
+    ? [`<link rel="alternate" hreflang="${M.hreflang}" href="${canon}">`, `<link rel="alternate" hreflang="x-default" href="${canon}">`]
     : [`<link rel="alternate" hreflang="fi-FI" href="${fiAbs}">`, `<link rel="alternate" hreflang="et-EE" href="${etAbs}">`, `<link rel="alternate" hreflang="x-default" href="${fiAbs}">`];
   return `<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -368,7 +385,7 @@ ${canon ? `<link rel="canonical" href="${canon}">\n${alternates.join('\n')}` : '
 <meta property="og:title" content="${title}">
 <meta property="og:description" content="${desc}">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="${L.ogLocale}">${canon ? `\n<meta property="og:url" content="${canon}">` : ''}
+<meta property="og:locale" content="${M.ogLocale}">${canon ? `\n<meta property="og:url" content="${canon}">` : ''}
 <meta property="og:image" content="${ogAbs}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -395,6 +412,8 @@ function renderPage(lang, page, source, annotatedHtml) {
   const L = LANGS[lang];
   const isFront = page.slug === '';
   const unpaired = UNPAIRED[lang].includes(page.slug);
+  const docLang = page.docLang ?? lang;
+  if (page.docLang && !unpaired) throw new Error(`${L.src}: ${page.slug} on data-lang="${page.docLang}" — kolmannen kielen sivulla ei voi olla kieliparia (lisää UNPAIRED-listalle)`);
   const pairSlug = lang === 'fi' ? FI_TO_ET.get(page.slug) : ET_TO_FI.get(page.slug);
   if (!unpaired && pairSlug === undefined) throw new Error(`${L.src}: slugilla ${page.slug} ei ole paria eikä se ole UNPAIRED-listalla`);
   const fiSlug = lang === 'fi' ? page.slug : pairSlug;
@@ -404,17 +423,17 @@ function renderPage(lang, page, source, annotatedHtml) {
   const canon = L.abs(page.slug);
 
   /* authoring-attribuutit pois julkaistusta sivusta */
-  const cleanOpen = page.openTag.replace(/ data-(slug|title|desc|noindex)="[^"]*"/g, '');
+  const cleanOpen = page.openTag.replace(/ data-(slug|title|desc|noindex|lang)="[^"]*"/g, '');
   const pageHtml = cleanOpen + annotatedHtml.slice(page.openTag.length);
 
   const { pre, post } = chrome(lang, source, page, fiAbs, etAbs);
   const shim = isFront ? `<script>${SHIM}</script>\n` : '';
-  const jsonld = jsonLdFor(page, lang, canon);
+  const jsonld = jsonLdFor(page, lang, canon, docLang);
 
   const doc = `<!DOCTYPE html>
-<html lang="${L.htmlLang}">
+<html lang="${langMeta(lang, docLang).htmlLang}">
 <head>
-${head(lang, { title: page.title, desc: page.desc, canon, fiAbs, etAbs, unpaired, noindex: page.noindex, jsonld, front: isFront })}
+${head(lang, { title: page.title, desc: page.desc, canon, fiAbs, etAbs, unpaired, noindex: page.noindex, jsonld, front: isFront, docLang })}
 </head>
 <body class="t3">${pre}<main id="main">
 ${pageHtml}
@@ -501,7 +520,7 @@ function git(args) {
 
 /* Nykylähteestä riisutaan authoring-attribuutit ennen diffiä (rivimäärä ei muutu). */
 function normalizeCurrent(text) {
-  return text.replace(/ data-(slug|title|desc|noindex)="[^"]*"/g, '');
+  return text.replace(/ data-(slug|title|desc|noindex|lang)="[^"]*"/g, '');
 }
 
 function diffHunks(baseText, curText, tmp, tag) {
@@ -669,7 +688,9 @@ for (const lang of Object.keys(LANGS)) {
 }
 /* sivuavainten on oltava samat molemmissa kielissä (parittomia artikkeleita lukuun ottamatta) */
 {
-  const keys = lang => new Set(extractPages(sources[lang].mainInner, LANGS[lang].src).map(p => p.id).filter(id => !id.startsWith('p-art-')));
+  /* parittomat artikkelit ja kolmannen kielen sivut (data-lang) ovat kielikohtaisia — ei paria */
+  const keys = lang => new Set(extractPages(sources[lang].mainInner, LANGS[lang].src)
+    .filter(p => !p.id.startsWith('p-art-') && !p.docLang).map(p => p.id));
   const a = [...keys('fi')].sort(), b = [...keys('et')].sort();
   if (JSON.stringify(a) !== JSON.stringify(b)) throw new Error(`sivujen id-avaimet eroavat kielittäin:\n  fi: ${a}\n  et: ${b}`);
 }

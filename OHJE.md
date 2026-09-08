@@ -34,26 +34,26 @@ need üle ja käsitsi tehtud muudatused kaovad.
 
 ### Kuidas lisada uus ülevaade (artikkel)
 
-Iga artikkel on `src/et.html`-is üks `.page`-plokk pluss üks kaart Ülevaadete
+Iga artikkel on `src/et.html`-is üks `.page`-plokk pluss üks kaart Uudiste
 lehel. Kõige lihtsam on kopeerida olemasolev:
 
-1. Otsi failist `data-slug="ulevaated/reservitasu-2026"` — see on terve
+1. Otsi failist `data-slug="uudised/reservitasu-2026"` — see on terve
    artikliplokk `<div class="page" …> … </div>`. Kopeeri kogu plokk selle alla.
 2. Muuda koopias:
    - `id="p-art-<uus-nimi>"` — kordumatu, algab alati `p-art-`;
-   - `data-slug="ulevaated/<uus-slug>"` — slug on väiketähed, sidekriipsud,
+   - `data-slug="uudised/<uus-slug>"` — slug on väiketähed, sidekriipsud,
      ilma täpitähtedeta; sellest saab aadress
-     `samaenergia.ee/ulevaated/<uus-slug>/`;
+     `samaenergia.ee/uudised/<uus-slug>/`;
    - `data-title` (brauseri pealkiri) ja `data-desc` (140–160 tähemärki,
      otsingumootorite kirjeldus);
    - murupolk (`<p class="crumbs">`), `.ameta` kuupäev kujul
      `3. september 2026` (build loeb sellest avaldamiskuupäeva), pealkiri
      `<h1>`, sissejuhatus `.stand`, tekst `.prose`, allikad `.sources-list`.
-3. Otsi `data-slug="ulevaated"` (Ülevaadete leht) ja lisa `.postlist`-i
-   uus `<a class="post …" href="/ulevaated/<uus-slug>/">`-kaart — kopeeri
+3. Otsi `data-slug="uudised"` (Uudiste leht) ja lisa `.postlist`-i
+   uus `<a class="post …" href="/uudised/<uus-slug>/">`-kaart — kopeeri
    olemasolev kaart. Kui uus artikkel on esiletõstetud, vaheta `featured`-klass.
 4. Sama slugi ei lisata `scripts/build-pages.mjs`-i: pesastatud
-   `ulevaated/…`-slugid on lubatud, aga iga uus artikkel tuleb lisada
+   `uudised/…`-slugid on lubatud, aga iga uus artikkel tuleb lisada
    `UNPAIRED.et`-loendisse samas failis (üks rida) — muidu build keeldub.
    Küsi see üks rida Martinilt või lisa ise.
 5. Commit → Action buildib → kontrolli esikatselust. Soome artikli jaoks sama
@@ -142,7 +142,7 @@ kortti Ajankohtaista-sivulla. Helpointa on kopioida olemassa oleva:
 4. Lisää uusi slug tiedoston `scripts/build-pages.mjs` listaan `UNPAIRED.fi`
    (yksi rivi) — muuten build kieltäytyy. Pyydä rivi Martinilta tai lisää itse.
 5. Commit → Action buildaa → tarkista esikatselusta. Eestinkieliselle
-   artikkelille sama `src/et.html`-tiedostossa (`ulevaated/<slug>`,
+   artikkelille sama `src/et.html`-tiedostossa (`uudised/<slug>`,
    `UNPAIRED.et`).
 
 ### Julkaisu

@@ -28,14 +28,14 @@ const PLACEHOLDER_WAIVERS = [];
 const PAIRS = [
   ['', ''], ['aurinkosahko', 'paikeseelekter'], ['energiavarastot', 'energiasalvestid'],
   ['reservimarkkinat', 'reserviturg'], ['veni-energia', 'soleron-energy'], ['palvelut', 'teenused'],
-  ['meista', 'meist'], ['ajankohtaista', 'ulevaated'], ['yhteystiedot', 'kontakt'],
+  ['meista', 'meist'], ['ajankohtaista', 'uudised'], ['yhteystiedot', 'kontakt'],
   ['tietosuoja', 'andmekaitse'], ['kiitos', 'aitah'],
 ];
-const UNPAIRED = { fi: ['ajankohtaista/liityntarajoitus-2029'], et: ['ulevaated/reservitasu-2026'] };
+const UNPAIRED = { fi: ['ajankohtaista/liityntarajoitus-2029'], et: ['uudised/reservitasu-2026'] };
 const UNLISTED = new Set(['kiitos', 'aitah']);
 const LEGACY = {
   fi: { 'aurinko-ja-akku': 'aurinkosahko', 'prosessi': 'palvelut' },
-  et: { 'paike-ja-aku': 'paikeseelekter', 'reserviturud': 'reserviturg', 'protsess': 'teenused', 'uudised': 'ulevaated' },
+  et: { 'paike-ja-aku': 'paikeseelekter', 'reserviturud': 'reserviturg', 'protsess': 'teenused', 'ulevaated': 'uudised' },
 };
 const FI = PAIRS.map(p => p[0]);
 const ET = PAIRS.map(p => p[1]);
@@ -70,6 +70,249 @@ function resolves(path) {
   return false;
 }
 
+/* ================= SISÄLTÖVARTIJAT (content guards) =================
+   Lähdetiedostojen src/fi.html ja src/et.html NÄKYVÄ TEKSTI tarkistetaan virheitä vastaan,
+   jotka on korjattu 03.09., 06.09. ja 08.09.2026. Jokaisella vartijalla on syy ja päivämäärä.
+   Osuma kaataa buildin (tiedosto, rivi, osunut teksti). Vartijaa EI voi kytkeä pois
+   ympäristömuuttujalla; vartija poistetaan vain perustajan päätöksellä, joka kirjataan
+   projektin päätöslokiin (ks. CLAUDE.md).
+
+   Kuivaharjoitus mille tahansa tiedostolle (raportoi, ei kaada mitään):
+     node scripts/verify-pages.mjs --file <polku> [--lang fi|et]                              */
+
+/* Näkyvä teksti: <script>, <style>, HTML-kommentit ja tagit pois; entiteetit puretaan ja
+   välilyönnit tiivistetään. map[i] = merkin alkuperäinen tavuoffset -> rivinumero raporttiin. */
+function visibleText(html) {
+  const drop = new Uint8Array(html.length);
+  const mark = re => { for (const m of html.matchAll(re)) drop.fill(1, m.index, m.index + m[0].length); };
+  mark(/<!--[\s\S]*?-->/g);
+  mark(/<script\b[\s\S]*?<\/script>/gi);
+  mark(/<style\b[\s\S]*?<\/style>/gi);
+  mark(/<[^>]*>/g);
+  /* Lohkotason tagin kohdalle jää sanaraja (muuten "Tegevjuht"+"Vastutab" sulautuisivat yhdeksi
+     sanaksi); inline-tagit (em, b, a, span…) eivät katkaise sanaa. */
+  const INLINE = /^\/?(?:a|b|i|u|s|em|strong|span|sup|sub|small|abbr|code|kbd|mark|time|tspan|br|wbr)$/i;
+  const brk = new Uint8Array(html.length);
+  for (const m of html.matchAll(/<(\/?[a-zA-Z][\w-]*)/g)) if (!INLINE.test(m[1])) brk[m.index] = 1;
+  const ENT = { '&nbsp;': ' ', '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'", '&shy;': '', '&ndash;': '–', '&mdash;': '—' };
+  let text = '', map = [], lastWasSpace = true;
+  for (let i = 0; i < html.length;) {
+    if (drop[i]) { if (brk[i] && !lastWasSpace) { text += ' '; map.push(i); lastWasSpace = true; } i++; continue; }
+    let ch = html[i], step = 1;
+    if (ch === '&') {
+      const e = /^&(?:[a-zA-Z]+|#\d+);/.exec(html.slice(i, i + 10));
+      if (e) { ch = ENT[e[0]] ?? ' '; step = e[0].length; }
+    }
+    if (/\s/.test(ch) && ch !== ' ') {
+      if (!lastWasSpace) { text += ' '; map.push(i); lastWasSpace = true; }
+    } else if (ch !== '') { text += ch; map.push(i); lastWasSpace = false; }
+    i += step;
+  }
+  return { text, map };
+}
+
+/* Rivinumero alkuperäisessä tiedostossa. */
+function lineAt(html, off) { return html.slice(0, off).split('\n').length; }
+
+/* Elementtialueet luokan perusteella (tasapainotettu saman tagin laskenta) — luokkarajatut vartijat. */
+function classRanges(html, className) {
+  const out = [];
+  const open = new RegExp(`<([a-zA-Z][\\w-]*)\\b[^>]*\\bclass="[^"]*\\b${className}\\b[^"]*"[^>]*>`, 'g');
+  for (const m of html.matchAll(open)) {
+    if (m[0].endsWith('/>')) continue;
+    const tok = new RegExp(`<${m[1]}\\b|</${m[1]}>`, 'g');
+    tok.lastIndex = m.index;
+    let depth = 0, t, end = -1;
+    while ((t = tok.exec(html))) { depth += t[0][1] === '/' ? -1 : 1; if (depth === 0) { end = tok.lastIndex; break; } }
+    out.push([m.index, end < 0 ? html.length : end]);
+  }
+  return out;
+}
+
+/* A:n osumat, joiden lähin reuna on enintään dist merkin päässä B:n osumasta. */
+function nearMatches(text, aRe, bRe, dist) {
+  const bs = [...text.matchAll(bRe)].map(m => [m.index, m.index + m[0].length]);
+  return [...text.matchAll(aRe)].filter(a => {
+    const s = a.index, e = a.index + a[0].length;
+    return bs.some(([bS, bE]) => (bS >= e ? bS - e : s >= bE ? s - bE : 0) <= dist);
+  });
+}
+
+/* Vartijataulu. langs: 'fi' | 'et' | 'both'. scope: 'text' (näkyvä teksti) | 'raw' (merkkaus). */
+const GUARDS = [
+  /* --- luvut ja väitteet --- */
+  // 03.09: lukua ei ole Fingridin 10.2.2025 aineistossa; oikeat osuudet FCR-N 29 %, FCR-D 13 % / 18 %, FFR 54 %.
+  { id: 'fcrd-31', langs: 'both', why: '31 % FCR-D:n lähellä — virheellinen luku (03.09.2026)',
+    find: t => nearMatches(t, /(?<!\d)31\s?%/g, /FCR-D/g, 120) },
+  // 03.09: reservien osuudet ovat säätökokein todennettua KAPASITEETTIA, eivät "tuotettua" energiaa.
+  { id: 'reservi-tuottivat-fi', langs: 'fi', why: '"tuottivat" reservin lähellä — osuus on kapasiteettia, ei tuotantoa (03.09.2026)',
+    find: t => nearMatches(t, /tuottivat/gi, /reservi/gi, 120) },
+  // 03.09: sama sääntö viroksi.
+  { id: 'reservi-andsid-et', langs: 'et', why: '"andsid akud" reservi lähellä — osakaal on kvalifitseeritud võimsus, mitte toodang (03.09.2026)',
+    find: t => nearMatches(t, /andsid akud/gi, /reservi/gi, 120) },
+  // 03.09: todennettu määrä oli 158 -> sivuilla sanotaan "yli 150"; 162 on tarkistamaton luku.
+  { id: 'luku-162', langs: 'both', why: '162 reservitoimittajien/teenusepakkujate lähellä — laskenta oli 158, sivulla "yli 150" (03.09.2026)',
+    find: t => nearMatches(t, /(?<!\d)162(?!\d)/g, /reservitoimittaj|tasakaalustus|teenusepakkuja/gi, 60) },
+  /* --- tittelit --- */
+  // 06.09: toimitusjohtajaa ei ole nimitetty eikä rekisteröity; vartija pysyy, kunnes hallituksen
+  // nimitys ja kaupparekisteri-ilmoitus on tehty.
+  { id: 'titteli-tj', langs: 'both', why: 'toimitusjohtaja/tegevjuht — ei nimitettyä eikä rekisteröityä toimitusjohtajaa (06.09.2026)',
+    find: t => [...t.matchAll(/toimitusjohtaja\w*|tegevjuht\w*/gi)] },
+  // 08.09: "· perustaja" / "· asutaja" pudotettu titteleistä.
+  { id: 'titteli-perustaja', langs: 'both', why: '"· perustaja" / "· asutaja" — pudotettu titteleistä (08.09.2026)',
+    find: t => [...t.matchAll(/·\s*(perustaja|asutaja)/gi)] },
+  /* --- lupaukset --- */
+  // 08.09: arviot näyttävät, ne eivät lupaa. Rajattu osioihin steps/prod/faq/closer.
+  /* Toimeksianto rajasi tämän osioihin steps/prod/faq/closer; v17-kuivaharjoitus osoitti neljännen
+     esiintymän osiossa #aanestamme (div.vote), joten vartija kattaa koko näkyvän tekstin — laajempi
+     rajaus ei koskaan löydä vähempää kuin luokkarajattu. */
+  { id: 'lupaus-verbi', langs: 'both',
+    why: '"lupasi"/"lubas" leipätekstissä — arvio näyttää, ei lupaa (08.09.2026)',
+    find: (t, lang) => [...t.matchAll(lang === 'fi' ? /lupasi\w*/gi : /lubas\w*/gi)] },
+  // 08.09: sama päätös — ei "mikä oikeasti tulee" -tyyppistä lupausta.
+  { id: 'lupaus-oikeasti', langs: 'both', why: '"mikä oikeasti tulee" / "mis tegelikult tuleb" — lupaava muotoilu (08.09.2026)',
+    find: t => [...t.matchAll(/mikä oikeasti tulee|mis tegelikult tuleb/gi)] },
+  // 08.09: uutiskirjeen ilmestymistiheyttä ei luvata.
+  { id: 'uutiskirje-tiheys', langs: 'both', why: '"Kerran kuussa"/"Kord kuus" sähköpostin lähellä — ei uutiskirjelupausta (08.09.2026)',
+    find: t => nearMatches(t, /ker+an kuussa|kord kuus/gi, /sähköposti|e-post/gi, 200) },
+  /* --- palvelulupaus ja superlatiivit --- */
+  // 03.09 ja 08.09: SAMA ei ole ESCO eikä myy energiatehokkuuden EPC-sopimuksia.
+  { id: 'esco-epc', langs: 'both', why: '"energiatehokkuuden EPC" / "energiatõhususe EPC" — SAMA ei ole ESCO (03.09. ja 08.09.2026)',
+    find: t => [...t.matchAll(/energiatehokkuuden EPC|energiatõhususe EPC/gi)] },
+  // 03.09: todentamaton superlatiivi rahoituksen yhteydessä.
+  { id: 'tunnetusti-rahoitus', langs: 'both', why: '"tunnetusti" rahoituksen lähellä — todentamaton superlatiivi (03.09.2026)',
+    find: t => nearMatches(t, /tunnetusti/gi, /rahoit|rahast/gi, 80) },
+  /* --- kumppani- ja yritysnimet --- */
+  // 08.09: Scanoffice Oy sallittu VAIN suomenkielisellä sivustolla.
+  { id: 'scanoffice-et', langs: 'et', why: 'Scanoffice — sallittu vain FI-sivustolla (08.09.2026)',
+    find: t => [...t.matchAll(/Scanoffice/gi)] },
+  // 03.09: rahoitus- ja Energen-ajan yritysnimiä ei mainita sivustolla.
+  { id: 'kielletyt-nimet', langs: 'both', why: 'rahoitus-/Energen-ajan yritysnimi — ei mainita sivustolla (03.09.2026)',
+    find: t => [...t.matchAll(/Grenke|Svea|Salama Sähkö|EP Energy/gi)] },
+  /* --- viron kielen 03.09 korjaukset --- */
+  // 03.09 F6: Baltian irtaantuminen tapahtui 8.2.2025, ei 9.2.
+  { id: 'et-veebruar-9', langs: 'et', why: '"9. veebruaril 2025 lahkusid" — õige kuupäev on 8. veebruar (03.09.2026, F6)',
+    find: t => [...t.matchAll(/9\.\s*veebruaril 2025 lahkusid/gi)] },
+  // 03.09 F4: poistettu muotoilu.
+  { id: 'et-saaja-maksja', langs: 'et', why: '"saaja, mitte maksja" — eemaldatud sõnastus (03.09.2026, F4)',
+    find: t => [...t.matchAll(/saaja, mitte maksja/gi)] },
+  // 03.09: "very good price" käännettiin väärin.
+  { id: 'fi-merkittava-hinta', langs: 'fi', why: '"merkittävään hintaan" — virhekäännös ("very good price") (03.09.2026)',
+    find: t => [...t.matchAll(/merkittävään hintaan/gi)] },
+  /* --- luonnoksen jäämät lähdetiedostoissa (merkkaus, ei näkyvä teksti) --- */
+  // 03.09/08.09: mockupin katselmuslaput, hash-reititys, Google Fonts ja base64-kuvat eivät kuulu lähteisiin.
+  { id: 'mockup-aside-note', langs: 'both', scope: 'raw', why: '<aside class="note"> — mockupin katselmuslappu (03.09.2026)',
+    find: t => [...t.matchAll(/<aside\b[^>]*\bclass="[^"]*\bnote\b/g)] },
+  { id: 'mockup-review-pill', langs: 'both', scope: 'raw', why: 'review-pill — mockupin katselmuspainike (08.09.2026)',
+    find: t => [...t.matchAll(/review-pill/g)] },
+  { id: 'mockup-hero-variants', langs: 'both', scope: 'raw', why: 'id="hero-variants" — mockupin JSON-lohko (08.09.2026)',
+    find: t => [...t.matchAll(/id="hero-variants"/g)] },
+  { id: 'mockup-google-fonts', langs: 'both', scope: 'raw', why: 'fonts.googleapis.com — fontit ovat itse isännöityjä (03.09.2026)',
+    find: t => [...t.matchAll(/fonts\.googleapis\.com/g)] },
+  { id: 'mockup-hash-link', langs: 'both', scope: 'raw', why: 'href="#/" — hash-reititys korvattiin oikeilla URL:eilla (03.09.2026)',
+    find: t => [...t.matchAll(/href="#\//g)] },
+  { id: 'mockup-data-image', langs: 'both', scope: 'raw', why: 'data:image/ — base64-kuvat irrotetaan assets/-kansioon (03.09.2026)',
+    find: t => [...t.matchAll(/data:image\//g)] },
+];
+
+/* Yhden tiedoston vartijaosumat. Palauttaa [{id, line, text, why}]. */
+function guardHits(html, lang) {
+  const { text, map } = visibleText(html);
+  const hits = [];
+  for (const g of GUARDS) {
+    if (g.langs !== 'both' && g.langs !== lang) continue;
+    let ms;
+    if (g.scope === 'raw') ms = g.find(html, lang).map(m => [m.index, m[0]]);
+    else if (g.scope === 'scoped') {
+      const ranges = g.classes.flatMap(c => classRanges(html, c));
+      ms = g.find(text, lang)
+        .map(m => [map[m.index], m[0]])
+        .filter(([off]) => ranges.some(([s, e]) => off >= s && off < e));
+    } else ms = g.find(text, lang).map(m => [map[m.index], m[0]]);
+    for (const [off, matched] of ms) hits.push({ id: g.id, line: lineAt(html, off), text: matched, why: g.why });
+  }
+  return hits;
+}
+
+/* Läsnäolovartijat: osoite ja alv-tunnus molemmissa lähteissä; jokaisen listatun .page-sivun
+   data-desc 120–175 merkkiä (ylärajaksi 175 = etusivujen nykyiset kuvaukset 175/162 mahtuvat). */
+const DESC_MIN = 120, DESC_MAX = 175;
+const REQUIRED_IN_SOURCE = [
+  // 06.09: julkaistu käyntiosoite ja alv-tunnus kuuluvat molempiin lähteisiin.
+  ['Sörnäisten Rantatie 33 C', 'osoitepäätös 06.09.2026'],
+  ['FI36476833', 'alv-tunnus'],
+];
+
+/* --- kuivaharjoitusajo: node scripts/verify-pages.mjs --file <polku> [--lang fi|et] --- */
+{
+  const i = process.argv.indexOf('--file');
+  if (i > -1) {
+    const file = process.argv[i + 1];
+    const li = process.argv.indexOf('--lang');
+    const lang = li > -1 ? process.argv[li + 1] : (/et/i.test(file) ? 'et' : 'fi');
+    const html = readFileSync(file, 'utf8');
+    const hits = guardHits(html, lang);
+    const byId = new Map();
+    for (const h of hits) (byId.get(h.id) ?? byId.set(h.id, []).get(h.id)).push(h);
+    console.log(`KUIVAHARJOITUS ${file} (lang=${lang}) — ${hits.length} osumaa\n`);
+    for (const [id, hs] of byId) {
+      console.log(`${id}  (${hs.length}×)  ${hs[0].why}`);
+      for (const h of hs.slice(0, 6)) console.log(`   rivi ${h.line}: ${JSON.stringify(h.text)}`);
+      if (hs.length > 6) console.log(`   … ${hs.length - 6} muuta`);
+    }
+    for (const [needle, why] of REQUIRED_IN_SOURCE) {
+      if (!html.includes(needle)) console.log(`puuttuu: "${needle}" (${why})`);
+    }
+    const descs = [...html.matchAll(/<div class="page(?: [^"]*)?"([^>]*)>/g)].map(m => ({
+      slug: /data-slug="([^"]*)"/.exec(m[1])?.[1] ?? '?',
+      desc: /data-desc="([^"]*)"/.exec(m[1])?.[1] ?? '',
+      line: lineAt(html, m.index),
+    }));
+    for (const d of descs) {
+      const n = [...d.desc].length;
+      if (!n) console.log(`data-desc puuttuu: ${d.slug} (rivi ${d.line})`);
+      else if (n < DESC_MIN || n > DESC_MAX) console.log(`data-desc ${n} merkkiä (sallittu ${DESC_MIN}–${DESC_MAX}): ${d.slug || '(etusivu)'} rivi ${d.line}`);
+    }
+    process.exit(0);
+  }
+}
+
+/* --- varsinainen ajo: molemmat lähdetiedostot --- */
+for (const lang of ['fi', 'et']) {
+  const rel = `src/${lang}.html`;
+  const html = read(rel);
+  for (const h of guardHits(html, lang)) err(`${rel}:${h.line} — ${h.why} · osuma: ${JSON.stringify(h.text)}`);
+  for (const [needle, why] of REQUIRED_IN_SOURCE) {
+    if (!html.includes(needle)) err(`${rel} — vaadittu teksti puuttuu: "${needle}" (${why})`);
+  }
+  for (const m of html.matchAll(/<div class="page(?: [^"]*)?"([^>]*)>/g)) {
+    const slug = /data-slug="([^"]*)"/.exec(m[1])?.[1];
+    if (slug === undefined || UNLISTED.has(slug)) continue;
+    const desc = /data-desc="([^"]*)"/.exec(m[1])?.[1] ?? '';
+    const n = [...desc].length;
+    if (n < DESC_MIN || n > DESC_MAX) err(`${rel}:${lineAt(html, m.index)} — sivun ${slug || '(etusivu)'} data-desc ${n} merkkiä (sallittu ${DESC_MIN}–${DESC_MAX})`);
+  }
+}
+/* llms.txt: englanninkielinen tiivistelmä ei saa nimetä toimitusjohtajaa (06.09.2026). */
+if (/\bCEO\b/.test(read('llms.txt'))) err('llms.txt — CEO: toimitusjohtajaa ei ole nimitetty eikä rekisteröity (06.09.2026)');
+
+/* ================= sisältövartijat loppuvat ================= */
+
+/* Kolmannen kielen sivut: .page voi kantaa data-lang="en" (build-pages.mjs: PAGE_LANGS).
+   Sivun kieli ohjaa <html lang>-attribuuttia ja parittoman sivun omaa hreflangia; host ja
+   URL tulevat edelleen siitä lähdetiedostosta jossa sivu on. */
+const PAGE_LANGS = { en: { htmlLang: 'en', hreflang: 'en' } };
+const PAGE_LANG = new Map();
+for (const l of ['fi', 'et']) {
+  for (const m of read(`src/${l}.html`).matchAll(/<div class="page(?: [^"]*)?"([^>]*)>/g)) {
+    const slug = /data-slug="([^"]*)"/.exec(m[1])?.[1];
+    const dl = /data-lang="([^"]*)"/.exec(m[1])?.[1];
+    if (slug === undefined || !dl) continue;
+    if (!PAGE_LANGS[dl]) { err(`src/${l}.html — tuntematon data-lang="${dl}" sivulla ${slug}`); continue; }
+    PAGE_LANG.set(l + '|' + slug, dl);
+  }
+}
+
 const headers = read('_headers');
 const forms = [];
 
@@ -80,6 +323,8 @@ for (const p of pages) {
   const where = p.url;
   const isFront = p.slug === '';
   const canonExp = abs(p.lang, p.url);
+  const docLang = PAGE_LANG.get(p.lang + '|' + p.slug) ?? p.lang;
+  if (docLang !== p.lang && !p.unpaired) err(`${where} — data-lang="${docLang}" -sivulla ei saa olla kieliparia`);
 
   /* luonnosjäämät ja hash-linkit */
   if (/href="#\//.test(html)) err(`${where} — vanha #/-linkki jäljellä`);
@@ -101,7 +346,7 @@ for (const p of pages) {
   /* hreflang: parit kolmikkona, parittomat vain itseensä + x-default */
   const hl = [...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">/g)].map(m => [m[1], m[2]]);
   if (p.unpaired) {
-    const own = p.lang === 'fi' ? 'fi-FI' : 'et-EE';
+    const own = docLang === p.lang ? (p.lang === 'fi' ? 'fi-FI' : 'et-EE') : PAGE_LANGS[docLang].hreflang;
     const want = [[own, canonExp], ['x-default', canonExp]];
     if (JSON.stringify(hl) !== JSON.stringify(want)) err(`${where} — parittoman sivun hreflang väärin: ${JSON.stringify(hl)}`);
   } else {
@@ -146,7 +391,8 @@ for (const p of pages) {
   if (/<header class="header"[\s\S]*?<nav class="mobile-nav"[\s\S]*?<\/header>/.test(html)) err(`${where} — mobiilivalikko on headerin sisällä (backdrop-filter vangitsee position:fixed)`);
   if (!/<img src="\/assets\/mark\.png" alt="SAMA Energia"/.test(html)) err(`${where} — logon alt-teksti puuttuu`);
   if (count(html, /aria-expanded="false"/g) < 3) err(`${where} — aria-expanded puuttuu valikkonapeista`);
-  if (/<html lang="(fi|et)">/.exec(html)?.[1] !== p.lang) err(`${where} — html lang väärin`);
+  const wantHtmlLang = docLang === p.lang ? p.lang : PAGE_LANGS[docLang].htmlLang;
+  if (/<html lang="([a-z-]+)">/.exec(html)?.[1] !== wantHtmlLang) err(`${where} — html lang väärin (odotettu ${wantHtmlLang})`);
   if (!/<a href="[^"]*" lang="(fi|et)">(FI|EE)<\/a>/.test(html)) err(`${where} — kielivalitsimen lang-attribuutti puuttuu`);
 
   /* kommentit riisuttu julkaisusta: vain generointimerkintä saa jäädä */
@@ -314,8 +560,8 @@ for (const s of [...Object.keys(LEGACY.fi), ...Object.keys(LEGACY.et)]) if (FI_T
     for (const h of ['samaenergia\\.ee', 'www\\.samaenergia\\.ee']) if (!line(`^https://${h}/${old}/\\*\\s+https://samaenergia\\.fi/${old}/:splat\\s+301!\\s*$`)) err(`_redirects: vanhan FI-slugin ${old} peiliohjaus puuttuu hostilta ${h}`);
   }
   for (const [old, now] of Object.entries(LEGACY.et)) {
-    for (const h of ['samaenergia\\.ee', 'www\\.samaenergia\\.ee']) if (!line(`^https://${h}/${old}/\\*\\s+https://samaenergia\\.ee/${now}/\\s+301!\\s*$`)) err(`_redirects: vanhan ET-slugin ${old} ohjaus puuttuu hostilta ${h}`);
-    for (const h of ['samaenergia\\.fi', 'www\\.samaenergia\\.fi']) if (!line(`^https://${h}/${old}/\\*\\s+https://samaenergia\\.ee/${old}/:splat\\s+301!\\s*$`)) err(`_redirects: vanhan ET-slugin ${old} peiliohjaus puuttuu hostilta ${h}`);
+    for (const h of ['samaenergia\\.ee', 'www\\.samaenergia\\.ee']) if (!line(`^https://${h}/${old}/\\*\\s+https://samaenergia\\.ee/${now}/(?::splat)?\\s+301!\\s*$`)) err(`_redirects: vanhan ET-slugin ${old} ohjaus puuttuu hostilta ${h}`);
+    for (const h of ['samaenergia\\.fi', 'www\\.samaenergia\\.fi']) if (!line(`^https://${h}/${old}/\\*\\s+https://samaenergia\\.ee/(?:${old}|${now})/:splat\\s+301!\\s*$`)) err(`_redirects: vanhan ET-slugin ${old} peiliohjaus puuttuu hostilta ${h}`);
     if (line(`^/${old}/\\*\\s+/et/`)) err(`_redirects: vanhan ET-slugin ${old} yleinen uudelleenkirjoitus osoittaisi tyhjään`);
   }
   if (!line('^https://samaenergia\\.ee/\\s+/et/index\\.html\\s+200!\\s*$')) err('_redirects: .ee-juuren pakotettu uudelleenkirjoitus puuttuu');

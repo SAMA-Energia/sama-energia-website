@@ -619,7 +619,7 @@ Jokaisessa vaiheessa on nimetty vastuuhenkilö, ja saatte heihin suoran yhteyden
 
 MM
 Madis Maastik
-Myyntijohtaja · perustaja
+Myyntijohtaja
 
 Vastaa: asiakassuhteet, aggregaattorikumppanuudet, verkkovaatimukset ja rahoitusmallit. Hänen kauttaan kulkee kaikki ennen allekirjoitusta.
 Kaupallinen ja tekninen työ teollisten energiavarastojen, aurinkosähkön ja reservimarkkinoiden parissa Suomessa ja Virossa; dokumentaatio neljällä kielellä.
@@ -628,7 +628,7 @@ madis.maastik@samaenergia.fi
 
 MR
 Martin Rautio
-Talousjohtaja · perustaja
+Talousjohtaja
 
 Vastaa: säästölaskelmat, tarjoukset ja projektien koordinointi. Häneltä tulee arvioon taloudellinen osa.
 Koulutukseltaan kansainvälisen liiketoiminnan tradenomi (BBA).
@@ -1070,7 +1070,7 @@ Võrguettevõtja
 Kas objektil on päikeseelekter?—EiJahPlaanis
 
 Küsi tasuta hindamist
-Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hindamiseks. Vaadake andmekaitsetingimusi.
+Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hindamiseks. Vaadake privaatsuspoliitikat.
 
 Saatmine ei õnnestunud. Võite saata andmed ka otse e-postiga: madis.maastik@samaenergia.fi.
 
@@ -1495,7 +1495,7 @@ Igal projektil on nimeline vastutaja igas etapis, ja te saate nendega otse ühen
 
 MM
 Madis Maastik
-Müügijuht · asutaja
+Müügijuht
 
 Vastutab: kliendisuhted, agregaatoripartnerlused, võrgunõuded ja rahastusmudelid. Tema kaudu käib kogu suhtlus enne allkirja.
 Kaubanduslik ja tehniline töö tööstuslike energiasalvestite, päikeseelektri ja reservituruga Soomes ja Eestis; dokumentatsioon neljas keeles.
@@ -1504,7 +1504,7 @@ madis.maastik@samaenergia.fi
 
 MR
 Martin Rautio
-Finantsjuht · asutaja
+Finantsjuht
 
 Vastutab: säästuarvutused, pakkumised ja projektide koordineerimine. Tema käest tuleb hinnangu majanduslik osa.
 Hariduselt rahvusvahelise ärijuhtimise bakalaureus (BBA).
@@ -1574,9 +1574,9 @@ Vastab inimene, kes ka töö teeb.
 
 Kontakt ja hindamine
 
-# Ülevaated — SAMA Energia — https://samaenergia.ee/ulevaated/
+# Uudised — SAMA Energia — https://samaenergia.ee/uudised/
 
-Avaleht›Ülevaated
+Avaleht›Uudised
 
 Mida me turul näeme, ja mida me sellest järeldame.
 
@@ -1623,9 +1623,9 @@ Kirjutage aadressile info@samaenergia.fi. Vastame kirjalikult, ja kui küsimus p
 
 Küsi tasuta hindamist
 
-# Alates 2026 maksate reservide eest — SAMA Energia — https://samaenergia.ee/ulevaated/reservitasu-2026/
+# Alates 2026 maksate reservide eest — SAMA Energia — https://samaenergia.ee/uudised/reservitasu-2026/
 
-Avaleht›Ülevaated›Reservitasu 2026
+Avaleht›Uudised›Reservitasu 2026
 
 Reserviturg3. september 20266 min lugemist
 
@@ -1728,7 +1728,7 @@ Võrguettevõtja
 Kas objektil on päikeseelekter?—EiJahPlaanis
 
 Küsi tasuta hindamist
-Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hindamiseks. Vaadake andmekaitsetingimusi.
+Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hindamiseks. Vaadake privaatsuspoliitikat.
 
 Saatmine ei õnnestunud. Võite saata andmed ka otse e-postiga: madis.maastik@samaenergia.fi.
 
@@ -1736,11 +1736,11 @@ Aitäh. Võtame ühendust kahe tööpäeva jooksul.
 
 Kui teil on tarbimisandmed või pakkumine käepärast, saatke need kohe aadressile info@samaenergia.fi. See kiirendab hinnangut.
 
-# Andmekaitsetingimused — SAMA Energia — https://samaenergia.ee/andmekaitse/
+# Privaatsuspoliitika — SAMA Energia — https://samaenergia.ee/andmekaitse/
 
-Avaleht›Andmekaitse
+Avaleht›Privaatsuspoliitika
 
-Andmekaitsetingimused
+Privaatsuspoliitika
 
 Kogume ainult seda, mille ise meile annate. Me ei kasuta küpsiseid ega analüütikat. Siin on kirjas, mida töötleme, miks ja kui kaua.
 
