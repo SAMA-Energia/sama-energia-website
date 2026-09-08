@@ -70,9 +70,12 @@
   var dets=d.querySelectorAll('.faq details');
   dets.forEach(function(dt){dt.addEventListener('toggle',function(){if(dt.open){dets.forEach(function(o){if(o!==dt)o.open=false;});}});});
 
-  /* ---------- kohdekartoituslomake — Netlify Forms: AJAX (.sent), varapolkuna natiivi lähetys
-     action-kiitossivulle; ilman JS:ää selain lähettää suoraan actioniin. Molemmat lomakkeet. */
-  d.querySelectorAll('form[data-netlify]').forEach(function(form){
+  /* ---------- lomakkeet — Netlify Forms: AJAX (.sent), varapolkuna natiivi lähetys
+     action-kiitossivulle; ilman JS:ää selain lähettää suoraan actioniin.
+     08.09.2026: valinta luokan mukaan, EI data-netlify-attribuutin — Netlifyn build poistaa
+     data-netlify- ja netlify-honeypot-attribuutit julkaistavasta HTML:stä, joten attribuuttiin
+     perustuva valitsin ei osunut tuotannossa mihinkään eikä AJAX-polku koskaan ajautunut. */
+  d.querySelectorAll('form.lead-form').forEach(function(form){
     form.addEventListener('submit',function(e){
       e.preventDefault();
       var btn=form.querySelector('button[type="submit"]'),err=form.querySelector('.err');

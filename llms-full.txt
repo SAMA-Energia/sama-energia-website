@@ -377,7 +377,7 @@ Teidän ei tarvitse seurata markkinaa. Aggregaattorin automaattinen ohjaus vie a
 
 „Aina ei mene huonommin kuin pelätään. Joskus menee paremmin kuin toivotaan. Meidän työmme on auttaa teitä päättämään tietoisesti: ei pelosta eikä uskosta, vaan omien lukujenne pohjalta.“
 
-MMMadis Maastik, myyntijohtaja ja perustaja
+MMMadis Maastik, myyntijohtaja
 SAMA Energia
 
 Me rakennamme järjestelmän, aggregaattorin ohjelmisto hoitaa kaupankäynnin, ja te saatte optimoidut energiakulut. Kartoituksesta käyttöönottoon ja seurantaan, yhdellä yhteyshenkilöllä.
@@ -740,8 +740,6 @@ Kuivuri käy pari kuukautta vuodessa, mutta liittymä on iso koko vuoden. Miten 
 
 Lyhyemmät huomiot julkaisemme LinkedInissä.Tällä sivulla ovat pidemmät katsaukset, jotka voi lähettää kollegalle eteenpäin. Markkinauutiset ja yksittäiset luvut kulkevat LinkedInin kautta.
 
-LinkedIn
-
 Mikä aihe auttaisi teidän päätöstänne?
 Kirjoittakaa osoitteeseen info@samaenergia.fi. Vastaamme kirjallisesti, ja jos kysymys koskee monia, siitä tulee seuraava katsaus.
 
@@ -798,7 +796,7 @@ Fingrid, Energiavarastot reservimarkkinoilla — 10.2.2025: säätökokein toden
 Fingrid, Aggregointi reservimarkkinoilla — 3/2026: pienimmät tarjouskoot ja säätökokeet.
 
 MM
-Madis MaastikMyyntijohtaja ja perustaja, SAMA Energiamadis.maastik@samaenergia.fi
+Madis MaastikMyyntijohtaja, SAMA Energiamadis.maastik@samaenergia.fi
 
 Onko teidän liittymässänne vapaata kapasiteettia?
 Maksuton kartoitus vastaa siihen kirjallisesti, tuntikohtaisista kulutustiedoistanne, reservimarkkinaskenaarioineen.
@@ -1253,7 +1251,7 @@ Teie ei pea turgu jälgima. Agregaatori automaatne juhtimine viib aku iga tund k
 
 „Alati ei lähe halvemini, kui kardetakse. Vahel läheb paremini, kui loodetakse. Meie töö on aidata teil otsustada teadlikult: mitte hirmust ega uskumisest, vaid teie enda numbrite pealt.“
 
-MMMadis Maastik, müügijuht ja asutaja
+MMMadis Maastik, müügijuht
 SAMA Energia
 
 Meie ehitame süsteemi, agregaatori tarkvara teeb kauplemise, ja teie saate optimeeritud energiakulu. Hindamisest käivitamise ja seireni, ühe kontaktiga.
@@ -1616,8 +1614,6 @@ Kuivati töötab paar kuud aastas, aga liitumine on suur terve aasta. Kuidas poo
 
 Lühemad märkused avaldame LinkedInis.Siin lehel on pikemad ülevaated, mida saab kolleegile edasi saata. Turu-uudised ja üksikud arvud käivad meie LinkedIni kaudu.
 
-LinkedIn
-
 Milline teema aitaks teie otsust?
 Kirjutage aadressile info@samaenergia.fi. Vastame kirjalikult, ja kui küsimus puudutab paljusid, saab sellest järgmine ülevaade.
 
@@ -1680,7 +1676,7 @@ Elering, tasakaalustamisteenuste energia- ja võimsusturg — miinimumpakkumine 
 Elering, varustuskindluse aruanne 2025, lk 36–37 — 258 MW salvesteid 2028, 600 MW 2030.
 
 MM
-Madis MaastikMüügijuht ja asutaja, SAMA Energiamadis.maastik@samaenergia.fi
+Madis MaastikMüügijuht, SAMA Energiamadis.maastik@samaenergia.fi
 
 Kui suur see rida teie arvel on?
 Tasuta hindamine vastab sellele kirjalikult, teie tunnipõhiste tarbimisandmete pealt, koos reservituru stsenaariumidega.

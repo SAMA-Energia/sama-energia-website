@@ -159,8 +159,8 @@ const GUARDS = [
   { id: 'titteli-tj', langs: 'both', why: 'toimitusjohtaja/tegevjuht — ei nimitettyä eikä rekisteröityä toimitusjohtajaa (06.09.2026)',
     find: t => [...t.matchAll(/toimitusjohtaja\w*|tegevjuht\w*/gi)] },
   // 08.09: "· perustaja" / "· asutaja" pudotettu titteleistä.
-  { id: 'titteli-perustaja', langs: 'both', why: '"· perustaja" / "· asutaja" — pudotettu titteleistä (08.09.2026)',
-    find: t => [...t.matchAll(/·\s*(perustaja|asutaja)/gi)] },
+  { id: 'titteli-perustaja', langs: 'both', why: '"perustaja" / "asutaja" tittelin perässä — pudotettu titteleistä (08.09.2026)',
+    find: t => [...t.matchAll(/(?:·|\bja)\s*(perustaja|asutaja)\b/gi)] },
   /* --- lupaukset --- */
   // 08.09: arviot näyttävät, ne eivät lupaa. Rajattu osioihin steps/prod/faq/closer.
   /* Toimeksianto rajasi tämän osioihin steps/prod/faq/closer; v17-kuivaharjoitus osoitti neljännen

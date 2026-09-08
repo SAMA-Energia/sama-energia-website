@@ -237,7 +237,7 @@ function articleJsonLd(page, lang, canon, src, docLang = lang) {
     inLanguage: docLang,
     mainEntityOfPage: { '@type': 'WebPage', '@id': canon },
     image: (lang === 'fi' ? BASE : ET_BASE) + LANGS[lang].og,
-    author: { '@type': 'Person', name: 'Madis Maastik', jobTitle: lang === 'fi' ? 'Myyntijohtaja ja perustaja' : 'Müügijuht ja asutaja' },
+    author: { '@type': 'Person', name: 'Madis Maastik', jobTitle: lang === 'fi' ? 'Myyntijohtaja' : 'Müügijuht' },
     publisher: ORG,
   };
 }
