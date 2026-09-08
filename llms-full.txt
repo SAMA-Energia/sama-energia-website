@@ -14,31 +14,53 @@ Miten akku toimii?
 
 MaksutonEi sitoumuksiaKirjallinen arvio
 
-Yksi varasto. Kolme kassavirtaa. Tarvittaessa varavoima.
+Liittymä on omaisuutta. Mittarin takainen järjestelmä panee sen tuottamaan.
 
-Akku ei tee vain yhtä asiaa: se leikkaa huiput, ostaa halvalla ja on verkolle valmiina. Aurinkopaneeleja tai omaa tuotantoa siihen ei tarvita. Liittymä riittää.
+Liittymästä maksatte joka kuukausi. Sama liittymä voi myös tuottaa teille – kun sen takana on varasto, energiantuotanto ja älykäs ohjaus, joka päättää teidän eduksenne. Akku ei tee vain yhtä asiaa: se leikkaa huiput, ostaa halvalla ja on verkolle valmiina. Aurinkopaneeleja tai omaa tuotantoa siihen ei tarvita. Liittymä riittää.
+
+Yksi varasto. Kolme kassavirtaa. Tarvittaessa varavoima.
 
 Tehomaksu alas
 Akku leikkaa kulutushuiput ennen kuin ne päätyvät verkkolaskulle. Se on ensimmäinen rivi, joka laskullanne muuttuu.
+
+Tehomaksu: verkkoyhtiönne hinnasto
 
 Energiavarastot
 
 Pörssisähkö hyödyksi
 Lataa halvoilla tunneilla, purkaa kalliilla. Joka päivä, automaattisesti, tuotantoanne häiritsemättä.
 
+Tarkemmin
+Kallis tunti maksaa pörssihintana. Varasto pitää huipun alhaalla ja tekee arbitraasia: ostaa sähkön halvoilla tunneilla ja myy tai käyttää sen kalliilla – automaattisesti, tuotantoanne häiritsemättä.
+
 Miten akun päivä näyttää
 
 Reservimarkkinatulo
 Fingrid maksaa verkon tasapainottamiseen valmiina olevista akuista, myös niinä tunteina, jolloin akku vain odottaa. Liittyminen tapahtuu aggregaattorin kautta.
 
+Energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli 29 %. Lähde: Fingrid · 10.2.2025
+
 Reservimarkkinat selkokielellä
 
 Varavoima, kun verkko katkeaa
-Kriittiset laitteet jatkavat, kun verkko pettää: kuivuri, kylmävarasto tai tuotantolinja ei jää odottamaan. Edellyttää saarekekäyttöön mitoitettua toteutusta ja erotettua kriittistä piiriä; arvioidaan kohteittain.
+Kriittiset laitteet jatkavat, kun verkko pettää: kuivuri, kylmävarasto tai tuotantolinja ei jää odottamaan.
+
+Tarkemmin
+Edellyttää saarekekäyttöön mitoitettua toteutusta ja erotettua kriittistä piiriä; arvioidaan kohteittain.
 
 Energiavarastot
 
-Onko kohteessa aurinkosähköä tai onko se suunnitteilla? Akku tekee siitä paremman investoinnin: oma tuotanto omaan käyttöön, ylijäämä varastoon, ja sama akku reserveihin.Aurinkosähkö yrityksille
+Onko kohteessa aurinkosähköä tai onko se suunnitteilla? Aurinkovoimala tuottaa eniten keskipäivällä, kun hinta on yleensä alimmillaan; kulutuksenne ostaa illalla, kun hinta on korkea. Akku tekee siitä paremman investoinnin: oma tuotanto omaan käyttöön, ylijäämä varastoon, ja sama akku reserveihin.Aurinkosähkö yrityksille
+
+Etelä-Suomeen ei rakenneta uusia varastoliityntöjä ennen vuotta 2029 – liittymä, jonka takana on toimiva varasto, siirtyy kiinteistön mukana.
+
+Lähde: Fingrid, tiedote · 24.9.2025
+
+Tarjous jo kädessä?
+
+Tarkistamme, kestääkö sen takaisinmaksu todellisuuden. Maksutta, samoista kulutustiedoista, joiden varassa päätöksenne oikeasti tehdään. Jos tarjous on hyvä, sanomme senkin.
+
+Pyydä toinen mielipide
 
 Fingrid maksaa siitä, että akkunne on valmiina.
 
@@ -55,26 +77,6 @@ Reservimarkkinat selkokielellä
 Akku tasapainottaa, Fingrid maksaa valmiudesta. Sama tapahtuu satoja kertoja päivässä, automaattisesti.
 
 Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025
-
-Monta tekijää, yksi laskelma.
-
-Sama akku tuottaa eri kohteissa eri summan. Summa riippuu kulutuksestanne ja liittymästänne — ja ehdoista, jotka muut asettavat. Siksi emme arvaa lukua. Laskemme sen teidän kulutustiedoistanne. Laskelmassa on:
-
-Tehomaksu- ja pörssisähkösäästö, jokainen luku lähteineen.
-
-Reservitulo kolmena skenaariona, ei yhtenä lupauksena.
-
-Suositus: kannattaako akku teillä ja minkä kokoinen.
-
-Kahdessa arkipäivässä, ilman sitoumuksia. Pyydä maksuton kartoitus
-
-Teidän tietonne keskellä, muiden ehdot ympärillä — yksi laskelma.
-
-Tarjous jo kädessä?
-
-Luemme sen läpi maksutta: onko säästö laskettu teidän kulutustiedoistanne, onko reservitulo skenaario vai lupaus, onko verkkoyhtiöltä kysytty. Jos tarjous on hyvä, sanomme senkin.
-
-Pyydä toinen mielipide
 
 Kohteet, joissa akku maksaa itsensä nopeimmin takaisin.
 
@@ -1084,31 +1086,53 @@ Kuidas aku toimib?
 
 TasutaKohustustetaKirjalik hinnang
 
-Üks salvesti. Kolm rahavoogu. Vajadusel varutoide.
+Liitumine on vara. Arvestitagune süsteem paneb selle teenima.
 
-Aku ei tee ainult ühte asja: ta lõikab tipud, ostab odavalt ja on võrgule valmis. Päikesepaneele ega oma tootmist selleks vaja ei ole. Piisab liitumisest.
+Liitumise eest maksate iga kuu. Sama liitumine võib teile ka teenida – kui selle taga on salvesti, energia tootmine ja nutikas juhtimine, mis otsustab teie huvides. Aku ei tee ainult ühte asja: ta lõikab tipud, ostab odavalt ja on võrgule valmis. Päikesepaneele ega oma tootmist selleks vaja ei ole. Piisab liitumisest.
+
+Üks salvesti. Kolm rahavoogu. Vajadusel varutoide.
 
 Võimsustasu alla
 Aku lõikab tarbimistipud maha enne, kui need võrguarvele jõuavad. See on esimene rida, mis teie arvel muutub.
+
+Võimsustasu: teie võrguettevõtja hinnakiri
 
 Energiasalvestid
 
 Börsihind kasuks
 Laeb odavatel tundidel, annab energia välja kallitel. Iga päev, automaatselt, teie tootmist segamata.
 
+Täpsemalt
+Salvesti hoiab tipu madalal ja teenib arbitraažiga: ostab elektri odavatel tundidel ning müüb või kasutab seda kallitel – automaatselt, teie tootmist segamata.
+
 Kuidas aku päev välja näeb
 
 Reservituru tulu
 Elering maksab võrgu tasakaalustamiseks valmis olevate akude eest, ka tundidel, mil aku lihtsalt ootab. Liitumine käib agregaatori kaudu, kes on Eleringiga lepingu sõlminud teenusepakkuja.
 
+Elering ostab sagedusreserve iga päev – 2026. aasta juulis 76 MW FCR-i ja ligi 500 MW aFRR-i. Allikas: Elering · juuli 2026
+
 Reserviturg lihtsalt seletatuna
 
 Varutoide, kui võrk kaob
-Kriitilised seadmed töötavad edasi, kui võrk katkeb: kuivati, külmladu või tootmisliin ei jää ootama. Eeldab saartalitluseks dimensioneeritud lahendust ja eraldatud kriitilist ahelat; hinnatakse objektipõhiselt.
+Kriitilised seadmed töötavad edasi, kui võrk katkeb: kuivati, külmladu või tootmisliin ei jää ootama.
+
+Täpsemalt
+Eeldab saartalitluseks dimensioneeritud lahendust ja eraldatud kriitilist ahelat; hinnatakse objektipõhiselt.
 
 Energiasalvestid
 
-Kas objektil on päikeseelekter või on see plaanis? Aku teeb sellest parema investeeringu: oma toodang omaks tarbeks, ülejääk salvestisse ja sama aku reserviturule.Päikeseelekter ettevõtetele
+Kas objektil on päikeseelekter või on see plaanis? Päikesepark toodab kõige rohkem keskpäeval, kui päikest on võrgus üle ja hind madal; teie tarbimine ostab õhtul, kui hind on kõrge. Aku teeb sellest parema investeeringu: oma toodang omaks tarbeks, ülejääk salvestisse ja sama aku reserviturule.Päikeseelekter ettevõtetele
+
+Uus liitumine ei ole enam odav ega kiire: Elektrilevi liitumistasu on 331,15 eurot ampri kohta ilma käibemaksuta – liitumine, mille taga on toimiv salvesti, liigub kinnistuga kaasa.
+
+Allikad: ERR 16.08.2024; Elektrilevi, loetud 08.09.2026
+
+Pakkumine juba käes?
+
+Kontrollime, kas selle tasuvus peab reaalsusele vastu. Tasuta, samade tarbimisandmete pealt, mille alusel teie otsus tegelikult tehakse. Kui pakkumine on hea, ütleme ka seda.
+
+Küsi teist arvamust
 
 Alates 2026 maksab iga Eesti tarbija reservide eest. Aku omanik on sellel arvel teisel pool.
 
@@ -1125,26 +1149,6 @@ Kes selle raha saabreservide pakkujad, sh akud
 Iga tarbija maksab, valmis olev aku saab.
 
 Allikas: Elering, tasakaalustamisvõimsuse kulu · 2026
-
-Palju tegureid, üks arvutus.
-
-Sama aku annab eri objektidel eri tulemuse. Tulemus sõltub teie tarbimisest ja liitumisest — ja tingimustest, mille seavad teised. Sellepärast me numbrit ei arva. Arvutame selle teie tarbimisandmetest. Arvutuses on:
-
-Võimsustasu ja börsielektri sääst, iga arv koos allikaga.
-
-Reservitulu kolme stsenaariumina, mitte ühe lubadusena.
-
-Soovitus: kas aku tasub end teil ära ja kui suur see peaks olema.
-
-Kahe tööpäevaga, kohustusteta. Küsi tasuta hindamist
-
-Teie andmed keskel, teiste tingimused ümber — üks arvutus.
-
-Pakkumine juba käes?
-
-Loeme selle tasuta läbi: kas sääst on arvutatud teie tarbimisandmetest, kas reservitulu on stsenaarium või lubadus, kas võrguettevõtjalt on küsitud. Kui pakkumine on hea, ütleme ka seda.
-
-Küsi teist arvamust
 
 Objektid, kus aku end kõige kiiremini ära tasub.
 

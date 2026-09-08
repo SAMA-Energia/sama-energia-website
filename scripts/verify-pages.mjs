@@ -465,7 +465,12 @@ for (const p of pages) {
       } else if (d['@type'] === 'FAQPage') {
         if (!Array.isArray(d.mainEntity) || !d.mainEntity.length) err(`${where} — FAQPage ilman kysymyksiä`);
         for (const q of d.mainEntity ?? []) if (!q.name || !q.acceptedAnswer?.text) err(`${where} — FAQPage-kysymys puutteellinen`);
-        if (d.mainEntity.length !== count(html, /<details/g) - count(html, /<details class="more"/g)) err(`${where} — FAQPage-kysymysten määrä ≠ sivun details-lohkot`);
+        /* Lasketaan vain .faq-list-alueen details-lohkot: sivulla voi olla muitakin
+           laajentimia (lomakkeen .more, korttien .xp), jotka eivät kuulu FAQPageen.
+           Tiukempi kuin aiempi "kaikki details miinus .more" (08.09.2026). */
+        const faqDetails = classRanges(html, 'faq-list')
+          .reduce((n, [a, b]) => n + count(html.slice(a, b), /<details/g), 0);
+        if (d.mainEntity.length !== faqDetails) err(`${where} — FAQPage-kysymysten määrä (${d.mainEntity.length}) ≠ .faq-list-lohkon details-määrä (${faqDetails})`);
       } else if (d['@type'] === 'Article') {
         if (!d.headline || !/^\d{4}-\d{2}-\d{2}$/.test(d.datePublished ?? '') || d.author?.name !== 'Madis Maastik' || d.publisher?.name !== 'SAMA Energia' || d.inLanguage !== p.lang || d.mainEntityOfPage?.['@id'] !== canonExp) err(`${where} — Article-tiedot puutteelliset`);
       } else err(`${where} — odottamaton JSON-LD-tyyppi ${d['@type']}`);

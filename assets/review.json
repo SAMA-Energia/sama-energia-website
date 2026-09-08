@@ -7,17 +7,12 @@
   },
   {
    "page": "/",
-   "sectionId": "ratkaisu",
+   "sectionId": "epavarmuus",
    "kind": "new"
   },
   {
    "page": "/",
    "sectionId": "reservi-teaser",
-   "kind": "new"
-  },
-  {
-   "page": "/",
-   "sectionId": "epavarmuus",
    "kind": "new"
   },
   {
@@ -314,18 +309,12 @@
   },
   {
    "page": "/et/",
-   "sectionId": "lahendus",
-   "kind": "changed",
-   "prev": "Mida tarnime 01 PÄIKESEELEKTER Paneelid, inverterid ja paigaldus — dimensioneeritud teie tarbimise järgi. 02 ENERGIASALVESTID Tööstusklassi akusüsteemid ja nende juhtimine. 03 RESERVITURU ÜHENDUS Objekti liitmine reservituruga litsentseeritud agregaatori kaudu. Mida see teie objektil tähendab. Võimsustasud alla Salvesti lõikab tarbimistipud — mõju on näha võrguarvel. Arvutatakse teie enda tarbimisandmetest. ARVUTATAVLoe edasi Börsielekter kasuks Laadimine odavatel tundidel, kasutus kallitel. Optimeerimise väärtus arvutatakse tegelikest hindadest. ARVUTATAVLoe edasi Liitumise laiendamine välditav Salvesti võib anda tippvõimsuse üle liitumispiiri — laiendamise vajadust hinnatakse enne hanget. ARVUTATAVLoe edasi Oma toodang omaks tarbeks Päikeseelektri ülejääk salvestisse ja kasutusse siis, kui see on kõige väärtuslikum. ARVUTATAVLoe edasi Varutoide rikete ajal Saartalitluseks projekteeritud süsteem toidab kriitilist koormust. Kinnitatakse objektipõhiselt. OBJEKTIPÕHINELoe edasi Reservitulu lisana Agregaatori hinnanguna ja stsenaariumidena — ka eeldusel, et hinnad poolituvad. Mitte kunagi lubadusena. STSENAARIUMLoe edasi Küsige objektikaardistust"
-  },
-  {
-   "page": "/et/",
-   "sectionId": "reservi-teaser",
+   "sectionId": "teadmatus",
    "kind": "new"
   },
   {
    "page": "/et/",
-   "sectionId": "teadmatus",
+   "sectionId": "reservi-teaser",
    "kind": "new"
   },
   {
