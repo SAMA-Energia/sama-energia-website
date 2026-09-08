@@ -271,17 +271,18 @@
 <section class="section closer" id="kartoitus"><div class="wrap">
     <div>
       <h2>Aloitetaan <em>kulutustiedoistanne.</em></h2>
-      <p class="lead" style="margin-top:18px">Kahdessa arkipäivässä tiedätte, kannattaako akku kohteessanne ja miten. Kirjallisesti ja ilman sitoumuksia.</p>
-      <ul><li><svg viewBox="0 0 20 20" fill="none" stroke="#B08A1E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Kirjallinen arvio, jokainen luku lähteineen</li><li><svg viewBox="0 0 20 20" fill="none" stroke="#B08A1E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Verkkoyhtiön kannan selvittäminen ennen päätöstä</li><li><svg viewBox="0 0 20 20" fill="none" stroke="#B08A1E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Reservimarkkinaskenaariot juuri teidän kohteellenne</li><li><svg viewBox="0 0 20 20" fill="none" stroke="#B08A1E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Maksuton ja sitoumukseton, myös silloin kun tarjous on jo kädessä</li></ul>
+      <p class="lead" style="margin-top:18px">Kahdessa arkipäivässä tiedätte, kannattaako akku kohteessanne ja miten. Arvio on kaksi sivua, kirjallisesti ja ilman sitoumuksia:</p>
+      <ul><li><svg viewBox="0 0 20 20" fill="none" stroke="#B08A1E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Liittymä ja kulutusprofiili tuntikohtaisista tiedoistanne</li><li><svg viewBox="0 0 20 20" fill="none" stroke="#B08A1E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Tehon jako oman kulutuksen, arbitraasin ja reservimarkkinan kesken</li><li><svg viewBox="0 0 20 20" fill="none" stroke="#B08A1E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Kolme reservimarkkinaskenaariota lähteineen</li><li><svg viewBox="0 0 20 20" fill="none" stroke="#B08A1E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Verkkoyhtiön kanta ja se, mitä arvio ei sano</li></ul>
+        <p class="give">Te annatte: pääsyn kulutustietoihin (Datahub-valtuutus), yhden sähkölaskun ja pääkaavion.</p>
       <div class="direct">
         <div class="photo" aria-hidden="true">MM</div>
-        <div><b>Madis Maastik</b><span><a href="tel:+358449654614">+358 449 654 614</a> · WhatsApp <a href="https://wa.me/358466594879">+358 46 659 4879</a></span><span><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a></span></div>
+        <div><b>Madis Maastik</b><span><a href="tel:+358449654614">+358 449 654 614</a></span><span><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a></span></div>
       </div>
     </div>
     <form class="form lead-form" id="ctFormHome" name="kohdekartoitus" method="POST" action="/kiitos/" data-netlify="true" netlify-honeypot="bot-field">
       <div class="body">
         <input type="hidden" name="form-name" value="kohdekartoitus">
-        <p hidden aria-hidden="true"><label>Jättäkää tämä kenttä tyhjäksi: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <p hidden aria-hidden="true"><label>Älä täytä tätä kenttää <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
         <div class="grid">
           <div class="field"><label for="f-name-a">Nimi</label><input id="f-name-a" name="nimi" type="text" autocomplete="name" required></div>
           <div class="field"><label for="f-email-a">Sähköposti</label><input id="f-email-a" name="email" type="email" autocomplete="email" required></div>
@@ -301,8 +302,8 @@
           </div>
         </details>
         <button class="btn btn-primary btn-lg" type="submit">Pyydä maksuton kartoitus <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
-        <p class="fine">Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen. Lue <a href="/tietosuoja/">tietosuojaseloste</a>.</p>
-        <p class="err" hidden role="status" aria-live="polite">Lähetys ei onnistunut. Voitte lähettää tiedot myös suoraan sähköpostilla: <a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a>.</p>
+        <p class="fine">Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen, <a href="/tietosuoja/">tietosuojaseloste</a>.</p>
+        <p class="err" hidden role="status" aria-live="polite">Tarkistakaa nimi ja sähköposti. Jos lähetys ei onnistu, voitte lähettää tiedot myös suoraan osoitteeseen <a href="mailto:info@samaenergia.fi">info@samaenergia.fi</a>.</p>
       </div>
       <div class="ok" role="status" aria-live="polite">
         <div class="mark"><svg viewBox="0 0 20 20" fill="none" stroke="#1F1C18" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg></div>
@@ -362,11 +363,6 @@
         <g class="lb"><circle class="nd" cx="77" cy="310" r="5"/><circle class="nd" cx="136" cy="310" r="5"/><circle class="nd" cx="220" cy="310" r="5"/><circle class="nd" cx="400" cy="310" r="5"/><path class="ar" d="M220 270l-5 9h10zM220 304l-5-9h10z"/><path class="ar" d="M77 304l-5-9h10z"/><path class="ar" d="M136 304l-5-9h10z"/><path class="ar" d="M410 310l9-5v10zM454 310l-9-5v10z"/></g>
         <g class="lb"><text x="220" y="66" text-anchor="middle" class="nl">Energiavarasto</text><text x="220" y="84" text-anchor="middle" class="ns">125 kW – useita MW</text><text x="250" y="334" text-anchor="middle" class="ns">Pääkeskus</text><text x="77" y="340" text-anchor="middle" class="nl">Teidän kohteenne</text><text x="77" y="358" text-anchor="middle" class="ns">kulutus ja huiput</text><text x="75" y="160" text-anchor="middle" class="nl">Aurinkosähkö</text><text x="75" y="178" text-anchor="middle" class="ns">jos on tai tulee</text><text x="400" y="340" text-anchor="middle" class="nl">Liittymä</text><text x="400" y="358" text-anchor="middle" class="ns">se, joka teillä jo on</text><text x="548" y="130" text-anchor="end" class="nl">Sähköverkko</text><text x="548" y="148" text-anchor="end" class="ns">verkkoyhtiö · Fingridin reservit</text></g>
       </svg>
-    </div>
-    <div class="facts reveal" aria-label="Kaksi mitoituslukua">
-      <div><b>125 kW / 261 kWh</b><span>yhden Ralos Beast -yksikön teho ja kapasiteetti: LFP-kemia, ulkoasennukseen sopiva kaappi</span></div>
-      <div><b>1 MW / 2 MWh</b><span>tyypillinen 1:2-mitoitus isommassa kohteessa: teho kertoo, paljonko reserviä voitte tarjota, kapasiteetti, kuinka pitkään</span></div>
-      <p class="src">Lähde: <a href="https://ralos.fi/ratkaisut/ralos-beast" target="_blank" rel="noopener">Ralos Oy, Ralos Beast</a> · luettu 2.9.2026</p>
     </div>
   </div>
 </section>
@@ -433,13 +429,13 @@
 <section class="section" id="toimitus">
   <div class="wrap">
     <div class="intro-split">
-      <h2>Mitä toimitamme, ja miksi <em>juuri nyt.</em></h2>
-      <p class="lead">Laitteet valitaan kohteenne mukaan, ei varaston. Mutta ajoitus on osa ratkaisua: juuri nyt Suomessa on varastosta saatavilla markkinoilla todistettuja akkuja erittäin hyvään hintaan.</p>
+      <h2>Mitä toimitamme – ja mitä <em>laitteilta vaadimme.</em></h2>
+      <p class="lead">Laitteet valitaan kohteenne mukaan, ei varaston. Turvallisuus, takuu ja huolto ovat arviossa kirjattuina, eivät pienellä präntillä.</p>
     </div>
     <div class="principles three">
-      <article class="principle reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="15" height="10" rx="2"/><path d="M19 10h2v4h-2M7 10v4M11 10v4"/></svg></div><h3>Teollisuusluokan akusto ja invertteri</h3><p>Ulkoasennukseen sopiva kaappi, invertteri ja ohjaus. Kokoluokka 125 kW:n yksiköstä useisiin megawatteihin, mitoitettuna liittymän ja kulutusprofiilin mukaan.</p></article>
-      <article class="principle reveal d1"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4l6 6-9 9H5v-6z"/><path d="M12 6l6 6"/></svg></div><h3>Asennus ja käyttöönotto Suomessa</h3><p>Sähköasennukset ja käyttöönotto tekee asennuskumppanimme JSM Automaatiosähkö Oy (Sastamala), joka on erikoistunut aurinkosähköön, akustoihin ja reservimarkkina-akkuihin.</p></article>
-      <article class="principle reveal d2"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></div><h3>Toimitus viikoissa, ei kuukausissa</h3><p>Osa laitteista on varastossa Suomessa (Ralos Oy, Tampere), mikä lyhentää toimitusajan viikkoihin. Kun markkina ja hinta ovat kohdallaan, kannattaa liikkua, ja me kerromme, milloin ne ovat.</p></article>
+      <article class="principle reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></div><h3>Teollisuusluokan järjestelmä</h3><p>Ulkoasennukseen sopiva varastokaappi, invertteri ja ohjaus, mitoitettuna liittymänne ja kulutusprofiilinne mukaan – yhdestä yksiköstä usean yksikön puistoon.</p></article>
+      <article class="principle reveal d1"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Turvallisuus ja takuu</h3><p>Vaadimme valmistajalta LFP-kemiaa, kennotason valvonnalla varustettua akunhallintaa, lämpötilanhallintaa, ulko-olosuhteisiin tarkoitettua kaappia sekä CE- ja kuljetussertifikaatteja. Valmistajan takuu ja huoltoehdot ovat arviossa omalla rivillään. <a href="/laitevaatimukset/">Kaikki vaatimukset →</a></p></article>
+      <article class="principle reveal d2"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M6 20V9l6-5 6 5v11"/><path d="M10 20v-5h4v5"/></svg></div><h3>Asennus, toimitus ja huolto</h3><p>Asennusta johtaa asennuspäällikkömme yhdessä kumppaneiden kanssa; osa laitteista on Suomen varastossa, mikä lyhentää toimitusajan viikkoihin. Käyttöönoton jälkeen järjestelmää valvovat aggregaattori ja me, huolto kulkee sopimuksen mukaan. Juuri nyt Suomessa on varastosta saatavilla markkinoilla todistettuja akkuja erittäin hyvään hintaan; kun markkina ja hinta ovat kohdallaan, kannattaa liikkua, ja me kerromme, milloin ne ovat.</p></article>
     </div>
   </div>
 </section>
@@ -641,13 +637,44 @@
 <section class="cta-strip"><div class="wrap"><div class="box"><div><h2>Katsotaan, mitä akku tuottaisi <em>teidän</em> liittymänne takana.</h2><p>Maksuton kartoitus, kirjallinen arvio kolmena skenaariona, ei sitoumuksia.</p></div><div class="acts"><a class="btn btn-primary btn-lg" href="/yhteystiedot/">Pyydä maksuton kartoitus <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg></a></div></div></div></section>
 </div>
 
+<!-- ══════════════════ LAITEVAATIMUKSET ══════════════════ -->
+<div class="page" id="p-laitevaatimukset" data-slug="laitevaatimukset" data-title="Laitevaatimuksemme — SAMA Energia" data-desc="Mitä vaadimme jokaiselta akkuvalmistajalta dokumentoituna ennen kuin tarjoamme sen laitetta: kemia, akunhallinta, sertifikaatit, rajapinnat, takuu ja huolto.">
+  <section class="subhero plain">
+    <div class="wrap">
+      <div>
+        <p class="crumbs"><a href="/">Etusivu</a><span>›</span><span>Laitevaatimukset</span></p>
+        <h1>Laite<em>vaatimuksemme.</em></h1>
+        <p class="lead">Tämän listan pyydämme jokaiselta valmistajalta dokumentoituna ennen kuin tarjoamme sen laitetta – ja se koskee jokaista kohdetta, johon asennamme. Tuotelukuja täällä ei ole – ne ovat arviossa kohteen mukaan.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section"><div class="wrap"><dl class="reqs"><div><dt><span class="num">01</span>Kemia</dt><dd>LFP eli litiumrautafosfaatti – vakain teollinen akkukemia ulkoasennukseen.</dd></div><div><dt><span class="num">02</span>Akunhallinta</dt><dd>Kennotason valvonta: jännite ja lämpötila jokaisesta kennosta, suoja ylilataukselta ja syväpurkaukselta.</dd></div><div><dt><span class="num">03</span>Lämpötilanhallinta</dt><dd>Aktiivinen jäähdytys ja lämmitys, jotta järjestelmä toimii meidän ilmastossamme täydellä teholla ympäri vuoden.</dd></div><div><dt><span class="num">04</span>Kaappi</dt><dd>Ulko-olosuhteisiin tarkoitettu kaappi valmistajan määrittämällä suojausluokalla; palosuojaratkaisu valmistajan dokumentaatiossa.</dd></div><div><dt><span class="num">05</span>Sertifikaatit</dt><dd>CE-vaatimustenmukaisuus, teollisten litiumakkujen turvallisuusstandardi (esim. IEC 62619) ja kuljetustesti (UN 38.3) – dokumentit ennen tilausta, ei sen jälkeen.</dd></div><div><dt><span class="num">06</span>Rajapinnat</dt><dd>Avoin rajapinta aggregaattorille ja valvonnalle (esim. Modbus TCP/IP), jotta ohjaus ei ole yhdestä toimittajasta kiinni.</dd></div><div><dt><span class="num">07</span>Verkko</dt><dd>Verkkoyhtiön liittymis- ja suojausvaatimusten täyttäminen; valmistaja toimittaa tiedot, joita liittymishakemus tarvitsee.</dd></div><div><dt><span class="num">08</span>Takuu</dt><dd>Kirjalliset takuuehdot vuosina ja sykleinä, sallittu kapasiteetin lasku ja se, kuka vastaa mistäkin viasta – arviossa omalla rivillään.</dd></div><div><dt><span class="num">09</span>Huolto ja varaosat</dt><dd>Huolto ja varaosat Suomessa sovitulla vasteajalla; dokumentaatio suomeksi tai englanniksi.</dd></div></dl></div></section>
+  <section class="section band-warm"><div class="wrap"><div class="mfr"><h2>Valmistajille ja <em>maahantuojille.</em></h2><p>Jos laitteenne täyttää listan ja haluatte Suomen ja Viron markkinoille, kirjoittakaa <a href="mailto:info@samaenergia.fi">info@samaenergia.fi</a>. Mitä me annamme: kaksi markkinaa, aggregaattorikumppani kummallakin, asennuskumppanit ja arvioon perustuva myynti, joka ei lupaa laitteelta enempää kuin se tekee.</p></div></div></section>
+  <section class="cta-strip"><div class="wrap"><div class="box"><div><h2>Sopiiko <em>teidän</em> kohteenne?</h2><p>Maksuton kartoitus kertoo, millainen järjestelmä liittymänne taakse mahtuu ja mitä se siellä tuottaisi.</p></div><div class="acts"><a class="btn btn-primary btn-lg" href="/yhteystiedot/">Pyydä maksuton kartoitus <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg></a></div></div></div></section>
+</div>
+
+<!-- ══════════════════ EQUIPMENT REQUIREMENTS (EN) ══════════════════ -->
+<div class="page" id="p-equipment-requirements" data-slug="equipment-requirements" data-lang="en" data-title="Equipment requirements — SAMA Energia" data-desc="What we ask every battery manufacturer to document before we offer its equipment: chemistry, management, certificates, interfaces, warranty and service.">
+  <section class="subhero plain">
+    <div class="wrap">
+      <div>
+        <p class="crumbs"><a href="/">Home</a><span>›</span><span>Equipment requirements</span></p>
+        <h1>Our equipment <em>requirements.</em></h1>
+        <p class="lead">This is the list we ask every manufacturer to document before we offer its equipment – and it applies to every site where we install. No product figures here – those are in the site assessment.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section"><div class="wrap"><dl class="reqs"><div><dt><span class="num">01</span>Chemistry</dt><dd>LFP (lithium iron phosphate) – the most stable industrial battery chemistry for outdoor installation.</dd></div><div><dt><span class="num">02</span>Battery management</dt><dd>Cell-level monitoring: voltage and temperature per cell, protection against overcharge and deep discharge.</dd></div><div><dt><span class="num">03</span>Thermal management</dt><dd>Active cooling and heating so the system runs at full power year-round in the Nordic climate.</dd></div><div><dt><span class="num">04</span>Enclosure</dt><dd>Outdoor-rated cabinet with the manufacturer-specified ingress protection; fire-protection concept in the manufacturer documentation.</dd></div><div><dt><span class="num">05</span>Certificates</dt><dd>CE conformity, the industrial lithium battery safety standard (e.g. IEC 62619) and the transport test (UN 38.3) – documents before the order, not after.</dd></div><div><dt><span class="num">06</span>Interfaces</dt><dd>Open interface for the aggregator and monitoring (e.g. Modbus TCP/IP), so control does not depend on a single supplier.</dd></div><div><dt><span class="num">07</span>Grid</dt><dd>Compliance with the distribution operator’s connection and protection requirements; the manufacturer supplies the data the connection application needs.</dd></div><div><dt><span class="num">08</span>Warranty</dt><dd>Written warranty terms in years and cycles, permitted capacity degradation, and who is liable for which failure – a separate line in the assessment.</dd></div><div><dt><span class="num">09</span>Service and spare parts</dt><dd>Service and spare parts in Finland or Estonia with an agreed response time; documentation in the local language or English.</dd></div></dl></div></section>
+  <section class="section band-warm"><div class="wrap"><div class="mfr"><h2>For manufacturers and <em>importers.</em></h2><p>If your equipment meets the list and you want to enter the Finnish and Estonian markets, write to <a href="mailto:info@samaenergia.fi">info@samaenergia.fi</a>. What we bring: two markets, an aggregator partner in each, installation partners, and assessment-based selling that never promises more from the equipment than it delivers.</p></div></div></section>
+</div>
+
 <!-- ══════════════════ VENI-ENERGIA ══════════════════ -->
 <div class="page" id="p-aggregaattori" data-slug="veni-energia" data-title="Aggregaattori ja VENI Energia — SAMA Energia" data-desc="Mitä aggregaattori tekee, miten liittyminen Fingridin reservimarkkinoille etenee neljässä vaiheessa ja kuka on aggregaattorikumppanimme Suomessa: VENI Energia.">
 <section class="subhero">
   <div class="wrap">
     <div>
       <p class="crumbs"><a href="/">Etusivu</a><span>›</span><a href="/reservimarkkinat/">Reservimarkkinat</a><span>›</span><span>Aggregaattori: VENI Energia</span></p>
-      <h1>Aggregaattori vie akkunne markkinoille. Meillä se on <em>VENI Energia.</em></h1>
+      <h1>Aggregaattori vie akkunne markkinoille. Suomessa se on <em>VENI Energia.</em></h1>
       <p class="lead">Fingridin reservimarkkinoille ei osallistu yksittäinen tehdas vaan reservitoimittaja, joka kokoaa monta kohdetta yhdeksi tarjoukseksi, läpäisee Fingridin kokeet ja ohjaa akkuja automaattisesti. Tällä sivulla kerromme, mitä aggregaattori tekee, miten liittyminen etenee ja kuka on kumppanimme Suomessa.</p>
       <div class="hero-cta" style="margin-top:26px"><a class="btn btn-primary" href="/yhteystiedot/">Pyydä maksuton kartoitus <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg></a><a class="btn btn-ghost" href="/reservimarkkinat/">Reservimarkkinat selkokielellä</a></div>
     </div>
@@ -656,6 +683,13 @@
       <div><b>yli 150</b><span>reservitoimittajaa Fingridin luettelossa 27.8.2026, aggregaattorit mukaan lukien</span></div>
       <p class="src">Lähteet: <a href="https://www.fingrid.fi/contentassets/c59a6b9b7dbe4ea49200652ac3757962/320262-aggregointi-tietopaketti-nettisivuille.pdf" target="_blank" rel="noopener">Fingrid, Aggregointi reservimarkkinoilla</a> · 3/2026; <a href="https://www.fingrid.fi/globalassets/dokumentit/fi/sahkomarkkinat/reservit/reservimarkkinatoimijat.pdf" target="_blank" rel="noopener">Fingrid, reservitoimittajat</a> · 27.8.2026</p>
     </div>
+  </div>
+</section>
+
+<section class="section" id="jarjestelma">
+  <div class="wrap">
+    <div class="intro-split wide"><h2>Näin kokonaisuus <em>toimii.</em></h2><p class="lead">Kohteen kulutus, aurinkosähkö ja akku ovat liittymän takana. Liittymispisteen mittaus kertoo, paljonko tehoa on vapaana; VENI ohjaa akkua, tekee tarjoukset ja tilittää tuoton; markkinoita on kaksi: Fingridin reservit ja sähköpörssi.</p></div>
+    <div class="sysgrid"><div class="sysfig reveal"><svg class="sysdiag flow" viewBox="0 0 806 320" role="img" aria-label="VENI Energia"><defs><marker id="fa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8A6A12"/></marker></defs><g fill="none" stroke="#8A6A12" stroke-width="2"><path d="M206 132H236" marker-end="url(#fa)"/><path d="M400 132H430" marker-end="url(#fa)"/><path d="M600 112C616 112 616 84 632 84" marker-end="url(#fa)"/><path d="M600 152C616 152 616 180 632 180" marker-end="url(#fa)"/></g><rect x="20" y="24" width="186" height="216" rx="14" fill="#F6EED3" stroke="#E2D6B4" stroke-width="1.4"/><text x="113" y="50" text-anchor="middle" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14" font-weight="600" fill="#1F1C18">Teidän kohde</text><rect x="38" y="64" width="150" height="36" rx="8" fill="#fff" stroke="#E2D6B4"/><text x="113" y="87" text-anchor="middle" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13" fill="#1F1C18">Kulutus</text><rect x="38" y="114" width="150" height="36" rx="8" fill="#fff" stroke="#E2D6B4"/><text x="113" y="137" text-anchor="middle" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13" fill="#1F1C18">Aurinkosähkö</text><rect x="38" y="164" width="150" height="36" rx="8" fill="#fff" stroke="#E2D6B4"/><text x="113" y="187" text-anchor="middle" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13" fill="#1F1C18">Akku</text><rect x="240" y="100" width="160" height="64" rx="12" fill="#FBF6E6" stroke="#E2D6B4" stroke-width="1.4"/><text x="320.0" y="128.0" text-anchor="middle" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13" font-weight="600" fill="#1F1C18">Liittymispiste</text><text x="320.0" y="146.0" text-anchor="middle" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13" font-weight="600" fill="#1F1C18">ja mittaus</text><rect x="434" y="92" width="166" height="80" rx="12" fill="#F6EED3" stroke="#E2D6B4" stroke-width="1.4"/><text x="517.0" y="119.0" text-anchor="middle" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="14" font-weight="600" fill="#1F1C18">VENI Energia</text><text x="517.0" y="137.0" text-anchor="middle" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="12" fill="#4E483F">ohjaus, tarjoukset,</text><text x="517.0" y="155.0" text-anchor="middle" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="12" fill="#4E483F">tilitys</text><rect x="636" y="52" width="150" height="64" rx="12" fill="#FBF6E6" stroke="#E2D6B4" stroke-width="1.4"/><text x="711.0" y="71.0" text-anchor="middle" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#1F1C18">Fingrid · reservit</text><text x="711.0" y="89.0" text-anchor="middle" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="12" fill="#4E483F">FCR-N · FCR-D</text><text x="711.0" y="107.0" text-anchor="middle" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="12" fill="#4E483F">aFRR · mFRR</text><rect x="636" y="148" width="150" height="64" rx="12" fill="#FBF6E6" stroke="#E2D6B4" stroke-width="1.4"/><text x="711.0" y="176.0" text-anchor="middle" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#1F1C18">Sähköpörssi</text><text x="711.0" y="194.0" text-anchor="middle" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="12" fill="#4E483F">spot · intraday</text><rect x="20" y="262" width="766" height="42" rx="10" fill="#0E1726"/><text x="403" y="288" text-anchor="middle" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="13" fill="#F6F1E6">Kohteen kulutus on aina etusijalla. Markkinoille menee se, mikä liittymästä jää yli – tunneittain.</text></svg></div><div class="sysrows reveal d1"><div><b>Kohde</b><p>Kulutus, aurinkosähkö ja akku liittymän takana – akku lataa ja purkaa liittymän rajoissa.</p></div><div><b>Ohjaus</b><p>VENI lukee liittymispisteen mittausta, tekee tarjoukset joka tunnille ja ohjaa akkua kannattavimpaan tuotteeseen.</p></div><div><b>Etusija</b><p>Kohteen oma kulutus on aina etusijalla. Markkinoille menee se, mikä liittymästä jää yli – tunneittain, kulutusprofiilinne mukaan, ei yhdellä kiinteällä rajalla koko vuodeksi.</p></div><div><b>Markkinat</b><p>Fingridin reservit ja sähköpörssi samasta akusta – monimarkkinapalvelu.</p></div></div></div>
   </div>
 </section>
 
@@ -714,7 +748,7 @@
           <b>VENI Energia Oy</b>
           <div class="role">Aggregaattorikumppanimme Suomessa · Fingridin reservimarkkinat</div>
           <span>Perustettu 1996. Pääkonttori Hämeenlinnassa, toimisto Tampereella. Energiapalveluyhtiö, jonka palveluita ovat sähkönhankinta, energialaskujen tarkastus ja mittauspalvelut. Yli 10 000 suomalaista yritys- ja julkista asiakasta; osa VENI Energy Groupia, jolla on yli 45 000 asiakasta Pohjoismaissa, Saksassa ja Espanjassa.</span>
-          <span><b>Huomatkaa:</b> VENIn julkinen sivusto kertoo sähkönhankinnasta, ei reservimarkkinoista. Aggregointi ja toteutuneet akkutuotot ovat heidän omassa esityksessään, jonka käymme kanssanne läpi kartoituksessa. Emme siis lähetä teitä lukemaan sivustolta jotain, mitä siellä ei ole.</span>
+          <span>Reservimarkkinapuoli, ohjaus ja toteutuneet akkutuotot käydään läpi VENIn omasta esityksestä kartoituksessa, ja ne kirjataan teidän lukuinanne kirjalliseen arvioon.</span>
           <a class="site" href="https://www.venienergia.fi/" target="_blank" rel="noopener">venienergia.fi <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4H4v12h12v-4M11 3h6v6M17 3l-8 8"/></svg></a>
         </div>
       </div>
@@ -857,7 +891,7 @@
       <p class="lead">Jokaisessa vaiheessa on nimetty vastuuhenkilö, ja saatte heihin suoran yhteyden. Alla olevat numerot ovat heidän omiaan, eivät vaihteen.</p>
     </div>
     <div class="team">
-      <article class="person reveal"><div class="top"><div class="photo" aria-hidden="true">MM</div><div><h3>Madis Maastik</h3><div class="role">Myyntijohtaja</div></div></div><p><b>Vastaa:</b> asiakassuhteet, aggregaattorikumppanuudet, verkkovaatimukset ja rahoitusmallit. Hänen kauttaan kulkee kaikki ennen allekirjoitusta.</p><p>Kaupallinen ja tekninen työ teollisten energiavarastojen, aurinkosähkön ja reservimarkkinoiden parissa Suomessa ja Virossa; dokumentaatio neljällä kielellä.</p><p class="contact"><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a><br>+358 449 654 614 · WhatsApp +358 46 659 4879</p></article>
+      <article class="person reveal"><div class="top"><div class="photo" aria-hidden="true">MM</div><div><h3>Madis Maastik</h3><div class="role">Myyntijohtaja</div></div></div><p><b>Vastaa:</b> asiakassuhteet, aggregaattorikumppanuudet, verkkovaatimukset ja rahoitusmallit. Hänen kauttaan kulkee kaikki ennen allekirjoitusta.</p><p>Kaupallinen ja tekninen työ teollisten energiavarastojen, aurinkosähkön ja reservimarkkinoiden parissa Suomessa ja Virossa; dokumentaatio neljällä kielellä.</p><p class="contact"><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a><br>+358 449 654 614</p></article>
       <article class="person reveal d1"><div class="top"><div class="photo" aria-hidden="true">MR</div><div><h3>Martin Rautio</h3><div class="role">Talousjohtaja</div></div></div><p><b>Vastaa:</b> säästölaskelmat, tarjoukset ja projektien koordinointi. Häneltä tulee arvioon taloudellinen osa.</p><p>Koulutukseltaan kansainvälisen liiketoiminnan tradenomi (BBA).</p><p class="contact"><a href="mailto:martin.rautio@samaenergia.fi">martin.rautio@samaenergia.fi</a><br>+358 40 701 9099</p></article>
       <article class="person reveal d2"><div class="top"><div class="photo" aria-hidden="true">VP</div><div><h3>Viljar Petersell</h3><div class="role">Asennuspäällikkö</div></div></div><p><b>Vastaa:</b> asennuksen toteutus ja laatu kohteessa, aurinkosähkö- ja aurinkokattoratkaisut.</p><p>Yli kuusi vuotta aurinkosähköjärjestelmien rakentamista yritys- ja yksityiskohteissa, myös kattoon integroituina. Taustaltaan peltiseppä, kokemusta suurista kohteista.</p><p class="contact">+358 40 635 3245</p></article>
     </div>
@@ -914,6 +948,12 @@
       <div><dt>Kantaverkkoyhtiöt</dt><dd>Fingrid ja Elering<small>Molempien reservimarkkinat, aggregaattorin kautta</small></dd></div>
       <div><dt>Dokumentaatio</dt><dd>Neljällä kielellä<small>Arvio, luvat ja sopimukset teidän kielellänne</small></dd></div>
     </dl>
+  </div>
+</section>
+
+<section class="section" id="valmistajille">
+  <div class="wrap">
+    <div class="intro-split wide"><h2>Valmistajille ja <em>maahantuojille.</em></h2><div><p class="lead">Laitevalikoimamme ei ole kiinni yhdessä valmistajassa. Lista, jonka jokaisen laitteen on täytettävä, on julkinen – ja se on myös ovi uusille valmistajille ja maahantuojille.</p><div class="acts mfr-acts"><a class="link-arrow" href="/laitevaatimukset/">Laitevaatimuksemme <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg></a><a class="link-arrow" href="/equipment-requirements/" hreflang="en">In English <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg></a></div></div></div>
   </div>
 </section>
 
@@ -1054,17 +1094,18 @@
 <section class="section band-warm closer" style="padding-top:24px"><div class="wrap">
     <div>
       <h1>Aloitetaan <em>kulutustiedoistanne.</em></h1>
-      <p class="lead" style="margin-top:18px">Kahdessa arkipäivässä tiedätte, kannattaako akku kohteessanne ja miten. Kirjallisesti ja ilman sitoumuksia.</p>
-      <ul><li><svg viewBox="0 0 20 20" fill="none" stroke="#B08A1E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Kirjallinen arvio, jokainen luku lähteineen</li><li><svg viewBox="0 0 20 20" fill="none" stroke="#B08A1E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Verkkoyhtiön kannan selvittäminen ennen päätöstä</li><li><svg viewBox="0 0 20 20" fill="none" stroke="#B08A1E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Reservimarkkinaskenaariot juuri teidän kohteellenne</li><li><svg viewBox="0 0 20 20" fill="none" stroke="#B08A1E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Maksuton ja sitoumukseton, myös silloin kun tarjous on jo kädessä</li></ul>
+      <p class="lead" style="margin-top:18px">Kahdessa arkipäivässä tiedätte, kannattaako akku kohteessanne ja miten. Arvio on kaksi sivua, kirjallisesti ja ilman sitoumuksia:</p>
+      <ul><li><svg viewBox="0 0 20 20" fill="none" stroke="#B08A1E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Liittymä ja kulutusprofiili tuntikohtaisista tiedoistanne</li><li><svg viewBox="0 0 20 20" fill="none" stroke="#B08A1E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Tehon jako oman kulutuksen, arbitraasin ja reservimarkkinan kesken</li><li><svg viewBox="0 0 20 20" fill="none" stroke="#B08A1E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Kolme reservimarkkinaskenaariota lähteineen</li><li><svg viewBox="0 0 20 20" fill="none" stroke="#B08A1E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Verkkoyhtiön kanta ja se, mitä arvio ei sano</li></ul>
+        <p class="give">Te annatte: pääsyn kulutustietoihin (Datahub-valtuutus), yhden sähkölaskun ja pääkaavion.</p>
       <div class="direct">
         <div class="photo" aria-hidden="true">MM</div>
-        <div><b>Madis Maastik</b><span><a href="tel:+358449654614">+358 449 654 614</a> · WhatsApp <a href="https://wa.me/358466594879">+358 46 659 4879</a></span><span><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a></span></div>
+        <div><b>Madis Maastik</b><span><a href="tel:+358449654614">+358 449 654 614</a></span><span><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a></span></div>
       </div>
     </div>
     <form class="form lead-form" id="ctForm" name="kohdekartoitus" method="POST" action="/kiitos/" data-netlify="true" netlify-honeypot="bot-field">
       <div class="body">
         <input type="hidden" name="form-name" value="kohdekartoitus">
-        <p hidden aria-hidden="true"><label>Jättäkää tämä kenttä tyhjäksi: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <p hidden aria-hidden="true"><label>Älä täytä tätä kenttää <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
         <div class="grid">
           <div class="field"><label for="f-name-b">Nimi</label><input id="f-name-b" name="nimi" type="text" autocomplete="name" required></div>
           <div class="field"><label for="f-email-b">Sähköposti</label><input id="f-email-b" name="email" type="email" autocomplete="email" required></div>
@@ -1084,8 +1125,8 @@
           </div>
         </details>
         <button class="btn btn-primary btn-lg" type="submit">Pyydä maksuton kartoitus <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
-        <p class="fine">Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen. Lue <a href="/tietosuoja/">tietosuojaseloste</a>.</p>
-        <p class="err" hidden role="status" aria-live="polite">Lähetys ei onnistunut. Voitte lähettää tiedot myös suoraan sähköpostilla: <a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a>.</p>
+        <p class="fine">Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen, <a href="/tietosuoja/">tietosuojaseloste</a>.</p>
+        <p class="err" hidden role="status" aria-live="polite">Tarkistakaa nimi ja sähköposti. Jos lähetys ei onnistu, voitte lähettää tiedot myös suoraan osoitteeseen <a href="mailto:info@samaenergia.fi">info@samaenergia.fi</a>.</p>
       </div>
       <div class="ok" role="status" aria-live="polite">
         <div class="mark"><svg viewBox="0 0 20 20" fill="none" stroke="#1F1C18" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg></div>
@@ -1094,6 +1135,19 @@
       </div>
     </form>
   </div></section>
+<section class="section" id="yhteystiedot-lista">
+  <div class="wrap">
+    <div class="intro-split wide"><h2>Kolme ihmistä ja <em>yksi osoite.</em></h2><p class="lead">Kirjoittakaa tai soittakaa suoraan sille, jonka aihe se on. Lomakkeen täyttäminen ei ole pakollista – se vain nopeuttaa vastausta.</p></div>
+    <div class="contacts">
+      <article class="person ccard reveal"><div class="top"><div class="photo" aria-hidden="true">MR</div><div><h3>Martin Rautio</h3><div class="role">Talousjohtaja</div></div></div><p class="duty">Kannattavuuslaskelmat, tarjoukset, sopimukset</p><p class="contact"><a href="mailto:martin.rautio@samaenergia.fi">martin.rautio@samaenergia.fi</a><br><a href="tel:+358407019099">+358 40 701 9099</a></p></article>
+      <article class="person ccard reveal"><div class="top"><div class="photo" aria-hidden="true">VP</div><div><h3>Viljar Petersell</h3><div class="role">Asennuspäällikkö</div></div></div><p class="duty">Asennus, kohde, toteutus ja laatu</p><p class="contact"><a href="tel:+358406353245">+358 40 635 3245</a></p></article>
+      <article class="person ccard reveal"><div class="top"><div class="photo" aria-hidden="true">MM</div><div><h3>Madis Maastik</h3><div class="role">Myyntijohtaja</div></div></div><p class="duty">Kartoitus, aggregaattorit, asiakassuhteet</p><p class="contact"><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a><br><a href="tel:+358449654614">+358 449 654 614</a></p></article>
+      <div class="person ccard co reveal"><h3>Yritys</h3><ul><li>SAMA Energia Oy</li><li>Sörnäisten Rantatie 33 C, 00500 Helsinki</li><li>Y-tunnus 3647683-3</li><li>ALV-tunnus FI36476833</li><li><a href="mailto:info@samaenergia.fi">info@samaenergia.fi</a></li><li><a href="tel:+358449654614">+358 449 654 614</a></li></ul></div>
+    </div>
+    <p class="cnote">Vastaamme kahden arkipäivän kuluessa, myös silloin kun vastaus on „ei kannata“. Työkielet: suomi, viro, englanti.</p>
+  </div>
+</section>
+
 </div>
 
 <!-- ══════════════════ KIITOS (lomakkeen kiitossivu — ei navigaatiossa, ei sitemapissa, noindex) ══════════════════ -->
@@ -1105,7 +1159,7 @@
     <p class="lead">Palaamme asiaan arkipäivän kuluessa. Jos asia on kiireellinen, tavoitatte meidät suoraan:</p>
     <div class="direct" style="max-width:560px">
       <div class="photo" aria-hidden="true">MM</div>
-      <div><b>Madis Maastik</b><span><a href="tel:+358449654614">+358 449 654 614</a> · WhatsApp <a href="https://wa.me/358466594879">+358 46 659 4879</a></span><span><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a></span></div>
+      <div><b>Madis Maastik</b><span><a href="tel:+358449654614">+358 449 654 614</a></span><span><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a></span></div>
     </div>
     <div class="hero-cta" style="margin-top:26px"><a class="btn btn-ghost" href="/palvelut/">Näin se etenee</a><a class="btn btn-ghost" href="/">Takaisin etusivulle</a></div>
   </div>
@@ -1146,7 +1200,7 @@
       <div><a class="logo" href="/" aria-label="SAMA Energia"><img src="/assets/mark-night.png" alt="SAMA Energia" width="133" height="34"></a><p class="tagline">Aurinkosähkö, teolliset energiavarastot ja reservimarkkinaliityntä yrityksille Suomessa ja Virossa.</p></div>
       <div><p class="fh">Yhteystiedot</p><ul><li><a href="mailto:info@samaenergia.fi">info@samaenergia.fi</a></li><li><a href="tel:+358449654614">+358 449 654 614</a></li><li>SAMA Energia Oy</li><li>Sörnäisten Rantatie 33 C, 00500 Helsinki</li><li>Y-tunnus 3647683-3 · ALV-tunnus FI36476833</li></ul></div>
       <div><p class="fh">Ratkaisut</p><ul><li><a href="/aurinkosahko/">Aurinkosähkö</a></li><li><a href="/energiavarastot/">Energiavarastot</a></li><li><a href="/reservimarkkinat/">Reservimarkkinat</a></li><li><a href="/veni-energia/">Aggregaattori: VENI Energia</a></li><li><a href="/palvelut/">Palvelut</a></li></ul></div>
-      <div><p class="fh">Yritys</p><ul><li><a href="/meista/">Meistä</a></li><li><a href="/yhteystiedot/">Yhteystiedot</a></li><li><a href="/ajankohtaista/">Ajankohtaista</a></li><li><a href="/tietosuoja/">Tietosuoja</a></li></ul></div>
+      <div><p class="fh">Yritys</p><ul><li><a href="/meista/">Meistä</a></li><li><a href="/yhteystiedot/">Yhteystiedot</a></li><li><a href="/ajankohtaista/">Ajankohtaista</a></li><li><a href="/laitevaatimukset/">Laitevaatimukset</a></li><li><a href="/tietosuoja/">Tietosuoja</a></li></ul></div>
     </div>
     <div class="bottom"><span>© 2026 SAMA Energia Oy</span><div class="lang" aria-label="Kieli / Keel"><a href="/et/" lang="et">EE</a><a href="/" aria-current="page" lang="fi">FI</a></div></div>
   </div>

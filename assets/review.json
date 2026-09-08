@@ -121,13 +121,53 @@
    "kind": "new"
   },
   {
+   "page": "/laitevaatimukset/",
+   "sectionId": "rev-laitevaatimukset-1",
+   "kind": "new"
+  },
+  {
+   "page": "/laitevaatimukset/",
+   "sectionId": "rev-laitevaatimukset-2",
+   "kind": "new"
+  },
+  {
+   "page": "/laitevaatimukset/",
+   "sectionId": "rev-laitevaatimukset-3",
+   "kind": "new"
+  },
+  {
+   "page": "/laitevaatimukset/",
+   "sectionId": "rev-laitevaatimukset-4",
+   "kind": "new"
+  },
+  {
+   "page": "/equipment-requirements/",
+   "sectionId": "rev-equipment-requirements-1",
+   "kind": "new"
+  },
+  {
+   "page": "/equipment-requirements/",
+   "sectionId": "rev-equipment-requirements-2",
+   "kind": "new"
+  },
+  {
+   "page": "/equipment-requirements/",
+   "sectionId": "rev-equipment-requirements-3",
+   "kind": "new"
+  },
+  {
    "page": "/veni-energia/",
    "sectionId": "rev-veni-energia-1",
    "kind": "new"
   },
   {
    "page": "/veni-energia/",
-   "sectionId": "rev-veni-energia-2",
+   "sectionId": "jarjestelma",
+   "kind": "new"
+  },
+  {
+   "page": "/veni-energia/",
+   "sectionId": "rev-veni-energia-3",
    "kind": "new"
   },
   {
@@ -147,7 +187,7 @@
   },
   {
    "page": "/veni-energia/",
-   "sectionId": "rev-veni-energia-6",
+   "sectionId": "rev-veni-energia-7",
    "kind": "new"
   },
   {
@@ -202,7 +242,12 @@
   },
   {
    "page": "/meista/",
-   "sectionId": "rev-meista-6",
+   "sectionId": "valmistajille",
+   "kind": "new"
+  },
+  {
+   "page": "/meista/",
+   "sectionId": "rev-meista-7",
    "kind": "new"
   },
   {
@@ -238,6 +283,11 @@
   {
    "page": "/yhteystiedot/",
    "sectionId": "rev-yhteystiedot-2",
+   "kind": "new"
+  },
+  {
+   "page": "/yhteystiedot/",
+   "sectionId": "yhteystiedot-lista",
    "kind": "new"
   },
   {
@@ -377,13 +427,38 @@
    "kind": "new"
   },
   {
+   "page": "/seadmete-nouded/",
+   "sectionId": "rev-seadmete-nouded-1",
+   "kind": "new"
+  },
+  {
+   "page": "/seadmete-nouded/",
+   "sectionId": "rev-seadmete-nouded-2",
+   "kind": "new"
+  },
+  {
+   "page": "/seadmete-nouded/",
+   "sectionId": "rev-seadmete-nouded-3",
+   "kind": "new"
+  },
+  {
+   "page": "/seadmete-nouded/",
+   "sectionId": "rev-seadmete-nouded-4",
+   "kind": "new"
+  },
+  {
    "page": "/soleron-energy/",
    "sectionId": "rev-soleron-energy-1",
    "kind": "new"
   },
   {
    "page": "/soleron-energy/",
-   "sectionId": "rev-soleron-energy-2",
+   "sectionId": "susteem",
+   "kind": "new"
+  },
+  {
+   "page": "/soleron-energy/",
+   "sectionId": "rev-soleron-energy-3",
    "kind": "new"
   },
   {
@@ -403,7 +478,7 @@
   },
   {
    "page": "/soleron-energy/",
-   "sectionId": "rev-soleron-energy-6",
+   "sectionId": "rev-soleron-energy-7",
    "kind": "new"
   },
   {
@@ -458,7 +533,12 @@
   },
   {
    "page": "/meist/",
-   "sectionId": "rev-meist-6",
+   "sectionId": "tootjatele",
+   "kind": "new"
+  },
+  {
+   "page": "/meist/",
+   "sectionId": "rev-meist-7",
    "kind": "new"
   },
   {
@@ -494,6 +574,11 @@
   {
    "page": "/kontakt/",
    "sectionId": "rev-kontakt-2",
+   "kind": "new"
+  },
+  {
+   "page": "/kontakt/",
+   "sectionId": "kontaktid",
    "kind": "new"
   },
   {

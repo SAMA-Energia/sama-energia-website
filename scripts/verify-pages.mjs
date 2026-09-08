@@ -28,10 +28,11 @@ const PLACEHOLDER_WAIVERS = [];
 const PAIRS = [
   ['', ''], ['aurinkosahko', 'paikeseelekter'], ['energiavarastot', 'energiasalvestid'],
   ['reservimarkkinat', 'reserviturg'], ['veni-energia', 'soleron-energy'], ['palvelut', 'teenused'],
+  ['laitevaatimukset', 'seadmete-nouded'],
   ['meista', 'meist'], ['ajankohtaista', 'uudised'], ['yhteystiedot', 'kontakt'],
   ['tietosuoja', 'andmekaitse'], ['kiitos', 'aitah'],
 ];
-const UNPAIRED = { fi: ['ajankohtaista/liityntarajoitus-2029'], et: ['uudised/reservitasu-2026'] };
+const UNPAIRED = { fi: ['ajankohtaista/liityntarajoitus-2029', 'equipment-requirements'], et: ['uudised/reservitasu-2026'] };
 const UNLISTED = new Set(['kiitos', 'aitah']);
 const LEGACY = {
   fi: { 'aurinko-ja-akku': 'aurinkosahko', 'prosessi': 'palvelut' },

@@ -69,8 +69,8 @@ function serve() {
 
 /* ---------- mitattavat sivut ja kuvitukset ---------- */
 const PAGES = {
-  fi: [{ slug: 'home', url: '/' }, { slug: 'reservimarkkinat', url: '/reservimarkkinat/' }, { slug: 'energiavarastot', url: '/energiavarastot/' }, { slug: 'palvelut', url: '/palvelut/' }, { slug: 'liityntarajoitus-2029', url: '/ajankohtaista/liityntarajoitus-2029/' }],
-  et: [{ slug: 'home', url: '/et/' }, { slug: 'reserviturg', url: '/reserviturg/' }, { slug: 'energiasalvestid', url: '/energiasalvestid/' }, { slug: 'teenused', url: '/teenused/' }, { slug: 'reservitasu-2026', url: '/ulevaated/reservitasu-2026/' }],
+  fi: [{ slug: 'home', url: '/' }, { slug: 'reservimarkkinat', url: '/reservimarkkinat/' }, { slug: 'energiavarastot', url: '/energiavarastot/' }, { slug: 'palvelut', url: '/palvelut/' }, { slug: 'liityntarajoitus-2029', url: '/ajankohtaista/liityntarajoitus-2029/' }, { slug: 'veni-energia', url: '/veni-energia/' }],
+  et: [{ slug: 'home', url: '/et/' }, { slug: 'reserviturg', url: '/reserviturg/' }, { slug: 'energiasalvestid', url: '/energiasalvestid/' }, { slug: 'teenused', url: '/teenused/' }, { slug: 'reservitasu-2026', url: '/uudised/reservitasu-2026/' }, { slug: 'soleron-energy', url: '/soleron-energy/' }],
 };
 const ILLUS = [
   { n: 1, name: 'hero-trace', sel: '.hero-bg svg' },
@@ -83,6 +83,7 @@ const ILLUS = [
   { n: 8, name: 'figure', sel: '.article .figure svg' },
   { n: 9, name: 'html', sel: '.queue, .day-notes, .day .legend, .structure, .steps', html: true },
   { n: 10, name: 'system', sel: '.subhero .system svg' },
+  { n: 11, name: 'sysdiag', sel: '.sysfig svg' },
 ];
 const NAMES = { 1: 'Hero trace (etusivu)', 2: 'Viisi tekijää (etusivu)', 3: 'Kassavirtakorttien sparklinet (etusivu)', 4: 'Vaaka: etusivun kortti + reservisivun .sizing', 5: 'Kohdepiktogrammit (etusivu)', 6: 'Akun päivä (energiavarastot / energiasalvestid)', 7: 'Tuoton arviointi (reservimarkkinat / reserviturg)', 8: 'Artikkelin kuvio (liityntärajoitus 2029 / reservitasu 2026)', 9: 'HTML-kaaviot (.queue, .day-notes, .legend, .structure, .steps)', 10: 'Järjestelmäpiirros (Energiavarastot / Energiasalvestid)' };
 

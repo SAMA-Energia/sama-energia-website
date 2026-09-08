@@ -834,3 +834,37 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
 .rev-add{background:rgba(201,162,39,.22);box-shadow:inset 0 -2px 0 var(--gold-2);border-radius:2px}
 .rev-del-mark{color:#A8452E;text-decoration:line-through;text-decoration-thickness:1.5px;font-size:.82em;opacity:.72;margin:0 .18em}
 .rev-hide-del .rev-del-mark{display:none}
+
+/* ─── v17-port 08.09.2026: Laitevaatimukset-sivut, valmistajalohko, aggregaattorin
+   järjestelmälohko ja yhteystietokortit. Kortit perivät .person-tyylin; vain erot alla. ─── */
+.reqs{display:grid;gap:0;max-width:80ch;margin:0}
+.reqs div{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:6px 28px;padding:18px 0;border-bottom:1px solid var(--line)}
+.reqs div:first-child{border-top:1px solid var(--line)}
+.reqs dt{font:600 16px/1.4 var(--font-body);color:var(--ink);display:flex;gap:12px;align-items:baseline}
+.reqs dt .num{font:500 13px/1 var(--font-body);color:var(--gold-deep);letter-spacing:.04em}
+.reqs dd{margin:0;font-size:15.5px;line-height:1.55;color:var(--ink-2)}
+.mfr{max-width:76ch}
+.mfr h2{margin-bottom:12px}
+.mfr p{font-size:17px;line-height:1.6;color:var(--ink-2)}
+.mfr p a,.principle p a{color:var(--gold-deep);font-weight:500}
+.mfr-acts{margin-top:14px;display:flex;gap:24px;flex-wrap:wrap}
+.sysgrid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,4vw,48px);align-items:start;margin-top:clamp(24px,3vw,36px)}
+.sysfig{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.sysdiag{width:100%;height:auto;display:block}
+.sysrows{display:grid;gap:12px}
+.sysrows div{padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+.sysrows b{display:block;font:600 14.5px/1.3 var(--font-body);color:var(--gold-deep);margin-bottom:4px}
+.sysrows p{font-size:14.5px;line-height:1.5;color:var(--ink-2)}
+.give{margin-top:14px;font-size:14.5px;color:var(--ink-3);line-height:1.5}
+.contacts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:clamp(24px,3vw,36px)}
+.ccard{padding:22px 20px}
+.ccard .photo{width:54px;height:54px;font:600 15px/1 var(--font-display)}
+.ccard .contact{margin:auto 0 0}
+.ccard.co{background:var(--gold-soft);border-color:#E2D6B4}
+.ccard.co ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:14.5px;color:var(--ink-2)}
+.ccard.co a{color:var(--gold-deep);font-weight:500}
+.cnote{margin-top:20px;font-size:14.5px;color:var(--ink-3)}
+@media (max-width:1000px){.contacts{grid-template-columns:1fr 1fr}}
+@media (max-width:900px){.sysgrid{grid-template-columns:1fr}}
+@media (max-width:700px){.reqs div{grid-template-columns:1fr}.sysfig{display:none}}
+@media (max-width:620px){.contacts{grid-template-columns:1fr}}

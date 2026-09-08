@@ -57,6 +57,8 @@ What the company says about itself, in its own documented positioning:
 - https://samaenergia.fi/meista/ : About — why the company was founded, who is accountable for what, the partner network, company facts.
 - https://samaenergia.fi/ajankohtaista/ : Reviews with sources and dates.
 - https://samaenergia.fi/ajankohtaista/liityntarajoitus-2029/ : Review: no new storage connections in southern Finland before 2029 — your connection already exists.
+- https://samaenergia.fi/laitevaatimukset/ : Our equipment requirements — the documented list every manufacturer must meet before we offer its equipment (nine items, Finnish).
+- https://samaenergia.fi/equipment-requirements/ : The same equipment requirements in English.
 - https://samaenergia.fi/yhteystiedot/ : Contact and free site survey request.
 - https://samaenergia.fi/tietosuoja/ : Privacy statement (no cookies, no analytics).
 
@@ -71,6 +73,7 @@ What the company says about itself, in its own documented positioning:
 - https://samaenergia.ee/meist/ : Meist — miks ettevõte tehti, kes mille eest vastutab, võrgustik, ettevõte paberil.
 - https://samaenergia.ee/uudised/ : Uudised koos allikate ja kuupäevadega.
 - https://samaenergia.ee/uudised/reservitasu-2026/ : Ülevaade: alates 2026 maksate reservide eest — kummal pool arvet te olete.
+- https://samaenergia.ee/seadmete-nouded/ : Meie nõuded seadmetele — the same nine documented equipment requirements, in Estonian.
 - https://samaenergia.ee/kontakt/ : Kontakt ja tasuta hindamise küsimine.
 - https://samaenergia.ee/andmekaitse/ : Privaatsuspoliitika (privacy statement).
 

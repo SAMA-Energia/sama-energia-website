@@ -155,16 +155,18 @@ Neljä sääntöä, joiden mukaan arvio syntyy
 
 Aloitetaan kulutustiedoistanne.
 
-Kahdessa arkipäivässä tiedätte, kannattaako akku kohteessanne ja miten. Kirjallisesti ja ilman sitoumuksia.
+Kahdessa arkipäivässä tiedätte, kannattaako akku kohteessanne ja miten. Arvio on kaksi sivua, kirjallisesti ja ilman sitoumuksia:
 
-Kirjallinen arvio, jokainen luku lähteineen
-Verkkoyhtiön kannan selvittäminen ennen päätöstä
-Reservimarkkinaskenaariot juuri teidän kohteellenne
-Maksuton ja sitoumukseton, myös silloin kun tarjous on jo kädessä
+Liittymä ja kulutusprofiili tuntikohtaisista tiedoistanne
+Tehon jako oman kulutuksen, arbitraasin ja reservimarkkinan kesken
+Kolme reservimarkkinaskenaariota lähteineen
+Verkkoyhtiön kanta ja se, mitä arvio ei sano
+
+Te annatte: pääsyn kulutustietoihin (Datahub-valtuutus), yhden sähkölaskun ja pääkaavion.
 
 MM
 
-Madis Maastik+358 449 654 614 · WhatsApp +358 46 659 4879madis.maastik@samaenergia.fi
+Madis Maastik+358 449 654 614madis.maastik@samaenergia.fi
 
 Nimi
 
@@ -190,9 +192,9 @@ Verkkoyhtiö
 Onko kohteessa aurinkosähköä?—EiKylläSuunnitteilla
 
 Pyydä maksuton kartoitus
-Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen. Lue tietosuojaseloste.
+Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen, tietosuojaseloste.
 
-Lähetys ei onnistunut. Voitte lähettää tiedot myös suoraan sähköpostilla: madis.maastik@samaenergia.fi.
+Tarkistakaa nimi ja sähköposti. Jos lähetys ei onnistu, voitte lähettää tiedot myös suoraan osoitteeseen info@samaenergia.fi.
 
 Kiitos. Palaamme asiaan kahden arkipäivän kuluessa.
 
@@ -236,12 +238,6 @@ Tehomaksu alas, pörssisähkö hyödyksi, reservitulo ja varavoima. Samasta akus
 
 Pyydä maksuton kartoitus
 
-125 kW / 261 kWhyhden Ralos Beast -yksikön teho ja kapasiteetti: LFP-kemia, ulkoasennukseen sopiva kaappi
-
-1 MW / 2 MWhtyypillinen 1:2-mitoitus isommassa kohteessa: teho kertoo, paljonko reserviä voitte tarjota, kapasiteetti, kuinka pitkään
-
-Lähde: Ralos Oy, Ralos Beast · luettu 2.9.2026
-
 Mistä kukin kassavirta riippuu
 Mikä osa on kohteessanne suurin, selviää kulutustiedoista. Siksi kaikki alkaa maksuttomasta kartoituksesta.
 
@@ -273,18 +269,18 @@ KulutuksenneTehomaksurajaHuippu, jonka akku leikkaaPörssihinta (tunti)Akku odot
 
 Kaavamainen vuorokausi, ei yhden kohteen mitattua dataa. Kohteenne todellisen profiilin piirrämme arvioon tuntikohtaisista kulutustiedoistanne.
 
-Mitä toimitamme, ja miksi juuri nyt.
+Mitä toimitamme – ja mitä laitteilta vaadimme.
 
-Laitteet valitaan kohteenne mukaan, ei varaston. Mutta ajoitus on osa ratkaisua: juuri nyt Suomessa on varastosta saatavilla markkinoilla todistettuja akkuja erittäin hyvään hintaan.
+Laitteet valitaan kohteenne mukaan, ei varaston. Turvallisuus, takuu ja huolto ovat arviossa kirjattuina, eivät pienellä präntillä.
 
-Teollisuusluokan akusto ja invertteri
-Ulkoasennukseen sopiva kaappi, invertteri ja ohjaus. Kokoluokka 125 kW:n yksiköstä useisiin megawatteihin, mitoitettuna liittymän ja kulutusprofiilin mukaan.
+Teollisuusluokan järjestelmä
+Ulkoasennukseen sopiva varastokaappi, invertteri ja ohjaus, mitoitettuna liittymänne ja kulutusprofiilinne mukaan – yhdestä yksiköstä usean yksikön puistoon.
 
-Asennus ja käyttöönotto Suomessa
-Sähköasennukset ja käyttöönotto tekee asennuskumppanimme JSM Automaatiosähkö Oy (Sastamala), joka on erikoistunut aurinkosähköön, akustoihin ja reservimarkkina-akkuihin.
+Turvallisuus ja takuu
+Vaadimme valmistajalta LFP-kemiaa, kennotason valvonnalla varustettua akunhallintaa, lämpötilanhallintaa, ulko-olosuhteisiin tarkoitettua kaappia sekä CE- ja kuljetussertifikaatteja. Valmistajan takuu ja huoltoehdot ovat arviossa omalla rivillään. Kaikki vaatimukset →
 
-Toimitus viikoissa, ei kuukausissa
-Osa laitteista on varastossa Suomessa (Ralos Oy, Tampere), mikä lyhentää toimitusajan viikkoihin. Kun markkina ja hinta ovat kohdallaan, kannattaa liikkua, ja me kerromme, milloin ne ovat.
+Asennus, toimitus ja huolto
+Asennusta johtaa asennuspäällikkömme yhdessä kumppaneiden kanssa; osa laitteista on Suomen varastossa, mikä lyhentää toimitusajan viikkoihin. Käyttöönoton jälkeen järjestelmää valvovat aggregaattori ja me, huolto kulkee sopimuksen mukaan. Juuri nyt Suomessa on varastosta saatavilla markkinoilla todistettuja akkuja erittäin hyvään hintaan; kun markkina ja hinta ovat kohdallaan, kannattaa liikkua, ja me kerromme, milloin ne ovat.
 
 Usein kysyttyä
 
@@ -406,11 +402,92 @@ Maksuton kartoitus, kirjallinen arvio kolmena skenaariona, ei sitoumuksia.
 
 Pyydä maksuton kartoitus
 
+# Laitevaatimuksemme — SAMA Energia — https://samaenergia.fi/laitevaatimukset/
+
+Etusivu›Laitevaatimukset
+
+Laitevaatimuksemme.
+
+Tämän listan pyydämme jokaiselta valmistajalta dokumentoituna ennen kuin tarjoamme sen laitetta – ja se koskee jokaista kohdetta, johon asennamme. Tuotelukuja täällä ei ole – ne ovat arviossa kohteen mukaan.
+
+01Kemia
+LFP eli litiumrautafosfaatti – vakain teollinen akkukemia ulkoasennukseen.
+
+02Akunhallinta
+Kennotason valvonta: jännite ja lämpötila jokaisesta kennosta, suoja ylilataukselta ja syväpurkaukselta.
+
+03Lämpötilanhallinta
+Aktiivinen jäähdytys ja lämmitys, jotta järjestelmä toimii meidän ilmastossamme täydellä teholla ympäri vuoden.
+
+04Kaappi
+Ulko-olosuhteisiin tarkoitettu kaappi valmistajan määrittämällä suojausluokalla; palosuojaratkaisu valmistajan dokumentaatiossa.
+
+05Sertifikaatit
+CE-vaatimustenmukaisuus, teollisten litiumakkujen turvallisuusstandardi (esim. IEC 62619) ja kuljetustesti (UN 38.3) – dokumentit ennen tilausta, ei sen jälkeen.
+
+06Rajapinnat
+Avoin rajapinta aggregaattorille ja valvonnalle (esim. Modbus TCP/IP), jotta ohjaus ei ole yhdestä toimittajasta kiinni.
+
+07Verkko
+Verkkoyhtiön liittymis- ja suojausvaatimusten täyttäminen; valmistaja toimittaa tiedot, joita liittymishakemus tarvitsee.
+
+08Takuu
+Kirjalliset takuuehdot vuosina ja sykleinä, sallittu kapasiteetin lasku ja se, kuka vastaa mistäkin viasta – arviossa omalla rivillään.
+
+09Huolto ja varaosat
+Huolto ja varaosat Suomessa sovitulla vasteajalla; dokumentaatio suomeksi tai englanniksi.
+
+Valmistajille ja maahantuojille.
+Jos laitteenne täyttää listan ja haluatte Suomen ja Viron markkinoille, kirjoittakaa info@samaenergia.fi. Mitä me annamme: kaksi markkinaa, aggregaattorikumppani kummallakin, asennuskumppanit ja arvioon perustuva myynti, joka ei lupaa laitteelta enempää kuin se tekee.
+
+Sopiiko teidän kohteenne?
+Maksuton kartoitus kertoo, millainen järjestelmä liittymänne taakse mahtuu ja mitä se siellä tuottaisi.
+
+Pyydä maksuton kartoitus
+
+# Equipment requirements — SAMA Energia — https://samaenergia.fi/equipment-requirements/
+
+Home›Equipment requirements
+
+Our equipment requirements.
+
+This is the list we ask every manufacturer to document before we offer its equipment – and it applies to every site where we install. No product figures here – those are in the site assessment.
+
+01Chemistry
+LFP (lithium iron phosphate) – the most stable industrial battery chemistry for outdoor installation.
+
+02Battery management
+Cell-level monitoring: voltage and temperature per cell, protection against overcharge and deep discharge.
+
+03Thermal management
+Active cooling and heating so the system runs at full power year-round in the Nordic climate.
+
+04Enclosure
+Outdoor-rated cabinet with the manufacturer-specified ingress protection; fire-protection concept in the manufacturer documentation.
+
+05Certificates
+CE conformity, the industrial lithium battery safety standard (e.g. IEC 62619) and the transport test (UN 38.3) – documents before the order, not after.
+
+06Interfaces
+Open interface for the aggregator and monitoring (e.g. Modbus TCP/IP), so control does not depend on a single supplier.
+
+07Grid
+Compliance with the distribution operator’s connection and protection requirements; the manufacturer supplies the data the connection application needs.
+
+08Warranty
+Written warranty terms in years and cycles, permitted capacity degradation, and who is liable for which failure – a separate line in the assessment.
+
+09Service and spare parts
+Service and spare parts in Finland or Estonia with an agreed response time; documentation in the local language or English.
+
+For manufacturers and importers.
+If your equipment meets the list and you want to enter the Finnish and Estonian markets, write to info@samaenergia.fi. What we bring: two markets, an aggregator partner in each, installation partners, and assessment-based selling that never promises more from the equipment than it delivers.
+
 # Aggregaattori ja VENI Energia — SAMA Energia — https://samaenergia.fi/veni-energia/
 
 Etusivu›Reservimarkkinat›Aggregaattori: VENI Energia
 
-Aggregaattori vie akkunne markkinoille. Meillä se on VENI Energia.
+Aggregaattori vie akkunne markkinoille. Suomessa se on VENI Energia.
 
 Fingridin reservimarkkinoille ei osallistu yksittäinen tehdas vaan reservitoimittaja, joka kokoaa monta kohdetta yhdeksi tarjoukseksi, läpäisee Fingridin kokeet ja ohjaa akkuja automaattisesti. Tällä sivulla kerromme, mitä aggregaattori tekee, miten liittyminen etenee ja kuka on kumppanimme Suomessa.
 
@@ -421,6 +498,17 @@ Pyydä maksuton kartoitus Reservimarkkinat selkokielellä
 yli 150reservitoimittajaa Fingridin luettelossa 27.8.2026, aggregaattorit mukaan lukien
 
 Lähteet: Fingrid, Aggregointi reservimarkkinoilla · 3/2026; Fingrid, reservitoimittajat · 27.8.2026
+
+Näin kokonaisuus toimii.
+Kohteen kulutus, aurinkosähkö ja akku ovat liittymän takana. Liittymispisteen mittaus kertoo, paljonko tehoa on vapaana; VENI ohjaa akkua, tekee tarjoukset ja tilittää tuoton; markkinoita on kaksi: Fingridin reservit ja sähköpörssi.
+
+KohdeKulutus, aurinkosähkö ja akku liittymän takana – akku lataa ja purkaa liittymän rajoissa.
+
+OhjausVENI lukee liittymispisteen mittausta, tekee tarjoukset joka tunnille ja ohjaa akkua kannattavimpaan tuotteeseen.
+
+EtusijaKohteen oma kulutus on aina etusijalla. Markkinoille menee se, mikä liittymästä jää yli – tunneittain, kulutusprofiilinne mukaan, ei yhdellä kiinteällä rajalla koko vuodeksi.
+
+MarkkinatFingridin reservit ja sähköpörssi samasta akusta – monimarkkinapalvelu.
 
 Kolme asiaa, jotka aggregaattori tekee puolestanne.
 
@@ -478,7 +566,7 @@ VENI Energia Oy
 Aggregaattorikumppanimme Suomessa · Fingridin reservimarkkinat
 
 Perustettu 1996. Pääkonttori Hämeenlinnassa, toimisto Tampereella. Energiapalveluyhtiö, jonka palveluita ovat sähkönhankinta, energialaskujen tarkastus ja mittauspalvelut. Yli 10 000 suomalaista yritys- ja julkista asiakasta; osa VENI Energy Groupia, jolla on yli 45 000 asiakasta Pohjoismaissa, Saksassa ja Espanjassa.
-Huomatkaa: VENIn julkinen sivusto kertoo sähkönhankinnasta, ei reservimarkkinoista. Aggregointi ja toteutuneet akkutuotot ovat heidän omassa esityksessään, jonka käymme kanssanne läpi kartoituksessa. Emme siis lähetä teitä lukemaan sivustolta jotain, mitä siellä ei ole.
+Reservimarkkinapuoli, ohjaus ja toteutuneet akkutuotot käydään läpi VENIn omasta esityksestä kartoituksessa, ja ne kirjataan teidän lukuinanne kirjalliseen arvioon.
 venienergia.fi
 
 Mitä VENI Energia tekee teidän kohteellenne.
@@ -624,7 +712,7 @@ Myyntijohtaja
 Vastaa: asiakassuhteet, aggregaattorikumppanuudet, verkkovaatimukset ja rahoitusmallit. Hänen kauttaan kulkee kaikki ennen allekirjoitusta.
 Kaupallinen ja tekninen työ teollisten energiavarastojen, aurinkosähkön ja reservimarkkinoiden parissa Suomessa ja Virossa; dokumentaatio neljällä kielellä.
 madis.maastik@samaenergia.fi
-+358 449 654 614 · WhatsApp +358 46 659 4879
++358 449 654 614
 
 MR
 Martin Rautio
@@ -692,6 +780,10 @@ Fingrid ja EleringMolempien reservimarkkinat, aggregaattorin kautta
 
 Dokumentaatio
 Neljällä kielelläArvio, luvat ja sopimukset teidän kielellänne
+
+Valmistajille ja maahantuojille.
+Laitevalikoimamme ei ole kiinni yhdessä valmistajassa. Lista, jonka jokaisen laitteen on täytettävä, on julkinen – ja se on myös ovi uusille valmistajille ja maahantuojille.
+Laitevaatimuksemme In English
 
 Kirjoittakaa tai soittakaa suoraan.
 Vastaa ihminen, joka tekee myös työn.
@@ -809,16 +901,18 @@ Etusivu›Yhteystiedot
 
 Aloitetaan kulutustiedoistanne.
 
-Kahdessa arkipäivässä tiedätte, kannattaako akku kohteessanne ja miten. Kirjallisesti ja ilman sitoumuksia.
+Kahdessa arkipäivässä tiedätte, kannattaako akku kohteessanne ja miten. Arvio on kaksi sivua, kirjallisesti ja ilman sitoumuksia:
 
-Kirjallinen arvio, jokainen luku lähteineen
-Verkkoyhtiön kannan selvittäminen ennen päätöstä
-Reservimarkkinaskenaariot juuri teidän kohteellenne
-Maksuton ja sitoumukseton, myös silloin kun tarjous on jo kädessä
+Liittymä ja kulutusprofiili tuntikohtaisista tiedoistanne
+Tehon jako oman kulutuksen, arbitraasin ja reservimarkkinan kesken
+Kolme reservimarkkinaskenaariota lähteineen
+Verkkoyhtiön kanta ja se, mitä arvio ei sano
+
+Te annatte: pääsyn kulutustietoihin (Datahub-valtuutus), yhden sähkölaskun ja pääkaavion.
 
 MM
 
-Madis Maastik+358 449 654 614 · WhatsApp +358 46 659 4879madis.maastik@samaenergia.fi
+Madis Maastik+358 449 654 614madis.maastik@samaenergia.fi
 
 Nimi
 
@@ -844,13 +938,49 @@ Verkkoyhtiö
 Onko kohteessa aurinkosähköä?—EiKylläSuunnitteilla
 
 Pyydä maksuton kartoitus
-Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen. Lue tietosuojaseloste.
+Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen, tietosuojaseloste.
 
-Lähetys ei onnistunut. Voitte lähettää tiedot myös suoraan sähköpostilla: madis.maastik@samaenergia.fi.
+Tarkistakaa nimi ja sähköposti. Jos lähetys ei onnistu, voitte lähettää tiedot myös suoraan osoitteeseen info@samaenergia.fi.
 
 Kiitos. Palaamme asiaan kahden arkipäivän kuluessa.
 
 Jos kulutustiedot tai tarjous ovat käsillä, lähettäkää ne heti osoitteeseen info@samaenergia.fi. Se nopeuttaa arviota.
+
+Kolme ihmistä ja yksi osoite.
+Kirjoittakaa tai soittakaa suoraan sille, jonka aihe se on. Lomakkeen täyttäminen ei ole pakollista – se vain nopeuttaa vastausta.
+
+MR
+Martin Rautio
+Talousjohtaja
+
+Kannattavuuslaskelmat, tarjoukset, sopimukset
+martin.rautio@samaenergia.fi
++358 40 701 9099
+
+VP
+Viljar Petersell
+Asennuspäällikkö
+
+Asennus, kohde, toteutus ja laatu
++358 40 635 3245
+
+MM
+Madis Maastik
+Myyntijohtaja
+
+Kartoitus, aggregaattorit, asiakassuhteet
+madis.maastik@samaenergia.fi
++358 449 654 614
+
+Yritys
+SAMA Energia Oy
+Sörnäisten Rantatie 33 C, 00500 Helsinki
+Y-tunnus 3647683-3
+ALV-tunnus FI36476833
+info@samaenergia.fi
++358 449 654 614
+
+Vastaamme kahden arkipäivän kuluessa, myös silloin kun vastaus on „ei kannata“. Työkielet: suomi, viro, englanti.
 
 # Tietosuojaseloste — SAMA Energia — https://samaenergia.fi/tietosuoja/
 
@@ -1033,16 +1163,18 @@ Neli reeglit, mille järgi hinnang valmib
 
 Alustame teie tarbimisandmetest.
 
-Kahe tööpäevaga teate, kas ja kuidas aku end teie objektil ära tasub. Kirjalikult ja kohustusteta.
+Kahe tööpäevaga teate, kas ja kuidas aku end teie objektil ära tasub. Hinnang on kaks lehekülge, kirjalikult ja kohustusteta:
 
-Kirjalik hinnang, iga arv koos allikaga
-Võrguettevõtja seisukoha selgitamine enne otsust
-Reservituru stsenaariumid just teie objektile
-Tasuta ja kohustusteta, ka siis, kui pakkumine on juba käes
+Liitumine ja tarbimisprofiil teie tunnipõhistest andmetest
+Võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel
+Kolm reservituru stsenaariumi allikatega
+Võrguettevõtja seisukoht ja see, mida hinnang ei ütle
+
+Teie annate: ligipääsu tarbimisandmetele (e-elering volitus), ühe elektriarve ja peakilbi skeemi.
 
 MM
 
-Madis Maastik+358 449 654 614 · WhatsApp +358 46 659 4879madis.maastik@samaenergia.fi
+Madis Maastik+358 449 654 614madis.maastik@samaenergia.fi
 
 Nimi
 
@@ -1068,9 +1200,9 @@ Võrguettevõtja
 Kas objektil on päikeseelekter?—EiJahPlaanis
 
 Küsi tasuta hindamist
-Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hindamiseks. Vaadake privaatsuspoliitikat.
+Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hindamiseks, privaatsuspoliitikat.
 
-Saatmine ei õnnestunud. Võite saata andmed ka otse e-postiga: madis.maastik@samaenergia.fi.
+Kontrollige nime ja e-posti. Kui saatmine ei õnnestu, võite saata andmed ka otse aadressile info@samaenergia.fi.
 
 Aitäh. Võtame ühendust kahe tööpäeva jooksul.
 
@@ -1114,12 +1246,6 @@ Võimsustasu alla, börsihind kasuks, reservitulu ja varutoide. Samast akust, sa
 
 Küsi tasuta hindamist
 
-125 kW / 261 kWhühe Ralos Beast üksuse võimsus ja maht: LFP-keemia, välispaigalduseks sobiv kapp
-
-1 MW / 2 MWhtüüpiline 1:2 suhe suuremal objektil: võimsus ütleb, kui palju reservi saate pakkuda, maht, kui kaua
-
-Allikas: Ralos Oy, Ralos Beast · loetud 2.9.2026
-
 Millest iga rahavoog sõltub
 Milline osa on teie objektil suurim, selgub tarbimisandmetest. Sellepärast algab kõik tasuta hindamisest.
 
@@ -1141,7 +1267,7 @@ Kuidas aku päev välja näeb.
 
 Teie tarbimineVõimsustasu piirTipp, mille aku maha lõikabBörsihind (tund)Aku ootab, teenib reserviturul
 
-00–05Aku laeb siis, kui börsihind on päeva madalaim. Sama energia müüakse hiljem kallilt või kasutatakse tipu ajal.
+00–05Aku laeb siis, kui börsihind on päeva madalaim. Sama energia müüakse hiljem tagasi kallilt või kasutatakse tipu ajal.
 
 07–09Hommikune käivitustipp ei jõua võrguarvele: aku annab puuduva võimsuse ise. Võimsustasu arvestatakse tipu järgi, seega just see hetk maksab.
 
@@ -1151,18 +1277,18 @@ Teie tarbimineVõimsustasu piirTipp, mille aku maha lõikabBörsihind (tund)Aku 
 
 Skemaatiline ööpäev, mitte ühe objekti mõõdetud andmed. Teie objekti tegeliku profiili joonistame hinnangus teie tunnipõhistest tarbimisandmetest.
 
-Mida me tarnime, ja miks just nüüd.
+Mida me tarnime – ja mida seadmetelt nõuame.
 
-Seadmed valime teie objekti järgi, mitte lao. Aga ajastus on osa lahendusest: praegu on Soome laost saadaval turul end tõestanud akusid väga hea hinnaga.
+Seadmed valime teie objekti järgi, mitte lao. Ohutus, garantii ja hooldus on hinnangus kirjas, mitte peenes kirjas.
 
-Tööstusklassi akusüsteem ja inverter
-Välispaigalduseks sobiv kapp, inverter ja juhtimine. Suurusjärk 125 kW üksusest mitme megavatini, dimensioneerituna liitumise ja tarbimisprofiili järgi.
+Tööstusklassi süsteem
+Välispaigalduseks sobiv salvestikapp, inverter ja juhtimine, mõõdetud teie liitumise ja tarbimisprofiili järgi – ühest üksusest mitme üksuse pargini.
 
-Paigaldus ja käikulaskmine
-Paigaldust juhib meie paigaldusjuht Viljar Petersell, kes on päikesesüsteeme ehitanud üle kuue aasta. Load, dokumentatsioon ja võrguettevõtjaga suhtlus käivad meie kaudu.
+Ohutus ja garantii
+Nõuame tootjalt LFP-keemiat, rakutaseme jälgimisega akuhaldust, temperatuurijuhtimist, välitingimustele vastavat kappi ja CE- ning transpordisertifikaate. Tootja garantii ja hooldustingimused on hinnangus eraldi real. Kõik nõuded →
 
-Tarne nädalates, mitte kuudes
-Osa seadmeid on laos Soomes (Ralos Oy, Tampere), mis lühendab tarneaja nädalateni. Kui turg ja hind on paigas, tasub liikuda, ja meie ütleme, millal need seda on.
+Paigaldus, tarne ja hooldus
+Paigaldust juhib meie paigaldusjuht koos partneritega; osa seadmeid on Soome laos, mis lühendab tarneaja nädalateni. Pärast käikulaskmist jälgivad süsteemi agregaator ja meie, hooldus käib lepingu järgi. Praegu on Soome laost saadaval turul end tõestanud akusid väga hea hinnaga; kui turg ja hind on paigas, tasub liikuda, ja meie ütleme, millal need seda on.
 
 Korduma kippuvad küsimused
 
@@ -1280,11 +1406,54 @@ Tasuta hindamine, kirjalik hinnang kolme stsenaariumina, kohustusteta.
 
 Küsi tasuta hindamist
 
+# Meie nõuded seadmetele — SAMA Energia — https://samaenergia.ee/seadmete-nouded/
+
+Avaleht›Nõuded seadmetele
+
+Meie nõuded seadmetele.
+
+Selle nimekirja küsime igalt tootjalt dokumenteerituna enne, kui tema seadet pakume – ja see kehtib igal objektil, kuhu paigaldame. Tootenumbreid siin ei ole – need on hinnangus objekti järgi.
+
+01Keemia
+LFP ehk liitiumraudfosfaat – stabiilseim tööstuslik akukeemia välispaigalduseks.
+
+02Akuhaldus
+Rakutaseme jälgimine: pinge ja temperatuur iga raku kohta, kaitse ülelaadimise ja süvatühjenemise eest.
+
+03Temperatuurijuhtimine
+Aktiivne jahutus ja küte, et süsteem töötaks meie kliimas aastaringselt täisvõimsusel.
+
+04Kapp
+Välitingimustele mõeldud kapp tootja määratud kaitseastmega; tulekaitse lahendus tootja dokumentatsioonis.
+
+05Sertifikaadid
+CE-vastavus, tööstuslike liitiumakude ohutusstandard (nt IEC 62619) ja transpordikatse (UN 38.3) – dokumendid enne tellimust, mitte pärast.
+
+06Liidesed
+Avatud liides agregaatorile ja seirele (nt Modbus TCP/IP), et juhtimine ei sõltuks ühest tarnijast.
+
+07Võrk
+Vastavus võrguettevõtja liitumis- ja kaitsenõuetele; tootja annab andmed, mida tehniliste tingimuste taotlus vajab.
+
+08Garantii
+Kirjalikud garantiitingimused aastates ja tsüklites, lubatud mahtuvuse langus ja see, kes vastutab millise rikke eest – hinnangus eraldi real.
+
+09Hooldus ja varuosad
+Hooldus ja varuosad Eestis kokkulepitud reageerimisajaga; dokumentatsioon eesti või inglise keeles.
+
+Tootjatele ja maaletoojatele.
+Kui teie seade vastab nimekirjale ja te soovite Eesti ja Soome turule, kirjutage info@samaenergia.fi. Mida meie anname: kaks turgu, agregaatoripartner kummalgi turul, paigalduspartnerid ja hinnangupõhine müük, mis ei luba seadmelt rohkem, kui see teeb.
+
+Kas teie objekt sobib?
+Tasuta hindamine ütleb, milline süsteem teie liitumise taha mahub ja mida ta seal teeniks.
+
+Küsi tasuta hindamist
+
 # Agregaator ja Soleron Energy — SAMA Energia — https://samaenergia.ee/soleron-energy/
 
 Avaleht›Reserviturg›Agregaator: Soleron Energy
 
-Agregaator viib teie aku turule. Meie partner on Soleron Energy.
+Agregaator viib teie aku turule. Eestis on see Soleron Energy.
 
 Eleringi reserviturul ei osale üksik tehas, vaid tasakaalustamisteenuse pakkuja, kes kogub mitu objekti üheks pakkumiseks, läbib Eleringi eelkvalifitseerimise ja juhib akusid automaatselt. Sellel lehel selgitame, mida agregaator teeb, kuidas liitumine käib ja kes on meie partner Eestis.
 
@@ -1295,6 +1464,17 @@ Küsi tasuta hindamist Reserviturg lihtsalt seletatuna
 5 aastatkehtib reservüksuse eelkvalifitseerimine, kui see on Eleringi katsed läbinud
 
 Allikad: Elering, tasakaalustamisteenuste turg; Elering, FCR tüüptingimused · p 3.2.1.1
+
+Kuidas süsteem kokku käib.
+Objektil on päikesejaam, inverter, aku ja tarbijad; liitumine ühendab need võrguga. Soleroni kontroller loeb mõõtmist ja juhib inverterit, server teeb pakkumised Eleringile ja EMS-rakendus näitab teile tulemust.
+
+ObjektPäikesejaam, inverter, akupank ja tarbijad – elektrikaabel ühendab need liitumispunktis võrguga.
+
+JuhtimineSoleroni kontroller objektil, server, mis teeb pakkumised ja arvutab strateegia, ja Soleron EMS, mille kaudu te näete, mida aku teeb.
+
+PrioriteetObjekti tarbimine on alati esimene. Reservi ja börsile läheb see, mis liitumisest üle jääb – tund tunni kaupa, teie tarbimisprofiili järgi, mitte ühe kindla piiranguga.
+
+AndmedMõõtmine liitumispunktis, seire ja raport: millises reservis aku oli ja mida ta teenis.
 
 Kolm asja, mida agregaator teie eest teeb.
 
@@ -1498,7 +1678,7 @@ Müügijuht
 Vastutab: kliendisuhted, agregaatoripartnerlused, võrgunõuded ja rahastusmudelid. Tema kaudu käib kogu suhtlus enne allkirja.
 Kaubanduslik ja tehniline töö tööstuslike energiasalvestite, päikeseelektri ja reservituruga Soomes ja Eestis; dokumentatsioon neljas keeles.
 madis.maastik@samaenergia.fi
-+358 449 654 614 · WhatsApp +358 46 659 4879
++358 449 654 614
 
 MR
 Martin Rautio
@@ -1566,6 +1746,10 @@ Elering ja FingridMõlema reserviturg, agregaatori kaudu
 
 Dokumentatsioon
 Neljas keelesHinnang, load ja lepingud teie keeles
+
+Tootjatele ja maaletoojatele.
+Meie seadmevalik ei ole kinni ühes tootjas. Nimekiri, millele iga seade peab vastama, on avalik – ja see on ka uks uutele tootjatele ja maaletoojatele.
+Meie nõuded seadmetele In English
 
 Kirjutage või helistage otse.
 Vastab inimene, kes ka töö teeb.
@@ -1689,16 +1873,18 @@ Avaleht›Kontakt
 
 Alustame teie tarbimisandmetest.
 
-Kahe tööpäevaga teate, kas ja kuidas aku end teie objektil ära tasub. Kirjalikult ja kohustusteta.
+Kahe tööpäevaga teate, kas ja kuidas aku end teie objektil ära tasub. Hinnang on kaks lehekülge, kirjalikult ja kohustusteta:
 
-Kirjalik hinnang, iga arv koos allikaga
-Võrguettevõtja seisukoha selgitamine enne otsust
-Reservituru stsenaariumid just teie objektile
-Tasuta ja kohustusteta, ka siis, kui pakkumine on juba käes
+Liitumine ja tarbimisprofiil teie tunnipõhistest andmetest
+Võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel
+Kolm reservituru stsenaariumi allikatega
+Võrguettevõtja seisukoht ja see, mida hinnang ei ütle
+
+Teie annate: ligipääsu tarbimisandmetele (e-elering volitus), ühe elektriarve ja peakilbi skeemi.
 
 MM
 
-Madis Maastik+358 449 654 614 · WhatsApp +358 46 659 4879madis.maastik@samaenergia.fi
+Madis Maastik+358 449 654 614madis.maastik@samaenergia.fi
 
 Nimi
 
@@ -1724,13 +1910,49 @@ Võrguettevõtja
 Kas objektil on päikeseelekter?—EiJahPlaanis
 
 Küsi tasuta hindamist
-Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hindamiseks. Vaadake privaatsuspoliitikat.
+Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hindamiseks, privaatsuspoliitikat.
 
-Saatmine ei õnnestunud. Võite saata andmed ka otse e-postiga: madis.maastik@samaenergia.fi.
+Kontrollige nime ja e-posti. Kui saatmine ei õnnestu, võite saata andmed ka otse aadressile info@samaenergia.fi.
 
 Aitäh. Võtame ühendust kahe tööpäeva jooksul.
 
 Kui teil on tarbimisandmed või pakkumine käepärast, saatke need kohe aadressile info@samaenergia.fi. See kiirendab hinnangut.
+
+Kolm inimest ja üks aadress.
+Kirjutage või helistage otse sellele, kelle teema see on. Vormi täitmine ei ole kohustuslik – see lihtsalt kiirendab vastust.
+
+MR
+Martin Rautio
+Finantsjuht
+
+Tasuvusarvutused, pakkumised, lepingud
+martin.rautio@samaenergia.fi
++358 40 701 9099
+
+VP
+Viljar Petersell
+Paigaldusjuht
+
+Paigaldus, objekt, teostus ja kvaliteet
++358 40 635 3245
+
+MM
+Madis Maastik
+Müügijuht
+
+Hindamine, agregaatorid, kliendisuhted
+madis.maastik@samaenergia.fi
++358 449 654 614
+
+Ettevõte
+SAMA Energia Oy
+Sörnäisten Rantatie 33 C, 00500 Helsingi, Soome
+Y-tunnus 3647683-3
+KMKR FI36476833
+info@samaenergia.fi
++358 449 654 614
+
+Vastame kahe tööpäeva jooksul, ka siis, kui vastus on „ei tasu ära“. Töökeeled: eesti, soome, inglise.
 
 # Privaatsuspoliitika — SAMA Energia — https://samaenergia.ee/andmekaitse/
 

@@ -39,6 +39,7 @@ const PAIRS = [
   ['reservimarkkinat', 'reserviturg'],
   ['veni-energia', 'soleron-energy'],
   ['palvelut', 'teenused'],
+  ['laitevaatimukset', 'seadmete-nouded'],
   ['meista', 'meist'],
   ['ajankohtaista', 'uudised'],
   ['yhteystiedot', 'kontakt'],
@@ -47,7 +48,7 @@ const PAIRS = [
 ];
 /* Parittomat sivut (artikkelit: kummallakin kielellä eri artikkeli): canonical + og,
    hreflang vain itseensä + x-default, mukana sitemapissa. Sisäkkäinen slug -> alikansio. */
-const UNPAIRED = { fi: ['ajankohtaista/liityntarajoitus-2029'], et: ['uudised/reservitasu-2026'] };
+const UNPAIRED = { fi: ['ajankohtaista/liityntarajoitus-2029', 'equipment-requirements'], et: ['uudised/reservitasu-2026'] };
 /* Lomakkeen kiitossivut: generoidaan ja paritetaan, mutta ei sitemapiin, ei llms-full.txt:hen,
    ei legacy-shimiin eikä navigaatioon. Sivuilla on data-noindex="1". */
 const UNLISTED = new Set(['kiitos', 'aitah']);
