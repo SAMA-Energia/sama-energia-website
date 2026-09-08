@@ -40,7 +40,8 @@ and `@fontsource/ibm-plex-sans` npm packages, SIL OFL) and declared in
 `assets/fonts.css` with `font-display: swap`; the build preloads the two display
 faces and the body face, and no page makes a third-party request. The two
 Open Graph images `assets/og-fi.png` / `assets/og-et.png` (1200×630) are
-rendered from a small HTML template with headless Chrome and committed; the
+rendered from `scripts/og/og-template.html` with headless Chrome
+(`node scripts/og/render-og.mjs`, run from the repo root) and committed; the
 build emits `og:image` and `twitter:card` on every page. `llms-full.txt` is
 generated from the same page HTML that is served (plain text of every public
 page, one `# Title — URL` heading per page) next to the hand-written English

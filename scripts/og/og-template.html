@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fi">
+<!-- SAMA Energia — Open Graph -kuvan malli (1200×630). Ei ollut repossa ennen 08.09.2026;
+     rakennettu uudelleen footerin logosta ja brändiriviltä, kun yöpaletti vaihtui (v17).
+     Renderöinti: node scripts/og/render-og.mjs  → assets/og-fi.png ja assets/og-et.png
+     Kielen valinta kyselyparametrilla: og-template.html?lang=fi | ?lang=et -->
+<head>
+<meta charset="utf-8">
+<title>SAMA Energia — OG</title>
+<link rel="stylesheet" href="../../assets/fonts.css">
+<style>
+  :root{--night:#0E1726;--gold:#C9A227;--night-ink:#F6F1E6;--night-ink-2:#BFB6A5}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1200px;height:630px;overflow:hidden}
+  body{background:var(--night);position:relative;font-family:'IBM Plex Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  /* sama kultahehku kuin sivuston tummissa nauhoissa (.teaser::before) */
+  body::before{content:"";position:absolute;inset:auto -14% -46% auto;width:820px;height:820px;
+    background:radial-gradient(closest-side,rgba(201,162,39,.17),rgba(201,162,39,0) 70%)}
+  .logo{position:absolute;left:88px;top:56px;width:420px;height:106px;object-fit:contain;object-position:left center}
+  .rule{position:absolute;left:86px;top:230px;width:108px;height:3px;background:var(--gold)}
+  h1{position:absolute;left:86px;top:263px;width:1030px;
+     font-family:'Newsreader',Georgia,serif;font-weight:500;font-size:87px;line-height:88px;
+     letter-spacing:-.02em;color:var(--night-ink)}
+  h1 em{font-style:italic;color:var(--gold)}
+  .domain{position:absolute;left:86px;top:538px;font-size:24px;font-weight:400;color:var(--night-ink-2)}
+</style>
+</head>
+<body>
+  <img class="logo" src="../../assets/mark-night.png" alt="">
+  <div class="rule"></div>
+  <h1 id="t"></h1>
+  <p class="domain" id="d"></p>
+<script>
+  var COPY = {
+    fi: { h: 'Itsenäinen energia.<br><em>Itseohjautuva</em> akku.', d: 'samaenergia.fi' },
+    et: { h: 'Iseseisev energia.<br><em>Isejuhtiv</em> aku.',           d: 'samaenergia.ee' }
+  };
+  var lang = (location.search.match(/lang=(fi|et)/) || [])[1] || 'fi';
+  document.documentElement.lang = lang;
+  document.getElementById('t').innerHTML = COPY[lang].h;
+  document.getElementById('d').textContent = COPY[lang].d;
+</script>
+</body>
+</html>

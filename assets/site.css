@@ -673,21 +673,23 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
 /* ---------- kuvitukset kapeilla näytöillä ----------
    SVG-kaaviot skaalautuvat viewBoxin mukaan; alle 600 px:n näytöllä toissijaiset selitteet
    (.ns/.ss/.sec/.gs/.bs) piilotetaan ja ensisijaiset nostetaan niin, että ne piirtyvät ≥ 10 px.
+   Kaavioiden omat <style>-lohkot on rajattu juuriluokkaan (08.09.2026), joten ne ovat (0,2,0);
+   nämä ohitukset tarvitsevat svg-etuliitteen (0,2,1) voittaakseen ne dokumenttijärjestyksessä.
    Akun päivä -kaavio (900 yksikköä leveä) piirtyy alle 600 px:n leveydellä ilman tekstejä:
    selite (.legend) ja .day-notes kertovat sarjat ja kellonajat sen alla. */
 @media (max-width:900px){
   .hero-bg svg{height:13%} /* pinotussa herossa aaltoviiva jää alareunan tyhjään tilaan, ei nappien tai merkkien taakse */
 }
 @media (max-width:600px){
-  .chart-day .ph,.chart-day .ax,.chart-day .tt{display:none}
+  svg.chart-day .ph,svg.chart-day .ax,svg.chart-day .tt{display:none}
   .chart-structure .ns{display:none}
   .chart-structure text.nl{font-size:15.5px}
-  .chart-scale .sec{display:none}
-  .chart-scale .lab,.chart-scale .hz{font-size:15px}
-  .chart-yield .ss{display:none}
-  .chart-yield .sl,.chart-yield .sb{font-size:16px}
-  .chart-figure .bs{display:none}
-  .chart-figure .gl,.chart-figure .bl{font-size:21px}
+  svg.chart-scale .sec{display:none}
+  svg.chart-scale .lab,svg.chart-scale .hz{font-size:15px}
+  svg.chart-yield .ss{display:none}
+  svg.chart-yield .sl,svg.chart-yield .sb{font-size:16px}
+  svg.chart-figure .bs{display:none}
+  svg.chart-figure .gl,svg.chart-figure .bl{font-size:21px}
   .chart-system .ns{display:none}
   .chart-system text.nl{font-size:16.5px}
 }
