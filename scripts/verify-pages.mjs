@@ -477,7 +477,7 @@ for (const p of pages) {
   if (/<div class="faq-list">/.test(html)) wantTypes.push('FAQPage');
   if (JSON.stringify(types) !== JSON.stringify(wantTypes)) err(`${where} — JSON-LD-tyypit ${JSON.stringify(types)}, odotettu ${JSON.stringify(wantTypes)}`);
 
-  /* lomakkeet talteen ristiintarkistusta varten */
+  /* lomakkeet talteen ristiintarkistusta varten (kartoitus + jalan uutiskirje) */
   for (const f of html.matchAll(/<form[^>]*data-netlify="true"[\s\S]*?<\/form>/g)) {
     const form = f[0];
     const controls = [...form.matchAll(/<(?:input|select|textarea)\b[^>]*/g)].map(m => m[0]);
@@ -489,29 +489,47 @@ for (const p of pages) {
       action: /<form[^>]*\baction="([^"]+)"/.exec(form)?.[1],
       method: /<form[^>]*\bmethod="([^"]+)"/.exec(form)?.[1],
       novalidate: /<form[^>]*\bnovalidate/.test(form),
-      hidden: form.includes('name="form-name" value="kohdekartoitus"'),
+      hiddenName: /name="form-name" value="([^"]*)"/.exec(form)?.[1] ?? '',
       honeypot: /netlify-honeypot="bot-field"/.test(form) && form.includes('name="bot-field"'),
       privacy: form.includes(`href="${p.lang === 'fi' ? '/tietosuoja/' : '/andmekaitse/'}"`),
       fields: controls.map(nameOf).filter(Boolean).sort().join(','),
       required: controls.filter(c => /\brequired\b/.test(c)).map(nameOf).sort().join(','),
+      newsletter: /<form[^>]*\bclass="[^"]*\bnl-form\b/.test(form),
     });
   }
+  /* Jalan uutiskirjelomake on jokaisella sivulla (08.09.2026), kartoituslomake vain
+     etusivulla ja yhteyssivulla. */
   const isContact = p.slug === 'yhteystiedot' || p.slug === 'kontakt';
   const nForms = count(html, /data-netlify="true"/g);
-  if ((isFront || isContact) && nForms !== 1) err(`${where} — odotettiin 1 Netlify-lomake, oli ${nForms}`);
-  if (!isFront && !isContact && nForms !== 0) err(`${where} — odottamaton lomake`);
+  const wantForms = (isFront || isContact) ? 2 : 1;
+  if (nForms !== wantForms) err(`${where} — Netlify-lomakkeita ${nForms}, odotettu ${wantForms}`);
+  if (count(html, /class="[^"]*\bnl-form\b/g) !== 1) err(`${where} — jalan uutiskirjelomake puuttuu tai toistuu`);
 }
 
 /* Netlify-lomakkeet: sama nimi ja kenttäjoukko kaikissa (etusivu + yhteyssivu, FI + ET),
    action-kiitossivu no-JS-varapoluksi, pakollisina vain nimi + email, tietosuojalinkki */
-if (forms.length !== 4) err(`Netlify-lomakkeita ${forms.length}, odotettu 4`);
-const fieldSets = new Set(forms.map(f => f.fields));
-if (fieldSets.size !== 1) err(`lomakekentät eroavat:\n${forms.map(f => `  ${f.where}: ${f.fields}`).join('\n')}`);
-for (const f of forms) {
+const nlForms = forms.filter(f => f.newsletter);
+const leadForms = forms.filter(f => !f.newsletter);
+if (leadForms.length !== 4) err(`kartoituslomakkeita ${leadForms.length}, odotettu 4`);
+if (nlForms.length !== pages.length) err(`uutiskirjelomakkeita ${nlForms.length}, odotettu ${pages.length} (yksi per sivu)`);
+for (const f of nlForms) {
+  const wantName = f.lang === 'fi' ? 'uutiskirje' : 'uudiskiri';
+  if (f.name !== wantName) err(`${f.where} — uutiskirjelomakkeen nimi ${f.name}, odotettu ${wantName}`);
+  if (f.method !== 'POST') err(`${f.where} — uutiskirjelomakkeen method väärin`);
+  if (f.action !== (f.lang === 'fi' ? '/kiitos/' : '/aitah/')) err(`${f.where} — uutiskirjelomakkeen action väärin: ${f.action}`);
+  if (!f.honeypot) err(`${f.where} — uutiskirjelomakkeen honeypot puuttuu`);
+  if (f.hiddenName !== wantName) err(`${f.where} — uutiskirjeen form-name-piilokenttä on "${f.hiddenName}", odotettu ${wantName}`);
+  if (f.novalidate) err(`${f.where} — uutiskirjelomakkeessa novalidate`);
+  if (f.fields !== 'bot-field,email,form-name') err(`${f.where} — uutiskirjelomakkeen kentät [${f.fields}]`);
+  if (f.required !== 'email') err(`${f.where} — uutiskirjelomakkeessa pakollisena oltava vain email, oli [${f.required}]`);
+}
+const fieldSets = new Set(leadForms.map(f => f.fields));
+if (fieldSets.size !== 1) err(`lomakekentät eroavat:\n${leadForms.map(f => `  ${f.where}: ${f.fields}`).join('\n')}`);
+for (const f of leadForms) {
   if (f.name !== 'kohdekartoitus') err(`${f.where} — lomakkeen nimi väärin (${f.name})`);
   if (f.method !== 'POST') err(`${f.where} — lomakkeen method väärin`);
   if (f.action !== (f.lang === 'fi' ? '/kiitos/' : '/aitah/')) err(`${f.where} — lomakkeen action väärin: ${f.action}`);
-  if (!f.hidden) err(`${f.where} — form-name-piilokenttä puuttuu`);
+  if (f.hiddenName !== 'kohdekartoitus') err(`${f.where} — form-name-piilokenttä on "${f.hiddenName}", odotettu kohdekartoitus`);
   if (!f.honeypot) err(`${f.where} — honeypot puuttuu`);
   if (!f.privacy) err(`${f.where} — tietosuojalinkki puuttuu lomakkeesta`);
   if (f.novalidate) err(`${f.where} — novalidate estäisi natiivin validoinnin ilman JS:ää`);

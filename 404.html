@@ -104,6 +104,18 @@
       <div><p class="fh">Ratkaisut</p><ul><li><a href="/aurinkosahko/">Aurinkosähkö</a></li><li><a href="/energiavarastot/">Energiavarastot</a></li><li><a href="/reservimarkkinat/">Reservimarkkinat</a></li><li><a href="/veni-energia/">Aggregaattori: VENI Energia</a></li><li><a href="/palvelut/">Palvelut</a></li></ul></div>
       <div><p class="fh">Yritys</p><ul><li><a href="/meista/">Meistä</a></li><li><a href="/yhteystiedot/">Yhteystiedot</a></li><li><a href="/ajankohtaista/">Ajankohtaista</a></li><li><a href="/laitevaatimukset/">Laitevaatimukset</a></li><li><a href="/tietosuoja/">Tietosuoja</a></li></ul></div>
     </div>
+    <div class="nl">
+      <p class="fh">Markkinakatsaus sähköpostiin</p>
+      <p>Ilmoitamme sähköpostilla, kun uusi katsaus on julkaistu – emme useammin. Ei myyntikirjeitä. Perutte vastaamalla viestiin.</p>
+      <form class="lead-form nl-form" id="nlForm" name="uutiskirje" method="POST" action="/kiitos/" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="uutiskirje">
+        <p hidden aria-hidden="true"><label>Älä täytä tätä kenttää <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <div class="field"><label class="fh" for="nl-email">Sähköposti</label><input id="nl-email" name="email" type="email" autocomplete="email" required></div>
+        <button class="btn btn-primary" type="submit">Tilaa</button>
+        <p class="nl-ok" role="status" aria-live="polite">Kiitos. Ilmoitamme, kun uusi katsaus on julkaistu.</p>
+        <p class="err" hidden role="status" aria-live="polite">Tarkistakaa sähköpostiosoite.</p>
+      </form>
+    </div>
     <div class="bottom"><span>© 2026 SAMA Energia Oy</span><div class="lang" aria-label="Kieli / Keel"><a href="https://samaenergia.ee/" lang="et">EE</a><a href="/" aria-current="page" lang="fi">FI</a></div></div>
   </div>
 </footer>

@@ -991,25 +991,27 @@ Tietosuojaseloste
 Keräämme vain sen, minkä annatte meille itse. Emme käytä evästeitä emmekä analytiikkaa. Tässä kerrotaan, mitä käsittelemme, miksi ja kuinka kauan.
 
 Rekisterinpitäjä
-SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · Y-tunnus 3647683-3 · ALV-tunnus FI36476833 · madis.maastik@samaenergia.fi · +358 449 654 614.
+SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · Y-tunnus 3647683-3 · ALV-tunnus FI36476833 · info@samaenergia.fi · +358 449 654 614.
 
 Mitä tietoja käsittelemme
-Yhteydenottolomakkeella antamanne tiedot: nimi, yritys, sähköposti, puhelin, kohteen sijainti, liittymä- ja kulutustiedot sekä viesti. Lisäksi sivuston tekninen palvelinloki (mm. IP-osoite ja aikaleima), jonka ylläpitopalvelu tuottaa palvelun toimittamiseksi ja tietoturvan varmistamiseksi. Emme käytä evästeitä, seurantapikseleitä emmekä analytiikkaa.
+Yhteydenottolomakkeella antamanne tiedot: nimi, yritys, sähköposti, puhelin, kohteen sijainti, liittymä- ja kulutustiedot sekä viesti. Lisäksi sivuston tekninen palvelinloki (mm. IP-osoite ja aikaleima), jonka ylläpitopalvelu tuottaa palvelun toimittamiseksi ja tietoturvan varmistamiseksi. Sivusto ei käytä evästeitä, analytiikkaa eikä tallennettuja asetuksia.
 
 Miksi käsittelemme
 Vastataksemme yhteydenottoonne ja valmistellaksemme pyytämäänne kartoitusta (sopimusta edeltävät toimet, yleisen tietosuoja-asetuksen 6 artiklan 1 kohdan b alakohta) sekä oikeutetun edun perusteella (6 artiklan 1 kohdan f alakohta) asiakassuhteen hoitamiseksi ja tietoturvan varmistamiseksi. Emme käytä tietoja muuhun markkinointiin ilman erillistä suostumusta.
 
 Kenelle tietoja siirretään
-Emme myy emmekä luovuta tietoja markkinointiin. Teknisinä käsittelijöinä toimivat sivuston ylläpito- ja lomakepalvelu sekä sähköpostipalvelu. Jos palveluntarjoaja käsittelee tietoja EU- tai ETA-alueen ulkopuolella, siirto suojataan EU:n hyväksymillä mekanismeilla, kuten vakiosopimuslausekkeilla tai Data Privacy Framework -järjestelyllä.
+Emme myy emmekä luovuta tietoja markkinointiin. Verkkopalvelun ylläpito ja lomakkeiden vastaanotto: Netlify, Inc. (Yhdysvallat); siirto EU- ja ETA-alueen ulkopuolelle suojataan EU:n hyväksymillä siirtomekanismeilla. Muut tekniset käsittelijät ovat sähköpostipalvelu ja verkkotunnuspalvelu. Arviota laadittaessa jaamme kohteen tietoja aggregaattorille vain teidän tietenne.
 
+Markkinakatsaus
+Markkinakatsaus: sähköpostiosoitteenne, jonka annatte tilatessanne. Peruste on suostumuksenne, jonka voitte peruuttaa milloin tahansa vastaamalla viestiin tai kirjoittamalla osoitteeseen info@samaenergia.fi. Säilytämme osoitteen peruutukseen asti.
 Kuinka kauan säilytämme
 Säilytämme yhteydenottoja enintään 24 kuukautta viimeisestä yhteydenpidosta, ellei asiointi jatku asiakkuutena. Kirjanpitolain piiriin kuuluva aineisto säilytetään lakisääteisen ajan.
 
 Oikeutenne
-Teillä on oikeus saada pääsy tietoihinne, pyytää niiden oikaisua, poistoa, käsittelyn rajoittamista tai siirtoa sekä vastustaa käsittelyä. Pyynnöt: madis.maastik@samaenergia.fi. Teillä on myös oikeus tehdä valitus valvontaviranomaiselle: Tietosuojavaltuutetun toimisto, tietosuoja.fi.
+Teillä on oikeus saada pääsy tietoihinne, pyytää niiden oikaisua, poistoa, käsittelyn rajoittamista tai siirtoa sekä vastustaa käsittelyä. Pyynnöt: info@samaenergia.fi. Teillä on myös oikeus tehdä valitus valvontaviranomaiselle: Tietosuojavaltuutetun toimisto, tietosuoja.fi.
 
 Muutokset
-Päivitetty 03.09.2026. Jos seloste muuttuu, uusin versio on aina tällä sivulla.
+Päivitetty 08.09.2026. Jos seloste muuttuu, uusin versio on aina tällä sivulla.
 
 # SAMA Energia — Iseseisev energia. Isejuhtiv aku. — https://samaenergia.ee/
 
@@ -1963,22 +1965,24 @@ Privaatsuspoliitika
 Kogume ainult seda, mille ise meile annate. Me ei kasuta küpsiseid ega analüütikat. Siin on kirjas, mida töötleme, miks ja kui kaua.
 
 Vastutav töötleja
-SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsingi, Soome · Soome registrikood (Y-tunnus) 3647683-3 · KMKR-nr FI36476833 · madis.maastik@samaenergia.fi · +358 449 654 614.
+SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsingi, Soome · Soome registrikood (Y-tunnus) 3647683-3 · KMKR-nr FI36476833 · info@samaenergia.fi · +358 449 654 614.
 
 Milliseid andmeid töötleme
-Kontaktivormil antud andmed: nimi, ettevõte, e-post, telefon, objekti asukoht, liitumis- ja tarbimisandmed ning sõnum. Lisaks veebilehe tehniline serverilogi (sh IP-aadress ja ajatempel), mille majutusteenus toodab teenuse osutamiseks ja turvalisuse tagamiseks. Me ei kasuta küpsiseid, jälgimispiksleid ega analüütikat.
+Kontaktivormil antud andmed: nimi, ettevõte, e-post, telefon, objekti asukoht, liitumis- ja tarbimisandmed ning sõnum. Lisaks veebilehe tehniline serverilogi (sh IP-aadress ja ajatempel), mille majutusteenus toodab teenuse osutamiseks ja turvalisuse tagamiseks. Sait ei kasuta küpsiseid, analüütikat ega salvestatud eelistusi.
 
 Miks töötleme
 Et vastata teie pöördumisele ja valmistada ette teie soovitud hindamist (lepingueelsed meetmed, isikuandmete kaitse üldmääruse artikli 6 lõike 1 punkt b) ning õigustatud huvi alusel (artikli 6 lõike 1 punkt f) kliendisuhte haldamiseks ja turvalisuse tagamiseks. Me ei kasuta andmeid muuks turunduseks ilma eraldi nõusolekuta.
 
 Kellele andmeid edastatakse
-Me ei müü ega anna andmeid turunduseks. Tehniliste volitatud töötlejatena tegutsevad veebilehe majutus- ja vormiteenus ning e-postiteenus. Kui teenusepakkuja töötleb andmeid väljaspool EL-i või EMP-d, kaitstakse edastust EL-i heakskiidetud mehhanismidega, nagu lepingu tüüptingimused või Data Privacy Framework.
+Me ei müü ega anna andmeid turunduseks. Veebimajutus ja vormide vastuvõtt: Netlify, Inc. (USA); edastust väljapoole EL-i ja EMP-d kaitstakse EL-i heakskiidetud edastusmehhanismidega. Teised tehnilised volitatud töötlejad on e-postiteenus ja domeeniteenus. Hinnangu koostamisel jagame objekti andmeid agregaatoriga ainult teie teadmisel.
 
+Turuülevaade
+Turuülevaade: teie e-posti aadress, mille annate tellimisel. Aluseks on teie nõusolek, mille võite igal ajal tagasi võtta, vastates kirjale või kirjutades aadressile info@samaenergia.fi. Säilitame aadressi kuni loobumiseni.
 Kui kaua säilitame
 Säilitame pöördumisi kuni 24 kuud viimasest suhtlusest, kui asjaajamine ei jätku kliendisuhtena. Raamatupidamisseaduse alla kuuluv materjal säilitatakse seadusjärgse aja.
 
 Teie õigused
-Teil on õigus saada juurdepääs oma andmetele, nõuda nende parandamist, kustutamist, töötlemise piiramist või ülekandmist ning esitada vastuväiteid töötlemisele. Taotlused: madis.maastik@samaenergia.fi. Teil on ka õigus esitada kaebus järelevalveasutusele: Soome andmekaitsevolinik (tietosuoja.fi) või Eesti Andmekaitse Inspektsioon (aki.ee).
+Teil on õigus saada juurdepääs oma andmetele, nõuda nende parandamist, kustutamist, töötlemise piiramist või ülekandmist ning esitada vastuväiteid töötlemisele. Taotlused: info@samaenergia.fi. Teil on ka õigus esitada kaebus järelevalveasutusele: Soome andmekaitsevolinik (tietosuoja.fi) või Eesti Andmekaitse Inspektsioon (aki.ee).
 
 Muudatused
-Uuendatud 03.09.2026. Kui tingimused muutuvad, on uusim versioon alati sellel lehel.
+Uuendatud 08.09.2026. Kui tingimused muutuvad, on uusim versioon alati sellel lehel.

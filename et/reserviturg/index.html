@@ -260,6 +260,18 @@
       <div><p class="fh">Lahendused</p><ul><li><a href="/paikeseelekter/">Päikeseelekter</a></li><li><a href="/energiasalvestid/">Energiasalvestid</a></li><li><a href="/reserviturg/">Reserviturg</a></li><li><a href="/soleron-energy/">Agregaator: Soleron Energy</a></li><li><a href="/teenused/">Teenused</a></li></ul></div>
       <div><p class="fh">Ettevõte</p><ul><li><a href="/meist/">Meist</a></li><li><a href="/kontakt/">Kontakt</a></li><li><a href="/uudised/">Uudised</a></li><li><a href="/seadmete-nouded/">Nõuded seadmetele</a></li><li><a href="/andmekaitse/">Privaatsuspoliitika</a></li></ul></div>
     </div>
+    <div class="nl">
+      <p class="fh">Turuülevaade e-postile</p>
+      <p>Anname e-kirjaga teada, kui uus ülevaade on avaldatud – mitte sagedamini. Ei müügikirju. Loobumiseks vastake kirjale.</p>
+      <form class="lead-form nl-form" id="nlForm" name="uudiskiri" method="POST" action="/aitah/" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="uudiskiri">
+        <p hidden aria-hidden="true"><label>Ära täida seda välja <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <div class="field"><label class="fh" for="nl-email">E-post</label><input id="nl-email" name="email" type="email" autocomplete="email" required></div>
+        <button class="btn btn-primary" type="submit">Telli</button>
+        <p class="nl-ok" role="status" aria-live="polite">Aitäh. Anname teada, kui uus ülevaade on avaldatud.</p>
+        <p class="err" hidden role="status" aria-live="polite">Kontrollige e-posti aadressi.</p>
+      </form>
+    </div>
     <div class="bottom"><span>© 2026 SAMA Energia Oy</span><div class="lang" aria-label="Keel / Kieli"><a href="/" aria-current="page" lang="et">EE</a><a href="https://samaenergia.fi/reservimarkkinat/" lang="fi">FI</a></div></div>
   </div>
 </footer>

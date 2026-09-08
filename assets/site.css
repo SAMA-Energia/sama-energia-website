@@ -868,3 +868,9 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
 @media (max-width:900px){.sysgrid{grid-template-columns:1fr}}
 @media (max-width:700px){.reqs div{grid-template-columns:1fr}.sysfig{display:none}}
 @media (max-width:620px){.contacts{grid-template-columns:1fr}}
+.footer .nl{padding:28px 0 32px;border-bottom:1px solid var(--night-line)}
+.footer .nl form{display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap;margin-top:14px}
+.footer .nl .field{flex:1 1 240px}
+.nl-ok{display:none;color:var(--gold);font-weight:600}
+.nl-form.sent .nl-ok{display:block}
+.nl-form.sent .field,.nl-form.sent .btn{display:none}
