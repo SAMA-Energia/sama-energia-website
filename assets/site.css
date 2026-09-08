@@ -119,6 +119,9 @@ p{margin:0}
 .hero-bg .base{stroke:var(--line-2);stroke-width:1;opacity:.45}
 .hero h1{margin:0;max-width:13ch;font-size:clamp(46px,6.6vw,96px);line-height:1.03;letter-spacing:-.025em} /* riviväli .98 -> 1.03 (05.09.2026): "energia."-g:n alapidennys ja "Itseohjautuva"-h:n yläpidennys koskettivat toisiaan; 1.03 on pienin arvo, joka antaa ≥ 4 px pikseleistä mitattuna 1440:ssä */
 .hero h1 em{white-space:nowrap}
+/* Pitkä hero-otsikko (a1-kokeilu 08.09.2026): 48 merkin rivi ei mahdu 13ch/96px-latomukseen,
+   vaan valuisi oikean palstan (lead + painikkeet) päälle. Vain .hero h1.long muuttuu. */
+@media (min-width:901px){.hero h1.long{max-width:15ch;font-size:clamp(40px,5.2vw,72px)}}
 .hero .col{border-top:2px solid var(--gold);padding-top:24px}
 .hero .lead{margin-bottom:28px;max-width:46ch}
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
@@ -718,6 +721,7 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
   .hero .wrap{grid-template-columns:1fr;gap:26px}
   .hero h1{font-size:clamp(40px,11.4vw,54px);max-width:none} /* 11.4vw = suurin arvo, jolla FI-otsikko pysyy kahdella rivillä 360/390/430 (05.09.2026) */
   .hero-br{display:none} /* ET-otsikon pakotettu rivinvaihto (neljä riviä 1440:ssä kuten FI, 06.09.2026) ei koske puhelinta: kaksi riviä */
+  .hero h1.long{font-size:clamp(36px,10vw,48px)} /* a1-kokeilu 08.09.2026 */
   .hero .col{padding-top:20px}
   .hero .lead{font-size:17px;margin-bottom:26px}
   .hero-cta .btn{width:100%}

@@ -5,7 +5,7 @@
 
 # SAMA Energia — Itsenäinen energia. Itseohjautuva akku. — https://samaenergia.fi/
 
-Itsenäinen energia. Itseohjautuva akku.
+Laittakaa sähköliittymänne töihin – omaksi eduksenne.
 
 Teollinen energiavarasto leikkaa tehomaksua, ostaa sähkön halvoilla tunneilla ja tuottaa Fingridin reservimarkkinoilla valmiudesta — automaattisesti. Mitä se tarkoittaa teidän kohteessanne, kerromme kirjallisesti ennen kuin allekirjoitatte mitään.
 
@@ -885,7 +885,7 @@ Päivitetty 03.09.2026. Jos seloste muuttuu, uusin versio on aina tällä sivull
 
 # SAMA Energia — Iseseisev energia. Isejuhtiv aku. — https://samaenergia.ee/
 
-Iseseisev energia. Isejuhtiv aku.
+Pange oma elektriliitumine enda kasuks tööle.
 
 Tööstuslik energiasalvesti lõikab võimsustasu, ostab elektri odavatel tundidel ja teenib Eleringi reserviturul valmisoleku eest — automaatselt. Mida see teie objektil tähendab, ütleme kirjalikult, enne kui te midagi allkirjastate.
 

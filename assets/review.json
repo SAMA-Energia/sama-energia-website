@@ -3,8 +3,7 @@
   {
    "page": "/",
    "sectionId": "etusivu",
-   "kind": "changed",
-   "prev": "Energiavarastot ja aurinkosähkö · yrityksille ja maanomistajille Yhteinen verkko.Itsenäinen energia. Rakennamme yritysten energiaomavaraisuutta: aurinkosähkö, energiavarastot ja ohjaus tekevät liittymästänne aktiivisen osan sähköjärjestelmää. Ja mitä se kohteessanne oikeasti tuottaa — siihen vastaamme kirjallisesti, ennen kuin mitään allekirjoitetaan. Pyydä kohdekartoitus Katso miten prosessi etenee"
+   "kind": "new"
   },
   {
    "page": "/",
@@ -260,8 +259,7 @@
   {
    "page": "/et/",
    "sectionId": "avaleht",
-   "kind": "changed",
-   "prev": "Energiasalvestid ja päikeseelekter · ettevõtetele ja maaomanikele Ühine võrk.Sõltumatu energia. Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame kirjalikult, enne kui midagi alla kirjutatakse. Küsige objektikaardistust Vaadake, kuidas protsess kulgeb"
+   "kind": "new"
   },
   {
    "page": "/et/",
