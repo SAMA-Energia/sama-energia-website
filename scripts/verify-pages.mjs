@@ -151,6 +151,20 @@ const GUARDS = [
   // 03.09: sama sääntö viroksi.
   { id: 'reservi-andsid-et', langs: 'et', why: '"andsid akud" reservi lähellä — osakaal on kvalifitseeritud võimsus, mitte toodang (03.09.2026)',
     find: t => nearMatches(t, /andsid akud/gi, /reservi/gi, 120) },
+  // 09.09: sama sääntö preesensissä. Osuudet ovat säätökokein todennettua kapasiteettia, eivät
+  // tuotantoa; rajattu subjektiin (energiavarastot/akut), koska "tuottaa" on muuten yleissana.
+  { id: 'reservi-tuottavat-fi', langs: 'fi', why: '"energiavarastot/akut tuottavat" reservin lähellä — osuus on kapasiteettia, ei tuotantoa (09.09.2026)',
+    find: t => nearMatches(t, /(?:energiavarastot|akut)\b[^.]{0,40}?\b(?:tuottavat|tuottaa)\b/gi, /reservi/gi, 120) },
+  // 09.09 (rekisteri F3): Eleringin 76 MW / 491 / 579 MW on reservituotteisiin KVALIFIOITUNUTTA
+  // kapasiteettia (turu kokkuvõte, tabel 2), ei tunneittain hankittua määrää.
+  { id: 'elering-tuntihankinta-fi', langs: 'fi', why: '"joka tunnille 76" — 76 MW on kvalifioitunutta kapasiteettia, ei tuntihankintaa (09.09.2026, F3)',
+    find: t => [...t.matchAll(/joka tunnille 76/gi)] },
+  { id: 'elering-tuntihankinta-et', langs: 'et', why: '"ostis igaks tunniks" / "iga tunni kohta 76" / "ostab iga tunni jaoks" — 76 MW on kvalifitseerunud võimsus, mitte tunnihange (09.09.2026, F3)',
+    find: t => [...t.matchAll(/ostis igaks tunniks|iga tunni kohta 76|ostab iga tunni jaoks/gi)] },
+  // 09.09: SAMA ei ole rekisteröity Datahub-/Estfeed-kolmas osapuoli, joten valtuutusta ei voi antaa;
+  // kulutustiedot toimitetaan CSV-latauksena asiakasportaalista tai verkkoyhtiöltä.
+  { id: 'datahub-valtuutus', langs: 'both', why: '"Datahub-valtuutus" / "Datahubi volitus" / "e-elering volitus" — SAMA ei ole rekisteröity kolmas osapuoli (09.09.2026)',
+    find: t => [...t.matchAll(/Datahub-valtuutus|Datahubi volitus|e-elering volitus/gi)] },
   // 03.09: todennettu määrä oli 158 -> sivuilla sanotaan "yli 150"; 162 on tarkistamaton luku.
   { id: 'luku-162', langs: 'both', why: '162 reservitoimittajien/teenusepakkujate lähellä — laskenta oli 158, sivulla "yli 150" (03.09.2026)',
     find: t => nearMatches(t, /(?<!\d)162(?!\d)/g, /reservitoimittaj|tasakaalustus|teenusepakkuja/gi, 60) },

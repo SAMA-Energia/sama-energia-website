@@ -83,7 +83,7 @@ Näin se etenee – ja mikä maksaa milloin.
 Ketään ei lähetetä minnekään ennen kuin tiedot ovat käsillä. Kaksi ensimmäistä askelta ovat maksuttomia, kohdekäynti hyvitetään sopimuksessa, suunnittelu ja asennus kulkevat sopimuksen mukaan.
 
 01Maksuton kartoitus
-Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahub), yhden laskun ja pääkaavion; me kirjoitamme arvion: liittymä, kulutusprofiili, tehon jako, kolme skenaariota lähteineen.
+Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubista tai verkkoyhtiöltänne), yhden laskun ja pääkaavion; me kirjoitamme arvion: liittymä, kulutusprofiili, tehon jako, kolme skenaariota lähteineen.
 Maksuton · aikaanne noin 20 minuuttia
 
 02Esitarkastus
@@ -211,7 +211,7 @@ Tehon jako oman kulutuksen, arbitraasin ja reservimarkkinan kesken
 Kolme reservimarkkinaskenaariota lähteineen
 Verkkoyhtiön kanta ja se, mitä arvio ei sano
 
-Te annatte: pääsyn kulutustietoihin (Datahub-valtuutus), yhden sähkölaskun ja pääkaavion.
+Te annatte: tuntikohtaiset kulutustietonne (CSV-lataus Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta – neuvomme miten), yhden sähkölaskun ja pääkaavion.
 
 MM
 
@@ -395,8 +395,8 @@ Fingrid on sopinut noin 1 800 MW:n akkuliitynnöistä, kyselyjä on yli 30 000
 Lähde: Fingrid, tiedote · 24.9.2025
 
 Pitkäaikainen kysyntä: koko alue tarvitsee reserviä
-Baltian maat irtautuivat Venäjän verkosta 8.2.2025 ja synkronoituivat Manner-Eurooppaan 9.2.2025. Siitä lähtien Elering ostaa taajuusreservit itse: heinäkuussa 2026 joka tunnille 76 MW FCR:ää ja lähes 500 MW aFRR:ää kumpaankin suuntaan. Kun tuuli- ja aurinkovoiman osuus kasvaa, reservien tarve kasvaa koko alueella. Kysyntä ei ole ohimenevä.
-Lähde: Elering, taajuusreservimarkkinoiden yhteenvedot · heinäkuu 2026
+Baltian maat irtautuivat Venäjän verkosta 8.2.2025 ja synkronoituivat Manner-Eurooppaan 9.2.2025. Siitä lähtien Elering ostaa taajuusreservit itse. Heinäkuussa 2026 reservituotteisiin hyväksyttyä kapasiteettia oli Virossa 76 MW FCR:ää ja noin 490 / 580 MW aFRR:ää (ylös / alas). Kun tuuli- ja aurinkovoiman osuus kasvaa, reservien tarve kasvaa koko alueella. Kysyntä ei ole ohimenevä.
+Lähde: Elering, taajuusreservimarkkinoiden yhteenveto · heinäkuu 2026, taulukko 2
 
 1 MW / 2 MWhesimerkkikoko, mitoitetaan kohteen mukaan
 
@@ -673,7 +673,7 @@ Mitä sisältää
 Kaksi sivua: liittymä ja kulutusprofiili, tehon jako oman kulutuksen, arbitraasin ja reservimarkkinan kesken, kolme reservimarkkinaskenaariota lähteineen, verkkoyhtiön kanta ja se, mitä arvio ei sano.
 
 Mitä te annatte
-Pääsyn tuntikohtaisiin kulutustietoihin (Datahub-valtuutus), yhden sähkölaskun ja pääkaavion.
+Tuntikohtaiset kulutustietonne (CSV-lataus Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta – neuvomme miten), yhden sähkölaskun ja pääkaavion.
 
 Aika
 Vastaamme kahdessa arkipäivässä; arvio valmistuu yleensä viikossa tietojen saamisesta.
@@ -722,7 +722,7 @@ Näin se etenee – ja mikä maksaa milloin.
 Ketään ei lähetetä minnekään ennen kuin tiedot ovat käsillä. Kaksi ensimmäistä askelta ovat maksuttomia, kohdekäynti hyvitetään sopimuksessa, suunnittelu ja asennus kulkevat sopimuksen mukaan.
 
 01Maksuton kartoitus
-Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahub), yhden laskun ja pääkaavion; me kirjoitamme arvion: liittymä, kulutusprofiili, tehon jako, kolme skenaariota lähteineen.
+Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubista tai verkkoyhtiöltänne), yhden laskun ja pääkaavion; me kirjoitamme arvion: liittymä, kulutusprofiili, tehon jako, kolme skenaariota lähteineen.
 Maksuton · aikaanne noin 20 minuuttia
 
 02Esitarkastus
@@ -1010,7 +1010,7 @@ Tehon jako oman kulutuksen, arbitraasin ja reservimarkkinan kesken
 Kolme reservimarkkinaskenaariota lähteineen
 Verkkoyhtiön kanta ja se, mitä arvio ei sano
 
-Te annatte: pääsyn kulutustietoihin (Datahub-valtuutus), yhden sähkölaskun ja pääkaavion.
+Te annatte: tuntikohtaiset kulutustietonne (CSV-lataus Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta – neuvomme miten), yhden sähkölaskun ja pääkaavion.
 
 MM
 
@@ -1150,7 +1150,7 @@ Kuidas aku päev välja näeb
 Reservituru tulu
 Elering maksab võrgu tasakaalustamiseks valmis olevate akude eest, ka tundidel, mil aku lihtsalt ootab. Liitumine käib agregaatori kaudu, kes on Eleringiga lepingu sõlminud teenusepakkuja.
 
-Elering ostab sagedusreserve iga päev – 2026. aasta juulis 76 MW FCR-i ja ligi 500 MW aFRR-i. Allikas: Elering · juuli 2026
+Elering ostab sagedusreserve ise. Juulis 2026 oli Eestis reservitoodete pakkumiseks kvalifitseerunud 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i (üles / alla). Allikas: Elering, sagedusreservide turu kokkuvõte · juuli 2026, tabel 2
 
 Reserviturg lihtsalt seletatuna
 
@@ -1174,7 +1174,7 @@ Kontrollime, kas selle tasuvus peab reaalsusele vastu. Tasuta, samade tarbimisan
 
 Küsi teist arvamust
 
-Viie aastaga on reserve vaja ligi kaks korda praegusest rohkem. Teie liitumine võib olla üks pakkujatest.
+2035. aastaks on juhitavat võimsust vaja üle poole rohkem kui täna. Teie liitumine võib olla üks pakkujatest.
 
 Elektrivõrk peab olema tasakaalus igal sekundil. Elering ostab sagedusreserve iga päev ja maksab juba selle eest, et reserv on valmis – ja Eleringi hinnangul kasvab juhitava võimsuse vajadus 2035. aastaks ca 2 100 megavatini.
 
@@ -1195,7 +1195,7 @@ Kuidas see käib – ja mis millal maksab.
 Kedagi ei saadeta kuhugi enne, kui andmed on käes. Kaks esimest sammu on tasuta, objektikülastus arvestatakse lepingus maha, projekteerimine ja paigaldus käivad lepingu järgi.
 
 01Tasuta hindamine
-Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (e-elering), ühe arve ja peakilbi skeemi; meie kirjutame hinnangu: liitumine, tarbimisprofiil, võimsuse jaotus, kolm stsenaariumi allikatega.
+Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või teie võrguettevõtjalt), ühe arve ja peakilbi skeemi; meie kirjutame hinnangu: liitumine, tarbimisprofiil, võimsuse jaotus, kolm stsenaariumi allikatega.
 Tasuta · teie aeg umbes 20 minutit
 
 02Eelkontroll
@@ -1323,7 +1323,7 @@ Võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel
 Kolm reservituru stsenaariumi allikatega
 Võrguettevõtja seisukoht ja see, mida hinnang ei ütle
 
-Teie annate: ligipääsu tarbimisandmetele (e-elering volitus), ühe elektriarve ja peakilbi skeemi.
+Teie annate: oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt – juhendame), ühe elektriarve ja peakilbi skeemi.
 
 MM
 
@@ -1463,11 +1463,11 @@ Suurtarbijale ei ole aku tuleviku projekt, vaid tänane tuluallikas. Elering mak
 
 Küsi tasuta hindamist Meie agregaatoripartner Soleron Energy
 
-76 MW · ~500 MWFCR-i ja aFRR-i, mida Elering ostab iga tunni jaoks, mõlemas suunas, juuli 2026
+76 MW · 491 / 579 MWFCR-i ja aFRR-i (üles / alla) pakkumiseks kvalifitseerunud võimsus Eestis, juuli 2026
 
 3,73 €/MWhtasakaalustamisvõimsuse kulu iga tarbija arvel 2026, millega Elering need reservid ostab
 
-Allikad: Elering · juuli 2026; Elering · 2026
+Allikad: Elering, sagedusreservide turu kokkuvõte · juuli 2026, tabel 2; Elering · 2026
 
 Reserviturg, lihtsalt seletatuna.
 
@@ -1503,8 +1503,8 @@ Alates 1. jaanuarist 2026 arvestatakse salvesti võrgutasu ainult kuu netotarbim
 Allikad: Kliimaministeerium · 11.09.2024; Elering, varustuskindluse aruanne 2025 · lk 36–37
 
 Pikaajaline nõudlus: Eesti hoiab oma sagedust nüüd ise
-8. veebruaril 2025 lahkusid Balti riigid Venemaa võrgust lõplikult ja sünkroniseerusid 9. veebruaril 2025 Mandri-Euroopa võrguga. Sellest hetkest ostab Elering sagedusreservi ise: juulis 2026 iga tunni kohta 76 MW FCR-i ja ligi 500 MW aFRR-i mõlemas suunas. Mida rohkem tuult ja päikest võrku tuleb, seda rohkem reservi vajatakse. See nõudlus ei ole mööduv.
-Allikas: Elering, sagedusreservide turu kokkuvõtted · juuli 2026
+8. veebruaril 2025 lahkusid Balti riigid Venemaa võrgust lõplikult ja sünkroniseerusid 9. veebruaril 2025 Mandri-Euroopa võrguga. Sellest hetkest ostab Elering sagedusreserve ise. Juulis 2026 oli Eestis reservitoodete pakkumiseks kvalifitseerunud 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i (üles / alla). Mida rohkem tuult ja päikest võrku tuleb, seda rohkem reservi vajatakse. See nõudlus ei ole mööduv.
+Allikas: Elering, sagedusreservide turu kokkuvõte · juuli 2026, tabel 2
 
 1 MW / 2 MWhnäidissuurus, dimensioneeritakse objekti järgi
 
@@ -1743,7 +1743,7 @@ Mida sisaldab
 Kaks lehekülge: liitumine ja tarbimisprofiil, võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel, kolm reservituru stsenaariumi allikatega, võrguettevõtja seisukoht ja see, mida hinnang ei ütle.
 
 Mida te annate
-Ligipääsu tunnipõhistele tarbimisandmetele (e-elering volitus), ühe elektriarve ja peakilbi skeemi.
+Oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt – juhendame), ühe elektriarve ja peakilbi skeemi.
 
 Aeg
 Vastame kahe tööpäevaga; hinnang valmib tavaliselt nädalaga pärast andmete saamist.
@@ -1792,7 +1792,7 @@ Kuidas see käib – ja mis millal maksab.
 Kedagi ei saadeta kuhugi enne, kui andmed on käes. Kaks esimest sammu on tasuta, objektikülastus arvestatakse lepingus maha, projekteerimine ja paigaldus käivad lepingu järgi.
 
 01Tasuta hindamine
-Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (e-elering), ühe arve ja peakilbi skeemi; meie kirjutame hinnangu: liitumine, tarbimisprofiil, võimsuse jaotus, kolm stsenaariumi allikatega.
+Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või teie võrguettevõtjalt), ühe arve ja peakilbi skeemi; meie kirjutame hinnangu: liitumine, tarbimisprofiil, võimsuse jaotus, kolm stsenaariumi allikatega.
 Tasuta · teie aeg umbes 20 minutit
 
 02Eelkontroll
@@ -2021,7 +2021,7 @@ Alates 2026 maksate reservide eest. Küsimus on, kummal pool arvet te olete.
 
 Mis täpselt muutus
 
-8. veebruaril 2025 lahkusid Balti riigid Venemaa sagedusalast ja sünkroniseerusid 9. veebruaril 2025 Mandri-Euroopa võrguga. Sellest hetkest peab Elering ise hoidma Eesti võrgu sagedust 50 hertsi juures, ja selleks tuleb reserve turult osta. Juulis 2026 ostis Elering igaks tunniks 76 MW sageduse hoidmise reservi (FCR) ja ligi 500 MW automaatset taastamisreservi (aFRR), mõlemas suunas.
+8. veebruaril 2025 lahkusid Balti riigid Venemaa sagedusalast ja sünkroniseerusid 9. veebruaril 2025 Mandri-Euroopa võrguga. Sellest hetkest peab Elering ise hoidma Eesti võrgu sagedust 50 hertsi juures, ja selleks tuleb reserve turult osta. Juulis 2026 oli Eestis reservitoodete pakkumiseks kvalifitseerunud 76 MW sageduse hoidmise reservi (FCR) ja ligi 490 / 580 MW automaatset taastamisreservi (aFRR) (üles / alla).
 
 Selle ostmine maksab, ja see kulu pandi tarbija arvele. 1. jaanuarist 2026 on igal Eesti elektriarvel tasakaalustamisvõimsuse kulu: 3,73 €/MWh 2026. aastal ja 2,97 €/MWh alates 2027. aastast. See ei ole börsihind ega võrgutasu, vaid eraldi rida, mis rahastab valmisolekut.
 
@@ -2059,7 +2059,7 @@ Allikad
 
 Elering, tasakaalustamisvõimsuse kulu — 3,73 €/MWh 2026, 2,97 €/MWh alates 2027 (vaadatud 2.9.2026).
 
-Elering, sagedusreservide turu kokkuvõtted — juuli 2026: 76 MW FCR ja ligi 500 MW aFRR tunnis.
+Elering, sagedusreservide turu kokkuvõte — juuli 2026, tabel 2: 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i pakkumiseks kvalifitseerunud võimsust.
 
 Elering, tasakaalustamisteenuste energia- ja võimsusturg — miinimumpakkumine 1 MW.
 
@@ -2086,7 +2086,7 @@ Võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel
 Kolm reservituru stsenaariumi allikatega
 Võrguettevõtja seisukoht ja see, mida hinnang ei ütle
 
-Teie annate: ligipääsu tarbimisandmetele (e-elering volitus), ühe elektriarve ja peakilbi skeemi.
+Teie annate: oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt – juhendame), ühe elektriarve ja peakilbi skeemi.
 
 MM
 
