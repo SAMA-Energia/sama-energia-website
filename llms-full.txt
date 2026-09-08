@@ -100,25 +100,29 @@ Auringon kanssa vielä parempi
 
 Ettekö löytäneet omaa kohdettanne? Kuvailkaa se meille, niin kerromme rehellisesti, kannattaako akku teillä.Pyydä kartoitus
 
-Neljä askelta kulutustiedoista reservituloon.
+Näin se etenee – ja mikä maksaa milloin.
 
-Emme myy vain laitetta. Etsimme teille markkinoiden parhaan ratkaisun — ja johdamme projektin kartoituksesta seurantaan yhdellä yhteyshenkilöllä.
+Ketään ei lähetetä minnekään ennen kuin tiedot ovat käsillä. Kaksi ensimmäistä askelta ovat maksuttomia, kohdekäynti hyvitetään sopimuksessa, suunnittelu ja asennus kulkevat sopimuksen mukaan.
 
-01Maksuton kohdekartoitus
-Tuntikohtaiset kulutustietonne, 20 minuuttia teiltä
+01Maksuton kartoitus
+Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahub), yhden laskun ja pääkaavion; me kirjoitamme arvion: liittymä, kulutusprofiili, tehon jako, kolme skenaariota lähteineen.
+Maksuton · aikaanne noin 20 minuuttia
 
-02Kirjallinen arvio
-Luvut lähteineen ja verkkoyhtiön kanta, ennen allekirjoitusta
+02Esitarkastus
+Kymmenen valokuvaa pääkeskuksesta ja asennuspaikasta sekä lyhyt videopuhelu huoltohenkilönne kanssa; sähköasentaja kertoo, onnistuuko ja millä ehdoin, ja budjetin suuruusluokan.
+Maksuton · yksi tunti
 
-03Asennus ja liittäminen
-Laitteet kohteen mukaan, luvat ja dokumentaatio meidän kauttamme
+03Kohdekäynti
+Sähköasentaja käy paikalla, mittaa kaapelireitin, keskuksen ja asennuspaikan ja vahvistaa hinnan.
+Maksullinen · hyvitetään sopimuksessa
 
-04Reservimarkkinoille ja seurantaan
-Aggregaattori vie akun markkinoille, te seuraatte tuottoa
+04Suunnittelu, asennus, markkina
+Suunnittelu, verkkoyhtiön liittymisasiat, asennus, tarkastukset ja käyttöönotto; aggregaattori liittää varaston monimarkkinapalveluun ja me seuraamme, että järjestelmä tekee sen, minkä arvio näytti.
+Sopimuksen mukaan · yhden yhteyshenkilön kautta
 
-Ensimmäinen askel ei sido mihinkään. Kysely ja kulutustiedot — ja kahdessa arkipäivässä tiedätte, kannattaako ja miten jatkaa.
+Ensimmäinen askel ei sido mihinkään. Tiedot ja lasku, ja tiedätte kahdessa arkipäivässä, kannattaako ja miten jatkaa.
 
-Näin projekti etenee, vaihe vaiheelta
+Pyydä maksuton kartoitus
 
 Vaikeat kysymykset, rehelliset vastaukset.
 
@@ -152,6 +156,9 @@ Takuuehdot, huoltovälit ja se, kenelle soitatte, kirjataan samaan dokumenttiin 
 Kuka hoitaa asiat verkkoyhtiön kanssa?
 Me. Tekniset ehdot ja verkkoyhtiön kanta ovat kirjallisesti kädessä ennen kuin allekirjoitatte mitään, ei sen jälkeen.
 Neljä sääntöä, joiden mukaan arvio syntyy
+
+Onko rahoitusta saatavilla?
+Kyllä. Leasingrahoitus on mahdollista järjestää, ja arviossa näytämme omarahoituksen ja leasingin vertailun samoilla luvuilla, jotta päätös on helppo.
 
 Aloitetaan kulutustiedoistanne.
 
@@ -604,34 +611,92 @@ Pyydä maksuton kartoitus Takaisin reservimarkkinoihin
 
 Etusivu›Palvelut
 
-Kartoitus, kirjallinen arvio, projektinjohto, seuranta.
+Kolme asiaa, jotka voitte meiltä tilata.
 
-Emme myy vain laitetta. Johdamme projektinne alusta loppuun ja vastaamme luvuista: jokainen luku kirjallisesti, lähteineen, ennen allekirjoitusta.
+Jokainen tilaus alkaa samasta kohdasta: maksuttomasta kirjallisesta arviosta. Tässä on kirjattuna, mitä kukin askel sisältää, mitä te siihen annatte ja mitä sen jälkeen tapahtuu.
 
 2 arkipäivääkartoituksen vastausaika: tiedätte, kannattaako ja miten jatkaa
 
 1 yhteyshenkilökoko projektin ajan, kartoituksesta käyttöönottoon ja seurantaan
 
-Neljä askelta kulutustiedoista reservituloon.
-Teillä on koko projektin ajan yksi yhteyshenkilö. Me johdamme, dokumentoimme ja pidämme teidät ajan tasalla. Te teette päätökset.
+Arvio, projekti, portfolio.
+Samat viisi riviä jokaisesta tuotteesta, jotta vertailu on helppoa.
 
-01Maksuton kohdekartoitus
-Täytätte lyhyen kyselyn, me luemme tuntikohtaiset kulutustietonne ja käymme liittymispisteen läpi. Paikan päällä tai etänä.
-Teidän aikaanne: noin 20 minuuttia
+Teidän tietonne keskellä, muiden ehdot ympärillä — yksi laskelma.
 
-02Kirjallinen arvio
-Luvut lähteineen, verkkoyhtiön kanta, reservimarkkinaskenaariot ja rahoitusvaihtoehdot. Yksi dokumentti, jonka voitte itse tarkistaa.
-Ennen allekirjoitusta, ei sitoumuksia
+MaksutonArvio
+Jokaiselle yritykselle, jolla on oma sähköliittymä – myös silloin, kun tarjous on jo kädessä.
 
-03Asennus ja liittäminen
-Laitteet valitaan kohteenne, ei varaston mukaan. Asennus, luvat ja dokumentaatio kulkevat meidän kauttamme, yhdessä asennuskumppanimme kanssa.
-Me johdamme, te näette tilanteen
+Mitä sisältää
+Kaksi sivua: liittymä ja kulutusprofiili, tehon jako oman kulutuksen, arbitraasin ja reservimarkkinan kesken, kolme reservimarkkinaskenaariota lähteineen, verkkoyhtiön kanta ja se, mitä arvio ei sano.
 
-04Reservimarkkinoille ja seurantaan
-Aggregaattori liittää akun reservimarkkinoille reservitoimittajan kautta. Te näette säästön ja tuoton omasta seurantanäkymästänne, selkokielellä, ei taulukkona.
-Tuotto alkaa liittämisen jälkeen
+Mitä te annatte
+Pääsyn tuntikohtaisiin kulutustietoihin (Datahub-valtuutus), yhden sähkölaskun ja pääkaavion.
 
-Ensimmäinen askel ei sido mihinkään. Kysely ja kulutustiedot — ja kahdessa arkipäivässä tiedätte, kannattaako ja miten jatkaa.
+Aika
+Vastaamme kahdessa arkipäivässä; arvio valmistuu yleensä viikossa tietojen saamisesta.
+
+Mitä sitten
+Te päätätte. Jos jatketaan, seuraa esitarkastus – sekin maksuton.
+
+Pyydä maksuton kartoitus
+
+ProjektiVarasto ja monimarkkinapalvelu
+Yhteen kohteeseen: kuivuri, teollisuus, kylmävarasto, hotelli, hoivakoti, aurinkopuisto.
+
+Mitä sisältää
+Esitarkastus, kohdekäynti, suunnittelu, verkkoyhtiön liittymisasiat, laitteet vaatimustemme mukaan, asennus, tarkastukset ja käyttöönotto, liittäminen aggregaattoriin, seuranta. Takuu ja huolto sopimuksessa omalla rivillään.
+
+Mitä te annatte
+Päätöksen arvion perusteella, pääsyn kohteeseen ja kaksi allekirjoitusta: EPC-sopimus meidän kanssamme ja palvelusopimus aggregaattorin kanssa.
+
+Aika
+Kohdekäynnistä käyttöönottoon riippuu verkkoyhtiön vastauksesta ja toimituksesta; odotusajat on arviossa eritelty.
+
+Mitä sitten
+Tuotto alkaa aggregaattoriin liittämisen jälkeen; me seuraamme, että järjestelmä tekee sen, minkä arvio näytti.
+
+Energiavarastot
+
+Useita kohteitaPortfolio
+Kiinteistöportfolioille, aurinkopuistojen omistajille ja ketjuille, joilla on useita liittymiä.
+
+Mitä sisältää
+Kaikkien kohteiden arvio yhdessä dokumentissa, järjestys kannattavuuden mukaan, yhteinen laite- ja aggregaattorikehys, yksi yhteyshenkilö koko portfoliolle.
+
+Mitä te annatte
+Kohdeluettelon liittymä- ja kulutustietoineen.
+
+Aika
+Arvio kohteiden määrän mukaan; ensimmäinen kohde lähtee toteutukseen, kun muut ovat vielä arviossa.
+
+Mitä sitten
+Jokainen kohde käy läpi samat neljä askelta; portfolio kasvaa kohde kerrallaan.
+
+Kuvailkaa portfolionne
+
+Näin se etenee – ja mikä maksaa milloin.
+
+Ketään ei lähetetä minnekään ennen kuin tiedot ovat käsillä. Kaksi ensimmäistä askelta ovat maksuttomia, kohdekäynti hyvitetään sopimuksessa, suunnittelu ja asennus kulkevat sopimuksen mukaan.
+
+01Maksuton kartoitus
+Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahub), yhden laskun ja pääkaavion; me kirjoitamme arvion: liittymä, kulutusprofiili, tehon jako, kolme skenaariota lähteineen.
+Maksuton · aikaanne noin 20 minuuttia
+
+02Esitarkastus
+Kymmenen valokuvaa pääkeskuksesta ja asennuspaikasta sekä lyhyt videopuhelu huoltohenkilönne kanssa; sähköasentaja kertoo, onnistuuko ja millä ehdoin, ja budjetin suuruusluokan.
+Maksuton · yksi tunti
+
+03Kohdekäynti
+Sähköasentaja käy paikalla, mittaa kaapelireitin, keskuksen ja asennuspaikan ja vahvistaa hinnan.
+Maksullinen · hyvitetään sopimuksessa
+
+04Suunnittelu, asennus, markkina
+Suunnittelu, verkkoyhtiön liittymisasiat, asennus, tarkastukset ja käyttöönotto; aggregaattori liittää varaston monimarkkinapalveluun ja me seuraamme, että järjestelmä tekee sen, minkä arvio näytti.
+Sopimuksen mukaan · yhden yhteyshenkilön kautta
+
+Ensimmäinen askel ei sido mihinkään. Tiedot ja lasku, ja tiedätte kahdessa arkipäivässä, kannattaako ja miten jatkaa.
+
 Pyydä maksuton kartoitus
 
 Neljä sääntöä, joiden mukaan jokainen arvio syntyy.
@@ -667,13 +732,8 @@ Verkkoyhtiön kanta kädessä ennen pääoman sitomista
 
 Reservimarkkinoiden logiikka selitetty, tulo analysoitu skenaarioina
 
-Usein kysyttyä
-
-Onko rahoitusta saatavilla?
-Kyllä. Leasingrahoitus on mahdollista järjestää, ja arviossa näytämme omarahoituksen ja leasingin vertailun samoilla luvuilla, jotta päätös on helppo.
-
 Ensimmäinen askel on maksuton.
-Kysely ja kulutustiedot — ja kahdessa arkipäivässä tiedätte, kannattaako ja miten jatkaa.
+Kysely ja kulutustiedot, ja tiedätte kahdessa arkipäivässä, kannattaako ja miten jatkaa.
 
 Pyydä maksuton kartoitus
 
@@ -1110,25 +1170,29 @@ Päikesega veel parem
 
 Ei leidnud oma objekti? Kirjeldage seda meile, siis ütleme ausalt, kas aku tasub end teil ära.Küsi hindamist
 
-Neli sammu tarbimisandmetest reservituru tuluni.
+Kuidas see käib – ja mis millal maksab.
 
-Me ei müü ainult seadet. Otsime teile turu parima lahenduse — ja juhime projekti hindamisest seireni ühe kontaktiga.
+Kedagi ei saadeta kuhugi enne, kui andmed on käes. Kaks esimest sammu on tasuta, objektikülastus arvestatakse lepingus maha, projekteerimine ja paigaldus käivad lepingu järgi.
 
 01Tasuta hindamine
-Teie tunnipõhised tarbimisandmed, 20 minutit teie aega
+Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (e-elering), ühe arve ja peakilbi skeemi; meie kirjutame hinnangu: liitumine, tarbimisprofiil, võimsuse jaotus, kolm stsenaariumi allikatega.
+Tasuta · teie aeg umbes 20 minutit
 
-02Kirjalik hinnang
-Arvud allikatega ja võrguettevõtja seisukoht, enne allkirja
+02Eelkontroll
+Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldajaga; elektrik ütleb, kas ja mis tingimustel saab, ja eelarve suurusjärgu.
+Tasuta · üks tund
 
-03Paigaldus ja liitumine
-Seadmed objekti järgi, load ja dokumentatsioon meie kaudu
+03Objektikülastus
+Elektrik käib kohal, mõõdab kaablitee, kilbi ja paigalduskoha ning kinnitab hinna.
+Tasuline · arvestatakse lepingus maha
 
-04Reservituru liitumine ja seire
-Agregaator viib aku turule, teie jälgite tulu
+04Projekt, paigaldus, turg
+Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine; agregaator liidab salvesti mitmeturuteenusega ja meie jälgime, et süsteem teeks seda, mida hinnang näitas.
+Lepingu järgi · ühe kontakti kaudu
 
-Esimene samm ei kohusta millekski. Küsimustik ja tarbimisandmed — ja kahe tööpäevaga teate, kas ja kuidas edasi minna.
+Esimene samm ei kohusta millekski. Andmed ja arve, ja te teate kahe tööpäevaga, kas ja kuidas edasi minna.
 
-Kuidas projekt käib, samm sammult
+Küsi tasuta hindamist
 
 Rasked küsimused, ausad vastused.
 
@@ -1162,6 +1226,9 @@ Garantiitingimused, hooldusvälbad ja see, kellele helistate, kirjutatakse samas
 Kes ajab võrguettevõtjaga asju?
 Meie. Tehnilised tingimused ja võrguettevõtja seisukoht on kirjalikult käes enne, kui te midagi allkirjastate, mitte pärast.
 Neli reeglit, mille järgi hinnang valmib
+
+Kas rahastust on võimalik saada?
+Jah. Liisingrahastus on võimalik korraldada, ja hinnangus näitame omafinantseeringu ja liisingu võrdlust samade numbrite pealt, et otsus oleks lihtne.
 
 Alustame teie tarbimisandmetest.
 
@@ -1572,34 +1639,92 @@ Küsi tasuta hindamist Tagasi reservituru juurde
 
 Avaleht›Teenused
 
-Hindamine, kirjalik hinnang, projektijuhtimine, seire.
+Kolm asja, mida saate meilt tellida.
 
-Me ei müü ainult seadet. Juhime teie projekti algusest lõpuni ja vastutame arvude eest: iga arv kirjalikult, allikaga, enne allkirja.
+Iga tellimus algab samast kohast: tasuta kirjalikust hinnangust. Siin on kirjas, mida iga samm sisaldab, mida te selleks annate ja mis edasi saab.
 
 2 tööpäevahindamise vastamisaeg: te teate, kas ja kuidas edasi minna
 
 1 kontaktkogu projekti vältel, hindamisest käivitamise ja seireni
 
-Neli sammu tarbimisandmetest reservituru tuluni.
-Teil on kogu projekti vältel üks kontakt. Meie juhime, dokumenteerime ja anname ülevaate. Teie teete otsused.
+Hinnang, projekt, portfell.
+Sama viis rida iga toote kohta, et võrdlus oleks lihtne.
+
+Teie andmed keskel, teiste tingimused ümber — üks arvutus.
+
+TasutaHinnang
+Igale ettevõttele, kellel on oma elektriliitumine – ka siis, kui pakkumine on juba käes.
+
+Mida sisaldab
+Kaks lehekülge: liitumine ja tarbimisprofiil, võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel, kolm reservituru stsenaariumi allikatega, võrguettevõtja seisukoht ja see, mida hinnang ei ütle.
+
+Mida te annate
+Ligipääsu tunnipõhistele tarbimisandmetele (e-elering volitus), ühe elektriarve ja peakilbi skeemi.
+
+Aeg
+Vastame kahe tööpäevaga; hinnang valmib tavaliselt nädalaga pärast andmete saamist.
+
+Mis edasi
+Teie otsustate. Kui edasi, siis eelkontroll – samuti tasuta.
+
+Küsi tasuta hindamist
+
+ProjektSalvesti ja mitmeturuteenus
+Ühele objektile: kuivati, tööstus, külmladu, hotell, hooldekodu, päikesepark.
+
+Mida sisaldab
+Eelkontroll, objektikülastus, projekteerimine, võrguettevõtja tehnilised tingimused, seadmed meie nõuete järgi, paigaldus, kontrollid ja käivitamine, agregaatoriga liitmine, seire. Garantii ja hooldus lepingus eraldi real.
+
+Mida te annate
+Otsuse hinnangu põhjal, ligipääsu objektile ja kaks allkirja: EPC-leping meiega ja teenusleping agregaatoriga.
+
+Aeg
+Objektikülastusest käivitamiseni sõltub võrguettevõtja vastusest ja tarnest; ooteajad on hinnangus eraldi välja toodud.
+
+Mis edasi
+Tulu algab pärast agregaatoriga liitumist; meie jälgime, et süsteem teeks seda, mida hinnang näitas.
+
+Energiasalvestid
+
+Mitu objektiPortfell
+Kinnisvaraportfellidele, päikeseparkide omanikele ja kettidele, kellel on mitu liitumist.
+
+Mida sisaldab
+Kõigi objektide hinnang ühes dokumendis, järjekord tasuvuse järgi, ühine seadmete ja agregaatori raamistik, üks kontakt kogu portfelli jaoks.
+
+Mida te annate
+Objektide nimekirja liitumiste ja tarbimisandmetega.
+
+Aeg
+Hinnang objektide arvu järgi; esimene objekt läheb töösse, kui teised on veel hinnangus.
+
+Mis edasi
+Iga objekt käib sama nelja sammu läbi; portfell kasvab objekt haaval.
+
+Kirjeldage portfelli
+
+Kuidas see käib – ja mis millal maksab.
+
+Kedagi ei saadeta kuhugi enne, kui andmed on käes. Kaks esimest sammu on tasuta, objektikülastus arvestatakse lepingus maha, projekteerimine ja paigaldus käivad lepingu järgi.
 
 01Tasuta hindamine
-Täidate lühikese küsimustiku, meie loeme teie tunnipõhised tarbimisandmed ja vaatame liitumispunkti üle. Kohapeal või kaugelt.
-Teie aeg: umbes 20 minutit
+Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (e-elering), ühe arve ja peakilbi skeemi; meie kirjutame hinnangu: liitumine, tarbimisprofiil, võimsuse jaotus, kolm stsenaariumi allikatega.
+Tasuta · teie aeg umbes 20 minutit
 
-02Kirjalik hinnang
-Arvud koos allikatega, võrguettevõtja seisukoht, reservituru stsenaariumid ja rahastusvariandid. Üks dokument, mida saate ise kontrollida.
-Enne allkirja, kohustusteta
+02Eelkontroll
+Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldajaga; elektrik ütleb, kas ja mis tingimustel saab, ja eelarve suurusjärgu.
+Tasuta · üks tund
 
-03Paigaldus ja liitumine
-Seadmed valime teie objekti, mitte lao järgi. Paigaldus, load ja dokumentatsioon käivad meie kaudu, koos meie paigalduspartneritega.
-Meie juhime, teie näete ülevaadet
+03Objektikülastus
+Elektrik käib kohal, mõõdab kaablitee, kilbi ja paigalduskoha ning kinnitab hinna.
+Tasuline · arvestatakse lepingus maha
 
-04Reservituru liitumine ja seire
-Agregaator, Eleringiga lepingu sõlminud teenusepakkuja, liidab aku reservituruga. Teie näete säästu ja tulu oma seirevaatest, arusaadavalt, mitte tabelina.
-Tulu algab pärast liitumist
+04Projekt, paigaldus, turg
+Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine; agregaator liidab salvesti mitmeturuteenusega ja meie jälgime, et süsteem teeks seda, mida hinnang näitas.
+Lepingu järgi · ühe kontakti kaudu
 
-Esimene samm ei kohusta millekski. Küsimustik ja tarbimisandmed — ja kahe tööpäevaga teate, kas ja kuidas edasi minna.
+Esimene samm ei kohusta millekski. Andmed ja arve, ja te teate kahe tööpäevaga, kas ja kuidas edasi minna.
+
 Küsi tasuta hindamist
 
 Neli reeglit, mille järgi iga hinnang valmib.
@@ -1635,13 +1760,8 @@ Võrguettevõtja seisukoht käes enne kapitali sidumist
 
 Reservituru loogika selgitatud, tulu analüüsitud stsenaariumidena
 
-Korduma kippuvad küsimused
-
-Kas rahastust on võimalik saada?
-Jah. Liisingrahastus on võimalik korraldada, ja hinnangus näitame omafinantseeringu ja liisingu võrdlust samade numbrite pealt, et otsus oleks lihtne.
-
 Esimene samm on tasuta.
-Küsimustik ja tarbimisandmed — ja kahe tööpäevaga teate, kas ja kuidas edasi minna.
+Küsimustik ja tarbimisandmed, ja te teate kahe tööpäevaga, kas ja kuidas edasi minna.
 
 Küsi tasuta hindamist
 

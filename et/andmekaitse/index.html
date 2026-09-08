@@ -116,14 +116,18 @@
       <div><p class="fh">Ettevõte</p><ul><li><a href="/meist/">Meist</a></li><li><a href="/kontakt/">Kontakt</a></li><li><a href="/uudised/">Uudised</a></li><li><a href="/seadmete-nouded/">Nõuded seadmetele</a></li><li><a href="/andmekaitse/">Privaatsuspoliitika</a></li></ul></div>
     </div>
     <div class="nl">
-      <p class="fh">Turuülevaade e-postile</p>
-      <p>Anname e-kirjaga teada, kui uus ülevaade on avaldatud – mitte sagedamini. Ei müügikirju. Loobumiseks vastake kirjale.</p>
+      <div>
+        <p class="fh">Turuülevaade e-postile</p>
+        <p>Anname e-kirjaga teada, kui uus ülevaade on avaldatud – mitte sagedamini. Ei müügikirju. Loobumiseks vastake kirjale.</p>
+      </div>
       <form class="lead-form nl-form" id="nlForm" name="uudiskiri" method="POST" action="/aitah/" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="uudiskiri">
         <p hidden aria-hidden="true"><label>Ära täida seda välja <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
-        <div class="field"><label class="fh" for="nl-email">E-post</label><input id="nl-email" name="email" type="email" autocomplete="email" required></div>
-        <button class="btn btn-primary" type="submit">Telli</button>
-        <p class="nl-ok" role="status" aria-live="polite">Aitäh. Anname teada, kui uus ülevaade on avaldatud.</p>
+        <div class="body">
+          <div class="field"><label class="sr" for="nl-email">E-post</label><input id="nl-email" name="email" type="email" placeholder="teie@ettevote.ee" autocomplete="email" required></div>
+          <button class="btn btn-primary" type="submit">Telli</button>
+        </div>
+        <p class="ok" role="status" aria-live="polite">Aitäh. Anname teada, kui uus ülevaade on avaldatud.</p>
         <p class="err" hidden role="status" aria-live="polite">Kontrollige e-posti aadressi.</p>
       </form>
     </div>

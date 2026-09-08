@@ -93,7 +93,7 @@
     </div>
     <div class="system watch">
       <svg viewBox="0 0 560 440" fill="none" class="chart-system" role="img" aria-label="Energiasalvesti objekti peajaotuskilbis: tarbimine, päikeseelekter, liitumine ja võrk">
-        <defs><style>.nl{font:500 14px 'IBM Plex Sans',sans-serif;fill:#1F1C18}.ns{font:400 12.5px 'IBM Plex Sans',sans-serif;fill:#6F695F}</style><clipPath id="scp"><rect class="cpr" x="100" y="120" width="60" height="200"/></clipPath></defs>
+        <defs><style>.chart-system .nl{font:500 14px 'IBM Plex Sans',sans-serif;fill:#1F1C18}.chart-system .ns{font:400 12.5px 'IBM Plex Sans',sans-serif;fill:#6F695F}</style><clipPath id="scp"><rect class="cpr" x="100" y="120" width="60" height="200"/></clipPath></defs>
         <g class="s1"><path class="b d" pathLength="1" d="M30 310H400"/><path class="w d" pathLength="1" d="M400 310H500"/><path class="ml d" pathLength="1" d="M432 150V330"/></g>
         <g class="s2"><rect class="o d" pathLength="1" x="160" y="100" width="120" height="170" rx="4"/><path class="w d" pathLength="1" d="M220 106v158M174 118h30M174 126h30M174 134h30M236 118h30M236 126h30M236 134h30M213 188v14M227 188v14"/><rect class="sc" x="180" y="226" width="80" height="14" rx="3"/><rect class="sf" x="182" y="228" width="46" height="10" rx="2"/><path class="w d" pathLength="1" d="M220 276v28"/></g>
         <g class="s3"><path class="o d" pathLength="1" d="M36 280v-54h26v-12h20v12h36v54"/><path class="w d" pathLength="1" d="M69 280v-24h16v24"/><circle class="w d" pathLength="1" cx="97" cy="252" r="9"/><path class="w d" pathLength="1" d="M91 252c2-5 4-5 6 0s4 5 6 0"/><path class="w d" pathLength="1" d="M77 280v26"/></g>
@@ -203,14 +203,18 @@
       <div><p class="fh">Ettevõte</p><ul><li><a href="/meist/">Meist</a></li><li><a href="/kontakt/">Kontakt</a></li><li><a href="/uudised/">Uudised</a></li><li><a href="/seadmete-nouded/">Nõuded seadmetele</a></li><li><a href="/andmekaitse/">Privaatsuspoliitika</a></li></ul></div>
     </div>
     <div class="nl">
-      <p class="fh">Turuülevaade e-postile</p>
-      <p>Anname e-kirjaga teada, kui uus ülevaade on avaldatud – mitte sagedamini. Ei müügikirju. Loobumiseks vastake kirjale.</p>
+      <div>
+        <p class="fh">Turuülevaade e-postile</p>
+        <p>Anname e-kirjaga teada, kui uus ülevaade on avaldatud – mitte sagedamini. Ei müügikirju. Loobumiseks vastake kirjale.</p>
+      </div>
       <form class="lead-form nl-form" id="nlForm" name="uudiskiri" method="POST" action="/aitah/" data-netlify="true" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="uudiskiri">
         <p hidden aria-hidden="true"><label>Ära täida seda välja <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
-        <div class="field"><label class="fh" for="nl-email">E-post</label><input id="nl-email" name="email" type="email" autocomplete="email" required></div>
-        <button class="btn btn-primary" type="submit">Telli</button>
-        <p class="nl-ok" role="status" aria-live="polite">Aitäh. Anname teada, kui uus ülevaade on avaldatud.</p>
+        <div class="body">
+          <div class="field"><label class="sr" for="nl-email">E-post</label><input id="nl-email" name="email" type="email" placeholder="teie@ettevote.ee" autocomplete="email" required></div>
+          <button class="btn btn-primary" type="submit">Telli</button>
+        </div>
+        <p class="ok" role="status" aria-live="polite">Aitäh. Anname teada, kui uus ülevaade on avaldatud.</p>
         <p class="err" hidden role="status" aria-live="polite">Kontrollige e-posti aadressi.</p>
       </form>
     </div>
