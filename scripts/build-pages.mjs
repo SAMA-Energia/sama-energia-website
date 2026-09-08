@@ -299,8 +299,17 @@ function parseSource(file) {
 function extractPages(mainInner, file) {
   const pages = [];
   const open = /<div class="page" id="(p-[\w-]+)"([^>]*)>/g;
+  /* Ylimääräinen </div> sulkee .page-divin liian aikaisin: div-laskenta pysyy tasapainossa,
+     mutta osa sivusta jää divien väliin eikä päädy julkaistavalle sivulle. Sivujen väliin saa
+     jäädä vain kommentteja ja tyhjää — muu on merkki rikkinäisestä rakenteesta (08.09.2026). */
+  let prevEnd = 0;
+  const checkGap = (to, what) => {
+    const gap = mainInner.slice(prevEnd, to).replace(/<!--[\s\S]*?-->/g, '').trim();
+    if (gap) throw new Error(`${file}: sisältöä .page-divien ulkopuolella ${what} — ylimääräinen </div>?\n  ${gap.slice(0, 160)}`);
+  };
   let m;
   while ((m = open.exec(mainInner))) {
+    checkGap(m.index, `ennen ${m[1]}:tä`);
     const tok = /<div\b|<\/div>/g;
     tok.lastIndex = m.index;
     let depth = 0, end = -1, t;
@@ -317,6 +326,7 @@ function extractPages(mainInner, file) {
     const attrOpt = name => new RegExp(`${name}="([^"]*)"`).exec(m[2])?.[1];
     const docLang = attrOpt('data-lang');
     if (docLang && !PAGE_LANGS[docLang]) throw new Error(`${file}: ${m[1]} — tuntematon data-lang="${docLang}"`);
+    prevEnd = end;
     pages.push({
       id: m[1],
       slug: attr('data-slug'),
@@ -330,6 +340,7 @@ function extractPages(mainInner, file) {
       html: mainInner.slice(m.index, end),
     });
   }
+  checkGap(mainInner.length, 'viimeisen sivun jälkeen');
   if (!pages.length) throw new Error(`${file}: yhtään .page-diviä ei löytynyt`);
   return pages;
 }

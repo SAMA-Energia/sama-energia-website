@@ -213,7 +213,6 @@ table.tbl td .chip{display:inline-flex;align-items:center;gap:6px;padding:5px 10
 
 /* ---------- reserve market (dark, photo) ---------- */
 .reserve-intro{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(32px,5vw,72px);align-items:center;margin-bottom:clamp(40px,5vw,64px)}
-.queue{display:flex;gap:4px;align-items:flex-end;height:100%}
 .quote{border-left:2px solid var(--gold);padding:6px 0 6px 24px}
 .quote blockquote{margin:0;font-family:var(--font-display);font-size:24px;line-height:1.35;font-weight:500;font-style:italic;color:var(--night-ink);letter-spacing:-.005em}
 .quote figcaption{margin-top:16px;display:flex;align-items:center;gap:12px;color:var(--night-ink-2);font-size:14px}
@@ -236,6 +235,11 @@ table.tbl td .chip{display:inline-flex;align-items:center;gap:6px;padding:5px 10
 /* ---------- trust ---------- */
 .principles{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .principles.three{grid-template-columns:repeat(3,1fr)}
+.principles.plain{grid-template-columns:repeat(3,1fr)}
+.principles.plain .principle{padding:20px 0 0;border:0;border-top:1px solid var(--gold);border-radius:0;background:transparent}
+.principles.plain .principle .ico{display:none}
+.principles.plain .principle h3{font-size:19px;margin-bottom:8px}
+.principles.plain .principle p{font-size:15px;line-height:1.55}
 .principle{padding:26px 24px;border-radius:var(--r);background:var(--paper);border:1px solid var(--line)}
 .principle .ico{width:44px;height:44px;border-radius:12px;background:var(--gold-soft);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
 .principle .ico svg{width:22px;height:22px}
@@ -447,15 +451,13 @@ a.partner:hover{transform:translateY(-2px);box-shadow:0 20px 34px -28px rgba(31,
 .teaser h2 em{color:var(--gold)}
 .teaser .lead{color:var(--night-ink-2);margin-top:20px}
 .teaser .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;align-items:center}
-.teaser .queue{display:grid;gap:14px;background:rgba(21,33,58,.7);border:1px solid var(--night-line);border-radius:var(--r);padding:22px;backdrop-filter:blur(4px)}
-.teaser .queue .row{display:grid;gap:8px}
-.teaser .queue .lbl{display:flex;justify-content:space-between;font-size:13px;color:var(--night-ink-2)}
-.teaser .queue .lbl b{color:var(--night-ink);font-weight:600}
-.teaser .queue .track{height:10px;border-radius:5px;background:var(--night-3);overflow:hidden}
-.teaser .queue .fill{height:100%;border-radius:5px;background:var(--gold-grad);width:var(--w);transition:width 1.4s var(--ease)}
-.js .teaser.watch:not(.in-view) .queue .fill{width:0}
-.teaser .queue .foot{font-size:13px;color:var(--gold);font-weight:600;padding-top:4px}
 .teaser .src{margin-top:10px}
+/* valokuvatausta tummassa nauhassa (v17, 08.09.2026): verho kahtena liukuvärinä,
+   jotta teksti pysyy AA-kontrastissa myös kuvan vaaleimman kohdan päällä */
+.teaser.photo::before{display:none}
+.teaser .bgphoto{position:absolute;inset:0;z-index:0;overflow:hidden}
+.teaser .bgphoto img{width:100%;height:100%;object-fit:cover;object-position:50% 62%;display:block}
+.teaser .bgphoto::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,14,24,.93) 0%,rgba(9,14,24,.90) 40%,rgba(9,14,24,.55) 62%,rgba(9,14,24,.16) 100%),linear-gradient(180deg,rgba(9,14,24,.30) 0%,rgba(9,14,24,.05) 45%,rgba(9,14,24,.40) 100%)}
 
 /* "what we vote for" statement (reserve page) */
 .vote{background:var(--night);color:var(--night-ink);border-radius:20px;padding:clamp(28px,4vw,52px);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,56px);align-items:start;position:relative;overflow:hidden}
@@ -470,8 +472,8 @@ a.partner:hover{transform:translateY(-2px);box-shadow:0 20px 34px -28px rgba(31,
 .vote .src{margin-top:8px}
 /* lähderivit tummalla pinnalla: --ink-3 / --gold-deep ovat vaaleaa paperia varten (CLAUDE.md),
    tummalla ne jäävät 2,1–2,9:1. Samat arvot kuin poistetuilla .reserve/.band-night-säännöillä. */
-.vote .src,.teaser .queue .src{color:rgba(191,182,165,.8)}
-.vote .src a,.teaser .queue .src a{color:var(--gold);border-bottom-color:rgba(201,162,39,.35)}
+.vote .src{color:rgba(191,182,165,.8)}
+.vote .src a{color:var(--gold);border-bottom-color:rgba(201,162,39,.35)}
 /* about: founding story */
 .story{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,64px);align-items:start}
 .story h2{font-size:clamp(30px,3.4vw,44px)}
@@ -611,7 +613,7 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
   .header .btn-primary{display:none}
 }
 @media (max-width:1100px){
-  .values,.segments,.principles,.principles.three{grid-template-columns:repeat(2,1fr)}
+  .values,.segments,.principles,.principles.three,.principles.plain{grid-template-columns:repeat(2,1fr)}
   .steps{grid-template-columns:repeat(2,1fr);gap:40px 28px}
   .steps::before,.steps .track{display:none}
   .team{grid-template-columns:1fr}
@@ -662,7 +664,7 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
   .day{padding:18px 14px 16px}
 }
 @media (max-width:600px){
-  .values,.segments,.principles,.principles.three,.steps,.day-notes,.agg-steps,.postlist,.netcards,.orgfacts{grid-template-columns:1fr}
+  .values,.segments,.principles,.principles.three,.principles.plain,.steps,.day-notes,.agg-steps,.postlist,.netcards,.orgfacts{grid-template-columns:1fr}
   .orgfacts div{border-left:0;border-top:1px solid var(--line)}
   .orgfacts div:first-child{border-top:0}
   .value .viz{height:56px}
@@ -687,6 +689,8 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
    Akun päivä -kaavio (900 yksikköä leveä) piirtyy alle 600 px:n leveydellä ilman tekstejä:
    selite (.legend) ja .day-notes kertovat sarjat ja kellonajat sen alla. */
 @media (max-width:900px){
+  /* pinotussa nauhassa teksti on koko leveydellä, joten vaakasuora verho ei suojaa sitä */
+  .teaser .bgphoto::after{background:linear-gradient(180deg,rgba(9,14,24,.84) 0%,rgba(9,14,24,.80) 55%,rgba(9,14,24,.88) 100%)}
   .hero-bg svg{height:13%} /* pinotussa herossa aaltoviiva jää alareunan tyhjään tilaan, ei nappien tai merkkien taakse */
 }
 @media (max-width:600px){
@@ -716,7 +720,6 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
   .js .watch:not(.in-view) .chart-system .d{stroke-dashoffset:0 !important}
   .js .watch:not(.in-view) .chart-system .cpr{transform:none !important}
   .js .watch:not(.in-view) .chart-system .lb,.js .watch:not(.in-view) .chart-system .sc,.js .watch:not(.in-view) .chart-system .sf{opacity:1 !important}
-  .js .teaser.watch:not(.in-view) .queue .fill{width:var(--w)}
   .steps .track{width:100%}
   .hero-bg .trace{stroke-dashoffset:0;animation:none}
   .hero-bg svg{animation:none}

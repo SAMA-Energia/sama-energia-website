@@ -62,45 +62,21 @@ Tarkistamme, kestääkö sen takaisinmaksu todellisuuden. Maksutta, samoista kul
 
 Pyydä toinen mielipide
 
-Fingrid maksaa siitä, että akkunne on valmiina.
+Reservejä tarvitaan viidessä vuodessa lähes kaksi kertaa nykyinen määrä. Liittymänne voi olla yksi toimittajista.
 
-Sähköverkon on oltava tasapainossa joka sekunti. Siksi Fingrid ostaa reserviä joka tunnille, keskimäärin noin 1 500 MW, ja maksaa korvauksen jo siitä, että reservi on käytettävissä. Teollinen akku on tämän työn nopeimpia tekijöitä, ja se pääsee markkinoille aggregaattorin kautta, oman liittymänne takaa.
+Sähköverkon on oltava tasapainossa joka sekunti. Fingrid ostaa reserviä joka tunnille, keskimäärin noin 1 500 MW, ja maksaa jo siitä, että reservi on käytettävissä – tarve kasvaa viidessä vuodessa noin 1 200 megawattia.
 
-Valmiuskorvaus joka tunnilta, jona akku on markkinalla, aktivoitiin sitä tai ei.
+Valmiuskorvaus joka tunnilta, jona varasto on markkinalla, aktivoitiin sitä tai ei.
 
-Ohjaus on automaattista: aggregaattori vie akun joka tunti kannattavimpaan reserviin.
+Reservitoimittajia oli elokuussa 2026 jo yli 150, ja energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli 29 % ja FFR-reservin 54 % jo helmikuussa 2025.
 
-Ei uutta liityntää: akku käyttää liittymää, joka teillä jo on.
+Ei uutta liittymää: varasto käyttää liittymää, joka teillä jo on – ja Etelä-Suomeen ei ennen vuotta 2029 rakenneta uusia.
 
 Reservimarkkinat selkokielellä
 
 Akku tasapainottaa, Fingrid maksaa valmiudesta. Sama tapahtuu satoja kertoja päivässä, automaattisesti.
 
-Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025
-
-Kohteet, joissa akku maksaa itsensä nopeimmin takaisin.
-
-Yhteinen piirre on iso liittymä ja vaihteleva tai kausiluonteinen kulutus. Liittymä, joka seisoo suurimman osan vuodesta puolityhjänä, on itsessään omaisuus, joka tuottaa reservimarkkinoilla.
-
-Iso liittymä, vähän käyttöä
-
-Viljankuivaamot ja maatilat
-Kuivuri käy pari kuukautta vuodessa, mutta liittymä on iso koko vuoden. Muun ajan akku tuottaa reservimarkkinoilla, ja kuivauskauden huiput se leikkaa.
-Ilman aurinkoa
-
-Teollisuus
-Koneiden käynnistykset, kompressorit ja vuorotyö tekevät huippuja, jotka akku tasoittaa. Liittymän laajennus jää usein tekemättä.
-Ilman aurinkoa
-
-Hotellit ja hoivakiinteistöt
-Ympärivuorokautinen kulutus, keittiö ja lämmitys — ja velvollisuus siitä, ettei sähkö katkea koskaan. Varavoima on tässä yhtä tärkeä kuin säästö.
-Ilman aurinkoa
-
-Aurinkopuistot ja kiinteistösalkut
-Olemassa oleva tuotanto saa varastosta toisen tulonlähteen, ja salkku saa yhden kumppanin, joka laskee kaikki kohteet läpi.
-Auringon kanssa vielä parempi
-
-Ettekö löytäneet omaa kohdettanne? Kuvailkaa se meille, niin kerromme rehellisesti, kannattaako akku teillä.Pyydä kartoitus
+Lähteet: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025; Fingrid · 10.2.2025; Fingrid, reservitoimittajat · 27.8.2026; Fingrid, tiedote · 24.9.2025
 
 Näin se etenee – ja mikä maksaa milloin.
 
@@ -126,6 +102,60 @@ Ensimmäinen askel ei sido mihinkään. Tiedot ja lasku, ja tiedätte kahdessa a
 
 Pyydä maksuton kartoitus
 
+Missä varasto maksaa itsensä takaisin usein nopeimmin – ja miksi.
+
+Varaston teho jaetaan usean työn kesken: oman kulutuksenne optimointi (huiput, halvat tunnit), arbitraasi pörssissä ja reservimarkkinat (valmius Fingridille) – aggregaattori myy tehoa usealla markkinalla samaan aikaan, se on monimarkkinapalvelu. Kuinka suuri osa menee millekin työlle, määrää kulutusprofiilinne – kartoituksen tärkein rivi.
+
+Suuri liittymä, pieni kulutus
+
+Viljankuivaamot ja maatilat
+Kuivuri käy pari kuukautta vuodessa, mutta liittymä on suuri koko vuoden.
+Miksi tässä
+Varasto on lähes koko ajan reservimarkkinoilla ja tuottaa valmiudesta; kuivauskauden huiput se pitää alhaalla. Usein nopein takaisinmaksu.
+
+Ilman aurinkoa
+
+Teollisuus ja kylmävarastot
+Koneiden käynnistykset, kompressorit ja vuorotyö tekevät huippuja.
+Miksi tässä
+Kylmävarastossa lisäksi ympärivuorokautinen jäähdytys. Varasto pitää kuukauden huipputehon alhaalla, ostaa halvoilla tunneilla ja on muina tunteina reservimarkkinoilla.
+
+Ilman aurinkoa
+
+Hotellit ja hoivakiinteistöt
+Ympärivuorokautinen kulutus, keittiö ja lämmitys, ja velvollisuus, ettei sähkö katkea koskaan.
+Miksi tässä
+Varavoima on tässä yhtä tärkeä kuin säästö.
+
+Ilman aurinkoa
+
+Aurinkopuistot, maanomistajat ja kiinteistösalkut
+Olemassa oleva tuotanto saa varastosta toisen tulonlähteen.
+Miksi tässä
+Vapaa maa liittymän lähellä on itsessään omaisuutta, jolle voimala ja varasto rakennetaan; salkku saa yhden kumppanin, joka laskee kaikki kohteet läpi.
+
+Auringon kanssa vielä parempi
+
+Ettekö löytänyt omaa kohdettanne? Kuvailkaa se meille – kartoitus kertoo, mikä jako kohteessanne toimii.Pyydä kartoitus
+
+Emme myy pelkkää laitetta. Löydämme teille sopivimman ratkaisun.
+
+Olemme tukenanne alusta loppuun: löydämme kohteellenne sopivimman ratkaisun ja liitämme sen aggregaattorin kautta monimarkkinapalveluun, jotta se tuottaa usealla markkinalla samaan aikaan.
+
+Ymmärrämme kohteenne
+
+Kulutustiedot, liittymä, tuotannon rytmi ja tavoitteet ensin. Vasta sitten laitteet. Siksi kaikki alkaa maksuttomasta kartoituksesta.
+
+Tunnemme markkinan
+
+Olemme analysoineet markkinan ja nähneet eri toimittajat. Valitsemme laitteet ja kumppanit teidän etunne mukaan, yhdessä maahantuojien kanssa.
+
+Ajoitus on osa ratkaisua
+
+Juuri nyt Suomen varastossa on markkinoilla koeteltuja energiavarastoja hyvään hintaan ja toimitusaika lasketaan viikoissa. Siksi tarjoamme niitä nyt, emme ensi vuonna.
+
+Meistä ja kumppaneista
+
 Vaikeat kysymykset, rehelliset vastaukset.
 
 Jos kysymyksenne ei ole tässä, kysykää suoraan. Vastaamme kirjallisesti.
@@ -136,9 +166,16 @@ Voiko reservimarkkinatulon taata?
 Taata ei voi kukaan: reservin hinta muodostuu markkinoilla joka päivä, ja markkina, jolle tulee lisää tarjoajia, ei pysy paikallaan. Siksi emme lupaa lukua. Kirjallisessa arviossa on kolme skenaariota — matala, keskimääräinen ja korkea — ja erillisellä rivillä tehomaksu- ja pörssisähkösäästö, joka ei riipu markkinasta. Näin päätös syntyy tietoisesti: ei pelosta eikä uskosta, vaan omista luvuistanne.
 Miten reservihinnat muodostuvat
 
+Paljonko varasto tuottaa reservimarkkinoilla?
+Se riippuu neljästä asiasta, ja me laskemme ne kohteenne osalta. Ensiksi aggregaattorista ja sen ohjauslogiikasta: mitä täydemmin aggregaattori ohjaa varastoa, sitä suurempi on tuottopotentiaali. Toiseksi siitä, paljonko käytätte varastoa itse ja minä tunteina – huippujen kattamiseen ja halvan sähkön varastointiin; se osa on teidän säästöänne, ja muun ajan varasto on puhtaasti reservimarkkinoilla. Kolmanneksi siitä, kuinka monella markkinalla varasto on mukana – taajuusreservit FCR-N, FCR-D, FFR ja aFRR sekä arbitraasi pörssissä eli monimarkkinapalvelu – ja niiden hinnat muodostuvat joka päivä uudelleen. Neljänneksi kulutusprofiilistanne ja liittymästänne, jotka määräävät varaston koon ja sen, kuinka suuri osa tehosta on markkinalle vapaana.
+Siksi annamme kolme skenaariota, jotka näyttävät, mistä tuotto riippuu, emme yhtä lukua.
+
 Tarvitseeko akku aurinkopaneeleja tai omaa tuotantoa?
 Ei. Kaikki kolme kassavirtaa (tehomaksu, pörssisähkö, reservitulo) toimivat ilman aurinkoa. Liittymä riittää. Jos aurinkopaneelit ovat olemassa tai suunnitteilla, mukaan tulee neljäs mahdollisuus: oman tuotannon varastointi omaan käyttöön.
 Aurinkosähkö ja akku yhdessä
+
+Mitä tarkoittaa mittarin takainen järjestelmä?
+Se osa sähköjärjestelmäänne, joka on verkkoyhtiön mittarin takana ja teidän omanne: energiavarasto, aurinkopaneelit ja ohjaus, joka päättää, milloin kulutetaan, varastoidaan, myydään tai pidetään tehoa verkon käytettävissä. Englanniksi behind-the-meter. Verkkoyhtiö näkee vain mittarilukeman – siitä, mitä sen takana tapahtuu, päätätte te.
 
 Mitä maksuton kartoitus sisältää?
 Lyhyen kyselyn kulutustottumuksistanne ja kohteestanne, tuntikohtaisten kulutustietojenne analyysin ja liittymispisteen tarkastuksen. Tuloksena on kirjallinen arvio: kannattaako akku kohteessanne, minkä kokoinen sen pitäisi olla ja mistä tuotto koostuu. Sitoumuksia ei synny.
@@ -152,8 +189,8 @@ Kauanko projekti kestää?
 Kartoituksesta käyttöönottoon kuluu tyypillisesti viikkoja, ei kuukausia — laitteet ovat varastosta saatavilla. Verkkoyhtiön vastausaika on oma eränsä: se eritellään arviossa erikseen, jotta se ei tule yllätyksenä.
 Näin projekti etenee
 
-Entä huolto ja takuu?
-Takuuehdot, huoltovälit ja se, kenelle soitatte, kirjataan samaan dokumenttiin lukujen kanssa. Ne riippuvat valitusta laitteesta, ja laite valitaan kohteenne mukaan.
+Onko varasto turvallinen ja millainen takuu on?
+Tarjoamamme teolliset varastot ovat LFP-kemiaa, kennotason valvonnalla varustetulla akunhallinnalla ja lämpötilanhallinnalla sekä ulko-olosuhteisiin tarkoitetussa kaapissa; vaadimme valmistajalta CE- ja kuljetussertifikaatit. Takuu- ja huoltoehdot, valvonta ja se, kuka vastaa mistäkin, ovat kirjallisessa arviossa omalla rivillään – ennen allekirjoitusta, ei sen jälkeen. Takuuehdot, huoltovälit ja se, kenelle soitatte, kirjataan samaan dokumenttiin lukujen kanssa.
 
 Kuka hoitaa asiat verkkoyhtiön kanssa?
 Me. Tekniset ehdot ja verkkoyhtiön kanta ovat kirjallisesti kädessä ennen kuin allekirjoitatte mitään, ei sen jälkeen.
@@ -161,6 +198,9 @@ Neljä sääntöä, joiden mukaan arvio syntyy
 
 Onko rahoitusta saatavilla?
 Kyllä. Leasingrahoitus on mahdollista järjestää, ja arviossa näytämme omarahoituksen ja leasingin vertailun samoilla luvuilla, jotta päätös on helppo.
+
+Viisi käsitettä, joita käytämme
+Mittarin takainen järjestelmä – varasto, tuotanto ja ohjaus liittymänne takana, teidän puolellanne mittaria. Monimarkkinapalvelu – aggregaattori myy saman varaston tehoa usealla markkinalla yhtä aikaa: kulutuksenne optimointi, arbitraasi pörssissä, reservit Fingridille. Aggregaattori – yritys, joka kokoaa usean kohteen varastot yhdeksi tarjoukseksi ja tilittää tuoton. Ylläpitokorvaus – korvaus siitä, että varasto on Fingridin käytettävissä, myös silloin kun se ei tee mitään. Arbitraasi – ostetaan halvalla tunnilla, myydään tai käytetään kalliilla.
 
 Aloitetaan kulutustiedoistanne.
 
@@ -1134,45 +1174,21 @@ Kontrollime, kas selle tasuvus peab reaalsusele vastu. Tasuta, samade tarbimisan
 
 Küsi teist arvamust
 
-Alates 2026 maksab iga Eesti tarbija reservide eest. Aku omanik on sellel arvel teisel pool.
+Viie aastaga on reserve vaja ligi kaks korda praegusest rohkem. Teie liitumine võib olla üks pakkujatest.
 
-1. jaanuarist 2026 on elektriarvel uus rida, tasakaalustamisvõimsuse kulu, millega Elering ostab sagedusreservid kiiretelt elektrijaamadelt ja akudelt. Eesti hoiab oma võrgu sagedust ise alates 2025. aasta veebruarist, ja aku teie liitumise taga on selle turu üks kiiremaid pakkujaid: ilma uue liitumiseta, agregaatori kaudu, kuudega.
+Elektrivõrk peab olema tasakaalus igal sekundil. Elering ostab sagedusreserve iga päev ja maksab juba selle eest, et reserv on valmis – ja Eleringi hinnangul kasvab juhitava võimsuse vajadus 2035. aastaks ca 2 100 megavatini.
+
+Valmisolekutasu igal tunnil, mil salvesti on turul – olenemata sellest, kas teda aktiveeriti või mitte.
+
+Reservide eest maksavad alates 2026 kõik tarbijad: tasakaalustamisvõimsuse kulu on elektriarvel uus rida. Selle raha saab see, kes reservi pakub.
+
+Ilma uue liitumiseta: salvesti kasutab liitumist, mis teil juba on – uus maksab Elektrilevis 331,15 € ampri kohta, sest võrgu läbilaskevõime on ammendumas.
 
 Loe, kuidas aku Eesti reserviturul teenib
 
-Tasakaalustamisvõimsuse kulu 20263,73 €/MWh
+Aku tasakaalustab, Elering maksab valmisoleku eest. Sama juhtub sadu kordi päevas, automaatselt.
 
-Sama kulu alates 20272,97 €/MWh
-
-Kes selle raha saabreservide pakkujad, sh akud
-
-Iga tarbija maksab, valmis olev aku saab.
-
-Allikas: Elering, tasakaalustamisvõimsuse kulu · 2026
-
-Objektid, kus aku end kõige kiiremini ära tasub.
-
-Ühine joon on suur liitumine ja kõikuv või hooajaline tarbimine. Liitumine, mis seisab suurema osa aastast pooltühjana, on ise vara, mis reserviturul teenib.
-
-Suur liitumine, vähe kasutust
-
-Viljakuivatid ja maaettevõtted
-Kuivati töötab paar kuud aastas, aga liitumine on suur terve aasta. Ülejäänud aja teenib aku reserviturul, ja tipud kuivatushooajal lõikab ta maha.
-Ilma päikeseta
-
-Tööstus
-Masinate käivitused, kompressorid ja vahetustega töö tekitavad tippe, mida aku silub. Liitumise laiendamise võib sageli ära jätta.
-Ilma päikeseta
-
-Hotellid ja hooldekodud
-Ööpäevaringne tarbimine, köök ja küte — ja kohustus, et elekter ei kaoks kunagi. Varutoide on siin sama tähtis kui sääst.
-Ilma päikeseta
-
-Päikesepargid ja kinnisvaraportfellid
-Olemasolev tootmine saab salvestiga teise tuluallika, ja portfell saab ühe partneri, kes kõik objektid läbi arvutab.
-Päikesega veel parem
-
-Ei leidnud oma objekti? Kirjeldage seda meile, siis ütleme ausalt, kas aku tasub end teil ära.Küsi hindamist
+Allikad: Elering, sagedusreservide turu kokkuvõte · juuli 2026; Elering, varustuskindluse aruanne 2025, lk 14; Elering, tasakaalustamisvõimsuse kulu · 2026; ERR 16.08.2024 (Elektrilevi liitumistasu ja läbilaskevõime)
 
 Kuidas see käib – ja mis millal maksab.
 
@@ -1198,6 +1214,60 @@ Esimene samm ei kohusta millekski. Andmed ja arve, ja te teate kahe tööpäevag
 
 Küsi tasuta hindamist
 
+Kus salvesti end sageli kõige kiiremini ära tasub – ja miks.
+
+Salvesti võimsus jagatakse mitme töö vahel: teie enda tarbimise optimeerimine (tipud, odavad tunnid), arbitraaž börsil ja reserviturg (valmisolek Eleringile) – agregaator müüb võimsust mitmel turul korraga, see on mitmeturuteenus. Kui suur osa läheb millisele tööle, määrab teie tarbimisprofiil – hinnangu kõige tähtsam rida.
+
+Suur liitumine, väike tarbimine
+
+Viljakuivatid ja maaettevõtted
+Kuivati töötab paar kuud aastas, aga liitumine on suur terve aasta.
+Miks siin
+Salvesti on peaaegu kogu aeg reserviturul ja teenib valmisoleku pealt; kuivatushooaja tipud hoiab ta madalal. Sageli kiireim tasuvus.
+
+Ilma päikeseta
+
+Tööstus ja külmlaod
+Käivitused, kompressorid ja vahetustega töö tekitavad tippe.
+Miks siin
+Külmlaos lisandub ööpäevaringne jahutus. Salvesti hoiab kuu tippvõimsuse madalal, ostab odavatel tundidel ja on ülejäänud tundidel reserviturul.
+
+Ilma päikeseta
+
+Hotellid ja hooldekodud
+Ööpäevaringne tarbimine, köök ja küte, ning kohustus, et elekter ei kaoks kunagi.
+Miks siin
+Varutoide on siin sama tähtis kui sääst.
+
+Ilma päikeseta
+
+Päikesepargid, maaomanikud ja kinnisvaraportfellid
+Olemasolev tootmine saab salvestiga teise tuluallika.
+Miks siin
+Vaba maa liitumise lähedal on ise vara, millele jaam ja salvesti ehitatakse; portfell saab ühe partneri, kes kõik objektid läbi arvutab.
+
+Päikesega veel parem
+
+Ei leidnud oma objekti? Kirjeldage seda meile – hinnang ütleb, milline jaotus teie objektil töötab.Küsi hindamist
+
+Me ei müü lihtsalt seadet. Leiame teile sobivaima lahenduse.
+
+Oleme teile toeks algusest lõpuni: leiame teie objektile sobivaima lahenduse ja ühendame selle agregaatori kaudu mitmeturuteenusega, et see teeniks tulu mitmel turul korraga.
+
+Mõistame teie objekti
+
+Tarbimisandmed, liitumine, tootmise rütm ja eesmärgid enne, seadmed pärast. Sellepärast algab kõik tasuta hindamisest.
+
+Tunneme turgu
+
+Oleme turu läbi analüüsinud ja eri tarnijaid näinud. Valime seadmed ja partnerid teie huvides, koostöös maaletoojatega.
+
+Ajastus on osa lahendusest
+
+Praegu on Soome laos turul end tõestanud energiasalvesteid hea hinnaga ja tarneaeg on nädalates. Sellepärast pakume neid nüüd, mitte järgmisel aastal.
+
+Meist ja partneritest
+
 Rasked küsimused, ausad vastused.
 
 Kui teie küsimust siin pole, küsige otse. Vastame kirjalikult.
@@ -1208,9 +1278,16 @@ Kas reservituru tulu saab garanteerida?
 Garanteerida ei saa keegi: reservi hind kujuneb turul iga päev ja turg, kuhu tuleb pakkujaid juurde, ei püsi paigal. Sellepärast me numbrit ei luba. Kirjalikus hinnangus on kolm stsenaariumi — madal, keskmine ja kõrge — ning eraldi real võimsustasu ja börsihinna sääst, mis turust ei sõltu. Nii sünnib otsus teadlikult: mitte hirmust ega uskumisest, vaid teie enda numbrite pealt.
 Kuidas reservihinnad kujunevad
 
+Kui palju salvesti reserviturul teenib?
+See sõltub neljast asjast, ja me arvutame need teie objekti kohta läbi. Esiteks agregaatorist ja tema juhtimisloogikast: mida täielikumalt agregaator salvestit juhib, seda suurem on tulupotentsiaal. Teiseks sellest, kui palju te salvestit ise kasutate ja millistel tundidel – tippude katmiseks ja odava elektri salvestamiseks; see osa on teie sääst, ja ülejäänud aja on salvesti puhtalt reserviturul. Kolmandaks sellest, mitmel turul salvesti osaleb – sagedusreservid FCR, aFRR ja mFRR ning arbitraaž börsil ehk mitmeturuteenus – ja nende hinnad kujunevad iga päev uuesti. Neljandaks teie tarbimisprofiilist ja liitumisest, mis määravad salvesti suuruse ja selle, kui suur osa võimsusest on turule vaba.
+Sellepärast anname kolm stsenaariumi, mis näitavad, millest tulu sõltub, mitte ühte numbrit.
+
 Kas aku vajab päikesepaneele või oma tootmist?
 Ei. Kõik kolm rahavoogu (võimsustasu, börsihind, reservitulu) töötavad ilma päikeseta. Piisab liitumisest. Kui päikesepaneelid on olemas või plaanis, lisandub neljas võimalus: oma toodangu salvestamine omaks tarbeks.
 Päike ja aku koos
+
+Mis on arvestitagune süsteem?
+See osa teie elektrisüsteemist, mis asub võrguettevõtja arvesti taga ja on teie oma: energiasalvesti, päikesepaneelid ja juhtimine, mis otsustab, millal tarbida, salvestada, müüa või hoida võimsust võrgule valmis. Inglise keeles behind-the-meter. Võrguettevõtja näeb ainult arvesti näitu – mis selle taga toimub, otsustate teie.
 
 Mida tasuta hindamine sisaldab?
 Lühikest küsimustikku teie tarbimisharjumuste ja objekti kohta, teie tunnipõhiste tarbimisandmete analüüsi ja liitumispunkti ülevaatust. Tulemuseks on kirjalik hinnang: kas aku tasub end teie objektil ära, kui suur see peaks olema ja millest tulu koosneb. Kohustusi ei teki.
@@ -1224,8 +1301,8 @@ Kui kaua projekt kestab?
 Hindamisest käivitamiseni kulub tavaliselt nädalaid, mitte kuid — seadmed on laost saadaval. Võrguettevõtja vastamisaeg on omaette asi: see tuuakse hinnangus eraldi välja, et see ei tuleks üllatusena.
 Nii projekt edeneb
 
-Aga hooldus ja garantii?
-Garantiitingimused, hooldusvälbad ja see, kellele helistate, kirjutatakse samasse dokumenti arvudega. Need sõltuvad valitud seadmest ja seade valitakse teie objekti järgi.
+Kas salvesti on ohutu ja milline on garantii?
+Tööstuslikud salvestid, mida me pakume, on LFP-keemiaga, rakutaseme jälgimisega akuhalduse ja temperatuurijuhtimisega ning välitingimustele mõeldud kapis; nõuame tootjalt CE- ja transpordisertifikaate. Garantii- ja hooldustingimused, seire ja see, kes mille eest vastutab, on kirjalikus hinnangus eraldi real – enne allkirja, mitte pärast. Garantiitingimused, hooldusvälbad ja see, kellele helistate, kirjutatakse samasse dokumenti arvudega.
 
 Kes ajab võrguettevõtjaga asju?
 Meie. Tehnilised tingimused ja võrguettevõtja seisukoht on kirjalikult käes enne, kui te midagi allkirjastate, mitte pärast.
@@ -1233,6 +1310,9 @@ Neli reeglit, mille järgi hinnang valmib
 
 Kas rahastust on võimalik saada?
 Jah. Liisingrahastus on võimalik korraldada, ja hinnangus näitame omafinantseeringu ja liisingu võrdlust samade numbrite pealt, et otsus oleks lihtne.
+
+Viis mõistet, mida me kasutame
+Arvestitagune süsteem – salvesti, tootmine ja juhtimine teie liitumise taga, teie poolel arvestit. Mitmeturuteenus – agregaator müüb sama salvesti võimsust mitmel turul korraga: teie tarbimise optimeerimine, arbitraaž börsil, reservid Eleringile. Agregaator – ettevõte, kes koondab mitme objekti salvestid üheks pakkumiseks ja maksab tulu välja. Valmisolekutasu – tasu selle eest, et salvesti on Eleringile kättesaadav, ka siis, kui ta ei tööta. Arbitraaž – ostmine odaval tunnil, müümine või kasutamine kallil.
 
 Alustame teie tarbimisandmetest.
 

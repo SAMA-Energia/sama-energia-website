@@ -17,12 +17,17 @@
   },
   {
    "page": "/",
+   "sectionId": "nain",
+   "kind": "new"
+  },
+  {
+   "page": "/",
    "sectionId": "kenelle",
    "kind": "new"
   },
   {
    "page": "/",
-   "sectionId": "nain",
+   "sectionId": "miksi-sama",
    "kind": "new"
   },
   {
@@ -319,12 +324,17 @@
   },
   {
    "page": "/et/",
+   "sectionId": "kuidas",
+   "kind": "new"
+  },
+  {
+   "page": "/et/",
    "sectionId": "kellele",
    "kind": "new"
   },
   {
    "page": "/et/",
-   "sectionId": "kuidas",
+   "sectionId": "miks-sama",
    "kind": "new"
   },
   {
