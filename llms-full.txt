@@ -922,7 +922,7 @@ Reservimarkkinat3. syyskuuta 20266 min luettavaa
 
 Etelä-Suomeen ei rakenneta uusia varastoliityntöjä ennen vuotta 2029. Teidän liittymänne on jo olemassa.
 
-Fingrid on sopinut noin 1 800 MW:n akkuliitynnöistä, kyselyjä on yli 30 000 MW, ja Etelä-Suomen liityntärajoitus jatkuu vuoteen 2029. Mitä se tarkoittaa yritykselle, jolla on iso liittymä jo valmiina.
+Fingrid oli syyskuussa 2025 sopinut noin 1 800 MW:n akkuliitynnöistä (Fingrid 24.9.2025), kyselyjä on yli 30 000 MW, ja Etelä-Suomen liityntärajoitus jatkuu vuoteen 2029. Mitä se tarkoittaa yritykselle, jolla on iso liittymä jo valmiina.
 
 Lue katsaus
 
@@ -934,17 +934,30 @@ Kymmenen kysymystä, jotka aggregaattorisopimuksesta pitää etsiä ennen alleki
 
 Ohjauksen rajat, etusijat, tuoton jako, sopimuksen kesto ja irtisanominen. Mitä sopimuksesta pitää lukea, jotta akku pysyy teidän akkunanne.
 
-TulossaMitoitus
+TulossaKausivaihtelu
 
-1 MW / 2 MWh: miksi 1:2 on tyypillinen mitoitus ja milloin se ei sovi
+Kun talvella kulutus kasvaa: miten varaston jako muuttuu vuodenajan mukaan
 
-Invertterin teho ja akun kapasiteetti ratkaisevat, mihin reserveihin akku pääsee ja kuinka pitkäksi aikaa. Milloin kannattaa mitoittaa toisin.
+Miksi kiinteä raja koko vuodeksi vie tuoton ja miten tuntikohtainen jako kulutusprofiilin mukaan toimii.
 
-TulossaKohdetyypit
+TulossaEnergiakatselmus
 
-Viljankuivaamon liittymä omaisuutena: kausikulutuksen logiikka
+Energiakatselmusvelvoite 11.10.2026: mitä se tarkoittaa ja miten sen datan käyttää
 
-Kuivuri käy pari kuukautta vuodessa, mutta liittymä on iso koko vuoden. Miten puolityhjä liittymä tuottaa loput kymmenen kuukautta.
+Yli 10 TJ:n kulutus, katselmus tai sertifioitu järjestelmä – ja miksi samat tiedot ovat varaston arvion pohja.
+
+Lyhyemmät tiedotteet.
+Muutokset, jotka vaikuttavat varaston kannattavuuteen ja liittymään, lähteellä ja määräajalla.
+
+18.8.2026
+Fingrid: sähkönkulutus kääntyy voimakkaaseen kasvuun – rinnalle tarvitaan säätövoimaa
+Fingridin tiedotteen mukaan datakeskuksilla on liittymissopimuksia lähes 5 GW, sähkökattilahankkeita on rakenteilla ja toiminnassa yli 3 GW ja sähkövarastoista on tehty liittymissopimuksia yli 4 GW; jos kaikki toteutuu, kulutus kasvaa lähes 40 % vuoteen 2025 verrattuna. Uusi liityntäkapasiteetti on monin paikoin jo lähes varattu. Meidän johtopäätöksemme: olemassa oleva liittymä on omaisuutta, joka kannattaa laittaa töihin nyt.
+Lähde: Fingrid, tiedote · 18.8.2026
+
+Määräaika 11.10.2026
+Energiakatselmusvelvoite laajenee: raja kulutuksen, ei yrityksen koon mukaan
+Uudistettu energiatehokkuusdirektiivi (EU) 2023/1791, 11 artikla sitoo pakollisen energiakatselmuksen yli 10 TJ:n eli noin 2 800 MWh:n vuosikulutukseen. Rajan ylittävien on tehtävä katselmus 11.10.2026 mennessä, ellei niillä ole sertifioitua energianhallintajärjestelmää; kansallinen täytäntöönpano voi täsmentää rajaa ja aikataulua. Katselmuksen tiedot ovat samalla varaston ja aurinkosähkön arvion pohja.
+Lähde: Direktiivi (EU) 2023/1791 · 11 artikla
 
 Lyhyemmät huomiot julkaisemme LinkedInissä.Tällä sivulla ovat pidemmät katsaukset, jotka voi lähettää kollegalle eteenpäin. Markkinauutiset ja yksittäiset luvut kulkevat LinkedInin kautta.
 
@@ -2013,17 +2026,40 @@ Kümme küsimust, mis tuleb agregaatorilepingust enne allkirja üles otsida
 
 Juhtimise piirid, prioriteedid, tulu jagamine, lepingu kestus ja ülesütlemine. Mida lepingust lugeda, et aku jääks teie akuks.
 
-TulekulDimensioneerimine
+TulekulHooajaline tarbimine
 
-1 MW / 2 MWh: miks 1:2 on tüüpiline suhe ja millal see ei sobi
+Kui talvel tarbimine kasvab: kuidas salvesti jaotus hooajaga muutub
 
-Inverteri võimsus ja aku maht otsustavad, millistesse reservidesse aku pääseb ja kui kauaks. Millal tasub dimensioneerida teisiti.
+Miks kindel piirang terveks aastaks võtab tulu ära ja kuidas tunnipõhine jaotus tarbimisprofiili järgi töötab.
 
-TulekulObjektitüübid
+TulekulToetused
 
-Viljakuivati liitumine kui vara: hooajalise tarbimise loogika
+Toetused ja tähtajad: mis on avatud, mis on möödas ja mida jälgida
 
-Kuivati töötab paar kuud aastas, aga liitumine on suur terve aasta. Kuidas pooltühi liitumine ülejäänud kümme kuud teenib.
+KIK-i salvestustoetus, EIS-i varustuskindluse toetus, energiaauditi kohustus. Üks postitus, mida me uuendame.
+
+Lühemad teated.
+Muudatused, mis mõjutavad salvesti tasuvust ja liitumist, allika ja tähtajaga.
+
+Tähtaeg 31.12.2026
+Salvestite mõõtmise üleminekuaeg lõpeb
+Ajavahemikul 1.1.–31.12.2026 kestab üleminekuperiood, mille jooksul viiakse ajutiselt Estfeediga liidestatud mõõteseadmed üle AMR-süsteemi. Pärast seda peab mõõtelahendus vastama nõuetele täielikult, et salvestatud ja võrku tagastatud energiat võrgutasus õigesti käsitletaks. Mõõtmine tasub projekteerida algusest õigesti – see on odavam kui hiljem ümber ehitada.
+Allikas: Elering, hinnakiri ja tüüptingimused
+
+Alates 1.1.2026
+Salvesti võrgutasu arvestatakse kalendrikuu netotarbimiselt
+Elektrituruseaduse § 71 lg 10¹ järgi ei võeta edastamistasu selle elektrienergia eest, mille salvesti salvestusperioodi vältel võrgust salvestab ja samal perioodil võrku tagastab; salvestusperiood on kalendrikuu (§ 3 p 22⁴). See parandab projekti tasuvust oluliselt – eeldusel, et mõõtmine vastab nõuetele.
+Allikas: Elering, hinnakiri ja tüüptingimused · ELTS § 71 lg 10¹
+
+Tähtaeg 11.10.2026
+Energiaauditi kohustus laieneb: piir tarbimise, mitte ettevõtte suuruse järgi
+Uuendatud energiatõhususe direktiiv (EL) 2023/1791 artikkel 11 seob kohustusliku energiaauditi aastase tarbimisega üle 10 TJ ehk umbes 2 800 MWh. Selle piiri ületajad peavad auditi tegema 11.10.2026-ks, kui neil pole sertifitseeritud energiajuhtimissüsteemi; riigisisene ülevõtmine võib piiri ja tähtaega täpsustada. Auditi andmed on ühtlasi salvesti ja päikeseelektri hinnangu alus.
+Allikas: Direktiiv (EL) 2023/1791 · artikkel 11
+
+18.8.2026
+Fingrid: elektritarbimine kasvab tugevalt, kõrvale on vaja reguleerimisvõimsust
+Fingridi teate järgi on andmekeskustel liitumislepinguid ligi 5 GW, elektrikatlaid on ehitamisel ja töös üle 3 GW ning salvestitele on sõlmitud liitumislepinguid üle 4 GW; kui kõik teostub, kasvab tarbimine 2025. aastaga võrreldes ligi 40 %. Uus liitumisvõimsus on paljudes kohtades juba peaaegu broneeritud. Meie järeldus: olemasolev liitumine on vara, mida tasub tööle panna, mitte oodata.
+Allikas: Fingrid, teade · 18.8.2026
 
 Lühemad märkused avaldame LinkedInis.Siin lehel on pikemad ülevaated, mida saab kolleegile edasi saata. Turu-uudised ja üksikud arvud käivad meie LinkedIni kaudu.
 

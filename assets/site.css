@@ -498,6 +498,13 @@ a.partner:hover{transform:translateY(-2px);box-shadow:0 20px 34px -28px rgba(31,
 .orgfacts dd{margin:0;font:500 17px/1.35 var(--font-display);color:var(--ink)}
 .orgfacts dd small{display:block;font:400 13.5px/1.45 var(--font-body);color:var(--ink-2);margin-top:5px}
 /* posts (Ülevaated / Ajankohtaista) */
+.notices{margin-top:clamp(32px,4vw,56px)}
+.nlist{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+.nlist article{padding:20px 22px;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.nlist .when{font:600 12.5px/1 var(--font-body);color:var(--gold-deep);letter-spacing:.03em;margin-bottom:10px}
+.nlist h3{font-size:19px;line-height:1.25;margin-bottom:8px}
+.nlist p{font-size:14.5px;line-height:1.5;color:var(--ink-2)}
+.nlist .src{margin-top:8px}
 .postlist{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .post{display:flex;flex-direction:column;gap:10px;padding:26px 28px 24px;border:1px solid var(--line);border-radius:var(--r);background:var(--paper);transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
 a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,24,.4)}
@@ -665,7 +672,7 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
   .day{padding:18px 14px 16px}
 }
 @media (max-width:600px){
-  .values,.segments,.principles,.principles.three,.principles.plain,.steps,.day-notes,.agg-steps,.postlist,.netcards,.orgfacts{grid-template-columns:1fr}
+  .values,.segments,.principles,.principles.three,.principles.plain,.steps,.day-notes,.agg-steps,.postlist,.netcards,.orgfacts,.nlist{grid-template-columns:1fr}
   .orgfacts div{border-left:0;border-top:1px solid var(--line)}
   .orgfacts div:first-child{border-top:0}
   .value .viz{height:56px}
