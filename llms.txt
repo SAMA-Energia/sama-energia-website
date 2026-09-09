@@ -6,10 +6,11 @@
 > https://samaenergia.fi/llms-full.txt (generated from the same HTML that is served).
 
 SAMA Energia Oy (Finnish business ID 3647683-3, VAT FI36476833, domiciled in
-Helsinki, Finland) is an integrator (EPC) of industrial battery energy storage
-and solar PV for businesses and landowners in Finland and Estonia. The company
-surveys, designs, procures and builds the systems and connects them to the
-reserve markets of the transmission system operators Fingrid (Finland) and
+Helsinki, Finland) is a full-scope supplier (integrator, EPC) of industrial
+battery energy storage and solar PV for businesses and landowners in Finland
+and Estonia. The company surveys, designs, procures, installs and maintains the
+behind-the-meter systems — storage, solar PV and control — and takes them to
+the reserve markets of the transmission system operators Fingrid (Finland) and
 Elering (Estonia) through an aggregator. Founders: Martin Rautio (CFO) and
 Madis Maastik (sales director). Site updated 3 September 2026 (design v5).
 
