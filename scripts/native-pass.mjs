@@ -126,15 +126,23 @@ function serve(fromGitRef) {
 
 /* ---------- selaimessa: näkyvät tekstilohkot järjestyksessä ---------- */
 function extract() {
-  const BLOCK = 'h1,h2,h3,h4,h5,p,li,dt,dd,summary,figcaption,blockquote,td,th,label,a.btn,button.btn,.role,.duty,.kicker-rule+*,.tagline,.badges span,.chip';
+  /* Lohkotason elementit: näiden sisältä ei poimita erikseen (muuten <p>:n teksti häviäisi
+     sen sisällä olevan <b>:n tieltä). */
+  const CONTAINER = 'h1,h2,h3,h4,h5,p,li,dt,dd,summary,figcaption,blockquote,td,th,label';
+  /* Poimittavat. Mukana <b>/<strong>, koska sivustolla on kuvio <div><b>kärki</b><p>teksti</p></div>
+     (esim. .newsstrip, .facts, .day-notes) — ne jäivät ennen kokonaan pois paketista, luvut mukaan
+     lukien. Ne poimitaan VAIN kun ne eivät ole minkään CONTAINER-elementin sisällä. */
+  const BLOCK = CONTAINER + ',b,strong,a.btn,button.btn,.role,.duty,.kicker-rule+*,.tagline,.badges span,.chip';
   const out = [];
   const norm = s => s.replace(/\s+/g, ' ').trim();
   const seen = new Set();
   for (const el of document.querySelectorAll(BLOCK)) {
     if (el.closest('script,style,svg,template,.crumbs')) continue;
     const isSrc = !!el.closest('.sources-list') || el.classList.contains('src');
-    /* vain lehtilohkot: jos sisällä on toinen lohko jossa on tekstiä, ohita tämä */
-    if ([...el.querySelectorAll(BLOCK)].some(c => norm(c.textContent))) continue;
+    /* <b>/<strong> vain itsenäisenä kärkenä, ei leipätekstin sisältä */
+    if (/^(B|STRONG)$/.test(el.tagName) && el.closest(CONTAINER)) continue;
+    /* vain lehtilohkot: jos sisällä on toinen LOHKO jossa on tekstiä, ohita tämä */
+    if ([...el.querySelectorAll(CONTAINER)].some(c => norm(c.textContent))) continue;
     const t = norm(el.textContent);
     if (!t || t.length < 2) continue;
     const zone = el.closest('header') ? 'header' : el.closest('footer') ? 'footer' : 'main';

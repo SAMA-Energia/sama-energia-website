@@ -1032,7 +1032,7 @@ Nord Pool · 1.10.2025
 15 minuutin markkina-aikayksikkö vuorokausimarkkinalla
 Hiljainen muutos koko SDAC-alueella: lyhyempi jakso tarkoittaa enemmän hintaliikettä vuorokauden sisällä – ja enemmän arvoa omaisuudelle, joka reagoi nopeasti.
 
-Lyhyemmät huomiot julkaisemme LinkedInissä.Tällä sivulla ovat pidemmät katsaukset, jotka voi lähettää kollegalle eteenpäin. Markkinauutiset ja yksittäiset luvut kulkevat LinkedInin kautta.
+Tällä sivulla julkaisemme pidemmät katsaukset.Katsaukset on kirjoitettu niin, että ne voi lähettää kollegalle eteenpäin.
 
 Mikä aihe auttaisi teidän päätöstänne?
 Kirjoittakaa osoitteeseen info@samaenergia.fi. Vastaamme kirjallisesti, ja jos kysymys koskee monia, siitä tulee seuraava katsaus.
@@ -2203,7 +2203,7 @@ Nord Pool · 1.10.2025
 15-minutiline turuajaühik päev-ette turul
 Vaikne muudatus kogu SDAC-piirkonnas: lühem periood tähendab rohkem hinnaliikumist ööpäeva sees – ja rohkem väärtust varale, mis reageerib kiiresti.
 
-Lühemad märkused avaldame LinkedInis.Siin lehel on pikemad ülevaated, mida saab kolleegile edasi saata. Turu-uudised ja üksikud arvud käivad meie LinkedIni kaudu.
+Sellel lehel avaldame pikemad ülevaated.Ülevaated on kirjutatud nii, et neid saab kolleegile edasi saata.
 
 Milline teema aitaks teie otsust?
 Kirjutage aadressile info@samaenergia.fi. Vastame kirjalikult, ja kui küsimus puudutab paljusid, saab sellest järgmine ülevaade.

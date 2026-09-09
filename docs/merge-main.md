@@ -3,7 +3,7 @@
 Tämä on **`main`-merge-paketti**. Se ei ole lupa yhdistää — se on lista siitä,
 mikä on auki, kuka sen sulkee ja millä artefaktilla.
 
-- Lähde: `draft` @ `c3bc2d6`
+- Lähde: `draft` @ `b9843ea` (päivitetään yhdistettäessä)
 - Kohde: `main` @ `b74d5ab` (nykyinen julkaistu sivusto)
 - Koonnut: automaattisesti erässä v29, 10.09.2026
 
@@ -13,12 +13,19 @@ mikä on auki, kuka sen sulkee ja millä artefaktilla.
 
 | # | Portti | Omistaja | Vaadittu artefakti |
 |---|---|---|---|
-| — | **Madisin natiivikatselmus** | Madis Maastik | `docs/native-pass/FI.md` ja `docs/native-pass/ET.md` täytettyinä: jokainen rivi joko **OK** tai korjaus **Korjaus:**-rivillä. FI 598 riviä (58 ⚠), ET 573 riviä (52 ⚠). ⚠-rivit ensin — ne ovat perustajan päätöksiä tai lukuja, eivät käännösasioita. |
+| — | **Madisin natiivikatselmus** *(ei estä tätä julkaisua — ks. huomio alla)* | Madis Maastik | `docs/native-pass/FI.md` ja `docs/native-pass/ET.md` täytettyinä: jokainen rivi joko **OK** tai korjaus **Korjaus:**-rivillä. FI 638 riviä (68 ⚠), ET 612 riviä (60 ⚠). ⚠-rivit ensin — ne ovat perustajan päätöksiä tai lukuja, eivät käännösasioita. |
 | E4 | **Kumppanivahvistukset** | Martin | Kirjallinen suostumus nimen käyttöön jokaiselta: VENI Energia, Soleron Energy, Ralos Oy, JSM Automaatiosähkö Oy ja **Scanoffice Oy** (vain FI-sivustolla). Lisäksi **logotiedostot** — logopaikat ovat tällä hetkellä tyhjät. |
 | E6 | **Viljar vahvistaa referenssikohteet** | Viljar Petersell (Martin välittää) | Vahvistus Aurinkosähkö-sivun lohkosta „Kokemus, joka on jo tehty“: **„jopa 400 kW:n peltoasennuksiin“** ja **„megawattiluokan hankkeet ovat suunnitelmissa“**. Lohko on jo `draft`illa (päätös D19). Ks. myös löydös alla. |
 | E7 | **Ralos-lauseen muotoilu** | Martin | Ratkaisu siihen, palaako „suomalaisten insinöörien suunnittelemat“ Ralos-korttiin. Se on tällä hetkellä **poistettu**, koska kysymys on vastaamatta. |
-| E11 | **LinkedIn** | Martin | Yrityksen LinkedIn-URL **ja neljä logotiedostoa**. Tällä hetkellä Ajankohtaista/Uudised-sivulla on vain lause, ei painiketta. |
+| ~~E11~~ | ~~**LinkedIn**~~ | — | **SULJETTU 09.09.2026 (perustajapäätös C3).** SAMA Energialla ei ole LinkedIn-tiliä, joten lause lupasi kanavan, jota ei ole. Maininta poistettu molemmilta kieliltä (v29-1); URL-osoitetta eikä logoja ei tarvita. |
 | E13 | **Netlify Forms -testimerkinnät** | Martin | **Kymmenen** testimerkintää poistettava Netlifyn lomakenäkymästä ennen julkaisua, jottei tuotantodataan jää testejä. |
+
+### Huomio: viron natiivikatselmus ei estä tätä julkaisua
+
+**Perustajapäätös C4, Martin 09.09.2026 ilta:** v5 julkaistaan ilman viron
+natiivikatselmusta. Päätös ohittaa `CLAUDE.md`:n natiivikatselmussäännön
+**vain tämän yhdistämisen osalta**; sääntö jää voimaan sellaisenaan eikä sitä
+ole heikennetty. Katselmus jää auki ja tehdään julkaistua sivustoa vasten.
 
 ### Huomio porttiin E13
 

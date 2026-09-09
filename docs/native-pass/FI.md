@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 598 katselmoitavaa riviä — 420 uutta, 178 muutettua, joista **58 on merkitty ⚠**. Muuttumattomia ohitettiin 408.
+**Yhteenveto:** 638 katselmoitavaa riviä — 452 uutta, 186 muutettua, joista **68 on merkitty ⚠**. Muuttumattomia ohitettiin 411.
 
 **Huomio:** 4 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -64,6 +64,12 @@ Vastine mainissa: `/`
       - **Korjaus:**
 - [ ] `p` **muutettu** — Liittymästä maksatte joka kuukausi. Sama liittymä voi myös tuottaa teille – kun sen takana on varasto, energiantuotanto ja älykäs ohjaus, joka päättää teidän eduksenne. Me annamme teille siihen kolme asiaa:
       - main: Liittymässä oleva tuotanto edellyttää kirjallisia vastauksia neljään tekniseen kysymykseen ennen tarjousta: takasyötön esto, tehonrajoitus, mittaus ja toiminta tiedonsiirron katketessa. Me teemme sen selvitystyön ja annamme vastaukset kirjallisesti.
+      - **Korjaus:**
+- [ ] `b` **uusi** — Kokonaiskuvan
+      - **Korjaus:**
+- [ ] `b` **uusi** — Taloudelliset mahdollisuudet
+      - **Korjaus:**
+- [ ] `b` **uusi** — Älykkään energianhallinnan,
       - **Korjaus:**
 - [ ] `p` **muutettu** — Etelä-Suomeen ei rakenneta uusia varastoliityntöjä ennen vuotta 2029 – liittymä, jonka takana on toimiva varasto, siirtyy kiinteistön mukana.
       - main: Liittymässä oleva tuotanto edellyttää kirjallisia vastauksia neljään tekniseen kysymykseen ennen tarjousta: takasyötön esto, tehonrajoitus, mittaus ja toiminta tiedonsiirron katketessa. Me teemme sen selvitystyön ja annamme vastaukset kirjallisesti.
@@ -133,7 +139,8 @@ Vastine mainissa: `/`
 - [ ] `p` **muutettu** — Kallis tunti maksaa pörssihintana. Varasto pitää huipun alhaalla ja tekee arbitraasia: ostaa sähkön halvoilla tunneilla ja myy tai käyttää sen kalliilla – automaattisesti, tuotantoanne häiritsemättä. Edellytys on pörssisidonnainen myyntisopimus.
       - main: Liittymässä oleva tuotanto edellyttää kirjallisia vastauksia neljään tekniseen kysymykseen ennen tarjousta: takasyötön esto, tehonrajoitus, mittaus ja toiminta tiedonsiirron katketessa. Me teemme sen selvitystyön ja annamme vastaukset kirjallisesti.
       - **Korjaus:**
-- [ ] `h3` **uusi** — Reservimarkkinatulo
+- [ ] `h3` **muutettu** — Reservimarkkinatulo
+      - main: RESERVIMARKKINAYHTEYS
       - **Korjaus:**
 - [ ] `p` **muutettu** — Fingrid maksaa verkon tasapainottamiseen valmiina olevista akuista, myös niinä tunteina, jolloin akku vain odottaa. Liittyminen tapahtuu aggregaattorin kautta.
       - main: Kohteen liittäminen reservimarkkinoille lisensoidun aggregaattorin kautta.
@@ -146,6 +153,8 @@ Vastine mainissa: `/`
 - [ ] `p` **muutettu** — Edellyttää saarekekäyttöön mitoitettua toteutusta ja erotettua kriittistä piiriä; arvioidaan kohteittain.
       - main: Saarekekäyttöön suunniteltu järjestelmä syöttää kriittistä kuormaa. Vahvistetaan kohdekohtaisesti.
       - **Korjaus:**
+- [ ] `b` **uusi** — Onko kohteessa aurinkosähköä tai onko se suunnitteilla?
+      - **Korjaus:**
 
 ### #reservi-teaser
 > Lähde tälle osiolle: Lähteet: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025; Fingrid · 10.2.2025; Fingrid, reservitoimittajat · 27.8.2026; Fingrid, tiedote · 24.9.2025
@@ -155,7 +164,14 @@ Vastine mainissa: `/`
 - [ ] ⚠ `p` **muutettu** — Sähköverkon on oltava tasapainossa joka sekunti. Fingrid ostaa reserviä joka tunnille, keskimäärin noin 1 500 MW, ja maksaa jo siitä, että reservi on käytettävissä – tarve kasvaa viidessä vuodessa noin 1 200 megawattia.
       - main: 50,000 Hz on sähköverkon tasapaino. Kun taajuus poikkeaa siitä, tuotanto ja kulutus eivät kohtaa — ja kantaverkkoyhtiöt, Suomessa Fingrid ja Virossa Elering, maksavat siitä, että energiavarastot palauttavat tasapainon sekunneissa. Siihen reservimarkkinat perustuvat.
       - **Korjaus:**
-- [ ] `a` **uusi** — Reservimarkkinat selkokielellä
+- [ ] `b` **uusi** — Valmiuskorvaus joka tunnilta,
+      - **Korjaus:**
+- [ ] `b` **uusi** — Reservitoimittajia oli elokuussa 2026 jo yli 150,
+      - **Korjaus:**
+- [ ] `b` **uusi** — Ei uutta liittymää:
+      - **Korjaus:**
+- [ ] `a` **muutettu** — Reservimarkkinat selkokielellä
+      - main: RESERVIMARKKINAYHTEYS
       - **Korjaus:**
 - [ ] `p` **uusi** — Akku tasapainottaa, Fingrid maksaa valmiudesta. Sama tapahtuu satoja kertoja päivässä, automaattisesti.
       - **Korjaus:**
@@ -264,7 +280,8 @@ Vastine mainissa: `/`
 - [ ] `p` **muutettu** — Jos kysymyksenne ei ole tässä, kysykää suoraan. Vastaamme kirjallisesti.
       - main: Liittymässä oleva tuotanto edellyttää kirjallisia vastauksia neljään tekniseen kysymykseen ennen tarjousta: takasyötön esto, tehonrajoitus, mittaus ja toiminta tiedonsiirron katketessa. Me teemme sen selvitystyön ja annamme vastaukset kirjallisesti.
       - **Korjaus:**
-- [ ] `summary` **uusi** — Voiko reservimarkkinatulon taata?
+- [ ] `summary` **muutettu** — Voiko reservimarkkinatulon taata?
+      - main: RESERVIMARKKINAYHTEYS
       - **Korjaus:**
 - [ ] `p` **muutettu** — Taata ei voi kukaan: reservin hinta muodostuu markkinoilla joka päivä, ja markkina, jolle tulee lisää tarjoajia, ei pysy paikallaan. Siksi emme lupaa lukua. Kirjallisessa arviossa on kolme skenaariota — matala, keskimääräinen ja korkea — ja erillisellä rivillä tehomaksu- ja pörssisähkösäästö, joka ei riipu markkinasta. Näin päätös syntyy tietoisesti: ei pelosta eikä uskosta, vaan omista luvuistanne.
       - main: Reservitulo voi olla merkittävä lisä — ja juuri siksi näytämme sen rehellisesti: aggregaattorin omana arviona ja skenaarioina, myös sillä oletuksella, että hinnat puolittuvat. Laskelma kestää, vaikka markkina muuttuu.
@@ -283,7 +300,8 @@ Vastine mainissa: `/`
 - [ ] `p` **muutettu** — Ei. Kaikki kolme kassavirtaa (tehomaksu, pörssisähkö, reservitulo) toimivat ilman aurinkoa. Liittymä riittää. Jos aurinkopaneelit ovat olemassa tai suunnitteilla, mukaan tulee neljäs mahdollisuus: oman tuotannon varastointi omaan käyttöön.
       - main: Viljankuivaamot, meijerit, kylmävarastot, konepajat, logistiikka maaseutuliittymillä. Akku voi siirtää liittymän vahvistusta vuosilla, pienentää tehomaksuja ja auttaa sähkökatkon yli.
       - **Korjaus:**
-- [ ] `p` **uusi** — Aurinkosähkö ja akku yhdessä
+- [ ] `p` **muutettu** — Aurinkosähkö ja akku yhdessä
+      - main: AURINKOSÄHKÖ
       - **Korjaus:**
 - [ ] `summary` **uusi** — Mitä tarkoittaa mittarin takainen järjestelmä?
       - **Korjaus:**
@@ -345,7 +363,8 @@ Vastine mainissa: `/`
       - **Korjaus:**
 - [ ] `li` **uusi** — Tehon jako oman kulutuksen, arbitraasin ja reservimarkkinan kesken
       - **Korjaus:**
-- [ ] `li` **uusi** — Kolme reservimarkkinaskenaariota lähteineen
+- [ ] `li` **muutettu** — Kolme reservimarkkinaskenaariota lähteineen
+      - main: RESERVIMARKKINAYHTEYS
       - **Korjaus:**
 - [ ] `li` **muutettu** — Verkkoyhtiön kanta ja se, mitä arvio ei sano
       - main: Verkkoyhtiön kanta ensin
@@ -373,7 +392,8 @@ Vastine mainissa: `/`
 - [ ] `label` **muutettu** — Verkkoyhtiö
       - main: Verkkoyhtiön kanta ensin
       - **Korjaus:**
-- [ ] `label` **uusi** — Onko kohteessa aurinkosähköä?
+- [ ] `label` **muutettu** — Onko kohteessa aurinkosähköä?
+      - main: AURINKOSÄHKÖ
       - **Korjaus:**
 - [ ] `p` **uusi** — Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen, tietosuojaseloste.
       - **Korjaus:**
@@ -401,9 +421,11 @@ Vastine mainissa: `/`
       - **Korjaus:**
 - [ ] `p` **uusi** — Ratkaisut
       - **Korjaus:**
-- [ ] `li` **uusi** — Aurinkosähkö
+- [ ] `li` **muutettu** — Aurinkosähkö
+      - main: AURINKOSÄHKÖ
       - **Korjaus:**
-- [ ] `li` **uusi** — Reservimarkkinat
+- [ ] `li` **muutettu** — Reservimarkkinat
+      - main: RESERVIMARKKINAYHTEYS
       - **Korjaus:**
 - [ ] ⚠ `li` **uusi** — Aggregaattori: VENI Energia
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
@@ -489,7 +511,7 @@ Vastine mainissa: `/energiavarastot/`
       - **Korjaus:**
 - [ ] `td` **uusi** — Aurinkopaneelit ja kulutusprofiili
       - **Korjaus:**
-- [ ] `span` **uusi** — Lisämahdollisuus
+- [ ] `td` **uusi** — Lisämahdollisuus
       - **Korjaus:**
 
 ### #paiva
@@ -499,13 +521,21 @@ Vastine mainissa: `/energiavarastot/`
 - [ ] `p` **muutettu** — Yksi akku, neljä työtä, yksi vuorokausi. Kello kulkee, akku lataa halvalla, leikkaa aamuhuipun, odottaa valmiina ja purkaa energian silloin, kun se on kallista. Koko ajan se on Fingridin käytettävissä.
       - main: Huipun kesto ja ajoittuminen laskutusikkunaan ratkaisevat, riittääkö varaston energia — siksi lopullinen luku lasketaan teidän omista tuntitiedoistanne, ei esimerkistä.
       - **Korjaus:**
+- [ ] `b` **uusi** — 00–05
+      - **Korjaus:**
 - [ ] `p` **uusi** — Akku lataa, kun pörssihinta on päivän alin. Sama energia myydään myöhemmin kalliilla tai käytetään huipun aikana.
+      - **Korjaus:**
+- [ ] `b` **uusi** — 07–09
       - **Korjaus:**
 - [ ] `p` **muutettu** — Aamun käynnistyshuippu ei päädy verkkolaskulle: akku antaa puuttuvan tehon itse. Tehomaksu lasketaan huipun mukaan, joten juuri tämä hetki maksaa.
       - main: Hinta on julkinen, mekanismi on julkinen ja vaikutus lasketaan teidän omista tuntitiedoistanne. Alla dokumentoitu puoli ja selkeästi merkityt oletukset erikseen — esimerkki keskijänniteliittymälle Helen Sähköverkon jakelualueella.
       - **Korjaus:**
+- [ ] `b` **uusi** — 10–16
+      - **Korjaus:**
 - [ ] `p` **muutettu** — Akku odottaa puoliksi ladattuna ja on Fingridin reservimarkkinoiden käytettävissä. Valmiudesta maksetaan silloinkin, kun aktivointia ei tule.
       - main: Huipun kesto ja ajoittuminen laskutusikkunaan ratkaisevat, riittääkö varaston energia — siksi lopullinen luku lasketaan teidän omista tuntitiedoistanne, ei esimerkistä.
+      - **Korjaus:**
+- [ ] `b` **uusi** — 17–20
       - **Korjaus:**
 - [ ] `p` **uusi** — Iltahuippu ja päivän kallein sähkö osuvat yhteen. Akku purkaa energian ja lataa yöllä uudelleen.
       - **Korjaus:**
@@ -573,6 +603,13 @@ Vastine mainissa: `/aurinko-ja-akku/`
 - [ ] `p` **muutettu** — Ratkaisu valitaan kulutusprofiilinne, kiinteistönne ja toiveidenne mukaan, ei kuvastosta: katolle, maahan tai kattoon integroituna. Ja kun aurinko ja akku toimivat yhdessä, oma tuotanto menee omaan käyttöön, ylijäämä varastoon ja sama akku reservimarkkinoille.
       - main: Yhdessä ne tekevät kiinteistöstänne tuottajan, joka käyttää oman sähkönsä silloin, kun se on arvokkainta. Toimitamme koko järjestelmän alusta asti — tai täydennämme sen, joka teillä jo on.
       - **Korjaus:**
+- [ ] `b` **uusi** — Kulutus
+      - **Korjaus:**
+- [ ] `b` **muutettu** — Aurinko + akku
+      - main: Aurinkosähkö + akku
+      - **Korjaus:**
+- [ ] `b` **uusi** — Jokainen katto
+      - **Korjaus:**
 
 ### #rev-aurinkosahko-2
 
@@ -626,6 +663,10 @@ Vastine mainissa: `/reservimarkkinat/`
       - **Korjaus:**
 - [ ] ⚠ `a` **uusi** — Aggregaattorikumppanimme VENI Energia
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
+      - **Korjaus:**
+- [ ] ⚠ `b` **uusi** — ~1 500 MW
+      - **Korjaus:**
+- [ ] ⚠ `b` **uusi** — 29 % · 54 %
       - **Korjaus:**
 
 ### #selko
@@ -755,6 +796,8 @@ Vastine mainissa: `/reservimarkkinat/`
       - **Korjaus:**
 - [ ] `figcaption` **uusi** — MMMadis Maastik, myyntijohtajaSAMA Energia
       - **Korjaus:**
+- [ ] `b` **uusi** — Me rakennamme järjestelmän, aggregaattorin ohjelmisto hoitaa kaupankäynnin, ja te saatte optimoidut energiakulut.
+      - **Korjaus:**
 - [ ] ⚠ `h3` **uusi** — VENI Energia, aggregaattorikumppanimme
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
       - **Korjaus:**
@@ -775,12 +818,18 @@ Vastine mainissa: `/reservimarkkinat/`
 - [ ] `p` **muutettu** — Siksi sanomme myös rehellisesti ei, kun akku ei kohteessanne kannata. Väärä investointi vahingoittaa juuri sitä, mihin uskomme.
       - main: Jos hanke toimii vain silloin, kun reservihinnat pitävät, sanomme sen. Se tarkoittaa, että hanke on hauras, ja se kannattaa tietää ennen allekirjoitusta eikä toisena vuonna.
       - **Korjaus:**
+- [ ] `b` **uusi** — Riippumattomuus
+      - **Korjaus:**
 - [ ] ⚠ `p` **muutettu** — Fingrid arvioi tarvitsevansa viiden vuoden päästä 1 200 MW nykyistä enemmän reserviä. Se kapasiteetti rakennetaan joka tapauksessa. Kysymys on vain siitä, seisooko se suomalaisten yritysten omien liittymien takana vai ostetaanko se muualta. Huoltovarmuus ei ole julistus vaan laitteita, jotka ovat fyysisesti täällä ja reagoivat sekunneissa.
       - main: Luvun, jonka annamme, on kestettävä tarkastelu vielä viidentenä vuonna. Siksi rakennamme laskelman säästöille ja esitämme reservitulon lisänä: aggregaattorin omana arviona, jonka rinnalla on skenaario siitä, mitä tapahtuu, jos hinnat puolittuvat.
       - ⚠ lähdettä ei löytynyt automaattisesti (ei osion lähderiviä, ei "Lähde:"-mainintaa tekstissä) — varmista näkyvä lähde ennen julkaisua
       - **Korjaus:**
+- [ ] `b` **uusi** — Vauraus
+      - **Korjaus:**
 - [ ] `p` **muutettu** — Reservin ylläpidosta maksetaan korvaus joka tunnilta, ja se raha menee sille, joka reservin tarjoaa. Jos tarjoajia ovat vain suuret rahastot, raha lähtee alueelta. Jos tarjoajia ovat sastamalalainen konepaja, hämäläinen viljankuivaamo ja tamperelainen kiinteistö, raha jää tänne ja investoidaan tänne uudelleen. Meidän kantamme on tiedossa.
       - main: Ennen tämä hoidettiin suurilla laitoksilla, jotka säätivät tuotantoaan. Sääriippuvaisen tuotannon kasvaessa ja säädettävän kapasiteetin poistuessa kantaverkkoyhtiö ostaa tätä säätökykyä markkinoilta — myös akuilta.
+      - **Korjaus:**
+- [ ] `b` **uusi** — Vapaus
       - **Korjaus:**
 - [ ] `p` **muutettu** — Yritys, joka pystyy varastoimaan ja ajoittamaan oman energiansa, ei ole yhden tunnin hinnan armoilla. Maa, jossa tällaisia yrityksiä on tuhat, ei ole yhdenkään toimittajan armoilla. Sama logiikka kahdessa kokoluokassa, ja se on syy siihen, miksi tämä työ on isompi asia kuin yksi laite yhden rakennuksen vieressä.
       - main: Jos hanke toimii vain silloin, kun reservihinnat pitävät, sanomme sen. Se tarkoittaa, että hanke on hauras, ja se kannattaa tietää ennen allekirjoitusta eikä toisena vuonna.
@@ -813,6 +862,10 @@ Vastine mainissa: `/reservimarkkinat/`
       - **Korjaus:**
 - [ ] `a` **uusi** — Reservimarkkinat selkokielellä
       - **Korjaus:**
+- [ ] ⚠ `b` **uusi** — 1 MW
+      - **Korjaus:**
+- [ ] `b` **uusi** — yli 150
+      - **Korjaus:**
 
 ### #jarjestelma
 
@@ -820,11 +873,19 @@ Vastine mainissa: `/reservimarkkinat/`
       - **Korjaus:**
 - [ ] `p` **uusi** — Kohteen kulutus, aurinkosähkö ja akku ovat liittymän takana. Liittymispisteen mittaus kertoo, paljonko tehoa on vapaana; VENI ohjaa akkua, tekee tarjoukset ja tilittää tuoton; markkinoita on kaksi: Fingridin reservit ja sähköpörssi.
       - **Korjaus:**
+- [ ] `b` **uusi** — Kohde
+      - **Korjaus:**
 - [ ] `p` **uusi** — Kulutus, aurinkosähkö ja akku liittymän takana – akku lataa ja purkaa liittymän rajoissa.
+      - **Korjaus:**
+- [ ] `b` **uusi** — Ohjaus
       - **Korjaus:**
 - [ ] `p` **uusi** — VENI lukee liittymispisteen mittausta, tekee tarjoukset joka tunnille ja ohjaa akkua kannattavimpaan tuotteeseen.
       - **Korjaus:**
+- [ ] `b` **uusi** — Etusija
+      - **Korjaus:**
 - [ ] `p` **uusi** — Kohteen oma kulutus on aina etusijalla. Markkinoille menee se, mikä liittymästä jää yli – tunneittain, kulutusprofiilinne mukaan, ei yhdellä kiinteällä rajalla koko vuodeksi.
+      - **Korjaus:**
+- [ ] `b` **uusi** — Markkinat
       - **Korjaus:**
 - [ ] `p` **uusi** — Fingridin reservit ja sähköpörssi samasta akusta – monimarkkinapalvelu.
       - **Korjaus:**
@@ -914,6 +975,9 @@ Vastine mainissa: `/reservimarkkinat/`
 
 ### #veni
 
+- [ ] ⚠ `b` **uusi** — VENI Energia Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
+      - **Korjaus:**
 - [ ] `div` **uusi** — Aggregaattorikumppanimme Suomessa · Fingridin reservimarkkinat
       - **Korjaus:**
 - [ ] ⚠ `h2` **uusi** — Mitä VENI Energia tekee teidän kohteellenne.
@@ -975,6 +1039,10 @@ Vastine mainissa: `/prosessi/`
       - **Korjaus:**
 - [ ] `p` **muutettu** — Jokainen tilaus alkaa samasta kohdasta: maksuttomasta kirjallisesta arviosta. Tässä on kirjattuna, mitä kukin askel sisältää, mitä te siihen annatte ja mitä sen jälkeen tapahtuu.
       - main: Tämä on molemmilla markkinoilla suurin yksittäinen syy epäonnistuneisiin, viivästyneisiin ja budjetin ylittäneisiin akkuhankkeisiin. Se on täysin vältettävissä, eikä välttäminen maksa mitään muuta kuin oikean järjestyksen. Siksi järjestys on meillä prosessin kiinteä osa, ei joustokohta.
+      - **Korjaus:**
+- [ ] `b` **uusi** — 2 arkipäivää
+      - **Korjaus:**
+- [ ] `b` **uusi** — 1 yhteyshenkilö
       - **Korjaus:**
 
 ### #tuotteet
@@ -1253,6 +1321,10 @@ Vastine mainissa: `/meista/`
 - [ ] `p` **muutettu** — SAMA Energia on teollisten energiavarastojen ja aurinkosähkön kokonaistoimittaja yrityksille: kartoitamme, suunnittelemme, hankimme, asennamme ja ylläpidämme mittarin takaiset järjestelmät – energiavarasto, aurinkosähkö ja ohjaus – ja viemme ne aggregaattorin kautta reservimarkkinoille. Työmme alkaa laskelmasta, ei tarjouksesta.
       - main: Siksi SAMA on olemassa. Riippumaton yhtiö, jolla ei ole valmistajabonuksia eikä aggregaattorisopimusta ohjaamassa suosituksia. Säästöt laskemme teidän omista kulutustiedoistanne. Reservitulon näytämme skenaarioina, emme lupauksina. Verkkoyhtiön kannan selvitämme kirjallisesti, ennen kuin sidotte pääomaa. Ja jos akku ei sovi kohteeseenne, sanomme sen suoraan — olette menettänyt vain yhden keskustelun.
       - **Korjaus:**
+- [ ] `b` **uusi** — EPC
+      - **Korjaus:**
+- [ ] `b` **uusi** — FI + EE
+      - **Korjaus:**
 
 ### #miksi
 > Lähde tälle osiolle: Lähteet: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025; Fingrid, Energiavarastot reservimarkkinoilla · 10.2.2025; Fingrid, tiedote · 24.9.2025. Tarkemmin Reservimarkkinat-sivulla.
@@ -1332,8 +1404,14 @@ Vastine mainissa: `/meista/`
       - **Korjaus:**
 - [ ] `p` **uusi** — Aggregaattori kokoaa akut tarjoukseksi, ohjaa niitä automaattisesti ja tilittää tuoton.
       - **Korjaus:**
+- [ ] ⚠ `b` **uusi** — VENI Energia Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
+      - **Korjaus:**
 - [ ] `div` **muutettu** — Aggregaattorikumppani · Fingridin reservimarkkinat
       - main: VENI Energia — lisensoitu aggregaattori. Kohteen liittäminen Fingridin reservimarkkinoille.
+      - **Korjaus:**
+- [ ] ⚠ `b` **uusi** — Soleron Energy OÜ
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
       - **Korjaus:**
 - [ ] `div` **muutettu** — Aggregaattori · Eleringin reservimarkkinat
       - main: VENI Energia — lisensoitu aggregaattori. Kohteen liittäminen Fingridin reservimarkkinoille.
@@ -1343,7 +1421,13 @@ Vastine mainissa: `/meista/`
 - [ ] `p` **muutettu** — Varastot valitaan kohteen mukaan. Osa laitteista on Suomen varastossa, mikä lyhentää toimitusajan viikkoihin.
       - main: Ralos Oy, Tampere — energiavarastot. Osa laitteista varastossa Suomessa, mikä lyhentää toimitusajan viikkoihin.
       - **Korjaus:**
+- [ ] ⚠ `b` **uusi** — Ralos Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
+      - **Korjaus:**
 - [ ] `div` **uusi** — Energiavarastot · Tampere
+      - **Korjaus:**
+- [ ] ⚠ `b` **uusi** — Scanoffice Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
       - **Korjaus:**
 - [ ] `div` **uusi** — Laitteiden maahantuoja · Espoo
       - **Korjaus:**
@@ -1351,12 +1435,18 @@ Vastine mainissa: `/meista/`
       - **Korjaus:**
 - [ ] `p` **uusi** — Asennusta johtaa oma asennuspäällikkömme; sähkötyöt ja käyttöönotto kulkevat kumppanin kautta.
       - **Korjaus:**
+- [ ] ⚠ `b` **uusi** — JSM Automaatiosähkö Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
+      - **Korjaus:**
 - [ ] `div` **uusi** — Sähköasennukset ja käyttöönotto · Pirkanmaa
       - **Korjaus:**
 - [ ] `h3` **uusi** — Rahoitus
       - **Korjaus:**
 - [ ] ⚠ `p` **muutettu** — Emme ole sidoksissa yhteen rahoittajaan. Arviossa näytämme omarahoituksen ja leasingin rinnakkain, samoilla luvuilla.
       - main: Siksi SAMA on olemassa. Riippumaton yhtiö, jolla ei ole valmistajabonuksia eikä aggregaattorisopimusta ohjaamassa suosituksia. Säästöt laskemme teidän omista kulutustiedoistanne. Reservitulon näytämme skenaarioina, emme lupauksina. Verkkoyhtiön kannan selvitämme kirjallisesti, ennen kuin sidotte pääomaa. Ja jos akku ei sovi kohteeseenne, sanomme sen suoraan — olette menettänyt vain yhden keskustelun.
+      - ⚠ rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)
+      - **Korjaus:**
+- [ ] ⚠ `b` **uusi** — Leasing tai omarahoitus
       - ⚠ rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)
       - **Korjaus:**
 - [ ] `div` **uusi** — Rahoitus järjestetään kohteen mukaan
@@ -1421,6 +1511,10 @@ Vastine mainissa: `/ajankohtaista/`
       - **Korjaus:**
 - [ ] `p` **muutettu** — Reservimarkkinat, energiavarastot, verkkomaksut ja lakimuutokset auki kirjoitettuna niin, että päätöksen voi tehdä lukujen perusteella. Kirjoitamme myös silloin, kun luku ei ole meille mieluinen.
       - main: Miksi tämä on merkityksellistä: katselmus tuottaa juuri sen kulutusdatan, josta varasto- ja aurinkoinvestointi mitoitetaan. Saman velvoitteen voi hoitaa pelkkänä pakkona — tai käyttää samalla hyödyksi.
+      - **Korjaus:**
+- [ ] `b` **uusi** — Lähde + pvm
+      - **Korjaus:**
+- [ ] `b` **uusi** — Ei tuotesivuja
       - **Korjaus:**
 
 ### #rev-ajankohtaista-2
@@ -1503,8 +1597,9 @@ Vastine mainissa: `/ajankohtaista/`
 - [ ] `p` **muutettu** — Hiljainen muutos koko SDAC-alueella: lyhyempi jakso tarkoittaa enemmän hintaliikettä vuorokauden sisällä – ja enemmän arvoa omaisuudelle, joka reagoi nopeasti.
       - main: Miksi tämä on merkityksellistä: katselmus tuottaa juuri sen kulutusdatan, josta varasto- ja aurinkoinvestointi mitoitetaan. Saman velvoitteen voi hoitaa pelkkänä pakkona — tai käyttää samalla hyödyksi.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Tällä sivulla ovat pidemmät katsaukset, jotka voi lähettää kollegalle eteenpäin. Markkinauutiset ja yksittäiset luvut kulkevat LinkedInin kautta.
-      - main: Miksi tämä on merkityksellistä: katselmus tuottaa juuri sen kulutusdatan, josta varasto- ja aurinkoinvestointi mitoitetaan. Saman velvoitteen voi hoitaa pelkkänä pakkona — tai käyttää samalla hyödyksi.
+- [ ] `b` **uusi** — Tällä sivulla julkaisemme pidemmät katsaukset.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Katsaukset on kirjoitettu niin, että ne voi lähettää kollegalle eteenpäin.
       - **Korjaus:**
 
 ### #rev-ajankohtaista-3
