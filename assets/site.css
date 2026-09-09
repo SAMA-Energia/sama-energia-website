@@ -630,7 +630,7 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
   .reserve-intro{grid-template-columns:1fr}
 }
 @media (max-width:900px){
-  .intro-split,.subhero .wrap,.teaser .wrap,.yield,.honest,.benefits,.vote,.story,.netrow,.post.featured{grid-template-columns:1fr}
+  .intro-split,.subhero .wrap,.teaser .wrap,.yield,.honest,.benefits,.vote,.story,.netrow,.post.featured{grid-template-columns:minmax(0,1fr)}
   .postlist{grid-template-columns:repeat(2,1fr)}
   .orgfacts{grid-template-columns:1fr 1fr}
   .orgfacts div:nth-child(3){border-left:0}
@@ -866,3 +866,6 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
 .tile.gold[open]{background:linear-gradient(180deg,#FCF7E7,#F7EED7);border-color:rgba(176,138,30,.5)}
 .tile.gold summary .plus{border-color:#E2D6B4}
 @media (max-width:1000px){.pain-grid{grid-template-columns:minmax(0,1fr)}.pain-r{max-width:600px}.pain-grid h2.three{font-size:clamp(25px,5.6vw,32px)}}
+.intro-split.wide{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:start}.intro-split.wide .lead{max-width:none}.intro-split.wide h2{font-size:clamp(30px,3.2vw,42px)}
+@media (max-width:900px){.hero h1.xlong{font-size:clamp(26px,7.2vw,36px)}}
+@media (max-width:900px){.teaser .acts .btn{white-space:normal;text-align:center}}
