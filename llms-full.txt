@@ -253,9 +253,9 @@ Jos kulutustiedot tai tarjous ovat käsillä, lähettäkää ne heti osoitteesee
 
 Etusivu›Aurinkosähkö
 
-Aurinkosähkö yrityksille, mitoitettuna kulutuksen mukaan.
+Aurinkosähkö, joka on tehty teidän kohteenne mukaan.
 
-Paneelit, invertterit ja asennus, mitoitettuna teidän kulutuksenne, ei katon koon mukaan. Ja kun aurinko ja akku toimivat yhdessä, oma tuotanto menee omaan käyttöön, ylijäämä varastoon ja sama akku reserveihin.
+Ratkaisu valitaan kulutusprofiilinne, kiinteistönne ja toiveidenne mukaan, ei kuvastosta: katolle, maahan tai kattoon integroituna. Ja kun aurinko ja akku toimivat yhdessä, oma tuotanto menee omaan käyttöön, ylijäämä varastoon ja sama akku reservimarkkinoille.
 
 Pyydä maksuton kartoitus
 
@@ -263,14 +263,19 @@ Kulutusmitoituksen lähtökohta, ei katon koko: mahdollisimman suuri osa tuotann
 
 Aurinko + akkukeskipäivän ylijäämä iltaan, huiput pois, ja sama akku Fingridin reserveihin
 
+Jokainen kattotiili, pelti, profiilipelti, tasakatto, kattoon integroitu tai maa-asennus
+
 Oma tuotanto omaan käyttöön
-Aurinkosähkö kannattaa parhaiten silloin, kun se käytetään itse. Mitoitamme järjestelmän kulutusprofiilinne mukaan, jotta mahdollisimman vähän menee halvalla verkkoon.
+Aurinkosähkö maksaa itsensä parhaiten takaisin, kun se käytetään itse. Mitoitamme järjestelmän kulutusprofiilinne mukaan, jotta mahdollisimman vähän menee halvalla verkkoon.
 
 Aurinko ja akku yhdessä
 Akku siirtää keskipäivän ylijäämän iltaan, leikkaa huiput ja tuottaa reservimarkkinoilla. Jos aurinkosähkö on jo olemassa, akku tekee siitä paremman investoinnin.
 
-Katto- ja aurinkokattoasennukset
-Asennuspäällikkömme Viljar Petersell on rakentanut aurinkosähköjärjestelmiä yli kuusi vuotta, yritys- ja yksityiskohteissa, myös kattoon integroituina. Peltisepän tausta, kokemusta suurista kohteista.
+Jokaiselle katolle ja pinnalle
+Tasakatto, tiilikatto, pelti- ja profiilipeltikatto, kattoon integroitu aurinkokatto tai maa-asennus. Ratkaisu valitaan katon, estetiikan ja kiinteistön vaatimusten mukaan – myös suojellussa rakennuksessa.
+
+Kokemus, joka on jo tehty
+Tiimimme on rakentanut aurinkojärjestelmiä vuosia: kotiasennuksista ja suojellun talon aurinkokatosta yritysten, maatilojen ja jopa 400 kW:n peltoasennuksiin. Sama tiimi on valmis isompaan – megawattiluokan hankkeet ovat suunnitelmissa ja hallinnassa.
 
 Aurinkoa, akkua vai molemmat?
 Kartoitus vastaa kulutustiedoistanne, mikä yhdistelmä kannattaa juuri teillä.
@@ -1374,9 +1379,9 @@ Kui teil on tarbimisandmed või pakkumine käepärast, saatke need kohe aadressi
 
 Avaleht›Päikeseelekter
 
-Päikeseelekter ettevõtetele, dimensioneeritud tarbimise järgi.
+Päikeseelekter, mis on tehtud teie objekti järgi.
 
-Paneelid, inverterid ja paigaldus, dimensioneeritud teie tarbimise, mitte katuse suuruse järgi. Ja kui päike ja aku töötavad koos, läheb oma toodang omaks tarbeks, ülejääk salvestisse ja sama aku reserviturule.
+Lahenduse valime teie tarbimisprofiili, kinnistu ja soovide järgi, mitte kataloogist: katusel, maal või katusesse integreerituna. Ja kui päike ja aku töötavad koos, läheb oma toodang omaks tarbeks, ülejääk salvestisse ja sama aku reserviturule.
 
 Küsi tasuta hindamist
 
@@ -1384,14 +1389,19 @@ Tarbiminedimensioneerimise lähtekoht, mitte katuse suurus: võimalikult suur os
 
 Päike + akukeskpäevane ülejääk õhtusse, tipud maha, ja sama aku Eleringi reservidesse
 
+Iga katuskivi, plekk, profiilplekk, lamekatus, katusesse integreeritud või maapaigaldus
+
 Oma toodang omaks tarbeks
-Päikeseelekter tasub end kõige paremini ära siis, kui see ise ära kasutatakse. Dimensioneerime süsteemi teie tarbimisprofiili järgi, et võimalikult vähe läheks odavalt võrku.
+Päikeseelekter tasub end kõige paremini ära siis, kui see ise ära kasutatakse. Mõõdame süsteemi teie tarbimisprofiili järgi, et võimalikult vähe läheks odavalt võrku.
 
 Päike ja aku koos
 Aku nihutab keskpäevase ülejäägi õhtusse, lõikab tipud ja teenib reserviturul. Kui päikeseelekter on juba olemas, teeb aku sellest parema investeeringu.
 
-Katuse- ja päikesekatuse paigaldus
-Meie paigaldusjuht Viljar Petersell on päikesesüsteeme ehitanud üle kuue aasta, äri- ja eraobjektidel, ka katusesse integreerituna. Plekksepa taust, kogemus suurte objektidega.
+Iga katuse ja pinna jaoks
+Lamekatus, kivikatus, plekk- ja profiilplekk-katus, katusesse integreeritud päikesekatus või maapaigaldus. Lahendus valitakse katuse, esteetika ja kinnistu nõuete järgi – ka muinsuskaitse all oleval hoonel.
+
+Kogemus, mis on juba tehtud
+Meie meeskond on päikesesüsteeme ehitanud aastaid: koduinstallatsioonidest ja muinsuskaitsealuse maja päikesekatusest ettevõtete, farmide ja kuni 400 kW põldpaigaldusteni. Sama meeskond on valmis suuremaks – megavattides projektid on plaanis ja jõukohased.
 
 Päike, aku või mõlemad?
 Hindamine vastab teie tarbimisandmetest, milline kombinatsioon just teil ära tasub.
