@@ -5,7 +5,7 @@
 
 # SAMA Energia — Itsenäinen energia. Itseohjautuva akku. — https://samaenergia.fi/
 
-Saavuttakaa energiariippumattomuus laittamalla sähköliittymänne töihin omaksi eduksenne.
+Saavuttakaa energiariippumattomuus laittamalla sähköliittymänne töihin – omaksi eduksenne.
 
 Teollinen energiavarasto leikkaa tehomaksua, ostaa sähkön halvoilla tunneilla ja tuottaa Fingridin reservimarkkinoilla valmiudesta — automaattisesti. Mitä se tarkoittaa teidän kohteessanne, kerromme kirjallisesti ennen kuin allekirjoitatte mitään.
 
@@ -140,7 +140,7 @@ Ensimmäinen askel ei sido mihinkään. Tiedot ja lasku, ja tiedätte kahdessa a
 
 Pyydä maksuton kartoitus
 
-Missä varasto maksaa itsensä takaisin usein nopeimmin – ja miksi.
+Missä varasto maksaa itsensä takaisin nopeimmin – ja miksi.
 
 Varaston teho jaetaan usean työn kesken: oman kulutuksenne optimointi (huiput, halvat tunnit), arbitraasi pörssissä ja reservimarkkinat (valmius Fingridille) – aggregaattori myy tehoa usealla markkinalla samaan aikaan, se on monimarkkinapalvelu. Kuinka suuri osa menee millekin työlle, määrää kulutusprofiilinne – kartoituksen tärkein rivi.
 
@@ -1348,7 +1348,7 @@ Esimene samm ei kohusta millekski. Andmed ja arve, ja te teate kahe tööpäevag
 
 Küsi tasuta hindamist
 
-Kus salvesti end sageli kõige kiiremini ära tasub – ja miks.
+Kus salvesti end kõige kiiremini ära tasub – ja miks.
 
 Salvesti võimsus jagatakse mitme töö vahel: teie enda tarbimise optimeerimine (tipud, odavad tunnid), arbitraaž börsil ja reserviturg (valmisolek Eleringile) – agregaator müüb võimsust mitmel turul korraga, see on mitmeturuteenus. Kui suur osa läheb millisele tööle, määrab teie tarbimisprofiil – hinnangu kõige tähtsam rida.
 
