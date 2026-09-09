@@ -11,8 +11,10 @@ battery energy storage and solar PV for businesses and landowners in Finland
 and Estonia. The company surveys, designs, procures, installs and maintains the
 behind-the-meter systems — storage, solar PV and control — and takes them to
 the reserve markets of the transmission system operators Fingrid (Finland) and
-Elering (Estonia) through an aggregator. Founders: Martin Rautio (CFO) and
-Madis Maastik (sales director). Site updated 3 September 2026 (design v5).
+Elering (Estonia) through an aggregator. The company was founded by Martin
+Rautio (finance director) and Madis Maastik (sales director); no managing
+director has been appointed or registered. Registered address: Sörnäisten
+Rantatie 33 C, 00500 Helsinki. Site updated 9 September 2026 (design v5).
 
 What the company says about itself, in its own documented positioning:
 
@@ -31,10 +33,12 @@ What the company says about itself, in its own documented positioning:
 - The first product is a free site survey and a written assessment: every figure
   with its source and date, the customer's own hourly consumption data as the
   basis, the distribution grid operator's position before any capital is
-  committed, financing shown as own capital versus leasing on the same figures.
-  A reply within two business days.
-- Delivery partners named on the site: Ralos Oy (battery units, stock in
-  Tampere) and JSM Automaatiosähkö Oy (electrical installation and commissioning).
+  committed, and financing set out as own capital, leasing and hire purchase on
+  the same figures. A reply within two business days.
+- Partners named on the site: VENI Energia (aggregator, Finland), Soleron
+  Energy (aggregator, Estonia), Ralos Oy (battery units, stock in Tampere),
+  JSM Automaatiosähkö Oy (electrical installation and commissioning) and
+  Scanoffice Oy (equipment importer, Finnish site only).
   Financing is not tied to any single provider: leasing can be arranged through
   business financiers in Finland and Estonia and is compared with own capital on
   the same figures in the written assessment.
@@ -49,23 +53,23 @@ What the company says about itself, in its own documented positioning:
 
 ## Pages — Finnish (https://samaenergia.fi)
 
-- https://samaenergia.fi/ : Front page — "Itsenäinen energia. Itseohjautuva akku." One battery, three cash flows plus backup power; how the four steps work; who it suits; FAQ; site-survey form.
+- https://samaenergia.fi/ : Front page — "Saavuttakaa energiariippumattomuus laittamalla sähköliittymänne töihin omaksi eduksenne." One battery, three cash flows plus backup power; what the grid-capacity charge and the spot price actually cost, with one distribution company's published tariff as a worked example; how a permanent saving shows up in the property's value; the five steps; who it suits; FAQ; site-survey form.
 - https://samaenergia.fi/aurinkosahko/ : Solar PV for businesses, sized by consumption, not roof area; solar plus battery.
 - https://samaenergia.fi/energiavarastot/ : Industrial energy storage: one device, four jobs; a battery's day; what is delivered and why now.
-- https://samaenergia.fi/reservimarkkinat/ : Reserve markets explained; four sourced reasons; how income is estimated; honest about reserve prices; what the company votes for.
+- https://samaenergia.fi/reservimarkkinat/ : Reserve markets explained; four sourced reasons; how income is estimated; honest about reserve prices; what the company believes, including where it says no.
 - https://samaenergia.fi/veni-energia/ : What an aggregator does, how joining Fingrid's reserve markets proceeds, and the Finnish aggregator partner VENI Energia.
-- https://samaenergia.fi/palvelut/ : Services — free site survey, written assessment, project management, monitoring; the four rules of every assessment.
+- https://samaenergia.fi/palvelut/ : Services — three things to order: assessment, project, portfolio. What each contains, what the customer supplies, what is free and what is charged when.
 - https://samaenergia.fi/meista/ : About — why the company was founded, who is accountable for what, the partner network, company facts.
 - https://samaenergia.fi/ajankohtaista/ : Reviews with sources and dates.
 - https://samaenergia.fi/ajankohtaista/liityntarajoitus-2029/ : Review: no new storage connections in southern Finland before 2029 — your connection already exists.
-- https://samaenergia.fi/laitevaatimukset/ : Our equipment requirements — the documented list every manufacturer must meet before we offer its equipment (nine items, Finnish).
+- https://samaenergia.fi/laitevaatimukset/ : Our equipment requirements — the nine-point list we ask every manufacturer to document before we offer its equipment (Finnish).
 - https://samaenergia.fi/equipment-requirements/ : The same equipment requirements in English.
 - https://samaenergia.fi/yhteystiedot/ : Contact and free site survey request.
 - https://samaenergia.fi/tietosuoja/ : Privacy statement (no cookies, no analytics).
 
 ## Pages — Estonian (https://samaenergia.ee)
 
-- https://samaenergia.ee/ : Avaleht — "Iseseisev energia. Isejuhtiv aku." Üks salvesti, kolm rahavoogu, varutoide; neli sammu; kellele; KKK; hindamisvorm.
+- https://samaenergia.ee/ : Avaleht — "Saavutage energiasõltumatus, pannes elektriliitumise enda kasuks tööle." Üks salvesti, kolm rahavoogu, varutoide; kuidas püsiv sääst kajastub kinnisvara väärtuses; viis sammu; kellele; KKK; hindamisvorm.
 - https://samaenergia.ee/paikeseelekter/ : Päikeseelekter ettevõtetele, mõõdetud tarbimise järgi; päike ja aku koos.
 - https://samaenergia.ee/energiasalvestid/ : Tööstuslik energiasalvesti: üks seade, neli tööd; aku päev; mida tarnime ja miks nüüd.
 - https://samaenergia.ee/reserviturg/ : Reserviturg lihtsalt seletatuna; neli allikatega põhjust; kuidas tulu hinnatakse; ausalt reservihindadest.
@@ -80,6 +84,6 @@ What the company says about itself, in its own documented positioning:
 
 ## Contact
 
-- Madis Maastik, sales director and founder: madis.maastik@samaenergia.fi · +358 449 654 614 · WhatsApp +358 46 659 4879
-- Martin Rautio, CFO and founder: martin.rautio@samaenergia.fi · +358 40 701 9099
+- Madis Maastik, sales director: madis.maastik@samaenergia.fi · +358 449 654 614
+- Martin Rautio, finance director: martin.rautio@samaenergia.fi · +358 40 701 9099
 - General: info@samaenergia.fi

@@ -5,7 +5,7 @@
 
 # SAMA Energia — Itsenäinen energia. Itseohjautuva akku. — https://samaenergia.fi/
 
-Laittakaa sähköliittymänne töihin – omaksi eduksenne.
+Saavuttakaa energiariippumattomuus laittamalla sähköliittymänne töihin omaksi eduksenne.
 
 Teollinen energiavarasto leikkaa tehomaksua, ostaa sähkön halvoilla tunneilla ja tuottaa Fingridin reservimarkkinoilla valmiudesta — automaattisesti. Mitä se tarkoittaa teidän kohteessanne, kerromme kirjallisesti ennen kuin allekirjoitatte mitään.
 
@@ -23,7 +23,11 @@ Yksi varasto. Kolme kassavirtaa. Tarvittaessa varavoima.
 Tehomaksu alas
 Akku leikkaa kulutushuiput ennen kuin ne päätyvät verkkolaskulle. Se on ensimmäinen rivi, joka laskullanne muuttuu.
 
-Tehomaksu: verkkoyhtiönne hinnasto
+Tarkemmin
+Esimerkki yhdestä hinnastosta: Caruna Oy:n Tehosiirto 1 PJ -tuotteessa tehomaksu on 3,57 €/kW,kk ja määräytyy kuukauden huipputehon mukaan, ja perusmaksu 58,70 €/kk ei riipu käytöstä. Kun varasto kattaa huipun, siirtotuote ja sulakekoko voidaan valita todellisen kulutuksen mukaan – eikä kulutuksen kasvattaminen vaadi lisää liittymistehoa.
+Oma verkkoyhtiönne hinnoittelee eri tavoin: Caruna Espoo Oy:n vastaava tehomaksu on 1,37 €/kW,kk. Arviossa laskemme teidän oman verkkoyhtiönne hinnastolla.
+
+Lähde: Caruna Oy, verkkopalveluhinnasto · 1.9.2024 · alv 0 %
 
 Energiavarastot
 
@@ -31,7 +35,9 @@ Pörssisähkö hyödyksi
 Lataa halvoilla tunneilla, purkaa kalliilla. Joka päivä, automaattisesti, tuotantoanne häiritsemättä.
 
 Tarkemmin
-Kallis tunti maksaa pörssihintana. Varasto pitää huipun alhaalla ja tekee arbitraasia: ostaa sähkön halvoilla tunneilla ja myy tai käyttää sen kalliilla – automaattisesti, tuotantoanne häiritsemättä.
+Kallis tunti maksaa pörssihintana. Varasto pitää huipun alhaalla ja tekee arbitraasia: ostaa sähkön halvoilla tunneilla ja myy tai käyttää sen kalliilla – automaattisesti, tuotantoanne häiritsemättä. Edellytys on pörssisidonnainen myyntisopimus.
+Ero syntyy pörssin tuntihinnasta, ei siirtomaksusta: pienjänniteliittymän siirto on samassa esimerkkihinnastossa kiinteä 3,52 snt/kWh. Keskijänniteliittymässä (Tehosiirto 1 KJ) myös siirrolla on kaksi hintaa – talviarkipäivänä 5,10 ja muuna aikana 1,81 snt/kWh – jolloin ajoituksella on kaksi vaikutusta.
+Lähde: Caruna Oy, verkkopalveluhinnasto · 1.9.2024 · alv 0 %
 
 Miten akun päivä näyttää
 
@@ -55,6 +61,14 @@ Onko kohteessa aurinkosähköä tai onko se suunnitteilla? Aurinkovoimala tuotta
 Etelä-Suomeen ei rakenneta uusia varastoliityntöjä ennen vuotta 2029 – liittymä, jonka takana on toimiva varasto, siirtyy kiinteistön mukana.
 
 Lähde: Fingrid, tiedote · 24.9.2025
+
+Kiinteistön arvo: pienempi pysyvä kulu, korkeampi hinta.
+
+Liikekiinteistön hinta lasketaan nettotuotosta: jokainen euro, jolla pysyvä käyttökulu laskee, nostaa arvoa moninkertaisesti. Järjestelmä jää liittymän taakse ja siirtyy kiinteistön mukana – ostaja saa huipputehon hallinnan ja pääsyn reservimarkkinoille ensimmäisestä päivästä.
+
+Esimerkkilaskelma. Pysyvä 10 000 euron vuosisäästö tarkoittaa 10 %:n tuottovaatimuksella noin 100 000 ja 8 %:n vaatimuksella noin 125 000 euroa korkeampaa arvoa.
+
+Laskemme vain pysyvän osan – tehomaksun ja energiakulun. Reservimarkkinatuotto riippuu markkinahinnasta, eikä sitä lasketa arvoon. Teidän kohteenne tuottovaatimus riippuu kiinteistötyypistä ja sijainnista; arviossa laskemme sen teidän omilla tiedoillanne.
 
 Tarjous jo kädessä?
 
@@ -94,7 +108,11 @@ Maksuton · yksi tunti
 Sähköasentaja käy paikalla, mittaa kaapelireitin, keskuksen ja asennuspaikan ja vahvistaa hinnan.
 Maksullinen · hyvitetään sopimuksessa
 
-04Suunnittelu, asennus, markkina
+04Rahoitus ja päätös
+Kun hinta on vahvistettu, asetamme rinnakkain kolme tietä: oma pääoma, leasing ja osamaksu. Näette yhden taulukon, jossa on kuukausierä, omarahoitusosuus ja se, mitä maksun jälkeen jää käteen. Rahoittajan kanssa asioimme me.
+Päätös on teidän
+
+05Suunnittelu, asennus, markkina
 Suunnittelu, verkkoyhtiön liittymisasiat, asennus, tarkastukset ja käyttöönotto; aggregaattori liittää varaston monimarkkinapalveluun ja me seuraamme, että järjestelmä tekee sen, minkä arvio näytti.
 Sopimuksen mukaan · yhden yhteyshenkilön kautta
 
@@ -401,7 +419,7 @@ Lähde: Fingrid, tiedote · 24.9.2025
 
 Pitkäaikainen kysyntä: koko alue tarvitsee reserviä
 Baltian maat irtautuivat Venäjän verkosta 8.2.2025 ja synkronoituivat Manner-Eurooppaan 9.2.2025. Siitä lähtien Elering ostaa taajuusreservit itse. Heinäkuussa 2026 reservituotteisiin hyväksyttyä kapasiteettia oli Virossa 76 MW FCR:ää ja noin 490 / 580 MW aFRR:ää (ylös / alas). Kun tuuli- ja aurinkovoiman osuus kasvaa, reservien tarve kasvaa koko alueella. Kysyntä ei ole ohimenevä.
-Lähde: Elering, taajuusreservimarkkinoiden yhteenveto · heinäkuu 2026, taulukko 2
+Lähteet: synkronointi – Euroopan komission Suomen-edustusto / EU-edustusto Virossa · 9.2.2025; hyväksytyt kapasiteetit – Elering, taajuusreservimarkkinoiden yhteenveto · heinäkuu 2026, taulukko 2
 
 1 MW / 2 MWhesimerkkikoko, mitoitetaan kohteen mukaan
 
@@ -738,7 +756,11 @@ Maksuton · yksi tunti
 Sähköasentaja käy paikalla, mittaa kaapelireitin, keskuksen ja asennuspaikan ja vahvistaa hinnan.
 Maksullinen · hyvitetään sopimuksessa
 
-04Suunnittelu, asennus, markkina
+04Rahoitus ja päätös
+Kun hinta on vahvistettu, asetamme rinnakkain kolme tietä: oma pääoma, leasing ja osamaksu. Näette yhden taulukon, jossa on kuukausierä, omarahoitusosuus ja se, mitä maksun jälkeen jää käteen. Rahoittajan kanssa asioimme me.
+Päätös on teidän
+
+05Suunnittelu, asennus, markkina
 Suunnittelu, verkkoyhtiön liittymisasiat, asennus, tarkastukset ja käyttöönotto; aggregaattori liittää varaston monimarkkinapalveluun ja me seuraamme, että järjestelmä tekee sen, minkä arvio näytti.
 Sopimuksen mukaan · yhden yhteyshenkilön kautta
 
@@ -946,6 +968,18 @@ Energiakatselmusvelvoite 11.10.2026: mitä se tarkoittaa ja miten sen datan käy
 
 Yli 10 TJ:n kulutus, katselmus tai sertifioitu järjestelmä – ja miksi samat tiedot ovat varaston arvion pohja.
 
+Mihin tämä markkina on menossa.
+Nämä eivät ole meidän ennusteitamme, vaan kantaverkkoyhtiön ja toimialan omia lukuja, jotka kuka tahansa voi tarkistaa. Jokainen tämän sivun katsaus on kirjoitettu niitä vasten.
+
+Sähkönkulutus
+84,6 → 104–159 TWh2025 → 2035. Lähteet: Fingrid, tilinpäätöstiedote · 3.3.2026; Fingrid, kehitysnäkymät Q3/2025.
+
+Reservitarve
+1 500 MW joka tunnilleJa viiden vuoden päästä 1 200 MW lisää. Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025.
+
+Tuulivoimakapasiteetti
+9 433 MW → yli 30 GW2025 → 2035. Lähteet: Suomen uusiutuvat ry, Tuulivoimatilastot 2025 · 8.1.2026; Fingrid, kantaverkon kehittämissuunnitelma 2026–2035 · 2.12.2025.
+
 Lyhyemmät tiedotteet.
 Muutokset, jotka vaikuttavat varaston kannattavuuteen ja liittymään, lähteellä ja määräajalla.
 
@@ -958,6 +992,25 @@ Määräaika 11.10.2026
 Energiakatselmusvelvoite laajenee: raja kulutuksen, ei yrityksen koon mukaan
 Uudistettu energiatehokkuusdirektiivi (EU) 2023/1791, 11 artikla sitoo pakollisen energiakatselmuksen yli 10 TJ:n eli noin 2 800 MWh:n vuosikulutukseen. Rajan ylittävien on tehtävä katselmus 11.10.2026 mennessä, ellei niillä ole sertifioitua energianhallintajärjestelmää; kansallinen täytäntöönpano voi täsmentää rajaa ja aikataulua. Katselmuksen tiedot ovat samalla varaston ja aurinkosähkön arvion pohja.
 Lähde: Direktiivi (EU) 2023/1791 · 11 artikla
+
+Mitä me muualla luemme.
+Emme kirjoita kaikkea itse. Nämä ovat lähteitä, joita oikeasti käytämme, ja yksi rivi siitä, miksi juuri tämä teksti on luettavien joukossa. Linkit vievät pois sivultamme.
+
+Fingrid · 11.6.2025
+Reservimarkkinat tutuiksi (PDF)
+Fingridin oma arvio reservitarpeesta: nykyisin keskimäärin 1 500 MW joka tunnille, viiden vuoden päästä 1 200 MW lisää. Suurin osa siitä, mitä sanomme kysynnän suunnasta, on tässä yhdessä kalvossa.
+
+Fingrid · 19.11.2025
+Joulukuun 2025 volyymimaksu jäi laskuttamatta
+Konkreettisin yksittäinen todiste reservikustannusten laskusta: 1,35 €/MWh:n volyymimaksu jäi kokonaan perimättä yhdeltä kuukaudelta, koska reservikustannukset olivat ennakoitua pienemmät.
+
+Fingrid · 24.2.2026
+Sähkövarastojen yhteisteho Suomessa jo yli 1 000 MW
+Noin 1 050 MW verkkoon liitettyä varastoa. Tämä on se tarjonnan kasvu, joka selittää reservihinnan liikkeen – ja samalla syy, miksi emme lupaa yhtä tuottolukua.
+
+Nord Pool · 1.10.2025
+15 minuutin markkina-aikayksikkö vuorokausimarkkinalla
+Hiljainen muutos koko SDAC-alueella: lyhyempi jakso tarkoittaa enemmän hintaliikettä vuorokauden sisällä – ja enemmän arvoa omaisuudelle, joka reagoi nopeasti.
 
 Lyhyemmät huomiot julkaisemme LinkedInissä.Tällä sivulla ovat pidemmät katsaukset, jotka voi lähettää kollegalle eteenpäin. Markkinauutiset ja yksittäiset luvut kulkevat LinkedInin kautta.
 
@@ -1144,7 +1197,7 @@ Päivitetty 08.09.2026. Jos seloste muuttuu, uusin versio on aina tällä sivull
 
 # SAMA Energia — Iseseisev energia. Isejuhtiv aku. — https://samaenergia.ee/
 
-Pange oma elektriliitumine enda kasuks tööle.
+Saavutage energiasõltumatus, pannes elektriliitumise enda kasuks tööle.
 
 Tööstuslik energiasalvesti lõikab võimsustasu, ostab elektri odavatel tundidel ja teenib Eleringi reserviturul valmisoleku eest — automaatselt. Mida see teie objektil tähendab, ütleme kirjalikult, enne kui te midagi allkirjastate.
 
@@ -1195,6 +1248,14 @@ Uus liitumine ei ole enam odav ega kiire: Elektrilevi liitumistasu on 331,15 eur
 
 Allikad: ERR 16.08.2024; Elektrilevi, loetud 08.09.2026
 
+Kinnisvara väärtus: väiksem püsikulu, kõrgem hind.
+
+Ärikinnisvara hind arvutatakse puhastulust: iga euro, mille võrra püsiv käituskulu langeb, tõstab väärtust mitmekordselt. Süsteem jääb liitumise taha ja liigub kinnisvaraga kaasa – ostja saab tippvõimsuse juhtimise ja pääsu reserviturule esimesest päevast.
+
+Näidisarvutus. Püsiv 10 000 euro suurune aastane sääst tähendab 10 % tootlusnõude juures ligikaudu 100 000 ja 8 % juures ligikaudu 125 000 eurot kõrgemat väärtust.
+
+Arvestame ainult püsiva osa – võimsustasu ja energiakulu. Reserviturutulu sõltub turuhinnast ja seda väärtusesse ei arvestata. Teie objekti tootlusnõue sõltub kinnisvara liigist ja asukohast; hinnangus arvutame selle teie enda andmetega.
+
 Pakkumine juba käes?
 
 Kontrollime, kas selle tasuvus peab reaalsusele vastu. Tasuta, samade tarbimisandmete pealt, mille alusel teie otsus tegelikult tehakse. Kui pakkumine on hea, ütleme ka seda.
@@ -1233,7 +1294,11 @@ Tasuta · üks tund
 Elektrik käib kohal, mõõdab kaablitee, kilbi ja paigalduskoha ning kinnitab hinna.
 Tasuline · arvestatakse lepingus maha
 
-04Projekt, paigaldus, turg
+04Rahastus ja otsus
+Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Näete ühte tabelit, kus on kuumakse, omafinantseering ja see, mis pärast makset alles jääb. Rahastajaga suhtleme meie.
+Otsus jääb teile
+
+05Projekt, paigaldus, turg
 Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine; agregaator liidab salvesti mitmeturuteenusega ja meie jälgime, et süsteem teeks seda, mida hinnang näitas.
 Lepingu järgi · ühe kontakti kaudu
 
@@ -1536,7 +1601,7 @@ Allikad: Kliimaministeerium · 11.09.2024; Elering, varustuskindluse aruanne 202
 
 Pikaajaline nõudlus: Eesti hoiab oma sagedust nüüd ise
 8. veebruaril 2025 lahkusid Balti riigid Venemaa võrgust lõplikult ja sünkroniseerusid 9. veebruaril 2025 Mandri-Euroopa võrguga. Sellest hetkest ostab Elering sagedusreserve ise. Juulis 2026 oli Eestis reservitoodete pakkumiseks kvalifitseerunud 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i (üles / alla). Mida rohkem tuult ja päikest võrku tuleb, seda rohkem reservi vajatakse. See nõudlus ei ole mööduv.
-Allikas: Elering, sagedusreservide turu kokkuvõte · juuli 2026, tabel 2
+Allikad: sünkroniseerimine – Euroopa Komisjoni esindus Eestis · 9.2.2025; kvalifitseerunud mahud – Elering, sagedusreservide turu kokkuvõte · juuli 2026, tabel 2
 
 1 MW / 2 MWhnäidissuurus, dimensioneeritakse objekti järgi
 
@@ -1579,7 +1644,7 @@ Iga aku, mis siia ehitatakse, on väike samm ühes suunas: energia, mis toodetak
 Sellepärast ütleme ka ausalt ei, kui aku teie objektil end ära ei tasu. Vale investeering kahjustab täpselt seda, millesse me usume.
 
 Iseseisvus8. veebruaril 2025 lahkusid Balti riigid Venemaa sagedusalast ja sünkroniseerusid 9. veebruaril 2025 Mandri-Euroopa võrguga; Eesti hoiab oma võrgu sagedust nüüd ise. Sagedust ei hoia lubadused ega lepingud, vaid füüsiline võimsus, mis seisab siin ja reageerib sekunditega. Iga aku Eesti ettevõtte liitumise taga on tükk seda võimsust, ja see tükk kuulub meile endile.
-Allikas: Elering, sagedusreservide turu kokkuvõtted · juuli 2026
+Allikas: Euroopa Komisjoni esindus Eestis, teade Balti riikide sünkroniseerimisest · 9.2.2025
 
 JõukusAlates 2026. aastast maksavad reservide eest kõik tarbijad, iga megavatt-tunni pealt. Selle raha saab see, kes reservi pakub. Kui pakkujad on ainult suured välisfondid, läheb raha piirkonnast ära. Kui pakkujad on Viljandimaa kuivati, Pärnu tehas ja Tartu hotell, jääb see siia ja investeeritakse siia tagasi. Meie eelistus on teada.
 Allikas: Elering, tasakaalustamisvõimsuse kulu · 2026
@@ -1835,7 +1900,11 @@ Tasuta · üks tund
 Elektrik käib kohal, mõõdab kaablitee, kilbi ja paigalduskoha ning kinnitab hinna.
 Tasuline · arvestatakse lepingus maha
 
-04Projekt, paigaldus, turg
+04Rahastus ja otsus
+Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Näete ühte tabelit, kus on kuumakse, omafinantseering ja see, mis pärast makset alles jääb. Rahastajaga suhtleme meie.
+Otsus jääb teile
+
+05Projekt, paigaldus, turg
 Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine; agregaator liidab salvesti mitmeturuteenusega ja meie jälgime, et süsteem teeks seda, mida hinnang näitas.
 Lepingu järgi · ühe kontakti kaudu
 
@@ -2038,6 +2107,18 @@ Toetused ja tähtajad: mis on avatud, mis on möödas ja mida jälgida
 
 KIK-i salvestustoetus, EIS-i varustuskindluse toetus, energiaauditi kohustus. Üks postitus, mida me uuendame.
 
+Kuhu see turg liigub.
+Need ei ole meie prognoosid, vaid süsteemihalduri enda arvud, mida igaüks saab kontrollida. Iga selle lehe ülevaade on kirjutatud nende vastu.
+
+Juhitav võimsus
+~1 300 → ~2 100 MW2030 → 2035. Allikas: Elering, varustuskindluse aruanne 2025 · lk 14.
+
+Salvestid stsenaariumis
+258 → 1 500 MW2028 → 2035, juhitava võimsusena. Allikas: Elering, varustuskindluse aruanne 2025 · tabelid 2.2–2.4, lk 36–37.
+
+Tasakaalustamisvõimsuse kulu
+3,73 → 2,97 €/MWh2026 → alates 1.1.2027. Allikas: Elering, tasakaalustamisvõimsuse kulu.
+
 Lühemad teated.
 Muudatused, mis mõjutavad salvesti tasuvust ja liitumist, allika ja tähtajaga.
 
@@ -2060,6 +2141,25 @@ Allikas: Direktiiv (EL) 2023/1791 · artikkel 11
 Fingrid: elektritarbimine kasvab tugevalt, kõrvale on vaja reguleerimisvõimsust
 Fingridi teate järgi on andmekeskustel liitumislepinguid ligi 5 GW, elektrikatlaid on ehitamisel ja töös üle 3 GW ning salvestitele on sõlmitud liitumislepinguid üle 4 GW; kui kõik teostub, kasvab tarbimine 2025. aastaga võrreldes ligi 40 %. Uus liitumisvõimsus on paljudes kohtades juba peaaegu broneeritud. Meie järeldus: olemasolev liitumine on vara, mida tasub tööle panna, mitte oodata.
 Allikas: Fingrid, teade · 18.8.2026
+
+Mida me mujal loeme.
+Me ei kirjuta kõike ise. Need on allikad, mida me tegelikult kasutame, ja üks rida selle kohta, miks just see tekst on lugemisväärne. Lingid viivad meie lehelt ära.
+
+Elering · 2025
+Eesti elektri varustuskindluse aruanne 2025 (PDF)
+Siit tulevad juhitava võimsuse vajaduse arvud ja salvestite stsenaariumid. Kui keegi küsib, kust me teame, et nõudlus ei ole mööduv, on vastus selles dokumendis.
+
+Elering · igakuine
+Sagedusreservide turu kokkuvõtted
+Kvalifitseerunud võimsused ja hinnad toote kaupa, kuu haaval. Siin näeb ka seda, et FCR keskmine hind langes 2025. aasta 88,21 eurolt 2026. aasta esimesel poolel 45,49 euroni megavati kohta tunnis.
+
+Elering · 2026
+Tasakaalustamisvõimsuse kulu
+See on rida, mida iga tarbija maksab: 3,73 €/MWh 2026. aastal ja 2,97 €/MWh alates 2027. Korrutage see oma aastase tarbimisega – arv tuleb välja ilma meie abita.
+
+Nord Pool · 1.10.2025
+15-minutiline turuajaühik päev-ette turul
+Vaikne muudatus kogu SDAC-piirkonnas: lühem periood tähendab rohkem hinnaliikumist ööpäeva sees – ja rohkem väärtust varale, mis reageerib kiiresti.
 
 Lühemad märkused avaldame LinkedInis.Siin lehel on pikemad ülevaated, mida saab kolleegile edasi saata. Turu-uudised ja üksikud arvud käivad meie LinkedIni kaudu.
 
