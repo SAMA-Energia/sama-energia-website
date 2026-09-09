@@ -3,3 +3,7 @@
 *.local
 .DS_Store
 node_modules/
+qa/
+
+# Työtiedostot (promptit, suunnitelmat, port tracker) — eivät kuulu julkaistavaan repoon
+Claude outputs/
