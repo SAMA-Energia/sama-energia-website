@@ -12,6 +12,11 @@
   },
   {
    "page": "/",
+   "sectionId": "ratkaisu",
+   "kind": "new"
+  },
+  {
+   "page": "/",
    "sectionId": "reservi-teaser",
    "kind": "new"
   },
@@ -314,6 +319,11 @@
   {
    "page": "/et/",
    "sectionId": "teadmatus",
+   "kind": "new"
+  },
+  {
+   "page": "/et/",
+   "sectionId": "lahendus",
    "kind": "new"
   },
   {

@@ -14,11 +14,52 @@ Miten akku toimii?
 
 MaksutonEi sitoumuksiaKirjallinen arvio
 
-Liittymä on omaisuutta. Mittarin takainen järjestelmä panee sen tuottamaan.
+Liittymä on omaisuutta. Passiivinen liittymä on kulujen erä. Mittarin takainen järjestelmä panee sen tuottamaan tuloa.
 
-Liittymästä maksatte joka kuukausi. Sama liittymä voi myös tuottaa teille – kun sen takana on varasto, energiantuotanto ja älykäs ohjaus, joka päättää teidän eduksenne. Akku ei tee vain yhtä asiaa: se leikkaa huiput, ostaa halvalla ja on verkolle valmiina. Aurinkopaneeleja tai omaa tuotantoa siihen ei tarvita. Liittymä riittää.
+Liittymästä maksatte joka kuukausi. Sama liittymä voi myös tuottaa teille – kun sen takana on varasto, energiantuotanto ja älykäs ohjaus, joka päättää teidän eduksenne. Me annamme teille siihen kolme asiaa:
+
+Kokonaiskuvan siitä, mitä markkinoilla tapahtuu ja mihin suuntaan ne liikkuvat.
+
+Taloudelliset mahdollisuudet teidän kohteessanne, kirjallisesti ja lähteineen.
+
+Älykkään energianhallinnan, joka muuttaa liittymän kuluerästä omaisuudeksi.
+
+Etelä-Suomeen ei rakenneta uusia varastoliityntöjä ennen vuotta 2029 – liittymä, jonka takana on toimiva varasto, siirtyy kiinteistön mukana.
+
+Lähde: Fingrid, tiedote · 24.9.2025
+
+Teidän tietonne keskellä, muiden ehdot ympärillä — yksi laskelma.
+
+Mikä laskullanne ja kiinteistössänne muuttuu:
+
+Tehomaksut: huippu alas, sulakekoko kulutuksen mukaan.
+Esimerkki yhdestä hinnastosta: Caruna Oy:n Tehosiirto 1 PJ -tuotteessa tehomaksu on 3,57 €/kW,kk ja määräytyy kuukauden huipputehon mukaan, ja perusmaksu 58,70 €/kk ei riipu käytöstä. Varasto kattaa huipun, jolloin siirtotuote ja sulakekoko voidaan valita todellisen kulutuksen mukaan – eikä kulutuksen kasvattaminen vaadi lisää liittymistehoa.
+Oma verkkoyhtiönne hinnoittelee eri tavoin: Caruna Espoo Oy:n vastaava tehomaksu on 1,37 €/kW,kk. Arviossa laskemme teidän oman verkkoyhtiönne hinnastolla.
+Lähde: Caruna Oy, verkkopalveluhinnasto · 1.9.2024 · alv 0 %
+
+Energia ja siirto: halpa tunti sisään, kallis ulos.
+Sähköenergia menee pörssin tuntihinnalla. Varasto ostaa halvoilla tunneilla ja kattaa kalliit; aurinkovoimala tuottaa keskipäivällä ja varasto siirtää sen iltaan. Edellytys on pörssisidonnainen myyntisopimus.
+Ero syntyy pörssin tuntihinnasta, ei siirtomaksusta: pienjänniteliittymän siirto on samassa esimerkkihinnastossa kiinteä 3,52 snt/kWh. Keskijänniteliittymässä (Tehosiirto 1 KJ) myös siirrolla on kaksi hintaa – talviarkipäivänä 5,10 ja muuna aikana 1,81 snt/kWh – jolloin ajoituksella on kaksi vaikutusta.
+Lähde: Caruna Oy, verkkopalveluhinnasto · 1.9.2024 · alv 0 %
+
+Reservimarkkinat: valmiuskorvaus, myös öisin.
+Fingrid hankkii reservit joka päivä ja maksaa valmiudesta, myös öisin ja viikonloppuisin. Energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli 29 % jo helmikuussa 2025. Sinne pääsee vain mittarin takaisella varastolla, aggregaattorin kautta.
+Lähde: Fingrid · 10.2.2025
+
+Kiinteistön arvo: pienempi pysyvä kulu, korkeampi hinta.
+Liikekiinteistön hinta lasketaan nettotuotosta: jokainen euro, jolla pysyvä käyttökulu laskee, nostaa arvoa moninkertaisesti. Esimerkkilaskelma: pysyvä 10 000 euron vuosisäästö tarkoittaa 10 %:n tuottovaatimuksella noin 100 000 ja 8 %:n vaatimuksella noin 125 000 euroa korkeampaa arvoa. Laskemme vain pysyvän osan – tehomaksun ja energiakulun; reservimarkkinatuotto riippuu markkinahinnasta, eikä sitä lasketa arvoon.
+Järjestelmä jää liittymän taakse ja siirtyy kiinteistön mukana. Ostaja saa huipputehon hallinnan ja pääsyn reservimarkkinoille ensimmäisestä päivästä, ilman projektia ja jonotusta.
+Esimerkkilaskelma. Teidän kohteenne tuottovaatimus riippuu kiinteistötyypistä ja sijainnista – arviossa laskemme sen teidän omilla tiedoillanne.
+
+Tarjous jo kädessä?
+
+Tarkistamme, kestääkö sen takaisinmaksu todellisuuden. Maksutta, samoista kulutustiedoista, joiden varassa päätöksenne oikeasti tehdään. Jos tarjous on hyvä, sanomme senkin.
+
+Pyydä toinen mielipide
 
 Yksi varasto. Kolme kassavirtaa. Tarvittaessa varavoima.
+
+Akku ei tee vain yhtä asiaa: se leikkaa huiput, ostaa halvalla ja on verkolle valmiina. Aurinkopaneeleja tai omaa tuotantoa siihen ei tarvita. Liittymä riittää.
 
 Tehomaksu alas
 Akku leikkaa kulutushuiput ennen kuin ne päätyvät verkkolaskulle. Se on ensimmäinen rivi, joka laskullanne muuttuu.
@@ -26,8 +67,6 @@ Akku leikkaa kulutushuiput ennen kuin ne päätyvät verkkolaskulle. Se on ensim
 Tarkemmin
 Esimerkki yhdestä hinnastosta: Caruna Oy:n Tehosiirto 1 PJ -tuotteessa tehomaksu on 3,57 €/kW,kk ja määräytyy kuukauden huipputehon mukaan, ja perusmaksu 58,70 €/kk ei riipu käytöstä. Kun varasto kattaa huipun, siirtotuote ja sulakekoko voidaan valita todellisen kulutuksen mukaan – eikä kulutuksen kasvattaminen vaadi lisää liittymistehoa.
 Oma verkkoyhtiönne hinnoittelee eri tavoin: Caruna Espoo Oy:n vastaava tehomaksu on 1,37 €/kW,kk. Arviossa laskemme teidän oman verkkoyhtiönne hinnastolla.
-
-Lähde: Caruna Oy, verkkopalveluhinnasto · 1.9.2024 · alv 0 %
 
 Energiavarastot
 
@@ -37,7 +76,6 @@ Lataa halvoilla tunneilla, purkaa kalliilla. Joka päivä, automaattisesti, tuot
 Tarkemmin
 Kallis tunti maksaa pörssihintana. Varasto pitää huipun alhaalla ja tekee arbitraasia: ostaa sähkön halvoilla tunneilla ja myy tai käyttää sen kalliilla – automaattisesti, tuotantoanne häiritsemättä. Edellytys on pörssisidonnainen myyntisopimus.
 Ero syntyy pörssin tuntihinnasta, ei siirtomaksusta: pienjänniteliittymän siirto on samassa esimerkkihinnastossa kiinteä 3,52 snt/kWh. Keskijänniteliittymässä (Tehosiirto 1 KJ) myös siirrolla on kaksi hintaa – talviarkipäivänä 5,10 ja muuna aikana 1,81 snt/kWh – jolloin ajoituksella on kaksi vaikutusta.
-Lähde: Caruna Oy, verkkopalveluhinnasto · 1.9.2024 · alv 0 %
 
 Miten akun päivä näyttää
 
@@ -57,24 +95,6 @@ Edellyttää saarekekäyttöön mitoitettua toteutusta ja erotettua kriittistä 
 Energiavarastot
 
 Onko kohteessa aurinkosähköä tai onko se suunnitteilla? Aurinkovoimala tuottaa eniten keskipäivällä, kun hinta on yleensä alimmillaan; kulutuksenne ostaa illalla, kun hinta on korkea. Akku tekee siitä paremman investoinnin: oma tuotanto omaan käyttöön, ylijäämä varastoon, ja sama akku reserveihin.Aurinkosähkö yrityksille
-
-Etelä-Suomeen ei rakenneta uusia varastoliityntöjä ennen vuotta 2029 – liittymä, jonka takana on toimiva varasto, siirtyy kiinteistön mukana.
-
-Lähde: Fingrid, tiedote · 24.9.2025
-
-Kiinteistön arvo: pienempi pysyvä kulu, korkeampi hinta.
-
-Liikekiinteistön hinta lasketaan nettotuotosta: jokainen euro, jolla pysyvä käyttökulu laskee, nostaa arvoa moninkertaisesti. Järjestelmä jää liittymän taakse ja siirtyy kiinteistön mukana – ostaja saa huipputehon hallinnan ja pääsyn reservimarkkinoille ensimmäisestä päivästä.
-
-Esimerkkilaskelma. Pysyvä 10 000 euron vuosisäästö tarkoittaa 10 %:n tuottovaatimuksella noin 100 000 ja 8 %:n vaatimuksella noin 125 000 euroa korkeampaa arvoa.
-
-Laskemme vain pysyvän osan – tehomaksun ja energiakulun. Reservimarkkinatuotto riippuu markkinahinnasta, eikä sitä lasketa arvoon. Teidän kohteenne tuottovaatimus riippuu kiinteistötyypistä ja sijainnista; arviossa laskemme sen teidän omilla tiedoillanne.
-
-Tarjous jo kädessä?
-
-Tarkistamme, kestääkö sen takaisinmaksu todellisuuden. Maksutta, samoista kulutustiedoista, joiden varassa päätöksenne oikeasti tehdään. Jos tarjous on hyvä, sanomme senkin.
-
-Pyydä toinen mielipide
 
 Reservejä tarvitaan viidessä vuodessa lähes kaksi kertaa nykyinen määrä. Liittymänne voi olla yksi toimittajista.
 
@@ -1206,11 +1226,51 @@ Kuidas aku toimib?
 
 TasutaKohustustetaKirjalik hinnang
 
-Liitumine on vara. Arvestitagune süsteem paneb selle teenima.
+Liitumine on vara. Passiivne liitumine on kuluartikkel. Arvestitagune süsteem paneb selle tulu tootma.
 
-Liitumise eest maksate iga kuu. Sama liitumine võib teile ka teenida – kui selle taga on salvesti, energia tootmine ja nutikas juhtimine, mis otsustab teie huvides. Aku ei tee ainult ühte asja: ta lõikab tipud, ostab odavalt ja on võrgule valmis. Päikesepaneele ega oma tootmist selleks vaja ei ole. Piisab liitumisest.
+Liitumise eest maksate iga kuu. Sama liitumine võib ka teile tootma hakata – kui selle taga on salvesti, energia tootmine ja nutikas juhtimine, mis otsustab teie kasuks. Meie anname teile selleks kolm asja:
+
+Tervikliku ülevaate sellest, mis turul toimub ja mis suunas see liigub.
+
+Majanduslikud võimalused teie objektil, kirjalikult ja allikatega.
+
+Targa energiamajandamise, mis muudab liitumise kuluartiklist varaks.
+
+Uus liitumine ei ole enam odav ega kiire: Elektrilevi liitumistasu on 331,15 eurot ampri kohta ilma käibemaksuta – liitumine, mille taga on toimiv salvesti, liigub kinnistuga kaasa.
+
+Allikad: ERR 16.08.2024; Elektrilevi, loetud 08.09.2026
+
+Teie andmed keskel, teiste tingimused ümber — üks arvutus.
+
+Mis teie arvel ja kinnistul muutub:
+
+Võimsustasud: tipp alla, peakaitse tarbimise järgi.
+Näide ühest hinnakirjast: Elektrilevi paketis Võimsus VMA2 on võrguühenduse kasutusvõimsuse tasu 2,45 €/kW kuus ja see arvestatakse kuu kõrgeima tunni keskmise võimsuse järgi; võrguühenduse läbilaskevõime tasu 0,32 €/A kuus käib kokkulepitud amprite pealt, sõltumata kasutusest. Salvesti katab tipu, mistõttu saab peakaitsme ja võrgupaketi valida tegeliku tarbimise järgi.
+Sama pakett sisaldab ka tarbimiskoha kasutusvõimsuse tasu 2,56 €/kW kuus ja võrguühenduse kuutasu 30,41 €/kuu. Hinnangus arvutame teie oma paketi ja oma võrguettevõtja hinnakirjaga.
+Allikas: Konkurentsiameti otsus nr 7-3/2026-028 · 2.3.2026, hinnakiri kehtib 1.6.2026 alates · käibemaksuta
+
+Energia ja edastamine: odav tund sisse, kallis välja.
+Elektrienergia käib börsi tunnihinnaga, edastamistasu on päeval 3,49 ja öösel 1,99 senti/kWh. Salvesti ostab odavatel tundidel ja katab kallid; päikesepark toodab keskpäeval ja salvesti nihutab selle õhtusse. Eeldus on börsihinnaga müügipakett.
+Allikas: Konkurentsiameti otsus nr 7-3/2026-028 · 2.3.2026, pakett Võimsus VMA2 · käibemaksuta
+
+Reserviturg: valmisolekutasu, ka öösel.
+Elering ostab sagedusreserve iga päev ja maksab valmisoleku eest ka öösel ja nädalavahetusel. Juulis 2026 oli Eestis reservitoodete pakkumiseks kvalifitseerunud 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i (üles / alla). Sinna pääseb ainult arvestitaguse salvestiga, agregaatori kaudu.
+Allikas: Elering, sagedusreservide turu kokkuvõte · juuli 2026, tabel 2
+
+Kinnistu väärtus: väiksem püsikulu, kõrgem hind.
+Ärikinnistu hind arvutatakse puhastulust: iga euro, mille võrra püsikulu langeb, tõstab väärtust mitmekordselt. Näidisarvutus: püsiv 10 000 euro suurune aastane sääst tähendab 10 % tootlusnõude juures ligikaudu 100 000 ja 8 % juures ligikaudu 125 000 eurot kõrgemat väärtust. Arvestame ainult püsiva osa – võimsustasu ja energiakulu; reserviturutulu sõltub turuhinnast ja seda väärtusesse ei arvestata.
+Süsteem jääb liitumise taha ja liigub kinnisvaraga kaasa. Ostja saab tippvõimsuse juhtimise ja pääsu reserviturule esimesest päevast, ilma projekti ja järjekorrata.
+Näidisarvutus. Teie objekti tootlusnõue sõltub kinnisvara liigist ja asukohast – hinnangus arvutame selle teie enda andmetega.
+
+Pakkumine juba käes?
+
+Kontrollime, kas selle tasuvus peab reaalsusele vastu. Tasuta, samade tarbimisandmete pealt, mille alusel teie otsus tegelikult tehakse. Kui pakkumine on hea, ütleme ka seda.
+
+Küsi teist arvamust
 
 Üks salvesti. Kolm rahavoogu. Vajadusel varutoide.
+
+Aku ei tee ainult ühte asja: ta lõikab tipud, ostab odavalt ja on võrgule valmis. Päikesepaneele ega oma toodangut selleks vaja ei ole. Liitumisest piisab.
 
 Võimsustasu alla
 Aku lõikab tarbimistipud maha enne, kui need võrguarvele jõuavad. See on esimene rida, mis teie arvel muutub.
@@ -1243,24 +1303,6 @@ Eeldab saartalitluseks dimensioneeritud lahendust ja eraldatud kriitilist ahelat
 Energiasalvestid
 
 Kas objektil on päikeseelekter või on see plaanis? Päikesepark toodab kõige rohkem keskpäeval, kui päikest on võrgus üle ja hind madal; teie tarbimine ostab õhtul, kui hind on kõrge. Aku teeb sellest parema investeeringu: oma toodang omaks tarbeks, ülejääk salvestisse ja sama aku reserviturule.Päikeseelekter ettevõtetele
-
-Uus liitumine ei ole enam odav ega kiire: Elektrilevi liitumistasu on 331,15 eurot ampri kohta ilma käibemaksuta – liitumine, mille taga on toimiv salvesti, liigub kinnistuga kaasa.
-
-Allikad: ERR 16.08.2024; Elektrilevi, loetud 08.09.2026
-
-Kinnisvara väärtus: väiksem püsikulu, kõrgem hind.
-
-Ärikinnisvara hind arvutatakse puhastulust: iga euro, mille võrra püsiv käituskulu langeb, tõstab väärtust mitmekordselt. Süsteem jääb liitumise taha ja liigub kinnisvaraga kaasa – ostja saab tippvõimsuse juhtimise ja pääsu reserviturule esimesest päevast.
-
-Näidisarvutus. Püsiv 10 000 euro suurune aastane sääst tähendab 10 % tootlusnõude juures ligikaudu 100 000 ja 8 % juures ligikaudu 125 000 eurot kõrgemat väärtust.
-
-Arvestame ainult püsiva osa – võimsustasu ja energiakulu. Reserviturutulu sõltub turuhinnast ja seda väärtusesse ei arvestata. Teie objekti tootlusnõue sõltub kinnisvara liigist ja asukohast; hinnangus arvutame selle teie enda andmetega.
-
-Pakkumine juba käes?
-
-Kontrollime, kas selle tasuvus peab reaalsusele vastu. Tasuta, samade tarbimisandmete pealt, mille alusel teie otsus tegelikult tehakse. Kui pakkumine on hea, ütleme ka seda.
-
-Küsi teist arvamust
 
 2035. aastaks on juhitavat võimsust vaja üle poole rohkem kui täna. Teie liitumine võib olla üks pakkujatest.
 
