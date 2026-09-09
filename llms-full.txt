@@ -391,7 +391,7 @@ Tämä ei ole kokeilu vaan verkon arkea. Helmikuussa 2025 energiavarastojen osuu
 Lähde: Fingrid, Energiavarastot reservimarkkinoilla · 10.2.2025
 
 Nopeus ja epäreilu etu: ohitatte 30 000 MW:n jonon
-Fingrid on sopinut noin 1 800 MW:n akkuliitynnöistä, kyselyjä on yli 30 000 MW, ja Etelä-Suomessa uusia varastoliityntöjä ei tehdä ennen vuotta 2029. Akku teidän liittymänne takana ei tarvitse uutta kantaverkkoliityntää: se käyttää liittymää, joka on jo olemassa, ja pääsee markkinoille kuukausissa, ei vuosissa.
+Fingrid oli syyskuussa 2025 sopinut noin 1 800 MW:n akkuliitynnöistä, kyselyjä on yli 30 000 MW, ja Etelä-Suomessa uusia varastoliityntöjä ei tehdä ennen vuotta 2029. Akku teidän liittymänne takana ei tarvitse uutta kantaverkkoliityntää: se käyttää liittymää, joka on jo olemassa, ja pääsee markkinoille kuukausissa, ei vuosissa.
 Lähde: Fingrid, tiedote · 24.9.2025
 
 Pitkäaikainen kysyntä: koko alue tarvitsee reserviä
@@ -795,7 +795,7 @@ Miksi perustimme SAMAn.
 
 Markkina muuttui nopeammin kuin tarjoukset. Me halusimme yrityksen, joka antaa asiakkaalle kartan, ei vain laitetta.
 
-Markkina muuttui. Fingrid hankkii reserviä joka tunnille ja arvioi tarvitsevansa viiden vuoden päästä noin 1 200 MW lisää; energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli helmikuussa 2025 jo 29 %, ja Etelä-Suomeen ei tehdä uusia varastoliityntöjä ennen vuotta 2029. Jokainen näistä muuttaa sitä, mitä yksi liittymä on arvoltaan.
+Markkina muuttui. Fingrid hankkii reserviä joka tunnille ja arvioi tarvitsevansa viiden vuoden päästä noin 1 200 MW lisää; energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli helmikuussa 2025 jo 29 %, ja Etelä-Suomeen ei tehdä uusia varastoliityntöjä ennen vuotta 2029. Jokainen näistä muuttaa sitä, mitä yksi liittymä on arvoltaan.
 
 Lähteet: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025; Fingrid, Energiavarastot reservimarkkinoilla · 10.2.2025; Fingrid, tiedote · 24.9.2025. Tarkemmin Reservimarkkinat-sivulla.
 
@@ -847,7 +847,7 @@ Aggregaattori kokoaa akut tarjoukseksi, ohjaa niitä automaattisesti ja tilittä
 
 VENI Energia
 SuomiVENI Energia OyAggregaattorikumppani · Fingridin reservimarkkinat
-Vuonna 1996 perustettu hämeenlinnalainen energiapalveluyhtiö: sähkönhankinta, energialaskujen tarkastus ja mittauspalvelut yli 10 000 yritys- ja julkiselle asiakkaalle.Näin aggregointi toimii
+Vuonna 1996 perustettu hämeenlinnalainen energiapalveluyhtiö: sähkönhankinta, energialaskujen tarkastus ja mittauspalvelut yli 10 000 yritys- ja julkiselle asiakkaalle.Näin aggregointi toimii
 Soleron
 ViroSoleron Energy OÜAggregaattori · Eleringin reservimarkkinat
 Virolainen energiavarasto- ja energianhallintayhtiö: oma EMS-ohjelmisto, aggregointi Eleringin taajuusreserveihin, varastojen suunnittelu ja asennus. Julkaisee reservimarkkinakatsauksia omalla sivullaan.soleronenergy.ee
@@ -1507,8 +1507,8 @@ Tõestatud ja turvaline: akud hoiavad võrku juba praegu
 See ei ole katse, vaid võrgu argipäev. Soomes, kus turg on mõne aasta võrra vanem, oli akude osa eelkvalifitseeritud võimsusest veebruaris 2025 FCR-N reservis 29 %, FCR-D reservis 13 % (üles) ja 18 % (alla) ning FFR reservis 54 %. Sama tehnoloogia, sama loogika ja sama agregaatorimudel töötab nüüd Eestis, teie suurusjärgus.
 Allikas: Fingrid, Energiavarastot reservimarkkinoilla · 10.2.2025
 
-Topeltmaks kadus, ja võrk vajab kuus korda rohkem salvesteid
-Alates 1. jaanuarist 2026 arvestatakse salvesti võrgutasu ainult kuu netotarbimiselt: varasem topeltmaks on kadunud. Samal ajal arvestab Eleringi varustuskindluse aruanne Eesti võrku 258 MW salvesteid 2028, 600 MW 2030 ja 1 500 MW 2035. See võimsus tuleb kellegi tehase, kuivati ja hotelli juurde, ja teie liitumine on juba olemas.
+Võrgutasu netotarbimiselt, ja Elering ootab 2035. aastaks 1 500 MW salvesteid
+Salvesti võrgutasu arvestatakse 2026. aastast kalendrikuu netotarbimiselt, ja Eleringi stsenaariumis kasvab salvestite juhitav võimsus 258 megavatilt (2028) 600 megavatini (2030) ja 1 500 megavatini (2035). See võimsus tuleb kellegi tehase, kuivati ja hotelli juurde, ja teie liitumine on juba olemas.
 Allikad: Kliimaministeerium · 11.09.2024; Elering, varustuskindluse aruanne 2025 · lk 36–37
 
 Pikaajaline nõudlus: Eesti hoiab oma sagedust nüüd ise
@@ -1525,7 +1525,7 @@ Inverteri võimsus ja aku maht on määravad. Tulu hinnatakse aku inverteri või
 
 Mida täielikumalt agregaator juhib, seda rohkem tulu. Kui agregaator juhib akut tervikuna, saab ta viia iga tunni kõige tasuvamasse reservi ja võtta turust maksimumi. Osaline juhtimine teenib vähem.
 
-Strateegia tehakse teie huvides. Kui müüte oma päikeseelektrit või vajate akut oma tippude jaoks või varutoiteks, ehitatakse strateegia selle ümber. Agregaator optimeerib, aga teie tingimustel ja teie kasuks.
+Strateegia tehakse teie huvides. Kui müüte oma päikeseelektrit, vajate akut oma tippude jaoks või varutoiteks, ehitatakse strateegia selle ümber. Agregaator optimeerib, aga teie tingimustel ja teie kasuks.
 
 Eestis hindame iga objekti personaalselt. Eesti reserviturg on Soome omast noorem ja meie agregaatoripartner Soleron Energy töötab iga objektiga eraldi: valmis tuluesitlust siin ei ole, on turu seis ja teie objekti arvud. Hinnangu teeme koos nendega, teie aku võimsuse ja mahu järgi, ning numbrid tulevad kirjalikus hinnangus kolme stsenaariumina, mitte reklaamis. Soleroni enda avaldatud ülevaated turu kohta on avalikud ja me viitame neile.
 
@@ -1537,7 +1537,7 @@ Hinnad kõiguvad. Reservi hind kujuneb turul iga päev, ja turg, kuhu tuleb juur
 
 Teie ei pea turgu jälgima. Agregaatori automaatne juhtimine viib aku iga tund kõige tasuvamasse reservi ja vahetab toodet, kui hinnad liiguvad. Teie näete tulemust seirevaatest. See ongi kogu mõte: isejuhtiv aku.
 
-„Alati ei lähe halvemini, kui kardetakse. Vahel läheb paremini, kui loodetakse. Meie töö on aidata teil otsustada teadlikult: mitte hirmust ega uskumisest, vaid teie enda numbrite pealt.“
+„Me ei müü hirmu ega lubadusi. Me paneme teie enda numbrid lauale, ja otsuse teete teie.“
 
 MMMadis Maastik, müügijuht
 SAMA Energia

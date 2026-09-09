@@ -161,6 +161,13 @@ const GUARDS = [
     find: t => [...t.matchAll(/joka tunnille 76/gi)] },
   { id: 'elering-tuntihankinta-et', langs: 'et', why: '"ostis igaks tunniks" / "iga tunni kohta 76" / "ostab iga tunni jaoks" — 76 MW on kvalifitseerunud võimsus, mitte tunnihange (09.09.2026, F3)',
     find: t => [...t.matchAll(/ostis igaks tunniks|iga tunni kohta 76|ostab iga tunni jaoks/gi)] },
+  // 09.09 (rekisteri B10/B12): 258 MW (2028) ja 1 500 MW (2035) ovat molemmat Eleringin skenaarion
+  // tulevia vuosia — "kuus korda rohkem" esittäisi ne nykytilan kertoimena. E2: oikea muotoilu on
+  // kalendrikuu netotarbimine, ei "topelt võrgutasu lõppes".
+  { id: 'et-kuus-korda-salvestid', langs: 'et', why: '"kuus korda rohkem salvesteid" — 258 MW (2028) ja 1 500 MW (2035) ovat molemmat ennusteita, ei nykytilan kerroin (09.09.2026, B10)',
+    find: t => [...t.matchAll(/kuus korda rohkem salvest\w*/gi)] },
+  { id: 'et-topeltmaks', langs: 'et', why: '"topeltmaks" / "topelt võrgutasu" lopettamisen lähellä — oikea muotoilu on kalendrikuu netotarbimine (09.09.2026, E2)',
+    find: t => nearMatches(t, /topeltmaks\w*|topelt võrgutasu/gi, /kadu\w*|lõpp\w*/gi, 80) },
   // 09.09: SAMA ei ole rekisteröity Datahub-/Estfeed-kolmas osapuoli, joten valtuutusta ei voi antaa;
   // kulutustiedot toimitetaan CSV-latauksena asiakasportaalista tai verkkoyhtiöltä.
   { id: 'datahub-valtuutus', langs: 'both', why: '"Datahub-valtuutus" / "Datahubi volitus" / "e-elering volitus" — SAMA ei ole rekisteröity kolmas osapuoli (09.09.2026)',
