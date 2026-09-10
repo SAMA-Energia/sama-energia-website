@@ -175,6 +175,12 @@ const GUARDS = [
   // 03.09: todennettu määrä oli 158 -> sivuilla sanotaan "yli 150"; 162 on tarkistamaton luku.
   { id: 'luku-162', langs: 'both', why: '162 reservitoimittajien/teenusepakkujate lähellä — laskenta oli 158, sivulla "yli 150" (03.09.2026)',
     find: t => nearMatches(t, /(?<!\d)162(?!\d)/g, /reservitoimittaj|tasakaalustus|teenusepakkuja/gi, 60) },
+  // 09.09.2026 (perustajapäätös): Y-tunnus oli väärin. 3647683-3 ei läpäise suomalaisen
+  // Y-tunnuksen tarkistusmerkkilaskentaa (painot 7,9,10,5,8,4,2; summa 236, 236 mod 11 = 5,
+  // oikea tarkistusmerkki 11-5 = 6). Oikea tunnus on 3647683-6 ja ALV-tunnus FI36476836.
+  { id: 'y-tunnus-vanha', langs: 'both', scope: 'raw',
+    why: 'vanha Y-tunnus 3647683-3 / ALV FI36476833 — tarkistusmerkki väärin, oikea on 3647683-6 / FI36476836 (09.09.2026)',
+    find: t => [...t.matchAll(/3647683-3|FI36476833/g)] },
   /* --- tittelit --- */
   // 06.09: toimitusjohtajaa ei ole nimitetty eikä rekisteröity; vartija pysyy, kunnes hallituksen
   // nimitys ja kaupparekisteri-ilmoitus on tehty.
@@ -262,7 +268,7 @@ const DESC_MIN = 120, DESC_MAX = 175;
 const REQUIRED_IN_SOURCE = [
   // 06.09: julkaistu käyntiosoite ja alv-tunnus kuuluvat molempiin lähteisiin.
   ['Sörnäisten Rantatie 33 C', 'osoitepäätös 06.09.2026'],
-  ['FI36476833', 'alv-tunnus'],
+  ['FI36476836', 'alv-tunnus'],
 ];
 
 /* --- kuivaharjoitusajo: node scripts/verify-pages.mjs --file <polku> [--lang fi|et] --- */
@@ -478,7 +484,7 @@ for (const p of pages) {
       const h = createHash('sha256').update(b[1], 'utf8').digest('base64');
       if (!headers.includes(`'sha256-${h}'`)) err(`${where} — JSON-LD-hash puuttuu CSP:stä`);
       if (d['@type'] === 'ProfessionalService') {
-        if (d.legalName !== 'SAMA Energia Oy' || d.vatID !== 'FI36476833' || !Array.isArray(d.founder) || d.founder.length !== 2 || !Array.isArray(d.knowsAbout) || d.knowsAbout.length < 5 || !d.address?.addressLocality) err(`${where} — ProfessionalService-tiedot puutteelliset`);
+        if (d.legalName !== 'SAMA Energia Oy' || d.vatID !== 'FI36476836' || !Array.isArray(d.founder) || d.founder.length !== 2 || !Array.isArray(d.knowsAbout) || d.knowsAbout.length < 5 || !d.address?.addressLocality) err(`${where} — ProfessionalService-tiedot puutteelliset`);
       } else if (d['@type'] === 'BreadcrumbList') {
         const items = d.itemListElement ?? [];
         if (items.length < 2 || items.at(-1).item !== canonExp || items[0].item !== (p.lang === 'fi' ? BASE + '/' : ET_BASE + '/')) err(`${where} — BreadcrumbList väärin`);
@@ -644,6 +650,23 @@ if (/Disallow:\s*\/\S/.test(read('robots.txt'))) err('robots.txt estää polkuja
   const llms = read('llms.txt');
   for (const p of publicPages.filter(p => !p.unpaired)) if (!llms.includes(abs(p.lang, p.url))) err(`llms.txt: sivu puuttuu: ${abs(p.lang, p.url)}`);
   if (!/English summary/i.test(llms)) err('llms.txt: huomautus englanninkielisestä tiivistelmästä puuttuu');
+}
+
+/* Vanha Y-tunnus ei saa jäädä MIHINKÄÄN julkaistavaan tiedostoon. Lähdevartija yllä kattaa
+   src/*.html, mutta llms.txt on käsin ylläpidetty eikä generoidu lähteistä — ja generoidut
+   sivut on syytä tarkistaa erikseen, jotta vanhentunut build huomataan.
+   assets/review.json ja docs/native-pass/ EIVÄT ole mukana: ne sisältävät tarkoituksella
+   mainin tekstin vertailukohtana, ja main kantaa vielä vanhaa tunnusta. */
+{
+  const OLD = /3647683-3|FI36476833/;
+  const files = [
+    ...pages.map(p => p.url.replace(/^\//, '') + 'index.html'),
+    '404.html', 'et/404.html', 'llms.txt', 'llms-full.txt', 'sitemap.xml',
+  ];
+  for (const f of files) {
+    const m = OLD.exec(read(f));
+    if (m) err(`${f} — vanha Y-tunnus/ALV-tunnus ${JSON.stringify(m[0])}; oikea on 3647683-6 / FI36476836 (09.09.2026)`);
+  }
 }
 
 /* CSP-hash vastaa etusivujen shimiä, molempien etusivujen shim identtinen */

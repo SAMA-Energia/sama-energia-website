@@ -5,7 +5,7 @@
 > Estonian (samaenergia.ee). The full text of every public page in both languages is in
 > https://samaenergia.fi/llms-full.txt (generated from the same HTML that is served).
 
-SAMA Energia Oy (Finnish business ID 3647683-3, VAT FI36476833, domiciled in
+SAMA Energia Oy (Finnish business ID 3647683-6, VAT FI36476836, domiciled in
 Helsinki, Finland) is a full-scope supplier (integrator, EPC) of industrial
 battery energy storage and solar PV for businesses and landowners in Finland
 and Estonia. The company surveys, designs, procures, installs and maintains the

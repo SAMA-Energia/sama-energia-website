@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 638 katselmoitavaa riviä — 452 uutta, 186 muutettua, joista **68 on merkitty ⚠**. Muuttumattomia ohitettiin 411.
+**Yhteenveto:** 638 katselmoitavaa riviä — 452 uutta, 186 muutettua, joista **73 on merkitty ⚠**. Muuttumattomia ohitettiin 411.
 
 **Huomio:** 4 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -40,8 +40,9 @@ Vastine mainissa: `/`
 - [ ] ⚠ `h1` **uusi** — Saavuttakaa energiariippumattomuus laittamalla sähköliittymänne töihin – omaksi eduksenne.
       - ⚠ perustajan päätös 10.09.2026 — hero-otsikko (FI sai ajatusviivan; ET avoin, ks. kohta 2)
       - **Korjaus:**
-- [ ] `p` **muutettu** — Teollinen energiavarasto leikkaa tehomaksua, ostaa sähkön halvoilla tunneilla ja tuottaa Fingridin reservimarkkinoilla valmiudesta — automaattisesti. Mitä se tarkoittaa teidän kohteessanne, kerromme kirjallisesti ennen kuin allekirjoitatte mitään.
+- [ ] ⚠ `p` **muutettu** — Riippumaton energia lähtee siitä, että päätökset mittarinne takana tehdään teidän eduksenne ja automaattisesti. Järjestelmä – energiavarasto, energiantuotanto ja älykäs ohjaus – tekee kannattavampia päätöksiä kiinteistönne hyväksi, ilman että kenenkään teillä tarvitsee tehdä mitään.
       - main: Rakennamme yritysten energiaomavaraisuutta: aurinkosähkö, energiavarastot ja ohjaus tekevät liittymästänne aktiivisen osan sähköjärjestelmää. Ja mitä se kohteessanne oikeasti tuottaa — siihen vastaamme kirjallisesti, ennen kuin mitään allekirjoitetaan.
+      - ⚠ perustajan päätös 10.09.2026 — hero-lead v27:n tekstiin. MADISIN OMA v27-teksti, Martinin hyväksymä; ei Clauden kirjoittama.
       - **Korjaus:**
 - [ ] ⚠ `a` **uusi** — Miten akku toimii?
       - ⚠ perustajan päätös 05.09. ilta / 08.09.2026 — toissijainen hero-painike
@@ -417,7 +418,8 @@ Vastine mainissa: `/`
 - [ ] ⚠ `li` **uusi** — Sörnäisten Rantatie 33 C, 00500 Helsinki
       - ⚠ osoite vahvistettu 06.09.2026
       - **Korjaus:**
-- [ ] `li` **uusi** — Y-tunnus 3647683-3 · ALV-tunnus FI36476833
+- [ ] ⚠ `li` **uusi** — Y-tunnus 3647683-6 · ALV-tunnus FI36476836
+      - ⚠ Y-tunnus korjattu 09.09.2026: vanha 3647683-3 ei läpäissyt tarkistusmerkkilaskentaa; oikea on 3647683-6 / FI36476836
       - **Korjaus:**
 - [ ] `p` **uusi** — Ratkaisut
       - **Korjaus:**
@@ -1460,7 +1462,8 @@ Vastine mainissa: `/meista/`
       - **Korjaus:**
 - [ ] `dt` **uusi** — Yritys
       - **Korjaus:**
-- [ ] `dd` **uusi** — SAMA Energia OyY-tunnus 3647683-3 · ALV-tunnus FI36476833
+- [ ] ⚠ `dd` **uusi** — SAMA Energia OyY-tunnus 3647683-6 · ALV-tunnus FI36476836
+      - ⚠ Y-tunnus korjattu 09.09.2026: vanha 3647683-3 ei läpäissyt tarkistusmerkkilaskentaa; oikea on 3647683-6 / FI36476836
       - **Korjaus:**
 - [ ] `dt` **uusi** — Kotipaikka
       - **Korjaus:**
@@ -1772,9 +1775,11 @@ Vastine mainissa: `/yhteystiedot/`
 - [ ] ⚠ `li` **uusi** — Sörnäisten Rantatie 33 C, 00500 Helsinki
       - ⚠ osoite vahvistettu 06.09.2026
       - **Korjaus:**
-- [ ] `li` **uusi** — Y-tunnus 3647683-3
+- [ ] ⚠ `li` **uusi** — Y-tunnus 3647683-6
+      - ⚠ Y-tunnus korjattu 09.09.2026: vanha 3647683-3 ei läpäissyt tarkistusmerkkilaskentaa; oikea on 3647683-6 / FI36476836
       - **Korjaus:**
-- [ ] `li` **uusi** — ALV-tunnus FI36476833
+- [ ] ⚠ `li` **uusi** — ALV-tunnus FI36476836
+      - ⚠ Y-tunnus korjattu 09.09.2026: vanha 3647683-3 ei läpäissyt tarkistusmerkkilaskentaa; oikea on 3647683-6 / FI36476836
       - **Korjaus:**
 - [ ] `li` **muutettu** — info@samaenergia.fi
       - main: madis.maastik@samaenergia.fi
@@ -1794,9 +1799,10 @@ Vastine mainissa: `/tietosuoja/`
 
 ### #rev-tietosuoja-2
 
-- [ ] ⚠ `p` **muutettu** — SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · Y-tunnus 3647683-3 · ALV-tunnus FI36476833 · info@samaenergia.fi · +358 449 654 614.
+- [ ] ⚠ `p` **muutettu** — SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · Y-tunnus 3647683-6 · ALV-tunnus FI36476836 · info@samaenergia.fi · +358 449 654 614.
       - main: SAMA Energia Oy · Y-tunnus 3647683-3 · madis.maastik@samaenergia.fi · +358 449 654 614.
       - ⚠ osoite vahvistettu 06.09.2026
+      - ⚠ Y-tunnus korjattu 09.09.2026: vanha 3647683-3 ei läpäissyt tarkistusmerkkilaskentaa; oikea on 3647683-6 / FI36476836
       - **Korjaus:**
 - [ ] `p` **muutettu** — Yhteydenottolomakkeella antamanne tiedot: nimi, yritys, sähköposti, puhelin, kohteen sijainti, liittymä- ja kulutustiedot sekä viesti. Lisäksi sivuston tekninen palvelinloki (mm. IP-osoite ja aikaleima), jonka ylläpitopalvelu tuottaa palvelun toimittamiseksi ja tietoturvan varmistamiseksi. Sivusto ei käytä evästeitä, analytiikkaa eikä tallennettuja asetuksia.
       - main: Yhteydenottolomakkeella antamanne tiedot: nimi, yritys, sähköposti, puhelin, kohteen sijainti, liittymä- ja kulutustiedot sekä viesti. Lisäksi sivuston tekninen palvelinloki (mm. IP-osoite ja aikaleima), jonka ylläpitopalvelu tuottaa palvelun toimittamiseksi ja tietoturvan varmistamiseksi. Emme käytä evästeitä, seurantapikseleitä emmekä analytiikkaa.

@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 612 katselmoitavaa riviä — 467 uutta, 145 muutettua, joista **60 on merkitty ⚠**. Muuttumattomia ohitettiin 382.
+**Yhteenveto:** 612 katselmoitavaa riviä — 467 uutta, 145 muutettua, joista **65 on merkitty ⚠**. Muuttumattomia ohitettiin 382.
 
 **Huomio:** 3 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -39,8 +39,9 @@ Vastine mainissa: `/et/`
 - [ ] ⚠ `h1` **uusi** — Saavutage energiasõltumatus, pannes elektriliitumise enda kasuks tööle.
       - ⚠ perustajan päätös 10.09.2026 — hero-otsikko (FI sai ajatusviivan; ET avoin, ks. kohta 2)
       - **Korjaus:**
-- [ ] `p` **muutettu** — Tööstuslik energiasalvesti lõikab võimsustasu, ostab elektri odavatel tundidel ja teenib Eleringi reserviturul valmisoleku eest — automaatselt. Mida see teie objektil tähendab, ütleme kirjalikult, enne kui te midagi allkirjastate.
+- [ ] ⚠ `p` **muutettu** — Sõltumatu energia juhindub sellest, et otsused teie arvesti taga tehakse teie huvides ja automaatselt. Süsteem – energiasalvesti, energia tootmine ja nutikas juhtimine – teeb kasumlikumaid otsuseid teie kinnistu hüvanguks, ilma et keegi teie majast peaks midagi tegema.
       - main: Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame kirjalikult, enne kui midagi alla kirjutatakse.
+      - ⚠ perustajan päätös 10.09.2026 — hero-lead v27:n tekstiin. MADISIN OMA v27-teksti, Martinin hyväksymä; ei Clauden kirjoittama.
       - **Korjaus:**
 - [ ] ⚠ `a` **uusi** — Kuidas aku toimib?
       - ⚠ perustajan päätös 05.09. ilta / 08.09.2026 — toissijainen hero-painike
@@ -398,7 +399,8 @@ Vastine mainissa: `/et/`
 - [ ] ⚠ `li` **uusi** — Sörnäisten Rantatie 33 C, 00500 Helsingi, Soome
       - ⚠ osoite vahvistettu 06.09.2026
       - **Korjaus:**
-- [ ] `li` **uusi** — Soome registrikood (Y-tunnus) 3647683-3 · KMKR-nr FI36476833
+- [ ] ⚠ `li` **uusi** — Soome registrikood (Y-tunnus) 3647683-6 · KMKR-nr FI36476836
+      - ⚠ Y-tunnus korjattu 09.09.2026: vanha 3647683-3 ei läpäissyt tarkistusmerkkilaskentaa; oikea on 3647683-6 / FI36476836
       - **Korjaus:**
 - [ ] `p` **uusi** — Lahendused
       - **Korjaus:**
@@ -1341,7 +1343,8 @@ Vastine mainissa: `/et/meist/`
       - **Korjaus:**
 - [ ] `dt` **uusi** — Ettevõte
       - **Korjaus:**
-- [ ] `dd` **uusi** — SAMA Energia OySoome registrikood (Y-tunnus) 3647683-3 · KMKR-nr FI36476833
+- [ ] ⚠ `dd` **uusi** — SAMA Energia OySoome registrikood (Y-tunnus) 3647683-6 · KMKR-nr FI36476836
+      - ⚠ Y-tunnus korjattu 09.09.2026: vanha 3647683-3 ei läpäissyt tarkistusmerkkilaskentaa; oikea on 3647683-6 / FI36476836
       - **Korjaus:**
 - [ ] `dt` **uusi** — Asukoht
       - **Korjaus:**
@@ -1661,9 +1664,11 @@ Vastine mainissa: `/et/kontakt/`
 - [ ] ⚠ `li` **uusi** — Sörnäisten Rantatie 33 C, 00500 Helsingi, Soome
       - ⚠ osoite vahvistettu 06.09.2026
       - **Korjaus:**
-- [ ] `li` **uusi** — Y-tunnus 3647683-3
+- [ ] ⚠ `li` **uusi** — Y-tunnus 3647683-6
+      - ⚠ Y-tunnus korjattu 09.09.2026: vanha 3647683-3 ei läpäissyt tarkistusmerkkilaskentaa; oikea on 3647683-6 / FI36476836
       - **Korjaus:**
-- [ ] `li` **uusi** — KMKR FI36476833
+- [ ] ⚠ `li` **uusi** — KMKR FI36476836
+      - ⚠ Y-tunnus korjattu 09.09.2026: vanha 3647683-3 ei läpäissyt tarkistusmerkkilaskentaa; oikea on 3647683-6 / FI36476836
       - **Korjaus:**
 - [ ] `li` **muutettu** — info@samaenergia.fi
       - main: madis.maastik@samaenergia.fi
@@ -1688,9 +1693,10 @@ Vastine mainissa: `/et/andmekaitse/`
 
 ### #rev-andmekaitse-2
 
-- [ ] ⚠ `p` **muutettu** — SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsingi, Soome · Soome registrikood (Y-tunnus) 3647683-3 · KMKR-nr FI36476833 · info@samaenergia.fi · +358 449 654 614.
+- [ ] ⚠ `p` **muutettu** — SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsingi, Soome · Soome registrikood (Y-tunnus) 3647683-6 · KMKR-nr FI36476836 · info@samaenergia.fi · +358 449 654 614.
       - main: SAMA Energia Oy · Y-tunnus (Soome registrikood) 3647683-3 · madis.maastik@samaenergia.fi · +358 449 654 614.
       - ⚠ osoite vahvistettu 06.09.2026
+      - ⚠ Y-tunnus korjattu 09.09.2026: vanha 3647683-3 ei läpäissyt tarkistusmerkkilaskentaa; oikea on 3647683-6 / FI36476836
       - **Korjaus:**
 - [ ] `p` **muutettu** — Kontaktivormil antud andmed: nimi, ettevõte, e-post, telefon, objekti asukoht, liitumis- ja tarbimisandmed ning sõnum. Lisaks veebilehe tehniline serverilogi (sh IP-aadress ja ajatempel), mille majutusteenus toodab teenuse osutamiseks ja turvalisuse tagamiseks. Sait ei kasuta küpsiseid, analüütikat ega salvestatud eelistusi.
       - main: Kontaktivormil antud andmed: nimi, ettevõte, e-post, telefon, objekti asukoht, liitumis- ja tarbimisandmed ning sõnum. Lisaks veebilehe tehniline serverilogi (sh IP-aadress ja ajatempel), mille majutusteenus toodab teenuse osutamiseks ja turvalisuse tagamiseks. Me ei kasuta küpsiseid, jälgimispiksleid ega analüütikat.
