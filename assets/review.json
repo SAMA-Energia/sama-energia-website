@@ -1,6 +1,12 @@
 {
  "changes": [
   {
+   "page": "/",
+   "sectionId": "etusivu",
+   "kind": "changed",
+   "prev": "Saavuttakaa energiariippumattomuus laittamalla sähköliittymänne töihin – omaksi eduksenne. Teollinen energiavarasto leikkaa tehomaksua, ostaa sähkön halvoilla tunneilla ja tuottaa Fingridin reservimarkkinoilla valmiudesta — automaattisesti. Mitä se tarkoittaa teidän kohteessanne, kerromme kirjallisesti ennen kuin allekirjoitatte mitään. Pyydä maksuton kartoitus Miten akku toimii? MaksutonEi sitoumuksiaKirjallinen arvio"
+  },
+  {
    "page": "/meista/",
    "sectionId": "yritys",
    "kind": "changed",
@@ -17,6 +23,12 @@
    "sectionId": "rev-tietosuoja-2",
    "kind": "changed",
    "prev": "RekisterinpitäjäSAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · Y-tunnus 3647683-3 · ALV-tunnus FI36476833 · info@samaenergia.fi · +358 449 654 614. Mitä tietoja käsittelemmeYhteydenottolomakkeella antamanne tiedot: nimi, yritys, sähköposti, puhelin, kohteen sijainti, liittymä- ja kulutustiedot sekä viesti. Lisäksi sivuston tekninen palvelinloki (mm. IP-osoite ja aikaleima), jonka ylläpitopalvelu tuottaa palvelun toimittamiseksi ja tietoturvan varmistamiseksi. Sivusto ei käytä evästeitä, analytiikkaa eikä tallennettuja asetuksia. Miksi käsittelemmeVastataksemme yhteydenottoonne ja valmistellaksemme pyytämäänne kartoitusta (sopimusta edeltävät toimet, yleisen tietosuoja-asetuksen 6 artiklan 1 kohdan b alakohta) sekä oikeutetun edun perusteella (6 artiklan 1 kohdan f alakohta) asiakassuhteen hoitamiseksi ja tietoturvan varmistamiseksi. Emme käytä tietoja muuhun markkinointiin ilman erillistä suostumusta. Kenelle tietoja siirretäänEmme myy emmekä luovuta tietoja markkinointiin. Verkkopalvelun ylläpito ja lomakkeiden vastaanotto: Netlify, Inc. (Yhdysvallat); siirto EU- ja ETA-alueen ulkopuolelle suojataan EU:n hyväksymillä siirtomekanismeilla. Muut tekniset käsittelijät ovat sähköpostipalvelu ja verkkotunnuspalvelu. Arviota laadittaessa jaamme kohteen tietoja aggregaattorille vain teidän tietenne. MarkkinakatsausMarkkinakatsaus: sähköpostiosoitteenne, jonka annatte tilatessanne. Peruste on suostumuksenne, jonka voitte peruuttaa milloin tahansa vastaamalla viestiin tai kirjoittamalla osoitteeseen info@samaenergia.fi. Säilytämme osoitteen peruutukseen asti. Kuinka kauan säilytämmeSäilytämme yhteydenottoja enintään 24 kuukautta viimeisestä yhteydenpidosta, ellei asiointi jatku asiakkuutena. Kirjanpitolain piiriin kuuluva aineisto säilytetään lakisääteisen ajan. OikeutenneTeillä on oikeus saada pääsy tietoihinne, pyytää niiden oikaisua, poistoa, käsittelyn rajoittamista tai siirtoa sekä vastustaa käsittelyä. Pyynnöt: info@samaenergia.fi. Teillä on myös oikeus tehdä valitus valvontaviranomaiselle: Tietosuojavaltuutetun toimisto, tietosuoja.fi. MuutoksetPäivitetty 08.09.2026. Jos seloste muuttuu, uusin versio on aina tällä sivulla."
+  },
+  {
+   "page": "/et/",
+   "sectionId": "avaleht",
+   "kind": "changed",
+   "prev": "Saavutage energiasõltumatus, pannes elektriliitumise enda kasuks tööle. Tööstuslik energiasalvesti lõikab võimsustasu, ostab elektri odavatel tundidel ja teenib Eleringi reserviturul valmisoleku eest — automaatselt. Mida see teie objektil tähendab, ütleme kirjalikult, enne kui te midagi allkirjastate. Küsi tasuta hindamist Kuidas aku toimib? TasutaKohustustetaKirjalik hinnang"
   },
   {
    "page": "/meist/",

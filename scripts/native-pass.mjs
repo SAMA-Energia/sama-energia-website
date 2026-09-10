@@ -76,6 +76,14 @@ const FOUNDER_MARKS = [
   [/Sörnäisten Rantatie/, 'osoite vahvistettu 06.09.2026'],
   [/kvalifitseerunud|kvalifitseeritud|säätökokein todennettu|prekvalifioitu/i, 'lukukorjaus: reservien osuudet ovat todennettua KAPASITEETTIA, ei tuotantoa (Fingrid 10.2.2025; vartijat reservi-*)'],
   [/Miten akku toimii\?|Kuidas aku toimib\?/, 'perustajan päätös 05.09. ilta / 08.09.2026 — toissijainen hero-painike'],
+  // 10.09.2026: hero-lead vaihdettiin v27:n tekstiin. HUOM: tämä on Madisin OMAA v27-tekstiä,
+  // jonka Martin on hyväksynyt — ei Clauden kirjoittamaa uutta tekstiä. Madis tunnistaa oman
+  // tekstinsä; katselmoitavaa on lähinnä se, että se on siirtynyt oikein ja kokonaisena.
+  [/Riippumaton energia lähtee siitä|Sõltumatu energia juhindub sellest/,
+   'perustajan päätös 10.09.2026 — hero-lead v27:n tekstiin. MADISIN OMA v27-teksti, Martinin hyväksymä; ei Clauden kirjoittama.'],
+  // 09.09.2026: virheellinen tarkistusmerkki korjattu (3647683-3 -> 3647683-6).
+  [/3647683-6|FI36476836/,
+   'Y-tunnus korjattu 09.09.2026: vanha 3647683-3 ei läpäissyt tarkistusmerkkilaskentaa; oikea on 3647683-6 / FI36476836'],
 ];
 
 /* Luku = numero, jolla on yksikkö tai prosentti/valuutta. Näiden rinnalla on aina
