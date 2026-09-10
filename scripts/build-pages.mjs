@@ -152,7 +152,7 @@ function orgJsonLd(lang, canon) {
     '@id': canon + '#organization',
     name: 'SAMA Energia',
     legalName: 'SAMA Energia Oy',
-    vatID: 'FI36476833',
+    vatID: 'FI36476836',
     url: canon,
     logo: BASE + '/assets/mark.png',
     image: (lang === 'fi' ? BASE : ET_BASE) + LANGS[lang].og,

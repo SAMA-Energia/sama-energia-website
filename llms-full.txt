@@ -928,7 +928,7 @@ Yritys paperilla.
 Tiedot, joita hankintanne, kirjanpitonne tai juristinne tarvitsee.
 
 Yritys
-SAMA Energia OyY-tunnus 3647683-3 · ALV-tunnus FI36476833
+SAMA Energia OyY-tunnus 3647683-6 · ALV-tunnus FI36476836
 
 Kotipaikka
 HelsinkiPalvelemme Suomea ja Viroa
@@ -1177,8 +1177,8 @@ Asennus, kohde, toteutus ja laatu
 Yritys
 SAMA Energia Oy
 Sörnäisten Rantatie 33 C, 00500 Helsinki
-Y-tunnus 3647683-3
-ALV-tunnus FI36476833
+Y-tunnus 3647683-6
+ALV-tunnus FI36476836
 info@samaenergia.fi
 +358 449 654 614
 
@@ -1193,7 +1193,7 @@ Tietosuojaseloste
 Keräämme vain sen, minkä annatte meille itse. Emme käytä evästeitä emmekä analytiikkaa. Tässä kerrotaan, mitä käsittelemme, miksi ja kuinka kauan.
 
 Rekisterinpitäjä
-SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · Y-tunnus 3647683-3 · ALV-tunnus FI36476833 · info@samaenergia.fi · +358 449 654 614.
+SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · Y-tunnus 3647683-6 · ALV-tunnus FI36476836 · info@samaenergia.fi · +358 449 654 614.
 
 Mitä tietoja käsittelemme
 Yhteydenottolomakkeella antamanne tiedot: nimi, yritys, sähköposti, puhelin, kohteen sijainti, liittymä- ja kulutustiedot sekä viesti. Lisäksi sivuston tekninen palvelinloki (mm. IP-osoite ja aikaleima), jonka ylläpitopalvelu tuottaa palvelun toimittamiseksi ja tietoturvan varmistamiseksi. Sivusto ei käytä evästeitä, analytiikkaa eikä tallennettuja asetuksia.
@@ -2089,7 +2089,7 @@ Ettevõte paberil.
 Andmed, mida teie hankeosakond, raamatupidaja või jurist küsib.
 
 Ettevõte
-SAMA Energia OySoome registrikood (Y-tunnus) 3647683-3 · KMKR-nr FI36476833
+SAMA Energia OySoome registrikood (Y-tunnus) 3647683-6 · KMKR-nr FI36476836
 
 Asukoht
 Helsingi, SoomeTeenindame Soomet ja Eestit
@@ -2354,8 +2354,8 @@ Paigaldus, objekt, teostus ja kvaliteet
 Ettevõte
 SAMA Energia Oy
 Sörnäisten Rantatie 33 C, 00500 Helsingi, Soome
-Y-tunnus 3647683-3
-KMKR FI36476833
+Y-tunnus 3647683-6
+KMKR FI36476836
 info@samaenergia.fi
 +358 449 654 614
 
@@ -2370,7 +2370,7 @@ Privaatsuspoliitika
 Kogume ainult seda, mille ise meile annate. Me ei kasuta küpsiseid ega analüütikat. Siin on kirjas, mida töötleme, miks ja kui kaua.
 
 Vastutav töötleja
-SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsingi, Soome · Soome registrikood (Y-tunnus) 3647683-3 · KMKR-nr FI36476833 · info@samaenergia.fi · +358 449 654 614.
+SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsingi, Soome · Soome registrikood (Y-tunnus) 3647683-6 · KMKR-nr FI36476836 · info@samaenergia.fi · +358 449 654 614.
 
 Milliseid andmeid töötleme
 Kontaktivormil antud andmed: nimi, ettevõte, e-post, telefon, objekti asukoht, liitumis- ja tarbimisandmed ning sõnum. Lisaks veebilehe tehniline serverilogi (sh IP-aadress ja ajatempel), mille majutusteenus toodab teenuse osutamiseks ja turvalisuse tagamiseks. Sait ei kasuta küpsiseid, analüütikat ega salvestatud eelistusi.
