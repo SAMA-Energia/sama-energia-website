@@ -182,10 +182,11 @@ const GUARDS = [
     why: 'vanha Y-tunnus 3647683-3 / ALV FI36476833 — tarkistusmerkki väärin, oikea on 3647683-6 / FI36476836 (09.09.2026)',
     find: t => [...t.matchAll(/3647683-3|FI36476833/g)] },
   /* --- tittelit --- */
-  // 06.09: toimitusjohtajaa ei ole nimitetty eikä rekisteröity; vartija pysyy, kunnes hallituksen
-  // nimitys ja kaupparekisteri-ilmoitus on tehty.
-  { id: 'titteli-tj', langs: 'both', why: 'toimitusjohtaja/tegevjuht — ei nimitettyä eikä rekisteröityä toimitusjohtajaa (06.09.2026)',
-    find: t => [...t.matchAll(/toimitusjohtaja\w*|tegevjuht\w*/gi)] },
+  // 13.09: vanhat tittelit ovat kumoutuneet — perustajapäätös Martin Rautio 13.09.2026; hallituksen
+  // päätös ja kaupparekisteri-ilmoitus seuraavat. Martin Rautio on toimitusjohtaja / tegevjuht.
+  // Vartija on käännetty: Madisin v27-linja kantaa yhä vanhoja titteleitä ja toisi ne takaisin.
+  { id: 'titteli-vanha', langs: 'both', why: 'talousjohtaja/finantsjuht — kumoutunut titteli; Martin Rautio on toimitusjohtaja / tegevjuht (perustajapäätös 13.09.2026)',
+    find: t => [...t.matchAll(/talousjohtaja\w*|finantsjuht\w*/gi)] },
   // 08.09: "· perustaja" / "· asutaja" pudotettu titteleistä.
   { id: 'titteli-perustaja', langs: 'both', why: '"perustaja" / "asutaja" tittelin perässä — pudotettu titteleistä (08.09.2026)',
     find: t => [...t.matchAll(/(?:·|\bja)\s*(perustaja|asutaja)\b/gi)] },
@@ -321,8 +322,9 @@ for (const lang of ['fi', 'et']) {
     if (n < DESC_MIN || n > DESC_MAX) err(`${rel}:${lineAt(html, m.index)} — sivun ${slug || '(etusivu)'} data-desc ${n} merkkiä (sallittu ${DESC_MIN}–${DESC_MAX})`);
   }
 }
-/* llms.txt: englanninkielinen tiivistelmä ei saa nimetä toimitusjohtajaa (06.09.2026). */
-if (/\bCEO\b/.test(read('llms.txt'))) err('llms.txt — CEO: toimitusjohtajaa ei ole nimitetty eikä rekisteröity (06.09.2026)');
+/* llms.txt: englanninkielinen tiivistelmä ei saa kantaa kumoutunutta titteliä (13.09.2026).
+   Perustajapäätös Martin Rautio 13.09.2026; hallituksen päätös ja kaupparekisteri-ilmoitus seuraavat. */
+if (/finance director/i.test(read('llms.txt'))) err('llms.txt — "finance director": kumoutunut titteli, Martin Rautio on chief executive officer (perustajapäätös 13.09.2026)');
 
 /* ================= sisältövartijat loppuvat ================= */
 

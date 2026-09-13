@@ -1371,11 +1371,11 @@ Vastine mainissa: `/meista/`
 - [ ] `h3` **muutettu** — Martin Rautio
       - main: Martin Rautio — perustaja
       - **Korjaus:**
-- [ ] ⚠ `div` **uusi** — Talousjohtaja
-      - ⚠ tittelit hyväksytty 03.09.2026; "perustaja"/"asutaja" pudotettu 08.09.2026 (vartija titteli-perustaja)
+- [ ] ⚠ `div` **uusi** — Toimitusjohtaja
+      - ⚠ perustajapäätös Martin Rautio 13.09.2026 — toimitusjohtaja / tegevjuht; hallituksen päätös ja kaupparekisteri-ilmoitus seuraavat. Sivusto on rekisteriä edellä 1–2 päivää, tietoisesti.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Vastaa: säästölaskelmat, tarjoukset ja projektien koordinointi. Häneltä tulee arvioon taloudellinen osa.
-      - main: Vastaa säästölaskelmista, tarjouksista ja projektien koordinoinnista. Koulutukseltaan kansainvälisen liiketoiminnan tradenomi (BBA).
+- [ ] `p` **muutettu** — Vastaa: yhtiön suunta, toiminnan suunnittelu ja toimitusten läpivienti – kumppanuudet, sopimukset ja rahoitusjärjestelyt. Huolehtii siitä, että jokainen hanke etenee sovitussa järjestyksessä.
+      - main: Jos vastaus on suuret keskitetyt laitokset, jokainen katto ja tuotantohalli jää passiiviseksi kuluttajaksi järjestelmässä, joka kiristyy ja kallistuu. Jos vastaus on ne, jotka näiden kattojen alla työskentelevät, sama katto muuttuu tuottavaksi solmuksi: se tuottaa, varastoi ja antaa tehoa silloin, kun järjestelmä sitä tarvitsee — ja saa siitä maksun.
       - **Korjaus:**
 - [ ] `p` **muutettu** — Koulutukseltaan kansainvälisen liiketoiminnan tradenomi (BBA).
       - main: Vastaa säästölaskelmista, tarjouksista ja projektien koordinoinnista. Koulutukseltaan kansainvälisen liiketoiminnan tradenomi (BBA).
@@ -1754,10 +1754,10 @@ Vastine mainissa: `/yhteystiedot/`
       - **Korjaus:**
 - [ ] `h3` **uusi** — Martin Rautio
       - **Korjaus:**
-- [ ] ⚠ `div` **uusi** — Talousjohtaja
-      - ⚠ tittelit hyväksytty 03.09.2026; "perustaja"/"asutaja" pudotettu 08.09.2026 (vartija titteli-perustaja)
+- [ ] ⚠ `div` **uusi** — Toimitusjohtaja
+      - ⚠ perustajapäätös Martin Rautio 13.09.2026 — toimitusjohtaja / tegevjuht; hallituksen päätös ja kaupparekisteri-ilmoitus seuraavat. Sivusto on rekisteriä edellä 1–2 päivää, tietoisesti.
       - **Korjaus:**
-- [ ] `p` **uusi** — Kannattavuuslaskelmat, tarjoukset, sopimukset
+- [ ] `p` **uusi** — Suunta, kumppanuudet, sopimukset ja rahoitus
       - **Korjaus:**
 - [ ] `p` **uusi** — martin.rautio@samaenergia.fi+358 40 701 9099
       - **Korjaus:**
