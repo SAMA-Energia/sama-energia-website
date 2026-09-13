@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 612 katselmoitavaa riviä — 467 uutta, 145 muutettua, joista **65 on merkitty ⚠**. Muuttumattomia ohitettiin 382.
+**Yhteenveto:** 612 katselmoitavaa riviä — 468 uutta, 144 muutettua, joista **67 on merkitty ⚠**. Muuttumattomia ohitettiin 382.
 
 **Huomio:** 3 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -1260,11 +1260,11 @@ Vastine mainissa: `/et/meist/`
 - [ ] `h3` **muutettu** — Martin Rautio
       - main: Martin Rautio — asutaja
       - **Korjaus:**
-- [ ] ⚠ `div` **uusi** — Finantsjuht
-      - ⚠ tittelit hyväksytty 03.09.2026; "perustaja"/"asutaja" pudotettu 08.09.2026 (vartija titteli-perustaja)
+- [ ] ⚠ `div` **uusi** — Tegevjuht
+      - ⚠ perustajapäätös Martin Rautio 13.09.2026 — toimitusjohtaja / tegevjuht; hallituksen päätös ja kaupparekisteri-ilmoitus seuraavat. Sivusto on rekisteriä edellä 1–2 päivää, tietoisesti.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Vastutab: säästuarvutused, pakkumised ja projektide koordineerimine. Tema käest tuleb hinnangu majanduslik osa.
-      - main: Vastutab säästuanalüüside, pakkumiste ja projektide koordineerimise eest. Hariduselt rahvusvahelise äri bakalaureus (BBA).
+- [ ] ⚠ `p` **uusi** — Vastutab: ettevõtte suund, tegevuse planeerimine ja tarnete läbiviimine – partnerlused, lepingud ja finantseerimislahendused. Hoolitseb selle eest, et iga projekt liigub kokkulepitud järjekorras.
+      - ⚠ CLAUDEN KIRJOITTAMA ET-teksti 13.09.2026 — ei natiivin tarkistama. Tarkista sanavalinnat ja sävy: tämä on uusi vastuukuvaus (perustajapäätös 13.09.2026).
       - **Korjaus:**
 - [ ] `p` **muutettu** — Hariduselt rahvusvahelise ärijuhtimise bakalaureus (BBA).
       - main: Vastutab säästuanalüüside, pakkumiste ja projektide koordineerimise eest. Hariduselt rahvusvahelise äri bakalaureus (BBA).
@@ -1643,10 +1643,11 @@ Vastine mainissa: `/et/kontakt/`
       - **Korjaus:**
 - [ ] `h3` **uusi** — Martin Rautio
       - **Korjaus:**
-- [ ] ⚠ `div` **uusi** — Finantsjuht
-      - ⚠ tittelit hyväksytty 03.09.2026; "perustaja"/"asutaja" pudotettu 08.09.2026 (vartija titteli-perustaja)
+- [ ] ⚠ `div` **uusi** — Tegevjuht
+      - ⚠ perustajapäätös Martin Rautio 13.09.2026 — toimitusjohtaja / tegevjuht; hallituksen päätös ja kaupparekisteri-ilmoitus seuraavat. Sivusto on rekisteriä edellä 1–2 päivää, tietoisesti.
       - **Korjaus:**
-- [ ] `p` **uusi** — Tasuvusarvutused, pakkumised, lepingud
+- [ ] ⚠ `p` **uusi** — Suund, partnerlused, lepingud ja rahastus
+      - ⚠ CLAUDEN KIRJOITTAMA ET-teksti 13.09.2026 — ei natiivin tarkistama. Tarkista sanavalinnat ja sävy: tämä on uusi vastuukuvaus (perustajapäätös 13.09.2026).
       - **Korjaus:**
 - [ ] `p` **uusi** — martin.rautio@samaenergia.fi+358 40 701 9099
       - **Korjaus:**

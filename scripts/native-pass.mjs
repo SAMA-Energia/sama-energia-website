@@ -70,7 +70,15 @@ const PAGES = {
 const FOUNDER_MARKS = [
   [/omaksi eduksenne|enda kasuks tööle/i, 'perustajan päätös 10.09.2026 — hero-otsikko (FI sai ajatusviivan; ET avoin, ks. kohta 2)'],
   [/maksaa itsensä takaisin nopeimmin|end kõige kiiremini ära tasub/i, 'perustajan päätös 10.09.2026 — varaus "usein"/"sageli" poistettu, kumoaa päätöksen D16 (08.09)'],
-  [/Myyntijohtaja|Müügijuht|Talousjohtaja|Finantsjuht|Asennuspäällikkö|Paigaldusjuht/, 'tittelit hyväksytty 03.09.2026; "perustaja"/"asutaja" pudotettu 08.09.2026 (vartija titteli-perustaja)'],
+  [/Myyntijohtaja|Müügijuht|Asennuspäällikkö|Paigaldusjuht/, 'tittelit hyväksytty 03.09.2026; "perustaja"/"asutaja" pudotettu 08.09.2026 (vartija titteli-perustaja)'],
+  // 13.09.2026: Martin Raution titteli. Perustajapäätös Martin Rautio 13.09.2026; hallituksen
+  // päätös ja kaupparekisteri-ilmoitus seuraavat. Vanha titteli on kumoutunut (vartija titteli-vanha).
+  [/Toimitusjohtaja|Tegevjuht/,
+   'perustajapäätös Martin Rautio 13.09.2026 — toimitusjohtaja / tegevjuht; hallituksen päätös ja kaupparekisteri-ilmoitus seuraavat. Sivusto on rekisteriä edellä 1–2 päivää, tietoisesti.'],
+  // 13.09.2026: Martinin uusi vastuukuvaus. ET-käännökset ovat CLAUDEN kirjoittamia, eivät
+  // natiivin tarkistamia — Madisin natiivitarkistus on nimenomaan näitä kahta riviä varten.
+  [/ettevõtte suund, tegevuse planeerimine|Suund, partnerlused, lepingud ja rahastus/,
+   'CLAUDEN KIRJOITTAMA ET-teksti 13.09.2026 — ei natiivin tarkistama. Tarkista sanavalinnat ja sävy: tämä on uusi vastuukuvaus (perustajapäätös 13.09.2026).'],
   [/VENI Energia|Soleron Energy|Ralos|JSM Automaatiosähkö|Scanoffice/, 'kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)'],
   [/leasing|omalla pääomalla|oma kapitaliga|liisin/i, 'rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)'],
   [/Sörnäisten Rantatie/, 'osoite vahvistettu 06.09.2026'],

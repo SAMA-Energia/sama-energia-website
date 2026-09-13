@@ -12,9 +12,11 @@ and Estonia. The company surveys, designs, procures, installs and maintains the
 behind-the-meter systems — storage, solar PV and control — and takes them to
 the reserve markets of the transmission system operators Fingrid (Finland) and
 Elering (Estonia) through an aggregator. The company was founded by Martin
-Rautio (finance director) and Madis Maastik (sales director); no managing
-director has been appointed or registered. Registered address: Sörnäisten
-Rantatie 33 C, 00500 Helsinki. Site updated 9 September 2026 (design v5).
+Rautio (chief executive officer) and Madis Maastik (sales director). Martin
+Rautio was appointed chief executive officer on 13 September 2026; the
+registration with the Finnish Trade Register is pending. Registered address:
+Sörnäisten Rantatie 33 C, 00500 Helsinki. Site updated 9 September 2026
+(design v5).
 
 What the company says about itself, in its own documented positioning:
 
@@ -85,5 +87,5 @@ What the company says about itself, in its own documented positioning:
 ## Contact
 
 - Madis Maastik, sales director: madis.maastik@samaenergia.fi · +358 449 654 614
-- Martin Rautio, finance director: martin.rautio@samaenergia.fi · +358 40 701 9099
+- Martin Rautio, chief executive officer: martin.rautio@samaenergia.fi · +358 40 701 9099
 - General: info@samaenergia.fi
