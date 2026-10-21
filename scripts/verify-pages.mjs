@@ -8,7 +8,7 @@
  * nav), FI–ET-rakennepariteetin, Netlify-lomakkeet, kolmansien osapuolten resurssien poissaolon,
  * JSON-LD:n, sitemapin, llms-full.txt:n, _redirects-säännöt, 404-sivut ja CSP-hashit.
  */
-import { readFileSync, existsSync, statSync } from 'node:fs';
+import { readFileSync, existsSync, statSync, readdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -27,7 +27,7 @@ const PLACEHOLDER_WAIVERS = [];
 /* Pidettävä samana kuin build-pages.mjs:n PAIRS / UNPAIRED / UNLISTED / LEGACY. */
 const PAIRS = [
   ['', ''], ['aurinkosahko', 'paikeseelekter'], ['energiavarastot', 'energiasalvestid'],
-  ['reservimarkkinat', 'reserviturg'], ['veni-energia', 'soleron-energy'], ['palvelut', 'teenused'],
+  ['reservimarkkinat', 'reserviturg'], ['aggregaattori', 'soleron-energy'], ['palvelut', 'teenused'],
   ['laitevaatimukset', 'seadmete-nouded'],
   ['meista', 'meist'], ['ajankohtaista', 'uudised'], ['yhteystiedot', 'kontakt'],
   ['tietosuoja', 'andmekaitse'], ['kiitos', 'aitah'],
@@ -711,6 +711,25 @@ try {
   }
 } catch (e) {
   err('review.json puuttuu tai ei jäsenny: ' + e.message);
+}
+
+/* VENI Energia poistettu sivustolta 21.10.2026 yhtiön pyynnöstä (perustajan päätös, Martin).
+   Nimi, verkkotunnus tai vanha slugi ei saa esiintyä yhdessäkään tarjoiltavassa tiedostossa.
+   _redirects (vanhan osoitteen 301-ohjaus) ja repo-sisäiset kansiot eivät ole tarjoiltavia. */
+{
+  const SKIP = new Set(['.git', 'src', 'scripts', 'docs', 'node_modules']);
+  const SERVED = /\.(html|txt|xml|json|js|css|svg)$/i;
+  const BANNED = /\bVENI\b|venienergia|veni-energia/i;
+  const walk = dir => {
+    for (const ent of readdirSync(join(ROOT, dir), { withFileTypes: true })) {
+      const rel = dir ? `${dir}/${ent.name}` : ent.name;
+      if (ent.isDirectory()) { if (!SKIP.has(ent.name)) walk(rel); continue; }
+      if (!SERVED.test(ent.name) || /^(CLAUDE|README|OHJE)\.md$/.test(ent.name)) continue;
+      const m = BANNED.exec(read(rel));
+      if (m) err(`${rel} — poistettu kumppaninimi palasi: "${m[0]}" (perustajan päätös 21.10.2026)`);
+    }
+  };
+  walk('');
 }
 
 if (errors) { console.error(`\n${errors} virhettä.`); process.exit(1); }

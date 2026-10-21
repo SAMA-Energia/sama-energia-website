@@ -26,7 +26,8 @@ What the company says about itself, in its own documented positioning:
   grid connection is enough.
 - Reserve markets (FFR, FCR-N, FCR-D, aFRR, mFRR in Finland; FCR, aFRR, mFRR in
   Estonia) pay for availability. A single industrial battery reaches the market
-  through an aggregator: VENI Energia in Finland, Soleron Energy in Estonia.
+  through an aggregator; the Estonian site names Soleron Energy, the Finnish site
+  names no aggregator. SAMA Energia is not itself an aggregator.
   Backup power requires an installation designed for island operation and a
   separated critical circuit; it is assessed site by site.
 - Reserve income is never guaranteed: the written assessment shows a low, medium
@@ -37,8 +38,7 @@ What the company says about itself, in its own documented positioning:
   basis, the distribution grid operator's position before any capital is
   committed, and financing set out as own capital, leasing and hire purchase on
   the same figures. A reply within two business days.
-- Partners named on the site: VENI Energia (aggregator, Finland), Soleron
-  Energy (aggregator, Estonia), Ralos Oy (battery units, stock in Tampere),
+- Partners named on the site: Soleron Energy (aggregator, Estonia), Ralos Oy (battery units, stock in Tampere),
   JSM Automaatiosähkö Oy (electrical installation and commissioning) and
   Scanoffice Oy (equipment importer, Finnish site only).
   Financing is not tied to any single provider: leasing can be arranged through
@@ -59,7 +59,7 @@ What the company says about itself, in its own documented positioning:
 - https://samaenergia.fi/aurinkosahko/ : Solar PV for businesses, sized by consumption, not roof area; solar plus battery.
 - https://samaenergia.fi/energiavarastot/ : Industrial energy storage: one device, four jobs; a battery's day; what is delivered and why now.
 - https://samaenergia.fi/reservimarkkinat/ : Reserve markets explained; four sourced reasons; how income is estimated; honest about reserve prices; what the company believes, including where it says no.
-- https://samaenergia.fi/veni-energia/ : What an aggregator does, how joining Fingrid's reserve markets proceeds, and the Finnish aggregator partner VENI Energia.
+- https://samaenergia.fi/aggregaattori/ : What an aggregator does, how joining Fingrid's reserve markets proceeds, and what to check in an aggregator agreement.
 - https://samaenergia.fi/palvelut/ : Services — three things to order: assessment, project, portfolio. What each contains, what the customer supplies, what is free and what is charged when.
 - https://samaenergia.fi/meista/ : About — why the company was founded, who is accountable for what, the partner network, company facts.
 - https://samaenergia.fi/ajankohtaista/ : Reviews with sources and dates.

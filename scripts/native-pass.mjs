@@ -34,7 +34,7 @@ const PAGES = {
     ['/energiavarastot/', 'energiavarastot/index.html', 'Energiavarastot'],
     ['/aurinkosahko/', 'aurinko-ja-akku/index.html', 'Aurinkosähkö'],
     ['/reservimarkkinat/', 'reservimarkkinat/index.html', 'Reservimarkkinat'],
-    ['/veni-energia/', null, 'VENI Energia'],
+    ['/aggregaattori/', null, 'Aggregaattori'],
     ['/palvelut/', 'prosessi/index.html', 'Palvelut'],
     ['/laitevaatimukset/', null, 'Laitevaatimukset'],
     ['/equipment-requirements/', null, 'Equipment requirements (EN)'],
@@ -79,7 +79,7 @@ const FOUNDER_MARKS = [
   // natiivin tarkistamia — Madisin natiivitarkistus on nimenomaan näitä kahta riviä varten.
   [/ettevõtte suund, tegevuse planeerimine|Suund, partnerlused, lepingud ja rahastus/,
    'CLAUDEN KIRJOITTAMA ET-teksti 13.09.2026 — ei natiivin tarkistama. Tarkista sanavalinnat ja sävy: tämä on uusi vastuukuvaus (perustajapäätös 13.09.2026).'],
-  [/VENI Energia|Soleron Energy|Ralos|JSM Automaatiosähkö|Scanoffice/, 'kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)'],
+  [/Soleron Energy|Ralos|JSM Automaatiosähkö|Scanoffice/, 'kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); VENI Energia poistettu 21.10.2026'],
   [/leasing|omalla pääomalla|oma kapitaliga|liisin/i, 'rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)'],
   [/Sörnäisten Rantatie/, 'osoite vahvistettu 06.09.2026'],
   [/kvalifitseerunud|kvalifitseeritud|säätökokein todennettu|prekvalifioitu/i, 'lukukorjaus: reservien osuudet ovat todennettua KAPASITEETTIA, ei tuotantoa (Fingrid 10.2.2025; vartijat reservi-*)'],

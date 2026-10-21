@@ -32,14 +32,17 @@ All customer-facing text is Finnish or Estonian and requires a
 ## Content rules that bind this repo
 
 - Partner names are permitted site-wide, both languages, for exactly this
-  list: VENI Energia, Soleron Energy, Ralos Oy, JSM Automaatiosähkö Oy —
+  list: Soleron Energy, Ralos Oy, JSM Automaatiosähkö Oy —
   founder decision 03.09.2026 (Martin). No other company name may be added
   without a founder decision. No financing company may be named anywhere on the site — founder decision
   03.09.2026 (evening); the two financiers previously named were removed and
   must not be reintroduced (see the project's Decision Log; do not name them
   here). Financing is described generically: leasing or own capital, compared
   on the same figures in the written assessment.
-- Partner names permitted: VENI Energia, Soleron Energy, Ralos Oy, JSM Automaatiosähkö Oy, and Scanoffice Oy on the Finnish site only — founder decision 08.09.2026.
+- Partner names permitted: Soleron Energy, Ralos Oy, JSM Automaatiosähkö Oy, and Scanoffice Oy on the Finnish site only — founder decision 08.09.2026.
+- **VENI Energia removed site-wide 21.10.2026** at the company's request — founder decision (Martin). It must not be
+  named, linked or described anywhere on the site, in either language, nor in llms.txt. Aggregation in Finland is
+  described generically (/aggregaattori/). `verify-pages.mjs` fails the build if the name reappears in any served file.
 - verify-pages.mjs carries content guards for figures and titles corrected on 03.09/06.09/08.09; a guard is removed only by a founder decision recorded in the project’s Decision Log.
 - Team titles and personal contact numbers as published on Meistä/Meist are
   approved — founder decision 03.09.2026.

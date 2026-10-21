@@ -30,14 +30,15 @@ const ET_BASE = 'https://samaenergia.ee';
 const etCanonical = s => ET_BASE + (s ? `/${s}/` : '/');
 
 /* Slugiparit FI ↔ ET (kielivalitsin ja hreflang; tyhjä slug = etusivu). Ulkoasu v5.
-   veni-energia ↔ soleron-energy on "aggregaattorisivu": eri kumppani per markkina, mutta sama
-   sivu sivuston informaatioarkkitehtuurissa, joten hreflang-pari on oikein. */
+   aggregaattori ↔ soleron-energy on "aggregaattorisivu": FI-sivu on neutraali (ei kumppanin nimeä,
+   perustajan päätös 21.10.2026), ET-sivu nimeää Soleronin; sama sivu sivuston informaatioarkkitehtuurissa,
+   joten hreflang-pari on oikein. */
 const PAIRS = [
   ['', ''],
   ['aurinkosahko', 'paikeseelekter'],
   ['energiavarastot', 'energiasalvestid'],
   ['reservimarkkinat', 'reserviturg'],
-  ['veni-energia', 'soleron-energy'],
+  ['aggregaattori', 'soleron-energy'],
   ['palvelut', 'teenused'],
   ['laitevaatimukset', 'seadmete-nouded'],
   ['meista', 'meist'],
@@ -84,7 +85,7 @@ const publicSlugs = lang => [
 
 /* Päävalikon aktiivinen kohta: sivu -> data-nav-avain (pudotusvalikko tai suora linkki). */
 const NAV_KEY = {
-  fi: { 'aurinkosahko': 'ratkaisut', 'energiavarastot': 'ratkaisut', 'palvelut': 'ratkaisut', 'reservimarkkinat': 'reservimarkkinat', 'veni-energia': 'reservimarkkinat', 'ajankohtaista': 'ajankohtaista', 'ajankohtaista/liityntarajoitus-2029': 'ajankohtaista', 'meista': 'meista', 'yhteystiedot': 'yhteystiedot' },
+  fi: { 'aurinkosahko': 'ratkaisut', 'energiavarastot': 'ratkaisut', 'palvelut': 'ratkaisut', 'reservimarkkinat': 'reservimarkkinat', 'aggregaattori': 'reservimarkkinat', 'ajankohtaista': 'ajankohtaista', 'ajankohtaista/liityntarajoitus-2029': 'ajankohtaista', 'meista': 'meista', 'yhteystiedot': 'yhteystiedot' },
   et: { 'paikeseelekter': 'lahendused', 'energiasalvestid': 'lahendused', 'teenused': 'lahendused', 'reserviturg': 'reserviturg', 'soleron-energy': 'reserviturg', 'uudised': 'uudised', 'uudised/reservitasu-2026': 'uudised', 'meist': 'meist', 'kontakt': 'kontakt' },
 };
 

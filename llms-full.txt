@@ -392,7 +392,7 @@ Reservimarkkinat: teollinen akku tuottaa jo tänään.
 
 Suurkuluttajalle akku ei ole tulevaisuuden hanke vaan tämän päivän tulonlähde. Fingrid maksaa valmiudesta, ohjaus on automaattista, ja liittymä, jota akku tarvitsee, on teillä jo olemassa.
 
-Pyydä maksuton kartoitus Aggregaattorikumppanimme VENI Energia
+Pyydä maksuton kartoitus Mitä aggregaattori tekee
 
 ~1 500 MWreserviä Fingrid hankkii keskimäärin joka tunnille ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW lisää
 
@@ -449,13 +449,13 @@ Miten tuotto arvioidaan.
 
 Invertterin teho ja kapasiteetti ratkaisevat. Tuotto arvioidaan akun invertterin tehosta (MW) ja kapasiteetista (MWh). Tyypillinen mitoitus on 1:2, esimerkiksi 1 MW / 2 MWh: teho kertoo, paljonko reserviä voitte tarjota, kapasiteetti, kuinka pitkään.
 
-Mitä täydemmin aggregaattori ohjaa, sitä enemmän tuottoa. Kun VENI Energia ohjaa akkua kokonaan, se voi viedä joka tunnin kannattavimpaan reserviin (FCR-D, FCR-N, FFR, aFRR) ja ottaa markkinasta maksimin. Osittainen ohjaus tuottaa vähemmän.
+Mitä täydemmin aggregaattori ohjaa, sitä enemmän tuottoa. Kun aggregaattori ohjaa akkua kokonaan, se voi viedä joka tunnin kannattavimpaan reserviin (FCR-D, FCR-N, FFR, aFRR) ja ottaa markkinasta maksimin. Osittainen ohjaus tuottaa vähemmän.
 
 Strategia tehdään teidän etunne mukaan. Jos myytte omaa aurinkosähköä tai tarvitsette akkua omiin huippuihin tai varavoimaksi, strategia rakennetaan sen ympärille. Aggregaattori optimoi, mutta teidän ehdoillanne ja teidän hyväksenne.
 
-Toteutuneet tuotot käydään läpi yhdessä. VENI Energian esitys näyttää, mitä vastaavat akut ovat Suomessa tuottaneet. Käymme sen läpi kartoituksessa ja sovitamme luvut teidän kohteeseenne, kirjallisesti ja kolmena skenaariona.
+Tuottoarvio käydään läpi yhdessä. Aggregaattori laatii oman tuottoarvionsa kohteenne akulle. Käymme sen läpi kartoituksessa ja sovitamme luvut teidän kohteeseenne, kirjallisesti ja kolmena skenaariona.
 
-Pyydä maksuton kartoitus Miten VENI Energia toimii
+Pyydä maksuton kartoitus Miten aggregaattori toimii
 
 Rehellisesti reservihinnoista.
 
@@ -470,8 +470,8 @@ SAMA Energia
 
 Me rakennamme järjestelmän, aggregaattorin ohjelmisto hoitaa kaupankäynnin, ja te saatte optimoidut energiakulut. Kartoituksesta käyttöönottoon ja seurantaan, yhdellä yhteyshenkilöllä.
 
-VENI Energia, aggregaattorikumppanimme
-Liittää kohteenne Fingridin reservimarkkinoille, ohjaa akkua automaattisesti ja tilittää tuoton. Toteutuneet tuotot näytämme VENI Energian esityksestä kartoituksessa.
+Mitä aggregaattori tekee
+Aggregaattori liittää kohteenne Fingridin reservimarkkinoille, ohjaa akkua automaattisesti ja tilittää tuoton. Aggregaattorin tuottoarvio ja palkkio käydään läpi kartoituksessa.
 
 Lue lisää
 
@@ -530,7 +530,7 @@ Kirjalliset takuuehdot vuosina ja sykleinä, sallittu kapasiteetin lasku ja se, 
 Huolto ja varaosat Suomessa sovitulla vasteajalla; dokumentaatio suomeksi tai englanniksi.
 
 Valmistajille ja maahantuojille.
-Jos laitteenne täyttää listan ja haluatte Suomen ja Viron markkinoille, kirjoittakaa info@samaenergia.fi. Mitä me annamme: kaksi markkinaa, aggregaattorikumppani kummallakin, asennuskumppanit ja arvioon perustuva myynti, joka ei lupaa laitteelta enempää kuin se tekee.
+Jos laitteenne täyttää listan ja haluatte Suomen ja Viron markkinoille, kirjoittakaa info@samaenergia.fi. Mitä me annamme: kaksi markkinaa, reservimarkkinoille pääsy aggregaattorin kautta kummallakin, asennuskumppanit ja arvioon perustuva myynti, joka ei lupaa laitteelta enempää kuin se tekee.
 
 Sopiiko teidän kohteenne?
 Maksuton kartoitus kertoo, millainen järjestelmä liittymänne taakse mahtuu ja mitä se siellä tuottaisi.
@@ -573,15 +573,15 @@ Written warranty terms in years and cycles, permitted capacity degradation, and 
 Service and spare parts in Finland or Estonia with an agreed response time; documentation in the local language or English.
 
 For manufacturers and importers.
-If your equipment meets the list and you want to enter the Finnish and Estonian markets, write to info@samaenergia.fi. What we bring: two markets, an aggregator partner in each, installation partners, and assessment-based selling that never promises more from the equipment than it delivers.
+If your equipment meets the list and you want to enter the Finnish and Estonian markets, write to info@samaenergia.fi. What we bring: two markets, reserve-market access through an aggregator in each, installation partners, and assessment-based selling that never promises more from the equipment than it delivers.
 
-# Aggregaattori ja VENI Energia — SAMA Energia — https://samaenergia.fi/veni-energia/
+# Aggregaattori reservimarkkinoilla — SAMA Energia — https://samaenergia.fi/aggregaattori/
 
-Etusivu›Reservimarkkinat›Aggregaattori: VENI Energia
+Etusivu›Reservimarkkinat›Aggregaattori
 
-Aggregaattori vie akkunne markkinoille. Suomessa se on VENI Energia.
+Aggregaattori vie akkunne markkinoille.
 
-Fingridin reservimarkkinoille ei osallistu yksittäinen tehdas vaan reservitoimittaja, joka kokoaa monta kohdetta yhdeksi tarjoukseksi, läpäisee Fingridin kokeet ja ohjaa akkuja automaattisesti. Tällä sivulla kerromme, mitä aggregaattori tekee, miten liittyminen etenee ja kuka on kumppanimme Suomessa.
+Fingridin reservimarkkinoille ei osallistu yksittäinen tehdas vaan reservitoimittaja, joka kokoaa monta kohdetta yhdeksi tarjoukseksi, läpäisee Fingridin kokeet ja ohjaa akkuja automaattisesti. Tällä sivulla kerromme, mitä aggregaattori tekee, miten liittyminen etenee ja mitä sopimuksessa kannattaa katsoa.
 
 Pyydä maksuton kartoitus Reservimarkkinat selkokielellä
 
@@ -592,11 +592,11 @@ yli 150reservitoimittajaa Fingridin luettelossa 27.8.2026, aggregaattorit mukaan
 Lähteet: Fingrid, Aggregointi reservimarkkinoilla · 3/2026; Fingrid, reservitoimittajat · 27.8.2026
 
 Näin kokonaisuus toimii.
-Kohteen kulutus, aurinkosähkö ja akku ovat liittymän takana. Liittymispisteen mittaus kertoo, paljonko tehoa on vapaana; VENI ohjaa akkua, tekee tarjoukset ja tilittää tuoton; markkinoita on kaksi: Fingridin reservit ja sähköpörssi.
+Kohteen kulutus, aurinkosähkö ja akku ovat liittymän takana. Liittymispisteen mittaus kertoo, paljonko tehoa on vapaana; aggregaattori ohjaa akkua, tekee tarjoukset ja tilittää tuoton; markkinoita on kaksi: Fingridin reservit ja sähköpörssi.
 
 KohdeKulutus, aurinkosähkö ja akku liittymän takana – akku lataa ja purkaa liittymän rajoissa.
 
-OhjausVENI lukee liittymispisteen mittausta, tekee tarjoukset joka tunnille ja ohjaa akkua kannattavimpaan tuotteeseen.
+OhjausAggregaattori lukee liittymispisteen mittausta, tekee tarjoukset joka tunnille ja ohjaa akkua kannattavimpaan tuotteeseen.
 
 EtusijaKohteen oma kulutus on aina etusijalla. Markkinoille menee se, mikä liittymästä jää yli – tunneittain, kulutusprofiilinne mukaan, ei yhdellä kiinteällä rajalla koko vuodeksi.
 
@@ -652,18 +652,9 @@ Akun ohjaus · Oma ohjausjärjestelmä ja tiedonsiirto Fingridiin · Automaattin
 
 Tilitys ja raportointi · Itse · Aggregaattori tilittää tuoton ja raportoi
 
-VENI Energia
+Me rakennamme akun. Aggregaattori vie sen markkinoille.
 
-VENI Energia Oy
-Aggregaattorikumppanimme Suomessa · Fingridin reservimarkkinat
-
-Perustettu 1996. Pääkonttori Hämeenlinnassa, toimisto Tampereella. Energiapalveluyhtiö, jonka palveluita ovat sähkönhankinta, energialaskujen tarkastus ja mittauspalvelut. Yli 10 000 suomalaista yritys- ja julkista asiakasta; osa VENI Energy Groupia, jolla on yli 45 000 asiakasta Pohjoismaissa, Saksassa ja Espanjassa.
-Reservimarkkinapuoli, ohjaus ja toteutuneet akkutuotot käydään läpi VENIn omasta esityksestä kartoituksessa, ja ne kirjataan teidän lukuinanne kirjalliseen arvioon.
-venienergia.fi
-
-Mitä VENI Energia tekee teidän kohteellenne.
-
-VENI liittää kohteenne Fingridin reservimarkkinoille, ohjaa akkua automaattisesti ja tilittää tuoton. Toteutuneet tuotot vastaavista akuista näytämme VENI Energian esityksestä kartoituksessa, ja sovitamme luvut teidän kohteeseenne kirjallisesti, kolmena skenaariona.
+SAMA Energia ei ole aggregaattori. Suunnittelemme, toimitamme, asennamme ja otamme akun käyttöön; aggregaattori liittää sen Fingridin reservimarkkinoille, ohjaa sitä ja tilittää tuoton. Emme ole sidoksissa yhteen aggregaattoriin. Aggregaattorin tuottoarvio, palkkio ja sopimusehdot käydään läpi kartoituksessa ja kirjataan arvioon kolmena skenaariona.
 
 Teidän ehdoillannestrategia asiakkaan edun mukaan
 
@@ -687,8 +678,8 @@ Palkkio sovitaan aggregaattorisopimuksessa, ja kirjallisessa arviossa se on oman
 Mitä jos haluamme myöhemmin vaihtaa aggregaattoria?
 Akku ja liittymä ovat teidän. Sopimuksen kesto ja irtisanomisehdot käydään läpi ennen allekirjoitusta ja kirjataan arvioon, jotta tiedätte etukäteen, mihin sitoudutte ja kuinka pitkäksi aikaa.
 
-Haluatteko nähdä, mitä vastaavat akut ovat tuottaneet?
-Käymme VENI Energian esityksen läpi kartoituksessa ja sovitamme luvut teidän kohteeseenne.
+Mitä akku voisi tuottaa teidän kohteessanne?
+Kartoitus vastaa siihen kirjallisesti: säästöt kulutustiedoistanne ja reservituotto kolmena skenaariona.
 
 Pyydä maksuton kartoitus Takaisin reservimarkkinoihin
 
@@ -892,9 +883,8 @@ Jokainen projekti tarvitsee meidän lisäksemme neljä asiaa: markkinoillepääs
 Pääsy reservimarkkinoille
 Aggregaattori kokoaa akut tarjoukseksi, ohjaa niitä automaattisesti ja tilittää tuoton.
 
-VENI Energia
-SuomiVENI Energia OyAggregaattorikumppani · Fingridin reservimarkkinat
-Vuonna 1996 perustettu hämeenlinnalainen energiapalveluyhtiö: sähkönhankinta, energialaskujen tarkastus ja mittauspalvelut yli 10 000 yritys- ja julkiselle asiakkaalle.Näin aggregointi toimii
+SuomiAggregaattoriFingridin reservimarkkinat
+Emme ole sidoksissa yhteen aggregaattoriin. Aggregaattorin ehdot ja palkkio käydään läpi kartoituksessa ja kirjataan arvioon ennen allekirjoitusta.Näin aggregointi toimii
 Soleron
 ViroSoleron Energy OÜAggregaattori · Eleringin reservimarkkinat
 Virolainen energiavarasto- ja energianhallintayhtiö: oma EMS-ohjelmisto, aggregointi Eleringin taajuusreserveihin, varastojen suunnittelu ja asennus. Julkaisee reservimarkkinakatsauksia omalla sivullaan.soleronenergy.ee
@@ -1734,7 +1724,7 @@ Kirjalikud garantiitingimused aastates ja tsüklites, lubatud mahtuvuse langus j
 Hooldus ja varuosad Eestis kokkulepitud reageerimisajaga; dokumentatsioon eesti või inglise keeles.
 
 Tootjatele ja maaletoojatele.
-Kui teie seade vastab nimekirjale ja te soovite Eesti ja Soome turule, kirjutage info@samaenergia.fi. Mida meie anname: kaks turgu, agregaatoripartner kummalgi turul, paigalduspartnerid ja hinnangupõhine müük, mis ei luba seadmelt rohkem, kui see teeb.
+Kui teie seade vastab nimekirjale ja te soovite Eesti ja Soome turule, kirjutage info@samaenergia.fi. Mida meie anname: kaks turgu, reserviturule pääs agregaatori kaudu kummalgi turul, paigalduspartnerid ja hinnangupõhine müük, mis ei luba seadmelt rohkem, kui see teeb.
 
 Kas teie objekt sobib?
 Tasuta hindamine ütleb, milline süsteem teie liitumise taha mahub ja mida ta seal teeniks.
@@ -2061,9 +2051,6 @@ Agregaator koondab mitme objekti akud üheks pakkumiseks, juhib neid automaatsel
 Soleron
 EestiSoleron Energy OÜAgregaator · Eleringi reserviturg
 Energiasalvestus ja energiajuhtimine: oma EMS-tarkvara, agregeerimine Eleringi sagedusreservidesse, salvestite projekteerimine ja paigaldus.Kuidas agregaator töötab
-VENI Energia
-SoomeVENI Energia OyAgregaatoripartner · Fingridi reserviturg
-1996. aastal asutatud Hämeenlinna energiateenuste ettevõte: elektri hange, energiaarvete kontroll ja mõõteteenused enam kui 10 000 äri- ja avaliku sektori kliendile.venienergia.fi
 
 Seadmed ja tarne
 Salvestid valime objekti järgi. Osa seadmeid on Soome laos, mis lühendab tarneaega nädalateni.
