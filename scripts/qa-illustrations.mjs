@@ -69,7 +69,7 @@ function serve() {
 
 /* ---------- mitattavat sivut ja kuvitukset ---------- */
 const PAGES = {
-  fi: [{ slug: 'home', url: '/' }, { slug: 'reservimarkkinat', url: '/reservimarkkinat/' }, { slug: 'energiavarastot', url: '/energiavarastot/' }, { slug: 'palvelut', url: '/palvelut/' }, { slug: 'liityntarajoitus-2029', url: '/ajankohtaista/liityntarajoitus-2029/' }, { slug: 'veni-energia', url: '/veni-energia/' }],
+  fi: [{ slug: 'home', url: '/' }, { slug: 'reservimarkkinat', url: '/reservimarkkinat/' }, { slug: 'energiavarastot', url: '/energiavarastot/' }, { slug: 'palvelut', url: '/palvelut/' }, { slug: 'liityntarajoitus-2029', url: '/ajankohtaista/liityntarajoitus-2029/' }, { slug: 'aggregaattori', url: '/aggregaattori/' }],
   et: [{ slug: 'home', url: '/et/' }, { slug: 'reserviturg', url: '/reserviturg/' }, { slug: 'energiasalvestid', url: '/energiasalvestid/' }, { slug: 'teenused', url: '/teenused/' }, { slug: 'reservitasu-2026', url: '/uudised/reservitasu-2026/' }, { slug: 'soleron-energy', url: '/soleron-energy/' }],
 };
 const ILLUS = [

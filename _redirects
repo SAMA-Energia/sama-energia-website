@@ -25,6 +25,11 @@ https://www.samaenergia.ee/reserviturud/*     https://samaenergia.ee/reserviturg
 # päinvastoin kuin ennen; :splat-jatke pitää myös artikkelin /ulevaated/reservitasu-2026/ voimassa.
 https://samaenergia.ee/ulevaated/*            https://samaenergia.ee/uudised/:splat            301!
 https://www.samaenergia.ee/ulevaated/*        https://samaenergia.ee/uudised/:splat            301!
+# 21.10.2026 (perustajan päätös): aggregaattorisivun slugi neutraaliksi; vanha osoite ohjautuu uuteen.
+https://samaenergia.fi/veni-energia/*         https://samaenergia.fi/aggregaattori/            301!
+https://www.samaenergia.fi/veni-energia/*     https://samaenergia.fi/aggregaattori/            301!
+https://samaenergia.ee/veni-energia/*         https://samaenergia.fi/aggregaattori/            301!
+https://www.samaenergia.ee/veni-energia/*     https://samaenergia.fi/aggregaattori/            301!
 
 # ET-osoitteet eivät koskaan palvele FI-hostilla (uudet slugit build-pages.mjs:n PAIRS/UNPAIRED-
 # tauluista + vanhat, jotka ketjuttuvat .ee-hostilla yllä oleviin ohjauksiin).
@@ -67,8 +72,8 @@ https://samaenergia.ee/energiavarastot/*      https://samaenergia.fi/energiavara
 https://www.samaenergia.ee/energiavarastot/*  https://samaenergia.fi/energiavarastot/:splat    301!
 https://samaenergia.ee/reservimarkkinat/*     https://samaenergia.fi/reservimarkkinat/:splat   301!
 https://www.samaenergia.ee/reservimarkkinat/*  https://samaenergia.fi/reservimarkkinat/:splat  301!
-https://samaenergia.ee/veni-energia/*         https://samaenergia.fi/veni-energia/:splat       301!
-https://www.samaenergia.ee/veni-energia/*     https://samaenergia.fi/veni-energia/:splat       301!
+https://samaenergia.ee/aggregaattori/*        https://samaenergia.fi/aggregaattori/:splat      301!
+https://www.samaenergia.ee/aggregaattori/*    https://samaenergia.fi/aggregaattori/:splat      301!
 https://samaenergia.ee/palvelut/*             https://samaenergia.fi/palvelut/:splat           301!
 https://www.samaenergia.ee/palvelut/*         https://samaenergia.fi/palvelut/:splat           301!
 https://samaenergia.ee/laitevaatimukset/*     https://samaenergia.fi/laitevaatimukset/:splat   301!
