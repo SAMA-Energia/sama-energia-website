@@ -15,7 +15,7 @@ Elering (Estonia) through an aggregator. The company was founded by Martin
 Rautio (chief executive officer) and Madis Maastik (sales director). Martin
 Rautio was appointed chief executive officer on 13 September 2026; the
 registration with the Finnish Trade Register is pending. Registered address:
-Sörnäisten Rantatie 33 C, 00500 Helsinki. Site updated 9 September 2026
+Sörnäisten Rantatie 33 C, 00500 Helsinki. Site updated 26 October 2026
 (design v5).
 
 What the company says about itself, in its own documented positioning:
@@ -30,9 +30,11 @@ What the company says about itself, in its own documented positioning:
   names no aggregator. SAMA Energia is not itself an aggregator.
   Backup power requires an installation designed for island operation and a
   separated critical circuit; it is assessed site by site.
-- Reserve income is never guaranteed: the written assessment shows a low, medium
-  and high scenario, and keeps the capacity-charge and spot-price savings on a
-  separate line because they do not depend on reserve prices.
+- Reserve income is never guaranteed: the written assessment models it per
+  reserve product from the TSO's realised hourly prices for the hours the site's
+  own use leaves free, before the aggregator's fee, shows the future as a range,
+  labels the figure as modelled, and keeps the capacity-charge and spot-price
+  savings on a separate line because they do not depend on reserve prices.
 - The first product is a free site survey and a written assessment: every figure
   with its source and date, the customer's own hourly consumption data as the
   basis, the distribution grid operator's position before any capital is
@@ -56,11 +58,12 @@ What the company says about itself, in its own documented positioning:
 ## Pages — Finnish (https://samaenergia.fi)
 
 - https://samaenergia.fi/ : Front page — "Saavuttakaa energiariippumattomuus laittamalla sähköliittymänne töihin omaksi eduksenne." One battery, three cash flows plus backup power; what the grid-capacity charge and the spot price actually cost, with one distribution company's published tariff as a worked example; how a permanent saving shows up in the property's value; the five steps; who it suits; FAQ; site-survey form.
-- https://samaenergia.fi/aurinkosahko/ : Solar PV for businesses, sized by consumption, not roof area; solar plus battery.
+- https://samaenergia.fi/aurinkosahko/ : Solar PV for businesses: five solution types (roof, integrated solar roof, ground and carport, solar plus storage, storage for an existing plant), sized by hourly consumption, how installation proceeds, solar plus battery.
 - https://samaenergia.fi/energiavarastot/ : Industrial energy storage: one device, four jobs; a battery's day; what is delivered and why now.
 - https://samaenergia.fi/reservimarkkinat/ : Reserve markets explained; four sourced reasons; how income is estimated; honest about reserve prices; what the company believes, including where it says no.
 - https://samaenergia.fi/aggregaattori/ : What an aggregator does, how joining Fingrid's reserve markets proceeds, and what to check in an aggregator agreement.
 - https://samaenergia.fi/palvelut/ : Services — three things to order: assessment, project, portfolio. What each contains, what the customer supplies, what is free and what is charged when.
+- https://samaenergia.fi/kumppanit/ : Partners and products — storage cabinets, containers, hybrid cabinets, charging-station microgrids, portable units and backup switching from several manufacturers, listed by type and specification; how an offer is assembled and compared on the same figures.
 - https://samaenergia.fi/meista/ : About — why the company was founded, who is accountable for what, the partner network, company facts.
 - https://samaenergia.fi/ajankohtaista/ : Reviews with sources and dates.
 - https://samaenergia.fi/ajankohtaista/liityntarajoitus-2029/ : Review: no new storage connections in southern Finland before 2029 — your connection already exists.
@@ -72,11 +75,12 @@ What the company says about itself, in its own documented positioning:
 ## Pages — Estonian (https://samaenergia.ee)
 
 - https://samaenergia.ee/ : Avaleht — "Saavutage energiasõltumatus, pannes elektriliitumise enda kasuks tööle." Üks salvesti, kolm rahavoogu, varutoide; kuidas püsiv sääst kajastub kinnisvara väärtuses; viis sammu; kellele; KKK; hindamisvorm.
-- https://samaenergia.ee/paikeseelekter/ : Päikeseelekter ettevõtetele, mõõdetud tarbimise järgi; päike ja aku koos.
+- https://samaenergia.ee/paikeseelekter/ : Päikeseelekter ettevõtetele: viis lahendust, mõõdetud tunnitarbimise järgi; kuidas paigaldus käib; päike ja aku koos.
 - https://samaenergia.ee/energiasalvestid/ : Tööstuslik energiasalvesti: üks seade, neli tööd; aku päev; mida tarnime ja miks nüüd.
 - https://samaenergia.ee/reserviturg/ : Reserviturg lihtsalt seletatuna; neli allikatega põhjust; kuidas tulu hinnatakse; ausalt reservihindadest.
 - https://samaenergia.ee/soleron-energy/ : Mida agregaator teeb, kuidas liitumine Eleringi reservituruga käib, ja Eesti agregaatoripartner Soleron Energy.
 - https://samaenergia.ee/teenused/ : Teenused — tasuta hindamine, kirjalik hinnang, projektijuhtimine, seire; neli reeglit.
+- https://samaenergia.ee/partnerid/ : Partnerid ja tooted — energiasalvestid, konteinerid, laadimisjaamade mikrovõrgud ja varutoide mitmelt tootjalt, tüübi ja andmete järgi; kuidas pakkumine kokku pannakse.
 - https://samaenergia.ee/meist/ : Meist — miks ettevõte tehti, kes mille eest vastutab, võrgustik, ettevõte paberil.
 - https://samaenergia.ee/uudised/ : Uudised koos allikate ja kuupäevadega.
 - https://samaenergia.ee/uudised/reservitasu-2026/ : Ülevaade: alates 2026 maksate reservide eest — kummal pool arvet te olete.

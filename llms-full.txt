@@ -117,7 +117,7 @@ Näin se etenee – ja mikä maksaa milloin.
 Ketään ei lähetetä minnekään ennen kuin tiedot ovat käsillä. Kaksi ensimmäistä askelta ovat maksuttomia, kohdekäynti hyvitetään sopimuksessa, suunnittelu ja asennus kulkevat sopimuksen mukaan.
 
 01Maksuton kartoitus
-Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubista tai verkkoyhtiöltänne), yhden laskun ja pääkaavion; me kirjoitamme arvion: liittymä, kulutusprofiili, tehon jako, kolme skenaariota lähteineen.
+Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubista tai verkkoyhtiöltänne), yhden laskun ja pääkaavion; me kirjoitamme arvion: liittymä, kulutusprofiili, tehon jako, mallinnettu reservituotto tuotteittain lähteineen.
 Maksuton · aikaanne noin 20 minuuttia
 
 02Esitarkastus
@@ -186,13 +186,23 @@ Kulutustiedot, liittymä, tuotannon rytmi ja tavoitteet ensin. Vasta sitten lait
 
 Tunnemme markkinan
 
-Olemme analysoineet markkinan ja nähneet eri toimittajat. Valitsemme laitteet ja kumppanit teidän etunne mukaan, yhdessä maahantuojien kanssa.
+Seuraamme valmistajia, maahantuojia, aggregaattoreita ja hintoja. Kokoamme tarjouksen kohteenne tarpeen mukaan ja vertaamme vaihtoehdot samoilla luvuilla.
 
-Ajoitus on osa ratkaisua
+Laaja valikoima, yksi vastuu
 
-Juuri nyt Suomen varastossa on markkinoilla koeteltuja energiavarastoja hyvään hintaan ja toimitusaika lasketaan viikoissa. Siksi tarjoamme niitä nyt, emme ensi vuonna.
+Energiavarastot, kontit, lataus, mikroverkot ja aurinkosähkö kumppaneiltamme. Me kokoamme kokonaisuuden ja vastaamme projektista alusta loppuun.
 
-Meistä ja kumppaneista
+Kumppanit
+
+RalosEnergiavarastot
+
+ScanofficeAurinkosähkö ja lämpöpumput
+
+JSMSähköasennukset
+
+SoleronReservimarkkinat Virossa
+
+Kumppanit ja tuotteet Meistä
 
 Vaikeat kysymykset, rehelliset vastaukset.
 
@@ -201,12 +211,12 @@ Jos kysymyksenne ei ole tässä, kysykää suoraan. Vastaamme kirjallisesti.
 Pyydä maksuton kartoitus
 
 Voiko reservimarkkinatulon taata?
-Taata ei voi kukaan: reservin hinta muodostuu markkinoilla joka päivä, ja markkina, jolle tulee lisää tarjoajia, ei pysy paikallaan. Siksi emme lupaa lukua. Kirjallisessa arviossa on kolme skenaariota — matala, keskimääräinen ja korkea — ja erillisellä rivillä tehomaksu- ja pörssisähkösäästö, joka ei riipu markkinasta. Näin päätös syntyy tietoisesti: ei pelosta eikä uskosta, vaan omista luvuistanne.
+Taata ei voi kukaan: reservin hinta muodostuu markkinoilla joka päivä, ja markkina, jolle tulee lisää tarjoajia, ei pysy paikallaan. Siksi emme lupaa lukua. Kirjallisessa arviossa reservituotto mallinnetaan tuotteittain Fingridin toteutuneista tuntihinnoista niille tunneille, jotka oma käyttönne jättää vapaiksi, ennen aggregaattorin palkkiota. Tuleva näytetään vaihteluvälinä. Se on mallinnettu luku, ei lupaus. Erillisellä rivillä on tehomaksu- ja pörssisähkösäästö, joka ei riipu markkinasta. Näin päätös syntyy tietoisesti: ei pelosta eikä uskosta, vaan omista luvuistanne.
 Miten reservihinnat muodostuvat
 
 Paljonko varasto tuottaa reservimarkkinoilla?
 Se riippuu neljästä asiasta, ja me laskemme ne kohteenne osalta. Ensiksi aggregaattorista ja sen ohjauslogiikasta: mitä täydemmin aggregaattori ohjaa varastoa, sitä suurempi on tuottopotentiaali. Toiseksi siitä, paljonko käytätte varastoa itse ja minä tunteina – huippujen kattamiseen ja halvan sähkön varastointiin; se osa on teidän säästöänne, ja muun ajan varasto on puhtaasti reservimarkkinoilla. Kolmanneksi siitä, kuinka monella markkinalla varasto on mukana – taajuusreservit FCR-N, FCR-D, FFR ja aFRR sekä arbitraasi pörssissä eli monimarkkinapalvelu – ja niiden hinnat muodostuvat joka päivä uudelleen. Neljänneksi kulutusprofiilistanne ja liittymästänne, jotka määräävät varaston koon ja sen, kuinka suuri osa tehosta on markkinalle vapaana.
-Siksi annamme kolme skenaariota, jotka näyttävät, mistä tuotto riippuu, emme yhtä lukua.
+Siksi näytämme vaihteluvälin ja sen, mistä tuotto riippuu, emme yhtä lukua.
 
 Tarvitseeko akku aurinkopaneeleja tai omaa tuotantoa?
 Ei. Kaikki kolme kassavirtaa (tehomaksu, pörssisähkö, reservitulo) toimivat ilman aurinkoa. Liittymä riittää. Jos aurinkopaneelit ovat olemassa tai suunnitteilla, mukaan tulee neljäs mahdollisuus: oman tuotannon varastointi omaan käyttöön.
@@ -224,7 +234,7 @@ Arviossa on haarukka, joka riippuu liittymänne koosta ja kulutusprofiilistanne,
 Mistä hinta muodostuu
 
 Kauanko projekti kestää?
-Kartoituksesta käyttöönottoon kuluu tyypillisesti viikkoja, ei kuukausia — laitteet ovat varastosta saatavilla. Verkkoyhtiön vastausaika on oma eränsä: se eritellään arviossa erikseen, jotta se ei tule yllätyksenä.
+Aikataulu rakentuu kolmesta osasta: laitteen toimitusaika, joka vahvistetaan tarjouksessa laitekohtaisesti, asennusjono ja verkkoyhtiön vastausaika. Kaikki kolme eritellään arviossa, jotta mikään ei tule yllätyksenä.
 Näin projekti etenee
 
 Onko varasto turvallinen ja millainen takuu on?
@@ -246,7 +256,7 @@ Kahdessa arkipäivässä tiedätte, kannattaako akku kohteessanne ja miten. Arvi
 
 Liittymä ja kulutusprofiili tuntikohtaisista tiedoistanne
 Tehon jako oman kulutuksen, arbitraasin ja reservimarkkinan kesken
-Kolme reservimarkkinaskenaariota lähteineen
+Mallinnettu reservituotto tuotteittain lähteineen
 Verkkoyhtiön kanta ja se, mitä arvio ei sano
 
 Te annatte: tuntikohtaiset kulutustietonne (CSV-lataus Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta – neuvomme miten), yhden sähkölaskun ja pääkaavion.
@@ -293,7 +303,7 @@ Etusivu›Aurinkosähkö
 
 Aurinkosähkö, joka on tehty teidän kohteenne mukaan.
 
-Ratkaisu valitaan kulutusprofiilinne, kiinteistönne ja toiveidenne mukaan, ei kuvastosta: katolle, maahan tai kattoon integroituna. Ja kun aurinko ja akku toimivat yhdessä, oma tuotanto menee omaan käyttöön, ylijäämä varastoon ja sama akku reservimarkkinoille.
+Ratkaisu valitaan kulutusprofiilinne, kiinteistönne ja toiveidenne mukaan, ei kuvastosta: katolle, maahan tai kattoon integroituna. Ja kun aurinko ja akku toimivat yhdessä, oma tuotanto menee omaan käyttöön, ylijäämä varastoon ja sama akku reservimarkkinoille. Asennusta johtaa asennuspäällikkömme. Sähkötyöt ja käyttöönoton tekee rekisteröity sähköurakoitsijakumppanimme.
 
 Pyydä maksuton kartoitus
 
@@ -303,17 +313,106 @@ Aurinko + akkukeskipäivän ylijäämä iltaan, huiput pois, ja sama akku Fingri
 
 Jokainen kattotiili, pelti, profiilipelti, tasakatto, kattoon integroitu tai maa-asennus
 
-Oma tuotanto omaan käyttöön
-Aurinkosähkö maksaa itsensä parhaiten takaisin, kun se käytetään itse. Mitoitamme järjestelmän kulutusprofiilinne mukaan, jotta mahdollisimman vähän menee halvalla verkkoon.
+Viisi tapaa tuottaa aurinkosähköä. Yksi mitoitusperiaate.
+Ratkaisu valitaan sen mukaan, mitä kiinteistössä on: kunnossa oleva katto, uusittava katto, piha tai pysäköintialue, tai jo olemassa oleva aurinkovoimala. Mitoitus lähtee aina kulutuksesta, jotta mahdollisimman suuri osa tuotannosta käytetään itse.
 
-Aurinko ja akku yhdessä
-Akku siirtää keskipäivän ylijäämän iltaan, leikkaa huiput ja tuottaa reservimarkkinoilla. Jos aurinkosähkö on jo olemassa, akku tekee siitä paremman investoinnin.
+Mikä ratkaisu sopii teille
+Kartoitus tarkistaa jokaisen vaihtoehdon kohteenne tuntikulutuksesta, katosta ja liittymästä.
 
-Jokaiselle katolle ja pinnalle
-Tasakatto, tiilikatto, pelti- ja profiilipeltikatto, kattoon integroitu aurinkokatto tai maa-asennus. Ratkaisu valitaan katon, estetiikan ja kiinteistön vaatimusten mukaan – myös suojellussa rakennuksessa.
+Ratkaisu · Sopii, kun · Mitä se tekee · Kartoitus tarkistaa
+
+Aurinkovoimala katolle · Katto on kunnossa ja kestää vielä vuosikymmeniä · Tuottaa päiväsähköä omaan käyttöön ja pienentää ostettua sähköä · Kulutusprofiilin, katon kunnon ja kantavuuden, varjostuksen ja liittymän
+
+Aurinkokatto · Katto on joka tapauksessa uusittava · Kate ja paneeli ovat yksi rakenne: uusi katto ja voimala samalla investoinnilla · Katon rakenteen, kaltevuuden ja suunnan, luvat ja rakennuksen ilmeen
+
+Maa-asennus ja aurinkokatos · Pihalla, pellolla tai pysäköintialueella on tilaa · Tuottaa ilman kattoa; katos suojaa samalla ajoneuvoja ja antaa paikan latauspisteille · Maapohjan ja perustukset, kaapelireitin liittymään, kaavan ja luvat
+
+Aurinkosähkö ja sähkövarasto · Kulutus painottuu iltaan tai tehohuiput nostavat laskua · Siirtää keskipäivän ylijäämän iltaan, leikkaa huiput, ja vapaat tunnit tarjotaan reservimarkkinoille · Tuntikulutuksen ja tuotannon rinnakkain, tehomaksun ja liittymän vapaan kapasiteetin
+
+Sähkövarasto nykyiseen voimalaan · Aurinkovoimala on jo olemassa ja ylijäämä myydään halvalla verkkoon · Tekee jo maksetusta voimalasta paremman investoinnin: enemmän omaa käyttöä, huiput pois, reservit · Invertterien yhteensopivuuden, verkkoon syötön rajoituksen ja ohjausjärjestyksen
+
+Miten aurinkosähkö toimii yrityksen liittymässä.
+Aurinkovoimala tuottaa eniten kesäpäivän keskellä. Investoinnin kannattavuuden ratkaisee se, kuinka suuri osa tuotannosta käytetään itse, ja se riippuu kohteenne kulutusprofiilista, ei katon koosta. Siksi mitoitus alkaa 12 kuukauden tuntikulutuksesta.
+
+Tuotanto ja kulutus tunneittain
+Asetamme kohteenne tuntikulutuksen ja voimalan tuntituotannon rinnakkain koko vuodelta. Siitä näkyy, kuinka suuri osa tuotannosta menee suoraan omaan käyttöön, kuinka paljon jää yli ja millä voimalan koolla oma käyttö on suurin.
+
+Oma käyttö ennen myyntiä
+Ostetussa kilowattitunnissa maksatte energian lisäksi siirron ja verot. Myydystä ylijäämästä saatte vain energian hinnan, usein juuri niinä tunteina, joina se on halvin. Itse käytetty kilowattitunti on siis arvokkaampi kuin myyty, ja mitoitus tähtää omaan käyttöön.
+
+Suunta, kaltevuus, varjot ja invertteri
+Etelään suunnattu lape tuottaa eniten keskipäivällä. Itä-länsi-asennus tasakatolla jakaa tuotannon aamuun ja iltaan ja sopii usein paremmin yrityksen kulutukseen. Varjostus, lumikuorma ja invertterin mitoitus paneelitehoon nähden käydään läpi kartoituksessa.
+
+Verkkoyhtiö, luvat ja liittymä
+Tuotannon liittämisestä sovitaan verkkoyhtiönne kanssa ennen asennusta, ja luvan tarve riippuu kunnasta ja rakennuksesta. Hoidamme ilmoitukset, liittymisasiat ja dokumentaation ja tarkistamme samalla, mitä liittymänne sallii, jos myöhemmin lisätään akku tai latauspisteitä.
+
+Kartoitus näyttääennen kuin mitään tilataan
+
+Kirjallisessa arviossa on voimalan koko ja tuotantoarvio tunneittain, oman käytön osuus ja ylijäämä, ostetun sähkön vähenemä teidän hinnoillanne ja rinnalla sama laskelma akun kanssa. Jokaisen luvun vieressä on lähde ja jakso. Jos aurinkosähkö ei kannata kohteessanne, arvio sanoo sen.
+
+Katto, joka tuottaa.
+Katto on rakennuksen tärkein rakenne, ja sen uusiminen on iso investointi joka tapauksessa. Kun katto uusitaan, kattoon integroitu aurinkokatto tekee kaksi asiaa kerralla: uuden katon ja voimalan.
+
+Kate ja paneeli yhtenä
+Paneelit ovat osa katetta eivätkä erillinen rakenne katon päällä. Katto ja voimala suunnitellaan ja rakennetaan yhtenä, ja vesitiiveys on kattotyön vastuulla alusta loppuun.
+
+Halliin, maatilalle ja liikerakennukseen
+Suuret yhtenäiset kattopinnat ovat aurinkokaton luonteva paikka. Mitoitus tehdään kulutuksen mukaan, ei katon koon.
+
+Kun ilme ratkaisee
+Kun rakennuksen ulkonäkö on tärkeä, kattoon integroitu ratkaisu sovittaa aurinkosähkön rakennuksen ilmeeseen. Suojellussa rakennuksessa ratkaisu sovitaan museoviranomaisen kanssa.
+
+Kun katto uusitaanaurinkokaton hinta vertautuu uuteen kattoon
+
+Kun katto on uusittava lähivuosina, aurinkokaton hintaa verrataan uuteen kattoon, ei pelkkään voimalaan: kate maksetaan joka tapauksessa, ja voimalan osuus investoinnista jää pienemmäksi kuin erillisessä asennuksessa valmiin katon päälle. Kartoituksessa käydään läpi kattorakenteen kantavuus, kaltevuus ja suunta, lumi- ja tuulikuormat, paloturvallisuus ja luvan tarve.
+
+Katto- ja sähkötyö saman johdon alla.
+Aurinkosähkön asennus on kattotyötä ja sähkötyötä samalla työmaalla. Asennamme aurinkovoimalat valmiille katolle, maahan ja katokseen sekä rakennamme kattoon integroidut aurinkokatot. Asennusta johtaa asennuspäällikkömme, ja sähkötyöt ja käyttöönoton tekee rekisteröity sähköurakoitsijakumppanimme. Yksi johto, yksi aikataulu ja yksi dokumentaatio.
+
+Kattotyö
+Kiinnitykset, läpiviennit ja aurinkokaton kate tehdään kattotyön säännöillä, jotta katto pysyy vesitiiviinä voimalan alla. Asennusta johtaa asennuspäällikkömme, ja katto- ja sähkötyö tehdään saman johdon alla samalla työmaalla.
+
+Sähkötyö ja käyttöönotto
+Sähkötyöt tekee rekisteröity sähköurakoitsijakumppanimme: tasasähköpuolen kaapelointi, invertterit, liitäntä pääkeskukseen, suojaus ja mittaus. Käyttöönotossa järjestelmä tarkastetaan ja mitataan, ja dokumentit luovutetaan teille.
+
+Verkkoyhtiö ja viranomaiset
+Tuotannon liittämisilmoitus verkkoyhtiölle, lupa-asiat kunnan kanssa ja käyttöönottotarkastuksen dokumentaatio kulkevat meidän kautta. Te allekirjoitatte, me hoidamme muun.
 
 Kokemus, joka on jo tehty
 Tiimimme on rakentanut aurinkojärjestelmiä vuosia: kotiasennuksista ja suojellun talon aurinkokatosta yritysten, maatilojen ja jopa 400 kW:n peltoasennuksiin. Sama tiimi on valmis isompaan – megawattiluokan hankkeet ovat suunnitelmissa ja hallinnassa.
+
+Näin asennus etenee.
+Neljä vaihetta. Teidän osuutenne on tiedot, päätös ja allekirjoitus; muu kulkee meidän kautta.
+
+Kartoitus ja kirjallinen arvio
+Tuntikulutus Datahubista tai verkkoyhtiöltänne valtuutuksellanne, yksi lasku ja pääkaavio. Me kirjoitamme arvion: voimalan koko, oma käyttö, ylijäämä ja sama laskelma akun kanssa.
+SAMA · maksuton
+
+Kohdekäynti ja suunnittelu
+Katto, rakenteet, kaapelireitti ja keskus mitataan paikalla, verkkoyhtiön liittämisilmoitus ja luvat hoidetaan. Hinta vahvistetaan.
+SAMA + verkkoyhtiö
+
+Katto- ja sähköasennus
+Kattotyö ja sähkötyö samalla työmaalla, aikataulu toimintanne mukaan. Aurinkokatossa katto ja voimala rakennetaan yhtenä työnä.
+Asennuspäällikkö + sähköurakoitsija
+
+Käyttöönotto ja luovutus
+Tarkastus, mittaukset, dokumentit ja seurantanäkymä. Jos kokonaisuuteen kuuluu akku, se liitetään samassa vaiheessa aggregaattoriin.
+SAMA + te
+
+Aurinko ja akku yhdessä.
+Akku tekee aurinkovoimalasta paremman investoinnin, eikä aurinkovoimala ole akun edellytys: liittymä riittää. Kun molemmat ovat liittymän takana, ne tekevät kolme asiaa samasta laitteesta.
+
+Keskipäivän ylijäämä iltaan
+Se, mitä kulutus ei keskipäivällä käytä, ladataan akkuun ja käytetään illalla omien kulutushuippujen aikana sen sijaan, että se myytäisiin halvimmilla tunneilla.
+
+Huiput pois samasta akusta
+Jos verkkoyhtiönne perii tehomaksua, akku leikkaa kuukauden suurinta tehohuippua. Säästö lasketaan arviossa omalle rivilleen.
+
+Vapaat tunnit Fingridin reserveihin
+Tunteina, joina akkua ei tarvita omaan käyttöön, aggregaattori tarjoaa sen Fingridin reservimarkkinoille. Reservituotto mallinnetaan tuotteittain toteutuneista tuntihinnoista, ja aggregaattorin palkkio on omana rivinään. Mitä aggregaattori tekee
+
+Lähde reservimarkkinoiden toiminnasta: Fingrid, Aggregointi reservimarkkinoilla, tietopaketti · 3/2026
 
 Aurinkoa, akkua vai molemmat?
 Kartoitus vastaa kulutustiedoistanne, mikä yhdistelmä kannattaa juuri teillä.
@@ -372,7 +471,7 @@ Turvallisuus ja takuu
 Vaadimme valmistajalta LFP-kemiaa, kennotason valvonnalla varustettua akunhallintaa, lämpötilanhallintaa, ulko-olosuhteisiin tarkoitettua kaappia sekä CE- ja kuljetussertifikaatteja. Valmistajan takuu ja huoltoehdot ovat arviossa omalla rivillään. Kaikki vaatimukset →
 
 Asennus, toimitus ja huolto
-Asennusta johtaa asennuspäällikkömme yhdessä kumppaneiden kanssa; osa laitteista on Suomen varastossa, mikä lyhentää toimitusajan viikkoihin. Käyttöönoton jälkeen järjestelmää valvovat aggregaattori ja me, huolto kulkee sopimuksen mukaan. Juuri nyt Suomessa on varastosta saatavilla markkinoilla todistettuja akkuja erittäin hyvään hintaan; kun markkina ja hinta ovat kohdallaan, kannattaa liikkua, ja me kerromme, milloin ne ovat.
+Laitteet tulevat useammalta valmistajalta, ja toimitusaika vahvistetaan tarjouksessa laitekohtaisesti. Asennusta johtaa asennuspäällikkömme yhdessä kumppaneiden kanssa. Käyttöönoton jälkeen järjestelmää valvovat aggregaattori ja me, huolto kulkee sopimuksen mukaan. Kumppanit ja tuotteet
 
 Usein kysyttyä
 
@@ -453,13 +552,13 @@ Mitä täydemmin aggregaattori ohjaa, sitä enemmän tuottoa. Kun aggregaattori 
 
 Strategia tehdään teidän etunne mukaan. Jos myytte omaa aurinkosähköä tai tarvitsette akkua omiin huippuihin tai varavoimaksi, strategia rakennetaan sen ympärille. Aggregaattori optimoi, mutta teidän ehdoillanne ja teidän hyväksenne.
 
-Tuottoarvio käydään läpi yhdessä. Aggregaattori laatii oman tuottoarvionsa kohteenne akulle. Käymme sen läpi kartoituksessa ja sovitamme luvut teidän kohteeseenne, kirjallisesti ja kolmena skenaariona.
+Luvut kohteenne omista tunneista. Reservituotto mallinnetaan tuotteittain Fingridin toteutuneista tuntihinnoista niille tunneille, jotka kohteenne oma käyttö jättää vapaiksi. Jokaisen luvun vieressä on jakso ja lähde, ja aggregaattorin palkkio on omana rivinään.
 
-Pyydä maksuton kartoitus Miten aggregaattori toimii
+Pyydä maksuton kartoitus Mitä aggregaattori tekee
 
 Rehellisesti reservihinnoista.
 
-Hinnat vaihtelevat. Reservin hinta muodostuu markkinoilla joka päivä, ja markkina, jolle tulee lisää tarjoajia, ei pysy paikallaan. Siksi emme lupaa lukua, jota kukaan ei tiedä. Arviomme perustuu siihen, mitä Fingrid oikeasti hankkii ja mitä on tulossa, ja näytämme sen kolmena skenaariona, kirjallisesti.
+Hinnat vaihtelevat. Reservin hinta muodostuu markkinoilla joka päivä, ja markkina, jolle tulee lisää tarjoajia, ei pysy paikallaan. Siksi emme lupaa lukua, jota kukaan ei tiedä. Arviomme perustuu siihen, mitä Fingrid oikeasti hankkii ja mitä on tulossa, ja näytämme tulevan vaihteluvälinä, kirjallisesti.
 
 Teidän ei tarvitse seurata markkinaa. Aggregaattorin automaattinen ohjaus vie akun joka tunti kannattavimpaan reserviin, FCR-D:hen, FFR:ään tai muihin, ja vaihtaa tuotetta, kun hinnat liikkuvat. Te näette tuloksen seurantanäkymästä. Se on koko idea: itseohjautuva akku.
 
@@ -471,7 +570,7 @@ SAMA Energia
 Me rakennamme järjestelmän, aggregaattorin ohjelmisto hoitaa kaupankäynnin, ja te saatte optimoidut energiakulut. Kartoituksesta käyttöönottoon ja seurantaan, yhdellä yhteyshenkilöllä.
 
 Mitä aggregaattori tekee
-Aggregaattori liittää kohteenne Fingridin reservimarkkinoille, ohjaa akkua automaattisesti ja tilittää tuoton. Aggregaattorin tuottoarvio ja palkkio käydään läpi kartoituksessa.
+Kokoaa akut tarjoukseksi, ohjaa niitä automaattisesti ja tilittää tuoton. Kerromme, miten liittyminen etenee ja miten valitsemme aggregaattorin kohteellenne.
 
 Lue lisää
 
@@ -490,7 +589,7 @@ Lähde: Fingrid, Energiavarastot reservimarkkinoilla · 10.2.2025
 VapausYritys, joka pystyy varastoimaan ja ajoittamaan oman energiansa, ei ole yhden tunnin hinnan armoilla. Maa, jossa tällaisia yrityksiä on tuhat, ei ole yhdenkään toimittajan armoilla. Sama logiikka kahdessa kokoluokassa, ja se on syy siihen, miksi tämä työ on isompi asia kuin yksi laite yhden rakennuksen vieressä.
 
 Katsotaan, mitä akku tuottaisi teidän liittymänne takana.
-Maksuton kartoitus, kirjallinen arvio kolmena skenaariona, ei sitoumuksia.
+Maksuton kartoitus, kirjallinen arvio kohteenne tuntidatasta, ei sitoumuksia.
 
 Pyydä maksuton kartoitus
 
@@ -530,7 +629,7 @@ Kirjalliset takuuehdot vuosina ja sykleinä, sallittu kapasiteetin lasku ja se, 
 Huolto ja varaosat Suomessa sovitulla vasteajalla; dokumentaatio suomeksi tai englanniksi.
 
 Valmistajille ja maahantuojille.
-Jos laitteenne täyttää listan ja haluatte Suomen ja Viron markkinoille, kirjoittakaa info@samaenergia.fi. Mitä me annamme: kaksi markkinaa, reservimarkkinoille pääsy aggregaattorin kautta kummallakin, asennuskumppanit ja arvioon perustuva myynti, joka ei lupaa laitteelta enempää kuin se tekee.
+Jos laitteenne täyttää listan ja haluatte Suomen ja Viron markkinoille, kirjoittakaa info@samaenergia.fi. Mitä me annamme: kaksi markkinaa, pääsy reservimarkkinoille kummallakin aggregaattorin kautta, asennuskumppanit ja arvioon perustuva myynti, joka ei lupaa laitteelta enempää kuin se tekee.
 
 Sopiiko teidän kohteenne?
 Maksuton kartoitus kertoo, millainen järjestelmä liittymänne taakse mahtuu ja mitä se siellä tuottaisi.
@@ -581,7 +680,7 @@ Etusivu›Reservimarkkinat›Aggregaattori
 
 Aggregaattori vie akkunne markkinoille.
 
-Fingridin reservimarkkinoille ei osallistu yksittäinen tehdas vaan reservitoimittaja, joka kokoaa monta kohdetta yhdeksi tarjoukseksi, läpäisee Fingridin kokeet ja ohjaa akkuja automaattisesti. Tällä sivulla kerromme, mitä aggregaattori tekee, miten liittyminen etenee ja mitä sopimuksessa kannattaa katsoa.
+Fingridin reservimarkkinoille ei osallistu yksittäinen tehdas vaan reservitoimittaja, joka kokoaa monta kohdetta yhdeksi tarjoukseksi, läpäisee Fingridin kokeet ja ohjaa akkuja automaattisesti. Me valitsemme kohteellenne sopivimman aggregaattorin, rakennamme yhteyden siihen ja viemme liittymisen läpi. Tällä sivulla kerromme, mitä aggregaattori tekee, miten liittyminen etenee ja millä perusteilla valinta tehdään.
 
 Pyydä maksuton kartoitus Reservimarkkinat selkokielellä
 
@@ -617,19 +716,19 @@ Fingrid maksaa korvauksen reservitoimittajalle, joka tilittää sen teille sopim
 
 Näin liittyminen etenee.
 
-Neljä vaihetta, joista teidän osuutenne on allekirjoitus. Kaikki muu kulkee meidän ja aggregaattorin kautta.
+Neljä vaihetta, joista teidän osuutenne on rajojen asettaminen ja allekirjoitus. Me viemme prosessin läpi valinnasta säätökokeeseen.
 
-Tekninen tarkistus
-Invertterin teho, akun kapasiteetti, mittaus ja tiedonsiirto tarkistetaan reservituotteiden vaatimuksia vasten. Samalla päätetään, mihin reserveihin akku sopii.
-SAMA + aggregaattori
+Tekninen tarkistus ja aggregaattorin valinta
+Invertterin teho, akun kapasiteetti, mittaus ja tiedonsiirto tarkistetaan reservituotteiden vaatimuksia vasten. Samalla päätetään, mihin reserveihin akku sopii ja mikä aggregaattori on niissä vahvin.
+SAMA
 
 Sopimus aggregaattorin kanssa
-Sovitaan ohjauksen rajat, teidän etusijanne (huiput, varavoima, oma tuotanto), tuoton jako ja raportointi. Ehdot ovat kirjallisessa arviossa ennen allekirjoitusta.
-Te + aggregaattori
+Neuvottelemme ehdot: ohjauksen rajat, teidän etusijanne (huiput, varavoima, oma tuotanto), tuoton jako ja raportointi. Ehdot ovat kirjallisessa arviossa ennen allekirjoitusta.
+SAMA neuvottelee, te allekirjoitatte
 
-Säätökoe Fingridin kanssa
-FFR-, FCR-D-, FCR-N- ja aFRR-tuotteissa reserviresurssi läpäisee säätökokeen ennen markkinoille pääsyä. Aggregaattori hoitaa kokeen ja dokumentaation.
-Aggregaattori + Fingrid
+Liittäminen ja säätökoe
+Rakennamme tiedonsiirto- ja ohjausyhteyden akun ja aggregaattorin välille. FFR-, FCR-D-, FCR-N- ja aFRR-tuotteissa reserviresurssi läpäisee Fingridin säätökokeen ennen markkinoille pääsyä; aggregaattori hoitaa kokeen ja dokumentaation.
+SAMA + aggregaattori + Fingrid
 
 Markkinoille ja seurantaan
 Aggregaattori tekee tarjoukset joka päivälle, ohjaa akkua ja tilittää tuoton. Te näette tuloksen seurantanäkymästä, selkokielellä.
@@ -652,13 +751,25 @@ Akun ohjaus · Oma ohjausjärjestelmä ja tiedonsiirto Fingridiin · Automaattin
 
 Tilitys ja raportointi · Itse · Aggregaattori tilittää tuoton ja raportoi
 
-Me rakennamme akun. Aggregaattori vie sen markkinoille.
+Näin valitsemme aggregaattorin.
 
-SAMA Energia ei ole aggregaattori. Suunnittelemme, toimitamme, asennamme ja otamme akun käyttöön; aggregaattori liittää sen Fingridin reservimarkkinoille, ohjaa sitä ja tilittää tuoton. Emme ole sidoksissa yhteen aggregaattoriin. Aggregaattorin tuottoarvio, palkkio ja sopimusehdot käydään läpi kartoituksessa ja kirjataan arvioon kolmena skenaariona.
+SAMA Energia ei ole aggregaattori. Fingridin reservitoimittajaluettelossa on useita aggregaattoreita, ja niiden tuotteet ja ehdot eroavat. Me emme ole sidottuja yhteen. Vertaamme vaihtoehtoja kohteenne akun, kulutuksen ja tuotteiden mukaan samoilla neljällä perusteella, kirjaamme valinnan perusteet kirjalliseen arvioon ja rakennamme yhteyden valittuun aggregaattoriin: sopimuksen, tiedonsiirron ja ohjauksen.
+
+Hyväksytty reservitoimittaja
+Aggregaattori on Fingridin reservitoimittajaluettelossa tai toimii sellaisen kautta, ja sen akut ovat läpäisseet säätökokeet niissä tuotteissa, joihin teidän akkunne tarjotaan.
+
+Ehdot ja palkkio auki
+Palkkio, sopimuksen kesto ja irtisanomisehdot ovat kirjallisesti ennen allekirjoitusta, ja palkkio on arviossa omana rivinään, ei piilotettuna tuottoon.
+
+Kohteen tarve ensin
+Ohjausstrategia rakennetaan teidän huippujenne, varavoiman ja oman tuotannon ympärille. Markkinoille menee se, mikä liittymästä jää yli, tunneittain.
+
+Toteutuneet luvut jaksoineen
+Aggregaattori näyttää, mitä vastaavat akut ovat tuottaneet, minkä jakson ajalta ja ennen vai jälkeen palkkion. Ilman jaksoa luku ei mene arvioon.
 
 Teidän ehdoillannestrategia asiakkaan edun mukaan
 
-Jos myytte omaa aurinkosähköä tai tarvitsette akkua omiin huippuihin tai varavoimaksi, ohjausstrategia rakennetaan sen ympärille. Aggregaattori optimoi markkinaa vasten, mutta rajat ja tavoitteet asetatte te, ja ne kirjataan arvioon ennen allekirjoitusta.
+Jos myytte omaa aurinkosähköä tai tarvitsette akkua omiin huippuihin tai varavoimaksi, ohjausstrategia rakennetaan sen ympärille. Aggregaattori optimoi markkinaa vasten, mutta rajat ja tavoitteet asetatte te, ja ne kirjataan arvioon ennen allekirjoitusta. Me viemme prosessin läpi aggregaattorin valinnasta sopimukseen, liittämiseen ja säätökokeeseen; teidän osuutenne on asettaa rajat ja allekirjoittaa.
 
 Kysymykset, jotka kysytään ennen sopimusta.
 
@@ -673,13 +784,16 @@ Voiko akkua käyttää samaan aikaan omiin tarpeisiin?
 Kyllä. Ohjausstrategiassa sovitaan etusija: huippujen leikkaus, varavoima ja oma tuotanto ensin, reservi jäljelle jäävällä kapasiteetilla. Mitä enemmän kapasiteettia aggregaattori saa ohjata, sitä enemmän reservituottoa syntyy. Se on tasapaino, joka lasketaan arviossa auki.
 
 Miten aggregaattori saa palkkionsa?
-Palkkio sovitaan aggregaattorisopimuksessa, ja kirjallisessa arviossa se on omana rivinään, ei piilotettuna tuottoarvioon. Näette, mitä Fingrid maksaa, mitä aggregaattori ottaa ja mitä teille jää, kolmena skenaariona.
+Palkkio sovitaan aggregaattorisopimuksessa, ja kirjallisessa arviossa se on omana rivinään, ei piilotettuna tuottoarvioon. Näette reservituoton ennen palkkiota, mitä aggregaattori ottaa ja mitä teille jää.
+
+Minkä aggregaattorin kanssa SAMA toimii?
+Emme ole sidottuja yhteen aggregaattoriin. Valitsemme kohteellenne sopivimman Fingridin hyväksymistä reservitoimittajista tällä sivulla kuvatuilla neljällä perusteella ja kirjaamme valinnan perusteet arvioon. Sopimuksen aggregaattorin kanssa teette te; me neuvottelemme ehdot, rakennamme yhteyden ja viemme liittymisen läpi.
 
 Mitä jos haluamme myöhemmin vaihtaa aggregaattoria?
 Akku ja liittymä ovat teidän. Sopimuksen kesto ja irtisanomisehdot käydään läpi ennen allekirjoitusta ja kirjataan arvioon, jotta tiedätte etukäteen, mihin sitoudutte ja kuinka pitkäksi aikaa.
 
-Mitä akku voisi tuottaa teidän kohteessanne?
-Kartoitus vastaa siihen kirjallisesti: säästöt kulutustiedoistanne ja reservituotto kolmena skenaariona.
+Katsotaan, mitä akku tekisi teidän liittymänne takana.
+Kartoituksessa selvitämme, mihin reserveihin akku sopii ja mitä se tuottaisi tuotteittain ennen aggregaattorin palkkiota.
 
 Pyydä maksuton kartoitus Takaisin reservimarkkinoihin
 
@@ -704,7 +818,7 @@ MaksutonArvio
 Jokaiselle yritykselle, jolla on oma sähköliittymä – myös silloin, kun tarjous on jo kädessä.
 
 Mitä sisältää
-Kaksi sivua: liittymä ja kulutusprofiili, tehon jako oman kulutuksen, arbitraasin ja reservimarkkinan kesken, kolme reservimarkkinaskenaariota lähteineen, verkkoyhtiön kanta ja se, mitä arvio ei sano.
+Kaksi sivua: liittymä ja kulutusprofiili, tehon jako oman kulutuksen, arbitraasin ja reservimarkkinan kesken, mallinnettu reservituotto tuotteittain lähteineen, verkkoyhtiön kanta ja se, mitä arvio ei sano.
 
 Mitä te annatte
 Tuntikohtaiset kulutustietonne (CSV-lataus Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta – neuvomme miten), yhden sähkölaskun ja pääkaavion.
@@ -756,7 +870,7 @@ Näin se etenee – ja mikä maksaa milloin.
 Ketään ei lähetetä minnekään ennen kuin tiedot ovat käsillä. Kaksi ensimmäistä askelta ovat maksuttomia, kohdekäynti hyvitetään sopimuksessa, suunnittelu ja asennus kulkevat sopimuksen mukaan.
 
 01Maksuton kartoitus
-Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubista tai verkkoyhtiöltänne), yhden laskun ja pääkaavion; me kirjoitamme arvion: liittymä, kulutusprofiili, tehon jako, kolme skenaariota lähteineen.
+Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubista tai verkkoyhtiöltänne), yhden laskun ja pääkaavion; me kirjoitamme arvion: liittymä, kulutusprofiili, tehon jako, mallinnettu reservituotto tuotteittain lähteineen.
 Maksuton · aikaanne noin 20 minuuttia
 
 02Esitarkastus
@@ -786,7 +900,7 @@ Jokainen luku kirjallisesti, lähteineen
 Arviossa ei ole yhtään lukua, jonka alkuperää ette voisi itse tarkistaa. Jos jokin on oletus, se on merkitty oletukseksi.
 
 Reservitulo analysoituna, ei arvattuna
-Näytämme matalan, keskimääräisen ja korkean skenaarion, koska markkina muuttuu. Skenaariot perustuvat siihen, mitä Fingrid oikeasti hankkii ja mitä on tulossa, ei kenenkään tuntumaan.
+Näytämme vaihteluvälin, koska markkina muuttuu. Vaihteluväli perustuu siihen, mitä Fingrid oikeasti hankkii ja mitä on tulossa, ei kenenkään tuntumaan.
 
 Verkkoyhtiön kanta ennen pääomaa
 Tekniset ehdot ja liittymisvastaus ovat kädessä ennen kuin laitatte rahaa kiinni. Odotusajat on eritelty arviossa.
@@ -810,10 +924,189 @@ Laskelma teidän omista tuntikohtaisista kulutustiedoistanne
 
 Verkkoyhtiön kanta kädessä ennen pääoman sitomista
 
-Reservimarkkinoiden logiikka selitetty, tulo analysoitu skenaarioina
+Reservimarkkinoiden logiikka selitetty, tulo analysoitu tuotteittain
 
 Ensimmäinen askel on maksuton.
 Kysely ja kulutustiedot, ja tiedätte kahdessa arkipäivässä, kannattaako ja miten jatkaa.
+
+Pyydä maksuton kartoitus
+
+# Kumppanit ja tuotteet — SAMA Energia — https://samaenergia.fi/kumppanit/
+
+Etusivu›Kumppanit ja tuotteet
+
+Useita valmistajia. Yksi tarjous kohteenne mukaan.
+
+Tunnemme markkinan: valmistajat, maahantuojat, aggregaattorit ja hintatason. Meillä on useita laitetoimittajia, ja niiden kautta tarjoamme energiavarastot siirrettävästä yksiköstä konttiin, latausasemien varastot ja mikroverkot, aurinkosähkön ja asennuksen. Kokoamme tarjouksen kohteenne kulutuksen, liittymän ja tavoitteiden mukaan, valitsemme toimittajien valikoimasta parhaiten sopivan laitteen ja vertaamme vaihtoehdot samoilla luvuilla.
+
+Pyydä maksuton kartoitus Valikoima tarpeen mukaan
+
+47 kWh–5 MWhvarastokoot siirrettävästä yksiköstä 20 jalan konttiin
+
+200–600 kWpikalatausteho latausaseman mikroverkossa
+
+Lähteet: valmistajien tuotesivut, luettu 23.10.2026. Valmistaja ja malli nimetään tarjouksessa.
+
+Valikoima kohteen tarpeen mukaan.
+
+Lähdemme liikkeelle siitä, mitä kohteenne tarvitsee, emme siitä, mitä varastossa on. Taulukko näyttää, mistä vaihtoehdot kootaan. Lopullinen kokoonpano lasketaan kartoituksessa kulutustiedoistanne. Jokainen malli käy läpi laitevaatimuksemme ennen kuin se on tarjouksessa.
+
+Tarve ja ratkaisu
+Tekniset tiedot valmistajien tuotesivuilta ja tuotetiedotteista, luettu 23.10.2026. Valmistaja ja malli nimetään tarjouksessa.
+
+Kohteen tarve · Ratkaisu · Teho ja energia
+
+Yrityksen liittymä,
+100 kW–1 MW · Nestejäähdytetty ulkokaappi useammalta valmistajalta, esimerkiksi Ralos Beast 125 HD (Ralos Oy). Kaappeja rinnan kohteen mukaan. · 125 kW / 261 kWh kaappia kohden
+
+Pienempi kohde · Hybridikaappi pienempään liittymään. · 50 kW / 104 tai 156 kWh
+
+Suuri kohde tai
+oma muuntamo · Konttivarasto, 20 jalan kontti. · 1 000 kW / 2 170 kWh (400 V)
+noin 5 MWh 20 jalan kontissa
+
+Latausasema, varikko
+tai huoltoasema · Mikroverkko ja pikalataus tai akulla varustettu DC-pikalaturi. Aurinkokatoksen asennusta johtaa asennuspäällikkömme. · Mikroverkko: varasto 200 kW / 250 kWh tai 400 kW / 500 kWh, pikalataus 200–600 kW
+DC-pikalaturi: 209 kWh, autoon enintään 240 kW
+
+Työmaa, tapahtuma tai
+tilapäinen tehontarve · Siirrettävä yksikkö. · 11 kW / 47 kWh
+60 kW / 93 kWh tai 240 kW / 209 kWh
+
+Varavoima
+sähkökatkossa · Siirtokytkin (STS) saarekekäyttöön. Varmennetut piirit ja saarekekäyttö suunnitellaan kohteittain. · 2–6 kaappia, vaihto 20 ms
+
+Aurinkosähkö ja
+lämpöpumput · Paneelit, invertterit ja lämpöpumput: Scanoffice Oy. Asennusta johtaa asennuspäällikkömme, sähkötyöt tekee JSM Automaatiosähkö Oy. · Mitoitus kulutuksen ja katon mukaan
+
+Latausasema: varasto ottaa huipun.
+
+Pikalaturi tarvitsee suuren tehon lyhyeksi ajaksi. Kun liittymän koko rajoittaa latausta, paikallinen varasto antaa huipputehon ja latautuu tasaisesti liittymästä ja aurinkosähköstä. Näin lataustehoa voi kasvattaa, vaikka liittymää ei kasvatettaisi samassa suhteessa.
+
+Liittymä lataa varastoa tasaisesti.
+
+Varasto antaa latauksen huipputehon, kun auto kytketään.
+
+Aurinkokatos tuottaa päivällä sähköä varastoon ja latureihin.
+
+Pikalaturit mitoitetaan kohteen liikenteen mukaan.
+
+Ohjaus ennustaa kulutuksen, tuotannon ja hinnan ja ajoittaa lataukset.
+
+Mikroverkko latausasemalle
+Latausasemille, varikoille, huoltoasemille ja logistiikkakeskuksille: varasto 200 kW / 250 kWh tai 400 kW / 500 kWh, integroitu pikalataus 200–600 kW ja ohjaus, joka ennustaa kulutuksen, tuotannon ja hinnan.
+Lähde: valmistajan tuotesivu, luettu 23.10.2026.
+
+Akulla varustettu pikalaturi
+DC-pikalaturi: verkosta enintään 60 kW, autoon enintään 240 kW tai 2 × 120 kW. Erotuksen antaa 209 kWh:n akku. Kaksi CCS2-liitintä.
+Lähde: valmistajan tuotesivu, luettu 23.10.2026.
+
+Aurinkokatos
+Katos suojaa autoja ja tuottaa sähköä varastoon ja latureihin. Voimalan koko mitoitetaan kohteen kulutuksen ja tilan mukaan. Asennusta johtaa asennuspäällikkömme, ja sähkötyöt tekee rekisteröity sähköurakoitsijakumppanimme.
+Näin asennus etenee
+
+Näin kokoamme tarjouksen.
+
+Vertailu on meidän työtämme. Saatte valmiin vertailun samoilla luvuilla ja perustelun sille, miksi suosittelemme juuri sitä vaihtoehtoa.
+
+01Tarve ensin
+Kulutus tunneittain, liittymä, tila ja tavoitteet. Kartoitus kertoo, mitä kohde tarvitsee: varaston koon, latauksen, aurinkosähkön tai varavoiman.
+Maksuton kartoitus
+
+02Vaihtoehdot toimittajilta
+Valitsemme valikoimasta mallit, jotka sopivat kohteen tehoon, tilaan ja käyttöön, ja pyydämme ajantasaiset hinnat ja toimitusajat.
+Useampi valmistaja
+
+03Vertailu samoilla luvuilla
+Laite, asennus, takuu, reservimarkkinakelpoisuus ja toimitusaika rinnakkain kirjallisessa arviossa.
+Kirjallinen arvio
+
+04Yksi vastuu toteutuksesta
+Toimitamme, asennamme ja liitämme järjestelmän sekä hoidamme verkkoyhtiön ilmoitukset ja aggregaattorisopimuksen. Teillä on yksi yhteyshenkilö.
+Projektinjohto SAMAlta
+
+Tarjouksen hinta on vertailtu useamman valmistajan kesken ennen kuin näette sen.
+
+Pyydä maksuton kartoitus
+
+Kumppanit, joiden kanssa toimimme.
+
+Kumppanit tuovat valikoiman, me tuomme kokonaisuuden: mitoituksen, vertailun, asennuksen ja liittämisen. Tuotetiedot ovat kumppaneiden omista materiaaleista, lähteineen.
+
+Energiavarastot, kontit ja mikroverkot
+Kaappikoosta konttiin ja latausaseman mikroverkkoon. Toimimme useamman valmistajan kanssa ja valitsemme mallin kohteen tehon, energian, tilan ja käytön mukaan.
+
+Energiavarastot useammalta valmistajaltaKaapit, kontit, hybridikaapit, mikroverkot, siirrettävät yksiköt ja pikalaturit
+Valitsemme toimittajiemme valikoimasta mallin, joka sopii kohteen tehoon, tilaan ja käyttöön. Valmistaja ja malli nimetään tarjouksessa, ja vaihtoehdot vertaillaan samoilla luvuilla.
+Ulkokaappi125 kW / 261 kWh · nestejäähdytys
+Hybridikaappi50 kW / 104 tai 156 kWh
+Konttivarasto1 000 kW / 2 170 kWh tai noin 5 MWh · 20 jalan kontti
+Mikroverkko200 kW / 250 kWh tai 400 kW / 500 kWh, pikalataus 200–600 kW
+Siirrettävä yksikkö11 kW / 47 kWh – 240 kW / 209 kWh
+DC-pikalaturi209 kWh:n akku, autoon enintään 240 kW
+
+Lähteet: valmistajien tuotesivut, luettu 23.10.2026.
+
+Ralos
+SuomiRalos OyEnergiavarastot · Tampere
+Suomalainen aurinkosähkön ja energiavarastojen toimittaja: Ralos Beast 125 HD -energiavarasto ulkoasennukseen, STS-varavoimakytkentä mukana.
+Ralos Beast 125 HD125 kW / 261 kWh · IP54, STS alle 10 ms
+
+Lähde: Ralos Oy, Ralos Beast 125 tekninen tiedote V10.
+
+ralos.fi
+
+Aurinkosähkö ja lämpöpumput
+Paneelit, invertterit ja lämpöpumput maahantuojalta. Voimalan ja aurinkokaton asennusta johtaa asennuspäällikkömme.
+
+Scanoffice
+SuomiScanoffice OyLaitteiden maahantuoja · Espoo
+Kotimainen puhtaan energian laitteiden maahantuoja: lämpöpumput, aurinkopaneelit, sähköautojen lataus ja ilmanvaihto.scanoffice.fi
+
+Asennus ja käyttöönotto
+Asennusta johtaa asennuspäällikkömme. Sähkötyöt ja käyttöönoton tekee rekisteröity sähköurakoitsijakumppanimme.
+
+SAMA
+SuomiAsennuksen johtoAsennuspäällikkö · katto- ja sähkötyö saman johdon alla
+Asennuspäällikkömme johtaa työmaan: yksi aikataulu toimintanne mukaan ja yksi dokumentaatio.Näin asennus etenee
+
+JSM
+SuomiJSM Automaatiosähkö OySähköasennukset ja käyttöönotto · Pirkanmaa
+Sähköurakoitsija Sastamalasta, varasto Tampereella. Aurinkosähkö, akustot ja reservimarkkina-akut, lämpöpumput ja sähköautojen lataus.jsmautomaatiosahko.fi
+
+Pääsy reservimarkkinoille
+Aggregaattori kokoaa akut tarjoukseksi, ohjaa niitä automaattisesti ja tilittää tuoton.
+
+SuomiAggregaattori valitaan kohteen mukaanFingridin hyväksymä reservitoimittaja
+Vertaamme reservitoimittajat kohteenne akun ja tuotteiden mukaan. Valinnan perusteet kirjataan arvioon, ja me rakennamme yhteyden valittuun aggregaattoriin.Näin valitsemme aggregaattorin
+
+Soleron
+ViroSoleron Energy OÜAggregaattori · Eleringin reservimarkkinat
+Virolainen energiavarasto- ja energianhallintayhtiö: oma EMS-ohjelmisto ja aggregointi Eleringin taajuusreserveihin.soleronenergy.ee
+
+Kysyttyä valikoimasta.
+
+Miksi tarjoatte useampaa merkkiä?
+Koska kohteet eroavat toisistaan: liittymä, kulutus, tila ja tavoitteet. Laajan valikoiman ansiosta tarjous kootaan kohteen tarpeen mukaan. Vertailu samoilla luvuilla on kirjallisessa arviossa.
+
+Voimmeko pyytää tiettyä valmistajaa tai mallia?
+Voitte. Laskemme pyytämänne mallin samoilla luvuilla kuin muut vaihtoehdot, ja arviosta näkee erot.
+
+Kuka vastaa takuusta ja huollosta?
+Valmistajan takuu kulkee maahantuojan tai valmistajan kautta, ja ehdot kirjataan tarjoukseen laitekohtaisesti. Takuu- ja huoltoasiat hoidetaan meidän kauttamme: teillä on yksi yhteyshenkilö.
+
+Missä näkyvät hinnat?
+Tarjouksessa, kohteellenne laskettuina: laite, asennus, rahti ja liittäminen omilla riveillään.
+
+Sopivatko laitteet reservimarkkinoille?
+Reservimarkkinakelpoisuus todennetaan aggregaattorin kanssa laite- ja tuotekohtaisesti säätökokein. Arvio kertoo, mihin reservituotteisiin kohteenne järjestelmä on tarkoitus liittää.
+
+Olemme valmistaja tai maahantuoja. Miten pääsemme valikoimaan?
+Laitevaatimuksemme ovat julkiset. Jos laitteenne täyttää ne, kirjoittakaa osoitteeseen info@samaenergia.fi.
+Laitevaatimuksemme
+
+Kertokaa kohteestanne. Kokoamme vaihtoehdot.
+Kartoitus on maksuton, ja vertailu tulee kirjallisena.
 
 Pyydä maksuton kartoitus
 
@@ -881,20 +1174,28 @@ Verkosto projektinne takana.
 Jokainen projekti tarvitsee meidän lisäksemme neljä asiaa: markkinoillepääsyn, laitteet, asennuksen ja rahoituksen. Nämä kumppanit antavat ne, molemmilla markkinoilla.
 
 Pääsy reservimarkkinoille
-Aggregaattori kokoaa akut tarjoukseksi, ohjaa niitä automaattisesti ja tilittää tuoton.
+Aggregaattori kokoaa akut tarjoukseksi, ohjaa niitä automaattisesti ja tilittää tuoton. Suomessa valitsemme aggregaattorin kohteen mukaan, Virossa kumppanimme on Soleron Energy.
 
-SuomiAggregaattoriFingridin reservimarkkinat
-Emme ole sidoksissa yhteen aggregaattoriin. Aggregaattorin ehdot ja palkkio käydään läpi kartoituksessa ja kirjataan arvioon ennen allekirjoitusta.Näin aggregointi toimii
+SuomiAggregaattori valitaan kohteen mukaanFingridin hyväksymä reservitoimittaja · ei sidosta yhteen
+Vertaamme Fingridin reservitoimittajia kohteenne akun ja tuotteiden mukaan neljällä perusteella: hyväksyntä ja säätökokeet, ehdot ja palkkio auki, kohteen tarve ensin, toteutuneet luvut jaksoineen. Valinnan perusteet kirjataan arvioon, ja me rakennamme yhteyden valittuun aggregaattoriin.Näin valitsemme aggregaattorin
+
 Soleron
 ViroSoleron Energy OÜAggregaattori · Eleringin reservimarkkinat
 Virolainen energiavarasto- ja energianhallintayhtiö: oma EMS-ohjelmisto, aggregointi Eleringin taajuusreserveihin, varastojen suunnittelu ja asennus. Julkaisee reservimarkkinakatsauksia omalla sivullaan.soleronenergy.ee
 
-Laitteet ja toimitus
-Varastot valitaan kohteen mukaan. Osa laitteista on Suomen varastossa, mikä lyhentää toimitusajan viikkoihin.
+Energiavarastot, lataus ja mikroverkot
+Useampi valmistaja, malli kohteen mukaan. Vertailu on arviossa samoilla luvuilla.
+Kumppanit ja tuotteet
+
+Useampi valmistajaKaapit, kontit, hybridikaapit, mikroverkot ja pikalaturit
+Valitsemme toimittajiemme valikoimasta mallin kohteen tehon, tilan ja käytön mukaan. Valmistaja ja malli nimetään tarjouksessa.Mallit ja luvut
 
 Ralos
 SuomiRalos OyEnergiavarastot · Tampere
 Aurinkosähkön ja energiavarastojen toimittaja: LFP-varastot ulkoasennukseen.ralos.fi
+
+Aurinkosähkö ja lämpöpumput
+Paneelit, invertterit ja lämpöpumput maahantuojalta. Voimalan ja aurinkokaton asennusta johtaa asennuspäällikkömme.
 
 Scanoffice
 SuomiScanoffice OyLaitteiden maahantuoja · Espoo
@@ -1059,7 +1360,7 @@ Mitä tämä ei tarkoita
 
 Se ei tarkoita taattua tuottoa. Reservin hinta muodostuu markkinoilla joka päivä, ja kun tarjoajia tulee lisää, hinta liikkuu. Se ei myöskään tarkoita, että jokainen iso liittymä kannattaa: jos kulutus on tasaista ja huiput matalia, tehomaksusäästö jää pieneksi ja koko laskelma nojaa yhteen tulonlähteeseen. Sen näkee vasta tuntikohtaisista kulutustiedoista.
 
-Siksi emme lupaa lukua. Näytämme kolme skenaariota ja pidämme tehomaksu- ja pörssisähkösäästön erillisellä rivillä, koska ne eivät riipu reservimarkkinan hinnasta.
+Siksi emme lupaa lukua. Mallinnamme reservituoton tuotteittain toteutuneista tuntihinnoista jaksoineen ja pidämme tehomaksu- ja pörssisähkösäästön erillisellä rivillä, koska ne eivät riipu reservimarkkinan hinnasta.
 
 Mitä tehdä nyt
 
@@ -1067,7 +1368,7 @@ Tarkistakaa liittymänne koko ja käyttöaste. Pääsulake tai liittymisteho ja 
 
 Ottakaa tuntikohtaiset kulutustiedot esiin. Vuoden tuntidata kertoo enemmän kuin mikään laskuri: sieltä näkyvät sekä huiput että se, kuinka suuri osa liittymästä seisoo käyttämättä.
 
-Pyytäkää laskelma, älkää lupausta. Kirjallinen arvio, jossa jokaisella luvulla on lähde ja reservituotto on kolmena skenaariona. Meiltä tai joltain muulta, mutta kirjallisena.
+Pyytäkää laskelma, älkää lupausta. Kirjallinen arvio, jossa jokaisella luvulla on lähde ja reservituotto on mallinnettu tuotteittain. Meiltä tai joltain muulta, mutta kirjallisena.
 
 Lähteet
 
@@ -1083,7 +1384,7 @@ MM
 Madis MaastikMyyntijohtaja, SAMA Energiamadis.maastik@samaenergia.fi
 
 Onko teidän liittymässänne vapaata kapasiteettia?
-Maksuton kartoitus vastaa siihen kirjallisesti, tuntikohtaisista kulutustiedoistanne, reservimarkkinaskenaarioineen.
+Maksuton kartoitus vastaa siihen kirjallisesti, tuntikohtaisista kulutustiedoistanne, mallinnettu reservituotto tuotteittain eriteltynä.
 
 Pyydä maksuton kartoitus Takaisin katsauksiin
 
@@ -1097,7 +1398,7 @@ Kahdessa arkipäivässä tiedätte, kannattaako akku kohteessanne ja miten. Arvi
 
 Liittymä ja kulutusprofiili tuntikohtaisista tiedoistanne
 Tehon jako oman kulutuksen, arbitraasin ja reservimarkkinan kesken
-Kolme reservimarkkinaskenaariota lähteineen
+Mallinnettu reservituotto tuotteittain lähteineen
 Verkkoyhtiön kanta ja se, mitä arvio ei sano
 
 Te annatte: tuntikohtaiset kulutustietonne (CSV-lataus Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta – neuvomme miten), yhden sähkölaskun ja pääkaavion.
@@ -1315,7 +1616,7 @@ Kuidas see käib – ja mis millal maksab.
 Kedagi ei saadeta kuhugi enne, kui andmed on käes. Kaks esimest sammu on tasuta, objektikülastus arvestatakse lepingus maha, projekteerimine ja paigaldus käivad lepingu järgi.
 
 01Tasuta hindamine
-Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või teie võrguettevõtjalt), ühe arve ja peakilbi skeemi; meie kirjutame hinnangu: liitumine, tarbimisprofiil, võimsuse jaotus, kolm stsenaariumi allikatega.
+Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või teie võrguettevõtjalt), ühe arve ja peakilbi skeemi; meie kirjutame hinnangu: liitumine, tarbimisprofiil, võimsuse jaotus, modelleeritud reservitulu toodete kaupa allikatega.
 Tasuta · teie aeg umbes 20 minutit
 
 02Eelkontroll
@@ -1384,13 +1685,13 @@ Tarbimisandmed, liitumine, tootmise rütm ja eesmärgid enne, seadmed pärast. S
 
 Tunneme turgu
 
-Oleme turu läbi analüüsinud ja eri tarnijaid näinud. Valime seadmed ja partnerid teie huvides, koostöös maaletoojatega.
+Jälgime tootjaid, maaletoojaid, agregaatoreid ja hindu. Paneme pakkumise kokku teie objekti vajaduse järgi ja võrdleme variante samade numbritega.
 
-Ajastus on osa lahendusest
+Lai valik, üks vastutaja
 
-Praegu on Soome laos turul end tõestanud energiasalvesteid hea hinnaga ja tarneaeg on nädalates. Sellepärast pakume neid nüüd, mitte järgmisel aastal.
+Energiasalvestid, konteinerid, laadimine, mikrovõrgud ja päikeseelekter partneritelt. Meie paneme terviku kokku ja vastutame projekti eest algusest lõpuni.
 
-Meist ja partneritest
+Partnerid ja tooted Meist
 
 Rasked küsimused, ausad vastused.
 
@@ -1399,12 +1700,12 @@ Kui teie küsimust siin pole, küsige otse. Vastame kirjalikult.
 Küsi tasuta hindamist
 
 Kas reservituru tulu saab garanteerida?
-Garanteerida ei saa keegi: reservi hind kujuneb turul iga päev ja turg, kuhu tuleb pakkujaid juurde, ei püsi paigal. Sellepärast me numbrit ei luba. Kirjalikus hinnangus on kolm stsenaariumi — madal, keskmine ja kõrge — ning eraldi real võimsustasu ja börsihinna sääst, mis turust ei sõltu. Nii sünnib otsus teadlikult: mitte hirmust ega uskumisest, vaid teie enda numbrite pealt.
+Garanteerida ei saa keegi: reservi hind kujuneb turul iga päev ja turg, kuhu tuleb pakkujaid juurde, ei püsi paigal. Sellepärast me numbrit ei luba. Kirjalikus hinnangus modelleeritakse reservitulu toodete kaupa tegelikest tunnihindadest nende tundide jaoks, mis teie enda tarbimisest vabaks jäävad, enne agregaatori tasu. Tulevik näidatakse vahemikuna. See on modelleeritud arv, mitte lubadus. Eraldi real on võimsustasu ja börsihinna sääst, mis turust ei sõltu. Nii sünnib otsus teadlikult: mitte hirmust ega uskumisest, vaid teie enda numbrite pealt.
 Kuidas reservihinnad kujunevad
 
 Kui palju salvesti reserviturul teenib?
 See sõltub neljast asjast, ja me arvutame need teie objekti kohta läbi. Esiteks agregaatorist ja tema juhtimisloogikast: mida täielikumalt agregaator salvestit juhib, seda suurem on tulupotentsiaal. Teiseks sellest, kui palju te salvestit ise kasutate ja millistel tundidel – tippude katmiseks ja odava elektri salvestamiseks; see osa on teie sääst, ja ülejäänud aja on salvesti puhtalt reserviturul. Kolmandaks sellest, mitmel turul salvesti osaleb – sagedusreservid FCR, aFRR ja mFRR ning arbitraaž börsil ehk mitmeturuteenus – ja nende hinnad kujunevad iga päev uuesti. Neljandaks teie tarbimisprofiilist ja liitumisest, mis määravad salvesti suuruse ja selle, kui suur osa võimsusest on turule vaba.
-Sellepärast anname kolm stsenaariumi, mis näitavad, millest tulu sõltub, mitte ühte numbrit.
+Sellepärast näitame vahemikku ja seda, millest tulu sõltub, mitte ühte numbrit.
 
 Kas aku vajab päikesepaneele või oma tootmist?
 Ei. Kõik kolm rahavoogu (võimsustasu, börsihind, reservitulu) töötavad ilma päikeseta. Piisab liitumisest. Kui päikesepaneelid on olemas või plaanis, lisandub neljas võimalus: oma toodangu salvestamine omaks tarbeks.
@@ -1422,7 +1723,7 @@ Hinnangus on vahemik, mis sõltub teie liitumise suurusest ja tarbimisprofiilist
 Millest hind koosneb
 
 Kui kaua projekt kestab?
-Hindamisest käivitamiseni kulub tavaliselt nädalaid, mitte kuid — seadmed on laost saadaval. Võrguettevõtja vastamisaeg on omaette asi: see tuuakse hinnangus eraldi välja, et see ei tuleks üllatusena.
+Ajakava koosneb kolmest osast: seadme tarneaeg, mis kinnitatakse pakkumises seadme kaupa, paigaldusjärjekord ja võrguettevõtja vastamisaeg. Kõik kolm tuuakse hinnangus eraldi välja, et miski ei tuleks üllatusena.
 Nii projekt edeneb
 
 Kas salvesti on ohutu ja milline on garantii?
@@ -1444,7 +1745,7 @@ Kahe tööpäevaga teate, kas ja kuidas aku end teie objektil ära tasub. Hinnan
 
 Liitumine ja tarbimisprofiil teie tunnipõhistest andmetest
 Võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel
-Kolm reservituru stsenaariumi allikatega
+Modelleeritud reservitulu toodete kaupa allikatega
 Võrguettevõtja seisukoht ja see, mida hinnang ei ütle
 
 Teie annate: oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt – juhendame), ühe elektriarve ja peakilbi skeemi.
@@ -1491,7 +1792,7 @@ Avaleht›Päikeseelekter
 
 Päikeseelekter, mis on tehtud teie objekti järgi.
 
-Lahenduse valime teie tarbimisprofiili, kinnistu ja soovide järgi, mitte kataloogist: katusel, maal või katusesse integreerituna. Ja kui päike ja aku töötavad koos, läheb oma toodang omaks tarbeks, ülejääk salvestisse ja sama aku reserviturule.
+Lahenduse valime teie tarbimisprofiili, kinnistu ja soovide järgi, mitte kataloogist: katusel, maal või katusesse integreerituna. Ja kui päike ja aku töötavad koos, läheb oma toodang omaks tarbeks, ülejääk salvestisse ja sama aku reserviturule. Paigaldust juhib meie paigaldusjuht. Elektritööd ja käikulaskmise teeb registreeritud elektritööde partner.
 
 Küsi tasuta hindamist
 
@@ -1501,17 +1802,106 @@ Päike + akukeskpäevane ülejääk õhtusse, tipud maha, ja sama aku Eleringi r
 
 Iga katuskivi, plekk, profiilplekk, lamekatus, katusesse integreeritud või maapaigaldus
 
-Oma toodang omaks tarbeks
-Päikeseelekter tasub end kõige paremini ära siis, kui see ise ära kasutatakse. Mõõdame süsteemi teie tarbimisprofiili järgi, et võimalikult vähe läheks odavalt võrku.
+Viis võimalust päikeseelektriks. Üks mõõtmise põhimõte.
+Lahendus valitakse selle järgi, mis kinnistul on: korras katus, uuendamist vajav katus, õu või parkla, või juba olemasolev päikesejaam. Mõõtmine lähtub alati tarbimisest, et võimalikult suur osa toodangust läheks oma kasutusse.
 
-Päike ja aku koos
-Aku nihutab keskpäevase ülejäägi õhtusse, lõikab tipud ja teenib reserviturul. Kui päikeseelekter on juba olemas, teeb aku sellest parema investeeringu.
+Milline lahendus teile sobib
+Hindamine kontrollib iga varianti teie objekti tunnitarbimise, katuse ja liitumise järgi.
 
-Iga katuse ja pinna jaoks
-Lamekatus, kivikatus, plekk- ja profiilplekk-katus, katusesse integreeritud päikesekatus või maapaigaldus. Lahendus valitakse katuse, esteetika ja kinnistu nõuete järgi – ka muinsuskaitse all oleval hoonel.
+Lahendus · Sobib, kui · Mida see teeb · Hindamine kontrollib
+
+Päikesejaam katusele · Katus on korras ja peab veel aastakümneid · Toodab päevast elektrit oma tarbeks ja vähendab ostetud elektrit · Tarbimisprofiili, katuse seisukorda ja kandevõimet, varjusid ja liitumist
+
+Päikesekatus · Katus tuleb nagunii uuendada · Katusekate ja paneel on üks konstruktsioon: uus katus ja jaam ühe investeeringuga · Katuse konstruktsiooni, kallet ja suunda, lube ja hoone välimust
+
+Maapaigaldus ja päikesevarikatus · Õuel, põllul või parklas on ruumi · Toodab ilma katuseta; varikatus kaitseb ühtlasi sõidukeid ja annab koha laadijatele · Pinnast ja vundamente, kaablitrassi liitumiseni, planeeringut ja lube
+
+Päikeseelekter ja salvesti · Tarbimine on suurem õhtul või tipud tõstavad arvet · Nihutab keskpäeva ülejäägi õhtusse, lõikab tippe ja vabad tunnid pakutakse reserviturule · Tunnitarbimist ja toodangut kõrvuti, võimsustasu ja liitumise vaba võimsust
+
+Salvesti olemasolevale jaamale · Päikesejaam on olemas ja ülejääk müüakse odavalt võrku · Teeb juba makstud jaamast parema investeeringu: rohkem omatarbimist, tipud maha, reservid · Inverterite ühilduvust, võrku andmise piirangut ja juhtimise järjekorda
+
+Kuidas päikeseelekter töötab ettevõtte liitumises.
+Päikesejaam toodab kõige rohkem suvepäeva keskel. Investeeringu tasuvuse otsustab see, kui suur osa toodangust kasutatakse ise ära ja see sõltub teie objekti tarbimisprofiilist, mitte katuse suurusest. Sellepärast algab dimensioneerimine 12 kuu tunnitarbimisest.
+
+Toodang ja tarbimine tunniti
+Paneme teie objekti tunnitarbimise ja jaama tunnitoodangu terve aasta ulatuses kõrvuti. Sellest on näha, kui suur osa toodangust läheb otse omatarbeks, kui palju jääb üle ja millise jaama suuruse juures on omatarve kõige suurem.
+
+Omatarve enne müüki
+Ostetud kilovatt-tunnis maksate lisaks energiale võrgutasu, aktsiisi ja taastuvenergia tasu. Müüdud ülejäägi eest saate ainult energia hinna, sageli just neil tundidel, kui see on kõige odavam. Ise ära kasutatud kilovatt-tund on seega väärtuslikum kui müüdud ja dimensioneerimine sihib omatarbele.
+
+Suund, kalle, varjud ja inverter
+Lõunasse suunatud katusepind toodab kõige rohkem keskpäeval. Ida-lääne paigaldus lamekatusel jaotab toodangu hommikusse ja õhtusse ning sobib sageli paremini ettevõtte tarbimisega. Varjud, lumekoormus ja inverteri võimsus paneelide võimsuse suhtes vaadatakse hindamises läbi.
+
+Võrguettevõtja, load ja liitumine
+Tootmise liitumine lepitakse võrguettevõtjaga kokku enne paigaldust ja ehitusteatise või -loa vajadus sõltub hoonest ja võimsusest. Me ajame liitumis- ja loaasjad ning dokumentatsiooni korda ja kontrollime samal ajal, mida teie liitumine lubab, kui hiljem lisandub salvesti või laadijad.
+
+Hindamine näitabenne kui midagi tellitakse
+
+Kirjalikus hinnangus on jaama suurus ja toodangu hinnang tunniti, omatarbe osa ja ülejääk, ostetud elektri vähenemine teie hindadega ja kõrval sama arvutus salvestiga. Iga arvu kõrval on allikas ja periood. Kui päikeseelekter teie objektil ära ei tasu, ütleb hinnang seda.
+
+Katus, mis toodab.
+Katus on hoone kõige olulisem konstruktsioon ja selle uuendamine on suur investeering niikuinii. Kui katus uuendatakse, teeb katusesse integreeritud päikesekatus kaks asja korraga: uue katuse ja jaama.
+
+Kate ja paneel ühena
+Paneelid on osa kattest, mitte eraldi konstruktsioon katuse peal. Katus ja jaam projekteeritakse ja ehitatakse ühena ning veekindlus on katusetöö vastutus algusest lõpuni.
+
+Hallile, farmile ja ärihoonele
+Suured ühtlased katusepinnad on päikesekatuse loomulik koht. Dimensioneerimine tehakse tarbimise, mitte katuse suuruse järgi.
+
+Kui välimus loeb
+Kui hoone välimus on oluline, sobitab katusesse integreeritud lahendus päikeseelektri hoone ilmega. Muinsuskaitsealusel hoonel lepitakse lahendus kokku muinsuskaitsega.
+
+Kui katus uuendataksepäikesekatuse hind vertub uue katusega
+
+Kui katus tuleb lähiaastatel nagunii uuendada, võrreldakse päikesekatuse hinda uue katusega, mitte ainult jaamaga: kate makstakse niikuinii ja jaama osa investeeringust jääb väiksemaks kui eraldi paigaldusel valmis katuse peale. Hindamises vaadatakse läbi katusekonstruktsiooni kandevõime, kalle ja suund, lume- ja tuulekoormus, tuleohutus ja loa vajadus.
+
+Katuse- ja elektritöö sama juhtimise all.
+Päikeseelektri paigaldus on katusetöö ja elektritöö samal objektil. Paigaldame päikesejaamu valmis katusele, maale ja varikatusele ning ehitame katusesse integreeritud päikesekatuseid. Paigaldust juhib meie paigaldusjuht, elektritööd ja käikulaskmise teeb registreeritud elektritööde partner. Üks juhtimine, üks ajakava ja üks dokumentatsioon.
+
+Katusetöö
+Kinnitused, läbiviigud ja päikesekatuse kate tehakse katusetöö reeglite järgi, et katus jääks jaama all veekindlaks. Paigaldust juhib meie paigaldusjuht ja katuse- ning elektritöö tehakse sama juhtimise all samal objektil.
+
+Elektritöö ja kasutuselevõtt
+Elektritööd teeb registreeritud elektritööde partner: alalisvoolupoole kaabeldus, inverterid, ühendus peakilbiga, kaitse ja mõõtmine. Kasutuselevõtul süsteem kontrollitakse ja mõõdetakse üle ning dokumendid antakse teile üle.
+
+Võrguettevõtja ja ametiasutused
+Tootmise liitumistaotlus võrguettevõtjale, ehitusteatis või -luba omavalitsusega ja kasutuselevõtu dokumentatsioon käivad meie kaudu. Teie allkirjastate, muu ajame me korda.
 
 Kogemus, mis on juba tehtud
 Meie meeskond on päikesesüsteeme ehitanud aastaid: koduinstallatsioonidest ja muinsuskaitsealuse maja päikesekatusest ettevõtete, farmide ja kuni 400 kW põldpaigaldusteni. Sama meeskond on valmis suuremaks – megavattides projektid on plaanis ja jõukohased.
+
+Nii paigaldus edeneb.
+Neli etappi. Teie osa on andmed, otsus ja allkiri; ülejäänu käib meie kaudu.
+
+Hindamine ja kirjalik hinnang
+Tunnitarbimine Eleringi e-teenindusest teie volitusega, üks arve ja peakilbi joonis. Me kirjutame hinnangu: jaama suurus, omatarve, ülejääk ja sama arvutus salvestiga.
+SAMA · tasuta
+
+Objektikülastus ja projekteerimine
+Katus, konstruktsioonid, kaablitrass ja kilp mõõdetakse kohapeal üle, võrguettevõtja liitumistaotlus ja load aetakse korda. Hind kinnitatakse.
+SAMA + võrguettevõtja
+
+Katuse- ja elektripaigaldus
+Katusetöö ja elektritöö samal objektil, ajakava teie tegevuse järgi. Päikesekatuse puhul ehitatakse katus ja jaam ühe tööna.
+Paigaldusjuht + elektritööde partner
+
+Kasutuselevõtt ja üleandmine
+Kontroll, mõõtmised, dokumendid ja seirevaade. Kui tervikusse kuulub salvesti, ühendatakse see samas etapis agregaatoriga.
+SAMA + teie
+
+Päike ja aku koos.
+Aku teeb päikesejaamast parema investeeringu ja päikesejaam ei ole aku eeldus: liitumisest piisab. Kui mõlemad on liitumise taga, teevad nad samast seadmest kolm asja.
+
+Keskpäevane ülejääk õhtusse
+See, mida tarbimine keskpäeval ära ei kasuta, laetakse akusse ja kasutatakse õhtul oma tarbimistippude ajal, selle asemel et müüa see kõige odavamatel tundidel.
+
+Tipud maha samast akust
+Kui võrguettevõtja võtab võimsustasu, lõikab aku kuu suurimat võimsustippu. Sääst arvutatakse hinnangus eraldi reale.
+
+Vabad tunnid Eleringi reservidesse
+Tundidel, kui akut omatarbeks ei vajata, pakub agregaator seda Eleringi reserviturule. Reservitulu modelleeritakse tooteti tegelikest tunnihindadest ja agregaatori tasu on eraldi real. Kuidas agregaator töötab
+
+Allikas reservituru toimimise kohta: Elering, sagedusreservide turu kokkuvõtted
 
 Päike, aku või mõlemad?
 Hindamine vastab teie tarbimisandmetest, milline kombinatsioon just teil ära tasub.
@@ -1570,7 +1960,7 @@ Ohutus ja garantii
 Nõuame tootjalt LFP-keemiat, rakutaseme jälgimisega akuhaldust, temperatuurijuhtimist, välitingimustele vastavat kappi ja CE- ning transpordisertifikaate. Tootja garantii ja hooldustingimused on hinnangus eraldi real. Kõik nõuded →
 
 Paigaldus, tarne ja hooldus
-Paigaldust juhib meie paigaldusjuht koos partneritega; osa seadmeid on Soome laos, mis lühendab tarneaja nädalateni. Pärast käikulaskmist jälgivad süsteemi agregaator ja meie, hooldus käib lepingu järgi. Praegu on Soome laost saadaval turul end tõestanud akusid väga hea hinnaga; kui turg ja hind on paigas, tasub liikuda, ja meie ütleme, millal need seda on.
+Seadmed tulevad mitmelt tootjalt ja tarneaeg kinnitatakse pakkumises seadme kaupa. Paigaldust juhib meie paigaldusjuht koos partneritega. Pärast käikulaskmist jälgivad süsteemi agregaator ja meie, hooldus käib lepingu järgi. Partnerid ja tooted
 
 Korduma kippuvad küsimused
 
@@ -1647,13 +2037,13 @@ Mida täielikumalt agregaator juhib, seda rohkem tulu. Kui agregaator juhib akut
 
 Strateegia tehakse teie huvides. Kui müüte oma päikeseelektrit, vajate akut oma tippude jaoks või varutoiteks, ehitatakse strateegia selle ümber. Agregaator optimeerib, aga teie tingimustel ja teie kasuks.
 
-Eestis hindame iga objekti personaalselt. Eesti reserviturg on Soome omast noorem ja meie agregaatoripartner Soleron Energy töötab iga objektiga eraldi: valmis tuluesitlust siin ei ole, on turu seis ja teie objekti arvud. Hinnangu teeme koos nendega, teie aku võimsuse ja mahu järgi, ning numbrid tulevad kirjalikus hinnangus kolme stsenaariumina, mitte reklaamis. Soleroni enda avaldatud ülevaated turu kohta on avalikud ja me viitame neile.
+Eestis hindame iga objekti personaalselt. Eesti reserviturg on Soome omast noorem ja meie agregaatoripartner Soleron Energy töötab iga objektiga eraldi: valmis tuluesitlust siin ei ole, on turu seis ja teie objekti arvud. Hinnangu teeme koos nendega, teie aku võimsuse ja mahu järgi, ning numbrid tulevad kirjalikus hinnangus toodete kaupa, mitte reklaamis. Soleroni enda avaldatud ülevaated turu kohta on avalikud ja me viitame neile.
 
 Küsi tasuta hindamist Kuidas Soleron Energy töötab
 
 Ausalt reservihindadest.
 
-Hinnad kõiguvad. Reservi hind kujuneb turul iga päev, ja turg, kuhu tuleb juurde pakkujaid, ei püsi paigal. Seepärast ei luba me numbrit, mida keegi ei tea. Meie hinnang põhineb sellel, mida Elering tegelikult hangib ja mis on tulemas, ja me näitame seda kolme stsenaariumina, kirjalikult.
+Hinnad kõiguvad. Reservi hind kujuneb turul iga päev, ja turg, kuhu tuleb juurde pakkujaid, ei püsi paigal. Seepärast ei luba me numbrit, mida keegi ei tea. Meie hinnang põhineb sellel, mida Elering tegelikult hangib ja mis on tulemas, ja me näitame tulevikku vahemikuna, kirjalikult.
 
 Teie ei pea turgu jälgima. Agregaatori automaatne juhtimine viib aku iga tund kõige tasuvamasse reservi ja vahetab toodet, kui hinnad liiguvad. Teie näete tulemust seirevaatest. See ongi kogu mõte: isejuhtiv aku.
 
@@ -1684,7 +2074,7 @@ Allikas: Elering, tasakaalustamisvõimsuse kulu · 2026
 VabadusEttevõte, kes suudab oma energiat salvestada ja ajastada, ei ole ühe tunni hinna meelevallas. Riik, kus selliseid ettevõtteid on tuhat, ei ole ühegi tarnija meelevallas. See on sama loogika kahes suurusjärgus, ja see on põhjus, miks see töö on suurem kui üks seade ühe hoone kõrval.
 
 Vaatame, mida aku teie liitumise taga teeniks.
-Tasuta hindamine, kirjalik hinnang kolme stsenaariumina, kohustusteta.
+Tasuta hindamine, kirjalik hinnang teie tunniandmetest, kohustusteta.
 
 Küsi tasuta hindamist
 
@@ -1724,7 +2114,7 @@ Kirjalikud garantiitingimused aastates ja tsüklites, lubatud mahtuvuse langus j
 Hooldus ja varuosad Eestis kokkulepitud reageerimisajaga; dokumentatsioon eesti või inglise keeles.
 
 Tootjatele ja maaletoojatele.
-Kui teie seade vastab nimekirjale ja te soovite Eesti ja Soome turule, kirjutage info@samaenergia.fi. Mida meie anname: kaks turgu, reserviturule pääs agregaatori kaudu kummalgi turul, paigalduspartnerid ja hinnangupõhine müük, mis ei luba seadmelt rohkem, kui see teeb.
+Kui teie seade vastab nimekirjale ja te soovite Eesti ja Soome turule, kirjutage info@samaenergia.fi. Mida meie anname: kaks turgu, juurdepääs reserviturule kummalgi turul agregaatori kaudu, paigalduspartnerid ja hinnangupõhine müük, mis ei luba seadmelt rohkem, kui see teeb.
 
 Kas teie objekt sobib?
 Tasuta hindamine ütleb, milline süsteem teie liitumise taha mahub ja mida ta seal teeniks.
@@ -1819,7 +2209,7 @@ Soleroni ülevaated
 
 Mida Soleron Energy teie objektil teeb.
 
-Eesti reserviturg on Soome omast noorem ja Soleron töötab iga objektiga eraldi. Hinnangu, millistele reservidele teie aku sobib ja mida see teenida võib, teeme koos nendega: teie aku võimsuse ja mahu järgi, kirjalikult ja kolme stsenaariumina, mitte reklaamis.
+Eesti reserviturg on Soome omast noorem ja Soleron töötab iga objektiga eraldi. Hinnangu, millistele reservidele teie aku sobib ja mida see teenida võib, teeme koos nendega: teie aku võimsuse ja mahu järgi, kirjalikult ja toodete kaupa, mitte reklaamis.
 
 Teie tingimustelstrateegia kliendi huvides
 
@@ -1838,7 +2228,7 @@ Kas akut saab samal ajal oma tarbeks kasutada?
 Jah. Juhtimisstrateegias lepitakse kokku prioriteet: tippude lõikamine, varutoide ja oma toodang enne, reserv ülejäänud mahuga. Mida rohkem mahtu agregaator juhtida saab, seda rohkem reservitulu tekib. See on tasakaal, mis arvutatakse hinnangus lahti.
 
 Kuidas agregaator oma tasu saab?
-Tasu lepitakse kokku agregaatorilepingus ja kirjalikus hinnangus on see eraldi real, mitte tuluprognoosi sisse peidetud. Te näete, mida Elering maksab, mida agregaator võtab ja mis teile jääb, kolme stsenaariumina.
+Tasu lepitakse kokku agregaatorilepingus ja kirjalikus hinnangus on see eraldi real, mitte tuluprognoosi sisse peidetud. Te näete reservitulu enne tasu, mida agregaator võtab ja mis teile jääb.
 
 Mis saab, kui tahame hiljem agregaatorit vahetada?
 Aku ja liitumine on teie. Lepingu kestus ja ülesütlemise tingimused vaadatakse läbi enne allkirja ja kirjutatakse hinnangusse, et te teaksite ette, millega ja kui kauaks te end seote.
@@ -1869,7 +2259,7 @@ TasutaHinnang
 Igale ettevõttele, kellel on oma elektriliitumine – ka siis, kui pakkumine on juba käes.
 
 Mida sisaldab
-Kaks lehekülge: liitumine ja tarbimisprofiil, võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel, kolm reservituru stsenaariumi allikatega, võrguettevõtja seisukoht ja see, mida hinnang ei ütle.
+Kaks lehekülge: liitumine ja tarbimisprofiil, võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel, modelleeritud reservitulu toodete kaupa allikatega, võrguettevõtja seisukoht ja see, mida hinnang ei ütle.
 
 Mida te annate
 Oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt – juhendame), ühe elektriarve ja peakilbi skeemi.
@@ -1921,7 +2311,7 @@ Kuidas see käib – ja mis millal maksab.
 Kedagi ei saadeta kuhugi enne, kui andmed on käes. Kaks esimest sammu on tasuta, objektikülastus arvestatakse lepingus maha, projekteerimine ja paigaldus käivad lepingu järgi.
 
 01Tasuta hindamine
-Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või teie võrguettevõtjalt), ühe arve ja peakilbi skeemi; meie kirjutame hinnangu: liitumine, tarbimisprofiil, võimsuse jaotus, kolm stsenaariumi allikatega.
+Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või teie võrguettevõtjalt), ühe arve ja peakilbi skeemi; meie kirjutame hinnangu: liitumine, tarbimisprofiil, võimsuse jaotus, modelleeritud reservitulu toodete kaupa allikatega.
 Tasuta · teie aeg umbes 20 minutit
 
 02Eelkontroll
@@ -1951,7 +2341,7 @@ Iga arv kirjalikult, koos allikaga
 Hinnangus pole ühtegi numbrit, mille päritolu te ei saaks ise üle kontrollida. Kui midagi on eeldus, on see eeldusena märgitud.
 
 Reservitulu analüüsitult, mitte arvatult
-Näitame madalat, keskmist ja kõrget stsenaariumi, sest turg muutub. Stsenaariumid tulevad sellest, mida Elering tegelikult hangib ja mis on tulemas, mitte kellegi tundest.
+Näitame vahemikku, sest turg muutub. Vahemik tuleb sellest, mida Elering tegelikult hangib ja mis on tulemas, mitte kellegi tundest.
 
 Võrguettevõtja seisukoht enne kapitali
 Tehnilised tingimused ja liitumise vastus on käes enne, kui te raha välja panete. Ooteajad on hinnangus eraldi välja toodud.
@@ -1975,10 +2365,174 @@ Arvutus teie enda tunnipõhistest tarbimisandmetest
 
 Võrguettevõtja seisukoht käes enne kapitali sidumist
 
-Reservituru loogika selgitatud, tulu analüüsitud stsenaariumidena
+Reservituru loogika selgitatud, tulu analüüsitud toodete kaupa
 
 Esimene samm on tasuta.
 Küsimustik ja tarbimisandmed, ja te teate kahe tööpäevaga, kas ja kuidas edasi minna.
+
+Küsi tasuta hindamist
+
+# Partnerid ja tooted — SAMA Energia — https://samaenergia.ee/partnerid/
+
+Avaleht›Partnerid ja tooted
+
+Mitu tootjat. Üks pakkumine teie objekti järgi.
+
+Tunneme turgu: tootjaid, maaletoojaid, agregaatoreid ja hinnataset. Meil on mitu seadmetarnijat ja nende kaudu pakume energiasalvesteid teisaldatavast seadmest konteinerini, laadimisjaamade salvesteid ja mikrovõrke, päikeseelektrit ja paigaldust. Paneme pakkumise kokku teie objekti tarbimise, liitumise ja eesmärkide järgi, valime tarnijate valikust kõige sobivama seadme ja võrdleme variante samade numbritega.
+
+Küsi tasuta hindamist Valik vajaduse järgi
+
+47 kWh–5 MWhsalvestite suurused teisaldatavast seadmest 20-jalase konteinerini
+
+200–600 kWkiirlaadimise võimsus laadimisjaama mikrovõrgus
+
+Allikad: tootjate tootelehed, loetud 23.10.2026. Tootja ja mudel nimetatakse pakkumises.
+
+Valik objekti vajaduse järgi.
+
+Lähtume sellest, mida teie objekt vajab, mitte sellest, mis laos on. Tabel näitab, millest variandid kokku pannakse. Lõpliku lahenduse arvutame hindamisel teie tarbimisandmetest. Iga mudel läbib meie seadmenõuded enne, kui see pakkumisse jõuab.
+
+Vajadus ja lahendus
+Tehnilised andmed tootjate tootelehtedelt ja tooteteadetest, loetud 23.10.2026. Tootja ja mudel nimetatakse pakkumises.
+
+Objekti vajadus · Lahendus · Võimsus ja energia
+
+Ettevõtte liitumine,
+100 kW–1 MW · Vedeljahutusega väliskapp mitmelt tootjalt, näiteks Ralos Beast 125 HD (Ralos Oy). Kappe paralleelselt objekti järgi. · 125 kW / 261 kWh kapi kohta
+
+Väiksem objekt · Hübriidkapp väiksemale liitumisele. · 50 kW / 104 või 156 kWh
+
+Suur objekt või
+oma alajaam · Konteinersalvesti, 20-jalane konteiner. · 1 000 kW / 2 170 kWh (400 V)
+umbes 5 MWh 20-jalases konteineris
+
+Laadimisjaam, depoo
+või tankla · Mikrovõrk ja kiirlaadimine või akuga DC-kiirlaadija. Päikesevarikatuse paigaldust juhib meie paigaldusjuht. · Mikrovõrk: salvesti 200 kW / 250 kWh või 400 kW / 500 kWh, kiirlaadimine 200–600 kW
+DC-kiirlaadija: 209 kWh, autole kuni 240 kW
+
+Ehitusplats, üritus või
+ajutine võimsusvajadus · Teisaldatav seade. · 11 kW / 47 kWh
+60 kW / 93 kWh või 240 kW / 209 kWh
+
+Varutoide
+elektrikatkestuse ajal · Ümberlüliti (STS) saartalitlusele. Kriitilised ahelad ja saartalitlus projekteeritakse iga objekti jaoks eraldi. · 2–6 kappi, lülitusaeg 20 ms
+
+Päikeseelekter · Paneelid ja inverterid objekti järgi. Paigaldust juhib meie paigaldusjuht, elektritööd teeb registreeritud elektritööde partner. · Suurus tarbimise ja katuse järgi
+
+Laadimisjaam: salvesti võtab tipu.
+
+Kiirlaadija vajab suurt võimsust lühikeseks ajaks. Kui liitumise suurus piirab laadimist, annab kohalik salvesti tippvõimsuse ning laeb end liitumisest ja päikeseelektrist ühtlaselt. Nii saab laadimisvõimsust kasvatada ka siis, kui liitumist samas mahus ei suurendata.
+
+Liitumine laeb salvestit ühtlaselt.
+
+Salvesti annab laadimise tippvõimsuse, kui auto ühendatakse.
+
+Päikesekatus toodab päeval elektrit salvestisse ja laadijatesse.
+
+Kiirlaadijad dimensioneeritakse objekti liikluse järgi.
+
+Juhtimine prognoosib tarbimist, tootmist ja hinda ning ajastab laadimise.
+
+Mikrovõrk laadimisjaamale
+Laadimisjaamadele, depoodele, tanklatele ja logistikakeskustele: salvesti 200 kW / 250 kWh või 400 kW / 500 kWh, integreeritud kiirlaadimine 200–600 kW ja juhtimine, mis prognoosib tarbimist, tootmist ja hinda.
+Allikas: tootja tooteleht, loetud 23.10.2026.
+
+Akuga kiirlaadija
+DC-kiirlaadija: võrgust kuni 60 kW, autole kuni 240 kW või 2 × 120 kW. Vahe annab 209 kWh aku. Kaks CCS2-pistikut.
+Allikas: tootja tooteleht, loetud 23.10.2026.
+
+Päikesevarikatus
+Varikatus kaitseb autosid ja toodab elektrit salvestisse ja laadijatesse. Jaama suurus arvutatakse objekti tarbimise ja ruumi järgi. Paigaldust juhib meie paigaldusjuht, elektritööd teeb registreeritud elektritööde partner.
+Nii paigaldus käib
+
+Nii paneme pakkumise kokku.
+
+Võrdlus on meie töö. Saate valmis võrdluse samade numbritega ja põhjenduse, miks soovitame just seda varianti.
+
+01Kõigepealt vajadus
+Tunnipõhine tarbimine, liitumine, ruum ja eesmärgid. Hindamine näitab, mida objekt vajab: salvesti suurust, laadimist, päikeseelektrit või varutoidet.
+Tasuta hindamine
+
+02Variandid tarnijatelt
+Valime valikust objekti võimsusele, ruumile ja kasutusele sobivad mudelid ning küsime ajakohased hinnad ja tarneajad.
+Mitu tootjat
+
+03Võrdlus samade numbritega
+Seade, paigaldus, garantii, sobivus reserviturule ja tarneaeg kõrvuti kirjalikus hinnangus.
+Kirjalik hinnang
+
+04Üks vastutaja
+Tarnime, paigaldame ja ühendame süsteemi ning korraldame võrguettevõtja teavitused ja agregaatorilepingu. Teil on üks kontaktisik.
+Projektijuhtimine SAMA-lt
+
+Pakkumise hind on enne teieni jõudmist mitme tootja vahel võrreldud.
+
+Küsi tasuta hindamist
+
+Partnerid, kellega teeme koostööd.
+
+Partnerid toovad valiku, meie toome terviku: dimensioneerimise, võrdluse, paigalduse ja ühendamise. Tooteandmed on partnerite enda materjalidest, koos allikatega.
+
+Energiasalvestid, konteinerid ja mikrovõrgud
+Kapist konteinerini ja laadimisjaama mikrovõrguni. Teeme koostööd mitme tootjaga ja valime mudeli objekti võimsuse, energia, ruumi ja kasutuse järgi.
+
+Energiasalvestid mitmelt tootjaltKapid, konteinerid, hübriidkapid, mikrovõrgud, teisaldatavad seadmed ja kiirlaadijad
+Valime tarnijate valikust mudeli, mis sobib objekti võimsuse, ruumi ja kasutusega. Tootja ja mudel nimetatakse pakkumises ning variante võrreldakse samade numbritega.
+Väliskapp125 kW / 261 kWh · vedeljahutus
+Hübriidkapp50 kW / 104 või 156 kWh
+Konteinersalvesti1 000 kW / 2 170 kWh või umbes 5 MWh · 20-jalane konteiner
+Mikrovõrk200 kW / 250 kWh või 400 kW / 500 kWh, kiirlaadimine 200–600 kW
+Teisaldatav seade11 kW / 47 kWh – 240 kW / 209 kWh
+DC-kiirlaadija209 kWh aku, autole kuni 240 kW
+
+Allikad: tootjate tootelehed, loetud 23.10.2026.
+
+Ralos
+SoomeRalos OyEnergiasalvestid · Tampere
+Soome päikeseelektri ja energiasalvestite tarnija: Ralos Beast 125 HD energiasalvesti välispaigalduseks, STS-varutoitelüliti kaasas.
+Ralos Beast 125 HD125 kW / 261 kWh · IP54, STS alla 10 ms
+
+Allikas: Ralos Oy, Ralos Beast 125 tehniline infoleht V10.
+
+ralos.fi
+
+Paigaldus ja käikulaskmine
+Paigaldust juhib meie paigaldusjuht. Elektritööd ja käikulaskmise teeb registreeritud elektritööde partner.
+
+SAMA
+Paigalduse juhtiminePaigaldusjuht · katuse- ja elektritöö sama juhtimise all
+Paigaldusjuht juhib objekti: üks ajakava teie tegevuse järgi ja üks dokumentatsioon.Nii paigaldus käib
+
+Turulepääs reserviturule
+Agregaator koondab mitme objekti salvestid üheks pakkumiseks, juhib neid automaatselt ja maksab tulu välja.
+
+Soleron
+EestiSoleron Energy OÜAgregaator · Eleringi reserviturg
+Energiasalvestus ja energiajuhtimine: oma EMS-tarkvara, agregeerimine Eleringi sagedusreservidesse, salvestite projekteerimine ja paigaldus.Kuidas agregaator töötab
+
+Küsimused valiku kohta.
+
+Miks pakute mitut kaubamärki?
+Sest objektid on erinevad: liitumine, tarbimine, ruum ja eesmärgid. Laia valiku toel paneme pakkumise kokku objekti vajaduse järgi. Võrdlus samade numbritega on kirjalikus hinnangus.
+
+Kas saame küsida kindlat tootjat või mudelit?
+Saate. Arvutame teie soovitud mudeli samade numbritega nagu teised variandid ja hinnangust on erinevused näha.
+
+Kes vastutab garantii ja hoolduse eest?
+Tootja garantii kehtib maaletooja või tootja kaudu ning tingimused kirjutatakse pakkumisse seadme kaupa. Garantii- ja hooldusküsimused käivad meie kaudu: teil on üks kontaktisik.
+
+Kus on hinnad?
+Pakkumises, teie objektile arvutatuna: seade, paigaldus, transport ja ühendamine eraldi ridadel.
+
+Kas seadmed sobivad reserviturule?
+Sobivus reserviturule kinnitatakse agregaatoriga seadme ja toote kaupa reguleerimiskatsetega. Hinnang näitab, millistele reservitoodetele teie objekti süsteem kavatsetakse ühendada.
+
+Oleme tootja või maaletooja. Kuidas pääseda valikusse?
+Meie seadmenõuded on avalikud. Kui teie seade vastab neile, kirjutage aadressile info@samaenergia.fi.
+Meie seadmenõuded
+
+Rääkige meile oma objektist. Paneme variandid kokku.
+Hindamine on tasuta ja võrdlus tuleb kirjalikult.
 
 Küsi tasuta hindamist
 
@@ -2046,14 +2600,18 @@ Võrgustik teie projekti taga.
 Iga projekt vajab peale meie nelja asja: turulepääsu, seadmeid, paigaldust ja rahastust. Need on partnerid, kes need annavad, mõlemal turul.
 
 Turulepääs reserviturule
-Agregaator koondab mitme objekti akud üheks pakkumiseks, juhib neid automaatselt ja maksab tulu välja.
+Agregaator koondab mitme objekti akud üheks pakkumiseks, juhib neid automaatselt ja maksab tulu välja. Eestis on meie partner Soleron Energy, Soomes valime agregaatori objekti järgi Fingridi heakskiidetud reservipakkujate seast.
 
 Soleron
 EestiSoleron Energy OÜAgregaator · Eleringi reserviturg
 Energiasalvestus ja energiajuhtimine: oma EMS-tarkvara, agregeerimine Eleringi sagedusreservidesse, salvestite projekteerimine ja paigaldus.Kuidas agregaator töötab
 
-Seadmed ja tarne
-Salvestid valime objekti järgi. Osa seadmeid on Soome laos, mis lühendab tarneaega nädalateni.
+Energiasalvestid, laadimine ja mikrovõrgud
+Mitu tootjat, mudel objekti järgi. Võrdlus on hinnangus samade numbritega.
+Partnerid ja tooted
+
+Mitu tootjatKapid, konteinerid, hübriidkapid, mikrovõrgud ja kiirlaadijad
+Valime tarnijate valikust mudeli objekti võimsuse, ruumi ja kasutuse järgi. Tootja ja mudel nimetatakse pakkumises.Mudelid ja arvud
 
 Ralos
 SoomeRalos OyEnergiasalvestid · Tampere
@@ -2233,7 +2791,7 @@ Mida see ei tähenda
 
 See ei tähenda, et aku teenib täpselt selle summa tagasi, mille te selle rea eest maksate. Reservi hind kujuneb turul iga päev, ja turg, kuhu tuleb pakkujaid juurde, ei püsi paigal. Elering ise arvestab varustuskindluse aruandes Eesti võrku 258 MW salvesteid 2028. aastaks ja 600 MW 2030. aastaks: pakkumine kasvab.
 
-Sellepärast me ei luba ühtegi numbrit. Me näitame kolme stsenaariumi ja hoiame võimsustasu ning börsihinna säästu eraldi real, sest need kaks ei sõltu reservituru hinnast.
+Sellepärast me ei luba ühtegi numbrit. Modelleerime reservitulu toodete kaupa tegelikest tunnihindadest koos perioodiga ja hoiame võimsustasu ning börsihinna säästu eraldi real, sest need kaks ei sõltu reservituru hinnast.
 
 Mida sellega peale hakata
 
@@ -2241,7 +2799,7 @@ Otsige see rida oma arvelt üles. Ta on olemas alates jaanuarist 2026. Kui te ei
 
 Võtke välja oma tunnipõhised tarbimisandmed. Aasta jagu tunniandmeid ütleb rohkem kui ükski kalkulaator: sealt on näha nii tipud, mida aku maha lõikaks, kui ka see, kui palju vaba võimsust liitumises seisab.
 
-Laske arvutada, mitte lubada. Küsige kirjalikku hinnangut, kus iga arvul on allikas ja kus reservitulu on kolme stsenaariumina. Meilt või kelleltki teiselt, aga küsige kirjalikult.
+Laske arvutada, mitte lubada. Küsige kirjalikku hinnangut, kus iga arvul on allikas ja kus reservitulu on modelleeritud toodete kaupa. Meilt või kelleltki teiselt, aga küsige kirjalikult.
 
 Allikad
 
@@ -2257,7 +2815,7 @@ MM
 Madis MaastikMüügijuht, SAMA Energiamadis.maastik@samaenergia.fi
 
 Kui suur see rida teie arvel on?
-Tasuta hindamine vastab sellele kirjalikult, teie tunnipõhiste tarbimisandmete pealt, koos reservituru stsenaariumidega.
+Tasuta hindamine vastab sellele kirjalikult, teie tunnipõhiste tarbimisandmete pealt, koos modelleeritud reservituluga toodete kaupa.
 
 Küsi tasuta hindamist Tagasi ülevaadete juurde
 
@@ -2271,7 +2829,7 @@ Kahe tööpäevaga teate, kas ja kuidas aku end teie objektil ära tasub. Hinnan
 
 Liitumine ja tarbimisprofiil teie tunnipõhistest andmetest
 Võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel
-Kolm reservituru stsenaariumi allikatega
+Modelleeritud reservitulu toodete kaupa allikatega
 Võrguettevõtja seisukoht ja see, mida hinnang ei ütle
 
 Teie annate: oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt – juhendame), ühe elektriarve ja peakilbi skeemi.
