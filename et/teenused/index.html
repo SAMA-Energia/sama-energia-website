@@ -105,7 +105,6 @@
 .orbit .o-t{font:600 15px 'IBM Plex Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase;fill:#1F1C18}
 .orbit .o-s{font:italic 400 16.5px 'Newsreader',Georgia,serif;fill:#6F695F}
 .orbit .o-c{font:italic 400 19px 'Newsreader',Georgia,serif;fill:#7F6110}
-.orbit .o-r{font:600 8.6px 'IBM Plex Sans',sans-serif;letter-spacing:.26em;fill:#8A6A12;opacity:.9}
 .orbit .o-flow{stroke-dasharray:0 9;animation:o-flow 1.6s linear infinite}
 .orbit .o-sweep{transform-box:view-box;transform-origin:310px 290px;animation:o-spin 22s linear infinite}
 .orbit .o-pulse{transform-box:fill-box;transform-origin:center;animation:o-pulse 3.6s ease-out infinite}
@@ -119,9 +118,9 @@
 .orbit .o-n,.orbit .o-l{transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
 .js .watch:not(.in-view) .orbit .o-n,.js .watch:not(.in-view) .orbit .o-l{opacity:0;transform:translateY(8px)}
 .in-view .orbit .o-1{transition-delay:.1s}.in-view .orbit .o-2{transition-delay:.25s}.in-view .orbit .o-3{transition-delay:.4s}.in-view .orbit .o-4{transition-delay:.55s}.in-view .orbit .o-5{transition-delay:.7s}
-@media (max-width:600px){.orbit .o-s,.orbit .o-r{display:none}.orbit .o-t{font-size:21px;font-weight:500;letter-spacing:0;text-transform:none}.orbit .o-c{font-size:20px}.orbit .o-2 .o-t{text-anchor:middle;transform:translate(28px,-10px)}.orbit .o-5 .o-t{text-anchor:middle;transform:translate(-28px,-10px)}}
+@media (max-width:600px){.orbit .o-s{display:none}.orbit .o-t{font-size:21px;font-weight:500;letter-spacing:0;text-transform:none}.orbit .o-c{font-size:20px}.orbit .o-2 .o-t{text-anchor:middle;transform:translate(28px,-10px)}.orbit .o-5 .o-t{text-anchor:middle;transform:translate(-28px,-10px)}}
 @media (prefers-reduced-motion:reduce){.orbit *{animation:none!important;transition:none!important}.js .watch:not(.in-view) .orbit .o-n,.js .watch:not(.in-view) .orbit .o-l{opacity:1;transform:none}}
-</style><radialGradient id="orb-b-glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#E9D38A" stop-opacity=".34"/><stop offset=".5" stop-color="#F3E6BC" stop-opacity=".16"/><stop offset="1" stop-color="#FBF7EA" stop-opacity="0"/></radialGradient><radialGradient id="orb-b-disc" cx="50%" cy="36%" r="68%"><stop offset="0" stop-color="#FFFDF7"/><stop offset=".7" stop-color="#FBF5E3"/><stop offset="1" stop-color="#F4EACB"/></radialGradient><linearGradient id="orb-b-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DDB94E"/><stop offset=".55" stop-color="#C9A227"/><stop offset="1" stop-color="#8A6A12"/></linearGradient><path id="orb-b-top" d="M213 290A97 97 0 0 1 407 290"/><path id="orb-b-bot" d="M206 290A104 104 0 0 0 414 290"/></defs>
+</style><radialGradient id="orb-b-glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#E9D38A" stop-opacity=".34"/><stop offset=".5" stop-color="#F3E6BC" stop-opacity=".16"/><stop offset="1" stop-color="#FBF7EA" stop-opacity="0"/></radialGradient><radialGradient id="orb-b-disc" cx="50%" cy="36%" r="68%"><stop offset="0" stop-color="#FFFDF7"/><stop offset=".7" stop-color="#FBF5E3"/><stop offset="1" stop-color="#F4EACB"/></radialGradient><linearGradient id="orb-b-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DDB94E"/><stop offset=".55" stop-color="#C9A227"/><stop offset="1" stop-color="#8A6A12"/></linearGradient></defs>
 <circle class="o-glow" cx="310" cy="290" r="236" fill="url(#orb-b-glow)"/>
 <circle cx="310" cy="290" r="236" stroke="#D8D0BC" stroke-opacity=".7"/>
 <circle cx="310" cy="290" r="172" stroke="#B08A1E" stroke-opacity=".6" stroke-dasharray="1 6" stroke-linecap="round"/>
@@ -129,8 +128,6 @@
 <circle cx="310" cy="290" r="118" stroke="url(#orb-b-gold)" stroke-width="1.3"/>
 <circle cx="310" cy="290" r="111" stroke="#B08A1E" stroke-opacity=".4" stroke-width=".8"/>
 <circle class="o-sweep" cx="310" cy="290" r="118" stroke="#C9A227" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="54 687.4"/>
-<text class="o-r" text-anchor="middle"><textPath href="#orb-b-top" startOffset="50%">SALVESTI · TOOTMINE · JUHTIMINE</textPath></text>
-<text class="o-r" text-anchor="middle"><textPath href="#orb-b-bot" startOffset="50%">ARVESTI TAGA</textPath></text>
 <circle cx="310" cy="290" r="86" fill="url(#orb-b-disc)" stroke="url(#orb-b-gold)" stroke-width="1.4"/>
 <circle cx="310" cy="290" r="80" stroke="#B08A1E" stroke-opacity=".3"/>
 <g transform="translate(310 284) scale(1.16) translate(-310 -290)"><ellipse cx="312" cy="297" rx="66" ry="7" fill="#B08A1E" fill-opacity=".10"/>
