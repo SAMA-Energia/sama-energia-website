@@ -369,14 +369,6 @@ a.partner:hover{transform:translateY(-2px);box-shadow:0 20px 34px -28px rgba(31,
 /* ---------- structure diagram (Palvelut/Arvio) ---------- */
 .structure{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:0 40px 80px -60px rgba(31,28,24,.35)}
 .structure svg{width:100%;height:auto;overflow:visible}
-.structure .node{transition:opacity .6s var(--ease),transform .6s var(--ease)}
-.js .watch:not(.in-view) .structure .node{opacity:0;transform:translateY(8px)}
-.in-view .structure .node:nth-of-type(2){transition-delay:.15s}.in-view .structure .node:nth-of-type(3){transition-delay:.3s}.in-view .structure .node:nth-of-type(4){transition-delay:.45s}.in-view .structure .node:nth-of-type(5){transition-delay:.6s}.in-view .structure .node:nth-of-type(6){transition-delay:.75s}
-.structure .link{stroke-dasharray:4 6;animation:dashflow 2.4s linear infinite;transition:opacity .6s .6s}
-.js .watch:not(.in-view) .structure .link{opacity:0}
-@keyframes dashflow{to{stroke-dashoffset:-20}}
-.structure .core{transform-box:fill-box;transform-origin:center;animation:corepulse 4s ease-in-out infinite}
-@keyframes corepulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
 .intro-split{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:32px clamp(32px,5vw,72px);align-items:end;margin-bottom:clamp(36px,4.5vw,56px)}
 .intro-split.stack{grid-template-columns:1fr;gap:18px;align-items:start} /* pitkä otsikko omalle riville koko leveydelle (08.09.2026) */
 .system svg{width:100%;height:auto;overflow:visible}
@@ -702,8 +694,6 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
 }
 @media (max-width:600px){
   svg.chart-day .ph,svg.chart-day .ax,svg.chart-day .tt{display:none}
-  .chart-structure .ns{display:none}
-  .chart-structure text.nl{font-size:15.5px}
   svg.chart-scale .sec{display:none}
   svg.chart-scale .lab,svg.chart-scale .hz{font-size:15px}
   svg.chart-yield .ss{display:none}
@@ -723,7 +713,7 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
 @media print{
   .reveal,.pre,.js .reveal.pre{opacity:1 !important;transform:none !important}
   .header,.sticky-cta,.mobile-nav,.skip,.rev-banner{display:none !important}
-  .js .watch:not(.in-view) .structure .node,.js .watch:not(.in-view) .structure .link{opacity:1 !important;transform:none !important}
+  .js .watch:not(.in-view) .orbit .o-n,.js .watch:not(.in-view) .orbit .o-l{opacity:1 !important;transform:none !important}
   .js .watch:not(.in-view) .chart-system .d{stroke-dashoffset:0 !important}
   .js .watch:not(.in-view) .chart-system .cpr{transform:none !important}
   .js .watch:not(.in-view) .chart-system .lb,.js .watch:not(.in-view) .chart-system .sc,.js .watch:not(.in-view) .chart-system .sf{opacity:1 !important}
@@ -896,3 +886,7 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(31,28,
 .pstrip li small{font:500 12px/1.3 var(--font-body);color:var(--gold-deep)}
 @media (max-width:900px){.mgrid,.pstrip{grid-template-columns:minmax(0,1fr)}.pstrip .k{padding-top:0}}
 @media (max-width:600px){.partner .plist li{grid-template-columns:minmax(0,1fr)}.pstrip li{flex:1 1 calc(50% - 5px)}.pstrip li a{height:100%}}
+/* Etusivun ja Palvelut-sivun kuva v2 (26.10.2026): liittymä mittarina — kultaviiva paperilla, sivuston värit. Kuvan oma tyyli ja animaatiot SVG:n <style>-lohkossa (.orbit). */
+.orbit-fig{background:radial-gradient(85% 70% at 50% 46%,#FFFDF7 0%,#FFFFFF 72%)}
+.pain-r .orbit-fig{padding:clamp(14px,2vw,22px) clamp(10px,1.6vw,18px) 16px}.pain-r .orbit-fig svg{max-width:none}
+.ladder-fig.orbit-fig{padding:clamp(16px,2.4vw,28px) clamp(12px,2vw,24px) 18px}
