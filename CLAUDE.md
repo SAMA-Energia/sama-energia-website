@@ -40,6 +40,18 @@ All customer-facing text is Finnish or Estonian and requires a
   here). Financing is described generically: leasing or own capital, compared
   on the same figures in the written assessment.
 - Partner names permitted: Soleron Energy, Ralos Oy, JSM Automaatiosähkö Oy, and Scanoffice Oy on the Finnish site only — founder decision 08.09.2026.
+- **Kumppanit / Partnerid page (v34, founder decisions 25.10.2026, Martin):** products are listed by type
+  and specification without naming the manufacturer, except the permitted names above. The page says SAMA
+  has several suppliers and names manufacturer and model in the offer. A manufacturer is named only after
+  its written confirmation, logged in R14 and the Decision Log, and added to the list above. Ready-made
+  cards for pending names are kept OUTSIDE this public repo (project doc `claude/SAMA_Kumppanit_v34_odottavat.md`).
+  "EP Energy" stays on the banned-name guard until that decision is made.
+- Installation wording (founder decision 25.10.2026): the installation manager leads the work; electrical
+  work and commissioning are done by a registered electrical contractor partner. Do not write "oma
+  asennustiimi" / "paigaldusmeeskond" until there is an installation team under contract.
+- Reserve income is described as *modelled* ("mallinnettu" / "modelleeritud") per product from realised
+  hourly prices, future as a range — founder decision 25.10.2026 (replaces "kolme skenaariota").
+- CSS budget 76 KB (was 70) — founder decision 25.10.2026.
 - **VENI Energia removed site-wide 21.10.2026** at the company's request — founder decision (Martin). It must not be
   named, linked or described anywhere on the site, in either language, nor in llms.txt. Aggregation in Finland is
   described generically (/aggregaattori/). `verify-pages.mjs` fails the build if the name reappears in any served file.

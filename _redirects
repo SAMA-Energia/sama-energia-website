@@ -49,6 +49,8 @@ https://samaenergia.fi/uudised/*              https://samaenergia.ee/uudised/:sp
 https://www.samaenergia.fi/uudised/*          https://samaenergia.ee/uudised/:splat            301!
 https://samaenergia.fi/seadmete-nouded/*      https://samaenergia.ee/seadmete-nouded/:splat    301!
 https://www.samaenergia.fi/seadmete-nouded/*  https://samaenergia.ee/seadmete-nouded/:splat    301!
+https://samaenergia.fi/partnerid/*            https://samaenergia.ee/partnerid/:splat          301!
+https://www.samaenergia.fi/partnerid/*        https://samaenergia.ee/partnerid/:splat          301!
 https://samaenergia.fi/kontakt/*              https://samaenergia.ee/kontakt/:splat            301!
 https://www.samaenergia.fi/kontakt/*          https://samaenergia.ee/kontakt/:splat            301!
 https://samaenergia.fi/andmekaitse/*          https://samaenergia.ee/andmekaitse/:splat        301!
@@ -80,6 +82,8 @@ https://samaenergia.ee/laitevaatimukset/*     https://samaenergia.fi/laitevaatim
 https://www.samaenergia.ee/laitevaatimukset/* https://samaenergia.fi/laitevaatimukset/:splat   301!
 https://samaenergia.ee/equipment-requirements/*  https://samaenergia.fi/equipment-requirements/:splat  301!
 https://www.samaenergia.ee/equipment-requirements/*  https://samaenergia.fi/equipment-requirements/:splat  301!
+https://samaenergia.ee/kumppanit/*            https://samaenergia.fi/kumppanit/:splat          301!
+https://www.samaenergia.ee/kumppanit/*        https://samaenergia.fi/kumppanit/:splat          301!
 https://samaenergia.ee/meista/*               https://samaenergia.fi/meista/:splat             301!
 https://www.samaenergia.ee/meista/*           https://samaenergia.fi/meista/:splat             301!
 https://samaenergia.ee/ajankohtaista/*        https://samaenergia.fi/ajankohtaista/:splat      301!
@@ -124,6 +128,7 @@ https://samaenergia.com/*                     https://samaenergia.fi/:splat     
 /meist/*                                      /et/meist/:splat                                 200
 /uudised/*                                    /et/uudised/:splat                               200
 /seadmete-nouded/*                            /et/seadmete-nouded/:splat                       200
+/partnerid/*                                  /et/partnerid/:splat                             200
 /kontakt/*                                    /et/kontakt/:splat                               200
 /andmekaitse/*                                /et/andmekaitse/:splat                           200
 /aitah/*                                      /et/aitah/:splat                                 200
