@@ -115,3 +115,12 @@ When in doubt, leave it out and flag it.
 - Varavoima/varutoide aina ehdolla myös etusivun hotellikortissa. 3D: ei erillistä akkuinvertteriä — `_xPcs` piirtää akkukaapin (etusivun kuvitus 3 kaappia, varasto-kerros 4); INVERTTERI/INVERTER-tarrat pois.
 - Reservisivujen data-desc "mallinnettu/modelleeritud", ei "kolme skenaariota"; "satoja kertoja / sadu kordi" pois (ei lähdettä).
 - Puhelin (<= 750 px, sivuilla joilla .lava): 3D-moottoria ei käynnistetä; still-kuva `assets/hero-3d.webp` (938×586, ei tarroja) hero-ryhmässä. Kuvan päivitys moottorimuutosten jälkeen: renderöi .cv-hero still-tilassa 519 px leveällä ikkunalla, DPR 2 (canvas 479 css-px < 480 = ei tarroja). Hero-teksti ilman fade-animaatiota.
+
+## Kartta /verkko/ ja /vork/ luvuiksi (vestlus C, haara v35-uusi-ilme, 02.11.2026)
+
+- Sivu: seitsemän lukua tavallisella vierityksellä (kysymys → yksi johtopäätös → yksi luku → faktat lähteineen → toinen maa vertailuna määritelmämerkinnällä → lähteet), kartta tekstin ulkopuolella (≥ 1024 px kiinnitetty oikealle ja vaihtaa kerrosta luvun mukana; puhelimella lukujen yläpuolella). Sivun lohko `kartta:alku … kartta:loppu` generoidaan datasta: `python3 scripts/kaart/build_page.py` — älä muokkaa lohkoa käsin.
+- Data: `assets/kartta-data.json` on yhteinen etusivun scene.js:n kanssa (muoto yhteensopiva: id/name/q/cmp/facts/pins; lisätty concl/big/pays/base/fx/note/sources/views/next). Jokainen luku lähde + päivä, tarkistettu 2.11.2026, seuraava tarkistus 1.2.2027 (rutiini: `docs/kaart/lugu.md`).
+- Pohja `assets/kartta-pohja.json` (< 150 kt, `scripts/kaart/build_map.py`, OSM ODbL + Natural Earth) ja 110 kV erikseen `assets/kartta-110.json` (ladataan vain painikkeesta). Etusivun `kartta-verkko.json` ja `kartta.json` ennallaan.
+- Moottori `assets/kartta.js` (SVG, ei piirtosilmukkaa; reduced-motion; kosketus, näppäimistö) + `assets/kartta.css` vain tällä sivulla (`data-assets="kartta"` → build-pages lisää linkin; ei kasvata site.css:n budjettia). /verkko/ ei enää lataa scene.js:ää. Globaali rajapinta `window.SAMA_VERKKO` (ei `SAMA_KARTTA`, jonka scene.js käyttää esikatselussa).
+- verify-pages: kartan tiedostojen koot, jokaisen kerroksen johtopäätös sivulla = data, faktojen lähteet olemassa.
+- AVOIN: natiivitarkistus kaikille uusille FI/ET-teksteille; Elektrilevi mainitaan datalähteenä (jakeluverkkoyhtiö); etusivun karttarivit (FI 1 050 MW 24.2.2026, ET „Hertz 1 Kiisa") päivitetään etusivun uudistuksessa; reaaliaikainen data vaatisi Netlify-funktion — perustajapäätös.

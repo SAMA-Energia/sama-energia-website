@@ -34,6 +34,7 @@ def build(lang):
         divs.append((slug,body))
         if slug=='': shell=h
     css=inline_urls(open(os.path.join(ROOT,'assets/fonts.css')).read())+'\n'+inline_urls(open(os.path.join(ROOT,'assets/site.css')).read())
+    css+='\n'+open(os.path.join(ROOT,'assets/kartta.css'),encoding='utf-8').read()   # /verkko/ ja /vork/ (sivukohtainen tyylitiedosto)
     css+='\n.page[data-route]{display:none}.page[data-route].on{display:block}'
     js=open(os.path.join(ROOT,'assets/site.js')).read()
     head=shell[:shell.find('<body')]
@@ -71,7 +72,11 @@ if(cur!==s){ps.forEach(function(p){p.classList.toggle('on',p===hit);});cur=s;win
 document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('in');});}
 if(anchor){var el=document.getElementById(anchor);if(el)setTimeout(function(){el.scrollIntoView();},30);}}
 window.addEventListener('hashchange',go);go();})();</script>'''
-    html=html.replace('</body>','') + router + f'<script>{js}</script>\n' + bundle[0] + '\n</body>\n</html>'
+    kartta_json=''
+    if 'data-kartta' in html:   # /verkko/-sivun kartta: data sivun sisään, koska esikatselutiedosto ei voi hakea tiedostoja
+        for jid,f in (('kartta-pohja-json','assets/kartta-pohja.json'),('kartta-data-json','assets/kartta-data.json'),('kartta-110-json','assets/kartta-110.json')):
+            kartta_json+=f'<script type="application/json" id="{jid}">'+open(os.path.join(ROOT,f),encoding='utf-8').read().replace('</','<\\/')+'</script>\n'
+    html=html.replace('</body>','') + router + kartta_json + f'<script>{js}</script>\n' + bundle[0] + '\n</body>\n</html>'
     out=os.path.join(OUT,f'samaenergia-{lang}-{VER}.standalone.html'); open(out,'w',encoding='utf-8').write(html)
     print(out, len(divs),'sivua', round(len(html)/1e6,2),'MB')
 for l in ('fi','et'): build(l)

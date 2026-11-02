@@ -694,6 +694,27 @@ if (jsBytes > 20 * 1024) err(`assets/site.js ${jsBytes} tavua > 20 kt`);
 for (const f of ['assets/site.css', 'assets/fonts.css', 'assets/site.js']) if (/googleapis|gstatic|https?:\/\//.test(read(f))) err(`${f} viittaa ulkoiseen osoitteeseen`);
 if (!/font-display:swap/.test(read('assets/fonts.css'))) err('fonts.css: font-display: swap puuttuu');
 
+/* Yhteinen verkko -kartta (/verkko/, /vork/; v35 2.11.2026): sivukohtaiset tiedostot ja budjetit
+   (docs/brief/03-kaart.md: pohjatiedosto < 150 kt, 110 kV erillisenä). Sivun tekstin luvut tulevat
+   kartta-data.json:sta (scripts/kaart/build_page.py) — tarkistetaan, että jokaisen kerroksen johtopäätös on sivulla. */
+{
+  const KB = 1024, size = f => statSync(join(ROOT, f)).size;
+  for (const [f, max] of [['assets/kartta-pohja.json', 150], ['assets/kartta-110.json', 100], ['assets/kartta-data.json', 80], ['assets/kartta.js', 30], ['assets/kartta.css', 16]]) {
+    if (!existsSync(join(ROOT, f))) { err(`${f} puuttuu`); continue; }
+    if (size(f) > max * KB) err(`${f} ${size(f)} tavua > ${max} kt`);
+  }
+  for (const f of ['assets/kartta.js', 'assets/kartta.css']) if (/https?:\/\//.test(read(f).replace(/\/\*[\s\S]*?\*\//g, '').replace(/'http:\/\/www\.w3\.org\/2000\/svg'/g, ''))) err(`${f} viittaa ulkoiseen osoitteeseen`);
+  try {
+    const kd = JSON.parse(read('assets/kartta-data.json'));
+    const dec = s => s.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#x27;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+    for (const [lang, file] of [['fi', 'verkko/index.html'], ['et', 'et/vork/index.html']]) {
+      const page = dec(read(file));
+      kd.layers.forEach((L, i) => { if (!page.includes(L.concl[lang])) err(`${file}: kerroksen ${i + 1} johtopäätös ei vastaa kartta-data.json:ia — aja python3 scripts/kaart/build_page.py`); });
+    }
+    for (const L of kd.layers) for (const c of ['FI', 'EE']) for (const f of L.facts[c] || []) if (!kd.sources[f.src]) err(`kartta-data.json: tuntematon lähde ${f.src}`);
+  } catch (e) { err(`kartta-data.json ei jäsenny: ${e.message}`); }
+}
+
 /* katselmusmanifesti: olemassa, jäsentyy, kohtuukokoinen, viittaa olemassa oleviin sivuihin ja osioihin */
 try {
   const raw = read('assets/review.json');

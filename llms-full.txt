@@ -1404,104 +1404,277 @@ Maksuton kartoitus vastaa siihen kirjallisesti, tuntikohtaisista kulutustiedoist
 
 Pyydä maksuton kartoitus Takaisin katsauksiin
 
-# Yhteinen verkko – Suomen ja Viron sähköjärjestelmä kuudessa kerroksessa — SAMA Energia — https://samaenergia.fi/verkko/
+# Yhteinen verkko – kuusi kysymystä Suomen sähköjärjestelmästä — SAMA Energia — https://samaenergia.fi/verkko/
 
 Etusivu›Yhteinen verkko
 
-Yhteinen verkko, kerros kerrokselta.
+Yhteinen verkko – kuusi kysymystä ja teidän liittymänne.
 
-Painakaa kerrosta, niin se piirtyy kartalle; hiiri pisteen päällä näyttää lähteen. Luvut ovat Fingridin ja Eleringin julkaisuista, lähde ja päivä jokaisessa – sama määritelmä molemmissa maissa, tai merkintä kun ei.
+Kartta näyttää, mihin Suomen sähköjärjestelmä on menossa: missä verkko kulkee, kuinka paljon kulutus kasvaa, mistä tuuli- ja aurinkosähkö tulee, kuka jo varastoi ja kuka reserveistä maksaa. Jokaisella luvulla on lähde ja päiväys.
 
-VerkkoKulutusTuotantoVarastotReservitTulossaTeidän liittymänne
+Lukekaa luku kerrallaan: kartta vaihtaa kerrosta mukana. Viekää hiiri tai sormi kartan kohteen päälle, niin näette luvun lähteen. Vertaa Viroon -painike näyttää Viron samalla määritelmällä tai kertoo, missä määritelmä eroaa.
 
-Verkko — Missä verkko on?
+01 / 07
 
-Suomi · Fingrid
-Kantaverkko: 400 kV 5 400 km · 220 kV 1 000 km · 110 kV 7 600 km · 138 sähköasemaa (Fingrid, Electricity system of Finland, 2025)
-Rajayhteydet: Ruotsi: AC 1 500 MW tuonti + Fenno-Skan 1 200 MW · Norja ~120 MW · Viro 1 016 MW (Fingrid, Siirtojenhallinta 2024, 11.8.2025)
+Missä verkko on?
 
-Viro · Elering
-Siirtoverkko: 330 kV 1 851 km · 110 kV 3 342 km · 158 sähköasemaa (Elering, arengukava 2026–2035, 9.7.2026)
-Rajayhteydet: Suomi: EstLink 1 + 2 = 1 016 MW · Latvia: 3 × 330 kV · tuontikyky 2 165 MW (Elering, arengukava 2026–2035, 9.7.2026)
+Kantaverkko siirtää sähköä länsirannikolta ja pohjoisesta, missä on yli 70 prosenttia Suomen sähköntuotannosta, etelään, missä kulutetaan yli puolet sähköstä.
 
-Vertailukelpoisuus: Vertailukelpoinen: molemmat ovat kantaverkkoyhtiön omia johtoja. Viron 330 kV vastaa Suomen 400 kV:n roolia.
+5 400 km400 kV:n johtoja · lisäksi 1 000 km 220 kV ja 7 600 km 110 kV · 138 sähköasemaa (2025)
 
-Kulutus — Paljonko kasvua tulee?
+Kantaverkko: 400 kV 5 400 km · 220 kV 1 000 km · 110 kV 7 600 km · tasavirtakaapelit 320 km · 138 sähköasemaa (Fingrid, Suomen sähköjärjestelmä, 2025)
+Tuotanto ja kulutus: yli 70 % tuotannosta länsirannikolla ja pohjoisessa · yli 50 % kulutuksesta Etelä-Suomessa (Fingrid, 3.9.2026)
+Ruotsi: pohjoinen vaihtosähköyhteys 1 900 MW molempiin suuntiin 1.12.2025 alkaen (Aurora Line) · Fenno-Skan 1 ja 2: 400 + 800 MW (Fingrid, 4.12.2025)
+Viro ja Norja: EstLink 1 ja 2: 350 + 650 MW · Norjaan 220 kV:n yhteys Inarista (Fingrid, Osa pohjoismaista sähköjärjestelmää)
 
-Suomi · Fingrid
+Viro samalla mittarilla
+Vertailtavuus: Vertailukelpoinen: molemmat ovat kantaverkkoyhtiön omia johtoja ja sähköasemia. Viron 330 kV:n verkko vastaa roolissaan Suomen 400 kV:n verkkoa.
+Siirtoverkko: 330 kV 1 851 km · 110 kV 3 342 km · kaapelit 284 km · 158 sähköasemaa (Elering, 21.8.2026)
+Rajayhteydet: Suomi 1 016 MW molempiin suuntiin · Latvia kolme 330 kV:n johtoa, tuonti enintään 1 300 MW · tuontikyky yhteensä 2 165 MW (Elering, arengukava 2026–2035, 9.7.2026)
+Tahtialue: Manner-Eurooppa 9.2.2025 alkaen (Elering)
+
+Lähteet: Fingrid: Suomen sähköjärjestelmä (luvut 2025) · 2025; Fingrid: Fingridin selvitys: teollisuuskulutuksen sijoittuminen lähelle sähköntuotantoa lisää kantaverkon liitettävyyttä merkittävästi · 3.9.2026; Fingrid: Siirtokapasiteetin määräytyminen Aurora-käyttöönoton jälkeen (sähkömarkkinatoimikunta) · 4.12.2025; Fingrid: Osa pohjoismaista sähköjärjestelmää · luettu 2.11.2026
+
+Näytä kartalla
+
+02 / 07
+
+Kuinka paljon kasvua tulee?
+
+Fingridin skenaarioissa Suomen sähkönkulutus kasvaa nykyisestä alle 90 terawattitunnista 106–123 terawattituntiin vuoteen 2030 mennessä, ja jo solmitut datakeskusten ja sähkökattiloiden liittymissopimukset lisäisivät toteutuessaan kulutusta jopa 40 prosenttia.
+
+106–123 TWhsähkönkulutus 2030 Fingridin skenaarioissa · 2025: 84,6 TWh
+
 Kulutus 2025: 84,6 TWh (+1,9 %) (Fingrid, 4.3.2026)
-Ennuste: 106–123 TWh 2030 · 110–162 TWh 2035 (Fingrid, 30.9.2026)
-Kulutushuippu: 15 553 MW 8.1.2026 klo 17–17.15 (ennätys) (Fingrid, 4.3.2026)
+Ennuste: 106–123 TWh vuonna 2030 · 110–162 TWh vuonna 2035 (Fingrid, 30.9.2026)
+Tammi–syyskuu 2026: 64,8 TWh (+5,0 %) (Fingrid, 29.10.2026)
+Kulutushuippu: ennätys 15 553 MW 8.1.2026 klo 17–17.15 (Fingrid, 4.3.2026)
+Liittymissopimukset: datakeskukset yli 5 GW · sähkökattilat yli 3 GW · toteutuessaan jopa +40 % kulutukseen vuoden 2025 tasosta (Fingrid, 23.10.2026)
 
-Viro · Elering
-Kulutus 2025: 8,3 TWh (+1 %) · 37 % tuontia (Elering / ERR, 26.1.2026)
-Ennuste: 10,0 TWh 2030 · 11,2 TWh 2035 · huippu 1 924 MW 2030 (Elering, arengukava 2026–2035, 9.7.2026)
-Kulutushuippu: 1 467 MW 19.2.2025 · ennätys 1 595 MW 4.1.2024 (Elering, VKA 2025 / arengukava 2026)
+Viro samalla mittarilla
+Vertailtavuus: Osittain vertailukelpoinen: molemmat ovat maan vuotuinen sähkönkulutus, mutta Fingrid antaa skenaarioiden haarukan ja Elering yhden ennusteen. Huipun ennusteen julkaisee vain Elering.
+Ennuste: 10,0 TWh vuonna 2030 · 11,2 TWh vuonna 2035 (2025: 7,9 TWh) (Elering, arengukava 2026–2035, 9.7.2026)
+Kulutushuippu: ennätys 1 723 MW 5.2.2026 · ennuste kylmänä talvena 1 924 MW vuonna 2030 (Elering, arengukava 2026–2035, 9.7.2026)
+Tuonti: 37 % kulutuksesta katettiin tuonnilla vuonna 2025 (Elering / ERR, 26.1.2026)
 
-Vertailukelpoisuus: Vertailukelpoinen: molemmat ovat maan bruttokulutus häviöineen. Fingrid antaa haarukan skenaarioista, Elering yhden uran.
+Lähteet: Fingrid: Fingridin ajankohtaiset, neuvottelukunta · 4.3.2026; Fingrid: Sähkön tuotannon ja kulutuksen kehitysnäkymät päivitetty – sähkönkulutuksen kasvu konkretisoituu · 30.9.2026; Fingrid: Fingrid-konsernin johdon katsaus 1.1.–30.9.2026 · 29.10.2026; Fingrid: Liittymissopimushakemusten käsittely ruuhkautunut · 23.10.2026
 
-Tuotanto — Mistä säästä riippuva tuotanto tulee?
+Näytä kartalla
 
-Suomi · Fingrid
-Tuulivoima: 9 433 MW · +1 023 MW vuonna 2025 (Suomen Uusiutuvat, 31.12.2025)
-Aurinkovoima: n. 1,2 GW alkuvuonna 2025 · 403 MW liitetty 2025 (Fingrid, energiaennuste Q3/2025; Fingridin vuosi 2025)
-Uusiutuvat: 57 % tuotannosta · 96 % päästötöntä (Energiateollisuus, Sähkövuosi 2025, 21.1.2026)
+03 / 07
 
-Viro · Elering
-Tuulivoima: 694 MW (Elering, VKA 2025, 9.12.2025)
-Aurinkovoima: 1 214 MW · +245 MW vuodessa (Elering, VKA 2025, 9.12.2025)
-Uusiutuvat: 68 % kotimaisesta tuotannosta · 41 % kulutuksesta (Elering / ERR, 26.1.2026)
+Mistä säästä riippuva tuotanto tulee?
 
-Vertailukelpoisuus: Osittain vertailukelpoinen: Suomen tuulivoima on toimialan nimellisteho, Viron luvut Eleringin nettoteho. Suomen aurinkovoiman kokonaissummaa Fingrid ei julkaise.
+Fingridin ennusteissa Suomen verkossa on 9 553 MW tuulivoimaa ja 2 074 MW aurinkovoimaa, ja Fingridin mukaan sääriippuvaisen tuotannon rinnalle tarvitaan lisää säätövoimaa ja joustoa.
 
-Varastot — Kuka jo varastoi?
+9 553 MWtuulivoimaa · aurinkovoimaa 2 074 MW · Fingridin ennusteiden kapasiteetit 2.11.2026
 
-Suomi · Fingrid
-Verkossa: n. 1 050 MW · 261 järjestelmää ≥ 1 MW · 85 % yksiköistä alle 2 MW (Fingrid, 24.2.2026)
-Missä: 56 % jakeluverkossa · noin puolet linjan Tampere–Lahti–Lappeenranta eteläpuolella (Fingrid, 24.2.2026)
-Rajoitus: Uudet varastoliitynnät Etelä-Suomen kantaverkkoon rajoitettu 2029 asti (Fingrid, 26.9.2025)
+Tuulivoima: 9 553 MW (Fingrid, avoin data 268, 2.11.2026)
+Aurinkovoima: 2 074 MW, sisältää pientuotannon arvion · virallista kokonaislukua Fingrid ei julkaise (Fingrid, avoin data 267, 2.11.2026)
+Liitetty 2025: 1 509 MW tuuli- ja aurinkovoimaa (Fingrid, 4.3.2026)
+Säätövoima: sääriippuvaisen tuotannon rinnalle tarvitaan lisää säätövoimaa ja joustoa (Fingrid, 18.8.2026)
 
-Viro · Elering
-Hertz 1 Kiisa: 100 MW · täysi teho 3.2.2026 (ERR, 3.2.2026)
-Hertz 2 Aruküla: 100 MW / 200 MWh · 7.7.2026 · yhdessä 200 MW / 400 MWh (ERR, 7.7.2026)
+Viro samalla mittarilla
+Vertailtavuus: Osittain vertailukelpoinen: Suomen luvut ovat Fingridin ennusteissa käyttämiä kapasiteetteja (arvio, ei virallinen tilasto, 2.11.2026), Viron luvut Eleringin asennettua nettotehoa 2025.
+Tuulivoima: 694 MW (Elering, varustuskindluse aruanne 2025, 9.12.2025)
+Aurinkovoima: 1 214 MW · +245 MW vuodessa (Elering, varustuskindluse aruanne 2025, 9.12.2025)
+Uusiutuvat 2025: 68 % kotimaisesta tuotannosta · 41 % kulutuksesta (Elering / ERR, 26.1.2026)
+
+Lähteet: Fingrid, avoin data: Tuulivoimaennusteessa käytetty kokonaiskapasiteetti (aineisto 268) · 2.11.2026; Fingrid, avoin data: Aurinkovoimaennusteessa käytetty kokonaiskapasiteetti (aineisto 267) · 2.11.2026; Fingrid: Fingridin ajankohtaiset, neuvottelukunta · 4.3.2026; Fingrid: Sähkönkulutus on kääntymässä voimakkaaseen kasvuun – rinnalle tarvitaan lisää säätövoimaa · 18.8.2026
+
+Näytä kartalla
+
+04 / 07
+
+Kuka jo varastoi?
+
+Suomessa on Fingridin arvion mukaan jo 2 085 MW yli megawatin sähkövarastoja ja liittymissopimuksia lähes kuuden gigawatin edestä, mutta Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029.
+
+2 085 MWyli 1 MW:n sähkövarastoja, Fingridin arvio 2.11.2026 · sopimuksia lähes 6 GW
+
+Verkossa nyt: 2 085 MW yli 1 MW:n varastoja (arvio, sisältää noin kuukauden sisällä käyttöön tulevat) (Fingrid, avoin data 424, 2.11.2026)
+Helmikuu 2026: noin 1 050 MW · 85 % yksiköistä alle 2 MW · 56 % jakeluverkossa · noin puolet Tampere–Lahti–Lappeenranta-linjan eteläpuolella (Fingrid, 24.2.2026)
+Sopimukset ja kyselyt: liittymissopimuksia lähes 6 GW (10/2026) · liityntäkyselyitä 12 kuukaudessa noin 32 GW (6/2026) (Fingrid, 23.10.2026; 23.7.2026)
+Etelä-Suomi: uudet varastot kantaverkkoon vasta, kun Hikiä–Toivila valmistuu 2029 · Pohjanmaalla ja Pohjois-Suomessa vapaata kapasiteettia useita tuhansia megawatteja (Fingrid, 24.9.2025)
+
+Viro samalla mittarilla
+Vertailtavuus: Ei vertailukelpoinen: Suomen luku on Fingridin arvio kaikista yli 1 MW:n varastoista. Virossa Eleringin kokonaisluku on julkaistu vain uutisessa, joten kartalla on erilliset merkinnät. Lukuja ei pidä laskea yhteen.
+Verkossa: 245 MW akkukapasiteettia (helmikuu 2026) (Elering / ERR News, 17.2.2026)
+Kiisa: 100 MW · täydellä teholla helmikuussa 2026 (ERR News, 4.2.2026)
+Aruküla: 100 MW / 200 MWh · avattiin heinäkuussa 2026 · yhdessä Kiisan kanssa 200 MW / 400 MWh (ERR News, 8.7.2026)
 Jakeluverkossa: 74 MW vuoden 2025 lopussa (Elektrilevi / ERR, 19.8.2026)
+Sopimuksissa: ministerin mukaan lähes 1 000 MW akkuvarastoja Eleringin kanssa (helmikuu 2026) (ERR News, 4.2.2026)
 
-Vertailukelpoisuus: Ei vertailukelpoinen: Virolla ei ole yhtä Eleringin kokonaislukua. Kartalla erilliset merkinnät.
+Lähteet: Fingrid, avoin data: Sähkövarastojen yhteenlaskettu asennettu kapasiteetti (aineisto 424) · 2.11.2026; Fingrid: Sähkövarastojen yhteisteho Suomessa jo yli 1 000 MW · 24.2.2026; Fingrid: Liittymissopimushakemusten käsittely ruuhkautunut · 23.10.2026; Fingrid: Sähkövarastojen liityntärajoitusta jatketaan Etelä-Suomessa · 24.9.2025
 
-Reservit — Paljonko tarvitaan ja kuka maksaa?
+Näytä kartalla
 
-Suomi · Fingrid
-Velvoitteet 2026: FCR-N 128 MW · FCR-D ylös 309 / alas 298 MW · aFRR n. 50 MW · mFRR ylös 880–1 300 MW (Fingrid, Power system reserves, 2026)
-Tahtialue: Pohjoismainen (Fingrid)
+05 / 07
 
-Viro · Elering
-Tarve: mFRR ylös n. 600 MW (Elering, mFRR vahe-analüüs, 5/2026)
-Esikvalifioitu: FCR 26 · aFRR 197 / 297 · mFRR 572 / 976 MW (Elering, VKA 2025, 9.12.2025)
-Kuka maksaa: 74 M€ helmi–joulukuu 2025 · 3,73 €/MWh jokaisella laskulla (Elering, 2025 turu kokkuvõte, 2/2026)
-Tahtialue: Manner-Eurooppa 9.2.2025 alkaen (Euroopa Komisjon, 9.2.2025)
+Kuinka paljon reservejä tarvitaan ja kuka maksaa?
 
-Vertailukelpoisuus: Osittain vertailukelpoinen: Suomen luvut ovat Fingridin velvoitteita, Viron esikvalifioitu kapasiteetti on tarjontaa ja mFRR-ylös kysyntä on ainoa julkaistu tarve.
+Fingrid hankkii joka tunti keskimäärin 1 500 MW reservikapasiteettia ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW lisää, ja reservien kustannukset katetaan tasepalvelumaksuilla, joita Fingrid perii tasevastaavilta.
 
-Tulossa — Mitä on tulossa?
++1 200 MWreservikapasiteettia viiden vuoden päästä · nyt keskimäärin 1 500 MW joka tunti (6/2025)
 
-Suomi · Fingrid
-Liittymissopimukset: datakeskukset lähes 5 GW · sähkövarastot yli 4 GW · sähkökattilat yli 3 GW (Fingrid, 18.8.2026)
-Kyselyt: yli 100 GW · kolmannes datakeskuksia (Fingrid, 29.10.2026)
+Hankinta nyt: keskimäärin 1 500 MW joka tunti · viiden vuoden päästä 1 200 MW lisää (Fingrid, 11.6.2025)
+Velvoitteet 2026: FCR-N 128 MW · FCR-D ylös 309 / alas 298 MW · aFRR noin 50 MW · mFRR ylös 880–1 300 MW · mFRR alas 575 MW (Fingrid, Power system reserves, 2026)
+Hankintaennuste: mFRR alas 567 → 1 100 MW (2026 → 2032) · aFRR ylös 44 → 85 MW (2026 → 2028) (Fingrid, Power system reserves, 2026)
+2027: FCR hankitaan vain tuntimarkkinoilta (Fingrid, 8.9.2026)
 
-Viro · Elering
-Uusi tuotanto: 1 500 MW liitettävänä 2030 mennessä (Elering, arengukava 2026–2035, 9.7.2026)
-Varastot, perusskenaario: 600 MW / 1 200 MWh 2030 · 1 500 MW / 3 000 MWh 2035 (Elering, VKA 2025, 9.12.2025)
-EstLink 3: 700 MW · 2038–2040 (Elering arengukava 9.7.2026; Fingrid 6.2.2026)
+Kuka maksaa: Reservien kustannukset katetaan tasepalvelumaksuilla, jotka Fingrid perii tasevastaavilta; tuotannon ja kulutuksen volyymimaksu on 0,64 €/MWh 1.1.2027 alkaen.
 
-Vertailukelpoisuus: Vertailukelpoinen: molemmat ovat kantaverkkoyhtiön liittymissopimuksia ja suunnitelmia.
+Viro samalla mittarilla
+Vertailtavuus: Osittain vertailukelpoinen: Suomen luvut ovat Fingridin kansallisia velvoitteita ja hankintaa, Viron tarve on Baltian yhteisen säätöalueen (Viro, Latvia, Liettua) mitoitus. Esikvalifioitu kapasiteetti on tarjontaa, ei tarvetta.
+Baltian tarve: aFRR enintään 120 MW ylös / 115 MW alas · mFRR ylös 604 → 754 MW · mFRR alas 691 → 991 MW (2026 → 2035) (Elering, AST, Litgrid, 29.7.2025)
+Kustannus: 74 M€ helmi–joulukuu 2025 · ennuste 2026: 60 M€ (Elering, 2025 turu kokkuvõte, 4.2.2026)
+Esikvalifioitu (tarjonta): FCR 76 · aFRR 602 / 685 · mFRR 1 617 / 1 657 MW (lokakuu 2026) (Elering, 2.11.2026)
 
-Teidän liittymänne
-Kaikki kerrokset päällekkäin näyttävät saman asian: liittymä, jonka takana on varasto, on osa tätä verkkoa – ja ansaitsee siinä. Maksuton arvio kertoo, mitä juuri teidän liittymänne voi tehdä.
+Lähteet: Fingrid: Reservimarkkinat tutuiksi -webinaari · 11.6.2025; Fingrid: Power system reserves: velvoitteet 2026 ja hankintaennuste · 2026; Fingrid: Taajuusohjatun käyttö- ja häiriöreservin hankinta keskitetään tuntimarkkinoille 2027 · 8.9.2026; Fingrid: Tasepalvelun hinnoittelu joulukuussa 2026 ja 1.1.2027 alkaen · 27.10.2026
+
+Näytä kartalla
+
+06 / 07
+
+Mitä on tulossa?
+
+Fingrid toteuttaa 5,2 miljardin euron investointiohjelmaa, liittymien etusijamenettelyn on määrä tulla voimaan 1.1.2027 ja Etelä-Suomen varastoliitynnät avautuvat, kun Hikiä–Toivila valmistuu vuonna 2029.
+
+5,2 mrd €Fingridin investointiohjelma · noin 2 mrd € vuosina 2026–2029
+
+Valmistunut: Järvilinja 2: 305 km uutta 400 ja 110 kV:n johtoa, käytössä lokakuusta 2026 (Fingrid, 26.10.2026)
+Seuraavaksi: Hikiä–Toivila 2029 · Metsälinja 2 Vaala–Jämsä, noin 350 km, 2030 (Fingrid, 24.9.2025; 29.9.2026)
+Etusijamenettely: liittymien etusijamenettely, suunniteltu voimaantulo 1.1.2027 (Fingrid, 23.10.2026)
+Kysyntä: liityntäkyselyt 12 kuukaudessa: kulutus noin 68 GW, varastot noin 32 GW, tuotanto noin 13 GW (Fingrid, 23.7.2026)
+
+Viro samalla mittarilla
+Vertailtavuus: Suuntaa-antava: molemmat ovat kantaverkkoyhtiön suunnitelmia ja liittymätilanteita. Suomen luvut ovat sopimuksia ja kyselyitä, Viron luvut suunnittelun lähtöoletuksia.
+Uusi tuotanto: enintään 1 500 MW vuoteen 2030 mennessä (Elering, arengukava 2026–2035, 9.7.2026)
+Varastot 2035: 1 000–1 300 MW lisää (Viron energiastrategia ENMAK 2035, Eleringin suunnitelmassa) (Elering, arengukava 2026–2035, 9.7.2026)
+Varastot, perusskenaario: 600 MW / 1 200 MWh 2030 · 1 500 MW / 3 000 MWh 2035 (Elering, varustuskindluse aruanne 2025, 9.12.2025)
+Yhteydet: EstLink 3 (700 MW) ja Viron–Latvian neljäs yhteys: tuontikyky +1 200 MW noin vuodesta 2038 (Elering, arengukava 2026–2035, 9.7.2026)
+
+Lähteet: Fingrid: Järvilinja 2 otettiin käyttöön · 26.10.2026; Fingrid: Metsälinja 2 -voimajohtoyhteys vastaa sähköistyvän Suomen tarpeisiin · 29.9.2026; Fingrid: Liittymissopimushakemusten käsittely ruuhkautunut · 23.10.2026; Fingrid: Fingrid-konsernin puolivuosikatsaus 1.1.–30.6.2026 · 23.7.2026; Fingrid: Fingrid-konsernin johdon katsaus 1.1.–30.9.2026 · 29.10.2026
+
+Näytä kartalla
+
+07 / 07
+
+Missä teidän liittymänne on tässä kokonaisuudessa?
+
+Teidän liittymänne on jo olemassa: sen taakse asennettu akku ei jonota kantaverkkoon, ja sillä voi laskea tehomaksua, hyödyntää pörssisähkön hintaeroja ja osallistua aggregaattorin kautta reservimarkkinoille, joiden tarve kasvaa.
+
+32 GWsähkövarastojen liityntäkyselyjä Fingridille 12 kuukaudessa · hakemusten käsittely ruuhkautunut 10/2026
+
+Kantaverkko: liittymissopimushakemusten käsittely ruuhkautunut, kaikkia ei ehditä käsitellä tänä vuonna (Fingrid, 23.10.2026)
+Etelä-Suomi: uuden suuren kulutuksen kantaverkkoliitäntä tiukilla 2025–27 · uudet varastot kantaverkkoon 2029 (Fingrid, 21.1.2025; 24.9.2025)
+Reservit: tarve kasvaa 1 200 MW viidessä vuodessa (Fingrid, 11.6.2025)
+
+Maksuton kirjallinen arvio näyttää, mitä teidän liittymänne voi tehdä: tehomaksu, pörssisähkö ja mallinnettu reservituotto tuotteittain.
+
+Lähteet: Fingrid: Liittymissopimushakemusten käsittely ruuhkautunut · 23.10.2026; Fingrid: Sähkönkulutuksen liitettävyys kantaverkkoon väliaikaisesti tiukilla eteläisessä Suomessa · 21.1.2025; Fingrid: Reservimarkkinat tutuiksi -webinaari · 11.6.2025; Fingrid: Fingrid-konsernin puolivuosikatsaus 1.1.–30.6.2026 · 23.7.2026
+
+Näytä kartalla
 Pyydä maksuton kartoitus
 
-Lähteet ja kartta-aineisto
+Vertaa Viroon
+110 kV
+400 kV
+220 kV
+110 kV
+Tasavirta
 
-Viivat ja sähköasemat: OpenStreetMap-yhteisö (ODbL 1.0), 400 kV (Suomi) ja 330 kV (Viro) sekä HVDC-kaapelit, haettu 2.11.2026, yksinkertaistettu. Rantaviivat: Natural Earth. Kaikki luvut: Fingridin ja Eleringin julkaisut, yllä kerroksittain.
+Kartta latautuu, kun se tulee näkyviin. Kaikki luvut ovat myös tekstissä.
+
+Pohja: Natural Earth · Verkko: © OpenStreetMap-tekijät (ODbL), OpenInfraMap · luettu 2.11.2026
+
+Lähteet ja päivitys.
+
+Luvut tarkistettu 2.11.2026, seuraava tarkistus helmikuussa 2027. Kartan johdot, sähköasemat ja voimalat ovat OpenStreetMapista (luettu 2.11.2026), ja niitä on verrattu Fingridin kantaverkon kehittämissuunnitelman karttaan ja Eleringin verkkokarttaan. Tulevien hankkeiden reitit ovat kaavamaisia: ne yhdistävät hankkeen päätepisteet.
+
+Fingrid: Suomen sähköjärjestelmä (luvut 2025) · 2025
+
+Fingrid: Fingridin selvitys: teollisuuskulutuksen sijoittuminen lähelle sähköntuotantoa lisää kantaverkon liitettävyyttä merkittävästi · 3.9.2026
+
+Fingrid: Siirtokapasiteetin määräytyminen Aurora-käyttöönoton jälkeen (sähkömarkkinatoimikunta) · 4.12.2025
+
+Fingrid: Osa pohjoismaista sähköjärjestelmää · luettu 2.11.2026
+
+Fingrid: Fingridin ajankohtaiset, neuvottelukunta · 4.3.2026
+
+Fingrid: Sähkön tuotannon ja kulutuksen kehitysnäkymät päivitetty – sähkönkulutuksen kasvu konkretisoituu · 30.9.2026
+
+Fingrid: Fingrid-konsernin johdon katsaus 1.1.–30.9.2026 · 29.10.2026
+
+Fingrid: Liittymissopimushakemusten käsittely ruuhkautunut · 23.10.2026
+
+Fingrid: Sähkönkulutuksen liitettävyys kantaverkkoon väliaikaisesti tiukilla eteläisessä Suomessa · 21.1.2025
+
+Fingrid, avoin data: Tuulivoimaennusteessa käytetty kokonaiskapasiteetti (aineisto 268) · 2.11.2026
+
+Fingrid, avoin data: Aurinkovoimaennusteessa käytetty kokonaiskapasiteetti (aineisto 267) · 2.11.2026
+
+Fingrid: Sähkönkulutus on kääntymässä voimakkaaseen kasvuun – rinnalle tarvitaan lisää säätövoimaa · 18.8.2026
+
+Fingrid, avoin data: Sähkövarastojen yhteenlaskettu asennettu kapasiteetti (aineisto 424) · 2.11.2026
+
+Fingrid: Sähkövarastojen yhteisteho Suomessa jo yli 1 000 MW · 24.2.2026
+
+Fingrid: Sähkövarastojen liityntärajoitusta jatketaan Etelä-Suomessa · 24.9.2025
+
+Fingrid: Reservimarkkinat tutuiksi -webinaari · 11.6.2025
+
+Fingrid: Power system reserves: velvoitteet 2026 ja hankintaennuste · 2026
+
+Fingrid: Taajuusohjatun käyttö- ja häiriöreservin hankinta keskitetään tuntimarkkinoille 2027 · 8.9.2026
+
+Fingrid: Tasepalvelun hinnoittelu joulukuussa 2026 ja 1.1.2027 alkaen · 27.10.2026
+
+Fingrid: Järvilinja 2 otettiin käyttöön · 26.10.2026
+
+Fingrid: Metsälinja 2 -voimajohtoyhteys vastaa sähköistyvän Suomen tarpeisiin · 29.9.2026
+
+Fingrid: Fingrid-konsernin puolivuosikatsaus 1.1.–30.6.2026 · 23.7.2026
+
+Fingrid: Kantaverkon kehittämissuunnitelma 2026–2035 · 12/2025
+
+Elering: Elektri ülekandevõrk · 21.8.2026
+
+Elering: Eesti elektriülekandevõrgu arengukava 2026–2035 · 9.7.2026
+
+Elering: Sünkroniseerimine Mandri-Euroopaga · 5.6.2026
+
+Elering: EstLink 1 · 13.5.2025
+
+Elering: EstLink 2 · 13.5.2025
+
+ERR (Eleringi andmed): Eestis tõusis mullu elektritarbimine protsendi võrra · 26.1.2026
+
+Elering: Eesti elektrisüsteemi varustuskindluse aruanne 2025 · 9.12.2025
+
+ERR News (Eleringi andmed): New powerful battery storage facilities to be built in Valga and Pärnu counties · 17.2.2026
+
+ERR News: Largest battery park in continental Europe up and running in Estonia · 4.2.2026
+
+ERR News: 100 megawatt battery park opened in Harju County · 8.7.2026
+
+ERR (Elektrilevi andmed): Elektrilevi tahab elektrivõrku 10 aastaga investeerida ligi kaks miljardit · 19.8.2026
+
+Elering, AST, Litgrid: Baltic LFC block FRR dimensioning forecast 2026–2035 · 29.7.2025
+
+Elering: 2025 turu kokkuvõte · 4.2.2026
+
+Elering: Sagedusreservide turu kokkuvõtted · 2.11.2026
+
+Elering: Tasakaalustamisvõimsuse kulu · 29.6.2026
+
+Elering: EstLink 3 · 10.6.2026
+
+Elering: Eesti-Läti neljas elektriühendus · 10.6.2026
+
+OpenStreetMap-tekijät (ODbL 1.0): Voimajohdot OpenInfraMapin tiilistä, voimalat ja sähköasemat Overpassista · 2.11.2026
+
+Natural Earth: Rantaviivat, järvet ja maakunnat 1:10m (vapaa käyttö) · 5.1.1
 
 # Pyydä maksuton kartoitus — SAMA Energia — https://samaenergia.fi/yhteystiedot/
 
@@ -2926,104 +3099,277 @@ Tasuta hindamine vastab sellele kirjalikult, teie tunnipõhiste tarbimisandmete 
 
 Küsi tasuta hindamist Tagasi ülevaadete juurde
 
-# Ühine võrk – Eesti ja Soome elektrisüsteem kuues kihis — SAMA Energia — https://samaenergia.ee/vork/
+# Ühine võrk – kuus küsimust Eesti elektrisüsteemist — SAMA Energia — https://samaenergia.ee/vork/
 
 Avaleht›Ühine võrk
 
-Ühine võrk, kiht kihi haaval.
+Ühine võrk – kuus küsimust ja teie liitumine.
 
-Vajutage kihti, et see kaardile tuua; hiir punkti kohal näitab allikat. Arvud on Eleringi ja Fingridi väljaannetest, allikas ja kuupäev igaühel – sama definitsioon mõlemal maal või märge, kui mitte.
+Kaart näitab, kuhu Eesti elektrisüsteem liigub: kus võrk on, kui palju tarbimine kasvab, kust tuleb tuule- ja päikeseelekter, kes juba salvestab ja kes reservide eest maksab. Igal arvul on allikas ja kuupäev.
 
-VõrkTarbimineTootmineSalvestidReservidTulevikTeie liitumine
+Lugege peatükk korraga: kaart vahetab kihti kaasa. Viige hiir või sõrm kaardil objektile ja näete arvu allikat. Nupp „Võrdle Soomega“ näitab Soomet sama definitsiooniga või ütleb, kus definitsioon erineb.
 
-Võrk — Kus võrk on?
+01 / 07
 
-Eesti · Elering
-Ülekandevõrk: 330 kV 1 851 km · 110 kV 3 342 km · 158 alajaama (Elering, arengukava 2026–2035, 9.7.2026)
-Välisühendused: Soome: EstLink 1 + 2 = 1 016 MW · Läti: 3 × 330 kV · impordivõime 2 165 MW (Elering, arengukava 2026–2035, 9.7.2026)
+Kus võrk on?
 
-Soome · Fingrid
-Põhivõrk: 400 kV 5 400 km · 220 kV 1 000 km · 110 kV 7 600 km · 138 alajaama (Fingrid, Electricity system of Finland, 2025)
-Välisühendused: Rootsi: AC 1 500 MW import + Fenno-Skan 1 200 MW · Norra ~120 MW · Eesti 1 016 MW (Fingrid, Siirtojenhallinta 2024, 11.8.2025)
+Eesti põhivõrk – 1 851 km 330 kV ja 3 342 km 110 kV liine – töötab 9. veebruarist 2025 Mandri-Euroopa sünkroonalas ning on ühendatud Soomega kahe alalisvoolukaabli ja Lätiga kolme 330 kV liini kaudu.
 
-Võrreldavus: Võrreldav: mõlemad on süsteemihalduri enda liinid. Eesti 330 kV vastab Soome 400 kV rollile.
+1 851 km330 kV liine · lisaks 3 342 km 110 kV · 158 alajaama
 
-Tarbimine — Kui palju kasv tuleb?
+Põhivõrk: 330 kV 1 851 km · 110 kV 3 342 km · kaablid 284 km · 158 alajaama (Elering, 21.8.2026)
+Välisühendused: Soome 1 016 MW mõlemas suunas · Läti kolm 330 kV liini, import kuni 1 300 MW · impordivõimekus kokku 2 165 MW (Elering, arengukava 2026–2035, 9.7.2026)
+Sünkroonala: Mandri-Euroopa alates 9.2.2025 (Elering)
 
-Eesti · Elering
-Tarbimine 2025: 8,3 TWh (+1 %) · 37 % import (Elering / ERR, 26.1.2026)
-Prognoos: 10,0 TWh 2030 · 11,2 TWh 2035 · tipp 1 924 MW 2030 (Elering, arengukava 2026–2035, 9.7.2026)
-Tarbimistipp: 1 467 MW 19.2.2025 · rekord 1 595 MW 4.1.2024 (Elering, VKA 2025 / arengukava 2026)
+Soome samal mõõdupuul
+Võrreldavus: Võrreldav: mõlemad on põhivõrguettevõtja enda liinid ja alajaamad. Eesti 330 kV võrk vastab rollilt Soome 400 kV võrgule.
+Põhivõrk: 400 kV 5 400 km · 220 kV 1 000 km · 110 kV 7 600 km · alalisvoolukaablid 320 km · 138 alajaama (Fingrid, Suomen sähköjärjestelmä, 2025)
+Tootmine ja tarbimine: üle 70 % tootmisest läänerannikul ja põhjas · üle 50 % tarbimisest Lõuna-Soomes (Fingrid, 3.9.2026)
+Rootsi: põhjapoolne vahelduvvooluühendus 1 900 MW mõlemas suunas alates 1.12.2025 (Aurora Line) · Fenno-Skan 1 ja 2: 400 + 800 MW (Fingrid, 4.12.2025)
+Eesti ja Norra: EstLink 1 ja 2: 350 + 650 MW · Norrasse 220 kV ühendus Inarist (Fingrid, Osa pohjoismaista sähköjärjestelmää)
 
-Soome · Fingrid
+Allikad: Elering: Elektri ülekandevõrk · 21.8.2026; Elering: Eesti elektriülekandevõrgu arengukava 2026–2035 · 9.7.2026; Elering: Sünkroniseerimine Mandri-Euroopaga · 5.6.2026
+
+Näita kaardil
+
+02 / 07
+
+Kui palju kasv tuleb?
+
+Eleringi prognoosis kasvab Eesti aastane elektritarbimine 7,9 teravatt-tunnilt 2025. aastal 10,0 teravatt-tunnini 2030. aastaks ja 11,2 teravatt-tunnini 2035. aastaks, ning tiputarbimise rekord tõusis 5. veebruaril 2026 1 723 megavatini.
+
+10,0 TWhaastane tarbimine 2030 Eleringi prognoosis · 2025: 7,9 TWh
+
+Prognoos: 10,0 TWh aastal 2030 · 11,2 TWh aastal 2035 (2025: 7,9 TWh) (Elering, arengukava 2026–2035, 9.7.2026)
+Tiputarbimine: rekord 1 723 MW 5.2.2026 · prognoos külmal talvel 1 924 MW aastal 2030 (Elering, arengukava 2026–2035, 9.7.2026)
+Import: 37 % tarbimisest kaeti 2025. aastal impordiga (Elering / ERR, 26.1.2026)
+
+Soome samal mõõdupuul
+Võrreldavus: Osaliselt võrreldav: mõlemad on riigi aastane elektritarbimine, kuid Fingrid annab stsenaariumide vahemiku ja Elering ühe prognoosi. Tipu prognoosi avaldab ainult Elering.
 Tarbimine 2025: 84,6 TWh (+1,9 %) (Fingrid, 4.3.2026)
-Prognoos: 106–123 TWh 2030 · 110–162 TWh 2035 (Fingrid, 30.9.2026)
-Tarbimistipp: 15 553 MW 8.1.2026 kl 17–17.15 (rekord) (Fingrid, 4.3.2026)
+Prognoos: 106–123 TWh aastal 2030 · 110–162 TWh aastal 2035 (Fingrid, 30.9.2026)
+Jaanuar–september 2026: 64,8 TWh (+5,0 %) (Fingrid, 29.10.2026)
+Tiputarbimine: rekord 15 553 MW 8.1.2026 kl 17–17.15 (Fingrid, 4.3.2026)
+Liitumislepingud: andmekeskused üle 5 GW · elektrikatlad üle 3 GW · teostumisel kuni +40 % tarbimisele 2025. aasta tasemest (Fingrid, 23.10.2026)
 
-Võrreldavus: Võrreldav: mõlemad on riigi brutotarbimine koos kadudega. Fingrid annab stsenaariumide vahemiku, Elering ühe trajektoori.
+Allikad: Elering: Eesti elektriülekandevõrgu arengukava 2026–2035 · 9.7.2026; ERR (Eleringi andmed): Eestis tõusis mullu elektritarbimine protsendi võrra · 26.1.2026
 
-Tootmine — Kust tuleb ilmast sõltuv tootmine?
+Näita kaardil
 
-Eesti · Elering
-Tuul: 694 MW (Elering, VKA 2025, 9.12.2025)
-Päike: 1 214 MW · +245 MW aastaga (Elering, VKA 2025, 9.12.2025)
-Taastuvad: 68 % kodumaisest toodangust · 41 % tarbimisest (Elering / ERR, 26.1.2026)
+03 / 07
 
-Soome · Fingrid
-Tuul: 9 433 MW · +1 023 MW aastal 2025 (Suomen Uusiutuvat, 31.12.2025)
-Päike: u 1,2 GW 2025 alguses · 403 MW liitunud 2025 (Fingrid, energiaennuste Q3/2025; Fingridin vuosi 2025)
-Taastuvad: 57 % toodangust · 96 % heitmevaba (Energiateollisuus, Sähkövuosi 2025, 21.1.2026)
+Kust tuleb ilmast sõltuv tootmine?
 
-Võrreldavus: Osaliselt võrreldav: Soome tuul on tööstusharu nimivõimsus, Eesti arvud Eleringi netovõimsus. Soome päikese kogusummat Fingrid ei avalda.
+Eestis on Eleringi andmetel 694 MW tuule- ja 1 214 MW päikesevõimsust, ning Balti põhivõrguettevõtjad näevad taastuvenergia lisandumise tõttu sagedusreservide vajaduse kiiret kasvu.
 
-Salvestid — Kes juba salvestab?
+1 214 MWpäikeseenergiat · tuuleenergiat 694 MW · installeeritud netovõimsus 2025
 
-Eesti · Elering
-Hertz 1 Kiisa: 100 MW · täisvõimsus 3.2.2026 (ERR, 3.2.2026)
-Hertz 2 Aruküla: 100 MW / 200 MWh · 7.7.2026 · koos 200 MW / 400 MWh (ERR, 7.7.2026)
+Tuuleenergia: 694 MW (Elering, varustuskindluse aruanne 2025, 9.12.2025)
+Päikeseenergia: 1 214 MW · +245 MW aastaga (Elering, varustuskindluse aruanne 2025, 9.12.2025)
+Taastuvenergia 2025: 68 % kodumaisest toodangust · 41 % tarbimisest (Elering / ERR, 26.1.2026)
+
+Soome samal mõõdupuul
+Võrreldavus: Osaliselt võrreldav: Soome arvud on Fingridi prognoosides kasutatud võimsused (hinnang, mitte ametlik statistika, 2.11.2026), Eesti arvud Eleringi installeeritud netovõimsus 2025.
+Tuuleenergia: 9 553 MW (Fingrid, avoin data 268, 2.11.2026)
+Päikeseenergia: 2 074 MW, sisaldab väiketootmise hinnangut · ametlikku kogusummat Fingrid ei avalda (Fingrid, avoin data 267, 2.11.2026)
+Liidetud 2025: 1 509 MW tuule- ja päikeseenergiat (Fingrid, 4.3.2026)
+Juhitav võimsus: ilmast sõltuva tootmise kõrvale on vaja rohkem juhitavat võimsust ja paindlikkust (Fingrid, 18.8.2026)
+
+Allikad: Elering: Eesti elektrisüsteemi varustuskindluse aruanne 2025 · 9.12.2025; ERR (Eleringi andmed): Eestis tõusis mullu elektritarbimine protsendi võrra · 26.1.2026
+
+Näita kaardil
+
+04 / 07
+
+Kes juba salvestab?
+
+Eestis on Eleringi teatel võrku ühendatud 245 MW akuvõimsust (veebruar 2026), juulis lisandus Aruküla 100 MW park, ning ministri sõnul on Eleringil lepingus ligi 1 000 MW akusalvesteid.
+
+245 MWakuvõimsust võrgus veebruaris 2026 (Elering) · juulis lisandus Aruküla 100 MW
+
+Võrgus: 245 MW akuvõimsust (veebruar 2026) (Elering / ERR News, 17.2.2026)
+Kiisa: 100 MW · täisvõimsusel veebruaris 2026 (ERR News, 4.2.2026)
+Aruküla: 100 MW / 200 MWh · avati juulis 2026 · koos Kiisaga 200 MW / 400 MWh (ERR News, 8.7.2026)
 Jaotusvõrgus: 74 MW 2025. aasta lõpus (Elektrilevi / ERR, 19.8.2026)
+Lepingutes: ministri sõnul ligi 1 000 MW akusalvesteid Eleringiga (veebruar 2026) (ERR News, 4.2.2026)
 
-Soome · Fingrid
-Võrgus: u 1 050 MW · 261 süsteemi ≥ 1 MW · 85 % üksustest alla 2 MW (Fingrid, 24.2.2026)
-Kus: 56 % jaotusvõrgus · umbes pool Tampere–Lahti–Lappeenranta joonest lõunas (Fingrid, 24.2.2026)
-Piirang: Uued salvestiliitumised Lõuna-Soome põhivõrku piiratud 2029. aastani (Fingrid, 26.9.2025)
+Soome samal mõõdupuul
+Võrreldavus: Ei ole võrreldav: Soome arv on Fingridi hinnang kõigist üle 1 MW salvestitest. Eestis on Eleringi kogusumma avaldatud ainult uudises, seepärast on kaardil eraldi sildid. Arve ei tohi kokku liita.
+Võrgus praegu: 2 085 MW üle 1 MW salvesteid (hinnang, sisaldab umbes kuu jooksul tööle minevaid) (Fingrid, avoin data 424, 2.11.2026)
+Veebruar 2026: u 1 050 MW · 85 % üksustest alla 2 MW · 56 % jaotusvõrgus · umbes pool Tampere–Lahti–Lappeenranta joonest lõuna pool (Fingrid, 24.2.2026)
+Lepingud ja päringud: liitumislepinguid ligi 6 GW (10/2026) · liitumispäringuid 12 kuuga u 32 GW (6/2026) (Fingrid, 23.10.2026; 23.7.2026)
+Lõuna-Soome: uued salvestid põhivõrku alles siis, kui Hikiä–Toivila valmib 2029 · Pohjanmaal ja Põhja-Soomes vaba võimsust mitu tuhat megavatti (Fingrid, 24.9.2025)
 
-Võrreldavus: Ei ole võrreldav: Eestil puudub üks Eleringi kogusumma. Kaardil eraldi sildid.
+Allikad: ERR News (Eleringi andmed): New powerful battery storage facilities to be built in Valga and Pärnu counties · 17.2.2026; ERR News: Largest battery park in continental Europe up and running in Estonia · 4.2.2026; ERR News: 100 megawatt battery park opened in Harju County · 8.7.2026; ERR (Elektrilevi andmed): Elektrilevi tahab elektrivõrku 10 aastaga investeerida ligi kaks miljardit · 19.8.2026
 
-Reservid — Kui palju vajatakse ja kes maksab?
+Näita kaardil
 
-Eesti · Elering
-Nõudlus: mFRR üles u 600 MW (Elering, mFRR vahe-analüüs, 5/2026)
-Eelkvalifitseeritud: FCR 26 · aFRR 197 / 297 · mFRR 572 / 976 MW (Elering, VKA 2025, 9.12.2025)
-Kes maksab: 74 M€ veebr–dets 2025 · 3,73 €/MWh igal arvel (Elering, 2025 turu kokkuvõte, 2/2026)
-Sünkroonala: Mandri-Euroopa alates 9.2.2025 (Euroopa Komisjon, 9.2.2025)
+05 / 07
 
-Soome · Fingrid
-Kohustused 2026: FCR-N 128 MW · FCR-D üles 309 / alla 298 MW · aFRR u 50 MW · mFRR üles 880–1 300 MW (Fingrid, Power system reserves, 2026)
-Sünkroonala: Põhjamaade (Fingrid)
+Kui palju reserve vajatakse ja kes maksab?
 
-Võrreldavus: Osaliselt võrreldav: Soome arvud on Fingridi kohustused, Eesti eelkvalifitseeritud võimsus on pakkumine ja mFRR üles nõudlus on ainus avaldatud vajadus.
+Balti põhivõrguettevõtjate prognoosis kasvab mFRR-reservi vajadus 2035. aastaks üles 604-lt 754 megavatini ja alla 691-lt 991 megavatini, ning reservide kulu maksab alates 2026. aastast iga tarbija oma elektriarvel 3,73 eurot megavatt-tunni kohta.
 
-Tulevik — Mis tuleb?
+604 → 754 MWmFRR üles vajadus Balti juhtimisplokis 2026 → 2035 · alla 691 → 991 MW
 
-Eesti · Elering
-Uus tootmine: 1 500 MW liituma 2030. aastaks (Elering, arengukava 2026–2035, 9.7.2026)
-Salvestid, baasstsenaarium: 600 MW / 1 200 MWh 2030 · 1 500 MW / 3 000 MWh 2035 (Elering, VKA 2025, 9.12.2025)
-EstLink 3: 700 MW · 2038–2040 (Elering arengukava 9.7.2026; Fingrid 6.2.2026)
+Balti vajadus: aFRR kuni 120 MW üles / 115 MW alla · mFRR üles 604 → 754 MW · mFRR alla 691 → 991 MW (2026 → 2035) (Elering, AST, Litgrid, 29.7.2025)
+Kulu: 74 M€ veebruar–detsember 2025 · prognoos 2026: 60 M€ (Elering, 2025 turu kokkuvõte, 4.2.2026)
+Eelkvalifitseeritud (pakkumine): FCR 76 · aFRR 602 / 685 · mFRR 1 617 / 1 657 MW (oktoober 2026) (Elering, 2.11.2026)
 
-Soome · Fingrid
-Liitumislepingud: andmekeskused ligi 5 GW · salvestid üle 4 GW · elektrikatlad üle 3 GW (Fingrid, 18.8.2026)
-Päringud: üle 100 GW · kolmandik andmekeskused (Fingrid, 29.10.2026)
+Kes maksab: Iga elektritarbija maksab alates 2026. aastast arvel tasakaalustamisvõimsuse kulu 3,73 €/MWh; raha saavad reserve pakkuvate elektrijaamade omanikud, mitte Elering ega riik.
 
-Võrreldavus: Võrreldav: mõlemad on süsteemihalduri liitumislepingud ja plaanid.
+Soome samal mõõdupuul
+Võrreldavus: Osaliselt võrreldav: Soome arvud on Fingridi riiklikud kohustused ja hange, Eesti vajadus on Balti ühise juhtimisploki (Eesti, Läti, Leedu) dimensioneerimine. Eelkvalifitseeritud võimsus on pakkumine, mitte vajadus.
+Hange praegu: keskmiselt 1 500 MW igas tunnis · viie aasta pärast 1 200 MW rohkem (Fingrid, 11.6.2025)
+Kohustused 2026: FCR-N 128 MW · FCR-D üles 309 / alla 298 MW · aFRR u 50 MW · mFRR üles 880–1 300 MW · mFRR alla 575 MW (Fingrid, Power system reserves, 2026)
+Hankeprognoos: mFRR alla 567 → 1 100 MW (2026 → 2032) · aFRR üles 44 → 85 MW (2026 → 2028) (Fingrid, Power system reserves, 2026)
+2027: FCR hangitakse ainult tunniturult (Fingrid, 8.9.2026)
 
-Teie liitumine
-Kõik kihid koos näitavad ühte: liitumine, mille taga on salvesti, on selle võrgu osa – ja teenib selles. Tasuta hinnang ütleb, mida just teie liitumine teha saab.
+Allikad: Elering, AST, Litgrid: Baltic LFC block FRR dimensioning forecast 2026–2035 · 29.7.2025; Elering: 2025 turu kokkuvõte · 4.2.2026; Elering: Sagedusreservide turu kokkuvõtted · 2.11.2026; Elering: Tasakaalustamisvõimsuse kulu · 29.6.2026
+
+Näita kaardil
+
+06 / 07
+
+Mis tuleb?
+
+Eleringi arengukava arvestab 2030. aastaks kuni 1 500 MW uute tootmisvõimsuste ja 2035. aastaks 1 000–1 300 MW lisanduva salvestusega, ning umbes 2038. aastast kasvatavad EstLink 3 ja Eesti–Läti neljas ühendus impordivõimekust veel 1 200 MW võrra.
+
+1 500 MWuusi tootmisvõimsusi liitub 2030. aastaks (Eleringi arengukava)
+
+Uus tootmine: kuni 1 500 MW 2030. aastaks (Elering, arengukava 2026–2035, 9.7.2026)
+Salvestus 2035: 1 000–1 300 MW lisandub (ENMAK 2035, Eleringi arengukavas) (Elering, arengukava 2026–2035, 9.7.2026)
+Salvestid, baasstsenaarium: 600 MW / 1 200 MWh 2030 · 1 500 MW / 3 000 MWh 2035 (Elering, varustuskindluse aruanne 2025, 9.12.2025)
+Ühendused: EstLink 3 (700 MW) ja Eesti–Läti neljas ühendus: impordivõimekus +1 200 MW umbes 2038. aastast (Elering, arengukava 2026–2035, 9.7.2026)
+
+Soome samal mõõdupuul
+Võrreldavus: Suunda näitav: mõlemad on põhivõrguettevõtja plaanid ja liitumisolukord. Soome arvud on lepingud ja päringud, Eesti arvud planeerimise lähteeeldused.
+Valminud: Järvilinja 2: 305 km uusi 400 ja 110 kV liine, kasutusel oktoobrist 2026 (Fingrid, 26.10.2026)
+Järgmisena: Hikiä–Toivila 2029 · Metsälinja 2 Vaala–Jämsä, u 350 km, 2030 (Fingrid, 24.9.2025; 29.9.2026)
+Eelisjärjekord: liitumiste eelisjärjekorra menetlus, kavandatud jõustumine 1.1.2027 (Fingrid, 23.10.2026)
+Nõudlus: liitumispäringud 12 kuuga: tarbimine u 68 GW, salvestid u 32 GW, tootmine u 13 GW (Fingrid, 23.7.2026)
+
+Allikad: Elering: Eesti elektriülekandevõrgu arengukava 2026–2035 · 9.7.2026; Elering: Eesti elektrisüsteemi varustuskindluse aruanne 2025 · 9.12.2025
+
+Näita kaardil
+
+07 / 07
+
+Kus on selles pildis teie liitumine?
+
+Teie liitumine on juba olemas: selle taha paigaldatud aku ei vaja uut põhivõrguliitumist, ja sellega saab alandada võimsustasu, kasutada börsihinna erinevusi ning osaleda agregaatori kaudu reserviturul, mille kulu maksab praegu iga tarbija.
+
+3,73 €/MWhreservide kulu iga tarbija arvel 2026 · raha saavad reservide pakkujad
+
+Kes maksab: 3,73 €/MWh igal arvel 2026; raha reservide pakkujatele (Elering, 29.6.2026)
+Reservide vajadus: mFRR üles 604 → 754 MW, alla 691 → 991 MW (2026 → 2035) (Elering, AST, Litgrid, 29.7.2025)
+Tiputarbimine: rekord 1 723 MW 5.2.2026 (Elering, arengukava 2026–2035, 9.7.2026)
+
+Tasuta kirjalik hinnang näitab, mida teie liitumine suudab: võimsustasu, börsihind ja modelleeritud reservitulu toodete kaupa.
+
+Allikad: Elering: Tasakaalustamisvõimsuse kulu · 29.6.2026; Elering, AST, Litgrid: Baltic LFC block FRR dimensioning forecast 2026–2035 · 29.7.2025; Elering: Eesti elektriülekandevõrgu arengukava 2026–2035 · 9.7.2026
+
+Näita kaardil
 Küsi tasuta hindamist
 
-Allikad ja kaardiandmed
+Võrdle Soomega
+110 kV
+330–400 kV
+220 kV
+110 kV
+Alalisvool
 
-Liinid ja alajaamad: OpenStreetMapi kaastöölised (ODbL 1.0), 330 kV (Eesti) ja 400 kV (Soome) ning HVDC-kaablid, laaditud 2.11.2026, lihtsustatud. Rannajooned: Natural Earth. Kõik arvud: Eleringi ja Fingridi väljaanded, kihtide kaupa ülal.
+Kaart laeb, kui see jõuab nähtavale. Kõik arvud on ka tekstis.
+
+Alus: Natural Earth · Võrk: © OpenStreetMapi kaastöölised (ODbL), OpenInfraMap · loetud 2.11.2026
+
+Allikad ja uuendamine.
+
+Arvud on kontrollitud 2.11.2026, järgmine kontroll veebruaris 2027. Kaardi liinid, alajaamad ja elektrijaamad on OpenStreetMapist (loetud 2.11.2026) ning neid on võrreldud Eleringi võrgukaardi ja Fingridi põhivõrgu arengukava kaardiga. Tulevaste projektide trassid on skemaatilised: need ühendavad projekti lõpp-punkte.
+
+Elering: Elektri ülekandevõrk · 21.8.2026
+
+Elering: Eesti elektriülekandevõrgu arengukava 2026–2035 · 9.7.2026
+
+Elering: Sünkroniseerimine Mandri-Euroopaga · 5.6.2026
+
+Elering: EstLink 1 · 13.5.2025
+
+Elering: EstLink 2 · 13.5.2025
+
+ERR (Eleringi andmed): Eestis tõusis mullu elektritarbimine protsendi võrra · 26.1.2026
+
+Elering: Eesti elektrisüsteemi varustuskindluse aruanne 2025 · 9.12.2025
+
+ERR News (Eleringi andmed): New powerful battery storage facilities to be built in Valga and Pärnu counties · 17.2.2026
+
+ERR News: Largest battery park in continental Europe up and running in Estonia · 4.2.2026
+
+ERR News: 100 megawatt battery park opened in Harju County · 8.7.2026
+
+ERR (Elektrilevi andmed): Elektrilevi tahab elektrivõrku 10 aastaga investeerida ligi kaks miljardit · 19.8.2026
+
+Elering, AST, Litgrid: Baltic LFC block FRR dimensioning forecast 2026–2035 · 29.7.2025
+
+Elering: 2025 turu kokkuvõte · 4.2.2026
+
+Elering: Sagedusreservide turu kokkuvõtted · 2.11.2026
+
+Elering: Tasakaalustamisvõimsuse kulu · 29.6.2026
+
+Elering: EstLink 3 · 10.6.2026
+
+Elering: Eesti-Läti neljas elektriühendus · 10.6.2026
+
+Fingrid: Suomen sähköjärjestelmä (luvut 2025) · 2025
+
+Fingrid: Fingridin selvitys: teollisuuskulutuksen sijoittuminen lähelle sähköntuotantoa lisää kantaverkon liitettävyyttä merkittävästi · 3.9.2026
+
+Fingrid: Siirtokapasiteetin määräytyminen Aurora-käyttöönoton jälkeen (sähkömarkkinatoimikunta) · 4.12.2025
+
+Fingrid: Osa pohjoismaista sähköjärjestelmää · luettu 2.11.2026
+
+Fingrid: Fingridin ajankohtaiset, neuvottelukunta · 4.3.2026
+
+Fingrid: Sähkön tuotannon ja kulutuksen kehitysnäkymät päivitetty – sähkönkulutuksen kasvu konkretisoituu · 30.9.2026
+
+Fingrid: Fingrid-konsernin johdon katsaus 1.1.–30.9.2026 · 29.10.2026
+
+Fingrid: Liittymissopimushakemusten käsittely ruuhkautunut · 23.10.2026
+
+Fingrid: Sähkönkulutuksen liitettävyys kantaverkkoon väliaikaisesti tiukilla eteläisessä Suomessa · 21.1.2025
+
+Fingrid, avoin data: Tuulivoimaennusteessa käytetty kokonaiskapasiteetti (aineisto 268) · 2.11.2026
+
+Fingrid, avoin data: Aurinkovoimaennusteessa käytetty kokonaiskapasiteetti (aineisto 267) · 2.11.2026
+
+Fingrid: Sähkönkulutus on kääntymässä voimakkaaseen kasvuun – rinnalle tarvitaan lisää säätövoimaa · 18.8.2026
+
+Fingrid, avoin data: Sähkövarastojen yhteenlaskettu asennettu kapasiteetti (aineisto 424) · 2.11.2026
+
+Fingrid: Sähkövarastojen yhteisteho Suomessa jo yli 1 000 MW · 24.2.2026
+
+Fingrid: Sähkövarastojen liityntärajoitusta jatketaan Etelä-Suomessa · 24.9.2025
+
+Fingrid: Reservimarkkinat tutuiksi -webinaari · 11.6.2025
+
+Fingrid: Power system reserves: velvoitteet 2026 ja hankintaennuste · 2026
+
+Fingrid: Taajuusohjatun käyttö- ja häiriöreservin hankinta keskitetään tuntimarkkinoille 2027 · 8.9.2026
+
+Fingrid: Tasepalvelun hinnoittelu joulukuussa 2026 ja 1.1.2027 alkaen · 27.10.2026
+
+Fingrid: Järvilinja 2 otettiin käyttöön · 26.10.2026
+
+Fingrid: Metsälinja 2 -voimajohtoyhteys vastaa sähköistyvän Suomen tarpeisiin · 29.9.2026
+
+Fingrid: Fingrid-konsernin puolivuosikatsaus 1.1.–30.6.2026 · 23.7.2026
+
+Fingrid: Kantaverkon kehittämissuunnitelma 2026–2035 · 12/2025
+
+OpenStreetMap-tekijät (ODbL 1.0): Voimajohdot OpenInfraMapin tiilistä, voimalat ja sähköasemat Overpassista · 2.11.2026
+
+Natural Earth: Rantaviivat, järvet ja maakunnat 1:10m (vapaa käyttö) · 5.1.1
 
 # Küsi tasuta hindamist — SAMA Energia — https://samaenergia.ee/kontakt/
 

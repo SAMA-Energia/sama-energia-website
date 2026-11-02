@@ -338,6 +338,7 @@ function extractPages(mainInner, file) {
       title: attr('data-title'),
       desc: attr('data-desc'),
       noindex: / data-noindex="1"/.test(m[2]),
+      assets: attrOpt('data-assets'),
       openTag: m[0],
       start: m.index,
       end,
@@ -386,7 +387,10 @@ function chrome(lang, source, page, fiAbs, etAbs) {
   return { pre, post };
 }
 
-function head(lang, { title, desc, canon, fiAbs, etAbs, unpaired, noindex, jsonld, front, docLang = lang }) {
+/* Sivukohtaiset lisätyylit: data-assets="kartta" -> /assets/kartta.css (vain /verkko/ ja /vork/; ei kasvata site.css:n budjettia). */
+const PAGE_ASSETS = { kartta: '<link href="/assets/kartta.css" rel="stylesheet">' };
+
+function head(lang, { title, desc, canon, fiAbs, etAbs, unpaired, noindex, jsonld, front, docLang = lang, assets }) {
   const L = LANGS[lang];
   const M = langMeta(lang, docLang);
   const ogAbs = (lang === 'fi' ? BASE : ET_BASE) + L.og;
@@ -410,7 +414,7 @@ ${jsonld}${ICON}
 ${THEME}
 ${PRELOADS}${front && HERO_IMG_PRELOAD ? '\n' + HERO_IMG_PRELOAD : ''}
 <link href="/assets/fonts.css" rel="stylesheet">
-<link href="/assets/site.css" rel="stylesheet">`;
+<link href="/assets/site.css" rel="stylesheet">${assets ? '\n' + PAGE_ASSETS[assets] : ''}`;
 }
 
 const MARKER = L => `<!-- GENEROITU TIEDOSTO — ÄLÄ MUOKKAA TÄTÄ TIEDOSTOA: kaikki tekstit muokataan tiedostoissa src/fi.html ja src/et.html; build ylikirjoittaa tämän tiedoston. / GENEREERITUD FAIL — ÄRA MUUDA SEDA FAILI: kõik tekstid muudetakse failides src/et.html ja src/fi.html; build kirjutab selle faili üle. Lähde/allikas: ${L.src} · node scripts/build-pages.mjs -->`;
@@ -439,7 +443,8 @@ function renderPage(lang, page, source, annotatedHtml) {
   const canon = L.abs(page.slug);
 
   /* authoring-attribuutit pois julkaistusta sivusta */
-  const cleanOpen = page.openTag.replace(/ data-(slug|title|desc|noindex|lang)="[^"]*"/g, '');
+  if (page.assets && !PAGE_ASSETS[page.assets]) throw new Error(`${L.src}: ${page.slug} — tuntematon data-assets="${page.assets}"`);
+  const cleanOpen = page.openTag.replace(/ data-(slug|title|desc|noindex|lang|assets)="[^"]*"/g, '');
   const pageHtml = cleanOpen + annotatedHtml.slice(page.openTag.length);
 
   const { pre, post } = chrome(lang, source, page, fiAbs, etAbs);
@@ -449,7 +454,7 @@ function renderPage(lang, page, source, annotatedHtml) {
   const doc = `<!DOCTYPE html>
 <html lang="${langMeta(lang, docLang).htmlLang}">
 <head>
-${head(lang, { title: page.title, desc: page.desc, canon, fiAbs, etAbs, unpaired, noindex: page.noindex, jsonld, front: isFront, docLang })}
+${head(lang, { title: page.title, desc: page.desc, canon, fiAbs, etAbs, unpaired, noindex: page.noindex, jsonld, front: isFront, docLang, assets: page.assets })}
 </head>
 <body class="t3">${pre}<main id="main">
 ${pageHtml}
