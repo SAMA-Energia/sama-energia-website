@@ -5,14 +5,18 @@
 
 # SAMA Energia — Itsenäinen energia. Itseohjautuva akku. — https://samaenergia.fi/
 
-Saavuttakaa energiariippumattomuus laittamalla sähköliittymänne töihin – omaksi eduksenne.
+Yhteinen verkko. Itsenäinen energia.
 
-Riippumaton energia lähtee siitä, että päätökset mittarinne takana tehdään teidän eduksenne ja automaattisesti. Järjestelmä – energiavarasto, energiantuotanto ja älykäs ohjaus – tekee kannattavampia päätöksiä kiinteistönne hyväksi, ilman että kenenkään teillä tarvitsee tehdä mitään.
+Itsenäinen energia lähtee siitä, että päätökset mittarinne takana tehdään teidän eduksenne ja automaattisesti. Energiavarasto, oma tuotanto ja älykäs ohjaus päättävät joka tunti, kulutetaanko, varastoidaanko, myydäänkö vai pidetäänkö teho valmiina verkolle – ilman että kenenkään teillä tarvitsee tehdä mitään.
 
 Pyydä maksuton kartoitus
 Miten akku toimii?
 
 MaksutonEi sitoumuksiaKirjallinen arvio
+
+Esimerkkikohde mittakaavassa: varastokaappi on 1 × 2,4 m, halli 45 m. Kohteenne oma kuva piirretään arvioon.Vierittäkää piirrosta sivusuunnassa →
+
+1Verkko ja markkinatLiittymä pysyy ennallaan. Sen takana järjestelmä ostaa, varastoi, käyttää ja myy – ja pitää tehoa valmiina Fingridin reservimarkkinoille.Reservimarkkinat2Aurinkosähkö ja aurinkokatotPaneelit katolle tai katto, joka tuottaa itse. Mitoitus kulutuksen ja katon mukaan.Roofit.Solar · Scanoffice3EnergiavarastoAkusto, invertteri ja ohjaus samassa ulkokaapissa. Kaappeja rinnan kohteen tarpeen mukaan.Ralos · EP Energy · Elecnova4Lataus ja mikroverkkoVarasto antaa pikalatauksen huipputehon, aurinkokatos tuottaa päivällä.Avant Power
 
 Liittymä on omaisuutta. Passiivinen liittymä on kulujen erä. Mittarin takainen järjestelmä panee sen tuottamaan tuloa.
 
@@ -56,6 +60,21 @@ Tarjous jo kädessä?
 Tarkistamme, kestääkö sen takaisinmaksu todellisuuden. Maksutta, samoista kulutustiedoista, joiden varassa päätöksenne oikeasti tehdään. Jos tarjous on hyvä, sanomme senkin.
 
 Pyydä toinen mielipide
+
+Kaaviomainen esitys. Rannikot: Natural Earth. Verkko ja varastojen sijainnit suuntaa-antavia.
+
+Verkko rakennetaan uudelleen. Jokaisella liittymällä on siinä paikkansa.
+
+Sähkön kulutus kasvaa, ja yhä suurempi osa tuotannosta seuraa säätä. Verkko tarvitsee joustoa, ja sitä syntyy tuhansissa pienissä kohteissa: liittymissä, joiden takana on varasto ja ohjaus. Suomi ja Viro ovat yhteydessä Suomenlahden yli – sama kehitys, sama tarve.
+
+110–162 TWhSuomen sähkönkulutus vuonna 2035 Fingridin arvion mukaan. Nyt alle 90 TWh.
+Lähde: Fingrid, tiedote 30.9.2026
+
+lähes 5 GWDatakeskusten liittymissopimukset Fingridin kanssa. Toteutuessaan kulutus kasvaisi lähes 40 % vuoden 2025 tasosta.
+Lähde: Fingrid, tiedote 18.8.2026
+
+noin 1 050 MWSähkövarastoja jo verkossa Suomessa – 85 % niistä alle 2 MW:n kohteita.
+Lähde: Fingrid, tiedote 24.2.2026
 
 Yksi varasto. Kolme kassavirtaa. Tarvittaessa varavoima.
 
@@ -195,12 +214,13 @@ Energiavarastot, kontit, lataus, mikroverkot ja aurinkosähkö kumppaneiltamme. 
 Kumppanit
 
 RalosEnergiavarastot
-
+EP EnergyEnergiavarastot
+ElecnovaEnergiavarastot
+Avant PowerLataus ja mikroverkot
+Roofit.SolarAurinkokatot
 ScanofficeAurinkosähkö ja lämpöpumput
-
-JSMSähköasennukset
-
-SoleronReservimarkkinat Virossa
+JSM AutomaatiosähköSähköasennukset
+Soleron EnergyReservimarkkinat Virossa
 
 Kumppanit ja tuotteet Meistä
 
@@ -1047,6 +1067,24 @@ DC-pikalaturi209 kWh:n akku, autoon enintään 240 kW
 
 Lähteet: valmistajien tuotesivut, luettu 23.10.2026.
 
+EP Energy
+KiinaEP EnergyEnergiavarastot · EP Equipmentin energiavarastoyksikkö, Hangzhou
+Nestejäähdytetty ulkokaappi EPES261L: akusto, invertteri, akunhallinta ja paloturvallisuus samassa kaapissa.
+EPES261L125 kW / 261 kWh · LFP · IP55 · −30…55 °C
+
+Lähde: EP Energy, EPES261L-tuotesivu, luettu 1.11.2026.
+
+ep-unipower.com
+
+Elecnova
+KiinaElecnovaEnergiavarastot · ulkokaapit ja STS-kaappi
+Nestejäähdytetty ulkokaappi ECO-E261LP-2A, sertifioitu muun muassa EN 50549 -verkkoliitäntästandardin mukaan. STS-kaapin kanssa kaapit toimivat rinnan ja siirtyvät saarekekäyttöön.
+ECO-E261LP-2A125 kW / 261 kWh · LFP · IP55 · −25…55 °C
+
+Lähde: Elecnova, ECO-E261LP-2A-tuotesivu ja tiedote 4.3.2026, luettu 1.11.2026.
+
+elecnova-ess.com
+
 Ralos
 SuomiRalos OyEnergiavarastot · Tampere
 Suomalainen aurinkosähkön ja energiavarastojen toimittaja: Ralos Beast 125 HD -energiavarasto ulkoasennukseen, STS-varavoimakytkentä mukana.
@@ -1056,8 +1094,25 @@ Lähde: Ralos Oy, Ralos Beast 125 tekninen tiedote V10.
 
 ralos.fi
 
+SuomiAvant PowerMikroverkot ja lataus · Ylöjärvi
+OptiGrid yhdistää energiavaraston, pikalatauksen, oman tuotannon ja ohjauksen yhdeksi tasavirtaverkoksi: huoltoasemille, varikoille, logistiikkaan, teollisuuteen ja maatiloille.
+OptiGrid200 kW / 250 kWh tai 400 kW / 500 kWh · pikalataus 200–600 kW
+
+Lähde: Avant Power, OptiGrid-tuotesivu ja tiedote 15.10.2026.
+
+avantpower.fi
+
 Aurinkosähkö ja lämpöpumput
 Paneelit, invertterit ja lämpöpumput maahantuojalta. Voimalan ja aurinkokaton asennusta johtaa asennuspäällikkömme.
+
+Roofit.Solar
+Viro · SuomiRoofit.SolarIntegroidut aurinkokatot · Suomessa Gare Energy Oy
+Konesaumakatto, jonka pinta tuottaa sähköä. Järkevä, kun katto uusitaan joka tapauksessa. Referenssejä muun muassa Viron kansalliskirjasto (80 kWp) ja Tarton yliopisto (46 kWp).
+Velario Slim120 tai 180 Wp moduuli · tuotetakuu 10 v · tehotakuu 25 v
+
+Lähteet: Roofit.Solar, tuotetiedote 2/2026, takuuehdot ja referenssit, luettu 1.11.2026.
+
+aurinkokatto.com
 
 Scanoffice
 SuomiScanoffice OyLaitteiden maahantuoja · Espoo
@@ -1508,14 +1563,18 @@ Päivitetty 08.09.2026. Jos seloste muuttuu, uusin versio on aina tällä sivull
 
 # SAMA Energia — Iseseisev energia. Isejuhtiv aku. — https://samaenergia.ee/
 
-Saavutage energiasõltumatus, pannes elektriliitumise enda kasuks tööle.
+Ühine võrk. Iseseisev energia.
 
-Sõltumatu energia juhindub sellest, et otsused teie arvesti taga tehakse teie huvides ja automaatselt. Süsteem – energiasalvesti, energia tootmine ja nutikas juhtimine – teeb kasumlikumaid otsuseid teie kinnistu hüvanguks, ilma et keegi teie majast peaks midagi tegema.
+Sõltumatu energia juhindub sellest, et otsused teie arvesti taga tehakse teie huvides ja automaatselt. Süsteem – salvesti, energia tootmine ja nutikas juhtimine – otsustab ise iga tunni, kas tarbida, salvestada, müüa või hoida võimsust Eleringile valmis; ta lähtub teie tarbimisprofiilist, börsihinnast ja reservituru hindadest, tehes kasumlikumaid otsuseid teie kinnistu hüvanguks, ilma et keegi teie majast peaks midagi tegema.
 
 Küsi tasuta hindamist
 Kuidas aku toimib?
 
 TasutaKohustustetaKirjalik hinnang
+
+Näidisobjekt mõõtkavas: salvestikapp on 1 × 2,4 m, hoone 45 m. Teie objekti joonis tehakse hinnangusse.Kerige joonist külgsuunas →
+
+1Võrk ja turudLiitumine jääb samaks. Selle taga süsteem ostab, salvestab, tarbib ja müüb – ning hoiab võimsust valmis Eleringi reserviturgudele.Reserviturg2Päikeseenergia ja päikesekatusedPaneelid katusele või katus, mis ise toodab. Suurus valitakse tarbimise ja katuse järgi.Roofit.Solar3EnergiasalvestiAkupank, inverter ja juhtimine samas välikapis. Kappe ühendatakse paralleelselt vastavalt objekti vajadusele.EP Energy · Elecnova · Ralos4Laadimine ja mikrovõrkSalvesti annab kiirlaadimise tipuvõimsuse, päikesevarjualune toodab päeval.Avant Power
 
 Liitumine on vara. Passiivne liitumine on kuluartikkel. Arvestitagune süsteem paneb selle tulu tootma.
 

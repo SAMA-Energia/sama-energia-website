@@ -7,3 +7,4 @@ qa/
 
 # Työtiedostot (promptit, suunnitelmat, port tracker) — eivät kuulu julkaistavaan repoon
 Claude outputs/
+dist-preview/

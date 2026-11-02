@@ -272,7 +272,8 @@ const PRELOADS = [
   '<link rel="preload" href="/assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>',
 ].join('\n');
 /* Etusivujen hero-kuvakokeilu (05.09.2026): kuva on LCP-ehdokas, esiladataan vain etusivuilla. */
-const HERO_IMG_PRELOAD = '<link rel="preload" as="image" href="/assets/hero-voimalinja-sky.webp" fetchpriority="high">';
+/* v35 (02.11.2026): etusivun hero on piirros, ei valokuvaa — esilatausta ei tarvita. */
+const HERO_IMG_PRELOAD = '';
 
 /* ---------- lähteen paloittelu ---------- */
 
@@ -406,7 +407,7 @@ ${canon ? `<link rel="canonical" href="${canon}">\n${alternates.join('\n')}` : '
 <meta name="twitter:card" content="summary_large_image">
 ${jsonld}${ICON}
 ${THEME}
-${PRELOADS}${front ? '\n' + HERO_IMG_PRELOAD : ''}
+${PRELOADS}${front && HERO_IMG_PRELOAD ? '\n' + HERO_IMG_PRELOAD : ''}
 <link href="/assets/fonts.css" rel="stylesheet">
 <link href="/assets/site.css" rel="stylesheet">`;
 }

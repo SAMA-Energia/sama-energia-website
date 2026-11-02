@@ -82,3 +82,13 @@ When in doubt, leave it out and flag it.
   access). Registered decision 2026-08-21: use Netlify Analytics or defer.
   Either way, no third-party client-side analytics — the no-analytics
   doctrine stands.
+
+## v35 — uusi ilme (luonnos, haara v35-uusi-ilme, 02.11.2026)
+
+- Paletti: yö + kulta + luu (`--paper` #0B0B0A, `--gold` #E2C36A, `--ink` #F3EEE1). Otsikot Newsreader, leipäteksti IBM Plex Sans ennallaan.
+- Etusivun hero: brändilause "Yhteinen verkko. Itsenäinen energia." / "Ühine võrk. Iseseisev energia." ja mittakaavapiirros (1 m = 12 px) kohteesta mittarin takana; kumppanien tuotekuvat numeroiduissa korteissa.
+- FI-etusivulle uusi osio "Yhteinen verkko" (Suomi–Viro-kaavio, Fingridin luvut lähteineen). ET-versio odottaa Eleringin lukuja (markkinaerottelusääntö).
+- Kumppanikuvat: `assets/kumppanit/` (Ralos Oy, Gare Energy Oy / Roofit.Solar, Avant Power -mediapankki, Scanoffice-kuvapankki).
+- AVOIN perustajapäätös: kumppaninimet EP Energy, Elecnova, Avant Power ja Roofit.Solar lisätty luonnokseen Madis Maastikin pyynnöstä 02.11.2026. Kumppanisivun 25.10.2026 sääntö (nimi vasta kirjallisen vahvistuksen jälkeen, R14 + päätösloki) on kirjattava ennen kuin haara yhdistetään mainiin. EP Energy poistettu kieltolistalta (verify-pages) samasta syystä.
+- AVOIN perustajapäätös: CSS-budjetti 76 → 84 kt (verify-pages).
+- Esikatselu: `python3 scripts/build-standalone.py v35` → `dist-preview/` (ei repoon).
