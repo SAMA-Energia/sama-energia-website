@@ -9,14 +9,9 @@ Yhteinen verkko. Itsenäinen energia.
 
 Itsenäinen energia lähtee siitä, että päätökset mittarinne takana tehdään teidän eduksenne ja automaattisesti. Energiavarasto, oma tuotanto ja älykäs ohjaus päättävät joka tunti, kulutetaanko, varastoidaanko, myydäänkö vai pidetäänkö teho valmiina verkolle – ilman että kenenkään teillä tarvitsee tehdä mitään.
 
-Pyydä maksuton kartoitus
-Miten akku toimii?
+Pyydä maksuton kartoitus Miten akku toimii?
 
 MaksutonEi sitoumuksiaKirjallinen arvio
-
-Esimerkkikohde mittakaavassa: varastokaappi on 1 × 2,4 m, halli 45 m. Kohteenne oma kuva piirretään arvioon.Vierittäkää piirrosta sivusuunnassa →
-
-1Verkko ja markkinatLiittymä pysyy ennallaan. Sen takana järjestelmä ostaa, varastoi, käyttää ja myy – ja pitää tehoa valmiina Fingridin reservimarkkinoille.Reservimarkkinat2Aurinkosähkö ja aurinkokatotPaneelit katolle tai katto, joka tuottaa itse. Mitoitus kulutuksen ja katon mukaan.Roofit.Solar · Scanoffice3EnergiavarastoAkusto, invertteri ja ohjaus samassa ulkokaapissa. Kaappeja rinnan kohteen tarpeen mukaan.Ralos · EP Energy · Elecnova4Lataus ja mikroverkkoVarasto antaa pikalatauksen huipputehon, aurinkokatos tuottaa päivällä.Avant Power
 
 Liittymä on omaisuutta. Passiivinen liittymä on kulujen erä. Mittarin takainen järjestelmä panee sen tuottamaan tuloa.
 
@@ -61,20 +56,26 @@ Tarkistamme, kestääkö sen takaisinmaksu todellisuuden. Maksutta, samoista kul
 
 Pyydä toinen mielipide
 
-Kaaviomainen esitys. Rannikot: Natural Earth. Verkko ja varastojen sijainnit suuntaa-antavia.
+Kantaverkosta kennoon, kerros kerrallaan.
+Liittymä on jo rakennettu ja maksettu. Näin sähkö kulkee teille – ja näin mittarin takana tehdään päätökset.
 
-Verkko rakennetaan uudelleen. Jokaisella liittymällä on siinä paikkansa.
+400 kV20 kVLiittymäVarastoKenno
+Sähköasemilla jännite lasketaan askel kerrallaan.
+400 kilovoltin kantaverkosta 110 kilovoltin alueverkkoon ja edelleen jakeluverkkoon.
 
-Sähkön kulutus kasvaa, ja yhä suurempi osa tuotannosta seuraa säätä. Verkko tarvitsee joustoa, ja sitä syntyy tuhansissa pienissä kohteissa: liittymissä, joiden takana on varasto ja ohjaus. Suomi ja Viro ovat yhteydessä Suomenlahden yli – sama kehitys, sama tarve.
+Jakeluverkko tuo sähkön liittymäänne.
+Jakeluverkkoyhtiö laskuttaa siirrosta – usein myös kuukauden suurimmasta tehosta.
 
-110–162 TWhSuomen sähkönkulutus vuonna 2035 Fingridin arvion mukaan. Nyt alle 90 TWh.
-Lähde: Fingrid, tiedote 30.9.2026
+Mittari on raja. Sen takana päätökset ovat teidän.
+Pääkeskus, kuormat ja mahdollinen oma tuotanto – kaikki mittarin takana.
 
-lähes 5 GWDatakeskusten liittymissopimukset Fingridin kanssa. Toteutuessaan kulutus kasvaisi lähes 40 % vuoden 2025 tasosta.
-Lähde: Fingrid, tiedote 18.8.2026
+Energiavarasto: invertteri, akustot, akunhallinta ja ohjaus.
+Suunnittelemme ja integroimme kokonaisuuden laitteistoriippumattomasti – ja pysymme mukana koko sen elinkaaren.
 
-noin 1 050 MWSähkövarastoja jo verkossa Suomessa – 85 % niistä alle 2 MW:n kohteita.
-Lähde: Fingrid, tiedote 24.2.2026
+Kennoista moduuleiksi, moduuleista akustoiksi.
+Akunhallinta valvoo jokaista kennoa: jännitettä, lämpötilaa ja varaustilaa.
+
+Pyydä maksuton kartoitus
 
 Yksi varasto. Kolme kassavirtaa. Tarvittaessa varavoima.
 
@@ -131,9 +132,47 @@ Akku tasapainottaa, Fingrid maksaa valmiudesta. Sama tapahtuu satoja kertoja pä
 
 Lähteet: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025; Fingrid · 10.2.2025; Fingrid, reservitoimittajat · 27.8.2026; Fingrid, tiedote · 24.9.2025
 
+Kokonaisuus kohteenne mukaan.
+Valitkaa osa-alue: kuvitus näyttää, missä se kohteessanne on. Kokoamme ratkaisun kumppaniemme laitteista ja vastaamme kokonaisuudesta.
+
+YrityksilleKotiin
+
+01AurinkosähköKatolle, maahan, pysäköintikatokseen tai kattoon integroituna. Mitoitus kulutuksen ja katon mukaan.
+Kumppanit: Roofit.Solar · Scanoffice
+
+02EnergiavarastoAkusto, invertteri ja ohjaus samassa ulkokaapissa; kaappeja rinnan kohteen tarpeen mukaan. Laitteet usealta valmistajalta, latausasemille myös mikroverkkona.
+Kumppanit: EP Energy · Elecnova · Ralos · Avant Power
+
+03Älykäs ohjaus ja markkinatYksi ohjaus käyttää aurinkoa, akkua ja kuormia yhdessä. Liitämme varaston aggregaattorin monimarkkinapalveluun: reservimarkkinat, tehohuiput ja ostohetki samasta akusta.
+Kumppanit: Aggregaattori valitaan kohteen mukaan
+
+04Suunnittelu ja projektinhallintaKartoituksesta käyttöönottoon yksi vastuu: kohdekäynti, mitoitus, verkkoyhtiön käsittely, hankinnat ja työmaa.
+Kumppanit: JSM Automaatiosähkö
+
+05Ylläpito ja seurantaSeuraamme järjestelmää käyttöönoton jälkeen ja vertaamme toteumaa kirjalliseen arvioon.
+
+06Neuvonta ja toinen mielipideKannattavuusselvitys tai arvio toisen toimittajan tarjouksesta – myös ilman laitekauppaa.
+
+01AurinkopaneelitPaneelit omakotitalon katolle, mitoitettuna kulutuksen mukaan.
+Kumppanit: Scanoffice
+
+02AurinkokattoKatto, jonka pinta tuottaa sähköä – järkevä, kun katto uusitaan joka tapauksessa.
+Kumppanit: Roofit.Solar
+
+03KotiakkuPäivän aurinkosähkö talteen iltaan ja ostot edullisille tunneille.
+
+04Älykäs ohjausPaneelit, akku ja suurimmat kuormat toimivat yhdessä sähkön hinnan mukaan.
+
+05Asennus ja ylläpitoIlmoitukset verkkoyhtiölle, asennus ja seuranta yhdeltä toimijalta.
+Kumppanit: JSM Automaatiosähkö
+
 Näin se etenee – ja mikä maksaa milloin.
 
 Ketään ei lähetetä minnekään ennen kuin tiedot ovat käsillä. Kaksi ensimmäistä askelta ovat maksuttomia, kohdekäynti hyvitetään sopimuksessa, suunnittelu ja asennus kulkevat sopimuksen mukaan.
+
+Esimerkkinä teollisuuskohde vaiheittainPysäytä
+
+1 · Kartoitus ja analyysi2 · Kohdekäynti3 · Suunnittelu ja verkkoyhtiön vahvistus4 · Hankinta ja asennus5 · Käyttö ja ylläpito
 
 01Maksuton kartoitus
 Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubista tai verkkoyhtiöltänne), yhden laskun ja pääkaavion; me kirjoitamme arvion: liittymä, kulutusprofiili, tehon jako, mallinnettu reservituotto tuotteittain lähteineen.
@@ -1567,14 +1606,9 @@ Päivitetty 08.09.2026. Jos seloste muuttuu, uusin versio on aina tällä sivull
 
 Sõltumatu energia juhindub sellest, et otsused teie arvesti taga tehakse teie huvides ja automaatselt. Süsteem – salvesti, energia tootmine ja nutikas juhtimine – otsustab ise iga tunni, kas tarbida, salvestada, müüa või hoida võimsust Eleringile valmis; ta lähtub teie tarbimisprofiilist, börsihinnast ja reservituru hindadest, tehes kasumlikumaid otsuseid teie kinnistu hüvanguks, ilma et keegi teie majast peaks midagi tegema.
 
-Küsi tasuta hindamist
-Kuidas aku toimib?
+Küsi tasuta hindamist Kuidas aku toimib?
 
 TasutaKohustustetaKirjalik hinnang
-
-Näidisobjekt mõõtkavas: salvestikapp on 1 × 2,4 m, hoone 45 m. Teie objekti joonis tehakse hinnangusse.Kerige joonist külgsuunas →
-
-1Võrk ja turudLiitumine jääb samaks. Selle taga süsteem ostab, salvestab, tarbib ja müüb – ning hoiab võimsust valmis Eleringi reserviturgudele.Reserviturg2Päikeseenergia ja päikesekatusedPaneelid katusele või katus, mis ise toodab. Suurus valitakse tarbimise ja katuse järgi.Roofit.Solar3EnergiasalvestiAkupank, inverter ja juhtimine samas välikapis. Kappe ühendatakse paralleelselt vastavalt objekti vajadusele.EP Energy · Elecnova · Ralos4Laadimine ja mikrovõrkSalvesti annab kiirlaadimise tipuvõimsuse, päikesevarjualune toodab päeval.Avant Power
 
 Liitumine on vara. Passiivne liitumine on kuluartikkel. Arvestitagune süsteem paneb selle tulu tootma.
 
@@ -1617,6 +1651,27 @@ Pakkumine juba käes?
 Kontrollime, kas selle tasuvus peab reaalsusele vastu. Tasuta, samade tarbimisandmete pealt, mille alusel teie otsus tegelikult tehakse. Kui pakkumine on hea, ütleme ka seda.
 
 Küsi teist arvamust
+
+Põhivõrgust akuelemendini, kiht kihi haaval.
+Liitumine on juba ehitatud ja kinni makstud. Nii jõuab elekter teieni – ja nii tehakse otsused arvesti taga.
+
+330 kV10 kVLiitumineSalvestiElement
+Alajaamades alandatakse pinget samm-sammult.
+330-kilovoldisest põhivõrgust 110-kilovoldisesse võrku ja sealt edasi jaotusvõrku.
+
+Jaotusvõrk toob elektri teie liitumiseni.
+Võrguettevõtja võtab tasu edastatud energia eest ja ärikliendilt sageli ka võimsuse eest.
+
+Arvesti on piir. Selle taga otsustate teie.
+Peakilp, tarbijad ja võimalik oma tootmine – kõik on arvesti taga.
+
+Energiasalvesti: inverter, akupangad, akuhaldus ja juhtimine.
+Projekteerime ja integreerime terviku tootjast sõltumatult – ning oleme toeks kogu selle eluea.
+
+Elementidest moodulid, moodulitest akupangad.
+Akuhaldus jälgib iga elementi: pinget, temperatuuri ja laetuse taset.
+
+Küsi tasuta hindamist
 
 Üks salvesti. Kolm rahavoogu. Vajadusel varutoide.
 
@@ -1670,9 +1725,44 @@ Aku tasakaalustab, Elering maksab valmisoleku eest. Sama juhtub sadu kordi päev
 
 Allikad: Elering, sagedusreservide turu kokkuvõte · juuli 2026; Elering, varustuskindluse aruanne 2025, lk 14; Elering, tasakaalustamisvõimsuse kulu · 2026; ERR 16.08.2024 (Elektrilevi liitumistasu ja läbilaskevõime)
 
+Terviklahendus teie objekti järgi.
+Valige valdkond: joonis näitab, kus see teie objektil asub. Paneme lahenduse kokku partnerite seadmetest ja vastutame terviku eest.
+
+EttevõtteleKoju
+
+01PäikeseenergiaKatusele, maale, parkla varjualusele või katusesse integreerituna. Suurus valitakse tarbimise ja katuse järgi.
+Partnerid: Roofit.Solar
+
+02EnergiasalvestiAkupank, inverter ja juhtimine samas välikapis; kappe ühendatakse paralleelselt vastavalt vajadusele. Seadmed mitmelt tootjalt.
+Partnerid: EP Energy · Elecnova · Ralos
+
+03Nutikas juhtimine ja turudÜks juhtimine kasutab päikest, akut ja tarbijaid koos. Ühendame salvesti agregaatori mitmeturuteenusega: reserviturud, tipukoormused ja ostuhetk samast akust.
+Partnerid: Soleron Energy
+
+04Projekteerimine ja projektijuhtimineHindamisest kasutuselevõtuni üks vastutaja: objekti ülevaatus, dimensioneerimine, suhtlus võrguettevõtjaga, hanked ja ehitus.
+
+05Hooldus ja jälgimineJälgime süsteemi pärast kasutuselevõttu ja võrdleme tegelikku tulemust kirjaliku hinnanguga.
+
+06Nõustamine ja teine arvamusTasuvusanalüüs või hinnang teise tarnija pakkumisele – ka ilma seadmemüügita.
+
+01PäikesepaneelidPaneelid eramu katusele, suurus tarbimise järgi.
+
+02PäikesekatusKatus, mille pind toodab elektrit – mõistlik siis, kui katus vajab nagunii vahetamist.
+Partnerid: Roofit.Solar
+
+03KoduakuPäeva päikeseenergia õhtuks talletatud ja ostud soodsatele tundidele.
+
+04Nutikas juhtiminePaneelid, aku ja suurimad tarbijad töötavad koos elektri hinna järgi.
+
+05Paigaldus ja hooldusTeated võrguettevõtjale, paigaldus ja jälgimine ühelt tegijalt.
+
 Kuidas see käib – ja mis millal maksab.
 
 Kedagi ei saadeta kuhugi enne, kui andmed on käes. Kaks esimest sammu on tasuta, objektikülastus arvestatakse lepingus maha, projekteerimine ja paigaldus käivad lepingu järgi.
+
+Näitena tööstusobjekt etappide kaupaPeata
+
+1 · Hindamine ja analüüs2 · Objekti ülevaatus3 · Projekt ja võrguettevõtja kinnitus4 · Hange ja paigaldus5 · Kasutus ja hooldus
 
 01Tasuta hindamine
 Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või teie võrguettevõtjalt), ühe arve ja peakilbi skeemi; meie kirjutame hinnangu: liitumine, tarbimisprofiil, võimsuse jaotus, modelleeritud reservitulu toodete kaupa allikatega.

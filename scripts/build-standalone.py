@@ -7,7 +7,7 @@ import base64, os, re, sys, glob, mimetypes
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VER=sys.argv[1] if len(sys.argv)>1 else 'v35'
 OUT=os.path.join(ROOT,'dist-preview'); os.makedirs(OUT,exist_ok=True)
-MIME={'.webp':'image/webp','.png':'image/png','.svg':'image/svg+xml','.jpg':'image/jpeg','.woff2':'font/woff2'}
+MIME={'.webp':'image/webp','.png':'image/png','.svg':'image/svg+xml','.jpg':'image/jpeg','.woff2':'font/woff2','.js':'text/javascript'}
 def datauri(path):
     p=os.path.join(ROOT,path.lstrip('/'))
     if not os.path.exists(p): return None

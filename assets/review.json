@@ -14,8 +14,19 @@
   },
   {
    "page": "/",
-   "sectionId": "yhteinen-verkko",
+   "sectionId": "kerros",
    "kind": "new"
+  },
+  {
+   "page": "/",
+   "sectionId": "tarjoamme",
+   "kind": "new"
+  },
+  {
+   "page": "/",
+   "sectionId": "nain",
+   "kind": "changed",
+   "prev": "Näin se etenee – ja mikä maksaa milloin. Ketään ei lähetetä minnekään ennen kuin tiedot ovat käsillä. Kaksi ensimmäistä askelta ovat maksuttomia, kohdekäynti hyvitetään sopimuksessa, suunnittelu ja asennus kulkevat sopimuksen mukaan. 01Maksuton kartoitusAnnatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubista tai verkkoyhtiöltänne), yhden laskun ja pääkaavion; me kirjoitamme arvion: liittymä, kulutusprofiili, tehon jako, mallinnettu reservituotto tuotteittain lähteineen.Maksuton · aikaanne noin 20 minuuttia 02EsitarkastusKymmenen valokuvaa pääkeskuksesta ja asennuspaikasta sekä lyhyt videopuhelu huoltohenkilönne kanssa; sähköasentaja kertoo, onnistuuko ja millä ehdoin, ja budjetin suuruusluokan.Maksuton · yksi tunti 03KohdekäyntiSähköasentaja käy paikalla, mittaa kaapelireitin, keskuksen ja asennuspaikan ja vahvistaa hinnan.Maksullinen · hyvitetään sopimuksessa 04Rahoitus ja päätösKun hinta on vahvistettu, asetamme rinnakkain kolme tietä: oma pääoma, leasing ja osamaksu. Näette yhden taulukon, jossa on kuukausierä, omarahoitusosuus ja se, mitä maksun jälkeen jää käteen. Rahoittajan kanssa asioimme me.Päätös on teidän 05Suunnittelu, asennus, markkinaSuunnittelu, verkkoyhtiön liittymisasiat, asennus, tarkastukset ja käyttöönotto; aggregaattori liittää varaston monimarkkinapalveluun ja me seuraamme, että järjestelmä tekee sen, minkä arvio näytti.Sopimuksen mukaan · yhden yhteyshenkilön kautta Ensimmäinen askel ei sido mihinkään. Tiedot ja lasku, ja tiedätte kahdessa arkipäivässä, kannattaako ja miten jatkaa. Pyydä maksuton kartoitus"
   },
   {
    "page": "/",
@@ -76,6 +87,22 @@
    "sectionId": "teadmatus",
    "kind": "changed",
    "prev": "Liitumine on vara. Passiivne liitumine on kuluartikkel. Arvestitagune süsteem paneb selle tulu tootma. Liitumise eest maksate iga kuu. Sama liitumine võib ka teile tootma hakata – kui selle taga on salvesti, energia tootmine ja nutikas juhtimine, mis otsustab teie kasuks. Meie anname teile selleks kolm asja: Tervikliku ülevaate sellest, mis turul toimub ja mis suunas see liigub. Majanduslikud võimalused teie objektil, kirjalikult ja allikatega. Targa energiamajandamise, mis muudab liitumise kuluartiklist varaks. Uus liitumine ei ole enam odav ega kiire: Elektrilevi liitumistasu on 331,15 eurot ampri kohta ilma käibemaksuta – liitumine, mille taga on toimiv salvesti, liigub kinnistuga kaasa. Allikad: ERR 16.08.2024; Elektrilevi, loetud 08.09.2026 Teie andmed keskel, teiste tingimused ümber — üks arvutus. Mis teie arvel ja kinnistul muutub: Võimsustasud: tipp alla, peakaitse tarbimise järgi.Näide ühest hinnakirjast: Elektrilevi paketis Võimsus VMA2 on võrguühenduse kasutusvõimsuse tasu 2,45 €/kW kuus ja see arvestatakse kuu kõrgeima tunni keskmise võimsuse järgi; võrguühenduse läbilaskevõime tasu 0,32 €/A kuus käib kokkulepitud amprite pealt, sõltumata kasutusest. Salvesti katab tipu, mistõttu saab peakaitsme ja võrgupaketi valida tegeliku tarbimise järgi.Sama pakett sisaldab ka tarbimiskoha kasutusvõimsuse tasu 2,56 €/kW kuus ja võrguühenduse kuutasu 30,41 €/kuu. Hinnangus arvutame teie oma paketi ja oma võrguettevõtja hinnakirjaga.Allikas: Konkurentsiameti otsus nr 7-3/2026-028 · 2.3.2026, hinnakiri kehtib 1.6.2026 alates · käibemaksuta Energia ja edastamine: odav tund sisse, kallis välja.Elektrienergia käib börsi tunnihinnaga, edastamistasu on päeval 3,49 ja öösel 1,99 senti/kWh. Salvesti ostab odavatel tundidel ja katab kallid; päikesepark toodab keskpäeval ja salvesti nihutab selle õhtusse. Eeldus on börsihinnaga müügipakett.Allikas: Konkurentsiameti otsus nr 7-3/2026-028 · 2.3.2026, pakett Võimsus VMA2 · käibemaksuta Reserviturg: valmisolekutasu, ka öösel.Elering ostab sagedusreserve iga päev ja maksab valmisoleku eest ka öösel ja nädalavahetusel. Juulis 2026 oli Eestis reservitoodete pakkumiseks kvalifitseerunud 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i (üles / alla). Sinna pääseb ainult arvestitaguse salvestiga, agregaatori kaudu.Allikas: Elering, sagedusreservide turu kokkuvõte · juuli 2026, tabel 2 Kinnistu väärtus: väiksem püsikulu, kõrgem hind.Ärikinnistu hind arvutatakse puhastulust: iga euro, mille võrra püsikulu langeb, tõstab väärtust mitmekordselt. Näidisarvutus: püsiv 10 000 euro suurune aastane sääst tähendab 10 % tootlusnõude juures ligikaudu 100 000 ja 8 % juures ligikaudu 125 000 eurot kõrgemat väärtust. Arvestame ainult püsiva osa – võimsustasu ja energiakulu; reserviturutulu sõltub turuhinnast ja seda väärtusesse ei arvestata.Süsteem jääb liitumise taha ja liigub kinnisvaraga kaasa. Ostja saab tippvõimsuse juhtimise ja pääsu reserviturule esimesest päevast, ilma projekti ja järjekorrata.Näidisarvutus. Teie objekti tootlusnõue sõltub kinnisvara liigist ja asukohast – hinnangus arvutame selle teie enda andmetega. Pakkumine juba käes? Kontrollime, kas selle tasuvus peab reaalsusele vastu. Tasuta, samade tarbimisandmete pealt, mille alusel teie otsus tegelikult tehakse. Kui pakkumine on hea, ütleme ka seda. Küsi teist arvamust"
+  },
+  {
+   "page": "/et/",
+   "sectionId": "kihid",
+   "kind": "new"
+  },
+  {
+   "page": "/et/",
+   "sectionId": "pakume",
+   "kind": "new"
+  },
+  {
+   "page": "/et/",
+   "sectionId": "kuidas",
+   "kind": "changed",
+   "prev": "Kuidas see käib – ja mis millal maksab. Kedagi ei saadeta kuhugi enne, kui andmed on käes. Kaks esimest sammu on tasuta, objektikülastus arvestatakse lepingus maha, projekteerimine ja paigaldus käivad lepingu järgi. 01Tasuta hindamineTe annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või teie võrguettevõtjalt), ühe arve ja peakilbi skeemi; meie kirjutame hinnangu: liitumine, tarbimisprofiil, võimsuse jaotus, modelleeritud reservitulu toodete kaupa allikatega.Tasuta · teie aeg umbes 20 minutit 02EelkontrollKümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldajaga; elektrik ütleb, kas ja mis tingimustel saab, ja eelarve suurusjärgu.Tasuta · üks tund 03ObjektikülastusElektrik käib kohal, mõõdab kaablitee, kilbi ja paigalduskoha ning kinnitab hinna.Tasuline · arvestatakse lepingus maha 04Rahastus ja otsusKui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Näete ühte tabelit, kus on kuumakse, omafinantseering ja see, mis pärast makset alles jääb. Rahastajaga suhtleme meie.Otsus jääb teile 05Projekt, paigaldus, turgProjekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine; agregaator liidab salvesti mitmeturuteenusega ja meie jälgime, et süsteem teeks seda, mida hinnang näitas.Lepingu järgi · ühe kontakti kaudu Esimene samm ei kohusta millekski. Andmed ja arve, ja te teate kahe tööpäevaga, kas ja kuidas edasi minna. Küsi tasuta hindamist"
   },
   {
    "page": "/energiasalvestid/",

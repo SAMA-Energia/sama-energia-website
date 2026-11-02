@@ -85,9 +85,9 @@ When in doubt, leave it out and flag it.
 
 ## v35 — uusi ilme (luonnos, haara v35-uusi-ilme, 02.11.2026)
 
-- Paletti: yö + kulta + luu (`--paper` #0B0B0A, `--gold` #E2C36A, `--ink` #F3EEE1). Otsikot Newsreader, leipäteksti IBM Plex Sans ennallaan.
-- Etusivun hero: brändilause "Yhteinen verkko. Itsenäinen energia." / "Ühine võrk. Iseseisev energia." ja mittakaavapiirros (1 m = 12 px) kohteesta mittarin takana; kumppanien tuotekuvat numeroiduissa korteissa.
-- FI-etusivulle uusi osio "Yhteinen verkko" (Suomi–Viro-kaavio, Fingridin luvut lähteineen). ET-versio odottaa Eleringin lukuja (markkinaerottelusääntö).
+- Paletti logon kullasta: kulta #C7A45C (logon gradientti #E8D193 → #C7A45C → #97752F), pohja #0A0A09 (= 3D-kuvitusten maa), teksti #EFE8D8. Otsikot Newsreader, leipäteksti IBM Plex Sans.
+- 3D-kuvitukset: `assets/scene.js` (FI) ja `assets/scene-et.js` (ET, tarrat viroksi, jännitteet 330/110/10 kV) — pohjana perustajien suunnittelukankaan 6A.6-konseptin isometrinen moottori. Piirtää etusivun heron (.cv-hero), kerroksittain puretun kantaverkko–kenno-osion (.cv-sld, scroll), "Kokonaisuus kohteenne mukaan" -valitsimen (.cv-ex) ja projektin vaiheanimaation (.cv-proc). Ladataan vain etusivulla (defer).
+- Etusivun hero: "Yhteinen verkko. Itsenäinen energia." / "Ühine võrk. Iseseisev energia."; ingressit perustajan hyväksymät.
 - Kumppanikuvat: `assets/kumppanit/` (Ralos Oy, Gare Energy Oy / Roofit.Solar, Avant Power -mediapankki, Scanoffice-kuvapankki).
 - AVOIN perustajapäätös: kumppaninimet EP Energy, Elecnova, Avant Power ja Roofit.Solar lisätty luonnokseen Madis Maastikin pyynnöstä 02.11.2026. Kumppanisivun 25.10.2026 sääntö (nimi vasta kirjallisen vahvistuksen jälkeen, R14 + päätösloki) on kirjattava ennen kuin haara yhdistetään mainiin. EP Energy poistettu kieltolistalta (verify-pages) samasta syystä.
 - AVOIN perustajapäätös: CSS-budjetti 76 → 84 kt (verify-pages).
