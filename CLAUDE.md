@@ -83,12 +83,13 @@ When in doubt, leave it out and flag it.
   Either way, no third-party client-side analytics — the no-analytics
   doctrine stands.
 
-## v35 — uusi ilme (luonnos, haara v35-uusi-ilme, 02.11.2026)
+## v38 — lava (luonnos, haara v35-uusi-ilme, 02.11.2026)
 
-- Paletti logon kullasta: kulta #C7A45C (logon gradientti #E8D193 → #C7A45C → #97752F), pohja #0A0A09 (= 3D-kuvitusten maa), teksti #EFE8D8. Otsikot Newsreader, leipäteksti IBM Plex Sans.
-- 3D-kuvitukset: `assets/scene.js` (FI) ja `assets/scene-et.js` (ET, tarrat viroksi, jännitteet 330/110/10 kV) — pohjana perustajien suunnittelukankaan 6A-konseptien moottori. Piirtää etusivun heron (.cv-hero), pistematriisikartan Suomi–Viro viidellä tasolla (.cv-map, scroll; data `assets/kartta.json`, rannikot Natural Earth), kerroksittain puretun kantaverkko–kenno-osion (.cv-sld, scroll), "Kokonaisuus kohteenne mukaan" -valitsimen (.cv-ex) ja projektin vaiheanimaation (.cv-proc). Ladataan vain etusivulla (defer). Kartan ja kerrosten kuvatekstien luvut lähteineen: Fingrid 24.2./18.8./30.9.2026, Elering (EstLink 3), Euroopan komissio 9.2.2025, ERR 7.7.2026, Caruna 1.9.2024, Elektrilevi.
-- Etusivun hero: "Yhteinen verkko. Itsenäinen energia." / "Ühine võrk. Iseseisev energia."; ingressit perustajan hyväksymät.
-- Kumppanikuvat: `assets/kumppanit/` (Ralos Oy, Gare Energy Oy / Roofit.Solar, Avant Power -mediapankki, Scanoffice-kuvapankki).
-- AVOIN perustajapäätös: kumppaninimet EP Energy, Elecnova, Avant Power ja Roofit.Solar lisätty luonnokseen Madis Maastikin pyynnöstä 02.11.2026. Kumppanisivun 25.10.2026 sääntö (nimi vasta kirjallisen vahvistuksen jälkeen, R14 + päätösloki) on kirjattava ennen kuin haara yhdistetään mainiin. EP Energy poistettu kieltolistalta (verify-pages) samasta syystä.
-- AVOIN perustajapäätös: CSS-budjetti 76 → 84 kt (verify-pages).
-- Esikatselu: `python3 scripts/build-standalone.py v35` → `dist-preview/` (ei repoon).
+- Etusivu FI/ET on nyt "lava": paremmalla kleepuv 3D-näyttämö (.lava-stage), vasemmalla tekstiaskeleet (.lv-g / .lv-s). Näyttämö vaihtaa kohtausta kerittäessä: katu (hero) → Suomi–Viro-kartta viidellä tasolla → kantaverkosta kennoon → akun viikko (tuluvood, reservimarkkinat ensin) → projektin vaiheet. Hiiri: parallaksi, heron kohteiden korostus, kartan solmujen vihjeet (lähteineen).
+- Moottori `assets/scene.js` / `scene-et.js` (pohjana perustajien 6A-konseptit; värit logon kultaan; vaihe 2 näyttää sähköasentajan kameralla, ei droonia). Karttadata `assets/kartta.json` (rannikot Natural Earth).
+- Kaikki kuvatekstien luvut lähteineen: Fingrid 24.2./18.8./30.9.2026, Elering (EstLink 3 700 MW), Euroopan komissio 9.2.2025, ERR 7.7.2026 (Kiisa + Aruküla 200 MW / 400 MWh), Caruna 1.9.2024, Elektrilevi.
+- Perustajan linjaus 02.11.2026 (Madis): etusivulla ei nosteta yksittäisiä kumppaneita esiin — valinta koko markkinalta kohteen ja toiveiden mukaan; kumppanisivu säilyy. Roofit.Solar ei Viron sivulla ennen sopimusta (Suomessa yhteistyö aurinkokatto.com / Gare Energy Oy). Avant Power ja Scanoffice vain FI.
+- Hyväksytyt tekstit säilytetty: hero-rivi ja ingressi (09.09.2026), tuluvoodid (ratkaisu-kortit), vaiheet (nain), kipu-, segmentti-, miksi-, UKK- ja lomakeosiot.
+- Esikatselu: `python3 scripts/build-standalone.py v38` → `dist-preview/` (ei repoon).
+- AVOIN: elävä Fingrid/Elering-data kartalle vaatisi kolmannen osapuolen pyynnön (Netlify-välipalvelin) — asutajaotsus.
+- AVOIN: CSS-budjetti 76 → 88 kt (verify-pages).

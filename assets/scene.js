@@ -54,6 +54,9 @@ class Component extends DCLogic {
     let p2 = 0;
     if (!board) { const el2 = document.querySelector('.sc-s2'); if (el2) { const r = el2.getBoundingClientRect(), run = r.height - vh; p2 = run > 0 ? Math.min(1, Math.max(0, -r.top / run)) : 0; } }
     this._p2 = p2;
+    const grp = (name) => { const el = document.querySelector('.lv-g[data-scene="' + name + '"]'); if (!el) return null; const r = el.getBoundingClientRect(); return Math.min(1, Math.max(0, (vh * 0.5 - r.top) / r.height)); };
+    const g2 = grp('map'); if (g2 !== null) this._p2 = g2;
+    const g3 = grp('sld'); if (g3 !== null) this._p3 = g3;
     const s = this.state, patch = {};
     if (s.board !== board) patch.board = board;
     if (s.vh !== vh) patch.vh = vh;
@@ -119,6 +122,7 @@ class Component extends DCLogic {
     let el = this['_el' + k];
     if (!el || !el.isConnected) { el = document.querySelector('.cv-' + k); this['_el' + k] = el; }
     if (!el) return null;
+    if (el.dataset.off === '1') return null;
     if (!this.state.board) { const r = el.getBoundingClientRect(); if (r.bottom < -40 || r.top > window.innerHeight + 40) return null; }
     const w = el.clientWidth, h = el.clientHeight;
     if (!w || !h) return null;
@@ -1200,14 +1204,15 @@ class Component extends DCLogic {
     this._xPcs(K, P, S.pcs); this._xEms(K, P, S); this._xBollards(K, P, S);
   }
   _xDrone(K, P, u, v, z, f) {
-    const g = K.g, a = K.a, H = this._xS().hall[4], d = 0.04;
-    K.fill([P(u - f, v - f, H + 0.003), P(u + f, v - f, H + 0.003), P(u + f, v + f, H + 0.003), P(u - f, v + f, H + 0.003)], 'rgba(212,181,116,0.1)', 'rgba(212,181,116,0.45)', 0.8);
-    [[-f, -f], [f, -f], [f, f], [-f, f]].forEach((o) => K.ln([P(u, v, z - 0.026), P(u + o[0], v + o[1], H + 0.003)], 'rgba(212,181,116,0.14)', 0.7));
-    [[d, d], [d, -d], [-d, d], [-d, -d]].forEach((o) => K.ln([P(u, v, z), P(u + o[0], v + o[1], z + 0.004)], 'rgba(150,156,160,0.95)', 1.6));
-    K.box(P, u - 0.018, v - 0.018, u + 0.018, v + 0.018, z - 0.012, z + 0.006, 'mach');
-    K.box(P, u - 0.007, v - 0.007, u + 0.007, v + 0.007, z - 0.026, z - 0.012, 'dark');
-    [[d, d], [d, -d], [-d, d], [-d, -d]].forEach((o) => { const c = P(u + o[0], v + o[1], z + 0.01); g.beginPath(); g.ellipse(c[0], c[1], 0.03 * a * 1.2247, 0.03 * a * 0.7071, 0, 0, Math.PI * 2); g.fillStyle = 'rgba(243,238,225,0.10)'; g.fill(); g.strokeStyle = 'rgba(243,238,225,0.4)'; g.lineWidth = 0.8; g.stroke(); });
-    K.dot(P(u + 0.019, v, z - 0.003), 1.4, '#5BD08D');
+    const g = K.g, a = K.a, t = (performance.now() - (this._t0 || 0)) / 1000;
+    K.box(P, u - 0.016, v - 0.016, u + 0.016, v + 0.016, 0, 0.06, 'dark');
+    K.box(P, u - 0.01, v - 0.01, u + 0.01, v + 0.01, 0.06, 0.082, 'mach');
+    const cu = u + 0.05, cv = v + 0.05;
+    [[0.02, 0.02], [-0.02, 0.02], [0, -0.024]].forEach((o) => K.ln([P(cu, cv, 0.048), P(cu + o[0], cv + o[1], 0)], 'rgba(150,156,160,0.9)', 1.1));
+    K.box(P, cu - 0.012, cv - 0.012, cu + 0.012, cv + 0.012, 0.048, 0.064, 'mach');
+    const fl = Math.max(0, Math.sin(t * 2.4)); const c = P(cu, cv, 0.058);
+    if (fl > 0.92) { g.save(); g.globalCompositeOperation = 'lighter'; g.fillStyle = 'rgba(243,238,225,' + ((fl - 0.92) * 9).toFixed(3) + ')'; g.beginPath(); g.arc(c[0], c[1], 9 * a / 60, 0, Math.PI * 2); g.fill(); g.restore(); }
+    K.dot(P(cu + 0.012, cv, 0.06), 1.4, '#5BD08D');
   }
   _xGate(g, c, sweep, al) {
     if (al < 0.02) return;
@@ -1327,17 +1332,15 @@ class Component extends DCLogic {
     } else if (b === 1) {
       g.drawImage(base, 0, 0, w, h);
       trPr = 1; trAl = 1 - sm(lt / 0.8);
-      bands(lt, 1);
       const endP = P0 + NP * PD;
       const dAl = sm((lt - 0.1) / 0.5) * (1 - sm((lt - endP) / 0.6));
       if (dAl > 0.02) {
-        let k = Math.max(0, Math.min(NP - 1, Math.floor((lt - P0) / PD))), q = cl((lt - P0 - k * PD) / PD);
-        if (lt < P0) { k = 0; q = 0; }
-        const uA = k % 2 ? hv[0] - 0.04 : hv[2] + 0.04, uB = k % 2 ? hv[2] + 0.04 : hv[0] - 0.04, vm = hv[1] + (k + 0.5) * bw;
-        let u, v;
-        if (q < 0.85) { u = uA + (uB - uA) * (q / 0.85); v = vm; }
-        else { u = uB; v = vm + (k < NP - 1 ? bw * sm((q - 0.85) / 0.15) : 0); }
-        g.save(); g.globalAlpha = dAl; this._xDrone(K, P, u, v, zd, bw / 2); g.restore();
+        const q = cl((lt - P0) / (endP - P0)), e = 0.07, cs = [[hv[2] + e, hv[1] - e], [hv[2] + e, hv[3] + e], [hv[0] - e, hv[3] + e]];
+        const seg = Math.min(1, Math.floor(q * 2)), qq = q * 2 - seg, A0 = cs[seg], A1 = cs[seg + 1];
+        const u = A0[0] + (A1[0] - A0[0]) * qq, v = A0[1] + (A1[1] - A0[1]) * qq;
+        const trail = [cs[0]]; for (let k = 1; k <= seg; k++) trail.push(cs[k]); trail.push([u, v]);
+        K.ln(trail.map((p) => P(p[0], p[1], 0.003)), 'rgba(212,181,116,0.45)', 1, [5, 7]);
+        g.save(); g.globalAlpha = dAl; this._xDrone(K, P, u, v, 0, 0); g.restore();
       }
       const sAl = sm((lt - endP - 0.1) / 0.9);
       if (sAl > 0.02) { g.save(); g.globalAlpha = sAl; this._xSetbacks(K, P, S); this._xPadZone(K, P, S); g.restore(); }
@@ -1345,7 +1348,6 @@ class Component extends DCLogic {
       lab('AKUSTON PAIKKA', P(S.pad[0], S.pad[3], 0), -28, 26, sm((lt - endP - 0.4) / 0.7));
     } else if (b === 2) {
       g.drawImage(base, 0, 0, w, h);
-      bands(99, 1 - sm(lt / 1.2));
       this._xSetbacks(K, P, S); this._xPadZone(K, P, S);
       const ga = sm(lt / 1.4); g.save(); g.globalAlpha = ga; this._xGhosts(K, P, S); g.restore();
       gateAl = sm((lt - 0.6) / 0.6); gateSweep = this._rm ? 1 : cl((lt - 2) / 1);
@@ -1680,8 +1682,9 @@ class Component extends DCLogic {
     const A = this._map.aspect, H0 = h * 0.9, site = window.SAMA_MAP_SITE || [N.helsinki[0] + 0.012, N.helsinki[1] - 0.006];
     const sc = H0 * (1 + z * 5.5);
     const fx = 0.5 + (site[0] - 0.5) * z, fy = 0.5 + (site[1] - 0.5) * z;
-    const cx = w < 760 ? w * 0.5 : w * 0.68, cy = w < 760 ? h * 0.58 : h * 0.5;
+    const inStage = !!(c.el && c.el.closest && c.el.closest('.lava-cv')); const cx = (inStage || w < 760) ? w * 0.5 : w * 0.68, cy = (!inStage && w < 760) ? h * 0.58 : h * 0.5;
     const P = (q) => [cx + (q[0] - fx) * sc * A, cy + (q[1] - fy) * sc];
+    this._mapProj = P; this._mapZ = z;
     g.lineWidth = 1; g.strokeStyle = 'rgba(243,238,225,0.09)';
     for (const key in this._map.lines) {
       for (const ln of this._map.lines[key]) { g.beginPath(); ln.forEach((q, i) => { const s = P(q); if (i === 0) g.moveTo(s[0], s[1]); else g.lineTo(s[0], s[1]); }); g.stroke(); }
@@ -1779,7 +1782,7 @@ class Component extends DCLogic {
       g.fillText('AKKU · AURINKO · OHJAUS', s[0] + 22, s[1] + 12);
       g.globalAlpha = 1;
     }
-    if (w < 760) { const sh = g.createLinearGradient(0, 0, 0, h * 0.42); sh.addColorStop(0, 'rgba('+SAMA_BGRGB+',0.96)'); sh.addColorStop(1, 'rgba('+SAMA_BGRGB+',0)'); g.fillStyle = sh; g.fillRect(0, 0, w, h * 0.42); }
+    if (inStage) {} else if (w < 760) { const sh = g.createLinearGradient(0, 0, 0, h * 0.42); sh.addColorStop(0, 'rgba('+SAMA_BGRGB+',0.96)'); sh.addColorStop(1, 'rgba('+SAMA_BGRGB+',0)'); g.fillStyle = sh; g.fillRect(0, 0, w, h * 0.42); }
     else { const sh = g.createLinearGradient(0, 0, w * 0.5, 0); sh.addColorStop(0, 'rgba('+SAMA_BGRGB+',0.92)'); sh.addColorStop(0.7, 'rgba('+SAMA_BGRGB+',0.6)'); sh.addColorStop(1, 'rgba('+SAMA_BGRGB+',0)'); g.fillStyle = sh; g.fillRect(0, 0, w * 0.5, h); }
   }
   /* ---------- Section 3: illustrated exploded stack ---------- */
@@ -1853,6 +1856,40 @@ var c=new Component({scheme:'yö'});c.state.board=false;window.SAMA3D=c;c.compon
 })();
 (function(){var c=window.SAMA3D;if(!c)return;
 function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));}
+var lava=document.querySelector('.lava');
+if(lava){
+ var stage=lava.querySelector('.lava-stage'),cvs=$$('.lava-cv canvas',lava),groups=$$('.lv-g',lava),tip=lava.querySelector('.lava-tip'),lab=lava.querySelector('.lava-l');
+ var tips=[];try{tips=JSON.parse(lava.getAttribute('data-tips')||'[]');}catch(e){}
+ var pmap=(lava.getAttribute('data-pmap')||'0,0,1,2,3').split(',').map(Number);
+ var scene='hero',prevT=0,HB=c._HB;
+ cvs.forEach(function(k){var on=k.getAttribute('data-scene')==='hero';k.classList.toggle('on',on);k.dataset.off=on?'0':'1';});
+ function setScene(s){if(s===scene)return;var old=scene;scene=s;prevT=performance.now();
+  cvs.forEach(function(k){var on=k.getAttribute('data-scene')===s;k.classList.toggle('on',on);if(on)k.dataset.off='0';});
+  setTimeout(function(){cvs.forEach(function(k){if(k.getAttribute('data-scene')!==scene)k.dataset.off='1';});},800);
+  if(lab)lab.hidden=s!=='proc';if(tip)tip.hidden=true;if(s!=='hero'&&c.state.hhl)c.setState({hhl:0});}
+ function center(){var mid=innerHeight*0.5,best=null,bd=1e9;groups.forEach(function(g){var r=g.getBoundingClientRect();var d=r.top>mid?r.top-mid:(r.bottom<mid?mid-r.bottom:0);if(d<bd){bd=d;best=g;}});return best;}
+ var lastStep={};
+ function onScroll(){var g=center();if(!g)return;var s=g.getAttribute('data-scene');setScene(s);
+  var mid=innerHeight*0.5,steps=$$('.lv-s',g),act=-1;
+  steps.forEach(function(st,i){var r=st.getBoundingClientRect();var on=r.top<=mid&&r.bottom>mid;st.classList.toggle('on',on);if(on)act=i;});
+  if(act<0){var near=-1,nd=1e9;steps.forEach(function(st,i){var r=st.getBoundingClientRect(),d=Math.min(Math.abs(r.top-mid),Math.abs(r.bottom-mid));if(d<nd){nd=d;near=i;}});steps.forEach(function(st,i){st.classList.toggle('on',i===near);});act=near;}
+  if(act>=0&&lastStep[s]!==act){lastStep[s]=act;
+   if(s==='proc'&&!c.state.paused){c._ht=HB[pmap[act]||0]+0.01;}
+   if(s==='day'&&!c._wUser){c._wAuto=true;if(!c.state.wb)c.setState({wb:true});}}}
+ addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',onScroll);onScroll();
+ // mouse: parallax, hero highlight, map tooltips
+ stage.addEventListener('pointermove',function(e){var r=stage.getBoundingClientRect(),nx=(e.clientX-r.left)/r.width*2-1,ny=(e.clientY-r.top)/r.height*2-1;
+  lava.querySelector('.lava-cv').style.setProperty('--px',(-nx).toFixed(3));lava.querySelector('.lava-cv').style.setProperty('--py',(-ny).toFixed(3));
+  if(scene==='hero'){var k=nx<-0.1?2:(nx>0.1?1:0);if(c.state.hhl!==k)c.setState({hhl:k});}
+  if(scene==='map'&&c._mapProj&&c._map&&tip){var cv=lava.querySelector('.cv-map'),cr=cv.getBoundingClientRect(),x=e.clientX-cr.left,y=e.clientY-cr.top,N=c._map.nodes,best=null,bd=16*16;
+   tips.forEach(function(t){var q=t.n?N[t.n]:(t.xy?t.xy:[(N[t.mid[0]][0]+N[t.mid[1]][0])/2,(N[t.mid[0]][1]+N[t.mid[1]][1])/2]);if(!q)return;var p=c._mapProj(q),d=(p[0]-x)*(p[0]-x)+(p[1]-y)*(p[1]-y);if(d<bd){bd=d;best={t:t,p:p};}});
+   if(best){tip.innerHTML='<b></b><small></small>';tip.querySelector('b').textContent=best.t.t;tip.querySelector('small').textContent=best.t.s;if(!best.t.s)tip.querySelector('small').remove();tip.style.left=(best.p[0]+cr.left-r.left)+'px';tip.style.top=(best.p[1]+cr.top-r.top)+'px';tip.hidden=false;}else tip.hidden=true;}});
+ stage.addEventListener('pointerleave',function(){lava.querySelector('.lava-cv').style.setProperty('--px','0');lava.querySelector('.lava-cv').style.setProperty('--py','0');if(c.state.hhl)c.setState({hhl:0});if(tip)tip.hidden=true;});
+ stage.addEventListener('pointerenter',function(){c._hov=true;});stage.addEventListener('pointerleave',function(){c._hov=false;});
+ $$('.lv-t',lava).forEach(function(b){b.addEventListener('click',function(){c._wUser=true;var wb=b.getAttribute('data-wb')==='1';c.setState({wb:wb});$$('.lv-t',lava).forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});cvs.forEach(function(k){if(k.classList.contains('cv-why'))k.setAttribute('aria-label',k.getAttribute('aria-label'));});});});
+ var pb=lava.querySelector('.lv-pause');if(pb)pb.addEventListener('click',function(){var p=!c.state.paused;c.setState({paused:p});pb.textContent=p?pb.getAttribute('data-r'):pb.getAttribute('data-p');pb.setAttribute('aria-pressed',p?'true':'false');});
+ $$('.lv-s[data-p]',lava).forEach(function(st){st.addEventListener('click',function(){var i=+st.getAttribute('data-p')-1;c._ht=HB[pmap[i]||0]+0.01;});});
+}
 var ex=document.querySelector('.x3d');
 if(ex){var sel=function(tab,i,user){c._setArea(tab,i,user);$$('.x3d-t',ex).forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-t')===tab?'true':'false');});
  $$('.x3d-l',ex).forEach(function(l){l.hidden=l.getAttribute('data-t')!==tab;});
@@ -1860,13 +1897,4 @@ if(ex){var sel=function(tab,i,user){c._setArea(tab,i,user);$$('.x3d-t',ex).forEa
  $$('.x3d-a',ex).forEach(function(b){b.addEventListener('click',function(){sel(b.getAttribute('data-tab'),+b.getAttribute('data-i'),true);});});
  $$('.x3d-t',ex).forEach(function(b){b.addEventListener('click',function(){sel(b.getAttribute('data-t'),1,true);});});
  var k=1;setInterval(function(){if(c._exUser||document.hidden)return;var r=ex.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;k=k%6+1;sel('y',k,false);},6500);}
-var pr=document.querySelector('.p3d');
-if(pr){pr.addEventListener('pointerenter',function(){c._hov=true;});pr.addEventListener('pointerleave',function(){c._hov=false;});
- $$('.p3d-s',pr).forEach(function(b){b.addEventListener('click',function(){c._ht=c._HB[+b.getAttribute('data-hs')-1]+.01;});});
- var pb=pr.querySelector('.p3d-pause');if(pb)pb.addEventListener('click',function(){var p=!c.state.paused;c.setState({paused:p});pb.textContent=p?pb.getAttribute('data-r'):pb.getAttribute('data-p');pb.setAttribute('aria-pressed',p?'true':'false');});}
-var st=document.querySelector('.s3d:not(.m3d)');
-document.addEventListener('sama3d',function(e){var s=e.detail||{};
- if(pr){$$('.p3d-s',pr).forEach(function(b){var n=+b.getAttribute('data-hs');b.classList.toggle('on',n===s.hs);b.classList.toggle('past',n<s.hs);var i=b.querySelector('b');if(i)i.style.width=(n===s.hs?(s.hp||0):(n<s.hs?100:0))+'%';});}
- if(st){var n=s.s3||1;$$('[data-s]',st).forEach(function(x){var k=+x.getAttribute('data-s');x.classList.toggle('on',k===n);x.classList.toggle('past',k<n);});}
- var mp=document.querySelector('.m3d');if(mp){var n2=s.s2||1;$$('[data-m]',mp).forEach(function(x){var k=+x.getAttribute('data-m');x.classList.toggle('on',k===n2);x.classList.toggle('past',k<n2);});}});
 })();

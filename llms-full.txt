@@ -5,9 +5,11 @@
 
 # SAMA Energia — Itsenäinen energia. Itseohjautuva akku. — https://samaenergia.fi/
 
-Yhteinen verkko. Itsenäinen energia.
+Yhteinen verkko, itsenäinen energia.
 
-Itsenäinen energia lähtee siitä, että päätökset mittarinne takana tehdään teidän eduksenne ja automaattisesti. Järjestelmä – energiavarasto, energiantuotanto ja älykäs ohjaus – tekee kannattavampia päätöksiä kiinteistönne hyväksi, ilman että kenenkään teillä tarvitsee tehdä mitään.
+Saavuttakaa energiariippumattomuus laittamalla sähköliittymänne töihin – omaksi eduksenne.
+
+Riippumaton energia lähtee siitä, että päätökset mittarinne takana tehdään teidän eduksenne ja automaattisesti. Järjestelmä – energiavarasto, energiantuotanto ja älykäs ohjaus – tekee kannattavampia päätöksiä kiinteistönne hyväksi, ilman että kenenkään teillä tarvitsee tehdä mitään.
 
 Pyydä maksuton kartoitus Miten akku toimii?
 
@@ -15,7 +17,88 @@ MaksutonEi sitoumuksiaKirjallinen arvio
 
 noin 1 050 MWsähkövarastoja on jo Suomen verkossa, ja uusia varastoja on sovittu liitettäväksi yli 4 GW. Jokainen niistä on jonkun liittymä, joka tekee työtä.Lähde: Fingrid, tiedotteet 24.2.2026 ja 18.8.2026
 
-EnergiavarastotEP Energy · Elecnova · RalosAurinkokatotRoofit.SolarLataus ja mikroverkotAvant PowerAurinkosähkö ja latausScanoffice
+Yhteinen verkko kerros kerrallaan.
+Sama kehitys Suomenlahden molemmin puolin: kulutus kasvaa, tuotanto seuraa säätä ja verkko tarvitsee joustoa. Näin verkko rakentuu – ja mihin liittymänne siinä asettuu.
+
+Sähkö syntyy usein kaukana sieltä, missä se kulutetaan.
+Suomessa ydinvoima on rannikolla (Olkiluoto, Loviisa), vesivoima pohjoisen joissa ja tuulivoima kasvaa Pohjanmaalla. Virossa tuotanto on keskittynyt Koillis-Viroon, ja aurinkovoima lisääntyy nopeasti.
+
+Kantaverkko kuljettaa sen kulutukseen.
+Suomen kantaverkkoa ylläpitää Fingrid, ja sen jännitteet ovat 400, 220 ja 110 kilovolttia. Virossa samaa tehtävää hoitaa Elering 330 ja 110 kilovoltin verkolla.
+
+Kaksi sähköjärjestelmää, kaksi merikaapelia – kolmas suunnitteilla.
+Suomi kuuluu pohjoismaiseen tahtialueeseen. Viro siirtyi Manner-Euroopan tahtialueeseen 9.2.2025. EstLink 1 (350 MW, 2006) ja EstLink 2 (650 MW, 2014) yhdistävät ne Suomenlahden yli; EstLink 3 (700 MW) on suunnitteilla 2030-luvun jälkipuoliskolle.
+
+Verkko hajautuu tuhansiksi pieniksi solmuiksi.
+Suomen verkkoon on liitetty sähkövarastoja noin 1 050 MW: 85 % niistä on alle 2 MW:n kohteita ja 56 % on jakeluverkossa. Liittymissopimuksia uusille varastoille on yli 4 GW. Virossa Kiisan ja Arukülan akkupuistot ovat yhdessä 200 MW / 400 MWh.
+
+Yksi näistä solmuista voi olla teidän.
+Liittymä on jo rakennettu ja maksettu. Sen takana akku, aurinko ja ohjaus toimivat yhtenä kokonaisuutena – ja osallistuvat samaan verkkoon, jota Fingrid tasapainottaa joka sekunti.
+
+Lähteet: Fingrid, tiedotteet 24.2.2026 ja 18.8.2026 · Elering, EstLink 3 · Euroopan komissio 9.2.2025 · ERR 7.7.2026 · Natural Earth. Kaaviomainen esitys: linjojen reitit ja voimalaitosten sijainnit ovat suuntaa-antavia.
+
+Kantaverkosta kennoon, kerros kerrallaan.
+Liittymä on jo rakennettu ja maksettu. Näin sähkö kulkee teille – ja näin mittarin takana tehdään päätökset.
+
+Sähköasemilla jännite lasketaan askel kerrallaan.
+Fingridin kantaverkko toimii 400, 220 ja 110 kilovoltin jännitteillä. Sähköasemilla jännite lasketaan 400 kilovoltista 110 kilovolttiin ja edelleen jakeluverkkoon.
+
+Jakeluverkko tuo sähkön liittymäänne.
+Keskijänniteverkko (20 kV) ja pienjänniteverkko (0,4 kV) ovat verkkoyhtiön. Se laskuttaa siirrosta ja tehosta: esimerkiksi Caruna Oy:n Tehosiirto 1 PJ -tuotteessa tehomaksu on 3,57 €/kW kuukaudessa kuukauden huipputehon mukaan (hinnasto 1.9.2024, alv 0 %).
+
+Mittari on raja. Sen takana päätökset ovat teidän.
+Keskijänniteliittymässä oma muuntamo 20/0,4 kV, pääkeskus, kuormat ja mahdollinen oma tuotanto ovat kaikki mittarin takana – samoin energiavarasto.
+
+Energiavarasto: invertteri, akustot, akunhallinta ja ohjaus.
+Yksi ulkokaappi kokoaa tehoelektroniikan (PCS), LFP-akustot, akunhallinnan (BMS), nestejäähdytyksen ja ohjauksen (EMS). Teho ja energia mitoitetaan kulutustiedoistanne, ja kaappeja liitetään rinnan kohteen mukaan.
+
+Kennoista moduuleiksi, moduuleista akustoiksi.
+Litiumrautafosfaattikennot (LFP) kootaan moduuleiksi ja moduulit akustoiksi. Akunhallinta mittaa jokaisen kennon jännitteen, lämpötilan ja varaustilan ja pitää ne sallitulla alueella.
+
+Lähteet: Fingrid, kantaverkon jännitetasot · Caruna Oy, verkkopalveluhinnasto 1.9.2024 · valmistajien tuotetiedotteet, luettu 1.11.2026.
+
+Yksi varasto. Kolme kassavirtaa. Tarvittaessa varavoima.
+Akku ei tee vain yhtä asiaa: se leikkaa huiput, ostaa halvalla ja on verkolle valmiina. Aurinkopaneeleja tai omaa tuotantoa siihen ei tarvita. Liittymä riittää.
+
+Ilman akkuaAkulla
+
+Reservimarkkinatulo
+Fingrid maksaa verkon tasapainottamiseen valmiina olevista akuista, myös niinä tunteina, jolloin akku vain odottaa. Liittyminen tapahtuu aggregaattorin kautta.
+
+Tehomaksu alas
+Akku leikkaa kulutushuiput ennen kuin ne päätyvät verkkolaskulle. Se on ensimmäinen rivi, joka laskullanne muuttuu.
+
+Pörssisähkö hyödyksi
+Lataa halvoilla tunneilla, purkaa kalliilla. Joka päivä, automaattisesti, tuotantoanne häiritsemättä.
+
+Varavoima, kun verkko katkeaa
+Kriittiset laitteet jatkavat, kun verkko pettää: kuivuri, kylmävarasto tai tuotantolinja ei jää odottamaan.
+
+Havainnollistus: yksi viikko teollisuuskohteen kulutusta ja pörssihintaa. Ei mittakaavassa eikä todellisen kohteen tietoja.
+
+Näin se etenee – ja mikä maksaa milloin.
+Ketään ei lähetetä minnekään ennen kuin tiedot ovat käsillä. Kaksi ensimmäistä askelta ovat maksuttomia, kohdekäynti hyvitetään sopimuksessa, suunnittelu ja asennus kulkevat sopimuksen mukaan.
+
+Pysäytä
+
+1 · Maksuton kartoitus
+Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubista tai verkkoyhtiöltänne), yhden laskun ja pääkaavion; me kirjoitamme arvion: liittymä, kulutusprofiili, tehon jako, mallinnettu reservituotto tuotteittain lähteineen.
+
+2 · Esitarkastus
+Kymmenen valokuvaa pääkeskuksesta ja asennuspaikasta sekä lyhyt videopuhelu huoltohenkilönne kanssa; sähköasentaja kertoo, onnistuuko ja millä ehdoin, ja budjetin suuruusluokan.
+
+3 · Kohdekäynti
+Sähköasentaja käy paikalla, mittaa kaapelireitin, keskuksen ja asennuspaikan ja vahvistaa hinnan.
+
+4 · Rahoitus ja päätös
+Kun hinta on vahvistettu, asetamme rinnakkain kolme tietä: oma pääoma, leasing ja osamaksu. Näette yhden taulukon, jossa on kuukausierä, omarahoitusosuus ja se, mitä maksun jälkeen jää käteen. Rahoittajan kanssa asioimme me.
+
+5 · Suunnittelu, asennus, markkina
+Suunnittelu, verkkoyhtiön liittymisasiat, asennus, tarkastukset ja käyttöönotto; aggregaattori liittää varaston monimarkkinapalveluun ja me seuraamme, että järjestelmä tekee sen, minkä arvio näytti.
+
+Ensimmäinen askel ei sido mihinkään. Tiedot ja lasku, ja tiedätte kahdessa arkipäivässä, kannattaako ja miten jatkaa. Pyydä maksuton kartoitus
+
+Esimerkkinä teollisuuskohde
 
 Liittymä on omaisuutta. Passiivinen liittymä on kulujen erä. Mittarin takainen järjestelmä panee sen tuottamaan tuloa.
 
@@ -60,88 +143,32 @@ Tarkistamme, kestääkö sen takaisinmaksu todellisuuden. Maksutta, samoista kul
 
 Pyydä toinen mielipide
 
-Yhteinen verkko kerros kerrallaan.
-Sama kehitys Suomenlahden molemmin puolin: kulutus kasvaa, tuotanto seuraa säätä ja verkko tarvitsee joustoa. Näin verkko rakentuu – ja mihin liittymänne siinä asettuu.
+Kokonaisuus kohteenne mukaan.
+Valitkaa osa-alue: kuvitus näyttää, missä se kohteessanne on. Kokoamme ratkaisun kumppaniemme laitteista ja vastaamme kokonaisuudesta.
 
-TuotantoKantaverkkoYhteydetHajautusLiittymä
-Sähkö syntyy usein kaukana sieltä, missä se kulutetaan.
-Suomessa ydinvoima on rannikolla (Olkiluoto, Loviisa), vesivoima pohjoisen joissa ja tuulivoima kasvaa Pohjanmaalla. Virossa tuotanto on keskittynyt Koillis-Viroon, ja aurinkovoima lisääntyy nopeasti.
+YrityksilleKotiin
 
-Kantaverkko kuljettaa sen kulutukseen.
-Suomen kantaverkkoa ylläpitää Fingrid, ja sen jännitteet ovat 400, 220 ja 110 kilovolttia. Virossa samaa tehtävää hoitaa Elering 330 ja 110 kilovoltin verkolla.
+01AurinkosähköKatolle, maahan, pysäköintikatokseen tai kattoon integroituna. Mitoitus kulutuksen ja katon mukaan.
 
-Kaksi sähköjärjestelmää, kaksi merikaapelia – kolmas suunnitteilla.
-Suomi kuuluu pohjoismaiseen tahtialueeseen. Viro siirtyi Manner-Euroopan tahtialueeseen 9.2.2025. EstLink 1 (350 MW, 2006) ja EstLink 2 (650 MW, 2014) yhdistävät ne Suomenlahden yli; EstLink 3 (700 MW) on suunnitteilla 2030-luvun jälkipuoliskolle.
+02EnergiavarastoAkusto, invertteri ja ohjaus samassa ulkokaapissa; kaappeja rinnan kohteen tarpeen mukaan. Laitteet usealta valmistajalta, latausasemille myös mikroverkkona.
 
-Verkko hajautuu tuhansiksi pieniksi solmuiksi.
-Suomen verkkoon on liitetty sähkövarastoja noin 1 050 MW: 85 % niistä on alle 2 MW:n kohteita ja 56 % on jakeluverkossa. Liittymissopimuksia uusille varastoille on yli 4 GW. Virossa Kiisan ja Arukülan akkupuistot ovat yhdessä 200 MW / 400 MWh.
+03Älykäs ohjaus ja markkinatYksi ohjaus käyttää aurinkoa, akkua ja kuormia yhdessä. Liitämme varaston aggregaattorin monimarkkinapalveluun: reservimarkkinat, tehohuiput ja ostohetki samasta akusta.
 
-Yksi näistä solmuista voi olla teidän.
-Liittymä on jo rakennettu ja maksettu. Sen takana akku, aurinko ja ohjaus toimivat yhtenä kokonaisuutena – ja osallistuvat samaan verkkoon, jota Fingrid tasapainottaa joka sekunti.
+04Suunnittelu ja projektinhallintaKartoituksesta käyttöönottoon yksi vastuu: kohdekäynti, mitoitus, verkkoyhtiön käsittely, hankinnat ja työmaa.
 
-Lähteet: Fingrid, tiedotteet 24.2.2026 ja 18.8.2026 · Elering, EstLink 3 · Euroopan komissio 9.2.2025 · ERR 7.7.2026 · Natural Earth. Kaaviomainen esitys: linjojen reitit ja voimalaitosten sijainnit ovat suuntaa-antavia.
+05Ylläpito ja seurantaSeuraamme järjestelmää käyttöönoton jälkeen ja vertaamme toteumaa kirjalliseen arvioon.
 
-Kantaverkosta kennoon, kerros kerrallaan.
-Liittymä on jo rakennettu ja maksettu. Näin sähkö kulkee teille – ja näin mittarin takana tehdään päätökset.
+06Neuvonta ja toinen mielipideKannattavuusselvitys tai arvio toisen toimittajan tarjouksesta – myös ilman laitekauppaa.
 
-400 kV20 kVLiittymäVarastoKenno
-Sähköasemilla jännite lasketaan askel kerrallaan.
-Fingridin kantaverkko toimii 400, 220 ja 110 kilovoltin jännitteillä. Sähköasemilla jännite lasketaan 400 kilovoltista 110 kilovolttiin ja edelleen jakeluverkkoon.
+01AurinkopaneelitPaneelit omakotitalon katolle, mitoitettuna kulutuksen mukaan.
 
-Jakeluverkko tuo sähkön liittymäänne.
-Keskijänniteverkko (20 kV) ja pienjänniteverkko (0,4 kV) ovat verkkoyhtiön. Se laskuttaa siirrosta ja tehosta: esimerkiksi Caruna Oy:n Tehosiirto 1 PJ -tuotteessa tehomaksu on 3,57 €/kW kuukaudessa kuukauden huipputehon mukaan (hinnasto 1.9.2024, alv 0 %).
+02AurinkokattoKatto, jonka pinta tuottaa sähköä – järkevä, kun katto uusitaan joka tapauksessa.
 
-Mittari on raja. Sen takana päätökset ovat teidän.
-Keskijänniteliittymässä oma muuntamo 20/0,4 kV, pääkeskus, kuormat ja mahdollinen oma tuotanto ovat kaikki mittarin takana – samoin energiavarasto.
+03KotiakkuPäivän aurinkosähkö talteen iltaan ja ostot edullisille tunneille.
 
-Energiavarasto: invertteri, akustot, akunhallinta ja ohjaus.
-Yksi ulkokaappi kokoaa tehoelektroniikan (PCS), LFP-akustot, akunhallinnan (BMS), nestejäähdytyksen ja ohjauksen (EMS). Teho ja energia mitoitetaan kulutustiedoistanne, ja kaappeja liitetään rinnan kohteen mukaan.
+04Älykäs ohjausPaneelit, akku ja suurimmat kuormat toimivat yhdessä sähkön hinnan mukaan.
 
-Kennoista moduuleiksi, moduuleista akustoiksi.
-Litiumrautafosfaattikennot (LFP) kootaan moduuleiksi ja moduulit akustoiksi. Akunhallinta mittaa jokaisen kennon jännitteen, lämpötilan ja varaustilan ja pitää ne sallitulla alueella.
-
-Lähteet: Fingrid, kantaverkon jännitetasot · Caruna Oy, verkkopalveluhinnasto 1.9.2024 · valmistajien tuotetiedotteet, luettu 1.11.2026.
-
-Pyydä maksuton kartoitus
-
-Yksi varasto. Kolme kassavirtaa. Tarvittaessa varavoima.
-
-Akku ei tee vain yhtä asiaa: se leikkaa huiput, ostaa halvalla ja on verkolle valmiina. Aurinkopaneeleja tai omaa tuotantoa siihen ei tarvita. Liittymä riittää.
-
-Tehomaksu alas
-Akku leikkaa kulutushuiput ennen kuin ne päätyvät verkkolaskulle. Se on ensimmäinen rivi, joka laskullanne muuttuu.
-
-Tarkemmin
-Esimerkki yhdestä hinnastosta: Caruna Oy:n Tehosiirto 1 PJ -tuotteessa tehomaksu on 3,57 €/kW,kk ja määräytyy kuukauden huipputehon mukaan, ja perusmaksu 58,70 €/kk ei riipu käytöstä. Kun varasto kattaa huipun, siirtotuote ja sulakekoko voidaan valita todellisen kulutuksen mukaan – eikä kulutuksen kasvattaminen vaadi lisää liittymistehoa.
-Oma verkkoyhtiönne hinnoittelee eri tavoin: Caruna Espoo Oy:n vastaava tehomaksu on 1,37 €/kW,kk. Arviossa laskemme teidän oman verkkoyhtiönne hinnastolla.
-
-Energiavarastot
-
-Pörssisähkö hyödyksi
-Lataa halvoilla tunneilla, purkaa kalliilla. Joka päivä, automaattisesti, tuotantoanne häiritsemättä.
-
-Tarkemmin
-Kallis tunti maksaa pörssihintana. Varasto pitää huipun alhaalla ja tekee arbitraasia: ostaa sähkön halvoilla tunneilla ja myy tai käyttää sen kalliilla – automaattisesti, tuotantoanne häiritsemättä. Edellytys on pörssisidonnainen myyntisopimus.
-Ero syntyy pörssin tuntihinnasta, ei siirtomaksusta: pienjänniteliittymän siirto on samassa esimerkkihinnastossa kiinteä 3,52 snt/kWh. Keskijänniteliittymässä (Tehosiirto 1 KJ) myös siirrolla on kaksi hintaa – talviarkipäivänä 5,10 ja muuna aikana 1,81 snt/kWh – jolloin ajoituksella on kaksi vaikutusta.
-
-Miten akun päivä näyttää
-
-Reservimarkkinatulo
-Fingrid maksaa verkon tasapainottamiseen valmiina olevista akuista, myös niinä tunteina, jolloin akku vain odottaa. Liittyminen tapahtuu aggregaattorin kautta.
-
-Energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli 29 %. Lähde: Fingrid · 10.2.2025
-
-Reservimarkkinat selkokielellä
-
-Varavoima, kun verkko katkeaa
-Kriittiset laitteet jatkavat, kun verkko pettää: kuivuri, kylmävarasto tai tuotantolinja ei jää odottamaan.
-
-Tarkemmin
-Edellyttää saarekekäyttöön mitoitettua toteutusta ja erotettua kriittistä piiriä; arvioidaan kohteittain.
-
-Energiavarastot
-
-Onko kohteessa aurinkosähköä tai onko se suunnitteilla? Aurinkovoimala tuottaa eniten keskipäivällä, kun hinta on yleensä alimmillaan; kulutuksenne ostaa illalla, kun hinta on korkea. Akku tekee siitä paremman investoinnin: oma tuotanto omaan käyttöön, ylijäämä varastoon, ja sama akku reserveihin.Aurinkosähkö yrityksille
+05Asennus ja ylläpitoIlmoitukset verkkoyhtiölle, asennus ja seuranta yhdeltä toimijalta.
 
 Reservejä tarvitaan viidessä vuodessa lähes kaksi kertaa nykyinen määrä. Liittymänne voi olla yksi toimittajista.
 
@@ -158,72 +185,6 @@ Reservimarkkinat selkokielellä
 Akku tasapainottaa, Fingrid maksaa valmiudesta. Sama tapahtuu satoja kertoja päivässä, automaattisesti.
 
 Lähteet: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025; Fingrid · 10.2.2025; Fingrid, reservitoimittajat · 27.8.2026; Fingrid, tiedote · 24.9.2025
-
-Kokonaisuus kohteenne mukaan.
-Valitkaa osa-alue: kuvitus näyttää, missä se kohteessanne on. Kokoamme ratkaisun kumppaniemme laitteista ja vastaamme kokonaisuudesta.
-
-YrityksilleKotiin
-
-01AurinkosähköKatolle, maahan, pysäköintikatokseen tai kattoon integroituna. Mitoitus kulutuksen ja katon mukaan.
-Kumppanit: Roofit.Solar · Scanoffice
-
-02EnergiavarastoAkusto, invertteri ja ohjaus samassa ulkokaapissa; kaappeja rinnan kohteen tarpeen mukaan. Laitteet usealta valmistajalta, latausasemille myös mikroverkkona.
-Kumppanit: EP Energy · Elecnova · Ralos · Avant Power
-
-03Älykäs ohjaus ja markkinatYksi ohjaus käyttää aurinkoa, akkua ja kuormia yhdessä. Liitämme varaston aggregaattorin monimarkkinapalveluun: reservimarkkinat, tehohuiput ja ostohetki samasta akusta.
-Kumppanit: Aggregaattori valitaan kohteen mukaan
-
-04Suunnittelu ja projektinhallintaKartoituksesta käyttöönottoon yksi vastuu: kohdekäynti, mitoitus, verkkoyhtiön käsittely, hankinnat ja työmaa.
-Kumppanit: JSM Automaatiosähkö
-
-05Ylläpito ja seurantaSeuraamme järjestelmää käyttöönoton jälkeen ja vertaamme toteumaa kirjalliseen arvioon.
-
-06Neuvonta ja toinen mielipideKannattavuusselvitys tai arvio toisen toimittajan tarjouksesta – myös ilman laitekauppaa.
-
-01AurinkopaneelitPaneelit omakotitalon katolle, mitoitettuna kulutuksen mukaan.
-Kumppanit: Scanoffice
-
-02AurinkokattoKatto, jonka pinta tuottaa sähköä – järkevä, kun katto uusitaan joka tapauksessa.
-Kumppanit: Roofit.Solar
-
-03KotiakkuPäivän aurinkosähkö talteen iltaan ja ostot edullisille tunneille.
-
-04Älykäs ohjausPaneelit, akku ja suurimmat kuormat toimivat yhdessä sähkön hinnan mukaan.
-
-05Asennus ja ylläpitoIlmoitukset verkkoyhtiölle, asennus ja seuranta yhdeltä toimijalta.
-Kumppanit: JSM Automaatiosähkö
-
-Näin se etenee – ja mikä maksaa milloin.
-
-Ketään ei lähetetä minnekään ennen kuin tiedot ovat käsillä. Kaksi ensimmäistä askelta ovat maksuttomia, kohdekäynti hyvitetään sopimuksessa, suunnittelu ja asennus kulkevat sopimuksen mukaan.
-
-Esimerkkinä teollisuuskohde vaiheittainPysäytä
-
-1 · Kartoitus ja analyysi2 · Kohdekäynti3 · Suunnittelu ja verkkoyhtiön vahvistus4 · Hankinta ja asennus5 · Käyttö ja ylläpito
-
-01Maksuton kartoitus
-Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubista tai verkkoyhtiöltänne), yhden laskun ja pääkaavion; me kirjoitamme arvion: liittymä, kulutusprofiili, tehon jako, mallinnettu reservituotto tuotteittain lähteineen.
-Maksuton · aikaanne noin 20 minuuttia
-
-02Esitarkastus
-Kymmenen valokuvaa pääkeskuksesta ja asennuspaikasta sekä lyhyt videopuhelu huoltohenkilönne kanssa; sähköasentaja kertoo, onnistuuko ja millä ehdoin, ja budjetin suuruusluokan.
-Maksuton · yksi tunti
-
-03Kohdekäynti
-Sähköasentaja käy paikalla, mittaa kaapelireitin, keskuksen ja asennuspaikan ja vahvistaa hinnan.
-Maksullinen · hyvitetään sopimuksessa
-
-04Rahoitus ja päätös
-Kun hinta on vahvistettu, asetamme rinnakkain kolme tietä: oma pääoma, leasing ja osamaksu. Näette yhden taulukon, jossa on kuukausierä, omarahoitusosuus ja se, mitä maksun jälkeen jää käteen. Rahoittajan kanssa asioimme me.
-Päätös on teidän
-
-05Suunnittelu, asennus, markkina
-Suunnittelu, verkkoyhtiön liittymisasiat, asennus, tarkastukset ja käyttöönotto; aggregaattori liittää varaston monimarkkinapalveluun ja me seuraamme, että järjestelmä tekee sen, minkä arvio näytti.
-Sopimuksen mukaan · yhden yhteyshenkilön kautta
-
-Ensimmäinen askel ei sido mihinkään. Tiedot ja lasku, ja tiedätte kahdessa arkipäivässä, kannattaako ja miten jatkaa.
-
-Pyydä maksuton kartoitus
 
 Missä varasto maksaa itsensä takaisin nopeimmin – ja miksi.
 
@@ -277,16 +238,7 @@ Laaja valikoima, yksi vastuu
 
 Energiavarastot, kontit, lataus, mikroverkot ja aurinkosähkö kumppaneiltamme. Me kokoamme kokonaisuuden ja vastaamme projektista alusta loppuun.
 
-Kumppanit
-
-RalosEnergiavarastot
-EP EnergyEnergiavarastot
-ElecnovaEnergiavarastot
-Avant PowerLataus ja mikroverkot
-Roofit.SolarAurinkokatot
-ScanofficeAurinkosähkö ja lämpöpumput
-JSM AutomaatiosähköSähköasennukset
-Soleron EnergyReservimarkkinat Virossa
+Paneelit, laturit, akut ja aggregaattori valitaan kohteenne ja toiveidenne mukaan koko markkinan valikoimasta. Valmistaja ja malli nimetään tarjouksessa.
 
 Kumppanit ja tuotteet Meistä
 
@@ -1629,9 +1581,11 @@ Päivitetty 08.09.2026. Jos seloste muuttuu, uusin versio on aina tällä sivull
 
 # SAMA Energia — Iseseisev energia. Isejuhtiv aku. — https://samaenergia.ee/
 
-Ühine võrk. Iseseisev energia.
+Ühine võrk, iseseisev energia.
 
-Sõltumatu energia juhindub sellest, et otsused teie arvesti taga tehakse teie huvides ja automaatselt. Süsteem – salvesti, energia tootmine ja nutikas juhtimine – otsustab ise iga tunni, kas tarbida, salvestada, müüa või hoida võimsust Eleringile valmis; ta lähtub teie tarbimisprofiilist, börsihinnast ja reservituru hindadest, tehes kasumlikumaid otsuseid teie kinnistu hüvanguks, ilma et keegi teie majast peaks midagi tegema.
+Saavutage energiasõltumatus, pannes elektriliitumise enda kasuks tööle.
+
+Sõltumatu energia juhindub sellest, et otsused teie arvesti taga tehakse teie huvides ja automaatselt. Süsteem – energiasalvesti, energia tootmine ja nutikas juhtimine – teeb kasumlikumaid otsuseid teie kinnistu hüvanguks, ilma et keegi teie majast peaks midagi tegema.
 
 Küsi tasuta hindamist Kuidas aku toimib?
 
@@ -1639,7 +1593,88 @@ TasutaKohustustetaKirjalik hinnang
 
 200 MW / 400 MWhKiisa ja Aruküla akupargid, Eesti suurimad, valmisid 2026. Iga salvesti on kellegi liitumine, mis teeb tööd.Allikas: ERR 7.7.2026
 
-EnergiasalvestidEP Energy · Elecnova · RalosPäikesekatusedRoofit.SolarReserviturgSoleron Energy
+Ühine võrk kiht kihi haaval.
+Sama areng mõlemal pool Soome lahte: tarbimine kasvab, tootmine sõltub ilmast ja võrk vajab paindlikkust. Nii on võrk üles ehitatud – ja siin on teie liitumise koht selles.
+
+Elekter toodetakse sageli kaugel sealt, kus seda tarbitakse.
+Eestis on tootmine koondunud Kirde-Eestisse (Narva, Auvere); tuule- ja päikesejaamu lisandub üle maa. Soomes on tuumajaamad rannikul, hüdroenergia põhja jõgedel ja tuuleenergia kasvab Pohjanmaal.
+
+Põhivõrk kannab selle tarbimiseni.
+Eesti põhivõrku haldab Elering, selle pinged on 330 ja 110 kilovolti. Soomes teeb sama tööd Fingrid 400, 220 ja 110 kilovoldi võrguga.
+
+Kaks elektrisüsteemi, kaks merekaablit – kolmas kavandamisel.
+Eesti liitus 9.2.2025 Mandri-Euroopa sünkroonalaga; Soome kuulub Põhjamaade sünkroonalasse. EstLink 1 (350 MW, 2006) ja EstLink 2 (650 MW, 2014) ühendavad need üle Soome lahe; EstLink 3 (700 MW) on kavandatud 2030. aastate teise poolde.
+
+Võrk hajub tuhandeteks väikesteks sõlmedeks.
+Kiisa (Hertz 1, veebruar 2026) ja Aruküla (Hertz 2, juuli 2026) akupargid on kokku 200 MW / 400 MWh – Eesti suurimad. Soomes on võrku ühendatud salvesteid umbes 1 050 MW, neist 85 % alla 2 MW objektid.
+
+Üks neist sõlmedest võib olla teie oma.
+Liitumine on juba ehitatud ja kinni makstud. Selle taga töötavad aku, päike ja juhtimine ühe tervikuna – ja osalevad samas võrgus, mida Elering tasakaalustab igal sekundil.
+
+Allikad: ERR 7.7.2026 · Elering, EstLink 3 · Euroopa Komisjon 9.2.2025 · Fingrid, teated 24.2.2026 ja 18.8.2026 · Natural Earth. Skemaatiline esitus: liinide trassid ja jaamade asukohad on ligikaudsed.
+
+Põhivõrgust akuelemendini, kiht kihi haaval.
+Liitumine on juba ehitatud ja kinni makstud. Nii jõuab elekter teieni – ja nii tehakse otsused arvesti taga.
+
+Alajaamades alandatakse pinget samm-sammult.
+Eleringi põhivõrk töötab 330 ja 110 kilovoldi pingel. Alajaamades alandatakse pinge 330 kilovoldilt 110 kilovoldile ja sealt edasi jaotusvõrku.
+
+Jaotusvõrk toob elektri teie liitumiseni.
+Keskpingevõrk (10 kV) ja madalpingevõrk (0,4 kV) kuuluvad võrguettevõtjale. Ta võtab tasu edastatud energia eest ja ärikliendilt ka võimsuse eest: Elektrilevi arveldab võimsustasu kuu suurima tunnikeskmise võimsuse järgi.
+
+Arvesti on piir. Selle taga otsustate teie.
+Keskpingeliitumisel on oma alajaam 10/0,4 kV, peakilp, tarbijad ja võimalik oma tootmine kõik arvesti taga – samuti energiasalvesti.
+
+Energiasalvesti: inverter, akupangad, akuhaldus ja juhtimine.
+Üks välikapp koondab jõuelektroonika (PCS), LFP-akupangad, akuhalduse (BMS), vedelikjahutuse ja juhtimise (EMS). Võimsus ja energia dimensioneeritakse teie tarbimisandmetest ning kappe ühendatakse paralleelselt vastavalt objektile.
+
+Elementidest moodulid, moodulitest akupangad.
+Liitiumraudfosfaatelemendid (LFP) koondatakse mooduliteks ja moodulid akupankadeks. Akuhaldus mõõdab iga elemendi pinget, temperatuuri ja laetuse taset ning hoiab need lubatud vahemikus.
+
+Allikad: Elering, põhivõrgu pingetasemed · Elektrilevi, võrgupaketid ärikliendile · tootjate tooteinfo, loetud 1.11.2026.
+
+Üks salvesti. Kolm rahavoogu. Vajadusel varutoide.
+Aku ei tee ainult ühte asja: ta lõikab tipud, ostab odavalt ja on võrgule valmis. Päikesepaneele ega oma toodangut selleks vaja ei ole. Liitumisest piisab.
+
+Ilma akutaAkuga
+
+Reservituru tulu
+Elering maksab võrgu tasakaalustamiseks valmis olevate akude eest, ka tundidel, mil aku lihtsalt ootab. Liitumine käib agregaatori kaudu, kes on Eleringiga lepingu sõlminud teenusepakkuja.
+
+Võimsustasu alla
+Aku lõikab tarbimistipud maha enne, kui need võrguarvele jõuavad. See on esimene rida, mis teie arvel muutub.
+
+Börsihind kasuks
+Laeb odavatel tundidel, annab energia välja kallitel. Iga päev, automaatselt, teie tootmist segamata.
+
+Varutoide, kui võrk kaob
+Kriitilised seadmed töötavad edasi, kui võrk katkeb: kuivati, külmladu või tootmisliin ei jää ootama.
+
+Illustratsioon: üks nädal tööstusobjekti tarbimist ja börsihinda. Mitte mõõtkavas ega tegeliku objekti andmed.
+
+Kuidas see käib – ja mis millal maksab.
+Kedagi ei saadeta kuhugi enne, kui andmed on käes. Kaks esimest sammu on tasuta, objektikülastus arvestatakse lepingus maha, projekteerimine ja paigaldus käivad lepingu järgi.
+
+Peata
+
+1 · Tasuta hindamine
+Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või teie võrguettevõtjalt), ühe arve ja peakilbi skeemi; meie kirjutame hinnangu: liitumine, tarbimisprofiil, võimsuse jaotus, modelleeritud reservitulu toodete kaupa allikatega.
+
+2 · Eelkontroll
+Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldajaga; elektrik ütleb, kas ja mis tingimustel saab, ja eelarve suurusjärgu.
+
+3 · Objektikülastus
+Elektrik käib kohal, mõõdab kaablitee, kilbi ja paigalduskoha ning kinnitab hinna.
+
+4 · Rahastus ja otsus
+Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Näete ühte tabelit, kus on kuumakse, omafinantseering ja see, mis pärast makset alles jääb. Rahastajaga suhtleme meie.
+
+5 · Projekt, paigaldus, turg
+Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine; agregaator liidab salvesti mitmeturuteenusega ja meie jälgime, et süsteem teeks seda, mida hinnang näitas.
+
+Esimene samm ei kohusta millekski. Andmed ja arve, ja te teate kahe tööpäevaga, kas ja kuidas edasi minna. Küsi tasuta hindamist
+
+Näitena tööstusobjekt
 
 Liitumine on vara. Passiivne liitumine on kuluartikkel. Arvestitagune süsteem paneb selle tulu tootma.
 
@@ -1683,85 +1718,32 @@ Kontrollime, kas selle tasuvus peab reaalsusele vastu. Tasuta, samade tarbimisan
 
 Küsi teist arvamust
 
-Ühine võrk kiht kihi haaval.
-Sama areng mõlemal pool Soome lahte: tarbimine kasvab, tootmine sõltub ilmast ja võrk vajab paindlikkust. Nii on võrk üles ehitatud – ja siin on teie liitumise koht selles.
+Terviklahendus teie objekti järgi.
+Valige valdkond: joonis näitab, kus see teie objektil asub. Paneme lahenduse kokku partnerite seadmetest ja vastutame terviku eest.
 
-TootminePõhivõrkÜhendusedHajutatusLiitumine
-Elekter toodetakse sageli kaugel sealt, kus seda tarbitakse.
-Eestis on tootmine koondunud Kirde-Eestisse (Narva, Auvere); tuule- ja päikesejaamu lisandub üle maa. Soomes on tuumajaamad rannikul, hüdroenergia põhja jõgedel ja tuuleenergia kasvab Pohjanmaal.
+EttevõtteleKoju
 
-Põhivõrk kannab selle tarbimiseni.
-Eesti põhivõrku haldab Elering, selle pinged on 330 ja 110 kilovolti. Soomes teeb sama tööd Fingrid 400, 220 ja 110 kilovoldi võrguga.
+01PäikeseenergiaKatusele, maale, parkla varjualusele või katusesse integreerituna. Suurus valitakse tarbimise ja katuse järgi.
 
-Kaks elektrisüsteemi, kaks merekaablit – kolmas kavandamisel.
-Eesti liitus 9.2.2025 Mandri-Euroopa sünkroonalaga; Soome kuulub Põhjamaade sünkroonalasse. EstLink 1 (350 MW, 2006) ja EstLink 2 (650 MW, 2014) ühendavad need üle Soome lahe; EstLink 3 (700 MW) on kavandatud 2030. aastate teise poolde.
+02EnergiasalvestiAkupank, inverter ja juhtimine samas välikapis; kappe ühendatakse paralleelselt vastavalt vajadusele. Seadmed mitmelt tootjalt.
 
-Võrk hajub tuhandeteks väikesteks sõlmedeks.
-Kiisa (Hertz 1, veebruar 2026) ja Aruküla (Hertz 2, juuli 2026) akupargid on kokku 200 MW / 400 MWh – Eesti suurimad. Soomes on võrku ühendatud salvesteid umbes 1 050 MW, neist 85 % alla 2 MW objektid.
+03Nutikas juhtimine ja turudÜks juhtimine kasutab päikest, akut ja tarbijaid koos. Ühendame salvesti agregaatori mitmeturuteenusega: reserviturud, tipukoormused ja ostuhetk samast akust.
 
-Üks neist sõlmedest võib olla teie oma.
-Liitumine on juba ehitatud ja kinni makstud. Selle taga töötavad aku, päike ja juhtimine ühe tervikuna – ja osalevad samas võrgus, mida Elering tasakaalustab igal sekundil.
+04Projekteerimine ja projektijuhtimineHindamisest kasutuselevõtuni üks vastutaja: objekti ülevaatus, dimensioneerimine, suhtlus võrguettevõtjaga, hanked ja ehitus.
 
-Allikad: ERR 7.7.2026 · Elering, EstLink 3 · Euroopa Komisjon 9.2.2025 · Fingrid, teated 24.2.2026 ja 18.8.2026 · Natural Earth. Skemaatiline esitus: liinide trassid ja jaamade asukohad on ligikaudsed.
+05Hooldus ja jälgimineJälgime süsteemi pärast kasutuselevõttu ja võrdleme tegelikku tulemust kirjaliku hinnanguga.
 
-Põhivõrgust akuelemendini, kiht kihi haaval.
-Liitumine on juba ehitatud ja kinni makstud. Nii jõuab elekter teieni – ja nii tehakse otsused arvesti taga.
+06Nõustamine ja teine arvamusTasuvusanalüüs või hinnang teise tarnija pakkumisele – ka ilma seadmemüügita.
 
-330 kV10 kVLiitumineSalvestiElement
-Alajaamades alandatakse pinget samm-sammult.
-Eleringi põhivõrk töötab 330 ja 110 kilovoldi pingel. Alajaamades alandatakse pinge 330 kilovoldilt 110 kilovoldile ja sealt edasi jaotusvõrku.
+01PäikesepaneelidPaneelid eramu katusele, suurus tarbimise järgi.
 
-Jaotusvõrk toob elektri teie liitumiseni.
-Keskpingevõrk (10 kV) ja madalpingevõrk (0,4 kV) kuuluvad võrguettevõtjale. Ta võtab tasu edastatud energia eest ja ärikliendilt ka võimsuse eest: Elektrilevi arveldab võimsustasu kuu suurima tunnikeskmise võimsuse järgi.
+02PäikesekatusKatus, mille pind toodab elektrit – mõistlik siis, kui katus vajab nagunii vahetamist.
 
-Arvesti on piir. Selle taga otsustate teie.
-Keskpingeliitumisel on oma alajaam 10/0,4 kV, peakilp, tarbijad ja võimalik oma tootmine kõik arvesti taga – samuti energiasalvesti.
+03KoduakuPäeva päikeseenergia õhtuks talletatud ja ostud soodsatele tundidele.
 
-Energiasalvesti: inverter, akupangad, akuhaldus ja juhtimine.
-Üks välikapp koondab jõuelektroonika (PCS), LFP-akupangad, akuhalduse (BMS), vedelikjahutuse ja juhtimise (EMS). Võimsus ja energia dimensioneeritakse teie tarbimisandmetest ning kappe ühendatakse paralleelselt vastavalt objektile.
+04Nutikas juhtiminePaneelid, aku ja suurimad tarbijad töötavad koos elektri hinna järgi.
 
-Elementidest moodulid, moodulitest akupangad.
-Liitiumraudfosfaatelemendid (LFP) koondatakse mooduliteks ja moodulid akupankadeks. Akuhaldus mõõdab iga elemendi pinget, temperatuuri ja laetuse taset ning hoiab need lubatud vahemikus.
-
-Allikad: Elering, põhivõrgu pingetasemed · Elektrilevi, võrgupaketid ärikliendile · tootjate tooteinfo, loetud 1.11.2026.
-
-Küsi tasuta hindamist
-
-Üks salvesti. Kolm rahavoogu. Vajadusel varutoide.
-
-Aku ei tee ainult ühte asja: ta lõikab tipud, ostab odavalt ja on võrgule valmis. Päikesepaneele ega oma toodangut selleks vaja ei ole. Liitumisest piisab.
-
-Võimsustasu alla
-Aku lõikab tarbimistipud maha enne, kui need võrguarvele jõuavad. See on esimene rida, mis teie arvel muutub.
-
-Võimsustasu: teie võrguettevõtja hinnakiri
-
-Energiasalvestid
-
-Börsihind kasuks
-Laeb odavatel tundidel, annab energia välja kallitel. Iga päev, automaatselt, teie tootmist segamata.
-
-Täpsemalt
-Salvesti hoiab tipu madalal ja teenib arbitraažiga: ostab elektri odavatel tundidel ning müüb või kasutab seda kallitel – automaatselt, teie tootmist segamata.
-
-Kuidas aku päev välja näeb
-
-Reservituru tulu
-Elering maksab võrgu tasakaalustamiseks valmis olevate akude eest, ka tundidel, mil aku lihtsalt ootab. Liitumine käib agregaatori kaudu, kes on Eleringiga lepingu sõlminud teenusepakkuja.
-
-Elering ostab sagedusreserve ise. Juulis 2026 oli Eestis reservitoodete pakkumiseks kvalifitseerunud 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i (üles / alla). Allikas: Elering, sagedusreservide turu kokkuvõte · juuli 2026, tabel 2
-
-Reserviturg lihtsalt seletatuna
-
-Varutoide, kui võrk kaob
-Kriitilised seadmed töötavad edasi, kui võrk katkeb: kuivati, külmladu või tootmisliin ei jää ootama.
-
-Täpsemalt
-Eeldab saartalitluseks dimensioneeritud lahendust ja eraldatud kriitilist ahelat; hinnatakse objektipõhiselt.
-
-Energiasalvestid
-
-Kas objektil on päikeseelekter või on see plaanis? Päikesepark toodab kõige rohkem keskpäeval, kui päikest on võrgus üle ja hind madal; teie tarbimine ostab õhtul, kui hind on kõrge. Aku teeb sellest parema investeeringu: oma toodang omaks tarbeks, ülejääk salvestisse ja sama aku reserviturule.Päikeseelekter ettevõtetele
+05Paigaldus ja hooldusTeated võrguettevõtjale, paigaldus ja jälgimine ühelt tegijalt.
 
 2035. aastaks on juhitavat võimsust vaja üle poole rohkem kui täna. Teie liitumine võib olla üks pakkujatest.
 
@@ -1778,69 +1760,6 @@ Loe, kuidas aku Eesti reserviturul teenib
 Aku tasakaalustab, Elering maksab valmisoleku eest. Sama juhtub sadu kordi päevas, automaatselt.
 
 Allikad: Elering, sagedusreservide turu kokkuvõte · juuli 2026; Elering, varustuskindluse aruanne 2025, lk 14; Elering, tasakaalustamisvõimsuse kulu · 2026; ERR 16.08.2024 (Elektrilevi liitumistasu ja läbilaskevõime)
-
-Terviklahendus teie objekti järgi.
-Valige valdkond: joonis näitab, kus see teie objektil asub. Paneme lahenduse kokku partnerite seadmetest ja vastutame terviku eest.
-
-EttevõtteleKoju
-
-01PäikeseenergiaKatusele, maale, parkla varjualusele või katusesse integreerituna. Suurus valitakse tarbimise ja katuse järgi.
-Partnerid: Roofit.Solar
-
-02EnergiasalvestiAkupank, inverter ja juhtimine samas välikapis; kappe ühendatakse paralleelselt vastavalt vajadusele. Seadmed mitmelt tootjalt.
-Partnerid: EP Energy · Elecnova · Ralos
-
-03Nutikas juhtimine ja turudÜks juhtimine kasutab päikest, akut ja tarbijaid koos. Ühendame salvesti agregaatori mitmeturuteenusega: reserviturud, tipukoormused ja ostuhetk samast akust.
-Partnerid: Soleron Energy
-
-04Projekteerimine ja projektijuhtimineHindamisest kasutuselevõtuni üks vastutaja: objekti ülevaatus, dimensioneerimine, suhtlus võrguettevõtjaga, hanked ja ehitus.
-
-05Hooldus ja jälgimineJälgime süsteemi pärast kasutuselevõttu ja võrdleme tegelikku tulemust kirjaliku hinnanguga.
-
-06Nõustamine ja teine arvamusTasuvusanalüüs või hinnang teise tarnija pakkumisele – ka ilma seadmemüügita.
-
-01PäikesepaneelidPaneelid eramu katusele, suurus tarbimise järgi.
-
-02PäikesekatusKatus, mille pind toodab elektrit – mõistlik siis, kui katus vajab nagunii vahetamist.
-Partnerid: Roofit.Solar
-
-03KoduakuPäeva päikeseenergia õhtuks talletatud ja ostud soodsatele tundidele.
-
-04Nutikas juhtiminePaneelid, aku ja suurimad tarbijad töötavad koos elektri hinna järgi.
-
-05Paigaldus ja hooldusTeated võrguettevõtjale, paigaldus ja jälgimine ühelt tegijalt.
-
-Kuidas see käib – ja mis millal maksab.
-
-Kedagi ei saadeta kuhugi enne, kui andmed on käes. Kaks esimest sammu on tasuta, objektikülastus arvestatakse lepingus maha, projekteerimine ja paigaldus käivad lepingu järgi.
-
-Näitena tööstusobjekt etappide kaupaPeata
-
-1 · Hindamine ja analüüs2 · Objekti ülevaatus3 · Projekt ja võrguettevõtja kinnitus4 · Hange ja paigaldus5 · Kasutus ja hooldus
-
-01Tasuta hindamine
-Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või teie võrguettevõtjalt), ühe arve ja peakilbi skeemi; meie kirjutame hinnangu: liitumine, tarbimisprofiil, võimsuse jaotus, modelleeritud reservitulu toodete kaupa allikatega.
-Tasuta · teie aeg umbes 20 minutit
-
-02Eelkontroll
-Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldajaga; elektrik ütleb, kas ja mis tingimustel saab, ja eelarve suurusjärgu.
-Tasuta · üks tund
-
-03Objektikülastus
-Elektrik käib kohal, mõõdab kaablitee, kilbi ja paigalduskoha ning kinnitab hinna.
-Tasuline · arvestatakse lepingus maha
-
-04Rahastus ja otsus
-Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Näete ühte tabelit, kus on kuumakse, omafinantseering ja see, mis pärast makset alles jääb. Rahastajaga suhtleme meie.
-Otsus jääb teile
-
-05Projekt, paigaldus, turg
-Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine; agregaator liidab salvesti mitmeturuteenusega ja meie jälgime, et süsteem teeks seda, mida hinnang näitas.
-Lepingu järgi · ühe kontakti kaudu
-
-Esimene samm ei kohusta millekski. Andmed ja arve, ja te teate kahe tööpäevaga, kas ja kuidas edasi minna.
-
-Küsi tasuta hindamist
 
 Kus salvesti end kõige kiiremini ära tasub – ja miks.
 
