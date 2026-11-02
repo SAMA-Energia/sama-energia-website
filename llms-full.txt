@@ -7,11 +7,15 @@
 
 Yhteinen verkko. Itsenäinen energia.
 
-Itsenäinen energia lähtee siitä, että päätökset mittarinne takana tehdään teidän eduksenne ja automaattisesti. Energiavarasto, oma tuotanto ja älykäs ohjaus päättävät joka tunti, kulutetaanko, varastoidaanko, myydäänkö vai pidetäänkö teho valmiina verkolle – ilman että kenenkään teillä tarvitsee tehdä mitään.
+Itsenäinen energia lähtee siitä, että päätökset mittarinne takana tehdään teidän eduksenne ja automaattisesti. Järjestelmä – energiavarasto, energiantuotanto ja älykäs ohjaus – tekee kannattavampia päätöksiä kiinteistönne hyväksi, ilman että kenenkään teillä tarvitsee tehdä mitään.
 
 Pyydä maksuton kartoitus Miten akku toimii?
 
 MaksutonEi sitoumuksiaKirjallinen arvio
+
+noin 1 050 MWsähkövarastoja on jo Suomen verkossa, ja uusia varastoja on sovittu liitettäväksi yli 4 GW. Jokainen niistä on jonkun liittymä, joka tekee työtä.Lähde: Fingrid, tiedotteet 24.2.2026 ja 18.8.2026
+
+EnergiavarastotEP Energy · Elecnova · RalosAurinkokatotRoofit.SolarLataus ja mikroverkotAvant PowerAurinkosähkö ja latausScanoffice
 
 Liittymä on omaisuutta. Passiivinen liittymä on kulujen erä. Mittarin takainen järjestelmä panee sen tuottamaan tuloa.
 
@@ -56,24 +60,47 @@ Tarkistamme, kestääkö sen takaisinmaksu todellisuuden. Maksutta, samoista kul
 
 Pyydä toinen mielipide
 
+Yhteinen verkko kerros kerrallaan.
+Sama kehitys Suomenlahden molemmin puolin: kulutus kasvaa, tuotanto seuraa säätä ja verkko tarvitsee joustoa. Näin verkko rakentuu – ja mihin liittymänne siinä asettuu.
+
+TuotantoKantaverkkoYhteydetHajautusLiittymä
+Sähkö syntyy usein kaukana sieltä, missä se kulutetaan.
+Suomessa ydinvoima on rannikolla (Olkiluoto, Loviisa), vesivoima pohjoisen joissa ja tuulivoima kasvaa Pohjanmaalla. Virossa tuotanto on keskittynyt Koillis-Viroon, ja aurinkovoima lisääntyy nopeasti.
+
+Kantaverkko kuljettaa sen kulutukseen.
+Suomen kantaverkkoa ylläpitää Fingrid, ja sen jännitteet ovat 400, 220 ja 110 kilovolttia. Virossa samaa tehtävää hoitaa Elering 330 ja 110 kilovoltin verkolla.
+
+Kaksi sähköjärjestelmää, kaksi merikaapelia – kolmas suunnitteilla.
+Suomi kuuluu pohjoismaiseen tahtialueeseen. Viro siirtyi Manner-Euroopan tahtialueeseen 9.2.2025. EstLink 1 (350 MW, 2006) ja EstLink 2 (650 MW, 2014) yhdistävät ne Suomenlahden yli; EstLink 3 (700 MW) on suunnitteilla 2030-luvun jälkipuoliskolle.
+
+Verkko hajautuu tuhansiksi pieniksi solmuiksi.
+Suomen verkkoon on liitetty sähkövarastoja noin 1 050 MW: 85 % niistä on alle 2 MW:n kohteita ja 56 % on jakeluverkossa. Liittymissopimuksia uusille varastoille on yli 4 GW. Virossa Kiisan ja Arukülan akkupuistot ovat yhdessä 200 MW / 400 MWh.
+
+Yksi näistä solmuista voi olla teidän.
+Liittymä on jo rakennettu ja maksettu. Sen takana akku, aurinko ja ohjaus toimivat yhtenä kokonaisuutena – ja osallistuvat samaan verkkoon, jota Fingrid tasapainottaa joka sekunti.
+
+Lähteet: Fingrid, tiedotteet 24.2.2026 ja 18.8.2026 · Elering, EstLink 3 · Euroopan komissio 9.2.2025 · ERR 7.7.2026 · Natural Earth. Kaaviomainen esitys: linjojen reitit ja voimalaitosten sijainnit ovat suuntaa-antavia.
+
 Kantaverkosta kennoon, kerros kerrallaan.
 Liittymä on jo rakennettu ja maksettu. Näin sähkö kulkee teille – ja näin mittarin takana tehdään päätökset.
 
 400 kV20 kVLiittymäVarastoKenno
 Sähköasemilla jännite lasketaan askel kerrallaan.
-400 kilovoltin kantaverkosta 110 kilovoltin alueverkkoon ja edelleen jakeluverkkoon.
+Fingridin kantaverkko toimii 400, 220 ja 110 kilovoltin jännitteillä. Sähköasemilla jännite lasketaan 400 kilovoltista 110 kilovolttiin ja edelleen jakeluverkkoon.
 
 Jakeluverkko tuo sähkön liittymäänne.
-Jakeluverkkoyhtiö laskuttaa siirrosta – usein myös kuukauden suurimmasta tehosta.
+Keskijänniteverkko (20 kV) ja pienjänniteverkko (0,4 kV) ovat verkkoyhtiön. Se laskuttaa siirrosta ja tehosta: esimerkiksi Caruna Oy:n Tehosiirto 1 PJ -tuotteessa tehomaksu on 3,57 €/kW kuukaudessa kuukauden huipputehon mukaan (hinnasto 1.9.2024, alv 0 %).
 
 Mittari on raja. Sen takana päätökset ovat teidän.
-Pääkeskus, kuormat ja mahdollinen oma tuotanto – kaikki mittarin takana.
+Keskijänniteliittymässä oma muuntamo 20/0,4 kV, pääkeskus, kuormat ja mahdollinen oma tuotanto ovat kaikki mittarin takana – samoin energiavarasto.
 
 Energiavarasto: invertteri, akustot, akunhallinta ja ohjaus.
-Suunnittelemme ja integroimme kokonaisuuden laitteistoriippumattomasti – ja pysymme mukana koko sen elinkaaren.
+Yksi ulkokaappi kokoaa tehoelektroniikan (PCS), LFP-akustot, akunhallinnan (BMS), nestejäähdytyksen ja ohjauksen (EMS). Teho ja energia mitoitetaan kulutustiedoistanne, ja kaappeja liitetään rinnan kohteen mukaan.
 
 Kennoista moduuleiksi, moduuleista akustoiksi.
-Akunhallinta valvoo jokaista kennoa: jännitettä, lämpötilaa ja varaustilaa.
+Litiumrautafosfaattikennot (LFP) kootaan moduuleiksi ja moduulit akustoiksi. Akunhallinta mittaa jokaisen kennon jännitteen, lämpötilan ja varaustilan ja pitää ne sallitulla alueella.
+
+Lähteet: Fingrid, kantaverkon jännitetasot · Caruna Oy, verkkopalveluhinnasto 1.9.2024 · valmistajien tuotetiedotteet, luettu 1.11.2026.
 
 Pyydä maksuton kartoitus
 
@@ -1610,6 +1637,10 @@ Küsi tasuta hindamist Kuidas aku toimib?
 
 TasutaKohustustetaKirjalik hinnang
 
+200 MW / 400 MWhKiisa ja Aruküla akupargid, Eesti suurimad, valmisid 2026. Iga salvesti on kellegi liitumine, mis teeb tööd.Allikas: ERR 7.7.2026
+
+EnergiasalvestidEP Energy · Elecnova · RalosPäikesekatusedRoofit.SolarReserviturgSoleron Energy
+
 Liitumine on vara. Passiivne liitumine on kuluartikkel. Arvestitagune süsteem paneb selle tulu tootma.
 
 Liitumise eest maksate iga kuu. Sama liitumine võib ka teile tootma hakata – kui selle taga on salvesti, energia tootmine ja nutikas juhtimine, mis otsustab teie kasuks. Meie anname teile selleks kolm asja:
@@ -1652,24 +1683,47 @@ Kontrollime, kas selle tasuvus peab reaalsusele vastu. Tasuta, samade tarbimisan
 
 Küsi teist arvamust
 
+Ühine võrk kiht kihi haaval.
+Sama areng mõlemal pool Soome lahte: tarbimine kasvab, tootmine sõltub ilmast ja võrk vajab paindlikkust. Nii on võrk üles ehitatud – ja siin on teie liitumise koht selles.
+
+TootminePõhivõrkÜhendusedHajutatusLiitumine
+Elekter toodetakse sageli kaugel sealt, kus seda tarbitakse.
+Eestis on tootmine koondunud Kirde-Eestisse (Narva, Auvere); tuule- ja päikesejaamu lisandub üle maa. Soomes on tuumajaamad rannikul, hüdroenergia põhja jõgedel ja tuuleenergia kasvab Pohjanmaal.
+
+Põhivõrk kannab selle tarbimiseni.
+Eesti põhivõrku haldab Elering, selle pinged on 330 ja 110 kilovolti. Soomes teeb sama tööd Fingrid 400, 220 ja 110 kilovoldi võrguga.
+
+Kaks elektrisüsteemi, kaks merekaablit – kolmas kavandamisel.
+Eesti liitus 9.2.2025 Mandri-Euroopa sünkroonalaga; Soome kuulub Põhjamaade sünkroonalasse. EstLink 1 (350 MW, 2006) ja EstLink 2 (650 MW, 2014) ühendavad need üle Soome lahe; EstLink 3 (700 MW) on kavandatud 2030. aastate teise poolde.
+
+Võrk hajub tuhandeteks väikesteks sõlmedeks.
+Kiisa (Hertz 1, veebruar 2026) ja Aruküla (Hertz 2, juuli 2026) akupargid on kokku 200 MW / 400 MWh – Eesti suurimad. Soomes on võrku ühendatud salvesteid umbes 1 050 MW, neist 85 % alla 2 MW objektid.
+
+Üks neist sõlmedest võib olla teie oma.
+Liitumine on juba ehitatud ja kinni makstud. Selle taga töötavad aku, päike ja juhtimine ühe tervikuna – ja osalevad samas võrgus, mida Elering tasakaalustab igal sekundil.
+
+Allikad: ERR 7.7.2026 · Elering, EstLink 3 · Euroopa Komisjon 9.2.2025 · Fingrid, teated 24.2.2026 ja 18.8.2026 · Natural Earth. Skemaatiline esitus: liinide trassid ja jaamade asukohad on ligikaudsed.
+
 Põhivõrgust akuelemendini, kiht kihi haaval.
 Liitumine on juba ehitatud ja kinni makstud. Nii jõuab elekter teieni – ja nii tehakse otsused arvesti taga.
 
 330 kV10 kVLiitumineSalvestiElement
 Alajaamades alandatakse pinget samm-sammult.
-330-kilovoldisest põhivõrgust 110-kilovoldisesse võrku ja sealt edasi jaotusvõrku.
+Eleringi põhivõrk töötab 330 ja 110 kilovoldi pingel. Alajaamades alandatakse pinge 330 kilovoldilt 110 kilovoldile ja sealt edasi jaotusvõrku.
 
 Jaotusvõrk toob elektri teie liitumiseni.
-Võrguettevõtja võtab tasu edastatud energia eest ja ärikliendilt sageli ka võimsuse eest.
+Keskpingevõrk (10 kV) ja madalpingevõrk (0,4 kV) kuuluvad võrguettevõtjale. Ta võtab tasu edastatud energia eest ja ärikliendilt ka võimsuse eest: Elektrilevi arveldab võimsustasu kuu suurima tunnikeskmise võimsuse järgi.
 
 Arvesti on piir. Selle taga otsustate teie.
-Peakilp, tarbijad ja võimalik oma tootmine – kõik on arvesti taga.
+Keskpingeliitumisel on oma alajaam 10/0,4 kV, peakilp, tarbijad ja võimalik oma tootmine kõik arvesti taga – samuti energiasalvesti.
 
 Energiasalvesti: inverter, akupangad, akuhaldus ja juhtimine.
-Projekteerime ja integreerime terviku tootjast sõltumatult – ning oleme toeks kogu selle eluea.
+Üks välikapp koondab jõuelektroonika (PCS), LFP-akupangad, akuhalduse (BMS), vedelikjahutuse ja juhtimise (EMS). Võimsus ja energia dimensioneeritakse teie tarbimisandmetest ning kappe ühendatakse paralleelselt vastavalt objektile.
 
 Elementidest moodulid, moodulitest akupangad.
-Akuhaldus jälgib iga elementi: pinget, temperatuuri ja laetuse taset.
+Liitiumraudfosfaatelemendid (LFP) koondatakse mooduliteks ja moodulid akupankadeks. Akuhaldus mõõdab iga elemendi pinget, temperatuuri ja laetuse taset ning hoiab need lubatud vahemikus.
+
+Allikad: Elering, põhivõrgu pingetasemed · Elektrilevi, võrgupaketid ärikliendile · tootjate tooteinfo, loetud 1.11.2026.
 
 Küsi tasuta hindamist
 

@@ -1,11 +1,10 @@
-/* SAMA Energia — 3D-kuvitusmoottori (v35, 02.11.2026). Pohja: perustajien suunnittelukankaan 6A.6-konsepti
-   (isometriset kohdekuvitukset, kerroksittain purettu kantaverkko-kenno -näkymä). Piirtää .cv-hero, .cv-ex, .cv-proc ja .cv-sld -kanvakset,
-   jos ne ovat sivulla. Värit logon kultaan. */
+/* SAMA Energia — 3D-kuvitusmoottori (v37, 02.11.2026). Pohja: perustajien suunnittelukankaan 6A-konseptit (isometriset kohdekuvitukset,
+   kerroksittain purettu kantaverkko–kenno-näkymä, pistematriisikartta Suomi–Viro). Värit logon kultaan. Ladataan vain etusivulla. */
 (function(){'use strict';
-if(!document.querySelector('canvas.cv-hero,canvas.cv-ex,canvas.cv-proc,canvas.cv-sld'))return;
-class DCLogic{constructor(p){this.props=p||{};this.state={};}
-setState(p){if(typeof p==='function')p=p(this.state);Object.assign(this.state,p||{});try{document.dispatchEvent(new CustomEvent('sama3d',{detail:this.state}));}catch(e){}}
-forceUpdate(){}}
+if(!document.querySelector('canvas.cv-hero,canvas.cv-ex,canvas.cv-proc,canvas.cv-sld,canvas.cv-map'))return;
+var SAMA_BG='#0A0A09',SAMA_BGRGB='10,10,9';
+window.SAMA_MAP_SITE=[0.492,0.846];
+class DCLogic{constructor(p){this.props=p||{};this.state={};}setState(p){if(typeof p==='function')p=p(this.state);Object.assign(this.state,p||{});try{document.dispatchEvent(new CustomEvent('sama3d',{detail:this.state}));}catch(e){}}forceUpdate(){}}
 class Component extends DCLogic {
   constructor(props) {
     super(props);
@@ -29,6 +28,9 @@ class Component extends DCLogic {
     window.addEventListener('scroll', this._sync, { passive: true });
     window.addEventListener('resize', this._sync);
     this._t0 = performance.now();
+    this._p2 = 0;
+    if (window.SAMA_KARTTA) { this._map = window.SAMA_KARTTA; this._prepMap(); }
+    else if (document.querySelector('.cv-map')) fetch('/assets/kartta.json').then((r) => r.json()).then((d) => { this._map = d; this._prepMap(); }).catch((e) => console.error(e));
     const loop = (t) => { if (!this._alive) return; this._raf = requestAnimationFrame(loop); try { this._frame(t); } catch (e) { console.error(e); } };
     this._raf = requestAnimationFrame(loop);
     this._measure();
@@ -50,6 +52,9 @@ class Component extends DCLogic {
       if (el) { const r = el.getBoundingClientRect(), run = r.height - vh; p3 = run > 0 ? Math.min(1, Math.max(0, -r.top / run)) : 0; }
     }
     this._p3 = p3;
+    let p2 = 0;
+    if (!board) { const el2 = document.querySelector('.sc-s2'); if (el2) { const r = el2.getBoundingClientRect(), run = r.height - vh; p2 = run > 0 ? Math.min(1, Math.max(0, -r.top / run)) : 0; } }
+    this._p2 = p2;
     const s = this.state, patch = {};
     if (s.board !== board) patch.board = board;
     if (s.vh !== vh) patch.vh = vh;
@@ -90,12 +95,14 @@ class Component extends DCLogic {
       if (k < 6) { if (s.tab !== 'y' || s.ex !== k + 1) this._setArea('y', k + 1, false); }
       else if (s.tab !== 'k' || s.hx !== k - 5) this._setArea('k', k - 5, false);
     }
-    const p3 = s.board ? (this._rm ? 0.9 : this._cyc(time, 5, 30, 9)) : this._p3;
+    const p3 = (s.board || window.SAMA_AUTO_SLD) ? (this._rm ? 0.9 : this._cyc(time, 5, 30, 9)) : this._p3;
     const s3 = Math.min(5, Math.floor(p3 * 5) + 1);
     const patch = {};
     if (hs !== s.hs) patch.hs = hs;
     if (hp !== s.hp) patch.hp = hp;
     if (s3 !== s.s3) patch.s3 = s3;
+    const p2 = this._p2 || 0, s2 = Math.min(5, Math.floor(p2 * 5) + 1);
+    if (s2 !== s.s2) patch.s2 = s2;
     if (s.board && !this._wUser) { const wb = this._rm ? true : Math.floor(time / 5) % 2 === 1; if (wb !== !!s.wb) patch.wb = wb; }
     else if (!s.board && !this._wUser && !this._wAuto && !this._rm) {
       if (this._onScreen('.cv-why')) { if (!this._wOn) this._wOn = t; else if (t - this._wOn > 1800) { this._wAuto = true; patch.wb = true; } }
@@ -107,6 +114,7 @@ class Component extends DCLogic {
     c = this._cv('ex'); if (c) this._exDraw(c, time);
     c = this._cv('proc'); if (c) this._procDraw(c, ht, time);
     c = this._cv('sld'); if (c) this._sldDraw(c, time, p3);
+    c = this._cv('map'); if (c) this._mapDraw(c, time, p2);
   }
   _cv(k) {
     let el = this['_el' + k];
@@ -860,7 +868,7 @@ class Component extends DCLogic {
       g.save(); g.globalCompositeOperation = K.light ? 'source-over' : 'lighter'; g.strokeStyle = 'rgba(212,181,116,' + ((K.light ? 0.3 : 0.14) + 0.08 * Math.sin(st.time * 1.6)).toFixed(3) + ')'; g.lineWidth = 9; g.beginPath(); g.moveTo(a0[0], a0[1]); g.lineTo(a1[0], a1[1]); g.stroke(); g.restore();
       K.ln([a0, a1], K.light ? 'rgba(150,108,24,0.95)' : 'rgba(212,181,116,0.9)', 1.4, [7, 5]);
       const me = S.me, fu = (s, qz) => P(me[2], me[1] + s * (me[3] - me[1]), qz * me[4]);
-      K.quad(fu, 0.18, 0.5, 0.82, 0.78, '#0A0A09', 'rgba(212,181,116,0.6)', 0.8);
+      K.quad(fu, 0.18, 0.5, 0.82, 0.78, SAMA_BG, 'rgba(212,181,116,0.6)', 0.8);
       const lv = st.gi * (0.82 + 0.12 * Math.sin(st.time * 3));
       K.quad(fu, 0.22, 0.56, 0.22 + 0.56 * lv, 0.72, 'rgba(212,181,116,0.85)', null);
       labs.push({ t: 'b', p: P(0.12, 0.88, 0), s: 'VÕRGUETTEVÕTJA POOL', al: act * act });
@@ -916,7 +924,7 @@ class Component extends DCLogic {
         g.fillStyle = '#F3EEE1'; g.beginPath(); g.arc(a[0], a[1], 2.2, 0, Math.PI * 2); g.fill();
         g.font = '600 11px \"IBM Plex Sans\", sans-serif'; g.textAlign = sx > 0 ? 'left' : 'right';
         const tw = g.measureText(l.s).width, tx = ex + 14 * sx;
-        g.fillStyle = 'rgba(10,10,9,0.78)'; g.fillRect(sx > 0 ? tx - 4 : tx - tw - 4, ey - 8, tw + 8, 16);
+        g.fillStyle = 'rgba('+SAMA_BGRGB+',0.78)'; g.fillRect(sx > 0 ? tx - 4 : tx - tw - 4, ey - 8, tw + 8, 16);
         g.fillStyle = '#F3EEE1'; g.fillText(l.s, tx, ey + 4);
       } else if (l.t === 'b') {
         g.font = '600 11px \"IBM Plex Sans\", sans-serif'; g.textAlign = 'center'; g.fillStyle = l.gold ? '#D4B574' : '#A39C8E'; g.fillText(l.s, a[0], a[1] + 4);
@@ -953,9 +961,9 @@ class Component extends DCLogic {
     const T = ((this.props && this.props.illustration) || this._defStyle) !== 'realistinen';
     const SC = (this.props && this.props.scheme) || this._defScheme;
     const res = (this.state.board ? 1 : Math.min(2, window.devicePixelRatio || 1)) * 1.15;
-    g.fillStyle = '#0A0A09'; g.fillRect(0, 0, w, h);
+    g.fillStyle = SAMA_BG; g.fillRect(0, 0, w, h);
     if (T) { g.fillStyle = 'rgba(243,238,225,0.045)'; for (let y = 12; y < h; y += 24) for (let x = 12; x < w; x += 24) g.fillRect(x - 0.6, y - 0.6, 1.2, 1.2); }
-    else { const rg = g.createRadialGradient(w * 0.66, h * 0.5, 0, w * 0.66, h * 0.5, w * 0.55); rg.addColorStop(0, ({ 'metsä': 'rgba(34,84,56,0.34)', 'pronssi': 'rgba(112,80,34,0.32)', 'pienoismalli': 'rgba(120,114,100,0.24)' })[SC] || 'rgba(64,60,48,0.28)'); rg.addColorStop(1, 'rgba(10,10,9,0)'); g.fillStyle = rg; g.fillRect(0, 0, w, h); }
+    else { const rg = g.createRadialGradient(w * 0.66, h * 0.5, 0, w * 0.66, h * 0.5, w * 0.55); rg.addColorStop(0, ({ 'metsä': 'rgba(34,84,56,0.34)', 'pronssi': 'rgba(112,80,34,0.32)', 'pienoismalli': 'rgba(120,114,100,0.24)' })[SC] || 'rgba(64,60,48,0.28)'); rg.addColorStop(1, 'rgba('+SAMA_BGRGB+',0)'); g.fillStyle = rg; g.fillRect(0, 0, w, h); }
     const a = Math.max(110, Math.min(205, h * 0.235, (w * 0.34 - 30) / 1.732));
     const cx = w * 0.655, cy = h * 0.54, D = 1.8 * a;
     const uq = Math.max(0, Math.min(4, p * 5 - 0.5)), i0 = Math.floor(uq), f = this._sm(uq - i0), camK = i0 + f;
@@ -989,7 +997,7 @@ class Component extends DCLogic {
     }
     g.restore();
     const sh = g.createLinearGradient(0, 0, w * 0.5, 0);
-    sh.addColorStop(0, 'rgba(10,10,9,0.94)'); sh.addColorStop(0.7, 'rgba(10,10,9,0.65)'); sh.addColorStop(1, 'rgba(10,10,9,0)');
+    sh.addColorStop(0, 'rgba('+SAMA_BGRGB+',0.94)'); sh.addColorStop(0.7, 'rgba('+SAMA_BGRGB+',0.65)'); sh.addColorStop(1, 'rgba('+SAMA_BGRGB+',0)');
     g.fillStyle = sh; g.fillRect(0, 0, w * 0.5, h);
     const map = (x, y) => [cx + (x - cx) * Z, cy + (y - cy) * Z];
     g.font = '600 11px \"IBM Plex Sans\", sans-serif';
@@ -1042,14 +1050,14 @@ class Component extends DCLogic {
     return cv;
   }
   _xBg(g, w, h) {
-    g.fillStyle = '#0A0A09'; g.fillRect(0, 0, w, h);
-    const rg = g.createRadialGradient(w * 0.55, h * 0.55, 0, w * 0.55, h * 0.55, w * 0.6); rg.addColorStop(0, 'rgba(64,60,48,0.26)'); rg.addColorStop(1, 'rgba(10,10,9,0)'); g.fillStyle = rg; g.fillRect(0, 0, w, h);
+    g.fillStyle = SAMA_BG; g.fillRect(0, 0, w, h);
+    const rg = g.createRadialGradient(w * 0.55, h * 0.55, 0, w * 0.55, h * 0.55, w * 0.6); rg.addColorStop(0, 'rgba(64,60,48,0.26)'); rg.addColorStop(1, 'rgba('+SAMA_BGRGB+',0)'); g.fillStyle = rg; g.fillRect(0, 0, w, h);
     g.fillStyle = 'rgba(243,238,225,0.04)'; for (let y = 13; y < h; y += 26) for (let x = 13; x < w; x += 26) g.fillRect(x - 0.6, y - 0.6, 1.2, 1.2);
   }
   _xVig(g, w, h) {
     const vg = g.createRadialGradient(w * 0.5, h * 0.48, Math.min(w, h) * 0.42, w * 0.5, h * 0.48, Math.max(w, h) * 0.66);
-    vg.addColorStop(0, 'rgba(10,10,9,0)'); vg.addColorStop(1, 'rgba(10,10,9,0.88)'); g.fillStyle = vg; g.fillRect(0, 0, w, h);
-    const e = Math.max(24, Math.min(64, Math.min(w, h) * 0.12)), ed = (x0, y0, x1, y1, rx, ry, rw, rh) => { const lg = g.createLinearGradient(x0, y0, x1, y1); lg.addColorStop(0, 'rgba(10,10,9,1)'); lg.addColorStop(1, 'rgba(10,10,9,0)'); g.fillStyle = lg; g.fillRect(rx, ry, rw, rh); };
+    vg.addColorStop(0, 'rgba('+SAMA_BGRGB+',0)'); vg.addColorStop(1, 'rgba('+SAMA_BGRGB+',0.88)'); g.fillStyle = vg; g.fillRect(0, 0, w, h);
+    const e = Math.max(24, Math.min(64, Math.min(w, h) * 0.12)), ed = (x0, y0, x1, y1, rx, ry, rw, rh) => { const lg = g.createLinearGradient(x0, y0, x1, y1); lg.addColorStop(0, 'rgba('+SAMA_BGRGB+',1)'); lg.addColorStop(1, 'rgba('+SAMA_BGRGB+',0)'); g.fillStyle = lg; g.fillRect(rx, ry, rw, rh); };
     ed(0, 0, e, 0, 0, 0, e, h); ed(w, 0, w - e, 0, w - e, 0, e, h); ed(0, 0, 0, e, 0, 0, w, e); ed(0, h, 0, h - e, 0, h - e, w, e);
   }
   _xGbox(K, P, u0, v0, u1, v1, z0, z1, col) {
@@ -1164,7 +1172,7 @@ class Component extends DCLogic {
       K.box(P, u0, v0, u1, v1, 0.008, 0.032, 'dark'); K.box(P, u0 + 0.006, v0 + 0.03, u1 - 0.006, v1 - 0.03, 0.032, 0.052, 'dark');
     }));
     add(-0.1, () => K.kiosk(P, S.kiosk[0], S.kiosk[1], S.kiosk[2], S.kiosk[3], S.kiosk[4]));
-    add(0.12, () => { const m = S.meter; K.shadow(P, m[0], m[1], m[2], m[3], m[4]); const B = K.box(P, m[0], m[1], m[2], m[3], 0, m[4], 'sw'); K.quad(B.fv, 0.2, 0.5, 0.8, 0.8, '#0A0A09', 'rgba(212,181,116,0.6)', 0.7); });
+    add(0.12, () => { const m = S.meter; K.shadow(P, m[0], m[1], m[2], m[3], m[4]); const B = K.box(P, m[0], m[1], m[2], m[3], 0, m[4], 'sw'); K.quad(B.fv, 0.2, 0.5, 0.8, 0.8, SAMA_BG, 'rgba(212,181,116,0.6)', 0.7); });
     q.sort((x, y) => x[0] - y[0]).forEach((e) => e[1]());
   }
   _xCarport(K, P, S) {
@@ -1206,7 +1214,7 @@ class Component extends DCLogic {
     if (al < 0.02) return;
     const r = 15;
     g.save(); g.globalAlpha = al;
-    g.fillStyle = 'rgba(10,10,9,0.85)'; g.beginPath(); g.arc(c[0], c[1], r - 2, 0, Math.PI * 2); g.fill();
+    g.fillStyle = 'rgba('+SAMA_BGRGB+',0.85)'; g.beginPath(); g.arc(c[0], c[1], r - 2, 0, Math.PI * 2); g.fill();
     if (sweep >= 1) {
       g.globalCompositeOperation = 'lighter'; g.strokeStyle = 'rgba(212,181,116,0.22)'; g.lineWidth = 8; g.beginPath(); g.arc(c[0], c[1], r, 0, Math.PI * 2); g.stroke();
       g.globalCompositeOperation = 'source-over';
@@ -1396,7 +1404,7 @@ class Component extends DCLogic {
         L('PROJEKT', P(S.pad[0], S.pad[3], 0), -28, 26);
       } else {
         this._xEquip(K, P, S, true);
-        if (k !== 5) { g2.fillStyle = 'rgba(10,10,9,0.6)'; g2.fillRect(0, 0, w, h); }
+        if (k !== 5) { g2.fillStyle = 'rgba('+SAMA_BGRGB+',0.6)'; g2.fillRect(0, 0, w, h); }
         if (k === 1) {
           S.rows.forEach((r) => this._xPvRow(K, P, r, S.hall[4], 'solid')); this._xInv(K, P, S, false); this._xCarport(K, P, S);
           L('PÄIKESEPANEELID', P(-0.36, -0.5, S.hall[4] + 0.03), 30, -58); L('PÄIKESEVARJUALUNE', P(-0.41, 0.41, 0.13), 34, 44);
@@ -1516,7 +1524,7 @@ class Component extends DCLogic {
       it.forEach((e) => e[2]());
       this._hsWires(K, P, S);
       if (k) {
-        g2.fillStyle = 'rgba(10,10,9,0.55)'; g2.fillRect(0, 0, w, h);
+        g2.fillStyle = 'rgba('+SAMA_BGRGB+',0.55)'; g2.fillRect(0, 0, w, h);
         if (k === 1) K.box(P, S.pad[0], S.pad[1], S.pad[2], S.pad[3], 0, 0.01, 'conc');
         it.forEach((e) => { if (e[1] === (k === 1 ? 'b' : 'h')) e[2](); });
         if (k === 1) { L('PÄIKESEPANEELID', P(0.0, -0.62, S.hall[4] + 0.03), -36, -40); L('AKUPANK', P(0.77, -0.48, 0.13), 30, -34); }
@@ -1582,7 +1590,7 @@ class Component extends DCLogic {
     return this._xLayer('hx' + k, w, h, res, geo, (K, P, _S, g2) => {
       const S = this._hxS(), hh = S.house, labs = [], L = (s, p, dx, dy) => { if (w >= 480) labs.push({ t: 'c', p, dx, dy, s, al: 1 }); };
       this._hxBase(K, P, S, k === 2 ? 'solar' : 'panels');
-      g2.fillStyle = 'rgba(10,10,9,0.5)'; g2.fillRect(0, 0, w, h);
+      g2.fillStyle = 'rgba('+SAMA_BGRGB+',0.5)'; g2.fillRect(0, 0, w, h);
       const sc = hh[4] / 0.17, at = (f) => hh[1] + (hh[3] - hh[1]) * f;
       if (k === 1) { this._hPanels(K, P, hh, hh[6], hh[7]); L('PÄIKESEPANEELID', this._hRoofPt(P, hh, 0.3, 0.6, 0.02), -40, -46); }
       else if (k === 2) { this._hSolarRoof(K, P, hh); L('PÄIKESEKATUS', this._hRoofPt(P, hh, 0.3, 0.6, 0.02), -40, -46); }
@@ -1627,6 +1635,155 @@ class Component extends DCLogic {
     g.restore();
     this._xVig(g, w, h);
   }
+  _prepMap() {
+    const m = this._map, A = m.aspect;
+    const dots = [];
+    const step = 0.0095;
+    for (let y = 0.004; y < 1; y += step) {
+      for (let x = 0.004; x < 1; x += step / A) {
+        const fi = this._inLand(x, y, 'fi'), ee = !fi && this._inLand(x, y, 'ee');
+        if (fi || ee) dots.push([x, y, ee ? 1 : 0]);
+      }
+    }
+    this._dots = dots;
+    const rnd = this._rng(7), dist = [];
+    let guard = 0;
+    while (dist.length < 300 && guard++ < 20000) {
+      const ee = dist.length > 230;
+      const x = ee ? 0.5 + rnd() * 0.45 : 0.15 + rnd() * 0.7, y = ee ? 0.86 + rnd() * 0.14 : rnd() * 0.82;
+      if (!ee && rnd() > 0.15 + 0.85 * Math.pow(y / 0.82, 2.2)) continue;
+      if (!this._inLand(x, y, ee ? 'ee' : 'fi')) continue;
+      dist.push([x, y, rnd(), rnd() < 0.4 ? 1 : 0]);
+    }
+    this._dist = dist;
+  }
+  _mapGeo() {
+    const N = this._map.nodes;
+    const prod = [['olkiluoto', 'TUUMAJAAM'], ['loviisa', 'TUUMAJAAM'], ['kemijoki', 'HÜDRO'], ['pohjanmaa', 'TUULEENERGIA'], ['auvere', 'NARVA']];
+    const tl = [['keminmaa', 'oulu'], ['kemijoki', 'keminmaa'], ['kemijoki', 'oulu'], ['oulu', 'pohjanmaa'], ['pohjanmaa', 'vaasa'], ['vaasa', 'pori'], ['pori', 'rauma'], ['rauma', 'olkiluoto'], ['olkiluoto', 'turku'], ['turku', 'espoo'], ['espoo', 'helsinki'], ['oulu', 'kuopio'], ['kuopio', 'jyvaskyla'], ['jyvaskyla', 'lahti'], ['lahti', 'helsinki'], ['lahti', 'anttila'], ['anttila', 'loviisa'], ['helsinki', 'anttila'], ['vaasa', 'jyvaskyla'], ['pori', 'tampere'], ['tampere', 'jyvaskyla'], ['tampere', 'helsinki'], ['kuopio', 'joensuu'], ['harku', 'tallinn'], ['tallinn', 'kiisa'], ['kiisa', 'parnu'], ['parnu', 'valga'], ['tallinn', 'pussi'], ['pussi', 'auvere'], ['auvere', 'narva'], ['pussi', 'tartu'], ['tartu', 'valga']];
+    const ext = [['keminmaa', 'se_north'], ['rauma', 'se_rauma']];
+    return { N, prod, tl, ext };
+  }
+  _inPoly(x, y, ring) { let ins = false; for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) { const a = ring[i], b = ring[j]; if ((a[1] > y) !== (b[1] > y) && x < ((b[0] - a[0]) * (y - a[1])) / (b[1] - a[1]) + a[0]) ins = !ins; } return ins; }
+  _inLand(x, y, key) { const rings = this._map.countries[key]; for (const r of rings) if (this._inPoly(x, y, r)) return true; return false; }
+  _mapDraw(c, time, p) {
+    const { g, w, h } = c;
+    g.fillStyle = SAMA_BG; g.fillRect(0, 0, w, h);
+    if (!this._map || !this._dots) {
+      g.fillStyle = '#827C71'; g.font = '600 12px \"IBM Plex Sans\", sans-serif'; g.textAlign = 'center'; g.fillText('Kaart laadib…', w * 0.66, h * 0.5);
+      return;
+    }
+    const sm = (v) => this._sm(v);
+    const L = [0, 1, 2, 3, 4].map((k) => sm((p - k / 5 + 0.04) / 0.09));
+    const focus = (k) => { const c0 = (k + 0.5) / 5; return 0.35 + 0.65 * Math.max(0, 1 - Math.abs(p - c0) * 4); };
+    const z = sm((p - 0.82) / 0.13);
+    const { N, prod, tl, ext } = this._mapGeo();
+    const A = this._map.aspect, H0 = h * 0.9, site = window.SAMA_MAP_SITE || [N.helsinki[0] + 0.012, N.helsinki[1] - 0.006];
+    const sc = H0 * (1 + z * 5.5);
+    const fx = 0.5 + (site[0] - 0.5) * z, fy = 0.5 + (site[1] - 0.5) * z;
+    const cx = w < 760 ? w * 0.5 : w * 0.68, cy = w < 760 ? h * 0.58 : h * 0.5;
+    const P = (q) => [cx + (q[0] - fx) * sc * A, cy + (q[1] - fy) * sc];
+    g.lineWidth = 1; g.strokeStyle = 'rgba(243,238,225,0.09)';
+    for (const key in this._map.lines) {
+      for (const ln of this._map.lines[key]) { g.beginPath(); ln.forEach((q, i) => { const s = P(q); if (i === 0) g.moveTo(s[0], s[1]); else g.lineTo(s[0], s[1]); }); g.stroke(); }
+    }
+    const sync = L[2];
+    const dsz = Math.max(1.2, Math.min(3, sc / 520));
+    for (const d of this._dots) {
+      const s = P(d);
+      if (s[0] < -4 || s[0] > w + 4 || s[1] < -4 || s[1] > h + 4) continue;
+      if (d[2] && sync > 0.02) g.fillStyle = 'rgba(91,208,141,' + (0.16 + 0.14 * sync).toFixed(3) + ')';
+      else g.fillStyle = d[2] ? 'rgba(243,238,225,0.16)' : 'rgba(212,181,116,' + (0.16 + 0.06 * sync).toFixed(3) + ')';
+      g.fillRect(s[0] - dsz / 2, s[1] - dsz / 2, dsz, dsz);
+    }
+    g.font = '600 11px \"IBM Plex Sans\", sans-serif';
+    if (sync > 0.02) {
+      g.globalAlpha = sync * (1 - z);
+      g.fillStyle = '#D4B574'; g.textAlign = 'center';
+      const a = P([0.52, 0.42]); g.fillText('PÕHJAMAADE SÜNKROONALA', a[0], a[1]);
+      const b = P([0.72, 0.95]); g.fillStyle = '#5BD08D'; g.fillText('MANDRI-EUROOPA', b[0], b[1]); g.fillText('SÜNKROONALA', b[0], b[1] + 14);
+      g.globalAlpha = 1;
+    }
+    if (L[1] > 0.01) {
+      g.globalAlpha = L[1] * focus(1) * (1 - 0.6 * z);
+      g.strokeStyle = 'rgba(212,181,116,0.55)'; g.lineWidth = 1.2;
+      g.beginPath();
+      tl.forEach((e) => { const a = P(N[e[0]]), b = P(N[e[1]]); g.moveTo(a[0], a[1]); g.lineTo(b[0], b[1]); });
+      g.stroke();
+      g.setLineDash([2, 14]); g.lineDashOffset = -time * 14; g.strokeStyle = 'rgba(255,240,200,0.9)'; g.lineWidth = 1.8;
+      g.beginPath();
+      tl.forEach((e) => { const a = P(N[e[0]]), b = P(N[e[1]]); if (N[e[0]][1] <= N[e[1]][1]) { g.moveTo(a[0], a[1]); g.lineTo(b[0], b[1]); } else { g.moveTo(b[0], b[1]); g.lineTo(a[0], a[1]); } });
+      g.stroke(); g.setLineDash([]);
+      g.globalAlpha = 1;
+    }
+    if (L[2] > 0.01) {
+      const al = L[2] * focus(2) * (1 - 0.5 * z);
+      const links = [['espoo', 'harku', 'ESTLINK 1 · 350 MW'], ['anttila', 'pussi', 'ESTLINK 2 · 650 MW']];
+      links.forEach((lk, i) => {
+        const a = P(N[lk[0]]), b = P(N[lk[1]]);
+        g.globalAlpha = al;
+        g.globalCompositeOperation = 'lighter';
+        g.strokeStyle = 'rgba(212,181,116,0.18)'; g.lineWidth = 7; g.beginPath(); g.moveTo(a[0], a[1]); g.lineTo(b[0], b[1]); g.stroke();
+        g.globalCompositeOperation = 'source-over';
+        g.strokeStyle = '#D4B574'; g.lineWidth = 1.6; g.setLineDash([6, 4]); g.lineDashOffset = (i ? 1 : -1) * time * 10 * (Math.sin(time * 0.2 + i) > 0 ? 1 : -1);
+        g.beginPath(); g.moveTo(a[0], a[1]); g.lineTo(b[0], b[1]); g.stroke(); g.setLineDash([]);
+        g.fillStyle = '#F3EEE1'; g.textAlign = 'left';
+        const mx = (a[0] + b[0]) / 2, my = (a[1] + b[1]) / 2;
+        g.fillText(lk[2], mx + 12 + i * 6, my + (i ? 10 : -6));
+      });
+      g.strokeStyle = 'rgba(212,181,116,0.35)'; g.setLineDash([3, 5]); g.lineWidth = 1;
+      ext.forEach((e) => { const a = P(N[e[0]]), b = P(N[e[1]]); g.beginPath(); g.moveTo(a[0], a[1]); g.lineTo(b[0], b[1]); g.stroke(); });
+      const v = P(N.valga); g.beginPath(); g.moveTo(v[0], v[1]); g.lineTo(v[0] + 6, h + 10); g.stroke();
+      g.setLineDash([]);
+      g.fillStyle = '#A39C8E'; g.textAlign = 'left';
+      const sr = P(N.se_rauma); g.fillText('ROOTSI', sr[0] - 50, sr[1] + 4);
+      g.globalAlpha = 1;
+    }
+    if (L[0] > 0.01) {
+      g.globalAlpha = L[0] * focus(0) * (1 - 0.7 * z);
+      prod.forEach((pr, i) => {
+        const s = P(N[pr[0]]);
+        const r = 5 + 2 * Math.sin(time * 1.2 + i);
+        g.strokeStyle = '#D4B574'; g.lineWidth = 1.2;
+        g.beginPath(); g.arc(s[0], s[1], r + 4, 0, Math.PI * 2); g.stroke();
+        g.fillStyle = '#D4B574'; g.beginPath(); g.arc(s[0], s[1], 3, 0, Math.PI * 2); g.fill();
+        g.fillStyle = '#F3EEE1'; g.textAlign = pr[0] === 'auvere' ? 'left' : (s[0] > cx ? 'left' : 'right');
+        g.fillText(pr[1], s[0] + (g.textAlign === 'left' ? 14 : -14), s[1] + 4);
+      });
+      g.globalAlpha = 1;
+    }
+    if (L[3] > 0.01) {
+      g.globalCompositeOperation = 'lighter';
+      for (const d of this._dist) {
+        const s = P(d);
+        if (s[0] < -6 || s[0] > w + 6 || s[1] < -6 || s[1] > h + 6) continue;
+        const tw = 0.5 + 0.5 * Math.sin(time * (0.6 + d[2]) + d[2] * 20);
+        const a = L[3] * (0.25 + 0.6 * tw) * (1 - 0.4 * z);
+        g.fillStyle = d[3] ? 'rgba(91,208,141,' + a.toFixed(3) + ')' : 'rgba(255,236,190,' + a.toFixed(3) + ')';
+        const r = 1.6 + z * 2;
+        g.beginPath(); g.arc(s[0], s[1], r, 0, Math.PI * 2); g.fill();
+      }
+      g.globalCompositeOperation = 'source-over';
+    }
+    if (L[4] > 0.01) {
+      const s = P(site);
+      g.globalAlpha = L[4];
+      for (let k = 0; k < 3; k++) {
+        const ph = (time * 0.35 + k / 3) % 1;
+        g.strokeStyle = 'rgba(212,181,116,' + ((1 - ph) * 0.6).toFixed(3) + ')';
+        g.beginPath(); g.arc(s[0], s[1], 8 + ph * 60, 0, Math.PI * 2); g.stroke();
+      }
+      g.fillStyle = '#F3EEE1'; g.beginPath(); g.arc(s[0], s[1], 5, 0, Math.PI * 2); g.fill();
+      g.font = '600 13px "IBM Plex Sans", sans-serif'; g.textAlign = 'left'; g.fillStyle = '#F3EEE1';
+      g.fillText('Teie liitumine', s[0] + 22, s[1] - 6);
+      g.font = '600 11px \"IBM Plex Sans\", sans-serif'; g.fillStyle = '#A39C8E';
+      g.fillText('AKU · PÄIKE · JUHTIMINE', s[0] + 22, s[1] + 12);
+      g.globalAlpha = 1;
+    }
+    if (w < 760) { const sh = g.createLinearGradient(0, 0, 0, h * 0.42); sh.addColorStop(0, 'rgba('+SAMA_BGRGB+',0.96)'); sh.addColorStop(1, 'rgba('+SAMA_BGRGB+',0)'); g.fillStyle = sh; g.fillRect(0, 0, w, h * 0.42); }
+    else { const sh = g.createLinearGradient(0, 0, w * 0.5, 0); sh.addColorStop(0, 'rgba('+SAMA_BGRGB+',0.92)'); sh.addColorStop(0.7, 'rgba('+SAMA_BGRGB+',0.6)'); sh.addColorStop(1, 'rgba('+SAMA_BGRGB+',0)'); g.fillStyle = sh; g.fillRect(0, 0, w * 0.5, h); }
+  }
+  /* ---------- Section 3: illustrated exploded stack ---------- */
   renderVals() {
     const s = this.state, vh = s.vh, b = s.board;
     const bt = (cur, n) => ({ o: cur === n ? '1' : '0', y: cur === n ? '0' : (cur > n ? '-10' : '10') });
@@ -1634,7 +1791,7 @@ class Component extends DCLogic {
     const s3 = s.s3 || 5, hs = s.hs || 1, ex = s.ex || 1, hx = s.hx || 1, tab = s.tab || 'y', hhl = s.hhl || 0;
     const stp = (n) => ({ op: hs === n ? '1' : '0.62', tc: hs === n ? '#D4B574' : '#F3EEE1', bar: hs === n ? '#D4B574' : '#CFC8B8', h: hs === n ? String(s.hp || 0) : (hs > n ? '100' : '0'), cur: hs === n ? 'step' : 'false' });
     const ar = (on) => ({ x: on ? 'true' : 'false', d: on ? 'block' : 'none', bg: on ? 'rgba(91,208,141,0.08)' : 'rgba(243,238,225,0.025)', col: on ? '#F3EEE1' : '#CFC8B8', dot: on ? '#5BD08D' : '#827C71', fill: on ? '#5BD08D' : 'transparent' });
-    const tb = (on) => ({ p: on ? 'true' : 'false', bg: on ? '#D4B574' : 'transparent', col: on ? '#0A0A09' : '#CFC8B8' });
+    const tb = (on) => ({ p: on ? 'true' : 'false', bg: on ? '#D4B574' : 'transparent', col: on ? SAMA_BG : '#CFC8B8' });
     const pc = (on) => ({ bd: on ? 'rgba(212,181,116,0.6)' : 'rgba(243,238,225,0.14)', bg: on ? 'rgba(212,181,116,0.06)' : 'rgba(243,238,225,0.02)' });
     const idx = (ev) => { const el = ev && ev.currentTarget; return el ? parseInt(el.getAttribute('data-i'), 10) || 1 : 1; };
     const grp = (ev) => { const el = ev && ev.currentTarget; return el && el.getAttribute('data-g') === 'h' ? 'k' : 'y'; };
@@ -1693,8 +1850,7 @@ class Component extends DCLogic {
     };
   }
 }
-var c=new Component({});c.state.board=false;window.SAMA3D=c;c.componentDidMount();
-document.dispatchEvent(new CustomEvent('sama3d',{detail:c.state}));
+var c=new Component({scheme:'yö'});c.state.board=false;window.SAMA3D=c;c.componentDidMount();
 })();
 (function(){var c=window.SAMA3D;if(!c)return;
 function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));}
@@ -1709,8 +1865,9 @@ var pr=document.querySelector('.p3d');
 if(pr){pr.addEventListener('pointerenter',function(){c._hov=true;});pr.addEventListener('pointerleave',function(){c._hov=false;});
  $$('.p3d-s',pr).forEach(function(b){b.addEventListener('click',function(){c._ht=c._HB[+b.getAttribute('data-hs')-1]+.01;});});
  var pb=pr.querySelector('.p3d-pause');if(pb)pb.addEventListener('click',function(){var p=!c.state.paused;c.setState({paused:p});pb.textContent=p?pb.getAttribute('data-r'):pb.getAttribute('data-p');pb.setAttribute('aria-pressed',p?'true':'false');});}
-var st=document.querySelector('.s3d');
+var st=document.querySelector('.s3d:not(.m3d)');
 document.addEventListener('sama3d',function(e){var s=e.detail||{};
  if(pr){$$('.p3d-s',pr).forEach(function(b){var n=+b.getAttribute('data-hs');b.classList.toggle('on',n===s.hs);b.classList.toggle('past',n<s.hs);var i=b.querySelector('b');if(i)i.style.width=(n===s.hs?(s.hp||0):(n<s.hs?100:0))+'%';});}
- if(st){var n=s.s3||1;$$('[data-s]',st).forEach(function(x){var k=+x.getAttribute('data-s');x.classList.toggle('on',k===n);x.classList.toggle('past',k<n);});}});
+ if(st){var n=s.s3||1;$$('[data-s]',st).forEach(function(x){var k=+x.getAttribute('data-s');x.classList.toggle('on',k===n);x.classList.toggle('past',k<n);});}
+ var mp=document.querySelector('.m3d');if(mp){var n2=s.s2||1;$$('[data-m]',mp).forEach(function(x){var k=+x.getAttribute('data-m');x.classList.toggle('on',k===n2);x.classList.toggle('past',k<n2);});}});
 })();

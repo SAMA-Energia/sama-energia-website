@@ -14,6 +14,11 @@
   },
   {
    "page": "/",
+   "sectionId": "verkko",
+   "kind": "new"
+  },
+  {
+   "page": "/",
    "sectionId": "kerros",
    "kind": "new"
   },
@@ -87,6 +92,11 @@
    "sectionId": "teadmatus",
    "kind": "changed",
    "prev": "Liitumine on vara. Passiivne liitumine on kuluartikkel. Arvestitagune süsteem paneb selle tulu tootma. Liitumise eest maksate iga kuu. Sama liitumine võib ka teile tootma hakata – kui selle taga on salvesti, energia tootmine ja nutikas juhtimine, mis otsustab teie kasuks. Meie anname teile selleks kolm asja: Tervikliku ülevaate sellest, mis turul toimub ja mis suunas see liigub. Majanduslikud võimalused teie objektil, kirjalikult ja allikatega. Targa energiamajandamise, mis muudab liitumise kuluartiklist varaks. Uus liitumine ei ole enam odav ega kiire: Elektrilevi liitumistasu on 331,15 eurot ampri kohta ilma käibemaksuta – liitumine, mille taga on toimiv salvesti, liigub kinnistuga kaasa. Allikad: ERR 16.08.2024; Elektrilevi, loetud 08.09.2026 Teie andmed keskel, teiste tingimused ümber — üks arvutus. Mis teie arvel ja kinnistul muutub: Võimsustasud: tipp alla, peakaitse tarbimise järgi.Näide ühest hinnakirjast: Elektrilevi paketis Võimsus VMA2 on võrguühenduse kasutusvõimsuse tasu 2,45 €/kW kuus ja see arvestatakse kuu kõrgeima tunni keskmise võimsuse järgi; võrguühenduse läbilaskevõime tasu 0,32 €/A kuus käib kokkulepitud amprite pealt, sõltumata kasutusest. Salvesti katab tipu, mistõttu saab peakaitsme ja võrgupaketi valida tegeliku tarbimise järgi.Sama pakett sisaldab ka tarbimiskoha kasutusvõimsuse tasu 2,56 €/kW kuus ja võrguühenduse kuutasu 30,41 €/kuu. Hinnangus arvutame teie oma paketi ja oma võrguettevõtja hinnakirjaga.Allikas: Konkurentsiameti otsus nr 7-3/2026-028 · 2.3.2026, hinnakiri kehtib 1.6.2026 alates · käibemaksuta Energia ja edastamine: odav tund sisse, kallis välja.Elektrienergia käib börsi tunnihinnaga, edastamistasu on päeval 3,49 ja öösel 1,99 senti/kWh. Salvesti ostab odavatel tundidel ja katab kallid; päikesepark toodab keskpäeval ja salvesti nihutab selle õhtusse. Eeldus on börsihinnaga müügipakett.Allikas: Konkurentsiameti otsus nr 7-3/2026-028 · 2.3.2026, pakett Võimsus VMA2 · käibemaksuta Reserviturg: valmisolekutasu, ka öösel.Elering ostab sagedusreserve iga päev ja maksab valmisoleku eest ka öösel ja nädalavahetusel. Juulis 2026 oli Eestis reservitoodete pakkumiseks kvalifitseerunud 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i (üles / alla). Sinna pääseb ainult arvestitaguse salvestiga, agregaatori kaudu.Allikas: Elering, sagedusreservide turu kokkuvõte · juuli 2026, tabel 2 Kinnistu väärtus: väiksem püsikulu, kõrgem hind.Ärikinnistu hind arvutatakse puhastulust: iga euro, mille võrra püsikulu langeb, tõstab väärtust mitmekordselt. Näidisarvutus: püsiv 10 000 euro suurune aastane sääst tähendab 10 % tootlusnõude juures ligikaudu 100 000 ja 8 % juures ligikaudu 125 000 eurot kõrgemat väärtust. Arvestame ainult püsiva osa – võimsustasu ja energiakulu; reserviturutulu sõltub turuhinnast ja seda väärtusesse ei arvestata.Süsteem jääb liitumise taha ja liigub kinnisvaraga kaasa. Ostja saab tippvõimsuse juhtimise ja pääsu reserviturule esimesest päevast, ilma projekti ja järjekorrata.Näidisarvutus. Teie objekti tootlusnõue sõltub kinnisvara liigist ja asukohast – hinnangus arvutame selle teie enda andmetega. Pakkumine juba käes? Kontrollime, kas selle tasuvus peab reaalsusele vastu. Tasuta, samade tarbimisandmete pealt, mille alusel teie otsus tegelikult tehakse. Kui pakkumine on hea, ütleme ka seda. Küsi teist arvamust"
+  },
+  {
+   "page": "/et/",
+   "sectionId": "vork",
+   "kind": "new"
   },
   {
    "page": "/et/",

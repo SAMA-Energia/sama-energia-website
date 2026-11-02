@@ -52,6 +52,8 @@ def build(lang):
         path,_,anc=u.partition('#'); slug=path.strip('/')
         return f'href="#/{slug}'+(f'::{anc}' if anc else '')+'"'
     html=re.sub(r'href="(/[^"]*)"',href,html)
+    kartta=open(os.path.join(ROOT,'assets/kartta.json'),encoding='utf-8').read()
+    html=re.sub(r'<script src="(/assets/scene(?:-et)?\.js)" defer></script>',lambda m:'<script>window.SAMA_KARTTA='+kartta+';</script><script>'+open(os.path.join(ROOT,m.group(1).lstrip('/')),encoding='utf-8').read().replace('</script','<\\/script')+'</script>',html)
     html=re.sub(r'(src|href)="(/assets/[^"]+)"',lambda m:f'{m.group(1)}="{datauri(m.group(2)) or m.group(2)}"',html)
     html=re.sub(r'srcset="[^"]*"','',html)
     router='''<script>(function(){var cur=null;function go(){var h=location.hash||'#/';var anchor=null;
