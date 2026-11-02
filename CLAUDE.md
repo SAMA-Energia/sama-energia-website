@@ -93,3 +93,18 @@ When in doubt, leave it out and flag it.
 - Esikatselu: `python3 scripts/build-standalone.py v38` → `dist-preview/` (ei repoon).
 - AVOIN: elävä Fingrid/Elering-data kartalle vaatisi kolmannen osapuolen pyynnön (Netlify-välipalvelin) — asutajaotsus.
 - AVOIN: CSS-budjetti 76 → 88 kt (verify-pages).
+
+## v39 — sektiopohjainen näyttämö + Yhteinen verkko -kartta datasta (luonnos, haara v35-uusi-ilme, 02.11.2026)
+
+- Perustelu: `docs/tutkimus/2026-11-02-esilehe-loogika-v39.md` (konversionäyttö + Fingrid–Elering-aineisto). Scroll-ohjattu lava (v38) poistettu
+  etusivulta: NN/g 2023 (scrolljacking), Frederick 2015 (parallaksi), Unbounce 2024 (pituus). 3D jää oikealle kleepuvana taustana, joka vaihtaa
+  kohtausta osion mukaan (300 ms), reagoi hiireen, ei ohjaa vieritystä eikä sisällä tekstiä. Puhelimella ja reduced-motionilla: yksi still-kuva heron alla, piirto pysäytetään.
+- Etusivun järjestys: hero → todisterivi (4 oman markkinan lukua lähteineen) → kipu (orbit-kuvio näyttämöllä) → kolme tilattavaa (Arvio/Varasto/Portfolio, kortit ohjaavat 3D-räjäytyskuvaa) →
+  Yhteinen verkko (kartta, 3 kerrosta, "Vertaa Viroon/Suomeen", linkki /verkko/ ja /vork/) → vaiheet (animaatio, askelkorostus seuraa animaatiota) → kenelle → miksi → reserviteaser → UKK → lomake.
+- Karttadata: `assets/kartta-data.json` (6 kerrosta + liittymä; FI/ET-tekstit; jokainen luku lähde+päivä; vertailukelpoisuushuomio per kerros) ja
+  `assets/kartta-verkko.json` (OSM ODbL: 400 kV FI / 330 kV EE -johdot, HVDC-kaapelit, 74 sähköasemaa; Overpass 2.11.2026, Douglas-Peucker 0,006°; attribuutio piirretään karttaan).
+  Moottori `_mapDraw` on datavetoinen: kerrokset `setMapLayers()`, kotimarkkina korostettu, toinen maa himmeänä kunnes vertailu päällä. `window.SAMA_KD/SAMA_KV` standalone-esikatselussa.
+- Uusi sivu /verkko/ ↔ /vork/ (PAIRS, _redirects, llms.txt, NAV_KEY=reservimarkkinat/reserviturg): koko kartta, 7 kerrospainiketta, faktat molemmista maista, lähteet.
+- Päätökset datasta: FI 2025 kulutus 84,6 TWh (Fingrid), FI huippu = ennätys 15 553 MW 8.1.2026, EE ennuste arengukava 7/2026 (10,0 / 11,2 TWh). Reservihintojen lasku ei kartalle (reservisivulle mallinnettuna).
+- CSS-budjetti 88 → 92 kt (verify-pages) — avoin perustajapäätös. Esikatselu: `python3 scripts/build-standalone.py v39`.
+- AVOIN: etusivun näkyvä sanamäärä ~1 100 (tavoite 500–800): kenelle-osion "Miksi tässä" -kappaleet ja kivun tiilet ovat seuraavat karsittavat; natiivitarkistus kaikille uusille FI/ET-teksteille.

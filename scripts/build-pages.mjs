@@ -40,6 +40,7 @@ const PAIRS = [
   ['reservimarkkinat', 'reserviturg'],
   ['aggregaattori', 'soleron-energy'],
   ['palvelut', 'teenused'],
+  ['verkko', 'vork'],
   ['laitevaatimukset', 'seadmete-nouded'],
   ['kumppanit', 'partnerid'],
   ['meista', 'meist'],
@@ -86,8 +87,8 @@ const publicSlugs = lang => [
 
 /* Päävalikon aktiivinen kohta: sivu -> data-nav-avain (pudotusvalikko tai suora linkki). */
 const NAV_KEY = {
-  fi: { 'aurinkosahko': 'ratkaisut', 'energiavarastot': 'ratkaisut', 'palvelut': 'ratkaisut', 'kumppanit': 'ratkaisut', 'reservimarkkinat': 'reservimarkkinat', 'aggregaattori': 'reservimarkkinat', 'ajankohtaista': 'ajankohtaista', 'ajankohtaista/liityntarajoitus-2029': 'ajankohtaista', 'meista': 'meista', 'yhteystiedot': 'yhteystiedot' },
-  et: { 'paikeseelekter': 'lahendused', 'energiasalvestid': 'lahendused', 'teenused': 'lahendused', 'partnerid': 'lahendused', 'reserviturg': 'reserviturg', 'soleron-energy': 'reserviturg', 'uudised': 'uudised', 'uudised/reservitasu-2026': 'uudised', 'meist': 'meist', 'kontakt': 'kontakt' },
+  fi: { 'aurinkosahko': 'ratkaisut', 'energiavarastot': 'ratkaisut', 'palvelut': 'ratkaisut', 'verkko': 'reservimarkkinat', 'kumppanit': 'ratkaisut', 'reservimarkkinat': 'reservimarkkinat', 'aggregaattori': 'reservimarkkinat', 'ajankohtaista': 'ajankohtaista', 'ajankohtaista/liityntarajoitus-2029': 'ajankohtaista', 'meista': 'meista', 'yhteystiedot': 'yhteystiedot' },
+  et: { 'paikeseelekter': 'lahendused', 'energiasalvestid': 'lahendused', 'teenused': 'lahendused', 'vork': 'reserviturg', 'partnerid': 'lahendused', 'reserviturg': 'reserviturg', 'soleron-energy': 'reserviturg', 'uudised': 'uudised', 'uudised/reservitasu-2026': 'uudised', 'meist': 'meist', 'kontakt': 'kontakt' },
 };
 
 /* Legacy-hash-shim: vanhat #/-osoitteet (sekä v4:n että v5-luonnoksen #/slug-muodot) ohjataan

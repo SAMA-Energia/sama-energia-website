@@ -62,6 +62,7 @@ What the company says about itself, in its own documented positioning:
 - https://samaenergia.fi/energiavarastot/ : Industrial energy storage: one device, four jobs; a battery's day; what is delivered and why now.
 - https://samaenergia.fi/reservimarkkinat/ : Reserve markets explained; four sourced reasons; how income is estimated; honest about reserve prices; what the company believes, including where it says no.
 - https://samaenergia.fi/aggregaattori/ : What an aggregator does, how joining Fingrid's reserve markets proceeds, and what to check in an aggregator agreement.
+- https://samaenergia.fi/verkko/ : Shared grid map — Fingrid and Elering figures on one map in six layers (grid, consumption, generation, storage, reserves, pipeline), every figure with source and date; 400/330 kV lines from OpenStreetMap.
 - https://samaenergia.fi/palvelut/ : Services — three things to order: assessment, project, portfolio. What each contains, what the customer supplies, what is free and what is charged when.
 - https://samaenergia.fi/kumppanit/ : Partners and products — storage cabinets, containers, hybrid cabinets, charging-station microgrids, portable units and backup switching from several manufacturers, listed by type and specification; how an offer is assembled and compared on the same figures.
 - https://samaenergia.fi/meista/ : About — why the company was founded, who is accountable for what, the partner network, company facts.
@@ -79,6 +80,7 @@ What the company says about itself, in its own documented positioning:
 - https://samaenergia.ee/energiasalvestid/ : Tööstuslik energiasalvesti: üks seade, neli tööd; aku päev; mida tarnime ja miks nüüd.
 - https://samaenergia.ee/reserviturg/ : Reserviturg lihtsalt seletatuna; neli allikatega põhjust; kuidas tulu hinnatakse; ausalt reservihindadest.
 - https://samaenergia.ee/soleron-energy/ : Mida agregaator teeb, kuidas liitumine Eleringi reservituruga käib, ja Eesti agregaatoripartner Soleron Energy.
+- https://samaenergia.ee/vork/ : Ühine võrk — Eleringi ja Fingridi arvud samal kaardil kuues kihis (võrk, tarbimine, tootmine, salvestid, reservid, tulevik), iga arv allika ja kuupäevaga.
 - https://samaenergia.ee/teenused/ : Teenused — tasuta hindamine, kirjalik hinnang, projektijuhtimine, seire; neli reeglit.
 - https://samaenergia.ee/partnerid/ : Partnerid ja tooted — energiasalvestid, konteinerid, laadimisjaamade mikrovõrgud ja varutoide mitmelt tootjalt, tüübi ja andmete järgi; kuidas pakkumine kokku pannakse.
 - https://samaenergia.ee/meist/ : Meist — miks ettevõte tehti, kes mille eest vastutab, võrgustik, ettevõte paberil.

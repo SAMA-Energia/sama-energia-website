@@ -1,0 +1,829 @@
+{
+"date": "2026-11-02",
+"note": {
+"fi": "Luvut Fingridin ja Eleringin julkaisuista, lähde ja päivä jokaisessa. Sama määritelmä molemmissa maissa, tai merkintä kun ei.",
+"et": "Arvud Fingridi ja Eleringi väljaannetest, allikas ja kuupäev igaühel. Sama definitsioon mõlemal maal või märge, kui mitte."
+},
+"layers": [
+{
+"id": "vork",
+"name": {
+"fi": "Verkko",
+"et": "Võrk"
+},
+"q": {
+"fi": "Missä verkko on?",
+"et": "Kus võrk on?"
+},
+"cmp": {
+"fi": "Vertailukelpoinen: molemmat ovat kantaverkkoyhtiön omia johtoja. Viron 330 kV vastaa Suomen 400 kV:n roolia.",
+"et": "Võrreldav: mõlemad on süsteemihalduri enda liinid. Eesti 330 kV vastab Soome 400 kV rollile."
+},
+"facts": {
+"FI": [
+{
+"t": {
+"fi": "Kantaverkko",
+"et": "Põhivõrk"
+},
+"v": {
+"fi": "400 kV 5 400 km · 220 kV 1 000 km · 110 kV 7 600 km · 138 sähköasemaa",
+"et": "400 kV 5 400 km · 220 kV 1 000 km · 110 kV 7 600 km · 138 alajaama"
+},
+"s": "Fingrid, Electricity system of Finland, 2025"
+},
+{
+"t": {
+"fi": "Rajayhteydet",
+"et": "Välisühendused"
+},
+"v": {
+"fi": "Ruotsi: AC 1 500 MW tuonti + Fenno-Skan 1 200 MW · Norja ~120 MW · Viro 1 016 MW",
+"et": "Rootsi: AC 1 500 MW import + Fenno-Skan 1 200 MW · Norra ~120 MW · Eesti 1 016 MW"
+},
+"s": "Fingrid, Siirtojenhallinta 2024, 11.8.2025"
+}
+],
+"EE": [
+{
+"t": {
+"fi": "Siirtoverkko",
+"et": "Ülekandevõrk"
+},
+"v": {
+"fi": "330 kV 1 851 km · 110 kV 3 342 km · 158 sähköasemaa",
+"et": "330 kV 1 851 km · 110 kV 3 342 km · 158 alajaama"
+},
+"s": "Elering, arengukava 2026–2035, 9.7.2026"
+},
+{
+"t": {
+"fi": "Rajayhteydet",
+"et": "Välisühendused"
+},
+"v": {
+"fi": "Suomi: EstLink 1 + 2 = 1 016 MW · Latvia: 3 × 330 kV · tuontikyky 2 165 MW",
+"et": "Soome: EstLink 1 + 2 = 1 016 MW · Läti: 3 × 330 kV · impordivõime 2 165 MW"
+},
+"s": "Elering, arengukava 2026–2035, 9.7.2026"
+}
+]
+},
+"pins": [
+{
+"k": "link",
+"a": [
+24.552,
+60.204
+],
+"b": [
+24.56,
+59.385
+],
+"t": {
+"fi": "EstLink 1 · 350 MW",
+"et": "EstLink 1 · 350 MW"
+},
+"s": "Elering, 2006",
+"lt": 0.62
+},
+{
+"k": "link",
+"a": [
+25.368,
+60.378
+],
+"b": [
+27.068,
+59.37
+],
+"t": {
+"fi": "EstLink 2 · 650 MW",
+"et": "EstLink 2 · 650 MW"
+},
+"s": "Elering, 2014",
+"lt": 0.28
+},
+{
+"k": "label",
+"p": [
+27.9,
+59.72
+],
+"t": {
+"fi": "EstLink 3 · 700 MW · 2038–2040",
+"et": "EstLink 3 · 700 MW · 2038–2040"
+},
+"s": "Elering arengukava 9.7.2026; Fingrid 6.2.2026",
+"dim": 1
+}
+]
+},
+{
+"id": "tarbimine",
+"name": {
+"fi": "Kulutus",
+"et": "Tarbimine"
+},
+"q": {
+"fi": "Paljonko kasvua tulee?",
+"et": "Kui palju kasv tuleb?"
+},
+"cmp": {
+"fi": "Vertailukelpoinen: molemmat ovat maan bruttokulutus häviöineen. Fingrid antaa haarukan skenaarioista, Elering yhden uran.",
+"et": "Võrreldav: mõlemad on riigi brutotarbimine koos kadudega. Fingrid annab stsenaariumide vahemiku, Elering ühe trajektoori."
+},
+"facts": {
+"FI": [
+{
+"t": {
+"fi": "Kulutus 2025",
+"et": "Tarbimine 2025"
+},
+"v": {
+"fi": "84,6 TWh (+1,9 %)",
+"et": "84,6 TWh (+1,9 %)"
+},
+"s": "Fingrid, 4.3.2026"
+},
+{
+"t": {
+"fi": "Ennuste",
+"et": "Prognoos"
+},
+"v": {
+"fi": "106–123 TWh 2030 · 110–162 TWh 2035",
+"et": "106–123 TWh 2030 · 110–162 TWh 2035"
+},
+"s": "Fingrid, 30.9.2026"
+},
+{
+"t": {
+"fi": "Kulutushuippu",
+"et": "Tarbimistipp"
+},
+"v": {
+"fi": "15 553 MW 8.1.2026 klo 17–17.15 (ennätys)",
+"et": "15 553 MW 8.1.2026 kl 17–17.15 (rekord)"
+},
+"s": "Fingrid, 4.3.2026"
+}
+],
+"EE": [
+{
+"t": {
+"fi": "Kulutus 2025",
+"et": "Tarbimine 2025"
+},
+"v": {
+"fi": "8,3 TWh (+1 %) · 37 % tuontia",
+"et": "8,3 TWh (+1 %) · 37 % import"
+},
+"s": "Elering / ERR, 26.1.2026"
+},
+{
+"t": {
+"fi": "Ennuste",
+"et": "Prognoos"
+},
+"v": {
+"fi": "10,0 TWh 2030 · 11,2 TWh 2035 · huippu 1 924 MW 2030",
+"et": "10,0 TWh 2030 · 11,2 TWh 2035 · tipp 1 924 MW 2030"
+},
+"s": "Elering, arengukava 2026–2035, 9.7.2026"
+},
+{
+"t": {
+"fi": "Kulutushuippu",
+"et": "Tarbimistipp"
+},
+"v": {
+"fi": "1 467 MW 19.2.2025 · ennätys 1 595 MW 4.1.2024",
+"et": "1 467 MW 19.2.2025 · rekord 1 595 MW 4.1.2024"
+},
+"s": "Elering, VKA 2025 / arengukava 2026"
+}
+]
+},
+"pins": [
+{
+"k": "ring",
+"p": [
+25.8,
+63.6
+],
+"r": [
+84.6,
+123
+],
+"t": {
+"fi": "84,6 TWh → 106–123 TWh 2030",
+"et": "84,6 TWh → 106–123 TWh 2030"
+},
+"s": "Fingrid 4.3.2026; 30.9.2026"
+},
+{
+"k": "ring",
+"p": [
+25.6,
+58.75
+],
+"r": [
+8.3,
+10.0
+],
+"t": {
+"fi": "8,3 TWh → 10,0 TWh 2030",
+"et": "8,3 TWh → 10,0 TWh 2030"
+},
+"s": "Elering 26.1.2026; arengukava 9.7.2026"
+}
+]
+},
+{
+"id": "tootmine",
+"name": {
+"fi": "Tuotanto",
+"et": "Tootmine"
+},
+"q": {
+"fi": "Mistä säästä riippuva tuotanto tulee?",
+"et": "Kust tuleb ilmast sõltuv tootmine?"
+},
+"cmp": {
+"fi": "Osittain vertailukelpoinen: Suomen tuulivoima on toimialan nimellisteho, Viron luvut Eleringin nettoteho. Suomen aurinkovoiman kokonaissummaa Fingrid ei julkaise.",
+"et": "Osaliselt võrreldav: Soome tuul on tööstusharu nimivõimsus, Eesti arvud Eleringi netovõimsus. Soome päikese kogusummat Fingrid ei avalda."
+},
+"facts": {
+"FI": [
+{
+"t": {
+"fi": "Tuulivoima",
+"et": "Tuul"
+},
+"v": {
+"fi": "9 433 MW · +1 023 MW vuonna 2025",
+"et": "9 433 MW · +1 023 MW aastal 2025"
+},
+"s": "Suomen Uusiutuvat, 31.12.2025"
+},
+{
+"t": {
+"fi": "Aurinkovoima",
+"et": "Päike"
+},
+"v": {
+"fi": "n. 1,2 GW alkuvuonna 2025 · 403 MW liitetty 2025",
+"et": "u 1,2 GW 2025 alguses · 403 MW liitunud 2025"
+},
+"s": "Fingrid, energiaennuste Q3/2025; Fingridin vuosi 2025"
+},
+{
+"t": {
+"fi": "Uusiutuvat",
+"et": "Taastuvad"
+},
+"v": {
+"fi": "57 % tuotannosta · 96 % päästötöntä",
+"et": "57 % toodangust · 96 % heitmevaba"
+},
+"s": "Energiateollisuus, Sähkövuosi 2025, 21.1.2026"
+}
+],
+"EE": [
+{
+"t": {
+"fi": "Tuulivoima",
+"et": "Tuul"
+},
+"v": {
+"fi": "694 MW",
+"et": "694 MW"
+},
+"s": "Elering, VKA 2025, 9.12.2025"
+},
+{
+"t": {
+"fi": "Aurinkovoima",
+"et": "Päike"
+},
+"v": {
+"fi": "1 214 MW · +245 MW vuodessa",
+"et": "1 214 MW · +245 MW aastaga"
+},
+"s": "Elering, VKA 2025, 9.12.2025"
+},
+{
+"t": {
+"fi": "Uusiutuvat",
+"et": "Taastuvad"
+},
+"v": {
+"fi": "68 % kotimaisesta tuotannosta · 41 % kulutuksesta",
+"et": "68 % kodumaisest toodangust · 41 % tarbimisest"
+},
+"s": "Elering / ERR, 26.1.2026"
+}
+]
+},
+"pins": [
+{
+"k": "node",
+"p": [
+21.47,
+61.24
+],
+"t": {
+"fi": "Olkiluoto · ydinvoima",
+"et": "Olkiluoto · tuumaenergia"
+}
+},
+{
+"k": "node",
+"p": [
+26.35,
+60.37
+],
+"t": {
+"fi": "Loviisa · ydinvoima",
+"et": "Loviisa · tuumaenergia"
+}
+},
+{
+"k": "node",
+"p": [
+25.9,
+66.4
+],
+"t": {
+"fi": "Kemijoki · vesivoima",
+"et": "Kemijoki · hüdroenergia"
+}
+},
+{
+"k": "node",
+"p": [
+22.6,
+63.6
+],
+"t": {
+"fi": "Pohjanmaa · tuulivoima 9 433 MW",
+"et": "Pohjanmaa · tuul 9 433 MW"
+}
+},
+{
+"k": "node",
+"p": [
+27.91,
+59.27
+],
+"t": {
+"fi": "Auvere / Narva",
+"et": "Auvere / Narva"
+}
+},
+{
+"k": "label",
+"p": [
+24.2,
+58.9
+],
+"t": {
+"fi": "Tuuli 694 MW · aurinko 1 214 MW",
+"et": "Tuul 694 MW · päike 1 214 MW"
+},
+"s": "Elering VKA 12/2025"
+}
+]
+},
+{
+"id": "salvestid",
+"name": {
+"fi": "Varastot",
+"et": "Salvestid"
+},
+"q": {
+"fi": "Kuka jo varastoi?",
+"et": "Kes juba salvestab?"
+},
+"cmp": {
+"fi": "Ei vertailukelpoinen: Virolla ei ole yhtä Eleringin kokonaislukua. Kartalla erilliset merkinnät.",
+"et": "Ei ole võrreldav: Eestil puudub üks Eleringi kogusumma. Kaardil eraldi sildid."
+},
+"facts": {
+"FI": [
+{
+"t": {
+"fi": "Verkossa",
+"et": "Võrgus"
+},
+"v": {
+"fi": "n. 1 050 MW · 261 järjestelmää ≥ 1 MW · 85 % yksiköistä alle 2 MW",
+"et": "u 1 050 MW · 261 süsteemi ≥ 1 MW · 85 % üksustest alla 2 MW"
+},
+"s": "Fingrid, 24.2.2026"
+},
+{
+"t": {
+"fi": "Missä",
+"et": "Kus"
+},
+"v": {
+"fi": "56 % jakeluverkossa · noin puolet linjan Tampere–Lahti–Lappeenranta eteläpuolella",
+"et": "56 % jaotusvõrgus · umbes pool Tampere–Lahti–Lappeenranta joonest lõunas"
+},
+"s": "Fingrid, 24.2.2026"
+},
+{
+"t": {
+"fi": "Rajoitus",
+"et": "Piirang"
+},
+"v": {
+"fi": "Uudet varastoliitynnät Etelä-Suomen kantaverkkoon rajoitettu 2029 asti",
+"et": "Uued salvestiliitumised Lõuna-Soome põhivõrku piiratud 2029. aastani"
+},
+"s": "Fingrid, 26.9.2025"
+}
+],
+"EE": [
+{
+"t": {
+"fi": "Hertz 1 Kiisa",
+"et": "Hertz 1 Kiisa"
+},
+"v": {
+"fi": "100 MW · täysi teho 3.2.2026",
+"et": "100 MW · täisvõimsus 3.2.2026"
+},
+"s": "ERR, 3.2.2026"
+},
+{
+"t": {
+"fi": "Hertz 2 Aruküla",
+"et": "Hertz 2 Aruküla"
+},
+"v": {
+"fi": "100 MW / 200 MWh · 7.7.2026 · yhdessä 200 MW / 400 MWh",
+"et": "100 MW / 200 MWh · 7.7.2026 · koos 200 MW / 400 MWh"
+},
+"s": "ERR, 7.7.2026"
+},
+{
+"t": {
+"fi": "Jakeluverkossa",
+"et": "Jaotusvõrgus"
+},
+"v": {
+"fi": "74 MW vuoden 2025 lopussa",
+"et": "74 MW 2025. aasta lõpus"
+},
+"s": "Elektrilevi / ERR, 19.8.2026"
+}
+]
+},
+"pins": [
+{
+"k": "zone",
+"poly": [
+[
+23.0,
+61.6
+],
+[
+23.8,
+61.5
+],
+[
+25.66,
+60.98
+],
+[
+28.19,
+61.06
+],
+[
+29.8,
+60.9
+],
+[
+29.8,
+59.9
+],
+[
+21.0,
+59.9
+],
+[
+21.0,
+61.0
+]
+],
+"t": {
+"fi": "n. puolet varastoista · ~1 050 MW yhteensä",
+"et": "u pool salvestitest · ~1 050 MW kokku"
+},
+"s": "Fingrid 24.2.2026",
+"n": 5,
+"lp": [
+25.0,
+60.75
+]
+},
+{
+"k": "point",
+"p": [
+24.701,
+59.243
+],
+"t": {
+"fi": "Hertz 1 Kiisa · 100 MW",
+"et": "Hertz 1 Kiisa · 100 MW"
+},
+"s": "ERR 3.2.2026"
+},
+{
+"k": "point",
+"p": [
+25.041,
+59.361
+],
+"t": {
+"fi": "Hertz 2 Aruküla · 100 MW / 200 MWh",
+"et": "Hertz 2 Aruküla · 100 MW / 200 MWh"
+},
+"s": "ERR 7.7.2026"
+}
+]
+},
+{
+"id": "reservid",
+"name": {
+"fi": "Reservit",
+"et": "Reservid"
+},
+"q": {
+"fi": "Paljonko tarvitaan ja kuka maksaa?",
+"et": "Kui palju vajatakse ja kes maksab?"
+},
+"cmp": {
+"fi": "Osittain vertailukelpoinen: Suomen luvut ovat Fingridin velvoitteita, Viron esikvalifioitu kapasiteetti on tarjontaa ja mFRR-ylös kysyntä on ainoa julkaistu tarve.",
+"et": "Osaliselt võrreldav: Soome arvud on Fingridi kohustused, Eesti eelkvalifitseeritud võimsus on pakkumine ja mFRR üles nõudlus on ainus avaldatud vajadus."
+},
+"facts": {
+"FI": [
+{
+"t": {
+"fi": "Velvoitteet 2026",
+"et": "Kohustused 2026"
+},
+"v": {
+"fi": "FCR-N 128 MW · FCR-D ylös 309 / alas 298 MW · aFRR n. 50 MW · mFRR ylös 880–1 300 MW",
+"et": "FCR-N 128 MW · FCR-D üles 309 / alla 298 MW · aFRR u 50 MW · mFRR üles 880–1 300 MW"
+},
+"s": "Fingrid, Power system reserves, 2026"
+},
+{
+"t": {
+"fi": "Tahtialue",
+"et": "Sünkroonala"
+},
+"v": {
+"fi": "Pohjoismainen",
+"et": "Põhjamaade"
+},
+"s": "Fingrid"
+}
+],
+"EE": [
+{
+"t": {
+"fi": "Tarve",
+"et": "Nõudlus"
+},
+"v": {
+"fi": "mFRR ylös n. 600 MW",
+"et": "mFRR üles u 600 MW"
+},
+"s": "Elering, mFRR vahe-analüüs, 5/2026"
+},
+{
+"t": {
+"fi": "Esikvalifioitu",
+"et": "Eelkvalifitseeritud"
+},
+"v": {
+"fi": "FCR 26 · aFRR 197 / 297 · mFRR 572 / 976 MW",
+"et": "FCR 26 · aFRR 197 / 297 · mFRR 572 / 976 MW"
+},
+"s": "Elering, VKA 2025, 9.12.2025"
+},
+{
+"t": {
+"fi": "Kuka maksaa",
+"et": "Kes maksab"
+},
+"v": {
+"fi": "74 M€ helmi–joulukuu 2025 · 3,73 €/MWh jokaisella laskulla",
+"et": "74 M€ veebr–dets 2025 · 3,73 €/MWh igal arvel"
+},
+"s": "Elering, 2025 turu kokkuvõte, 2/2026"
+},
+{
+"t": {
+"fi": "Tahtialue",
+"et": "Sünkroonala"
+},
+"v": {
+"fi": "Manner-Eurooppa 9.2.2025 alkaen",
+"et": "Mandri-Euroopa alates 9.2.2025"
+},
+"s": "Euroopa Komisjon, 9.2.2025"
+}
+]
+},
+"pins": [
+{
+"k": "label",
+"p": [
+25.6,
+64.6
+],
+"t": {
+"fi": "POHJOISMAINEN TAHTIALUE",
+"et": "PÕHJAMAADE SÜNKROONALA"
+},
+"s": "Fingrid"
+},
+{
+"k": "label",
+"p": [
+25.7,
+58.6
+],
+"t": {
+"fi": "MANNER-EUROOPAN TAHTIALUE 9.2.2025 →",
+"et": "MANDRI-EUROOPA SÜNKROONALA 9.2.2025 →"
+},
+"s": "Euroopa Komisjon 9.2.2025",
+"green": 1
+},
+{
+"k": "label",
+"p": [
+27.9,
+63.6
+],
+"t": {
+"fi": "mFRR ylös 880–1 300 MW",
+"et": "mFRR üles 880–1 300 MW"
+},
+"s": "Fingrid 2026"
+},
+{
+"k": "label",
+"p": [
+27.3,
+58.9
+],
+"t": {
+"fi": "mFRR ylös n. 600 MW · 74 M€ 2025",
+"et": "mFRR üles u 600 MW · 74 M€ 2025"
+},
+"s": "Elering 5/2026; 2/2026"
+}
+]
+},
+{
+"id": "tulevik",
+"name": {
+"fi": "Tulossa",
+"et": "Tulevik"
+},
+"q": {
+"fi": "Mitä on tulossa?",
+"et": "Mis tuleb?"
+},
+"cmp": {
+"fi": "Vertailukelpoinen: molemmat ovat kantaverkkoyhtiön liittymissopimuksia ja suunnitelmia.",
+"et": "Võrreldav: mõlemad on süsteemihalduri liitumislepingud ja plaanid."
+},
+"facts": {
+"FI": [
+{
+"t": {
+"fi": "Liittymissopimukset",
+"et": "Liitumislepingud"
+},
+"v": {
+"fi": "datakeskukset lähes 5 GW · sähkövarastot yli 4 GW · sähkökattilat yli 3 GW",
+"et": "andmekeskused ligi 5 GW · salvestid üle 4 GW · elektrikatlad üle 3 GW"
+},
+"s": "Fingrid, 18.8.2026"
+},
+{
+"t": {
+"fi": "Kyselyt",
+"et": "Päringud"
+},
+"v": {
+"fi": "yli 100 GW · kolmannes datakeskuksia",
+"et": "üle 100 GW · kolmandik andmekeskused"
+},
+"s": "Fingrid, 29.10.2026"
+}
+],
+"EE": [
+{
+"t": {
+"fi": "Uusi tuotanto",
+"et": "Uus tootmine"
+},
+"v": {
+"fi": "1 500 MW liitettävänä 2030 mennessä",
+"et": "1 500 MW liituma 2030. aastaks"
+},
+"s": "Elering, arengukava 2026–2035, 9.7.2026"
+},
+{
+"t": {
+"fi": "Varastot, perusskenaario",
+"et": "Salvestid, baasstsenaarium"
+},
+"v": {
+"fi": "600 MW / 1 200 MWh 2030 · 1 500 MW / 3 000 MWh 2035",
+"et": "600 MW / 1 200 MWh 2030 · 1 500 MW / 3 000 MWh 2035"
+},
+"s": "Elering, VKA 2025, 9.12.2025"
+},
+{
+"t": {
+"fi": "EstLink 3",
+"et": "EstLink 3"
+},
+"v": {
+"fi": "700 MW · 2038–2040",
+"et": "700 MW · 2038–2040"
+},
+"s": "Elering arengukava 9.7.2026; Fingrid 6.2.2026"
+}
+]
+},
+"pins": [
+{
+"k": "label",
+"p": [
+25.9,
+63.4
+],
+"t": {
+"fi": "Datakeskukset ~5 GW · varastot >4 GW · kattilat >3 GW",
+"et": "Andmekeskused ~5 GW · salvestid >4 GW · katlad >3 GW"
+},
+"s": "Fingrid 18.8.2026"
+},
+{
+"k": "label",
+"p": [
+25.6,
+58.55
+],
+"t": {
+"fi": "Uutta tuotantoa 1 500 MW 2030 · varastot 600 MW 2030",
+"et": "Uut tootmist 1 500 MW 2030 · salvestid 600 MW 2030"
+},
+"s": "Elering 9.7.2026; VKA 12/2025"
+},
+{
+"k": "label",
+"p": [
+27.9,
+59.72
+],
+"t": {
+"fi": "EstLink 3 · 700 MW · 2038–2040",
+"et": "EstLink 3 · 700 MW · 2038–2040"
+},
+"s": "Elering 9.7.2026",
+"dim": 1
+}
+]
+},
+{
+"id": "site",
+"name": {
+"fi": "Teidän liittymänne",
+"et": "Teie liitumine"
+},
+"q": {
+"fi": "Missä teidän kohteenne on tässä kokonaisuudessa?",
+"et": "Kus on teie objekt selles tervikus?"
+},
+"facts": {
+"FI": [],
+"EE": []
+},
+"pins": []
+}
+]
+}

@@ -53,7 +53,13 @@ def build(lang):
         return f'href="#/{slug}'+(f'::{anc}' if anc else '')+'"'
     html=re.sub(r'href="(/[^"]*)"',href,html)
     kartta=open(os.path.join(ROOT,'assets/kartta.json'),encoding='utf-8').read()
-    html=re.sub(r'<script src="(/assets/scene(?:-et)?\.js)" defer></script>',lambda m:'<script>window.SAMA_KARTTA='+kartta+';</script><script>'+open(os.path.join(ROOT,m.group(1).lstrip('/')),encoding='utf-8').read().replace('</script','<\\/script')+'</script>',html)
+    kd=open(os.path.join(ROOT,'assets/kartta-data.json'),encoding='utf-8').read()
+    kv=open(os.path.join(ROOT,'assets/kartta-verkko.json'),encoding='utf-8').read()
+    bundle=['']
+    def inl(m):
+        if not bundle[0]: bundle[0]='<script>window.SAMA_KARTTA='+kartta+';window.SAMA_KD='+kd+';window.SAMA_KV='+kv+';</script><script>'+open(os.path.join(ROOT,m.group(1).lstrip('/')),encoding='utf-8').read().replace('</script','<\\/script')+'</script>'
+        return ''
+    html=re.sub(r'<script src="(/assets/scene(?:-et)?\.js)" defer></script>',inl,html)
     html=re.sub(r'(src|href)="(/assets/[^"]+)"',lambda m:f'{m.group(1)}="{datauri(m.group(2)) or m.group(2)}"',html)
     html=re.sub(r'srcset="[^"]*"','',html)
     router='''<script>(function(){var cur=null;function go(){var h=location.hash||'#/';var anchor=null;
@@ -65,7 +71,7 @@ if(cur!==s){ps.forEach(function(p){p.classList.toggle('on',p===hit);});cur=s;win
 document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('in');});}
 if(anchor){var el=document.getElementById(anchor);if(el)setTimeout(function(){el.scrollIntoView();},30);}}
 window.addEventListener('hashchange',go);go();})();</script>'''
-    html=html.replace('</body>','') + router + f'<script>{js}</script>\n</body>\n</html>'
+    html=html.replace('</body>','') + router + f'<script>{js}</script>\n' + bundle[0] + '\n</body>\n</html>'
     out=os.path.join(OUT,f'samaenergia-{lang}-{VER}.standalone.html'); open(out,'w',encoding='utf-8').write(html)
     print(out, len(divs),'sivua', round(len(html)/1e6,2),'MB')
 for l in ('fi','et'): build(l)
