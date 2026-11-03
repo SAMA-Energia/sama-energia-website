@@ -181,7 +181,7 @@ Ei uutta liittymää: varasto käyttää liittymää, joka teillä jo on – ja 
 
 Reservimarkkinat selkokielellä
 
-Akku tasapainottaa, Fingrid maksaa valmiudesta. Sama tapahtuu satoja kertoja päivässä, automaattisesti.
+Akku tasapainottaa, Fingrid maksaa valmiudesta. Sama tapahtuu jatkuvasti, automaattisesti.
 
 Lähteet: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025; Fingrid · 10.2.2025; Fingrid, reservitoimittajat · 27.8.2026; Fingrid, tiedote · 24.9.2025
 
@@ -484,7 +484,7 @@ Reservimarkkinat selkokielellä.
 
 Sähköverkon on oltava tasapainossa joka sekunti. Kun tuotanto ja kulutus erkanevat, Fingrid ostaa markkinoilta nopeaa apua ja maksaa siitä, että apu on olemassa. Akut ovat tämän työn nopeimpia tekijöitä: ne lataavat ylijäämän talteen ja purkavat sen vajeeseen sekunneissa. Yhden tehtaan akku pääsee markkinoille aggregaattorin kautta, joka kokoaa pienemmät akut yhdeksi tarjoukseksi.
 
-Akku tasapainottaa, Fingrid maksaa valmiudesta. Sama tapahtuu kohteessanne satoja kertoja päivässä, automaattisesti.
+Akku tasapainottaa, Fingrid maksaa valmiudesta. Sama tapahtuu kohteessanne jatkuvasti, automaattisesti.
 
 Viisi reserviä, joita Fingrid ostaa
 Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025: „Ylläpidosta maksetaan korvaus siitä, että reservi on käytettävissä.“
@@ -1637,7 +1637,7 @@ Turg, kuhu teie liitumine kuulub
 8,3 TWhEesti elektritarbimine 2025.Elering / ERR 26.1.2026
 10,0 TWhEleringi tarbimisprognoos 2030. aastaks.Elering, arengukava 9.7.2026
 200 MW / 400 MWhKiisa ja Aruküla akupargid, valmis 2026.ERR 7.7.2026
-74 M€maksti 2025 sagedusreservide eest – neile, kes võimsust hoiavad.Elering 2/2026
+74 M€maksti veebr–dets 2025 sagedusreservide eest – neile, kes võimsust hoiavad.Elering, 2025 turu kokkuvõte, 2/2026
 
 Liitumine on vara. Passiivne liitumine on kuluartikkel. Arvestitagune süsteem paneb selle tulu tootma.
 
@@ -1796,7 +1796,7 @@ Ilma uue liitumiseta: salvesti kasutab liitumist, mis teil juba on – uus maksa
 
 Loe, kuidas aku Eesti reserviturul teenib
 
-Aku tasakaalustab, Elering maksab valmisoleku eest. Sama juhtub sadu kordi päevas, automaatselt.
+Aku tasakaalustab, Elering maksab valmisoleku eest. Sama juhtub pidevalt, automaatselt.
 
 Allikad: Elering, sagedusreservide turu kokkuvõte · juuli 2026; Elering, varustuskindluse aruanne 2025, lk 14; Elering, tasakaalustamisvõimsuse kulu · 2026; ERR 16.08.2024 (Elektrilevi liitumistasu ja läbilaskevõime)
 
@@ -2099,7 +2099,7 @@ Reserviturg, lihtsalt seletatuna.
 
 Elektrivõrk peab olema igal sekundil tasakaalus. Kui tootmine ja tarbimine lahku lähevad, ostab Elering turult kiiret abi ja maksab selle eest, et abi on olemas, iga päev järgmise päeva jaoks. Akud on selle töö kiireimad tegijad: nad laevad ülejäägi endasse ja annavad selle puudujääki sekunditega. Ühe tehase aku pääseb turule agregaatori kaudu, kes kogub väiksemad akud üheks vähemalt ühemegavatiseks pakkumiseks.
 
-Aku tasakaalustab, Elering maksab valmisoleku eest. Sama juhtub teie objektil sadu kordi päevas, automaatselt.
+Aku tasakaalustab, Elering maksab valmisoleku eest. Sama juhtub teie objektil pidevalt, automaatselt.
 
 Kolm reservi, mida Elering ostab
 Allikas: Elering, tasakaalustamisteenuste energia- ja võimsusturg · miinimumpakkumine võimsusturul 1 MW, sellepärast agregaator
