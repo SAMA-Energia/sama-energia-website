@@ -136,7 +136,7 @@ Ilman aurinkoa
 Hotellit ja hoivakiinteistöt
 Ympärivuorokautinen kulutus, keittiö ja lämmitys, ja velvollisuus, ettei sähkö katkea koskaan.
 Miksi tässä
-Varavoima on tässä yhtä tärkeä kuin säästö.
+Varavoima on tässä yhtä tärkeä kuin säästö. Se edellyttää saarekekäyttöön toteutettua järjestelmää ja erotettua kriittistä piiriä, jotka suunnitellaan kohteittain.
 
 Ilman aurinkoa
 
@@ -1753,7 +1753,7 @@ Ilma päikeseta
 Hotellid ja hooldekodud
 Ööpäevaringne tarbimine, köök ja küte, ning kohustus, et elekter ei kaoks kunagi.
 Miks siin
-Varutoide on siin sama tähtis kui sääst.
+Varutoide on siin sama tähtis kui sääst. Selleks peab süsteem olema ehitatud saartalitluseks ja kriitiline ahel eraldatud; see projekteeritakse iga objekti jaoks eraldi.
 
 Ilma päikeseta
 
