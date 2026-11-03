@@ -694,12 +694,14 @@ if (jsBytes > 20 * 1024) err(`assets/site.js ${jsBytes} tavua > 20 kt`);
 for (const f of ['assets/site.css', 'assets/fonts.css', 'assets/site.js']) if (/googleapis|gstatic|https?:\/\//.test(read(f))) err(`${f} viittaa ulkoiseen osoitteeseen`);
 if (!/font-display:swap/.test(read('assets/fonts.css'))) err('fonts.css: font-display: swap puuttuu');
 
-/* Yhteinen verkko -kartta (/verkko/, /vork/; v35 2.11.2026): sivukohtaiset tiedostot ja budjetit
-   (docs/brief/03-kaart.md: pohjatiedosto < 150 kt, 110 kV erillisenä). Sivun tekstin luvut tulevat
-   kartta-data.json:sta (scripts/kaart/build_page.py) — tarkistetaan, että jokaisen kerroksen johtopäätös on sivulla. */
+/* Yhteinen verkko -kartta (/verkko/, /vork/ ja etusivun osio; v35 2.11.–3.11.2026): sivukohtaiset tiedostot ja budjetit
+   (docs/brief/03-kaart.md: pohjatiedosto < 150 kt, 110 kV erillisenä). kartta.js 30 → 36 kt ja kartta.css 16 → 20 kt 3.11.2026:
+   sama moottori palvelee nyt myös etusivua (näyttämö + puhelinlaatikko) ja piirtää pisteilmeen ja kallistuksen.
+   Tekstin luvut tulevat kartta-data.json:sta (scripts/kaart/build_page.py) — tarkistetaan, että jokaisen kerroksen
+   johtopäätös on sekä karttasivulla että etusivulla. */
 {
   const KB = 1024, size = f => statSync(join(ROOT, f)).size;
-  for (const [f, max] of [['assets/kartta-pohja.json', 150], ['assets/kartta-110.json', 100], ['assets/kartta-data.json', 80], ['assets/kartta.js', 30], ['assets/kartta.css', 16]]) {
+  for (const [f, max] of [['assets/kartta-pohja.json', 150], ['assets/kartta-110.json', 100], ['assets/kartta-data.json', 80], ['assets/kartta.js', 36], ['assets/kartta.css', 20]]) {
     if (!existsSync(join(ROOT, f))) { err(`${f} puuttuu`); continue; }
     if (size(f) > max * KB) err(`${f} ${size(f)} tavua > ${max} kt`);
   }
@@ -707,7 +709,7 @@ if (!/font-display:swap/.test(read('assets/fonts.css'))) err('fonts.css: font-di
   try {
     const kd = JSON.parse(read('assets/kartta-data.json'));
     const dec = s => s.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#x27;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
-    for (const [lang, file] of [['fi', 'verkko/index.html'], ['et', 'et/vork/index.html']]) {
+    for (const [lang, file] of [['fi', 'verkko/index.html'], ['et', 'et/vork/index.html'], ['fi', 'index.html'], ['et', 'et/index.html']]) {
       const page = dec(read(file));
       kd.layers.forEach((L, i) => { if (!page.includes(L.concl[lang])) err(`${file}: kerroksen ${i + 1} johtopäätös ei vastaa kartta-data.json:ia — aja python3 scripts/kaart/build_page.py`); });
     }

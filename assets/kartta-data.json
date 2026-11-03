@@ -179,8 +179,8 @@
       59.384
      ],
      "t": {
-      "fi": "EstLink 1 · 350 MW · 2006",
-      "et": "EstLink 1 · 350 MW · 2006"
+      "fi": "EstLink 1\n350 MW · 2006",
+      "et": "EstLink 1\n350 MW · 2006"
      },
      "s": "Elering, EstLink 1",
      "src": "el-el1",
@@ -198,8 +198,8 @@
       59.369
      ],
      "t": {
-      "fi": "EstLink 2 · 650 MW · 2014",
-      "et": "EstLink 2 · 650 MW · 2014"
+      "fi": "EstLink 2\n650 MW · 2014",
+      "et": "EstLink 2\n650 MW · 2014"
      },
      "s": "Elering, EstLink 2",
      "src": "el-el2",
@@ -213,8 +213,8 @@
       60.9
      ],
      "t": {
-      "fi": "Fenno-Skan 1 + 2 · 400 + 800 MW",
-      "et": "Fenno-Skan 1 + 2 · 400 + 800 MW"
+      "fi": "Fenno-Skan 1 + 2\n400 + 800 MW",
+      "et": "Fenno-Skan 1 + 2\n400 + 800 MW"
      },
      "s": "Fingrid",
      "src": "fg-pohj",
@@ -312,8 +312,8 @@
       67.4
      ],
      "lab": {
-      "fi": "Pohjoismainen synkronialue",
-      "et": "Põhjamaade sünkroonala"
+      "fi": "Pohjoismainen\nsynkronialue",
+      "et": "Põhjamaade\nsünkroonala"
      },
      "src": "fg-pohj"
     },
@@ -327,8 +327,8 @@
      ],
      "ta": "middle",
      "lab": {
-      "fi": "Manner-Euroopan synkronialue 9.2.2025 alkaen",
-      "et": "Mandri-Euroopa sünkroonala alates 9.2.2025"
+      "fi": "Manner-Euroopan synkronialue\n9.2.2025 alkaen",
+      "et": "Mandri-Euroopa sünkroonala\nalates 9.2.2025"
      },
      "src": "el-sync"
     }
@@ -1189,8 +1189,8 @@
       66.9
      ],
      "t": {
-      "fi": "Pohjoismainen synkronialue",
-      "et": "Põhjamaade sünkroonala"
+      "fi": "Pohjoismainen\nsynkronialue",
+      "et": "Põhjamaade\nsünkroonala"
      },
      "s": "Fingrid",
      "src": "fg-pohj"
@@ -1203,8 +1203,8 @@
       57.62
      ],
      "t": {
-      "fi": "Manner-Euroopan synkronialue 9.2.2025 alkaen",
-      "et": "Mandri-Euroopa sünkroonala alates 9.2.2025"
+      "fi": "Manner-Euroopan synkronialue\n9.2.2025 alkaen",
+      "et": "Mandri-Euroopa sünkroonala\nalates 9.2.2025"
      },
      "s": "Elering",
      "src": "el-sync",
@@ -1875,9 +1875,10 @@
      },
      "src": "fg-ruuhka",
      "label_at": [
-      23.45,
-      60.42
-     ]
+      24.2,
+      61.2
+     ],
+     "ta": "middle"
     },
     {
      "t": "you",

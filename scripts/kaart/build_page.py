@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
 SAMA kaart — kirjoittaa /verkko/- ja /vork/-sivun luvut tiedostosta assets/kartta-data.json
-lähdetiedostoihin src/fi.html ja src/et.html (sivu id="p-verkko", merkkien kartta:alku … kartta:loppu väliin).
+lähdetiedostoihin src/fi.html ja src/et.html (sivu id="p-verkko", merkkien kartta:alku … kartta:loppu väliin)
+sekä etusivun Yhteinen verkko / Ühine võrk -osion (merkkien kartta-etusivu:alku … kartta-etusivu:loppu väliin;
+kysymys kerrallaan painikkeilla, kartta näyttämössä tai osion sisällä — assets/kartta.js, data-mode="front").
 
 Miksi: kartan luvut, johtopäätökset ja lähteet ovat yhdessä paikassa (kartta-data.json). Sivun teksti
 (luvut tavallisella vierityksellä, teksti kartan ulkopuolella) ja kartta näyttävät aina samat luvut.
@@ -16,6 +18,7 @@ import argparse, html, json, pathlib, re, sys
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 DATA = ROOT / 'assets' / 'kartta-data.json'
 BEGIN, END = '<!-- kartta:alku', '<!-- kartta:loppu -->'
+FBEGIN, FEND = '<!-- kartta-etusivu:alku', '<!-- kartta-etusivu:loppu -->'
 
 TXT = {
     'fi': {
@@ -35,6 +38,10 @@ TXT = {
         'attr': 'Pohja: Natural Earth · Verkko: © OpenStreetMap-tekijät (ODbL), OpenInfraMap · luettu 2.11.2026',
         'aria': 'Kartta Suomen ja Viron sähköverkosta: kantaverkko, rajayhteydet, tuuli- ja aurinkovoimalat, varastot, reservialueet ja tulevat hankkeet.',
         'after_h': 'Lähteet ja <em>päivitys.</em>',
+        'f_h2': 'Yhteinen verkko – kuusi kysymystä ja <em>teidän liittymänne.</em>',
+        'f_lead': 'Suomen sähköjärjestelmä kartalla, kysymys kerrallaan. Jokaisella luvulla on lähde ja päiväys.',
+        'f_bar': 'Kysymykset', 'f_more': 'Koko kartta, faktat ja lähteet', 'f_cta': ('Pyydä maksuton kartoitus', '#kartoitus'), 'f_src': 'Lähde',
+        'f_attr': 'Kartta: © OpenStreetMap-tekijät (ODbL) · Natural Earth',
         'after': 'Luvut tarkistettu 2.11.2026, seuraava tarkistus helmikuussa 2027. Kartan johdot, sähköasemat ja voimalat ovat OpenStreetMapista (luettu 2.11.2026), ja niitä on verrattu Fingridin kantaverkon kehittämissuunnitelman karttaan ja Eleringin verkkokarttaan. Tulevien hankkeiden reitit ovat kaavamaisia: ne yhdistävät hankkeen päätepisteet.',
     },
     'et': {
@@ -54,6 +61,10 @@ TXT = {
         'attr': 'Alus: Natural Earth · Võrk: © OpenStreetMapi kaastöölised (ODbL), OpenInfraMap · loetud 2.11.2026',
         'aria': 'Kaart Eesti ja Soome elektrivõrgust: põhivõrk, välisühendused, tuule- ja päikeseelektrijaamad, salvestid, reservialad ja tulevased projektid.',
         'after_h': 'Allikad ja <em>uuendamine.</em>',
+        'f_h2': 'Ühine võrk – kuus küsimust ja <em>teie liitumine.</em>',
+        'f_lead': 'Eesti elektrisüsteem kaardil, küsimus korraga. Igal arvul on allikas ja kuupäev.',
+        'f_bar': 'Küsimused', 'f_more': 'Kogu kaart, faktid ja allikad', 'f_cta': ('Küsi tasuta hindamist', '#hindamine'), 'f_src': 'Allikas',
+        'f_attr': 'Kaart: © OpenStreetMapi kaastöölised (ODbL) · Natural Earth',
         'after': 'Arvud on kontrollitud 2.11.2026, järgmine kontroll veebruaris 2027. Kaardi liinid, alajaamad ja elektrijaamad on OpenStreetMapist (loetud 2.11.2026) ning neid on võrreldud Eleringi võrgukaardi ja Fingridi põhivõrgu arengukava kaardiga. Tulevaste projektide trassid on skemaatilised: need ühendavad projekti lõpp-punkte.',
     },
 }
@@ -191,6 +202,42 @@ def replace_page(src_text, lang, block):
     return src_text[:m.start()] + open_tag + '\n' + block + '\n' + src_text[end:]
 
 
+def front(D, lang):
+    """Etusivun Yhteinen verkko / Ühine võrk -osio: seitsemän kysymystä painikkeina, yksi johtopäätös kerrallaan.
+    Kartta piirtyy leveällä näytöllä oikean reunan näyttämöön (.lava-cv .km-slot), kapealla osion sisään (.km-inline)."""
+    X = TXT[lang]
+    S, home, n = D['sources'], X['home'], len(D['layers'])
+    chips = ''.join(f'<button type="button" data-i="{i}" aria-pressed="{"true" if i == 0 else "false"}"><span>{i + 1}</span>{e(t(L["name"], lang))}</button>'
+                    for i, L in enumerate(D['layers']))
+    steps = []
+    for i, L in enumerate(D['layers']):
+        b = L['big'][home]
+        links = '; '.join(f'<a href="{e(S[sid]["url"])}" target="_blank" rel="noopener">{e(S[sid]["pub"])}</a> · {e(S[sid]["date"])}' for sid in b['src'])
+        cta = (f'<p><a class="btn btn-primary" href="{X["f_cta"][1]}">{X["f_cta"][0]} {ARROW}</a></p>' if L['id'] == 'site' else '')
+        steps.append(f'        <li class="km-fs{" on" if i == 0 else ""}" data-layer="{i}"><p class="km-n">{i + 1:02d} / {n:02d}</p>'
+                     f'<h3>{e(t(L["q"], lang))}</h3><p class="km-concl">{e(L["concl"][lang])}</p>'
+                     f'<p class="km-fig"><b>{e(b["v"])}</b><span>{e(t(b["l"], lang))}</span></p>'
+                     f'<p class="src">{X["f_src"]}: {links}</p>{cta}</li>')
+    return f'''{FBEGIN} — GENEROITU: python3 scripts/kaart/build_page.py (lähde assets/kartta-data.json, {D["date"]}). Muokkaa dataa, älä tätä lohkoa. -->
+      <div class="lv-h"><h2>{X["f_h2"]}</h2><p class="lead">{e(X["f_lead"])}</p></div>
+      <div class="km-bar km-fbar" role="toolbar" aria-label="{X["f_bar"]}" hidden>{chips}</div>
+      <div class="km-inline"></div>
+      <ol class="km-fsteps">
+{chr(10).join(steps)}
+      </ol>
+      <p class="km-fnav"><button type="button" class="km-cmp" aria-pressed="false" hidden>{X["compare"]}</button><a class="link-arrow" href="/{X["slug"]}/">{X["f_more"]} {ARROW}</a></p>
+      <p class="km-attr">{e(X["f_attr"])}</p>
+{FEND}'''
+
+
+def replace_front(src_text, lang, block):
+    a = src_text.find(FBEGIN)
+    b = src_text.find(FEND)
+    if a < 0 or b < a:
+        raise SystemExit(f'src/{lang}.html: etusivun karttalohko (kartta-etusivu:alku … loppu) puuttuu')
+    return src_text[:a] + block + src_text[b + len(FEND):]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--check', action='store_true')
@@ -200,7 +247,7 @@ def main():
     for lang in ('fi', 'et'):
         f = ROOT / 'src' / f'{lang}.html'
         old = f.read_text(encoding='utf-8')
-        new = replace_page(old, lang, page(D, lang))
+        new = replace_front(replace_page(old, lang, page(D, lang)), lang, front(D, lang))
         if a.check:
             if new != old:
                 print(f'{f.relative_to(ROOT)}: /verkko/-sivu ei vastaa kartta-data.json:ia — aja python3 scripts/kaart/build_page.py', file=sys.stderr)

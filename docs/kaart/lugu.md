@@ -1,9 +1,10 @@
-# Ühine võrk / Yhteinen verkko — kaardi lugu (v35, 2.11.2026)
+# Ühine võrk / Yhteinen verkko — kaardi lugu (v35, 2.11.2026; esileht 3.11.2026)
 
 Vestlus C (kaart ja andmed), haru `v35-uusi-ilme`. Alus: `docs/brief/00-lahteulesanne.md`, `docs/brief/03-kaart.md`, `docs/tutkimus/2026-11-02-fingrid-elering.md`.
 
 ## Mis on tehtud
 
+- **Esileht (3.11.2026, Madise valik „Esilehele + 3D tagasi")**: esilehe lõik „Ühine võrk" / „Yhteinen verkko" (ankur `#vork` / `#verkko`) jutustab nüüd sama loo: nupud 1–7, korraga üks küsimus → järelduslause → suur arv → allikas; seitsmendas kihis „Küsi tasuta hindamist". Lauaarvutis on kaart paremal 3D-laval nagu v39-s (kuldsed punktid, helendavad liinid, sügavus hiirega), telefonis ja reduced-motion'iga lõigu sees nuppude all; telefonis jäävad nupud kerimisel üles. „Võrdle Soomega / Vertaa Viroon" ja link „Kogu kaart, faktid ja allikad" → /vork/, /verkko/. Plokk genereeritakse samast andmefailist (`build_page.py`, märgid `kartta-etusivu:alku … kartta-etusivu:loppu`); `verify-pages` kontrollib järeldusi ka esilehel. FI todisterea kaks salvestiarvu viidi kaardiga samaks (2 085 MW, Fingrid 2.11.2026; lähes 6 GW, Fingrid 23.10.2026), et samal lehel ei oleks kahte eri arvu.
 - **Lehed /vork/ (ET) ja /verkko/ (FI)**: seitse peatükki tavalise kerimisega, tekst kaardist väljas. Iga peatükk = küsimus (h2) → **üks järelduslause** → üks suur arv → faktid allikate ja kuupäevadega → „Soome samal mõõdupuul / Viro samalla mittarilla" (teine riik, definitsioonimärkega) → allikad → nupp „Näita kaardil". Viimane peatükk „Teie liitumine / Teidän liittymänne" on järeldus ja kutse tasuta hinnangule.
 - **Kaart**: lauaarvutis kleepub paremale ja vahetab kihti, kui peatükk jõuab ekraani keskele (ainult ≥ 1024 px; ei juhi kerimist). Telefonis on kaart peatükkide kohal, mitte kleepuv; „Näita kaardil" viib kaardini. Kihinupud 1–7, „Võrdle Soomega / Vertaa Viroon", „110 kV" (eraldi kiht, laetakse alles vajutusel), allikas hiire, puute ja klaviatuuriga, kodumaa esil ja teine riik tuhm kuni võrdluseni.
 - **Andmed ühes kohas**: `assets/kartta-data.json` — sama fail, mida kasutab esilehe 3D-lava kaart (`scene.js`); vorming ühilduv (id/name/q/cmp/facts/pins), lisatud `concl`, `big`, `pays`, `base`, `fx`, `note`, `sources`, `views`, `next`.
@@ -174,8 +175,11 @@ Punktide kontroll: EstLink 1 Harku–Espoo ja EstLink 2 Püssi–Anttila — OSM
 - **Liikumine**: vaate vahetus 380 ms; `prefers-reduced-motion`: kohe, ilma üleminekuteta; „teie objekt" pulss 4 korda ja seisma.
 - **Telefon**: puudutus näitab allikat, teine puudutus peidab; `touch-action: pan-y` (leht kerib normaalselt); kihinupud keritavad ja aktiivne nupp tuleb nähtavale.
 - **Klaviatuur ja ligipääs**: kihinupud on nupud (`aria-pressed`), kaardi sildid Tab-iga, Esc sulgeb; „i" näitab allikat lingiga; kõik arvud on ka tekstis; pealdis `aria-live`.
-- **Kontroll** (Playwright 1440 × 900 ja 390 × 844, FI ja ET): konsoolis vigu ei ole, horisontaalset ületäitu ei ole, esilehe kaart joonistub uute andmetega (5 sildi), standalone-eelvaade töötab.
-- **Mahud**: `kartta-pohja.json` 113 kB (gzip 49 kB), `kartta-110.json` 73 kB (gzip 28 kB, ainult nupu peale), `kartta-data.json` 58 kB (gzip 14 kB), `kartta.css` 13 kB (ainult sellel lehel, ei suurenda `site.css`-i eelarvet).
+- **3D-välimus ilma perspektiivita (3.11.2026)**: kaks SVG-d üksteise peal — all maa punktidena (rannik, järved), peal võrk, kihtide objektid ja sildid. Hiirega liigub ülemine kiht kuni 7 px rohkem kui maa (sügavus) ja lava ise parallaksiga; see on ainult 2D-nihe oma kihil, brauser ei joonista kaarti uuesti. CSS-perspektiiv (`perspective` + `rotateX`) jäeti välja: Chromium jättis selle all osa kihivahetuse muudatustest joonistamata (Playwright: lõunapoolsed sildid puudusid, ilma perspektiivita olemas).
+- **Mitu kaarti ühes dokumendis**: igal `[data-kartta]` plokil oma mootor ja SVG-tunnused (`km0-…`, `km1-…`); kaks korda laetud skript ei käivita plokki uuesti (eelvaates on esileht ja /vork/ samas failis). `python3 scripts/build-standalone.py v35-kartta verkko,vork` → eelvaade avaneb otse kaardilõigul.
+- **Punktid**: punktobjekt (salvesti, teie objekt) võidab ala, kui hiir või sõrm on 22 px kaugusel; kaherealised sildid on vihjes ja ekraanilugejas üherealised.
+- **Kontroll** (Playwright 1440 × 900 ja 390 × 844, FI ja ET, esileht ja /vork/ /verkko/): konsoolis vigu ei ole, horisontaalset ületäitu ei ole, iga nähtav silt on kuvatõmmisel joonistatud (pikslikontroll), puudutus näitab vihjet, reduced-motion kasutab lõigusisest kaarti, eelvaade töötab mõlemal lehel.
+- **Mahud**: `kartta-pohja.json` 113 kB (gzip 49 kB), `kartta-110.json` 73 kB (gzip 28 kB, ainult nupu peale), `kartta-data.json` 58 kB (gzip 14 kB), `kartta.js` 34 kB ja `kartta.css` 17 kB (esilehel ja /vork/-, /verkko/-lehel; ei suurenda `site.css`-i eelarvet; `verify-pages` piirid 36 ja 20 kB).
 
 ## Uuendamise kord (kord kvartalis)
 
@@ -201,8 +205,8 @@ Iga turg oma arvudega; viies on ainult „Ühine võrk" kaardi jaoks (võrdlus o
 
 1. **Tehniline valik**: SVG canvas'e asemel (põhjendus eespool). Kui on vaja tagasi canvas'ele, on andmefail ühilduv `scene.js`-iga.
 2. **Elektrilevi** on nimetatud andmeallikana (jaotusvõrguettevõtja, 74 MW salvesteid jaotusvõrgus; ERR 19.8.2026). Teisi ettevõtete nimesid lehel ei ole; „Hertz" asendati kohanimedega. Esilehel on veel „Hertz 1 Kiisa" (esilehe vestlus).
-3. **Esilehe kaardiplokk** (staatilised read) kasutab vanemaid, kuid kuupäevaga õigeid arve (FI 1 050 MW 24.2.2026; EE Hertz 1 Kiisa). Soovitus esilehe ümberehitusel: 2 085 MW (2.11.2026) ja 245 MW (Elering 2/2026).
+3. **Esilehe kaardiplokk** on 3.11.2026 andmetest (vanad staatilised read ja lülitid on läinud). Kui esileht ehitatakse ümber täislaiuses sektsioonideks (brief p 5.1), töötab sama plokk ilma lavata: kaart läheb lõigu sisse (`.km-inline`); laial ekraanil on siis vaja kahe veeru paigutust (tekst + kaart). `assets/kartta.json` ja `assets/kartta-verkko.json` (v39 lõuendikaart `scene.js`-is) ei ole enam ühelgi lehel kasutusel — eemaldada koos `scene.js`-i kaardikoodiga, kui esilehe vestlus seda ei vaja.
 4. **Reaalajas andmed** vajaksid Netlify funktsiooni (Fingridi avaandmete API võtmega, Eleringi andmed), mis kirjutaks sama domeeni JSON-i — brauser ei teeks kolmanda osapoole päringuid (CSP `connect-src 'self'` kehtib). Eraldi otsus; seni kord kvartalis.
-5. **site.css**: vana /verkko/ lehe reeglid (`.map-full`, `.mp-sec`, `.mp-cols`, `.mp-srch`) on nüüd kasutamata — eemaldamine vabastab eelarvet (esileht kasutab `.mp-b`, `.mp-l`, `.mp-f`, `.mp-cmp`).
+5. **site.css**: kõik vanad kaardireeglid (`.map-full`, `.mp-*`) on nüüd kasutamata — eemaldamine vabastab eelarvet.
 6. **Natiivkontroll**: kõik uued FI ja ET laused (järeldused, faktid, kaardi sildid) enne main'i.
 7. **Reservituru leht**: sisend on `docs/kaart/reservid-sisend.md` (ülesanne 5), mitte esilehe kaart.

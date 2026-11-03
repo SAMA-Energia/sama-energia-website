@@ -1,8 +1,10 @@
-/* SAMA Energia — Yhteinen verkko / Ühine võrk: kartan sivu (v35, 2.11.2026). Ladataan vain /verkko/- ja /vork/-sivulla
+/* SAMA Energia — Yhteinen verkko / Ühine võrk -kartta (v35, 3.11.2026). Ladataan etusivulla ja /verkko/- ja /vork/-sivulla
    (build-pages.mjs: data-assets="kartta"). Värit sivuston muuttujista (site.css :root), kulta logon sävyistä.
-   Liike ≤ 380 ms; prefers-reduced-motion: ei siirtymiä eikä animaatioita. */
-.km{--k-land:#1A1814;--k-home:#262118;--k-sea:#0D0C0A;--k-g1:#E8D193;--k-g2:#C7A45C;--k-g3:#97752F;--k-blue:#8FB4D9;--k-free:#7DB394;
-  padding:clamp(40px,5vw,72px) 0 clamp(56px,7vw,96px);position:relative}
+   Ilme kuten v38–v39:n näyttämökartta: maa kultaisina pisteinä, johdoissa hehku, syvyys hiiren mukaan
+   (verkkotaso .km-top siirtyy 2D-siirrolla maata enemmän; ei perspektiiviä — Chromium jättää sen alla SVG-muutoksia piirtämättä).
+   Liike ≤ 380 ms näkymälle, syvyys 0,5 s; prefers-reduced-motion: ei siirtymiä, ei syvyysliikettä, ei animaatioita. */
+.km,.km-front,.km-svg{--k-land:#1A1814;--k-sea:#0D0C0A;--k-g1:#E8D193;--k-g2:#C7A45C;--k-g3:#97752F;--k-blue:#BFD3E6;--k-free:#7DB394}
+.km{padding:clamp(40px,5vw,72px) 0 clamp(56px,7vw,96px);position:relative}
 .km a{color:var(--k-g1)}
 .km-grid{max-width:1360px;margin:0 auto;padding:0 var(--gutter);display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,4vw,64px);align-items:start}
 .km-intro{padding-bottom:clamp(8px,2vw,20px)}
@@ -31,13 +33,13 @@
 .km-def b{color:var(--ink-2)}
 .km-paysp{margin:18px 0 0;max-width:56ch;padding:12px 14px;border-left:2px solid var(--k-g2);background:rgba(232,209,147,.05);color:var(--ink-2);font-size:15px;line-height:1.55}
 .km-paysp b{color:var(--ink)}
-.km .src{margin-top:16px}
-.km .src a{color:var(--k-g1)}
+.km .src,.km-front .src{margin-top:16px}
+.km .src a,.km-front .src a{color:var(--k-g1)}
 .km-show{margin-top:18px;display:inline-flex;align-items:center;gap:8px;background:transparent;border:1px solid rgba(232,209,147,.4);color:var(--k-g1);border-radius:999px;padding:10px 16px;font:600 14px/1 var(--font-body);cursor:pointer}
 .km-show:hover,.km-show:focus-visible{border-color:var(--k-g1);background:rgba(232,209,147,.06)}
 .km-final .btn{margin-top:24px}
-/* kartta: leveällä näytöllä kiinnitetty tekstin viereen */
-.km-map{position:sticky;top:96px;height:calc(100vh - 116px);min-height:560px;max-height:980px;display:flex;flex-direction:column;border:1px solid rgba(232,209,147,.16);border-radius:16px;background:var(--paper-2);overflow:hidden}
+/* /verkko/: kartta leveällä näytöllä kiinnitetty tekstin viereen */
+.km-map{position:sticky;top:96px;height:calc(100vh - 116px);min-height:560px;max-height:980px;display:flex;flex-direction:column;border:1px solid rgba(232,209,147,.16);border-radius:16px;background:var(--k-sea);overflow:hidden}
 .km-bar{display:flex;flex-wrap:wrap;gap:6px;padding:10px;border-bottom:1px solid rgba(232,209,147,.12);flex:none}
 .km-bar::-webkit-scrollbar{display:none}
 .km-bar button{flex:none;display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(232,209,147,.22);background:transparent;color:var(--ink-2);border-radius:999px;padding:8px 12px;font:500 13px/1 var(--font-body);cursor:pointer;white-space:nowrap}
@@ -45,20 +47,31 @@
 .km-bar button:hover{color:var(--ink);border-color:rgba(232,209,147,.5)}
 .km-bar button[aria-pressed="true"]{background:linear-gradient(135deg,var(--k-g1),var(--k-g2) 60%,var(--k-g3));color:#14110C;border-color:transparent}
 .km-bar button[aria-pressed="true"] span{color:#3a2d10}
-.km-stage{position:relative;flex:1 1 auto;min-height:260px;touch-action:pan-y;background:var(--k-sea)}
-.km-stage[data-state="loading"]::after{content:"";position:absolute;inset:0;background:radial-gradient(60% 50% at 50% 50%,rgba(232,209,147,.05),transparent)}
+.km-stage{position:relative;flex:1 1 auto;min-height:260px;touch-action:pan-y;background:var(--k-sea);overflow:hidden}
+.km-stage[data-state="loading"]::after,.km-inline[data-state="loading"]::after{content:"";position:absolute;inset:0;background:radial-gradient(60% 50% at 50% 50%,rgba(232,209,147,.05),transparent)}
 .km-err{position:absolute;inset:auto 16px 16px;color:var(--ink-2);font-size:14px}
+
+/* ---------- kartta ---------- */
 .km-svg{position:absolute;inset:0;width:100%;height:100%;display:block;--net:1;--k:2;user-select:none}
+.km-base{pointer-events:none}
+.km-top{transform:translate(var(--tx,0px),var(--ty,0px));transition:transform .5s cubic-bezier(.2,.7,.2,1);will-change:transform}
 .km-e0{stop-color:var(--k-sea);stop-opacity:1}
 .km-e1{stop-color:var(--k-sea);stop-opacity:0}
 .km-edge{pointer-events:none}
 .km-sea{fill:var(--k-sea)}
-.km-c{fill:var(--k-land);stroke:#36302A;stroke-width:1px;vector-effect:non-scaling-stroke}
-.km-c.is-ngb{fill:#14130F}
-.km-c.is-home{fill:var(--k-home);stroke:rgba(232,209,147,.5)}
-.km-c.is-other{opacity:.55;transition:opacity .35s,fill .35s}
-.is-compare .km-c.is-other{opacity:1;fill:var(--k-home);stroke:rgba(232,209,147,.5)}
+/* maa: lähes näkymätön pohja, rannikko ohuena viivana, pinta kultaisina pisteinä */
+.km-c{fill:var(--k-land);stroke:rgba(243,238,225,.12);stroke-width:1px;vector-effect:non-scaling-stroke}
+.km-c.is-ngb{fill:rgba(243,238,225,.012);stroke:rgba(243,238,225,.1)}
+.km-c.is-home{fill:rgba(212,181,116,.045);stroke:rgba(232,209,147,.38)}
+.km-c.is-other{fill:rgba(243,238,225,.02);stroke:rgba(243,238,225,.16);transition:fill .35s,stroke .35s}
+.km-svg.is-compare .km-c.is-other{fill:rgba(212,181,116,.045);stroke:rgba(232,209,147,.38)}
+.km-dots{stroke:none;pointer-events:none}
+.km-dot-h{fill:rgba(222,192,128,.5)}
+.km-dot-o{fill:rgba(243,238,225,.17)}
+.km-dot-z{fill:rgba(255,236,190,.95)}
+.km-dot-g{fill:rgba(125,200,150,.75)}
 .km-lakes{fill:var(--k-sea)}
+/* verkko: terävä viiva ja sen alla hehku */
 .km-net,.km-n110{opacity:var(--net);transition:opacity .35s}
 .km-l{fill:none;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
 .km-v400,.km-v330{stroke:var(--k-g1);stroke-width:1.6px}
@@ -67,51 +80,62 @@
 .km-t-dc{stroke:var(--k-blue);stroke-width:1.6px;stroke-dasharray:5 4}
 .km-t-cable{stroke-dasharray:2 3}
 .km-ngb{opacity:.35}
-.km[data-home="FI"]:not(.is-compare) .km-net [data-c="EE"],.km[data-home="EE"]:not(.is-compare) .km-net [data-c="FI"],
-.km[data-home="FI"]:not(.is-compare) .km-n110 [data-c="EE"],.km[data-home="EE"]:not(.is-compare) .km-n110 [data-c="FI"]{opacity:.3}
+.km-glow{fill:none;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke;pointer-events:none}
+.km-net .km-glow{stroke-dasharray:none;stroke-width:7px;opacity:.13}
+.km-net .km-glow.km-v220{stroke-width:5px;opacity:.08}
+.km-net .km-glow.km-t-dc{stroke-width:8px;opacity:.16}
+.km-svg[data-home="FI"]:not(.is-compare) .km-net [data-c="EE"],.km-svg[data-home="EE"]:not(.is-compare) .km-net [data-c="FI"],
+.km-svg[data-home="FI"]:not(.is-compare) .km-n110 [data-c="EE"],.km-svg[data-home="EE"]:not(.is-compare) .km-n110 [data-c="FI"]{opacity:.3}
+.km-svg[data-home="FI"]:not(.is-compare) .km-net .km-glow[data-c="EE"],.km-svg[data-home="EE"]:not(.is-compare) .km-net .km-glow[data-c="FI"]{opacity:0}
 .km-n110{display:none}
 .show-110 .km-n110{display:inline}
 .km-sub{fill:none;stroke:var(--k-g1);stroke-width:5px;stroke-linecap:round;vector-effect:non-scaling-stroke;opacity:0;transition:opacity .35s}
 .km-sub110{stroke:var(--k-g3);stroke-width:3px}
 .show-subs .km-sub,.show-110 .km-sub110{opacity:.9}
 .km-pl{fill:none;stroke-linecap:round;vector-effect:non-scaling-stroke;opacity:0;transition:opacity .35s}
-.km-pl-w{stroke:rgba(232,209,147,.55)}
-.km-pl-s{stroke:rgba(240,186,90,.8)}
+.km-pl-w{stroke:rgba(232,209,147,.6)}
+.km-pl-s{stroke:rgba(240,186,90,.85)}
 .show-plants .km-pl{opacity:1}
 /* kerrosten omat kohteet */
 .km-regions>g,.km-zones>g,.km-fx>g{opacity:0;visibility:hidden;transition:opacity .35s,visibility 0s .35s}
 .km-regions>g.on,.km-zones>g.on,.km-fx>g.on{opacity:1;visibility:visible;transition:opacity .35s}
-.km-hatch-ln{stroke:rgba(232,209,147,.4);stroke-width:16}
-.km-rg-restrict{fill:url(#km-hatch);stroke:rgba(232,209,147,.6);stroke-width:1px;vector-effect:non-scaling-stroke;cursor:help}
-.km-rg-free{fill:rgba(125,179,148,.16);stroke:rgba(125,179,148,.7);stroke-width:1px;vector-effect:non-scaling-stroke;cursor:help}
+.km-hatch-ln{stroke:rgba(232,209,147,.42);stroke-width:16}
+.km-rg{stroke-width:1px;vector-effect:non-scaling-stroke;cursor:help}
+.km-rg-restrict{stroke:rgba(232,209,147,.65)}
+.km-rg-free{stroke:rgba(125,200,150,.75)}
 .km-zone{stroke:none}
-.km-zone-nordic{fill:rgba(143,180,217,.09)}
-.km-zone-baltic{fill:rgba(232,209,147,.11)}
-.km-poly{fill:rgba(232,209,147,.11);stroke:none;cursor:help}
+.km-zone-nordic{fill:rgba(191,211,230,.045)}
+.km-zone-baltic{fill:rgba(232,209,147,.055)}
+.km-poly{stroke:none;cursor:help}
 .km-fl{fill:none;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
 .km-fl-link{stroke:var(--k-blue);stroke-width:2.6px}
 .km-fl-plan{stroke:var(--k-g1);stroke-width:2.6px;stroke-dasharray:7 6}
 .km-fl-cond{stroke:var(--k-g3);stroke-width:2px;stroke-dasharray:3 6}
 .km-fl-done{stroke:#F3E7C2;stroke-width:3.2px}
 .km-fl-flow{stroke:var(--k-g2);stroke-width:2.4px}
-.km-fl-edge{stroke:rgba(232,209,147,.7);stroke-width:1.2px;stroke-dasharray:3 6}
+.km-fl-edge{stroke:rgba(232,209,147,.75);stroke-width:1.2px;stroke-dasharray:3 6}
+.km-fx .km-glow{stroke:var(--k-g1);stroke-width:9px;opacity:.15}
+.km-fx .km-fg-link{stroke:var(--k-blue)}
+.km-fx .km-fg-cond{opacity:.08}
 .km-arrowhead{fill:var(--k-g2)}
 .km-hit{fill:none;stroke:transparent;stroke-width:18px;vector-effect:non-scaling-stroke;cursor:help}
 .km-ring{fill:none;vector-effect:non-scaling-stroke;cursor:help}
-.km-ring-a{stroke:var(--k-g1);stroke-width:1.4px;fill:rgba(232,209,147,.05)}
+.km-ring-a{stroke:var(--k-g1);stroke-width:1.4px;fill:rgba(232,209,147,.06)}
 .km-ring-b{stroke:rgba(232,209,147,.75);stroke-width:1px;stroke-dasharray:4 5}
 .km-pt{fill:none;stroke-linecap:round;vector-effect:non-scaling-stroke;cursor:help;stroke-width:11px}
-.km-pt-bess{stroke:var(--k-g1)}
+.km-pt-bess{stroke:#F3EEE1}
 .km-pt-node{stroke:var(--k-g2);stroke-width:7px}
 .km-pt-you{stroke:var(--k-g1);stroke-width:14px}
-.km-you-pulse{fill:none;stroke:var(--k-g1);stroke-linecap:round;vector-effect:non-scaling-stroke;stroke-width:14px;opacity:0}
-.km-fx>g.on .km-you-pulse{animation:km-pulse 2.2s ease-out 4}
-@keyframes km-pulse{0%{stroke-width:14px;opacity:.6}100%{stroke-width:60px;opacity:0}}
+/* sykkivä rengas: kolme kertaa kerroksen tullessa näkyviin, sitten kartta on paikallaan (ei piirtosilmukkaa) */
+.km-pulse{fill:none;stroke:var(--k-g1);stroke-linecap:round;vector-effect:non-scaling-stroke;stroke-width:11px;opacity:0;pointer-events:none}
+.km-fx>g.on .km-pulse{animation:km-pulse 2.4s ease-out 3}
+.km-fx>g.on .km-pulse-you{animation-iteration-count:5}
+@keyframes km-pulse{0%{stroke-width:11px;opacity:.55}100%{stroke-width:56px;opacity:0}}
 .km-lbl{font:500 calc(12.5px * var(--k)) var(--font-body);fill:var(--ink);paint-order:stroke;stroke:var(--k-sea);stroke-width:calc(4px * var(--k));stroke-linejoin:round;cursor:help}
 .km-lbl:focus{outline:none;fill:var(--k-g1)}
 .km-lbl-pt{transform:translate(calc(11px * var(--k)),calc(-9px * var(--k)))}
 .km-lbl-ring{text-anchor:middle;font-weight:600}
-.km-lbl-link{fill:#CFE0F2}
+.km-lbl-link{fill:#DCE7F1}
 .km-lbl-zone,.km-lbl-dim{fill:var(--ink-3);font-style:italic}
 .km-lbl-green{fill:#93D3AC}
 .km-lbl-big,.km-lbl-done{fill:var(--k-g1);font-weight:600}
@@ -121,13 +145,13 @@
 .km-ta-middle{text-anchor:middle}
 .km-lbl-pt.km-ta-end{transform:translate(calc(-11px * var(--k)),calc(-9px * var(--k)))}
 /* kotimaa esiin: toisen maan kohteet vain vertailussa */
-.km[data-home="FI"]:not(.is-compare) [data-layer] [data-c="EE"],.km[data-home="EE"]:not(.is-compare) [data-layer] [data-c="FI"]{display:none}
+.km-svg[data-home="FI"]:not(.is-compare) [data-layer] [data-c="EE"],.km-svg[data-home="EE"]:not(.is-compare) [data-layer] [data-c="FI"]{display:none}
 .km-tip{position:absolute;left:0;top:0;z-index:5;max-width:min(320px,82%);background:#F7F2E6;color:#1F1C18;border-radius:10px;padding:10px 12px;box-shadow:0 12px 30px -10px rgba(0,0,0,.6);font-size:13.5px;line-height:1.45}
 .km-tip b{display:block;font-weight:600;margin-bottom:2px}
 .km-tip span{display:block}
 .km-tip small{display:block;margin-top:6px;color:#57524A;font-size:12px}
 .km-tip a{color:#6F540C}
-/* tietolaatikko ja jalka */
+/* tietolaatikko ja jalka (/verkko/) */
 .km-inset{border-top:1px solid rgba(232,209,147,.12);padding:12px 14px 6px;max-height:40%;overflow:auto;flex:none}
 .km-bigs{display:grid;gap:12px}
 .km-bigs.two{grid-template-columns:1fr 1fr}
@@ -152,11 +176,34 @@
 .km-legend .hvdc{border-top:2px dashed var(--k-blue)}
 .km-cap{flex:1 1 100%;margin:0;color:var(--ink-3);font-size:12px;line-height:1.45;min-height:1.45em}
 .km-attr{flex:1 1 100%;margin:0;color:#8B8373;font-size:11.5px}
-/* lähteet-osio */
 .km-src-list{columns:2 320px;column-gap:40px;margin:24px 0 0;padding:0;list-style:none}
 .km-src-list li{break-inside:avoid;margin:0 0 10px;font-size:14px;line-height:1.5;color:var(--ink-2)}
 .km-src-list a{color:var(--gold)}
-/* puhelin ja kapea näyttö: kartta tekstin yläpuolella, ei kiinnitetty */
+
+/* ---------- etusivu: kysymys kerrallaan; kartta leveällä näytöllä oikean reunan näyttämössä ---------- */
+.km-front .km-fbar{padding:0;margin:26px 0 0;border:0}
+.km-fsteps{list-style:none;margin:28px 0 0;padding:0}
+.km-front:not(.km-js) .km-fs+.km-fs{margin-top:36px;padding-top:32px;border-top:1px solid var(--line)}
+.km-js .km-fsteps{display:grid}
+.km-js .km-fs{grid-area:1/1;visibility:hidden;opacity:0;transition:opacity .3s,visibility 0s .3s}
+.km-js .km-fs.on{visibility:visible;opacity:1;transition:opacity .3s}
+.km-fs h3{font:500 clamp(26px,2.3vw,34px)/1.12 var(--font-display);letter-spacing:-.01em;margin:0;color:var(--ink)}
+.km-front .km-concl{max-width:46ch}
+.km-fs .btn{margin-top:22px}
+.km-fnav{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin:30px 0 0}
+.km-front .km-attr{margin:16px 0 0}
+.km-inline{display:none}
+.km-front.km-inl .km-inline{display:block;position:relative;margin:18px calc(-1 * var(--gutter)) 0;height:min(60vh,520px);background:var(--k-sea);border-block:1px solid rgba(232,209,147,.12);touch-action:pan-y;overflow:hidden}
+.km-front[data-home="EE"].km-inl .km-inline{height:min(50vh,420px)}
+.km-front.km-inl.is-compare .km-inline{height:min(64vh,560px)}
+/* näyttämö: kartta sulautuu sivun taustaan; piilossa olevat kohtaukset eivät ota osoitinta */
+.lava-cv [data-scene]:not(.on){pointer-events:none}
+.km-slot{touch-action:pan-y}
+.km-slot .km-svg{--k-sea:var(--paper);
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000 5%,#000 95%,transparent),linear-gradient(to right,transparent,#000 5%,#000 95%,transparent);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(to bottom,transparent,#000 5%,#000 95%,transparent),linear-gradient(to right,transparent,#000 5%,#000 95%,transparent);mask-composite:intersect}
+
+/* puhelin ja kapea näyttö: /verkko/-kartta tekstin yläpuolella, ei kiinnitetty */
 @media (max-width:1023px){
   .km-grid{grid-template-columns:1fr}
   .km-map{position:relative;top:auto;height:auto;min-height:0;max-height:none;order:-1;scroll-margin-top:88px}
@@ -164,6 +211,9 @@
   .km-inset{max-height:none}
   .km-ch{padding:40px 0}
   .km-bar{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+  .km-front .km-fbar{margin-right:calc(-1 * var(--gutter));padding-right:var(--gutter)}
+  /* puhelin: kysymyspainikkeet pysyvät näkyvissä, kun karttaa vierittää */
+  .km-front.km-inl .km-fbar{position:sticky;top:79px;z-index:4;background:var(--paper);padding-top:10px;padding-bottom:10px;margin-top:16px}
 }
 @media (max-width:560px){
   .km-bigs.two{grid-template-columns:1fr}
@@ -171,5 +221,6 @@
   .km-facts small{white-space:normal}
 }
 @media (prefers-reduced-motion:reduce){
-  .km *,.km *::before,.km *::after{transition:none!important;animation:none!important}
+  .km *,.km *::before,.km *::after,.km-front *,.km-svg *{transition:none!important;animation:none!important}
+  .km-top{transform:none;transition:none}
 }

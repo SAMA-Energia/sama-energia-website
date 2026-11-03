@@ -2,10 +2,12 @@
 """SAMA Energia — standalone-esikatselu (v35, 02.11.2026).
 Kokoaa generoidut sivut yhdeksi tiedostoksi per kieli: kaikki sivut, valikot ja linkit toimivat
 hash-reitityksellä (#/slug), CSS, fontit, kuvat ja site.js upotettuina. Ei julkaista sivustolla.
-Ajo: node scripts/build-pages.mjs && python3 scripts/build-standalone.py [versio]"""
+Ajo: node scripts/build-pages.mjs && python3 scripts/build-standalone.py [versio] [alkukohta-fi,alkukohta-et]
+Alkukohta (valinnainen): tiedosto avautuu suoraan tähän etusivun osioon, esim. verkko,vork → Yhteinen verkko / Ühine võrk."""
 import base64, os, re, sys, glob, mimetypes
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VER=sys.argv[1] if len(sys.argv)>1 else 'v35'
+START=dict(zip(('fi','et'),(sys.argv[2].split(',')+[''])[:2])) if len(sys.argv)>2 else {}
 OUT=os.path.join(ROOT,'dist-preview'); os.makedirs(OUT,exist_ok=True)
 MIME={'.webp':'image/webp','.png':'image/png','.svg':'image/svg+xml','.jpg':'image/jpeg','.woff2':'font/woff2','.js':'text/javascript'}
 def datauri(path):
@@ -63,7 +65,8 @@ def build(lang):
     html=re.sub(r'<script src="(/assets/scene(?:-et)?\.js)" defer></script>',inl,html)
     html=re.sub(r'(src|href)="(/assets/[^"]+)"',lambda m:f'{m.group(1)}="{datauri(m.group(2)) or m.group(2)}"',html)
     html=re.sub(r'srcset="[^"]*"','',html)
-    router='''<script>(function(){var cur=null;function go(){var h=location.hash||'#/';var anchor=null;
+    start=START.get(lang,'')
+    router=(f"<script>if(!location.hash)history.replaceState(null,'','#{start}');</script>" if start else '')+'''<script>(function(){var cur=null;function go(){var h=location.hash||'#/';var anchor=null;
 if(h.indexOf('#/')!==0){anchor=h.slice(1);h='#/'+(cur||'');}
 var s=h.slice(2),k=s.indexOf('::');if(k>=0){anchor=s.slice(k+2);s=s.slice(0,k);}
 s=s.replace(/\\/$/,'');var ps=document.querySelectorAll('.page[data-route]'),hit=null;

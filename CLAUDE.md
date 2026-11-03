@@ -124,3 +124,11 @@ When in doubt, leave it out and flag it.
 - Moottori `assets/kartta.js` (SVG, ei piirtosilmukkaa; reduced-motion; kosketus, näppäimistö) + `assets/kartta.css` vain tällä sivulla (`data-assets="kartta"` → build-pages lisää linkin; ei kasvata site.css:n budjettia). /verkko/ ei enää lataa scene.js:ää. Globaali rajapinta `window.SAMA_VERKKO` (ei `SAMA_KARTTA`, jonka scene.js käyttää esikatselussa).
 - verify-pages: kartan tiedostojen koot, jokaisen kerroksen johtopäätös sivulla = data, faktojen lähteet olemassa.
 - AVOIN: natiivitarkistus kaikille uusille FI/ET-teksteille; Elektrilevi mainitaan datalähteenä (jakeluverkkoyhtiö); etusivun karttarivit (FI 1 050 MW 24.2.2026, ET „Hertz 1 Kiisa") päivitetään etusivun uudistuksessa; reaaliaikainen data vaatisi Netlify-funktion — perustajapäätös.
+
+## Etusivun Yhteinen verkko -osio datasta + 3D-ilme takaisin (vestlus C, haara v35-uusi-ilme, 03.11.2026)
+
+- Madiksen valinta 3.11.2026 „Esilehele + 3D tagasi": kuusi kysymystä + „Teidän liittymänne" etusivun osiossa `#verkko` / `#vork` (painikkeet 1–7, yksi kysymys kerrallaan, johtopäätös, iso luku, lähde). Lohko `kartta-etusivu:alku … loppu` generoidaan: `python3 scripts/kaart/build_page.py` — älä muokkaa käsin. verify-pages tarkistaa johtopäätökset myös etusivulta.
+- Kartta: leveällä näytöllä oikean reunan näyttämössä (`.lava-cv .km-slot`, sama kohtauslogiikka kuin muilla), puhelimella ja reduced-motionilla osion sisällä (`.km-inline`, painikkeet kiinnittyvät). Ilme kuten v39: maa kultaisina pisteinä, johtojen hehku, syvyys hiirellä (kaksi SVG:tä, verkkotaso siirtyy 2D-siirrolla). Ei CSS-perspektiiviä: Chromium jätti sen alla SVG-muutoksia piirtämättä.
+- Moottori `assets/kartta.js` palvelee kaikkia `[data-kartta]`-lohkoja (tunnisteet km0-, km1-…); budjetit kartta.js 36 kt, kartta.css 20 kt. Esikatselu suoraan osioon: `python3 scripts/build-standalone.py v35-kartta verkko,vork`.
+- FI-todisterivin varastoluvut samaksi kuin kartalla: 2 085 MW (Fingrid avoin data 424, 2.11.2026) ja lähes 6 GW sopimuksia (Fingrid 23.10.2026).
+- AVOIN: natiivitarkistus uusille FI/ET-teksteille; `assets/kartta.json` ja `kartta-verkko.json` eivät ole enää käytössä (scene.js:n karttakoodi samoin); vanhat `.mp-*`-säännöt site.css:ssä käyttämättä.
