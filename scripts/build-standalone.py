@@ -63,6 +63,10 @@ def build(lang):
         if not bundle[0]: bundle[0]='<script>window.SAMA_KARTTA='+kartta+';window.SAMA_KD='+kd+';window.SAMA_KV='+kv+';</script><script>'+open(os.path.join(ROOT,m.group(1).lstrip('/')),encoding='utf-8').read().replace('</script','<\\/script')+'</script>'
         return ''
     html=re.sub(r'<script src="(/assets/scene(?:-et)?\.js)" defer></script>',inl,html)
+    # kartta.js tekstinä sivun loppuun kerran (ei data:-osoitteena: tiedostonäkymät estävät data:-skriptit CSP:llä,
+    # jolloin kartta ei käynnisty — havaittu 3.11.2026); järjestys kuten tuotannossa: scene.js ensin, sitten kartta.js
+    kartta_js=('<script>'+open(os.path.join(ROOT,'assets/kartta.js'),encoding='utf-8').read().replace('</script','<\\/script')+'</script>') if 'data-kartta' in html else ''
+    html=re.sub(r'<script src="/assets/kartta\.js" defer></script>\n?','',html)
     html=re.sub(r'(src|href)="(/assets/[^"]+)"',lambda m:f'{m.group(1)}="{datauri(m.group(2)) or m.group(2)}"',html)
     html=re.sub(r'srcset="[^"]*"','',html)
     start=START.get(lang,'')
@@ -79,7 +83,7 @@ window.addEventListener('hashchange',go);go();})();</script>'''
     if 'data-kartta' in html:   # /verkko/-sivun kartta: data sivun sisään, koska esikatselutiedosto ei voi hakea tiedostoja
         for jid,f in (('kartta-pohja-json','assets/kartta-pohja.json'),('kartta-data-json','assets/kartta-data.json'),('kartta-110-json','assets/kartta-110.json')):
             kartta_json+=f'<script type="application/json" id="{jid}">'+open(os.path.join(ROOT,f),encoding='utf-8').read().replace('</','<\\/')+'</script>\n'
-    html=html.replace('</body>','') + router + kartta_json + f'<script>{js}</script>\n' + bundle[0] + '\n</body>\n</html>'
+    html=html.replace('</body>','') + router + kartta_json + f'<script>{js}</script>\n' + bundle[0] + kartta_js + '\n</body>\n</html>'
     out=os.path.join(OUT,f'samaenergia-{lang}-{VER}.standalone.html'); open(out,'w',encoding='utf-8').write(html)
     print(out, len(divs),'sivua', round(len(html)/1e6,2),'MB')
 for l in ('fi','et'): build(l)
