@@ -108,3 +108,11 @@ When in doubt, leave it out and flag it.
 - Päätökset datasta: FI 2025 kulutus 84,6 TWh (Fingrid), FI huippu = ennätys 15 553 MW 8.1.2026, EE ennuste arengukava 7/2026 (10,0 / 11,2 TWh). Reservihintojen lasku ei kartalle (reservisivulle mallinnettuna).
 - CSS-budjetti 88 → 92 kt (verify-pages) — avoin perustajapäätös. Esikatselu: `python3 scripts/build-standalone.py v39`.
 - AVOIN: etusivun näkyvä sanamäärä ~1 100 (tavoite 500–800): kenelle-osion "Miksi tässä" -kappaleet ja kivun tiilet ovat seuraavat karsittavat; natiivitarkistus kaikille uusille FI/ET-teksteille.
+
+## v39-1 — kontrollin korjaukset (haara v35-uusi-ilme, 03.11.2026)
+
+- Kontrolli: `docs/kontroll/2026-11-02-audit.md` (arvosanat, 10 korjausta, natiivilista; osio "Seis 03.11.2026" kertoo mitä on jo tehty).
+- Varavoima/varutoide aina ehdolla myös etusivun hotellikortissa. 3D: ei erillistä akkuinvertteriä — `_xPcs` piirtää akkukaapin (etusivun kuvitus 3 kaappia, varasto-kerros 4); INVERTTERI/INVERTER-tarrat pois.
+- Reservisivujen data-desc "mallinnettu/modelleeritud", ei "kolme skenaariota"; "satoja kertoja / sadu kordi" pois (ei lähdettä).
+- Puhelin (<= 750 px, sivuilla joilla .lava): 3D-moottoria ei käynnistetä; still-kuva `assets/hero-3d.webp` (938×586, ei tarroja) hero-ryhmässä. Kuvan päivitys moottorimuutosten jälkeen: renderöi .cv-hero still-tilassa 519 px leveällä ikkunalla, DPR 2 (canvas 479 css-px < 480 = ei tarroja). Hero-teksti ilman fade-animaatiota.
+- Tahot omat committinsa ja pushaavat työhaaraan itse (Madisin ohje 03.11.2026); mainiin vain Madisin luvalla.
