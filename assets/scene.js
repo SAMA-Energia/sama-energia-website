@@ -1023,7 +1023,7 @@ class Component extends DCLogic {
       hall: [-0.86, -0.9, 0.22, 0.02, 0.24], hvac: [-0.26, -0.58, -0.1, -0.44],
       kiosk: [0.5, -0.84, 0.69, -0.66, 0.15], meter: [0.77, -0.78, 0.84, -0.7, 0.1], bnd: 0.9,
       pad: [0.39, -0.38, 0.77, 0.33], cabs: [[0.46, -0.32, 0.6, -0.19], [0.46, -0.15, 0.6, -0.02], [0.46, 0.02, 0.6, 0.15]], cabH: 0.15,
-      pcs: [0.46, 0.19, 0.6, 0.29, 0.12], ems: [0.7, 0.25], inv: [-0.25, -0.15], sw: [-0.6, -0.46],
+      pcs: [0.46, 0.19, 0.6, 0.32, 0.15], ems: [0.7, 0.25], inv: [-0.25, -0.15], sw: [-0.6, -0.46],
       park: [-0.8, 0.3, 0.24, 0.58], carport: [-0.74, 0.32, -0.08, 0.5, 0.1], sb: 0.07
     };
     const sb = s.sb, u0 = s.hall[0] + sb, u1 = s.hall[2] - sb, v0 = s.hall[1] + sb, v1 = s.hall[3] - sb, rows = [];
@@ -1099,13 +1099,8 @@ class Component extends DCLogic {
     K.dot(B.fv(0.2, 0.86), 1.4, '#5BD08D');
   }
   _xPcs(K, P, b, ghost, lift) {
-    const u0 = b[0], v0 = b[1], u1 = b[2], v1 = b[3], H = b[4], dz = lift || 0;
-    if (ghost) { this._xGbox(K, P, u0, v0, u1, v1, 0.024, H); return; }
-    if (!dz) { K.shadow(P, u0, v0, u1, v1, H, 0.012); K.box(P, u0 - 0.006, v0 - 0.006, u1 + 0.006, v1 + 0.006, 0.012, 0.024, 'conc'); }
-    const B = K.box(P, u0, v0, u1, v1, 0.024 + dz, H + dz, 'pcs'), lc = K.T ? 'rgba(212,181,116,0.35)' : 'rgba(0,0,0,0.4)';
-    for (let i = 0; i < 6; i++) K.ln([B.fu(0.15, 0.2 + i * 0.1), B.fu(0.85, 0.2 + i * 0.1)], lc, 0.8);
-    K.quad(B.fv, 0.08, 0.06, 0.92, 0.92, null, lc);
-    const ws = B.fv(0.7, 0.68); K.fill([[ws[0] - 2.6, ws[1] + 2.2], [ws[0] + 2.6, ws[1] + 2.2], [ws[0], ws[1] - 2.4]], '#D4B574');
+    /* 03.11.2026: no separately drawn inverter (founder rule, brief 00 par. 3) - the slot is one more battery cabinet. */
+    this._xCabS(K, P, b, b[4], ghost, lift);
   }
   _xEms(K, P, S, ghost, lift) {
     const e = S.ems, dz = lift || 0;
@@ -1414,7 +1409,7 @@ class Component extends DCLogic {
           L('AURINKOPANEELIT', P(-0.36, -0.5, S.hall[4] + 0.03), 30, -58); L('AURINKOKATOS', P(-0.41, 0.41, 0.13), 34, 44);
         } else if (k === 2) {
           this._xPadBox(K, P, S); S.cabs.forEach((cb) => this._xCabS(K, P, cb, S.cabH, false)); this._xPcs(K, P, S.pcs); this._xBollards(K, P, S);
-          L('AKUSTOT', P(0.53, -0.08, 0.16), 34, -40); L('INVERTTERI', P(0.53, 0.24, 0.12), -30, 36);
+          L('AKUSTOT', P(0.53, -0.08, 0.16), 34, -40);
         } else if (k === 3) {
           this._xEms(K, P, S); this._xCtrl(K, P, S, 0.95); this._xAgg(K, P, S, g2, 1);
           L('OHJAUS · EMS', P(S.ems[0], S.ems[1], 0.14), 24, 30);
@@ -1480,7 +1475,7 @@ class Component extends DCLogic {
     if (this._hss) return this._hss;
     const s = {
       hall: [-0.24, -0.96, 0.56, -0.34, 0.2], sw: [-0.62, -0.52], hvac: [0.08, -0.78, 0.22, -0.66], inv: [-0.48, -0.4],
-      pad: [0.64, -0.66, 0.93, -0.18], cabs: [[0.7, -0.6, 0.83, -0.49], [0.7, -0.46, 0.83, -0.35]], pcs: [0.7, -0.32, 0.83, -0.23, 0.1],
+      pad: [0.64, -0.66, 0.93, -0.18], cabs: [[0.7, -0.6, 0.83, -0.49], [0.7, -0.46, 0.83, -0.35]], pcs: [0.7, -0.32, 0.83, -0.21, 0.13],
       kiosk: [0.64, -0.96, 0.8, -0.8, 0.13],
       hA: [-0.66, 0.26, -0.26, 0.58, 0.1, 0.09, 4, 2], hB: [0.06, 0.3, 0.44, 0.6, 0.1, 0.09],
       road: [-0.12, 0.06], poles: [-0.85, -0.35, 0.15, 0.65], pv: 0.1
@@ -1507,7 +1502,7 @@ class Component extends DCLogic {
     add(S.pcs[0] + S.pcs[1] + 0.3, 'b', () => this._xPcs(K, P, S.pcs));
     add(S.pad[2] + S.pad[3], 'b', () => [-0.6, -0.42, -0.24].forEach((v) => K.cyl(P, S.pad[2] - 0.012, v, 0.006, 0.01, 0.045, 'bol')));
     const hA = S.hA, hB = S.hB;
-    add((hA[0] + hA[2] + hA[1] + hA[3]) / 2, 'h', () => { this._hHouse(K, P, hA, 'panels'); this._hDev(K, P, hA, { bat: true, inv: true, meter: true }); });
+    add((hA[0] + hA[2] + hA[1] + hA[3]) / 2, 'h', () => { this._hHouse(K, P, hA, 'panels'); this._hDev(K, P, hA, { bat: true, meter: true }); });
     add((hB[0] + hB[2] + hB[1] + hB[3]) / 2, 'h', () => { this._hHouse(K, P, hB, 'solar'); this._hDev(K, P, hB, { meter: true }); });
     add(-0.16 + 0.24, 'n', () => { const u0 = -0.2, u1 = -0.12, v0 = 0.14, v1 = 0.25; K.box(P, u0, v0, u1, v1, 0.008, 0.03, 'dark'); K.box(P, u0 + 0.008, v0 + 0.025, u1 - 0.008, v1 - 0.025, 0.03, 0.048, 'dark'); });
     S.poles.forEach((u) => add(u + S.pv, 'n', () => K.pole(P, u, S.pv, 0.22, 'v', false)));
@@ -1573,7 +1568,7 @@ class Component extends DCLogic {
     const it = [], add = (d, f) => it.push([d, f]), h = S.house;
     [[-0.9, -0.85, 0.85], [-0.5, -0.92, 0.75], [0.1, -0.92, 0.8], [0.6, -0.8, 0.7], [0.88, -0.42, 0.75], [-0.93, -0.2, 0.7], [-0.9, 0.32, 0.65], [0.9, 0.1, 0.6]].forEach((t) => add(t[0] + t[1], () => K.tree(P, t[0], t[1], t[2])));
     add(-0.95 + 0.52, () => K.box(P, -0.95, 0.5, 0.3, 0.54, 0, 0.035, 'tree'));
-    add((h[0] + h[2] + h[1] + h[3]) / 2, () => { this._hHouse(K, P, h, roof); this._hDev(K, P, h, { bat: true, inv: true, meter: true, ems: true }); });
+    add((h[0] + h[2] + h[1] + h[3]) / 2, () => { this._hHouse(K, P, h, roof); this._hDev(K, P, h, { bat: true, meter: true, ems: true }); });
     add(S.car[0] + S.car[1] + 0.3, () => { const c = S.car; K.box(P, c[0], c[1], c[2], c[3], 0.01, 0.045, 'dark'); K.box(P, c[0] + 0.012, c[1] + 0.05, c[2] - 0.012, c[3] - 0.05, 0.045, 0.075, 'dark'); });
     add(S.cab[0] + S.cab[1], () => { const c = S.cab; K.box(P, c[0], c[1], c[2], c[3], 0, c[4], 'kiosk'); });
     it.sort((x, y) => x[0] - y[0]).forEach((e) => e[1]());
@@ -1598,7 +1593,7 @@ class Component extends DCLogic {
       const sc = hh[4] / 0.17, at = (f) => hh[1] + (hh[3] - hh[1]) * f;
       if (k === 1) { this._hPanels(K, P, hh, hh[6], hh[7]); L('AURINKOPANEELIT', this._hRoofPt(P, hh, 0.3, 0.6, 0.02), -40, -46); }
       else if (k === 2) { this._hSolarRoof(K, P, hh); L('AURINKOKATTO', this._hRoofPt(P, hh, 0.3, 0.6, 0.02), -40, -46); }
-      else if (k === 3) { this._hDev(K, P, hh, { bat: true, inv: true }); L('KOTIAKKU', P(hh[2] + 0.045, at(0.31), 0.1 * sc), 30, 40); L('INVERTTERI', P(hh[2] + 0.022, at(0.61), 0.12 * sc), 34, -36); }
+      else if (k === 3) { this._hDev(K, P, hh, { bat: true }); L('KOTIAKKU', P(hh[2] + 0.045, at(0.31), 0.1 * sc), 30, 40); }
       else if (k === 4) { this._hDev(K, P, hh, { ems: true }); this._hxCtrl(K, P, S, 0.9); L('OHJAUS', P(hh[2] + 0.016, at(0.74), 0.19 * sc), 34, -36); }
       else if (k === 5) {
         this._hDev(K, P, hh, { meter: true }); this._hxCable(K, P, S, 0.85);
