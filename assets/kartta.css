@@ -193,7 +193,7 @@
 .km-fnav{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin:30px 0 0}
 .km-front .km-attr{margin:16px 0 0}
 .km-inline{display:none}
-.km-front.km-inl .km-inline{display:block;position:relative;margin:18px calc(-1 * var(--gutter)) 0;height:min(60vh,520px);background:var(--k-sea);border-block:1px solid rgba(232,209,147,.12);touch-action:pan-y;overflow:hidden}
+.km-front.km-inl .km-inline{display:block;position:relative;margin:18px 0 0;height:min(60vh,520px);background:var(--k-sea);border:1px solid rgba(232,209,147,.14);border-radius:14px;touch-action:pan-y;overflow:hidden}
 .km-front[data-home="EE"].km-inl .km-inline{height:min(50vh,420px)}
 .km-front.km-inl.is-compare .km-inline{height:min(64vh,560px)}
 /* näyttämö: kartta sulautuu sivun taustaan; piilossa olevat kohtaukset eivät ota osoitinta */
@@ -212,7 +212,8 @@
   .km-ch{padding:40px 0}
   .km-bar{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
   .km-front .km-fbar{margin-right:calc(-1 * var(--gutter));padding-right:var(--gutter)}
-  /* puhelin: kysymyspainikkeet pysyvät näkyvissä, kun karttaa vierittää */
+  /* puhelin ja tabletti: kartta reunasta reunaan; kysymyspainikkeet pysyvät näkyvissä, kun karttaa vierittää */
+  .km-front.km-inl .km-inline{margin:18px calc(-1 * var(--gutter)) 0;border-width:1px 0;border-radius:0}
   .km-front.km-inl .km-fbar{position:sticky;top:79px;z-index:4;background:var(--paper);padding-top:10px;padding-bottom:10px;margin-top:16px}
 }
 @media (max-width:560px){
