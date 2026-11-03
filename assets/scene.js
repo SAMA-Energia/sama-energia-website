@@ -1878,9 +1878,11 @@ class Component extends DCLogic {
     };
   }
 }
-var c=new Component({scheme:'yö'});c.state.board=false;window.SAMA3D=c;c.componentDidMount();
+/* 03.11.2026: phones (<=750 px) get a static image of the same still frame on the front page - engine not started. */
+var phoneStill=false;try{phoneStill=!!document.querySelector('.lava')&&window.matchMedia('(max-width:750px)').matches;}catch(e){}
+if(!phoneStill){var c=new Component({scheme:'yö'});c.state.board=false;window.SAMA3D=c;c.componentDidMount();}
 })();
-(function(){var c=window.SAMA3D;if(!c)return;
+(function(){var c=window.SAMA3D,noEngine=!c;if(noEngine){if(!document.querySelector('[data-map]'))return;c={setMapLayers:function(){},_rm:true,_HB:[]};}
 function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));}
 var mob=false;try{mob=window.matchMedia('(max-width:1000px)').matches;}catch(e){}
 var still=mob||c._rm;
@@ -1889,7 +1891,7 @@ function loadMap(){
  if(window.SAMA_KD){c._kd=window.SAMA_KD;}else fetch('/assets/kartta-data.json').then(function(r){return r.json();}).then(function(d){c._kd=d;}).catch(function(e){console.error(e);});
  if(window.SAMA_KV){c._kv=window.SAMA_KV;}else fetch('/assets/kartta-verkko.json').then(function(r){return r.json();}).then(function(d){c._kv=d;c._kvxy=null;}).catch(function(e){console.error(e);});
 }
-if(document.querySelector('.cv-map'))loadMap();
+if(!noEngine&&document.querySelector('.cv-map'))loadMap();
 /* layer buttons + compare toggle, in any [data-map] block */
 $$('[data-map]').forEach(function(box){
  var init={};$$('.mp-l',box).forEach(function(b){init[b.getAttribute('data-l')]=b.getAttribute('aria-pressed')==='true'?1:0;});
@@ -1905,7 +1907,7 @@ $$('[data-map]').forEach(function(box){
 });
 /* ---- stage ---- */
 var lava=document.querySelector('.lava');
-if(lava){
+if(lava&&!noEngine){
  var stage=lava.querySelector('.lava-stage'),layers=$$('.lava-cv [data-scene]',lava),groups=$$('.lv-g[data-scene]',lava),tip=lava.querySelector('.lava-tip'),lab=lava.querySelector('.lava-l');
  var scene='hero',HB=c._HB;
  layers.forEach(function(k){var on=k.getAttribute('data-scene')==='hero';k.classList.toggle('on',on);k.dataset.off=on?'0':'1';});
@@ -1943,6 +1945,6 @@ if(lava){
  var pb=lava.querySelector('.lv-pause');if(pb)pb.addEventListener('click',function(){var p=!c.state.paused;c.setState({paused:p});pb.textContent=p?pb.getAttribute('data-r'):pb.getAttribute('data-p');pb.setAttribute('aria-pressed',p?'true':'false');});
  $$('.lv-t',lava).forEach(function(b){b.addEventListener('click',function(){c._wUser=true;var wb=b.getAttribute('data-wb')==='1';c.setState({wb:wb});$$('.lv-t',lava).forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});});});
  /* phones and reduced motion: one still frame of the hero, then stop drawing */
- if(still){stage.setAttribute('data-still','1');var hg=lava.querySelector('.lv-hero');if(hg)hg.appendChild(stage);setTimeout(function(){if(!document.querySelector('[data-map] .cv-map')){c._alive=false;cancelAnimationFrame(c._raf);}},1500);}
+ if(still){stage.setAttribute('data-still','1');var hg=lava.querySelector('.lv-hero');if(hg&&mob)hg.appendChild(stage);setTimeout(function(){if(!document.querySelector('[data-map] .cv-map')){c._alive=false;cancelAnimationFrame(c._raf);}},1500);}
 }
 })();

@@ -135,8 +135,9 @@ p{margin:0}
 .hero .lead{margin-bottom:28px}
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
 .hero .badges{margin-top:20px}
-.hero-anim{animation:up .7s var(--ease) both}
-.hero-anim:nth-child(2){animation-delay:.08s}.hero-anim:nth-child(3){animation-delay:.16s}.hero-anim:nth-child(4){animation-delay:.24s}.hero-anim:nth-child(5){animation-delay:.32s}
+/* 03.11.2026: hero text without fade-in (NN/g 2024: headline not animated; LCP) */
+.lava-still{display:none}
+@media (max-width:750px){.lava .lava-stage{display:none}.lava-still{display:block;width:100%;height:auto;margin-top:8px}}
 @keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 
 /* ---------- pain ---------- */
