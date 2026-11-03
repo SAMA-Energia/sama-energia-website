@@ -171,7 +171,7 @@ Punktide kontroll: EstLink 1 Harku–Espoo ja EstLink 2 Püssi–Anttila — OSM
 ## Interaktsioon ja jõudlus
 
 - **SVG, mitte canvas** (brief ütles „canvas, ≤ 2 kaadrit sekundis"): kui midagi ei liigu, ei joonista leht üldse (0 kaadrit); objektid on DOM-is, nii et hiir, puude, Tab ja allika näitamine töötavad ilma tabamuse arvutuseta; terav igal suumil. /verkko/ ei lae enam 3D-mootorit `scene.js` (146 kB, gzip 39 kB) — kaardimoodul on 26 kB (gzip 8,5 kB). Esilehe lava kasutab edasi `scene.js`-i ja sama andmefaili.
-- **Laadimine**: tekst kõigepealt; kaart laeb, kui see on 600 px kaugusel nähtavast alast või brauser on jõude (≤ 2,5 s); 110 kV ainult nupu peale.
+- **Laadimine**: tekst kõigepealt; /vork/-, /verkko/-lehel laeb kaart, kui see on 600 px kaugusel nähtavast alast või brauser on jõude (≤ 2,5 s); esilehel ainult siis, kui lõik läheneb (kontroll 2.11.2026: telefonile ei laeta kaardiandmeid, kui lugeja lõiku ei jõua); 110 kV ainult nupu peale.
 - **Liikumine**: vaate vahetus 380 ms; `prefers-reduced-motion`: kohe, ilma üleminekuteta; „teie objekt" pulss 4 korda ja seisma.
 - **Telefon**: puudutus näitab allikat, teine puudutus peidab; `touch-action: pan-y` (leht kerib normaalselt); kihinupud keritavad ja aktiivne nupp tuleb nähtavale.
 - **Klaviatuur ja ligipääs**: kihinupud on nupud (`aria-pressed`), kaardi sildid Tab-iga, Esc sulgeb; „i" näitab allikat lingiga; kõik arvud on ka tekstis; pealdis `aria-live`.

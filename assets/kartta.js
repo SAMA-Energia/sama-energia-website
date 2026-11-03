@@ -560,7 +560,9 @@
     var near = new IntersectionObserver(function (es) { if (es.some(function (e) { return e.isIntersecting; })) { near.disconnect(); go(); } }, { rootMargin: '600px 0px' });
     near.observe(root);
   } else go();
-  if ('requestIdleCallback' in window) requestIdleCallback(go, { timeout: 2500 }); else setTimeout(go, 1200);
+  /* /verkko/-sivulla kartta on pääsisältö: ladataan viimeistään joutilaana. Etusivulla vain, kun osio lähestyy
+     (kontrolli 2.11.2026: ei kartta-aineistoa puhelimelle, jos lukija ei tule osioon) */
+  if (!FRONT) { if ('requestIdleCallback' in window) requestIdleCallback(go, { timeout: 2500 }); else setTimeout(go, 1200); }
   return api;
   }
 })();
