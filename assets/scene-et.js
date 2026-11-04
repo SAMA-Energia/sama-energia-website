@@ -58,6 +58,7 @@ class Component extends DCLogic {
     const grp = (name) => { const el = document.querySelector('.lv-g[data-scene="' + name + '"]'); if (!el) return null; const r = el.getBoundingClientRect(); return Math.min(1, Math.max(0, (vh * 0.5 - r.top) / r.height)); };
     const g2 = grp('map'); if (g2 !== null) this._p2 = g2;
     const g3 = grp('sld'); if (g3 !== null) this._p3 = g3;
+    if (this._p3Lock !== undefined) this._p3 = this._p3Lock;
     const s = this.state, patch = {};
     if (s.board !== board) patch.board = board;
     if (s.vh !== vh) patch.vh = vh;
@@ -735,26 +736,10 @@ class Component extends DCLogic {
       K.quad(B.fv, 0.62, 0.0, 0.7, 0.5, T ? null : 'rgba(20,20,20,0.85)', T ? K.EB : 'rgba(0,0,0,0.5)', 0.8);
       K.box(P, -0.41, -0.89, 0.87, -0.81, 0.3, 0.315, 'roof');
     });
-    add(0.16, () => {
-      const b = S.pcs, u0 = b[0], v0 = b[1], u1 = b[2], v1 = b[3], H = b[4];
-      K.shadow(P, u0, v0, u1, v1, H, 0.018);
-      K.box(P, u0 - 0.01, v0 - 0.01, u1 + 0.01, v1 + 0.01, 0.018, 0.035, 'conc');
-      const B = K.box(P, u0, v0, u1, v1, 0.035, H, 'pcs');
-      const lc = T ? 'rgba(212,181,116,0.35)' : 'rgba(0,0,0,0.4)';
-      for (let i = 0; i < 8; i++) K.ln([B.fu(0.12, 0.18 + i * 0.08), B.fu(0.88, 0.18 + i * 0.08)], lc, 0.9);
-      K.quad(B.fv, 0.06, 0.05, 0.48, 0.92, null, lc); K.quad(B.fv, 0.52, 0.05, 0.94, 0.92, null, lc);
-      K.quad(B.fv, 0.14, 0.6, 0.38, 0.78, T ? '#0B0B09' : 'rgba(20,28,28,1)', lc, 0.8);
-      const ws = B.fv(0.73, 0.7); K.fill([[ws[0] - 3.2, ws[1] + 2.6], [ws[0] + 3.2, ws[1] + 2.6], [ws[0], ws[1] - 3]], '#D4B574');
-      [0.3, 0.7].forEach((f) => { const c = B.ft(f, 0.5); K.g.strokeStyle = lc; K.g.lineWidth = 0.9; K.g.beginPath(); K.g.ellipse(c[0], c[1], 0.055 * K.a * 1.2247, 0.055 * K.a * 0.7071, 0, 0, Math.PI * 2); K.g.stroke(); });
-    });
+    /* 04.11.2026: ei erillistä invertteriä — samalla paikalla neljäs akkukaappi (kaapit rinnan); tehoelektroniikka piirretään avoimen kaapin sisään */
+    add(0.22, () => this._cab(K, P, [0.32, -0.4, 0.56, -0.12], S.cabH, false));
     S.cabs.forEach((cb, i) => add(cb[0] + cb[1] + 0.3, () => this._cab(K, P, cb, S.cabH, i === 0)));
-    add(0.92, () => {
-      const e = S.ems;
-      K.cyl(P, e[0], e[1], 0.007, 0.018, 0.14, 'steel');
-      const B = K.box(P, e[0] - 0.04, e[1] - 0.02, e[0] + 0.04, e[1] + 0.02, 0.13, 0.21, 'pcb');
-      K.quad(B.fv, 0.15, 0.4, 0.6, 0.8, T ? '#0B0B09' : 'rgba(18,30,24,1)', null);
-      K.ln([P(e[0] + 0.03, e[1], 0.21), P(e[0] + 0.03, e[1], 0.29)], T ? K.EN : 'rgba(150,154,158,0.9)', 1);
-    });
+    /* 04.11.2026: ohjaus (EMS) on kaapin sisällä, ei erillistä tolppakoteloa */
     [[-0.2, 0.58], [0.15, 0.58], [0.45, 0.58]].forEach((bb) => add(bb[0] + bb[1], () => K.cyl(P, bb[0], bb[1], 0.012, 0.018, 0.075, 'bol')));
     q.sort((x, y) => x[0] - y[0]).forEach((e) => e[1]());
   }
@@ -775,11 +760,14 @@ class Component extends DCLogic {
     K.fill([P(u0, v0, z0), P(u1, v0, z0), P(u1, v0, H), P(u0, v0, H)], T ? '#0B0B09' : K.C([30, 33, 35], 1));
     K.fill([P(u0, v0, z0), P(u0, v1, z0), P(u0, v1, H), P(u0, v0, H)], T ? '#100F0D' : K.C([40, 43, 46], 1));
     K.fill([P(u0, v0, z0), P(u1, v0, z0), P(u1, v1, z0), P(u0, v1, z0)], T ? '#0D0C0A' : K.C([26, 28, 30], 1));
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 6; i++) {
       const za = z0 + 0.015 + i * 0.036;
       const B = K.box(P, u0 + 0.02, v0 + 0.03, u1 - 0.02, v1 - 0.025, za, za + 0.028, 'cell');
       K.ln([B.fv(0.82, 0.3), B.fv(0.95, 0.3)], T ? K.EN : 'rgba(200,204,208,0.6)', 1);
     }
+    /* tehoelektroniikka (PCS) kaapin sisällä, akkuhyllyjen yläpuolella */
+    const pz = z0 + 0.015 + 6 * 0.036, PM = K.box(P, u0 + 0.02, v0 + 0.03, u1 - 0.02, v1 - 0.025, pz, pz + 0.064, 'pcs');
+    for (let i = 0; i < 4; i++) K.ln([PM.fv(0.1, 0.18 + i * 0.2), PM.fv(0.52, 0.18 + i * 0.2)], T ? 'rgba(212,181,116,0.35)' : 'rgba(0,0,0,0.4)', 0.8);
     const bz = z0 + 0.015 + 8 * 0.036;
     const BM = K.box(P, u0 + 0.03, v0 + 0.05, u1 - 0.03, v1 - 0.03, bz, bz + 0.032, 'pcb');
     K.quad(BM.fv, 0.1, 0.3, 0.45, 0.75, T ? '#0B0B09' : 'rgba(14,24,18,1)', null);
@@ -883,14 +871,14 @@ class Component extends DCLogic {
     }
     if (k === 3) {
       const cb = S.cabs[0], u0 = cb[0], u1 = cb[2], vf = cb[3] - 0.025, z0 = 0.038;
-      for (let i = 0; i < 8; i++) {
+      for (let i = 0; i < 6; i++) {
         const za = z0 + 0.015 + i * 0.036, uu = u0 + 0.02 + st.lvl * (u1 - u0 - 0.04);
         K.fill([P(u0 + 0.02, vf, za + 0.004), P(uu, vf, za + 0.004), P(uu, vf, za + 0.024), P(u0 + 0.02, vf, za + 0.024)], 'rgba(91,208,141,0.34)');
       }
       [S.cabs[1], S.cabs[2]].forEach((c2, i) => K.dot(P(c2[0] + 0.03, c2[3], S.cabH - 0.03), 1.8, 'rgba(91,208,141,' + (0.4 + 0.6 * blink(i * 2)).toFixed(2) + ')'));
-      const pc = S.pcs, fv = (s, qz) => P(pc[0] + s * (pc[2] - pc[0]), pc[3], 0.035 + qz * (pc[4] - 0.035));
-      g.save(); g.beginPath(); const p0 = fv(0.16, 0.66); g.moveTo(p0[0], p0[1]);
-      for (let i = 1; i <= 16; i++) { const s = 0.16 + 0.2 * i / 16, pp = fv(s, 0.69 + 0.04 * Math.sin(i * 0.9 + st.time * 3)); g.lineTo(pp[0], pp[1]); }
+      const pz = z0 + 0.015 + 6 * 0.036, wf = (s, dz) => P(u0 + 0.13 + s * (u1 - u0 - 0.16), vf, pz + 0.034 + dz);
+      g.save(); g.beginPath(); const p0 = wf(0, 0); g.moveTo(p0[0], p0[1]);
+      for (let i = 1; i <= 16; i++) { const pp = wf(i / 16, 0.011 * Math.sin(i * 0.9 + st.time * 3)); g.lineTo(pp[0], pp[1]); }
       g.strokeStyle = 'rgba(212,181,116,0.85)'; g.lineWidth = 1; g.stroke(); g.restore();
     }
     if (k === 4) {
@@ -903,7 +891,7 @@ class Component extends DCLogic {
       [['330 kV', [-0.58, 0.55, 0.58], 16, -26], ['TRAFO 330/110 kV', [0.1, 0.55, 0.3], 34, -46], ['110 kV', [0.12, -0.05, 0.34], 20, -26], ['110/10 kV', [0.6, -0.45, 0.25], 26, -34]],
       [['10 kV ÕHULIIN', [0.45, 0.3, 0.26], 26, 44], ['MAAKAABEL', [-0.47, 0.6, 0], 30, 30], ['ALAJAAM', [-0.29, -0.15, 0.14], -22, 28], ['TEISED KLIENDID', [0.57, -0.74, 0.16], 22, -26]],
       [['ARVESTI', [-0.5, 0.62, 0.12], 20, -30], ['OMA ALAJAAM 10/0,4 kV', [-0.53, 0.2, 0.17], 20, -40], ['PEAKILP', [-0.2, -0.16, 0.2], 26, -60], ['TARBIJAD', [0.4, -0.29, 0.16], 30, -40], ['PÄIKE · VALIKULINE', [0.0, -0.69, 0.35], 26, -30]],
-      [['INVERTER · PCS', [0.43, -0.27, 0.26], 30, -36], ['AKUPANGAD', [-0.12, 0.2, 0.36], 20, -42], ['AKUHALDUS · BMS', [-0.44, 0.31, 0.33], 14, -64], ['JUHTIMINE · EMS', [0.52, 0.38, 0.21], 24, -22], ['JAHUTUS', [-0.12, 0.37, 0.16], -26, 46]],
+      [['JÕUELEKTROONIKA · PCS', [-0.5, 0.315, 0.29], -34, -40], ['AKUPANGAD', [-0.12, 0.2, 0.36], 20, -42], ['AKUHALDUS · BMS', [-0.38, 0.315, 0.16], -46, 16], ['JUHTIMINE · EMS', [-0.44, 0.22, 0.37], 14, -64], ['JAHUTUS', [-0.12, 0.37, 0.16], -26, 46]],
       [['AKUPANK', [-0.44, 0.2, 0.75], 18, -26], ['MOODUL', [0.26, 0.36, 0.37], 30, 30], ['BMS-KAART', [0.08, 0.2, 0.42], 24, -50], ['ELEMENT', [0.5, 0.16, 0.56], 26, -30]]
     ][k];
     if (act > 0.05) CL.forEach((cl) => labs.push({ t: 'c', p: P(cl[1][0], cl[1][1], cl[1][2]), dx: cl[2], dy: cl[3], s: cl[0], al: act * act }));
@@ -926,11 +914,15 @@ class Component extends DCLogic {
       g.globalAlpha = Math.min(1, l.al);
       const a = pt(l.p);
       if (l.t === 'c') {
-        const ex = a[0] + l.dx, ey = a[1] + l.dy, sx = l.dx >= 0 ? 1 : -1;
+        g.font = '600 11px \"IBM Plex Sans\", sans-serif';
+        /* 04.11.2026: tarra kääntyy toiselle puolelle, jos teksti menisi kanvaasin reunan yli */
+        const tw = g.measureText(l.s).width, tf = g.getTransform ? g.getTransform().a : 1, cw = g.canvas.clientWidth || g.canvas.width / (tf || 1);
+        let dx = l.dx; if (dx < 0 && a[0] + dx - 18 - tw < 2) dx = -dx; else if (dx >= 0 && a[0] + dx + 18 + tw > cw - 2) dx = -dx;
+        const ex = a[0] + dx, ey = a[1] + l.dy, sx = dx >= 0 ? 1 : -1;
         g.strokeStyle = 'rgba(243,238,225,0.5)'; g.lineWidth = 1; g.beginPath(); g.moveTo(a[0], a[1]); g.lineTo(ex, ey); g.lineTo(ex + 10 * sx, ey); g.stroke();
         g.fillStyle = '#F3EEE1'; g.beginPath(); g.arc(a[0], a[1], 2.2, 0, Math.PI * 2); g.fill();
-        g.font = '600 11px \"IBM Plex Sans\", sans-serif'; g.textAlign = sx > 0 ? 'left' : 'right';
-        const tw = g.measureText(l.s).width, tx = ex + 14 * sx;
+        g.textAlign = sx > 0 ? 'left' : 'right';
+        const tx = ex + 14 * sx;
         g.fillStyle = 'rgba('+SAMA_BGRGB+',0.78)'; g.fillRect(sx > 0 ? tx - 4 : tx - tw - 4, ey - 8, tw + 8, 16);
         g.fillStyle = '#F3EEE1'; g.fillText(l.s, tx, ey + 4);
       } else if (l.t === 'b') {
@@ -970,9 +962,9 @@ class Component extends DCLogic {
     const res = (this.state.board ? 1 : Math.min(2, window.devicePixelRatio || 1)) * 1.15;
     g.fillStyle = SAMA_BG; g.fillRect(0, 0, w, h);
     if (T) { g.fillStyle = 'rgba(243,238,225,0.045)'; for (let y = 12; y < h; y += 24) for (let x = 12; x < w; x += 24) g.fillRect(x - 0.6, y - 0.6, 1.2, 1.2); }
-    else { const rg = g.createRadialGradient(w * 0.66, h * 0.5, 0, w * 0.66, h * 0.5, w * 0.55); rg.addColorStop(0, ({ 'metsä': 'rgba(34,84,56,0.34)', 'pronssi': 'rgba(112,80,34,0.32)', 'pienoismalli': 'rgba(120,114,100,0.24)' })[SC] || 'rgba(64,60,48,0.28)'); rg.addColorStop(1, 'rgba('+SAMA_BGRGB+',0)'); g.fillStyle = rg; g.fillRect(0, 0, w, h); }
+    else { const gx = (w < 640 || window.innerWidth <= 900) ? w * 0.5 : w * 0.66, rg = g.createRadialGradient(gx, h * 0.5, 0, gx, h * 0.5, w * 0.55); rg.addColorStop(0, ({ 'metsä': 'rgba(34,84,56,0.34)', 'pronssi': 'rgba(112,80,34,0.32)', 'pienoismalli': 'rgba(120,114,100,0.24)' })[SC] || 'rgba(64,60,48,0.28)'); rg.addColorStop(1, 'rgba('+SAMA_BGRGB+',0)'); g.fillStyle = rg; g.fillRect(0, 0, w, h); }
     const a = Math.max(110, Math.min(205, h * 0.235, (w * 0.34 - 30) / 1.732));
-    const cx = w * 0.655, cy = h * 0.54, D = 1.8 * a;
+    const cx = w * ((w < 640 || window.innerWidth <= 900) ? 0.5 : 0.655), cy = h * 0.54, D = 1.8 * a; /* 04.11.2026: stacked layout (phone, tablet <= 900 px): centred */
     const uq = Math.max(0, Math.min(4, p * 5 - 0.5)), i0 = Math.floor(uq), f = this._sm(uq - i0), camK = i0 + f;
     const Z = this._rm ? 1.08 : 1.08 - 0.08 * Math.sin(Math.PI * f);
     const stepf = p * 5 - 0.5;
@@ -1005,7 +997,7 @@ class Component extends DCLogic {
     g.restore();
     const sh = g.createLinearGradient(0, 0, w * 0.5, 0);
     sh.addColorStop(0, 'rgba('+SAMA_BGRGB+',0.94)'); sh.addColorStop(0.7, 'rgba('+SAMA_BGRGB+',0.65)'); sh.addColorStop(1, 'rgba('+SAMA_BGRGB+',0)');
-    g.fillStyle = sh; g.fillRect(0, 0, w * 0.5, h);
+    if (w >= 640 && window.innerWidth > 900) { g.fillStyle = sh; g.fillRect(0, 0, w * 0.5, h); }   /* 04.11.2026: pinottuna (puhelin, tabletti) näkymä keskellä, ei vasenta varjoa */
     const map = (x, y) => [cx + (x - cx) * Z, cy + (y - cy) * Z];
     g.font = '600 11px \"IBM Plex Sans\", sans-serif';
     let labW = g.measureText('ARVESTI · ALAJAAM · PEAKILP').width;
@@ -1015,7 +1007,7 @@ class Component extends DCLogic {
       const m = map(l.p[0], l.p[1]), ldx = Math.max(0, m[0] + 18 + labW - (w - 24)), ldy = ldx > 0 ? ldx * 0.58 + 22 : 0;
       l.x = m[0] + 18 - ldx; l.y = m[1] + 4 - ldy;
     });
-    this._labDraw(g, labs, map, time);
+    if (w >= 480) this._labDraw(g, labs, map, time);   /* 04.11.2026: puhelimessa ei tarroja — vaiheen teksti on kuvan alla */
   }
   /* ---------- Hero and explorer: one industrial site on the 6A.3 iso kit ---------- */
   _xS() {
@@ -1879,9 +1871,12 @@ class Component extends DCLogic {
     };
   }
 }
-/* 03.11.2026: phones (<=750 px) get a static image of the same still frame on the front page - engine not started. */
+/* 04.11.2026: pages with live chapters (.k-live) start the engine only when a chapter approaches the viewport (controller below);
+   prefers-reduced-motion -> no engine, the K2 stills stay. 03.11.2026: phones (<=750 px) on the front page without live chapters keep the static image. */
+function bootEngine(){if(window.SAMA3D)return window.SAMA3D;var c=new Component({scheme:'yö'});c.state.board=false;window.SAMA3D=c;c.componentDidMount();return c;}
+window.SAMA_BOOT=bootEngine;
 var phoneStill=false;try{phoneStill=!!document.querySelector('.lava,.k-home')&&window.matchMedia('(max-width:750px)').matches;}catch(e){}
-if(!phoneStill){var c=new Component({scheme:'yö'});c.state.board=false;window.SAMA3D=c;c.componentDidMount();}
+if(!document.querySelector('.k-live')&&!phoneStill)bootEngine();
 })();
 (function(){var c=window.SAMA3D,noEngine=!c;if(noEngine){if(!document.querySelector('[data-map]'))return;c={setMapLayers:function(){},_rm:true,_HB:[]};}
 function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));}
@@ -1948,4 +1943,31 @@ if(lava&&!noEngine){
  /* phones and reduced motion: one still frame of the hero, then stop drawing */
  if(still){stage.setAttribute('data-still','1');var hg=lava.querySelector('.lv-hero');if(hg&&mob)hg.appendChild(stage);setTimeout(function(){if(!document.querySelector('[data-map] .cv-map')){c._alive=false;cancelAnimationFrame(c._raf);}},1500);}
 }
+})();
+/* 04.11.2026: K2 live chapters. Each .k-live[data-live] has [data-step] blocks; the step nearest the reading line drives the scene:
+   map = grid + that question's layer (and the K2 radio), proc = project phase, sld = continuous progress through the five layers. */
+(function(){
+var secs=[].slice.call(document.querySelectorAll('.k-live'));
+if(!secs.length||!window.SAMA_BOOT)return;
+var RM=false;try{RM=window.matchMedia('(prefers-reduced-motion: reduce)').matches;}catch(e){}
+if(RM)return;
+secs.forEach(function(s){s.classList.add('is-live');});
+var c=null,MAPK=['vork','tarbimine','tootmine','salvestid','reservid','tulevik','site'],last={},pend=false;
+function loadMap(){
+ if(window.SAMA_KD)c._kd=window.SAMA_KD;else fetch('/assets/kartta-data.json').then(function(r){return r.json();}).then(function(d){c._kd=d;}).catch(function(){});
+ if(window.SAMA_KV)c._kv=window.SAMA_KV;else fetch('/assets/kartta-verkko.json').then(function(r){return r.json();}).then(function(d){c._kv=d;c._kvxy=null;}).catch(function(){});
+}
+function start(){if(c)return;c=window.SAMA_BOOT();if(document.querySelector('.k-live .cv-map')){loadMap();c._mapCmp=false;c.setMapLayers({vork:1});}tick();}
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){for(var i=0;i<es.length;i++)if(es[i].isIntersecting){io.disconnect();start();return;}},{rootMargin:'120% 0px 120% 0px'});secs.forEach(function(s){io.observe(s);});}else start();
+function line(s){var v=s&&s.querySelector('.kk-maps,.k-fig,.ks-stage');if(v){var r=v.getBoundingClientRect();if(r.left<innerWidth*0.3&&r.top<=110&&r.bottom<innerHeight*0.8)return r.bottom+(innerHeight-r.bottom)*0.35;}return innerHeight*0.55;}
+function nearest(st,s){var mid=line(s),b=-1,bd=1e9;for(var i=0;i<st.length;i++){var r=st[i].getBoundingClientRect(),d=r.top>mid?r.top-mid:(r.bottom<mid?mid-r.bottom:0);if(d<bd){bd=d;b=i;}}return b;}
+function mark(st,i){for(var k=0;k<st.length;k++)st[k].classList.toggle('on',k===i);}
+function step(s){var st=s.querySelectorAll('[data-step]');if(!st.length)return;var kind=s.getAttribute('data-live'),i;
+ if(kind==='sld'){var f=st[0].getBoundingClientRect(),l=st[st.length-1].getBoundingClientRect(),p=(line(s)-f.top)/Math.max(1,l.bottom-f.top);p=Math.max(0,Math.min(0.999,p));c._p3Lock=p;c._p3=p;i=Math.min(st.length-1,Math.floor(p*st.length));if(last[s.id]!==i){last[s.id]=i;mark(st,i);}return;}
+ i=nearest(st,s);if(i<0||last[s.id]===i)return;last[s.id]=i;mark(st,i);
+ if(kind==='map'){var r=s.querySelector('#kk'+i);if(r)r.checked=true;var o={};for(var j=0;j<MAPK.length;j++)o[MAPK[j]]=(j===0||j===i)?1:0;c.setMapLayers(o);}
+ else if(kind==='proc'){var HB=c._HB;c._ht=HB[Math.min(i,HB.length-1)]+0.01;}}
+function tick(){if(!c||pend)return;pend=true;requestAnimationFrame(function(){pend=false;secs.forEach(function(s){var r=s.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;step(s);});});}
+addEventListener('scroll',tick,{passive:true});addEventListener('resize',tick);
+secs.forEach(function(s){[].forEach.call(s.querySelectorAll('[data-jump]'),function(el){el.addEventListener('click',function(e){var t=s.querySelector('[data-step="'+el.getAttribute('data-jump')+'"]');if(!t)return;e.preventDefault();var y=t.getBoundingClientRect().top+scrollY-line(s)+Math.min(t.offsetHeight,innerHeight*0.4)/2;scrollTo({top:Math.max(0,y),behavior:'smooth'});});});});
 })();

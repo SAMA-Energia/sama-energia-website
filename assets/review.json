@@ -63,6 +63,11 @@
   },
   {
    "page": "/energiavarastot/",
+   "sectionId": "kerros",
+   "kind": "new"
+  },
+  {
+   "page": "/energiavarastot/",
    "sectionId": "lasku",
    "kind": "new"
   },
@@ -187,6 +192,11 @@
    "sectionId": "rev-energiasalvestid-1",
    "kind": "changed",
    "prev": "Avaleht›Energiasalvestid Tööstuslik energiasalvesti: üks seade, neli tööd. Võimsustasu alla, börsihind kasuks, reservitulu ja varutoide. Samast akust, samal päeval, automaatselt. Päikest ega oma tootmist pole vaja: liitumisest piisab. Küsi tasuta hindamist"
+  },
+  {
+   "page": "/energiasalvestid/",
+   "sectionId": "kihid",
+   "kind": "new"
   },
   {
    "page": "/energiasalvestid/",

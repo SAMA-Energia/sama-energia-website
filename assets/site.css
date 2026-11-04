@@ -1015,3 +1015,65 @@ h1 em,h2 em{color:var(--gold-2)}
 .kk-n b{font-size:42px}
 }
 @media (max-width:560px){.k-home .segment .pic{aspect-ratio:16/7}.k-gives,.k-lines,.k-cards,.k-steps{grid-template-columns:1fr}.k-fig .k-tag{display:none}.k-foot{flex-direction:column;align-items:flex-start}.k-fig{margin-left:calc(var(--gutter)*-1);margin-right:calc(var(--gutter)*-1);border-radius:0}}
+/* 04.11.2026: elävät luvut (.k-live): 3D kehittyy vierittäessä. Ilman moottoria (reduced-motion, ei JS) K2-stillit ja radio. */
+.k-live canvas{display:none}
+.k-live.is-live canvas{display:block}
+.k-more{margin:26px 0 0}
+/* kartta: taustana tarttuva kartta, kysymykset vierivät sen päällä */
+.k-kaart.is-live{overflow:clip;min-height:0}
+.k-kaart.is-live .kk-maps{overflow:hidden}
+.k-kaart.is-live .kk-maps canvas{position:absolute;inset:0;width:100%;height:100%;z-index:1}
+.k-kaart.is-live .kk-l{display:block}
+.k-kaart.is-live .kk-q:before,.k-sld.is-live .ks-s h3:before{content:"";display:block;width:36px;height:2px;margin:0 0 14px;background:#3A362F;transition:background-color .35s,width .35s}
+.k-kaart.is-live .kk-l.on .kk-q:before,.k-sld.is-live .ks-s.on h3:before{width:56px;background:#D9BC7E}
+@media (min-width:1100px){
+.k-kaart.is-live .kk-maps{position:sticky;inset:auto;top:79px;width:100%;height:calc(100vh - 79px);margin:0 0 calc(79px - 100vh)}
+.k-kaart.is-live .kk-maps canvas{left:34%;width:66%}
+.k-kaart.is-live .kk-maps:after{z-index:2}
+.k-kaart.is-live .kk-chipsw{position:sticky;top:79px;z-index:3}
+.k-kaart.is-live .kk-chips{padding:23px 0 6px;background:#0A0A09;box-shadow:0 16px 20px 6px #0A0A09}
+.k-kaart.is-live .kk-l{display:flex;flex-direction:column;justify-content:center;min-height:76vh;padding:0}
+}
+@media (max-width:1099px){
+.k-kaart.is-live .kk-maps{position:sticky;top:79px;z-index:2;height:min(42vh,460px);aspect-ratio:auto;margin:20px calc(var(--gutter)*-1) 0;background:#0A0A09}
+.k-kaart.is-live .kk-l{min-height:56vh}
+}
+/* vaiheet: animaatio tarttuu, askeleet vierivät */
+#nain.is-live .k-fig canvas,#kuidas.is-live .k-fig canvas{position:absolute;inset:0;width:100%;height:100%;z-index:1}
+#nain.is-live .k-steps,#kuidas.is-live .k-steps{display:block}
+#nain.is-live .k-steps>div,#kuidas.is-live .k-steps>div{border-top:2px solid var(--line-2);transition:border-color .35s}
+#nain.is-live .k-steps>div.on,#kuidas.is-live .k-steps>div.on{border-top-color:var(--gold-2)}
+@media (min-width:901px){
+#nain.is-live .wrap,#kuidas.is-live .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);column-gap:clamp(32px,4vw,64px);align-items:start}
+#nain.is-live .k-head,#kuidas.is-live .k-head{grid-column:1/-1}
+#nain.is-live .k-fig,#kuidas.is-live .k-fig{grid-column:2;grid-row:2/4;align-self:start;position:sticky;top:calc(79px + 5vh);height:min(70vh,620px);aspect-ratio:auto;margin:30px 0 0}
+#nain.is-live .k-steps,#kuidas.is-live .k-steps{grid-column:1;grid-row:2;margin-top:30px}
+#nain.is-live .k-steps>div,#kuidas.is-live .k-steps>div{min-height:44vh;display:flex;flex-direction:column;justify-content:center;padding:16px 0}
+#nain.is-live .k-foot,#kuidas.is-live .k-foot{grid-column:1;grid-row:3}
+}
+@media (max-width:900px){
+#nain.is-live .k-fig,#kuidas.is-live .k-fig{position:sticky;top:79px;z-index:2;height:min(36vh,360px);aspect-ratio:auto}
+#nain.is-live .k-steps>div,#kuidas.is-live .k-steps>div{min-height:40vh;padding-top:16px}
+}
+/* Kantaverkosta kennoon / Põhivõrgust akuelemendini (energiavarastot) */
+.k-sld{position:relative;background:#0A0A09;color:#F3EEE1;padding:clamp(64px,7vw,100px) 0}
+.k-sld h2{color:#F3EEE1;max-width:640px}
+.k-sld .lead{margin-top:14px;max-width:640px;color:#BFB6A5}
+.ks-stage{display:none}
+.ks-steps{margin-top:26px}
+.ks-s{padding:20px 0;border-top:1px solid #2A2824;max-width:600px}
+.ks-s h3{margin:0 0 8px;font:500 22px/1.25 var(--font-display);color:#F3EEE1}
+.ks-s p{margin:0;font-size:16px;line-height:1.55;color:#BFB6A5}
+.k-sld .src{margin-top:18px;color:#8F887B}
+.k-sld.is-live{overflow:clip}
+.k-sld.is-live .ks-stage{display:block;position:sticky;top:79px;height:calc(100vh - 79px);margin:0 0 calc(79px - 100vh)}
+.k-sld.is-live .ks-stage canvas{position:absolute;top:0;bottom:0;left:30%;width:70%;height:100%}
+.k-sld.is-live .ks-stage:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,9,.94) 0%,rgba(10,10,9,.72) 26%,rgba(10,10,9,0) 44%);pointer-events:none}
+.k-sld.is-live .ks-steps{position:relative;z-index:1}
+.k-sld.is-live .ks-s{min-height:72vh;display:flex;flex-direction:column;justify-content:center;max-width:440px;border:0}
+@media (max-width:900px){
+.k-sld.is-live .ks-stage{z-index:2;height:min(40vh,420px);margin:20px calc(var(--gutter)*-1) 0;background:#0A0A09}
+.k-sld.is-live .ks-stage canvas{left:0;width:100%}
+.k-sld.is-live .ks-stage:after{display:none}
+.k-sld.is-live .ks-s{min-height:52vh;max-width:none}
+}

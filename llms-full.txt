@@ -33,6 +33,8 @@ Mikä laskullanne ja kiinteistössänne muuttuu:
 
 Reservimarkkinatvalmiuskorvaus, myös öisin.Tehomaksuthuippu alas, sulakekoko kulutuksen mukaan.Energia ja siirtohalpa tunti sisään, kallis ulos.Kiinteistön arvopienempi pysyvä kulu, korkeampi hinta.
 
+Kantaverkosta kennoon, kerros kerrallaan
+
 Reservejä tarvitaan viidessä vuodessa lähes kaksi kertaa nykyinen määrä. Liittymänne voi olla yksi toimittajista.
 
 Sähköverkon on oltava tasapainossa joka sekunti. Fingrid maksaa jo siitä, että reservi on käytettävissä – ja tarve kasvaa viidessä vuodessa noin 1 200 megawattia.
@@ -357,6 +359,26 @@ Teollinen energiavarasto: yksi laite, neljä työtä.
 Tehomaksu alas, pörssisähkö hyödyksi, reservitulo ja varavoima. Samasta akusta, samana päivänä, automaattisesti. Aurinkoa tai omaa tuotantoa ei tarvita: liittymä riittää.
 
 Pyydä maksuton kartoitus
+
+Kantaverkosta kennoon, kerros kerrallaan.
+Liittymä on jo rakennettu ja maksettu. Näin sähkö kulkee teille – ja näin mittarin takana tehdään päätökset.
+
+Sähköasemilla jännite lasketaan askel kerrallaan.
+Fingridin kantaverkko toimii 400, 220 ja 110 kilovoltin jännitteillä. Sähköasemilla jännite lasketaan 400 kilovoltista 110 kilovolttiin ja edelleen jakeluverkkoon.
+
+Jakeluverkko tuo sähkön liittymäänne.
+Keskijänniteverkko (20 kV) ja pienjänniteverkko (0,4 kV) ovat verkkoyhtiön. Se laskuttaa siirrosta ja tehosta: esimerkiksi Caruna Oy:n Tehosiirto 1 PJ -tuotteessa tehomaksu on 3,57 €/kW kuukaudessa kuukauden huipputehon mukaan (hinnasto 1.9.2024, alv 0 %).
+
+Mittari on raja. Sen takana päätökset ovat teidän.
+Keskijänniteliittymässä oma muuntamo 20/0,4 kV, pääkeskus, kuormat ja mahdollinen oma tuotanto ovat kaikki mittarin takana – samoin energiavarasto.
+
+Energiavarasto: yksi kaappi, kaikki osat sisällä.
+Yksi ulkokaappi kokoaa tehoelektroniikan (PCS), LFP-akustot, akunhallinnan (BMS), nestejäähdytyksen ja ohjauksen (EMS). Teho ja energia mitoitetaan kulutustiedoistanne, ja kaappeja liitetään rinnan kohteen mukaan.
+
+Kennoista moduuleiksi, moduuleista akustoiksi.
+Litiumrautafosfaattikennot (LFP) kootaan moduuleiksi ja moduulit akustoiksi. Akunhallinta mittaa jokaisen kennon jännitteen, lämpötilan ja varaustilan ja pitää ne sallitulla alueella.
+
+Lähteet: Fingrid, kantaverkon jännitetasot · Caruna Oy, verkkopalveluhinnasto 1.9.2024 · valmistajien tuotetiedotteet, luettu 1.11.2026.
 
 Mistä kukin kassavirta riippuu
 Mikä osa on kohteessanne suurin, selviää kulutustiedoista. Siksi kaikki alkaa maksuttomasta kartoituksesta.
@@ -1831,6 +1853,8 @@ Mis teie arvel ja kinnistul muutub:
 
 Reserviturgvalmisolekutasu, ka öösel.Võimsustasudtipp alla, peakaitse tarbimise järgi.Energia ja edastamineodav tund sisse, kallis välja.Kinnistu väärtusväiksem püsikulu, kõrgem hind.
 
+Põhivõrgust akuelemendini, kiht kihi haaval
+
 2035. aastaks on juhitavat võimsust vaja üle poole rohkem kui täna. Teie liitumine võib olla üks pakkujatest.
 
 Elektrivõrk peab olema tasakaalus igal sekundil. Eleringi hinnangul kasvab juhitava võimsuse vajadus 2035. aastaks ca 2 100 megavatini.
@@ -2153,6 +2177,26 @@ Tööstuslik energiasalvesti: üks seade, neli tööd.
 Võimsustasu alla, börsihind kasuks, reservitulu ja varutoide. Samast akust, samal päeval, automaatselt. Päikest ega oma tootmist pole vaja: liitumisest piisab.
 
 Küsi tasuta hindamist
+
+Põhivõrgust akuelemendini, kiht kihi haaval.
+Liitumine on juba ehitatud ja kinni makstud. Nii jõuab elekter teieni – ja nii tehakse otsused arvesti taga.
+
+Alajaamades alandatakse pinget samm-sammult.
+Eleringi põhivõrk töötab 330 ja 110 kilovoldi pingel. Alajaamades alandatakse pinge 330 kilovoldilt 110 kilovoldile ja sealt edasi jaotusvõrku.
+
+Jaotusvõrk toob elektri teie liitumiseni.
+Keskpingevõrk (10 kV) ja madalpingevõrk (0,4 kV) kuuluvad võrguettevõtjale. Ta võtab tasu edastatud energia eest ja ärikliendilt ka võimsuse eest: Elektrilevi arveldab võimsustasu kuu suurima tunnikeskmise võimsuse järgi.
+
+Arvesti on piir. Selle taga otsustate teie.
+Keskpingeliitumisel on oma alajaam 10/0,4 kV, peakilp, tarbijad ja võimalik oma tootmine kõik arvesti taga – samuti energiasalvesti.
+
+Energiasalvesti: üks kapp, kõik osad sees.
+Üks välikapp koondab jõuelektroonika (PCS), LFP-akupangad, akuhalduse (BMS), vedelikjahutuse ja juhtimise (EMS). Võimsus ja energia dimensioneeritakse teie tarbimisandmetest ning kappe ühendatakse paralleelselt vastavalt objektile.
+
+Elementidest moodulid, moodulitest akupangad.
+Liitiumraudfosfaatelemendid (LFP) koondatakse mooduliteks ja moodulid akupankadeks. Akuhaldus mõõdab iga elemendi pinget, temperatuuri ja laetuse taset ning hoiab need lubatud vahemikus.
+
+Allikad: Elering, põhivõrgu pingetasemed · Elektrilevi, võrgupaketid ärikliendile · tootjate tooteinfo, loetud 1.11.2026.
 
 Millest iga rahavoog sõltub
 Milline osa on teie objektil suurim, selgub tarbimisandmetest. Sellepärast algab kõik tasuta hindamisest.
