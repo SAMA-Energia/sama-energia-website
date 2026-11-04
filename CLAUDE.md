@@ -139,7 +139,10 @@ When in doubt, leave it out and flag it.
 - 04.11.2026 (Madis: „ei samaa vieritysefektiä", „vain suurjännitejohto", „kartta ulottuu Saarenmaalle ja saarille"): /verkko/ ja /vork/ -kartta seuraa
   vieritystä kaikilla näytöillä (puhelimella kartta kiinnittyy ylös, luvut vierivät alla), kerros vaihtuu luvuittain, viimeinen luku zoomaa vierityksen
   mukana kotimaasta kohteeseen (v38:n "kartta kasvaa kerittäessä"); 110 kV (myös saarten johdot ja kaapelit) näkyy oletuksena. Data: `view`/`vmode` kerroksittain.
-  ETUSIVUN VESTLUKSELLE: `.k-kaart`-tasokuvissa näkyvät vain päälinjat ja saaret ilman johtoja — Madiksen palaute koskee myös niitä.
+  ETUSIVUN VESTLUKSELLE (v42, scene.js-kartta): etusivun kartta piirtää vain `kartta-verkko.json`:n 400/330 kV ja ET-sivullakin koko Suomen
+  (Viro pieni, saaret ilman johtoja) — Madiksen palaute 4.11.2026 koskee myös sitä: kaikki johdot (110 kV) ja saaret, kotimaa isona.
+  Aineisto: `assets/kartta-110.json` (kartta.js:n LCC-polut) tai lon/lat `docs/kaart/osm/lines-2026-11-02.json` (voltage 110000: 4 113 johtoa).
+  Valmis vaihtoehto: kartta.js:n etusivutila (`data-mode="front"`, `.km-inline` / `.km-slot`), testattu 3.11.2026.
 
 ## v41 — K2-etusivu (luonnos, haara v35-uusi-ilme, 04.11.2026)
 
