@@ -68,7 +68,11 @@ const PAGES = {
    Lista on tarkoituksella eksplisiittinen ja päivätty — jokainen kohta on projektin
    päätöslokista tai verify-pages.mjs:n sisältövartijasta. */
 const FOUNDER_MARKS = [
-  [/omaksi eduksenne|enda kasuks tööle/i, 'perustajan päätös 10.09.2026 — hero-otsikko (FI sai ajatusviivan; ET avoin, ks. kohta 2)'],
+  // 04.11.2026: konseptin 1 etusivu (päätösloki I-20261104-3…7).
+  [/omaksi eduksenne|enda kasuks tööle/i, 'perustajan päätös 04.11.2026 (I-20261104-3) — hero-otsikko'],
+  [/rakentaa liittymänne taakse järjestelmän|ehitab teie liitumise taha süsteemi/i, 'perustajan päätös 04.11.2026 (I-20261104-4) — ingressi / juhtlõik'],
+  [/^(Viljankuivuri|Teraviljakuivati|Teollisuus ja kylmävarasto|Tööstus ja külmladu|Hotelli ja hoivakoti|Hotell ja hooldekodu|Aurinkopuisto|Päikesepark)$/, 'perustajan päätös 04.11.2026 (I-20261104-5) — kohdepainikkeet'],
+  [/kahden arkipäivän kuluessa tietojen saamisesta|kahe tööpäevaga pärast andmete saamist/i, 'perustajan päätös 04.11.2026 (I-20261104-7) — lupaus, sama kaikilla sivuilla'],
   [/maksaa itsensä takaisin nopeimmin|end kõige kiiremini ära tasub/i, 'perustajan päätös 10.09.2026 — varaus "usein"/"sageli" poistettu, kumoaa päätöksen D16 (08.09)'],
   [/Myyntijohtaja|Müügijuht|Asennuspäällikkö|Paigaldusjuht/, 'tittelit hyväksytty 03.09.2026; "perustaja"/"asutaja" pudotettu 08.09.2026 (vartija titteli-perustaja)'],
   // 13.09.2026: Martin Raution titteli. Perustajapäätös Martin Rautio 13.09.2026; hallituksen
@@ -79,7 +83,7 @@ const FOUNDER_MARKS = [
   // natiivin tarkistamia — Madisin natiivitarkistus on nimenomaan näitä kahta riviä varten.
   [/ettevõtte suund, tegevuse planeerimine|Suund, partnerlused, lepingud ja rahastus/,
    'CLAUDEN KIRJOITTAMA ET-teksti 13.09.2026 — ei natiivin tarkistama. Tarkista sanavalinnat ja sävy: tämä on uusi vastuukuvaus (perustajapäätös 13.09.2026).'],
-  [/Soleron Energy|Ralos|JSM Automaatiosähkö|Scanoffice/, 'kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); VENI Energia poistettu 21.10.2026'],
+  [/Soleron Energy|Ralos|JSM Automaatiosähkö|Scanoffice|Elecnova|Avant Power|Gare Energy/, 'kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026'],
   [/leasing|omalla pääomalla|oma kapitaliga|liisin/i, 'rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)'],
   [/Sörnäisten Rantatie/, 'osoite vahvistettu 06.09.2026'],
   [/kvalifitseerunud|kvalifitseeritud|säätökokein todennettu|prekvalifioitu/i, 'lukukorjaus: reservien osuudet ovat todennettua KAPASITEETTIA, ei tuotantoa (Fingrid 10.2.2025; vartijat reservi-*)'],
