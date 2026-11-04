@@ -347,7 +347,7 @@
    },
    "concl": {
     "fi": "Fingridin skenaarioissa Suomen sähkönkulutus kasvaa nykyisestä alle 90 terawattitunnista 106–123 terawattituntiin vuoteen 2030 mennessä, ja jo solmitut datakeskusten ja sähkökattiloiden liittymissopimukset lisäisivät toteutuessaan kulutusta jopa 40 prosenttia.",
-    "et": "Eleringi prognoosis kasvab Eesti aastane elektritarbimine 7,9 teravatt-tunnilt 2025. aastal 10,0 teravatt-tunnini 2030. aastaks ja 11,2 teravatt-tunnini 2035. aastaks, ning tiputarbimise rekord tõusis 5. veebruaril 2026 1 723 megavatini."
+    "et": "Eleringi prognoosis kasvab Eesti aastane elektritarbimine 7,9 teravatt-tunnilt 2025. aastal 10,0 teravatt-tunnini 2030. aastaks ja 11,2 teravatt-tunnini 2035. aastaks. Tiputarbimise rekord tõusis 5. veebruaril 2026 1 723 megavatini."
    },
    "big": {
     "FI": {
@@ -577,7 +577,7 @@
    },
    "concl": {
     "fi": "Fingridin ennusteissa Suomen verkossa on 9 553 MW tuulivoimaa ja 2 074 MW aurinkovoimaa, ja Fingridin mukaan sääriippuvaisen tuotannon rinnalle tarvitaan lisää säätövoimaa ja joustoa.",
-    "et": "Eestis on Eleringi andmetel 694 MW tuule- ja 1 214 MW päikesevõimsust, ning Balti põhivõrguettevõtjad näevad taastuvenergia lisandumise tõttu sagedusreservide vajaduse kiiret kasvu."
+    "et": "Eestis on Eleringi andmetel 694 MW tuule- ja 1 214 MW päikesevõimsust. Balti põhivõrguettevõtjad näevad taastuvenergia lisandumise tõttu sagedusreservide vajaduse kiiret kasvu."
    },
    "big": {
     "FI": {
@@ -748,7 +748,7 @@
    },
    "concl": {
     "fi": "Suomessa on Fingridin arvion mukaan jo 2 085 MW yli megawatin sähkövarastoja ja liittymissopimuksia lähes kuuden gigawatin edestä, mutta Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029.",
-    "et": "Eestis on Eleringi teatel võrku ühendatud 245 MW akuvõimsust (veebruar 2026), juulis lisandus Aruküla 100 MW park, ning ministri sõnul on Eleringil lepingus ligi 1 000 MW akusalvesteid."
+    "et": "Eestis on Eleringi teatel võrku ühendatud 245 MW akuvõimsust (veebruar 2026) ja juulis lisandus Aruküla 100 MW park. Ministri sõnul on Eleringil lepingus ligi 1 000 MW akusalvesteid."
    },
    "big": {
     "FI": {
@@ -1056,7 +1056,7 @@
    },
    "concl": {
     "fi": "Fingrid hankkii joka tunti keskimäärin 1 500 MW reservikapasiteettia ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW lisää, ja reservien kustannukset katetaan tasepalvelumaksuilla, joita Fingrid perii tasevastaavilta.",
-    "et": "Balti põhivõrguettevõtjate prognoosis kasvab mFRR-reservi vajadus 2035. aastaks üles 604-lt 754 megavatini ja alla 691-lt 991 megavatini, ning reservide kulu maksab alates 2026. aastast iga tarbija oma elektriarvel 3,73 eurot megavatt-tunni kohta."
+    "et": "Balti põhivõrguettevõtjate prognoosis kasvab mFRR-reservi vajadus 2035. aastaks üles 604-lt 754 megavatini ja alla 691-lt 991 megavatini. Reservide kulu maksab alates 2026. aastast iga tarbija oma elektriarvel 3,73 eurot megavatt-tunni kohta."
    },
    "big": {
     "FI": {
@@ -1296,7 +1296,7 @@
    },
    "concl": {
     "fi": "Fingrid toteuttaa 5,2 miljardin euron investointiohjelmaa, liittymien etusijamenettelyn on määrä tulla voimaan 1.1.2027 ja Etelä-Suomen varastoliitynnät avautuvat, kun Hikiä–Toivila valmistuu vuonna 2029.",
-    "et": "Eleringi arengukava arvestab 2030. aastaks kuni 1 500 MW uute tootmisvõimsuste ja 2035. aastaks 1 000–1 300 MW lisanduva salvestusega, ning umbes 2038. aastast kasvatavad EstLink 3 ja Eesti–Läti neljas ühendus impordivõimekust veel 1 200 MW võrra."
+    "et": "Eleringi arengukava arvestab 2030. aastaks kuni 1 500 MW uute tootmisvõimsuste ja 2035. aastaks 1 000–1 300 MW lisanduva salvestusega. Umbes 2038. aastast kasvatavad EstLink 3 ja Eesti–Läti neljas ühendus impordivõimekust veel 1 200 MW võrra."
    },
    "big": {
     "FI": {
@@ -1750,8 +1750,8 @@
     "et": "Kus on selles pildis teie liitumine?"
    },
    "concl": {
-    "fi": "Teidän liittymänne on jo olemassa: sen taakse asennettu akku ei jonota kantaverkkoon, ja sillä voi laskea tehomaksua, hyödyntää pörssisähkön hintaeroja ja osallistua aggregaattorin kautta reservimarkkinoille, joiden tarve kasvaa.",
-    "et": "Teie liitumine on juba olemas: selle taha paigaldatud aku ei vaja uut põhivõrguliitumist, ja sellega saab alandada võimsustasu, kasutada börsihinna erinevusi ning osaleda agregaatori kaudu reserviturul, mille kulu maksab praegu iga tarbija."
+    "fi": "Teidän liittymänne on jo olemassa: sen taakse asennettu sähkövarasto ei jonota kantaverkkoon. Sillä voi laskea tehomaksua, hyödyntää pörssisähkön hintaeroja ja osallistua aggregaattorin kautta reservimarkkinoille, joiden tarve kasvaa.",
+    "et": "Teie liitumine on juba olemas: selle taha paigaldatud salvesti ei vaja uut põhivõrguliitumist. Sellega saab alandada võimsustasu, kasutada börsihinna erinevusi ning osaleda agregaatori kaudu reserviturul, mille kulu maksab praegu iga tarbija."
    },
    "big": {
     "FI": {
@@ -1766,12 +1766,13 @@
      ]
     },
     "EE": {
-     "v": "3,73 €/MWh",
+     "v": "60 M€",
      "l": {
-      "fi": "reservien kustannus jokaisen sähkönkäyttäjän laskulla 2026 · rahat saavat reservien tarjoajat",
-      "et": "reservide kulu iga tarbija arvel 2026 · raha saavad reservide pakkujad"
+      "fi": "reservien kustannus 2026, Eleringin ennuste · helmi–joulukuu 2025: 74 M€ · rahat saavat reservien tarjoajat",
+      "et": "reservide kulu 2026, Eleringi prognoos · veebruar–detsember 2025: 74 M€ · raha saavad reservide pakkujad"
      },
      "src": [
+      "el-2025",
       "el-tvk"
      ]
     }
@@ -1901,8 +1902,8 @@
       "et": "Teie objekt (näide)"
      },
      "val": {
-      "fi": "akku olemassa olevan liittymän ja mittarin taakse",
-      "et": "aku olemasoleva liitumise ja arvesti taha"
+      "fi": "sähkövarasto olemassa olevan liittymän ja mittarin taakse",
+      "et": "salvesti olemasoleva liitumise ja arvesti taha"
      }
     },
     {
@@ -1917,8 +1918,8 @@
       "et": "Teie objekt (näide)"
      },
      "val": {
-      "fi": "akku olemassa olevan liittymän ja mittarin taakse",
-      "et": "aku olemasoleva liitumise ja arvesti taha"
+      "fi": "sähkövarasto olemassa olevan liittymän ja mittarin taakse",
+      "et": "salvesti olemasoleva liitumise ja arvesti taha"
      }
     }
    ],

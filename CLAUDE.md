@@ -40,6 +40,13 @@ All customer-facing text is Finnish or Estonian and requires a
   here). Financing is described generically: leasing or own capital, compared
   on the same figures in the written assessment.
 - Partner names permitted: Soleron Energy, Ralos Oy, JSM Automaatiosähkö Oy, and Scanoffice Oy on the Finnish site only — founder decision 08.09.2026.
+- Partner names permitted after written confirmation (R14): Elecnova (both sites) and Avant Power (Finnish site only) — decision
+  I-20261023-1, 23.10.2026; Gare Energy Oy (Finnish site only; integrated solar roofs, aurinkokatto.com) — founder line 02.11.2026,
+  recorded under v38 below. Name only: model names and technical values belong in the offer, not on the page (founder decision
+  04.11.2026, below). Soleron Energy is named on the Estonian site only, as each market argues with its own facts (applied
+  04.11.2026). Roofit.Solar (manufacturer without a contract; the Finnish cooperation runs through Gare Energy Oy), EP Energy /
+  EP Equipment and Energen Nordic are not named on either site until the founder decides. `verify-pages.mjs` guards `nimet-1104`
+  and `mallinimet-1104` fail the build if these names or product model names reappear in visible text.
 - **Kumppanit / Partnerid page (v34, founder decisions 25.10.2026, Martin):** products are listed by type
   and specification without naming the manufacturer, except the permitted names above. The page says SAMA
   has several suppliers and names manufacturer and model in the offer. A manufacturer is named only after
