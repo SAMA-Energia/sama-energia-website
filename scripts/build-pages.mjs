@@ -269,8 +269,8 @@ const THEME = '<meta name="theme-color" content="#FFFFFF">';
 /* Kriittiset esilataukset: otsikkofontti (pysty + kursiivi, jokaisessa h1:ssä on kursiivi) ja
    leipäfontti. Latin-osajoukot kattavat suomen ja viron perusmerkit; latin-ext latautuu tarvittaessa. */
 const PRELOADS = [
-  '<link rel="preload" href="/assets/fonts/newsreader-latin-variable-normal.woff2" as="font" type="font/woff2" crossorigin>',
-  '<link rel="preload" href="/assets/fonts/newsreader-latin-variable-italic.woff2" as="font" type="font/woff2" crossorigin>',
+  '<link rel="preload" href="/assets/fonts/newsreader-latin-o36-normal.woff2" as="font" type="font/woff2" crossorigin>',
+  '<link rel="preload" href="/assets/fonts/newsreader-latin-o36-italic.woff2" as="font" type="font/woff2" crossorigin>',
   '<link rel="preload" href="/assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>',
 ].join('\n');
 /* Etusivujen hero-kuvakokeilu (05.09.2026): kuva on LCP-ehdokas, esiladataan vain etusivuilla. */
