@@ -1,0 +1,19 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<title>SAMA hero stills</title>
+<style>html,body{margin:0;background:#0A0A09;overflow:hidden}canvas{display:block}</style>
+<!-- Paikallinen renderöintisivu (scripts/render-stills.mjs). /node_modules/ ohjataan palvelimessa kansioon,
+     jossa on three@0.180.0, postprocessing@6.39.6 ja n8ao@2.0.1 — ei kolmannen osapuolen pyyntöjä. -->
+<script type="importmap">
+{"imports":{
+ "three":"/node_modules/three/build/three.module.js",
+ "three/addons/":"/node_modules/three/examples/jsm/",
+ "three/examples/jsm/":"/node_modules/three/examples/jsm/",
+ "postprocessing":"/node_modules/postprocessing/build/index.js",
+ "n8ao":"/node_modules/n8ao/dist/N8AO.js"
+}}
+</script>
+</head><body>
+<script>window.addEventListener("error",e=>{window.FAIL=String(e.message||e)});</script>
+<script type="module" src="./hero3d.js"></script>
+</body></html>
