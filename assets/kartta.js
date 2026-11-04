@@ -572,7 +572,7 @@
       el.base.setAttribute('aria-hidden', 'true');
       el.svg = document.createElementNS(NS, 'svg');
       el.svg.setAttribute('class', 'km-svg km-top');
-      el.svg.setAttribute('role', 'img');
+      el.svg.setAttribute('role', 'group');   /* 04.11.2026: ei 'img' — kartan kohteet ovat painikkeita (axe: nested-interactive); nimi tulee .km-stage-ryhmältä */
       [el.base, el.svg].forEach(function (g) { g.setAttribute('data-home', HOME); g.setAttribute('preserveAspectRatio', 'xMidYMid meet'); el.stage.appendChild(g); });
       mapDraw();
       if (res[2]) draw110(res[2]);
