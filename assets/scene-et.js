@@ -1336,14 +1336,14 @@ class Component extends DCLogic {
       const sAl = sm((lt - endP - 0.1) / 0.9);
       if (sAl > 0.02) { g.save(); g.globalAlpha = sAl; this._xSetbacks(K, P, S); this._xPadZone(K, P, S); g.restore(); }
       lab('SERVAKAUGUS', P(-0.6, -0.05, H + 0.002), -26, 30, sm((lt - endP - 0.4) / 0.7));
-      lab('AKUPANGA KOHT', P(S.pad[0], S.pad[3], 0), -28, 26, sm((lt - endP - 0.4) / 0.7));
+      lab('SALVESTI KOHT', P(S.pad[0], S.pad[3], 0), -28, 26, sm((lt - endP - 0.4) / 0.7));
     } else if (b === 2) {
       g.drawImage(base, 0, 0, w, h);
       this._xSetbacks(K, P, S); this._xPadZone(K, P, S);
       const ga = sm(lt / 1.4); g.save(); g.globalAlpha = ga; this._xGhosts(K, P, S); g.restore();
       gateAl = sm((lt - 0.6) / 0.6); gateSweep = this._rm ? 1 : cl((lt - 2) / 1);
       lab('SERVAKAUGUS', P(-0.6, -0.05, H + 0.002), -26, 30, 1 - sm((lt - 1.4) / 0.8));
-      lab('AKUPANGA KOHT', P(S.pad[0], S.pad[3], 0), -28, 26, 1 - sm((lt - 1.4) / 0.8));
+      lab('SALVESTI KOHT', P(S.pad[0], S.pad[3], 0), -28, 26, 1 - sm((lt - 1.4) / 0.8));
       lab('VÕRGUETTEVÕTJA KINNITUS', P(0.805, -0.74, 0.22), -40, -46, sm((lt - 3.2) / 0.8));
     } else if (b === 3) {
       gateSweep = 1; gateAl = 1;
@@ -1699,7 +1699,11 @@ class Component extends DCLogic {
     const showLab = (ll) => cty(ll) === home || cmp;
     const pins = [];
     const FONT = '600 11px "IBM Plex Sans", sans-serif', FONTS = '500 10px "IBM Plex Sans", sans-serif';
-    const label = (x, y, txt, opt) => {
+    /* 04.11.2026: tunnisteet jonoon ja piirto lopuksi tärkeysjärjestyksessä (kohde > valittu kerros > pohjakerros);
+       päällekkäinen alemman tärkeyden tunniste jätetään pois, kuten tasokuvissa (puhelimella Fenno-Skan vs. varastoalue). */
+    const LQ = []; let LP = 0;
+    const label = (x, y, txt, opt) => { LQ.push([x, y, txt, opt || {}, g.globalAlpha, LP]); };
+    const drawLabel = (x, y, txt, opt) => {
       opt = opt || {};
       g.font = opt.font || FONT; g.textAlign = opt.align || 'left'; g.textBaseline = 'middle';
       const tw = g.measureText(txt).width, px = 5, bh = 16;
@@ -1791,6 +1795,7 @@ class Component extends DCLogic {
     if (kd) {
       const layers = kd.layers;
       for (const Ly of layers) {
+        LP = 1 + layers.indexOf(Ly);
         const a = al(Ly.id); if (a < 0.01 || Ly.id === 'site') continue;
         const aa = a * (1 - 0.45 * z) * (live && Ly.id === 'vork' && this._mapCur === 'site' ? Math.max(0, 1 - z * 1.6) : 1);   /* kohdeluvussa yhteysmerkinnät väistyvät zoomatessa */
         if (aa < 0.01) continue;
@@ -1851,11 +1856,26 @@ class Component extends DCLogic {
       const s = P(site); g.globalAlpha = al('site');
       for (let k = 0; k < 3; k++) { const ph = (time * 0.35 + k / 3) % 1; g.strokeStyle = 'rgba(212,181,116,' + ((1 - ph) * 0.6).toFixed(3) + ')'; g.lineWidth = 1; g.beginPath(); g.arc(s[0], s[1], 8 + ph * 60, 0, Math.PI * 2); g.stroke(); }
       g.fillStyle = '#F3EEE1'; g.beginPath(); g.arc(s[0], s[1], 5, 0, Math.PI * 2); g.fill();
+      LP = 100;
       const siteL = kd ? kd.layers[kd.layers.length - 1].name[lang] : '';
-      label(s[0] + 22, s[1] - 6, siteL, { font: '600 13px "IBM Plex Sans", sans-serif' });
-      label(s[0] + 22, s[1] + 12, lang === 'et' ? 'AKU · PÄIKE · JUHTIMINE' : 'AKKU · AURINKO · OHJAUS', { color: '#A39C8E' });
+      const SF = '600 13px "IBM Plex Sans", sans-serif', sub = lang === 'et' ? 'SALVESTI · PÄIKE · JUHTIMINE' : 'SÄHKÖVARASTO · AURINKO · OHJAUS';
+      g.font = SF; const sw1 = g.measureText(siteL).width; g.font = FONT; const sww = Math.max(sw1, g.measureText(sub).width) + 12;
+      if (s[0] + 22 + sww < w - 4) { label(s[0] + 22, s[1] - 6, siteL, { font: SF }); label(s[0] + 22, s[1] + 12, sub, { color: '#A39C8E' }); }
+      else if (s[0] - 22 - sww > 4) { label(s[0] - 22, s[1] - 6, siteL, { font: SF, align: 'right' }); label(s[0] - 22, s[1] + 12, sub, { color: '#A39C8E', align: 'right' }); }
+      else { label(s[0], s[1] + 26, siteL, { font: SF, align: 'center' }); label(s[0], s[1] + 44, sub, { color: '#A39C8E', align: 'center' }); }
       g.globalAlpha = 1;
     }
+    LQ.sort((a, b) => b[5] - a[5]);
+    const LB = [];
+    for (const q of LQ) {
+      const opt = q[3]; g.font = opt.font || FONT;
+      const tw = g.measureText(q[2]).width, al0 = opt.align || 'left';
+      const bx = al0 === 'center' ? q[0] - tw / 2 - 5 : (al0 === 'right' ? q[0] - tw - 5 : q[0] - 5);
+      const bb = [bx - 1, q[1] - 9, bx + tw + 11, q[1] + 9];
+      if (q[4] > 0.05) { if (LB.some((o) => bb[0] < o[2] && bb[2] > o[0] && bb[1] < o[3] && bb[3] > o[1])) continue; LB.push(bb); }
+      g.globalAlpha = q[4]; drawLabel(q[0], q[1], q[2], opt);
+    }
+    g.globalAlpha = 1;
     this._mapPins = pins;
     // OSM attribution (only on the full map, not in the stage)
     if (!inStage && kv) { g.font = FONTS; g.textAlign = 'right'; g.fillStyle = '#827C71'; g.fillText(w < 560 ? '© OpenStreetMap contributors' : '© OpenStreetMap contributors · Natural Earth', w - 8, h - 8); }
