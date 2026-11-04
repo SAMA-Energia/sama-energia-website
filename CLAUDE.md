@@ -163,3 +163,11 @@ When in doubt, leave it out and flag it.
 - AJASTETTU: 1.1.2027 Eleringin tasakaalustamisvõimsuse tasu 3,73 → 2,97 €/MWh (ERR 26.6.2026) — vaihda ET-heron todiste ja kartan Reservid-taso.
 - AVOIN: natiivitarkistus; lähteet puuttuvat automaattitarkistuksessa kolmelta vanhalta riviltä (ET reservisivu "miinimumpakkumine 1 MW", invertteri/aku 1:2,
   tiimin aurinkokokemus) ja kahdelta FI-riviltä; push repoon vaatii oikeuden; etapit 2–4 (alasivut, riippumaton tarkistus + natiivi, perustajan OK → main).
+
+## Perustajan päätökset 4.11.2026 (Madis) — koskevat seuraavaa etusivua
+
+- Etusivun konsepti 1 "Objektid ees" suunnitelmasta "Veebileht v1 — plaan ja kvaliteedilatt" (https://claude.ai/artifact/3dVPs11nXDLpw64ZAbYetd); päätöslokissa I-20261104-2.
+- Hero-otsikko (I-20261104-3) korvaa 9.9.2026 otsikon: ET „Teie elektriliitumine on vara. Pange see enda kasuks tööle." / FI „Sähköliittymänne on omaisuutta. Laittakaa se töihin omaksi eduksenne." v41-osion "H1 lukittu" ei enää päde. Ingressi ja toisen osion otsikko tekstiarkista niin, etteivät ne toista otsikkoa.
+- Kumppanit etusivulla: kaikki kirjallisesti vahvistetut kumppanit luokittain ja tasavertaisesti (korvaa 2.11.2026 linjauksen "etusivulla ei nosteta yksittäisiä kumppaneita esiin"). Nimi vain R14-merkinnän ja päätöslokin mukaan (I-20261023-1); malli ja tekniset arvot tarjoukseen, ei sivulle.
+- ET-heron todiste ei ole €/MWh (Madis 8.9.2026: senttejä megawatilta ei kiinnosta ketään); suunnitelmassa Eleringin varustuskindluse aruanne 2025 (juhitav võimsus ~2 100 MW 2035, salvestid ~400 MW, ERR 9.12.2025).
+- Työ haaraan pushataan jokaisen vaiheen jälkeen kysymättä (I-20261104-1); main vain Madiksen OK:lla.

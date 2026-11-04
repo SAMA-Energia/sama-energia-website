@@ -7,7 +7,7 @@ Roll: välisaudiitor, kes ei ole lehte teinud. Loe `docs/brief/00-lahteulesanne.
 1. Esimene ekraan: kas 5 sekundiga on selge, mida SAMA teeb, kellele, mis on järgmine samm; kas järgmine sektsioon paistab; kas telefon/CTA on nähtav.
 2. Sõnum ja bränd: kas hääl on strateeg/jutuvestja/revolutsionäär/innovaator; kas väärtused on näha; kas kirjutatud tugevusest; kas tekst on Madise lihtne lause, mitte reklaam.
 3. Tõendid: iga arv allika ja kuupäevaga; FI leht ainult Fingridi/Soome, EE leht ainult Eleringi/Eesti numbritega; reservitulu juhib ja on modelleeritud, mitte lubatud ega talutatud.
-4. Reeglid: keelatud nimed (VENI, rahastajad, EP Energy, tootespetsid), „ei track-recordi", varutoide tingimusega, partnerite esiletõst puudub esilehel.
+4. Reeglid: keelatud nimed (VENI, rahastajad, EP Energy, tootespetsid), „ei track-recordi", varutoide tingimusega, partnerid esilehel ainult kategooriate kaupa ja samaväärselt (Madis 04.11.2026), nimi ainult R14 kande ja otsuste logi järgi.
 5. Struktuur: sõnade arv ≤ 800 nähtavat; sektsioonid täislaiuses ja rütmiga, mitte vasaku veeru slaidid; sügavad selgitused alamlehtedel ja lingitud kirjeldava tekstiga; akordion ainult KKK-s.
 6. Liikumine ja jõudlus: ei kerimisjuhtimist; 3D ei kanna teksti; reduced-motion; telefonis staatiline; LCP/CLS/INP mõõdetud (Lighthouse mobiil).
 7. Konkurendid: võrdle sama päeva Powera, Cactos, Sunergia, Energiapartner esilehega — kus SAMA on parem, kus mitte; ole konkreetne.
