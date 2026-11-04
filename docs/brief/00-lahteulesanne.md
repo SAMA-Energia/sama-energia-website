@@ -49,5 +49,5 @@ See fail on ühine alus kõigile vestlustele, mis veebilehte teevad. Iga vestlus
 - Mõtlemine enne ehitust: uuring → variandid põhjendustega → Madise valik → ehitus → sõltumatu kontroll. Iga samm põhjendatud (allikas või loogika). Mitte otsustada tema eest sõnastust; mitte küsida uuesti seda, mis on otsustatud (mälu + see fail).
 - Töö tulemus on fail või eelvaade, mida saab telefonis avada; mitte „vaata ise"; mitte töö tagasi andmine.
 - Keel: ET kliendile eesti, FI kliendile soome; meeskond inglise/eesti. Kõik uued tekstid natiivkontrolli enne main'i.
-- Git: commit harule; push ainult Madise sõnaga „push it".
+- Git: commit ja push töö harule pärast iga sammu, ilma küsimata (Madise reegel 03.11.2026; varasemat „push it" reeglit ta ei teinud). Main'i ehk avalikule lehele läheb töö ainult Madise OK-ga.
 - Toon: Madise enda lihtsad laused, mitte reklaamikeel; teie-vorm; mitte „ausalt", „siiralt".

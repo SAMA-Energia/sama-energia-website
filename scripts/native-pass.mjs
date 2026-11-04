@@ -7,7 +7,7 @@
  * docs/ on seurattu mutta _redirects palauttaa /docs/* -> 404!, joten sitä ei koskaan tarjoilla.
  *
  * Sisältö: jokainen asiakkaalle näkyvä merkkijono, joka MUUTTUU kun draft julkaistaan —
- * eli mikä tahansa teksti, jota ei ole mainissa (b74d5ab) sellaisenaan. Missä mainissa on
+ * eli mikä tahansa teksti, jota ei ole mainissa (MAIN) sellaisenaan. Missä mainissa on
  * lähin vastine, se näytetään rinnalla. Ryhmittely sivuittain sivujärjestyksessä.
  *
  * Teksti poimitaan GENEROIDUISTA sivuista (ei lähteistä eikä käsin), jotta katselmoitava
@@ -23,7 +23,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { execFileSync } from 'node:child_process';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const MAIN = 'b74d5ab';
+const MAIN = '941e6ef'; // main = julkaistu sivusto (päivitetty 04.11.2026, aiemmin b74d5ab)
 const OUT = join(ROOT, 'docs', 'native-pass');
 
 /* Sivut FI/ET-paketteihin, sivujärjestyksessä. new = tämän haaran polku,
@@ -116,7 +116,7 @@ async function loadPlaywright() {
   process.exit(2);
 }
 
-/* ---------- staattinen palvelin: nykyinen puu tai mainin (b74d5ab) versio ---------- */
+/* ---------- staattinen palvelin: nykyinen puu tai mainin (MAIN) versio ---------- */
 const MIME = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.png': 'image/png', '.webp': 'image/webp', '.woff2': 'font/woff2', '.svg': 'image/svg+xml', '.json': 'application/json', '.txt': 'text/plain; charset=utf-8' };
 const ET_TOP = new Set(readdirSync(join(ROOT, 'et')).filter(d => statSync(join(ROOT, 'et', d)).isDirectory()));
 function serve(fromGitRef) {

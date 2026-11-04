@@ -125,10 +125,41 @@ When in doubt, leave it out and flag it.
 - verify-pages: kartan tiedostojen koot, jokaisen kerroksen johtopäätös sivulla = data, faktojen lähteet olemassa.
 - AVOIN: natiivitarkistus kaikille uusille FI/ET-teksteille; Elektrilevi mainitaan datalähteenä (jakeluverkkoyhtiö); etusivun karttarivit (FI 1 050 MW 24.2.2026, ET „Hertz 1 Kiisa") päivitetään etusivun uudistuksessa; reaaliaikainen data vaatisi Netlify-funktion — perustajapäätös.
 
-## Etusivun Yhteinen verkko -osio datasta + 3D-ilme takaisin (vestlus C, haara v35-uusi-ilme, 03.11.2026)
+## Etusivun karttaosio moottorilla (vestlus C, 03.11.2026) — korvattu v41:llä 04.11.2026
 
-- Madiksen valinta 3.11.2026 „Esilehele + 3D tagasi": kuusi kysymystä + „Teidän liittymänne" etusivun osiossa `#verkko` / `#vork` (painikkeet 1–7, yksi kysymys kerrallaan, johtopäätös, iso luku, lähde). Lohko `kartta-etusivu:alku … loppu` generoidaan: `python3 scripts/kaart/build_page.py` — älä muokkaa käsin. verify-pages tarkistaa johtopäätökset myös etusivulta.
-- Kartta: leveällä näytöllä oikean reunan näyttämössä (`.lava-cv .km-slot`, sama kohtauslogiikka kuin muilla), puhelimella ja reduced-motionilla osion sisällä (`.km-inline`, painikkeet kiinnittyvät). Ilme kuten v39: maa kultaisina pisteinä, johtojen hehku, syvyys hiirellä (kaksi SVG:tä, verkkotaso siirtyy 2D-siirrolla). Ei CSS-perspektiiviä: Chromium jätti sen alla SVG-muutoksia piirtämättä.
-- Moottori `assets/kartta.js` palvelee kaikkia `[data-kartta]`-lohkoja (tunnisteet km0-, km1-…); budjetit kartta.js 36 kt, kartta.css 20 kt. Esikatselu suoraan osioon: `python3 scripts/build-standalone.py v35-kartta verkko,vork`.
-- FI-todisterivin varastoluvut samaksi kuin kartalla: 2 085 MW (Fingrid avoin data 424, 2.11.2026) ja lähes 6 GW sopimuksia (Fingrid 23.10.2026).
-- AVOIN: natiivitarkistus uusille FI/ET-teksteille; `assets/kartta.json` ja `kartta-verkko.json` eivät ole enää käytössä (scene.js:n karttakoodi samoin); vanhat `.mp-*`-säännöt site.css:ssä käyttämättä.
+- 3.11.2026 etusivun Yhteinen verkko -osio tehtiin kartta.js-moottorilla (painikkeet 1–7, kartta 3D-näyttämössä). v41 (K2, alla) korvasi
+  etusivun staattisella karttaosiolla `.k-kaart` (tasokuvat, ei JS:ää); vestlus C:n etusivulohkoa ei ole lähteessä. Etusivutila
+  (`data-mode="front"`) säilyy kartta.js:ssä käyttämättä; `build_page.py` ohittaa etusivun, jos merkkejä `kartta-etusivu:alku … loppu` ei ole.
+- Samalla tuli /verkko/- ja /vork/-sivun kartalle v39-näyttämön ilme: maa kultaisina pisteinä, johtojen hehku, syvyys hiirellä (kaksi SVG:tä,
+  verkkotaso 2D-siirrolla; ei CSS-perspektiiviä — Chromium jätti sen alla SVG-muutoksia piirtämättä). Kaksiriviset tunnisteet (EstLink,
+  Fenno-Skan, synkronialueet), pistekohteet voittavat alueen 22 px:n säteellä, useampi `[data-kartta]`-lohko samassa dokumentissa (km0-, km1-…).
+- Budjetit kartta.js 36 kt, kartta.css 20 kt. Esikatselu: `python3 scripts/build-standalone.py <versio> verkko,vork` (avautuu osioon);
+  kartta.js upotetaan esikatseluun tekstinä — data:-skriptin tiedostonäkymä esti (Madis 3.11.2026: kartta ei näkynyt).
+- AVOIN: natiivitarkistus uusille FI/ET-teksteille; `.k-kaart`-tasokuvien luvut kannattaa verrata `assets/kartta-data.json`:iin (sama lähde, 2.11.2026).
+
+## v41 — K2-etusivu (luonnos, haara v35-uusi-ilme, 04.11.2026)
+
+- Etusivu FI/ET K2-konseptin mukaan (Claude Design -kanvas: k2-1440, k2-390, kaart-1440, kaart-390). Täysleveät osiot vaalea/tumma-rytmissä;
+  `.k-chalk` = vaalea tokenisarja (myös lomake: vaaleat kentät, `color-scheme:light`). 3D vain still-kuvina: hero-tausta `k-hero-{1920,1280}.webp`,
+  puhelimelle `k-hero-m.webp` + numeroidut nastat, päivänvalokuva `k-paev*.webp`, kohdekäynti `k-objekt*.webp`. Tarrat HTML:nä renderin
+  prosenttiankkureista (`.k-tag.r` = nimilappu vasemmalle reunan lähellä). Heron korkeus seuraa näkymää (`100vh - 130px`, 600–860 px): seuraava osio pilkistää.
+- Etusivu ei lataa 3D-moottoria (scene.js / scene-et.js + kartta-json, ~200 kt). Kartta on oma osio `.k-kaart`: kuusi kysymystä + "Teidän liittymänne",
+  radio + label (ei JS:ää, nuolinäppäimet toimivat), tasokuvat `kk-{fi,ee}-{d,m}0–6.webp` (kanvasin map2-renderit; FI-varastotason neliö siirretty
+  Kuopio-nimen vasemmalle puolelle). Luvut ja lähteet kanvasin kaart-datasta (tarkistettu 02.11.2026). Koko interaktiivinen kartta jää /verkko/ ↔ /vork/.
+- Järjestys: hero (H1 lukittu, ET "oma"; v39-ingressi; CTA + "Miten akku toimii?" + puhelin; todiste FI 1 500 MW Fingrid 11.6.2025 / ET 3,73 €/MWh
+  Elering 2026) → miten toimii (kipu + kolme asiaa + kuva + neljä tuloriviä, reservimarkkina ensin) → reserviteaser → kolme tilattavaa → kartta →
+  näin edetään → kenelle → miksi SAMA → UKK (6, kaikki kiinni) → lomake.
+- Siirretty etusivulta alasivulle (ei poistettu): kenelle-ingressi ja "Ettekö löytänyt…" → /energiavarastot/#kenelle-miksi ja /energiasalvestid/#kellele-miks;
+  tarjouskorttien "mitä sisältää" -rivit ovat palvelusivulla (Mitä sisältää / Mitä te annatte). FI-etusivun osio-id:t takaisin suomeksi (etusivu, tarjoamme, verkko, nain).
+- Sanamäärä (näkyvä teksti Chromessa, ilman ylä- ja alatunnistetta): FI 814 / ET 854, tavoite ≤ 800. Loput vaativat hyväksyttyjen tekstien lyhentämistä
+  → perustajan valinta. Ehdotus (vain kokonaisten lauseiden poisto): Miksi SAMA -ingressi, UKK:n sivulause; ET lisäksi vaiheiden ingressin 1. lause ja
+  Miksi SAMA -kohtien 2. lauseet → FI 784, ET 795.
+- site.js: UKK "yksi auki kerrallaan" rajattu omaan `.faq`-lohkoonsa; kiinnitetty CTA tunnistaa K2-heron (`.k-hero`). build-standalone.py upottaa
+  `<source srcset>` -kuvat. build-pages.mjs poistaa `&shy;`:n tekstiversioista (H1:n tavutuskohdat näkyvät vain puhelimella, `hyphens` ohjaa).
+  native-pass.mjs vertaa nykyiseen mainiin 941e6ef (docs/native-pass/FI.md 347 riviä, ET.md 379 riviä, generoitu 04.11.2026).
+- Lighthouse mobiili (paikallinen palvelin brotlilla, 2 ajoa): suorituskyky 87–89, saavutettavuus 100, parhaat käytännöt 100, SEO 100; FCP 1,2–1,4 s,
+  LCP 3,5–3,6 s (simuloitu; LCP-elementti on heron ingressi, mitattuna verkon ja CPU:n hidastuksella ≈ 1,1 s), TBT 110–130 ms, CLS 0.
+  Suurin jäljellä oleva vipu: Newsreader-muuttujafonttien preload (279 kt).
+- AJASTETTU: 1.1.2027 Eleringin tasakaalustamisvõimsuse tasu 3,73 → 2,97 €/MWh (ERR 26.6.2026) — vaihda ET-heron todiste ja kartan Reservid-taso.
+- AVOIN: natiivitarkistus; lähteet puuttuvat automaattitarkistuksessa kolmelta vanhalta riviltä (ET reservisivu "miinimumpakkumine 1 MW", invertteri/aku 1:2,
+  tiimin aurinkokokemus) ja kahdelta FI-riviltä; push repoon vaatii oikeuden; etapit 2–4 (alasivut, riippumaton tarkistus + natiivi, perustajan OK → main).

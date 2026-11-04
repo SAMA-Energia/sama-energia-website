@@ -14,7 +14,7 @@ Roll: andmeajakirjanik + kartograaf + front-end. Loe `docs/brief/00-lahteulesann
 
 - Iga arv allikas + kuupäev; sama definitsioon mõlemal maal või silt, kui mitte. Reservihindade langust ei tõsteta esile; nõudluse kasv ja „kes maksab" küll.
 - Ei väliseid skripte ega reaalajas päringuid (lehe lubadus „ei kolmanda osapoole skripte"); kui reaalajas voog on vajalik, kirjelda Netlify funktsiooni plaan eraldi otsuseks.
-- Commit harule; push ainult „push it".
+- Commit ja push harule pärast iga sammu, ilma küsimata; main ainult Madise OK-ga.
 
 ## Väljund
 

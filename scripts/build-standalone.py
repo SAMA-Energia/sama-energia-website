@@ -68,7 +68,13 @@ def build(lang):
     kartta_js=('<script>'+open(os.path.join(ROOT,'assets/kartta.js'),encoding='utf-8').read().replace('</script','<\\/script')+'</script>') if 'data-kartta' in html else ''
     html=re.sub(r'<script src="/assets/kartta\.js" defer></script>\n?','',html)
     html=re.sub(r'(src|href)="(/assets/[^"]+)"',lambda m:f'{m.group(1)}="{datauri(m.group(2)) or m.group(2)}"',html)
-    html=re.sub(r'srcset="[^"]*"','',html)
+    # <picture><source srcset>: upotetaan ensimmäinen ehdokas (muuten esikatselu näyttäisi img-varakuvan)
+    def src_set(m):
+        first=m.group(2).split(',')[0].strip().split(' ')
+        d=datauri(first[0]) if first[0].startswith('/assets/') else None
+        return f'{m.group(1)}srcset="{d}"' if d else m.group(0)
+    html=re.sub(r'(<source\b[^>]*?)srcset="([^"]*)"',src_set,html)
+    html=re.sub(r'(<img\b[^>]*?)\ssrcset="[^"]*"',r'\1',html)
     start=START.get(lang,'')
     router=(f"<script>if(!location.hash)history.replaceState(null,'','#{start}');</script>" if start else '')+'''<script>(function(){var cur=null;function go(){var h=location.hash||'#/';var anchor=null;
 if(h.indexOf('#/')!==0){anchor=h.slice(1);h='#/'+(cur||'');}

@@ -2,8 +2,8 @@
 """
 SAMA kaart — kirjoittaa /verkko/- ja /vork/-sivun luvut tiedostosta assets/kartta-data.json
 lähdetiedostoihin src/fi.html ja src/et.html (sivu id="p-verkko", merkkien kartta:alku … kartta:loppu väliin)
-sekä etusivun Yhteinen verkko / Ühine võrk -osion (merkkien kartta-etusivu:alku … kartta-etusivu:loppu väliin;
-kysymys kerrallaan painikkeilla, kartta näyttämössä tai osion sisällä — assets/kartta.js, data-mode="front").
+sekä tarvittaessa etusivun Yhteinen verkko / Ühine võrk -osion (merkkien kartta-etusivu:alku … kartta-etusivu:loppu väliin;
+kysymys kerrallaan painikkeilla — assets/kartta.js, data-mode="front"). v41-etusivulla (4.11.2026) merkkejä ei ole: ohitetaan.
 
 Miksi: kartan luvut, johtopäätökset ja lähteet ovat yhdessä paikassa (kartta-data.json). Sivun teksti
 (luvut tavallisella vierityksellä, teksti kartan ulkopuolella) ja kartta näyttävät aina samat luvut.
@@ -231,10 +231,12 @@ def front(D, lang):
 
 
 def replace_front(src_text, lang, block):
+    # Etusivun lohko on valinnainen: v41-etusivu (K2, 4.11.2026) käyttää omaa staattista karttaosiota (.k-kaart, tasokuvat)
+    # eikä tätä lohkoa. Jos merkit ovat lähteessä, lohko päivitetään datasta; muuten etusivuun ei kosketa.
     a = src_text.find(FBEGIN)
     b = src_text.find(FEND)
     if a < 0 or b < a:
-        raise SystemExit(f'src/{lang}.html: etusivun karttalohko (kartta-etusivu:alku … loppu) puuttuu')
+        return src_text
     return src_text[:a] + block + src_text[b + len(FEND):]
 
 

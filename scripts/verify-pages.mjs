@@ -698,7 +698,7 @@ if (!/font-display:swap/.test(read('assets/fonts.css'))) err('fonts.css: font-di
    (docs/brief/03-kaart.md: pohjatiedosto < 150 kt, 110 kV erillisenä). kartta.js 30 → 36 kt ja kartta.css 16 → 20 kt 3.11.2026:
    sama moottori palvelee nyt myös etusivua (näyttämö + puhelinlaatikko) ja piirtää pisteilmeen ja kallistuksen.
    Tekstin luvut tulevat kartta-data.json:sta (scripts/kaart/build_page.py) — tarkistetaan, että jokaisen kerroksen
-   johtopäätös on sekä karttasivulla että etusivulla. */
+   johtopäätös on karttasivulla, ja etusivulla silloin, kun etusivu käyttää generoitua lohkoa (data-kartta; v41-etusivulla ei). */
 {
   const KB = 1024, size = f => statSync(join(ROOT, f)).size;
   for (const [f, max] of [['assets/kartta-pohja.json', 150], ['assets/kartta-110.json', 100], ['assets/kartta-data.json', 80], ['assets/kartta.js', 36], ['assets/kartta.css', 20]]) {
@@ -711,6 +711,7 @@ if (!/font-display:swap/.test(read('assets/fonts.css'))) err('fonts.css: font-di
     const dec = s => s.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#x27;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
     for (const [lang, file] of [['fi', 'verkko/index.html'], ['et', 'et/vork/index.html'], ['fi', 'index.html'], ['et', 'et/index.html']]) {
       const page = dec(read(file));
+      if ((file === 'index.html' || file === 'et/index.html') && !page.includes('data-kartta')) continue;   // v41-etusivu: oma staattinen karttaosio
       kd.layers.forEach((L, i) => { if (!page.includes(L.concl[lang])) err(`${file}: kerroksen ${i + 1} johtopäätös ei vastaa kartta-data.json:ia — aja python3 scripts/kaart/build_page.py`); });
     }
     for (const L of kd.layers) for (const c of ['FI', 'EE']) for (const f of L.facts[c] || []) if (!kd.sources[f.src]) err(`kartta-data.json: tuntematon lähde ${f.src}`);

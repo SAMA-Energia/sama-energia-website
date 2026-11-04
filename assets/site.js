@@ -29,7 +29,7 @@
     var y=window.scrollY||h.scrollTop;
     if(header)header.classList.toggle('is-stuck',y>8);
     if(sticky){
-      var hero=d.querySelector('.hero, .subhero'),closer=d.querySelector('.closer');
+      var hero=d.querySelector('.page.on .k-hero, .page.on .hero, .page.on .subhero')||d.querySelector('.k-hero, .hero, .subhero'),closer=d.querySelector('.page.on .closer')||d.querySelector('.closer');
       var past=hero?y>(hero.offsetTop+hero.offsetHeight-120):y>300;
       var atForm=closer&&(closer.getBoundingClientRect().top<window.innerHeight*0.6);
       sticky.classList.toggle('show',past&&!atForm);
@@ -67,8 +67,8 @@
   });
 
   /* ---------- UKK: yksi auki kerrallaan ---------- */
-  var dets=d.querySelectorAll('.faq details');
-  dets.forEach(function(dt){dt.addEventListener('toggle',function(){if(dt.open){dets.forEach(function(o){if(o!==dt)o.open=false;});}});});
+  d.querySelectorAll('.faq').forEach(function(fq){var dets=fq.querySelectorAll('details');
+  dets.forEach(function(dt){dt.addEventListener('toggle',function(){if(dt.open){dets.forEach(function(o){if(o!==dt)o.open=false;});}});});});
 
   /* ---------- lomakkeet — Netlify Forms: AJAX (.sent), varapolkuna natiivi lähetys
      action-kiitossivulle; ilman JS:ää selain lähettää suoraan actioniin.
