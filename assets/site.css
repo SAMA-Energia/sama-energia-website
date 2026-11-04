@@ -690,6 +690,7 @@ h1 em,h2 em{color:var(--gold-2)}
 .k-tag.h:before{left:5px;bottom:auto;top:0;width:var(--l);height:1px}.k-tag.h>span{left:calc(var(--l) + 5px);bottom:auto;top:0;transform:translateY(-50%)}
 @media (max-width:1279px),(max-aspect-ratio:7/5){.k-hero .k-tag{display:none}}
 .k-or{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .k-sc{position:absolute;inset:0;display:none}
 #ko0:checked~.k-stage .k-sc0,#ko1:checked~.k-stage .k-sc1,#ko2:checked~.k-stage .k-sc2,#ko3:checked~.k-stage .k-sc3,#ko0:checked~.wrap .k-say0,#ko1:checked~.wrap .k-say1,#ko2:checked~.wrap .k-say2,#ko3:checked~.wrap .k-say3{display:block}
 .k-obj{position:absolute;right:var(--gutter);bottom:clamp(20px,4vh,40px);z-index:3;width:min(500px,38%)}

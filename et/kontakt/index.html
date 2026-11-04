@@ -33,7 +33,7 @@
 
 <header class="header" id="top">
   <div class="wrap">
-    <a class="logo" href="/" aria-label="SAMA Energia — avaleht"><img src="/assets/mark.svg" alt="SAMA Energia" width="154" height="38"></a>
+    <a class="logo" href="/" aria-label="SAMA Energia, avaleht"><img src="/assets/mark.svg" alt="SAMA Energia" width="154" height="38"></a>
     <nav class="nav" aria-label="Peamenüü">
       <div class="dd" data-nav="lahendused">
         <button type="button" aria-haspopup="true" aria-expanded="false">Lahendused <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></button>
@@ -88,7 +88,7 @@
       <h1>Alustame teie <em>tarbimisandmetest.</em></h1>
       <p class="lead" style="margin-top:18px">Kirjalik hinnang kahe tööpäevaga pärast andmete saamist näitab, kas ja kuidas salvesti end teie objektil ära tasub. Hinnang on kaks lehekülge ja kohustusteta:</p>
       <ul><li><svg viewBox="0 0 20 20" fill="none" stroke="#C7A45C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Liitumine ja tarbimisprofiil teie tunnipõhistest andmetest</li><li><svg viewBox="0 0 20 20" fill="none" stroke="#C7A45C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel</li><li><svg viewBox="0 0 20 20" fill="none" stroke="#C7A45C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Modelleeritud reservitulu toodete kaupa allikatega</li><li><svg viewBox="0 0 20 20" fill="none" stroke="#C7A45C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Võrguettevõtja seisukoht ja see, mida hinnang ei ütle</li></ul>
-        <p class="give">Teie annate: oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt – juhendame), ühe elektriarve ja peakilbi skeemi.</p>
+        <p class="give">Teie annate: oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt, juhendame), ühe elektriarve ja peakilbi skeemi.</p>
       <div class="direct">
         <div class="photo" aria-hidden="true">MM</div>
         <div><b>Madis Maastik</b><span><a href="tel:+358449654614">+358 449 654 614</a></span><span><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a></span></div>
@@ -113,7 +113,7 @@
             <div class="field"><label for="f-fuse-b">Peakaitse või liitumisvõimsus</label><input id="f-fuse-b" name="liittymisteho" type="text" placeholder="nt 400 A või 250 kW"></div>
             <div class="field"><label for="f-year-b">Aastane tarbimine</label><input id="f-year-b" name="vuosikulutus" type="text" placeholder="nt 900 MWh/a"></div>
             <div class="field"><label for="f-grid-b">Võrguettevõtja</label><input id="f-grid-b" name="verkkoyhtio" type="text" placeholder="nt Elektrilevi"></div>
-            <div class="field wide"><label for="f-solar-b">Kas objektil on päikeseelekter?</label><select id="f-solar-b" name="aurinko"><option value="">—</option><option>Ei</option><option>Jah</option><option>Plaanis</option></select></div>
+            <div class="field wide"><label for="f-solar-b">Kas objektil on päikeseelekter?</label><select id="f-solar-b" name="aurinko"><option value="">Valige</option><option>Ei</option><option>Jah</option><option>Plaanis</option></select></div>
           </div>
         </details>
         <button class="btn btn-primary btn-lg" type="submit">Küsi tasuta hinnangut <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
@@ -129,7 +129,8 @@
   </div></section>
 <section class="section" id="kontaktid">
   <div class="wrap">
-        <div class="contacts">
+        <h2 class="sr-only">Kontaktid</h2>
+    <div class="contacts">
       <article class="person ccard reveal"><div class="top"><div class="photo" aria-hidden="true">MM</div><div><h3>Madis Maastik</h3><div class="role">Müügijuht</div></div></div><p class="duty">Hinnangud, agregaatorid, kliendisuhted</p><p class="contact"><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a><br><a href="tel:+358449654614">+358 449 654 614</a></p></article>
       <article class="person ccard reveal"><div class="top"><div class="photo" aria-hidden="true">MR</div><div><h3>Martin Rautio</h3><div class="role">Tegevjuht</div></div></div><p class="duty">Suund, partnerlused, lepingud ja rahastus</p><p class="contact"><a href="mailto:martin.rautio@samaenergia.fi">martin.rautio@samaenergia.fi</a><br><a href="tel:+358407019099">+358 40 701 9099</a></p></article>
       <article class="person ccard reveal"><div class="top"><div class="photo" aria-hidden="true">VP</div><div><h3>Viljar Petersell</h3><div class="role">Paigaldusjuht</div></div></div><p class="duty">Paigaldus, objekt, teostus ja kvaliteet</p><p class="contact"><a href="tel:+358406353245">+358 40 635 3245</a></p></article>

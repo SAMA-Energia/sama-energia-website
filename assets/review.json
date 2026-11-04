@@ -56,6 +56,12 @@
   },
   {
    "page": "/aurinkosahko/",
+   "sectionId": "aurinkokatto",
+   "kind": "changed",
+   "prev": "Katto, joka tuottaa.Katto on rakennuksen tärkein rakenne, ja sen uusiminen on iso investointi joka tapauksessa. Kun katto uusitaan, kattoon integroitu aurinkokatto tekee kaksi asiaa kerralla: uuden katon ja voimalan. Kate ja paneeli yhtenäPaneelit ovat osa katetta eivätkä erillinen rakenne katon päällä. Katto ja voimala suunnitellaan ja rakennetaan yhtenä, ja vesitiiveys on kattotyön vastuulla alusta loppuun. Halliin, maatilalle ja liikerakennukseenSuuret yhtenäiset kattopinnat ovat aurinkokaton luonteva paikka. Mitoitus tehdään kulutuksen mukaan, ei katon koon. Kun ilme ratkaiseeKun rakennuksen ulkonäkö on tärkeä, kattoon integroitu ratkaisu sovittaa aurinkosähkön rakennuksen ilmeeseen. Suojellussa rakennuksessa ratkaisu sovitaan museoviranomaisen kanssa. Kun katto uusitaanaurinkokaton hinta vertautuu uuteen kattoon Kun katto on uusittava lähivuosina, aurinkokaton hintaa verrataan uuteen kattoon, ei pelkkään voimalaan: kate maksetaan joka tapauksessa, ja voimalan osuus investoinnista jää pienemmäksi kuin erillisessä asennuksessa valmiin katon päälle. Kartoituksessa käydään läpi kattorakenteen kantavuus, kaltevuus ja suunta, lumi- ja tuulikuormat, paloturvallisuus ja luvan tarve."
+  },
+  {
+   "page": "/aurinkosahko/",
    "sectionId": "asennus",
    "kind": "changed",
    "prev": "Katto- ja sähkötyö saman johdon alla.Aurinkosähkön asennus on kattotyötä ja sähkötyötä samalla työmaalla. Asennamme aurinkovoimalat valmiille katolle, maahan ja katokseen sekä rakennamme kattoon integroidut aurinkokatot. Asennusta johtaa asennuspäällikkömme, ja sähkötyöt ja käyttöönoton tekee rekisteröity sähköurakoitsijakumppanimme. Yksi johto, yksi aikataulu ja yksi dokumentaatio. KattotyöKiinnitykset, läpiviennit ja aurinkokaton kate tehdään kattotyön säännöillä, jotta katto pysyy vesitiiviinä voimalan alla. Asennusta johtaa asennuspäällikkömme, ja katto- ja sähkötyö tehdään saman johdon alla samalla työmaalla. Sähkötyö ja käyttöönottoSähkötyöt tekee rekisteröity sähköurakoitsijakumppanimme: tasasähköpuolen kaapelointi, invertterit, liitäntä pääkeskukseen, suojaus ja mittaus. Käyttöönotossa järjestelmä tarkastetaan ja mitataan, ja dokumentit luovutetaan teille. Verkkoyhtiö ja viranomaisetTuotannon liittämisilmoitus verkkoyhtiölle, lupa-asiat kunnan kanssa ja käyttöönottotarkastuksen dokumentaatio kulkevat meidän kautta. Te allekirjoitatte, me hoidamme muun. Kokemus, joka on jo tehtyTiimimme on rakentanut aurinkojärjestelmiä vuosia: kotiasennuksista ja suojellun talon aurinkokatosta yritysten, maatilojen ja jopa 400 kW:n peltoasennuksiin. Sama tiimi on valmis isompaan – megawattiluokan hankkeet ovat suunnitelmissa ja hallinnassa. Näin asennus etenee.Neljä vaihetta. Teidän osuutenne on tiedot, päätös ja allekirjoitus; muu kulkee meidän kautta. Kartoitus ja kirjallinen arvioTuntikulutus Datahubista tai verkkoyhtiöltänne valtuutuksellanne, yksi lasku ja pääkaavio. Me kirjoitamme arvion: voimalan koko, oma käyttö, ylijäämä ja sama laskelma akun kanssa.SAMA · maksuton Kohdekäynti ja suunnitteluKatto, rakenteet, kaapelireitti ja keskus mitataan paikalla, verkkoyhtiön liittämisilmoitus ja luvat hoidetaan. Hinta vahvistetaan.SAMA + verkkoyhtiö Katto- ja sähköasennusKattotyö ja sähkötyö samalla työmaalla, aikataulu toimintanne mukaan. Aurinkokatossa katto ja voimala rakennetaan yhtenä työnä.Asennuspäällikkö + sähköurakoitsija Käyttöönotto ja luovutusTarkastus, mittaukset, dokumentit ja seurantanäkymä. Jos kokonaisuuteen kuuluu akku, se liitetään samassa vaiheessa aggregaattoriin.SAMA + te"
@@ -104,6 +110,12 @@
    "sectionId": "paiva",
    "kind": "changed",
    "prev": "Miltä akun päivä näyttää. Yksi akku, neljä työtä, yksi vuorokausi. Kello kulkee, akku lataa halvalla, leikkaa aamuhuipun, odottaa valmiina ja purkaa energian silloin, kun se on kallista. Koko ajan se on Fingridin käytettävissä. KulutuksenneTehomaksurajaHuippu, jonka akku leikkaaPörssihinta (tunti)Akku odottaa, tuottaa reservissä 00–05Akku lataa, kun pörssihinta on päivän alin. Sama energia myydään myöhemmin kalliilla tai käytetään huipun aikana. 07–09Aamun käynnistyshuippu ei päädy verkkolaskulle: akku antaa puuttuvan tehon itse. Tehomaksu lasketaan huipun mukaan, joten juuri tämä hetki maksaa. 10–16Akku odottaa puoliksi ladattuna ja on Fingridin reservimarkkinoiden käytettävissä. Valmiudesta maksetaan silloinkin, kun aktivointia ei tule. 17–20Iltahuippu ja päivän kallein sähkö osuvat yhteen. Akku purkaa energian ja lataa yöllä uudelleen. Kaavamainen vuorokausi, ei yhden kohteen mitattua dataa. Kohteenne todellisen profiilin piirrämme arvioon tuntikohtaisista kulutustiedoistanne."
+  },
+  {
+   "page": "/energiavarastot/",
+   "sectionId": "toimitus",
+   "kind": "changed",
+   "prev": "Mitä toimitamme – ja mitä laitteilta vaadimme. Laitteet valitaan kohteenne mukaan, ei varaston. Turvallisuus, takuu ja huolto ovat arviossa kirjattuina, eivät pienellä präntillä. Teollisuusluokan järjestelmäUlkoasennukseen sopiva varastokaappi, invertteri ja ohjaus, mitoitettuna liittymänne ja kulutusprofiilinne mukaan – yhdestä yksiköstä usean yksikön puistoon. Turvallisuus ja takuuVaadimme valmistajalta LFP-kemiaa, kennotason valvonnalla varustettua akunhallintaa, lämpötilanhallintaa, ulko-olosuhteisiin tarkoitettua kaappia sekä CE- ja kuljetussertifikaatteja. Valmistajan takuu ja huoltoehdot ovat arviossa omalla rivillään. Kaikki vaatimukset → Asennus, toimitus ja huoltoLaitteet tulevat useammalta valmistajalta, ja toimitusaika vahvistetaan tarjouksessa laitekohtaisesti. Asennusta johtaa asennuspäällikkömme yhdessä kumppaneiden kanssa. Käyttöönoton jälkeen järjestelmää valvovat aggregaattori ja me, huolto kulkee sopimuksen mukaan. Kumppanit ja tuotteet"
   },
   {
    "page": "/energiavarastot/",
@@ -157,6 +169,30 @@
    "sectionId": "rev-reservimarkkinat-7",
    "kind": "changed",
    "prev": "Katsotaan, mitä akku tuottaisi teidän liittymänne takana.Maksuton kartoitus, kirjallinen arvio kohteenne tuntidatasta, ei sitoumuksia.Pyydä maksuton kartoitus"
+  },
+  {
+   "page": "/laitevaatimukset/",
+   "sectionId": "rev-laitevaatimukset-1",
+   "kind": "changed",
+   "prev": "Etusivu›Laitevaatimukset Laitevaatimuksemme. Tämän listan pyydämme jokaiselta valmistajalta dokumentoituna ennen kuin tarjoamme sen laitetta – ja se koskee jokaista kohdetta, johon asennamme. Tuotelukuja täällä ei ole – ne ovat arviossa kohteen mukaan."
+  },
+  {
+   "page": "/laitevaatimukset/",
+   "sectionId": "rev-laitevaatimukset-2",
+   "kind": "changed",
+   "prev": "01KemiaLFP eli litiumrautafosfaatti – vakain teollinen akkukemia ulkoasennukseen.02AkunhallintaKennotason valvonta: jännite ja lämpötila jokaisesta kennosta, suoja ylilataukselta ja syväpurkaukselta.03LämpötilanhallintaAktiivinen jäähdytys ja lämmitys, jotta järjestelmä toimii meidän ilmastossamme täydellä teholla ympäri vuoden.04KaappiUlko-olosuhteisiin tarkoitettu kaappi valmistajan määrittämällä suojausluokalla; palosuojaratkaisu valmistajan dokumentaatiossa.05SertifikaatitCE-vaatimustenmukaisuus, teollisten litiumakkujen turvallisuusstandardi (esim. IEC 62619) ja kuljetustesti (UN 38.3) – dokumentit ennen tilausta, ei sen jälkeen.06RajapinnatAvoin rajapinta aggregaattorille ja valvonnalle (esim. Modbus TCP/IP), jotta ohjaus ei ole yhdestä toimittajasta kiinni.07VerkkoVerkkoyhtiön liittymis- ja suojausvaatimusten täyttäminen; valmistaja toimittaa tiedot, joita liittymishakemus tarvitsee.08TakuuKirjalliset takuuehdot vuosina ja sykleinä, sallittu kapasiteetin lasku ja se, kuka vastaa mistäkin viasta – arviossa omalla rivillään.09Huolto ja varaosatHuolto ja varaosat Suomessa sovitulla vasteajalla; dokumentaatio suomeksi tai englanniksi."
+  },
+  {
+   "page": "/equipment-requirements/",
+   "sectionId": "rev-equipment-requirements-1",
+   "kind": "changed",
+   "prev": "Home›Equipment requirements Our equipment requirements. This is the list we ask every manufacturer to document before we offer its equipment – and it applies to every site where we install. No product figures here – those are in the site assessment."
+  },
+  {
+   "page": "/equipment-requirements/",
+   "sectionId": "rev-equipment-requirements-2",
+   "kind": "changed",
+   "prev": "01ChemistryLFP (lithium iron phosphate) – the most stable industrial battery chemistry for outdoor installation.02Battery managementCell-level monitoring: voltage and temperature per cell, protection against overcharge and deep discharge.03Thermal managementActive cooling and heating so the system runs at full power year-round in the Nordic climate.04EnclosureOutdoor-rated cabinet with the manufacturer-specified ingress protection; fire-protection concept in the manufacturer documentation.05CertificatesCE conformity, the industrial lithium battery safety standard (e.g. IEC 62619) and the transport test (UN 38.3) – documents before the order, not after.06InterfacesOpen interface for the aggregator and monitoring (e.g. Modbus TCP/IP), so control does not depend on a single supplier.07GridCompliance with the distribution operator’s connection and protection requirements; the manufacturer supplies the data the connection application needs.08WarrantyWritten warranty terms in years and cycles, permitted capacity degradation, and who is liable for which failure – a separate line in the assessment.09Service and spare partsService and spare parts in Finland or Estonia with an agreed response time; documentation in the local language or English."
   },
   {
    "page": "/aggregaattori/",
@@ -220,6 +256,12 @@
   },
   {
    "page": "/palvelut/",
+   "sectionId": "rev-palvelut-4",
+   "kind": "changed",
+   "prev": "Neljä sääntöä, joiden mukaan jokainen arvio syntyy.Ne ovat samat jokaisessa kohteessa, pienestä suureen. Jokainen luku kirjallisesti, lähteineenArviossa ei ole yhtään lukua, jonka alkuperää ette voisi itse tarkistaa. Jos jokin on oletus, se on merkitty oletukseksi. Reservitulo analysoituna, ei arvattunaNäytämme vaihteluvälin, koska markkina muuttuu. Vaihteluväli perustuu siihen, mitä Fingrid oikeasti hankkii ja mitä on tulossa, ei kenenkään tuntumaan. Verkkoyhtiön kanta ennen pääomaaTekniset ehdot ja liittymisvastaus ovat kädessä ennen kuin laitatte rahaa kiinni. Odotusajat on eritelty arviossa. Johdamme projektin alusta loppuunLaitteet valitaan kohteenne mukaan, yhdessä maahantuojien kanssa. Asennus, luvat, dokumentaatio ja tilannekuva kulkevat yhden yhteyshenkilön kautta. Tyypillinen tarjous markkinoilla Suullisia lupauksia ja „noin“-lukuja Takaisinmaksuaika keskimääräisillä oletuksilla Päätös ennen verkkoyhtiön vastausta Reservitulo joko vaietaan tai luvataan liikaa Jokainen luku kirjallisesti, lähde ja päivämäärä mukana Laskelma teidän omista tuntikohtaisista kulutustiedoistanne Verkkoyhtiön kanta kädessä ennen pääoman sitomista Reservimarkkinoiden logiikka selitetty, tulo analysoitu tuotteittain"
+  },
+  {
+   "page": "/palvelut/",
    "sectionId": "rev-palvelut-5",
    "kind": "changed",
    "prev": "Ensimmäinen askel on maksuton.Kysely ja kulutustiedot, ja tiedätte kahdessa arkipäivässä, kannattaako ja miten jatkaa.Pyydä maksuton kartoitus"
@@ -244,6 +286,12 @@
   },
   {
    "page": "/meista/",
+   "sectionId": "rev-meista-1",
+   "kind": "changed",
+   "prev": "Etusivu›Meistä Perustimme yrityksen, jonka olisimme itse halunneet palkata. SAMA Energia on teollisten energiavarastojen ja aurinkosähkön kokonaistoimittaja yrityksille: kartoitamme, suunnittelemme, hankimme, asennamme ja ylläpidämme mittarin takaiset järjestelmät – energiavarasto, aurinkosähkö ja ohjaus – ja viemme ne aggregaattorin kautta reservimarkkinoille. Työmme alkaa laskelmasta, ei tarjouksesta. EPCkartoitus, suunnittelu, hankinta, asennus ja liittäminen yhden vastuunkantajan käsissä FI + EEyksi tiimi kahdella markkinalla, Fingridin ja Eleringin säännöissä, molemmilla kielillä"
+  },
+  {
+   "page": "/meista/",
    "sectionId": "miksi",
    "kind": "changed",
    "prev": "Miksi perustimme SAMAn. Markkina muuttui nopeammin kuin tarjoukset. Me halusimme yrityksen, joka antaa asiakkaalle kartan, ei vain laitetta. Markkina muuttui. Fingrid hankkii reserviä joka tunnille ja arvioi tarvitsevansa viiden vuoden päästä noin 1 200 MW lisää; energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli helmikuussa 2025 jo 29 %, ja Etelä-Suomeen ei tehdä uusia varastoliityntöjä ennen vuotta 2029. Jokainen näistä muuttaa sitä, mitä yksi liittymä on arvoltaan. Lähteet: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025; Fingrid, Energiavarastot reservimarkkinoilla · 10.2.2025; Fingrid, tiedote · 24.9.2025. Tarkemmin Reservimarkkinat-sivulla. Tarjoukset pysyivät samoina. Yritykset saivat laitelistan ja yhden takaisinmaksuluvun – ilman lähdettä, skenaariota ja verkkoyhtiön kantaa. Meitä kiinnosti toinen kysymys: mitä teidän liittymänne oikeasti pystyy tuottamaan ja mikä siihen vaikuttaa. Mitä tavoittelemme. Että yrityksen oma liittymä on tuottava omaisuuserä eikä pelkkä kuluerä – ja että päätös siitä tehdään omista luvuista, ei myyjän lupauksesta. Mistä aloitamme. Kohteista, joissa liittymä on suuri ja kulutus vaihtelee: siellä arvio on selkein ja takaisinmaksu usein lyhin. Sen jälkeen siirrymme suurempiin kokonaisuuksiin yhdessä niiden kanssa, jotka tuntevat markkinan ja oman alueensa vahvuudet. Teemme sen läpinäkyvästi ja asiakkaan kielellä: tieto ymmärrettäväksi, luvut lähteineen, päätös teidän."
@@ -259,6 +307,12 @@
    "sectionId": "verkosto",
    "kind": "changed",
    "prev": "Verkosto projektinne takana. Jokainen projekti tarvitsee meidän lisäksemme neljä asiaa: markkinoillepääsyn, laitteet, asennuksen ja rahoituksen. Nämä kumppanit antavat ne, molemmilla markkinoilla. Pääsy reservimarkkinoilleAggregaattori kokoaa akut tarjoukseksi, ohjaa niitä automaattisesti ja tilittää tuoton. Suomessa valitsemme aggregaattorin kohteen mukaan, Virossa kumppanimme on Soleron Energy. SuomiAggregaattori valitaan kohteen mukaanFingridin hyväksymä reservitoimittaja · ei sidosta yhteenVertaamme Fingridin reservitoimittajia kohteenne akun ja tuotteiden mukaan neljällä perusteella: hyväksyntä ja säätökokeet, ehdot ja palkkio auki, kohteen tarve ensin, toteutuneet luvut jaksoineen. Valinnan perusteet kirjataan arvioon, ja me rakennamme yhteyden valittuun aggregaattoriin.Näin valitsemme aggregaattorin SoleronViroSoleron Energy OÜAggregaattori · Eleringin reservimarkkinatVirolainen energiavarasto- ja energianhallintayhtiö: oma EMS-ohjelmisto, aggregointi Eleringin taajuusreserveihin, varastojen suunnittelu ja asennus. Julkaisee reservimarkkinakatsauksia omalla sivullaan.soleronenergy.ee Energiavarastot, lataus ja mikroverkotUseampi valmistaja, malli kohteen mukaan. Vertailu on arviossa samoilla luvuilla.Kumppanit ja tuotteet Useampi valmistajaKaapit, kontit, hybridikaapit, mikroverkot ja pikalaturitValitsemme toimittajiemme valikoimasta mallin kohteen tehon, tilan ja käytön mukaan. Valmistaja ja malli nimetään tarjouksessa.Mallit ja luvut RalosSuomiRalos OyEnergiavarastot · TampereAurinkosähkön ja energiavarastojen toimittaja: LFP-varastot ulkoasennukseen.ralos.fi Aurinkosähkö ja lämpöpumputPaneelit, invertterit ja lämpöpumput maahantuojalta. Voimalan ja aurinkokaton asennusta johtaa asennuspäällikkömme. ScanofficeSuomiScanoffice OyLaitteiden maahantuoja · EspooKotimainen puhtaan energian laitteiden maahantuoja: lämpöpumput, aurinkopaneelit, sähköautojen lataus ja ilmanvaihto.scanoffice.fi Asennus ja käyttöönottoAsennusta johtaa oma asennuspäällikkömme; sähkötyöt ja käyttöönotto kulkevat kumppanin kautta. JSMSuomiJSM Automaatiosähkö OySähköasennukset ja käyttöönotto · PirkanmaaSähköurakoitsija Sastamalasta, varasto Tampereella. Aurinkosähkö, akustot ja reservimarkkina-akut, lämpöpumput ja sähköautojen lataus.jsmautomaatiosahko.fi RahoitusEmme ole sidoksissa yhteen rahoittajaan. Arviossa näytämme omarahoituksen ja leasingin rinnakkain, samoilla luvuilla. Leasing tai omarahoitusRahoitus järjestetään kohteen mukaanLeasingrahoitus on mahdollista järjestää yritysrahoittajien kautta Suomessa ja Virossa. Rahoittaja ja ehdot valitaan kohteen ja ostajan mukaan, ja ne kirjataan arvioon ennen allekirjoitusta. Oman pääoman ja leasingin vertailu on arviossa samoilla luvuilla, jotta päätös on helppo."
+  },
+  {
+   "page": "/meista/",
+   "sectionId": "valmistajille",
+   "kind": "changed",
+   "prev": "Valmistajille ja maahantuojille.Laitevalikoimamme ei ole kiinni yhdessä valmistajassa. Lista, jonka jokaisen laitteen on täytettävä, on julkinen – ja se on myös ovi uusille valmistajille ja maahantuojille.Laitevaatimuksemme In English"
   },
   {
    "page": "/ajankohtaista/",
@@ -431,6 +485,12 @@
   },
   {
    "page": "/energiasalvestid/",
+   "sectionId": "tarne",
+   "kind": "changed",
+   "prev": "Mida me tarnime – ja mida seadmetelt nõuame. Seadmed valime teie objekti järgi, mitte lao. Ohutus, garantii ja hooldus on hinnangus kirjas, mitte peenes kirjas. Tööstusklassi süsteemVälispaigalduseks sobiv salvestikapp, inverter ja juhtimine, mõõdetud teie liitumise ja tarbimisprofiili järgi – ühest üksusest mitme üksuse pargini. Ohutus ja garantiiNõuame tootjalt LFP-keemiat, rakutaseme jälgimisega akuhaldust, temperatuurijuhtimist, välitingimustele vastavat kappi ja CE- ning transpordisertifikaate. Tootja garantii ja hooldustingimused on hinnangus eraldi real. Kõik nõuded → Paigaldus, tarne ja hooldusSeadmed tulevad mitmelt tootjalt ja tarneaeg kinnitatakse pakkumises seadme kaupa. Paigaldust juhib meie paigaldusjuht koos partneritega. Pärast käikulaskmist jälgivad süsteemi agregaator ja meie, hooldus käib lepingu järgi. Partnerid ja tooted"
+  },
+  {
+   "page": "/energiasalvestid/",
    "sectionId": "kkk",
    "kind": "new"
   },
@@ -481,6 +541,18 @@
    "sectionId": "rev-reserviturg-7",
    "kind": "changed",
    "prev": "Vaatame, mida aku teie liitumise taga teeniks.Tasuta hindamine, kirjalik hinnang teie tunniandmetest, kohustusteta.Küsi tasuta hindamist"
+  },
+  {
+   "page": "/seadmete-nouded/",
+   "sectionId": "rev-seadmete-nouded-1",
+   "kind": "changed",
+   "prev": "Avaleht›Nõuded seadmetele Meie nõuded seadmetele. Selle nimekirja küsime igalt tootjalt dokumenteerituna enne, kui tema seadet pakume – ja see kehtib igal objektil, kuhu paigaldame. Tootenumbreid siin ei ole – need on hinnangus objekti järgi."
+  },
+  {
+   "page": "/seadmete-nouded/",
+   "sectionId": "rev-seadmete-nouded-2",
+   "kind": "changed",
+   "prev": "01KeemiaLFP ehk liitiumraudfosfaat – stabiilseim tööstuslik akukeemia välispaigalduseks.02AkuhaldusRakutaseme jälgimine: pinge ja temperatuur iga raku kohta, kaitse ülelaadimise ja süvatühjenemise eest.03TemperatuurijuhtimineAktiivne jahutus ja küte, et süsteem töötaks meie kliimas aastaringselt täisvõimsusel.04KappVälitingimustele mõeldud kapp tootja määratud kaitseastmega; tulekaitse lahendus tootja dokumentatsioonis.05SertifikaadidCE-vastavus, tööstuslike liitiumakude ohutusstandard (nt IEC 62619) ja transpordikatse (UN 38.3) – dokumendid enne tellimust, mitte pärast.06LiidesedAvatud liides agregaatorile ja seirele (nt Modbus TCP/IP), et juhtimine ei sõltuks ühest tarnijast.07VõrkVastavus võrguettevõtja liitumis- ja kaitsenõuetele; tootja annab andmed, mida tehniliste tingimuste taotlus vajab.08GarantiiKirjalikud garantiitingimused aastates ja tsüklites, lubatud mahtuvuse langus ja see, kes vastutab millise rikke eest – hinnangus eraldi real.09Hooldus ja varuosadHooldus ja varuosad Eestis kokkulepitud reageerimisajaga; dokumentatsioon eesti või inglise keeles."
   },
   {
    "page": "/seadmete-nouded/",
@@ -613,6 +685,12 @@
    "sectionId": "vorgustik",
    "kind": "changed",
    "prev": "Võrgustik teie projekti taga. Iga projekt vajab peale meie nelja asja: turulepääsu, seadmeid, paigaldust ja rahastust. Need on partnerid, kes need annavad, mõlemal turul. Turulepääs reservituruleAgregaator koondab mitme objekti akud üheks pakkumiseks, juhib neid automaatselt ja maksab tulu välja. Eestis on meie partner Soleron Energy, Soomes valime agregaatori objekti järgi Fingridi heakskiidetud reservipakkujate seast. SoleronEestiSoleron Energy OÜAgregaator · Eleringi reserviturgEnergiasalvestus ja energiajuhtimine: oma EMS-tarkvara, agregeerimine Eleringi sagedusreservidesse, salvestite projekteerimine ja paigaldus.Kuidas agregaator töötab Energiasalvestid, laadimine ja mikrovõrgudMitu tootjat, mudel objekti järgi. Võrdlus on hinnangus samade numbritega.Partnerid ja tooted Mitu tootjatKapid, konteinerid, hübriidkapid, mikrovõrgud ja kiirlaadijadValime tarnijate valikust mudeli objekti võimsuse, ruumi ja kasutuse järgi. Tootja ja mudel nimetatakse pakkumises.Mudelid ja arvud RalosSoomeRalos OyEnergiasalvestid · TamperePäikeseelektri ja energiasalvestite tarnija: LFP-salvestid välispaigalduseks.ralos.fi Paigaldus ja käikulaskminePaigaldust juhib meie oma paigaldusjuht; elektritööd ja käikulaskmine käivad kohaliku partneri kaudu. Viljar Petersell, paigaldusjuhtTeostus ja kvaliteet objektilElektritööde ja käikulaskmise partner valitakse objekti asukoha järgi. RahastusMe ei ole seotud ühe rahastajaga. Hinnangus näitame omafinantseeringu ja liisingu kõrvuti, samade numbrite pealt. Liising või omafinantseeringRahastus korraldatakse objekti järgiLiisingrahastus on võimalik korraldada ärirahastajate kaudu Eestis ja Soomes. Rahastaja ja tingimused valitakse objekti ja ostja järgi ning kirjutatakse hinnangusse enne allkirja. Omakapitali ja liisingu võrdlus on hinnangus samade numbrite pealt, et otsus oleks lihtne."
+  },
+  {
+   "page": "/meist/",
+   "sectionId": "tootjatele",
+   "kind": "changed",
+   "prev": "Tootjatele ja maaletoojatele.Meie seadmevalik ei ole kinni ühes tootjas. Nimekiri, millele iga seade peab vastama, on avalik – ja see on ka uks uutele tootjatele ja maaletoojatele.Meie nõuded seadmetele In English"
   },
   {
    "page": "/meist/",

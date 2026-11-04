@@ -274,7 +274,7 @@ Kartoitus näyttääennen kuin mitään tilataan
 Kirjallisessa arviossa on voimalan koko ja tuotantoarvio tunneittain, oman käytön osuus ja ylijäämä, ostetun sähkön vähenemä teidän hinnoillanne ja rinnalla sama laskelma sähkövaraston kanssa. Jokaisen luvun vieressä on lähde ja jakso. Jos aurinkosähkö ei kannata kohteessanne, arvio sanoo sen.
 
 Katto, joka tuottaa.
-Katto on rakennuksen tärkein rakenne, ja sen uusiminen on iso investointi joka tapauksessa. Kun katto uusitaan, kattoon integroitu aurinkokatto tekee kaksi asiaa kerralla: uuden katon ja voimalan.
+Katon uusiminen on joka tapauksessa iso investointi. Kun katto uusitaan, kattoon integroitu aurinkokatto tekee kaksi asiaa kerralla: uuden katon ja voimalan.
 
 Kate ja paneeli yhtenä
 Paneelit ovat osa katetta eivätkä erillinen rakenne katon päällä. Katto ja voimala suunnitellaan ja rakennetaan yhtenä, ja vesitiiveys on kattotyön vastuulla alusta loppuun.
@@ -350,7 +350,7 @@ Tehomaksu alas, pörssisähkö hyödyksi, reservitulo ja varavoima, kun kohteess
 Pyydä maksuton kartoitus
 
 Kantaverkosta kennoon, kerros kerrallaan.
-Liittymä on jo rakennettu ja maksettu. Näin sähkö kulkee teille – ja näin mittarin takana tehdään päätökset.
+Liittymä on jo rakennettu ja maksettu. Näin sähkö kulkee teille ja näin mittarin takana tehdään päätökset.
 
 Sähköasemilla jännite lasketaan askel kerrallaan.
 Fingridin kantaverkko toimii 400, 220 ja 110 kilovoltin jännitteillä. Sähköasemilla jännite lasketaan 400 kilovoltista 110 kilovolttiin ja edelleen jakeluverkkoon.
@@ -359,7 +359,7 @@ Jakeluverkko tuo sähkön liittymäänne.
 Keskijänniteverkko (20 kV) ja pienjänniteverkko (0,4 kV) ovat verkkoyhtiön. Se laskuttaa siirrosta ja tehosta: esimerkiksi Caruna Oy:n Tehosiirto 1 PJ -tuotteessa tehomaksu on 3,57 €/kW kuukaudessa kuukauden huipputehon mukaan (hinnasto 1.9.2024, alv 0 %).
 
 Mittari on raja. Sen takana päätökset ovat teidän.
-Keskijänniteliittymässä oma muuntamo 20/0,4 kV, pääkeskus, kuormat ja mahdollinen oma tuotanto ovat kaikki mittarin takana – samoin energiavarasto.
+Keskijänniteliittymässä oma muuntamo 20/0,4 kV, pääkeskus, kuormat ja mahdollinen oma tuotanto ovat kaikki mittarin takana, samoin energiavarasto.
 
 Energiavarasto: yksi kaappi, kaikki osat sisällä.
 Yksi ulkokaappi kokoaa tehoelektroniikan (PCS), LFP-akustot, akunhallinnan (BMS), nestejäähdytyksen ja ohjauksen (EMS). Teho ja energia mitoitetaan kulutustiedoistanne, ja kaappeja liitetään rinnan kohteen mukaan.
@@ -391,26 +391,26 @@ Fingrid hankkii reservit joka päivä, myös öisin ja viikonloppuisin. Energiav
 Lähde: Fingrid · 10.2.2025
 
 Tehomaksut: huippu alas, sulakekoko kulutuksen mukaan.
-Esimerkki yhdestä hinnastosta: Caruna Oy:n Tehosiirto 1 PJ -tuotteessa tehomaksu on 3,57 €/kW,kk ja määräytyy kuukauden huipputehon mukaan, ja perusmaksu 58,70 €/kk ei riipu käytöstä. Varasto kattaa huipun, jolloin siirtotuote ja sulakekoko voidaan valita todellisen kulutuksen mukaan – eikä kulutuksen kasvattaminen vaadi lisää liittymistehoa.
+Esimerkki yhdestä hinnastosta: Caruna Oy:n Tehosiirto 1 PJ -tuotteessa tehomaksu on 3,57 €/kW,kk ja määräytyy kuukauden huipputehon mukaan, ja perusmaksu 58,70 €/kk ei riipu käytöstä. Varasto kattaa huipun, jolloin siirtotuote ja sulakekoko voidaan valita todellisen kulutuksen mukaan, eikä kulutuksen kasvattaminen vaadi lisää liittymistehoa.
 Oma verkkoyhtiönne hinnoittelee eri tavoin: Caruna Espoo Oy:n vastaava tehomaksu on 1,37 €/kW,kk. Arviossa laskemme teidän oman verkkoyhtiönne hinnastolla.
 Lähde: Caruna Oy, verkkopalveluhinnasto · 1.9.2024 · alv 0 %
 
 Energia ja siirto: halpa tunti sisään, kallis ulos.
 Sähköenergia menee pörssin tuntihinnalla. Varasto ostaa halvoilla tunneilla ja kattaa kalliit; aurinkovoimala tuottaa keskipäivällä ja varasto siirtää sen iltaan. Edellytys on pörssisidonnainen myyntisopimus.
-Ero syntyy pörssin tuntihinnasta, ei siirtomaksusta: pienjänniteliittymän siirto on samassa esimerkkihinnastossa kiinteä 3,52 snt/kWh. Keskijänniteliittymässä (Tehosiirto 1 KJ) myös siirrolla on kaksi hintaa – talviarkipäivänä 5,10 ja muuna aikana 1,81 snt/kWh – jolloin ajoituksella on kaksi vaikutusta.
+Ero syntyy pörssin tuntihinnasta, ei siirtomaksusta: pienjänniteliittymän siirto on samassa esimerkkihinnastossa kiinteä 3,52 snt/kWh. Keskijänniteliittymässä (Tehosiirto 1 KJ) myös siirrolla on kaksi hintaa: talviarkipäivänä 5,10 ja muuna aikana 1,81 snt/kWh. Silloin ajoituksella on kaksi vaikutusta.
 Lähde: Caruna Oy, verkkopalveluhinnasto · 1.9.2024 · alv 0 %
 
 Kiinteistön arvo: pienempi pysyvä kulu, korkeampi hinta.
-Liikekiinteistön hinta lasketaan nettotuotosta: jokainen euro, jolla pysyvä käyttökulu laskee, nostaa arvoa moninkertaisesti. Esimerkkilaskelma: pysyvä 10 000 euron vuosisäästö tarkoittaa 10 %:n tuottovaatimuksella noin 100 000 ja 8 %:n vaatimuksella noin 125 000 euroa korkeampaa arvoa. Laskemme vain pysyvän osan – tehomaksun ja energiakulun; reservimarkkinatuotto riippuu markkinahinnasta, eikä sitä lasketa arvoon.
+Liikekiinteistön hinta lasketaan nettotuotosta: jokainen euro, jolla pysyvä käyttökulu laskee, nostaa arvoa moninkertaisesti. Esimerkkilaskelma: pysyvä 10 000 euron vuosisäästö tarkoittaa 10 %:n tuottovaatimuksella noin 100 000 ja 8 %:n vaatimuksella noin 125 000 euroa korkeampaa arvoa. Laskemme vain pysyvän osan: tehomaksun ja energiakulun. Reservimarkkinatuotto riippuu markkinahinnasta, eikä sitä lasketa arvoon.
 Järjestelmä jää liittymän taakse ja siirtyy kiinteistön mukana. Ostaja saa huipputehon hallinnan ja pääsyn reservimarkkinoille ensimmäisestä päivästä, ilman projektia ja jonotusta.
-Esimerkkilaskelma. Teidän kohteenne tuottovaatimus riippuu kiinteistötyypistä ja sijainnista – arviossa laskemme sen teidän omilla tiedoillanne.
+Esimerkkilaskelma. Teidän kohteenne tuottovaatimus riippuu kiinteistötyypistä ja sijainnista. Arviossa laskemme sen teidän omilla tiedoillanne.
 
 Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029. Liittymä, jonka takana on toimiva varasto, siirtyy kiinteistön mukana.
 
 Lähde: Fingrid, tiedote · 24.9.2025
 
-Missä varasto maksaa itsensä takaisin nopeimmin – ja miksi.
-Varaston teho jaetaan usean työn kesken: oman kulutuksenne optimointi (huiput, halvat tunnit), arbitraasi pörssissä ja reservimarkkinat (valmius Fingridille) – aggregaattori myy tehoa usealla markkinalla samaan aikaan, se on monimarkkinapalvelu. Kuinka suuri osa menee millekin työlle, määrää kulutusprofiilinne – kartoituksen tärkein rivi.
+Missä varasto maksaa itsensä takaisin nopeimmin ja miksi.
+Varaston teho jaetaan usean työn kesken: oman kulutuksenne optimointi (huiput, halvat tunnit), arbitraasi pörssissä ja reservimarkkinat (valmius Fingridille). Aggregaattori myy tehoa usealla markkinalla samaan aikaan: se on monimarkkinapalvelu. Kuinka suuri osa menee millekin työlle, määrää kulutusprofiilinne. Se on kartoituksen tärkein rivi.
 
 Viljankuivaamot ja maatilat
 Varasto on lähes koko ajan reservimarkkinoilla ja tuottaa valmiudesta; kuivauskauden huiput se pitää alhaalla. Usein nopein takaisinmaksu.
@@ -424,7 +424,7 @@ Varavoima on tässä yhtä tärkeä kuin säästö. Se edellyttää saarekekäyt
 Aurinkopuistot, maanomistajat ja kiinteistösalkut
 Vapaa maa liittymän lähellä on itsessään omaisuutta, jolle voimala ja varasto rakennetaan; salkku saa yhden kumppanin, joka laskee kaikki kohteet läpi.
 
-Ettekö löytänyt omaa kohdettanne? Kuvailkaa se meille – kartoitus kertoo, mikä jako kohteessanne toimii.Pyydä maksuton kartoitus
+Ettekö löytänyt omaa kohdettanne? Kuvailkaa se meille. Kartoitus kertoo, mikä jako kohteessanne toimii.Pyydä maksuton kartoitus
 
 Miltä sähkövaraston päivä näyttää.
 
@@ -442,12 +442,12 @@ KulutuksenneTehomaksurajaHuippu, jonka varasto leikkaaPörssihinta (tunti)Varast
 
 Kaavamainen vuorokausi, ei yhden kohteen mitattua dataa. Kohteenne todellisen profiilin piirrämme arvioon tuntikohtaisista kulutustiedoistanne.
 
-Mitä toimitamme – ja mitä laitteilta vaadimme.
+Mitä toimitamme ja mitä laitteilta vaadimme.
 
 Laitteet valitaan kohteenne mukaan, ei varaston. Turvallisuus, takuu ja huolto ovat arviossa kirjattuina, eivät pienellä präntillä.
 
 Teollisuusluokan järjestelmä
-Ulkoasennukseen sopiva varastokaappi, invertteri ja ohjaus, mitoitettuna liittymänne ja kulutusprofiilinne mukaan – yhdestä yksiköstä usean yksikön puistoon.
+Ulkoasennukseen sopiva varastokaappi, invertteri ja ohjaus, mitoitettuna liittymänne ja kulutusprofiilinne mukaan, yhdestä yksiköstä usean yksikön puistoon.
 
 Turvallisuus ja takuu
 Vaadimme valmistajalta LFP-kemiaa, kennotason valvonnalla varustettua akunhallintaa, lämpötilanhallintaa, ulko-olosuhteisiin tarkoitettua kaappia sekä CE- ja kuljetussertifikaatteja. Valmistajan takuu ja huoltoehdot ovat arviossa omalla rivillään. Kaikki vaatimukset →
@@ -464,7 +464,7 @@ Onko sähkövarasto turvallinen ja millainen takuu on?
 Tarjoamamme teolliset sähkövarastot perustuvat LFP-kemiaan. Niissä on kennotason valvonta ja lämpötilanhallinta. Kaappi on tehty ulkokäyttöön. Vaadimme valmistajalta CE- ja kuljetussertifikaatit. SAMA vastaa projektista, valmistaja antaa laitteelle takuun ja valmistajan nimi on kirjallisessa arviossa. Takuu- ja huoltoehdot sekä tiedon siitä, kenelle soitatte, näette samasta asiakirjasta ennen allekirjoitusta.
 
 Mitä tarkoittaa mittarin takainen järjestelmä?
-Se osa sähköjärjestelmäänne, joka on verkkoyhtiön mittarin takana ja teidän omanne: energiavarasto, aurinkopaneelit ja ohjaus, joka päättää, milloin kulutetaan, varastoidaan, myydään tai pidetään tehoa verkon käytettävissä. Englanniksi behind-the-meter. Verkkoyhtiö näkee vain mittarilukeman – siitä, mitä sen takana tapahtuu, päätätte te.
+Se osa sähköjärjestelmäänne, joka on verkkoyhtiön mittarin takana ja teidän omanne: energiavarasto, aurinkopaneelit ja ohjaus, joka päättää, milloin kulutetaan, varastoidaan, myydään tai pidetään tehoa verkon käytettävissä. Englanniksi behind-the-meter. Verkkoyhtiö näkee vain mittarilukeman. Siitä, mitä sen takana tapahtuu, päätätte te.
 
 Kauanko projekti kestää?
 Aikataulu rakentuu kolmesta osasta: laitteen toimitusaika, joka vahvistetaan tarjouksessa laitekohtaisesti, asennusjono ja verkkoyhtiön vastausaika. Kaikki kolme eritellään arviossa, jotta mikään ei tule yllätyksenä.
@@ -478,7 +478,7 @@ Onko rahoitusta saatavilla?
 Kyllä. Leasingrahoitus on mahdollista järjestää, ja arviossa näytämme omarahoituksen ja leasingin vertailun samoilla luvuilla, jotta päätös on helppo.
 
 Viisi käsitettä, joita käytämme
-Mittarin takainen järjestelmä – varasto, tuotanto ja ohjaus liittymänne takana, teidän puolellanne mittaria. Monimarkkinapalvelu – aggregaattori myy saman varaston tehoa usealla markkinalla yhtä aikaa: kulutuksenne optimointi, arbitraasi pörssissä, reservit Fingridille. Aggregaattori – yritys, joka kokoaa usean kohteen varastot yhdeksi tarjoukseksi ja tilittää tuoton. Ylläpitokorvaus – korvaus siitä, että varasto on Fingridin käytettävissä, myös silloin kun se ei tee mitään. Arbitraasi – ostetaan halvalla tunnilla, myydään tai käytetään kalliilla.
+Mittarin takainen järjestelmä: varasto, tuotanto ja ohjaus liittymänne takana, teidän puolellanne mittaria. Monimarkkinapalvelu: aggregaattori myy saman varaston tehoa usealla markkinalla yhtä aikaa (kulutuksenne optimointi, arbitraasi pörssissä, reservit Fingridille). Aggregaattori: yritys, joka kokoaa usean kohteen varastot yhdeksi tarjoukseksi ja tilittää tuoton. Ylläpitokorvaus: korvaus siitä, että varasto on Fingridin käytettävissä, myös silloin kun se ei tee mitään. Arbitraasi: ostetaan halvalla tunnilla, myydään tai käytetään kalliilla.
 
 Minkä kokoinen sähkövarasto teidän kohteeseenne?
 Kartoitus vastaa siihen kirjallisesti, kulutustiedoistanne laskettuna.
@@ -546,7 +546,7 @@ Miten tuotto arvioidaan.
 
 Invertterin teho ja kapasiteetti ratkaisevat. Tuotto arvioidaan sähkövaraston invertterin tehosta (MW) ja kapasiteetista (MWh). Tyypillinen mitoitus on 1:2, esimerkiksi 1 MW / 2 MWh: teho kertoo, paljonko reserviä voitte tarjota, kapasiteetti, kuinka pitkään.
 
-Mitä täydemmin aggregaattori ohjaa, sitä enemmän tuottoa. Kun aggregaattori ohjaa varastoa kokonaan, se voi viedä joka tunnin kannattavimpaan reserviin (FCR-D, FCR-N, FFR, aFRR) ja ottaa markkinasta maksimin. Osittainen ohjaus tuottaa vähemmän.
+Mitä täydemmin aggregaattori ohjaa, sitä enemmän tuottoa. Kun aggregaattori ohjaa varastoa kokonaan, se voi viedä joka tunnin kannattavimpaan reserviin (FCR-D, FCR-N, FFR, aFRR). Osittainen ohjaus tuottaa vähemmän.
 
 Strategia tehdään teidän etunne mukaan. Jos myytte omaa aurinkosähköä tai tarvitsette varastoa omiin huippuihin tai varavoimaksi, strategia rakennetaan sen ympärille. Aggregaattori optimoi, mutta teidän ehdoillanne ja teidän hyväksenne.
 
@@ -592,10 +592,10 @@ Etusivu›Laitevaatimukset
 
 Laitevaatimuksemme.
 
-Tämän listan pyydämme jokaiselta valmistajalta dokumentoituna ennen kuin tarjoamme sen laitetta – ja se koskee jokaista kohdetta, johon asennamme. Tuotelukuja täällä ei ole – ne ovat arviossa kohteen mukaan.
+Tämän listan pyydämme jokaiselta valmistajalta dokumentoituna, ennen kuin tarjoamme sen laitetta. Se koskee jokaista kohdetta, johon asennamme. Tuotelukuja täällä ei ole: ne ovat arviossa kohteen mukaan.
 
 01Kemia
-LFP eli litiumrautafosfaatti – vakain teollinen akkukemia ulkoasennukseen.
+LFP eli litiumrautafosfaatti: vakaa teollinen akkukemia ulkoasennukseen.
 
 02Akunhallinta
 Kennotason valvonta: jännite ja lämpötila jokaisesta kennosta, suoja ylilataukselta ja syväpurkaukselta.
@@ -607,7 +607,7 @@ Aktiivinen jäähdytys ja lämmitys, jotta järjestelmä toimii meidän ilmastos
 Ulko-olosuhteisiin tarkoitettu kaappi valmistajan määrittämällä suojausluokalla; palosuojaratkaisu valmistajan dokumentaatiossa.
 
 05Sertifikaatit
-CE-vaatimustenmukaisuus, teollisten litiumakkujen turvallisuusstandardi (esim. IEC 62619) ja kuljetustesti (UN 38.3) – dokumentit ennen tilausta, ei sen jälkeen.
+CE-vaatimustenmukaisuus, teollisten litiumakkujen turvallisuusstandardi (esim. IEC 62619) ja kuljetustesti (UN 38.3); dokumentit ennen tilausta, ei sen jälkeen.
 
 06Rajapinnat
 Avoin rajapinta aggregaattorille ja valvonnalle (esim. Modbus TCP/IP), jotta ohjaus ei ole yhdestä toimittajasta kiinni.
@@ -616,7 +616,7 @@ Avoin rajapinta aggregaattorille ja valvonnalle (esim. Modbus TCP/IP), jotta ohj
 Verkkoyhtiön liittymis- ja suojausvaatimusten täyttäminen; valmistaja toimittaa tiedot, joita liittymishakemus tarvitsee.
 
 08Takuu
-Kirjalliset takuuehdot vuosina ja sykleinä, sallittu kapasiteetin lasku ja se, kuka vastaa mistäkin viasta – arviossa omalla rivillään.
+Kirjalliset takuuehdot vuosina ja sykleinä, sallittu kapasiteetin lasku ja se, kuka vastaa mistäkin viasta (arviossa omalla rivillään).
 
 09Huolto ja varaosat
 Huolto ja varaosat Suomessa sovitulla vasteajalla; dokumentaatio suomeksi tai englanniksi.
@@ -635,10 +635,10 @@ Home›Equipment requirements
 
 Our equipment requirements.
 
-This is the list we ask every manufacturer to document before we offer its equipment – and it applies to every site where we install. No product figures here – those are in the site assessment.
+This is the list we ask every manufacturer to document before we offer its equipment. It applies to every site where we install. No product figures here: those are in the site assessment.
 
 01Chemistry
-LFP (lithium iron phosphate) – the most stable industrial battery chemistry for outdoor installation.
+LFP (lithium iron phosphate): a stable industrial battery chemistry for outdoor installation.
 
 02Battery management
 Cell-level monitoring: voltage and temperature per cell, protection against overcharge and deep discharge.
@@ -650,7 +650,7 @@ Active cooling and heating so the system runs at full power year-round in the No
 Outdoor-rated cabinet with the manufacturer-specified ingress protection; fire-protection concept in the manufacturer documentation.
 
 05Certificates
-CE conformity, the industrial lithium battery safety standard (e.g. IEC 62619) and the transport test (UN 38.3) – documents before the order, not after.
+CE conformity, the industrial lithium battery safety standard (e.g. IEC 62619) and the transport test (UN 38.3); documents before the order, not after.
 
 06Interfaces
 Open interface for the aggregator and monitoring (e.g. Modbus TCP/IP), so control does not depend on a single supplier.
@@ -659,7 +659,7 @@ Open interface for the aggregator and monitoring (e.g. Modbus TCP/IP), so contro
 Compliance with the distribution operator’s connection and protection requirements; the manufacturer supplies the data the connection application needs.
 
 08Warranty
-Written warranty terms in years and cycles, permitted capacity degradation, and who is liable for which failure – a separate line in the assessment.
+Written warranty terms in years and cycles, permitted capacity degradation, and who is liable for which failure (a separate line in the assessment).
 
 09Service and spare parts
 Service and spare parts in Finland or Estonia with an agreed response time; documentation in the local language or English.
@@ -690,7 +690,7 @@ KohdeKulutus, aurinkosähkö ja sähkövarasto liittymän takana. Varasto lataa 
 
 OhjausAggregaattori lukee liittymispisteen mittausta, tekee tarjoukset joka tunnille ja ohjaa varastoa kannattavimpaan tuotteeseen.
 
-EtusijaKohteen oma kulutus on aina etusijalla. Markkinoille menee se, mikä liittymästä jää yli – tunneittain, kulutusprofiilinne mukaan, ei yhdellä kiinteällä rajalla koko vuodeksi.
+EtusijaKohteen oma kulutus on aina etusijalla. Markkinoille menee se, mikä liittymästä jää yli: tunneittain, kulutusprofiilinne mukaan, ei yhdellä kiinteällä rajalla koko vuodeksi.
 
 MarkkinatFingridin reservit ja sähköpörssi samasta varastosta: monimarkkinapalvelu.
 
@@ -805,22 +805,22 @@ Jokainen tilaus alkaa samasta kohdasta: maksuttomasta kirjallisesta arviosta. T�
 Arvio, projekti, portfolio.
 Samat viisi riviä jokaisesta tuotteesta, jotta vertailu on helppoa.
 
-Teidän tietonne keskellä, muiden ehdot ympärillä — yksi laskelma.
+Teidän tietonne keskellä, muiden ehdot ympärillä: yksi laskelma.
 
 MaksutonArvio
-Jokaiselle yritykselle, jolla on oma sähköliittymä – myös silloin, kun tarjous on jo kädessä.
+Jokaiselle yritykselle, jolla on oma sähköliittymä, myös silloin, kun tarjous on jo kädessä.
 
 Mitä sisältää
 Kaksi sivua: liittymä ja kulutusprofiili, tehon jako oman kulutuksen, arbitraasin ja reservimarkkinan kesken, mallinnettu reservituotto tuotteittain lähteineen, verkkoyhtiön kanta ja se, mitä arvio ei sano.
 
 Mitä te annatte
-Tuntikohtaiset kulutustietonne (CSV-lataus Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta – neuvomme miten), yhden sähkölaskun ja pääkaavion.
+Tuntikohtaiset kulutustietonne (CSV-lataus Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta, neuvomme miten), yhden sähkölaskun ja pääkaavion.
 
 Aika
 Kirjallinen arvio kahden arkipäivän kuluessa tietojen saamisesta.
 
 Mitä sitten
-Te päätätte. Jos jatketaan, seuraa esitarkastus – sekin maksuton.
+Te päätätte. Jos jatketaan, seuraa esitarkastus, sekin maksuton.
 
 Pyydä maksuton kartoitus
 
@@ -858,9 +858,9 @@ Jokainen kohde käy läpi samat neljä askelta; portfolio kasvaa kohde kerrallaa
 
 Kuvailkaa portfolionne
 
-Näin se etenee – ja mikä maksaa milloin.
+Miten se etenee ja mikä maksaa milloin.
 
-Ketään ei lähetetä minnekään ennen kuin tiedot ovat käsillä. Kaksi ensimmäistä askelta ovat maksuttomia, kohdekäynti hyvitetään sopimuksessa, suunnittelu ja asennus kulkevat sopimuksen mukaan.
+Ketään ei lähetetä minnekään, ennen kuin tiedot ovat käsillä. Kaksi ensimmäistä askelta ovat maksuttomia, kohdekäynti hyvitetään sopimuksessa, suunnittelu ja asennus kulkevat sopimuksen mukaan.
 
 01Maksuton kartoitus
 Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubista tai verkkoyhtiöltänne), yhden laskun ja pääkaavion; me kirjoitamme arvion: liittymä, kulutusprofiili, tehon jako, mallinnettu reservituotto tuotteittain lähteineen.
@@ -896,7 +896,7 @@ Reservitulo analysoituna, ei arvattuna
 Näytämme vaihteluvälin, koska markkina muuttuu. Vaihteluväli perustuu siihen, mitä Fingrid oikeasti hankkii ja mitä on tulossa, ei kenenkään tuntumaan.
 
 Verkkoyhtiön kanta ennen pääomaa
-Tekniset ehdot ja liittymisvastaus ovat kädessä ennen kuin laitatte rahaa kiinni. Odotusajat on eritelty arviossa.
+Tekniset ehdot ja liittymisvastaus ovat kädessä, ennen kuin laitatte rahaa kiinni. Odotusajat on eritelty arviossa.
 
 Johdamme projektin alusta loppuun
 Laitteet valitaan kohteenne mukaan, yhdessä maahantuojien kanssa. Asennus, luvat, dokumentaatio ja tilannekuva kulkevat yhden yhteyshenkilön kautta.
@@ -1096,7 +1096,7 @@ Etusivu›Meistä
 
 Perustimme yrityksen, jonka olisimme itse halunneet palkata.
 
-SAMA Energia on teollisten energiavarastojen ja aurinkosähkön kokonaistoimittaja yrityksille: kartoitamme, suunnittelemme, hankimme, asennamme ja ylläpidämme mittarin takaiset järjestelmät – energiavarasto, aurinkosähkö ja ohjaus – ja viemme ne aggregaattorin kautta reservimarkkinoille. Työmme alkaa laskelmasta, ei tarjouksesta.
+SAMA Energia on teollisten energiavarastojen ja aurinkosähkön kokonaistoimittaja yrityksille: kartoitamme, suunnittelemme, hankimme, asennamme ja ylläpidämme mittarin takaiset järjestelmät (energiavarasto, aurinkosähkö ja ohjaus) ja viemme ne aggregaattorin kautta reservimarkkinoille. Työmme alkaa laskelmasta, ei tarjouksesta.
 
 EPCkartoitus, suunnittelu, hankinta, asennus ja liittäminen yhden vastuunkantajan käsissä
 
@@ -1110,9 +1110,9 @@ Markkina muuttui. Fingrid hankkii reserviä joka tunnille ja arvioi tarvitsevans
 
 Lähteet: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025; Fingrid, Energiavarastot reservimarkkinoilla · 10.2.2025; Fingrid, tiedote · 24.9.2025. Tarkemmin Reservimarkkinat-sivulla.
 
-Tarjoukset pysyivät samoina. Yritykset saivat laitelistan ja yhden takaisinmaksuluvun – ilman lähdettä, skenaariota ja verkkoyhtiön kantaa. Meitä kiinnosti toinen kysymys: mitä teidän liittymänne oikeasti pystyy tuottamaan ja mikä siihen vaikuttaa.
+Tarjoukset pysyivät samoina. Yritykset saivat laitelistan ja yhden takaisinmaksuluvun ilman lähdettä, skenaariota ja verkkoyhtiön kantaa. Meitä kiinnosti toinen kysymys: mitä teidän liittymänne oikeasti pystyy tuottamaan ja mikä siihen vaikuttaa.
 
-Mitä tavoittelemme. Että yrityksen oma liittymä on tuottava omaisuuserä eikä pelkkä kuluerä – ja että päätös siitä tehdään omista luvuista, ei myyjän lupauksesta.
+Mitä tavoittelemme. Että yrityksen oma liittymä on tuottava omaisuuserä eikä pelkkä kuluerä. Että päätös siitä tehdään omista luvuista, ei myyjän lupauksesta.
 
 Mistä aloitamme. Kohteista, joissa liittymä on suuri ja kulutus vaihtelee: siellä arvio on selkein ja takaisinmaksu usein lyhin. Sen jälkeen siirrymme suurempiin kokonaisuuksiin yhdessä niiden kanssa, jotka tuntevat markkinan ja oman alueensa vahvuudet. Teemme sen läpinäkyvästi ja asiakkaan kielellä: tieto ymmärrettäväksi, luvut lähteineen, päätös teidän.
 
@@ -1124,7 +1124,7 @@ MM
 Madis Maastik
 Myyntijohtaja
 
-Uusiutuvan energian myynnissä vuodesta 2014, ensin Australiassa, sitten Suomessa ja Virossa: aurinkosähköratkaisut kodeille ja yrityksille, viime vuosina teolliset energiavarastot, energianhallinta ja reservimarkkinat. Vastaa asiakassuhteista, aggregaattorikumppanuuksista ja arviosta – hänen kauttaan kulkee kaikki yhteydenpito ennen allekirjoitusta.
+Uusiutuvan energian myynnissä vuodesta 2014, ensin Australiassa, sitten Suomessa ja Virossa: aurinkosähköratkaisut kodeille ja yrityksille, viime vuosina teolliset energiavarastot, energianhallinta ja reservimarkkinat. Vastaa asiakassuhteista, aggregaattorikumppanuuksista ja arviosta. Hänen kauttaan kulkee kaikki yhteydenpito ennen allekirjoitusta.
 Lue lisää
 Näkee mittarin takaiset järjestelmät ja hajautetun verkon turvallisuus- ja talouskysymyksenä: arvoketju enemmän omiin käsiin, innovatiivisesti ja tasapainoisesti. Laaja myyntitausta erilaisista uusiutuvan energian hankkeista ja eri aurinkojärjestelmien tuntemus; viimeiset pari kolme vuotta yhä syvemmin energian varastoinnissa ja ohjauksessa. Näkee siinä suuren mahdollisuuden ja suuren tulevaisuuden.
 
@@ -1135,7 +1135,7 @@ MR
 Martin Rautio
 Toimitusjohtaja
 
-Vastaa: yhtiön suunta, toiminnan suunnittelu ja toimitusten läpivienti – kumppanuudet, sopimukset ja rahoitusjärjestelyt. Huolehtii siitä, että jokainen hanke etenee sovitussa järjestyksessä.
+Vastaa: yhtiön suunta, toiminnan suunnittelu ja toimitusten läpivienti; kumppanuudet, sopimukset ja rahoitusjärjestelyt. Huolehtii siitä, että jokainen hanke etenee sovitussa järjestyksessä.
 martin.rautio@samaenergia.fi
 +358 40 701 9099
 
@@ -1143,7 +1143,7 @@ VP
 Viljar Petersell
 Asennuspäällikkö
 
-Peltikattojen ja aurinkojärjestelmien mestari. Yli kuusi vuotta aurinkojärjestelmien rakentamista yritys- ja yksityiskohteissa – katolle, maahan ja kattoon integroituna – sekä tausta hienotöissä, joissa tarkkuus ratkaisee. Vastaa asennuksen toteutuksesta ja laadusta: asennus toimii ja jättää kiinteistölle myös esteettisen arvon.
+Peltikattojen ja aurinkojärjestelmien mestari. Yli kuusi vuotta aurinkojärjestelmien rakentamista yritys- ja yksityiskohteissa (katolle, maahan ja kattoon integroituna) sekä tausta hienotöissä, joissa tarkkuus ratkaisee. Vastaa asennuksen toteutuksesta ja laadusta: asennus toimii ja jättää kiinteistölle myös esteettisen arvon.
 +358 40 635 3245
 
 Kasvamme. Jos teillä on myynti- tai asennustausta ja kiinnostus energiamarkkinaan, kirjoittakaa info@samaenergia.fi.
@@ -1206,7 +1206,7 @@ Dokumentaatio
 Neljällä kielelläArvio, luvat ja sopimukset teidän kielellänne
 
 Valmistajille ja maahantuojille.
-Laitevalikoimamme ei ole kiinni yhdessä valmistajassa. Lista, jonka jokaisen laitteen on täytettävä, on julkinen – ja se on myös ovi uusille valmistajille ja maahantuojille.
+Laitevalikoimamme ei ole kiinni yhdessä valmistajassa. Lista, jonka jokaisen laitteen on täytettävä, on julkinen. Se on myös ovi uusille valmistajille ja maahantuojille.
 Laitevaatimuksemme In English
 
 Kirjoittakaa tai soittakaa suoraan.
@@ -1221,6 +1221,8 @@ Etusivu›Ajankohtaista
 Mitä markkinoilla näemme, ja mitä siitä päättelemme.
 
 Reservimarkkinat, energiavarastot, verkkomaksut ja lakimuutokset auki kirjoitettuna niin, että päätöksen voi tehdä lukujen perusteella. Kirjoitamme myös silloin, kun luku ei ole meille mieluinen.
+
+Katsaukset
 
 Reservimarkkinat3. syyskuuta 20266 min luettavaa
 
@@ -1248,7 +1250,7 @@ Lyhyemmät tiedotteet.
 Muutokset, jotka vaikuttavat varaston kannattavuuteen ja liittymään, lähteellä ja määräajalla.
 
 18.8.2026
-Fingrid: sähkönkulutus kääntyy voimakkaaseen kasvuun – rinnalle tarvitaan säätövoimaa
+Fingrid: sähkönkulutus kääntyy voimakkaaseen kasvuun, rinnalle tarvitaan säätövoimaa
 Fingridin tiedotteen mukaan datakeskuksilla on liittymissopimuksia lähes 5 GW, sähkökattilahankkeita on rakenteilla ja toiminnassa yli 3 GW ja sähkövarastoista on tehty liittymissopimuksia yli 4 GW; jos kaikki toteutuu, kulutus kasvaa lähes 40 % vuoteen 2025 verrattuna. Uusi liityntäkapasiteetti on monin paikoin jo lähes varattu. Meidän johtopäätöksemme: olemassa oleva liittymä on omaisuutta, joka kannattaa laittaa töihin nyt.
 Lähde: Fingrid, tiedote · 18.8.2026
 
@@ -1270,11 +1272,11 @@ Konkreettisin yksittäinen todiste reservikustannusten laskusta: 1,35 €/MWh:n 
 
 Fingrid · 24.2.2026
 Sähkövarastojen yhteisteho Suomessa jo yli 1 000 MW
-Noin 1 050 MW verkkoon liitettyä varastoa. Tämä on se tarjonnan kasvu, joka selittää reservihinnan liikkeen – ja samalla syy, miksi emme lupaa yhtä tuottolukua.
+Noin 1 050 MW verkkoon liitettyä varastoa. Tämä on se tarjonnan kasvu, joka selittää reservihinnan liikkeen. Se on samalla syy, miksi emme lupaa yhtä tuottolukua.
 
 Nord Pool · 1.10.2025
 15 minuutin markkina-aikayksikkö vuorokausimarkkinalla
-Hiljainen muutos koko SDAC-alueella: lyhyempi jakso tarkoittaa enemmän hintaliikettä vuorokauden sisällä – ja enemmän arvoa omaisuudelle, joka reagoi nopeasti.
+Hiljainen muutos koko SDAC-alueella: lyhyempi jakso tarkoittaa enemmän hintaliikettä vuorokauden sisällä ja enemmän arvoa omaisuudelle, joka reagoi nopeasti.
 
 Tällä sivulla julkaisemme pidemmät katsaukset.Katsaukset on kirjoitettu niin, että ne voi lähettää kollegalle eteenpäin.
 
@@ -1325,13 +1327,13 @@ Pyytäkää laskelma, älkää lupausta. Kirjallinen arvio, jossa jokaisella luv
 
 Lähteet
 
-Fingrid, tiedote 24.9.2025 — n. 1 800 MW sovittuja liityntöjä, yli 30 000 MW kyselyjä, Etelä-Suomen rajoitus vuoteen 2029.
+Fingrid, tiedote 24.9.2025: n. 1 800 MW sovittuja liityntöjä, yli 30 000 MW kyselyjä, Etelä-Suomen rajoitus vuoteen 2029.
 
-Fingrid, Reservimarkkinat tutuiksi — 11.6.2025: n. 1 500 MW tunnissa, arvio +1 200 MW viidessä vuodessa.
+Fingrid, Reservimarkkinat tutuiksi, 11.6.2025: n. 1 500 MW tunnissa, arvio +1 200 MW viidessä vuodessa.
 
-Fingrid, Energiavarastot reservimarkkinoilla — 10.2.2025: säätökokein todennettu kapasiteetti 29 % FCR-N, 13 % / 18 % FCR-D (ylös / alas), 54 % FFR.
+Fingrid, Energiavarastot reservimarkkinoilla, 10.2.2025: säätökokein todennettu kapasiteetti 29 % FCR-N, 13 % / 18 % FCR-D (ylös / alas), 54 % FFR.
 
-Fingrid, Aggregointi reservimarkkinoilla — 3/2026: pienimmät tarjouskoot ja säätökokeet.
+Fingrid, Aggregointi reservimarkkinoilla, 3/2026: pienimmät tarjouskoot ja säätökokeet.
 
 MM
 Madis MaastikMyyntijohtaja, SAMA Energiamadis.maastik@samaenergia.fi
@@ -1626,7 +1628,7 @@ Tehon jako oman kulutuksen, arbitraasin ja reservimarkkinan kesken
 Mallinnettu reservituotto tuotteittain lähteineen
 Verkkoyhtiön kanta ja se, mitä arvio ei sano
 
-Te annatte: tuntikohtaiset kulutustietonne (CSV-lataus Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta – neuvomme miten), yhden sähkölaskun ja pääkaavion.
+Te annatte: tuntikohtaiset kulutustietonne (CSV-lataus Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta, neuvomme miten), yhden sähkölaskun ja pääkaavion.
 
 MM
 
@@ -1653,7 +1655,7 @@ Vuosikulutus
 
 Verkkoyhtiö
 
-Onko kohteessa aurinkosähköä?—EiKylläSuunnitteilla
+Onko kohteessa aurinkosähköä?ValitseEiKylläSuunnitteilla
 
 Pyydä maksuton kartoitus
 Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen, tietosuojaseloste.
@@ -1663,6 +1665,8 @@ Tarkistakaa nimi ja sähköposti. Jos lähetys ei onnistu, voitte lähettää ti
 Kiitos. Palaamme asiaan kahden arkipäivän kuluessa.
 
 Jos kulutustiedot tai tarjous ovat käsillä, lähettäkää ne heti osoitteeseen info@samaenergia.fi. Se nopeuttaa arviota.
+
+Yhteystiedot
 
 MM
 Madis Maastik
@@ -1987,7 +1991,7 @@ Hinnang näitabenne kui midagi tellitakse
 Kirjalikus hinnangus on jaama suurus ja toodangu hinnang tunniti, omatarbe osa ja ülejääk, ostetud elektri vähenemine teie hindadega ja kõrval sama arvutus salvestiga. Iga arvu kõrval on allikas ja periood. Kui päikeseelekter teie objektil ära ei tasu, ütleb hinnang seda.
 
 Katus, mis toodab.
-Katus on hoone kõige olulisem konstruktsioon ja selle uuendamine on suur investeering niikuinii. Kui katus uuendatakse, teeb katusesse integreeritud päikesekatus kaks asja korraga: uue katuse ja jaama.
+Katuse uuendamine on niikuinii suur investeering. Kui katus uuendatakse, teeb katusesse integreeritud päikesekatus kaks asja korraga: uue katuse ja jaama.
 
 Kate ja paneel ühena
 Paneelid on osa kattest, mitte eraldi konstruktsioon katuse peal. Katus ja jaam projekteeritakse ja ehitatakse ühena ning veekindlus on katusetöö vastutus algusest lõpuni.
@@ -2063,7 +2067,7 @@ Võimsustasu alla, börsihind kasuks, reservitulu ja varutoide, kui objektil on 
 Küsi tasuta hinnangut
 
 Põhivõrgust akuelemendini, kiht kihi haaval.
-Liitumine on juba ehitatud ja kinni makstud. Nii jõuab elekter teieni – ja nii tehakse otsused arvesti taga.
+Liitumine on juba ehitatud ja kinni makstud. Nii jõuab elekter teieni ja nii tehakse otsused arvesti taga.
 
 Alajaamades alandatakse pinget samm-sammult.
 Eleringi põhivõrk töötab 330 ja 110 kilovoldi pingel. Alajaamades alandatakse pinge 330 kilovoldilt 110 kilovoldile ja sealt edasi jaotusvõrku.
@@ -2072,7 +2076,7 @@ Jaotusvõrk toob elektri teie liitumiseni.
 Keskpingevõrk (10 kV) ja madalpingevõrk (0,4 kV) kuuluvad võrguettevõtjale. Ta võtab tasu edastatud energia eest ja ärikliendilt ka võimsuse eest: Elektrilevi arveldab võimsustasu kuu suurima tunnikeskmise võimsuse järgi.
 
 Arvesti on piir. Selle taga otsustate teie.
-Keskpingeliitumisel on oma alajaam 10/0,4 kV, peakilp, tarbijad ja võimalik oma tootmine kõik arvesti taga – samuti energiasalvesti.
+Keskpingeliitumisel on oma alajaam 10/0,4 kV, peakilp, tarbijad ja võimalik oma tootmine kõik arvesti taga, samuti energiasalvesti.
 
 Energiasalvesti: üks kapp, kõik osad sees.
 Üks välikapp koondab jõuelektroonika (PCS), LFP-akupangad, akuhalduse (BMS), vedelikjahutuse ja juhtimise (EMS). Võimsus ja energia dimensioneeritakse teie tarbimisandmetest ning kappe ühendatakse paralleelselt vastavalt objektile.
@@ -2113,12 +2117,12 @@ Elektrienergia käib börsi tunnihinnaga, edastamistasu on päeval 3,49 ja öös
 Allikas: Konkurentsiameti otsus nr 7-3/2026-028 · 2.3.2026, pakett Võimsus VMA2 · käibemaksuta
 
 Kinnistu väärtus: väiksem püsikulu, kõrgem hind.
-Ärikinnistu hind arvutatakse puhastulust: iga euro, mille võrra püsikulu langeb, tõstab väärtust mitmekordselt. Näidisarvutus: püsiv 10 000 euro suurune aastane sääst tähendab 10 % tootlusnõude juures ligikaudu 100 000 ja 8 % juures ligikaudu 125 000 eurot kõrgemat väärtust. Arvestame ainult püsiva osa – võimsustasu ja energiakulu; reserviturutulu sõltub turuhinnast ja seda väärtusesse ei arvestata.
+Ärikinnistu hind arvutatakse puhastulust: iga euro, mille võrra püsikulu langeb, tõstab väärtust mitmekordselt. Näidisarvutus: püsiv 10 000 euro suurune aastane sääst tähendab 10 % tootlusnõude juures ligikaudu 100 000 ja 8 % juures ligikaudu 125 000 eurot kõrgemat väärtust. Arvestame ainult püsiva osa: võimsustasu ja energiakulu. Reserviturutulu sõltub turuhinnast ja seda väärtusesse ei arvestata.
 Süsteem jääb liitumise taha ja liigub kinnisvaraga kaasa. Ostja saab tippvõimsuse juhtimise ja pääsu reserviturule esimesest päevast, ilma projekti ja järjekorrata.
-Näidisarvutus. Teie objekti tootlusnõue sõltub kinnisvara liigist ja asukohast – hinnangus arvutame selle teie enda andmetega.
+Näidisarvutus. Teie objekti tootlusnõue sõltub kinnisvara liigist ja asukohast. Hinnangus arvutame selle teie enda andmetega.
 
-Kus salvesti end kõige kiiremini ära tasub – ja miks.
-Salvesti võimsus jagatakse mitme töö vahel: teie enda tarbimise optimeerimine (tipud, odavad tunnid), arbitraaž börsil ja reserviturg (valmisolek Eleringile) – agregaator müüb võimsust mitmel turul korraga, see on mitmeturuteenus. Kui suur osa läheb millisele tööle, määrab teie tarbimisprofiil – hinnangu kõige tähtsam rida.
+Kus salvesti end kõige kiiremini ära tasub ja miks.
+Salvesti võimsus jagatakse mitme töö vahel: teie enda tarbimise optimeerimine (tipud, odavad tunnid), arbitraaž börsil ja reserviturg (valmisolek Eleringile). Agregaator müüb võimsust mitmel turul korraga: see on mitmeturuteenus. Kui suur osa läheb millisele tööle, määrab teie tarbimisprofiil. See on hinnangu kõige tähtsam rida.
 
 Viljakuivatid ja maaettevõtted
 Salvesti on peaaegu kogu aeg reserviturul ja teenib valmisoleku pealt; kuivatushooaja tipud hoiab ta madalal. Sageli kiireim tasuvus.
@@ -2132,7 +2136,7 @@ Varutoide on siin sama tähtis kui sääst. Selleks peab süsteem olema ehitatud
 Päikesepargid, maaomanikud ja kinnisvaraportfellid
 Vaba maa liitumise lähedal on ise vara, millele jaam ja salvesti ehitatakse; portfell saab ühe partneri, kes kõik objektid läbi arvutab.
 
-Ei leidnud oma objekti? Kirjeldage seda meile – hinnang ütleb, milline jaotus teie objektil töötab.Küsi tasuta hinnangut
+Ei leidnud oma objekti? Kirjeldage seda meile. Hinnang ütleb, milline jaotus teie objektil töötab.Küsi tasuta hinnangut
 
 Kuidas salvesti päev välja näeb.
 
@@ -2150,12 +2154,12 @@ Teie tarbimineVõimsustasu piirTipp, mille salvesti maha lõikabBörsihind (tund
 
 Skemaatiline ööpäev, mitte ühe objekti mõõdetud andmed. Teie objekti tegeliku profiili joonistame hinnangus teie tunnipõhistest tarbimisandmetest.
 
-Mida me tarnime – ja mida seadmetelt nõuame.
+Mida me tarnime ja mida seadmetelt nõuame.
 
 Seadmed valime teie objekti järgi, mitte lao. Ohutus, garantii ja hooldus on hinnangus kirjas, mitte peenes kirjas.
 
 Tööstusklassi süsteem
-Välispaigalduseks sobiv salvestikapp, inverter ja juhtimine, mõõdetud teie liitumise ja tarbimisprofiili järgi – ühest üksusest mitme üksuse pargini.
+Välispaigalduseks sobiv salvestikapp, inverter ja juhtimine, mõõdetud teie liitumise ja tarbimisprofiili järgi, ühest üksusest mitme üksuse pargini.
 
 Ohutus ja garantii
 Nõuame tootjalt LFP-keemiat, rakutaseme jälgimisega akuhaldust, temperatuurijuhtimist, välitingimustele vastavat kappi ja CE- ning transpordisertifikaate. Tootja garantii ja hooldustingimused on hinnangus eraldi real. Kõik nõuded →
@@ -2172,7 +2176,7 @@ Kas salvesti on ohutu ja milline on garantii?
 Tööstuslikud salvestid, mida pakume, on LFP-keemiaga, rakutaseme jälgimise ja temperatuurijuhtimisega ning välitingimustele mõeldud kapis. Tootjalt nõuame CE- ja transpordisertifikaate. SAMA vastutab projekti eest, tootja annab seadme garantii ja tootja nimi on kirjalikus hinnangus. Garantii- ja hooldustingimused ning see, kellele helistate, on samas dokumendis enne allkirja.
 
 Mis on arvestitagune süsteem?
-See osa teie elektrisüsteemist, mis asub võrguettevõtja arvesti taga ja on teie oma: energiasalvesti, päikesepaneelid ja juhtimine, mis otsustab, millal tarbida, salvestada, müüa või hoida võimsust võrgule valmis. Inglise keeles behind-the-meter. Võrguettevõtja näeb ainult arvesti näitu – mis selle taga toimub, otsustate teie.
+See osa teie elektrisüsteemist, mis asub võrguettevõtja arvesti taga ja on teie oma: energiasalvesti, päikesepaneelid ja juhtimine, mis otsustab, millal tarbida, salvestada, müüa või hoida võimsust võrgule valmis. Inglise keeles behind-the-meter. Võrguettevõtja näeb ainult arvesti näitu. Mis selle taga toimub, otsustate teie.
 
 Kui kaua projekt kestab?
 Ajakava koosneb kolmest osast: seadme tarneaeg, mis kinnitatakse pakkumises seadme kaupa, paigaldusjärjekord ja võrguettevõtja vastamisaeg. Kõik kolm tuuakse hinnangus eraldi välja, et miski ei tuleks üllatusena.
@@ -2240,7 +2244,7 @@ Allikad: Kliimaministeerium · 11.09.2024; Elering, varustuskindluse aruanne 202
 
 Pikaajaline nõudlus: Eesti hoiab oma sagedust nüüd ise
 8. veebruaril 2025 lahkusid Balti riigid Venemaa võrgust lõplikult ja sünkroniseerusid 9. veebruaril 2025 Mandri-Euroopa võrguga. Sellest hetkest ostab Elering sagedusreserve ise. Juulis 2026 oli Eestis reservitoodete pakkumiseks kvalifitseerunud 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i (üles / alla). Mida rohkem tuult ja päikest võrku tuleb, seda rohkem reservi vajatakse. See nõudlus ei ole mööduv.
-Allikad: sünkroniseerimine – Euroopa Komisjoni esindus Eestis · 9.2.2025; kvalifitseerunud mahud – Elering, sagedusreservide turu kokkuvõte · juuli 2026, tabel 2
+Allikad: sünkroniseerimine (Euroopa Komisjoni esindus Eestis · 9.2.2025); kvalifitseerunud mahud (Elering, sagedusreservide turu kokkuvõte · juuli 2026, tabel 2)
 
 1 MW / 2 MWhnäidissuurus, dimensioneeritakse objekti järgi
 
@@ -2250,7 +2254,7 @@ Kuidas tulu hinnatakse.
 
 Inverteri võimsus ja salvesti maht on määravad. Tulu hinnatakse salvesti inverteri võimsuse (MW) ja mahu (MWh) järgi. Tüüpiline suhe on 1:2, näiteks 1 MW / 2 MWh: võimsus ütleb, kui palju reservi saate pakkuda, maht, kui kaua.
 
-Mida täielikumalt agregaator juhib, seda rohkem tulu. Kui agregaator juhib salvestit tervikuna, saab ta viia iga tunni kõige tasuvamasse reservi ja võtta turust maksimumi. Osaline juhtimine teenib vähem.
+Mida täielikumalt agregaator juhib, seda rohkem tulu. Kui agregaator juhib salvestit tervikuna, saab ta viia iga tunni kõige tasuvamasse reservi. Osaline juhtimine teenib vähem.
 
 Strateegia tehakse teie huvides. Kui müüte oma päikeseelektrit, vajate salvestit oma tippude jaoks või varutoiteks, ehitatakse strateegia selle ümber. Agregaator optimeerib, aga teie tingimustel ja teie kasuks.
 
@@ -2301,10 +2305,10 @@ Avaleht›Nõuded seadmetele
 
 Meie nõuded seadmetele.
 
-Selle nimekirja küsime igalt tootjalt dokumenteerituna enne, kui tema seadet pakume – ja see kehtib igal objektil, kuhu paigaldame. Tootenumbreid siin ei ole – need on hinnangus objekti järgi.
+Selle nimekirja küsime igalt tootjalt dokumenteerituna enne, kui tema seadet pakume. See kehtib igal objektil, kuhu paigaldame. Tootenumbreid siin ei ole: need on hinnangus objekti järgi.
 
 01Keemia
-LFP ehk liitiumraudfosfaat – stabiilseim tööstuslik akukeemia välispaigalduseks.
+LFP ehk liitiumraudfosfaat: stabiilne tööstuslik akukeemia välispaigalduseks.
 
 02Akuhaldus
 Rakutaseme jälgimine: pinge ja temperatuur iga raku kohta, kaitse ülelaadimise ja süvatühjenemise eest.
@@ -2316,7 +2320,7 @@ Aktiivne jahutus ja küte, et süsteem töötaks meie kliimas aastaringselt täi
 Välitingimustele mõeldud kapp tootja määratud kaitseastmega; tulekaitse lahendus tootja dokumentatsioonis.
 
 05Sertifikaadid
-CE-vastavus, tööstuslike liitiumakude ohutusstandard (nt IEC 62619) ja transpordikatse (UN 38.3) – dokumendid enne tellimust, mitte pärast.
+CE-vastavus, tööstuslike liitiumakude ohutusstandard (nt IEC 62619) ja transpordikatse (UN 38.3); dokumendid enne tellimust, mitte pärast.
 
 06Liidesed
 Avatud liides agregaatorile ja seirele (nt Modbus TCP/IP), et juhtimine ei sõltuks ühest tarnijast.
@@ -2325,7 +2329,7 @@ Avatud liides agregaatorile ja seirele (nt Modbus TCP/IP), et juhtimine ei sõlt
 Vastavus võrguettevõtja liitumis- ja kaitsenõuetele; tootja annab andmed, mida tehniliste tingimuste taotlus vajab.
 
 08Garantii
-Kirjalikud garantiitingimused aastates ja tsüklites, lubatud mahtuvuse langus ja see, kes vastutab millise rikke eest – hinnangus eraldi real.
+Kirjalikud garantiitingimused aastates ja tsüklites, lubatud mahtuvuse langus ja see, kes vastutab millise rikke eest (hinnangus eraldi real).
 
 09Hooldus ja varuosad
 Hooldus ja varuosad Eestis kokkulepitud reageerimisajaga; dokumentatsioon eesti või inglise keeles.
@@ -2357,11 +2361,11 @@ Allikad: Elering, tasakaalustamisteenuste turg; Elering, FCR tüüptingimused ·
 Kuidas süsteem kokku käib.
 Objektil on päikesejaam, inverter, aku ja tarbijad; liitumine ühendab need võrguga. Soleroni kontroller loeb mõõtmist ja juhib inverterit, server teeb pakkumised Eleringile ja EMS-rakendus näitab teile tulemust.
 
-ObjektPäikesejaam, inverter, akupank ja tarbijad – elektrikaabel ühendab need liitumispunktis võrguga.
+ObjektPäikesejaam, inverter, akupank ja tarbijad. Elektrikaabel ühendab need liitumispunktis võrguga.
 
 JuhtimineSoleroni kontroller on objektil. Server teeb pakkumised ja arvutab strateegia. Soleron EMS-ist näete, mida salvesti teeb.
 
-PrioriteetObjekti tarbimine on alati esimene. Reservi ja börsile läheb see, mis liitumisest üle jääb – tund tunni kaupa, teie tarbimisprofiili järgi, mitte ühe kindla piiranguga.
+PrioriteetObjekti tarbimine on alati esimene. Reservi ja börsile läheb see, mis liitumisest üle jääb: tund tunni kaupa, teie tarbimisprofiili järgi, mitte ühe kindla piiranguga.
 
 AndmedMõõtmine liitumispunktis, seire ja raport: millises reservis salvesti oli ja mida ta teenis.
 
@@ -2470,22 +2474,22 @@ Iga tellimus algab samast kohast: tasuta kirjalikust hinnangust. Siin on kirjas,
 Hinnang, projekt, portfell.
 Sama viis rida iga toote kohta, et võrdlus oleks lihtne.
 
-Teie andmed keskel, teiste tingimused ümber — üks arvutus.
+Teie andmed keskel, teiste tingimused ümber: üks arvutus.
 
 TasutaHinnang
-Igale ettevõttele, kellel on oma elektriliitumine – ka siis, kui pakkumine on juba käes.
+Igale ettevõttele, kellel on oma elektriliitumine, ka siis, kui pakkumine on juba käes.
 
 Mida sisaldab
 Kaks lehekülge: liitumine ja tarbimisprofiil, võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel, modelleeritud reservitulu toodete kaupa allikatega, võrguettevõtja seisukoht ja see, mida hinnang ei ütle.
 
 Mida te annate
-Oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt – juhendame), ühe elektriarve ja peakilbi skeemi.
+Oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt, juhendame), ühe elektriarve ja peakilbi skeemi.
 
 Aeg
 Kirjalik hinnang kahe tööpäevaga pärast andmete saamist.
 
 Mis edasi
-Teie otsustate. Kui edasi, siis eelkontroll – samuti tasuta.
+Teie otsustate. Kui edasi, siis eelkontroll, samuti tasuta.
 
 Küsi tasuta hinnangut
 
@@ -2523,7 +2527,7 @@ Iga objekt käib sama nelja sammu läbi; portfell kasvab objekt haaval.
 
 Kirjeldage portfelli
 
-Kuidas see käib – ja mis millal maksab.
+Kuidas see käib ja mis millal maksab.
 
 Kedagi ei saadeta kuhugi enne, kui andmed on käes. Kaks esimest sammu on tasuta, objektikülastus arvestatakse lepingus maha, projekteerimine ja paigaldus käivad lepingu järgi.
 
@@ -2736,7 +2740,7 @@ Avaleht›Meist
 
 Me tegime ettevõtte, mida ise oleksime tahtnud palgata.
 
-SAMA Energia on tööstuslike energiasalvestite ja päikeseelektri süsteemiintegraator ettevõtetele – võtmed kätte: hindame, projekteerime, hangime, paigaldame ja hooldame arvestitaguseid süsteeme ning viime need agregaatori kaudu reserviturule. Meie töö algab arvutusest, mitte pakkumisest.
+SAMA Energia on tööstuslike energiasalvestite ja päikeseelektri süsteemiintegraator ettevõtetele. Teeme töö võtmed kätte: hindame, projekteerime, hangime, paigaldame ja hooldame arvestitaguseid süsteeme ning viime need agregaatori kaudu reserviturule. Meie töö algab arvutusest, mitte pakkumisest.
 
 EPChinnang, projekteerimine, hange, paigaldus ja liitumine ühe vastutaja käes
 
@@ -2750,9 +2754,9 @@ Turg muutus. Alates 2025. aasta veebruarist hoiab Eesti oma võrgu sagedust ise 
 
 Allikad: Elering, tasakaalustamisvõimsuse kulu · 2026; Elering, hinnakiri ja tüüptingimused · ELTS § 71 lg 10¹, salvestusperiood on kalendrikuu; Kliimaministeerium · 11.09.2024. Täpsemalt Reserviturg-lehel.
 
-Pakkumised jäid samaks. Ettevõtted said tabeli seadmetega ja ühe tasuvusaja numbri – ilma allika, stsenaariumi ja võrguettevõtja seisukohata. Meid huvitas teine küsimus: mida teie liitumine tegelikult teenida saab ja mis seda mõjutab.
+Pakkumised jäid samaks. Ettevõtted said tabeli seadmetega ja ühe tasuvusaja numbri ilma allika, stsenaariumi ja võrguettevõtja seisukohata. Meid huvitas teine küsimus: mida teie liitumine tegelikult teenida saab ja mis seda mõjutab.
 
-Mida taotleme. Et ettevõtte oma liitumine oleks teeniv vara, mitte pelgalt kuluartikkel – ja et otsus selle üle tehtaks oma numbrite, mitte müüja lubaduse pealt.
+Mida taotleme. Et ettevõtte oma liitumine oleks teeniv vara, mitte pelgalt kuluartikkel. Et otsus selle üle tehtaks oma numbrite, mitte müüja lubaduse pealt.
 
 Kust alustame. Objektidest, kus liitumine on suur ja tarbimine kõikuv: seal on hinnang kõige selgem ja tasuvusaeg sageli lühim. Seejärel liigume suuremate tervikute juurde koos nendega, kes tunnevad turgu ja oma piirkonna tugevusi. Teeme seda läbipaistvalt ja kliendi keeles: teave arusaadavaks, arvud koos allikatega, otsus teie.
 
@@ -2764,7 +2768,7 @@ MM
 Madis Maastik
 Müügijuht
 
-Taastuvenergia müügis alates 2014. aastast, algul Austraalias, seejärel Soomes ja Eestis: päikeseelektri lahendused kodudele ja ettevõtetele, viimastel aastatel tööstuslikud energiasalvestid, energiajuhtimine ja reserviturg. Vastutab kliendisuhete, agregaatoripartnerluste ja hinnangu eest – tema kaudu käib kogu suhtlus enne allkirja.
+Taastuvenergia müügis alates 2014. aastast, algul Austraalias, seejärel Soomes ja Eestis: päikeseelektri lahendused kodudele ja ettevõtetele, viimastel aastatel tööstuslikud energiasalvestid, energiajuhtimine ja reserviturg. Vastutab kliendisuhete, agregaatoripartnerluste ja hinnangu eest. Tema kaudu käib kogu suhtlus enne allkirja.
 Loe edasi
 Näeb arvestitaguseid süsteeme ja hajutatud võrku julgeoleku ja majanduse küsimusena: väärtusahel rohkem enda kätte, innovaatiliselt ja tasakaalukalt. Lai müügitaust erinevate taastuvenergia projektidega ja eri päikesesüsteemide tundmine; viimased kaks-kolm aastat üha sügavamalt energiasalvestuses ja energia juhtimises. Näeb selles suurt võimalust ja suurt tulevikku.
 
@@ -2775,7 +2779,7 @@ MR
 Martin Rautio
 Tegevjuht
 
-Vastutab: ettevõtte suund, tegevuse planeerimine ja tarnete läbiviimine – partnerlused, lepingud ja finantseerimislahendused. Hoolitseb selle eest, et iga projekt liigub kokkulepitud järjekorras.
+Vastutab: ettevõtte suund, tegevuse planeerimine ja tarnete läbiviimine; partnerlused, lepingud ja finantseerimislahendused. Hoolitseb selle eest, et iga projekt liigub kokkulepitud järjekorras.
 martin.rautio@samaenergia.fi
 +358 40 701 9099
 
@@ -2783,7 +2787,7 @@ VP
 Viljar Petersell
 Paigaldusjuht
 
-Plekk-katuste ja päikesesüsteemide meister. Üle kuue aasta päikesesüsteemide ehitamist äri- ja eraobjektidel – katusel, maal ja katusesse integreerituna – ning taust filigraansetes töödes, kus täpsus loeb. Vastutab paigalduse teostuse ja kvaliteedi eest: paigaldus töötab ja jätab kinnistule ka esteetilise väärtuse.
+Plekk-katuste ja päikesesüsteemide meister. Üle kuue aasta päikesesüsteemide ehitamist äri- ja eraobjektidel (katusel, maal ja katusesse integreerituna) ning taust filigraansetes töödes, kus täpsus loeb. Vastutab paigalduse teostuse ja kvaliteedi eest: paigaldus töötab ja jätab kinnistule ka esteetilise väärtuse.
 +358 40 635 3245
 
 Kasvame. Kui teil on müügi- või paigaldustaust ja huvi energiaturu vastu, kirjutage info@samaenergia.fi.
@@ -2839,7 +2843,7 @@ Dokumentatsioon
 Neljas keelesHinnang, load ja lepingud teie keeles
 
 Tootjatele ja maaletoojatele.
-Meie seadmevalik ei ole kinni ühes tootjas. Nimekiri, millele iga seade peab vastama, on avalik – ja see on ka uks uutele tootjatele ja maaletoojatele.
+Meie seadmevalik ei ole kinni ühes tootjas. Nimekiri, millele iga seade peab vastama, on avalik. See on ka uks uutele tootjatele ja maaletoojatele.
 Meie nõuded seadmetele In English
 
 Kirjutage või helistage otse.
@@ -2854,6 +2858,8 @@ Avaleht›Uudised
 Mida me turul näeme ja mida me sellest järeldame.
 
 Reserviturg, energiasalvestid, võrgutasud ja seadusemuudatused, lahti kirjutatud nii, et otsuse saab teha numbrite pealt. Kirjutame ka siis, kui number meile ei sobi.
+
+Ülevaated
 
 Reserviturg3. september 20266 min lugemist
 
@@ -2882,12 +2888,12 @@ Muudatused, mis mõjutavad salvesti tasuvust ja liitumist, allika ja tähtajaga.
 
 Tähtaeg 31.12.2026
 Salvestite mõõtmise üleminekuaeg lõpeb
-Ajavahemikul 1.1.–31.12.2026 kestab üleminekuperiood, mille jooksul viiakse ajutiselt Estfeediga liidestatud mõõteseadmed üle AMR-süsteemi. Pärast seda peab mõõtelahendus vastama nõuetele täielikult, et salvestatud ja võrku tagastatud energiat võrgutasus õigesti käsitletaks. Mõõtmine tasub projekteerida algusest õigesti – see on odavam kui hiljem ümber ehitada.
+Ajavahemikul 1.1.–31.12.2026 kestab üleminekuperiood, mille jooksul viiakse ajutiselt Estfeediga liidestatud mõõteseadmed üle AMR-süsteemi. Pärast seda peab mõõtelahendus vastama nõuetele täielikult, et salvestatud ja võrku tagastatud energiat võrgutasus õigesti käsitletaks. Mõõtmine tasub projekteerida algusest õigesti: see on odavam kui hiljem ümber ehitada.
 Allikas: Elering, hinnakiri ja tüüptingimused
 
 Alates 1.1.2026
 Salvesti võrgutasu arvestatakse kalendrikuu netotarbimiselt
-Elektrituruseaduse § 71 lg 10¹ järgi ei võeta edastamistasu selle elektrienergia eest, mille salvesti salvestusperioodi vältel võrgust salvestab ja samal perioodil võrku tagastab; salvestusperiood on kalendrikuu (§ 3 p 22⁴). See parandab projekti tasuvust oluliselt – eeldusel, et mõõtmine vastab nõuetele.
+Elektrituruseaduse § 71 lg 10¹ järgi ei võeta edastamistasu selle elektrienergia eest, mille salvesti salvestusperioodi vältel võrgust salvestab ja samal perioodil võrku tagastab; salvestusperiood on kalendrikuu (§ 3 p 22⁴). See parandab projekti tasuvust oluliselt, kui mõõtmine vastab nõuetele.
 Allikas: Elering, hinnakiri ja tüüptingimused · ELTS § 71 lg 10¹
 
 Tähtaeg 11.10.2026
@@ -2908,11 +2914,11 @@ Kvalifitseerunud võimsused ja hinnad toote kaupa, kuu haaval. Siin näeb ka sed
 
 Elering · 2026
 Tasakaalustamisvõimsuse kulu
-See on rida, mida iga tarbija maksab: 3,73 €/MWh 2026. aastal ja 2,97 €/MWh alates 2027. Korrutage see oma aastase tarbimisega – arv tuleb välja ilma meie abita.
+See on rida, mida iga tarbija maksab: 3,73 €/MWh 2026. aastal ja 2,97 €/MWh alates 2027. Korrutage see oma aastase tarbimisega. Arv tuleb välja ilma meie abita.
 
 Nord Pool · 1.10.2025
 15-minutiline turuajaühik päev-ette turul
-Vaikne muudatus kogu SDAC-piirkonnas: lühem periood tähendab rohkem hinnaliikumist ööpäeva sees – ja rohkem väärtust varale, mis reageerib kiiresti.
+Vaikne muudatus kogu SDAC-piirkonnas: lühem periood tähendab rohkem hinnaliikumist ööpäeva sees ja rohkem väärtust varale, mis reageerib kiiresti.
 
 Sellel lehel avaldame pikemad ülevaated.Ülevaated on kirjutatud nii, et neid saab kolleegile edasi saata.
 
@@ -2949,7 +2955,7 @@ Sama rida, kaks poolt: tarbija maksab, valmisolek saab.
 
 Kes selle raha saab
 
-Selle raha eest ostab Elering reserve nendelt, kes suudavad võimsust sekunditega juurde anda või ära võtta: kiiretelt elektrijaamadelt ja salvestitelt. Salvesti on selle töö jaoks ideaalne: ta suudab olla korraga nii tootja kui tarbija ja reageerib kiiremini kui ükski põletav seade.
+Selle raha eest ostab Elering reserve nendelt, kes suudavad võimsust sekunditega juurde anda või ära võtta: kiiretelt elektrijaamadelt ja salvestitelt. Salvesti sobib selleks tööks hästi: ta suudab olla korraga nii tootja kui tarbija ja reageerib kiiremini kui põletav seade.
 
 Üks tingimus on oluline: Eleringi võimsusturul on miinimumpakkumine 1 MW. Üksik väike salvesti sinna ei ulatu. Sellepärast käib liitumine agregaatori kaudu, kes koondab mitme objekti salvestid üheks pakkumiseks, läbib eelkvalifitseerimise ja juhib salvesteid automaatselt. Nii satub ka ühe tehase või kuivati salvesti samale turule, kust see raha välja makstakse.
 
@@ -2969,13 +2975,13 @@ Laske arvutada, mitte lubada. Küsige kirjalikku hinnangut, kus iga arvul on all
 
 Allikad
 
-Elering, tasakaalustamisvõimsuse kulu — 3,73 €/MWh 2026, 2,97 €/MWh alates 2027 (vaadatud 2.9.2026).
+Elering, tasakaalustamisvõimsuse kulu: 3,73 €/MWh 2026, 2,97 €/MWh alates 2027 (vaadatud 2.9.2026).
 
-Elering, sagedusreservide turu kokkuvõte — juuli 2026, tabel 2: 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i pakkumiseks kvalifitseerunud võimsust.
+Elering, sagedusreservide turu kokkuvõte, juuli 2026, tabel 2: 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i pakkumiseks kvalifitseerunud võimsust.
 
-Elering, tasakaalustamisteenuste energia- ja võimsusturg — miinimumpakkumine 1 MW.
+Elering, tasakaalustamisteenuste energia- ja võimsusturg: miinimumpakkumine 1 MW.
 
-Elering, varustuskindluse aruanne 2025, lk 36–37 — 258 MW salvesteid 2028, 600 MW 2030.
+Elering, varustuskindluse aruanne 2025, lk 36–37: 258 MW salvesteid 2028, 600 MW 2030.
 
 MM
 Madis MaastikMüügijuht, SAMA Energiamadis.maastik@samaenergia.fi
@@ -2999,7 +3005,7 @@ Lugege peatükk korraga: kaart vahetab kihti kaasa. Viige hiir või sõrm kaardi
 
 Kus võrk on?
 
-Eesti põhivõrk – 1 851 km 330 kV ja 3 342 km 110 kV liine – töötab 9. veebruarist 2025 Mandri-Euroopa sünkroonalas ning on ühendatud Soomega kahe alalisvoolukaabli ja Lätiga kolme 330 kV liini kaudu.
+Eesti põhivõrgus on 1 851 km 330 kV ja 3 342 km 110 kV liine. See töötab 9. veebruarist 2025 Mandri-Euroopa sünkroonalas ning on ühendatud Soomega kahe alalisvoolukaabli ja Lätiga kolme 330 kV liini kaudu.
 
 1 851 km330 kV liine · lisaks 3 342 km 110 kV · 158 alajaama
 
@@ -3270,7 +3276,7 @@ Võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel
 Modelleeritud reservitulu toodete kaupa allikatega
 Võrguettevõtja seisukoht ja see, mida hinnang ei ütle
 
-Teie annate: oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt – juhendame), ühe elektriarve ja peakilbi skeemi.
+Teie annate: oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt, juhendame), ühe elektriarve ja peakilbi skeemi.
 
 MM
 
@@ -3297,7 +3303,7 @@ Aastane tarbimine
 
 Võrguettevõtja
 
-Kas objektil on päikeseelekter?—EiJahPlaanis
+Kas objektil on päikeseelekter?ValigeEiJahPlaanis
 
 Küsi tasuta hinnangut
 Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hinnangu tegemiseks, privaatsuspoliitikat.
@@ -3307,6 +3313,8 @@ Kontrollige nime ja e-posti. Kui saatmine ei õnnestu, võite saata andmed ka ot
 Aitäh. Võtame ühendust kahe tööpäeva jooksul.
 
 Kui teil on tarbimisandmed või pakkumine käepärast, saatke need kohe aadressile info@samaenergia.fi. See kiirendab hinnangut.
+
+Kontaktid
 
 MM
 Madis Maastik

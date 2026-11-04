@@ -33,7 +33,7 @@
 
 <header class="header" id="top">
   <div class="wrap">
-    <a class="logo" href="/" aria-label="SAMA Energia — etusivu"><img src="/assets/mark.svg" alt="SAMA Energia" width="154" height="38"></a>
+    <a class="logo" href="/" aria-label="SAMA Energia, etusivu"><img src="/assets/mark.svg" alt="SAMA Energia" width="154" height="38"></a>
     <nav class="nav" aria-label="Päävalikko">
       <div class="dd" data-nav="ratkaisut">
         <button type="button" aria-haspopup="true" aria-expanded="false">Ratkaisut <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg></button>
@@ -88,7 +88,7 @@
       <h1>Aloitetaan <em>kulutustiedoistanne.</em></h1>
       <p class="lead" style="margin-top:18px">Kirjallinen arvio kahden arkipäivän kuluessa tietojen saamisesta kertoo, kannattaako sähkövarasto kohteessanne ja miten. Arvio on kaksi sivua ilman sitoumuksia:</p>
       <ul><li><svg viewBox="0 0 20 20" fill="none" stroke="#C7A45C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Liittymä ja kulutusprofiili tuntikohtaisista tiedoistanne</li><li><svg viewBox="0 0 20 20" fill="none" stroke="#C7A45C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Tehon jako oman kulutuksen, arbitraasin ja reservimarkkinan kesken</li><li><svg viewBox="0 0 20 20" fill="none" stroke="#C7A45C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Mallinnettu reservituotto tuotteittain lähteineen</li><li><svg viewBox="0 0 20 20" fill="none" stroke="#C7A45C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5l4 4 8-9"/></svg>Verkkoyhtiön kanta ja se, mitä arvio ei sano</li></ul>
-        <p class="give">Te annatte: tuntikohtaiset kulutustietonne (CSV-lataus Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta – neuvomme miten), yhden sähkölaskun ja pääkaavion.</p>
+        <p class="give">Te annatte: tuntikohtaiset kulutustietonne (CSV-lataus Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta, neuvomme miten), yhden sähkölaskun ja pääkaavion.</p>
       <div class="direct">
         <div class="photo" aria-hidden="true">MM</div>
         <div><b>Madis Maastik</b><span><a href="tel:+358449654614">+358 449 654 614</a></span><span><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a></span></div>
@@ -113,7 +113,7 @@
             <div class="field"><label for="f-fuse-b">Pääsulake tai liittymisteho</label><input id="f-fuse-b" name="liittymisteho" type="text" placeholder="esim. 400 A tai 250 kW"></div>
             <div class="field"><label for="f-year-b">Vuosikulutus</label><input id="f-year-b" name="vuosikulutus" type="text" placeholder="esim. 900 MWh/v"></div>
             <div class="field"><label for="f-grid-b">Verkkoyhtiö</label><input id="f-grid-b" name="verkkoyhtio" type="text" placeholder="esim. Elenia"></div>
-            <div class="field wide"><label for="f-solar-b">Onko kohteessa aurinkosähköä?</label><select id="f-solar-b" name="aurinko"><option value="">—</option><option>Ei</option><option>Kyllä</option><option>Suunnitteilla</option></select></div>
+            <div class="field wide"><label for="f-solar-b">Onko kohteessa aurinkosähköä?</label><select id="f-solar-b" name="aurinko"><option value="">Valitse</option><option>Ei</option><option>Kyllä</option><option>Suunnitteilla</option></select></div>
           </div>
         </details>
         <button class="btn btn-primary btn-lg" type="submit">Pyydä maksuton kartoitus <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg></button>
@@ -129,7 +129,8 @@
   </div></section>
 <section class="section" id="yhteystiedot-lista">
   <div class="wrap">
-        <div class="contacts">
+        <h2 class="sr-only">Yhteystiedot</h2>
+    <div class="contacts">
       <article class="person ccard reveal"><div class="top"><div class="photo" aria-hidden="true">MM</div><div><h3>Madis Maastik</h3><div class="role">Myyntijohtaja</div></div></div><p class="duty">Kartoitus, aggregaattorit, asiakassuhteet</p><p class="contact"><a href="mailto:madis.maastik@samaenergia.fi">madis.maastik@samaenergia.fi</a><br><a href="tel:+358449654614">+358 449 654 614</a></p></article>
       <article class="person ccard reveal"><div class="top"><div class="photo" aria-hidden="true">MR</div><div><h3>Martin Rautio</h3><div class="role">Toimitusjohtaja</div></div></div><p class="duty">Suunta, kumppanuudet, sopimukset ja rahoitus</p><p class="contact"><a href="mailto:martin.rautio@samaenergia.fi">martin.rautio@samaenergia.fi</a><br><a href="tel:+358407019099">+358 40 701 9099</a></p></article>
       <article class="person ccard reveal"><div class="top"><div class="photo" aria-hidden="true">VP</div><div><h3>Viljar Petersell</h3><div class="role">Asennuspäällikkö</div></div></div><p class="duty">Asennus, kohde, toteutus ja laatu</p><p class="contact"><a href="tel:+358406353245">+358 40 635 3245</a></p></article>
