@@ -250,9 +250,21 @@
   },
   {
    "page": "/meista/",
+   "sectionId": "kuka",
+   "kind": "changed",
+   "prev": "Meidän tiimimme. Jokaisessa vaiheessa on nimetty vastuuhenkilö, ja saatte heihin suoran yhteyden. Alla olevat numerot ovat heidän omiaan, eivät vaihteen. MMMadis MaastikMyyntijohtajaUusiutuvan energian myynnissä vuodesta 2014, ensin Australiassa, sitten Suomessa ja Virossa: aurinkosähköratkaisut kodeille ja yrityksille, viime vuosina teolliset energiavarastot, energianhallinta ja reservimarkkinat. Vastaa asiakassuhteista, aggregaattorikumppanuuksista ja arviosta – hänen kauttaan kulkee kaikki yhteydenpito ennen allekirjoitusta.Lue lisääNäkee mittarin takaiset järjestelmät ja hajautetun verkon turvallisuus- ja talouskysymyksenä: arvoketju enemmän omiin käsiin, innovatiivisesti ja tasapainoisesti. Laaja myyntitausta erilaisista uusiutuvan energian hankkeista ja eri aurinkojärjestelmien tuntemus; viimeiset pari kolme vuotta yhä syvemmin energian varastoinnissa ja ohjauksessa. Näkee siinä suuren mahdollisuuden ja suuren tulevaisuuden.madis.maastik@samaenergia.fi+358 449 654 614 MRMartin RautioToimitusjohtajaVastaa: yhtiön suunta, toiminnan suunnittelu ja toimitusten läpivienti – kumppanuudet, sopimukset ja rahoitusjärjestelyt. Huolehtii siitä, että jokainen hanke etenee sovitussa järjestyksessä.Koulutukseltaan kansainvälisen liiketoiminnan tradenomi (BBA).martin.rautio@samaenergia.fi+358 40 701 9099 VPViljar PetersellAsennuspäällikköPeltikattojen ja aurinkojärjestelmien mestari. Yli kuusi vuotta aurinkojärjestelmien rakentamista yritys- ja yksityiskohteissa – katolle, maahan ja kattoon integroituna – sekä tausta hienotöissä, joissa tarkkuus ratkaisee. Vastaa asennuksen toteutuksesta ja laadusta: asennus toimii ja jättää kiinteistölle myös esteettisen arvon.+358 40 635 3245 Kasvamme. Jos teillä on myynti- tai asennustausta ja kiinnostus energiamarkkinaan, kirjoittakaa info@samaenergia.fi."
+  },
+  {
+   "page": "/meista/",
    "sectionId": "verkosto",
    "kind": "changed",
    "prev": "Verkosto projektinne takana. Jokainen projekti tarvitsee meidän lisäksemme neljä asiaa: markkinoillepääsyn, laitteet, asennuksen ja rahoituksen. Nämä kumppanit antavat ne, molemmilla markkinoilla. Pääsy reservimarkkinoilleAggregaattori kokoaa akut tarjoukseksi, ohjaa niitä automaattisesti ja tilittää tuoton. Suomessa valitsemme aggregaattorin kohteen mukaan, Virossa kumppanimme on Soleron Energy. SuomiAggregaattori valitaan kohteen mukaanFingridin hyväksymä reservitoimittaja · ei sidosta yhteenVertaamme Fingridin reservitoimittajia kohteenne akun ja tuotteiden mukaan neljällä perusteella: hyväksyntä ja säätökokeet, ehdot ja palkkio auki, kohteen tarve ensin, toteutuneet luvut jaksoineen. Valinnan perusteet kirjataan arvioon, ja me rakennamme yhteyden valittuun aggregaattoriin.Näin valitsemme aggregaattorin SoleronViroSoleron Energy OÜAggregaattori · Eleringin reservimarkkinatVirolainen energiavarasto- ja energianhallintayhtiö: oma EMS-ohjelmisto, aggregointi Eleringin taajuusreserveihin, varastojen suunnittelu ja asennus. Julkaisee reservimarkkinakatsauksia omalla sivullaan.soleronenergy.ee Energiavarastot, lataus ja mikroverkotUseampi valmistaja, malli kohteen mukaan. Vertailu on arviossa samoilla luvuilla.Kumppanit ja tuotteet Useampi valmistajaKaapit, kontit, hybridikaapit, mikroverkot ja pikalaturitValitsemme toimittajiemme valikoimasta mallin kohteen tehon, tilan ja käytön mukaan. Valmistaja ja malli nimetään tarjouksessa.Mallit ja luvut RalosSuomiRalos OyEnergiavarastot · TampereAurinkosähkön ja energiavarastojen toimittaja: LFP-varastot ulkoasennukseen.ralos.fi Aurinkosähkö ja lämpöpumputPaneelit, invertterit ja lämpöpumput maahantuojalta. Voimalan ja aurinkokaton asennusta johtaa asennuspäällikkömme. ScanofficeSuomiScanoffice OyLaitteiden maahantuoja · EspooKotimainen puhtaan energian laitteiden maahantuoja: lämpöpumput, aurinkopaneelit, sähköautojen lataus ja ilmanvaihto.scanoffice.fi Asennus ja käyttöönottoAsennusta johtaa oma asennuspäällikkömme; sähkötyöt ja käyttöönotto kulkevat kumppanin kautta. JSMSuomiJSM Automaatiosähkö OySähköasennukset ja käyttöönotto · PirkanmaaSähköurakoitsija Sastamalasta, varasto Tampereella. Aurinkosähkö, akustot ja reservimarkkina-akut, lämpöpumput ja sähköautojen lataus.jsmautomaatiosahko.fi RahoitusEmme ole sidoksissa yhteen rahoittajaan. Arviossa näytämme omarahoituksen ja leasingin rinnakkain, samoilla luvuilla. Leasing tai omarahoitusRahoitus järjestetään kohteen mukaanLeasingrahoitus on mahdollista järjestää yritysrahoittajien kautta Suomessa ja Virossa. Rahoittaja ja ehdot valitaan kohteen ja ostajan mukaan, ja ne kirjataan arvioon ennen allekirjoitusta. Oman pääoman ja leasingin vertailu on arviossa samoilla luvuilla, jotta päätös on helppo."
+  },
+  {
+   "page": "/ajankohtaista/",
+   "sectionId": "rev-ajankohtaista-1",
+   "kind": "changed",
+   "prev": "Etusivu›Ajankohtaista Mitä markkinoilla näemme, ja mitä siitä päättelemme. Reservimarkkinat, energiavarastot, verkkomaksut ja lakimuutokset auki kirjoitettuna niin, että päätöksen voi tehdä lukujen perusteella. Kirjoitamme myös silloin, kun luku ei ole meille mieluinen. Lähde + pvmjokaisen luvun perässä, poikkeuksetta Ei tuotesivujaemme julkaise mainoksia katsauksina"
   },
   {
    "page": "/ajankohtaista/",
@@ -286,6 +298,18 @@
    "sectionId": "rev-yhteystiedot-2",
    "kind": "changed",
    "prev": "Aloitetaan kulutustiedoistanne. Kahdessa arkipäivässä tiedätte, kannattaako akku kohteessanne ja miten. Arvio on kaksi sivua, kirjallisesti ja ilman sitoumuksia: Liittymä ja kulutusprofiili tuntikohtaisista tiedoistanneTehon jako oman kulutuksen, arbitraasin ja reservimarkkinan keskenMallinnettu reservituotto tuotteittain lähteineenVerkkoyhtiön kanta ja se, mitä arvio ei sano Te annatte: tuntikohtaiset kulutustietonne (CSV-lataus Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta – neuvomme miten), yhden sähkölaskun ja pääkaavion. MM Madis Maastik+358 449 654 614madis.maastik@samaenergia.fi Älä täytä tätä kenttää Nimi Sähköposti Yritys · valinnainen Puhelin · valinnainen Minulla on jo tarjous kädessä, haluan siihen toisen mielipiteen. Viesti · valinnainen Nämä nopeuttavat arviota (kaikki valinnaisia) + Kohteen sijainti Pääsulake tai liittymisteho Vuosikulutus Verkkoyhtiö Onko kohteessa aurinkosähköä?—EiKylläSuunnitteilla Pyydä maksuton kartoitus Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen, tietosuojaseloste. Tarkistakaa nimi ja sähköposti. Jos lähetys ei onnistu, voitte lähettää tiedot myös suoraan osoitteeseen info@samaenergia.fi. Kiitos. Palaamme asiaan kahden arkipäivän kuluessa. Jos kulutustiedot tai tarjous ovat käsillä, lähettäkää ne heti osoitteeseen info@samaenergia.fi. Se nopeuttaa arviota."
+  },
+  {
+   "page": "/yhteystiedot/",
+   "sectionId": "yhteystiedot-lista",
+   "kind": "changed",
+   "prev": "Kolme ihmistä ja yksi osoite.Kirjoittakaa tai soittakaa suoraan sille, jonka aihe se on. Lomakkeen täyttäminen ei ole pakollista – se vain nopeuttaa vastausta. MMMadis MaastikMyyntijohtajaKartoitus, aggregaattorit, asiakassuhteetmadis.maastik@samaenergia.fi+358 449 654 614 MRMartin RautioToimitusjohtajaSuunta, kumppanuudet, sopimukset ja rahoitusmartin.rautio@samaenergia.fi+358 40 701 9099 VPViljar PetersellAsennuspäällikköAsennus, kohde, toteutus ja laatu+358 40 635 3245 YritysSAMA Energia OySörnäisten Rantatie 33 C, 00500 HelsinkiY-tunnus 3647683-6ALV-tunnus FI36476836info@samaenergia.fi+358 449 654 614 Vastaamme kahden arkipäivän kuluessa, myös silloin kun vastaus on „ei kannata“. Työkielet: suomi, viro, englanti."
+  },
+  {
+   "page": "/kiitos/",
+   "sectionId": "rev-kiitos-1",
+   "kind": "changed",
+   "prev": "Etusivu›Kiitos Viestinne on perillä. Palaamme asiaan arkipäivän kuluessa. Jos asia on kiireellinen, tavoitatte meidät suoraan: MM Madis Maastik+358 449 654 614madis.maastik@samaenergia.fi Näin se eteneeTakaisin etusivulle"
   },
   {
    "page": "/et/",
@@ -652,6 +676,12 @@
    "sectionId": "kontaktid",
    "kind": "changed",
    "prev": "Kolm inimest ja üks aadress.Kirjutage või helistage otse sellele, kelle teema see on. Vormi täitmine ei ole kohustuslik – see lihtsalt kiirendab vastust. MMMadis MaastikMüügijuhtHindamine, agregaatorid, kliendisuhtedmadis.maastik@samaenergia.fi+358 449 654 614 MRMartin RautioTegevjuhtSuund, partnerlused, lepingud ja rahastusmartin.rautio@samaenergia.fi+358 40 701 9099 VPViljar PetersellPaigaldusjuhtPaigaldus, objekt, teostus ja kvaliteet+358 40 635 3245 EttevõteSAMA Energia OySörnäisten Rantatie 33 C, 00500 Helsingi, SoomeY-tunnus 3647683-6KMKR FI36476836info@samaenergia.fi+358 449 654 614 Vastame kahe tööpäeva jooksul, ka siis, kui vastus on „ei tasu ära“. Töökeeled: eesti, soome, inglise."
+  },
+  {
+   "page": "/aitah/",
+   "sectionId": "rev-aitah-1",
+   "kind": "changed",
+   "prev": "Avaleht›Aitäh Teie sõnum on kohal. Vastame tööpäeva jooksul. Kui asi on kiireloomuline, saate meid kätte otse: MM Madis Maastik+358 449 654 614madis.maastik@samaenergia.fi Kuidas see kulgebTagasi avalehele"
   },
   {
    "page": "/andmekaitse/",
