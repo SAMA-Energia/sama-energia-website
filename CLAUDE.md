@@ -209,3 +209,31 @@ When in doubt, leave it out and flag it.
   Kartan aineisto latautuu vasta osion lähestyessä. Esikatselu: `python3 scripts/build-standalone.py v42`.
 - AVOIN: natiivitarkistus uusille teksteille (sld-askeleet, linkkitekstit, kanvaasin tarrat, aria-labelit); `.k-kaart`-tasokuvat (reduced-motion)
   näyttävät vielä vain päälinjat — päivitettävä samaan aineistoon; uusi hero-otsikko (I-20261104-3) ja konsepti 1 kuuluvat seuraavaan etusivuun.
+
+## v43 — konseptin 1 etusivu ja koko sivuston viimeistely (haara v35-uusi-ilme, 04.11.2026)
+
+- Etusivu FI/ET Madiksen 4.11.2026 päätösten (I-20261104-2…7) ja tekstilehden "Esilehe tekstileht ET ja FI"
+  (https://claude.ai/artifact/8hiJLLnQmFupFpEMkcAvyH) mukaan: hero (H1, ingressi, neljä kohdepainiketta, CTA, puhelin, todiste) → Miten toimii /
+  Kuidas toimib (järjestelmä, neljä riviä, reservimarkkina ensin) → kolme tilattavaa → kartta (k-live map) → Näin edetään (k-live proc) →
+  kumppanit luokittain (`.k-prt`) → tiimi nimikirjaimin + UKK (6) → tumma lomake (`section.closer`). Todiste FI 1 500 MW (Fingrid 11.6.2025),
+  ET 1 300 MW / 751 MW (Elering, varustuskindluse aruanne 2025, tabel 2.3, 9.12.2025). Proosa ET 791 / FI 780 sanaa (tekstilehden laskutapa).
+- Hero: radiot `.k-or` (#ko0–#ko3) ennen `.k-stage`- ja `.wrap`-sisaruksia; kohtaus `.k-scN`, lause `.k-sayN`, puhelin/tablettikuva `.k-mpN`
+  vaihtuvat CSS:llä, ei automaattikiertoa. ET tööstus (oletus), kuivati, hotell, päike; FI kuivuri (oletus), teollisuus, hotelli, aurinko.
+  Kuvat `k-hero-*` ja `k-obj-{kuivati,hotell,paike}-{1920,1280,m}.webp`, puhelimelle `k-obj-toostus-m.webp` (sama rajaus kaikissa);
+  renderöijä `scripts/render-stills.mjs` + `scripts/stills/hero3d.js` (three.js, riippuvuudet --modules-polusta, ei repoon).
+  `.k-stage` = herokorkeus × 1,7566, ankkuri oikeaan ylänurkkaan: kohtaus ei suurennu matalilla näytöillä. Tarrat prosenttiankkureista;
+  `.k-tag.h` = vaakaviiva ja nimilappu oikealle. Tarrat piiloon alle 1 280 px:n ja `max-aspect-ratio: 7/5`. ≤ 1 023 px pinottu asettelu,
+  puhelimessa kuva 3:2. Tarkistettu 4 kohtausta × 30 näyttökokoa × 2 kieltä: tarrat eivät osu tekstiin, toisiinsa, reunoihin eikä valitsimeen.
+- Kartta (scene.js / scene-et.js): tunnisteet piirretään lopuksi tärkeysjärjestyksessä (kohde > valittu kerros > pohja) ja päällekkäinen
+  alemman tärkeyden tunniste jätetään pois; tasokuvat `kk-*` uusittu elävästä moottorista (`scripts/render-map-tiles.mjs`).
+- Fontit: Newsreader rajattu fontTools-instancerilla (opsz 36, wght 300–600; OFL, ei varattua nimeä) → esiladattavat 279 → 112 kt.
+  site.css 92 392 → ~76,9 kt (budjetti 76 kt = 77 824 t), site.js ~19,6 kt.
+- Lighthouse mobiili (paikallinen palvelin, pakkaus välimuistissa kuten CDN:ssä, 3 ajoa): /et/ 95–97, LCP 2,6–2,9 s, TBT 0–30 ms; / 88–97,
+  LCP 2,5–2,8 s; CLS 0; työpöytä 100 (LCP 0,6 s). Saavutettavuus, parhaat käytännöt, SEO 100.
+- Alasivut (agenttihaara 56afa41 + jatko): vedetty takaisin sanoitus, mallinimet, track record, toisen maan faktat, lupaus kahdessa
+  arkipäivässä kaikkialla, „Küsi tasuta hinnangut", pilkut ja aku → salvesti; uudet vartijat `nimet-1104` ja `mallinimet-1104`.
+  Perustajan 7.–9.9.2026 hylkäämät kohdat pois (yhteystietojen "Kolm inimest…", uutissivun nauha, Tulekul/Tulossa-kortit, koulutusrivi,
+  FI-sitaatti). Ajatusviivat ja ylisanat alasivuilla: erillinen kierros.
+- AVOIN: kuvaus 9.–11.11 (muotokuvat); ET-sivun yhteystiedot (nyt +358 ja Helsinki); Elecnova-tuotekuva; Energen Nordic (vastaus suunnitelman
+  kommentissa); natiivitarkistus (FI Martin, ET Madis; muutoslistat projektin ulkopuolella); uutissivun energiakatselmuskohta (määräaika 11.10.2026
+  ohi); /meist/ ja /meista/ yritysfaktoissa molemmat markkinat; main vain Madiksen OK:lla.
