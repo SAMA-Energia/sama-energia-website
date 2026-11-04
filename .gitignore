@@ -12,3 +12,6 @@ dist-preview/
 # Kartan raakatiilet (scripts/kaart/fetch_oim.py) — ladataan uudelleen tarvittaessa
 docs/kaart/oim/
 __pycache__/
+
+# Clauden apuagenttien työpuut (git worktree) — eivät kuulu repoon
+.claude/
