@@ -218,6 +218,13 @@ const GUARDS = [
   // 03.09: rahoitus- ja Energen-ajan yritysnimiä ei mainita sivustolla.
   { id: 'kielletyt-nimet', langs: 'both', why: 'rahoitus-/Energen-ajan yritysnimi — ei mainita sivustolla (03.09.2026)',
     find: t => [...t.matchAll(/Grenke|Svea|Salama Sähkö/gi)] },
+  // 04.11.2026: EP Energy / EP Equipment ja Energen Nordic eivät ole sivustolla ennen perustajan päätöstä; Roofit.Solar on
+  // valmistaja ilman sopimusta (Suomessa yhteistyö Gare Energy Oy:n kautta). Sallitut nimet: CLAUDE.md, sisältösäännöt.
+  { id: 'nimet-1104', langs: 'both', why: 'EP Energy / EP Equipment / Energen / Roofit — ei sivustolla ennen perustajan päätöstä (04.11.2026)',
+    find: t => [...t.matchAll(/EP Energy|EP Equipment|\bEnergen\b|Roofit/gi)] },
+  // 04.11.2026 (perustajan päätös): malli ja tekniset arvot kuuluvat tarjoukseen, eivät sivulle.
+  { id: 'mallinimet-1104', langs: 'both', why: 'tuotemallin nimi näkyvässä tekstissä — malli ja tekniset arvot kuuluvat tarjoukseen (perustajan päätös 04.11.2026)',
+    find: t => [...t.matchAll(/Beast\s*125|EPES\s?\d|ECO-E\d|OptiGrid|Velario/gi)] },
   /* --- viron kielen 03.09 korjaukset --- */
   // 03.09 F6: Baltian irtaantuminen tapahtui 8.2.2025, ei 9.2.
   { id: 'et-veebruar-9', langs: 'et', why: '"9. veebruaril 2025 lahkusid" — õige kuupäev on 8. veebruar (03.09.2026, F6)',
