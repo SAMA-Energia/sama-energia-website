@@ -184,7 +184,8 @@
      },
      "s": "Elering, EstLink 1",
      "src": "el-el1",
-     "lt": 0.62
+     "lt": 0.62,
+     "ta": "end"
     },
     {
      "k": "link",
@@ -1033,7 +1034,15 @@
       61.42
      ]
     }
-   ]
+   ],
+   "view": {
+    "EE": [
+     23.55,
+     58.9,
+     26.25,
+     59.72
+    ]
+   }
   },
   {
    "id": "reservid",
@@ -1912,7 +1921,22 @@
       "et": "aku olemasoleva liitumise ja arvesti taha"
      }
     }
-   ]
+   ],
+   "view": {
+    "FI": [
+     23.75,
+     59.98,
+     26.25,
+     60.98
+    ],
+    "EE": [
+     24.45,
+     58.72,
+     26.3,
+     59.48
+    ]
+   },
+   "vmode": "scroll"
   }
  ],
  "sources": {

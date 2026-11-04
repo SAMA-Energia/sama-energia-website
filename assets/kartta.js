@@ -44,7 +44,7 @@
       v110: '110 kV', loading: 'laeb…', note110: '110 kV: kõik OpenStreetMapi märgitud 110 kV liinid, sh jaotusvõrguettevõtjate omad.' }
   }[LANG];
 
-  var state = { layer: 0, compare: false, data: null, net: null, view: null, anim: 0, tipFor: null, feats: [], v110: 0, ready: false };
+  var state = { layer: 0, compare: false, data: null, net: null, view: null, anim: 0, tipFor: null, feats: [], v110: 0, ready: false, zt: 0 };
   var el = {
     stage: null, bar: root.querySelector('.km-bar'), inset: root.querySelector('.km-inset'),
     caption: root.querySelector('.km-cap'), cmp: root.querySelector('.km-cmp'), t110: root.querySelector('.km-t110'), tip: null, svg: null, base: null
@@ -103,9 +103,21 @@
     if (bw / bh > w / h) bh = bw * h / w; else bw = bh * w / h;
     return [cx - bw / 2, cy - bh / 2, bw, bh];
   }
+  /* Näkymä: vertailussa molemmat maat; muuten kerroksen oma rajaus (L.view[maa]) tai koko kotimaa.
+     Kerros, jonka vmode on 'scroll' (Teie liitumine / Teidän liittymänne), zoomaa kotimaasta kohteeseen sitä mukaa kuin
+     lukija vierittää luvun läpi (state.zt 0 → 1) — kuten v38-näyttämön kartta: kerittäessä kartta kasvaa kohti liittymää. */
+  function homeView() { var v = state.data.views; return fitView(bboxView(HOME === 'FI' ? v.fi.bbox : v.ee.bbox)); }
   function targetView() {
-    var v = state.data.views;
-    return fitView(bboxView(state.compare ? v.both.bbox : (HOME === 'FI' ? v.fi.bbox : v.ee.bbox)));
+    var v = state.data.views, L = state.data.layers[state.layer];
+    if (state.compare) return fitView(bboxView(v.both.bbox));
+    var lv = L && L.view && L.view[HOME];
+    if (!lv) return homeView();
+    var b = fitView(bboxView(lv));
+    if (L.vmode !== 'scroll') return b;
+    var a = homeView(), t = state.zt, ca = [a[0] + a[2] / 2, a[1] + a[3] / 2], cb = [b[0] + b[2] / 2, b[1] + b[3] / 2];
+    var w = a[2] * Math.pow(b[2] / a[2], t), h = a[3] * Math.pow(b[3] / a[3], t);
+    var cx = ca[0] + (cb[0] - ca[0]) * t, cy = ca[1] + (cb[1] - ca[1]) * t;
+    return [cx - w / 2, cy - h / 2, w, h];
   }
   var DOTS = [['km-dot-h', 7.5, 1.15], ['km-dot-o', 7.5, 0.95], ['km-dot-z', 7.5, 1.6], ['km-dot-g', 7.5, 1.45]];   // [id, väli px, säde px]: sama väli → pisteet osuvat päällekkäin
   function applyView(vb) {
@@ -120,12 +132,15 @@
       pt.setAttribute('width', f1(S)); pt.setAttribute('height', f1(S));
       c.setAttribute('cx', f1(S / 2)); c.setAttribute('cy', f1(S / 2)); c.setAttribute('r', f1(q[2] * k));
     });
+    /* viivoitus samoin: noin 9 px välein ja 1,4 px paksu myös lähelle zoomattuna */
+    var hp = document.getElementById(X + 'hatch');
+    if (hp) { var S = 9 * k, ln = hp.firstChild; hp.setAttribute('width', f1(S)); hp.setAttribute('height', f1(S)); ln.setAttribute('y2', f1(S)); ln.style.strokeWidth = (1.4 * k).toFixed(2); }
   }
   function goView(animate) {
     var to = targetView(), from = state.view;
     cancelAnimationFrame(state.anim);
     if (!from || !animate || REDUCED) { applyView(to); return; }
-    var t0 = performance.now(), dur = 380;
+    var t0 = performance.now(), dur = 520;
     (function step(now) {
       var k = Math.min(1, (now - t0) / dur), e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
       applyView(from.map(function (f, i) { return f + (to[i] - f) * e; }));
@@ -261,24 +276,27 @@
       lines.map(function (ln, k) { return k ? '<tspan x="' + x + '" dy="1.2em">' + esc(ln) + '</tspan>' : esc(ln); }).join('') + '</text>';
   }
 
-  /* ---------- 110 kV, ladataan pyydettäessä ---------- */
+  /* ---------- 110 kV: koko verkko näkyy oletuksena (Madis 4.11.2026: muutkin johdot, saaret mukaan); painike piilottaa ---------- */
+  function fetch110() {
+    var inl = inline('kartta-110-json');
+    return inl ? Promise.resolve(inl) : fetch(root.getAttribute('data-v110'), { credentials: 'same-origin' }).then(function (r) { if (!r.ok) throw new Error('110'); return r.json(); });
+  }
+  function draw110(d) {
+    var h = d.lines.map(function (l) { return '<path class="km-l km-v110 km-t-' + l.t + '" data-c="' + l.c + '" d="' + l.d + '"/>'; });
+    ['FI', 'EE'].forEach(function (c) {
+      h.push('<path class="km-sub km-sub110" data-c="' + c + '" d="' + d.subs.filter(function (s) { return s[3] === c; }).map(dot).join('') + '"/>');
+    });
+    el.svg.querySelector('.km-n110').innerHTML = h.join('');
+    state.v110 = 2;
+    el.svg.classList.add('show-110');
+    sync110();
+  }
   function toggle110() {
     if (state.v110 === 2) { el.svg.classList.toggle('show-110'); sync110(); return; }
     if (state.v110 === 1) return;
     state.v110 = 1;
     if (el.t110) el.t110.textContent = UI.v110 + ' ' + UI.loading;
-    var inl = inline('kartta-110-json');
-    (inl ? Promise.resolve(inl) : fetch(root.getAttribute('data-v110'), { credentials: 'same-origin' }).then(function (r) { if (!r.ok) throw new Error('110'); return r.json(); }))
-      .then(function (d) {
-        var h = d.lines.map(function (l) { return '<path class="km-l km-v110 km-t-' + l.t + '" data-c="' + l.c + '" d="' + l.d + '"/>'; });
-        ['FI', 'EE'].forEach(function (c) {
-          h.push('<path class="km-sub km-sub110" data-c="' + c + '" d="' + d.subs.filter(function (s) { return s[3] === c; }).map(dot).join('') + '"/>');
-        });
-        el.svg.querySelector('.km-n110').innerHTML = h.join('');
-        state.v110 = 2;
-        el.svg.classList.add('show-110');
-        sync110();
-      }).catch(function () { state.v110 = 0; sync110(); });
+    fetch110().then(draw110).catch(function () { state.v110 = 0; sync110(); });
   }
   function sync110() {
     if (!el.t110) return;
@@ -321,6 +339,7 @@
     renderInset();
     caption();
     hideTip();
+    goView(!(opts && opts.instant));
     if (opts && opts.reveal && window.innerWidth < 1024) {
       var mp = root.querySelector('.km-map');
       if (mp) mp.scrollIntoView({ behavior: REDUCED ? 'auto' : 'smooth', block: 'start' });
@@ -468,7 +487,7 @@
     el.bar.hidden = false;
     el.bar.addEventListener('click', function (e) {
       var b = e.target.closest('button[data-i]');
-      if (b) { manual = Date.now(); setLayer(+b.getAttribute('data-i')); }
+      if (b) { manual = Date.now(); state.zt = 1; setLayer(+b.getAttribute('data-i')); }
     });
   }
   function bindUi() {
@@ -477,15 +496,16 @@
     if (el.t110) { el.t110.hidden = false; el.t110.addEventListener('click', toggle110); }
     document.querySelectorAll('[data-show-layer]').forEach(function (b) {
       b.hidden = false;
-      b.addEventListener('click', function () { manual = Date.now(); setLayer(+b.getAttribute('data-show-layer'), { reveal: true }); });
+      b.addEventListener('click', function () { manual = Date.now(); state.zt = 1; setLayer(+b.getAttribute('data-show-layer'), { reveal: true }); });
     });
-    /* /verkko/-sivulla luvun tullessa luettavaksi kartta vaihtaa sen kerrokseen — vain leveällä näytöllä, jossa kartta pysyy näkyvissä */
-    if (!FRONT && 'IntersectionObserver' in window) {
-      var io = new IntersectionObserver(function (es) {
-        if (window.innerWidth < 1024 || Date.now() - manual < 900) return;
-        es.forEach(function (e) { if (e.isIntersecting) setLayer(+e.target.getAttribute('data-layer')); });
-      }, { rootMargin: '-45% 0px -50% 0px' });
-      document.querySelectorAll('.km-ch[data-layer]').forEach(function (c) { io.observe(c); });
+    /* /verkko/-sivulla kartta seuraa vieritystä kaikilla näytöillä (puhelimella kartta on kiinnitetty ylös):
+       luku, jonka yläreuna on ohittanut lukulinjan, valitsee kerroksen; viimeisessä luvussa kartta zoomaa kohteeseen. */
+    if (!FRONT) {
+      var raf = 0;
+      var onScroll = function () { if (!raf) raf = requestAnimationFrame(function () { raf = 0; scrollSync(); }); };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll);
+      scrollSync();
     }
     var rt = 0;
     window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(function () { restage(); applyView(targetView()); }, 120); });
@@ -494,6 +514,23 @@
       state.ro = new ResizeObserver(function () { var w = stageSize()[0]; if (Math.abs(w - last) > 2) { last = w; applyView(targetView()); } });
       state.ro.observe(el.stage);
     }
+  }
+  var chs = FRONT ? [] : [].slice.call(document.querySelectorAll('.km-ch[data-layer]'));
+  function scrollSync() {
+    if (!state.ready || !chs.length || Date.now() - manual < 900) return;
+    var H = window.innerHeight, mp = root.querySelector('.km-map'), mb = mp && mp.getBoundingClientRect();
+    /* lukulinja: leveällä näytöllä ruudun keskellä; puhelimella kiinnitetyn kartan alapuolisen tekstialueen yläkolmanneksessa */
+    var ref = (window.innerWidth >= 1024 || !mb) ? H * 0.5 : Math.min(H - 90, mb.bottom + (H - mb.bottom) * 0.35);
+    var act = 0;
+    for (var i = 0; i < chs.length; i++) if (chs[i].getBoundingClientRect().top <= ref) act = i;
+    var li = +chs[act].getAttribute('data-layer'), L = state.data.layers[li], zt = 0;
+    if (L && L.vmode === 'scroll') {
+      var r = chs[act].getBoundingClientRect();
+      zt = REDUCED ? 1 : Math.max(0, Math.min(1, (ref - r.top) / Math.max(1, r.height * 0.6)));
+      zt = zt * zt * (3 - 2 * zt);
+    }
+    if (li !== state.layer) { state.zt = zt; setLayer(li, { instant: L && L.vmode === 'scroll' }); }
+    else if (Math.abs(zt - state.zt) > 0.002) { state.zt = zt; cancelAnimationFrame(state.anim); applyView(targetView()); }
   }
   /* etusivu: leveän ja kapean näytön välillä kartta siirtyy näyttämön ja osion välillä */
   function restage() {
@@ -516,11 +553,12 @@
     try { return JSON.parse(s.textContent); } catch (e) { return null; }
   }
   function load() {
+    var v = FRONT ? Promise.resolve(null) : fetch110().catch(function () { return null; });
     var a = inline('kartta-pohja-json'), b = inline('kartta-data-json');
-    if (a && b) return Promise.resolve([a, b]);
+    if (a && b) return Promise.all([a, b, v]);
     return Promise.all([root.getAttribute('data-pohja'), root.getAttribute('data-src')].map(function (u) {
       return fetch(u, { credentials: 'same-origin' }).then(function (r) { if (!r.ok) throw new Error(u); return r.json(); });
-    }));
+    }).concat([v]));
   }
   function start() {
     el.stage = pickStage();
@@ -537,11 +575,13 @@
       el.svg.setAttribute('role', 'img');
       [el.base, el.svg].forEach(function (g) { g.setAttribute('data-home', HOME); g.setAttribute('preserveAspectRatio', 'xMidYMid meet'); el.stage.appendChild(g); });
       mapDraw();
+      if (res[2]) draw110(res[2]);
       bindTips();
       bindUi();
       applyView(targetView());
       state.ready = true;
-      setLayer(state.layer);
+      setLayer(state.layer, { instant: true });
+      if (!FRONT) scrollSync();
       el.stage.setAttribute('data-state', 'ready');
     }).catch(function () {
       el.stage.setAttribute('data-state', 'error');

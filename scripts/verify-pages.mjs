@@ -695,13 +695,13 @@ for (const f of ['assets/site.css', 'assets/fonts.css', 'assets/site.js']) if (/
 if (!/font-display:swap/.test(read('assets/fonts.css'))) err('fonts.css: font-display: swap puuttuu');
 
 /* Yhteinen verkko -kartta (/verkko/, /vork/ ja etusivun osio; v35 2.11.–3.11.2026): sivukohtaiset tiedostot ja budjetit
-   (docs/brief/03-kaart.md: pohjatiedosto < 150 kt, 110 kV erillisenä). kartta.js 30 → 36 kt ja kartta.css 16 → 20 kt 3.11.2026:
+   (docs/brief/03-kaart.md: pohjatiedosto < 150 kt, 110 kV erillisenä). kartta.js 30 → 36 → 40 kt (4.11.2026: vierityszoomi, 110 kV oletuksena) ja kartta.css 16 → 20 kt 3.11.2026:
    sama moottori palvelee nyt myös etusivua (näyttämö + puhelinlaatikko) ja piirtää pisteilmeen ja kallistuksen.
    Tekstin luvut tulevat kartta-data.json:sta (scripts/kaart/build_page.py) — tarkistetaan, että jokaisen kerroksen
    johtopäätös on karttasivulla, ja etusivulla silloin, kun etusivu käyttää generoitua lohkoa (data-kartta; v41-etusivulla ei). */
 {
   const KB = 1024, size = f => statSync(join(ROOT, f)).size;
-  for (const [f, max] of [['assets/kartta-pohja.json', 150], ['assets/kartta-110.json', 100], ['assets/kartta-data.json', 80], ['assets/kartta.js', 36], ['assets/kartta.css', 20]]) {
+  for (const [f, max] of [['assets/kartta-pohja.json', 150], ['assets/kartta-110.json', 100], ['assets/kartta-data.json', 80], ['assets/kartta.js', 40], ['assets/kartta.css', 20]]) {
     if (!existsSync(join(ROOT, f))) { err(`${f} puuttuu`); continue; }
     if (size(f) > max * KB) err(`${f} ${size(f)} tavua > ${max} kt`);
   }

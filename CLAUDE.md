@@ -136,6 +136,10 @@ When in doubt, leave it out and flag it.
 - Budjetit kartta.js 36 kt, kartta.css 20 kt. Esikatselu: `python3 scripts/build-standalone.py <versio> verkko,vork` (avautuu osioon);
   kartta.js upotetaan esikatseluun tekstinä — data:-skriptin tiedostonäkymä esti (Madis 3.11.2026: kartta ei näkynyt).
 - AVOIN: natiivitarkistus uusille FI/ET-teksteille; `.k-kaart`-tasokuvien luvut kannattaa verrata `assets/kartta-data.json`:iin (sama lähde, 2.11.2026).
+- 04.11.2026 (Madis: „ei samaa vieritysefektiä", „vain suurjännitejohto", „kartta ulottuu Saarenmaalle ja saarille"): /verkko/ ja /vork/ -kartta seuraa
+  vieritystä kaikilla näytöillä (puhelimella kartta kiinnittyy ylös, luvut vierivät alla), kerros vaihtuu luvuittain, viimeinen luku zoomaa vierityksen
+  mukana kotimaasta kohteeseen (v38:n "kartta kasvaa kerittäessä"); 110 kV (myös saarten johdot ja kaapelit) näkyy oletuksena. Data: `view`/`vmode` kerroksittain.
+  ETUSIVUN VESTLUKSELLE: `.k-kaart`-tasokuvissa näkyvät vain päälinjat ja saaret ilman johtoja — Madiksen palaute koskee myös niitä.
 
 ## v41 — K2-etusivu (luonnos, haara v35-uusi-ilme, 04.11.2026)
 
