@@ -809,7 +809,7 @@ h1 em,h2 em{color:var(--gold-2)}
 .k-proof b{font-size:34px}
 .k-objs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 calc(var(--gutter)*-1);padding:0 var(--gutter) 2px}
 .k-objs::-webkit-scrollbar{display:none}
-.k-mp img{max-height:none}
+.k-mp img{max-height:none;aspect-ratio:3/2;object-position:50% 43%}
 .k-prt-list div{grid-template-columns:1fr;gap:3px}
 .k-send{display:block}
 .k-send:before{display:none}
