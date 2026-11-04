@@ -1257,7 +1257,7 @@ Rahoitus
 Emme ole sidoksissa yhteen rahoittajaan. Arviossa näytämme omarahoituksen ja leasingin rinnakkain, samoilla luvuilla.
 
 Leasing tai omarahoitusRahoitus järjestetään kohteen mukaan
-Leasingrahoitus on mahdollista järjestää yritysrahoittajien kautta Suomessa ja Virossa. Rahoittaja ja ehdot valitaan kohteen ja ostajan mukaan, ja ne kirjataan arvioon ennen allekirjoitusta. Oman pääoman ja leasingin vertailu on arviossa samoilla luvuilla, jotta päätös on helppo.
+Leasingrahoitus on mahdollista järjestää yritysrahoittajien kautta. Rahoittaja ja ehdot valitaan kohteen ja ostajan mukaan, ja ne kirjataan arvioon ennen allekirjoitusta. Oman pääoman ja leasingin vertailu on arviossa samoilla luvuilla, jotta päätös on helppo.
 
 Yritys paperilla.
 
@@ -2965,7 +2965,7 @@ Rahastus
 Me ei ole seotud ühe rahastajaga. Hinnangus näitame omafinantseeringu ja liisingu kõrvuti, samade numbrite pealt.
 
 Liising või omafinantseeringRahastus korraldatakse objekti järgi
-Liisingrahastus on võimalik korraldada ärirahastajate kaudu Eestis ja Soomes. Rahastaja ja tingimused valitakse objekti ja ostja järgi ning kirjutatakse hinnangusse enne allkirja. Omakapitali ja liisingu võrdlus on hinnangus samade numbrite pealt, et otsus oleks lihtne.
+Liisingrahastus on võimalik korraldada ärirahastajate kaudu. Rahastaja ja tingimused valitakse objekti ja ostja järgi ning kirjutatakse hinnangusse enne allkirja. Omakapitali ja liisingu võrdlus on hinnangus samade numbrite pealt, et otsus oleks lihtne.
 
 Ettevõte paberil.
 

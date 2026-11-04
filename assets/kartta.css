@@ -5,7 +5,7 @@
    Liike ≤ 380 ms näkymälle, syvyys 0,5 s; prefers-reduced-motion: ei siirtymiä, ei syvyysliikettä, ei animaatioita. */
 .km,.km-front,.km-svg{--k-land:#1A1814;--k-sea:#0D0C0A;--k-g1:#E8D193;--k-g2:#C7A45C;--k-g3:#97752F;--k-blue:#BFD3E6;--k-free:#7DB394}
 .km{padding:clamp(40px,5vw,72px) 0 clamp(56px,7vw,96px);position:relative}
-.km a{color:var(--k-g1)}
+.km a:not(.btn){color:var(--k-g1)}
 .km-grid{max-width:1360px;margin:0 auto;padding:0 var(--gutter);display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,4vw,64px);align-items:start}
 .km-intro{padding-bottom:clamp(8px,2vw,20px)}
 .km-intro h2 em{color:var(--k-g1)}
