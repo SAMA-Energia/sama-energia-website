@@ -1880,7 +1880,7 @@ class Component extends DCLogic {
   }
 }
 /* 03.11.2026: phones (<=750 px) get a static image of the same still frame on the front page - engine not started. */
-var phoneStill=false;try{phoneStill=!!document.querySelector('.lava')&&window.matchMedia('(max-width:750px)').matches;}catch(e){}
+var phoneStill=false;try{phoneStill=!!document.querySelector('.lava,.k-home')&&window.matchMedia('(max-width:750px)').matches;}catch(e){}
 if(!phoneStill){var c=new Component({scheme:'yö'});c.state.board=false;window.SAMA3D=c;c.componentDidMount();}
 })();
 (function(){var c=window.SAMA3D,noEngine=!c;if(noEngine){if(!document.querySelector('[data-map]'))return;c={setMapLayers:function(){},_rm:true,_HB:[]};}

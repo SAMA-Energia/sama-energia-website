@@ -61,7 +61,13 @@ def build(lang):
         return ''
     html=re.sub(r'<script src="(/assets/scene(?:-et)?\.js)" defer></script>',inl,html)
     html=re.sub(r'(src|href)="(/assets/[^"]+)"',lambda m:f'{m.group(1)}="{datauri(m.group(2)) or m.group(2)}"',html)
-    html=re.sub(r'srcset="[^"]*"','',html)
+    # <picture><source srcset>: upotetaan ensimmäinen ehdokas (muuten esikatselu näyttäisi img-varakuvan)
+    def src_set(m):
+        first=m.group(2).split(',')[0].strip().split(' ')
+        d=datauri(first[0]) if first[0].startswith('/assets/') else None
+        return f'{m.group(1)}srcset="{d}"' if d else m.group(0)
+    html=re.sub(r'(<source\b[^>]*?)srcset="([^"]*)"',src_set,html)
+    html=re.sub(r'(<img\b[^>]*?)\ssrcset="[^"]*"',r'\1',html)
     router='''<script>(function(){var cur=null;function go(){var h=location.hash||'#/';var anchor=null;
 if(h.indexOf('#/')!==0){anchor=h.slice(1);h='#/'+(cur||'');}
 var s=h.slice(2),k=s.indexOf('::');if(k>=0){anchor=s.slice(k+2);s=s.slice(0,k);}

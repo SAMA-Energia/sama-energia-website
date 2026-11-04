@@ -1,7 +1,7 @@
 # Natiivikatselmus — eesti keel
 
 Tarkistettava: **kaikki asiakkaalle näkyvä teksti, joka muuttuu kun `draft` julkaistaan.**
-Vertailukohta on `main` (b74d5ab) eli tällä hetkellä julkaistu sivusto.
+Vertailukohta on `main` (941e6ef) eli tällä hetkellä julkaistu sivusto.
 
 **Mitä pyydetään:** Märgi iga rida kas **OK** või kirjuta parandus selle alla.
 
@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 612 katselmoitavaa riviä — 468 uutta, 144 muutettua, joista **67 on merkitty ⚠**. Muuttumattomia ohitettiin 382.
+**Yhteenveto:** 379 katselmoitavaa riviä — 350 uutta, 29 muutettua, joista **35 on merkitty ⚠**. Muuttumattomia ohitettiin 756.
 
 **Huomio:** 3 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -29,406 +29,214 @@ _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa
 ## Avaleht — `/et/`
 Vastine mainissa: `/et/`
 
-### (header)
-
-- [ ] `a` **uusi** — Küsi tasuta hindamist
-      - **Korjaus:**
-
 ### #avaleht
+> Lähde tälle osiolle: Allikas: Elering, tasakaalustamisvõimsuse kulu · 2026. aasta tariif
 
-- [ ] ⚠ `h1` **uusi** — Saavutage energiasõltumatus, pannes elektriliitumise enda kasuks tööle.
+- [ ] `b` **uusi** — Peakilp
+      - **Korjaus:**
+- [ ] `b` **muutettu** — Salvestid
+      - main: Energiasalvestid
+      - **Korjaus:**
+- [ ] `b` **uusi** — Liitumispunkt ja arvesti
+      - **Korjaus:**
+- [ ] `b` **uusi** — Elektrivõrk
+      - **Korjaus:**
+- [ ] ⚠ `h1` **muutettu** — Saavutage energia­sõltumatus, pannes oma elektri­liitumise enda kasuks tööle.
+      - main: Saavutage energiasõltumatus, pannes elektriliitumise enda kasuks tööle.
       - ⚠ perustajan päätös 10.09.2026 — hero-otsikko (FI sai ajatusviivan; ET avoin, ks. kohta 2)
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Sõltumatu energia juhindub sellest, et otsused teie arvesti taga tehakse teie huvides ja automaatselt. Süsteem – energiasalvesti, energia tootmine ja nutikas juhtimine – teeb kasumlikumaid otsuseid teie kinnistu hüvanguks, ilma et keegi teie majast peaks midagi tegema.
-      - main: Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame kirjalikult, enne kui midagi alla kirjutatakse.
-      - ⚠ perustajan päätös 10.09.2026 — hero-lead v27:n tekstiin. MADISIN OMA v27-teksti, Martinin hyväksymä; ei Clauden kirjoittama.
+- [ ] ⚠ `b` **uusi** — 3,73 €/MWh
       - **Korjaus:**
-- [ ] ⚠ `a` **uusi** — Kuidas aku toimib?
-      - ⚠ perustajan päätös 05.09. ilta / 08.09.2026 — toissijainen hero-painike
+- [ ] `p` **muutettu** — Reservide eest maksavad alates 2026 kõik tarbijad: tasakaalustamisvõimsuse kulu on elektriarvel uus rida. Selle raha saab see, kes reservi pakub.
+      - main: Reservide eest maksavad alates 2026 kõik tarbijad:
       - **Korjaus:**
-- [ ] `span` **uusi** — Tasuta
+- [ ] `li` **uusi** — 1Peakilp, hoone sees, arvesti taga
       - **Korjaus:**
-- [ ] `span` **uusi** — Kohustusteta
+- [ ] `li` **uusi** — 2Salvestid, inverter kapi sees
       - **Korjaus:**
-- [ ] `span` **uusi** — Kirjalik hinnang
+- [ ] `li` **uusi** — 3Liitumispunkt ja arvesti, alajaam
       - **Korjaus:**
 
-### #teadmatus
-> Lähde tälle osiolle: Allikad: ERR 16.08.2024; Elektrilevi, loetud 08.09.2026
-> Lähde tälle osiolle: Allikas: Konkurentsiameti otsus nr 7-3/2026-028 · 2.3.2026, hinnakiri kehtib 1.6.2026 alates · käibemaksuta
-> Lähde tälle osiolle: Allikas: Konkurentsiameti otsus nr 7-3/2026-028 · 2.3.2026, pakett Võimsus VMA2 · käibemaksuta
-> Lähde tälle osiolle: Allikas: Elering, sagedusreservide turu kokkuvõte · juuli 2026, tabel 2
-> Lähde tälle osiolle: Näidisarvutus. Teie objekti tootlusnõue sõltub kinnisvara liigist ja asukohast – hinnangus arvutame selle teie enda andmetega.
+### #kuidas-toimib
 
-- [ ] `h2` **uusi** — Liitumine on vara. Passiivne liitumine on kuluartikkel. Arvestitagune süsteem paneb selle tulu tootma.
+- [ ] `p` **uusi** — Tervikliku ülevaate sellest, mis turul toimub ja mis suunas see liigub.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Liitumise eest maksate iga kuu. Sama liitumine võib ka teile tootma hakata – kui selle taga on salvesti, energia tootmine ja nutikas juhtimine, mis otsustab teie kasuks. Meie anname teile selleks kolm asja:
-      - main: Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame kirjalikult, enne kui midagi alla kirjutatakse.
+- [ ] `p` **muutettu** — Majanduslikud võimalused teie objektil, kirjalikult ja allikatega.
+      - main: Majanduslikud võimalused
       - **Korjaus:**
-- [ ] `b` **uusi** — Tervikliku ülevaate
+- [ ] `p` **muutettu** — Targa energiamajandamise, mis muudab liitumise kuluartiklist varaks.
+      - main: Targa energiamajandamise,
       - **Korjaus:**
-- [ ] `b` **uusi** — Majanduslikud võimalused
+- [ ] `b` **uusi** — Liitumispunkt
       - **Korjaus:**
-- [ ] `b` **uusi** — Targa energiamajandamise,
+- [ ] `b` **muutettu** — Võimsustasud
+      - main: Võimsustasu alla
       - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — Uus liitumine ei ole enam odav ega kiire: Elektrilevi liitumistasu on 331,15 eurot ampri kohta ilma käibemaksuta – liitumine, mille taga on toimiv salvesti, liigub kinnistuga kaasa.
+- [ ] `b` **muutettu** — Energia ja edastamine
+      - main: Targa energiamajandamise,
       - **Korjaus:**
-- [ ] `figcaption` **uusi** — Teie andmed keskel, teiste tingimused ümber — üks arvutus.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Mis teie arvel ja kinnistul muutub:
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Võimsustasud: tipp alla, peakaitse tarbimise järgi.
-      - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Näide ühest hinnakirjast: Elektrilevi paketis Võimsus VMA2 on võrguühenduse kasutusvõimsuse tasu 2,45 €/kW kuus ja see arvestatakse kuu kõrgeima tunni keskmise võimsuse järgi; võrguühenduse läbilaskevõime tasu 0,32 €/A kuus käib kokkulepitud amprite pealt, sõltumata kasutusest. Salvesti katab tipu, mistõttu saab peakaitsme ja võrgupaketi valida tegeliku tarbimise järgi.
-      - main: Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame kirjalikult, enne kui midagi alla kirjutatakse.
-      - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — Sama pakett sisaldab ka tarbimiskoha kasutusvõimsuse tasu 2,56 €/kW kuus ja võrguühenduse kuutasu 30,41 €/kuu. Hinnangus arvutame teie oma paketi ja oma võrguettevõtja hinnakirjaga.
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Energia ja edastamine: odav tund sisse, kallis välja.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Elektrienergia käib börsi tunnihinnaga, edastamistasu on päeval 3,49 ja öösel 1,99 senti/kWh. Salvesti ostab odavatel tundidel ja katab kallid; päikesepark toodab keskpäeval ja salvesti nihutab selle õhtusse. Eeldus on börsihinnaga müügipakett.
-      - main: Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame kirjalikult, enne kui midagi alla kirjutatakse.
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Reserviturg: valmisolekutasu, ka öösel.
-      - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Elering ostab sagedusreserve iga päev ja maksab valmisoleku eest ka öösel ja nädalavahetusel. Juulis 2026 oli Eestis reservitoodete pakkumiseks kvalifitseerunud 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i (üles / alla). Sinna pääseb ainult arvestitaguse salvestiga, agregaatori kaudu.
-      - main: Reservitulu võib olla märkimisväärne lisa — ja just seepärast näitame seda ausalt: agregaatori enda hinnanguna ja stsenaariumidena, ka eeldusel, et hinnad poolituvad. Arvutus peab vastu, isegi kui turg muutub.
-      - ⚠ lukukorjaus: reservien osuudet ovat todennettua KAPASITEETTIA, ei tuotantoa (Fingrid 10.2.2025; vartijat reservi-*)
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Kinnistu väärtus: väiksem püsikulu, kõrgem hind.
-      - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Ärikinnistu hind arvutatakse puhastulust: iga euro, mille võrra püsikulu langeb, tõstab väärtust mitmekordselt. Näidisarvutus: püsiv 10 000 euro suurune aastane sääst tähendab 10 % tootlusnõude juures ligikaudu 100 000 ja 8 % juures ligikaudu 125 000 eurot kõrgemat väärtust. Arvestame ainult püsiva osa – võimsustasu ja energiakulu; reserviturutulu sõltub turuhinnast ja seda väärtusesse ei arvestata.
-      - main: Reservitulu võib olla märkimisväärne lisa — ja just seepärast näitame seda ausalt: agregaatori enda hinnanguna ja stsenaariumidena, ka eeldusel, et hinnad poolituvad. Arvutus peab vastu, isegi kui turg muutub.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Süsteem jääb liitumise taha ja liigub kinnisvaraga kaasa. Ostja saab tippvõimsuse juhtimise ja pääsu reserviturule esimesest päevast, ilma projekti ja järjekorrata.
-      - main: Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame kirjalikult, enne kui midagi alla kirjutatakse.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Kontrollime, kas selle tasuvus peab reaalsusele vastu. Tasuta, samade tarbimisandmete pealt, mille alusel teie otsus tegelikult tehakse. Kui pakkumine on hea, ütleme ka seda.
-      - main: Kui teil on pakkumine käes ja soovite teada, kas selle tasuvusnumber peab kokkupuutele tegelikkusega vastu — see on täpselt see töö, mida meie teeme.
-      - **Korjaus:**
-- [ ] `a` **uusi** — Küsi teist arvamust
-      - **Korjaus:**
-
-### #lahendus
-> Lähde tälle osiolle: Võimsustasu: teie võrguettevõtja hinnakiri
-> Lähde tälle osiolle: Elering ostab sagedusreserve ise. Juulis 2026 oli Eestis reservitoodete pakkumiseks kvalifitseerunud 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i (üles / alla). Allikas: Elering, sagedusreservide turu kokkuvõte · juuli 2026, tabel 2
-
-- [ ] `h2` **uusi** — Üks salvesti. Kolm rahavoogu. Vajadusel varutoide.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Aku ei tee ainult ühte asja: ta lõikab tipud, ostab odavalt ja on võrgule valmis. Päikesepaneele ega oma toodangut selleks vaja ei ole. Liitumisest piisab.
-      - main: Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame kirjalikult, enne kui midagi alla kirjutatakse.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Aku lõikab tarbimistipud maha enne, kui need võrguarvele jõuavad. See on esimene rida, mis teie arvel muutub.
-      - main: Salvesti lõikab tarbimistipud — mõju on näha võrguarvel. Arvutatakse teie enda tarbimisandmetest.
-      - **Korjaus:**
-- [ ] `h3` **muutettu** — Börsihind kasuks
-      - main: Börsielekter kasuks
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Laeb odavatel tundidel, annab energia välja kallitel. Iga päev, automaatselt, teie tootmist segamata.
-      - main: Laadimine odavatel tundidel, kasutus kallitel. Optimeerimise väärtus arvutatakse tegelikest hindadest.
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Täpsemalt
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Salvesti hoiab tipu madalal ja teenib arbitraažiga: ostab elektri odavatel tundidel ning müüb või kasutab seda kallitel – automaatselt, teie tootmist segamata.
-      - main: Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame kirjalikult, enne kui midagi alla kirjutatakse.
-      - **Korjaus:**
-- [ ] `h3` **muutettu** — Reservituru tulu
-      - main: Reservitulu lisana
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Elering maksab võrgu tasakaalustamiseks valmis olevate akude eest, ka tundidel, mil aku lihtsalt ootab. Liitumine käib agregaatori kaudu, kes on Eleringiga lepingu sõlminud teenusepakkuja.
-      - main: Reservitulu võib olla märkimisväärne lisa — ja just seepärast näitame seda ausalt: agregaatori enda hinnanguna ja stsenaariumidena, ka eeldusel, et hinnad poolituvad. Arvutus peab vastu, isegi kui turg muutub.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Varutoide, kui võrk kaob
-      - **Korjaus:**
-- [ ] `p` **uusi** — Kriitilised seadmed töötavad edasi, kui võrk katkeb: kuivati, külmladu või tootmisliin ei jää ootama.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Eeldab saartalitluseks dimensioneeritud lahendust ja eraldatud kriitilist ahelat; hinnatakse objektipõhiselt.
-      - main: Saartalitluseks projekteeritud süsteem toidab kriitilist koormust. Kinnitatakse objektipõhiselt.
-      - **Korjaus:**
-- [ ] `b` **uusi** — Kas objektil on päikeseelekter või on see plaanis?
+- [ ] `b` **uusi** — Kinnistu väärtus
       - **Korjaus:**
 
 ### #reservi-teaser
 > Lähde tälle osiolle: Allikad: Elering, sagedusreservide turu kokkuvõte · juuli 2026; Elering, varustuskindluse aruanne 2025, lk 14; Elering, tasakaalustamisvõimsuse kulu · 2026; ERR 16.08.2024 (Elektrilevi liitumistasu ja läbilaskevõime)
 
-- [ ] `h2` **uusi** — 2035. aastaks on juhitavat võimsust vaja üle poole rohkem kui täna. Teie liitumine võib olla üks pakkujatest.
+- [ ] `p` **muutettu** — Elektrivõrk peab olema tasakaalus igal sekundil. Eleringi hinnangul kasvab juhitava võimsuse vajadus 2035. aastaks ca 2 100 megavatini.
+      - main: Elektrivõrk peab olema tasakaalus igal sekundil. Elering ostab sagedusreserve iga päev ja maksab juba selle eest, et reserv on valmis – ja Eleringi hinnangul kasvab juhitava võimsuse vajadus 2035. aastaks ca 2 100 megavatini.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Elektrivõrk peab olema tasakaalus igal sekundil. Elering ostab sagedusreserve iga päev ja maksab juba selle eest, et reserv on valmis – ja Eleringi hinnangul kasvab juhitava võimsuse vajadus 2035. aastaks ca 2 100 megavatini.
-      - main: 50,000 Hz on elektrivõrgu tasakaal. Kui sagedus sellest kõrvale kaldub, ei ole tootmine ja tarbimine tasakaalus — ja põhivõrguettevõtted, Eestis Elering ja Soomes Fingrid, maksavad selle eest, et energiasalvestid taastavad tasakaalu sekunditega. Sellel reserviturud põhinevadki.
+- [ ] `p` **muutettu** — Aku tasakaalustab, Elering maksab valmisoleku eest. Sama juhtub pidevalt, automaatselt.
+      - main: Aku tasakaalustab, Elering maksab valmisoleku eest. Sama juhtub sadu kordi päevas, automaatselt.
       - **Korjaus:**
-- [ ] `b` **uusi** — Valmisolekutasu igal tunnil,
+
+### #pakume
+
+- [ ] `h2` **uusi** — Kolm asja, mida saate meilt tellida.
       - **Korjaus:**
-- [ ] `b` **uusi** — Reservide eest maksavad alates 2026 kõik tarbijad:
+- [ ] `h3` **uusi** — HinnangTasuta
       - **Korjaus:**
-- [ ] `b` **uusi** — Ilma uue liitumiseta:
+- [ ] `p` **muutettu** — Igale ettevõttele, kellel on oma elektriliitumine – ka siis, kui pakkumine on juba käes.
+      - main: Mul on juba pakkumine käes, soovin sellele teist arvamust.
       - **Korjaus:**
-- [ ] `a` **uusi** — Loe, kuidas aku Eesti reserviturul teenib
+- [ ] `h3` **uusi** — Salvesti ja mitmeturuteenusProjekt
       - **Korjaus:**
-- [ ] `p` **uusi** — Aku tasakaalustab, Elering maksab valmisoleku eest. Sama juhtub sadu kordi päevas, automaatselt.
+- [ ] `p` **uusi** — Ühele objektile: kuivati, tööstus, külmladu, hotell, hooldekodu, päikesepark.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — PortfellMitu objekti
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Kinnisvaraportfellidele, päikeseparkide omanikele ja kettidele, kellel on mitu liitumist.
+      - main: Päikesepargid, maaomanikud ja kinnisvaraportfellid
+      - **Korjaus:**
+
+### #vork
+> Lähde tälle osiolle: Allikas: Elering, Eesti elektriülekandevõrgu arengukava 2026–2035, lk 9 · seis 01.01.2026
+> Lähde tälle osiolle: Allikas: Elering, Eesti elektri varustuskindluse aruanne 2025, tabel 2.5 · detsember 2025
+> Lähde tälle osiolle: Allikas: Elering, arengukava 2026–2035, lisa 8.2 · tuul 2025, päike august 2025 · punktid: OpenStreetMap
+> Lähde tälle osiolle: Allikas: Elering, varustuskindluse aruanne 2025, lk 101 · ERR, 07.07.2026
+> Lähde tälle osiolle: Allikas: Elering, 2025. aasta elektrituru kokkuvõte, 04.02.2026 · Elering, „Tasakaalustamisvõimsuse kulu“, 29.06.2026
+> Lähde tälle osiolle: Allikas: Elering, varustuskindluse aruanne 2025, lk 101 · detsember 2025
+
+- [ ] `h2` **uusi** — Kuus kihti turgu teie liitumise ümber.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Valige küsimus. Kaart näitab vastust, arvu ja allikat.
+      - **Korjaus:**
+- [ ] `label` **uusi** — Võrk
+      - **Korjaus:**
+- [ ] `label` **uusi** — Kasv
+      - **Korjaus:**
+- [ ] `label` **uusi** — Ilm
+      - **Korjaus:**
+- [ ] `label` **muutettu** — Reservid
+      - main: Reserviturg
+      - **Korjaus:**
+- [ ] `label` **uusi** — Järjekord
+      - **Korjaus:**
+- [ ] `label` **uusi** — Teie liitumine
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kus on põhivõrk?
+      - **Korjaus:**
+- [ ] `p` **uusi** — 5 198 kmõhuliine
+      - **Korjaus:**
+- [ ] `p` **uusi** — lisaks 284 km kaableid ja 158 alajaama
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Kaardil on 330 kV põhiliinid ja EstLinki kaablid Soome. Arv sisaldab ka 110 kV liine.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Kui palju tarbimine kasvab?
+      - main: Aastane tarbimine
+      - **Korjaus:**
+- [ ] `p` **uusi** — 10,4 TWhaastas 2030
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — 2024: 8,3 TWh · 2035: 12,2 TWh
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Eleringi prognoosis ületab aastane tarbimine 10 TWh piiri 2029. aastal. Ringide pindala on võrdeline tarbimisega.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kui palju tootmist sõltub ilmast?
+      - **Korjaus:**
+- [ ] `p` **uusi** — 1 214 MWpäikest
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — tuult 693,9 MW
+      - **Korjaus:**
+- [ ] `p` **uusi** — Ilmast sõltuv toodang muudab tunnihinnad kõikuvaks. Salvesti teenib hinnavahelt.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Kui palju salvesteid juba töötab?
+      - main: Kui palju salvesti reserviturul teenib?
+      - **Korjaus:**
+- [ ] `p` **uusi** — ≈ 56 MWEleringi võrgus, okt 2025
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — 2026 lisandusid Hertz 1 ja 2: 200 MW / 400 MWh
+      - **Korjaus:**
+- [ ] `p` **uusi** — Ruutude pindala on võrdeline võimsusega.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kui palju makstakse reservide valmisoleku eest?
+      - **Korjaus:**
+- [ ] `p` **uusi** — 74 M€veebruar–detsember 2025
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — tasu 2026: 3,73 €/MWh tarbijatelt ja tootjatelt
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Alates 9.2.2025 hoiab Eesti koos Läti ja Leeduga sagedust ise ja ostab selleks reservvõimsust. Valmisoleku eest makstakse ka siis, kui aktiveerimist ei tule.
+      - main: Liitumise eest maksate iga kuu. Sama liitumine võib ka teile tootma hakata – kui selle taga on salvesti, energia tootmine ja nutikas juhtimine, mis otsustab teie kasuks. Meie anname teile selleks kolm asja:
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Kui palju salvesteid tuleb juurde?
+      - main: Kui palju salvesti reserviturul teenib?
+      - **Korjaus:**
+- [ ] `p` **uusi** — ≈ 1 700 MWsoovitakse Eleringi võrku liita
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — 680 MW eraldi, ≈ 1 000 MW hübriidjaamades · seis okt 2025
+      - **Korjaus:**
+- [ ] `p` **uusi** — Taotlused, pakkumised ja sõlmitud lepingud kokku. Ruutude pindala on võrdeline võimsusega.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Mida see teie objektil tähendab?
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Kirjalik hinnang paneb teie liitumise sellele kaardile: võimsus, tunniandmed, paigalduskoht ja modelleeritud tulu, iga arv koos allikaga.
+      - main: Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või teie võrguettevõtjalt), ühe arve ja peakilbi skeemi; meie kirjutame hinnangu: liitumine, tarbimisprofiil, võimsuse jaotus, modelleeritud reservitulu toodete kaupa allikatega.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kogu kaart: Elering ja Fingrid kõrvuti
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kaart: Natural Earth; liinid ja jaamad © OpenStreetMapi kaastöötajad
       - **Korjaus:**
 
 ### #kuidas
 
-- [ ] `h2` **uusi** — Kuidas see käib – ja mis millal maksab.
+- [ ] `h3` **muutettu** — 1 · Tasuta hindamine
+      - main: Tasuta hindamine
       - **Korjaus:**
-- [ ] `p` **muutettu** — Kedagi ei saadeta kuhugi enne, kui andmed on käes. Kaks esimest sammu on tasuta, objektikülastus arvestatakse lepingus maha, projekteerimine ja paigaldus käivad lepingu järgi.
-      - main: Päikeseelekter, energiasalvesti ja juhtimine dimensioneeritakse koos teie tarbimisandmete põhjal. Algusest peale tervikuna projekteerituna ei jää midagi tagantjärele sobitada, vastutus on ühel osapoolel ja võrguettevõtte kooskõlastus taotletakse korraga.
+- [ ] `p` **muutettu** — Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või teie võrguettevõtjalt), ühe arve ja peakilbi skeemi.
+      - main: Teie annate: oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt – juhendame), ühe elektriarve ja peakilbi skeemi.
       - **Korjaus:**
-- [ ] `h3` **uusi** — Tasuta hindamine
+- [ ] `h3` **muutettu** — 2 · Eelkontroll
+      - main: Eelkontroll
       - **Korjaus:**
-- [ ] `p` **muutettu** — Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või teie võrguettevõtjalt), ühe arve ja peakilbi skeemi; meie kirjutame hinnangu: liitumine, tarbimisprofiil, võimsuse jaotus, kolm stsenaariumi allikatega.
-      - main: Päikeseelekter, energiasalvesti ja juhtimine dimensioneeritakse koos teie tarbimisandmete põhjal. Algusest peale tervikuna projekteerituna ei jää midagi tagantjärele sobitada, vastutus on ühel osapoolel ja võrguettevõtte kooskõlastus taotletakse korraga.
+- [ ] `p` **muutettu** — Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldajaga.
+      - main: Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldajaga; elektrik ütleb, kas ja mis tingimustel saab, ja eelarve suurusjärgu.
       - **Korjaus:**
-- [ ] `h3` **uusi** — Eelkontroll
+- [ ] `h3` **muutettu** — 3 · Objektikülastus
+      - main: Objektikülastus
       - **Korjaus:**
-- [ ] `p` **uusi** — Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldajaga; elektrik ütleb, kas ja mis tingimustel saab, ja eelarve suurusjärgu.
+- [ ] `h3` **muutettu** — 4 · Rahastus ja otsus
+      - main: Rahastus ja otsus
       - **Korjaus:**
-- [ ] `h3` **muutettu** — Objektikülastus
-      - main: Küsige objektikaardistust
-      - **Korjaus:**
-- [ ] `p` **uusi** — Elektrik käib kohal, mõõdab kaablitee, kilbi ja paigalduskoha ning kinnitab hinna.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Rahastus ja otsus
-      - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Näete ühte tabelit, kus on kuumakse, omafinantseering ja see, mis pärast makset alles jääb. Rahastajaga suhtleme meie.
-      - main: Reservitulu võib olla märkimisväärne lisa — ja just seepärast näitame seda ausalt: agregaatori enda hinnanguna ja stsenaariumidena, ka eeldusel, et hinnad poolituvad. Arvutus peab vastu, isegi kui turg muutub.
+- [ ] ⚠ `p` **muutettu** — Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks.
+      - main: Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Näete ühte tabelit, kus on kuumakse, omafinantseering ja see, mis pärast makset alles jääb. Rahastajaga suhtleme meie.
       - ⚠ rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)
       - **Korjaus:**
-- [ ] `h3` **uusi** — Projekt, paigaldus, turg
+- [ ] `h3` **muutettu** — 5 · Projekt, paigaldus, turg
+      - main: Projekt, paigaldus, turg
       - **Korjaus:**
-- [ ] `p` **muutettu** — Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine; agregaator liidab salvesti mitmeturuteenusega ja meie jälgime, et süsteem teeks seda, mida hinnang näitas.
-      - main: Seepärast tõendatakse tehnilised lahendused standarditega, seadmete omadused tootja kirjaliku kinnitusega ja liitumise tingimused võrguettevõtte enda vastusega. Iga number kannab oma allikat — ja see, mida me dokumenteerida ei saa, meie pakkumisse ei jõua.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Esimene samm ei kohusta millekski. Andmed ja arve, ja te teate kahe tööpäevaga, kas ja kuidas edasi minna.
-      - main: Esimesed objektid dokumenteeritakse siia mõõteandmetega — numbrid enne ja pärast, koos allikatega. Me ei avalda referentse, mida me ei saa tõendada.
-      - **Korjaus:**
-
-### #kellele
-
-- [ ] ⚠ `h2` **uusi** — Kus salvesti end kõige kiiremini ära tasub – ja miks.
-      - ⚠ perustajan päätös 10.09.2026 — varaus "usein"/"sageli" poistettu, kumoaa päätöksen D16 (08.09)
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Salvesti võimsus jagatakse mitme töö vahel: teie enda tarbimise optimeerimine (tipud, odavad tunnid), arbitraaž börsil ja reserviturg (valmisolek Eleringile) – agregaator müüb võimsust mitmel turul korraga, see on mitmeturuteenus. Kui suur osa läheb millisele tööle, määrab teie tarbimisprofiil – hinnangu kõige tähtsam rida.
-      - main: 50,000 Hz on elektrivõrgu tasakaal. Kui sagedus sellest kõrvale kaldub, ei ole tootmine ja tarbimine tasakaalus — ja põhivõrguettevõtted, Eestis Elering ja Soomes Fingrid, maksavad selle eest, et energiasalvestid taastavad tasakaalu sekunditega. Sellel reserviturud põhinevadki.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Viljakuivatid ja maaettevõtted
-      - **Korjaus:**
-- [ ] `p` **uusi** — Kuivati töötab paar kuud aastas, aga liitumine on suur terve aasta.
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Miks siin
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Salvesti on peaaegu kogu aeg reserviturul ja teenib valmisoleku pealt; kuivatushooaja tipud hoiab ta madalal. Sageli kiireim tasuvus.
-      - main: 50,000 Hz on elektrivõrgu tasakaal. Kui sagedus sellest kõrvale kaldub, ei ole tootmine ja tarbimine tasakaalus — ja põhivõrguettevõtted, Eestis Elering ja Soomes Fingrid, maksavad selle eest, et energiasalvestid taastavad tasakaalu sekunditega. Sellel reserviturud põhinevadki.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Tööstus ja külmlaod
-      - **Korjaus:**
-- [ ] `p` **uusi** — Käivitused, kompressorid ja vahetustega töö tekitavad tippe.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Külmlaos lisandub ööpäevaringne jahutus. Salvesti hoiab kuu tippvõimsuse madalal, ostab odavatel tundidel ja on ülejäänud tundidel reserviturul.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Hotellid ja hooldekodud
-      - **Korjaus:**
-- [ ] `p` **uusi** — Ööpäevaringne tarbimine, köök ja küte, ning kohustus, et elekter ei kaoks kunagi.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Varutoide on siin sama tähtis kui sääst.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Päikesepargid, maaomanikud ja kinnisvaraportfellid
-      - **Korjaus:**
-- [ ] `p` **uusi** — Olemasolev tootmine saab salvestiga teise tuluallika.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Vaba maa liitumise lähedal on ise vara, millele jaam ja salvesti ehitatakse; portfell saab ühe partneri, kes kõik objektid läbi arvutab.
-      - main: Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame kirjalikult, enne kui midagi alla kirjutatakse.
-      - **Korjaus:**
-
-### #miks-sama
-
-- [ ] `h2` **uusi** — Me ei müü lihtsalt seadet. Leiame teile sobivaima lahenduse.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Oleme teile toeks algusest lõpuni: leiame teie objektile sobivaima lahenduse ja ühendame selle agregaatori kaudu mitmeturuteenusega, et see teeniks tulu mitmel turul korraga.
-      - main: Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame kirjalikult, enne kui midagi alla kirjutatakse.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Mõistame teie objekti
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Tarbimisandmed, liitumine, tootmise rütm ja eesmärgid enne, seadmed pärast. Sellepärast algab kõik tasuta hindamisest.
-      - main: Reservitulu võib olla märkimisväärne lisa — ja just seepärast näitame seda ausalt: agregaatori enda hinnanguna ja stsenaariumidena, ka eeldusel, et hinnad poolituvad. Arvutus peab vastu, isegi kui turg muutub.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Tunneme turgu
-      - **Korjaus:**
-- [ ] `p` **uusi** — Oleme turu läbi analüüsinud ja eri tarnijaid näinud. Valime seadmed ja partnerid teie huvides, koostöös maaletoojatega.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Ajastus on osa lahendusest
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Praegu on Soome laos turul end tõestanud energiasalvesteid hea hinnaga ja tarneaeg on nädalates. Sellepärast pakume neid nüüd, mitte järgmisel aastal.
-      - main: Reservitulu võib olla märkimisväärne lisa — ja just seepärast näitame seda ausalt: agregaatori enda hinnanguna ja stsenaariumidena, ka eeldusel, et hinnad poolituvad. Arvutus peab vastu, isegi kui turg muutub.
+- [ ] `p` **muutettu** — Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine.
+      - main: Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine; agregaator liidab salvesti mitmeturuteenusega ja meie jälgime, et süsteem teeks seda, mida hinnang näitas.
       - **Korjaus:**
 
 ### #kkk
 
-- [ ] `h2` **uusi** — Rasked küsimused, ausad vastused.
+- [ ] `h2` **muutettu** — Rasked küsimused, otsesed vastused.
+      - main: Rasked küsimused, ausad vastused.
       - **Korjaus:**
-- [ ] `p` **uusi** — Kui teie küsimust siin pole, küsige otse. Vastame kirjalikult.
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Kas reservituru tulu saab garanteerida?
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Garanteerida ei saa keegi: reservi hind kujuneb turul iga päev ja turg, kuhu tuleb pakkujaid juurde, ei püsi paigal. Sellepärast me numbrit ei luba. Kirjalikus hinnangus on kolm stsenaariumi — madal, keskmine ja kõrge — ning eraldi real võimsustasu ja börsihinna sääst, mis turust ei sõltu. Nii sünnib otsus teadlikult: mitte hirmust ega uskumisest, vaid teie enda numbrite pealt.
-      - main: Reservitulu võib olla märkimisväärne lisa — ja just seepärast näitame seda ausalt: agregaatori enda hinnanguna ja stsenaariumidena, ka eeldusel, et hinnad poolituvad. Arvutus peab vastu, isegi kui turg muutub.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Kuidas reservihinnad kujunevad
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Kui palju salvesti reserviturul teenib?
-      - **Korjaus:**
-- [ ] `p` **muutettu** — See sõltub neljast asjast, ja me arvutame need teie objekti kohta läbi. Esiteks agregaatorist ja tema juhtimisloogikast: mida täielikumalt agregaator salvestit juhib, seda suurem on tulupotentsiaal. Teiseks sellest, kui palju te salvestit ise kasutate ja millistel tundidel – tippude katmiseks ja odava elektri salvestamiseks; see osa on teie sääst, ja ülejäänud aja on salvesti puhtalt reserviturul. Kolmandaks sellest, mitmel turul salvesti osaleb – sagedusreservid FCR, aFRR ja mFRR ning arbitraaž börsil ehk mitmeturuteenus – ja nende hinnad kujunevad iga päev uuesti. Neljandaks teie tarbimisprofiilist ja liitumisest, mis määravad salvesti suuruse ja selle, kui suur osa võimsusest on turule vaba.
-      - main: Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame kirjalikult, enne kui midagi alla kirjutatakse.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Sellepärast anname kolm stsenaariumi, mis näitavad, millest tulu sõltub, mitte ühte numbrit.
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Kas aku vajab päikesepaneele või oma tootmist?
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Ei. Kõik kolm rahavoogu (võimsustasu, börsihind, reservitulu) töötavad ilma päikeseta. Piisab liitumisest. Kui päikesepaneelid on olemas või plaanis, lisandub neljas võimalus: oma toodangu salvestamine omaks tarbeks.
-      - main: Reservitulu võib olla märkimisväärne lisa — ja just seepärast näitame seda ausalt: agregaatori enda hinnanguna ja stsenaariumidena, ka eeldusel, et hinnad poolituvad. Arvutus peab vastu, isegi kui turg muutub.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Päike ja aku koos
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Mis on arvestitagune süsteem?
-      - **Korjaus:**
-- [ ] `p` **muutettu** — See osa teie elektrisüsteemist, mis asub võrguettevõtja arvesti taga ja on teie oma: energiasalvesti, päikesepaneelid ja juhtimine, mis otsustab, millal tarbida, salvestada, müüa või hoida võimsust võrgule valmis. Inglise keeles behind-the-meter. Võrguettevõtja näeb ainult arvesti näitu – mis selle taga toimub, otsustate teie.
-      - main: Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame kirjalikult, enne kui midagi alla kirjutatakse.
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Mida tasuta hindamine sisaldab?
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Lühikest küsimustikku teie tarbimisharjumuste ja objekti kohta, teie tunnipõhiste tarbimisandmete analüüsi ja liitumispunkti ülevaatust. Tulemuseks on kirjalik hinnang: kas aku tasub end teie objektil ära, kui suur see peaks olema ja millest tulu koosneb. Kohustusi ei teki.
-      - main: Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame kirjalikult, enne kui midagi alla kirjutatakse.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Kuidas hindamine käib
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Kui palju selline süsteem maksab?
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Hinnangus on vahemik, mis sõltub teie liitumise suurusest ja tarbimisprofiilist, mitte üks lootusrikas number. Kõik, mis hinda mõjutab, on samas dokumendis lahti kirjutatud.
-      - main: Seepärast tõendatakse tehnilised lahendused standarditega, seadmete omadused tootja kirjaliku kinnitusega ja liitumise tingimused võrguettevõtte enda vastusega. Iga number kannab oma allikat — ja see, mida me dokumenteerida ei saa, meie pakkumisse ei jõua.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Millest hind koosneb
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Kui kaua projekt kestab?
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Hindamisest käivitamiseni kulub tavaliselt nädalaid, mitte kuid — seadmed on laost saadaval. Võrguettevõtja vastamisaeg on omaette asi: see tuuakse hinnangus eraldi välja, et see ei tuleks üllatusena.
-      - main: Reservitulu võib olla märkimisväärne lisa — ja just seepärast näitame seda ausalt: agregaatori enda hinnanguna ja stsenaariumidena, ka eeldusel, et hinnad poolituvad. Arvutus peab vastu, isegi kui turg muutub.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Nii projekt edeneb
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Kas salvesti on ohutu ja milline on garantii?
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Tööstuslikud salvestid, mida me pakume, on LFP-keemiaga, rakutaseme jälgimisega akuhalduse ja temperatuurijuhtimisega ning välitingimustele mõeldud kapis; nõuame tootjalt CE- ja transpordisertifikaate. Garantii- ja hooldustingimused, seire ja see, kes mille eest vastutab, on kirjalikus hinnangus eraldi real – enne allkirja, mitte pärast. Garantiitingimused, hooldusvälbad ja see, kellele helistate, kirjutatakse samasse dokumenti arvudega.
-      - main: Seepärast tõendatakse tehnilised lahendused standarditega, seadmete omadused tootja kirjaliku kinnitusega ja liitumise tingimused võrguettevõtte enda vastusega. Iga number kannab oma allikat — ja see, mida me dokumenteerida ei saa, meie pakkumisse ei jõua.
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Kes ajab võrguettevõtjaga asju?
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Meie. Tehnilised tingimused ja võrguettevõtja seisukoht on kirjalikult käes enne, kui te midagi allkirjastate, mitte pärast.
-      - main: Liitumises olev tootmine eeldab enne pakkumist kirjalikke vastuseid neljale tehnilisele küsimusele: tagasitoite tõkestamine, võimsuse piiramine, mõõtmine ja käitumine side katkemisel. Meie teeme selle selgitustöö ja anname vastused kirjalikult.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Neli reeglit, mille järgi hinnang valmib
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Kas rahastust on võimalik saada?
-      - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Jah. Liisingrahastus on võimalik korraldada, ja hinnangus näitame omafinantseeringu ja liisingu võrdlust samade numbrite pealt, et otsus oleks lihtne.
-      - main: Reservitulu võib olla märkimisväärne lisa — ja just seepärast näitame seda ausalt: agregaatori enda hinnanguna ja stsenaariumidena, ka eeldusel, et hinnad poolituvad. Arvutus peab vastu, isegi kui turg muutub.
-      - ⚠ rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Viis mõistet, mida me kasutame
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Arvestitagune süsteem – salvesti, tootmine ja juhtimine teie liitumise taga, teie poolel arvestit. Mitmeturuteenus – agregaator müüb sama salvesti võimsust mitmel turul korraga: teie tarbimise optimeerimine, arbitraaž börsil, reservid Eleringile. Agregaator – ettevõte, kes koondab mitme objekti salvestid üheks pakkumiseks ja maksab tulu välja. Valmisolekutasu – tasu selle eest, et salvesti on Eleringile kättesaadav, ka siis, kui ta ei tööta. Arbitraaž – ostmine odaval tunnil, müümine või kasutamine kallil.
-      - main: Ehitame ettevõtete energiasõltumatust: päikeseelekter, energiasalvestid ja juhtimine teevad teie liitumispunktist elektrisüsteemi aktiivse osa. Ja mida see teie objektil tegelikult toodab — sellele vastame kirjalikult, enne kui midagi alla kirjutatakse.
-      - **Korjaus:**
-
-### #hindamine
-
-- [ ] `p` **muutettu** — Kahe tööpäevaga teate, kas ja kuidas aku end teie objektil ära tasub. Hinnang on kaks lehekülge, kirjalikult ja kohustusteta:
-      - main: Objektikaardistus on tasuta ega seo teid millegagi. Saate kirjaliku hinnangu — ja see jääb teile igal juhul.
-      - **Korjaus:**
-- [ ] `li` **uusi** — Liitumine ja tarbimisprofiil teie tunnipõhistest andmetest
-      - **Korjaus:**
-- [ ] `li` **uusi** — Võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel
-      - **Korjaus:**
-- [ ] `li` **uusi** — Kolm reservituru stsenaariumi allikatega
-      - **Korjaus:**
-- [ ] `li` **muutettu** — Võrguettevõtja seisukoht ja see, mida hinnang ei ütle
-      - main: Võrguettevõtte seisukoht enne
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Teie annate: oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt – juhendame), ühe elektriarve ja peakilbi skeemi.
-      - main: Päikeseelekter, energiasalvesti ja juhtimine dimensioneeritakse koos teie tarbimisandmete põhjal. Algusest peale tervikuna projekteerituna ei jää midagi tagantjärele sobitada, vastutus on ühel osapoolel ja võrguettevõtte kooskõlastus taotletakse korraga.
-      - **Korjaus:**
-- [ ] `label` **uusi** — Ära täida seda välja
-      - **Korjaus:**
-- [ ] `label` **uusi** — Nimi
-      - **Korjaus:**
-- [ ] `label` **uusi** — E-post
-      - **Korjaus:**
-- [ ] `label` **uusi** — Mul on juba pakkumine käes, soovin sellele teist arvamust.
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Need kiirendavad hinnangut (kõik valikulised) +
-      - **Korjaus:**
-- [ ] `label` **uusi** — Objekti asukoht
-      - **Korjaus:**
-- [ ] `label` **uusi** — Peakaitse või liitumisvõimsus
-      - **Korjaus:**
-- [ ] `label` **uusi** — Aastane tarbimine
-      - **Korjaus:**
-- [ ] `label` **uusi** — Võrguettevõtja
-      - **Korjaus:**
-- [ ] `label` **muutettu** — Kas objektil on päikeseelekter?
-      - main: PÄIKESEELEKTER
-      - **Korjaus:**
-- [ ] `p` **uusi** — Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hindamiseks, privaatsuspoliitikat.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Kontrollige nime ja e-posti. Kui saatmine ei õnnestu, võite saata andmed ka otse aadressile info@samaenergia.fi.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Aitäh. Võtame ühendust kahe tööpäeva jooksul.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Kui teil on tarbimisandmed või pakkumine käepärast, saatke need kohe aadressile info@samaenergia.fi. See kiirendab hinnangut.
-      - main: Seepärast tõendatakse tehnilised lahendused standarditega, seadmete omadused tootja kirjaliku kinnitusega ja liitumise tingimused võrguettevõtte enda vastusega. Iga number kannab oma allikat — ja see, mida me dokumenteerida ei saa, meie pakkumisse ei jõua.
+- [ ] `p` **muutettu** — Garantii asemel saate mudeli. Kirjalikus hinnangus modelleeritakse reservitulu toodete kaupa tegelikest tunnihindadest nende tundide jaoks, mis teie enda tarbimisest vabaks jäävad, enne agregaatori tasu. Tulevik näidatakse vahemikuna. Nii sünnib otsus teadlikult: mitte hirmust ega uskumisest, vaid teie enda numbrite pealt.
+      - main: Garanteerida ei saa keegi: reservi hind kujuneb turul iga päev ja turg, kuhu tuleb pakkujaid juurde, ei püsi paigal. Sellepärast me numbrit ei luba. Kirjalikus hinnangus modelleeritakse reservitulu toodete kaupa tegelikest tunnihindadest nende tundide jaoks, mis teie enda tarbimisest vabaks jäävad, enne agregaatori tasu. Tulevik näidatakse vahemikuna. See on modelleeritud arv, mitte lubadus. Eraldi real on võimsustasu ja börsihinna sääst, mis turust ei sõltu. Nii sünnib otsus teadlikult: mitte hirmust ega uskumisest, vaid teie enda numbrite pealt.
       - **Korjaus:**
 
 ### (footer)
 
-- [ ] `p` **muutettu** — Päikeseelekter, tööstuslikud energiasalvestid ja reservituru liitumine ettevõtetele Eestis ja Soomes.
-      - main: Energiasalvestid ja päikeseelekter · ettevõtetele ja maaomanikele
-      - **Korjaus:**
-- [ ] `li` **uusi** — info@samaenergia.fi
-      - **Korjaus:**
-- [ ] `li` **uusi** — SAMA Energia Oy
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — Sörnäisten Rantatie 33 C, 00500 Helsingi, Soome
-      - ⚠ osoite vahvistettu 06.09.2026
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — Soome registrikood (Y-tunnus) 3647683-6 · KMKR-nr FI36476836
-      - ⚠ Y-tunnus korjattu 09.09.2026: vanha 3647683-3 ei läpäissyt tarkistusmerkkilaskentaa; oikea on 3647683-6 / FI36476836
-      - **Korjaus:**
-- [ ] `p` **uusi** — Lahendused
-      - **Korjaus:**
-- [ ] `li` **muutettu** — Päikeseelekter
-      - main: PÄIKESEELEKTER
-      - **Korjaus:**
-- [ ] `li` **muutettu** — Reserviturg
-      - main: RESERVITURU ÜHENDUS
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — Agregaator: Soleron Energy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
-      - **Korjaus:**
-- [ ] `p` **uusi** — Ettevõte
-      - **Korjaus:**
-- [ ] `li` **uusi** — Nõuded seadmetele
-      - **Korjaus:**
-- [ ] `li` **uusi** — Privaatsuspoliitika
-      - **Korjaus:**
-- [ ] `p` **uusi** — Turuülevaade e-postile
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Anname e-kirjaga teada, kui uus ülevaade on avaldatud – mitte sagedamini. Ei müügikirju. Loobumiseks vastake kirjale.
-      - main: Seadmevalik ei ole see otsus, mis asja lahendab — seadmestik on kõige lihtsam osa. Otsustavad küsimused lahendatakse enne seda ja edenemine on kirjeldatud samm-sammult: Kuidas see kulgeb.
-      - **Korjaus:**
-- [ ] `button` **uusi** — Telli
-      - **Korjaus:**
-- [ ] `p` **uusi** — Aitäh. Anname teada, kui uus ülevaade on avaldatud.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Kontrollige e-posti aadressi.
+- [ ] `li` **uusi** — Ühine võrk: kaart
       - **Korjaus:**
 
 ---
@@ -436,127 +244,20 @@ Vastine mainissa: `/et/`
 ## Energiasalvestid — `/et/energiasalvestid/`
 Vastine mainissa: `/et/energiasalvestid/`
 
-### (sivu)
+### #arve
+> Lähde tälle osiolle: Allikas: Elering, sagedusreservide turu kokkuvõte · juuli 2026, tabel 2
+> Lähde tälle osiolle: Allikas: Konkurentsiameti otsus nr 7-3/2026-028 · 2.3.2026, hinnakiri kehtib 1.6.2026 alates · käibemaksuta
+> Lähde tälle osiolle: Allikas: Konkurentsiameti otsus nr 7-3/2026-028 · 2.3.2026, pakett Võimsus VMA2 · käibemaksuta
+> Lähde tälle osiolle: Näidisarvutus. Teie objekti tootlusnõue sõltub kinnisvara liigist ja asukohast – hinnangus arvutame selle teie enda andmetega.
+> Lähde tälle osiolle: Allikad: ERR 16.08.2024; Elektrilevi, loetud 08.09.2026
 
-- [ ] `a` **uusi** — Küsi tasuta hindamist
-      - **Korjaus:**
-
-### #rev-energiasalvestid-1
-
-- [ ] `h1` **uusi** — Tööstuslik energiasalvesti: üks seade, neli tööd.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Võimsustasu alla, börsihind kasuks, reservitulu ja varutoide. Samast akust, samal päeval, automaatselt. Päikest ega oma tootmist pole vaja: liitumisest piisab.
+- [ ] `h2` **uusi** — Mis teie arvel ja kinnistul muutub.
       - **Korjaus:**
 
-### #rev-energiasalvestid-2
-> Lähde tälle osiolle: Milline osa on teie objektil suurim, selgub tarbimisandmetest. Sellepärast algab kõik tasuta hindamisest.
+### #kellele-miks
 
-- [ ] `h2` **uusi** — Millest iga rahavoog sõltub
-      - **Korjaus:**
-- [ ] `th` **uusi** — Rahavoog
-      - **Korjaus:**
-- [ ] `th` **muutettu** — Kust raha tuleb
-      - main: RAHASTUS
-      - **Korjaus:**
-- [ ] `th` **uusi** — Millest sõltub
-      - **Korjaus:**
-- [ ] `th` **uusi** — Vajab päikest?
-      - **Korjaus:**
-- [ ] `td` **uusi** — Väiksem võrguettevõtja arve
-      - **Korjaus:**
-- [ ] `td` **uusi** — Teie tarbimistippude kõrgus ja sagedus
-      - **Korjaus:**
-- [ ] `td` **uusi** — Ei
-      - **Korjaus:**
-- [ ] `td` **uusi** — Börsihind kasuks
-      - **Korjaus:**
-- [ ] `td` **uusi** — Väiksem elektrimüüja arve
-      - **Korjaus:**
-- [ ] `td` **uusi** — Päevasisene hinnavahe ja aku maht
-      - **Korjaus:**
-- [ ] `td` **muutettu** — Reservituru tulu
-      - main: Reservitulu
-      - **Korjaus:**
-- [ ] `td` **uusi** — Elering, agregaatori kaudu
-      - **Korjaus:**
-- [ ] `td` **uusi** — Valmisolek ja reservi turuhind
-      - **Korjaus:**
-- [ ] `td` **uusi** — Varutoide
-      - **Korjaus:**
-- [ ] `td` **uusi** — Välditud seisakud ja kahju
-      - **Korjaus:**
-- [ ] `td` **uusi** — Kriitiliste seadmete vajadus ja saartalitluseks sobiv lahendus
-      - **Korjaus:**
-- [ ] `td` **uusi** — Ostmata jäänud elekter
-      - **Korjaus:**
-- [ ] `td` **uusi** — Päikesepaneelide olemasolu ja tarbimisprofiil
-      - **Korjaus:**
-- [ ] `td` **uusi** — Lisavõimalus
-      - **Korjaus:**
-
-### #oopaev
-
-- [ ] `h2` **uusi** — Kuidas aku päev välja näeb.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Üks aku, neli tööd, üks ööpäev. Kell liigub, aku laeb odavalt, lõikab hommikutipu, ootab valmis ja annab energia välja siis, kui see on kallis. Terve aja on ta Eleringile kättesaadav.
-      - **Korjaus:**
-- [ ] `b` **uusi** — 00–05
-      - **Korjaus:**
-- [ ] `p` **uusi** — Aku laeb siis, kui börsihind on päeva madalaim. Sama energia müüakse hiljem tagasi kallilt või kasutatakse tipu ajal.
-      - **Korjaus:**
-- [ ] `b` **uusi** — 07–09
-      - **Korjaus:**
-- [ ] `p` **uusi** — Hommikune käivitustipp ei jõua võrguarvele: aku annab puuduva võimsuse ise. Võimsustasu arvestatakse tipu järgi, seega just see hetk maksab.
-      - **Korjaus:**
-- [ ] `b` **uusi** — 10–16
-      - **Korjaus:**
-- [ ] `p` **uusi** — Aku ootab pooleldi laetuna ja on Eleringi reserviturul saadaval. Valmisoleku eest makstakse ka siis, kui aktiveerimist ei tule.
-      - **Korjaus:**
-- [ ] `b` **uusi** — 17–20
-      - **Korjaus:**
-- [ ] `p` **uusi** — Õhtutipp ja päeva kalleim elekter langevad kokku. Aku annab energia välja ja laeb öösel uuesti.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Skemaatiline ööpäev, mitte ühe objekti mõõdetud andmed. Teie objekti tegeliku profiili joonistame hinnangus teie tunnipõhistest tarbimisandmetest.
-      - **Korjaus:**
-
-### #tarne
-
-- [ ] `h2` **uusi** — Mida me tarnime – ja mida seadmetelt nõuame.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Seadmed valime teie objekti järgi, mitte lao. Ohutus, garantii ja hooldus on hinnangus kirjas, mitte peenes kirjas.
-      - main: Oleme tootjatest sõltumatud. Valime seadme objekti järgi ega sobita objekti seadmega, mida juhtume müüma. Kui parim lahendus teie objektile ei tule meilt, ütleme ka seda.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Tööstusklassi süsteem
-      - **Korjaus:**
-- [ ] `p` **uusi** — Välispaigalduseks sobiv salvestikapp, inverter ja juhtimine, mõõdetud teie liitumise ja tarbimisprofiili järgi – ühest üksusest mitme üksuse pargini.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Ohutus ja garantii
-      - **Korjaus:**
-- [ ] `p` **uusi** — Nõuame tootjalt LFP-keemiat, rakutaseme jälgimisega akuhaldust, temperatuurijuhtimist, välitingimustele vastavat kappi ja CE- ning transpordisertifikaate. Tootja garantii ja hooldustingimused on hinnangus eraldi real. Kõik nõuded →
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Paigaldus, tarne ja hooldus
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Paigaldust juhib meie paigaldusjuht koos partneritega; osa seadmeid on Soome laos, mis lühendab tarneaja nädalateni. Pärast käikulaskmist jälgivad süsteemi agregaator ja meie, hooldus käib lepingu järgi. Praegu on Soome laost saadaval turul end tõestanud akusid väga hea hinnaga; kui turg ja hind on paigas, tasub liikuda, ja meie ütleme, millal need seda on.
-      - main: Süsteem paigaldatakse õue, seda juhitakse reaalajas liitumispunkti mõõtmise järgi ning võrguettevõtte kirjalik seisukoht hangitakse enne, kui midagi ostetakse.
-      - **Korjaus:**
-
-### #kkk
-
-- [ ] `h2` **uusi** — Korduma kippuvad küsimused
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Kas aku töötab varutoitena?
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Jah, kui süsteem on ehitatud saartalitluseks: inverter, eralduslüliti ja kriitiline ahel dimensioneeritakse selleks. Hindamisel ütleme, mida see teie objektil tähendab.
-      - main: Määr on avalik, mehhanism on avalik ja mõju arvutatakse teie enda tunniandmetest. Allpool on näidisarvutus keskpinge tööstusobjektile — dokumenteeritud pool ja selgelt märgistatud eeldused eraldi.
-      - **Korjaus:**
-
-### #rev-energiasalvestid-6
-
-- [ ] `h2` **muutettu** — Kui suur aku teie objektile?
-      - main: Teie objekt
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Hindamine vastab sellele kirjalikult, teie tarbimisandmetest arvutatuna.
-      - main: Salvesti lõikab tarbimistipud — mõju arvutatakse teie enda tunniandmetest, mitte keskmisest näitest.
+- [ ] `p` **muutettu** — Varutoide on siin sama tähtis kui sääst. Selleks peab süsteem olema ehitatud saartalitluseks ja kriitiline ahel eraldatud; see projekteeritakse iga objekti jaoks eraldi.
+      - main: Jah, kui süsteem on ehitatud saartalitluseks: inverter, eralduslüliti ja kriitiline ahel dimensioneeritakse selleks. Hindamisel ütleme, mida see teie objektil tähendab.
       - **Korjaus:**
 
 ---
@@ -564,50 +265,188 @@ Vastine mainissa: `/et/energiasalvestid/`
 ## Päikeseelekter — `/et/paikeseelekter/`
 Vastine mainissa: `/et/paike-ja-aku/`
 
-### (sivu)
-
-- [ ] `a` **uusi** — Küsi tasuta hindamist
-      - **Korjaus:**
-
 ### #rev-paikeseelekter-1
 
 - [ ] `h1` **uusi** — Päikeseelekter, mis on tehtud teie objekti järgi.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Lahenduse valime teie tarbimisprofiili, kinnistu ja soovide järgi, mitte kataloogist: katusel, maal või katusesse integreerituna. Ja kui päike ja aku töötavad koos, läheb oma toodang omaks tarbeks, ülejääk salvestisse ja sama aku reserviturule.
-      - main: Tarnime ka kogu süsteemi: päikeseelektri, energiasalvesti ja juhtimise ühe projekteeritud tervikuna. Siis lahendatakse eelkirjeldatud küsimused projekteerimislaual — mitte tagantjärele selgitades.
+- [ ] `p` **uusi** — Lahenduse valime teie tarbimisprofiili, kinnistu ja soovide järgi, mitte kataloogist: katusel, maal või katusesse integreerituna. Ja kui päike ja aku töötavad koos, läheb oma toodang omaks tarbeks, ülejääk salvestisse ja sama aku reserviturule. Paigaldust juhib meie paigaldusjuht. Elektritööd ja käikulaskmise teeb registreeritud elektritööde partner.
       - **Korjaus:**
 - [ ] `b` **uusi** — Tarbimine
       - **Korjaus:**
-- [ ] `b` **muutettu** — Päike + aku
-      - main: Päikeseelekter + aku
+- [ ] `b` **uusi** — Päike + aku
       - **Korjaus:**
 - [ ] `b` **uusi** — Iga katus
       - **Korjaus:**
 
-### #rev-paikeseelekter-2
+### #lahendused
+> Lähde tälle osiolle: Hindamine kontrollib iga varianti teie objekti tunnitarbimise, katuse ja liitumise järgi.
 
-- [ ] `p` **muutettu** — Päikeseelekter tasub end kõige paremini ära siis, kui see ise ära kasutatakse. Mõõdame süsteemi teie tarbimisprofiili järgi, et võimalikult vähe läheks odavalt võrku.
-      - main: Koos teevad need teie kinnistust tootja, kes kasutab oma elektrit siis, kui see on kõige väärtuslikum. Tarnime kogu süsteemi algusest peale — või täiendame seda, mis teil juba on.
+- [ ] `h2` **uusi** — Viis võimalust päikeseelektriks. Üks mõõtmise põhimõte.
       - **Korjaus:**
-- [ ] `h3` **muutettu** — Päike ja aku koos
-      - main: Päike toodab.Aku ajastab.
+- [ ] `p` **uusi** — Lahendus valitakse selle järgi, mis kinnistul on: korras katus, uuendamist vajav katus, õu või parkla, või juba olemasolev päikesejaam. Mõõtmine lähtub alati tarbimisest, et võimalikult suur osa toodangust läheks oma kasutusse.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Aku nihutab keskpäevase ülejäägi õhtusse, lõikab tipud ja teenib reserviturul. Kui päikeseelekter on juba olemas, teeb aku sellest parema investeeringu.
-      - main: Liitumispunkti paigaldatav mõõteseade jälgib võimsuse suunda ja suurust reaalajas ning edastab info kohalikule kontrollerile. Kui tootmine ähvardab võrku toita üle lubatu, piirab kontroller seda. Kui side katkeb, läheb süsteem ohutusse olekusse, mitte kontrollimatusse — ja just seda tahab võrguettevõte näha, enne kui ta midagi heaks kiidab.
+- [ ] `h3` **uusi** — Milline lahendus teile sobib
       - **Korjaus:**
-- [ ] `h3` **uusi** — Iga katuse ja pinna jaoks
+- [ ] `th` **uusi** — Lahendus
       - **Korjaus:**
-- [ ] `p` **muutettu** — Lamekatus, kivikatus, plekk- ja profiilplekk-katus, katusesse integreeritud päikesekatus või maapaigaldus. Lahendus valitakse katuse, esteetika ja kinnistu nõuete järgi – ka muinsuskaitse all oleval hoonel.
-      - main: Neli tehnilist küsimust lahendatakse kirjalikult enne pakkumist. Seejärel on aku lisamine kontrollitud elektritehniline töö — küsimused ja lahendus allpool.
+- [ ] `th` **uusi** — Sobib, kui
+      - **Korjaus:**
+- [ ] `th` **uusi** — Mida see teeb
+      - **Korjaus:**
+- [ ] `th` **uusi** — Hindamine kontrollib
+      - **Korjaus:**
+- [ ] `td` **uusi** — Päikesejaam katusele
+      - **Korjaus:**
+- [ ] `td` **uusi** — Katus on korras ja peab veel aastakümneid
+      - **Korjaus:**
+- [ ] `td` **uusi** — Toodab päevast elektrit oma tarbeks ja vähendab ostetud elektrit
+      - **Korjaus:**
+- [ ] `td` **uusi** — Tarbimisprofiili, katuse seisukorda ja kandevõimet, varjusid ja liitumist
+      - **Korjaus:**
+- [ ] `td` **uusi** — Päikesekatus
+      - **Korjaus:**
+- [ ] `td` **uusi** — Katus tuleb nagunii uuendada
+      - **Korjaus:**
+- [ ] `td` **uusi** — Katusekate ja paneel on üks konstruktsioon: uus katus ja jaam ühe investeeringuga
+      - **Korjaus:**
+- [ ] `td` **uusi** — Katuse konstruktsiooni, kallet ja suunda, lube ja hoone välimust
+      - **Korjaus:**
+- [ ] `td` **uusi** — Maapaigaldus ja päikesevarikatus
+      - **Korjaus:**
+- [ ] `td` **uusi** — Õuel, põllul või parklas on ruumi
+      - **Korjaus:**
+- [ ] `td` **uusi** — Toodab ilma katuseta; varikatus kaitseb ühtlasi sõidukeid ja annab koha laadijatele
+      - **Korjaus:**
+- [ ] `td` **uusi** — Pinnast ja vundamente, kaablitrassi liitumiseni, planeeringut ja lube
+      - **Korjaus:**
+- [ ] `td` **uusi** — Päikeseelekter ja salvesti
+      - **Korjaus:**
+- [ ] `td` **uusi** — Tarbimine on suurem õhtul või tipud tõstavad arvet
+      - **Korjaus:**
+- [ ] `td` **uusi** — Nihutab keskpäeva ülejäägi õhtusse, lõikab tippe ja vabad tunnid pakutakse reserviturule
+      - **Korjaus:**
+- [ ] `td` **uusi** — Tunnitarbimist ja toodangut kõrvuti, võimsustasu ja liitumise vaba võimsust
+      - **Korjaus:**
+- [ ] `td` **uusi** — Salvesti olemasolevale jaamale
+      - **Korjaus:**
+- [ ] `td` **uusi** — Päikesejaam on olemas ja ülejääk müüakse odavalt võrku
+      - **Korjaus:**
+- [ ] `td` **uusi** — Teeb juba makstud jaamast parema investeeringu: rohkem omatarbimist, tipud maha, reservid
+      - **Korjaus:**
+- [ ] `td` **uusi** — Inverterite ühilduvust, võrku andmise piirangut ja juhtimise järjekorda
+      - **Korjaus:**
+
+### #toimimine
+
+- [ ] `h2` **uusi** — Kuidas päikeseelekter töötab ettevõtte liitumises.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Päikesejaam toodab kõige rohkem suvepäeva keskel. Investeeringu tasuvuse otsustab see, kui suur osa toodangust kasutatakse ise ära ja see sõltub teie objekti tarbimisprofiilist, mitte katuse suurusest. Sellepärast algab dimensioneerimine 12 kuu tunnitarbimisest.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Toodang ja tarbimine tunniti
+      - **Korjaus:**
+- [ ] `p` **uusi** — Paneme teie objekti tunnitarbimise ja jaama tunnitoodangu terve aasta ulatuses kõrvuti. Sellest on näha, kui suur osa toodangust läheb otse omatarbeks, kui palju jääb üle ja millise jaama suuruse juures on omatarve kõige suurem.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Omatarve enne müüki
+      - **Korjaus:**
+- [ ] `p` **uusi** — Ostetud kilovatt-tunnis maksate lisaks energiale võrgutasu, aktsiisi ja taastuvenergia tasu. Müüdud ülejäägi eest saate ainult energia hinna, sageli just neil tundidel, kui see on kõige odavam. Ise ära kasutatud kilovatt-tund on seega väärtuslikum kui müüdud ja dimensioneerimine sihib omatarbele.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Suund, kalle, varjud ja inverter
+      - **Korjaus:**
+- [ ] `p` **uusi** — Lõunasse suunatud katusepind toodab kõige rohkem keskpäeval. Ida-lääne paigaldus lamekatusel jaotab toodangu hommikusse ja õhtusse ning sobib sageli paremini ettevõtte tarbimisega. Varjud, lumekoormus ja inverteri võimsus paneelide võimsuse suhtes vaadatakse hindamises läbi.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Võrguettevõtja, load ja liitumine
+      - **Korjaus:**
+- [ ] `p` **uusi** — Tootmise liitumine lepitakse võrguettevõtjaga kokku enne paigaldust ja ehitusteatise või -loa vajadus sõltub hoonest ja võimsusest. Me ajame liitumis- ja loaasjad ning dokumentatsiooni korda ja kontrollime samal ajal, mida teie liitumine lubab, kui hiljem lisandub salvesti või laadijad.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kirjalikus hinnangus on jaama suurus ja toodangu hinnang tunniti, omatarbe osa ja ülejääk, ostetud elektri vähenemine teie hindadega ja kõrval sama arvutus salvestiga. Iga arvu kõrval on allikas ja periood. Kui päikeseelekter teie objektil ära ei tasu, ütleb hinnang seda.
+      - **Korjaus:**
+
+### #paikesekatus
+
+- [ ] `h2` **uusi** — Katus, mis toodab.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Katus on hoone kõige olulisem konstruktsioon ja selle uuendamine on suur investeering niikuinii. Kui katus uuendatakse, teeb katusesse integreeritud päikesekatus kaks asja korraga: uue katuse ja jaama.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Kate ja paneel ühena
+      - **Korjaus:**
+- [ ] `p` **uusi** — Paneelid on osa kattest, mitte eraldi konstruktsioon katuse peal. Katus ja jaam projekteeritakse ja ehitatakse ühena ning veekindlus on katusetöö vastutus algusest lõpuni.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Hallile, farmile ja ärihoonele
+      - **Korjaus:**
+- [ ] `p` **uusi** — Suured ühtlased katusepinnad on päikesekatuse loomulik koht. Dimensioneerimine tehakse tarbimise, mitte katuse suuruse järgi.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Kui välimus loeb
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kui hoone välimus on oluline, sobitab katusesse integreeritud lahendus päikeseelektri hoone ilmega. Muinsuskaitsealusel hoonel lepitakse lahendus kokku muinsuskaitsega.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kui katus tuleb lähiaastatel nagunii uuendada, võrreldakse päikesekatuse hinda uue katusega, mitte ainult jaamaga: kate makstakse niikuinii ja jaama osa investeeringust jääb väiksemaks kui eraldi paigaldusel valmis katuse peale. Hindamises vaadatakse läbi katusekonstruktsiooni kandevõime, kalle ja suund, lume- ja tuulekoormus, tuleohutus ja loa vajadus.
+      - **Korjaus:**
+
+### #paigaldus
+
+- [ ] `h2` **uusi** — Katuse- ja elektritöö sama juhtimise all.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Päikeseelektri paigaldus on katusetöö ja elektritöö samal objektil. Paigaldame päikesejaamu valmis katusele, maale ja varikatusele ning ehitame katusesse integreeritud päikesekatuseid. Paigaldust juhib meie paigaldusjuht, elektritööd ja käikulaskmise teeb registreeritud elektritööde partner. Üks juhtimine, üks ajakava ja üks dokumentatsioon.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Katusetöö
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kinnitused, läbiviigud ja päikesekatuse kate tehakse katusetöö reeglite järgi, et katus jääks jaama all veekindlaks. Paigaldust juhib meie paigaldusjuht ja katuse- ning elektritöö tehakse sama juhtimise all samal objektil.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Elektritöö ja kasutuselevõtt
+      - **Korjaus:**
+- [ ] `p` **uusi** — Elektritööd teeb registreeritud elektritööde partner: alalisvoolupoole kaabeldus, inverterid, ühendus peakilbiga, kaitse ja mõõtmine. Kasutuselevõtul süsteem kontrollitakse ja mõõdetakse üle ning dokumendid antakse teile üle.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Võrguettevõtja ja ametiasutused
+      - **Korjaus:**
+- [ ] `p` **uusi** — Tootmise liitumistaotlus võrguettevõtjale, ehitusteatis või -luba omavalitsusega ja kasutuselevõtu dokumentatsioon käivad meie kaudu. Teie allkirjastate, muu ajame me korda.
       - **Korjaus:**
 - [ ] `h3` **uusi** — Kogemus, mis on juba tehtud
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Meie meeskond on päikesesüsteeme ehitanud aastaid: koduinstallatsioonidest ja muinsuskaitsealuse maja päikesekatusest ettevõtete, farmide ja kuni 400 kW põldpaigaldusteni. Sama meeskond on valmis suuremaks – megavattides projektid on plaanis ja jõukohased.
-      - main: Komponendid on standardtooted, saadaval väljakujunenud tarnijatelt lühikeste tarneaegadega. Paigalduse teeb alati sertifitseeritud elektritööde ettevõte.
+- [ ] ⚠ `p` **uusi** — Meie meeskond on päikesesüsteeme ehitanud aastaid: koduinstallatsioonidest ja muinsuskaitsealuse maja päikesekatusest ettevõtete, farmide ja kuni 400 kW põldpaigaldusteni. Sama meeskond on valmis suuremaks – megavattides projektid on plaanis ja jõukohased.
       - ⚠ lähdettä ei löytynyt automaattisesti (ei osion lähderiviä, ei "Lähde:"-mainintaa tekstissä) — varmista näkyvä lähde ennen julkaisua
       - **Korjaus:**
+- [ ] `h2` **uusi** — Nii paigaldus edeneb.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Neli etappi. Teie osa on andmed, otsus ja allkiri; ülejäänu käib meie kaudu.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Hindamine ja kirjalik hinnang
+      - **Korjaus:**
+- [ ] `p` **uusi** — Tunnitarbimine Eleringi e-teenindusest teie volitusega, üks arve ja peakilbi joonis. Me kirjutame hinnangu: jaama suurus, omatarve, ülejääk ja sama arvutus salvestiga.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Objektikülastus ja projekteerimine
+      - **Korjaus:**
+- [ ] `p` **uusi** — Katus, konstruktsioonid, kaablitrass ja kilp mõõdetakse kohapeal üle, võrguettevõtja liitumistaotlus ja load aetakse korda. Hind kinnitatakse.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Katuse- ja elektripaigaldus
+      - **Korjaus:**
+- [ ] `p` **uusi** — Katusetöö ja elektritöö samal objektil, ajakava teie tegevuse järgi. Päikesekatuse puhul ehitatakse katus ja jaam ühe tööna.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Kasutuselevõtt ja üleandmine
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kontroll, mõõtmised, dokumendid ja seirevaade. Kui tervikusse kuulub salvesti, ühendatakse see samas etapis agregaatoriga.
+      - **Korjaus:**
 
-### #rev-paikeseelekter-3
+### #aku
+> Lähde tälle osiolle: Allikas reservituru toimimise kohta: Elering, sagedusreservide turu kokkuvõtted
+
+- [ ] `h2` **uusi** — Päike ja aku koos.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Aku teeb päikesejaamast parema investeeringu ja päikesejaam ei ole aku eeldus: liitumisest piisab. Kui mõlemad on liitumise taga, teevad nad samast seadmest kolm asja.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Keskpäevane ülejääk õhtusse
+      - **Korjaus:**
+- [ ] `p` **uusi** — See, mida tarbimine keskpäeval ära ei kasuta, laetakse akusse ja kasutatakse õhtul oma tarbimistippude ajal, selle asemel et müüa see kõige odavamatel tundidel.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Tipud maha samast akust
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kui võrguettevõtja võtab võimsustasu, lõikab aku kuu suurimat võimsustippu. Sääst arvutatakse hinnangus eraldi reale.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Vabad tunnid Eleringi reservidesse
+      - **Korjaus:**
+- [ ] `p` **uusi** — Tundidel, kui akut omatarbeks ei vajata, pakub agregaator seda Eleringi reserviturule. Reservitulu modelleeritakse tooteti tegelikest tunnihindadest ja agregaatori tasu on eraldi real. Kuidas agregaator töötab
+      - **Korjaus:**
+
+### #rev-paikeseelekter-7
 
 - [ ] `h2` **uusi** — Päike, aku või mõlemad?
       - **Korjaus:**
@@ -619,21 +458,15 @@ Vastine mainissa: `/et/paike-ja-aku/`
 ## Reserviturg — `/et/reserviturg/`
 Vastine mainissa: `/et/reserviturud/`
 
-### (sivu)
-
-- [ ] `a` **uusi** — Küsi tasuta hindamist
-      - **Korjaus:**
-
 ### #rev-reserviturg-1
 > Lähde tälle osiolle: Allikad: Elering, sagedusreservide turu kokkuvõte · juuli 2026, tabel 2; Elering · 2026
 
 - [ ] `h1` **uusi** — Reserviturg: tööstuslik aku teenib juba täna.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Suurtarbijale ei ole aku tuleviku projekt, vaid tänane tuluallikas. Elering maksab valmisoleku eest, juhtimine on automaatne ja liitumine, mida aku vajab, on teil juba olemas.
-      - main: Number, mille meie anname, peab taluma kontrolli ka viiendal aastal. Seepärast ehitame arvutuse säästudele ja esitame reservitulu lisana: agregaatori enda hinnanguna, mille kõrval on stsenaarium sellest, mis juhtub, kui hinnad poolituvad.
+- [ ] `p` **uusi** — Suurtarbijale ei ole aku tuleviku projekt, vaid tänane tuluallikas. Elering maksab valmisoleku eest, juhtimine on automaatne ja liitumine, mida aku vajab, on teil juba olemas.
       - **Korjaus:**
 - [ ] ⚠ `a` **uusi** — Meie agregaatoripartner Soleron Energy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); VENI Energia poistettu 21.10.2026
       - **Korjaus:**
 - [ ] ⚠ `b` **uusi** — 76 · 491 / 579 MW
       - **Korjaus:**
@@ -645,11 +478,9 @@ Vastine mainissa: `/et/reserviturud/`
 
 - [ ] `h2` **uusi** — Reserviturg, lihtsalt seletatuna.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Elektrivõrk peab olema igal sekundil tasakaalus. Kui tootmine ja tarbimine lahku lähevad, ostab Elering turult kiiret abi ja maksab selle eest, et abi on olemas, iga päev järgmise päeva jaoks. Akud on selle töö kiireimad tegijad: nad laevad ülejäägi endasse ja annavad selle puudujääki sekunditega. Ühe tehase aku pääseb turule agregaatori kaudu, kes kogub väiksemad akud üheks vähemalt ühemegavatiseks pakkumiseks.
-      - main: Vajadus kasvab. Hind ühiku kohta surutakse lähiaastatel kokku. Pärast Venemaa sagedusalast väljumist vastutab Eesti ise oma süsteemi tasakaalu eest — Elering hangib sagedusreserve kasvavas mahus ja alates 2026. aastast maksab selle eest iga Eesti elektritarbija oma arvel. See vajadus on struktuurne ja kasvab. Samal ajal tuleb mõlemale turule suuremahuline salvestus kiiremini, kui turg süveneb, ja see surub ühikuhinda. See on faas, mitte languse lugu: pärast tasakaalustumist premeerib turg efektiivseid varasid — aga tänaseid hindu me homsesse arvutusse ei kirjuta. Sellepärast ehitame tasuvuse säästudele ja näitame reservitulu stsenaariumidena, ka poolitunud hindadega. Kasvav paindlikkusturg jääb teie objektile lisaväärtuseks, mille te omandate — mitte eelduseks, millest projekt sõltub.
+- [ ] `p` **uusi** — Elektrivõrk peab olema igal sekundil tasakaalus. Kui tootmine ja tarbimine lahku lähevad, ostab Elering turult kiiret abi ja maksab selle eest, et abi on olemas, iga päev järgmise päeva jaoks. Akud on selle töö kiireimad tegijad: nad laevad ülejäägi endasse ja annavad selle puudujääki sekunditega. Ühe tehase aku pääseb turule agregaatori kaudu, kes kogub väiksemad akud üheks vähemalt ühemegavatiseks pakkumiseks.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Aku tasakaalustab, Elering maksab valmisoleku eest. Sama juhtub teie objektil sadu kordi päevas, automaatselt.
-      - main: Number, mille meie anname, peab taluma kontrolli ka viiendal aastal. Seepärast ehitame arvutuse säästudele ja esitame reservitulu lisana: agregaatori enda hinnanguna, mille kõrval on stsenaarium sellest, mis juhtub, kui hinnad poolituvad.
+- [ ] `p` **uusi** — Aku tasakaalustab, Elering maksab valmisoleku eest. Sama juhtub teie objektil pidevalt, automaatselt.
       - **Korjaus:**
 - [ ] `h3` **uusi** — Kolm reservi, mida Elering ostab
       - **Korjaus:**
@@ -661,8 +492,7 @@ Vastine mainissa: `/et/reserviturud/`
       - **Korjaus:**
 - [ ] `th` **uusi** — Kuidas aku teenib
       - **Korjaus:**
-- [ ] `td` **muutettu** — FCR
-      - main: FCR-N
+- [ ] `td` **uusi** — FCR
       - **Korjaus:**
 - [ ] `td` **uusi** — Hoiab sagedust igal sekundil 50 Hz juures, esimene reageerija
       - **Korjaus:**
@@ -670,11 +500,15 @@ Vastine mainissa: `/et/reserviturud/`
       - **Korjaus:**
 - [ ] `td` **uusi** — Valmisolekutasu iga tunni eest, mil aku on turul
       - **Korjaus:**
+- [ ] `td` **uusi** — aFRR
+      - **Korjaus:**
 - [ ] `td` **uusi** — Taastab tasakaalu automaatselt pärast kõrvalekallet
       - **Korjaus:**
 - [ ] `td` **uusi** — Minutitega
       - **Korjaus:**
 - [ ] `td` **uusi** — Valmisolekutasu ja lisaks tasu aktiveeritud energia eest
+      - **Korjaus:**
+- [ ] `td` **uusi** — mFRR
       - **Korjaus:**
 - [ ] `td` **uusi** — Katab suuremad ja pikemad kõrvalekalded, käsitsi käivitatav
       - **Korjaus:**
@@ -691,13 +525,11 @@ Vastine mainissa: `/et/reserviturud/`
 
 - [ ] `h2` **uusi** — Neli põhjust, miks aku tasub ära nüüd, mitte järgmisel aastal.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Kõik neli põhinevad Eleringi, Kliimaministeeriumi ja Fingridi enda arvudel, mitte meie hinnangutel. Allikad on iga punkti all.
-      - main: Reservihinnad kõiguvad tundide kaupa ja kujunevad turul. Keegi ei tea ette, millised need on järgmisel aastal.
+- [ ] `p` **uusi** — Kõik neli põhinevad Eleringi, Kliimaministeeriumi ja Fingridi enda arvudel, mitte meie hinnangutel. Allikad on iga punkti all.
       - **Korjaus:**
 - [ ] `h3` **uusi** — Uus tuluallikas: Elering maksab teile
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Aku muudab kuluartikli tuluallikaks. Alates 1. jaanuarist 2026 maksab iga tarbija arvel tasakaalustamisvõimsuse kulu, 3,73 €/MWh 2026 ja 2,97 €/MWh alates 2027, millega Elering ostab sagedusreservid kiiretelt elektrijaamadelt ja akudelt. Kes aku omab, on sellel arvel ka teisel pool: tarbijana maksja, reservi pakkujana saaja.
-      - main: Vajadus kasvab. Hind ühiku kohta surutakse lähiaastatel kokku. Pärast Venemaa sagedusalast väljumist vastutab Eesti ise oma süsteemi tasakaalu eest — Elering hangib sagedusreserve kasvavas mahus ja alates 2026. aastast maksab selle eest iga Eesti elektritarbija oma arvel. See vajadus on struktuurne ja kasvab. Samal ajal tuleb mõlemale turule suuremahuline salvestus kiiremini, kui turg süveneb, ja see surub ühikuhinda. See on faas, mitte languse lugu: pärast tasakaalustumist premeerib turg efektiivseid varasid — aga tänaseid hindu me homsesse arvutusse ei kirjuta. Sellepärast ehitame tasuvuse säästudele ja näitame reservitulu stsenaariumidena, ka poolitunud hindadega. Kasvav paindlikkusturg jääb teie objektile lisaväärtuseks, mille te omandate — mitte eelduseks, millest projekt sõltub.
+- [ ] ⚠ `p` **uusi** — Aku muudab kuluartikli tuluallikaks. Alates 1. jaanuarist 2026 maksab iga tarbija arvel tasakaalustamisvõimsuse kulu, 3,73 €/MWh 2026 ja 2,97 €/MWh alates 2027, millega Elering ostab sagedusreservid kiiretelt elektrijaamadelt ja akudelt. Kes aku omab, on sellel arvel ka teisel pool: tarbijana maksja, reservi pakkujana saaja.
       - **Korjaus:**
 - [ ] `h3` **uusi** — Tõestatud ja turvaline: akud hoiavad võrku juba praegu
       - **Korjaus:**
@@ -706,17 +538,14 @@ Vastine mainissa: `/et/reserviturud/`
       - **Korjaus:**
 - [ ] ⚠ `h3` **uusi** — Võrgutasu netotarbimiselt, ja Elering ootab 2035. aastaks 1 500 MW salvesteid
       - **Korjaus:**
-- [ ] `p` **muutettu** — Salvesti võrgutasu arvestatakse 2026. aastast kalendrikuu netotarbimiselt, ja Eleringi stsenaariumis kasvab salvestite juhitav võimsus 258 megavatilt (2028) 600 megavatini (2030) ja 1 500 megavatini (2035). See võimsus tuleb kellegi tehase, kuivati ja hotelli juurde, ja teie liitumine on juba olemas.
-      - main: Vajadus kasvab. Hind ühiku kohta surutakse lähiaastatel kokku. Pärast Venemaa sagedusalast väljumist vastutab Eesti ise oma süsteemi tasakaalu eest — Elering hangib sagedusreserve kasvavas mahus ja alates 2026. aastast maksab selle eest iga Eesti elektritarbija oma arvel. See vajadus on struktuurne ja kasvab. Samal ajal tuleb mõlemale turule suuremahuline salvestus kiiremini, kui turg süveneb, ja see surub ühikuhinda. See on faas, mitte languse lugu: pärast tasakaalustumist premeerib turg efektiivseid varasid — aga tänaseid hindu me homsesse arvutusse ei kirjuta. Sellepärast ehitame tasuvuse säästudele ja näitame reservitulu stsenaariumidena, ka poolitunud hindadega. Kasvav paindlikkusturg jääb teie objektile lisaväärtuseks, mille te omandate — mitte eelduseks, millest projekt sõltub.
+- [ ] `p` **uusi** — Salvesti võrgutasu arvestatakse 2026. aastast kalendrikuu netotarbimiselt, ja Eleringi stsenaariumis kasvab salvestite juhitav võimsus 258 megavatilt (2028) 600 megavatini (2030) ja 1 500 megavatini (2035). See võimsus tuleb kellegi tehase, kuivati ja hotelli juurde, ja teie liitumine on juba olemas.
       - **Korjaus:**
 - [ ] `h3` **uusi** — Pikaajaline nõudlus: Eesti hoiab oma sagedust nüüd ise
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — 8. veebruaril 2025 lahkusid Balti riigid Venemaa võrgust lõplikult ja sünkroniseerusid 9. veebruaril 2025 Mandri-Euroopa võrguga. Sellest hetkest ostab Elering sagedusreserve ise. Juulis 2026 oli Eestis reservitoodete pakkumiseks kvalifitseerunud 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i (üles / alla). Mida rohkem tuult ja päikest võrku tuleb, seda rohkem reservi vajatakse. See nõudlus ei ole mööduv.
-      - main: Veebruaris 2025 eraldusid Balti riigid Venemaa elektrivõrgust ja sünkroniseerusid Mandri-Euroopaga. Soome on osa Põhjamaade süsteemist. Neid kahte ühendavad kaablid Soome lahe all — kaablid, mida on kahjustatud juba rohkem kui korra.
+- [ ] ⚠ `p` **uusi** — 8. veebruaril 2025 lahkusid Balti riigid Venemaa võrgust lõplikult ja sünkroniseerusid 9. veebruaril 2025 Mandri-Euroopa võrguga. Sellest hetkest ostab Elering sagedusreserve ise. Juulis 2026 oli Eestis reservitoodete pakkumiseks kvalifitseerunud 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i (üles / alla). Mida rohkem tuult ja päikest võrku tuleb, seda rohkem reservi vajatakse. See nõudlus ei ole mööduv.
       - ⚠ lukukorjaus: reservien osuudet ovat todennettua KAPASITEETTIA, ei tuotantoa (Fingrid 10.2.2025; vartijat reservi-*)
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Näiteks: 1 MW / 2 MWh salvesti olemasoleva tööstushoone liitumise taga pääseb turule kuudega, osaleb agregaatori kaudu Eleringi reservides ja lõikab samal ajal objekti enda tarbimistipud. Sama loogika töötab 125 kW üksusest mitme megavatini: õige suurus dimensioneeritakse liitumise ja tarbimisprofiili järgi.
-      - main: Vajadus kasvab. Hind ühiku kohta surutakse lähiaastatel kokku. Pärast Venemaa sagedusalast väljumist vastutab Eesti ise oma süsteemi tasakaalu eest — Elering hangib sagedusreserve kasvavas mahus ja alates 2026. aastast maksab selle eest iga Eesti elektritarbija oma arvel. See vajadus on struktuurne ja kasvab. Samal ajal tuleb mõlemale turule suuremahuline salvestus kiiremini, kui turg süveneb, ja see surub ühikuhinda. See on faas, mitte languse lugu: pärast tasakaalustumist premeerib turg efektiivseid varasid — aga tänaseid hindu me homsesse arvutusse ei kirjuta. Sellepärast ehitame tasuvuse säästudele ja näitame reservitulu stsenaariumidena, ka poolitunud hindadega. Kasvav paindlikkusturg jääb teie objektile lisaväärtuseks, mille te omandate — mitte eelduseks, millest projekt sõltub.
+- [ ] ⚠ `p` **uusi** — Näiteks: 1 MW / 2 MWh salvesti olemasoleva tööstushoone liitumise taga pääseb turule kuudega, osaleb agregaatori kaudu Eleringi reservides ja lõikab samal ajal objekti enda tarbimistipud. Sama loogika töötab 125 kW üksusest mitme megavatini: õige suurus dimensioneeritakse liitumise ja tarbimisprofiili järgi.
       - **Korjaus:**
 
 ### #tulu
@@ -726,29 +555,24 @@ Vastine mainissa: `/et/reserviturud/`
 - [ ] ⚠ `li` **uusi** — Inverteri võimsus ja aku maht on määravad. Tulu hinnatakse aku inverteri võimsuse (MW) ja mahu (MWh) järgi. Tüüpiline suhe on 1:2, näiteks 1 MW / 2 MWh: võimsus ütleb, kui palju reservi saate pakkuda, maht, kui kaua.
       - ⚠ lähdettä ei löytynyt automaattisesti (ei osion lähderiviä, ei "Lähde:"-mainintaa tekstissä) — varmista näkyvä lähde ennen julkaisua
       - **Korjaus:**
-- [ ] `li` **muutettu** — Mida täielikumalt agregaator juhib, seda rohkem tulu. Kui agregaator juhib akut tervikuna, saab ta viia iga tunni kõige tasuvamasse reservi ja võtta turust maksimumi. Osaline juhtimine teenib vähem.
-      - main: Number, mille meie anname, peab taluma kontrolli ka viiendal aastal. Seepärast ehitame arvutuse säästudele ja esitame reservitulu lisana: agregaatori enda hinnanguna, mille kõrval on stsenaarium sellest, mis juhtub, kui hinnad poolituvad.
+- [ ] `li` **uusi** — Mida täielikumalt agregaator juhib, seda rohkem tulu. Kui agregaator juhib akut tervikuna, saab ta viia iga tunni kõige tasuvamasse reservi ja võtta turust maksimumi. Osaline juhtimine teenib vähem.
       - **Korjaus:**
-- [ ] `li` **muutettu** — Strateegia tehakse teie huvides. Kui müüte oma päikeseelektrit, vajate akut oma tippude jaoks või varutoiteks, ehitatakse strateegia selle ümber. Agregaator optimeerib, aga teie tingimustel ja teie kasuks.
-      - main: Number, mille meie anname, peab taluma kontrolli ka viiendal aastal. Seepärast ehitame arvutuse säästudele ja esitame reservitulu lisana: agregaatori enda hinnanguna, mille kõrval on stsenaarium sellest, mis juhtub, kui hinnad poolituvad.
+- [ ] `li` **uusi** — Strateegia tehakse teie huvides. Kui müüte oma päikeseelektrit, vajate akut oma tippude jaoks või varutoiteks, ehitatakse strateegia selle ümber. Agregaator optimeerib, aga teie tingimustel ja teie kasuks.
       - **Korjaus:**
-- [ ] ⚠ `li` **muutettu** — Eestis hindame iga objekti personaalselt. Eesti reserviturg on Soome omast noorem ja meie agregaatoripartner Soleron Energy töötab iga objektiga eraldi: valmis tuluesitlust siin ei ole, on turu seis ja teie objekti arvud. Hinnangu teeme koos nendega, teie aku võimsuse ja mahu järgi, ning numbrid tulevad kirjalikus hinnangus kolme stsenaariumina, mitte reklaamis. Soleroni enda avaldatud ülevaated turu kohta on avalikud ja me viitame neile.
-      - main: Vajadus kasvab. Hind ühiku kohta surutakse lähiaastatel kokku. Pärast Venemaa sagedusalast väljumist vastutab Eesti ise oma süsteemi tasakaalu eest — Elering hangib sagedusreserve kasvavas mahus ja alates 2026. aastast maksab selle eest iga Eesti elektritarbija oma arvel. See vajadus on struktuurne ja kasvab. Samal ajal tuleb mõlemale turule suuremahuline salvestus kiiremini, kui turg süveneb, ja see surub ühikuhinda. See on faas, mitte languse lugu: pärast tasakaalustumist premeerib turg efektiivseid varasid — aga tänaseid hindu me homsesse arvutusse ei kirjuta. Sellepärast ehitame tasuvuse säästudele ja näitame reservitulu stsenaariumidena, ka poolitunud hindadega. Kasvav paindlikkusturg jääb teie objektile lisaväärtuseks, mille te omandate — mitte eelduseks, millest projekt sõltub.
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
+- [ ] ⚠ `li` **uusi** — Eestis hindame iga objekti personaalselt. Eesti reserviturg on Soome omast noorem ja meie agregaatoripartner Soleron Energy töötab iga objektiga eraldi: valmis tuluesitlust siin ei ole, on turu seis ja teie objekti arvud. Hinnangu teeme koos nendega, teie aku võimsuse ja mahu järgi, ning numbrid tulevad kirjalikus hinnangus toodete kaupa, mitte reklaamis. Soleroni enda avaldatud ülevaated turu kohta on avalikud ja me viitame neile.
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); VENI Energia poistettu 21.10.2026
       - **Korjaus:**
 - [ ] ⚠ `a` **uusi** — Kuidas Soleron Energy töötab
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); VENI Energia poistettu 21.10.2026
       - **Korjaus:**
 
 ### #ausalt
 
 - [ ] `h2` **uusi** — Ausalt reservihindadest.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Hinnad kõiguvad. Reservi hind kujuneb turul iga päev, ja turg, kuhu tuleb juurde pakkujaid, ei püsi paigal. Seepärast ei luba me numbrit, mida keegi ei tea. Meie hinnang põhineb sellel, mida Elering tegelikult hangib ja mis on tulemas, ja me näitame seda kolme stsenaariumina, kirjalikult.
-      - main: Number, mille meie anname, peab taluma kontrolli ka viiendal aastal. Seepärast ehitame arvutuse säästudele ja esitame reservitulu lisana: agregaatori enda hinnanguna, mille kõrval on stsenaarium sellest, mis juhtub, kui hinnad poolituvad.
+- [ ] `p` **uusi** — Hinnad kõiguvad. Reservi hind kujuneb turul iga päev, ja turg, kuhu tuleb juurde pakkujaid, ei püsi paigal. Seepärast ei luba me numbrit, mida keegi ei tea. Meie hinnang põhineb sellel, mida Elering tegelikult hangib ja mis on tulemas, ja me näitame tulevikku vahemikuna, kirjalikult.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Teie ei pea turgu jälgima. Agregaatori automaatne juhtimine viib aku iga tund kõige tasuvamasse reservi ja vahetab toodet, kui hinnad liiguvad. Teie näete tulemust seirevaatest. See ongi kogu mõte: isejuhtiv aku.
-      - main: Number, mille meie anname, peab taluma kontrolli ka viiendal aastal. Seepärast ehitame arvutuse säästudele ja esitame reservitulu lisana: agregaatori enda hinnanguna, mille kõrval on stsenaarium sellest, mis juhtub, kui hinnad poolituvad.
+- [ ] `p` **uusi** — Teie ei pea turgu jälgima. Agregaatori automaatne juhtimine viib aku iga tund kõige tasuvamasse reservi ja vahetab toodet, kui hinnad liiguvad. Teie näete tulemust seirevaatest. See ongi kogu mõte: isejuhtiv aku.
       - **Korjaus:**
 - [ ] `blockquote` **uusi** — „Me ei müü hirmu ega lubadusi. Me paneme teie enda numbrid lauale, ja otsuse teete teie.“
       - **Korjaus:**
@@ -757,10 +581,9 @@ Vastine mainissa: `/et/reserviturud/`
 - [ ] `b` **uusi** — Meie ehitame süsteemi, agregaatori tarkvara teeb kauplemise, ja teie saate optimeeritud energiakulu.
       - **Korjaus:**
 - [ ] ⚠ `h3` **uusi** — Soleron Energy, meie agregaatoripartner
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); VENI Energia poistettu 21.10.2026
       - **Korjaus:**
-- [ ] `p` **muutettu** — Liidab teie objekti Eleringi reservituruga, juhib akut automaatselt ja maksab tulu välja. Eestis hindab Soleron iga objekti personaalselt, ja meie teeme selle koos nendega.
-      - main: Reservihinnang on kõige usaldusväärsem agregaatori enda omana — selle tegija omana, kes objekti lõpuks kvalifitseerib ja tulu välja maksab.
+- [ ] `p` **uusi** — Liidab teie objekti Eleringi reservituruga, juhib akut automaatselt ja maksab tulu välja. Eestis hindab Soleron iga objekti personaalselt, ja meie teeme selle koos nendega.
       - **Korjaus:**
 - [ ] `a` **uusi** — Loe lähemalt
       - **Korjaus:**
@@ -770,33 +593,28 @@ Vastine mainissa: `/et/reserviturud/`
 
 - [ ] `h2` **uusi** — Millesse me usume.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Iga aku, mis siia ehitatakse, on väike samm ühes suunas: energia, mis toodetakse, salvestatakse ja mida juhitakse siinsamas, siinsete ettevõtete käes. Selles me ei ole neutraalsed.
-      - main: Energiasõltumatust ei ehitata deklaratsioonidega. Selle ehitavad ettevõtted, kes paigaldavad aku, sest see teenib end tagasi — üks objekt korraga.
+- [ ] `p` **uusi** — Iga aku, mis siia ehitatakse, on väike samm ühes suunas: energia, mis toodetakse, salvestatakse ja mida juhitakse siinsamas, siinsete ettevõtete käes. Selles me ei ole neutraalsed.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Sellepärast ütleme ka ausalt ei, kui aku teie objektil end ära ei tasu. Vale investeering kahjustab täpselt seda, millesse me usume.
-      - main: Kui projekt toimib ainult siis, kui reservihinnad püsivad, ütleme seda. See tähendab, et projekt on habras, ja seda tasub teada enne allkirja, mitte teisel aastal.
+- [ ] `p` **uusi** — Sellepärast ütleme ka ausalt ei, kui aku teie objektil end ära ei tasu. Vale investeering kahjustab täpselt seda, millesse me usume.
       - **Korjaus:**
 - [ ] `b` **uusi** — Iseseisvus
       - **Korjaus:**
-- [ ] `p` **muutettu** — 8. veebruaril 2025 lahkusid Balti riigid Venemaa sagedusalast ja sünkroniseerusid 9. veebruaril 2025 Mandri-Euroopa võrguga; Eesti hoiab oma võrgu sagedust nüüd ise. Sagedust ei hoia lubadused ega lepingud, vaid füüsiline võimsus, mis seisab siin ja reageerib sekunditega. Iga aku Eesti ettevõtte liitumise taga on tükk seda võimsust, ja see tükk kuulub meile endile.
-      - main: Veebruaris 2025 eraldusid Balti riigid Venemaa elektrivõrgust ja sünkroniseerusid Mandri-Euroopaga. Soome on osa Põhjamaade süsteemist. Neid kahte ühendavad kaablid Soome lahe all — kaablid, mida on kahjustatud juba rohkem kui korra.
+- [ ] `p` **uusi** — 8. veebruaril 2025 lahkusid Balti riigid Venemaa sagedusalast ja sünkroniseerusid 9. veebruaril 2025 Mandri-Euroopa võrguga; Eesti hoiab oma võrgu sagedust nüüd ise. Sagedust ei hoia lubadused ega lepingud, vaid füüsiline võimsus, mis seisab siin ja reageerib sekunditega. Iga aku Eesti ettevõtte liitumise taga on tükk seda võimsust, ja see tükk kuulub meile endile.
       - **Korjaus:**
 - [ ] `b` **uusi** — Jõukus
       - **Korjaus:**
-- [ ] `p` **muutettu** — Alates 2026. aastast maksavad reservide eest kõik tarbijad, iga megavatt-tunni pealt. Selle raha saab see, kes reservi pakub. Kui pakkujad on ainult suured välisfondid, läheb raha piirkonnast ära. Kui pakkujad on Viljandimaa kuivati, Pärnu tehas ja Tartu hotell, jääb see siia ja investeeritakse siia tagasi. Meie eelistus on teada.
-      - main: Vajadus kasvab. Hind ühiku kohta surutakse lähiaastatel kokku. Pärast Venemaa sagedusalast väljumist vastutab Eesti ise oma süsteemi tasakaalu eest — Elering hangib sagedusreserve kasvavas mahus ja alates 2026. aastast maksab selle eest iga Eesti elektritarbija oma arvel. See vajadus on struktuurne ja kasvab. Samal ajal tuleb mõlemale turule suuremahuline salvestus kiiremini, kui turg süveneb, ja see surub ühikuhinda. See on faas, mitte languse lugu: pärast tasakaalustumist premeerib turg efektiivseid varasid — aga tänaseid hindu me homsesse arvutusse ei kirjuta. Sellepärast ehitame tasuvuse säästudele ja näitame reservitulu stsenaariumidena, ka poolitunud hindadega. Kasvav paindlikkusturg jääb teie objektile lisaväärtuseks, mille te omandate — mitte eelduseks, millest projekt sõltub.
+- [ ] `p` **uusi** — Alates 2026. aastast maksavad reservide eest kõik tarbijad, iga megavatt-tunni pealt. Selle raha saab see, kes reservi pakub. Kui pakkujad on ainult suured välisfondid, läheb raha piirkonnast ära. Kui pakkujad on Viljandimaa kuivati, Pärnu tehas ja Tartu hotell, jääb see siia ja investeeritakse siia tagasi. Meie eelistus on teada.
       - **Korjaus:**
 - [ ] `b` **uusi** — Vabadus
       - **Korjaus:**
-- [ ] `p` **muutettu** — Ettevõte, kes suudab oma energiat salvestada ja ajastada, ei ole ühe tunni hinna meelevallas. Riik, kus selliseid ettevõtteid on tuhat, ei ole ühegi tarnija meelevallas. See on sama loogika kahes suurusjärgus, ja see on põhjus, miks see töö on suurem kui üks seade ühe hoone kõrval.
-      - main: Varem hoolitsesid selle eest suured jaamad, mis reguleerisid oma tootmist. Ilmastikust sõltuva tootmise kasvades ja reguleeritava võimsuse kadudes ostab põhivõrguettevõte seda reguleerimisvõimet turult — ka akudelt.
+- [ ] `p` **uusi** — Ettevõte, kes suudab oma energiat salvestada ja ajastada, ei ole ühe tunni hinna meelevallas. Riik, kus selliseid ettevõtteid on tuhat, ei ole ühegi tarnija meelevallas. See on sama loogika kahes suurusjärgus, ja see on põhjus, miks see töö on suurem kui üks seade ühe hoone kõrval.
       - **Korjaus:**
 
 ### #rev-reserviturg-7
 
 - [ ] `h2` **uusi** — Vaatame, mida aku teie liitumise taga teeniks.
       - **Korjaus:**
-- [ ] `p` **uusi** — Tasuta hindamine, kirjalik hinnang kolme stsenaariumina, kohustusteta.
+- [ ] `p` **uusi** — Tasuta hindamine, kirjalik hinnang teie tunniandmetest, kohustusteta.
       - **Korjaus:**
 
 ---
@@ -804,16 +622,11 @@ Vastine mainissa: `/et/reserviturud/`
 ## Soleron Energy — `/et/soleron-energy/`
 **Uusi sivu** — ei vastinetta mainissa.
 
-### (sivu)
-
-- [ ] `a` **uusi** — Küsi tasuta hindamist
-      - **Korjaus:**
-
 ### #rev-soleron-energy-1
 > Lähde tälle osiolle: Allikad: Elering, tasakaalustamisteenuste turg; Elering, FCR tüüptingimused · p 3.2.1.1
 
 - [ ] ⚠ `h1` **uusi** — Agregaator viib teie aku turule. Eestis on see Soleron Energy.
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); VENI Energia poistettu 21.10.2026
       - **Korjaus:**
 - [ ] `p` **uusi** — Eleringi reserviturul ei osale üksik tehas, vaid tasakaalustamisteenuse pakkuja, kes kogub mitu objekti üheks pakkumiseks, läbib Eleringi eelkvalifitseerimise ja juhib akusid automaatselt. Sellel lehel selgitame, mida agregaator teeb, kuidas liitumine käib ja kes on meie partner Eestis.
       - **Korjaus:**
@@ -932,15 +745,12 @@ Vastine mainissa: `/et/reserviturud/`
 
 ### #soleron
 
-- [ ] ⚠ `b` **uusi** — Soleron Energy OÜ
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
-      - **Korjaus:**
 - [ ] `div` **uusi** — Meie agregaatoripartner Eestis · Eleringi reserviturg
       - **Korjaus:**
 - [ ] ⚠ `h2` **uusi** — Mida Soleron Energy teie objektil teeb.
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); VENI Energia poistettu 21.10.2026
       - **Korjaus:**
-- [ ] `p` **uusi** — Eesti reserviturg on Soome omast noorem ja Soleron töötab iga objektiga eraldi. Hinnangu, millistele reservidele teie aku sobib ja mida see teenida võib, teeme koos nendega: teie aku võimsuse ja mahu järgi, kirjalikult ja kolme stsenaariumina, mitte reklaamis.
+- [ ] `p` **uusi** — Eesti reserviturg on Soome omast noorem ja Soleron töötab iga objektiga eraldi. Hinnangu, millistele reservidele teie aku sobib ja mida see teenida võib, teeme koos nendega: teie aku võimsuse ja mahu järgi, kirjalikult ja toodete kaupa, mitte reklaamis.
       - **Korjaus:**
 - [ ] `p` **uusi** — Kui müüte oma päikeseelektrit või vajate akut oma tippude jaoks või varutoiteks, ehitatakse juhtimisstrateegia selle ümber. Agregaator optimeerib turu vastu, aga piirid ja eesmärgid seate teie, ja need kirjutatakse hinnangusse enne allkirja.
       - **Korjaus:**
@@ -961,7 +771,7 @@ Vastine mainissa: `/et/reserviturud/`
       - **Korjaus:**
 - [ ] `summary` **uusi** — Kuidas agregaator oma tasu saab?
       - **Korjaus:**
-- [ ] `p` **uusi** — Tasu lepitakse kokku agregaatorilepingus ja kirjalikus hinnangus on see eraldi real, mitte tuluprognoosi sisse peidetud. Te näete, mida Elering maksab, mida agregaator võtab ja mis teile jääb, kolme stsenaariumina.
+- [ ] `p` **uusi** — Tasu lepitakse kokku agregaatorilepingus ja kirjalikus hinnangus on see eraldi real, mitte tuluprognoosi sisse peidetud. Te näete reservitulu enne tasu, mida agregaator võtab ja mis teile jääb.
       - **Korjaus:**
 - [ ] `summary` **uusi** — Mis saab, kui tahame hiljem agregaatorit vahetada?
       - **Korjaus:**
@@ -973,7 +783,7 @@ Vastine mainissa: `/et/reserviturud/`
 - [ ] `h2` **uusi** — Räägime läbi, mida teie aku Eesti reserviturul teha saab.
       - **Korjaus:**
 - [ ] ⚠ `p` **uusi** — Hinnangu teeme koos Soleron Energyga, teie objekti numbrite pealt.
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); VENI Energia poistettu 21.10.2026
       - **Korjaus:**
 - [ ] `a` **uusi** — Tagasi reservituru juurde
       - **Korjaus:**
@@ -982,11 +792,6 @@ Vastine mainissa: `/et/reserviturud/`
 
 ## Teenused — `/et/teenused/`
 Vastine mainissa: `/et/protsess/`
-
-### (sivu)
-
-- [ ] `a` **uusi** — Küsi tasuta hindamist
-      - **Korjaus:**
 
 ### #rev-teenused-1
 
@@ -1005,16 +810,13 @@ Vastine mainissa: `/et/protsess/`
       - **Korjaus:**
 - [ ] `p` **uusi** — Sama viis rida iga toote kohta, et võrdlus oleks lihtne.
       - **Korjaus:**
-- [ ] `figcaption` **uusi** — Teie andmed keskel, teiste tingimused ümber — üks arvutus.
-      - **Korjaus:**
 - [ ] `h3` **uusi** — Hinnang
       - **Korjaus:**
 - [ ] `p` **uusi** — Igale ettevõttele, kellel on oma elektriliitumine – ka siis, kui pakkumine on juba käes.
       - **Korjaus:**
 - [ ] `dt` **uusi** — Mida sisaldab
       - **Korjaus:**
-- [ ] `dd` **muutettu** — Kaks lehekülge: liitumine ja tarbimisprofiil, võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel, kolm reservituru stsenaariumi allikatega, võrguettevõtja seisukoht ja see, mida hinnang ei ütle.
-      - main: Täidate objektiandmete vormi: liitumisvõimsus, peakaitse, trafo võimsus, olemasolev tootmine, mõõtekorraldus, paigalduskoht ja kaugus peakilbist, kehtivad elektrilepingud. Analüüsime teie tarbimisandmeid.
+- [ ] `dd` **uusi** — Kaks lehekülge: liitumine ja tarbimisprofiil, võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel, modelleeritud reservitulu toodete kaupa allikatega, võrguettevõtja seisukoht ja see, mida hinnang ei ütle.
       - **Korjaus:**
 - [ ] `dt` **uusi** — Mida te annate
       - **Korjaus:**
@@ -1032,8 +834,7 @@ Vastine mainissa: `/et/protsess/`
       - **Korjaus:**
 - [ ] `p` **uusi** — Ühele objektile: kuivati, tööstus, külmladu, hotell, hooldekodu, päikesepark.
       - **Korjaus:**
-- [ ] `dd` **muutettu** — Eelkontroll, objektikülastus, projekteerimine, võrguettevõtja tehnilised tingimused, seadmed meie nõuete järgi, paigaldus, kontrollid ja käivitamine, agregaatoriga liitmine, seire. Garantii ja hooldus lepingus eraldi real.
-      - main: Tellimus, paigaldus, kasutuselevõtt, dokumenteerimine. Teie korraldate ligipääsu objektile. Koguajakava kinnitatakse pakkumises seadmete saadavuse järgi.
+- [ ] `dd` **uusi** — Eelkontroll, objektikülastus, projekteerimine, võrguettevõtja tehnilised tingimused, seadmed meie nõuete järgi, paigaldus, kontrollid ja käivitamine, agregaatoriga liitmine, seire. Garantii ja hooldus lepingus eraldi real.
       - **Korjaus:**
 - [ ] `dd` **uusi** — Otsuse hinnangu põhjal, ligipääsu objektile ja kaks allkirja: EPC-leping meiega ja teenusleping agregaatoriga.
       - **Korjaus:**
@@ -1045,50 +846,13 @@ Vastine mainissa: `/et/protsess/`
       - **Korjaus:**
 - [ ] `p` **uusi** — Kinnisvaraportfellidele, päikeseparkide omanikele ja kettidele, kellel on mitu liitumist.
       - **Korjaus:**
-- [ ] `dd` **muutettu** — Kõigi objektide hinnang ühes dokumendis, järjekord tasuvuse järgi, ühine seadmete ja agregaatori raamistik, üks kontakt kogu portfelli jaoks.
-      - main: Tellimus, paigaldus, kasutuselevõtt, dokumenteerimine. Teie korraldate ligipääsu objektile. Koguajakava kinnitatakse pakkumises seadmete saadavuse järgi.
+- [ ] `dd` **uusi** — Kõigi objektide hinnang ühes dokumendis, järjekord tasuvuse järgi, ühine seadmete ja agregaatori raamistik, üks kontakt kogu portfelli jaoks.
       - **Korjaus:**
 - [ ] `dd` **uusi** — Objektide nimekirja liitumiste ja tarbimisandmetega.
       - **Korjaus:**
 - [ ] `dd` **uusi** — Hinnang objektide arvu järgi; esimene objekt läheb töösse, kui teised on veel hinnangus.
       - **Korjaus:**
 - [ ] `dd` **uusi** — Iga objekt käib sama nelja sammu läbi; portfell kasvab objekt haaval.
-      - **Korjaus:**
-
-### #kuidas
-
-- [ ] `h2` **uusi** — Kuidas see käib – ja mis millal maksab.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Kedagi ei saadeta kuhugi enne, kui andmed on käes. Kaks esimest sammu on tasuta, objektikülastus arvestatakse lepingus maha, projekteerimine ja paigaldus käivad lepingu järgi.
-      - main: See on mõlemal turul suurim üksik põhjus ebaõnnestunud, hilinenud ja eelarvet ületanud akuprojektide taga. See on täielikult välditav ja vältimine ei maksa midagi muud kui õiget järjekorda. Seepärast on järjekord meil protsessi kindel osa, mitte paindekoht.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Tasuta hindamine
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või teie võrguettevõtjalt), ühe arve ja peakilbi skeemi; meie kirjutame hinnangu: liitumine, tarbimisprofiil, võimsuse jaotus, kolm stsenaariumi allikatega.
-      - main: Täidate objektiandmete vormi: liitumisvõimsus, peakaitse, trafo võimsus, olemasolev tootmine, mõõtekorraldus, paigalduskoht ja kaugus peakilbist, kehtivad elektrilepingud. Analüüsime teie tarbimisandmeid.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Eelkontroll
-      - **Korjaus:**
-- [ ] `p` **uusi** — Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldajaga; elektrik ütleb, kas ja mis tingimustel saab, ja eelarve suurusjärgu.
-      - **Korjaus:**
-- [ ] `h3` **muutettu** — Objektikülastus
-      - main: Küsige objektikaardistust
-      - **Korjaus:**
-- [ ] `p` **uusi** — Elektrik käib kohal, mõõdab kaablitee, kilbi ja paigalduskoha ning kinnitab hinna.
-      - **Korjaus:**
-- [ ] `h3` **muutettu** — Rahastus ja otsus
-      - main: Pakkumine ja rahastus
-      - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Näete ühte tabelit, kus on kuumakse, omafinantseering ja see, mis pärast makset alles jääb. Rahastajaga suhtleme meie.
-      - main: Iga objekt kulgeb ühtemoodi. See ei ole bürokraatia — just seepärast teame ette, mis juhtub järgmisena. Energiasalvestite lehe neli teenusetappi on seesama teekond, siin nädalate kaupa.
-      - ⚠ rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Projekt, paigaldus, turg
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine; agregaator liidab salvesti mitmeturuteenusega ja meie jälgime, et süsteem teeks seda, mida hinnang näitas.
-      - main: See on mõlemal turul suurim üksik põhjus ebaõnnestunud, hilinenud ja eelarvet ületanud akuprojektide taga. See on täielikult välditav ja vältimine ei maksa midagi muud kui õiget järjekorda. Seepärast on järjekord meil protsessi kindel osa, mitte paindekoht.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Esimene samm ei kohusta millekski. Andmed ja arve, ja te teate kahe tööpäevaga, kas ja kuidas edasi minna.
       - **Korjaus:**
 
 ### #rev-teenused-4
@@ -1103,18 +867,15 @@ Vastine mainissa: `/et/protsess/`
       - **Korjaus:**
 - [ ] `h3` **uusi** — Reservitulu analüüsitult, mitte arvatult
       - **Korjaus:**
-- [ ] `p` **muutettu** — Näitame madalat, keskmist ja kõrget stsenaariumi, sest turg muutub. Stsenaariumid tulevad sellest, mida Elering tegelikult hangib ja mis on tulemas, mitte kellegi tundest.
-      - main: Energiasalvestid ja päikeseelekter ettevõtetele. Aus analüüs, võrguettevõtte kooskõlastus enne hanget, põhjalik dokumentatsioon.
+- [ ] `p` **uusi** — Näitame vahemikku, sest turg muutub. Vahemik tuleb sellest, mida Elering tegelikult hangib ja mis on tulemas, mitte kellegi tundest.
       - **Korjaus:**
 - [ ] `h3` **uusi** — Võrguettevõtja seisukoht enne kapitali
       - **Korjaus:**
-- [ ] `p` **muutettu** — Tehnilised tingimused ja liitumise vastus on käes enne, kui te raha välja panete. Ooteajad on hinnangus eraldi välja toodud.
-      - main: Astmeline pakkumine. Rahastus rahastuspartneri kaudu võib olla võimalik — selgitame võimalused välja, kui nii soovite.
+- [ ] `p` **uusi** — Tehnilised tingimused ja liitumise vastus on käes enne, kui te raha välja panete. Ooteajad on hinnangus eraldi välja toodud.
       - **Korjaus:**
 - [ ] `h3` **uusi** — Juhime projekti algusest lõpuni
       - **Korjaus:**
-- [ ] `p` **muutettu** — Seadmed valime teie objekti järgi, koostöös maaletoojatega. Paigaldus, load, dokumentatsioon ja ülevaade käivad ühe kontakti kaudu.
-      - main: Tellimus, paigaldus, kasutuselevõtt, dokumenteerimine. Teie korraldate ligipääsu objektile. Koguajakava kinnitatakse pakkumises seadmete saadavuse järgi.
+- [ ] `p` **uusi** — Seadmed valime teie objekti järgi, koostöös maaletoojatega. Paigaldus, load, dokumentatsioon ja ülevaade käivad ühe kontakti kaudu.
       - **Korjaus:**
 
 ### #rev-teenused-5
@@ -1128,11 +889,6 @@ Vastine mainissa: `/et/protsess/`
 
 ## Seadmete nõuded — `/et/seadmete-nouded/`
 **Uusi sivu** — ei vastinetta mainissa.
-
-### (sivu)
-
-- [ ] `a` **uusi** — Küsi tasuta hindamist
-      - **Korjaus:**
 
 ### #rev-seadmete-nouded-1
 
@@ -1182,9 +938,7 @@ Vastine mainissa: `/et/protsess/`
 
 ### #rev-seadmete-nouded-3
 
-- [ ] `h2` **uusi** — Tootjatele ja maaletoojatele.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Kui teie seade vastab nimekirjale ja te soovite Eesti ja Soome turule, kirjutage info@samaenergia.fi. Mida meie anname: kaks turgu, agregaatoripartner kummalgi turul, paigalduspartnerid ja hinnangupõhine müük, mis ei luba seadmelt rohkem, kui see teeb.
+- [ ] `p` **uusi** — Kui teie seade vastab nimekirjale ja te soovite Eesti ja Soome turule, kirjutage info@samaenergia.fi. Mida meie anname: kaks turgu, juurdepääs reserviturule kummalgi turul agregaatori kaudu, paigalduspartnerid ja hinnangupõhine müük, mis ei luba seadmelt rohkem, kui see teeb.
       - **Korjaus:**
 
 ### #rev-seadmete-nouded-4
@@ -1196,317 +950,8 @@ Vastine mainissa: `/et/protsess/`
 
 ---
 
-## Meist — `/et/meist/`
-Vastine mainissa: `/et/meist/`
-
-### (sivu)
-
-- [ ] `a` **uusi** — Küsi tasuta hindamist
-      - **Korjaus:**
-
-### #rev-meist-1
-
-- [ ] `h1` **uusi** — Me tegime ettevõtte, mida ise oleksime tahtnud palgata.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — SAMA Energia on tööstuslike energiasalvestite ja päikeseelektri süsteemiintegraator ettevõtetele – võtmed kätte: hindame, projekteerime, hangime, paigaldame ja hooldame arvestitaguseid süsteeme ning viime need agregaatori kaudu reserviturule. Meie töö algab arvutusest, mitte pakkumisest.
-      - main: Töö katab mõlemad turud: agregaatoripartnerlused, võrgunõuete täitmine olemasoleva tootmise kõrvale paigaldatavates akudes, tehniline dokumentatsioon neljas keeles ning reserviturul osalemise rahastusmudelid.
-      - **Korjaus:**
-- [ ] `b` **uusi** — EPC
-      - **Korjaus:**
-- [ ] `b` **uusi** — EE + FI
-      - **Korjaus:**
-
-### #miks
-> Lähde tälle osiolle: Allikad: Elering, tasakaalustamisvõimsuse kulu · 2026; Elering, hinnakiri ja tüüptingimused · ELTS § 71 lg 10¹, salvestusperiood on kalendrikuu; Kliimaministeerium · 11.09.2024. Täpsemalt Reserviturg-lehel.
-
-- [ ] `h2` **uusi** — Miks me SAMA tegime.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Turg muutus kiiremini kui pakkumised. Meie tahtsime ettevõtet, mis annab kliendile kaardi, mitte ainult seadme.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Turg muutus. Alates 2025. aasta veebruarist hoiab Eesti oma võrgu sagedust ise ja Elering ostab reserve iga päev; alates 2026 maksavad reservide eest kõik tarbijad, ja 1.1.2026 jõustunud elektrituruseaduse muudatuse järgi arvestatakse salvesti võrgutasu kalendrikuu netotarbimiselt. Iga selline muutus muudab seda, mida üks liitumine väärt on.
-      - main: Sellepärast SAMA olemas ongi: sõltumatu ettevõte ilma tootjaboonusteta, mis sunniks sama seadme igasse objekti, ja ilma agregaatorilepinguta, mis nõuaks meilt kellegi teise numbrite kordamist. Meie lubadus on üks: vastame kirjalikult, enne kui midagi alla kirjutatakse.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Pakkumised jäid samaks. Ettevõtted said tabeli seadmetega ja ühe tasuvusaja numbri – ilma allika, stsenaariumi ja võrguettevõtja seisukohata. Meid huvitas teine küsimus: mida teie liitumine tegelikult teenida saab ja mis seda mõjutab.
-      - main: Säästu arvutame teie enda tarbimisandmetest — see on arvutatav, mitte arvatav. Reservitulu näitame stsenaariumidena, sealhulgas eeldusel, et hinnad poolduvad. Võrguettevõtte seisukoha selgitame välja enne, kui te kapitali seote.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Mida taotleme. Et ettevõtte oma liitumine oleks teeniv vara, mitte pelgalt kuluartikkel – ja et otsus selle üle tehtaks oma numbrite, mitte müüja lubaduse pealt.
-      - main: Sellepärast SAMA olemas ongi: sõltumatu ettevõte ilma tootjaboonusteta, mis sunniks sama seadme igasse objekti, ja ilma agregaatorilepinguta, mis nõuaks meilt kellegi teise numbrite kordamist. Meie lubadus on üks: vastame kirjalikult, enne kui midagi alla kirjutatakse.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Kust alustame. Objektidest, kus liitumine on suur ja tarbimine kõikuv: seal on hinnang kõige selgem ja tasuvusaeg sageli lühim. Seejärel liigume suuremate tervikute juurde koos nendega, kes tunnevad turgu ja oma piirkonna tugevusi. Teeme seda läbipaistvalt ja kliendi keeles: teave arusaadavaks, arvud koos allikatega, otsus teie.
-      - main: Sellepärast SAMA olemas ongi: sõltumatu ettevõte ilma tootjaboonusteta, mis sunniks sama seadme igasse objekti, ja ilma agregaatorilepinguta, mis nõuaks meilt kellegi teise numbrite kordamist. Meie lubadus on üks: vastame kirjalikult, enne kui midagi alla kirjutatakse.
-      - **Korjaus:**
-
-### #kes
-
-- [ ] `h2` **uusi** — Meie meeskond.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Igal projektil on nimeline vastutaja igas etapis, ja te saate nendega otse ühendust. Numbrid all on nende omad, mitte keskjaama omad.
-      - main: Sellepärast SAMA olemas ongi: sõltumatu ettevõte ilma tootjaboonusteta, mis sunniks sama seadme igasse objekti, ja ilma agregaatorilepinguta, mis nõuaks meilt kellegi teise numbrite kordamist. Meie lubadus on üks: vastame kirjalikult, enne kui midagi alla kirjutatakse.
-      - **Korjaus:**
-- [ ] ⚠ `div` **uusi** — Müügijuht
-      - ⚠ tittelit hyväksytty 03.09.2026; "perustaja"/"asutaja" pudotettu 08.09.2026 (vartija titteli-perustaja)
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Taastuvenergia müügis alates 2014. aastast, algul Austraalias, seejärel Soomes ja Eestis: päikeseelektri lahendused kodudele ja ettevõtetele, viimastel aastatel tööstuslikud energiasalvestid, energiajuhtimine ja reserviturg. Vastutab kliendisuhete, agregaatoripartnerluste ja hinnangu eest – tema kaudu käib kogu suhtlus enne allkirja.
-      - main: Töötasin energiamüügis mõlemal pool lahte ja nägin lähedalt, kuidas neid tehinguid tehakse. Pakkumine ehitati reservitulu prognoosile — numbrile, mida ei kontrolli mitte keegi. Ei müüja, ei ostja, ei agregaator. Selle numbri peal seisis tasuvusarvutus, mille põhjal inimene tegi kolmesaja tuhande euro otsuse.
-      - **Korjaus:**
-- [ ] `summary` **uusi** — Loe edasi
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Näeb arvestitaguseid süsteeme ja hajutatud võrku julgeoleku ja majanduse küsimusena: väärtusahel rohkem enda kätte, innovaatiliselt ja tasakaalukalt. Lai müügitaust erinevate taastuvenergia projektidega ja eri päikesesüsteemide tundmine; viimased kaks-kolm aastat üha sügavamalt energiasalvestuses ja energia juhtimises. Näeb selles suurt võimalust ja suurt tulevikku.
-      - main: Akusüsteemi võib hankida kust tahes. Väärtus sünnib sellest, et keegi ütleb ausalt, mida see teie objektil teeb, viib selle võrguettevõtte protsessist läbi, sobitab selle olemasoleva päikeseelektriga seda ohtu seadmata ja koostab dokumentatsiooni, mis peab kontrollile vastu ka kolme aasta pärast. See on meie töö.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — madis.maastik@samaenergia.fi+358 449 654 614
-      - main: madis.maastik@samaenergia.fi · +358 449 654 614
-      - **Korjaus:**
-- [ ] `h3` **muutettu** — Martin Rautio
-      - main: Martin Rautio — asutaja
-      - **Korjaus:**
-- [ ] ⚠ `div` **uusi** — Tegevjuht
-      - ⚠ perustajapäätös Martin Rautio 13.09.2026 — toimitusjohtaja / tegevjuht; hallituksen päätös ja kaupparekisteri-ilmoitus seuraavat. Sivusto on rekisteriä edellä 1–2 päivää, tietoisesti.
-      - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — Vastutab: ettevõtte suund, tegevuse planeerimine ja tarnete läbiviimine – partnerlused, lepingud ja finantseerimislahendused. Hoolitseb selle eest, et iga projekt liigub kokkulepitud järjekorras.
-      - ⚠ CLAUDEN KIRJOITTAMA ET-teksti 13.09.2026 — ei natiivin tarkistama. Tarkista sanavalinnat ja sävy: tämä on uusi vastuukuvaus (perustajapäätös 13.09.2026).
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Hariduselt rahvusvahelise ärijuhtimise bakalaureus (BBA).
-      - main: Vastutab säästuanalüüside, pakkumiste ja projektide koordineerimise eest. Hariduselt rahvusvahelise äri bakalaureus (BBA).
-      - **Korjaus:**
-- [ ] `p` **muutettu** — martin.rautio@samaenergia.fi+358 40 701 9099
-      - main: martin.rautio@samaenergia.fi · +358 40 701 9099
-      - **Korjaus:**
-- [ ] `h3` **muutettu** — Viljar Petersell
-      - main: Viljar Petersell — paigaldus
-      - **Korjaus:**
-- [ ] ⚠ `div` **uusi** — Paigaldusjuht
-      - ⚠ tittelit hyväksytty 03.09.2026; "perustaja"/"asutaja" pudotettu 08.09.2026 (vartija titteli-perustaja)
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Plekk-katuste ja päikesesüsteemide meister. Üle kuue aasta päikesesüsteemide ehitamist äri- ja eraobjektidel – katusel, maal ja katusesse integreerituna – ning taust filigraansetes töödes, kus täpsus loeb. Vastutab paigalduse teostuse ja kvaliteedi eest: paigaldus töötab ja jätab kinnistule ka esteetilise väärtuse.
-      - main: Päikesepaneelide ja päikesekatuste paigaldustööd. Kogenud paigaldaja: üle kuue aasta päikesesüsteemide ehitamist nii äri- kui erasektoris. Taustalt plekksepp, suuremahuliste tööde kogemusega.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Kasvame. Kui teil on müügi- või paigaldustaust ja huvi energiaturu vastu, kirjutage info@samaenergia.fi.
-      - **Korjaus:**
-
-### #vorgustik
-
-- [ ] `h2` **uusi** — Võrgustik teie projekti taga.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Iga projekt vajab peale meie nelja asja: turulepääsu, seadmeid, paigaldust ja rahastust. Need on partnerid, kes need annavad, mõlemal turul.
-      - main: Töö katab mõlemad turud: agregaatoripartnerlused, võrgunõuete täitmine olemasoleva tootmise kõrvale paigaldatavates akudes, tehniline dokumentatsioon neljas keeles ning reserviturul osalemise rahastusmudelid.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Turulepääs reserviturule
-      - **Korjaus:**
-- [ ] `p` **uusi** — Agregaator koondab mitme objekti akud üheks pakkumiseks, juhib neid automaatselt ja maksab tulu välja.
-      - **Korjaus:**
-- [ ] ⚠ `b` **uusi** — Soleron Energy OÜ
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
-      - **Korjaus:**
-- [ ] `div` **uusi** — Agregaator · Eleringi reserviturg
-      - **Korjaus:**
-- [ ] ⚠ `b` **uusi** — VENI Energia Oy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
-      - **Korjaus:**
-- [ ] `div` **uusi** — Agregaatoripartner · Fingridi reserviturg
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Seadmed ja tarne
-      - **Korjaus:**
-- [ ] `p` **uusi** — Salvestid valime objekti järgi. Osa seadmeid on Soome laos, mis lühendab tarneaega nädalateni.
-      - **Korjaus:**
-- [ ] ⚠ `b` **uusi** — Ralos Oy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI)
-      - **Korjaus:**
-- [ ] `div` **uusi** — Energiasalvestid · Tampere
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Paigaldus ja käikulaskmine
-      - **Korjaus:**
-- [ ] `p` **uusi** — Paigaldust juhib meie oma paigaldusjuht; elektritööd ja käikulaskmine käivad kohaliku partneri kaudu.
-      - **Korjaus:**
-- [ ] `b` **muutettu** — Viljar Petersell, paigaldusjuht
-      - main: Viljar Petersell — paigaldus
-      - **Korjaus:**
-- [ ] `div` **uusi** — Teostus ja kvaliteet objektil
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Rahastus
-      - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Me ei ole seotud ühe rahastajaga. Hinnangus näitame omafinantseeringu ja liisingu kõrvuti, samade numbrite pealt.
-      - main: Ja see ei ole ainult omaniku kasu. Mida rohkem hajutatud salvestust võrgus on, seda rohkem päikest ja tuult sinna üldse mahub. Iseseisvus ja ühine võrk ei ole vastandid — need on sama liigutus.
-      - ⚠ rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)
-      - **Korjaus:**
-- [ ] ⚠ `b` **uusi** — Liising või omafinantseering
-      - ⚠ rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)
-      - **Korjaus:**
-- [ ] `div` **uusi** — Rahastus korraldatakse objekti järgi
-      - **Korjaus:**
-
-### #ettevote
-
-- [ ] `h2` **uusi** — Ettevõte paberil.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Andmed, mida teie hankeosakond, raamatupidaja või jurist küsib.
-      - **Korjaus:**
-- [ ] `dt` **uusi** — Ettevõte
-      - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — SAMA Energia OySoome registrikood (Y-tunnus) 3647683-6 · KMKR-nr FI36476836
-      - ⚠ Y-tunnus korjattu 09.09.2026: vanha 3647683-3 ei läpäissyt tarkistusmerkkilaskentaa; oikea on 3647683-6 / FI36476836
-      - **Korjaus:**
-- [ ] `dt` **uusi** — Asukoht
-      - **Korjaus:**
-- [ ] `dd` **uusi** — Helsingi, SoomeTeenindame Soomet ja Eestit
-      - **Korjaus:**
-- [ ] `dt` **uusi** — Süsteemihaldurid
-      - **Korjaus:**
-- [ ] `dd` **uusi** — Elering ja FingridMõlema reserviturg, agregaatori kaudu
-      - **Korjaus:**
-- [ ] `dt` **uusi** — Dokumentatsioon
-      - **Korjaus:**
-- [ ] `dd` **uusi** — Neljas keelesHinnang, load ja lepingud teie keeles
-      - **Korjaus:**
-
-### #tootjatele
-
-- [ ] `h2` **uusi** — Tootjatele ja maaletoojatele.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Meie seadmevalik ei ole kinni ühes tootjas. Nimekiri, millele iga seade peab vastama, on avalik – ja see on ka uks uutele tootjatele ja maaletoojatele.
-      - main: Sellepärast SAMA olemas ongi: sõltumatu ettevõte ilma tootjaboonusteta, mis sunniks sama seadme igasse objekti, ja ilma agregaatorilepinguta, mis nõuaks meilt kellegi teise numbrite kordamist. Meie lubadus on üks: vastame kirjalikult, enne kui midagi alla kirjutatakse.
-      - **Korjaus:**
-
-### #rev-meist-7
-
-- [ ] `h2` **uusi** — Kirjutage või helistage otse.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Vastab inimene, kes ka töö teeb.
-      - main: Ei vahemeest ega keskjaama — see, kes vastab, teeb ka töö ära.
-      - **Korjaus:**
-- [ ] `a` **uusi** — Kontakt ja hindamine
-      - **Korjaus:**
-
----
-
-## Uudised — `/et/uudised/`
-Vastine mainissa: `/et/uudised/`
-
-### (sivu)
-
-- [ ] `a` **uusi** — Küsi tasuta hindamist
-      - **Korjaus:**
-
-### #rev-uudised-1
-
-- [ ] `h1` **uusi** — Mida me turul näeme, ja mida me sellest järeldame.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Reserviturg, energiasalvestid, võrgutasud ja seadusemuudatused, lahti kirjutatud nii, et otsuse saab teha numbrite pealt. Kirjutame ka siis, kui number meile ei sobi.
-      - main: Uuendatud energiatõhususe direktiiv viib kohustusliku energiaauditi piiri ettevõtte suuruselt energiatarbimisele: üle 10 TJ ehk umbes 2 700 MWh aastas tarbivad ettevõtted peavad laskma teha energiaauditi 11.10.2026-ks, kui nad ei võta kasutusele sertifitseeritud energiajuhtimissüsteemi.
-      - **Korjaus:**
-- [ ] `b` **uusi** — Allikas + kuupäev
-      - **Korjaus:**
-- [ ] `b` **uusi** — Ei tootelehti
-      - **Korjaus:**
-
-### #rev-uudised-2
-> Lähde tälle osiolle: Allikas: Elering, hinnakiri ja tüüptingimused
-> Lähde tälle osiolle: Allikas: Elering, hinnakiri ja tüüptingimused · ELTS § 71 lg 10¹
-> Lähde tälle osiolle: Allikas: Direktiiv (EL) 2023/1791 · artikkel 11
-> Lähde tälle osiolle: Allikas: Fingrid, teade · 18.8.2026
-
-- [ ] `h3` **uusi** — Alates 2026 maksate reservide eest. Küsimus on, kummal pool arvet te olete.
-      - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — 1. jaanuaril 2026 lisandus Eesti elektriarvele rida, mida seal varem ei olnud: tasakaalustamisvõimsuse kulu, 3,73 €/MWh. Seda maksavad kõik. Saab see, kes reservi pakub. Mida see tähendab ettevõttele, kelle liitumine on suur ja tarbimine kõikuv.
-      - main: Fingridi andmetel tarbimise kasv kiireneb: ainuüksi andmekeskuste liitumislepinguid on ligi viie gigavati jagu, ja täies mahus teostudes tõstaks lepinguportfell Soome elektritarbimist ligi 40 protsenti 2025. aasta tasemest. Samas teates on ka teine number: elektrisalvestite liitumislepinguid on juba üle nelja gigavati. Nõudlus ja paindlikkus kasvavad seega võidu — just seepärast ei ehita me ühegi objekti tasuvust reservihindade peale.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Kümme küsimust, mis tuleb agregaatorilepingust enne allkirja üles otsida
-      - **Korjaus:**
-- [ ] `p` **uusi** — Juhtimise piirid, prioriteedid, tulu jagamine, lepingu kestus ja ülesütlemine. Mida lepingust lugeda, et aku jääks teie akuks.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Kui talvel tarbimine kasvab: kuidas salvesti jaotus hooajaga muutub
-      - **Korjaus:**
-- [ ] `p` **uusi** — Miks kindel piirang terveks aastaks võtab tulu ära ja kuidas tunnipõhine jaotus tarbimisprofiili järgi töötab.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Toetused ja tähtajad: mis on avatud, mis on möödas ja mida jälgida
-      - **Korjaus:**
-- [ ] `p` **uusi** — KIK-i salvestustoetus, EIS-i varustuskindluse toetus, energiaauditi kohustus. Üks postitus, mida me uuendame.
-      - **Korjaus:**
-- [ ] `h2` **uusi** — Kuhu see turg liigub.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Need ei ole meie prognoosid, vaid süsteemihalduri enda arvud, mida igaüks saab kontrollida. Iga selle lehe ülevaade on kirjutatud nende vastu.
-      - **Korjaus:**
-- [ ] `dt` **uusi** — Juhitav võimsus
-      - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — ~1 300 → ~2 100 MW2030 → 2035. Allikas: Elering, varustuskindluse aruanne 2025 · lk 14.
-      - **Korjaus:**
-- [ ] `dt` **uusi** — Salvestid stsenaariumis
-      - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — 258 → 1 500 MW2028 → 2035, juhitava võimsusena. Allikas: Elering, varustuskindluse aruanne 2025 · tabelid 2.2–2.4, lk 36–37.
-      - **Korjaus:**
-- [ ] `dt` **uusi** — Tasakaalustamisvõimsuse kulu
-      - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — 3,73 → 2,97 €/MWh2026 → alates 1.1.2027. Allikas: Elering, tasakaalustamisvõimsuse kulu.
-      - **Korjaus:**
-- [ ] `h2` **uusi** — Lühemad teated.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Muudatused, mis mõjutavad salvesti tasuvust ja liitumist, allika ja tähtajaga.
-      - **Korjaus:**
-- [ ] `h3` **muutettu** — Salvestite mõõtmise üleminekuaeg lõpeb
-      - main: Salvestusüksuse mõõtmise üleminekuperiood lõpeb 31.12.2026 ↗
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Ajavahemikul 1.1.–31.12.2026 kestab üleminekuperiood, mille jooksul viiakse ajutiselt Estfeediga liidestatud mõõteseadmed üle AMR-süsteemi. Pärast seda peab mõõtelahendus vastama nõuetele täielikult, et salvestatud ja võrku tagastatud energiat võrgutasus õigesti käsitletaks. Mõõtmine tasub projekteerida algusest õigesti – see on odavam kui hiljem ümber ehitada.
-      - main: Eleringi tingimuste järgi võib energiasalvestusüksuse mõõtmine üleminekuperioodil 01.01.2026–31.12.2026 tugineda erisustele standardnõuetest. Pärast seda peab mõõtelahendus vastama nõuetele täies mahus — ja nõuetekohane mõõtmine on ühtlasi eeldus, et salvestatud ja võrku tagastatud energia võrgutasu käsitletaks õigesti.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Salvesti võrgutasu arvestatakse kalendrikuu netotarbimiselt
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Elektrituruseaduse § 71 lg 10¹ järgi ei võeta edastamistasu selle elektrienergia eest, mille salvesti salvestusperioodi vältel võrgust salvestab ja samal perioodil võrku tagastab; salvestusperiood on kalendrikuu (§ 3 p 22⁴). See parandab projekti tasuvust oluliselt – eeldusel, et mõõtmine vastab nõuetele.
-      - main: Elektrituruseaduse § 71 lõike 10¹ kohaselt ei arvestata alates 01.01.2026 võrgutasu energialt, mille salvestusüksus salvestab ja võrku tagastab. Seni maksis salvesti võrgutasu sisuliselt kaks korda — nii laadides kui ka tagastades. Vabastus eeldab seaduses ja võrguettevõtja tingimustes sätestatud eelduste täitmist, sealhulgas nõuetekohast mõõtmist.
-      - **Korjaus:**
-- [ ] `h3` **muutettu** — Energiaauditi kohustus laieneb: piir tarbimise, mitte ettevõtte suuruse järgi
-      - main: Energiaauditi kohustus laieneb: piir on edaspidi tarbimine, mitte ettevõtte suurus ↗
-      - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Uuendatud energiatõhususe direktiiv (EL) 2023/1791 artikkel 11 seob kohustusliku energiaauditi aastase tarbimisega üle 10 TJ ehk umbes 2 800 MWh. Selle piiri ületajad peavad auditi tegema 11.10.2026-ks, kui neil pole sertifitseeritud energiajuhtimissüsteemi; riigisisene ülevõtmine võib piiri ja tähtaega täpsustada. Auditi andmed on ühtlasi salvesti ja päikeseelektri hinnangu alus.
-      - main: Uuendatud energiatõhususe direktiiv viib kohustusliku energiaauditi piiri ettevõtte suuruselt energiatarbimisele: üle 10 TJ ehk umbes 2 700 MWh aastas tarbivad ettevõtted peavad laskma teha energiaauditi 11.10.2026-ks, kui nad ei võta kasutusele sertifitseeritud energiajuhtimissüsteemi.
-      - **Korjaus:**
-- [ ] `h3` **muutettu** — Fingrid: elektritarbimine kasvab tugevalt, kõrvale on vaja reguleerimisvõimsust
-      - main: Elektritarbimine on pöördumas tugevasse kasvu – kõrvale on vaja rohkem reguleerimisvõimsust (soome keeles) ↗
-      - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Fingridi teate järgi on andmekeskustel liitumislepinguid ligi 5 GW, elektrikatlaid on ehitamisel ja töös üle 3 GW ning salvestitele on sõlmitud liitumislepinguid üle 4 GW; kui kõik teostub, kasvab tarbimine 2025. aastaga võrreldes ligi 40 %. Uus liitumisvõimsus on paljudes kohtades juba peaaegu broneeritud. Meie järeldus: olemasolev liitumine on vara, mida tasub tööle panna, mitte oodata.
-      - main: Fingridi andmetel tarbimise kasv kiireneb: ainuüksi andmekeskuste liitumislepinguid on ligi viie gigavati jagu, ja täies mahus teostudes tõstaks lepinguportfell Soome elektritarbimist ligi 40 protsenti 2025. aasta tasemest. Samas teates on ka teine number: elektrisalvestite liitumislepinguid on juba üle nelja gigavati. Nõudlus ja paindlikkus kasvavad seega võidu — just seepärast ei ehita me ühegi objekti tasuvust reservihindade peale.
-      - **Korjaus:**
-- [ ] `h2` **uusi** — Mida me mujal loeme.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Me ei kirjuta kõike ise. Need on allikad, mida me tegelikult kasutame, ja üks rida selle kohta, miks just see tekst on lugemisväärne. Lingid viivad meie lehelt ära.
-      - main: Me ei palu teil meid uskuda. Kogume siia esmaallikaid — põhivõrguettevõtete ja ametiasutuste enda avaldatut — ja ütleme lühidalt, miks need on tööstusobjekti omanikule olulised. Meie enda analüüsid avaldatakse sellel lehel.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Eesti elektri varustuskindluse aruanne 2025 (PDF)
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Siit tulevad juhitava võimsuse vajaduse arvud ja salvestite stsenaariumid. Kui keegi küsib, kust me teame, et nõudlus ei ole mööduv, on vastus selles dokumendis.
-      - main: Loetelu täieneb sedamööda, kuidas olulisi avaldusi ilmub. Kui mõni neist tekitab küsimuse teie enda objekti kohta, on objektikaardistus kiireim viis vastus saada.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Sagedusreservide turu kokkuvõtted
-      - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — Kvalifitseerunud võimsused ja hinnad toote kaupa, kuu haaval. Siin näeb ka seda, et FCR keskmine hind langes 2025. aasta 88,21 eurolt 2026. aasta esimesel poolel 45,49 euroni megavati kohta tunnis.
-      - ⚠ lukukorjaus: reservien osuudet ovat todennettua KAPASITEETTIA, ei tuotantoa (Fingrid 10.2.2025; vartijat reservi-*)
-      - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — See on rida, mida iga tarbija maksab: 3,73 €/MWh 2026. aastal ja 2,97 €/MWh alates 2027. Korrutage see oma aastase tarbimisega – arv tuleb välja ilma meie abita.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — 15-minutiline turuajaühik päev-ette turul
-      - **Korjaus:**
-- [ ] `p` **uusi** — Vaikne muudatus kogu SDAC-piirkonnas: lühem periood tähendab rohkem hinnaliikumist ööpäeva sees – ja rohkem väärtust varale, mis reageerib kiiresti.
-      - **Korjaus:**
-- [ ] `b` **uusi** — Sellel lehel avaldame pikemad ülevaated.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Ülevaated on kirjutatud nii, et neid saab kolleegile edasi saata.
-      - **Korjaus:**
-
-### #rev-uudised-3
-
-- [ ] `h2` **uusi** — Milline teema aitaks teie otsust?
-      - **Korjaus:**
-- [ ] `p` **uusi** — Kirjutage aadressile info@samaenergia.fi. Vastame kirjalikult, ja kui küsimus puudutab paljusid, saab sellest järgmine ülevaade.
-      - **Korjaus:**
-
----
-
 ## Uudised — Reservitasu 2026 — `/et/uudised/reservitasu-2026/`
 **Uusi sivu** — ei vastinetta mainissa.
-
-### (sivu)
-
-- [ ] `a` **uusi** — Küsi tasuta hindamist
-      - **Korjaus:**
 
 ### #rev-uudised-reservitasu-2026-1
 > Lähde tälle osiolle: Allikad
@@ -1515,8 +960,6 @@ Vastine mainissa: `/et/uudised/`
 > Lähde tälle osiolle: Elering, tasakaalustamisteenuste energia- ja võimsusturg — miinimumpakkumine 1 MW.
 > Lähde tälle osiolle: Elering, varustuskindluse aruanne 2025, lk 36–37 — 258 MW salvesteid 2028, 600 MW 2030.
 
-- [ ] `h1` **uusi** — Alates 2026 maksate reservide eest. Küsimus on, kummal pool arvet te olete.
-      - **Korjaus:**
 - [ ] ⚠ `p` **uusi** — 1. jaanuaril 2026 lisandus Eesti elektriarvele rida, mida seal varem ei olnud. See on 3,73 €/MWh, see puudutab iga tarbijat, ja see raha läheb kellelegi. Siin on, kellele see läheb ja mida see tähendab ettevõttele, kelle liitumine on suur.
       - **Korjaus:**
 - [ ] `h2` **uusi** — Mis täpselt muutus
@@ -1544,7 +987,7 @@ Vastine mainissa: `/et/uudised/`
       - **Korjaus:**
 - [ ] ⚠ `p` **uusi** — See ei tähenda, et aku teenib täpselt selle summa tagasi, mille te selle rea eest maksate. Reservi hind kujuneb turul iga päev, ja turg, kuhu tuleb pakkujaid juurde, ei püsi paigal. Elering ise arvestab varustuskindluse aruandes Eesti võrku 258 MW salvesteid 2028. aastaks ja 600 MW 2030. aastaks: pakkumine kasvab.
       - **Korjaus:**
-- [ ] `p` **uusi** — Sellepärast me ei luba ühtegi numbrit. Me näitame kolme stsenaariumi ja hoiame võimsustasu ning börsihinna säästu eraldi real, sest need kaks ei sõltu reservituru hinnast.
+- [ ] `p` **uusi** — Sellepärast me ei luba ühtegi numbrit. Modelleerime reservitulu toodete kaupa tegelikest tunnihindadest koos perioodiga ja hoiame võimsustasu ning börsihinna säästu eraldi real, sest need kaks ei sõltu reservituru hinnast.
       - **Korjaus:**
 - [ ] `h2` **uusi** — Mida sellega peale hakata
       - **Korjaus:**
@@ -1552,193 +995,22 @@ Vastine mainissa: `/et/uudised/`
       - **Korjaus:**
 - [ ] `li` **uusi** — Võtke välja oma tunnipõhised tarbimisandmed. Aasta jagu tunniandmeid ütleb rohkem kui ükski kalkulaator: sealt on näha nii tipud, mida aku maha lõikaks, kui ka see, kui palju vaba võimsust liitumises seisab.
       - **Korjaus:**
-- [ ] `li` **uusi** — Laske arvutada, mitte lubada. Küsige kirjalikku hinnangut, kus iga arvul on allikas ja kus reservitulu on kolme stsenaariumina. Meilt või kelleltki teiselt, aga küsige kirjalikult.
+- [ ] `li` **uusi** — Laske arvutada, mitte lubada. Küsige kirjalikku hinnangut, kus iga arvul on allikas ja kus reservitulu on modelleeritud toodete kaupa. Meilt või kelleltki teiselt, aga küsige kirjalikult.
       - **Korjaus:**
 
 ### #rev-uudised-reservitasu-2026-2
 
 - [ ] `h2` **uusi** — Kui suur see rida teie arvel on?
       - **Korjaus:**
-- [ ] `p` **uusi** — Tasuta hindamine vastab sellele kirjalikult, teie tunnipõhiste tarbimisandmete pealt, koos reservituru stsenaariumidega.
+- [ ] `p` **uusi** — Tasuta hindamine vastab sellele kirjalikult, teie tunnipõhiste tarbimisandmete pealt, koos modelleeritud reservituluga toodete kaupa.
       - **Korjaus:**
 - [ ] `a` **uusi** — Tagasi ülevaadete juurde
       - **Korjaus:**
 
 ---
 
-## Kontakt — `/et/kontakt/`
-Vastine mainissa: `/et/kontakt/`
-
-### (sivu)
-
-- [ ] `a` **uusi** — Küsi tasuta hindamist
-      - **Korjaus:**
-
-### #rev-kontakt-2
-
-- [ ] `p` **muutettu** — Kahe tööpäevaga teate, kas ja kuidas aku end teie objektil ära tasub. Hinnang on kaks lehekülge, kirjalikult ja kohustusteta:
-      - main: Kiireim viis selgitada, kas energiasalvesti teie objektile sobib, on objektikaardistus. Väljad on allpool — kohustuslikud on ainult nimi ja e-post, ülejäänud kiirendavad hinnangut.
-      - **Korjaus:**
-- [ ] `li` **uusi** — Liitumine ja tarbimisprofiil teie tunnipõhistest andmetest
-      - **Korjaus:**
-- [ ] `li` **uusi** — Võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel
-      - **Korjaus:**
-- [ ] `li` **uusi** — Kolm reservituru stsenaariumi allikatega
-      - **Korjaus:**
-- [ ] `li` **uusi** — Võrguettevõtja seisukoht ja see, mida hinnang ei ütle
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Teie annate: oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt – juhendame), ühe elektriarve ja peakilbi skeemi.
-      - main: Ehitame ka partnerivõrgustikku — elektriprojekteerijad, sertifitseeritud töövõtjad ja kinnisvaraarendajad: võtke ühendust sama vormiga.
-      - **Korjaus:**
-- [ ] `label` **uusi** — Ära täida seda välja
-      - **Korjaus:**
-- [ ] `label` **uusi** — Nimi
-      - **Korjaus:**
-- [ ] `label` **uusi** — E-post
-      - **Korjaus:**
-- [ ] `label` **uusi** — Mul on juba pakkumine käes, soovin sellele teist arvamust.
-      - **Korjaus:**
-- [ ] `summary` **muutettu** — Need kiirendavad hinnangut (kõik valikulised) +
-      - main: Need kiirendavad hinnangut · kõik valikulised
-      - **Korjaus:**
-- [ ] `label` **muutettu** — Objekti asukoht
-      - main: Objekti asukoht · valikuline
-      - **Korjaus:**
-- [ ] `label` **muutettu** — Peakaitse või liitumisvõimsus
-      - main: Peakaitse või liitumisvõimsus · valikuline
-      - **Korjaus:**
-- [ ] `label` **muutettu** — Aastane tarbimine
-      - main: Aastane tarbimine · valikuline
-      - **Korjaus:**
-- [ ] `label` **muutettu** — Võrguettevõtja
-      - main: Võrguettevõte · valikuline
-      - **Korjaus:**
-- [ ] `label` **muutettu** — Kas objektil on päikeseelekter?
-      - main: Kas objektil on päikeseelekter? · valikuline
-      - **Korjaus:**
-- [ ] `p` **uusi** — Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hindamiseks, privaatsuspoliitikat.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Kontrollige nime ja e-posti. Kui saatmine ei õnnestu, võite saata andmed ka otse aadressile info@samaenergia.fi.
-      - main: Saatmine ei õnnestunud. Võite saata andmed ka otse e-postiga: madis.maastik@samaenergia.fi.
-      - **Korjaus:**
-- [ ] `h3` **muutettu** — Aitäh. Võtame ühendust kahe tööpäeva jooksul.
-      - main: Aitäh — võtame ühendust tööpäeva jooksul.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Kui teil on tarbimisandmed või pakkumine käepärast, saatke need kohe aadressile info@samaenergia.fi. See kiirendab hinnangut.
-      - **Korjaus:**
-
-### #kontaktid
-
-- [ ] `h2` **uusi** — Kolm inimest ja üks aadress.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Kirjutage või helistage otse sellele, kelle teema see on. Vormi täitmine ei ole kohustuslik – see lihtsalt kiirendab vastust.
-      - **Korjaus:**
-- [ ] ⚠ `div` **uusi** — Müügijuht
-      - ⚠ tittelit hyväksytty 03.09.2026; "perustaja"/"asutaja" pudotettu 08.09.2026 (vartija titteli-perustaja)
-      - **Korjaus:**
-- [ ] `p` **uusi** — Hindamine, agregaatorid, kliendisuhted
-      - **Korjaus:**
-- [ ] `p` **muutettu** — madis.maastik@samaenergia.fi+358 449 654 614
-      - main: madis.maastik@samaenergia.fi
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Martin Rautio
-      - **Korjaus:**
-- [ ] ⚠ `div` **uusi** — Tegevjuht
-      - ⚠ perustajapäätös Martin Rautio 13.09.2026 — toimitusjohtaja / tegevjuht; hallituksen päätös ja kaupparekisteri-ilmoitus seuraavat. Sivusto on rekisteriä edellä 1–2 päivää, tietoisesti.
-      - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — Suund, partnerlused, lepingud ja rahastus
-      - ⚠ CLAUDEN KIRJOITTAMA ET-teksti 13.09.2026 — ei natiivin tarkistama. Tarkista sanavalinnat ja sävy: tämä on uusi vastuukuvaus (perustajapäätös 13.09.2026).
-      - **Korjaus:**
-- [ ] `p` **uusi** — martin.rautio@samaenergia.fi+358 40 701 9099
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Viljar Petersell
-      - **Korjaus:**
-- [ ] ⚠ `div` **uusi** — Paigaldusjuht
-      - ⚠ tittelit hyväksytty 03.09.2026; "perustaja"/"asutaja" pudotettu 08.09.2026 (vartija titteli-perustaja)
-      - **Korjaus:**
-- [ ] `p` **uusi** — Paigaldus, objekt, teostus ja kvaliteet
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Ettevõte
-      - **Korjaus:**
-- [ ] `li` **uusi** — SAMA Energia Oy
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — Sörnäisten Rantatie 33 C, 00500 Helsingi, Soome
-      - ⚠ osoite vahvistettu 06.09.2026
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — Y-tunnus 3647683-6
-      - ⚠ Y-tunnus korjattu 09.09.2026: vanha 3647683-3 ei läpäissyt tarkistusmerkkilaskentaa; oikea on 3647683-6 / FI36476836
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — KMKR FI36476836
-      - ⚠ Y-tunnus korjattu 09.09.2026: vanha 3647683-3 ei läpäissyt tarkistusmerkkilaskentaa; oikea on 3647683-6 / FI36476836
-      - **Korjaus:**
-- [ ] `li` **muutettu** — info@samaenergia.fi
-      - main: madis.maastik@samaenergia.fi
-      - **Korjaus:**
-- [ ] `p` **uusi** — Vastame kahe tööpäeva jooksul, ka siis, kui vastus on „ei tasu ära“. Töökeeled: eesti, soome, inglise.
-      - **Korjaus:**
-
----
-
-## Andmekaitse — `/et/andmekaitse/`
-Vastine mainissa: `/et/andmekaitse/`
-
-### (sivu)
-
-- [ ] `a` **uusi** — Küsi tasuta hindamist
-      - **Korjaus:**
-
-### #rev-andmekaitse-1
-
-- [ ] `h1` **uusi** — Privaatsuspoliitika
-      - **Korjaus:**
-
-### #rev-andmekaitse-2
-
-- [ ] ⚠ `p` **muutettu** — SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsingi, Soome · Soome registrikood (Y-tunnus) 3647683-6 · KMKR-nr FI36476836 · info@samaenergia.fi · +358 449 654 614.
-      - main: SAMA Energia Oy · Y-tunnus (Soome registrikood) 3647683-3 · madis.maastik@samaenergia.fi · +358 449 654 614.
-      - ⚠ osoite vahvistettu 06.09.2026
-      - ⚠ Y-tunnus korjattu 09.09.2026: vanha 3647683-3 ei läpäissyt tarkistusmerkkilaskentaa; oikea on 3647683-6 / FI36476836
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Kontaktivormil antud andmed: nimi, ettevõte, e-post, telefon, objekti asukoht, liitumis- ja tarbimisandmed ning sõnum. Lisaks veebilehe tehniline serverilogi (sh IP-aadress ja ajatempel), mille majutusteenus toodab teenuse osutamiseks ja turvalisuse tagamiseks. Sait ei kasuta küpsiseid, analüütikat ega salvestatud eelistusi.
-      - main: Kontaktivormil antud andmed: nimi, ettevõte, e-post, telefon, objekti asukoht, liitumis- ja tarbimisandmed ning sõnum. Lisaks veebilehe tehniline serverilogi (sh IP-aadress ja ajatempel), mille majutusteenus toodab teenuse osutamiseks ja turvalisuse tagamiseks. Me ei kasuta küpsiseid, jälgimispiksleid ega analüütikat.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Et vastata teie pöördumisele ja valmistada ette teie soovitud hindamist (lepingueelsed meetmed, isikuandmete kaitse üldmääruse artikli 6 lõike 1 punkt b) ning õigustatud huvi alusel (artikli 6 lõike 1 punkt f) kliendisuhte haldamiseks ja turvalisuse tagamiseks. Me ei kasuta andmeid muuks turunduseks ilma eraldi nõusolekuta.
-      - main: Et vastata teie pöördumisele ja valmistada ette teie soovitud kaardistust (lepingueelsed meetmed, isikuandmete kaitse üldmääruse artikli 6 lõike 1 punkt b) ning õigustatud huvi alusel (artikli 6 lõike 1 punkt f) kliendisuhte haldamiseks ja turvalisuse tagamiseks. Me ei kasuta andmeid muuks turunduseks ilma eraldi nõusolekuta.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Me ei müü ega anna andmeid turunduseks. Veebimajutus ja vormide vastuvõtt: Netlify, Inc. (USA); edastust väljapoole EL-i ja EMP-d kaitstakse EL-i heakskiidetud edastusmehhanismidega. Teised tehnilised volitatud töötlejad on e-postiteenus ja domeeniteenus. Hinnangu koostamisel jagame objekti andmeid agregaatoriga ainult teie teadmisel.
-      - main: Me ei müü ega anna andmeid turunduseks. Tehniliste volitatud töötlejatena tegutsevad veebilehe majutus- ja vormiteenus ning e-postiteenus. Kui teenusepakkuja töötleb andmeid väljaspool EL-i või EMP-d, kaitstakse edastust EL-i heakskiidetud mehhanismidega, nagu lepingu tüüptingimused või Data Privacy Framework.
-      - **Korjaus:**
-- [ ] `h2` **uusi** — Turuülevaade
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Turuülevaade: teie e-posti aadress, mille annate tellimisel. Aluseks on teie nõusolek, mille võite igal ajal tagasi võtta, vastates kirjale või kirjutades aadressile info@samaenergia.fi. Säilitame aadressi kuni loobumiseni.
-      - main: Teil on õigus saada juurdepääs oma andmetele, nõuda nende parandamist, kustutamist, töötlemise piiramist või ülekandmist ning esitada vastuväiteid töötlemisele. Taotlused: madis.maastik@samaenergia.fi. Teil on ka õigus esitada kaebus järelevalveasutusele: Soome andmekaitsevolinik (tietosuoja.fi) või Eesti Andmekaitse Inspektsioon (aki.ee).
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Teil on õigus saada juurdepääs oma andmetele, nõuda nende parandamist, kustutamist, töötlemise piiramist või ülekandmist ning esitada vastuväiteid töötlemisele. Taotlused: info@samaenergia.fi. Teil on ka õigus esitada kaebus järelevalveasutusele: Soome andmekaitsevolinik (tietosuoja.fi) või Eesti Andmekaitse Inspektsioon (aki.ee).
-      - main: Teil on õigus saada juurdepääs oma andmetele, nõuda nende parandamist, kustutamist, töötlemise piiramist või ülekandmist ning esitada vastuväiteid töötlemisele. Taotlused: madis.maastik@samaenergia.fi. Teil on ka õigus esitada kaebus järelevalveasutusele: Soome andmekaitsevolinik (tietosuoja.fi) või Eesti Andmekaitse Inspektsioon (aki.ee).
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Uuendatud 08.09.2026. Kui tingimused muutuvad, on uusim versioon alati sellel lehel.
-      - main: Uuendatud 18.08.2026. Kui tingimused muutuvad, on uusim versioon alati sellel lehel.
-      - **Korjaus:**
-
----
-
-## Aitäh — `/et/aitah/`
-Vastine mainissa: `/et/aitah/`
-
-### (sivu)
-
-- [ ] `a` **uusi** — Küsi tasuta hindamist
-      - **Korjaus:**
-
----
-
 ## 404 — `/et/404.html`
 **Uusi sivu** — ei vastinetta mainissa.
-
-### (sivu)
-
-- [ ] `a` **uusi** — Küsi tasuta hindamist
-      - **Korjaus:**
 
 ### #p-404
 

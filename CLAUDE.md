@@ -115,3 +115,30 @@ When in doubt, leave it out and flag it.
 - Varavoima/varutoide aina ehdolla myös etusivun hotellikortissa. 3D: ei erillistä akkuinvertteriä — `_xPcs` piirtää akkukaapin (etusivun kuvitus 3 kaappia, varasto-kerros 4); INVERTTERI/INVERTER-tarrat pois.
 - Reservisivujen data-desc "mallinnettu/modelleeritud", ei "kolme skenaariota"; "satoja kertoja / sadu kordi" pois (ei lähdettä).
 - Puhelin (<= 750 px, sivuilla joilla .lava): 3D-moottoria ei käynnistetä; still-kuva `assets/hero-3d.webp` (938×586, ei tarroja) hero-ryhmässä. Kuvan päivitys moottorimuutosten jälkeen: renderöi .cv-hero still-tilassa 519 px leveällä ikkunalla, DPR 2 (canvas 479 css-px < 480 = ei tarroja). Hero-teksti ilman fade-animaatiota.
+
+## v41 — K2-etusivu (luonnos, haara v35-uusi-ilme, 04.11.2026)
+
+- Etusivu FI/ET K2-konseptin mukaan (Claude Design -kanvas: k2-1440, k2-390, kaart-1440, kaart-390). Täysleveät osiot vaalea/tumma-rytmissä;
+  `.k-chalk` = vaalea tokenisarja (myös lomake: vaaleat kentät, `color-scheme:light`). 3D vain still-kuvina: hero-tausta `k-hero-{1920,1280}.webp`,
+  puhelimelle `k-hero-m.webp` + numeroidut nastat, päivänvalokuva `k-paev*.webp`, kohdekäynti `k-objekt*.webp`. Tarrat HTML:nä renderin
+  prosenttiankkureista (`.k-tag.r` = nimilappu vasemmalle reunan lähellä). Heron korkeus seuraa näkymää (`100vh - 130px`, 600–860 px): seuraava osio pilkistää.
+- Etusivu ei lataa 3D-moottoria (scene.js / scene-et.js + kartta-json, ~200 kt). Kartta on oma osio `.k-kaart`: kuusi kysymystä + "Teidän liittymänne",
+  radio + label (ei JS:ää, nuolinäppäimet toimivat), tasokuvat `kk-{fi,ee}-{d,m}0–6.webp` (kanvasin map2-renderit; FI-varastotason neliö siirretty
+  Kuopio-nimen vasemmalle puolelle). Luvut ja lähteet kanvasin kaart-datasta (tarkistettu 02.11.2026). Koko interaktiivinen kartta jää /verkko/ ↔ /vork/.
+- Järjestys: hero (H1 lukittu, ET "oma"; v39-ingressi; CTA + "Miten akku toimii?" + puhelin; todiste FI 1 500 MW Fingrid 11.6.2025 / ET 3,73 €/MWh
+  Elering 2026) → miten toimii (kipu + kolme asiaa + kuva + neljä tuloriviä, reservimarkkina ensin) → reserviteaser → kolme tilattavaa → kartta →
+  näin edetään → kenelle → miksi SAMA → UKK (6, kaikki kiinni) → lomake.
+- Siirretty etusivulta alasivulle (ei poistettu): kenelle-ingressi ja "Ettekö löytänyt…" → /energiavarastot/#kenelle-miksi ja /energiasalvestid/#kellele-miks;
+  tarjouskorttien "mitä sisältää" -rivit ovat palvelusivulla (Mitä sisältää / Mitä te annatte). FI-etusivun osio-id:t takaisin suomeksi (etusivu, tarjoamme, verkko, nain).
+- Sanamäärä (näkyvä teksti Chromessa, ilman ylä- ja alatunnistetta): FI 814 / ET 854, tavoite ≤ 800. Loput vaativat hyväksyttyjen tekstien lyhentämistä
+  → perustajan valinta. Ehdotus (vain kokonaisten lauseiden poisto): Miksi SAMA -ingressi, UKK:n sivulause; ET lisäksi vaiheiden ingressin 1. lause ja
+  Miksi SAMA -kohtien 2. lauseet → FI 784, ET 795.
+- site.js: UKK "yksi auki kerrallaan" rajattu omaan `.faq`-lohkoonsa; kiinnitetty CTA tunnistaa K2-heron (`.k-hero`). build-standalone.py upottaa
+  `<source srcset>` -kuvat. build-pages.mjs poistaa `&shy;`:n tekstiversioista (H1:n tavutuskohdat näkyvät vain puhelimella, `hyphens` ohjaa).
+  native-pass.mjs vertaa nykyiseen mainiin 941e6ef (docs/native-pass/FI.md 347 riviä, ET.md 379 riviä, generoitu 04.11.2026).
+- Lighthouse mobiili (paikallinen palvelin brotlilla, 2 ajoa): suorituskyky 87–89, saavutettavuus 100, parhaat käytännöt 100, SEO 100; FCP 1,2–1,4 s,
+  LCP 3,5–3,6 s (simuloitu; LCP-elementti on heron ingressi, mitattuna verkon ja CPU:n hidastuksella ≈ 1,1 s), TBT 110–130 ms, CLS 0.
+  Suurin jäljellä oleva vipu: Newsreader-muuttujafonttien preload (279 kt).
+- AJASTETTU: 1.1.2027 Eleringin tasakaalustamisvõimsuse tasu 3,73 → 2,97 €/MWh (ERR 26.6.2026) — vaihda ET-heron todiste ja kartan Reservid-taso.
+- AVOIN: natiivitarkistus; lähteet puuttuvat automaattitarkistuksessa kolmelta vanhalta riviltä (ET reservisivu "miinimumpakkumine 1 MW", invertteri/aku 1:2,
+  tiimin aurinkokokemus) ja kahdelta FI-riviltä; push repoon vaatii oikeuden; etapit 2–4 (alasivut, riippumaton tarkistus + natiivi, perustajan OK → main).
