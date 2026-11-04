@@ -12,7 +12,7 @@ Roll: front-end arendaja + jõudlusinsener. Alusta alles siis, kui Madis on vali
 
 ## Reeglid
 
-- Muuda ainult `src/fi.html`, `src/et.html`, `assets/*`, `scripts/*`; genereeritud lehed ehitab skript. Commit harule; push ainult „push it".
+- Muuda ainult `src/fi.html`, `src/et.html`, `assets/*`, `scripts/*`; genereeritud lehed ehitab skript. Commit ja push harule pärast iga sammu, ilma küsimata; main ainult Madise OK-ga.
 - Kinnitatud tekste ei muudeta ilma A-vestluse valitud variandita. Iga uus tekst märgitakse natiivkontrolli loendisse `docs/native-pass/`.
 - Keelatud nimed ja reeglid CLAUDE.md-s on kõva piir.
 
