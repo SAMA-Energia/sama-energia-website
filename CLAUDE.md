@@ -143,6 +143,8 @@ When in doubt, leave it out and flag it.
   (Viro pieni, saaret ilman johtoja) — Madiksen palaute 4.11.2026 koskee myös sitä: kaikki johdot (110 kV) ja saaret, kotimaa isona.
   Aineisto: `assets/kartta-110.json` (kartta.js:n LCC-polut) tai lon/lat `docs/kaart/osm/lines-2026-11-02.json` (voltage 110000: 4 113 johtoa).
   Valmis vaihtoehto: kartta.js:n etusivutila (`data-mode="front"`, `.km-inline` / `.km-slot`), testattu 3.11.2026.
+  → Tehty 4.11.2026 (v42, alla): etusivun scene.js-kartta piirtää 110 kV:n ja saaret (`assets/kartta-etusivu.json` kartta-110.json:sta), kotimaa isona
+  kartta-data.json:n näkymillä, viimeinen luku zoomaa vierityksen mukana.
 
 ## v41 — K2-etusivu (luonnos, haara v35-uusi-ilme, 04.11.2026)
 
