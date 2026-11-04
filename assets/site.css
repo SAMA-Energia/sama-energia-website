@@ -1027,7 +1027,8 @@ h1 em,h2 em{color:var(--gold-2)}
 .k-kaart.is-live .kk-q:before,.k-sld.is-live .ks-s h3:before{content:"";display:block;width:36px;height:2px;margin:0 0 14px;background:#3A362F;transition:background-color .35s,width .35s}
 .k-kaart.is-live .kk-l.on .kk-q:before,.k-sld.is-live .ks-s.on h3:before{width:56px;background:#D9BC7E}
 @media (min-width:1100px){
-.k-kaart.is-live .kk-maps{position:sticky;inset:auto;top:79px;width:100%;height:calc(100vh - 79px);margin:0 0 calc(79px - 100vh)}
+.k-kaart.is-live .kk-maps{position:sticky;inset:auto;top:79px;width:100%;height:calc(100vh - 79px);margin:calc(-1 * var(--kk-lift,0px)) 0 calc(79px - 100vh + var(--kk-lift,0px))}
+.k-kaart.is-live .kk-head{position:relative;z-index:3}
 .k-kaart.is-live .kk-maps canvas{left:34%;width:66%}
 .k-kaart.is-live .kk-maps:after{z-index:2}
 .k-kaart.is-live .kk-chipsw{position:sticky;top:79px;z-index:3}
@@ -1035,7 +1036,7 @@ h1 em,h2 em{color:var(--gold-2)}
 .k-kaart.is-live .kk-l{display:flex;flex-direction:column;justify-content:center;min-height:76vh;padding:0}
 }
 @media (max-width:1099px){
-.k-kaart.is-live .kk-maps{position:sticky;top:79px;z-index:2;height:min(42vh,460px);aspect-ratio:auto;margin:20px calc(var(--gutter)*-1) 0;background:#0A0A09}
+.k-kaart.is-live .kk-maps{position:sticky;top:79px;z-index:2;height:min(42vh,460px);aspect-ratio:auto;margin:20px 0 0;background:#0A0A09;box-shadow:0 14px 18px 6px #0A0A09}
 .k-kaart.is-live .kk-l{min-height:56vh}
 }
 /* vaiheet: animaatio tarttuu, askeleet vierivät */
@@ -1072,7 +1073,7 @@ h1 em,h2 em{color:var(--gold-2)}
 .k-sld.is-live .ks-steps{position:relative;z-index:1}
 .k-sld.is-live .ks-s{min-height:72vh;display:flex;flex-direction:column;justify-content:center;max-width:440px;border:0}
 @media (max-width:900px){
-.k-sld.is-live .ks-stage{z-index:2;height:min(40vh,420px);margin:20px calc(var(--gutter)*-1) 0;background:#0A0A09}
+.k-sld.is-live .ks-stage{z-index:2;height:min(40vh,420px);margin:20px 0 0;background:#0A0A09;box-shadow:0 14px 18px 6px #0A0A09}
 .k-sld.is-live .ks-stage canvas{left:0;width:100%}
 .k-sld.is-live .ks-stage:after{display:none}
 .k-sld.is-live .ks-s{min-height:52vh;max-width:none}

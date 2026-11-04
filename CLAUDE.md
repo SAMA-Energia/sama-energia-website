@@ -178,3 +178,21 @@ When in doubt, leave it out and flag it.
 - Kumppanit etusivulla: kaikki kirjallisesti vahvistetut kumppanit luokittain ja tasavertaisesti (korvaa 2.11.2026 linjauksen "etusivulla ei nosteta yksittäisiä kumppaneita esiin"). Nimi vain R14-merkinnän ja päätöslokin mukaan (I-20261023-1); malli ja tekniset arvot tarjoukseen, ei sivulle.
 - ET-heron todiste ei ole €/MWh (Madis 8.9.2026: senttejä megawatilta ei kiinnosta ketään); suunnitelmassa Eleringin varustuskindluse aruanne 2025 (juhitav võimsus ~2 100 MW 2035, salvestid ~400 MW, ERR 9.12.2025).
 - Työ haaraan pushataan jokaisen vaiheen jälkeen kysymättä (I-20261104-1); main vain Madiksen OK:lla.
+
+## v42 — elävät luvut K2-sivuille (luonnos, haara v35-uusi-ilme, 04.11.2026)
+
+- Madis 4.11.2026: v38:n vierityksen mukana kehittyvät 3D-kuvat ja kartta takaisin v41-sivuille. Elävä luku = `section.k-live[data-live="map|proc|sld"]`,
+  askeleet `[data-step]`, karttapainikkeet `data-jump`: etusivun Yhteinen verkko / Ühine võrk (kartta) ja Näin edetään / Kuidas edasi (vaiheet) sekä
+  energiavarastosivun uusi luku /energiavarastot/#kerros ↔ /energiasalvestid/#kihid (Kantaverkosta kennoon / Põhivõrgust akuelemendini, viisi kerrosta;
+  linkki etusivun Miten toimii / Kuidas toimib -osiosta). Uudessa etusivussa (konsepti 1) samat luvut toimivat samalla merkinnällä.
+- Moottori (scene.js / scene-et.js) käynnistyy vasta, kun luku lähestyy (IntersectionObserver). prefers-reduced-motion → ei moottoria, K2-stillit ja radio jäävät.
+  Vieritystä ei ohjata: lukulinjaa (55 % näkymästä; puhelimella kiinnittyvän kuvan alapuolella) lähimpänä oleva askel ohjaa kuvaa, sld etenee jatkuvasti.
+- Kartta: rajaus kartta-data.json:n näkymistä (`views`, kerroksen `view`, `vmode: scroll` — samat kuin /verkko/), viimeinen luku zoomaa kotimaasta
+  kohteeseen vierityksen mukana; leveällä näytöllä kartta tarttuu osion yläreunasta (`--kk-lift`). 110 kV -verkko (myös saaret ja kaapelit) ja rantaviivat:
+  `assets/kartta-etusivu.json` ← `python3 scripts/kaart/etusivu_110.py` (lähteet kartta-110.json + kartta-pohja.json; aja uudelleen, kun ne päivittyvät).
+- Varastokerros: ei erillistä invertteriä — neljäs akkukaappi, tehoelektroniikka (PCS) ja ohjaus (EMS) piirretty avoimen kaapin sisään. Kanvaasin tarrat
+  kääntyvät reunalla; puhelimessa (kanvaasi < 480 px) sld-luvussa ei tarroja.
+- Lighthouse mobiili (paikallinen brotli-palvelin): /et/ 86–87, / 89–95, /et/energiasalvestid/ 93; saavutettavuus, parhaat käytännöt, SEO 100; CLS 0.
+  Kartan aineisto latautuu vasta osion lähestyessä. Esikatselu: `python3 scripts/build-standalone.py v42`.
+- AVOIN: natiivitarkistus uusille teksteille (sld-askeleet, linkkitekstit, kanvaasin tarrat, aria-labelit); `.k-kaart`-tasokuvat (reduced-motion)
+  näyttävät vielä vain päälinjat — päivitettävä samaan aineistoon; uusi hero-otsikko (I-20261104-3) ja konsepti 1 kuuluvat seuraavaan etusivuun.

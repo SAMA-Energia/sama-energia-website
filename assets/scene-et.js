@@ -1660,16 +1660,37 @@ class Component extends DCLogic {
     const dt = Math.min(0.1, time - (this._mapT === undefined ? time : this._mapT)); this._mapT = time;
     for (const k in on) { const tgt = on[k] ? 1 : 0; A[k] = A[k] === undefined ? tgt : A[k] + (tgt - A[k]) * Math.min(1, dt * 5); }
     const al = (k) => A[k] || 0;
-    const z = this._sm(al('site'));
     const N = this._map.nodes, Asp = this._map.aspect;
     const site = window.SAMA_MAP_SITE || [N.helsinki[0] + 0.012, N.helsinki[1] - 0.006];
     const inStage = !!(c.el && c.el.closest && c.el.closest('.lava-cv'));
-    const VW = inStage ? (home === 'ee' ? [0.27, 0.75, 0.60, 1.0] : [0.15, 0.84, 0.42, 1.0]) : (home === 'ee' ? [0.20, 0.80, 0.40, 1.0] : [0.12, 0.88, 0.26, 1.0]);
-    const cx0 = (VW[0] + VW[1]) / 2, cy0 = (VW[2] + VW[3]) / 2;
-    let sc0 = (h * 0.96) / (VW[3] - VW[2]); if (sc0 * Asp * (VW[1] - VW[0]) > w * 0.96) sc0 = (w * 0.96) / (Asp * (VW[1] - VW[0]));
-    const sc = sc0 * (1 + z * 4.5);
-    const fx = cx0 + (site[0] - cx0) * z, fy = cy0 + (site[1] - cy0) * z;
-    const cx = w * 0.5, cy = h * 0.5;
+    const live = !!(c.el && c.el.closest && c.el.closest('.k-live')) && !!(this._kd && this._kd.views && this._kd.views[home]);
+    let z, sc, fx, fy, cx, cy;
+    if (live) {
+      /* 04.11.2026: K2-luku — rajaus kartta-data.json:sta (samat näkymät kuin /verkko/-sivulla): kotimaa, kerroksen oma rajaus (EE Salvestid),
+         viimeinen luku (vmode: scroll) zoomaa kotimaasta kohteeseen vierityksen mukana (this._mapP 0–1, ohjain asettaa); siirtymät pehmeästi. */
+      const HU = home === 'ee' ? 'EE' : 'FI';
+      const toVW = (b) => { const p0 = this._ll([b[0], b[3]]), p1 = this._ll([b[2], b[1]]); return [p0[0], p1[0], p0[1], p1[1]]; };
+      const homeVW = toVW(this._kd.views[home].bbox);
+      const Ly = this._mapCur ? this._kd.layers.find((l) => l.id === this._mapCur) : null, lv = Ly && Ly.view && Ly.view[HU] ? toVW(Ly.view[HU]) : null;
+      const scroll = !!(lv && Ly.vmode === 'scroll'), pz = scroll ? this._sm(Math.max(0, Math.min(1, this._mapP || 0))) : 0;
+      const tgt = lv ? (scroll ? homeVW.map((v, i) => v + (lv[i] - v) * pz) : lv) : homeVW;
+      if (!this._mapV) this._mapV = tgt.slice();
+      const V = this._mapV, ke = Math.min(1, dt * (scroll ? 10 : 4.5));
+      for (let i = 0; i < 4; i++) V[i] += (tgt[i] - V[i]) * ke;
+      const vw = V[1] - V[0], wide = w > 700;
+      z = Math.max(0, Math.min(1, ((homeVW[1] - homeVW[0]) / vw - 1) / 2.6));
+      /* leveällä kanvaasilla vasen viidennes on tekstin varjon alla (.kk-maps:after): kartta sovitetaan oikealle puolelle */
+      sc = Math.min((h * (wide ? 0.88 : 0.92)) / (V[3] - V[2]), (w * (wide ? 0.7 : 0.92)) / (Asp * vw));
+      fx = (V[0] + V[1]) / 2; fy = (V[2] + V[3]) / 2; cx = w * (wide ? 0.59 : 0.5); cy = h * 0.5;
+    } else {
+      z = this._sm(al('site'));
+      const VW = inStage ? (home === 'ee' ? [0.27, 0.75, 0.60, 1.0] : [0.15, 0.84, 0.42, 1.0]) : (home === 'ee' ? [0.20, 0.80, 0.40, 1.0] : [0.12, 0.88, 0.26, 1.0]);
+      const cx0 = (VW[0] + VW[1]) / 2, cy0 = (VW[2] + VW[3]) / 2;
+      let sc0 = (h * 0.96) / (VW[3] - VW[2]); if (sc0 * Asp * (VW[1] - VW[0]) > w * 0.96) sc0 = (w * 0.96) / (Asp * (VW[1] - VW[0]));
+      sc = sc0 * (1 + z * 4.5);
+      fx = cx0 + (site[0] - cx0) * z; fy = cy0 + (site[1] - cy0) * z;
+      cx = w * 0.5; cy = h * 0.5;
+    }
     const P = (q) => [cx + (q[0] - fx) * sc * Asp, cy + (q[1] - fy) * sc];
     const PL = (ll) => P(this._ll(ll));
     this._mapProj = P; this._mapProjLL = PL; this._mapZ = z;
@@ -1690,6 +1711,17 @@ class Component extends DCLogic {
     // outside-country reference lines (SE/NO/RU/LV coast hints)
     g.lineWidth = 1; g.strokeStyle = 'rgba(243,238,225,0.09)';
     for (const key in this._map.lines) for (const ln of this._map.lines[key]) { g.beginPath(); let pen = false; ln.forEach((q) => { const edge = q[0] < 0.004 || q[0] > 0.996 || q[1] < 0.004 || q[1] > 0.996; const s = P(q); if (edge) { pen = false; return; } if (!pen) { g.moveTo(s[0], s[1]); pen = true; } else g.lineTo(s[0], s[1]); }); g.stroke(); }
+    // rantaviivat ja saaret (Natural Earth 1:10m, assets/kartta-etusivu.json) — 04.11.2026: maan muoto ja saaret näkyvät myös lähellä
+    const ke = this._ke;
+    if (ke && ke.land) {
+      if (!this._kland) { const q = ke.q || 1000; this._kland = {}; for (const cc in ke.land) this._kland[cc] = ke.land[cc].map((arr) => { let x = arr[0], y = arr[1]; const pts = [this._ll([x / q, y / q])]; for (let i = 2; i < arr.length; i += 2) { x += arr[i]; y += arr[i + 1]; pts.push(this._ll([x / q, y / q])); } return pts; }); }
+      for (const cc in this._kland) {
+        const hm = cc === home; g.beginPath();
+        for (const pts of this._kland[cc]) { for (let i = 0; i < pts.length; i++) { const s = P(pts[i]); if (i === 0) g.moveTo(s[0], s[1]); else g.lineTo(s[0], s[1]); } g.closePath(); }
+        g.fillStyle = hm ? 'rgba(212,181,116,0.035)' : 'rgba(243,238,225,0.018)'; g.fill();
+        g.lineWidth = 1; g.strokeStyle = hm ? 'rgba(212,181,116,0.4)' : (cmp ? 'rgba(243,238,225,0.24)' : 'rgba(243,238,225,0.13)'); g.stroke();
+      }
+    }
     // land dots
     const dsz = Math.max(1.2, Math.min(3, sc / 520));
     for (const d of this._dots) {
@@ -1704,6 +1736,29 @@ class Component extends DCLogic {
     if (al('vork') > 0.01 && kv) {
       if (!this._kvxy) this._kvxy = kv.lines.map((wline) => ({ c: wline[0], k: wline[1], v: wline[2], n: wline[3], p: wline[4].map((ll) => this._ll(ll)) }));
       const a0 = al('vork') * (1 - 0.35 * z);
+      // 110 kV (myös saarten johdot ja kaapelit) ohuena pääverkon alla — 04.11.2026, assets/kartta-etusivu.json (scripts/kaart/etusivu_110.py)
+      const k110 = this._ke;
+      if (k110) {
+        if (!this._kexy) {
+          const q = k110.q || 1000, G = { ha: [], oa: [], hc: [], oc: [] };
+          for (const kind of ['ac', 'cable']) for (const cc in (k110[kind] || {})) for (const arr of k110[kind][cc]) {
+            let x = arr[0], y = arr[1]; const pts = [this._ll([x / q, y / q])];
+            for (let i = 2; i < arr.length; i += 2) { x += arr[i]; y += arr[i + 1]; pts.push(this._ll([x / q, y / q])); }
+            const c0 = cc === 'sea' ? cty([arr[0] / q, arr[1] / q]) : cc;
+            G[(c0 === home ? 'h' : 'o') + (kind === 'cable' ? 'c' : 'a')].push(pts);
+          }
+          this._kexy = G;
+        }
+        const G = this._kexy, a110 = al('vork') * (0.6 + 0.4 * Math.min(1, z * 1.6));
+        const run = (list) => { g.beginPath(); for (const pts of list) { for (let i = 0; i < pts.length; i++) { const s = P(pts[i]); if (i === 0) g.moveTo(s[0], s[1]); else g.lineTo(s[0], s[1]); } } g.stroke(); };
+        g.lineWidth = Math.max(0.6, Math.min(1.3, sc / 1600)); g.strokeStyle = '#D4B574';
+        g.globalAlpha = a110 * 0.34; run(G.ha);
+        g.globalAlpha = a110 * (cmp ? 0.28 : 0.13); run(G.oa);
+        g.setLineDash([3, 3]); g.strokeStyle = '#F3EEE1';
+        g.globalAlpha = a110 * 0.5; run(G.hc);
+        g.globalAlpha = a110 * (cmp ? 0.4 : 0.2); run(G.oc);
+        g.setLineDash([]); g.globalAlpha = 1;
+      }
       for (const wl of this._kvxy) {
         const ca = (wl.c === home ? 1 : (cmp ? 0.85 : 0.4));
         if (wl.k === 'dc') continue;
@@ -1727,7 +1782,7 @@ class Component extends DCLogic {
         const ca = (ss[0] === home ? 1 : (cmp ? 0.85 : 0.4));
         g.globalAlpha = a0 * ca; g.fillStyle = ss[1] === 'conv' ? '#F3EEE1' : '#D4B574';
         g.fillRect(s[0] - ssz / 2, s[1] - ssz / 2, ssz, ssz);
-        if (z > 0.4 && ss[2]) { g.globalAlpha = a0 * ca * z; label(s[0] + 8, s[1], ss[2], { font: FONTS, color: '#CFC8B8' }); }
+        if (z > 0.4 && ss[2] && (!live || this._mapCur === 'site')) { g.globalAlpha = a0 * ca * z; label(s[0] + 8, s[1], ss[2], { font: FONTS, color: '#CFC8B8' }); }
       }
       g.globalAlpha = 1;
     }
@@ -1737,7 +1792,8 @@ class Component extends DCLogic {
       const layers = kd.layers;
       for (const Ly of layers) {
         const a = al(Ly.id); if (a < 0.01 || Ly.id === 'site') continue;
-        const aa = a * (1 - 0.45 * z);
+        const aa = a * (1 - 0.45 * z) * (live && Ly.id === 'vork' && this._mapCur === 'site' ? Math.max(0, 1 - z * 1.6) : 1);   /* kohdeluvussa yhteysmerkinnät väistyvät zoomatessa */
+        if (aa < 0.01) continue;
         for (const pin of Ly.pins) {
           const k = pin.k;
           if (k === 'zone') {
@@ -1802,7 +1858,7 @@ class Component extends DCLogic {
     }
     this._mapPins = pins;
     // OSM attribution (only on the full map, not in the stage)
-    if (!inStage && kv) { g.font = FONTS; g.textAlign = 'right'; g.fillStyle = '#827C71'; g.fillText('© OpenStreetMap contributors · Natural Earth', w - 8, h - 8); }
+    if (!inStage && kv) { g.font = FONTS; g.textAlign = 'right'; g.fillStyle = '#827C71'; g.fillText(w < 560 ? '© OpenStreetMap contributors' : '© OpenStreetMap contributors · Natural Earth', w - 8, h - 8); }
   }
   /* ---------- Section 3: illustrated exploded stack ---------- */
   renderVals() {
@@ -1956,18 +2012,24 @@ var c=null,MAPK=['vork','tarbimine','tootmine','salvestid','reservid','tulevik',
 function loadMap(){
  if(window.SAMA_KD)c._kd=window.SAMA_KD;else fetch('/assets/kartta-data.json').then(function(r){return r.json();}).then(function(d){c._kd=d;}).catch(function(){});
  if(window.SAMA_KV)c._kv=window.SAMA_KV;else fetch('/assets/kartta-verkko.json').then(function(r){return r.json();}).then(function(d){c._kv=d;c._kvxy=null;}).catch(function(){});
+ if(window.SAMA_KE)c._ke=window.SAMA_KE;else fetch('/assets/kartta-etusivu.json').then(function(r){return r.json();}).then(function(d){c._ke=d;c._kexy=null;}).catch(function(){});
 }
-function start(){if(c)return;c=window.SAMA_BOOT();if(document.querySelector('.k-live .cv-map')){loadMap();c._mapCmp=false;c.setMapLayers({vork:1});}tick();}
+/* leveällä näytöllä kartta tarttuu jo osion yläreunasta: --kk-lift = matka osion alusta kartan luonnolliseen paikkaan */
+function lift(){var wide=false;try{wide=matchMedia('(min-width:1100px)').matches;}catch(e){}secs.forEach(function(s){if(s.getAttribute('data-live')!=='map')return;var m=s.querySelector('.kk-maps');if(!m)return;if(!wide){s.style.removeProperty('--kk-lift');return;}var cur=parseFloat(s.style.getPropertyValue('--kk-lift'))||0,v=Math.round(m.getBoundingClientRect().top-s.getBoundingClientRect().top+cur);if(v!==cur)s.style.setProperty('--kk-lift',v+'px');});}
+lift();
+function start(){if(c)return;c=window.SAMA_BOOT();if(document.querySelector('.k-live .cv-map')){loadMap();c._mapCmp=false;c._mapCur='vork';c.setMapLayers({vork:1});}tick();}
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){for(var i=0;i<es.length;i++)if(es[i].isIntersecting){io.disconnect();start();return;}},{rootMargin:'120% 0px 120% 0px'});secs.forEach(function(s){io.observe(s);});}else start();
 function line(s){var v=s&&s.querySelector('.kk-maps,.k-fig,.ks-stage');if(v){var r=v.getBoundingClientRect();if(r.left<innerWidth*0.3&&r.top<=110&&r.bottom<innerHeight*0.8)return r.bottom+(innerHeight-r.bottom)*0.35;}return innerHeight*0.55;}
 function nearest(st,s){var mid=line(s),b=-1,bd=1e9;for(var i=0;i<st.length;i++){var r=st[i].getBoundingClientRect(),d=r.top>mid?r.top-mid:(r.bottom<mid?mid-r.bottom:0);if(d<bd){bd=d;b=i;}}return b;}
 function mark(st,i){for(var k=0;k<st.length;k++)st[k].classList.toggle('on',k===i);}
 function step(s){var st=s.querySelectorAll('[data-step]');if(!st.length)return;var kind=s.getAttribute('data-live'),i;
  if(kind==='sld'){var f=st[0].getBoundingClientRect(),l=st[st.length-1].getBoundingClientRect(),p=(line(s)-f.top)/Math.max(1,l.bottom-f.top);p=Math.max(0,Math.min(0.999,p));c._p3Lock=p;c._p3=p;i=Math.min(st.length-1,Math.floor(p*st.length));if(last[s.id]!==i){last[s.id]=i;mark(st,i);}return;}
- i=nearest(st,s);if(i<0||last[s.id]===i)return;last[s.id]=i;mark(st,i);
- if(kind==='map'){var r=s.querySelector('#kk'+i);if(r)r.checked=true;var o={};for(var j=0;j<MAPK.length;j++)o[MAPK[j]]=(j===0||j===i)?1:0;c.setMapLayers(o);}
+ i=nearest(st,s);
+ if(kind==='map'){var lb=st[st.length-1].getBoundingClientRect(),ln=line(s),vm=s.querySelector('.kk-maps'),vr=vm&&vm.getBoundingClientRect(),stk=vr&&vr.left<innerWidth*0.3&&vr.top<=110&&vr.bottom<innerHeight*0.8,endY=stk?vr.bottom:innerHeight*0.12;c._mapP=Math.max(0,Math.min(1,(ln-lb.top)/Math.max(1,ln-endY)));}
+ if(i<0||last[s.id]===i)return;last[s.id]=i;mark(st,i);
+ if(kind==='map'){var r=s.querySelector('#kk'+i);if(r)r.checked=true;var o={};for(var j=0;j<MAPK.length;j++)o[MAPK[j]]=(j===0||j===i)?1:0;c._mapCur=MAPK[i];c.setMapLayers(o);}
  else if(kind==='proc'){var HB=c._HB;c._ht=HB[Math.min(i,HB.length-1)]+0.01;}}
 function tick(){if(!c||pend)return;pend=true;requestAnimationFrame(function(){pend=false;secs.forEach(function(s){var r=s.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;step(s);});});}
-addEventListener('scroll',tick,{passive:true});addEventListener('resize',tick);
+addEventListener('scroll',tick,{passive:true});addEventListener('resize',function(){lift();tick();});addEventListener('load',lift);try{document.fonts.ready.then(lift);}catch(e){}
 secs.forEach(function(s){[].forEach.call(s.querySelectorAll('[data-jump]'),function(el){el.addEventListener('click',function(e){var t=s.querySelector('[data-step="'+el.getAttribute('data-jump')+'"]');if(!t)return;e.preventDefault();var y=t.getBoundingClientRect().top+scrollY-line(s)+Math.min(t.offsetHeight,innerHeight*0.4)/2;scrollTo({top:Math.max(0,y),behavior:'smooth'});});});});
 })();
