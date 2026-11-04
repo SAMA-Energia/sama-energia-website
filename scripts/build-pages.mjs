@@ -470,8 +470,8 @@ ${shim}<script src="/assets/site.js"></script>
 /* 404-sivut: FI-versio juuressa (/404.html), ET-versio et/404.html (.ee-hostin sääntö _redirectsissä).
    Kumpikin kaksikielinen, oma kieli ensin; noindex; ei canonicalia. */
 const NOT_FOUND = {
-  fi: { title: 'Sivua ei löytynyt · Lehte ei leitud — SAMA Energia', desc: 'Sivua ei löytynyt. Osoite on voinut muuttua — etusivulta löydätte kaiken.', h: 'Sivua ei löytynyt.', p: 'Osoite on voinut muuttua — sivusto siirtyi uusiin osoitteisiin. Etusivulta löydätte kaiken.', btn: 'Suomeksi etusivulle', href: '/' },
-  et: { title: 'Lehte ei leitud · Sivua ei löytynyt — SAMA Energia', desc: 'Lehte ei leitud. Aadress võib olla muutunud — avalehelt leiate kõik.', h: 'Lehte ei leitud.', p: 'Aadress võib olla muutunud — sait kolis uutele aadressidele. Avalehelt leiate kõik.', btn: 'Eesti keeles avalehele', href: '/et/' },
+  fi: { title: 'Sivua ei löytynyt · Lehte ei leitud · SAMA Energia', desc: 'Sivua ei löytynyt. Osoite on voinut muuttua. Etusivulta löydätte kaiken.', h: 'Sivua ei löytynyt.', p: 'Osoite on voinut muuttua, sillä sivusto siirtyi uusiin osoitteisiin. Etusivulta löydätte kaiken.', btn: 'Suomeksi etusivulle', href: '/' },
+  et: { title: 'Lehte ei leitud · Sivua ei löytynyt · SAMA Energia', desc: 'Lehte ei leitud. Aadress võib olla muutunud. Avalehelt leiate kõik.', h: 'Lehte ei leitud.', p: 'Aadress võib olla muutunud, sest sait kolis uutele aadressidele. Avalehelt leiate kõik.', btn: 'Eesti keeles avalehele', href: '/et/' },
 };
 function render404(lang, sources) {
   const L = LANGS[lang];
