@@ -176,6 +176,7 @@
 .km-legend .l110{border-top:1px solid var(--k-g3)}
 .km-legend .hvdc{border-top:2px dashed var(--k-blue)}
 .km-cap{flex:1 1 100%;margin:0;color:var(--ink-3);font-size:12px;line-height:1.45;min-height:1.45em}
+.km-cap a{text-decoration:underline;text-underline-offset:2px}
 .km-attr{flex:1 1 100%;margin:0;color:#8B8373;font-size:11.5px}
 .km-src-list{columns:2 320px;column-gap:40px;margin:24px 0 0;padding:0;list-style:none}
 .km-src-list li{break-inside:avoid;margin:0 0 10px;font-size:14px;line-height:1.5;color:var(--ink-2)}

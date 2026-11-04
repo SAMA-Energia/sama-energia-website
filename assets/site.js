@@ -107,10 +107,12 @@ a.setAttribute('href',m[1]==='fi'?m[2]:(m[2]==='/'?'/et/':'/et'+m[2]));
 });
 }
 /* ---------- etusivun kohdevalitsin: valittu painike näkyviin; vierivä rivi kohdistettavissa näppäimistöllä ---------- */
+/* vierivät rivit ja taulukot kohdistettaviksi vain silloin, kun ne vierivät (axe: scrollable-region-focusable) */
+var scrollers=[].slice.call(d.querySelectorAll('.k-objs,.tbl-scroll'));
+var fitAll=function(){scrollers.forEach(function(s){if(s.scrollWidth>s.clientWidth+1)s.tabIndex=0;else s.removeAttribute('tabindex');});};
+if(scrollers.length){fitAll();window.addEventListener('resize',fitAll);}
 var objs=d.querySelector('.k-objs');
 if(objs){
-var fit=function(){if(objs.scrollWidth>objs.clientWidth+1)objs.tabIndex=0;else objs.removeAttribute('tabindex');};
-fit();window.addEventListener('resize',fit);
 d.querySelectorAll('.k-or').forEach(function(r){r.addEventListener('change',function(){
 var l=objs.querySelector('label[for="'+r.id+'"]');if(!l||objs.scrollWidth<=objs.clientWidth)return;
 objs.scrollTo({left:objs.scrollLeft+l.getBoundingClientRect().left-objs.getBoundingClientRect().left-(objs.clientWidth-l.offsetWidth)/2,behavior:reduce?'auto':'smooth'});
