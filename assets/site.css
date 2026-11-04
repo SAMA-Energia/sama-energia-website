@@ -718,7 +718,7 @@ h1 em,h2 em{color:var(--gold-2)}
 .k-card{display:flex;flex-direction:column;gap:12px;padding:30px 28px 26px;background:#FBF9F4;border:1px solid var(--line);border-top:2px solid var(--line-2);border-radius:var(--r-s);color:var(--ink-2);transition:border-color .2s,transform .2s}
 .k-card:first-child{border-top-color:var(--gold-2)}
 .k-card:hover{border-color:var(--line-2);transform:translateY(-2px)}
-.k-card h3{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0;font:500 26px/1.15 var(--font-display);color:var(--ink)}
+.k-card h3{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 12px;margin:0;font:500 26px/1.15 var(--font-display);color:var(--ink)}
 .k-card h3 small{font:500 13.5px var(--font-body);color:var(--gold-deep);white-space:nowrap}
 .k-card p{margin:0;font-size:15px;line-height:1.55}
 .k-card .who{color:var(--ink)}
@@ -787,6 +787,7 @@ h1 em,h2 em{color:var(--gold-2)}
 .kk-m img{object-position:right center}
 .kk-head,.kk-chipsw,.kk-body{position:relative;z-index:1}
 .kk-head>*,.kk-chips,.kk-body>*{max-width:440px}
+.kk-head h2{max-width:540px}
 }
 @media (max-width:1099px){.kk-maps{position:relative;margin:24px 0 0;aspect-ratio:4/3}.kk-m{height:100%}.kk-m img{object-position:76% 50%}}
 @media (max-width:1023px){.k-hero{height:auto;overflow:visible}
@@ -817,7 +818,7 @@ h1 em,h2 em{color:var(--gold-2)}
 .kk-m img{height:auto}
 .kk-n b{font-size:42px}
 }
-@media (max-width:560px){.k-gives,.k-lines,.k-cards,.k-steps{grid-template-columns:minmax(0,1fr)}.k-card h3{flex-wrap:wrap}.k-fig .k-tag{display:none}.k-foot{flex-direction:column;align-items:flex-start}.k-fig{margin-left:calc(var(--gutter)*-1);margin-right:calc(var(--gutter)*-1);border-radius:0}}
+@media (max-width:560px){.k-gives,.k-lines,.k-cards,.k-steps{grid-template-columns:minmax(0,1fr)}.k-fig .k-tag{display:none}.k-foot{flex-direction:column;align-items:flex-start}.k-fig{margin-left:calc(var(--gutter)*-1);margin-right:calc(var(--gutter)*-1);border-radius:0}}
 .k-live canvas{display:none}
 .k-live.is-live canvas{display:block}
 .k-more{margin:26px 0 0}
