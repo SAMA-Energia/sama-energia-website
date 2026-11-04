@@ -2014,7 +2014,7 @@ function loadMap(){
  if(window.SAMA_KE)c._ke=window.SAMA_KE;else fetch('/assets/kartta-etusivu.json').then(function(r){return r.json();}).then(function(d){c._ke=d;c._kexy=null;}).catch(function(){});
 }
 /* leveällä näytöllä kartta tarttuu jo osion yläreunasta: --kk-lift = matka osion alusta kartan luonnolliseen paikkaan */
-function lift(){var wide=false;try{wide=matchMedia('(min-width:1100px)').matches;}catch(e){}secs.forEach(function(s){if(s.getAttribute('data-live')!=='map')return;var m=s.querySelector('.kk-maps');if(!m)return;if(!wide){s.style.removeProperty('--kk-lift');return;}var cur=parseFloat(s.style.getPropertyValue('--kk-lift'))||0,v=Math.round(m.getBoundingClientRect().top-s.getBoundingClientRect().top+cur);if(v!==cur)s.style.setProperty('--kk-lift',v+'px');});}
+function lift(){var wide=false;try{wide=matchMedia('(min-width:1100px)').matches;}catch(e){}secs.forEach(function(s){if(s.getAttribute('data-live')!=='map')return;var m=s.querySelector('.kk-maps');if(!m)return;if(!wide){s.style.setProperty('--kk-lift','0px');return;}var cur=parseFloat(s.style.getPropertyValue('--kk-lift'))||0,v=Math.round(m.getBoundingClientRect().top-s.getBoundingClientRect().top+cur);if(v!==cur)s.style.setProperty('--kk-lift',v+'px');});}
 lift();
 function start(){if(c)return;c=window.SAMA_BOOT();if(document.querySelector('.k-live .cv-map')){loadMap();c._mapCmp=false;c._mapCur='vork';c.setMapLayers({vork:1});}tick();}
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){for(var i=0;i<es.length;i++)if(es[i].isIntersecting){io.disconnect();start();return;}},{rootMargin:'120% 0px 120% 0px'});secs.forEach(function(s){io.observe(s);});}else start();
@@ -2028,7 +2028,7 @@ function step(s){var st=s.querySelectorAll('[data-step]');if(!st.length)return;v
  if(i<0||last[s.id]===i)return;last[s.id]=i;mark(st,i);
  if(kind==='map'){var r=s.querySelector('#kk'+i);if(r)r.checked=true;var o={};for(var j=0;j<MAPK.length;j++)o[MAPK[j]]=(j===0||j===i)?1:0;c._mapCur=MAPK[i];c.setMapLayers(o);}
  else if(kind==='proc'){var HB=c._HB;c._ht=HB[Math.min(i,HB.length-1)]+0.01;}}
-function tick(){if(!c||pend)return;pend=true;requestAnimationFrame(function(){pend=false;secs.forEach(function(s){var r=s.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;step(s);});});}
+function tick(){if(!c||pend)return;pend=true;requestAnimationFrame(function(){pend=false;secs.forEach(function(s){var r=s.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;if(s.getAttribute('data-live')==='map'&&!s.style.getPropertyValue('--kk-lift'))lift();step(s);});});}
 addEventListener('scroll',tick,{passive:true});addEventListener('resize',function(){lift();tick();});addEventListener('load',lift);try{document.fonts.ready.then(lift);}catch(e){}
 secs.forEach(function(s){[].forEach.call(s.querySelectorAll('[data-jump]'),function(el){el.addEventListener('click',function(e){var t=s.querySelector('[data-step="'+el.getAttribute('data-jump')+'"]');if(!t)return;e.preventDefault();var y=t.getBoundingClientRect().top+scrollY-line(s)+Math.min(t.offsetHeight,innerHeight*0.4)/2;scrollTo({top:Math.max(0,y),behavior:'smooth'});});});});
 })();
