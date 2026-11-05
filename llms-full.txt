@@ -22,27 +22,18 @@ Energiavarasto
 Liittymispiste ja mittari
 
 Passiivinen liittymä on kuluerä. Mittarin takana oleva järjestelmä panee sen tuottamaan tuloa.
-Liittymästä maksatte joka kuukausi. Jotta se alkaisi tuottaa, annamme teille kolme asiaa:
 
+Liittymästä maksatte joka kuukausi. Jotta se alkaisi tuottaa, annamme teille kolme asiaa:
 Kokonaiskuvan siitä, mitä markkinoilla tapahtuu ja mihin suuntaan ne liikkuvat.
 Taloudelliset mahdollisuudet kohteessanne, kirjallisesti ja lähteineen.
 Älykkään energianhallinnan, joka muuttaa liittymän kuluerästä omaisuudeksi.
 
 Mikä sähkölaskussanne ja kiinteistössänne muuttuu:
-
 Reservimarkkinatkapasiteettikorvaus, myös öisin.Tehomaksuthuippu alas, pääsulake kulutuksen mukaan.Energia ja siirtolataus halvoilla tunneilla, käyttö kalliilla.Kiinteistön arvopienempi kiinteä kulu, korkeampi hinta.
 
+Periaatteellinen vuorokausi, ei mittausdataa.
+
 Kantaverkosta kennoon, kerros kerrallaan
-
-Kolme asiaa, jotka voitte meiltä tilata.
-
-KartoitusMaksuton
-Jokaiselle yritykselle, jolla on oma sähköliittymä, myös silloin, kun tarjous on jo saatu. Kirjallinen arvio kahden arkipäivän kuluessa tietojen saamisesta.
-Mitä kartoitus sisältää Sähkövarasto ja monimarkkinapalveluProjekti
-Yhteen kohteeseen: kuivuri, teollisuus, kylmävarasto, hotelli, hoivakoti, aurinkopuisto.
-Lue lisää sähkövarastoista PortfolioUseita kohteita
-Kiinteistöportfolioille, aurinkopuistojen omistajille ja ketjuille, joilla on useita liittymiä.
-Kerro portfoliosta
 
 Kuusi karttatasoa: markkinat liittymänne ympärillä.
 Jokainen vaihe lisää karttaan tason, luvun ja lähteen.
@@ -96,25 +87,37 @@ Kartta: Natural Earth; johdot, sähköasemat ja voimalat © OpenStreetMapin teki
 Näin työ etenee ja mikä maksaa milloin.
 Te annatte tiedot. Me hoidamme loput. Kaksi ensimmäistä vaihetta ovat maksuttomia ja kohdekäynti hyvitetään sopimuksessa.
 
-1 · Maksuton kartoitus
+1Maksuton kartoitus
 Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubin tai verkkoyhtiönne kautta), yhden laskun ja pääkaavion. Kirjallisen arvion saatte kahden arkipäivän kuluessa tietojen saamisesta.
 
-2 · Esitarkastus
+2Esitarkastus
 Kymmenen valokuvaa pääkeskuksesta ja asennuspaikasta sekä lyhyt videopuhelu kiinteistönhoitajanne tai kunnossapitonne kanssa.
 
-3 · Kohdekäynti
+3Kohdekäynti
 Sähköasentaja käy paikalla, mittaa kaapelireitin, keskuksen ja asennuspaikan sekä vahvistaa hinnan.
 
-4 · Rahoitus ja päätös
+4Rahoitus ja päätös
 Kun hinta on vahvistettu, vertaamme rinnakkain kolmea vaihtoehtoa: oma pääoma, leasing ja osamaksu.
 
-5 · Projekti, asennus, markkinat
+5Projekti, asennus, markkinat
 Suunnittelu, verkkoyhtiön tekniset ehdot, asennus, tarkastukset ja käyttöönotto. Aggregaattori liittää sähkövaraston monimarkkinapalveluun.
 
 Pyydä maksuton kartoitus
 
 Laaja valikoima, yksi vastuutaho.
 Jokaisella alalla meillä on useampi kumppani. Valitsemme kohteeseenne sopivimmat laitteet ja tekijät, vertaamme vaihtoehdot samoilla luvuilla ja vastaamme kokonaisuudesta alusta loppuun.
+
+EnergiavarastotRalos Oy
+
+Energiavarastot ja mikroverkotAvant Power
+
+Integroidut aurinkokatotGare Energy Oy
+
+Sähköauton latausScanoffice Oy
+
+Aurinkovoimalan asennusJSM Automaatiosähkö Oy
+
+ReservimarkkinatAggregaattori kohteen mukaan
 
 Energiavarastot
 Ralos Oyteolliset energiavarastot, Tampere
@@ -1741,27 +1744,18 @@ Energiasalvesti
 Liitumispunkt ja arvesti
 
 Passiivne liitumine on kuluartikkel. Arvestitagune süsteem paneb selle tulu tootma.
-Liitumise eest maksate iga kuu. Et see hakkaks tootma, anname teile kolm asja:
 
+Liitumise eest maksate iga kuu. Et see hakkaks tootma, anname teile kolm asja:
 Tervikliku ülevaate sellest, mis turul toimub ja mis suunas see liigub.
 Majanduslikud võimalused teie objektil, kirjalikult ja allikatega.
 Targa energiamajandamise, mis muudab liitumise kuluartiklist varaks.
 
 Mis teie arvel ja kinnistul muutub:
-
 Reserviturgtasu reserveeritud võimsuse eest, ka öösel.Võimsustasudtipp alla, peakaitse tarbimise järgi.Energia ja edastamineodav tund sisse, kallis välja.Kinnistu väärtusväiksem püsikulu, kõrgem hind.
 
+Põhimõtteline ööpäev, mitte mõõteandmed.
+
 Põhivõrgust akuelemendini, kiht kihi haaval
-
-Kolm asja, mida saate meilt tellida.
-
-HinnangTasuta
-Igale ettevõttele, kellel on oma elektriliitumine, ka siis, kui pakkumine on juba käes. Kirjalikult kahe tööpäevaga pärast andmete saamist.
-Mida hinnang sisaldab Salvesti ja mitmeturuteenusProjekt
-Ühele objektile: kuivati, tööstus, külmladu, hotell, hooldekodu, päikesepark.
-Loe salvestist lähemalt PortfellMitu objekti
-Kinnisvaraportfellidele, päikeseparkide omanikele ja kettidele, kellel on mitu liitumist.
-Kirjelda portfelli
 
 Kuus kihti turgu teie liitumise ümber.
 Iga samm lisab kaardile kihi, arvu ja allika.
@@ -1815,25 +1809,37 @@ Kaart: Natural Earth; liinid ja jaamad © OpenStreetMapi kaastöötajad
 Kuidas töö käib ja mis millal maksab.
 Teie annate andmed. Ülejäänu korraldame meie. Kaks esimest sammu on tasuta ja objektikülastus arvestatakse lepingus maha.
 
-1 · Tasuta hinnang
+1Tasuta hinnang
 Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või võrguettevõtjalt), ühe arve ja peakilbi skeemi. Kirjaliku hinnangu saate kahe tööpäevaga pärast andmete saamist.
 
-2 · Eelkontroll
+2Eelkontroll
 Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldajaga.
 
-3 · Objektikülastus
+3Objektikülastus
 Elektrik käib kohal, mõõdab kaablitee, kilbi ja paigalduskoha ning kinnitab hinna.
 
-4 · Rahastus ja otsus
+4Rahastus ja otsus
 Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks.
 
-5 · Projekt, paigaldus, turg
+5Projekt, paigaldus, turg
 Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine. Agregaator viib salvesti mitmeturuteenusesse.
 
 Küsi tasuta hinnangut
 
 Lai valik, üks vastutaja.
 Seadmed, paigaldus ja turulepääs tulevad mitmelt partnerilt. Valime teie objektile sobivaima lahenduse, võrdleme variante samade numbritega ja vastutame terviku eest algusest lõpuni.
+
+EnergiasalvestidRalos Oy
+
+Salvesti sees: akupangad ja juhtimineRalos Oy
+
+PäikeseelektrijaamadRalos Oy
+
+PäikeseelekterSAMA
+
+Energiajuhtimine ja agregeerimineSoleron Energy
+
+ReserviturgSoleron Energy
 
 Energiasalvestid
 Ralos Oytööstuslikud energiasalvestid, Tampere

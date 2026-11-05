@@ -71,6 +71,14 @@ def build(lang):
     # paikan kortti (assets/kartta-paikka.js) ladataan sivulla vasta tarvittaessa; esikatselussa se upotetaan valmiiksi
     if 'km-geo' in html or 'kk-geo' in html:
         kartta_js+='<script>'+open(os.path.join(ROOT,'assets/kartta-paikka.js'),encoding='utf-8').read().replace('</script','<\\/script')+'</script>'
+    # etusivu.js (v46) tekstinä kuten kartta.js; prosessivideo upotetaan (puhelinversio, mp4) ja juliste data-osoitteena
+    if '/assets/etusivu.js' in html:
+        kartta_js+='<script>'+open(os.path.join(ROOT,'assets/etusivu.js'),encoding='utf-8').read().replace('</script','<\\/script')+'</script>'
+        html=re.sub(r'<script src="/assets/etusivu\.js" defer></script>\n?','',html)
+    vid=os.path.join(ROOT,'assets/k-proc-m.mp4')
+    if os.path.exists(vid):
+        html=html.replace('data-base="/assets/k-proc"','data-inline="data:video/mp4;base64,'+base64.b64encode(open(vid,'rb').read()).decode()+'"')
+    html=re.sub(r'poster="(/assets/[^"]+)"',lambda m:f'poster="{datauri(m.group(1)) or m.group(1)}"',html)
     html=re.sub(r'(src|href)="(/assets/[^"]+)"',lambda m:f'{m.group(1)}="{datauri(m.group(2)) or m.group(2)}"',html)
     # <picture><source srcset>: upotetaan ensimmäinen ehdokas (muuten esikatselu näyttäisi img-varakuvan)
     def src_set(m):

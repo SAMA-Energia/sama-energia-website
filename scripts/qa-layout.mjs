@@ -43,8 +43,9 @@ const NO_RULE_OK = new Set([
   'duty',                   // <p class="duty"> yhteystietokortissa — tyyli .person p:stä (tarkistettu 10.09.2026)
   'typical',                // .compare-col typical — vertailun oletuspalsta, tyyli .compare-col:sta; vain .sama poikkeaa
   'flow',                   // SVG:n sisäinen: määritelty kuvituskohtaisessa <style>-lohkossa
+  'k-pvv', 'k-pvs',         // etusivu.js:n koukut (prosessivideo ja sen pysäytyskuva), tyyli .k-pvb video/img
 ]);
-const NO_RULE_OK_RE = [/^r\d+$/, /^s\d+$/, /^bv$/, /^gv$/, /^chart-/, /^trace/];
+const NO_RULE_OK_RE = [/^r\d+$/, /^s\d+$/, /^bv$/, /^gv$/, /^chart-/, /^trace/, /^kd(-|$)/];   // kd = etusivun päiväkaavio, tyylit SVG:n <style>-lohkossa (scripts/paiva/build_paiva.py)
 
 /* ---------- playwright-core ilman repo-riippuvuutta (sama haku kuin qa-illustrations.mjs) ---------- */
 async function loadPlaywright() {

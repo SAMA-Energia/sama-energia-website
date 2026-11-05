@@ -107,7 +107,7 @@ a.setAttribute('href',m[1]==='fi'?m[2]:(m[2]==='/'?'/et/':'/et'+m[2]));
 });
 }
 /* vierivät rivit ja taulukot kohdistettaviksi vain silloin, kun ne vierivät (axe: scrollable-region-focusable) */
-var scrollers=[].slice.call(d.querySelectorAll('.tbl-scroll'));
+var scrollers=[].slice.call(d.querySelectorAll('.tbl-scroll,.k-gal'));
 var fitAll=function(){scrollers.forEach(function(s){if(s.scrollWidth>s.clientWidth+1&&getComputedStyle(s).overflowX==='auto')s.tabIndex=0;else s.removeAttribute('tabindex');});};
 if(scrollers.length){fitAll();window.addEventListener('resize',fitAll);}
 })();

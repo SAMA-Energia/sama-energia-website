@@ -172,6 +172,20 @@ function extract() {
     seen.add(key);
     out.push({ tag: el.tagName.toLowerCase(), zone, section: sec ? '#' + sec.id : '', text: t, isSrc });
   }
+  /* v46 (5.11.2026): etusivun päiväkaavion SVG-tekstit (nimiöt, title, desc) ja toistopainikkeiden nimet
+     ovat asiakkaalle näkyviä tai ruudunlukijan lukemia, vaikka ne ovat SVG:ssä tai attribuuteissa. */
+  const extra = [];
+  for (const el of document.querySelectorAll('svg.kd title, svg.kd desc, svg.kd text')) extra.push([el, 'svg ' + el.tagName.toLowerCase(), el.textContent]);
+  for (const el of document.querySelectorAll('.k-play')) for (const at of ['data-p', 'data-r']) extra.push([el, 'button ' + at, el.getAttribute(at) || '']);
+  for (const [el, tag, raw] of extra) {
+    const t = norm(raw);
+    if (!t || t.length < 2 || /^[\d\s↑↓]+$/.test(t)) continue;
+    const sec = el.closest('section[id],article[id],div[id]');
+    const key = 'main|' + t;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push({ tag, zone: 'main', section: sec ? '#' + sec.id : '', text: t, isSrc: false });
+  }
   return out;
 }
 

@@ -20,16 +20,20 @@ const LIGHT = P.get('light') || 'dusk';
 const SHOT = P.get('shot') || 'hero';
 const SCENE = P.get('scene') || 'toostus';
 const TAUSTA = P.get('look') === 'tausta';
+/* ?look=kriit (05.11.2026): vaalea pienoismalli kriittiosioille (päivä, pilvinen): valkoiset kaapit, harmaat pinnat, kulta vain
+   energian tiellä. ?anim=proc: etusivun "Näin työ etenee / Kuidas töö käib" -video (scripts/render-proc.mjs), FRAME(t) piirtää ajanhetken. */
+const KRIIT = P.get('look') === 'kriit';
+const ANIM = P.get('anim') || '';
 const SYS = { peakilp: [14.1, 0.1, -13.5], salvesti: [21.8, 2.6, -6], liitumispunkt: [31.2, 2.5, -8.6], vork: [35.6, 9.8, -12.6], elektrik: [22.4, 1.9, -3.2], omanik: [25.3, 1.9, -2.6] };
 const SITE_LABELS = {
-  toostus: Object.assign({ paike: [8.0, 9.6, -14.9] }, SYS, TAUSTA ? { peakilp: [14.05, 1.75, -13.6], salvesti: [22.2, 2.62, -6.0], paike: [10.1, 9.85, -16.1] } : {}),
+  toostus: Object.assign({ paike: [8.0, 9.6, -14.9] }, SYS, TAUSTA ? { peakilp: [14.05, 1.75, -13.6], salvesti: [22.83, 2.77, -6.0], paike: [10.1, 9.85, -16.1] } : {}),
   kuivati: Object.assign({ paike: [11.0, 5.8, -13.3] }, SYS),
   hotell: Object.assign({ paike: [11.0, 4.9, -12.1] }, SYS),
   paike: Object.assign({ paike: [5.0, 1.8, -20.4] }, SYS),
 };
-const BGHEX = P.get('bg') ? '#' + P.get('bg') : (LIGHT === 'day' ? '#F2EEE6' : '#0A0A09');
+const BGHEX = P.get('bg') ? '#' + P.get('bg') : KRIIT ? '#F7F4EE' : (LIGHT === 'day' ? '#F2EEE6' : '#0A0A09');
 const WRONG = P.get('wrong') || '';           // '', 'inverter', 'scale'
-const SHOW = (P.get('show') || (TAUSTA ? 'nofence,novan,notrees' : 'all')).split(',');
+const SHOW = (P.get('show') || (TAUSTA || KRIIT ? 'nofence,novan,notrees' : 'all')).split(',');
 const PRESETS = {
   hero:        { tx: 25, tz: -7, vh: 30, fx: 0.64, fy: 0.6, az: 0.62, el: 0.58, fc: [24, -9], r0: 13, r1: 36 },
   heroPortrait:{ tx: 25.5, tz: -6.5, vh: 25, fx: 0.5, fy: 0.55, az: 0.62, el: 0.6, fc: [25, -7], r0: 13, r1: 34 },
@@ -43,6 +47,7 @@ const PRESETS = {
   scale:       { tx: 3.2, tz: 0, ty: 4.7, vh: 11.8, fx: 0.5, fy: 0.5, az: 0.3, el: 0.16, fc: [3, 0], r0: 18, r1: 32 },
   /* look=tausta: työpöydän herotausta 3:2 (teksti vasemmalla, kohde oikealla) ja puhelin 4:3 */
   bg:          { tx: 20.5, tz: -11, vh: 29.5, fx: 0.57, fy: 0.62, az: 0.62, el: 0.6, fc: [21, -11], r0: 13, r1: 31 },
+  proc:        { tx: 24.5, tz: -10.5, vh: 17.5, fx: 0.5, fy: 0.56, az: 0.62, el: 0.6, fc: [24, -10], r0: 12, r1: 24 },
   bgm:         { tx: 20.5, tz: -10.5, vh: 25.5, fx: 0.5, fy: 0.69, az: 0.62, el: 0.6, fc: [22, -10], r0: 11, r1: 27 },
 };
 const PR = Object.assign({}, PRESETS[SHOT] || PRESETS.hero);
@@ -158,6 +163,19 @@ if (TAUSTA) {
   }, [2, 2]);
 }
 
+if (KRIIT) {
+  T.grass = canvasTex(512, 512, (g, w, h) => {
+    g.fillStyle = '#E7E3DB'; g.fillRect(0, 0, w, h);
+    dots(g, w, h, ['#ECE8E1', '#DFDBD3', '#E9E5DE'], 200, 20, 70, 0.03, 0.08);
+    dots(g, w, h, ['#F1EDE6', '#D9D5CD', '#E3DFD8'], 12000, 0.5, 1.4, 0.15, 0.4);
+  }, [40, 40]);
+  T.concrete = canvasTex(256, 256, (g, w, h) => {
+    g.fillStyle = '#D8D4CC'; g.fillRect(0, 0, w, h);
+    dots(g, w, h, ['#DEDAD3', '#D1CCC4', '#E2DED7'], 140, 8, 30, 0.04, 0.1);
+    dots(g, w, h, ['#CBC6BE', '#E6E2DB'], 3000, 0.4, 1.0, 0.2, 0.5);
+  }, [2, 2]);
+}
+
 // ---------- materials ----------
 const M = {};
 const std = (o) => new THREE.MeshStandardMaterial(o);
@@ -235,6 +253,29 @@ if (TAUSTA) {
   M.skin.color.set('#b39886');
   M.energy.emissiveIntensity = 4.2; M.energyGrid.emissiveIntensity = 1.6;
 }
+if (KRIIT) {
+  M.cab.color.set('#FAF8F4'); M.cabTop.color.set('#EFECE6'); M.cabDark.color.set('#77736D');
+  M.roof.color.set('#D3CFC7'); M.parapet.color.set('#C9C4BB');
+  M.solar.map = canvasTex(256, 512, (g, w, h) => {
+    const grd = g.createLinearGradient(0, 0, w, h); grd.addColorStop(0, '#4E5156'); grd.addColorStop(1, '#3F4247');
+    g.fillStyle = grd; g.fillRect(0, 0, w, h);
+    g.strokeStyle = 'rgba(225,223,218,0.2)'; g.lineWidth = 2;
+    for (let x = 0; x <= w; x += w / 6) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x, h); g.stroke(); }
+    for (let y = 0; y <= h; y += h / 10) { g.beginPath(); g.moveTo(0, y); g.lineTo(w, y); g.stroke(); }
+    g.strokeStyle = 'rgba(238,236,231,0.95)'; g.lineWidth = 6; g.strokeRect(0, 0, w, h);
+  });
+  M.solar.roughness = 0.35; M.solar.metalness = 0.3;
+  M.glass.color.set('#B4B8BA'); M.door.color.set('#C6C1B8');
+  M.kiosk.color.set('#E4E0D9'); M.kioskDoor.color.set('#A9A49C');
+  M.wood.color.set('#9B948B'); M.insul.color.set('#CFC9BF'); M.wire.color.set('#8B867E');
+  M.darkMetal.color.set('#A6A199'); M.metal.color.set('#BBB7B0');
+  M.skin.color.set('#CDAA92'); M.navy.color.set('#4B515A'); M.coat.color.set('#6D675F'); M.trousers.color.set('#56524D'); M.hair.color.set('#4A3F36');
+  M.van.color.set('#ECEAE5');
+  M.energy.color.set('#B8913F'); M.energy.emissive.set('#C9A04A'); M.energy.emissiveIntensity = 0.55;
+  M.energyGrid.color.set('#8A6A2A'); M.energyGrid.emissive.set('#8A6A2A'); M.energyGrid.emissiveIntensity = 0.2;
+}
+M.apron = std({ map: T.concrete.clone(), color: TAUSTA ? '#4a4741' : KRIIT ? '#E0DCD4' : '#A29E97', roughness: 0.95 });
+M.apron.map.repeat.set(3, 1.5); M.apron.map.needsUpdate = true;
 
 // ---------- helpers ----------
 function box(w, h, d, mat, x, y, z, parent = scene, cast = true, recv = true) {
@@ -268,12 +309,12 @@ const R0 = PR.r0, R1 = PR.r1;
 const ground = new THREE.Mesh(new THREE.PlaneGeometry(420, 420), fadeGround(texMat(M.grass, 60, 60), R0, R1));
 ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; scene.add(ground);
 // asphalt yard in front of hall (aurinkopuistossa vain huoltotie)
-const yard = TAUSTA ? null : SCENE === 'paike' ? plane(40, 5.5, fadeGround(texMat(M.asphalt, 9, 1.3), R0, R1), -2, 0.012, -2.2)
+const yard = TAUSTA || KRIIT ? null : SCENE === 'paike' ? plane(40, 5.5, fadeGround(texMat(M.asphalt, 9, 1.3), R0, R1), -2, 0.012, -2.2)
   : plane(46, 15, fadeGround(texMat(M.asphalt, 10, 3.5), R0, R1), -5, 0.012, -3.5);
 // parking lines
-if (SCENE === 'toostus' && !TAUSTA) for (let i = 0; i < 6; i++) box(0.12, 0.004, 4.8, std({ color: '#d8d6cf', roughness: 0.6 }), -24 + i * 3, 0.016, 1.2, scene, false, true);
+if (SCENE === 'toostus' && !TAUSTA && !KRIIT) for (let i = 0; i < 6; i++) box(0.12, 0.004, 4.8, std({ color: '#d8d6cf', roughness: 0.6 }), -24 + i * 3, 0.016, 1.2, scene, false, true);
 // compound gravel
-if (!TAUSTA) {
+if (!TAUSTA && !KRIIT) {
   plane(17, 13, fadeGround(texMat(M.gravel, 4, 3), R0, R1), 26.5, 0.014, -5.5);
   // path from compound to hall side
   plane(4, 9, fadeGround(texMat(M.asphalt, 1, 2), R0, R1), 16.5, 0.013, -10.5);
@@ -521,6 +562,7 @@ const OBJECTS = { kuivati, hotell, paike };
 
 /* look=tausta: sähkötilan ovi auki itäseinässä (x = 14, z ≈ -13,6). Aukossa näkyy valaistu tila: pääkeskus
    (vaaleat kennot) ja sen vieressä ohjausyksikkö, jonka merkkivalo on kultainen. Kultainen viiva menee ovesta sisään. */
+const DOOR = {};
 function electricalRoomOpen(g) {
   const tex = canvasTex(240, 440, (c, w, h) => {
     const bg = c.createLinearGradient(0, 0, 0, h); bg.addColorStop(0, '#1a1712'); bg.addColorStop(0.62, '#3a2f22'); bg.addColorStop(1, '#6b5536');
@@ -536,13 +578,16 @@ function electricalRoomOpen(g) {
     c.fillStyle = '#5c564c'; c.fillRect(46, 170, 44, 56);
     c.fillStyle = '#F2CF7E'; c.fillRect(56, 182, 12, 5);
   }, [1, 1]);
-  const m = std({ map: tex, emissiveMap: tex, emissive: new THREE.Color('#ffffff'), emissiveIntensity: 0.8, roughness: 0.9 });
-  box(0.04, 2.2, 1.2, m, HALL.x1 + 0.03, 1.1, -13.6, g, false, false);
+  const m = std({ map: tex, emissiveMap: tex, emissive: new THREE.Color('#ffffff'), emissiveIntensity: KRIIT ? 0.55 : 0.8, roughness: 0.9 });
+  box(0.02, 2.2, 1.2, m, HALL.x1 + 0.01, 1.1, -13.6, g, false, false);
   // karmi
   box(0.07, 0.07, 1.34, M.darkMetal, HALL.x1 + 0.04, 2.235, -13.6, g, false);
   for (const z of [-12.97, -14.23]) box(0.07, 2.27, 0.07, M.darkMetal, HALL.x1 + 0.04, 1.135, z, g, false);
-  // ovilehti auki ulospäin, saranat -z-reunassa (ei peitä aukkoa kamerasta katsottuna)
-  const leaf = box(1.2, 2.2, 0.06, M.door, HALL.x1 + 0.59, 1.1, -14.3, g); leaf.rotation.y = 0.17;
+  // ovilehti saranoituna -z-reunaan: phi 0 = kiinni, 1,745 = auki ulospäin (ei peitä aukkoa kamerasta katsottuna)
+  DOOR.pivot = new THREE.Group(); DOOR.pivot.position.set(HALL.x1 + 0.06, 0, -14.2); g.add(DOOR.pivot);
+  box(1.2, 2.2, 0.06, M.door, 0.6, 1.1, 0, DOOR.pivot);
+  DOOR.set = (phi) => { DOOR.pivot.rotation.y = phi - Math.PI / 2; };
+  DOOR.set(ANIM ? 0 : 1.745);
 }
 
 // ---------- industrial hall ----------
@@ -550,7 +595,7 @@ const HALL = { x0: -28, x1: 14, z0: -33, z1: -11, h: 9 };
 function hall() {
   const g = new THREE.Group(); scene.add(g);
   const L = HALL.x1 - HALL.x0, D = HALL.z1 - HALL.z0, h = HALL.h;
-  const wallMat = (len) => std({ color: TAUSTA ? '#3a3935' : LIGHT === 'dusk' ? '#2c2f33' : '#4b5057', roughness: 0.55, metalness: 0.45, normalMap: claddingNormal([len / 0.25, 1]), normalScale: new THREE.Vector2(0.9, 0.9) });
+  const wallMat = (len) => std({ color: TAUSTA ? '#3a3935' : KRIIT ? '#DAD5CC' : LIGHT === 'dusk' ? '#2c2f33' : '#4b5057', roughness: 0.55, metalness: 0.45, normalMap: claddingNormal([len / 0.25, 1]), normalScale: new THREE.Vector2(0.9, 0.9) });
   const front = new THREE.Mesh(new THREE.PlaneGeometry(L, h), wallMat(L)); front.position.set((HALL.x0 + HALL.x1) / 2, h / 2, HALL.z1); front.receiveShadow = true; front.castShadow = true; g.add(front);
   const back = front.clone(); back.rotation.y = Math.PI; back.position.z = HALL.z0; g.add(back);
   const side = new THREE.Mesh(new THREE.PlaneGeometry(D, h), wallMat(D)); side.rotation.y = Math.PI / 2; side.position.set(HALL.x1, h / 2, (HALL.z0 + HALL.z1) / 2); side.receiveShadow = true; side.castShadow = true; g.add(side);
@@ -581,7 +626,7 @@ function hall() {
   // personnel door + electrical room door on side facing compound
   box(1.1, 2.2, 0.08, M.door, -9, 1.1, HALL.z1 + 0.05, g);
   const elDoorOpen = SHOT === 'survey' || SHOT === 'surveyWide';
-  if (TAUSTA) electricalRoomOpen(g);
+  if (TAUSTA || KRIIT) electricalRoomOpen(g);
   else if (!elDoorOpen) box(0.08, 2.2, 1.2, M.door, HALL.x1 + 0.05, 1.1, -13.6, g);
   // rooftop solar rows (tilted to +z)
   const pw = 2.28, pd = 1.13, tilt = 0.21;
@@ -619,21 +664,30 @@ function cabinet(x, z, rotY = 0, scale = 1) {
     box(0.55, 0.32, 0.006, M.louver, sx * 0.33, 1.95, fz + 0.001, g, false);
     box(0.025, 0.24, 0.03, M.metal, sx * 0.06, 1.25, fz + 0.012, g, false);
   }
-  box(0.16, 0.035, 0.008, M.goldLed, 0.42, 2.18, fz + 0.002, g, false);
+  box(0.16, 0.035, 0.008, M.goldLed, 0.42, 2.18, fz + 0.002, g, false).userData.led = true;
   box(0.006, 0.6, 0.62, M.louver, CAB.w / 2 + 0.002, 1.5, 0, g, false);
   return g;
 }
+/* Sijoittelu Ralosin ohjeen mukaan (Perusteellinen asennus- ja käyttöohje BEAST125HD v2.1, 5.1.2 ja 5.2; 5.11.2026):
+   kaappien väli 100 mm, huoltoetäisyydet edessä 1 500 mm, takana 800 mm, sivuilla 500 mm, perustus korotettu ≥ 300 mm.
+   Rivi on ≥ 8 m lähimmästä rakennuksesta (pelastuslaitosten suositus yli 50 kWh:n ulkovarastolle, ks. projektin muistio
+   suuruspaa-2026-10-06); hallin kulma (14, -11) → lähin kaapin kulma 8,07 m. Ovet (etuosa) +z-suuntaan. */
+const ROW = { n: +(P.get('n') || 4), gap: 0.1, x0: 20.7, z: -6.0, base: 0.3, edge: 0.25, front: 1.5, back: 0.8, side: 0.5 };
+ROW.len = ROW.n * CAB.w + (ROW.n - 1) * ROW.gap;
+ROW.xc = ROW.x0 + ROW.len / 2;
+const ROWOBJ = { cabs: [] };
 function cabinetsRow() {
-  const n = +(P.get('n') || 4), gap = 0.6;
-  const startX = 19.6;
-  // plinth
-  const len = n * CAB.w + (n - 1) * gap + 0.8;
-  box(len, 0.15, CAB.d + 0.7, M.concrete, startX + len / 2 - 0.4, 0.075, -6.0);
+  // huoltotaso (5.2: suositeltava perustuksen ympärille) = huoltoetäisyyksien alue, matala laatoitus
+  const az0 = ROW.z - CAB.d / 2 - ROW.back, az1 = ROW.z + CAB.d / 2 + ROW.front;
+  ROWOBJ.apron = box(ROW.len + 2 * ROW.side, 0.04, az1 - az0, M.apron || M.concrete, ROW.xc, 0.02, (az0 + az1) / 2, scene, false, true);
+  // perustus: betoni, korotus 300 mm, reunat 0,25 m kaappien ulkopuolella
+  ROWOBJ.found = box(ROW.len + 2 * ROW.edge, ROW.base, CAB.d + 2 * ROW.edge, M.concrete, ROW.xc, ROW.base / 2, ROW.z);
   const pos = [];
-  for (let i = 0; i < n; i++) {
-    const x = startX + CAB.w / 2 + i * (CAB.w + gap);
+  for (let i = 0; i < ROW.n; i++) {
+    const x = ROW.x0 + CAB.w / 2 + i * (CAB.w + ROW.gap);
     const s = WRONG === 'scale' ? 2.6 : 1;
-    const c = cabinet(x + (WRONG === 'scale' ? i * (s - 1) * CAB.w : 0), -6.0, 0, s); c.position.y = 0.15; pos.push(c.position.clone());
+    const c = cabinet(x + (WRONG === 'scale' ? i * (s - 1) * CAB.w : 0), ROW.z, 0, s); c.position.y = ROW.base; pos.push(c.position.clone());
+    ROWOBJ.cabs.push(c);
   }
   return pos;
 }
@@ -686,14 +740,18 @@ function energyLine(points, r = 0.055, mat = M.energy) {
   scene.add(m); return m;
 }
 const EY = 0.04;
-const ER = Math.min(0.06, Math.max(0.016, 0.06 * PR.vh / 28));
+const ER = Math.min(0.06, Math.max(0.016, 0.06 * PR.vh / 28)) * (KRIIT ? 1.7 : 1);
+const EL = {}, DX = TAUSTA || KRIIT ? 13.8 : 14.1;
+EL.brightPts = [[ROW.x0 + ROW.len - 0.7, EY, -7.25], [17.2, EY, -7.25], [17.2, EY, -13.5], [DX, EY, -13.5]];
+EL.gridPts = [[29.9, EY, -9.2], [29.9, EY, -10.9], [16.8, EY, -10.9], [16.8, EY, -13.9], [DX, EY, -13.9]];
+EL.riserPts = [[32.5, EY, -8.6], [35.6, EY, -8.6], [35.6, EY, -12.4]];
 if (!SHOW.includes('noenergy')) {
   // battery -> main switchboard (behind the meter): bright
-  energyLine([[TAUSTA ? 25.9 : 26.5, EY, -7.25], [17.2, EY, -7.25], [17.2, EY, -13.5], [TAUSTA ? 13.8 : 14.1, EY, -13.5]], ER, M.energy);
+  EL.bright = energyLine(EL.brightPts, ER, ANIM ? M.energy.clone() : M.energy);
   // site supply: transformer/meter kiosk -> main switchboard: dim
-  energyLine([[29.9, EY, -9.2], [29.9, EY, -10.9], [16.8, EY, -10.9], [16.8, EY, -13.9], [TAUSTA ? 13.8 : 14.1, EY, -13.9]], ER * 0.75, M.energyGrid);
+  EL.grid = energyLine(EL.gridPts, ER * 0.75, ANIM ? M.energyGrid.clone() : M.energyGrid);
   // kiosk -> grid riser: dim
-  energyLine([[32.5, EY, -8.6], [35.6, EY, -8.6], [35.6, EY, -12.4]], ER * 0.75, M.energyGrid);
+  EL.riser = energyLine(EL.riserPts, ER * 0.75, ANIM ? EL.grid.material : M.energyGrid);
 }
 // ---------- MV line to the grid ----------
 function pole(x, z, hgt = 10) {
@@ -840,6 +898,9 @@ const PEOPLE = {};
 if (TAUSTA) {
   // yksi ihminen mittakaavaksi: omistaja tabletin kanssa sähkötilan oven vieressä
   PEOPLE.owner = person({ x: 15.35, z: -15.35, rot: 0.55, top: M.coat, bottom: M.trousers, pose: 'tablet', h: 1.74 });
+} else if (KRIIT) {
+  // ihmiset lisätään animaatiokerroksessa (anim=proc); stillissä omistaja oven vieressä
+  if (!ANIM) PEOPLE.owner = person({ x: 15.35, z: -15.35, rot: 0.55, top: M.coat, bottom: M.trousers, pose: 'tablet', h: 1.74 });
 } else if (!SHOW.includes('nopeople')) {
   PEOPLE.electrician = person({ x: 22.4, z: -3.2, rot: Math.PI + 0.25, top: M.navy, bottom: M.trousers, stripes: true, helmet: true, pose: 'camera' });
   PEOPLE.owner = person({ x: 25.3, z: -2.6, rot: Math.PI - 0.35, top: M.coat, bottom: M.trousers, pose: 'tablet', h: 1.72 });
@@ -891,15 +952,16 @@ if (SHOT === 'scale') {
 }
 // ---------- lights ----------
 const hemi = TAUSTA ? new THREE.HemisphereLight('#4a505a', '#26211b', 1.05)
+  : KRIIT ? new THREE.HemisphereLight('#FFFFFF', '#D3CCBF', 1.35)
   : new THREE.HemisphereLight(LIGHT === 'dusk' ? '#3a4a66' : '#dfe6ee', LIGHT === 'dusk' ? '#2a2015' : '#8a7f6c', LIGHT === 'dusk' ? 0.55 : 1.15);
 scene.add(hemi);
-const sun = new THREE.DirectionalLight(TAUSTA ? '#e6cba6' : LIGHT === 'dusk' ? '#ffb070' : '#fff6ea', TAUSTA ? 1.7 : LIGHT === 'dusk' ? 2.4 : 2.9);
+const sun = new THREE.DirectionalLight(TAUSTA ? '#e6cba6' : KRIIT ? '#FFF9F0' : LIGHT === 'dusk' ? '#ffb070' : '#fff6ea', TAUSTA ? 1.7 : KRIIT ? 2.1 : LIGHT === 'dusk' ? 2.4 : 2.9);
 const sunAz = +(P.get('sunaz') || (LIGHT === 'dusk' ? -0.75 : -0.55)), sunEl = +(P.get('sunel') || (LIGHT === 'dusk' ? 0.34 : 0.72));
 sun.position.set(SITE.x + Math.sin(sunAz) * Math.cos(sunEl) * 120, Math.sin(sunEl) * 120, SITE.z + Math.cos(sunAz) * Math.cos(sunEl) * 120);
 sun.target.position.copy(SITE); scene.add(sun.target);
 sun.castShadow = true; sun.shadow.mapSize.set(4096, 4096);
 const sc = sun.shadow.camera; sc.left = -70; sc.right = 70; sc.top = 70; sc.bottom = -70; sc.near = 10; sc.far = 300;
-sun.shadow.bias = -0.0003; sun.shadow.normalBias = 0.03; sun.shadow.radius = 3;
+sun.shadow.bias = -0.0003; sun.shadow.normalBias = 0.03; sun.shadow.radius = KRIIT ? 7 : 3;
 scene.add(sun);
 if (LIGHT === 'dusk') {
   const fill = new THREE.DirectionalLight('#6f8fbf', 0.35); fill.position.set(SITE.x + 60, 40, SITE.z + 80); scene.add(fill);
@@ -974,7 +1036,151 @@ window.ANCHORS = SHOT === 'scale' ? {
   hall: proj(new THREE.Vector3(-7, 6, -11)),
 };
 
-if (P.get('norender')) window.DONE = true;   // vain ankkurit (render-stills.mjs --anchors-only)
+/* ===================== anim=proc: "Näin työ etenee / Kuidas töö käib" (05.11.2026) =====================
+   Vaiheet ja ajat (s): 1 maksuton arvio 0–5,5 · 2 esitarkastus 5,5–11 · 3 kohdekäynti 11–17 · 4 rahoitus ja päätös 17–22 ·
+   5 projekti, asennus, markkinat 22–30. Sijoittelu Ralosin ohjeen mukaan (ROW). Kamera paikallaan (pieni videotiedosto). */
+const STAGES = [0, 5.5, 11, 17, 22, 30];
+function fader(root) {
+  const mats = [];
+  root.traverse((o) => { if (o.isMesh) { o.material = o.material.clone(); o.material.transparent = true; mats.push([o, o.material]); } });
+  let tr = true;
+  const f = (a) => {
+    root.visible = a > 0.004;
+    const want = a < 0.999;
+    for (const [o, m] of mats) { m.opacity = a; m.depthWrite = a > 0.6; o.castShadow = a > 0.5; if (want !== tr) { m.transparent = want; m.needsUpdate = true; } }
+    tr = want;
+  };
+  f.mats = mats;
+  return f;
+}
+function polyLen(pts) { let L = 0; for (let i = 1; i < pts.length; i++) L += Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1], pts[i][2] - pts[i - 1][2]); return L; }
+function polyAt(pts, u) {
+  const L = polyLen(pts) * Math.max(0, Math.min(1, u)); let acc = 0;
+  for (let i = 1; i < pts.length; i++) {
+    const a = pts[i - 1], b = pts[i], d = Math.hypot(b[0] - a[0], b[1] - a[1], b[2] - a[2]);
+    if (acc + d >= L) { const f = d ? (L - acc) / d : 0; return [a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f, a[2] + (b[2] - a[2]) * f]; }
+    acc += d;
+  }
+  return pts[pts.length - 1].slice();
+}
+const AN = {};
+if (ANIM === 'proc') {
+  const gold = '#C9A04A', goldDeep = '#8A6A2A';
+  const basic = (c, o = 1) => new THREE.MeshBasicMaterial({ color: c, transparent: true, opacity: o, depthWrite: false });
+  // korostusrenkaat: mittari (muuntamo) ja pääkeskus (sähkötilan ovi)
+  const ring = (x, z, r) => { const m = new THREE.Mesh(new THREE.RingGeometry(r, r + 0.12, 64), basic(gold, 0)); m.rotation.x = -Math.PI / 2; m.position.set(x, 0.06, z); scene.add(m); return m; };
+  AN.ringMeter = ring(31.2, -8.6, 2.2); AN.ringDoor = ring(14.6, -13.6, 1.3);
+  // tuntidata: kultaiset hiukkaset nousevat mittarilta ja pääkeskukselta
+  AN.parts = [];
+  const pg = new THREE.SphereGeometry(0.12, 10, 8);
+  for (let k = 0; k < 16; k++) { const m = new THREE.Mesh(pg, basic(gold, 0)); scene.add(m); AN.parts.push(m); }
+  // salamat (valokuvat)
+  AN.flash = new THREE.Mesh(new THREE.SphereGeometry(0.16, 16, 12), basic('#FFFFFF', 0)); scene.add(AN.flash);
+  AN.flashLight = new THREE.PointLight('#ffffff', 0, 7, 2); scene.add(AN.flashLight);
+  // suunniteltu paikka: huoltoalue (etu 1,5 / taka 0,8 / sivut 0,5 m) ja perustuksen ääriviiva katkoviivoina
+  const az0 = ROW.z - CAB.d / 2 - ROW.back, az1 = ROW.z + CAB.d / 2 + ROW.front, ax0 = ROW.x0 - ROW.side, ax1 = ROW.x0 + ROW.len + ROW.side;
+  AN.zoneFill = new THREE.Mesh(new THREE.PlaneGeometry(ax1 - ax0, az1 - az0), basic(gold, 0)); AN.zoneFill.rotation.x = -Math.PI / 2;
+  AN.zoneFill.position.set((ax0 + ax1) / 2, 0.05, (az0 + az1) / 2); scene.add(AN.zoneFill);
+  const dashRect = (x0, z0, x1, z1, col, y) => {
+    const g = new THREE.Group(); scene.add(g); const mat = basic(col, 0), L = 0.32, Gp = 0.22;
+    const edge = (a, b) => { const len = Math.hypot(b[0] - a[0], b[1] - a[1]); const n = Math.floor(len / (L + Gp));
+      for (let i = 0; i < n; i++) { const f = (i * (L + Gp) + L / 2) / len; const d = new THREE.Mesh(new THREE.BoxGeometry(Math.abs(b[0] - a[0]) > 0.01 ? L : 0.07, 0.02, Math.abs(b[1] - a[1]) > 0.01 ? L : 0.07), mat);
+        d.position.set(a[0] + (b[0] - a[0]) * f, y, a[1] + (b[1] - a[1]) * f); g.add(d); } };
+    edge([x0, z0], [x1, z0]); edge([x1, z0], [x1, z1]); edge([x1, z1], [x0, z1]); edge([x0, z1], [x0, z0]);
+    return { g, mat };
+  };
+  AN.zoneLine = dashRect(ax0, az0, ax1, az1, goldDeep, 0.07);
+  AN.footLine = dashRect(ROW.x0 - ROW.edge, ROW.z - CAB.d / 2 - ROW.edge, ROW.x0 + ROW.len + ROW.edge, ROW.z + CAB.d / 2 + ROW.edge, goldDeep, 0.075);
+  // kaapelireitin mittaus: katkoviiva pääkeskukselta kaappien taakse (sama reitti kuin valmis kultainen viiva)
+  const route = EL.brightPts.slice().reverse().map((p) => [p[0], 0.08, p[2]]);
+  AN.dashes = []; { const L = polyLen(route), n = Math.floor(L / 0.5); const mat = basic(goldDeep, 1);
+    for (let i = 0; i < n; i++) { const a = polyAt(route, (i * 0.5) / L), b = polyAt(route, (i * 0.5 + 0.3) / L);
+      const d = new THREE.Mesh(new THREE.BoxGeometry(Math.max(0.07, Math.abs(b[0] - a[0])), 0.025, Math.max(0.07, Math.abs(b[2] - a[2]))), mat);
+      d.position.set((a[0] + b[0]) / 2, 0.08, (a[2] + b[2]) / 2); d.visible = false; scene.add(d); AN.dashes.push(d); } }
+  // aaveet: suunnitellut kaapit läpikuultavina, kultaiset reunat
+  AN.ghosts = [];
+  for (let i = 0; i < ROW.n; i++) {
+    const g = new THREE.Group(); g.position.set(ROW.x0 + CAB.w / 2 + i * (CAB.w + ROW.gap), ROW.base + CAB.h / 2, ROW.z); scene.add(g);
+    const geo = new THREE.BoxGeometry(CAB.w, CAB.h, CAB.d);
+    const body = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ color: '#FFFFFF', transparent: true, opacity: 0, depthWrite: false, roughness: 0.6 })); g.add(body);
+    const edges = new THREE.LineSegments(new THREE.EdgesGeometry(geo), new THREE.LineBasicMaterial({ color: goldDeep, transparent: true, opacity: 0 })); g.add(edges);
+    AN.ghosts.push({ g, body, edges });
+  }
+  // valmiit osat: perustus kasvaa, huoltotaso ilmestyy, kaapit lasketaan paikoilleen
+  AN.found = ROWOBJ.found; AN.apronF = fader(ROWOBJ.apron);
+  AN.cabF = ROWOBJ.cabs.map((c) => ({ c, f: fader(c) }));
+  AN.led0 = M.goldLed.emissiveIntensity;
+  AN.leds = []; AN.cabF.forEach(({ f }) => f.mats.forEach(([o, m]) => { if (o.userData.led) AN.leds.push(m); }));
+  // energian tiet: kultainen viiva piirtyy, liittymä ja verkko kirkastuvat; markkinapulssit
+  AN.brightCount = EL.bright ? EL.bright.geometry.index.count : 0;
+  AN.gridE0 = EL.grid ? EL.grid.material.emissiveIntensity : 0;
+  AN.path = EL.brightPts.concat(EL.gridPts.slice().reverse().slice(1), EL.riserPts, [[35.6, 9.6, -12.6]]);
+  AN.pulses = []; for (let k = 0; k < 5; k++) { const m = new THREE.Mesh(new THREE.SphereGeometry(0.13, 12, 10), basic('#E3BE6A', 0)); scene.add(m); AN.pulses.push(m); }
+  // ihmiset: omistaja (kamera → tabletti) ja sähköasentaja
+  AN.ownerCam = person({ x: 16.3, z: -15.1, rot: -0.99, top: M.coat, bottom: M.trousers, pose: 'camera', h: 1.74 });
+  AN.ownerTab = person({ x: 16.3, z: -15.1, rot: 0.63, top: M.coat, bottom: M.trousers, pose: 'tablet', h: 1.74 });
+  AN.elec = person({ x: 15.7, z: -12.15, rot: -2.28, top: M.navy, bottom: M.trousers, stripes: true, helmet: true, pose: 'camera' });
+  AN.ownerCamF = fader(AN.ownerCam); AN.ownerTabF = fader(AN.ownerTab); AN.elecF = fader(AN.elec);
+}
+const cl01 = (v) => Math.max(0, Math.min(1, v)), smo = (v) => { v = cl01(v); return v * v * (3 - 2 * v); }, eo = (v) => 1 - Math.pow(1 - cl01(v), 3);
+const span = (t, a, b) => cl01((t - a) / (b - a));
+const env = (t, a, b, f = 0.4) => smo(span(t, a, a + f)) * (1 - smo(span(t, b - f, b)));
+function setT(t) {
+  // 1 · maksuton arvio: mittari ja pääkeskus korostuvat, tuntidata nousee
+  const e1 = env(t, 0.4, 5.4, 0.6), pz = 0.5 + 0.5 * Math.sin(t * 3.2);
+  AN.ringMeter.material.opacity = e1 * (0.35 + 0.35 * pz); AN.ringMeter.scale.setScalar(1 + 0.06 * pz);
+  AN.ringDoor.material.opacity = env(t, 0.9, 5.4, 0.6) * (0.35 + 0.35 * (0.5 + 0.5 * Math.sin(t * 3.2 + 1.3)));
+  AN.parts.forEach((m, k) => {
+    const src = k % 2 ? [31.2, 2.5, -8.6] : [14.5, 2.4, -13.6], ph = (t * 0.42 + k * 0.137) % 1;
+    m.position.set(src[0] + Math.sin(k * 2.1 + ph * 3) * 0.35, src[1] + ph * 7, src[2] + Math.cos(k * 1.7) * 0.35);
+    m.material.opacity = env(t, 0.9, 5.3, 0.6) * Math.sin(Math.PI * ph) * 0.95;
+  });
+  // ovi aukeaa esitarkastuksessa
+  DOOR.set(1.745 * eo(span(t, 5.9, 6.7)));
+  // omistaja: valokuvaa pääkeskuksen ja paikan (2–3), tabletti päätöksessä (4–5)
+  AN.ownerCamF(smo(span(t, 5.6, 6.1)) * (1 - smo(span(t, 16.8, 17.2))));
+  AN.ownerTabF(smo(span(t, 16.9, 17.3)));
+  AN.ownerCam.rotation.y = -0.99 + 1.62 * smo(span(t, 8.7, 9.4));
+  AN.elecF(smo(span(t, 11.7, 12.2)));
+  // salamat
+  const shots = [[6.95, AN.ownerCam, 0], [7.5, AN.ownerCam, 0], [8.05, AN.ownerCam, 0], [9.75, AN.ownerCam, 1], [10.3, AN.ownerCam, 1], [12.7, AN.elec, 0], [13.25, AN.elec, 0]];
+  let fa = 0, fp = null;
+  for (const [ts, who] of shots) { const d = t - ts; if (d >= 0 && d < 0.22) { const a = d < 0.05 ? d / 0.05 : 1 - (d - 0.05) / 0.17; if (a > fa) { fa = a; fp = who; } } }
+  if (fp) { const p = new THREE.Vector3(0, 1.62, 0.32).applyMatrix4(fp.matrixWorld); AN.flash.position.copy(p); AN.flashLight.position.copy(p); }
+  AN.flash.material.opacity = fa; AN.flash.scale.setScalar(0.6 + 1.4 * fa); AN.flashLight.intensity = 9 * fa;
+  // paikka: esitarkastuksessa aavistus, kohdekäynnillä katkoviivat ja huoltoalue
+  const zA = 0.45 * env(t, 9.4, 11.4, 0.5) + smo(span(t, 14.0, 15.0)) * (1 - smo(span(t, 22.2, 23.0)));
+  AN.zoneLine.mat.opacity = cl01(zA); AN.footLine.mat.opacity = cl01(zA);
+  AN.zoneFill.material.opacity = 0.13 * smo(span(t, 14.4, 15.4)) * (1 - smo(span(t, 22.0, 22.8)));
+  const dn = AN.dashes.length, dshow = Math.floor(dn * eo(span(t, 13.4, 15.2)));
+  const dfade = t < 25.9 ? 1 : 0;
+  AN.dashes.forEach((d, i) => { d.visible = i < dshow && dfade > 0; });
+  // 4 · aaveet
+  AN.ghosts.forEach((gh, i) => {
+    const a = smo(span(t, 17.3 + 0.18 * i, 17.9 + 0.18 * i)) * (1 - smo(span(t, 23.2 + 0.55 * i, 23.7 + 0.55 * i)));
+    gh.g.visible = a > 0.004; gh.body.material.opacity = 0.5 * a; gh.edges.material.opacity = a;
+  });
+  // 5 · perustus, huoltotaso, kaapit, kultainen viiva, käyttöönotto ja markkinat
+  const fz = eo(span(t, 22.2, 23.0)); AN.found.visible = fz > 0.01; AN.found.scale.y = Math.max(0.02, fz); AN.found.position.y = ROW.base * Math.max(0.02, fz) / 2;
+  AN.apronF(smo(span(t, 22.0, 22.8)));
+  AN.cabF.forEach(({ c, f }, i) => { const u = span(t, 23.2 + 0.55 * i, 23.95 + 0.55 * i); f(smo(span(t, 23.2 + 0.55 * i, 23.5 + 0.55 * i))); c.position.y = ROW.base + 1.1 * (1 - eo(u)); });
+  if (EL.bright) { const u = eo(span(t, 25.9, 26.9)); EL.bright.visible = u > 0.002; EL.bright.geometry.setDrawRange(0, Math.floor(AN.brightCount * u / 6) * 6); }
+  { const le = AN.led0 * smo(span(t, 26.4, 27.0)); AN.leds.forEach((m) => { m.emissiveIntensity = le; }); }
+  if (EL.grid) EL.grid.material.emissiveIntensity = AN.gridE0 * (1 + 2.2 * smo(span(t, 26.9, 27.5)));
+  AN.pulses.forEach((m, k) => {
+    const u = ((t - 27.3) / 2.2 - k * 0.2); const on = t >= 27.3 && u >= 0 && u <= 1;
+    if (on) { const p = polyAt(AN.path, u); m.position.set(p[0], p[1] + 0.12, p[2]); }
+    m.material.opacity = on ? Math.sin(Math.PI * u) * 0.95 : 0;
+  });
+}
+window.STAGES = STAGES;
+if (ANIM) {
+  window.FRAME = (t) => { setT(t); composer.render(); return true; };
+  const t0 = +(P.get('t') || 0);
+  setT(t0);
+  if (P.get('norender')) window.DONE = true;
+  else requestAnimationFrame(() => { composer.render(); requestAnimationFrame(() => { setT(t0); composer.render(); window.DONE = true; window.READY = true; }); });
+} else if (P.get('norender')) window.DONE = true;   // vain ankkurit (render-stills.mjs --anchors-only)
 else requestAnimationFrame(() => {
   composer.render();
   requestAnimationFrame(() => { composer.render(); window.DONE = true; });

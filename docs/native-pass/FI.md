@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 493 katselmoitavaa riviä — 359 uutta, 134 muutettua, joista **62 on merkitty ⚠**. Muuttumattomia ohitettiin 710.
+**Yhteenveto:** 508 katselmoitavaa riviä — 375 uutta, 133 muutettua, joista **66 on merkitty ⚠**. Muuttumattomia ohitettiin 714.
 
 **Huomio:** 1 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -83,27 +83,9 @@ Vastine mainissa: `/`
       - **Korjaus:**
 - [ ] `b` **uusi** — Kiinteistön arvo
       - **Korjaus:**
+- [ ] `figcaption` **uusi** — Periaatteellinen vuorokausi, ei mittausdataa.
+      - **Korjaus:**
 - [ ] `p` **uusi** — Kantaverkosta kennoon, kerros kerrallaan
-      - **Korjaus:**
-
-### #tarjoamme
-
-- [ ] `h2` **uusi** — Kolme asiaa, jotka voitte meiltä tilata.
-      - **Korjaus:**
-- [ ] `h3` **muutettu** — KartoitusMaksuton
-      - main: Maksuton kartoitus
-      - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Jokaiselle yritykselle, jolla on oma sähköliittymä, myös silloin, kun tarjous on jo saatu. Kirjallinen arvio kahden arkipäivän kuluessa tietojen saamisesta.
-      - main: Lyhyen kyselyn kulutustottumuksistanne ja kohteestanne, tuntikohtaisten kulutustietojenne analyysin ja liittymispisteen tarkastuksen. Tuloksena on kirjallinen arvio: kannattaako akku kohteessanne, minkä kokoinen sen pitäisi olla ja mistä tuotto koostuu. Sitoumuksia ei synny.
-      - ⚠ perustajan päätös 04.11.2026 (I-20261104-7) — lupaus, sama kaikilla sivuilla
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Sähkövarasto ja moni­markkina­palveluProjekti
-      - **Korjaus:**
-- [ ] `p` **uusi** — Yhteen kohteeseen: kuivuri, teollisuus, kylmävarasto, hotelli, hoivakoti, aurinkopuisto.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — PortfolioUseita kohteita
-      - **Korjaus:**
-- [ ] `p` **uusi** — Kiinteistöportfolioille, aurinkopuistojen omistajille ja ketjuille, joilla on useita liittymiä.
       - **Korjaus:**
 
 ### #verkko
@@ -209,33 +191,21 @@ Vastine mainissa: `/`
 - [ ] `p` **muutettu** — Te annatte tiedot. Me hoidamme loput. Kaksi ensimmäistä vaihetta ovat maksuttomia ja kohdekäynti hyvitetään sopimuksessa.
       - main: Ketään ei lähetetä minnekään ennen kuin tiedot ovat käsillä. Kaksi ensimmäistä askelta ovat maksuttomia, kohdekäynti hyvitetään sopimuksessa, suunnittelu ja asennus kulkevat sopimuksen mukaan.
       - **Korjaus:**
-- [ ] `h3` **muutettu** — 1 · Maksuton kartoitus
-      - main: Maksuton kartoitus
-      - **Korjaus:**
 - [ ] ⚠ `p` **muutettu** — Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubin tai verkkoyhtiönne kautta), yhden laskun ja pääkaavion. Kirjallisen arvion saatte kahden arkipäivän kuluessa tietojen saamisesta.
       - main: Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubista tai verkkoyhtiöltänne), yhden laskun ja pääkaavion; me kirjoitamme arvion: liittymä, kulutusprofiili, tehon jako, mallinnettu reservituotto tuotteittain lähteineen.
       - ⚠ perustajan päätös 04.11.2026 (I-20261104-7) — lupaus, sama kaikilla sivuilla
       - **Korjaus:**
-- [ ] `h3` **muutettu** — 2 · Esitarkastus
-      - main: Esitarkastus
-      - **Korjaus:**
 - [ ] `p` **muutettu** — Kymmenen valokuvaa pääkeskuksesta ja asennuspaikasta sekä lyhyt videopuhelu kiinteistönhoitajanne tai kunnossapitonne kanssa.
       - main: Kymmenen valokuvaa pääkeskuksesta ja asennuspaikasta sekä lyhyt videopuhelu huoltohenkilönne kanssa; sähköasentaja kertoo, onnistuuko ja millä ehdoin, ja budjetin suuruusluokan.
       - **Korjaus:**
-- [ ] `h3` **muutettu** — 3 · Kohdekäynti
-      - main: Kohdekäynti
-      - **Korjaus:**
 - [ ] `p` **muutettu** — Sähköasentaja käy paikalla, mittaa kaapelireitin, keskuksen ja asennuspaikan sekä vahvistaa hinnan.
       - main: Sähköasentaja käy paikalla, mittaa kaapelireitin, keskuksen ja asennuspaikan ja vahvistaa hinnan.
-      - **Korjaus:**
-- [ ] `h3` **muutettu** — 4 · Rahoitus ja päätös
-      - main: Rahoitus ja päätös
       - **Korjaus:**
 - [ ] ⚠ `p` **muutettu** — Kun hinta on vahvistettu, vertaamme rinnakkain kolmea vaihtoehtoa: oma pääoma, leasing ja osamaksu.
       - main: Kun hinta on vahvistettu, asetamme rinnakkain kolme tietä: oma pääoma, leasing ja osamaksu. Näette yhden taulukon, jossa on kuukausierä, omarahoitusosuus ja se, mitä maksun jälkeen jää käteen. Rahoittajan kanssa asioimme me.
       - ⚠ rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)
       - **Korjaus:**
-- [ ] `h3` **muutettu** — 5 · Projekti, asennus, markkinat
+- [ ] `h3` **muutettu** — Projekti, asennus, markkinat
       - main: Suunnittelu, asennus, markkina
       - **Korjaus:**
 - [ ] `p` **muutettu** — Suunnittelu, verkkoyhtiön tekniset ehdot, asennus, tarkastukset ja käyttöönotto. Aggregaattori liittää sähkövaraston monimarkkinapalveluun.
@@ -249,6 +219,25 @@ Vastine mainissa: `/`
       - **Korjaus:**
 - [ ] `p` **muutettu** — Jokaisella alalla meillä on useampi kumppani. Valitsemme kohteeseenne sopivimmat laitteet ja tekijät, vertaamme vaihtoehdot samoilla luvuilla ja vastaamme kokonaisuudesta alusta loppuun.
       - main: Olemme tukenanne alusta loppuun: löydämme kohteellenne sopivimman ratkaisun ja liitämme sen aggregaattorin kautta monimarkkinapalveluun, jotta se tuottaa usealla markkinalla samaan aikaan.
+      - **Korjaus:**
+- [ ] ⚠ `figcaption` **muutettu** — EnergiavarastotRalos Oy
+      - main: RalosEnergiavarastot
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `figcaption` **muutettu** — Energiavarastot ja mikroverkotAvant Power
+      - main: Energiavarastot
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `figcaption` **uusi** — Integroidut aurinkokatotGare Energy Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `figcaption` **uusi** — Sähköauton latausScanoffice Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `figcaption` **uusi** — Aurinkovoimalan asennusJSM Automaatiosähkö Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `figcaption` **uusi** — ReservimarkkinatAggregaattori kohteen mukaan
       - **Korjaus:**
 - [ ] ⚠ `li` **muutettu** — Ralos Oyteolliset energiavarastot, Tampere
       - main: RalosEnergiavarastot
@@ -389,6 +378,53 @@ Vastine mainissa: `/`
       - **Korjaus:**
 - [ ] `p` **muutettu** — Ilmoitamme sähköpostilla, kun uusi katsaus on julkaistu. Perutte vastaamalla viestiin.
       - main: Ilmoitamme sähköpostilla, kun uusi katsaus on julkaistu – emme useammin. Ei myyntikirjeitä. Perutte vastaamalla viestiin.
+      - **Korjaus:**
+
+### #miten-toimii
+
+- [ ] `svg title` **uusi** — Periaatteellinen vuorokausi: kulutus, pääsulake, tuntihinta ja energiavaraston työ
+      - **Korjaus:**
+- [ ] `svg desc` **muutettu** — Energiavarasto on reservissä myös öisin. Aamun huipun kattaa energiavarasto, joten pääsulakkeen voi valita kulutuksen mukaan. Halvoilla tunneilla varasto latautuu ja kalliilla sen energiaa käytetään. Yhteensä: pienempi kiinteä kulu, korkeampi kiinteistön hinta.
+      - main: Liikekiinteistön hinta lasketaan nettotuotosta: jokainen euro, jolla pysyvä käyttökulu laskee, nostaa arvoa moninkertaisesti. Esimerkkilaskelma: pysyvä 10 000 euron vuosisäästö tarkoittaa 10 %:n tuottovaatimuksella noin 100 000 ja 8 %:n vaatimuksella noin 125 000 euroa korkeampaa arvoa. Laskemme vain pysyvän osan – tehomaksun ja energiakulun; reservimarkkinatuotto riippuu markkinahinnasta, eikä sitä lasketa arvoon.
+      - **Korjaus:**
+- [ ] `svg text` **muutettu** — Kulutus
+      - main: Vuosikulutus
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — pääsulake nyt
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — kulutuksen mukaan
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — Kiinteä kulu
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — Arvo
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — Tuntihinta
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — halpa
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — kallis
+      - **Korjaus:**
+- [ ] `svg text` **muutettu** — reservi
+      - main: Reservimarkkinat
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — lataus
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — huippu
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — käyttö
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — yö
+      - **Korjaus:**
+- [ ] `button data-p` **uusi** — Pysäytä animaatio
+      - **Korjaus:**
+- [ ] `button data-r` **uusi** — Jatka animaatiota
+      - **Korjaus:**
+
+### #nain
+
+- [ ] `button data-p` **uusi** — Pysäytä video
+      - **Korjaus:**
+- [ ] `button data-r` **uusi** — Jatka videota
       - **Korjaus:**
 
 ---

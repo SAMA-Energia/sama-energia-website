@@ -288,7 +288,7 @@ When in doubt, leave it out and flag it.
   (työpöytä 3:2) ja `k-tausta-m{780,1170}.webp` (puhelin 4:3), renderöity `node scripts/render-stills.mjs --tausta
   --modules …` (hero3d.js `look=tausta`, kuvat `bg` ja `bgm`). Ulkoasu: grafiitti + kulta, ei vihreää eikä sinistä, ei
   aitaa, autoa, puita eikä valaistuja ikkunoita. Sisältö 3D-ohjeen mukaan: kaapit 1,35 × 1,01 × 2,45 m, neljä rivissä
-  0,6 m välein, muuntaja kaapissa; pääkeskus hallin sähkötilassa (ovi auki, sisällä keskus ja ohjausyksikkö, jonka
+  (v45: 0,6 m välein omasta 3D-ohjeesta; v46: 100 mm Ralosin ohjeen mukaan, ks. alla), muuntaja kaapissa; pääkeskus hallin sähkötilassa (ovi auki, sisällä keskus ja ohjausyksikkö, jonka
   merkkivalo on kultainen); vaalea kulta = kaapit → pääkeskus, tummempi kulta = muuntamo/mittaus → pääkeskus ja verkko;
   hämärä, ortografinen kamera atsimuutti 35,5°, korkeus 34,4°; yksi ihminen (omistaja tabletin kanssa) mittakaavaksi.
 - Asettelu: kuva on tekstin takana taustana (`.k-hfig`, korkeus = heron korkeus, translateX(-40 %), maski hävittää
@@ -303,3 +303,37 @@ When in doubt, leave it out and flag it.
   (scrollWidth 702 / 421 px); `.tbl-scroll` sai position:relative.
 - Laatu: axe 0 rikkomusta (31 sivua, 1440 ja 390); Lighthouse mobiili FI 96/96, ET 94/99, työpöytä 100 kaikki;
   CLS 0; vaakavierintää ei millään leveydellä 360–2560.
+
+## v46 — toinen osio, prosessi ja valikoima (Madis 5.11.2026 klo 20.31, haara v35-uusi-ilme)
+
+- Madis: toinen osio liian tekstipainotteinen → animoitu kaavio tueksi; "Kolme asiaa, jotka voitte meiltä tilata" /
+  "Kolm asja, mida saate meilt tellida" hämmentää → pois; prosessi ilman vieritystoimintoa: video pyörii paikallaan,
+  selitykset vasemmalla (puhelimessa alla), nykyinen vaihe korostuu ja taustasävy täyttyy, hiiri vaiheen päällä vie videon
+  siihen ja pysäyttää sen; kaappien sijoittelu ja mitat Ralosin aineistosta; valikoimaan tuotekuvat (ei karusellia).
+- Ralos-sijoittelu. Lähteet: "Perusteellinen asennus- ja käyttöohje BEAST125HD v2.1" §5.1.2 ja §5.2, "Fifty_Gateway ja
+  Accuvim_II_Asennusohje" (Ralosin sähköposti 24.8.2026), asiakkaan infopaketti 26.8.2026. Kaappi 1 350 × 1 010 × 2 450 mm,
+  2 600 kg; kaappien väli 100 mm; sivuilla ≥ 500 mm, takana ≥ 800 mm, edessä ≥ 1 500 mm, yläpuolella ≥ 500 mm; perustus
+  korotettu ≥ 300 mm (C25, 5 t, tasaisuus ≤ 3 mm, maadoitus ≤ 4 Ω); paloetäisyydet paikallisten määräysten mukaan
+  (pelastuslaitoksen suositus ≥ 8 m rakennuksesta yli 50 kWh ulkovarastolle, projektimuistio suuruspaa-2026-10-06:
+  suositus, ei tarkistettu viranomaisvaatimukseksi). Fifty Gateway DIN-kiskossa ja Acuvim II -mittari pääkeskuksessa tai
+  liittymispisteessä → "Pääkeskus ja ohjausyksikkö" on oikein. hero3d.js `ROW` (gap 0.1, base 0.3, front 1.5, back 0.8,
+  side 0.5) + huoltoalue `apron`; taustakuvat renderöity uudelleen; tarra 3: x .5372, y .7271, mx .4788, my .712.
+- Toinen osio: `.k-h2g` (otsikko ja ingressi | kolme asiaa pystylistana) + `.k-dg` (rivit vasemmalla, kaavio oikealla;
+  ≤ 1023 px nimiö, kaavio, rivit). Kaavio `scripts/paiva/build_paiva.py` → inline SVG merkkien paiva:alku/loppu väliin
+  (tyylit SVG:n sisällä, tekstikoko @container). Neljä tilaa = neljä riviä: reservi (myös yöllä), tehomaksut (huippu
+  leikataan, pääsulake kulutuksen mukaan), energia ja siirto (halpa tunti sisään, kallis ulos), kiinteistön arvo
+  (kaikki yhdessä + kiinteä kulu ↓, arvo ↑). Kuvateksti "Periaatteellinen vuorokausi, ei mittausdataa." Kaavion sanat
+  vain hyväksytyistä riveistä.
+- Prosessi: `.k-pg` (ol.k-ps vasemmalla, video oikealla; puhelimessa video ylhäällä, sticky jos korkeus ≥ 600 px).
+  Video `assets/k-proc{,-m}.{webm,mp4}` 30 s / 24 fps, `node scripts/render-proc.mjs --modules …` (hero3d.js
+  `look=kriit&anim=proc&shot=proc`): vaiheet 0–5,5 / 5,5–11 / 11–17 / 17–22 / 22–30 s, avainkuvat 4,6 / 10,4 / 16,2 /
+  21,3 / 29,2 s (= `assets/etusivu.js` S ja KEY). Juliste = 0,4 s kuva; pysäytyskuvat k-proc-1..5.webp
+  (reduced-motion, saveData, estetty automaattitoisto).
+- `assets/etusivu.js` (vain etusivulla, site.js ennallaan): automaattinen eteneminen + rivin taustasävy (--p), hiiri tai
+  näppäimistöfokus pitää vaiheen, kosketus valitsee (linkissä toinen napautus avaa), pysäytyspainike (WCAG 2.2.2),
+  video ladataan 400 px ennen näkymää ja toistetaan vain näkyvissä. Ei vieritykseen sidottua toimintaa.
+- Pois: #pakume / #tarjoamme ja .k-cards; vanha prosessikanvaasi (.k-live data-live="proc", .k-fig, .k-steps,
+  #nain/#kuidas.is-live).
+- Valikoima: `.k-gal` kuusi tuotekuvaa järjestyksessä (assets/tarjonta, v44:n kuvatekstit ala + kumppani, kumpikin maa
+  vain omat kumppaninsa; ≤ 1023 px vaakarivi), kumppaniruudukko ennallaan. FI: Ralos, Avant, Gare, Scanoffice, JSM,
+  reservimarkkinat; ET: Ralos ×3, SAMA, Soleron ×2. Lämpöpumpuille ei ole kuvaa.

@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 495 katselmoitavaa riviä — 382 uutta, 113 muutettua, joista **63 on merkitty ⚠**. Muuttumattomia ohitettiin 624.
+**Yhteenveto:** 511 katselmoitavaa riviä — 396 uutta, 115 muutettua, joista **67 on merkitty ⚠**. Muuttumattomia ohitettiin 628.
 
 **Huomio:** 2 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -88,27 +88,9 @@ Vastine mainissa: `/et/`
       - **Korjaus:**
 - [ ] `b` **uusi** — Kinnistu väärtus
       - **Korjaus:**
+- [ ] `figcaption` **uusi** — Põhimõtteline ööpäev, mitte mõõteandmed.
+      - **Korjaus:**
 - [ ] `p` **uusi** — Põhivõrgust akuelemendini, kiht kihi haaval
-      - **Korjaus:**
-
-### #pakume
-
-- [ ] `h2` **uusi** — Kolm asja, mida saate meilt tellida.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — HinnangTasuta
-      - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Igale ettevõttele, kellel on oma elektriliitumine, ka siis, kui pakkumine on juba käes. Kirjalikult kahe tööpäevaga pärast andmete saamist.
-      - main: Kahe tööpäevaga teate, kas ja kuidas aku end teie objektil ära tasub. Hinnang on kaks lehekülge, kirjalikult ja kohustusteta:
-      - ⚠ perustajan päätös 04.11.2026 (I-20261104-7) — lupaus, sama kaikilla sivuilla
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Salvesti ja mitmeturuteenusProjekt
-      - **Korjaus:**
-- [ ] `p` **uusi** — Ühele objektile: kuivati, tööstus, külmladu, hotell, hooldekodu, päikesepark.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — PortfellMitu objekti
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Kinnisvaraportfellidele, päikeseparkide omanikele ja kettidele, kellel on mitu liitumist.
-      - main: Päikesepargid, maaomanikud ja kinnisvaraportfellid
       - **Korjaus:**
 
 ### #vork
@@ -210,31 +192,19 @@ Vastine mainissa: `/et/`
 - [ ] `p` **muutettu** — Teie annate andmed. Ülejäänu korraldame meie. Kaks esimest sammu on tasuta ja objektikülastus arvestatakse lepingus maha.
       - main: Kedagi ei saadeta kuhugi enne, kui andmed on käes. Kaks esimest sammu on tasuta, objektikülastus arvestatakse lepingus maha, projekteerimine ja paigaldus käivad lepingu järgi.
       - **Korjaus:**
-- [ ] `h3` **muutettu** — 1 · Tasuta hinnang
+- [ ] `h3` **muutettu** — Tasuta hinnang
       - main: Tasuta hindamine
       - **Korjaus:**
 - [ ] ⚠ `p` **muutettu** — Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või võrguettevõtjalt), ühe arve ja peakilbi skeemi. Kirjaliku hinnangu saate kahe tööpäevaga pärast andmete saamist.
       - main: Teie annate: oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt – juhendame), ühe elektriarve ja peakilbi skeemi.
       - ⚠ perustajan päätös 04.11.2026 (I-20261104-7) — lupaus, sama kaikilla sivuilla
       - **Korjaus:**
-- [ ] `h3` **muutettu** — 2 · Eelkontroll
-      - main: Eelkontroll
-      - **Korjaus:**
 - [ ] `p` **muutettu** — Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldajaga.
       - main: Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldajaga; elektrik ütleb, kas ja mis tingimustel saab, ja eelarve suurusjärgu.
-      - **Korjaus:**
-- [ ] `h3` **muutettu** — 3 · Objektikülastus
-      - main: Objektikülastus
-      - **Korjaus:**
-- [ ] `h3` **muutettu** — 4 · Rahastus ja otsus
-      - main: Rahastus ja otsus
       - **Korjaus:**
 - [ ] ⚠ `p` **muutettu** — Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks.
       - main: Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Näete ühte tabelit, kus on kuumakse, omafinantseering ja see, mis pärast makset alles jääb. Rahastajaga suhtleme meie.
       - ⚠ rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)
-      - **Korjaus:**
-- [ ] `h3` **muutettu** — 5 · Projekt, paigaldus, turg
-      - main: Projekt, paigaldus, turg
       - **Korjaus:**
 - [ ] `p` **muutettu** — Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine. Agregaator viib salvesti mitmeturuteenusesse.
       - main: Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine; agregaator liidab salvesti mitmeturuteenusega ja meie jälgime, et süsteem teeks seda, mida hinnang näitas.
@@ -247,6 +217,27 @@ Vastine mainissa: `/et/`
       - **Korjaus:**
 - [ ] `p` **muutettu** — Seadmed, paigaldus ja turulepääs tulevad mitmelt partnerilt. Valime teie objektile sobivaima lahenduse, võrdleme variante samade numbritega ja vastutame terviku eest algusest lõpuni.
       - main: Energiasalvestid, konteinerid, laadimine, mikrovõrgud ja päikeseelekter partneritelt. Meie paneme terviku kokku ja vastutame projekti eest algusest lõpuni.
+      - **Korjaus:**
+- [ ] ⚠ `figcaption` **muutettu** — EnergiasalvestidRalos Oy
+      - main: Energiasalvestid
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `figcaption` **uusi** — Salvesti sees: akupangad ja juhtimineRalos Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `figcaption` **muutettu** — PäikeseelektrijaamadRalos Oy
+      - main: Päikeseelekter
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `figcaption` **muutettu** — PäikeseelekterSAMA
+      - main: Päikeseelekter
+      - **Korjaus:**
+- [ ] ⚠ `figcaption` **uusi** — Energiajuhtimine ja agregeerimineSoleron Energy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `figcaption` **muutettu** — ReserviturgSoleron Energy
+      - main: Reserviturg
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
 - [ ] ⚠ `li` **muutettu** — Ralos Oytööstuslikud energiasalvestid, Tampere
       - main: Päikeseelekter, tööstuslikud energiasalvestid ja reservituru liitumine ettevõtetele Eestis ja Soomes.
@@ -349,6 +340,56 @@ Vastine mainissa: `/et/`
       - **Korjaus:**
 - [ ] `p` **muutettu** — Anname e-kirjaga teada, kui uus ülevaade on avaldatud. Loobumiseks vastake kirjale.
       - main: Anname e-kirjaga teada, kui uus ülevaade on avaldatud – mitte sagedamini. Ei müügikirju. Loobumiseks vastake kirjale.
+      - **Korjaus:**
+
+### #kuidas-toimib
+
+- [ ] `svg title` **uusi** — Põhimõtteline ööpäev: tarbimine, peakaitse, tunnihind ja salvesti töö
+      - **Korjaus:**
+- [ ] `svg desc` **muutettu** — Salvesti on reservis ka öösel. Hommikutipu katab salvesti ja peakaitse saab valida tarbimise järgi. Odaval tunnil laeb salvesti sisse, kallil annab välja. Kokku: väiksem püsikulu, kõrgem kinnistu hind.
+      - main: Näide ühest hinnakirjast: Elektrilevi paketis Võimsus VMA2 on võrguühenduse kasutusvõimsuse tasu 2,45 €/kW kuus ja see arvestatakse kuu kõrgeima tunni keskmise võimsuse järgi; võrguühenduse läbilaskevõime tasu 0,32 €/A kuus käib kokkulepitud amprite pealt, sõltumata kasutusest. Salvesti katab tipu, mistõttu saab peakaitsme ja võrgupaketi valida tegeliku tarbimise järgi.
+      - **Korjaus:**
+- [ ] `svg text` **muutettu** — Tarbimine
+      - main: Aastane tarbimine
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — peakaitse praegu
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — tarbimise järgi
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — Püsikulu
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — Väärtus
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — Hind tunnis
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — odav
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — kallis
+      - **Korjaus:**
+- [ ] `svg text` **muutettu** — Salvesti
+      - main: Energiasalvestid
+      - **Korjaus:**
+- [ ] `svg text` **muutettu** — reserv
+      - main: Reserviturg
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — sisse
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — tipp
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — välja
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — öö
+      - **Korjaus:**
+- [ ] `button data-p` **uusi** — Peata animatsioon
+      - **Korjaus:**
+- [ ] `button data-r` **uusi** — Jätka animatsiooni
+      - **Korjaus:**
+
+### #kuidas
+
+- [ ] `button data-p` **uusi** — Peata video
+      - **Korjaus:**
+- [ ] `button data-r` **uusi** — Jätka videot
       - **Korjaus:**
 
 ---
