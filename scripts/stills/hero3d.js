@@ -24,9 +24,12 @@ const TAUSTA = P.get('look') === 'tausta';
    energian tiellä. ?anim=proc: etusivun "Näin työ etenee / Kuidas töö käib" -video (scripts/render-proc.mjs), FRAME(t) piirtää ajanhetken. */
 const KRIIT = P.get('look') === 'kriit';
 const ANIM = P.get('anim') || '';
+/* v48: tausta- ja kriit-kuvissa muuntamo on lähellä rakennusta (KX, z -13,6) ja keskijännite tulee maakaapelina idästä;
+   kaikki kaapelit (aurinko, varasto, muuntamo) menevät sähkötilan oven kynnyksen alta pääkeskukselle. */
+const NEWSITE = TAUSTA || KRIIT, KX = 23.0;
 const SYS = { peakilp: [14.1, 0.1, -13.5], salvesti: [21.8, 2.6, -6], liitumispunkt: [31.2, 2.5, -8.6], vork: [35.6, 9.8, -12.6], elektrik: [22.4, 1.9, -3.2], omanik: [25.3, 1.9, -2.6] };
 const SITE_LABELS = {
-  toostus: Object.assign({ paike: [8.0, 9.6, -14.9] }, SYS, TAUSTA ? { peakilp: [14.05, 1.75, -13.6], salvesti: [15.305, 2.77, -17.725], paike: [10.1, 9.85, -16.1] } : {}),
+  toostus: Object.assign({ paike: [8.0, 9.6, -14.9] }, SYS, TAUSTA ? { peakilp: [14.05, 1.75, -13.6], salvesti: [15.305, 2.77, -17.725], paike: [8.6, 9.85, -16.1], liitumispunkt: [KX, 2.5, -13.6], vork: [KX + 9, 0.1, -13.6] } : {}),
   kuivati: Object.assign({ paike: [11.0, 5.8, -13.3] }, SYS),
   hotell: Object.assign({ paike: [11.0, 4.9, -12.1] }, SYS),
   paike: Object.assign({ paike: [5.0, 1.8, -20.4] }, SYS),
@@ -46,9 +49,11 @@ const PRESETS = {
   people:      { tx: 0, tz: 0, ty: 0.95, vh: 2.6, fx: 0.5, fy: 0.5, az: 0.5, el: 0.22, fc: [0, 0], r0: 3, r1: 8 },
   scale:       { tx: 3.2, tz: 0, ty: 4.7, vh: 11.8, fx: 0.5, fy: 0.5, az: 0.3, el: 0.16, fc: [3, 0], r0: 18, r1: 32 },
   /* look=tausta: työpöydän herotausta 3:2 (teksti vasemmalla, kohde oikealla) ja puhelin 4:3 */
-  bg:          { tx: 20.5, tz: -11, vh: 29.5, fx: 0.57, fy: 0.62, az: 0.62, el: 0.6, fc: [21, -11], r0: 13, r1: 31 },
-  proc:        { tx: 23, tz: -16, vh: 17.5, fx: 0.5, fy: 0.5, az: 0.62, el: 0.6, fc: [22, -15], r0: 13, r1: 26 },
-  bgm:         { tx: 20.5, tz: -10.5, vh: 25.5, fx: 0.5, fy: 0.69, az: 0.62, el: 0.6, fc: [22, -10], r0: 11, r1: 27 },
+  /* v48 (06.11.2026): muuntamo sähkötilan oven itäpuolella (NEWSITE), joten rajaus on tiiviimpi; katon paneelit näkyvät */
+  bg:          { tx: 8.25, tz: -18.25, vh: 22.25, fx: 0.5, fy: 0.5, az: 0.62, el: 0.6, fc: [18.5, -15.5], r0: 11, r1: 25 },
+  /* prosessivideo 4:3 (1200×900): katto paneeleineen, ovi, kaappirivi ja muuntamo samassa kuvassa */
+  proc:        { tx: 9.0, tz: -18.5, vh: 20.5, fx: 0.5, fy: 0.5, az: 0.62, el: 0.6, fc: [18.5, -15.5], r0: 13, r1: 27 },
+  bgm:         { tx: 9.25, tz: -19.75, vh: 22, fx: 0.5, fy: 0.5, az: 0.62, el: 0.6, fc: [18.5, -15.5], r0: 10.5, r1: 23 },
 };
 const PR = Object.assign({}, PRESETS[SHOT] || PRESETS.hero);
 for (const k of ['tx','tz','ty','vh','fx','fy','az','el','r0','r1']) if (P.get(k) !== null) PR[k] = +P.get(k);
@@ -560,23 +565,36 @@ function paike() {
 }
 const OBJECTS = { kuivati, hotell, paike };
 
-/* look=tausta: sähkötilan ovi auki itäseinässä (x = 14, z ≈ -13,6). Aukossa näkyy valaistu tila: pääkeskus
-   (vaaleat kennot) ja sen vieressä ohjausyksikkö, jonka merkkivalo on kultainen. Kultainen viiva menee ovesta sisään. */
+/* look=tausta / kriit: sähkötilan ovi auki itäseinässä (x = 14, z ≈ -13,6). Aukossa näkyy valaistu tila: pääkeskus
+   (vaaleat kennot) ja sen vasemmalla puolella ohjausyksikkö (kultainen merkkivalo), joka mittaa pääkeskukselta.
+   v48: ulkona maassa kulkevat kolme kaapelia (aurinko z -13,25, muuntamo -13,6, varasto -13,95) tulevat kynnyksen alta
+   ja jatkuvat lattiaa pitkin pääkeskuksen alaosaan. Kuvan vasen reuna = z -13,0 (etelä), oikea = z -14,2 (pohjoinen). */
 const DOOR = {};
 function electricalRoomOpen(g) {
   const tex = canvasTex(240, 440, (c, w, h) => {
     const bg = c.createLinearGradient(0, 0, 0, h); bg.addColorStop(0, '#1a1712'); bg.addColorStop(0.62, '#3a2f22'); bg.addColorStop(1, '#6b5536');
     c.fillStyle = bg; c.fillRect(0, 0, w, h);
-    // pääkeskus: kolme kennoa (oikealla, koska katse kulkee aukosta -z-suuntaan)
+    // lattia: vaaleampi kaista alareunassa
+    const fl = c.createLinearGradient(0, 376, 0, h); fl.addColorStop(0, '#5a4a33'); fl.addColorStop(1, '#8a7452');
+    c.fillStyle = fl; c.fillRect(0, 376, w, h - 376);
+    // pääkeskus: kolme kennoa oikealla (pohjoisseinän puolella), sokkeli lattiaan
     for (let i = 0; i < 3; i++) {
-      const x0 = 104 + i * 44;
-      const pg = c.createLinearGradient(0, 120, 0, 420); pg.addColorStop(0, '#8d877c'); pg.addColorStop(1, '#bdb4a3');
-      c.fillStyle = pg; c.fillRect(x0, 120, 40, 300);
-      c.fillStyle = 'rgba(40,36,30,0.55)'; c.fillRect(x0 + 19, 132, 2, 276);
+      const x0 = 100 + i * 44;
+      const pg = c.createLinearGradient(0, 96, 0, 372); pg.addColorStop(0, '#8d877c'); pg.addColorStop(1, '#bdb4a3');
+      c.fillStyle = pg; c.fillRect(x0, 96, 40, 276);
+      c.fillStyle = 'rgba(40,36,30,0.55)'; c.fillRect(x0 + 19, 108, 2, 252);
     }
-    // ohjausyksikkö pääkeskuksen vieressä: pieni kotelo ja kultainen merkkivalo
-    c.fillStyle = '#5c564c'; c.fillRect(46, 170, 44, 56);
-    c.fillStyle = '#F2CF7E'; c.fillRect(56, 182, 12, 5);
+    c.fillStyle = '#3b342a'; c.fillRect(98, 372, 136, 8);
+    // ohjausyksikkö pääkeskuksen vasemmalla puolella: kotelo, kultainen merkkivalo ja mittausjohto pääkeskukselle
+    c.fillStyle = '#5c564c'; c.fillRect(30, 150, 52, 66);
+    c.fillStyle = '#F2CF7E'; c.fillRect(40, 162, 14, 6);
+    c.fillStyle = 'rgba(242,207,126,0.85)'; c.fillRect(82, 190, 18, 3);
+    // kaapelit kynnykseltä lattiaa pitkin pääkeskukselle (u = (−13,0 − z) / 1,2)
+    c.fillStyle = '#F2CF7E';
+    const up = (x, x2) => { c.fillRect(x - 4, 384, 8, h - 384); c.fillRect(Math.min(x, x2) - 4, 380, Math.abs(x2 - x) + 8, 8); c.fillRect(x2 - 4, 372, 8, 14); };
+    up(50, 112);   // aurinko → vasen kenno
+    up(120, 156);  // muuntamo → keskikenno
+    up(190, 200);  // varasto → oikea kenno
   }, [1, 1]);
   const m = std({ map: tex, emissiveMap: tex, emissive: new THREE.Color('#ffffff'), emissiveIntensity: KRIIT ? 0.55 : 0.8, roughness: 0.9 });
   box(0.02, 2.2, 1.2, m, HALL.x1 + 0.01, 1.1, -13.6, g, false, false);
@@ -697,7 +715,7 @@ function cabinetsRow() {
 const cabPos = cabinetsRow();
 
 // ---------- compact substation (kiosk) ----------
-const KIOSK = new THREE.Vector3(31.2, 0, -8.6);
+const KIOSK = NEWSITE ? new THREE.Vector3(KX, 0, -13.6) : new THREE.Vector3(31.2, 0, -8.6);
 function kiosk() {
   const g = new THREE.Group(); g.position.copy(KIOSK); g.rotation.y = 0; scene.add(g);
   box(2.6, 2.25, 2.25, M.kiosk, 0, 1.125, 0, g);
@@ -745,26 +763,37 @@ function energyLine(points, r = 0.055, mat = M.energy) {
 const EY = 0.04;
 const ER = Math.min(0.06, Math.max(0.016, 0.06 * PR.vh / 28)) * (KRIIT ? 1.7 : 1);
 const EL = {}, WX = ROW.wallX + 0.03;
-/* varasto → pääkeskus: kaapelikanava perustuksen etureunassa, rivin eteläpäästä seinän läpivientiin oven pohjoispuolella */
+/* v48 (Madis 06.11.2026: kaapelit kulkevat pääkeskukselle, varaston kaapeli tulee oven alta sähkökaappiin):
+   kaikki kolme kaapelia menevät maassa sähkötilan oven kynnyksen alta sisään (z -13,25 / -13,6 / -13,95) ja jatkuvat
+   sisäkuvassa lattiaa pitkin pääkeskukselle. Ovi-aukko z -13,0…-14,2. */
+const DX = HALL.x1 - 0.02;                                  // kynnys: viiva päättyy sisäkuvan pintaan
 const XT = ROW.cx + CAB.d / 2 + ROW.edge + 0.14;
-EL.brightPts = [[XT, EY, ROW.z1 + 0.45], [XT, EY, ROW.zS + 0.6], [WX, EY, ROW.zS + 0.6]];
-/* muuntamo → pääkeskus: maakaapeli seinän läpivientiin oven eteläpuolella */
-EL.gridPts = [[29.9, EY, -9.2], [29.9, EY, -10.9], [16.8, EY, -10.9], [16.8, EY, -12.4], [WX, EY, -12.4]];
-EL.riserPts = [[32.5, EY, -8.6], [35.6, EY, -8.6], [35.6, EY, -12.4]];
-/* aurinkopaneelit → pääkeskus: kaapelihylly katolla paneelikentän reunasta itäreunalle, kattokaiteen yli ja julkisivua
-   pitkin alas (ikkunarivin ja nurkan välistä) sähkötilan läpivientiin 2,6 m korkeudella */
-EL.solarPts = [[11.4, 9.1, -13.65], [13.55, 9.1, -13.65], [13.55, 9.1, -11.5], [13.55, 9.62, -11.5], [14.22, 9.62, -11.5], [14.22, 2.6, -11.5], [WX, 2.6, -11.5]];
+const ZB = -13.95, ZG = -13.6, ZS = -13.25;
+if (NEWSITE) {
+  /* varasto → pääkeskus: kaapelikanava perustuksen etureunassa koko rivin mitalta, rivin eteläpäästä oven kohdalle ja kynnyksen alta sisään */
+  EL.brightPts = [[XT, EY, ROW.z1 + 0.45], [XT, EY, ZB], [DX, EY, ZB]];
+  /* muuntamo → pääkeskus: pienjännitemaakaapeli suoraan länteen oveen */
+  EL.gridPts = [[KX - 1.0, EY, ZG], [DX, EY, ZG]];
+  /* verkko → muuntamo: keskijännitemaakaapeli idästä (häivytetään maan mukana) */
+  EL.riserPts = [[KX + 60, EY, ZG], [KX + 1.0, EY, ZG]];
+  /* aurinkopaneelit → pääkeskus: kaapelihylly katolla, kaiteen yli, julkisivua pitkin alas maahan ja seinän vierustaa oven kynnykselle */
+  EL.solarPts = [[11.4, 9.1, -13.65], [13.55, 9.1, -13.65], [13.55, 9.1, -11.5], [13.55, 9.62, -11.5], [14.22, 9.62, -11.5], [14.22, EY, -11.5], [14.22, EY, ZS], [DX, EY, ZS]];
+} else {
+  EL.brightPts = [[XT, EY, ROW.z1 + 0.45], [XT, EY, ROW.zS + 0.6], [WX, EY, ROW.zS + 0.6]];
+  EL.gridPts = [[29.9, EY, -9.2], [29.9, EY, -10.9], [16.8, EY, -10.9], [16.8, EY, -12.4], [WX, EY, -12.4]];
+  EL.riserPts = [[32.5, EY, -8.6], [35.6, EY, -8.6], [35.6, EY, -12.4]];
+  EL.solarPts = [[11.4, 9.1, -13.65], [13.55, 9.1, -13.65], [13.55, 9.1, -11.5], [13.55, 9.62, -11.5], [14.22, 9.62, -11.5], [14.22, 2.6, -11.5], [WX, 2.6, -11.5]];
+}
 if (!SHOW.includes('noenergy')) {
   // battery -> main switchboard (behind the meter): bright
   EL.bright = energyLine(EL.brightPts, ER, ANIM ? M.energy.clone() : M.energy);
   // site supply: transformer kiosk -> main switchboard: dim
   EL.grid = energyLine(EL.gridPts, ER * 0.75, ANIM ? M.energyGrid.clone() : M.energyGrid);
-  // kiosk -> grid riser: dim
-  EL.riser = energyLine(EL.riserPts, ER * 0.75, ANIM ? EL.grid.material : M.energyGrid);
+  // grid -> kiosk: dim; NEWSITE: maakaapeli häipyy pimeään maan kanssa
+  EL.riser = energyLine(EL.riserPts, ER * 0.75, NEWSITE ? fadeGround(M.energyGrid.clone(), R0, R1) : ANIM ? EL.grid.material : M.energyGrid);
   // rooftop solar -> main switchboard: hero hehkuu kuten varaston viiva; kriit-videossa olemassa oleva infra (himmeä)
-  EL.solar = energyLine(EL.solarPts, ER * 0.85, TAUSTA ? M.energy : M.energyGrid);
-  // läpivientilevyt seinässä
-  for (const [y, z] of [[0.35, ROW.zS + 0.6], [0.35, -12.4], [2.6, -11.5]]) box(0.04, 0.34, 0.34, M.darkMetal, ROW.wallX + 0.02, y, z, scene, false);
+  EL.solar = energyLine(EL.solarPts, ER * 0.85, TAUSTA ? M.energy : ANIM ? M.energyGrid.clone() : M.energyGrid);
+  if (!NEWSITE) for (const [y, z] of [[0.35, ROW.zS + 0.6], [0.35, -12.4], [2.6, -11.5]]) box(0.04, 0.34, 0.34, M.darkMetal, ROW.wallX + 0.02, y, z, scene, false);
 }
 // ---------- MV line to the grid ----------
 function pole(x, z, hgt = 10) {
@@ -774,7 +803,7 @@ function pole(x, z, hgt = 10) {
   for (const k of [-0.9, 0, 0.9]) { const px = x + k * Math.cos(Math.PI / 4), pz = z - k * Math.sin(Math.PI / 4); cyl(0.05, 0.28, M.insul, px, hgt - 0.3, pz, scene, 8); pts.push(new THREE.Vector3(px, hgt - 0.18, pz)); }
   return pts;
 }
-const polesXZ = [[35.6, -12.6], [43.2, -21.2], [50.8, -29.8], [58.4, -38.4], [66.0, -47.0]];
+const polesXZ = NEWSITE ? [] : [[35.6, -12.6], [43.2, -21.2], [50.8, -29.8], [58.4, -38.4], [66.0, -47.0]];
 const polePts = polesXZ.map(([x, z]) => pole(x, z));
 for (let i = 0; i < polePts.length - 1; i++) for (let k = 0; k < 3; k++) {
   const a = polePts[i][k], b = polePts[i + 1][k];
@@ -783,7 +812,7 @@ for (let i = 0; i < polePts.length - 1; i++) for (let k = 0; k < 3; k++) {
   const m = new THREE.Mesh(new THREE.TubeGeometry(curve, 24, 0.014, 5, false), M.wire); m.castShadow = true; scene.add(m);
 }
 // riser cable at first pole
-cyl(0.05, 8.6, M.darkMetal, 35.6 + 0.22, 4.3, -12.6, scene, 8);
+if (!NEWSITE) cyl(0.05, 8.6, M.darkMetal, 35.6 + 0.22, 4.3, -12.6, scene, 8);
 
 // ---------- van ----------
 function van(x, z, rot) {
@@ -908,12 +937,8 @@ function person(o) {
   return g;
 }
 const PEOPLE = {};
-if (TAUSTA) {
-  // yksi ihminen mittakaavaksi: omistaja tabletin kanssa sähkötilan oven vieressä
-  PEOPLE.owner = person({ x: 17.15, z: -17.2, rot: -1.75, top: M.coat, bottom: M.trousers, pose: 'tablet', h: 1.74 });
-} else if (KRIIT) {
-  // ihmiset lisätään animaatiokerroksessa (anim=proc); stillissä omistaja oven vieressä
-  if (!ANIM) PEOPLE.owner = person({ x: 17.15, z: -17.2, rot: -1.75, top: M.coat, bottom: M.trousers, pose: 'tablet', h: 1.74 });
+if (TAUSTA || KRIIT) {
+  // v48: herossa ei ihmisiä (Madis 06.11.2026); prosessivideossa ihmiset lisätään animaatiokerroksessa (anim=proc)
 } else if (!SHOW.includes('nopeople')) {
   PEOPLE.electrician = person({ x: 22.4, z: -3.2, rot: Math.PI + 0.25, top: M.navy, bottom: M.trousers, stripes: true, helmet: true, pose: 'camera' });
   PEOPLE.owner = person({ x: 25.3, z: -2.6, rot: Math.PI - 0.35, top: M.coat, bottom: M.trousers, pose: 'tablet', h: 1.72 });
@@ -985,7 +1010,7 @@ if (LIGHT === 'dusk') {
   if (SCENE === 'kuivati') { lamp(9.6, 7.5, 0.6, 9, 18); lamp(12.9, 12.9, -4.6, 2.5, 7); }
   if (SCENE === 'hotell') { lamp(-2.95, 2.75, -5.3, 6, 9); lamp(11.6, 2.9, -7.7, 5, 8); }
   if (SCENE === 'paike') lamp(14.4, 2.6, -12.2, 5, 8);
-  if (TAUSTA) { yl.intensity = 14; lamp(14.6, 1.9, -13.6, 9, 7); lamp(19.2, 9.5, -15.2, 30, 24); lamp(27.0, 9, -9.0, 14, 20); }
+  if (TAUSTA) { yl.intensity = 14; lamp(14.9, 1.6, -13.6, 9, 7); lamp(19.2, 9.5, -16.2, 30, 24); lamp(KX + 1.5, 8, -10.8, 12, 17); }
 } else {
   const fill = new THREE.DirectionalLight('#ffffff', 0.45); fill.position.set(SITE.x + 60, 50, SITE.z + 80); scene.add(fill);
 }
@@ -1039,9 +1064,9 @@ window.ANCHORS = SHOT === 'scale' ? {
 } : (SCENE !== 'toostus' || P.get('labels')) ? LABELS() : {
   cabinets: proj(new THREE.Vector3(21.8, 2.6, -6)),
   cabinetsBase: proj(new THREE.Vector3(21.8, 0.2, -5.4)),
-  kiosk: proj(new THREE.Vector3(31.2, 2.5, -8.6)),
+  kiosk: proj(new THREE.Vector3(KIOSK.x, 2.5, KIOSK.z)),
   switchboard: proj(new THREE.Vector3(14.1, 1.2, -13.6)),
-  meter: proj(new THREE.Vector3(31.2, 2.4, -8.6)),
+  meter: proj(new THREE.Vector3(KIOSK.x, 2.4, KIOSK.z)),
   grid: proj(new THREE.Vector3(43.2, 9.6, -21.2)),
   solar: proj(new THREE.Vector3(-4, 9.6, -22)),
   electrician: proj(new THREE.Vector3(22.4, 1.9, -3.2)),
@@ -1082,7 +1107,7 @@ if (ANIM === 'proc') {
   const basic = (c, o = 1) => new THREE.MeshBasicMaterial({ color: c, transparent: true, opacity: o, depthWrite: false });
   // korostusrenkaat: mittari (muuntamo) ja pääkeskus (sähkötilan ovi)
   const ring = (x, z, r) => { const m = new THREE.Mesh(new THREE.RingGeometry(r, r + 0.12, 64), basic(gold, 0)); m.rotation.x = -Math.PI / 2; m.position.set(x, 0.06, z); scene.add(m); return m; };
-  AN.ringMeter = ring(31.2, -8.6, 2.2); AN.ringDoor = ring(14.6, -13.6, 1.3);
+  AN.ringMeter = ring(KIOSK.x, KIOSK.z, 2.2); AN.ringDoor = ring(14.6, -13.6, 1.3);
   // tuntidata: kultaiset hiukkaset nousevat mittarilta ja pääkeskukselta
   AN.parts = [];
   const pg = new THREE.SphereGeometry(0.12, 10, 8);
@@ -1127,7 +1152,10 @@ if (ANIM === 'proc') {
   // energian tiet: kultainen viiva piirtyy, liittymä ja verkko kirkastuvat; markkinapulssit
   AN.brightCount = EL.bright ? EL.bright.geometry.index.count : 0;
   AN.gridE0 = EL.grid ? EL.grid.material.emissiveIntensity : 0;
-  AN.path = EL.brightPts.concat(EL.gridPts.slice().reverse(), EL.riserPts, [[35.6, 9.6, -12.6]]);
+  AN.riserE0 = EL.riser ? EL.riser.material.emissiveIntensity : 0; AN.solarE0 = EL.solar ? EL.solar.material.emissiveIntensity : 0;
+  /* markkinapulssit: varasto → pääkeskus → muuntamo → keskijänniteverkko (itään, häipyy) */
+  AN.path = NEWSITE ? EL.brightPts.concat(EL.gridPts.slice().reverse(), [[KX + 1.0, EY, ZG], [KX + 13, EY, ZG]])
+    : EL.brightPts.concat(EL.gridPts.slice().reverse(), EL.riserPts, [[35.6, 9.6, -12.6]]);
   AN.pulses = []; for (let k = 0; k < 5; k++) { const m = new THREE.Mesh(new THREE.SphereGeometry(0.13, 12, 10), basic('#E3BE6A', 0)); scene.add(m); AN.pulses.push(m); }
   // ihmiset: omistaja (kamera → tabletti) ja sähköasentaja
   AN.ownerCam = person({ x: 16.7, z: -14.15, rot: -1.34, top: M.coat, bottom: M.trousers, pose: 'camera', h: 1.74 });
@@ -1144,7 +1172,7 @@ function setT(t) {
   AN.ringMeter.material.opacity = e1 * (0.35 + 0.35 * pz); AN.ringMeter.scale.setScalar(1 + 0.06 * pz);
   AN.ringDoor.material.opacity = env(t, 0.9, 5.4, 0.6) * (0.35 + 0.35 * (0.5 + 0.5 * Math.sin(t * 3.2 + 1.3)));
   AN.parts.forEach((m, k) => {
-    const src = k % 2 ? [31.2, 2.5, -8.6] : [14.5, 2.4, -13.6], ph = (t * 0.42 + k * 0.137) % 1;
+    const src = k % 2 ? [KIOSK.x, 2.5, KIOSK.z] : [14.5, 2.4, -13.6], ph = (t * 0.42 + k * 0.137) % 1;
     m.position.set(src[0] + Math.sin(k * 2.1 + ph * 3) * 0.35, src[1] + ph * 7, src[2] + Math.cos(k * 1.7) * 0.35);
     m.material.opacity = env(t, 0.9, 5.3, 0.6) * Math.sin(Math.PI * ph) * 0.95;
   });
@@ -1179,7 +1207,11 @@ function setT(t) {
   AN.cabF.forEach(({ c, f }, i) => { const u = span(t, 23.2 + 0.55 * i, 23.95 + 0.55 * i); f(smo(span(t, 23.2 + 0.55 * i, 23.5 + 0.55 * i))); c.position.y = ROW.base + 1.1 * (1 - eo(u)); });
   if (EL.bright) { const u = eo(span(t, 25.9, 26.9)); EL.bright.visible = u > 0.002; EL.bright.geometry.setDrawRange(0, Math.floor(AN.brightCount * u / 6) * 6); }
   { const le = AN.led0 * smo(span(t, 26.4, 27.0)); AN.leds.forEach((m) => { m.emissiveIntensity = le; }); }
-  if (EL.grid) EL.grid.material.emissiveIntensity = AN.gridE0 * (1 + 2.2 * smo(span(t, 26.9, 27.5)));
+  { const gb = 1 + 2.2 * smo(span(t, 26.9, 27.5));
+    if (EL.grid) EL.grid.material.emissiveIntensity = AN.gridE0 * gb;
+    if (EL.riser && EL.riser.material !== (EL.grid && EL.grid.material)) EL.riser.material.emissiveIntensity = AN.riserE0 * gb;
+    // aurinkokaapeli: olemassa oleva tuotanto liittyy samaan kokonaisuuteen käyttöönotossa
+    if (EL.solar) EL.solar.material.emissiveIntensity = AN.solarE0 * (1 + 1.6 * smo(span(t, 26.6, 27.2))); }
   AN.pulses.forEach((m, k) => {
     const u = ((t - 27.3) / 2.2 - k * 0.2); const on = t >= 27.3 && u >= 0 && u <= 1;
     if (on) { const p = polyAt(AN.path, u); m.position.set(p[0], p[1] + 0.12, p[2]); }

@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 499 katselmoitavaa riviä — 388 uutta, 111 muutettua, joista **59 on merkitty ⚠**. Muuttumattomia ohitettiin 626.
+**Yhteenveto:** 506 katselmoitavaa riviä — 394 uutta, 112 muutettua, joista **59 on merkitty ⚠**. Muuttumattomia ohitettiin 625.
 
 **Huomio:** 2 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -195,18 +195,31 @@ Vastine mainissa: `/et/`
 - [ ] `h3` **muutettu** — Tasuta hinnang
       - main: Tasuta hindamine
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või võrguettevõtjalt), ühe arve ja peakilbi skeemi. Kirjaliku hinnangu saate kahe tööpäevaga pärast andmete saamist.
+- [ ] `p` **uusi** — 2 tööpäeva
+      - **Korjaus:**
+- [ ] ⚠ `p` **muutettu** — Täidate hinnangu vormi ja annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või võrguettevõtjalt), ühe arve ja peakilbi skeemi. Kirjaliku hinnangu saate kahe tööpäevaga pärast andmete saamist.
       - main: Teie annate: oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt – juhendame), ühe elektriarve ja peakilbi skeemi.
       - ⚠ perustajan päätös 04.11.2026 (I-20261104-7) — lupaus, sama kaikilla sivuilla
+      - **Korjaus:**
+- [ ] `p` **uusi** — 1–2 päeva · tasuta
       - **Korjaus:**
 - [ ] `p` **muutettu** — Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldajaga.
       - main: Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldajaga; elektrik ütleb, kas ja mis tingimustel saab, ja eelarve suurusjärgu.
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks.
+- [ ] `p` **uusi** — pool päeva
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Elektrik käib nädala jooksul kohal ning mõõdab kaablitee, kilbi ja paigalduskoha. Kinnitatud hinnaga pakkumise saate 2–5 tööpäevaga.
+      - main: Elektrik käib kohal, mõõdab kaablitee, kilbi ja paigalduskoha ning kinnitab hinna.
+      - **Korjaus:**
+- [ ] `p` **uusi** — teie ajakava
+      - **Korjaus:**
+- [ ] ⚠ `p` **muutettu** — Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Otsuse aja määrate teie.
       - main: Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Näete ühte tabelit, kus on kuumakse, omafinantseering ja see, mis pärast makset alles jääb. Rahastajaga suhtleme meie.
       - ⚠ rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)
       - **Korjaus:**
-- [ ] `p` **muutettu** — Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine. Agregaator viib salvesti mitmeturuteenusesse.
+- [ ] `p` **uusi** — 2–3 päeva objektil
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Paigalduse aja lepime kokku tellimuse kinnitamisel ja kõik muu kulgeb paigaldusega kõrvuti. Mõõtepunkti taotlused lähevad sisse samal päeval. Pärast kontrolle ja käivitamist viib agregaator salvesti mitmeturuteenusesse.
       - main: Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine; agregaator liidab salvesti mitmeturuteenusega ja meie jälgime, et süsteem teeks seda, mida hinnang näitas.
       - **Korjaus:**
 - [ ] `p` **muutettu** — 1 · Tasuta hinnang
@@ -215,11 +228,13 @@ Vastine mainissa: `/et/`
 
 ### #valik
 
-- [ ] `h2` **muutettu** — Lai valik, üks vastutaja.
-      - main: Lai valik, üks vastutaja
+- [ ] `h2` **uusi** — Me mõtleme tervikuna.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Seadmed, paigaldus ja turulepääs tulevad mitmelt partnerilt. Valime teie objektile sobivaima lahenduse, võrdleme variante samade numbritega ja vastutame terviku eest algusest lõpuni.
-      - main: Energiasalvestid, konteinerid, laadimine, mikrovõrgud ja päikeseelekter partneritelt. Meie paneme terviku kokku ja vastutame projekti eest algusest lõpuni.
+- [ ] `p` **muutettu** — Oleme koostööks välja valinud parimatest parimad. Valiku aluseks oli see, mis loob ettevõtte investeeringule suurima väärtuse.
+      - main: Arvestitagune süsteem – salvesti, tootmine ja juhtimine teie liitumise taga, teie poolel arvestit. Mitmeturuteenus – agregaator müüb sama salvesti võimsust mitmel turul korraga: teie tarbimise optimeerimine, arbitraaž börsil, reservid Eleringile. Agregaator – ettevõte, kes koondab mitme objekti salvestid üheks pakkumiseks ja maksab tulu välja. Valmisolekutasu – tasu selle eest, et salvesti on Eleringile kättesaadav, ka siis, kui ta ei tööta. Arbitraaž – ostmine odaval tunnil, müümine või kasutamine kallil.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Investeeringu väärtus tuleb paljudest osadest. Kui pakume valikut eri tootjatest, toodetest ja teenustest, saame igale kliendile koostada rätseplahenduse, mis loob tema kinnistule kõige rohkem väärtust. Lähtume teie otsuse kriteeriumidest, mitte ühe seadme müügist.
+      - main: Arvestitagune süsteem – salvesti, tootmine ja juhtimine teie liitumise taga, teie poolel arvestit. Mitmeturuteenus – agregaator müüb sama salvesti võimsust mitmel turul korraga: teie tarbimise optimeerimine, arbitraaž börsil, reservid Eleringile. Agregaator – ettevõte, kes koondab mitme objekti salvestid üheks pakkumiseks ja maksab tulu välja. Valmisolekutasu – tasu selle eest, et salvesti on Eleringile kättesaadav, ka siis, kui ta ei tööta. Arbitraaž – ostmine odaval tunnil, müümine või kasutamine kallil.
       - **Korjaus:**
 - [ ] ⚠ `figcaption` **muutettu** — Soleron Energy
       - main: Agregaator: Soleron Energy

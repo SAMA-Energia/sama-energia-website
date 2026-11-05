@@ -88,24 +88,36 @@ Näin työ etenee ja mikä maksaa milloin.
 Te annatte tiedot. Me hoidamme loput. Kaksi ensimmäistä vaihetta ovat maksuttomia ja kohdekäynti hyvitetään sopimuksessa.
 
 1Maksuton kartoitus
-Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubin tai verkkoyhtiönne kautta), yhden laskun ja pääkaavion. Kirjallisen arvion saatte kahden arkipäivän kuluessa tietojen saamisesta.
+2 arkipäivää
+
+Täytätte kartoituslomakkeen ja annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubin tai verkkoyhtiönne kautta), yhden laskun ja pääkaavion. Kirjallisen arvion saatte kahden arkipäivän kuluessa tietojen saamisesta.
 
 2Esitarkastus
+1–2 päivää · maksuton
+
 Kymmenen valokuvaa pääkeskuksesta ja asennuspaikasta sekä lyhyt videopuhelu kiinteistönhoitajanne tai kunnossapitonne kanssa.
 
 3Kohdekäynti
-Sähköasentaja käy paikalla, mittaa kaapelireitin, keskuksen ja asennuspaikan sekä vahvistaa hinnan.
+puoli päivää
+
+Sähköasentaja käy paikalla viikon sisällä ja mittaa kaapelireitin, keskuksen ja asennuspaikan. Vahvistetun tarjouksen saatte 2–5 arkipäivässä.
 
 4Rahoitus ja päätös
-Kun hinta on vahvistettu, vertaamme rinnakkain kolmea vaihtoehtoa: oma pääoma, leasing ja osamaksu.
+teidän aikataulunne
+
+Kun hinta on vahvistettu, vertaamme rinnakkain kolmea vaihtoehtoa: oma pääoma, leasing ja osamaksu. Päätöksen aikataulun määräätte te.
 
 5Projekti, asennus, markkinat
-Suunnittelu, verkkoyhtiön tekniset ehdot, asennus, tarkastukset ja käyttöönotto. Aggregaattori liittää sähkövaraston monimarkkinapalveluun.
+2–3 päivää kohteella
+
+Asennusajan määrää asentajan jono, noin kaksi viikkoa, ja kaikki muu kulkee asennuksen rinnalla. Sähköurakoitsija tekee ilmoituksen verkkoyhtiölle tilausvahvistuksen päivänä. Käyttöönoton jälkeen aggregaattori liittää sähkövaraston monimarkkinapalveluun.
 
 Pyydä maksuton kartoitus
 
-Laaja valikoima, yksi vastuutaho.
-Jokaisella alalla meillä on useampi kumppani. Valitsemme kohteeseenne sopivimmat laitteet ja tekijät, vertaamme vaihtoehdot samoilla luvuilla ja vastaamme kokonaisuudesta alusta loppuun.
+Ajattelemme kokonaisuutta.
+Olemme valinneet yhteistyöhön parhaista parhaat. Valinnan perusteena oli se, mikä luo yrityksen investoinnille suurimman arvon.
+Investoinnin arvo syntyy monesta osasta. Kun tarjoamme valikoiman eri valmistajia, tuotteita ja palveluita, voimme rakentaa jokaiselle asiakkaalle räätälöidyn ratkaisun, joka luo asiakkaan kiinteistölle eniten arvoa. Lähtökohtana ovat teidän päätöksenne kriteerit, ei yhden laitteen myynti.
+Kumppanit ja tuotteet
 
 Ralos Oy
 
@@ -115,11 +127,7 @@ Gare Energy Oy
 
 JSM Automaatiosähkö Oy
 
-Gare Energy Oy
-
 Scanoffice Oy
-
-Kumppanit ja tuotteet
 
 Tiimimme.
 SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · Y-tunnus 3647683-6
@@ -1783,34 +1791,42 @@ Kuidas töö käib ja mis millal maksab.
 Teie annate andmed. Ülejäänu korraldame meie. Kaks esimest sammu on tasuta ja objektikülastus arvestatakse lepingus maha.
 
 1Tasuta hinnang
-Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või võrguettevõtjalt), ühe arve ja peakilbi skeemi. Kirjaliku hinnangu saate kahe tööpäevaga pärast andmete saamist.
+2 tööpäeva
+
+Täidate hinnangu vormi ja annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või võrguettevõtjalt), ühe arve ja peakilbi skeemi. Kirjaliku hinnangu saate kahe tööpäevaga pärast andmete saamist.
 
 2Eelkontroll
+1–2 päeva · tasuta
+
 Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldajaga.
 
 3Objektikülastus
-Elektrik käib kohal, mõõdab kaablitee, kilbi ja paigalduskoha ning kinnitab hinna.
+pool päeva
+
+Elektrik käib nädala jooksul kohal ning mõõdab kaablitee, kilbi ja paigalduskoha. Kinnitatud hinnaga pakkumise saate 2–5 tööpäevaga.
 
 4Rahastus ja otsus
-Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks.
+teie ajakava
+
+Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Otsuse aja määrate teie.
 
 5Projekt, paigaldus, turg
-Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine. Agregaator viib salvesti mitmeturuteenusesse.
+2–3 päeva objektil
+
+Paigalduse aja lepime kokku tellimuse kinnitamisel ja kõik muu kulgeb paigaldusega kõrvuti. Mõõtepunkti taotlused lähevad sisse samal päeval. Pärast kontrolle ja käivitamist viib agregaator salvesti mitmeturuteenusesse.
 
 Küsi tasuta hinnangut
 
-Lai valik, üks vastutaja.
-Seadmed, paigaldus ja turulepääs tulevad mitmelt partnerilt. Valime teie objektile sobivaima lahenduse, võrdleme variante samade numbritega ja vastutame terviku eest algusest lõpuni.
+Me mõtleme tervikuna.
+Oleme koostööks välja valinud parimatest parimad. Valiku aluseks oli see, mis loob ettevõtte investeeringule suurima väärtuse.
+Investeeringu väärtus tuleb paljudest osadest. Kui pakume valikut eri tootjatest, toodetest ja teenustest, saame igale kliendile koostada rätseplahenduse, mis loob tema kinnistule kõige rohkem väärtust. Lähtume teie otsuse kriteeriumidest, mitte ühe seadme müügist.
+Partnerid ja tooted
 
 Ralos Oy
 
 Soleron Energy
 
 Ralos Oy
-
-Ralos Oy
-
-Partnerid ja tooted
 
 Meie meeskond.
 SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · registrikood (Y-tunnus) 3647683-6

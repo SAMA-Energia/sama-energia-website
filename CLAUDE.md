@@ -362,3 +362,33 @@ When in doubt, leave it out and flag it.
   kumppanit kumppanisivulla); kuusi kuvaa 3:2 `assets/valikoima/*.webp` alkuperäisinä väreinä (Ralosin omat kuvat ovat
   mustavalkoisia), kuvatekstinä vain kumppanin nimi; ET: Ralos ×3, Soleron ja kaksi sivuston omaa kuvaa ilman
   kumppanin nimeä. Omat kuvat korvaavat nämä kuvauksen (9.–11.11) jälkeen.
+
+## v48 — Madiksen palaute 6.11.2026 klo 0.10 (haara v35-uusi-ilme)
+
+- Madis: "Laaja valikoima / Lai valik" -osio on metsässä (otsikko "lai valik" ei toimi); viesti hänen sanoillaan:
+  parhaista parhaat kumppanit valittu sen mukaan, mikä luo yrityksen investoinnille suurimman arvon; investoinnin arvo
+  syntyy monesta osasta; eri valmistajien, tuotteiden ja palveluiden valikoimalla räätälöity ratkaisu kiinteistölle
+  asiakkaan omien päätöskriteerien mukaan, ei yhden laitteen myynnin; "me mõtleme tervikuna". Prosessi: kuvaukset eivät
+  mahdu, video ei näytä katon aurinkopaneeleja, lomake on alussa ja kartoitus annetaan, aika-asteikot vaiheisiin.
+  Hero: ei ihmistä kaappien edessä; kontrolleri ja kaapelit oikein pääkeskukselle, varaston kaapeli oven alta
+  sähkökaappiin (seinän läpiviennit "veits vale"); muuntamo ja verkkolinja oudossa paikassa.
+- hero3d.js `NEWSITE` (= look tausta tai kriit; muut kuvat ennallaan): muuntamo `KX` 23, z -13,6 (oven itäpuolella,
+  ~8 m seinästä), keskijännite maakaapelina idästä (`EL.riserPts`, häivytetään maan mukana, ei pylväitä). Kaikki kolme
+  kaapelia maassa oven kynnyksen alta sisään: aurinko z -13,25 (julkisivua alas maahan ja seinän vierustaa ovelle),
+  muuntamo -13,6 (suoraan länteen), varasto -13,95 (perustuksen etureunan kanava rivin eteläpäästä ovelle). Sisäkuva:
+  pääkeskus, sen vieressä ohjausyksikkö mittausjohtoineen, kaapelit lattiaa pitkin pääkeskukseen. Ei läpivientilevyjä.
+  Herosta ja kriit-stillistä ihmiset pois. Kamerat: `bg` tx 8.25 tz -18.25 vh 22.25, `bgm` tx 9.25 tz -19.75 vh 22,
+  `proc` tx 9 tz -18.5 vh 20.5 (4:3, katto paneeleineen näkyy). Videossa markkinapulssit varasto → pääkeskus →
+  muuntamo → verkko, käyttöönotossa myös aurinkokaapeli kirkastuu.
+- render-proc.mjs: oletus 1200×900 (4:3), puhelin 2/3 (800×600), pysäytyskuvat ja juliste samaan kokoon.
+- Prosessi (#kuidas): vaiheriveillä aika (ja maksuttomuus) oikealla, kuvaus auki vain aktiivisessa vaiheessa (`.acc`,
+  grid-rows-siirtymä; ilman JS:ää ja reduced-motionilla kaikki auki), rivit näppäimistöllä kohdistettavia. Ajat:
+  kliendi teekond (Madis 28.9.2026) ja sivuston lupaus I-20261104-7: kartoitus 2 tp; esitarkastus 1–2 pv; kohdekäynti
+  puoli päivää viikon sisällä, tarjous 2–5 tp; päätös asiakkaan aikataulussa; kohteella 2–3 pv. FI: asentajan jono
+  noin kaksi viikkoa, ilmoitus verkkoyhtiölle tilausvahvistuksen päivänä (ei "teknisiä ehtoja"). ET: paigaldusaeg
+  lepitakse kokku tellimuse kinnitamisel (Soome kahte nädalat ei kasutata), mõõtepunkti taotlused samal päeval.
+  Vaihe 1 alkaa lomakkeesta.
+- Kumppaniosio (#valik / #valikoima): H2 "Me mõtleme tervikuna." / "Ajattelemme kokonaisuutta." vasemmalla, Madiksen
+  viesti oikealla, alla viiden kuvan kokonaisuus (iso kuva 2×2 + neljä; ET Ralos ×2, Soleron, kaksi omaa; FI Ralos,
+  Avant Power, Gare, JSM, Scanoffice). Natiivitarkistus: ET Madis, FI Martin.
+- site.css 78,7 kt (oma tavoite 76 kt ylittyy hieman; raja 92 kt).

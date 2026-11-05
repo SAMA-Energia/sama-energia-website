@@ -1,4 +1,4 @@
-/* SAMA Energia — etusivu v46 (5.11.2026): päiväkaavio (.k-dg) ja prosessivideo (.k-pg).
+/* SAMA Energia — etusivu v46 (5.11.2026), v48 (6.11.2026): päiväkaavio (.k-dg) ja prosessivideo (.k-pg).
    Sama malli molemmissa: vasemmalla rivit, oikealla kuva. Eteneminen korostaa nykyisen rivin ja täyttää sen
    taustasävyn (--p). Hiiri rivin päällä tai näppäimistöfokus pitää kuvan siinä vaiheessa; kosketus valitsee
    vaiheen (linkissä toinen napautus avaa linkin). Pysäytyspainike (WCAG 2.2.2). Ei vieritykseen sidottua toimintaa.
@@ -56,6 +56,8 @@ draw();
 
 /* ---------- prosessivideo ----------
    Vaihe näkyy aina kolmella tavalla: rivin korostus, rivin taustasävy (--p) ja vaiheen nimi kuvan kulmassa.
+   v48: .acc = vain aktiivisen vaiheen kuvaus on auki (reduced-motion ja ilman JS:ää kaikki auki); rivit ovat
+   näppäimistöllä kohdistettavia (fokus pitää vaiheen kuten hiiri).
    Jos video ei käynnisty (estetty automaattitoisto, esikatselun tietoturvasääntö, verkkovirhe, ei kuvaa 6 s:ssa),
    tilalle vaihtuvat vaiheiden pysäytyskuvat samalla aikataululla; reduced-motion/saveData: pysäytyskuvat ilman etenemistä. */
 (function(){
@@ -93,9 +95,13 @@ v.addEventListener('play',function(){if(!raf)raf=requestAnimationFrame(frame);})
 v.addEventListener('seeked',function(){if(!raf)frame();});
 v.addEventListener('error',function(){if(v.networkState===3)toStill();},true);
 items.forEach(function(it,i){
+ it.tabIndex=0;
  it.addEventListener('pointerenter',function(e){if(e.pointerType==='mouse')hold(i);});
+ it.addEventListener('focus',function(){if(!byTouch())hold(i);});
+ it.addEventListener('blur',function(){if(!tHold)free();});
  it.addEventListener('click',function(){if(!byTouch())return;if(tHold&&held===i)free();else{tHold=true;hold(i);}});
 });
+if(!RM)box.classList.add('acc');
 if(list)list.addEventListener('pointerleave',function(e){if(e.pointerType==='mouse'&&!tHold)free();});
 d.addEventListener('pointerdown',function(e){if(tHold&&!box.contains(e.target))free();});
 if(btn){btn.addEventListener('click',function(){if(held>=0){paused=false;free();return;}paused=!paused;pbtn(btn,paused);if(paused){if(!still)v.pause();}else play();});btn.hidden=RM;}

@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 488 katselmoitavaa riviä — 358 uutta, 130 muutettua, joista **50 on merkitty ⚠**. Muuttumattomia ohitettiin 714.
+**Yhteenveto:** 494 katselmoitavaa riviä — 364 uutta, 130 muutettua, joista **50 on merkitty ⚠**. Muuttumattomia ohitettiin 714.
 
 **Huomio:** 1 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -191,24 +191,34 @@ Vastine mainissa: `/`
 - [ ] `p` **muutettu** — Te annatte tiedot. Me hoidamme loput. Kaksi ensimmäistä vaihetta ovat maksuttomia ja kohdekäynti hyvitetään sopimuksessa.
       - main: Ketään ei lähetetä minnekään ennen kuin tiedot ovat käsillä. Kaksi ensimmäistä askelta ovat maksuttomia, kohdekäynti hyvitetään sopimuksessa, suunnittelu ja asennus kulkevat sopimuksen mukaan.
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubin tai verkkoyhtiönne kautta), yhden laskun ja pääkaavion. Kirjallisen arvion saatte kahden arkipäivän kuluessa tietojen saamisesta.
+- [ ] `p` **uusi** — 2 arkipäivää
+      - **Korjaus:**
+- [ ] ⚠ `p` **muutettu** — Täytätte kartoituslomakkeen ja annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubin tai verkkoyhtiönne kautta), yhden laskun ja pääkaavion. Kirjallisen arvion saatte kahden arkipäivän kuluessa tietojen saamisesta.
       - main: Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubista tai verkkoyhtiöltänne), yhden laskun ja pääkaavion; me kirjoitamme arvion: liittymä, kulutusprofiili, tehon jako, mallinnettu reservituotto tuotteittain lähteineen.
       - ⚠ perustajan päätös 04.11.2026 (I-20261104-7) — lupaus, sama kaikilla sivuilla
+      - **Korjaus:**
+- [ ] `p` **uusi** — 1–2 päivää · maksuton
       - **Korjaus:**
 - [ ] `p` **muutettu** — Kymmenen valokuvaa pääkeskuksesta ja asennuspaikasta sekä lyhyt videopuhelu kiinteistönhoitajanne tai kunnossapitonne kanssa.
       - main: Kymmenen valokuvaa pääkeskuksesta ja asennuspaikasta sekä lyhyt videopuhelu huoltohenkilönne kanssa; sähköasentaja kertoo, onnistuuko ja millä ehdoin, ja budjetin suuruusluokan.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Sähköasentaja käy paikalla, mittaa kaapelireitin, keskuksen ja asennuspaikan sekä vahvistaa hinnan.
+- [ ] `p` **uusi** — puoli päivää
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Sähköasentaja käy paikalla viikon sisällä ja mittaa kaapelireitin, keskuksen ja asennuspaikan. Vahvistetun tarjouksen saatte 2–5 arkipäivässä.
       - main: Sähköasentaja käy paikalla, mittaa kaapelireitin, keskuksen ja asennuspaikan ja vahvistaa hinnan.
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Kun hinta on vahvistettu, vertaamme rinnakkain kolmea vaihtoehtoa: oma pääoma, leasing ja osamaksu.
+- [ ] `p` **uusi** — teidän aikataulunne
+      - **Korjaus:**
+- [ ] ⚠ `p` **muutettu** — Kun hinta on vahvistettu, vertaamme rinnakkain kolmea vaihtoehtoa: oma pääoma, leasing ja osamaksu. Päätöksen aikataulun määräätte te.
       - main: Kun hinta on vahvistettu, asetamme rinnakkain kolme tietä: oma pääoma, leasing ja osamaksu. Näette yhden taulukon, jossa on kuukausierä, omarahoitusosuus ja se, mitä maksun jälkeen jää käteen. Rahoittajan kanssa asioimme me.
       - ⚠ rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)
       - **Korjaus:**
 - [ ] `h3` **muutettu** — Projekti, asennus, markkinat
       - main: Suunnittelu, asennus, markkina
       - **Korjaus:**
-- [ ] `p` **muutettu** — Suunnittelu, verkkoyhtiön tekniset ehdot, asennus, tarkastukset ja käyttöönotto. Aggregaattori liittää sähkövaraston monimarkkinapalveluun.
+- [ ] `p` **uusi** — 2–3 päivää kohteella
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Asennusajan määrää asentajan jono, noin kaksi viikkoa, ja kaikki muu kulkee asennuksen rinnalla. Sähköurakoitsija tekee ilmoituksen verkkoyhtiölle tilausvahvistuksen päivänä. Käyttöönoton jälkeen aggregaattori liittää sähkövaraston monimarkkinapalveluun.
       - main: Suunnittelu, verkkoyhtiön liittymisasiat, asennus, tarkastukset ja käyttöönotto; aggregaattori liittää varaston monimarkkinapalveluun ja me seuraamme, että järjestelmä tekee sen, minkä arvio näytti.
       - **Korjaus:**
 - [ ] `p` **muutettu** — 1 · Maksuton kartoitus
@@ -217,11 +227,13 @@ Vastine mainissa: `/`
 
 ### #valikoima
 
-- [ ] `h2` **muutettu** — Laaja valikoima, yksi vastuutaho.
-      - main: Laaja valikoima, yksi vastuu
+- [ ] `h2` **uusi** — Ajattelemme kokonaisuutta.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Jokaisella alalla meillä on useampi kumppani. Valitsemme kohteeseenne sopivimmat laitteet ja tekijät, vertaamme vaihtoehdot samoilla luvuilla ja vastaamme kokonaisuudesta alusta loppuun.
-      - main: Olemme tukenanne alusta loppuun: löydämme kohteellenne sopivimman ratkaisun ja liitämme sen aggregaattorin kautta monimarkkinapalveluun, jotta se tuottaa usealla markkinalla samaan aikaan.
+- [ ] `p` **muutettu** — Olemme valinneet yhteistyöhön parhaista parhaat. Valinnan perusteena oli se, mikä luo yrityksen investoinnille suurimman arvon.
+      - main: Vapaa maa liittymän lähellä on itsessään omaisuutta, jolle voimala ja varasto rakennetaan; salkku saa yhden kumppanin, joka laskee kaikki kohteet läpi.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Investoinnin arvo syntyy monesta osasta. Kun tarjoamme valikoiman eri valmistajia, tuotteita ja palveluita, voimme rakentaa jokaiselle asiakkaalle räätälöidyn ratkaisun, joka luo asiakkaan kiinteistölle eniten arvoa. Lähtökohtana ovat teidän päätöksenne kriteerit, ei yhden laitteen myynti.
+      - main: Mittarin takainen järjestelmä – varasto, tuotanto ja ohjaus liittymänne takana, teidän puolellanne mittaria. Monimarkkinapalvelu – aggregaattori myy saman varaston tehoa usealla markkinalla yhtä aikaa: kulutuksenne optimointi, arbitraasi pörssissä, reservit Fingridille. Aggregaattori – yritys, joka kokoaa usean kohteen varastot yhdeksi tarjoukseksi ja tilittää tuoton. Ylläpitokorvaus – korvaus siitä, että varasto on Fingridin käytettävissä, myös silloin kun se ei tee mitään. Arbitraasi – ostetaan halvalla tunnilla, myydään tai käytetään kalliilla.
       - **Korjaus:**
 - [ ] ⚠ `figcaption` **uusi** — Avant Power
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
