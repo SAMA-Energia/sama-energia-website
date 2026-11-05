@@ -1691,6 +1691,7 @@ class Component extends DCLogic {
       cx = w * 0.5; cy = h * 0.5;
     }
     const P = (q) => [cx + (q[0] - fx) * sc * Asp, cy + (q[1] - fy) * sc];
+    this._mapInv = [cx, cy, fx, fy, sc, Asp];   /* 05.11.2026: käänteinen projektio kartan napautukselle (liittymän paikka) */
     const PL = (ll) => P(this._ll(ll));
     this._mapProj = P; this._mapProjLL = PL; this._mapZ = z;
     const cty = (ll) => (ll[1] < 59.75 && ll[0] > 21.5) ? 'ee' : 'fi';
@@ -2046,9 +2047,19 @@ function step(s){var st=s.querySelectorAll('[data-step]');if(!st.length)return;v
  i=nearest(st,s);
  if(kind==='map'){var lb=st[st.length-1].getBoundingClientRect(),ln=line(s),vm=s.querySelector('.kk-maps'),vr=vm&&vm.getBoundingClientRect(),stk=vr&&vr.left<innerWidth*0.3&&vr.top<=110&&vr.bottom<innerHeight*0.8,endY=stk?vr.bottom:innerHeight*0.12;c._mapP=Math.max(0,Math.min(1,(ln-lb.top)/Math.max(1,ln-endY)));}
  if(i<0||last[s.id]===i)return;last[s.id]=i;mark(st,i);
- if(kind==='map'){var r=s.querySelector('#kk'+i);if(r)r.checked=true;var o={};for(var j=0;j<MAPK.length;j++)o[MAPK[j]]=(j===0||j===i)?1:0;c._mapCur=MAPK[i];c.setMapLayers(o);}
+ if(kind==='map'){var r=s.querySelector('#kk'+i);if(r)r.checked=true;var o={};for(var j=0;j<MAPK.length;j++)o[MAPK[j]]=(j===0||j===i)?1:0;if(c._you)o.site=1;c._mapCur=MAPK[i];c.setMapLayers(o);}
  else if(kind==='proc'){var HB=c._HB;c._ht=HB[Math.min(i,HB.length-1)]+0.01;}}
 function tick(){if(!c||pend)return;pend=true;requestAnimationFrame(function(){pend=false;secs.forEach(function(s){var r=s.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;if(s.getAttribute('data-live')==='map'&&!s.style.getPropertyValue('--kk-lift'))lift();step(s);});});}
 addEventListener('scroll',tick,{passive:true});addEventListener('resize',function(){lift();tick();});addEventListener('load',lift);try{document.fonts.ready.then(lift);}catch(e){}
+/* 05.11.2026: liittymä kartalle — selaimen sijainti vain painikkeesta tai kohdan valinta kartalta; sijaintia ei tallenneta eikä lähetetä */
+(function(){var sec=document.querySelector('.k-live[data-live="map"]');if(!sec)return;var cv=sec.querySelector('.cv-map'),gb=sec.querySelector('.kk-geo'),st=sec.querySelector('.kk-st');
+function say(k){if(st&&gb)st.textContent=gb.getAttribute('data-'+k)||'';}
+function put(lon,lat,k,n){if(!c||!c._map||!c._kd){if((n||0)<25)setTimeout(function(){put(lon,lat,k,(n||0)+1);},300);return;}var b=c._map.bbox;if(!(lon>b.x0&&lon<b.x1&&lat>b.y0&&lat<b.y1)){say('out');return;}
+ window.SAMA_MAP_SITE=c._ll([lon,lat]);c._you=1;var L=c._kd.layers[c._kd.layers.length-1],HU=c._mapHome()==='ee'?'EE':'FI';
+ if(L&&L.view&&L.view[HU]){if(!L._v0)L._v0=L.view[HU].slice();var w=(L._v0[2]-L._v0[0])/2,h=(L._v0[3]-L._v0[1])/2;L.view[HU]=[lon-w,lat-h,lon+w,lat+h];}
+ c.setMapLayers({site:1});say(k);}
+if(gb){if(!('geolocation' in navigator))gb.hidden=true;else gb.addEventListener('click',function(){start();say('wait');navigator.geolocation.getCurrentPosition(function(p){put(p.coords.longitude,p.coords.latitude,'ok');},function(){say('no');},{enableHighAccuracy:false,timeout:10000,maximumAge:600000});});}
+if(cv)cv.addEventListener('click',function(e){if(!c||!c._mapInv||!c._map)return;var r=cv.getBoundingClientRect(),M=c._mapInv,q0=M[2]+(e.clientX-r.left-M[0])/(M[4]*M[5]),q1=M[3]+(e.clientY-r.top-M[1])/M[4],b=c._map.bbox;put(b.x0+q0*(b.x1-b.x0),b.y1-q1*(b.y1-b.y0),'tap');});
+})();
 secs.forEach(function(s){[].forEach.call(s.querySelectorAll('[data-jump]'),function(el){el.addEventListener('click',function(e){var t=s.querySelector('[data-step="'+el.getAttribute('data-jump')+'"]');if(!t)return;e.preventDefault();var y=t.getBoundingClientRect().top+scrollY-line(s)+Math.min(t.offsetHeight,innerHeight*0.4)/2;scrollTo({top:Math.max(0,y),behavior:'smooth'});});});});
 })();

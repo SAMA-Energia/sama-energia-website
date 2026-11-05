@@ -700,6 +700,10 @@ h1 em,h2 em{color:var(--gold-2)}
 .pmx thead th{font:600 13.5px/1.3 var(--font-body);color:var(--ink-3)}.pmx tbody th{font-weight:600;color:var(--ink);white-space:nowrap}.pmx td{color:var(--ink-2)}
 .pmx td.nil:before{content:"·";color:var(--line-2)}.pmx-note{margin:18px 0 0;max-width:760px;font-size:15px;color:var(--ink-2)}
 @media (max-width:900px){.k-pgrid,.k-pgrid:has(>:nth-child(4):last-child){grid-template-columns:1fr 1fr}}@media (max-width:560px){.k-pgrid,.k-pgrid:has(>:nth-child(4):last-child){grid-template-columns:1fr}}
+.kk-you{display:none;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:20px}.k-live.is-live .kk-you{display:flex}
+.kk-geo svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6}.kk-hint{font-size:14.5px;color:var(--ink-3)}
+.kk-priv,.kk-st{flex-basis:100%;margin:0;font-size:13px;line-height:1.5;color:var(--ink-3)}.kk-st{color:var(--gold-2)}.kk-st:empty{display:none}
+.k-live.is-live .cv-map{cursor:crosshair}.kk-maps:after,.k-live .kk-body,.k-live .kk-chipsw{pointer-events:none}.k-live .kk-body>*,.k-live .kk-chips{pointer-events:auto}
 .k-head{max-width:880px}
 .k-head .lead{margin-top:18px}
 .k-gives{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:30px}
