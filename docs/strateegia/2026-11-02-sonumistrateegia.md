@@ -304,19 +304,42 @@ Igas plokis: eesmärk, väide, tõend, CTA, variandid ET ja FI koos mõjuga ning
   - FI: Sähköliittymänne on omaisuutta. Laittakaa se töihin omaksi eduksenne.
   - Mõju: koha kiht pealkirjas, idee juhtlõigus; kõige konkreetsem ja kõige lähem lukus pealkirjale. Väiksem kui A1 ja A2: räägib omaniku varast, mitte muutusest.
 
-**B-variandid** (5.11.2026, Madise ettepanekust „ole energiamurrangu õigel poolel"; Energiamessut 2026 sõnavara)
-- **B1. Oma koht**
-  - ET: Energiapööre on käes. Võtke selles oma koht.
-  - FI: Energiamurros on käynnissä. Ottakaa siinä oma paikkanne.
-  - Mõju: idee pealkirjas ja turu enda sõnaga (FI „energiamurros" on Fingridi ja messi sõna; ET „energiapööre" on tavakeele sõna ja klapib samba lausega „Võrk pööras"). „Koht" kutsub, „pool" mõistab hukka: sammas ei võta pooli ega sea ühtki ostjat välja. Tõend hero all näitab muutuse mastaapi: FI lepingud tõstaksid tarbimist ligi 40 % 2025. aasta tasemest (Fingrid, 18.8.2026; FI-07); ET tarbimine 7,9 → 10,0 TWh 2030 (Elering, 9.7.2026; kaardi andmestik). Risk: „murros" on messil kõigi sõna ja võib paari aastaga vananeda; A1 püsib kauem.
-- **B2. Õige pool SAMA tähendusega**
-  - ET: Energiapöörde õigel poolel on see, kes otsustab oma elektri üle ise.
-  - FI: Energiamurroksen oikealla puolella on se, joka päättää sähköstään itse.
-  - Mõju: hoiab Madise sõnastuse, aga defineerib poole ise otsustamisena, nii et keegi ei jää välja. Pikem (9–10 sõna) ja toon jääb hindavaks; loosungikuju ilma numbrita nõuab tõendit kohe all.
-- **B3. Samba lause**
-  - ET: Võrk pööras kiiremini, kui arvelt paistab.
-  - FI: Verkko kääntyi nopeammin kuin lasku näyttää.
-  - Mõju: intrigeerib ja on SAMA enda lause, aga ei ütle, mida lugeja saab; nõuab L1 kohe all. Praegu muutuse ploki pealkiri; kui läheb herosse, saab muutuse plokk pealkirja „Mis on 2026. aastal muutunud" / „Mitä muuttuu ja milloin".
+**Hero pealkiri, täpne töö (5.11.2026).** Madise ettepanek: „ole energiamurrangu õigel poolel". B1 „Võtke selles oma koht" lükati tagasi: „võtke koht" tähendab eesti keeles „istuge oma kohale", „selles" viitab pöördele, kuhu ei saa istuda, ja lause ei ütle, mida lugeja saab.
+
+Ülesanne: nimetada muutus ja lugeja kasu selles kuni kuue sõnaga, nii et ettevõtte omanik tunneb end ära ja loeb järgmise rea.
+
+Kriteeriumid: (1) muutus nimetatud; (2) kasu öeldud; (3) emakeelne idioom; (4) vaba: mitte konkurendi juhtsõna ega -mõte; (5) telefonis kuni kaks rida (36 px ET, 34 px FI, 342 px veerg); (6) samba reeglid: ei pooli, ei ülivõrret, tugevusest; (7) tõend mahub alla esimesele ekraanile.
+
+Sõnavalik. ET „energiapööre": läbipaistev eesti sõna. „Energiamurrang" ei andnud veebiotsingus (5.11.2026) ühtki eestikeelset kasutust ja loeb soome „energiamurros" kalkina. „Rohepööre" on poliitika ja avaliku vaidluse sõna (ERR arvamuslood), SAMA hääl on mitteparteiline. „Energiaüleminek" on kantseliit. FI „energiamurros": Energia 2026 programmi sõna („pureudutaan energiamurrokseen useista näkökulmista", Expomark/STT 16.9.2026); Cactos kasutab seda ainult uudiste pealkirjades, mitte heros (loetud 2.11.2026).
+
+| # | ET | FI | Read telefonis ET / FI | Hinnang |
+|---|---|---|---|---|
+| F1 | Pange energiapööre enda kasuks tööle. | Kääntäkää energiamurros eduksenne. | 2 / 2 | Soovitus. Madise idee ja tema enda tegusõna lukus pealkirjast („enda kasuks tööle", „eduksenne"). „Õige pool" ilma poolteta: õige pool on see, kelle heaks pööre töötab. Pragmaatiline: sobib omanikule, kes pööret tervitab, ja sellele, kes näeb selles kulu. FI „kääntää edukseen" on igapäevane idioom. Ainus nõrkus: liitumist ei nimeta, juhtlõik toob selle esimese sõnaga („Teie arvesti taga"). |
+| F3 | Energiapööre jõudis teie arvesti taha. Pange see enda kasuks tööle. | Energiamurros tulee mittarinne taakse. Kääntäkää se eduksenne. | 3 / 3 | Tugevaim Eestis: „jõudis ukse taha" idioom, mineviku vorm on tõene (kolm 2026. aasta reeglit), nimetab koha. Kümme sõna; vajab reavahetuse parandust („Pange" jääb teise rea lõppu, lahendus: püsitühik). FI on kohmakam, „mittarinne taakse" on tehniline. |
+| F2 | Energiapöördest võidab see, kes otsustab oma energia üle ise. | Energiamurroksesta hyötyy se, joka päättää sähköstään itse. | 3 / 3 | Hoiab „võitja poole" mõtte ja defineerib selle iseseisvusena. Üheksa sõna, ütlemise vorm on üldine maksiim. |
+| M | Olge energiapöörde õigel poolel. | Olkaa energiamurroksen oikealla puolella. | 2 / 2 | Madise sõnastus. Emakeelne ja lühike, aga (a) sammas: „pooled" on keelatud; (b) Eestis omab sama käiku Energiapartner („Maailm on muutumas. Ole osa energiarevolutsioonist.", loetud 2.11.2026), seega loeb kordusena; (c) ei ütle, mida lugeja saab, ja alla ei mahu ühtki arvu, mis „õiget poolt" tõendaks. |
+| B1 | Energiapööre on käes. Võtke selles oma koht. | Energiamurros on käynnissä. Ottakaa siinä oma paikkanne. | 3 / 3 | Tagasi lükatud (vt üleval). |
+| L | Saavutage energiasõltumatus, pannes oma elektriliitumise enda kasuks tööle. | Saavuttakaa energiariippumattomuus laittamalla sähköliittymänne töihin omaksi eduksenne. | 4 / 5 | Praegune lukk. Telefonis lükkab tõendi esimeselt ekraanilt välja (FI); „energiasõltumatus" on Eestis Sunergia ja Energiapartneri sõna. |
+
+Mõõdetud v41 heros 390 × 844 px telefonis (Playwright, 5.11.2026): nupu alumine serv ET 663 → 534 px ja FI 691 → 530 px, kui lukk asendada F1-ga; tõend koos allikaga on siis esimesel ekraanil ja 3D-pilt paistab alt.
+
+**Hero tervikuna F1-ga**
+<!-- copy:ET:HeroF1 -->
+> **Pange energiapööre enda kasuks tööle.**
+> Teie arvesti taga otsustab süsteem igal tunnil automaatselt teie huvides. Salvesti hoiab võimsust Eleringile valmis, võtab kuu kõrgeima tunni enda peale ja kasutab ära odavad tunnid.
+> 3,73 €/MWh. Reservide eest maksavad alates 2026 kõik tarbijad: tasakaalustamisvõimsuse kulu on elektriarvel uus rida. Selle raha saab see, kes reservi pakub. Allikas: Elering, tasakaalustamisvõimsuse kulu · 2026. aasta tariif
+> [Küsige tasuta hindamist] · Kuidas salvesti töötab? · +358 449 654 614
+<!-- /copy -->
+<!-- copy:FI:HeroF1 -->
+> **Kääntäkää energiamurros eduksenne.**
+> Mittarinne takana oleva järjestelmä päättää joka tunti automaattisesti teidän hyväksenne. Varasto pitää tehoa Fingridin käytettävissä, leikkaa kuukauden tehohuipun ja hyödyntää halvat tunnit.
+> 1 500 MW. Fingrid hankkii reservejä joka tunti keskimäärin noin 1 500 MW ja arvioi tarvitsevansa noin 1 200 MW lisää viiden vuoden kuluessa. Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025
+> [Pyytäkää maksuton kartoitus] · Miten varasto toimii? · +358 449 654 614
+<!-- /copy -->
+
+Miks see üksus: pealkiri ütleb, mida teha; juhtlõik ütleb, kuidas, reservirida esimesena; ET tõend sulgeb loogika Eleringi enda sõnadega („Reserve pakuvad Balti riikide elektritootjad ja salvestid", leht muudetud 29.06.2026): pöördes maksab igaüks, teenib see, kes pakub. Juhtlõik on uus: v41 lõik algab vana pealkirja sõnaga („Sõltumatu energia"), kannab mõttekriipse (G6) ja sõna „nutikas" / „älykäs" (Sunergia ja Powera); uus on 27 / 24 sõna (praegu 44 / 37).
+
+**Parandus sõltumata pealkirjast.** FI hero tõend v41-s ütleb „Fingrid … maksaa jo siitä, että reservi on käytettävissä": see on tühistatud väide 4 („Fingrid maksaa valmiudesta"). Asendus registri FI-27 sõnastusega, nagu ülal. Nupud: „Küsi" / „Pyydä" on sina-vormis ja „aku" / „akku" süsteemi tähenduses; ülal teie-vorm ja „salvesti" / „varasto", Madise otsus.
 
 **Juhtlõik** (pealkirja all)
 - **L1, koht ühe lausega** (A1, A2 ja B1 juurde)
@@ -328,7 +351,7 @@ Igas plokis: eesmärk, väide, tõend, CTA, variandid ET ja FI koos mõjuga ning
   - FI: Ansaitkaa valmiudesta. Maksakaa vähemmän. Päättäkää itse.
   - Mõju: loetav ühe pilguga; ei kanna ideed, ainult kohta.
 
-**Soovitus:** B1 või A1, mõlemad koos L1-ga. B1 on praegu uudsem ja istub Soome messi sõnavarasse; A1 on SAMA enda sõna ja püsib kauem. Mõlemal juhul: idee pealkirjas, koht juhtlõigus, süsteemihalduri arv tõendina, esimene samm nupus; järgmine plokk paistab ekraani alt. „Õigel poolel" sõnastust ei soovita: pool eeldab valet poolt ja mõjub survena.
+**Soovitus:** F1 („Pange energiapööre enda kasuks tööle." / „Kääntäkää energiamurros eduksenne.") koos uue juhtlõiguga; Eestis alternatiiv F3. Põhjendus ja mõõtmine üleval.
 
 **Soovitatud tekst** (A1 + L1)
 <!-- copy:ET:Hero -->
@@ -694,7 +717,7 @@ Turuseire agendile, sest väidete registrit muudab tema ja need read peavad enne
 ## 7. Viis otsust
 
 1. **Selgroog.** Kas lehe selgroog on idee „võrgu kindlus ehitatakse omanike objektidel ja tööstus saab oma elektri peremeheks; SAMA juhib seda muutust" (1.5), mille all kaart ja reservirida on tõend? Soovitus: jah. See on suurem kui ükski konkurent, SAMA enda sõnadega ja kaitstud avaliku aritmeetikaga. 1b: kas kolme sõna riba (iseseisvus, jõukus, vabadus) läheb esilehele muutuse ja väärtuse vahele.
-2. **Hero pealkiri.** Lukk jääb, A1 „Iseseisev energia algab teie liitumisest." / „Itsenäinen energia alkaa liittymästänne.", A2 „Eesti tööstus võtab oma elektri enda kätte." / „Suomen teollisuus ottaa sähkönsä omiin käsiinsä." või B1 „Energiapööre on käes. Võtke selles oma koht." / „Energiamurros on käynnissä. Ottakaa siinä oma paikkanne." Soovitus: B1 või A1 koos juhtlõiguga L1; B1 kasutab turu enda sõna ja kutsub kohale, A1 on SAMA enda sõna ja püsib kauem. „Õigel poolel" sõnastus mitte (pool seab ostja välja). Kui lukk jääb, kaob Soome pealkirjast mõttekriips.
+2. **Hero pealkiri.** Lukk jääb või F1 „Pange energiapööre enda kasuks tööle." / „Kääntäkää energiamurros eduksenne." (soovitus) või Eestis F3 „Energiapööre jõudis teie arvesti taha. Pange see enda kasuks tööle." F1 hoiab Madise idee ja tema enda tegusõna, mahub telefonis kahele reale ja toob tõendi esimesele ekraanile. „Õigel poolel" sõnastus mitte: pooled on sambas keelatud ja Eestis omab sama käiku Energiapartner.
 3. **Esimene uks.** Hero nupp viib liitumise kontrolli (üks kinnistu, avalikud andmed, vastus ühe päevaga) või tasuta hinnangusse (tunniandmed). Soovitus: kontroll esimeseks, hinnang teiseks. See on juba turundusplaani lehtri esimene samm; eeldus on, et keegi vastab ühe tööpäevaga.
 4. **Tõend ilma kogemuste nimekirjata.** Kas avaldame anonüümse näidishinnangu lõigu ja meetodilehe? Soovitus: jah, enne uue lehe avamist. Ilma nendeta jääb kaardiplokk lubaduseks.
 5. **Segmentide järjekord ja esimene alamleht.** Soovitus: FI põllumajandus ja kuivatid esimeseks, EE tööstus ja külmaladu esimeseks. Alternatiiv FI: kinnisvara esimeseks, kui esimesed referentsid tulevad portfellist.
