@@ -75,9 +75,9 @@ def build(lang):
     if '/assets/etusivu.js' in html:
         kartta_js+='<script>'+open(os.path.join(ROOT,'assets/etusivu.js'),encoding='utf-8').read().replace('</script','<\\/script')+'</script>'
         html=re.sub(r'<script src="/assets/etusivu\.js" defer></script>\n?','',html)
-    vid=os.path.join(ROOT,'assets/k-proc-m.mp4')
-    if os.path.exists(vid):
-        html=html.replace('data-base="/assets/k-proc"','data-inline="data:video/mp4;base64,'+base64.b64encode(open(vid,'rb').read()).decode()+'"')
+    vids=[(k,os.path.join(ROOT,f'assets/k-proc-m.{k}')) for k in ('webm','mp4')]
+    if all(os.path.exists(f) for _,f in vids):
+        html=html.replace('data-base="/assets/k-proc"',' '.join(f'data-inline-{k}="data:video/{k};base64,'+base64.b64encode(open(f,'rb').read()).decode()+'"' for k,f in vids))
     html=re.sub(r'poster="(/assets/[^"]+)"',lambda m:f'poster="{datauri(m.group(1)) or m.group(1)}"',html)
     html=re.sub(r'(src|href)="(/assets/[^"]+)"',lambda m:f'{m.group(1)}="{datauri(m.group(2)) or m.group(2)}"',html)
     # <picture><source srcset>: upotetaan ensimmäinen ehdokas (muuten esikatselu näyttäisi img-varakuvan)

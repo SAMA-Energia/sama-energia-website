@@ -63,9 +63,10 @@ var held=-1,tHold=false,paused=false,vis=false,loaded=false,still=RM||SD,raf=0,w
 function at(t){for(var i=4;i>0;i--)if(t>=S[i])return i;return 0;}
 function frame(){raf=0;if(still)return;var t=v.currentTime||0,i=held>=0?held:at(t);
  mark(items,i,held>=0?1:Math.min(1,(t-S[i])/(S[i+1]-S[i])));if(!v.paused&&vis)raf=requestAnimationFrame(frame);}
-function load(){if(loaded||still)return;loaded=true;var inl=v.getAttribute('data-inline');
- if(inl)v.src=inl;else{var b=v.getAttribute('data-base')+(matchMedia('(max-width:767px)').matches?'-m':'');
-  [['webm','video/webm; codecs=vp9'],['mp4','video/mp4']].forEach(function(x){var s=d.createElement('source');s.src=b+'.'+x[0];s.type=x[1];v.appendChild(s);});}
+function load(){if(loaded||still)return;loaded=true;var b=v.getAttribute('data-base')+(matchMedia('(max-width:767px)').matches?'-m':'');
+ /* esikatselutiedosto (build-standalone.py) upottaa videot data-osoitteina: data-inline-webm / data-inline-mp4 */
+ [['webm','video/webm; codecs=vp9'],['mp4','video/mp4']].forEach(function(x){var u=v.getAttribute('data-inline-'+x[0])||(v.hasAttribute('data-base')?b+'.'+x[0]:'');
+  if(u){var s=d.createElement('source');s.src=u;s.type=x[1];v.appendChild(s);}});
  v.load();}
 function showStill(i){if(!img)return;img.src=img.getAttribute('data-still')+(i+1)+'.webp';img.hidden=false;mark(items,i,1);}
 function toStill(){still=true;if(raf)cancelAnimationFrame(raf);raf=0;try{v.pause();}catch(e){}v.hidden=true;if(btn)btn.hidden=true;showStill(held<0?0:held);}
