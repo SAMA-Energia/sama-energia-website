@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 502 katselmoitavaa riviä — 367 uutta, 135 muutettua, joista **70 on merkitty ⚠**. Muuttumattomia ohitettiin 710.
+**Yhteenveto:** 493 katselmoitavaa riviä — 359 uutta, 134 muutettua, joista **62 on merkitty ⚠**. Muuttumattomia ohitettiin 710.
 
 **Huomio:** 1 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -48,33 +48,14 @@ Vastine mainissa: `/`
 - [ ] ⚠ `p` **muutettu** — Niin paljon reservikapasiteettia Fingrid hankkii keskimäärin joka tunnille ja arvioi hankinnan kasvavan vuoteen 2030 mennessä 1 200 MW:lla.
       - main: Sähköverkon on oltava tasapainossa joka sekunti. Fingrid ostaa reserviä joka tunnille, keskimäärin noin 1 500 MW, ja maksaa jo siitä, että reservi on käytettävissä – tarve kasvaa viidessä vuodessa noin 1 200 megawattia.
       - **Korjaus:**
-- [ ] ⚠ `figcaption` **muutettu** — EnergiavarastotRalos Oy
-      - main: RalosEnergiavarastot
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+- [ ] `li` **uusi** — Aurinkopaneelit
       - **Korjaus:**
-- [ ] ⚠ `figcaption` **uusi** — Integroidut aurinkokatotGare Energy Oy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+- [ ] `li` **uusi** — Pääkeskus ja ohjausyksikkö
       - **Korjaus:**
-- [ ] ⚠ `figcaption` **uusi** — Aurinkovoimalan asennusJSM Automaatiosähkö Oy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `figcaption` **uusi** — Sähköauton latausScanoffice Oy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] `figcaption` **uusi** — ReservimarkkinatAggregaattori kohteen mukaan
-      - **Korjaus:**
-- [ ] ⚠ `figcaption` **muutettu** — Energiavarastot ja mikroverkotAvant Power
+- [ ] `li` **muutettu** — Energiavarasto
       - main: Energiavarastot
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
-- [ ] ⚠ `figcaption` **uusi** — AurinkovoimalatRalos Oy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `figcaption` **uusi** — Aurinkokatos ja latausGare Energy Oy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `figcaption` **uusi** — Sähkövarasto ja invertteritRalos Oy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+- [ ] `li` **uusi** — Liittymispiste ja mittari
       - **Korjaus:**
 
 ### #miten-toimii
@@ -91,14 +72,6 @@ Vastine mainissa: `/`
       - main: Taloudelliset mahdollisuudet
       - **Korjaus:**
 - [ ] `p` **uusi** — Älykkään energianhallinnan, joka muuttaa liittymän kuluerästä omaisuudeksi.
-      - **Korjaus:**
-- [ ] `b` **uusi** — Pääkeskus
-      - **Korjaus:**
-- [ ] `b` **uusi** — Sähkövarasto
-      - **Korjaus:**
-- [ ] `b` **uusi** — Liittymispiste
-      - **Korjaus:**
-- [ ] `b` **uusi** — Sähköverkko
       - **Korjaus:**
 - [ ] `p` **muutettu** — Mikä sähkölaskussanne ja kiinteistössänne muuttuu:
       - main: Mikä laskullanne ja kiinteistössänne muuttuu:

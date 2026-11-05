@@ -14,47 +14,12 @@ Pyydä maksuton kartoitus Miten se toimii+358 449 654 614
 1 500 MWNiin paljon reservikapasiteettia Fingrid hankkii keskimäärin joka tunnille ja arvioi hankinnan kasvavan vuoteen 2030 mennessä 1 200 MW:lla.
 Lähde: Fingrid, Reservimarkkinat tutuiksi -webinaari · 11.6.2025
 
-EnergiavarastotRalos Oy
-Integroidut aurinkokatotGare Energy Oy
-Aurinkovoimalan asennusJSM Automaatiosähkö Oy
-Sähköauton latausScanoffice Oy
-ReservimarkkinatAggregaattori kohteen mukaan
+1Aurinkopaneelit2Pääkeskus ja ohjausyksikkö3Energiavarasto4Liittymispiste ja mittari
 
-EnergiavarastotRalos Oy
-Integroidut aurinkokatotGare Energy Oy
-Aurinkovoimalan asennusJSM Automaatiosähkö Oy
-Sähköauton latausScanoffice Oy
-ReservimarkkinatAggregaattori kohteen mukaan
-
-Energiavarastot ja mikroverkotAvant Power
-AurinkovoimalatRalos Oy
-Aurinkokatos ja latausGare Energy Oy
-Sähkövarasto ja invertteritRalos Oy
-
-Energiavarastot ja mikroverkotAvant Power
-AurinkovoimalatRalos Oy
-Aurinkokatos ja latausGare Energy Oy
-Sähkövarasto ja invertteritRalos Oy
-
-EnergiavarastotRalos Oy
-Energiavarastot ja mikroverkotAvant Power
-Integroidut aurinkokatotGare Energy Oy
-AurinkovoimalatRalos Oy
-Aurinkovoimalan asennusJSM Automaatiosähkö Oy
-Aurinkokatos ja latausGare Energy Oy
-Sähköauton latausScanoffice Oy
-Sähkövarasto ja invertteritRalos Oy
-ReservimarkkinatAggregaattori kohteen mukaan
-
-EnergiavarastotRalos Oy
-Energiavarastot ja mikroverkotAvant Power
-Integroidut aurinkokatotGare Energy Oy
-AurinkovoimalatRalos Oy
-Aurinkovoimalan asennusJSM Automaatiosähkö Oy
-Aurinkokatos ja latausGare Energy Oy
-Sähköauton latausScanoffice Oy
-Sähkövarasto ja invertteritRalos Oy
-ReservimarkkinatAggregaattori kohteen mukaan
+Aurinkopaneelit
+Pääkeskus ja ohjausyksikkö
+Energiavarasto
+Liittymispiste ja mittari
 
 Passiivinen liittymä on kuluerä. Mittarin takana oleva järjestelmä panee sen tuottamaan tuloa.
 Liittymästä maksatte joka kuukausi. Jotta se alkaisi tuottaa, annamme teille kolme asiaa:
@@ -63,7 +28,6 @@ Kokonaiskuvan siitä, mitä markkinoilla tapahtuu ja mihin suuntaan ne liikkuvat
 Taloudelliset mahdollisuudet kohteessanne, kirjallisesti ja lähteineen.
 Älykkään energianhallinnan, joka muuttaa liittymän kuluerästä omaisuudeksi.
 
-PääkeskusSähkövarastoLiittymispisteSähköverkko
 Mikä sähkölaskussanne ja kiinteistössänne muuttuu:
 
 Reservimarkkinatkapasiteettikorvaus, myös öisin.Tehomaksuthuippu alas, pääsulake kulutuksen mukaan.Energia ja siirtolataus halvoilla tunneilla, käyttö kalliilla.Kiinteistön arvopienempi kiinteä kulu, korkeampi hinta.
@@ -1769,39 +1733,12 @@ Küsi tasuta hinnangut Kuidas see töötab+358 449 654 614
 1 300 MWNii palju juhitavat võimsust vajab Eesti Eleringi hinnangul 2030. aastaks, kuid olemas või kindlasti tulemas on sellest 751 MW.
 Allikas: Elering, varustuskindluse aruanne 2025, tabel 2.3 · 9.12.2025
 
-EnergiasalvestidRalos Oy
-PäikeseelektrijaamadRalos Oy
-ReserviturgSoleron Energy
-PäikeseelekterSAMA
+1Päikesepaneelid2Peakilp ja juhtseade3Energiasalvesti4Liitumispunkt ja arvesti
 
-EnergiasalvestidRalos Oy
-PäikeseelektrijaamadRalos Oy
-ReserviturgSoleron Energy
-PäikeseelekterSAMA
-
-Energiajuhtimine ja agregeerimineSoleron Energy
-Salvesti ja inverteridRalos Oy
-Salvesti sees: akupangad ja juhtimineRalos Oy
-
-Energiajuhtimine ja agregeerimineSoleron Energy
-Salvesti ja inverteridRalos Oy
-Salvesti sees: akupangad ja juhtimineRalos Oy
-
-EnergiasalvestidRalos Oy
-Energiajuhtimine ja agregeerimineSoleron Energy
-PäikeseelektrijaamadRalos Oy
-Salvesti ja inverteridRalos Oy
-ReserviturgSoleron Energy
-Salvesti sees: akupangad ja juhtimineRalos Oy
-PäikeseelekterSAMA
-
-EnergiasalvestidRalos Oy
-Energiajuhtimine ja agregeerimineSoleron Energy
-PäikeseelektrijaamadRalos Oy
-Salvesti ja inverteridRalos Oy
-ReserviturgSoleron Energy
-Salvesti sees: akupangad ja juhtimineRalos Oy
-PäikeseelekterSAMA
+Päikesepaneelid
+Peakilp ja juhtseade
+Energiasalvesti
+Liitumispunkt ja arvesti
 
 Passiivne liitumine on kuluartikkel. Arvestitagune süsteem paneb selle tulu tootma.
 Liitumise eest maksate iga kuu. Et see hakkaks tootma, anname teile kolm asja:
@@ -1810,7 +1747,6 @@ Tervikliku ülevaate sellest, mis turul toimub ja mis suunas see liigub.
 Majanduslikud võimalused teie objektil, kirjalikult ja allikatega.
 Targa energiamajandamise, mis muudab liitumise kuluartiklist varaks.
 
-PeakilpSalvestiLiitumispunktElektrivõrk
 Mis teie arvel ja kinnistul muutub:
 
 Reserviturgtasu reserveeritud võimsuse eest, ka öösel.Võimsustasudtipp alla, peakaitse tarbimise järgi.Energia ja edastamineodav tund sisse, kallis välja.Kinnistu väärtusväiksem püsikulu, kõrgem hind.

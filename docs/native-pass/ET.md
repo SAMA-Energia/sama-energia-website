@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 502 katselmoitavaa riviä — 386 uutta, 116 muutettua, joista **69 on merkitty ⚠**. Muuttumattomia ohitettiin 624.
+**Yhteenveto:** 495 katselmoitavaa riviä — 382 uutta, 113 muutettua, joista **63 on merkitty ⚠**. Muuttumattomia ohitettiin 624.
 
 **Huomio:** 2 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -53,29 +53,15 @@ Vastine mainissa: `/et/`
 - [ ] ⚠ `p` **muutettu** — Nii palju juhitavat võimsust vajab Eesti Eleringi hinnangul 2030. aastaks, kuid olemas või kindlasti tulemas on sellest 751 MW.
       - main: Elektrivõrk peab olema tasakaalus igal sekundil. Elering ostab sagedusreserve iga päev ja maksab juba selle eest, et reserv on valmis – ja Eleringi hinnangul kasvab juhitava võimsuse vajadus 2035. aastaks ca 2 100 megavatini.
       - **Korjaus:**
-- [ ] ⚠ `figcaption` **muutettu** — EnergiasalvestidRalos Oy
+- [ ] `li` **muutettu** — Päikesepaneelid
+      - main: Päikeseelekter
+      - **Korjaus:**
+- [ ] `li` **uusi** — Peakilp ja juhtseade
+      - **Korjaus:**
+- [ ] `li` **muutettu** — Energiasalvesti
       - main: Energiasalvestid
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
-- [ ] ⚠ `figcaption` **muutettu** — PäikeseelektrijaamadRalos Oy
-      - main: Päikeseelekter
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `figcaption` **muutettu** — ReserviturgSoleron Energy
-      - main: Reserviturg
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] `figcaption` **muutettu** — PäikeseelekterSAMA
-      - main: Päikeseelekter
-      - **Korjaus:**
-- [ ] ⚠ `figcaption` **uusi** — Energiajuhtimine ja agregeerimineSoleron Energy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `figcaption` **uusi** — Salvesti ja inverteridRalos Oy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `figcaption` **uusi** — Salvesti sees: akupangad ja juhtimineRalos Oy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+- [ ] `li` **uusi** — Liitumispunkt ja arvesti
       - **Korjaus:**
 
 ### #kuidas-toimib
@@ -93,15 +79,6 @@ Vastine mainissa: `/et/`
       - **Korjaus:**
 - [ ] `p` **muutettu** — Targa energiamajandamise, mis muudab liitumise kuluartiklist varaks.
       - main: Targa energiamajandamise,
-      - **Korjaus:**
-- [ ] `b` **uusi** — Peakilp
-      - **Korjaus:**
-- [ ] `b` **muutettu** — Salvesti
-      - main: Energiasalvestid
-      - **Korjaus:**
-- [ ] `b` **uusi** — Liitumispunkt
-      - **Korjaus:**
-- [ ] `b` **uusi** — Elektrivõrk
       - **Korjaus:**
 - [ ] `b` **muutettu** — Võimsustasud
       - main: Võimsustasu alla

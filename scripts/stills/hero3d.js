@@ -9,22 +9,27 @@ import { N8AOPostPass } from 'n8ao';
    toostus (oletus: teollisuushalli ja kylmävarasto — sama kuva kuin aiemmin), kuivati (viljankuivuri),
    hotell (hotelli ja hoivakoti), paike (aurinkopuisto). Kaikissa kohteissa sama järjestelmä samassa paikassa:
    pääkeskus rakennuksessa (kultainen viiva lähtee seinästä), neljä akkukaappia (ohjaus ja invertteri kaapissa),
-   muuntamo + mittaus, pylväs ja linja; sähköasentaja ja omistaja. Ei tekstiä, ei merkkejä. */
+   muuntamo + mittaus, pylväs ja linja; sähköasentaja ja omistaja. Ei tekstiä, ei merkkejä.
+   ?look=tausta (05.11.2026, etusivun herotausta): hillitty grafiitti + kulta. Vain tarjoamamme osat: aurinkopaneelit
+   katolla, neljä kaappia (1,35 × 1,01 × 2,45 m, väli 0,6 m), pääkeskus ja ohjausyksikkö sähkötilassa avoimen oven
+   takana (kultainen viiva menee ovesta sisään), muuntamo ja mittaus, pylväslinja; yksi ihminen mittakaavaksi.
+   Ei aitaa, autoa, puita eikä pysäköintiviivoja. Kuvat: shot=bg (työpöytä 3:2) ja shot=bgm (puhelin 4:3). */
 const P = new URLSearchParams(location.search);
 const W = +(P.get('w') || 1600), H = +(P.get('h') || 900);
 const LIGHT = P.get('light') || 'dusk';
 const SHOT = P.get('shot') || 'hero';
 const SCENE = P.get('scene') || 'toostus';
+const TAUSTA = P.get('look') === 'tausta';
 const SYS = { peakilp: [14.1, 0.1, -13.5], salvesti: [21.8, 2.6, -6], liitumispunkt: [31.2, 2.5, -8.6], vork: [35.6, 9.8, -12.6], elektrik: [22.4, 1.9, -3.2], omanik: [25.3, 1.9, -2.6] };
 const SITE_LABELS = {
-  toostus: Object.assign({ paike: [8.0, 9.6, -14.9] }, SYS),
+  toostus: Object.assign({ paike: [8.0, 9.6, -14.9] }, SYS, TAUSTA ? { peakilp: [14.05, 1.75, -13.6], salvesti: [22.2, 2.62, -6.0], paike: [10.1, 9.85, -16.1] } : {}),
   kuivati: Object.assign({ paike: [11.0, 5.8, -13.3] }, SYS),
   hotell: Object.assign({ paike: [11.0, 4.9, -12.1] }, SYS),
   paike: Object.assign({ paike: [5.0, 1.8, -20.4] }, SYS),
 };
 const BGHEX = P.get('bg') ? '#' + P.get('bg') : (LIGHT === 'day' ? '#F2EEE6' : '#0A0A09');
 const WRONG = P.get('wrong') || '';           // '', 'inverter', 'scale'
-const SHOW = (P.get('show') || 'all').split(',');
+const SHOW = (P.get('show') || (TAUSTA ? 'nofence,novan,notrees' : 'all')).split(',');
 const PRESETS = {
   hero:        { tx: 25, tz: -7, vh: 30, fx: 0.64, fy: 0.6, az: 0.62, el: 0.58, fc: [24, -9], r0: 13, r1: 36 },
   heroPortrait:{ tx: 25.5, tz: -6.5, vh: 25, fx: 0.5, fy: 0.55, az: 0.62, el: 0.6, fc: [25, -7], r0: 13, r1: 34 },
@@ -36,6 +41,9 @@ const PRESETS = {
   surveyWide:  { tx: 15.6, tz: -14.9, ty: 1.1, vh: 8.6, fx: 0.69, fy: 0.5, az: 0.95, el: 0.42, fc: [16, -14], r0: 9, r1: 20 },
   people:      { tx: 0, tz: 0, ty: 0.95, vh: 2.6, fx: 0.5, fy: 0.5, az: 0.5, el: 0.22, fc: [0, 0], r0: 3, r1: 8 },
   scale:       { tx: 3.2, tz: 0, ty: 4.7, vh: 11.8, fx: 0.5, fy: 0.5, az: 0.3, el: 0.16, fc: [3, 0], r0: 18, r1: 32 },
+  /* look=tausta: työpöydän herotausta 3:2 (teksti vasemmalla, kohde oikealla) ja puhelin 4:3 */
+  bg:          { tx: 20.5, tz: -11, vh: 29.5, fx: 0.57, fy: 0.62, az: 0.62, el: 0.6, fc: [21, -11], r0: 13, r1: 31 },
+  bgm:         { tx: 20.5, tz: -10.5, vh: 25.5, fx: 0.5, fy: 0.69, az: 0.62, el: 0.6, fc: [22, -10], r0: 11, r1: 27 },
 };
 const PR = Object.assign({}, PRESETS[SHOT] || PRESETS.hero);
 for (const k of ['tx','tz','ty','vh','fx','fy','az','el','r0','r1']) if (P.get(k) !== null) PR[k] = +P.get(k);
@@ -127,6 +135,29 @@ const meshTex = canvasTex(64, 64, (g, w, h) => {
   g.beginPath(); g.moveTo(w / 2, -h / 2); g.lineTo(w * 1.5, h / 2); g.moveTo(-w / 2, h / 2); g.lineTo(w / 2, h * 1.5); g.stroke();
 }, [1, 1], false);
 
+/* look=tausta: grafiitin sävyt (lämmin neutraali, sama suunta kuin sivun #0A0A09), ei vihreää eikä sinistä */
+if (TAUSTA) {
+  T.grass = canvasTex(512, 512, (g, w, h) => {
+    g.fillStyle = '#34322e'; g.fillRect(0, 0, w, h);
+    dots(g, w, h, ['#3b3934', '#2c2a27', '#403d38'], 200, 20, 70, 0.03, 0.08);
+    dots(g, w, h, ['#43403a', '#292724', '#4a4740', '#363430'], 15000, 0.5, 1.6, 0.2, 0.45);
+  }, [40, 40]);
+  T.asphalt = canvasTex(512, 512, (g, w, h) => {
+    g.fillStyle = '#2b2a28'; g.fillRect(0, 0, w, h);
+    dots(g, w, h, ['#32312e', '#252422', '#373633'], 180, 20, 70, 0.04, 0.1);
+    dots(g, w, h, ['#3d3c39', '#222120', '#454440'], 12000, 0.4, 1.3, 0.25, 0.65);
+  }, [12, 12]);
+  T.gravel = canvasTex(512, 512, (g, w, h) => {
+    g.fillStyle = '#4b4843'; g.fillRect(0, 0, w, h);
+    dots(g, w, h, ['#5a5751', '#3d3a36', '#66625b', '#36332f', '#524e48'], 22000, 0.8, 2.6, 0.35, 0.85);
+  }, [10, 10]);
+  T.concrete = canvasTex(256, 256, (g, w, h) => {
+    g.fillStyle = '#8f8b84'; g.fillRect(0, 0, w, h);
+    dots(g, w, h, ['#9a968f', '#827e77', '#a29e96'], 140, 8, 30, 0.04, 0.1);
+    dots(g, w, h, ['#77736c', '#a8a49c'], 3000, 0.4, 1.0, 0.2, 0.5);
+  }, [2, 2]);
+}
+
 // ---------- materials ----------
 const M = {};
 const std = (o) => new THREE.MeshStandardMaterial(o);
@@ -182,6 +213,28 @@ M.tablet = std({ color: '#0f1114', roughness: 0.15, metalness: 0.4, emissive: ne
 M.inverter = std({ color: '#5a6d7d', roughness: 0.5, metalness: 0.2 });
 M.switchboard = std({ color: '#c9cbc8', roughness: 0.5, metalness: 0.15 });
 M.interior = std({ color: '#2e2c29', roughness: 0.9 });
+if (TAUSTA) {
+  // kaapit vaaleimpina (tuote), kaikki muu grafiittia; kulta vain energian tiellä ja kaapin merkkivalossa
+  M.cab.color.set('#d3cec4'); M.cabTop.color.set('#c2bdb3');
+  M.roof.color.set('#47453f'); M.parapet.color.set('#4d4b46');
+  M.solar.map = canvasTex(256, 512, (g, w, h) => {
+    const grd = g.createLinearGradient(0, 0, w, h); grd.addColorStop(0, '#1d1e20'); grd.addColorStop(1, '#151618');
+    g.fillStyle = grd; g.fillRect(0, 0, w, h);
+    g.strokeStyle = 'rgba(175,172,165,0.16)'; g.lineWidth = 2;
+    for (let x = 0; x <= w; x += w / 6) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x, h); g.stroke(); }
+    for (let y = 0; y <= h; y += h / 10) { g.beginPath(); g.moveTo(0, y); g.lineTo(w, y); g.stroke(); }
+    g.strokeStyle = 'rgba(196,193,186,0.85)'; g.lineWidth = 6; g.strokeRect(0, 0, w, h);
+  });
+  M.solar.roughness = 0.3; M.solar.metalness = 0.4;
+  M.glass.color.set('#1c1c1d');
+  M.glassLit.emissive.set('#e9b978'); M.glassLit.emissiveIntensity = 0.42;
+  M.door.color.set('#4e4c48');
+  M.kiosk.color.set('#9c9891'); M.kioskDoor.color.set('#3e3c39');
+  M.wood.color.set('#4a4540'); M.insul.color.set('#8a857c'); M.wire.color.set('#77736c');
+  M.darkMetal.color.set('#393735'); M.metal.color.set('#8e8c88');
+  M.skin.color.set('#b39886');
+  M.energy.emissiveIntensity = 4.2; M.energyGrid.emissiveIntensity = 1.6;
+}
 
 // ---------- helpers ----------
 function box(w, h, d, mat, x, y, z, parent = scene, cast = true, recv = true) {
@@ -215,14 +268,16 @@ const R0 = PR.r0, R1 = PR.r1;
 const ground = new THREE.Mesh(new THREE.PlaneGeometry(420, 420), fadeGround(texMat(M.grass, 60, 60), R0, R1));
 ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; scene.add(ground);
 // asphalt yard in front of hall (aurinkopuistossa vain huoltotie)
-const yard = SCENE === 'paike' ? plane(40, 5.5, fadeGround(texMat(M.asphalt, 9, 1.3), R0, R1), -2, 0.012, -2.2)
+const yard = TAUSTA ? null : SCENE === 'paike' ? plane(40, 5.5, fadeGround(texMat(M.asphalt, 9, 1.3), R0, R1), -2, 0.012, -2.2)
   : plane(46, 15, fadeGround(texMat(M.asphalt, 10, 3.5), R0, R1), -5, 0.012, -3.5);
 // parking lines
-if (SCENE === 'toostus') for (let i = 0; i < 6; i++) box(0.12, 0.004, 4.8, std({ color: '#d8d6cf', roughness: 0.6 }), -24 + i * 3, 0.016, 1.2, scene, false, true);
+if (SCENE === 'toostus' && !TAUSTA) for (let i = 0; i < 6; i++) box(0.12, 0.004, 4.8, std({ color: '#d8d6cf', roughness: 0.6 }), -24 + i * 3, 0.016, 1.2, scene, false, true);
 // compound gravel
-const comp = plane(17, 13, fadeGround(texMat(M.gravel, 4, 3), R0, R1), 26.5, 0.014, -5.5);
-// path from compound to hall side
-plane(4, 9, fadeGround(texMat(M.asphalt, 1, 2), R0, R1), 16.5, 0.013, -10.5);
+if (!TAUSTA) {
+  plane(17, 13, fadeGround(texMat(M.gravel, 4, 3), R0, R1), 26.5, 0.014, -5.5);
+  // path from compound to hall side
+  plane(4, 9, fadeGround(texMat(M.asphalt, 1, 2), R0, R1), 16.5, 0.013, -10.5);
+}
 
 // ===================== kohteet: kuivati, hotell, paike (I-20261104-5) =====================
 // Sama järjestelmä kaikissa: rakennuksen itäseinä x = 14, pääkeskuksen ovi z ≈ -13,6 (kultainen viiva lähtee siitä),
@@ -464,12 +519,38 @@ function paike() {
 }
 const OBJECTS = { kuivati, hotell, paike };
 
+/* look=tausta: sähkötilan ovi auki itäseinässä (x = 14, z ≈ -13,6). Aukossa näkyy valaistu tila: pääkeskus
+   (vaaleat kennot) ja sen vieressä ohjausyksikkö, jonka merkkivalo on kultainen. Kultainen viiva menee ovesta sisään. */
+function electricalRoomOpen(g) {
+  const tex = canvasTex(240, 440, (c, w, h) => {
+    const bg = c.createLinearGradient(0, 0, 0, h); bg.addColorStop(0, '#1a1712'); bg.addColorStop(0.62, '#3a2f22'); bg.addColorStop(1, '#6b5536');
+    c.fillStyle = bg; c.fillRect(0, 0, w, h);
+    // pääkeskus: kolme kennoa (oikealla, koska katse kulkee aukosta -z-suuntaan)
+    for (let i = 0; i < 3; i++) {
+      const x0 = 104 + i * 44;
+      const pg = c.createLinearGradient(0, 120, 0, 420); pg.addColorStop(0, '#8d877c'); pg.addColorStop(1, '#bdb4a3');
+      c.fillStyle = pg; c.fillRect(x0, 120, 40, 300);
+      c.fillStyle = 'rgba(40,36,30,0.55)'; c.fillRect(x0 + 19, 132, 2, 276);
+    }
+    // ohjausyksikkö pääkeskuksen vieressä: pieni kotelo ja kultainen merkkivalo
+    c.fillStyle = '#5c564c'; c.fillRect(46, 170, 44, 56);
+    c.fillStyle = '#F2CF7E'; c.fillRect(56, 182, 12, 5);
+  }, [1, 1]);
+  const m = std({ map: tex, emissiveMap: tex, emissive: new THREE.Color('#ffffff'), emissiveIntensity: 0.8, roughness: 0.9 });
+  box(0.04, 2.2, 1.2, m, HALL.x1 + 0.03, 1.1, -13.6, g, false, false);
+  // karmi
+  box(0.07, 0.07, 1.34, M.darkMetal, HALL.x1 + 0.04, 2.235, -13.6, g, false);
+  for (const z of [-12.97, -14.23]) box(0.07, 2.27, 0.07, M.darkMetal, HALL.x1 + 0.04, 1.135, z, g, false);
+  // ovilehti auki ulospäin, saranat -z-reunassa (ei peitä aukkoa kamerasta katsottuna)
+  const leaf = box(1.2, 2.2, 0.06, M.door, HALL.x1 + 0.59, 1.1, -14.3, g); leaf.rotation.y = 0.17;
+}
+
 // ---------- industrial hall ----------
 const HALL = { x0: -28, x1: 14, z0: -33, z1: -11, h: 9 };
 function hall() {
   const g = new THREE.Group(); scene.add(g);
   const L = HALL.x1 - HALL.x0, D = HALL.z1 - HALL.z0, h = HALL.h;
-  const wallMat = (len) => std({ color: LIGHT === 'dusk' ? '#2c2f33' : '#4b5057', roughness: 0.55, metalness: 0.45, normalMap: claddingNormal([len / 0.25, 1]), normalScale: new THREE.Vector2(0.9, 0.9) });
+  const wallMat = (len) => std({ color: TAUSTA ? '#3a3935' : LIGHT === 'dusk' ? '#2c2f33' : '#4b5057', roughness: 0.55, metalness: 0.45, normalMap: claddingNormal([len / 0.25, 1]), normalScale: new THREE.Vector2(0.9, 0.9) });
   const front = new THREE.Mesh(new THREE.PlaneGeometry(L, h), wallMat(L)); front.position.set((HALL.x0 + HALL.x1) / 2, h / 2, HALL.z1); front.receiveShadow = true; front.castShadow = true; g.add(front);
   const back = front.clone(); back.rotation.y = Math.PI; back.position.z = HALL.z0; g.add(back);
   const side = new THREE.Mesh(new THREE.PlaneGeometry(D, h), wallMat(D)); side.rotation.y = Math.PI / 2; side.position.set(HALL.x1, h / 2, (HALL.z0 + HALL.z1) / 2); side.receiveShadow = true; side.castShadow = true; g.add(side);
@@ -485,11 +566,11 @@ function hall() {
   // window band (front) with mullions, some lit
   const wy = 5.9, wh = 1.3;
   for (let x = HALL.x0 + 2; x < HALL.x1 - 2; x += 1.6) {
-    const lit = LIGHT === 'dusk' && rnd() < 0.55;
+    const lit = LIGHT === 'dusk' && !TAUSTA && rnd() < 0.55;
     box(1.45, wh, 0.06, lit ? M.glassLit : M.glass, x + 0.8, wy, HALL.z1 + 0.03, g, false, true);
   }
   for (let z = HALL.z0 + 2; z < HALL.z1 - 2; z += 1.6) {
-    const lit = LIGHT === 'dusk' && rnd() < 0.5;
+    const lit = LIGHT === 'dusk' && !TAUSTA && rnd() < 0.5;
     const m = box(0.06, wh, 1.45, lit ? M.glassLit : M.glass, HALL.x1 + 0.03, wy, z + 0.8, g, false, true);
   }
   // loading doors
@@ -500,7 +581,8 @@ function hall() {
   // personnel door + electrical room door on side facing compound
   box(1.1, 2.2, 0.08, M.door, -9, 1.1, HALL.z1 + 0.05, g);
   const elDoorOpen = SHOT === 'survey' || SHOT === 'surveyWide';
-  if (!elDoorOpen) box(0.08, 2.2, 1.2, M.door, HALL.x1 + 0.05, 1.1, -13.6, g);
+  if (TAUSTA) electricalRoomOpen(g);
+  else if (!elDoorOpen) box(0.08, 2.2, 1.2, M.door, HALL.x1 + 0.05, 1.1, -13.6, g);
   // rooftop solar rows (tilted to +z)
   const pw = 2.28, pd = 1.13, tilt = 0.21;
   const panelGeo = new THREE.BoxGeometry(pw, 0.035, pd);
@@ -607,9 +689,9 @@ const EY = 0.04;
 const ER = Math.min(0.06, Math.max(0.016, 0.06 * PR.vh / 28));
 if (!SHOW.includes('noenergy')) {
   // battery -> main switchboard (behind the meter): bright
-  energyLine([[26.5, EY, -7.25], [17.2, EY, -7.25], [17.2, EY, -13.5], [14.1, EY, -13.5]], ER, M.energy);
+  energyLine([[TAUSTA ? 25.9 : 26.5, EY, -7.25], [17.2, EY, -7.25], [17.2, EY, -13.5], [TAUSTA ? 13.8 : 14.1, EY, -13.5]], ER, M.energy);
   // site supply: transformer/meter kiosk -> main switchboard: dim
-  energyLine([[29.9, EY, -9.2], [29.9, EY, -10.9], [16.8, EY, -10.9], [16.8, EY, -13.9], [14.1, EY, -13.9]], ER * 0.75, M.energyGrid);
+  energyLine([[29.9, EY, -9.2], [29.9, EY, -10.9], [16.8, EY, -10.9], [16.8, EY, -13.9], [TAUSTA ? 13.8 : 14.1, EY, -13.9]], ER * 0.75, M.energyGrid);
   // kiosk -> grid riser: dim
   energyLine([[32.5, EY, -8.6], [35.6, EY, -8.6], [35.6, EY, -12.4]], ER * 0.75, M.energyGrid);
 }
@@ -755,7 +837,10 @@ function person(o) {
   return g;
 }
 const PEOPLE = {};
-if (!SHOW.includes('nopeople')) {
+if (TAUSTA) {
+  // yksi ihminen mittakaavaksi: omistaja tabletin kanssa sähkötilan oven vieressä
+  PEOPLE.owner = person({ x: 15.35, z: -15.35, rot: 0.55, top: M.coat, bottom: M.trousers, pose: 'tablet', h: 1.74 });
+} else if (!SHOW.includes('nopeople')) {
   PEOPLE.electrician = person({ x: 22.4, z: -3.2, rot: Math.PI + 0.25, top: M.navy, bottom: M.trousers, stripes: true, helmet: true, pose: 'camera' });
   PEOPLE.owner = person({ x: 25.3, z: -2.6, rot: Math.PI - 0.35, top: M.coat, bottom: M.trousers, pose: 'tablet', h: 1.72 });
   if (SCENE === 'toostus') PEOPLE.walker = person({ x: 9.6, z: 0.4, rot: 0.9, top: M.coat2, bottom: M.trousers, pose: 'walk', h: 1.8, hair: M.hair });
@@ -805,9 +890,10 @@ if (SHOT === 'scale') {
   window.SCALE_ANCHORS = true;
 }
 // ---------- lights ----------
-const hemi = new THREE.HemisphereLight(LIGHT === 'dusk' ? '#3a4a66' : '#dfe6ee', LIGHT === 'dusk' ? '#2a2015' : '#8a7f6c', LIGHT === 'dusk' ? 0.55 : 1.15);
+const hemi = TAUSTA ? new THREE.HemisphereLight('#4a505a', '#26211b', 1.05)
+  : new THREE.HemisphereLight(LIGHT === 'dusk' ? '#3a4a66' : '#dfe6ee', LIGHT === 'dusk' ? '#2a2015' : '#8a7f6c', LIGHT === 'dusk' ? 0.55 : 1.15);
 scene.add(hemi);
-const sun = new THREE.DirectionalLight(LIGHT === 'dusk' ? '#ffb070' : '#fff6ea', LIGHT === 'dusk' ? 2.4 : 2.9);
+const sun = new THREE.DirectionalLight(TAUSTA ? '#e6cba6' : LIGHT === 'dusk' ? '#ffb070' : '#fff6ea', TAUSTA ? 1.7 : LIGHT === 'dusk' ? 2.4 : 2.9);
 const sunAz = +(P.get('sunaz') || (LIGHT === 'dusk' ? -0.75 : -0.55)), sunEl = +(P.get('sunel') || (LIGHT === 'dusk' ? 0.34 : 0.72));
 sun.position.set(SITE.x + Math.sin(sunAz) * Math.cos(sunEl) * 120, Math.sin(sunEl) * 120, SITE.z + Math.cos(sunAz) * Math.cos(sunEl) * 120);
 sun.target.position.copy(SITE); scene.add(sun.target);
@@ -817,13 +903,14 @@ sun.shadow.bias = -0.0003; sun.shadow.normalBias = 0.03; sun.shadow.radius = 3;
 scene.add(sun);
 if (LIGHT === 'dusk') {
   const fill = new THREE.DirectionalLight('#6f8fbf', 0.35); fill.position.set(SITE.x + 60, 40, SITE.z + 80); scene.add(fill);
-  for (const p of cabPos) { const l = new THREE.PointLight('#f3c77a', 1.2, 6, 2); l.position.set(p.x, 2.9, p.z + 1.2); scene.add(l); }
+  for (const p of cabPos) { const l = new THREE.PointLight('#f3c77a', TAUSTA ? 0.5 : 1.2, 6, 2); l.position.set(p.x, 2.9, p.z + 1.2); scene.add(l); }
   const yl = new THREE.PointLight('#ffd9a0', 30, 28, 2); yl.position.set(HALL.x1 - 1, 7.5, HALL.z1 + 2.5); scene.add(yl);
   if (SCENE === 'kuivati') yl.position.set(16.2, 6.8, -10.8);
   const lamp = (x, y, z, i, d) => { const l = new THREE.PointLight('#ffd9a0', i, d, 2); l.position.set(x, y, z); scene.add(l); };
   if (SCENE === 'kuivati') { lamp(9.6, 7.5, 0.6, 9, 18); lamp(12.9, 12.9, -4.6, 2.5, 7); }
   if (SCENE === 'hotell') { lamp(-2.95, 2.75, -5.3, 6, 9); lamp(11.6, 2.9, -7.7, 5, 8); }
   if (SCENE === 'paike') lamp(14.4, 2.6, -12.2, 5, 8);
+  if (TAUSTA) { yl.intensity = 14; lamp(14.6, 1.9, -13.6, 9, 7); lamp(23.5, 10, -8.5, 34, 26); }
 } else {
   const fill = new THREE.DirectionalLight('#ffffff', 0.45); fill.position.set(SITE.x + 60, 50, SITE.z + 80); scene.add(fill);
 }
@@ -854,7 +941,7 @@ ao.configuration.color = new THREE.Color('#000000');
 composer.addPass(ao);
 const bloom = new BloomEffect({ mipmapBlur: true, luminanceThreshold: LIGHT === 'dusk' ? 0.85 : 1.1, luminanceSmoothing: 0.2, intensity: LIGHT === 'dusk' ? 1.1 : 0.35, radius: 0.7 });
 const tm = new ToneMappingEffect({ mode: ToneMappingMode.ACES_FILMIC });
-renderer.toneMappingExposure = +(P.get('exp') || (LIGHT === 'dusk' ? 1.0 : 0.95));
+renderer.toneMappingExposure = +(P.get('exp') || (TAUSTA ? 1.12 : LIGHT === 'dusk' ? 1.0 : 0.95));
 composer.addPass(new EffectPass(cam, bloom, new SMAAEffect(), tm));
 
 // ---------- anchors for labels ----------

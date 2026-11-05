@@ -278,3 +278,28 @@ When in doubt, leave it out and flag it.
 - Perustelut, lähteet ja seuraavat vaihtoehdot (paikkakuntahaku, verkkoyhtiö ja tariffi, PVGIS, paikka lomakkeeseen):
   `docs/kaart/lugu.md`, osio "Teie objekti asukohas".
 - AVOIN: natiivitarkistus kortin teksteille (FI Martin, ET Madis) ja viimeisen askeleen painikeriville.
+
+## v45 — hero ja toinen osio uudelleen (Madis 5.11.2026 klo 19.15, haara v35-uusi-ilme)
+
+- Madis: kuvat eivät sovi heroon karusellina; 6A.6-version herokuva sopii, mutta hillitymmin, ilman monia värejä ja
+  kömpelyyttä, integroituna taustaan; vain tarjoamamme olennaiset osat; kaappien mitat, paikat ja ohjausyksikön paikka
+  ohjeen mukaan. Toisen osion kuva oli tilaamaton → pois. Seuraavat osiot vasta tämän jälkeen, askel kerrallaan.
+- Hero: kuvavirta (`.k-flow`, CSS, JS, pysäytyspainike) pois. Tilalle 3D-taustakuva `assets/k-tausta-{1200,1800,2400}.webp`
+  (työpöytä 3:2) ja `k-tausta-m{780,1170}.webp` (puhelin 4:3), renderöity `node scripts/render-stills.mjs --tausta
+  --modules …` (hero3d.js `look=tausta`, kuvat `bg` ja `bgm`). Ulkoasu: grafiitti + kulta, ei vihreää eikä sinistä, ei
+  aitaa, autoa, puita eikä valaistuja ikkunoita. Sisältö 3D-ohjeen mukaan: kaapit 1,35 × 1,01 × 2,45 m, neljä rivissä
+  0,6 m välein, muuntaja kaapissa; pääkeskus hallin sähkötilassa (ovi auki, sisällä keskus ja ohjausyksikkö, jonka
+  merkkivalo on kultainen); vaalea kulta = kaapit → pääkeskus, tummempi kulta = muuntamo/mittaus → pääkeskus ja verkko;
+  hämärä, ortografinen kamera atsimuutti 35,5°, korkeus 34,4°; yksi ihminen (omistaja tabletin kanssa) mittakaavaksi.
+- Asettelu: kuva on tekstin takana taustana (`.k-hfig`, korkeus = heron korkeus, translateX(-40 %), maski hävittää
+  tekstin alla olevan osan), tekstisarake z-index 1. Neljä HTML-tarraa (`.k-hl`, aria-hidden; alt kertoo saman):
+  aurinkopaneelit, pääkeskus ja ohjausyksikkö, energiavarasto, liittymispiste ja mittari. Puhelimessa numeroidut
+  nastat ja selite kuvan alla (3D-ohje). LCP-kuva `fetchpriority="high"`, ei laiskalatausta; kuvalla leveys ja korkeus.
+- Ohjausyksikön paikka: pääkeskuksessa, koska ohjaus lukee liittymispisteen mittausta (virtamuuntajat pääkeskuksessa) ja
+  rajoittaa varaston tehon liittymän rajaan; EMS, BMS ja muuntaja ovat kaapissa. Jos aggregaattori asentaa oman
+  laitteensa muualle, tarran ankkuri vaihtuu (hero2.py POS / hero3d.js SITE_LABELS).
+- Toinen osio (#kuidas-toimib / #miten-toimii): k-paev-kuva ja sen tarrat pois; `.k-tag`-säännöt ja k-paev*.webp poistettu.
+- Korjaus v44:stä: kumppanisivun taulukoiden sr-only-solut (absoluuttinen sijainti) leventivät sivua puhelimessa
+  (scrollWidth 702 / 421 px); `.tbl-scroll` sai position:relative.
+- Laatu: axe 0 rikkomusta (31 sivua, 1440 ja 390); Lighthouse mobiili FI 96/96, ET 94/99, työpöytä 100 kaikki;
+  CLS 0; vaakavierintää ei millään leveydellä 360–2560.

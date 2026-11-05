@@ -17,6 +17,9 @@
  * --modules: kansio, jossa three@0.180.0, postprocessing@6.39.6 ja n8ao@2.0.1, esim.
  *   npm i --prefix /tmp/sama-r3d three@0.180.0 postprocessing@6.39.6 n8ao@2.0.1  →  --modules /tmp/sama-r3d/node_modules
  * --preview: puolikas resoluutio, kirjoittaa vain PNG:t annettuun kansioon (nopea tarkistus).
+ * --tausta (05.11.2026): etusivun herotausta ?look=tausta: kirjoittaa assets/k-tausta-{2400,1800,1200}.webp
+ *   (työpöytä 3:2, shot=bg) ja assets/k-tausta-m{1170,780}.webp (puhelin 4:3, shot=bgm) sekä tarrojen ankkurit
+ *   (--anchors). Muut kohteet eivät renderöidy tässä tilassa.
  * Playwright: require('playwright') (globaali asennus), chromium.launch() ilman valintoja (SwiftShader-WebGL).
  * Repoon ei tule riippuvuuksia; tämä tiedosto ja scripts/stills/ eivät ole palveltavia (_redirects).
  */
@@ -34,7 +37,8 @@ if (!MODULES || !existsSync(join(MODULES, 'three', 'build', 'three.module.js')))
   console.error('Anna --modules /polku/node_modules (three@0.180.0, postprocessing@6.39.6, n8ao@2.0.1).');
   process.exit(2);
 }
-const SCENES = String(opt('scenes', 'kuivati,hotell,paike')).split(',').filter(Boolean);
+const TAUSTA = argv.includes('--tausta');
+const SCENES = TAUSTA ? ['toostus'] : String(opt('scenes', 'kuivati,hotell,paike')).split(',').filter(Boolean);
 const PREVIEW = opt('preview', null);
 const PNG_DIR = PREVIEW || opt('png', null);
 const ANCHORS = opt('anchors', null);
@@ -43,10 +47,14 @@ const require = createRequire(import.meta.url);
 const { chromium } = require('playwright');
 
 /* Kuvakoot ja tiedostobudjetit (k-hero-1920 = 39 kt; raja 60 kt). */
-const SHOTS = [
+const SHOTS = TAUSTA ? [
+  { key: 'd', shot: 'bg', w: 2700, h: 1800, out: [{ suf: '2400', w: 2400, h: 1600, max: 150000 }, { suf: '1800', w: 1800, h: 1200, max: 92000 }, { suf: '1200', w: 1200, h: 800, max: 48000 }] },
+  { key: 'm', shot: 'bgm', w: 1560, h: 1170, out: [{ suf: 'm1170', w: 1170, h: 878, max: 58000 }, { suf: 'm780', w: 780, h: 585, max: 30000 }] },
+] : [
   { key: 'd', shot: 'hero', w: 2880, h: 1640, out: [{ suf: '1920', w: 1920, h: 1093, max: 56000 }, { suf: '1280', w: 1280, h: 729, max: 40000 }] },
   { key: 'm', shot: 'heroPortraitObj', w: 1170, h: 1560, out: [{ suf: 'm', w: 780, h: 1040, max: 56000 }] },
 ];
+const LOOKQ = TAUSTA ? '&look=tausta' : '';
 const ALT = {
   toostus: { et: 'Illustratsioon: tööstushall ja külmladu, peakilp, salvestikapid, liitumine võrguga ja päikesepaneelid katusel; objektil elektrik ja omanik.',
              fi: 'Kuvitus: teollisuushalli ja kylmävarasto, pääkeskus, akkukaapit, liittymä verkkoon ja aurinkopaneelit katolla; kohteessa sähköasentaja ja omistaja.' },
@@ -132,7 +140,7 @@ const inFrame = (p) => p[0] >= 0.03 && p[0] <= 0.97 && p[1] >= 0.03 && p[1] <= 0
 const pins = (fr) => PIN_ORDER.filter((k) => fr[k] && inFrame(fr[k])).map((k, i) => ({ n: i + 1, el: k, x: fr[k][0], y: fr[k][1] }));
 async function anchorsOf(base, scene, shot, w, h) {
   const page = await browser.newPage({ viewport: { width: 64, height: 64 } });
-  await page.goto(`${base}/stills/hero3d.html?scene=${scene}&shot=${shot}&w=${w}&h=${h}&light=dusk&labels=1&norender=1`, { waitUntil: 'commit', timeout: 120000 });
+  await page.goto(`${base}/stills/hero3d.html?scene=${scene}&shot=${shot}&w=${w}&h=${h}&light=dusk&labels=1&norender=1${LOOKQ}`, { waitUntil: 'commit', timeout: 120000 });
   await page.waitForFunction('window.DONE===true||!!window.FAIL', null, { timeout: 120000, polling: 200 });
   const A = await page.evaluate('window.ANCHORS'); await page.close();
   const frac = {}; for (const [k, v] of Object.entries(A)) frac[k] = [+(v[0] / w).toFixed(3), +(v[1] / h).toFixed(3)];
@@ -145,10 +153,12 @@ const anchorsOut = {};
 if (PNG_DIR) mkdirSync(PNG_DIR, { recursive: true });
 try {
   for (const scene of SCENES) {
-    const files = scene === 'toostus' ? { desktop: ['k-hero-1920.webp', 'k-hero-1280.webp'], phone: 'k-obj-toostus-m.webp', phone_old: 'k-hero-m.webp' }
+    const files = TAUSTA ? { desktop: ['k-tausta-2400.webp', 'k-tausta-1800.webp', 'k-tausta-1200.webp'], phone: ['k-tausta-m1170.webp', 'k-tausta-m780.webp'] }
+      : scene === 'toostus' ? { desktop: ['k-hero-1920.webp', 'k-hero-1280.webp'], phone: 'k-obj-toostus-m.webp', phone_old: 'k-hero-m.webp' }
       : { desktop: [`k-obj-${OUTNAME[scene]}-1920.webp`, `k-obj-${OUTNAME[scene]}-1280.webp`], phone: `k-obj-${OUTNAME[scene]}-m.webp` };
-    anchorsOut[scene] = { files, alt: ALT[scene] };
-    if (scene === 'toostus') {   // nykyinen k-hero-m.webp (vanha rajaus heroPortrait) samoilla avaimilla
+    const okey = TAUSTA ? 'tausta' : scene;
+    anchorsOut[okey] = { files, alt: TAUSTA ? null : ALT[scene] };
+    if (scene === 'toostus' && !TAUSTA) {   // nykyinen k-hero-m.webp (vanha rajaus heroPortrait) samoilla avaimilla
       const fr = await anchorsOf(base, scene, 'heroPortrait', 1170, 1560);
       anchorsOut[scene].phone_old = fr; anchorsOut[scene].phone_old_pins = pins(fr);
     }
@@ -156,21 +166,21 @@ try {
       const f = PREVIEW ? 0.5 : 1, w = Math.round(S.w * f), h = Math.round(S.h * f);
       if (ONLY_ANCHORS) {
         const fr = await anchorsOf(base, scene, S.shot, S.w, S.h);
-        anchorsOut[scene][S.key === 'd' ? 'desktop' : 'phone'] = fr;
-        if (S.key === 'm') anchorsOut[scene].phone_pins = pins(fr);
+        anchorsOut[okey][S.key === 'd' ? 'desktop' : 'phone'] = fr;
+        if (S.key === 'm') anchorsOut[okey].phone_pins = pins(fr);
         continue;
       }
       const page = await browser.newPage({ viewport: { width: w, height: h } });
       const logs = []; page.on('console', (m) => logs.push(m.text())); page.on('pageerror', (e) => logs.push('ERR ' + e));
       const t0 = Date.now();
-      await page.goto(`${base}/stills/hero3d.html?scene=${scene}&shot=${S.shot}&w=${w}&h=${h}&light=dusk&labels=1`, { waitUntil: 'commit', timeout: 120000 });
+      await page.goto(`${base}/stills/hero3d.html?scene=${scene}&shot=${S.shot}&w=${w}&h=${h}&light=dusk&labels=1${LOOKQ}`, { waitUntil: 'commit', timeout: 120000 });
       await page.waitForFunction('window.DONE===true||!!window.FAIL', null, { timeout: 600000, polling: 500 });
       const fail = await page.evaluate('window.FAIL||null');
       if (fail) throw new Error(`${scene}/${S.shot}: ${fail} ${logs.slice(-5).join(' | ')}`);
       const A = await page.evaluate('window.ANCHORS');
       const frac = {}; for (const [k, v] of Object.entries(A)) frac[k] = [+(v[0] / w).toFixed(3), +(v[1] / h).toFixed(3)];
-      anchorsOut[scene][S.key === 'd' ? 'desktop' : 'phone'] = frac;
-      if (S.key === 'm') anchorsOut[scene].phone_pins = pins(frac);
+      anchorsOut[okey][S.key === 'd' ? 'desktop' : 'phone'] = frac;
+      if (S.key === 'm') anchorsOut[okey].phone_pins = pins(frac);
       if (PNG_DIR) {
         const png = await page.evaluate("document.querySelector('canvas').toDataURL('image/png')");
         writeFileSync(join(PNG_DIR, `${scene}-${S.key}.png`), Buffer.from(png.split(',')[1], 'base64'));
@@ -180,9 +190,9 @@ try {
         const enc = await page.evaluate(encodeInPage, { outs });
         for (const e of enc) {
           if (!e.url) throw new Error(`${scene}-${e.suf}: ei mahdu budjettiin`);
-          const file = join(ROOT, 'assets', `k-obj-${OUTNAME[scene]}-${e.suf}.webp`);
-          writeFileSync(file, Buffer.from(e.url.split(',')[1], 'base64'));
-          console.log(`assets/k-obj-${OUTNAME[scene]}-${e.suf}.webp  q${e.q}  ${(e.bytes / 1024).toFixed(1)} kt`);
+          const name = TAUSTA ? `k-tausta-${e.suf}.webp` : `k-obj-${OUTNAME[scene]}-${e.suf}.webp`;
+          writeFileSync(join(ROOT, 'assets', name), Buffer.from(e.url.split(',')[1], 'base64'));
+          console.log(`assets/${name}  q${e.q}  ${(e.bytes / 1024).toFixed(1)} kt`);
         }
       }
       console.log(`${scene}/${S.shot} ${w}×${h} ${((Date.now() - t0) / 1000).toFixed(1)} s${logs.filter((l) => /ERR|rror/.test(l)).length ? '  ' + logs.filter((l) => /ERR|rror/.test(l)).slice(0, 3).join(' | ') : ''}`);
