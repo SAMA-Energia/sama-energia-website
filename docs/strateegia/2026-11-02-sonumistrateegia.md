@@ -130,6 +130,44 @@ Miks see selgroog seisab:
 
 Valikuline lisand (otsus 1b): kolme sõna riba „Iseseisvus. Jõukus. Vabadus." muutuse ja väärtuse vahel, iga sõna ühe konkreetse lausega, mitte loeteluna (2.6 tabel annab laused). Sammas ütleb, et need kolm sõna seisavad veebilehel mõlemas keeles.
 
+### 1.7 Tuumsõnum (6.11.2026)
+
+Lähtekoht Madise lause: „Vaadake, kuidas teie liitumisest ehk arvestitagusest süsteemist saab meie regiooni kasvu alustala ja teile tuluallikas ning kinnistu väärtuse tõstja." Kolm väärtust korraga (teile, teie varale, teie riigile) ei ütle seitsmest konkurendist ükski.
+
+Mida lauses täpsustati: (1) üks alus: liitumine on see, millest saab, süsteem on see, mis selle teeb; (2) „meie regioon" on Eesti lehel Eesti ja Soome lehel Suomi (konkreetne ja turgude reegel; ühine piirkond jääb brändiritta „Ühine võrk"); (3) järjekord teile, kinnistule, Eestile: kolmikus kannab viimane kõige rohkem kaalu, nii et riik jääb rõhutatuks ja lugeja huvi algab temast; Madise järjekord (piirkond ees) on Meist-lehe versioon; (4) kirjapilt „arvestitagune", „tuluallikas", koma enne „kuidas".
+
+**Tuumsõnum, pikk** (dokumendid, müügivestlus, Meist)
+- ET: Arvestitagune süsteem teeb teie liitumisest tuluallika, kinnistu väärtuse tõstja ja Eesti kasvu alustala.
+- FI: Mittarin takainen järjestelmä tekee sähköliittymästänne tulonlähteen, nostaa kiinteistönne arvoa ja vahvistaa Suomen kasvua.
+
+**Tuumsõnum, lühike** (hero, LinkedIn, visiitkaart)
+- ET: Teile tulu, kinnistule väärtust, Eestile kasvu.
+- FI: Teille tuloa, kiinteistölle arvoa, Suomelle kasvua.
+
+| Sammas | Mehhanism | Eesti tõend | Soome tõend |
+|---|---|---|---|
+| Tulu | reserv esimesena (tasu reserveeritud võimsuse eest ja aktiveerimistasu), siis võimsustasu, siis börsihinna vahe; modelleeritud toodete kaupa | Elering, tasakaalustamisvõimsuse kulu (29.06.2026): alates 2026 maksavad reservide eest kõik tarbijad, 3,73 €/MWh; „Reserve pakuvad Balti riikide elektritootjad ja salvestid" | Fingrid, Reservimarkkinat tutuiksi (11.6.2025): reserve hangitakse igal tunnil keskmiselt umbes 1 500 MW, viie aastaga umbes 1 200 MW rohkem (FI-27) |
+| Kinnistu väärtus | tuluväärtus: püsiv netotulu jagatud tootlusnõudega; iga euro püsivat aastast netotulu on väärtuses tootlusnõude pöördarvu võrra väärt (näide, mitte turu arv: 7 % juures umbes 14 eurot); varutoide kriitilistele ahelatele tingimusega | ainult tuluväärtus; liitumisvõimsuse nappuse kohta Eesti allikat registris ei ole | lisaks: Fingrid jätkab uute salvestiliitumiste piirangut Lõuna-Soomes 2029-ni (24.9.2025, FI-09) ja piirab üle 10 MW tarbimisliitumisi Uusimaal, Varsinais-Suomes ja Hämes 2027-ni (21.1.2025, FI-08): olemasolev liitumine on napp vara |
+| Kasv | tarbimine kasvab ja ilmast sõltuv tootmine suureneb; paindlikkust on vaja seal, kus tarbimine on; arvestitagune salvesti pakub reservi ja vabastab liitumise tipu | Elering (29.06.2026): reservid aitavad tagada, et elekter oleks alati olemas, ja integreerida rohkem madalama tootmiskuluga taastuvenergiat; Elering arengukava (9.7.2026): tarbimine 7,9 TWh (2025) → 10,0 TWh (2030) | Fingrid (18.8.2026): kõik sõlmitud liitumislepingud tõstaksid toteutudes tarbimist ligi 40 % 2025. aasta tasemest, kasvu kõrvale on vaja reguleerimisvõimsust; TEM eelnõu (18.9.2026): kitsaskohas tõstab vähemalt 10 % tipust paindlikkusena liitumise prioriteeti (eelnõu, mitte jõus, FI-21) |
+
+Vundament: SAMA näitab kõik kolm teie objekti kohta kirjalikult ja ehitab süsteemi. Eeldus: kirjalikku hinnangusse lisandub tuluväärtuse rida (otsus 3).
+
+Kaskaad: hero = lühike tuumsõnum + juhtlõik + tõend; muutuse plokk = „Pange energiapööre enda kasuks tööle." / „Kääntäkää energiamurros eduksenne." kalendri kohal; väärtusplokk = sammas 1; liitumise plokk = sammas 2; Ühine võrk = sammas 3; Meist = pikk tuumsõnum Madise järjekorras (piirkond ees).
+
+**Hero lühikese tuumsõnumiga** (renderdatud v41 heros 6.11.2026: pealkiri kahel real telefonis ja arvutis; telefonis ET tõendi alumine serv 752 px, FI 706 px, ekraan 844 px)
+<!-- copy:ET:HeroT -->
+> **Teile tulu, kinnistule väärtust, Eestile kasvu.**
+> Arvestitagune süsteem paneb teie liitumise tööle. Salvesti hoiab võimsust Eleringile valmis, võtab kuu kõrgeima tunni enda peale ja kasutab ära odavad tunnid.
+> 3,73 €/MWh. Reservide eest maksavad alates 2026 kõik tarbijad. Reservid hoiavad elektri olemas ja aitavad süsteemi tuua rohkem odavama tootmiskuluga taastuvenergiat. Neid pakuvad Balti riikide elektritootjad ja salvestid. Allikas: Elering, tasakaalustamisvõimsuse kulu · 29.06.2026
+<!-- /copy -->
+<!-- copy:FI:HeroT -->
+> **Teille tuloa, kiinteistölle arvoa, Suomelle kasvua.**
+> Mittarin takainen järjestelmä laittaa sähköliittymänne töihin. Varasto pitää tehoa Fingridin käytettävissä, leikkaa kuukauden tehohuipun ja hyödyntää halvat tunnit.
+> 40 %. Fingridin mukaan kaikki solmitut liittymissopimukset toteutuessaan nostaisivat sähkönkulutusta lähes 40 % vuoden 2025 tasosta. Kasvun rinnalle tarvitaan lisää säätövoimaa. Lähde: Fingrid, tiedote 18.8.2026
+<!-- /copy -->
+
+Miks tõendid nii: ET tõend kannab kahte sammast Eleringi enda sõnadega (kõik maksavad, reservid toovad odavamat energiat, reserve pakuvad salvestid); FI tõend vahetub 1 500 MW pealt 40 % peale, sest see toetab „Suomelle kasvua"; 1 500 MW liigub väärtusplokki sambasse 1.
+
 ## 2. Brändi hääl
 
 ### 2.1 Hääl ühe lausega
@@ -716,9 +754,10 @@ Turuseire agendile, sest väidete registrit muudab tema ja need read peavad enne
 
 ## 7. Viis otsust
 
-1. **Selgroog.** Kas lehe selgroog on idee „võrgu kindlus ehitatakse omanike objektidel ja tööstus saab oma elektri peremeheks; SAMA juhib seda muutust" (1.5), mille all kaart ja reservirida on tõend? Soovitus: jah. See on suurem kui ükski konkurent, SAMA enda sõnadega ja kaitstud avaliku aritmeetikaga. 1b: kas kolme sõna riba (iseseisvus, jõukus, vabadus) läheb esilehele muutuse ja väärtuse vahele.
-2. **Hero pealkiri.** Lukk jääb või F1 „Pange energiapööre enda kasuks tööle." / „Kääntäkää energiamurros eduksenne." (soovitus) või Eestis F3 „Energiapööre jõudis teie arvesti taha. Pange see enda kasuks tööle." F1 hoiab Madise idee ja tema enda tegusõna, mahub telefonis kahele reale ja toob tõendi esimesele ekraanile. „Õigel poolel" sõnastus mitte: pooled on sambas keelatud ja Eestis omab sama käiku Energiapartner.
-3. **Esimene uks.** Hero nupp viib liitumise kontrolli (üks kinnistu, avalikud andmed, vastus ühe päevaga) või tasuta hinnangusse (tunniandmed). Soovitus: kontroll esimeseks, hinnang teiseks. See on juba turundusplaani lehtri esimene samm; eeldus on, et keegi vastab ühe tööpäevaga.
+1. **Tuumsõnum.** Pikk ja lühike nagu peatükis 1.7, Madise lausest: „Arvestitagune süsteem teeb teie liitumisest tuluallika, kinnistu väärtuse tõstja ja Eesti kasvu alustala." / „Teile tulu, kinnistule väärtust, Eestile kasvu." Soovitus: jah. Selgroog (1.5) jääb sisemiseks põhjenduseks.
+2. **Hero pealkiri.** Lühike tuumsõnum (soovitus) või F1 „Pange energiapööre enda kasuks tööle." Lühike tuumsõnum ütleb kuue sõnaga, mida lugeja saab, ja on edasi räägitav; F1 ütleb, miks nüüd, ja sobib muutuse ploki pealkirjaks kalendri kohale.
+3. **Kinnistu väärtus hinnangus.** Kirjalikku hinnangusse lisandub tuluväärtuse rida (püsiv netotulu jagatud tootlusnõudega). Soovitus: jah, muidu lubab leht midagi, mida hinnang ei näita.
+3b. **Esimene uks.** Hero nupp viib liitumise kontrolli (üks kinnistu, avalikud andmed, vastus ühe päevaga) või tasuta hinnangusse (tunniandmed). Soovitus: kontroll esimeseks, hinnang teiseks. See on juba turundusplaani lehtri esimene samm; eeldus on, et keegi vastab ühe tööpäevaga.
 4. **Tõend ilma kogemuste nimekirjata.** Kas avaldame anonüümse näidishinnangu lõigu ja meetodilehe? Soovitus: jah, enne uue lehe avamist. Ilma nendeta jääb kaardiplokk lubaduseks.
 5. **Segmentide järjekord ja esimene alamleht.** Soovitus: FI põllumajandus ja kuivatid esimeseks, EE tööstus ja külmaladu esimeseks. Alternatiiv FI: kinnisvara esimeseks, kui esimesed referentsid tulevad portfellist.
 
