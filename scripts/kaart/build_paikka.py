@@ -167,7 +167,7 @@ def vclass(vs):
         if any(v >= lim for v in vs): return c
     return None
 raw_f = sorted((ROOT / 'docs' / 'kaart' / 'osm').glob('substations-*.json'))[-1]
-lvl = {}
+lvl, nam = {}, {}
 for el in json.loads(raw_f.read_text(encoding='utf-8'))['elements']:
     tg = el.get('tags', {}); vs = parse_volts(tg.get('voltage')); c = vclass(vs)
     lon = el.get('lon') or el.get('center', {}).get('lon'); lat = el.get('lat') or el.get('center', {}).get('lat')
@@ -175,13 +175,27 @@ for el in json.loads(raw_f.read_text(encoding='utf-8'))['elements']:
     X, Y = fwd(lon, lat)
     k = (int(round((X - x0) / unit)), int(round((y1 - Y) / unit)), c)
     lvl[k] = lvl.get(k, 0) | (1 if any(100000 <= v < 200000 for v in vs) else 0)
+    if k not in nam or (tg.get('name') and not nam[k][0]): nam[k] = (tg.get('name') or '', tg.get('operator') or '')
 subs, unmatched = [], 0
 for s in base['subs'] + v110['subs']:
     lon, lat = unproj(s[0], s[1])
     k = (s[0], s[1], s[2])
     if k not in lvl: unmatched += 1
-    subs.append([round(lon, 3), round(lat, 3), int(s[2]), s[3], 1 if s[2] == 110 else lvl.get(k, 0)])
+    nm, op = nam.get(k, ('', ''))
+    subs.append([round(lon, 3), round(lat, 3), int(s[2]), s[3], 1 if s[2] == 110 else lvl.get(k, 0), nm, op])   # + nimi, haltija (OSM)
 assert unmatched == 0, f'{unmatched} asemaa ei löytynyt raakadatasta {raw_f.name} — aja build_map.py ja tämä samasta aineistosta'
+# nimetön osa (OSM jakaa aseman usein jännitteittäin): lainataan nimi ja haltija lähimmältä nimetyltä alle 1,5 km:n päästä
+def _km(a, b):
+    r = math.pi / 180; dl = (b[1] - a[1]) * r; dn = (b[0] - a[0]) * r
+    h = math.sin(dl / 2) ** 2 + math.cos(a[1] * r) * math.cos(b[1] * r) * math.sin(dn / 2) ** 2
+    return 6371.0088 * 2 * math.atan2(math.sqrt(h), math.sqrt(1 - h))
+named = [q for q in subs if q[5]]
+for q in subs:
+    if q[5]: continue
+    best = min(named, key=lambda w: _km(q, w)) if named else None
+    if best and _km(q, best) < 1.5:
+        q[5] = best[5]
+        if not q[6]: q[6] = best[6]
 
 # ---- Viron salvestipargid (Salvestid-kerroksen pisteet) ----
 parks = []
@@ -190,7 +204,12 @@ for L in data['layers']:
         if p.get('k') == 'point' and p.get('src') in S:
             parks.append({'c': p['c'], 'p': p['p'], 't': p['t'], 'src': srcref(p['src'])})
 
-D = {'built': data.get('date'), 'osm': srcref('osm'), 'regions': regions, 'subs': subs, 'parks': parks}
+# Fingridin liittymissopimushakemuksen alueet 1.6.2026 (docs/kaart/lahteet/, georeferointi selitetty tiedostossa)
+LT = json.loads(sorted((ROOT / 'docs' / 'kaart' / 'lahteet').glob('fingrid-liittymishakemus-*.json'))[-1].read_text(encoding='utf-8'))
+lta = {'s1': LT['s1'], 'sp1': LT['sp1'], 'src': {'pub': 'Fingrid, liittymissopimushakemus – kartta', 'date': '1.6.2026', 'url': LT['url']},
+       'src2': {'pub': 'Fingrid, webinaari liittymissopimushakemuksista', 'date': '18.5.2026',
+                'url': 'https://www.fingrid.fi/globalassets/dokumentit/fi/ajankohtaista-tapahtumat/webinaari-liittymissopimushakemuksista-18.5.2026-esitysmateriaali.pdf'}}
+D = {'built': data.get('date'), 'osm': srcref('osm'), 'regions': regions, 'subs': subs, 'parks': parks, 'lta': lta}
 blob = json.dumps(D, ensure_ascii=False, separators=(',', ':'))
 tpl = (ROOT / 'scripts' / 'kaart' / 'paikka.tpl.js').read_text(encoding='utf-8')
 out = tpl.replace('/*DATA*/null', blob)

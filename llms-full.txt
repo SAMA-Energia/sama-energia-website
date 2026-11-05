@@ -37,7 +37,8 @@ Kantaverkosta kennoon, kerros kerrallaan
 
 Kuusi karttatasoa: markkinat liittymänne ympärillä.
 Jokainen vaihe lisää karttaan tason, luvun ja lähteen.
-Käytä sijaintianitai valitse kohta kartaltaSijaintia käytetään vain selaimessa kartan merkkiin. Sitä ei tallenneta eikä lähetetä.
+Kohteen osoiteHae
+Käytä sijaintianitai valitse kohta kartaltaOsoitehaku kulkee palvelimemme kautta Maanmittauslaitokselle tai Viron Maa- ja Ruumiametille ja aurinkotuotto EU:n PVGIS-palvelusta. Emme tallenna sijaintia; lomakkeeseen se menee vain, jos itse viette sen sinne.
 
 VerkkoKasvuSääVarastotReservitTulossaTeidän liittymänne
 
@@ -78,7 +79,8 @@ Lähteet: Fingrid, johdon katsaus · 29.10.2026; Fingrid · 8.9.2026; Fingrid ·
 
 Missä teidän liittymänne on tässä kokonaisuudessa?
 Liittymänne on jo olemassa ja sen taakse asennettu sähkövarasto ei joudu kantaverkon jonoon. Kirjallinen arvio sijoittaa kohteenne tälle kartalle, jokainen luku lähteineen.
-Käytä sijaintianitai valitse kohta kartaltaSijaintia käytetään vain selaimessa kartan merkkiin. Sitä ei tallenneta eikä lähetetä.
+Kohteen osoiteHae
+Käytä sijaintianitai valitse kohta kartaltaOsoitehaku kulkee palvelimemme kautta Maanmittauslaitokselle tai Viron Maa- ja Ruumiametille ja aurinkotuotto EU:n PVGIS-palvelusta. Emme tallenna sijaintia; lomakkeeseen se menee vain, jos itse viette sen sinne.
 
 Pyydä maksuton kartoitus
 Koko kartta: Fingrid ja Elering rinnakkain
@@ -189,6 +191,7 @@ Yritys · valinnainen
 Puhelin · valinnainen
 
 Pääsulake tai liittymisteho
+Kohteen osoite tai paikka · valinnainen
 
 Minulla on jo tarjous ja haluan siitä toisen mielipiteen.
 Pyydä maksuton kartoitus
@@ -1487,7 +1490,8 @@ Reservit: tarve kasvaa 1 200 MW viidessä vuodessa (Fingrid, 11.6.2025)
 
 Maksuton kirjallinen arvio näyttää, mitä teidän liittymänne voi tehdä: tehomaksu, pörssisähkö ja mallinnettu reservituotto tuotteittain.
 
-Käytä sijaintianitai valitse kohta kartaltaSijaintia käytetään vain selaimessa kartan merkkiin. Sitä ei tallenneta eikä lähetetä.
+Käytä sijaintianitai valitse kohta kartaltaKohteen osoiteHae
+Osoitehaku kulkee palvelimemme kautta Maanmittauslaitokselle tai Viron Maa- ja Ruumiametille ja aurinkotuotto EU:n PVGIS-palvelusta. Emme tallenna sijaintia; lomakkeeseen se menee vain, jos itse viette sen sinne.
 
 Lähteet: Fingrid: Sähkönkulutuksen liitettävyys kantaverkkoon väliaikaisesti tiukilla eteläisessä Suomessa · 21.1.2025; Fingrid: Reservimarkkinat tutuiksi -webinaari · 11.6.2025; Fingrid: Sähkövarastojen liityntärajoitusta jatketaan Etelä-Suomessa · 24.9.2025
 
@@ -1691,6 +1695,8 @@ Vastataksemme yhteydenottoonne ja valmistellaksemme pyytämäänne kartoitusta (
 Kenelle tietoja siirretään
 Emme myy emmekä luovuta tietoja markkinointiin. Verkkopalvelun ylläpito ja lomakkeiden vastaanotto: Netlify, Inc. (Yhdysvallat); siirto EU- ja ETA-alueen ulkopuolelle suojataan EU:n hyväksymillä siirtomekanismeilla. Muut tekniset käsittelijät ovat sähköpostipalvelu ja verkkotunnuspalvelu. Arviota laadittaessa jaamme kohteen tietoja aggregaattorille vain teidän tietenne.
 
+Kartan osoitehaku ja paikan tiedot
+Kun kirjoitatte osoitteen kartan hakukenttään, palvelimemme välittää hakutekstin Maanmittauslaitoksen (Suomi) tai Maa- ja Ruumiametin (Viro) osoitepalveluun ja valitun kohdan koordinaatit EU:n yhteisen tutkimuskeskuksen PVGIS-palveluun aurinkotuoton laskemiseksi. Myös lähikartan karttaruudut haetaan näistä palveluista palvelimemme kautta. Selaimenne ei ole yhteydessä näihin palveluihin, eikä IP-osoitettanne välitetä niille. Emme tallenna hakuja emmekä sijaintia. Selaimen sijaintia käytetään vain, jos painatte painiketta ja annatte luvan, ja se jää selaimeen. Lomakkeeseen paikka menee vain, jos itse viette sen sinne ja lähetätte lomakkeen.
 Markkinakatsaus
 Markkinakatsaus: sähköpostiosoitteenne, jonka annatte tilatessanne. Peruste on suostumuksenne, jonka voitte peruuttaa milloin tahansa vastaamalla viestiin tai kirjoittamalla osoitteeseen info@samaenergia.fi. Säilytämme osoitteen peruutukseen asti.
 Kuinka kauan säilytämme
@@ -1736,7 +1742,8 @@ Põhivõrgust akuelemendini, kiht kihi haaval
 
 Kuus kihti turgu teie liitumise ümber.
 Iga samm lisab kaardile kihi, arvu ja allika.
-Kasuta minu asukohtavõi vali koht kaardilAsukohta kasutatakse ainult brauseris kaardipunkti jaoks. Seda ei salvestata ega saadeta.
+Objekti aadressOtsi
+Kasuta minu asukohtavõi vali koht kaardilAadressiotsing käib meie serveri kaudu Maa- ja Ruumiametisse või Soome Maanmittauslaitosesse ja päikesetoodang EL-i PVGIS-teenusest. Asukohta me ei salvesta; vormi läheb see ainult siis, kui te selle ise sinna viite.
 
 VõrkKasvIlmSalvestidReservidTulevikTeie liitumine
 
@@ -1777,7 +1784,8 @@ Allikas: ENMAK 2035 indikatiivne maht Eleringi arengukavas 2026–2035 · 9.7.20
 
 Kus on selles pildis teie liitumine?
 Teie liitumine on juba olemas ja selle taga töötav salvesti ei vaja uut põhivõrguliitumist. Kirjalik hinnang paneb selle kaardile, iga arv allikaga.
-Kasuta minu asukohtavõi vali koht kaardilAsukohta kasutatakse ainult brauseris kaardipunkti jaoks. Seda ei salvestata ega saadeta.
+Objekti aadressOtsi
+Kasuta minu asukohtavõi vali koht kaardilAadressiotsing käib meie serveri kaudu Maa- ja Ruumiametisse või Soome Maanmittauslaitosesse ja päikesetoodang EL-i PVGIS-teenusest. Asukohta me ei salvesta; vormi läheb see ainult siis, kui te selle ise sinna viite.
 
 Küsi tasuta hinnangut
 Kogu kaart: Elering ja Fingrid kõrvuti
@@ -1884,6 +1892,7 @@ Ettevõte · valikuline
 Telefon · valikuline
 
 Peakaitse või liitumisvõimsus
+Objekti aadress või asukoht · valikuline
 
 Mul on juba pakkumine käes, soovin sellele teist arvamust.
 Küsi tasuta hinnangut
@@ -3112,7 +3121,8 @@ Tiputarbimine: rekord 1 723 MW 5.2.2026 (Elering, arengukava 2026–2035, 9.7.20
 
 Tasuta kirjalik hinnang näitab, mida teie liitumine suudab: võimsustasu, börsihind ja modelleeritud reservitulu toodete kaupa.
 
-Kasuta minu asukohtavõi vali koht kaardilAsukohta kasutatakse ainult brauseris kaardipunkti jaoks. Seda ei salvestata ega saadeta.
+Kasuta minu asukohtavõi vali koht kaardilObjekti aadressOtsi
+Aadressiotsing käib meie serveri kaudu Maa- ja Ruumiametisse või Soome Maanmittauslaitosesse ja päikesetoodang EL-i PVGIS-teenusest. Asukohta me ei salvesta; vormi läheb see ainult siis, kui te selle ise sinna viite.
 
 Allikad: Elering: Tasakaalustamisvõimsuse kulu · 29.6.2026; Elering, AST, Litgrid: Baltic LFC block FRR dimensioning forecast 2026–2035 · 29.7.2025; Elering: Eesti elektriülekandevõrgu arengukava 2026–2035 · 9.7.2026; Elering: 2025 turu kokkuvõte · 4.2.2026
 
@@ -3316,6 +3326,8 @@ Et vastata teie pöördumisele ja valmistada ette teie soovitud hinnangut (lepin
 Kellele andmeid edastatakse
 Me ei müü ega anna andmeid turunduseks. Veebimajutus ja vormide vastuvõtt: Netlify, Inc. (USA); edastust väljapoole EL-i ja EMP-d kaitstakse EL-i heakskiidetud edastusmehhanismidega. Teised tehnilised volitatud töötlejad on e-postiteenus ja domeeniteenus. Hinnangu koostamisel jagame objekti andmeid agregaatoriga ainult teie teadmisel.
 
+Kaardi aadressiotsing ja asukoha andmed
+Kui kirjutate aadressi kaardi otsinguväljale, edastab meie server otsingu teksti Maa- ja Ruumiameti (Eesti) või Soome Maanmittauslaitose aadressiteenusesse ning valitud koha koordinaadid Euroopa Komisjoni Teadusuuringute Ühiskeskuse PVGIS-teenusesse päikesetoodangu arvutamiseks. Ka lähikaardi kaardiruudud laadib meie server nendest teenustest. Teie brauser nende teenustega ei suhtle ja teie IP-aadressi neile ei edastata. Me ei salvesta otsinguid ega asukohta. Brauseri asukohta kasutatakse ainult siis, kui vajutate nuppu ja annate loa, ning see jääb brauserisse. Vormi läheb asukoht ainult siis, kui te selle ise sinna viite ja vormi saadate.
 Turuülevaade
 Turuülevaade: teie e-posti aadress, mille annate tellimisel. Aluseks on teie nõusolek, mille võite igal ajal tagasi võtta, vastates kirjale või kirjutades aadressile info@samaenergia.fi. Säilitame aadressi kuni loobumiseni.
 Kui kaua säilitame

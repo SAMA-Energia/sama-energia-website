@@ -31,7 +31,7 @@ TXT = {
         'how': 'Lukekaa luku kerrallaan: kartta vaihtaa kerrosta mukana. Viekää hiiri tai sormi kartan kohteen päälle, niin näette luvun lähteen. Vertaa Viroon -painike näyttää Viron samalla määritelmällä tai kertoo, missä määritelmä eroaa.',
         'other_sum': 'Viro samalla mittarilla', 'def': 'Vertailtavuus', 'pays': 'Kuka maksaa', 'sources': 'Lähteet', 'show': 'Näytä kartalla',
         'cta': ('Pyydä maksuton kartoitus', '/yhteystiedot/'),
-        'me': {'btn': 'Käytä sijaintiani', 'hint': 'tai valitse kohta kartalta', 'priv': 'Sijaintia käytetään vain selaimessa kartan merkkiin. Sitä ei tallenneta eikä lähetetä.',
+        'me': {'btn': 'Käytä sijaintiani', 'hint': 'tai valitse kohta kartalta', 'priv': 'Osoitehaku kulkee palvelimemme kautta Maanmittauslaitokselle tai Viron Maa- ja Ruumiametille ja aurinkotuotto EU:n PVGIS-palvelusta. Emme tallenna sijaintia; lomakkeeseen se menee vain, jos itse viette sen sinne.', 'form': '<form class="kk-addr" role="search"><label class="sr-only" for="km-q">Kohteen osoite</label><input id="km-q" type="search" autocomplete="street-address" enterkeyhint="search" placeholder="Osoite, esim. Teollisuustie 5, Seinäjoki"><button type="submit" class="btn btn-ghost">Hae</button></form>', 'addr': 'Merkki on valitussa osoitteessa.',
                'wait': 'Haetaan sijaintia…', 'ok': 'Merkki on nykyisessä sijainnissa. Jos kohde on muualla, kohdan voi valita kartalta.',
                'tap': 'Liittymän merkki on valitussa kohdassa.', 'no': 'Sijaintia ei saatu. Kohdan voi valita kartalta.',
                'out': 'Sijainti on kartan ulkopuolella. Kohdan voi valita kartalta.'},
@@ -58,7 +58,7 @@ TXT = {
         'how': 'Lugege peatükk korraga: kaart vahetab kihti kaasa. Viige hiir või sõrm kaardil objektile ja näete arvu allikat. Nupp „Võrdle Soomega“ näitab Soomet sama definitsiooniga või ütleb, kus definitsioon erineb.',
         'other_sum': 'Soome samal mõõdupuul', 'def': 'Võrreldavus', 'pays': 'Kes maksab', 'sources': 'Allikad', 'show': 'Näita kaardil',
         'cta': ('Küsi tasuta hinnangut', '/kontakt/'),
-        'me': {'btn': 'Kasuta minu asukohta', 'hint': 'või vali koht kaardil', 'priv': 'Asukohta kasutatakse ainult brauseris kaardipunkti jaoks. Seda ei salvestata ega saadeta.',
+        'me': {'btn': 'Kasuta minu asukohta', 'hint': 'või vali koht kaardil', 'priv': 'Aadressiotsing käib meie serveri kaudu Maa- ja Ruumiametisse või Soome Maanmittauslaitosesse ja päikesetoodang EL-i PVGIS-teenusest. Asukohta me ei salvesta; vormi läheb see ainult siis, kui te selle ise sinna viite.', 'form': '<form class="kk-addr" role="search"><label class="sr-only" for="km-q">Objekti aadress</label><input id="km-q" type="search" autocomplete="street-address" enterkeyhint="search" placeholder="Aadress, nt Tööstuse 5, Rapla"><button type="submit" class="btn btn-ghost">Otsi</button></form>', 'addr': 'Punkt on valitud aadressil.',
                'wait': 'Asukoha otsimine…', 'ok': 'Punkt on praeguses asukohas. Kui objekt on mujal, saab koha valida kaardil.',
                'tap': 'Liitumise punkt on valitud kohas.', 'no': 'Asukohta ei saadud. Koha saab valida kaardil.',
                'out': 'Asukoht jääb kaardist välja. Koha saab valida kaardil.'},
@@ -120,8 +120,8 @@ def chapter(L, i, n, D, lang):
         out.append(f'  <p class="lead" style="margin-top:22px">{e(X["final"])}</p>')
         m = X['me']
         out.append(f'  <div class="km-me"><button type="button" class="btn btn-ghost km-geo" hidden data-wait="{e(m["wait"])}" data-ok="{e(m["ok"])}" '
-                   f'data-tap="{e(m["tap"])}" data-no="{e(m["no"])}" data-out="{e(m["out"])}">{e(m["btn"])}</button>'
-                   f'<span class="km-hint">{e(m["hint"])}</span><p class="km-priv">{e(m["priv"])}</p><p class="km-st" role="status" aria-live="polite"></p></div>')
+                   f'data-tap="{e(m["tap"])}" data-no="{e(m["no"])}" data-out="{e(m["out"])}" data-addr="{e(m["addr"])}">{e(m["btn"])}</button>'
+                   f'<span class="km-hint">{e(m["hint"])}</span>{m["form"]}<p class="km-priv">{e(m["priv"])}</p><p class="km-st" role="status" aria-live="polite"></p></div>')
     out.append(f'  <p class="src">{X["sources"]}: ' + '; '.join(src_link(S, sid) for sid in ids) + '</p>')
     out.append(f'  <button type="button" class="km-show" data-show-layer="{i}" hidden>{X["show"]}</button>')
     if L['id'] == 'site':

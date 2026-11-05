@@ -643,17 +643,26 @@
       '<text class="km-lbl km-lbl-pt km-lbl-me" x="' + f1(p[0]) + '" y="' + f1(p[1]) + '">' + esc(UI.me) + '</text>';
     el.svg.classList.add('has-me');
   }
-  function paikka(lon, lat) {
+  /* paikan kortti ja osoitehaku: assets/kartta-paikka.js (ladataan kerran, kun kartta käynnistyy) */
+  var pk = null;
+  function needPaikka() {
+    if (window.SAMA_PAIKKA) return Promise.resolve(window.SAMA_PAIKKA);
+    if (!pk) pk = new Promise(function (ok, no) {
+      var sc = document.createElement('script');
+      sc.src = '/assets/kartta-paikka.js';
+      sc.onload = function () { if (window.SAMA_PAIKKA) ok(window.SAMA_PAIKKA); else no(); };
+      sc.onerror = function () { pk = null; no(); };
+      document.head.appendChild(sc);
+    });
+    return pk;
+  }
+  function paikka(lon, lat, label) {
     var host = root.querySelector('.km-me');
     if (!host) return;
-    var a = root.querySelector('.km-final .btn-primary'), o = { cta: a ? a.getAttribute('href') : null };
-    if (window.SAMA_PAIKKA) { window.SAMA_PAIKKA.show(host, lon, lat, o); return; }
-    var sc = document.createElement('script');
-    sc.src = '/assets/kartta-paikka.js';
-    sc.onload = function () { if (window.SAMA_PAIKKA) window.SAMA_PAIKKA.show(host, lon, lat, o); };
-    document.head.appendChild(sc);
+    var a = root.querySelector('.km-final .btn-primary'), o = { cta: a ? a.getAttribute('href') : null, label: label || null };
+    needPaikka().then(function (P) { P.show(host, lon, lat, o); }).catch(function () {});
   }
-  function setMe(lon, lat, k) {
+  function setMe(lon, lat, k, label) {
     var ex = state.net.meta.extent_lonlat;
     if (!(lon > ex[0] && lon < ex[2] && lat > ex[1] && lat < ex[3])) { say('out'); return; }
     state.me = [lon, lat];
@@ -662,10 +671,16 @@
     var si = siteIndex();
     if (si >= 0 && state.layer !== si) setLayer(si); else goView(true);
     say(k);
-    paikka(lon, lat);
+    paikka(lon, lat, label);
   }
   function bindMe() {
     if (FRONT) return;
+    var fm = root.querySelector('.km-me .kk-addr');
+    if (fm) {
+      var bindF = function (sub) { needPaikka().then(function (P) { var first = !fm._kp; P.search(fm, function (r) { setMe(r.lon, r.lat, 'addr', r.t); }); if (sub && first) fm.dispatchEvent(new Event('submit', { cancelable: true })); }).catch(function () {}); };
+      fm.addEventListener('submit', function (e) { e.preventDefault(); if (!fm._kp) bindF(true); });
+      bindF(false);
+    }
     var gb = root.querySelector('.km-geo');
     if (gb && 'geolocation' in navigator) {
       gb.hidden = false;

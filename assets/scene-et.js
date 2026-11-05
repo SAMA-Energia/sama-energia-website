@@ -2120,16 +2120,19 @@ function stOf(el){var y=el&&el.closest('.kk-you');return y?y.querySelector('.kk-
 function say(k){if(!gb)return;var st=act||stOf(gb);[].forEach.call(sec.querySelectorAll('.kk-st'),function(x){if(x!==st)x.textContent='';});if(!st)return;st.textContent=gb.getAttribute('data-'+k)||'';var g=gb.getAttribute('data-go');
  if(g&&l6&&!l6.contains(st)&&(k==='ok'||k==='tap')){var a=document.createElement('a');a.href='#';a.className='kk-go';a.textContent=g;a.addEventListener('click',function(e){e.preventDefault();go6();});st.appendChild(document.createTextNode(' '));st.appendChild(a);}}
 function go6(){var y=l6.getBoundingClientRect().top+scrollY-line(sec)+Math.min(l6.offsetHeight,innerHeight*0.4)/2;scrollTo({top:Math.max(0,y),behavior:'smooth'});}
-function put(lon,lat,k,n){if(!c||!c._map||!c._kd){if((n||0)<25)setTimeout(function(){put(lon,lat,k,(n||0)+1);},300);return;}var b=c._map.bbox;if(!(lon>b.x0&&lon<b.x1&&lat>b.y0&&lat<b.y1)){say('out');return;}
+function put(lon,lat,k,n,lab){if(!c||!c._map||!c._kd){if((n||0)<25)setTimeout(function(){put(lon,lat,k,(n||0)+1,lab);},300);return;}var b=c._map.bbox;if(!(lon>b.x0&&lon<b.x1&&lat>b.y0&&lat<b.y1)){say('out');return;}
  window.SAMA_MAP_SITE=c._ll([lon,lat]);c._you=1;var L=c._kd.layers[c._kd.layers.length-1],HU=c._mapHome()==='ee'?'EE':'FI';
  if(L&&L.view&&L.view[HU]){if(!L._v0)L._v0=L.view[HU].slice();var w=(L._v0[2]-L._v0[0])/2,h=(L._v0[3]-L._v0[1])/2;L.view[HU]=[lon-w,lat-h,lon+w,lat+h];}
- c.setMapLayers({site:1});say(k);paikka(lon,lat);}
+ c.setMapLayers({site:1});say(k);paikka(lon,lat,lab);}
 /* valitun paikan kortti — mikä siinä paikassa on totta (assets/kartta-paikka.js, ladataan vasta nyt); askeleen oma CTA jää kortin alle */
-function paikka(lon,lat){if(!l6)return;var o={before:l6.querySelector('.btn-primary')};
- if(window.SAMA_PAIKKA){window.SAMA_PAIKKA.show(l6,lon,lat,o);return;}
- var s=document.createElement('script');s.src='/assets/kartta-paikka.js';s.onload=function(){if(window.SAMA_PAIKKA)window.SAMA_PAIKKA.show(l6,lon,lat,o);};document.head.appendChild(s);}
+var pk=null;function needP(){if(window.SAMA_PAIKKA)return Promise.resolve(window.SAMA_PAIKKA);if(!pk)pk=new Promise(function(ok,no){var s=document.createElement('script');s.src='/assets/kartta-paikka.js';s.onload=function(){window.SAMA_PAIKKA?ok(window.SAMA_PAIKKA):no();};s.onerror=function(){pk=null;no();};document.head.appendChild(s);});return pk;}
+function paikka(lon,lat,lab){if(!l6)return;var o={before:l6.querySelector('.btn-primary'),label:lab||null};needP().then(function(P){P.show(l6,lon,lat,o);}).catch(function(){});}
+/* 06.11.2026: osoitehaku (oma palvelin → Maa- ja Ruumiamet / Maanmittauslaitos); tila sen lomakkeen viereen, jota käytettiin */
+[].forEach.call(sec.querySelectorAll('.kk-addr'),function(fm){var go=function(sub){needP().then(function(P){var first=!fm._kp;P.search(fm,function(r){act=stOf(fm);start();put(r.lon,r.lat,'addr',0,r.t);});if(sub&&first)fm.dispatchEvent(new Event('submit',{cancelable:true}));}).catch(function(){});};fm.addEventListener('focusin',function(){go(false);},{once:true});fm.addEventListener('pointerenter',function(){go(false);},{once:true});fm.addEventListener('submit',function(e){e.preventDefault();if(!fm._kp)go(true);});});
 [].forEach.call(gbs,function(bt){if(!('geolocation' in navigator)){bt.hidden=true;return;}bt.addEventListener('click',function(){act=stOf(bt);start();say('wait');navigator.geolocation.getCurrentPosition(function(p){put(p.coords.longitude,p.coords.latitude,'ok');},function(){say('no');},{enableHighAccuracy:false,timeout:10000,maximumAge:600000});});});
 if(cv)cv.addEventListener('click',function(e){if(!c||!c._mapInv||!c._map)return;var on=sec.querySelector('[data-step].on');act=stOf(on&&on===l6?l6.querySelector('.kk-geo'):gb);var r=cv.getBoundingClientRect(),M=c._mapInv,q0=M[2]+(e.clientX-r.left-M[0])/(M[4]*M[5]),q1=M[3]+(e.clientY-r.top-M[1])/M[4],b=c._map.bbox;put(b.x0+q0*(b.x1-b.x0),b.y1-q1*(b.y1-b.y0),'tap');});
 })();
 secs.forEach(function(s){[].forEach.call(s.querySelectorAll('[data-jump]'),function(el){el.addEventListener('click',function(e){var t=s.querySelector('[data-step="'+el.getAttribute('data-jump')+'"]');if(!t)return;e.preventDefault();var y=t.getBoundingClientRect().top+scrollY-line(s)+Math.min(t.offsetHeight,innerHeight*0.4)/2;scrollTo({top:Math.max(0,y),behavior:'smooth'});});});});
 })();
+/* 06.11.2026: kartan "Vie paikka arviopyyntöön" toiselta sivulta — täytä näkyvä paikkakenttä ja siisti osoite */
+(function(){var h=location.hash,i=h.indexOf('&p=');if(i<0)return;var id=h.slice(1,i),v='';try{v=decodeURIComponent(h.slice(i+3));}catch(e){}var f=document.getElementById('f-place-a');if(f&&v)f.value=v.slice(0,200);try{history.replaceState(null,'','#'+id);}catch(e){}var t=document.getElementById(id);if(t)setTimeout(function(){t.scrollIntoView();},60);})();
