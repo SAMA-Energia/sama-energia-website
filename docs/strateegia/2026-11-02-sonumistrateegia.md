@@ -304,8 +304,22 @@ Igas plokis: eesmärk, väide, tõend, CTA, variandid ET ja FI koos mõjuga ning
   - FI: Sähköliittymänne on omaisuutta. Laittakaa se töihin omaksi eduksenne.
   - Mõju: koha kiht pealkirjas, idee juhtlõigus; kõige konkreetsem ja kõige lähem lukus pealkirjale. Väiksem kui A1 ja A2: räägib omaniku varast, mitte muutusest.
 
+**B-variandid** (5.11.2026, Madise ettepanekust „ole energiamurrangu õigel poolel"; Energiamessut 2026 sõnavara)
+- **B1. Oma koht**
+  - ET: Energiapööre on käes. Võtke selles oma koht.
+  - FI: Energiamurros on käynnissä. Ottakaa siinä oma paikkanne.
+  - Mõju: idee pealkirjas ja turu enda sõnaga (FI „energiamurros" on Fingridi ja messi sõna; ET „energiapööre" on tavakeele sõna ja klapib samba lausega „Võrk pööras"). „Koht" kutsub, „pool" mõistab hukka: sammas ei võta pooli ega sea ühtki ostjat välja. Tõend hero all näitab muutuse mastaapi: FI lepingud tõstaksid tarbimist ligi 40 % 2025. aasta tasemest (Fingrid, 18.8.2026; FI-07); ET tarbimine 7,9 → 10,0 TWh 2030 (Elering, 9.7.2026; kaardi andmestik). Risk: „murros" on messil kõigi sõna ja võib paari aastaga vananeda; A1 püsib kauem.
+- **B2. Õige pool SAMA tähendusega**
+  - ET: Energiapöörde õigel poolel on see, kes otsustab oma elektri üle ise.
+  - FI: Energiamurroksen oikealla puolella on se, joka päättää sähköstään itse.
+  - Mõju: hoiab Madise sõnastuse, aga defineerib poole ise otsustamisena, nii et keegi ei jää välja. Pikem (9–10 sõna) ja toon jääb hindavaks; loosungikuju ilma numbrita nõuab tõendit kohe all.
+- **B3. Samba lause**
+  - ET: Võrk pööras kiiremini, kui arvelt paistab.
+  - FI: Verkko kääntyi nopeammin kuin lasku näyttää.
+  - Mõju: intrigeerib ja on SAMA enda lause, aga ei ütle, mida lugeja saab; nõuab L1 kohe all. Praegu muutuse ploki pealkiri; kui läheb herosse, saab muutuse plokk pealkirja „Mis on 2026. aastal muutunud" / „Mitä muuttuu ja milloin".
+
 **Juhtlõik** (pealkirja all)
-- **L1, koht ühe lausega** (A1 ja A2 juurde)
+- **L1, koht ühe lausega** (A1, A2 ja B1 juurde)
   - ET: Võrgu kindlus ehitatakse nüüd objekt objekti haaval. Liitumine, mille taga on salvesti ja juhtimine, on koht uues võrgus: teenib valmisolekust, maksab vähem ja annab otsused teie kätte.
   - FI: Sähköjärjestelmän varmuus rakennetaan nyt kohde kohteelta. Liittymä, jonka takana on varasto ja ohjaus, on paikka uudessa verkossa: se ansaitsee valmiudesta, maksaa vähemmän ja tuo päätökset teidän käsiinne.
   - Mõju: idee (kindlus objekt objekti haaval) ja koht (kolm asja) samas hingetõmbes; väärtusplokk tõestab kolm asja üks ühele.
@@ -314,7 +328,7 @@ Igas plokis: eesmärk, väide, tõend, CTA, variandid ET ja FI koos mõjuga ning
   - FI: Ansaitkaa valmiudesta. Maksakaa vähemmän. Päättäkää itse.
   - Mõju: loetav ühe pilguga; ei kanna ideed, ainult kohta.
 
-**Soovitus:** A1 koos L1-ga. Idee on pealkirjas, koht juhtlõigus, süsteemihalduri arv tõendina ja esimene samm nupus; järgmine plokk paistab ekraani alt.
+**Soovitus:** B1 või A1, mõlemad koos L1-ga. B1 on praegu uudsem ja istub Soome messi sõnavarasse; A1 on SAMA enda sõna ja püsib kauem. Mõlemal juhul: idee pealkirjas, koht juhtlõigus, süsteemihalduri arv tõendina, esimene samm nupus; järgmine plokk paistab ekraani alt. „Õigel poolel" sõnastust ei soovita: pool eeldab valet poolt ja mõjub survena.
 
 **Soovitatud tekst** (A1 + L1)
 <!-- copy:ET:Hero -->
@@ -680,7 +694,7 @@ Turuseire agendile, sest väidete registrit muudab tema ja need read peavad enne
 ## 7. Viis otsust
 
 1. **Selgroog.** Kas lehe selgroog on idee „võrgu kindlus ehitatakse omanike objektidel ja tööstus saab oma elektri peremeheks; SAMA juhib seda muutust" (1.5), mille all kaart ja reservirida on tõend? Soovitus: jah. See on suurem kui ükski konkurent, SAMA enda sõnadega ja kaitstud avaliku aritmeetikaga. 1b: kas kolme sõna riba (iseseisvus, jõukus, vabadus) läheb esilehele muutuse ja väärtuse vahele.
-2. **Hero pealkiri.** Lukk jääb või A1 „Iseseisev energia algab teie liitumisest." / „Itsenäinen energia alkaa liittymästänne." või A2 „Eesti tööstus võtab oma elektri enda kätte." / „Suomen teollisuus ottaa sähkönsä omiin käsiinsä." Soovitus: A1 koos juhtlõiguga L1, sest see paneb idee esimesele reale SAMA enda sõnaga ja hoiab koha ja arvu kohe all. Kui lukk jääb, kaob Soome pealkirjast mõttekriips.
+2. **Hero pealkiri.** Lukk jääb, A1 „Iseseisev energia algab teie liitumisest." / „Itsenäinen energia alkaa liittymästänne.", A2 „Eesti tööstus võtab oma elektri enda kätte." / „Suomen teollisuus ottaa sähkönsä omiin käsiinsä." või B1 „Energiapööre on käes. Võtke selles oma koht." / „Energiamurros on käynnissä. Ottakaa siinä oma paikkanne." Soovitus: B1 või A1 koos juhtlõiguga L1; B1 kasutab turu enda sõna ja kutsub kohale, A1 on SAMA enda sõna ja püsib kauem. „Õigel poolel" sõnastus mitte (pool seab ostja välja). Kui lukk jääb, kaob Soome pealkirjast mõttekriips.
 3. **Esimene uks.** Hero nupp viib liitumise kontrolli (üks kinnistu, avalikud andmed, vastus ühe päevaga) või tasuta hinnangusse (tunniandmed). Soovitus: kontroll esimeseks, hinnang teiseks. See on juba turundusplaani lehtri esimene samm; eeldus on, et keegi vastab ühe tööpäevaga.
 4. **Tõend ilma kogemuste nimekirjata.** Kas avaldame anonüümse näidishinnangu lõigu ja meetodilehe? Soovitus: jah, enne uue lehe avamist. Ilma nendeta jääb kaardiplokk lubaduseks.
 5. **Segmentide järjekord ja esimene alamleht.** Soovitus: FI põllumajandus ja kuivatid esimeseks, EE tööstus ja külmaladu esimeseks. Alternatiiv FI: kinnisvara esimeseks, kui esimesed referentsid tulevad portfellist.
