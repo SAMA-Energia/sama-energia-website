@@ -677,9 +677,9 @@
     if (FRONT) return;
     var fm = root.querySelector('.km-me .kk-addr');
     if (fm) {
-      var bindF = function (sub) { needPaikka().then(function (P) { var first = !fm._kp; P.search(fm, function (r) { setMe(r.lon, r.lat, 'addr', r.t); }); if (sub && first) fm.dispatchEvent(new Event('submit', { cancelable: true })); }).catch(function () {}); };
-      fm.addEventListener('submit', function (e) { e.preventDefault(); if (!fm._kp) bindF(true); });
-      bindF(false);
+      var pend = false, bindF = function () { needPaikka().then(function (P) { P.search(fm, function (r) { setMe(r.lon, r.lat, 'addr', r.t); }); if (pend) { pend = false; fm.dispatchEvent(new Event('submit', { cancelable: true })); } }).catch(function () {}); };
+      fm.addEventListener('submit', function (e) { e.preventDefault(); if (!fm._kp) { pend = true; bindF(); } });
+      bindF();
     }
     var gb = root.querySelector('.km-geo');
     if (gb && 'geolocation' in navigator) {
