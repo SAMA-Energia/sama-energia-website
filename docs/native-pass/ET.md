@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 511 katselmoitavaa riviä — 396 uutta, 115 muutettua, joista **67 on merkitty ⚠**. Muuttumattomia ohitettiin 628.
+**Yhteenveto:** 499 katselmoitavaa riviä — 388 uutta, 111 muutettua, joista **59 on merkitty ⚠**. Muuttumattomia ohitettiin 626.
 
 **Huomio:** 2 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -61,7 +61,7 @@ Vastine mainissa: `/et/`
 - [ ] `li` **muutettu** — Energiasalvesti
       - main: Energiasalvestid
       - **Korjaus:**
-- [ ] `li` **uusi** — Liitumispunkt ja arvesti
+- [ ] `li` **uusi** — Trafojaam
       - **Korjaus:**
 
 ### #kuidas-toimib
@@ -209,6 +209,9 @@ Vastine mainissa: `/et/`
 - [ ] `p` **muutettu** — Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine. Agregaator viib salvesti mitmeturuteenusesse.
       - main: Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine; agregaator liidab salvesti mitmeturuteenusega ja meie jälgime, et süsteem teeks seda, mida hinnang näitas.
       - **Korjaus:**
+- [ ] `p` **muutettu** — 1 · Tasuta hinnang
+      - main: Tasuta hindamine
+      - **Korjaus:**
 
 ### #valik
 
@@ -218,48 +221,9 @@ Vastine mainissa: `/et/`
 - [ ] `p` **muutettu** — Seadmed, paigaldus ja turulepääs tulevad mitmelt partnerilt. Valime teie objektile sobivaima lahenduse, võrdleme variante samade numbritega ja vastutame terviku eest algusest lõpuni.
       - main: Energiasalvestid, konteinerid, laadimine, mikrovõrgud ja päikeseelekter partneritelt. Meie paneme terviku kokku ja vastutame projekti eest algusest lõpuni.
       - **Korjaus:**
-- [ ] ⚠ `figcaption` **muutettu** — EnergiasalvestidRalos Oy
-      - main: Energiasalvestid
+- [ ] ⚠ `figcaption` **muutettu** — Soleron Energy
+      - main: Agregaator: Soleron Energy
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `figcaption` **uusi** — Salvesti sees: akupangad ja juhtimineRalos Oy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `figcaption` **muutettu** — PäikeseelektrijaamadRalos Oy
-      - main: Päikeseelekter
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] `figcaption` **muutettu** — PäikeseelekterSAMA
-      - main: Päikeseelekter
-      - **Korjaus:**
-- [ ] ⚠ `figcaption` **uusi** — Energiajuhtimine ja agregeerimineSoleron Energy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `figcaption` **muutettu** — ReserviturgSoleron Energy
-      - main: Reserviturg
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `li` **muutettu** — Ralos Oytööstuslikud energiasalvestid, Tampere
-      - main: Päikeseelekter, tööstuslikud energiasalvestid ja reservituru liitumine ettevõtetele Eestis ja Soomes.
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — Elecnovaväliskapid ja konteinersalvestid
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — Ralos Oypäikeseelektrijaamad ettevõtetele
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] `li` **uusi** — SAMApaigaldus katusele, maale ja katusesse integreerituna
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Energiajuhtimine ja reserviturg
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — Soleron Energyoma EMS-tarkvara ja agregeerimine Eleringi sagedusreservidesse
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] `li` **uusi** — SAMApaigaldusjuht juhib objekti
-      - **Korjaus:**
-- [ ] `li` **muutettu** — Elektritööde partnerregistreeritud ettevõte teeb elektritööd ja käikulaskmise
-      - main: Päikeseelekter, tööstuslikud energiasalvestid ja reservituru liitumine ettevõtetele Eestis ja Soomes.
       - **Korjaus:**
 
 ### #meeskond

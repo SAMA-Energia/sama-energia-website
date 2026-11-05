@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 508 katselmoitavaa riviä — 375 uutta, 133 muutettua, joista **66 on merkitty ⚠**. Muuttumattomia ohitettiin 714.
+**Yhteenveto:** 488 katselmoitavaa riviä — 358 uutta, 130 muutettua, joista **50 on merkitty ⚠**. Muuttumattomia ohitettiin 714.
 
 **Huomio:** 1 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -55,7 +55,7 @@ Vastine mainissa: `/`
 - [ ] `li` **muutettu** — Energiavarasto
       - main: Energiavarastot
       - **Korjaus:**
-- [ ] `li` **uusi** — Liittymispiste ja mittari
+- [ ] `li` **uusi** — Muuntamo
       - **Korjaus:**
 
 ### #miten-toimii
@@ -211,6 +211,9 @@ Vastine mainissa: `/`
 - [ ] `p` **muutettu** — Suunnittelu, verkkoyhtiön tekniset ehdot, asennus, tarkastukset ja käyttöönotto. Aggregaattori liittää sähkövaraston monimarkkinapalveluun.
       - main: Suunnittelu, verkkoyhtiön liittymisasiat, asennus, tarkastukset ja käyttöönotto; aggregaattori liittää varaston monimarkkinapalveluun ja me seuraamme, että järjestelmä tekee sen, minkä arvio näytti.
       - **Korjaus:**
+- [ ] `p` **muutettu** — 1 · Maksuton kartoitus
+      - main: Maksuton kartoitus
+      - **Korjaus:**
 
 ### #valikoima
 
@@ -220,73 +223,11 @@ Vastine mainissa: `/`
 - [ ] `p` **muutettu** — Jokaisella alalla meillä on useampi kumppani. Valitsemme kohteeseenne sopivimmat laitteet ja tekijät, vertaamme vaihtoehdot samoilla luvuilla ja vastaamme kokonaisuudesta alusta loppuun.
       - main: Olemme tukenanne alusta loppuun: löydämme kohteellenne sopivimman ratkaisun ja liitämme sen aggregaattorin kautta monimarkkinapalveluun, jotta se tuottaa usealla markkinalla samaan aikaan.
       - **Korjaus:**
-- [ ] ⚠ `figcaption` **muutettu** — EnergiavarastotRalos Oy
-      - main: RalosEnergiavarastot
+- [ ] ⚠ `figcaption` **uusi** — Avant Power
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
-- [ ] ⚠ `figcaption` **muutettu** — Energiavarastot ja mikroverkotAvant Power
-      - main: Energiavarastot
+- [ ] ⚠ `figcaption` **uusi** — Gare Energy Oy
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `figcaption` **uusi** — Integroidut aurinkokatotGare Energy Oy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `figcaption` **uusi** — Sähköauton latausScanoffice Oy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `figcaption` **uusi** — Aurinkovoimalan asennusJSM Automaatiosähkö Oy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] `figcaption` **uusi** — ReservimarkkinatAggregaattori kohteen mukaan
-      - **Korjaus:**
-- [ ] ⚠ `li` **muutettu** — Ralos Oyteolliset energiavarastot, Tampere
-      - main: RalosEnergiavarastot
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — Elecnovaulkokaapit ja konttivarastot
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `li` **muutettu** — Avant Powerenergiavarastot ja mikroverkot
-      - main: Energiavarastot
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — Ralos Oyaurinkovoimalat yrityksille
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — Gare Energy Oyintegroidut aurinkokatot
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — Scanoffice Oyaurinkopaneelit maahantuojalta
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Lataus ja mikroverkot
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — Avant Powermikroverkot, siirrettävä energia ja lataus
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — Scanoffice Oysähköautojen latausasemat
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — Gare Energy Oyaurinkokatos ja latauspisteet
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Lämpöpumput
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — Scanoffice Oyilma-, ilma-vesi- ja maalämpöpumput
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — JSM Automaatiosähkö Oyasennus
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — JSM Automaatiosähkö Oysähkötyöt ja käyttöönotto, Pirkanmaa
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] ⚠ `li` **uusi** — Gare Energy Oykatto-, paneeli- ja akkuasennus
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] `li` **uusi** — SAMAasennuspäällikkö johtaa työmaata
-      - **Korjaus:**
-- [ ] `li` **uusi** — Aggregaattorivalitaan kohteen mukaan Fingridin hyväksymistä reservitoimittajista
       - **Korjaus:**
 
 ### #tiimi
