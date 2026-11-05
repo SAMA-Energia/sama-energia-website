@@ -493,7 +493,7 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(0,0,0,
 .process-cta{flex-direction:column;align-items:stretch}
 .process-cta .btn{width:100%}
 }
-@media (prefers-reduced-motion:reduce){.k-pg.acc .k-ps li:not(.on) .k-pd{grid-template-rows:1fr}.k-gal img{transition:none}}
+@media (prefers-reduced-motion:reduce){.k-gal img{transition:none}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none !important;transition:none !important}
 .js .reveal.pre{opacity:1;transform:none}
 .steps .track{width:100%}
@@ -850,10 +850,13 @@ h1 em,h2 em{color:var(--gold-2)}
 .k-ps h3{margin:0;font:500 21px/1.25 var(--font-display);color:var(--ink);transition:color .3s}
 .k-pt{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 14px}
 .k-ps .k-pa{margin:0;font:500 13px/1.3 var(--font-body);color:var(--ink-3);font-variant-numeric:tabular-nums;white-space:nowrap;transition:color .3s}
-/* v48: kuvaus avautuu vain aktiivisessa vaiheessa (etusivu.js lisää .acc; ilman JS:ää ja reduced-motionilla kaikki auki) */
-.k-pd{display:grid;grid-template-rows:1fr;transition:grid-template-rows .45s var(--ease)}
-.k-pd p{min-height:0;overflow:hidden;margin:0;font-size:15px;line-height:1.5;color:var(--ink-2)}.k-pd p:before{content:"";display:block;height:6px}
-.k-pg.acc .k-ps li:not(.on) .k-pd{grid-template-rows:0fr}
+/* v48: aktiivisen vaiheen kuvaus vakiokorkuisessa paneelissa rivien alla (.k-pdx, etusivu.js; rivit eivät liiku hiiren alla).
+   Rivien omat kuvaukset jäävät ruudunlukijalle; ilman JS:ää ja reduced-motionilla kuvaukset näkyvät riveillä. */
+.k-pd p{margin:5px 0 0;font-size:15px;line-height:1.5;color:var(--ink-2)}
+.k-pg.acc .k-pd{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.k-pdx{display:grid;margin:18px 0 0;padding:4px 16px 4px 58px;box-shadow:inset 3px 0 0 var(--gold-2)}
+.k-pdx p{grid-area:1/1;margin:0;font-size:15.5px;line-height:1.55;color:var(--ink-2);opacity:0;visibility:hidden;transition:opacity .3s,visibility 0s .3s}
+.k-pdx p.on{opacity:1;visibility:visible;transition:opacity .3s}
 .k-ps li.on .n,.k-ps li.on h3,.k-ps li.on .k-pa{color:var(--gold-deep)}
 .k-pv{position:sticky;top:103px}
 .k-pvb{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:var(--r-s);background:#F7F4EE}
@@ -876,4 +879,4 @@ h1 em,h2 em{color:var(--gold-2)}
 @media (max-width:1023px){.k-h2g,.k-dg,.k-pg{grid-template-columns:minmax(0,1fr)}.k-h2r{padding-top:0}
 .k-dg{row-gap:18px}.k-dgl{display:contents}.k-dg .k-lbl{order:-2;margin:0}.k-dg .k-lines{margin-top:22px}.k-dfig{order:-1;max-width:760px}.k-pv{order:-1;position:relative;top:0;max-width:760px}}
 @media (max-width:767px) and (min-height:600px){.k-pv{position:sticky;top:79px;z-index:2;padding:8px 0 10px;background:#F7F4EE;box-shadow:calc(var(--gutter)*-1) 0 0 #F7F4EE,var(--gutter) 0 0 #F7F4EE,0 12px 14px -12px rgba(18,17,15,.3)}}
-@media (max-width:560px){.k-gal{gap:8px}.k-gal figcaption{padding:22px 10px 8px;font-size:12px}.k-ps li{padding-left:50px}.k-ps .n{left:16px}}
+@media (max-width:560px){.k-gal{gap:8px}.k-gal figcaption{padding:22px 10px 8px;font-size:12px}.k-ps li{padding-left:50px}.k-ps .n{left:16px}.k-pdx{padding-left:50px}}

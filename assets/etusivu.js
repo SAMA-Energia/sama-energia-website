@@ -56,17 +56,18 @@ draw();
 
 /* ---------- prosessivideo ----------
    Vaihe näkyy aina kolmella tavalla: rivin korostus, rivin taustasävy (--p) ja vaiheen nimi kuvan kulmassa.
-   v48: .acc = vain aktiivisen vaiheen kuvaus on auki (reduced-motion ja ilman JS:ää kaikki auki); rivit ovat
-   näppäimistöllä kohdistettavia (fokus pitää vaiheen kuten hiiri).
+   v48: .acc = aktiivisen vaiheen kuvaus näkyy vakiokorkuisessa paneelissa rivien alla (.k-pdx, aria-hidden; rivien omat
+   kuvaukset jäävät ruudunlukijalle), joten rivit eivät liiku hiiren alla. Reduced-motion: kuvaukset riveillä.
+   Rivit ovat näppäimistöllä kohdistettavia (fokus pitää vaiheen kuten hiiri).
    Jos video ei käynnisty (estetty automaattitoisto, esikatselun tietoturvasääntö, verkkovirhe, ei kuvaa 6 s:ssa),
    tilalle vaihtuvat vaiheiden pysäytyskuvat samalla aikataululla; reduced-motion/saveData: pysäytyskuvat ilman etenemistä. */
 (function(){
 var box=d.querySelector('[data-pv]'),v=box&&box.querySelector('video');if(!v)return;
 var img=box.querySelector('.k-pvs'),lab=box.querySelector('.k-pvl'),btn=box.querySelector('.k-play'),list=box.querySelector('.k-ps'),items=[].slice.call(box.querySelectorAll('.k-ps li'));
 var S=[0,5.5,11,17,22,30],KEY=[4.6,10.4,16.2,21.3,29.2],ST=(img&&img.getAttribute('data-stills')||'').split(' ');
-var held=-1,tHold=false,paused=false,vis=false,loaded=false,still=RM||SD,raf=0,want=-1,cur=-1,st=0,stT=0,stLast=0,wd=0,shown=-1;
+var pds=[],held=-1,tHold=false,paused=false,vis=false,loaded=false,still=RM||SD,raf=0,want=-1,cur=-1,st=0,stT=0,stLast=0,wd=0,shown=-1;
 function at(t){for(var i=4;i>0;i--)if(t>=S[i])return i;return 0;}
-function setStage(i,p){mark(items,i,p);if(i!==cur){cur=i;if(lab&&items[i]){var n=items[i].querySelector('.n'),h=items[i].querySelector('h3');lab.textContent=(n?n.textContent+' · ':'')+(h?h.textContent:'');}}}
+function setStage(i,p){mark(items,i,p);if(i!==cur){cur=i;pds.forEach(function(x,j){x.classList.toggle('on',j===i);});if(lab&&items[i]){var n=items[i].querySelector('.n'),h=items[i].querySelector('h3');lab.textContent=(n?n.textContent+' · ':'')+(h?h.textContent:'');}}}
 /* video-tila */
 function frame(){raf=0;if(still)return;var t=v.currentTime||0,i=held>=0?held:at(t);
  setStage(i,held>=0?1:Math.min(1,(t-S[i])/(S[i+1]-S[i])));if(!v.paused&&vis)raf=requestAnimationFrame(frame);}
@@ -101,7 +102,9 @@ items.forEach(function(it,i){
  it.addEventListener('blur',function(){if(!tHold)free();});
  it.addEventListener('click',function(){if(!byTouch())return;if(tHold&&held===i)free();else{tHold=true;hold(i);}});
 });
-if(!RM)box.classList.add('acc');
+if(!RM&&list){var pdx=d.createElement('div');pdx.className='k-pdx';pdx.setAttribute('aria-hidden','true');
+ items.forEach(function(it){var s=it.querySelector('.k-pd p'),x=d.createElement('p');x.textContent=s?s.textContent:'';pdx.appendChild(x);pds.push(x);});
+ list.parentNode.appendChild(pdx);box.classList.add('acc');}
 if(list)list.addEventListener('pointerleave',function(e){if(e.pointerType==='mouse'&&!tHold)free();});
 d.addEventListener('pointerdown',function(e){if(tHold&&!box.contains(e.target))free();});
 if(btn){btn.addEventListener('click',function(){if(held>=0){paused=false;free();return;}paused=!paused;pbtn(btn,paused);if(paused){if(!still)v.pause();}else play();});btn.hidden=RM;}

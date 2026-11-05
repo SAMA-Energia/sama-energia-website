@@ -380,9 +380,13 @@ When in doubt, leave it out and flag it.
   Herosta ja kriit-stillistä ihmiset pois. Kamerat: `bg` tx 8.25 tz -18.25 vh 22.25, `bgm` tx 9.25 tz -19.75 vh 22,
   `proc` tx 9 tz -18.5 vh 20.5 (4:3, katto paneeleineen näkyy). Videossa markkinapulssit varasto → pääkeskus →
   muuntamo → verkko, käyttöönotossa myös aurinkokaapeli kirkastuu.
-- render-proc.mjs: oletus 1200×900 (4:3), puhelin 2/3 (800×600), pysäytyskuvat ja juliste samaan kokoon.
-- Prosessi (#kuidas): vaiheriveillä aika (ja maksuttomuus) oikealla, kuvaus auki vain aktiivisessa vaiheessa (`.acc`,
-  grid-rows-siirtymä; ilman JS:ää ja reduced-motionilla kaikki auki), rivit näppäimistöllä kohdistettavia. Ajat:
+- render-proc.mjs: oletus 1200×900 (4:3), puhelin 2/3 (800×600), pysäytyskuvat ja juliste samaan kokoon; CRF
+  säädettävissä (`--crf264` 28 / `--crf9` 40, puhelin +1): katon paneelit kasvattavat bittimäärää (webm 1,23 Mt /
+  mp4 1,54 Mt, puhelin 0,62 / 0,71 Mt; ladataan vasta kun osio lähestyy näkymää).
+- Prosessi (#kuidas): vaiheriveillä aika (ja maksuttomuus) oikealla; aktiivisen vaiheen kuvaus vakiokorkuisessa
+  paneelissa rivien alla (`.k-pl` > `.k-pdx`, etusivu.js kloonaa kuvaukset, aria-hidden; rivien omat kuvaukset jäävät
+  ruudunlukijalle). Rivien sisäinen haitari hylättiin: kun yläpuolinen kuvaus sulkeutui, rivit siirtyivät hiiren alla
+  ja väärä vaihe valittiin. Ilman JS:ää ja reduced-motionilla kuvaukset riveillä. Rivit näppäimistöllä kohdistettavia. Ajat:
   kliendi teekond (Madis 28.9.2026) ja sivuston lupaus I-20261104-7: kartoitus 2 tp; esitarkastus 1–2 pv; kohdekäynti
   puoli päivää viikon sisällä, tarjous 2–5 tp; päätös asiakkaan aikataulussa; kohteella 2–3 pv. FI: asentajan jono
   noin kaksi viikkoa, ilmoitus verkkoyhtiölle tilausvahvistuksen päivänä (ei "teknisiä ehtoja"). ET: paigaldusaeg

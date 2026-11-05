@@ -64,7 +64,9 @@ const kf = '0,5.5,11,17,22';   // vaiheiden alut avainkuviksi
 const vf = (w, h) => `scale=${w}:${h}:flags=lanczos,fade=t=in:st=0:d=0.35:color=0xF7F4EE,fade=t=out:st=${(T1 - 0.45).toFixed(2)}:d=0.45:color=0xF7F4EE,format=yuv420p`;
 const run = (args) => execFileSync('ffmpeg', ['-y', '-loglevel', 'error', ...args], { stdio: 'inherit' });
 const inp = ['-framerate', String(FPS), '-i', join(FR, 'f%04d.jpg')];
-for (const [suf, w, h, crf264, crf9] of [['', W, H, 26, 36], ['-m', MW, MH, 27, 37]]) {
+/* v48: katon paneelit kasvattavat bittimäärää, joten CRF on säädettävissä (--crf264 / --crf9; puhelin +1) */
+const C264 = +opt('crf264', 28), C9 = +opt('crf9', 40);
+for (const [suf, w, h, crf264, crf9] of [['', W, H, C264, C9], ['-m', MW, MH, C264 + 1, C9 + 1]]) {
   run([...inp, '-vf', vf(w, h), '-c:v', 'libx264', '-preset', 'slow', '-profile:v', 'high', '-crf', String(crf264), '-g', String(FPS), '-keyint_min', '1', '-force_key_frames', kf, '-movflags', '+faststart', '-an', join(A, `k-proc${suf}.mp4`)]);
   run([...inp, '-vf', vf(w, h), '-c:v', 'libvpx-vp9', '-b:v', '0', '-crf', String(crf9), '-row-mt', '1', '-g', String(FPS), '-force_key_frames', kf, '-an', join(A, `k-proc${suf}.webm`)]);
   for (const f of [`k-proc${suf}.mp4`, `k-proc${suf}.webm`]) console.log(f, (statSync(join(A, f)).size / 1024).toFixed(0), 'kt');
