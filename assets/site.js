@@ -106,17 +106,15 @@ if(!m)return;
 a.setAttribute('href',m[1]==='fi'?m[2]:(m[2]==='/'?'/et/':'/et'+m[2]));
 });
 }
-/* ---------- etusivun kohdevalitsin: valittu painike näkyviin; vierivä rivi kohdistettavissa näppäimistöllä ---------- */
 /* vierivät rivit ja taulukot kohdistettaviksi vain silloin, kun ne vierivät (axe: scrollable-region-focusable) */
-var scrollers=[].slice.call(d.querySelectorAll('.k-objs,.tbl-scroll'));
-var fitAll=function(){scrollers.forEach(function(s){if(s.scrollWidth>s.clientWidth+1)s.tabIndex=0;else s.removeAttribute('tabindex');});};
+var scrollers=[].slice.call(d.querySelectorAll('.tbl-scroll,.k-fl-r'));
+var fitAll=function(){scrollers.forEach(function(s){if(s.scrollWidth>s.clientWidth+1&&getComputedStyle(s).overflowX==='auto')s.tabIndex=0;else s.removeAttribute('tabindex');});};
 if(scrollers.length){fitAll();window.addEventListener('resize',fitAll);}
-var objs=d.querySelector('.k-objs');
-if(objs){
-d.querySelectorAll('.k-or').forEach(function(r){r.addEventListener('change',function(){
-var l=objs.querySelector('label[for="'+r.id+'"]');if(!l||objs.scrollWidth<=objs.clientWidth)return;
-objs.scrollTo({left:objs.scrollLeft+l.getBoundingClientRect().left-objs.getBoundingClientRect().left-(objs.clientWidth-l.offsetWidth)/2,behavior:reduce?'auto':'smooth'});
-});});
+/* ---------- etusivun kuvavirta: pysäytyspainike (WCAG 2.2.2) ja tauko, kun virta ei näy ---------- */
+var fl=d.querySelector('.k-flow');
+if(fl){var fb=fl.querySelector('.k-fl-btn');
+if(fb)fb.addEventListener('click',function(){var p=fb.getAttribute('aria-pressed')!=='true';fb.setAttribute('aria-pressed',p?'true':'false');fl.classList.toggle('is-paused',p);});
+if('IntersectionObserver' in window)new IntersectionObserver(function(e){fl.classList.toggle('is-idle',!e[0].isIntersecting);}).observe(fl);
 }
 })();
 

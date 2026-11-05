@@ -5,32 +5,56 @@
 
 # SAMA Energia · Yhteinen verkko, itsenäinen energia — https://samaenergia.fi/
 
-Aurinkokatolla, missä se sopiiPääkeskusrakennuksessa, mittarin takanaSähkövarastoohjaus ja invertteri kaapin sisälläLiittymispistemittaus ja muuntamoSähköverkkoreservit Fingridille aggregaattorin kautta
-
-Aurinkokatolla, missä se sopiiPääkeskusrakennuksessa, mittarin takanaSähkövarastoohjaus ja invertteri kaapin sisälläLiittymispistemittaus ja muuntamoSähköverkkoreservit Fingridille aggregaattorin kautta
-
-Aurinkokatolla, missä se sopiiPääkeskusrakennuksessa, mittarin takanaSähkövarastoohjaus ja invertteri kaapin sisälläLiittymispistemittaus ja muuntamoSähköverkkoreservit Fingridille aggregaattorin kautta
-
-AurinkoPääkeskusrakennuksessa, mittarin takanaSähkövarastoohjaus ja invertteri kaapin sisälläLiittymispistemittaus ja muuntamoSähköverkkoreservit Fingridille aggregaattorin kautta
-
 Sähköliittymänne on omaisuutta. Laittakaa se töihin omaksi eduksenne.
 
 SAMA rakentaa liittymänne taakse järjestelmän: energiavaraston, energiantuotannon ja älykkään ohjauksen. Ansaitkaa reservimarkkinoilla, maksakaa vähemmän ja päättäkää itse.
-
-ViljankuivuriTeollisuus ja kylmävarastoHotelli ja hoivakotiAurinkopuisto
-
-Kuivuri käy pari kuukautta vuodessa, mutta liittymä on yhtä suuri ympäri vuoden.
-
-Koneiden käynnistykset, kompressorit ja vuorotyö aiheuttavat tehohuippuja.
-
-Ympärivuorokautinen kulutus, keittiö ja lämmitys sekä vaatimus, ettei sähkö saa koskaan katketa. Varavoima edellyttää saarekekäyttöön toteutettua järjestelmää ja erotettua kriittistä piiriä.
-
-Olemassa oleva tuotanto saa sähkövarastosta toisen tulonlähteen.
 
 Pyydä maksuton kartoitus Miten se toimii+358 449 654 614
 
 1 500 MWNiin paljon reservikapasiteettia Fingrid hankkii keskimäärin joka tunnille ja arvioi hankinnan kasvavan vuoteen 2030 mennessä 1 200 MW:lla.
 Lähde: Fingrid, Reservimarkkinat tutuiksi -webinaari · 11.6.2025
+
+EnergiavarastotRalos Oy
+Integroidut aurinkokatotGare Energy Oy
+Aurinkovoimalan asennusJSM Automaatiosähkö Oy
+Sähköauton latausScanoffice Oy
+ReservimarkkinatAggregaattori kohteen mukaan
+
+EnergiavarastotRalos Oy
+Integroidut aurinkokatotGare Energy Oy
+Aurinkovoimalan asennusJSM Automaatiosähkö Oy
+Sähköauton latausScanoffice Oy
+ReservimarkkinatAggregaattori kohteen mukaan
+
+Energiavarastot ja mikroverkotAvant Power
+AurinkovoimalatRalos Oy
+Aurinkokatos ja latausGare Energy Oy
+Sähkövarasto ja invertteritRalos Oy
+
+Energiavarastot ja mikroverkotAvant Power
+AurinkovoimalatRalos Oy
+Aurinkokatos ja latausGare Energy Oy
+Sähkövarasto ja invertteritRalos Oy
+
+EnergiavarastotRalos Oy
+Energiavarastot ja mikroverkotAvant Power
+Integroidut aurinkokatotGare Energy Oy
+AurinkovoimalatRalos Oy
+Aurinkovoimalan asennusJSM Automaatiosähkö Oy
+Aurinkokatos ja latausGare Energy Oy
+Sähköauton latausScanoffice Oy
+Sähkövarasto ja invertteritRalos Oy
+ReservimarkkinatAggregaattori kohteen mukaan
+
+EnergiavarastotRalos Oy
+Energiavarastot ja mikroverkotAvant Power
+Integroidut aurinkokatotGare Energy Oy
+AurinkovoimalatRalos Oy
+Aurinkovoimalan asennusJSM Automaatiosähkö Oy
+Aurinkokatos ja latausGare Energy Oy
+Sähköauton latausScanoffice Oy
+Sähkövarasto ja invertteritRalos Oy
+ReservimarkkinatAggregaattori kohteen mukaan
 
 Passiivinen liittymä on kuluerä. Mittarin takana oleva järjestelmä panee sen tuottamaan tuloa.
 Liittymästä maksatte joka kuukausi. Jotta se alkaisi tuottaa, annamme teille kolme asiaa:
@@ -123,30 +147,36 @@ Suunnittelu, verkkoyhtiön tekniset ehdot, asennus, tarkastukset ja käyttööno
 Pyydä maksuton kartoitus
 
 Laaja valikoima, yksi vastuutaho.
-
-Perehdymme kohteeseen ennen laitevalintaa ja tunnemme markkinat: valmistajat, maahantuojat, aggregaattorit ja hinnat. Valitsemme laitteet kohteenne mukaan koko markkinoilta, kokoamme kokonaisuuden ja vastaamme projektista alusta loppuun.
+Jokaisella alalla meillä on useampi kumppani. Valitsemme kohteeseenne sopivimmat laitteet ja tekijät, vertaamme vaihtoehdot samoilla luvuilla ja vastaamme kokonaisuudesta alusta loppuun.
 
 Energiavarastot
-Ralos Oy, Elecnova
+Ralos Oyteolliset energiavarastot, Tampere
+Elecnovaulkokaapit ja konttivarastot
+Avant Powerenergiavarastot ja mikroverkot
 
-Mikroverkot ja lataus
-Avant Power
+Aurinkosähkö
+Ralos Oyaurinkovoimalat yrityksille
+Gare Energy Oyintegroidut aurinkokatot
+Scanoffice Oyaurinkopaneelit maahantuojalta
 
-Aurinkokatot
-Gare Energy Oy
+Lataus ja mikroverkot
+Avant Powermikroverkot, siirrettävä energia ja lataus
+Scanoffice Oysähköautojen latausasemat
+Gare Energy Oyaurinkokatos ja latauspisteet
 
-Laitteet
-Scanoffice Oy
+Lämpöpumput
+Scanoffice Oyilma-, ilma-vesi- ja maalämpöpumput
+JSM Automaatiosähkö Oyasennus
 
-Sähkötyöt
-JSM Automaatiosähkö Oy
+Asennus ja käyttöönotto
+JSM Automaatiosähkö Oysähkötyöt ja käyttöönotto, Pirkanmaa
+Gare Energy Oykatto-, paneeli- ja akkuasennus
+SAMAasennuspäällikkö johtaa työmaata
 
-Aggregaattori
-valitaan kohteen mukaan Fingridin hyväksymistä reservitoimittajista
+Reservimarkkinat
+Aggregaattorivalitaan kohteen mukaan Fingridin hyväksymistä reservitoimittajista
 
 Kumppanit ja tuotteet
-
-Ralos Oy · energiavarastot
 
 Tiimimme.
 SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · Y-tunnus 3647683-6
@@ -1015,6 +1045,17 @@ Kumppanit, joiden kanssa toimimme.
 
 Kumppanit tuovat valikoiman, me tuomme kokonaisuuden: mitoituksen, vertailun, asennuksen ja liittämisen. Tuotetiedot ovat kumppaneiden omista materiaaleista.
 
+Kumppanit aloittainKumppani · Energiavarastot · Aurinkosähkö · Lataus ja mikroverkot · Lämpöpumput · Reservimarkkinat
+Ralos Oy · Laitteet · Laitteet · ei · ei · ei
+Elecnova · Laitteet · ei · Laitteet · ei · ei
+Avant Power · Laitteet · ei · Laitteet · ei · ei
+Scanoffice Oy · ei · Laitteet · Laitteet · Laitteet · ei
+Gare Energy Oy · Asennus · Laitteet ja asennus · Laitteet ja asennus · ei · ei
+JSM Automaatiosähkö Oy · Asennus · Asennus · Asennus · Asennus · ei
+Aggregaattori · ei · ei · ei · ei · Kohteen mukaan
+
+SAMA mitoittaa, vertaa ja johtaa projektin jokaisella alalla. Asennuspäällikkömme johtaa työmaata, ja sähkötyöt tekee rekisteröity sähköurakoitsija.
+
 Energiavarastot, kontit ja mikroverkot
 Kaappikoosta konttiin ja latausaseman mikroverkkoon. Toimimme useamman valmistajan kanssa ja valitsemme mallin kohteen tehon, energian, tilan ja käytön mukaan.
 
@@ -1022,29 +1063,29 @@ Energiavarastot useammalta valmistajaltaKaapit, kontit, hybridikaapit, mikroverk
 Valitsemme toimittajiemme valikoimasta mallin, joka sopii kohteen tehoon, tilaan ja käyttöön. Valmistaja ja malli nimetään tarjouksessa, ja vaihtoehdot vertaillaan samoilla luvuilla.
 
 Elecnova
-KiinaElecnovaEnergiavarastot · ulkokaapit ja STS-kaappi
-Nestejäähdytetyt ulkokaapit, jotka toimivat rinnan, ja STS-kaappi saarekekäyttöön suunniteltuihin kohteisiin.
+KiinaElecnovaEnergiavarastot ja mikroverkot · ulkokaapit, kontit ja STS-kaappi
+Nestejäähdytetyt ulkokaapit ja konttivarastot, jotka toimivat rinnan, sekä STS-kaappi saarekekäyttöön suunniteltuihin kohteisiin. Ratkaisut myös latausasemille ja mikroverkkoihin.
 elecnova-ess.com
 
 Ralos
-SuomiRalos OyEnergiavarastot · Tampere
-Suomalainen aurinkosähkön ja energiavarastojen toimittaja: energiavarastot ulkoasennukseen.
+SuomiRalos OyEnergiavarastot ja aurinkovoimalat · Tampere
+Suomalainen aurinkosähkön ja energiavarastojen toimittaja: teolliset energiavarastot sisä- ja ulkoasennukseen sekä aurinkovoimalat yrityksille.
 ralos.fi
 
-SuomiAvant PowerMikroverkot ja lataus · Ylöjärvi
-Mikroverkko, joka yhdistää energiavaraston, pikalatauksen, oman tuotannon ja ohjauksen yhdeksi tasavirtaverkoksi: huoltoasemille, varikoille, logistiikkaan, teollisuuteen ja maatiloille.
+SuomiAvant PowerEnergiavarastot, mikroverkot ja lataus · Ylöjärvi
+Mikroverkko, joka yhdistää energiavaraston, pikalatauksen, oman tuotannon ja ohjauksen yhdeksi tasavirtaverkoksi: huoltoasemille, varikoille, logistiikkaan, teollisuuteen ja maatiloille. Lisäksi siirrettävä energiayksikkö ja lataus kohteisiin, joissa sähköverkko ei riitä.
 avantpower.fi
 
-Aurinkosähkö ja lämpöpumput
-Paneelit, invertterit ja lämpöpumput maahantuojalta. Voimalan ja aurinkokaton asennusta johtaa asennuspäällikkömme.
+Aurinkosähkö, lataus ja lämpöpumput
+Aurinkokatot, aurinkokatokset, paneelit, latausasemat ja lämpöpumput kumppaneilta. Voimalan ja aurinkokaton asennusta johtaa asennuspäällikkömme.
 
 Gare Energy
-SuomiGare Energy OyIntegroidut aurinkokatot · aurinkokatto.com
-Konesaumakatto, jonka pinta tuottaa sähköä. Järkevä, kun katto uusitaan joka tapauksessa.
+SuomiGare Energy OyAurinkokatot, aurinkokatokset ja asennus · aurinkokatto.com
+Konesaumakatto, jonka pinta tuottaa sähköä. Järkevä, kun katto uusitaan joka tapauksessa. Lisäksi aurinkokatos latauspisteille sekä paneelien, akkujen ja latauspisteiden asennus.
 aurinkokatto.com
 
 Scanoffice
-SuomiScanoffice OyLaitteiden maahantuoja · Espoo
+SuomiScanoffice OyMaahantuoja · aurinkopaneelit, lataus ja lämpöpumput · Espoo
 Kotimainen puhtaan energian laitteiden maahantuoja: lämpöpumput, aurinkopaneelit, sähköautojen lataus ja ilmanvaihto.scanoffice.fi
 
 Asennus ja käyttöönotto
@@ -1055,7 +1096,7 @@ SuomiAsennuksen johtoAsennuspäällikkö · katto- ja sähkötyö saman johdon a
 Asennuspäällikkömme johtaa työmaan: yksi aikataulu toimintanne mukaan ja yksi dokumentaatio.Näin asennus etenee
 
 JSM
-SuomiJSM Automaatiosähkö OySähköasennukset ja käyttöönotto · Pirkanmaa
+SuomiJSM Automaatiosähkö OySähkötyöt, asennus ja käyttöönotto · Pirkanmaa
 Sähköurakoitsija Sastamalasta, varasto Tampereella. Aurinkosähkö, sähkövarastot myös reservimarkkinoille, lämpöpumput ja sähköautojen lataus.jsmautomaatiosahko.fi
 
 Pääsy reservimarkkinoille
@@ -1152,42 +1193,34 @@ Verkosto projektinne takana.
 
 Jokainen projekti tarvitsee meidän lisäksemme neljä asiaa: markkinoillepääsyn, laitteet, asennuksen ja rahoituksen. Nämä kumppanit antavat ne.
 
-Pääsy reservimarkkinoille
-Aggregaattori kokoaa sähkövarastot tarjoukseksi, ohjaa niitä automaattisesti ja tilittää tuoton. Valitsemme aggregaattorin kohteen mukaan.
+Energiavarastot
+Ralos Oyteolliset energiavarastot, Tampere
+Elecnovaulkokaapit ja konttivarastot
+Avant Powerenergiavarastot ja mikroverkot
 
-SuomiAggregaattori valitaan kohteen mukaanFingridin hyväksymä reservitoimittaja · ei sidosta yhteen
-Vertaamme Fingridin reservitoimittajia kohteenne varaston ja tuotteiden mukaan neljällä perusteella: hyväksyntä ja säätökokeet, ehdot ja palkkio auki, kohteen tarve ensin, toteutuneet luvut jaksoineen. Valinnan perusteet kirjataan arvioon, ja me rakennamme yhteyden valittuun aggregaattoriin.Näin valitsemme aggregaattorin
+Aurinkosähkö
+Ralos Oyaurinkovoimalat yrityksille
+Gare Energy Oyintegroidut aurinkokatot
+Scanoffice Oyaurinkopaneelit maahantuojalta
 
-Energiavarastot, lataus ja mikroverkot
-Useampi valmistaja, malli kohteen mukaan. Vertailu on arviossa samoilla luvuilla.
-Kumppanit ja tuotteet
+Lataus ja mikroverkot
+Avant Powermikroverkot, siirrettävä energia ja lataus
+Scanoffice Oysähköautojen latausasemat
+Gare Energy Oyaurinkokatos ja latauspisteet
 
-Useampi valmistajaKaapit, kontit, hybridikaapit, mikroverkot ja pikalaturit
-Valitsemme toimittajiemme valikoimasta mallin kohteen tehon, tilan ja käytön mukaan. Valmistaja ja malli nimetään tarjouksessa.Laitevalikoima
-
-Ralos
-SuomiRalos OyEnergiavarastot · Tampere
-Aurinkosähkön ja energiavarastojen toimittaja: LFP-varastot ulkoasennukseen.ralos.fi
-
-Aurinkosähkö ja lämpöpumput
-Paneelit, invertterit ja lämpöpumput maahantuojalta. Voimalan ja aurinkokaton asennusta johtaa asennuspäällikkömme.
-
-Scanoffice
-SuomiScanoffice OyLaitteiden maahantuoja · Espoo
-Kotimainen puhtaan energian laitteiden maahantuoja: lämpöpumput, aurinkopaneelit, sähköautojen lataus ja ilmanvaihto.scanoffice.fi
+Lämpöpumput
+Scanoffice Oyilma-, ilma-vesi- ja maalämpöpumput
+JSM Automaatiosähkö Oyasennus
 
 Asennus ja käyttöönotto
-Asennusta johtaa oma asennuspäällikkömme; sähkötyöt ja käyttöönotto kulkevat kumppanin kautta.
+JSM Automaatiosähkö Oysähkötyöt ja käyttöönotto, Pirkanmaa
+Gare Energy Oykatto-, paneeli- ja akkuasennus
+SAMAasennuspäällikkö johtaa työmaata
 
-JSM
-SuomiJSM Automaatiosähkö OySähköasennukset ja käyttöönotto · Pirkanmaa
-Sähköurakoitsija Sastamalasta, varasto Tampereella. Aurinkosähkö, sähkövarastot myös reservimarkkinoille, lämpöpumput ja sähköautojen lataus.jsmautomaatiosahko.fi
+Reservimarkkinat
+Aggregaattorivalitaan kohteen mukaan Fingridin hyväksymistä reservitoimittajista
 
-Rahoitus
-Emme ole sidoksissa yhteen rahoittajaan. Arviossa näytämme omarahoituksen ja leasingin rinnakkain, samoilla luvuilla.
-
-Leasing tai omarahoitusRahoitus järjestetään kohteen mukaan
-Leasingrahoitus on mahdollista järjestää yritysrahoittajien kautta. Rahoittaja ja ehdot valitaan kohteen ja ostajan mukaan, ja ne kirjataan arvioon ennen allekirjoitusta. Oman pääoman ja leasingin vertailu on arviossa samoilla luvuilla, jotta päätös on helppo.
+Rahoitus. Leasingrahoitus on mahdollista järjestää yritysrahoittajien kautta. Rahoittaja ja ehdot valitaan kohteen ja ostajan mukaan, ja oman pääoman ja leasingin vertailu on arviossa samoilla luvuilla.
 
 Yritys paperilla.
 
@@ -1734,32 +1767,48 @@ Päivitetty 08.09.2026. Jos seloste muuttuu, uusin versio on aina tällä sivull
 
 # SAMA Energia · Ühine võrk, iseseisev energia — https://samaenergia.ee/
 
-Päikekatusel, kus see sobibPeakilphoone sees, arvesti tagaSalvestijuhtimine ja inverter kapi seesLiitumispunktarvesti ja alajaamElektrivõrkreservid Eleringile agregaatori kaudu
-
-Päikekatusel, kus see sobibPeakilphoone sees, arvesti tagaSalvestijuhtimine ja inverter kapi seesLiitumispunktarvesti ja alajaamElektrivõrkreservid Eleringile agregaatori kaudu
-
-Päikekatusel, kus see sobibPeakilphoone sees, arvesti tagaSalvestijuhtimine ja inverter kapi seesLiitumispunktarvesti ja alajaamElektrivõrkreservid Eleringile agregaatori kaudu
-
-PäikePeakilphoone sees, arvesti tagaSalvestijuhtimine ja inverter kapi seesLiitumispunktarvesti ja alajaamElektrivõrkreservid Eleringile agregaatori kaudu
-
 Teie elektriliitumine on vara. Pange see enda kasuks tööle.
 
 SAMA ehitab teie liitumise taha süsteemi: energiasalvesti, energia tootmise ja nutika juhtimise. Teenige valmisolekust, makske vähem ja otsustage ise.
-
-Tööstus ja külmladuTeraviljakuivatiHotell ja hooldekoduPäikesepark
-
-Käivitused, kompressorid ja vahetustega töö tekitavad võimsustippe.
-
-Kuivati töötab paar kuud aastas, aga liitumine on suur terve aasta.
-
-Ööpäevaringne tarbimine, köök ja küte ning kohustus, et elekter ei kaoks kunagi. Varutoide eeldab saartalitluseks ehitatud süsteemi ja eraldatud kriitilist ahelat.
-
-Olemasolev tootmine saab salvestiga teise tuluallika.
 
 Küsi tasuta hinnangut Kuidas see töötab+358 449 654 614
 
 1 300 MWNii palju juhitavat võimsust vajab Eesti Eleringi hinnangul 2030. aastaks, kuid olemas või kindlasti tulemas on sellest 751 MW.
 Allikas: Elering, varustuskindluse aruanne 2025, tabel 2.3 · 9.12.2025
+
+EnergiasalvestidRalos Oy
+PäikeseelektrijaamadRalos Oy
+ReserviturgSoleron Energy
+PäikeseelekterSAMA
+
+EnergiasalvestidRalos Oy
+PäikeseelektrijaamadRalos Oy
+ReserviturgSoleron Energy
+PäikeseelekterSAMA
+
+Energiajuhtimine ja agregeerimineSoleron Energy
+Salvesti ja inverteridRalos Oy
+Salvesti sees: akupangad ja juhtimineRalos Oy
+
+Energiajuhtimine ja agregeerimineSoleron Energy
+Salvesti ja inverteridRalos Oy
+Salvesti sees: akupangad ja juhtimineRalos Oy
+
+EnergiasalvestidRalos Oy
+Energiajuhtimine ja agregeerimineSoleron Energy
+PäikeseelektrijaamadRalos Oy
+Salvesti ja inverteridRalos Oy
+ReserviturgSoleron Energy
+Salvesti sees: akupangad ja juhtimineRalos Oy
+PäikeseelekterSAMA
+
+EnergiasalvestidRalos Oy
+Energiajuhtimine ja agregeerimineSoleron Energy
+PäikeseelektrijaamadRalos Oy
+Salvesti ja inverteridRalos Oy
+ReserviturgSoleron Energy
+Salvesti sees: akupangad ja juhtimineRalos Oy
+PäikeseelekterSAMA
 
 Passiivne liitumine on kuluartikkel. Arvestitagune süsteem paneb selle tulu tootma.
 Liitumise eest maksate iga kuu. Et see hakkaks tootma, anname teile kolm asja:
@@ -1852,18 +1901,24 @@ Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid j
 Küsi tasuta hinnangut
 
 Lai valik, üks vastutaja.
-
-Mõistame objekti enne seadet ja tunneme turgu: tootjaid, maaletoojaid, agregaatoreid ja hindu. Seadmed valime teie objekti järgi kogu turult, paneme terviku kokku ja vastutame projekti eest algusest lõpuni.
+Seadmed, paigaldus ja turulepääs tulevad mitmelt partnerilt. Valime teie objektile sobivaima lahenduse, võrdleme variante samade numbritega ja vastutame terviku eest algusest lõpuni.
 
 Energiasalvestid
-Ralos Oy, Elecnova
+Ralos Oytööstuslikud energiasalvestid, Tampere
+Elecnovaväliskapid ja konteinersalvestid
 
-Agregaator
-Soleron Energy
+Päikeseelekter
+Ralos Oypäikeseelektrijaamad ettevõtetele
+SAMApaigaldus katusele, maale ja katusesse integreerituna
+
+Energiajuhtimine ja reserviturg
+Soleron Energyoma EMS-tarkvara ja agregeerimine Eleringi sagedusreservidesse
+
+Paigaldus ja käikulaskmine
+SAMApaigaldusjuht juhib objekti
+Elektritööde partnerregistreeritud ettevõte teeb elektritööd ja käikulaskmise
 
 Partnerid ja tooted
-
-Ralos Oy · energiasalvestid
 
 Meie meeskond.
 SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · registrikood (Y-tunnus) 3647683-6
@@ -2683,15 +2738,27 @@ Partnerid, kellega teeme koostööd.
 
 Partnerid toovad valiku, meie toome terviku: dimensioneerimise, võrdluse, paigalduse ja ühendamise. Tooteandmed on partnerite enda materjalidest.
 
+Partnerid valdkondade kaupaPartner · Energiasalvestid · Päikeseelekter · Energiajuhtimine ja reserviturg
+Ralos Oy · Seadmed · Seadmed · ei
+Elecnova · Seadmed · ei · ei
+Soleron Energy · ei · ei · Agregaator ja EMS
+
+SAMA dimensioneerib, võrdleb ja juhib projekti igas valdkonnas. Paigaldusjuht juhib objekti ning elektritööd teeb registreeritud elektritööde partner.
+
 Energiasalvestid, konteinerid ja mikrovõrgud
 Kapist konteinerini ja laadimisjaama mikrovõrguni. Teeme koostööd mitme tootjaga ja valime mudeli objekti võimsuse, energia, ruumi ja kasutuse järgi.
 
 Energiasalvestid mitmelt tootjaltKapid, konteinerid, hübriidkapid, mikrovõrgud, teisaldatavad seadmed ja kiirlaadijad
 Valime tarnijate valikust mudeli, mis sobib objekti võimsuse, ruumi ja kasutusega. Tootja ja mudel nimetatakse pakkumises ning variante võrreldakse samade numbritega.
 
+Elecnova
+HiinaElecnovaEnergiasalvestid ja mikrovõrgud · väliskapid, konteinerid ja STS-kapp
+Vedeljahutusega väliskapid ja konteinersalvestid, mis töötavad paralleelselt, ning STS-kapp saartalitluseks projekteeritud objektidele. Lahendused ka laadimisjaamadele ja mikrovõrkudele.
+elecnova-ess.com
+
 Ralos
-SoomeRalos OyEnergiasalvestid · Tampere
-Soome päikeseelektri ja energiasalvestite tarnija: energiasalvestid välispaigalduseks.
+SoomeRalos OyEnergiasalvestid ja päikeseelekter · Tampere
+Soome päikeseelektri ja energiasalvestite tarnija: tööstuslikud energiasalvestid sise- ja välispaigalduseks ning päikeseelektrijaamad ettevõtetele.
 ralos.fi
 
 Paigaldus ja käikulaskmine
@@ -2705,7 +2772,7 @@ Turulepääs reserviturule
 Agregaator koondab mitme objekti salvestid üheks pakkumiseks, juhib neid automaatselt ja maksab tulu välja.
 
 Soleron
-EestiSoleron Energy OÜAgregaator · Eleringi reserviturg
+EestiSoleron Energy OÜAgregaator ja energiajuhtimine · Eleringi reserviturg
 Energiasalvestus ja energiajuhtimine: oma EMS-tarkvara, agregeerimine Eleringi sagedusreservidesse, salvestite projekteerimine ja paigaldus.Kuidas agregaator töötab
 
 Küsimused valiku kohta.
@@ -2796,35 +2863,22 @@ Võrgustik teie projekti taga.
 
 Iga projekt vajab peale meie nelja asja: turulepääsu, seadmeid, paigaldust ja rahastust. Need on partnerid, kes need annavad.
 
-Turulepääs reserviturule
-Agregaator koondab mitme objekti salvestid üheks pakkumiseks, juhib neid automaatselt ja maksab tulu välja. Eestis on meie partner Soleron Energy.
+Energiasalvestid
+Ralos Oytööstuslikud energiasalvestid, Tampere
+Elecnovaväliskapid ja konteinersalvestid
 
-Soleron
-EestiSoleron Energy OÜAgregaator · Eleringi reserviturg
-Energiasalvestus ja energiajuhtimine: oma EMS-tarkvara, agregeerimine Eleringi sagedusreservidesse, salvestite projekteerimine ja paigaldus.Kuidas agregaator töötab
+Päikeseelekter
+Ralos Oypäikeseelektrijaamad ettevõtetele
+SAMApaigaldus katusele, maale ja katusesse integreerituna
 
-Energiasalvestid, laadimine ja mikrovõrgud
-Mitu tootjat, mudel objekti järgi. Võrdlus on hinnangus samade numbritega.
-Partnerid ja tooted
-
-Mitu tootjatKapid, konteinerid, hübriidkapid, mikrovõrgud ja kiirlaadijad
-Valime tarnijate valikust mudeli objekti võimsuse, ruumi ja kasutuse järgi. Tootja ja mudel nimetatakse pakkumises.Seadmevalik
-
-Ralos
-SoomeRalos OyEnergiasalvestid · Tampere
-Päikeseelektri ja energiasalvestite tarnija: LFP-salvestid välispaigalduseks.ralos.fi
+Energiajuhtimine ja reserviturg
+Soleron Energyoma EMS-tarkvara ja agregeerimine Eleringi sagedusreservidesse
 
 Paigaldus ja käikulaskmine
-Paigaldust juhib meie oma paigaldusjuht; elektritööd ja käikulaskmine käivad kohaliku partneri kaudu.
+Viljar Petersellpaigaldusjuht, juhib objekti
+Elektritööde partnervalitakse objekti asukoha järgi, teeb elektritööd ja käikulaskmise
 
-Viljar Petersell, paigaldusjuhtTeostus ja kvaliteet objektil
-Elektritööde ja käikulaskmise partner valitakse objekti asukoha järgi.
-
-Rahastus
-Me ei ole seotud ühe rahastajaga. Hinnangus näitame omafinantseeringu ja liisingu kõrvuti, samade numbrite pealt.
-
-Liising või omafinantseeringRahastus korraldatakse objekti järgi
-Liisingrahastus on võimalik korraldada ärirahastajate kaudu. Rahastaja ja tingimused valitakse objekti ja ostja järgi ning kirjutatakse hinnangusse enne allkirja. Omakapitali ja liisingu võrdlus on hinnangus samade numbrite pealt, et otsus oleks lihtne.
+Rahastus. Liisingrahastus on võimalik korraldada ärirahastajate kaudu. Rahastaja ja tingimused valitakse objekti ja ostja järgi ning omakapitali ja liisingu võrdlus on hinnangus samade numbrite pealt.
 
 Ettevõte paberil.
 
