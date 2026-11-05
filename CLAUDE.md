@@ -411,3 +411,15 @@ Madis 6.11.2026 (vestlus C, vastaukset kysymyksiin; päätöslokiin lisättävä
 - Paikan kortti laskee: liittymisen säännöt paikassa (Fingrid 1.6.2026, Elering), verkkoyhtiö ja tehomaksun / võimsustasu säästö
   (verkkoyhtiö nimetään), aurinkotuotto PVGIS:stä (EU JRC) ja vie paikan arviolomakkeeseen näkyvänä, muokattavana kenttänä
   (tietosuojateksti muuttuu sen mukaan).
+
+## Kartta: solmut, osoitehaku ja paikan laskelmat (vestlus C, haara v35-uusi-ilme, 06.11.2026)
+
+- Solmut `assets/kartta-solmut.json` ← `python3 scripts/kaart/build_solmut.py` (datakeskusrekisteri CC BY 4.0, OSM-puistot, Fingridin
+  kehittämissuunnitelma ja rajajohtohankkeet, Elering/ERR); molemmat moottorit (kartta.js, scene.js / scene-et.js) piirtävät ne kerroksittain,
+  tunnisteet tärkeysjärjestyksessä, vihje hiirellä. kartta-data.json:n Tulossa-kerroksesta poistettu viisi päällekkäistä viivaa.
+- Paikkapalvelu `netlify/functions/paikka.mjs` (/api/paikka, /api/ruutu/…): In-ADS, MML (`MML_API_KEY`), PVGIS, karttaruudut. Netlify tunnistaa
+  `netlify/functions` ilman asetuksia. Kortti ja haku `assets/kartta-paikka.js` (budjetti 110 kt, ladataan kartan käynnistyessä).
+- Arviolomakkeen `sijainti` on nyt näkyvä valinnainen kenttä (#f-place-a); scene.js täyttää sen hash-osasta `&p=`.
+- Perustelut, lähteet, päivitysrutiinit ja avoimet asiat: `docs/kaart/lugu.md`, osio "Uus kaart: sõlmed, aadressiotsing ja asukoha arvutused".
+- AVOIN: MML_API_KEY Netlifyyn (Madis); verkkoyhtiöiden tehomaksut lähteineen; Viron liittymissäännöt; etusivun 6. askeleen
+  "ei jonota kantaverkkoon" -lause vs. Fingrid 1.6.2026 (≥ 2 MW, osin ≥ 1 MW) — perustajan päätös; natiivitarkistus uusille teksteille.

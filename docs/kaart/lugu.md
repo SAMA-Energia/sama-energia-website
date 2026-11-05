@@ -228,6 +228,29 @@ Madis 5.11.2026: „kui ta näitab teie liitumist, siis ta võiks teada, kus see
 4. Reaalajas hind/reserv — vajab Netlify funktsiooni (avatud otsus, vt p 4 allpool).
 5. Valitud koht vormi (nähtav, muudetav väli „Objekti asukoht"), kui lugeja vajutab kaardi CTA-d — muudab privaatsuslauset („ei saadeta, kui te seda ise vormiga ei saada"), seega asutaja otsus.
 
+## Uus kaart: sõlmed, aadressiotsing ja asukoha arvutused (6.11.2026)
+
+Madis 6.11.2026: „sõlmed esile", EstLink 3 täpsemalt, suured pargid, andmekeskused suurusega, aadressi sisestamine ja professionaalselt arvutatud lähimad alajaamad. Otsused (CLAUDE.md, „Perustajan päätökset 6.11.2026"): riiklikud registrid oma Netlify-funktsiooni kaudu, omanike nimed allikaga, ka teatatud plaanid oleku märkega, kõik neli arvutust.
+
+**Sõlmed** — `assets/kartta-solmut.json` ← `python3 scripts/kaart/build_solmut.py`:
+- Soome andmekeskused (169): Datakeskushankkeiden kansallinen rekisteri, CC BY 4.0 (`docs/kaart/lahteet/datakeskusrekisteri-*.json`; uuenda: lae `https://www.datakeskusrekisteri.fi/data/hankkeet.json`, karsi samade väljadega). Olek rekistri etapist (töös / ehitusel / loamenetlus / planeering või KMH / eeluuring), elektri- ja IT-võimsus eraldi, link projekti lehele. Google'i kolm keskust Business Finland 2024 järgi.
+- Eesti andmekeskused: Sunly Risti 180 MW (17.3.2026), Evecon Lihula ≤ 100 MW (ERR 17.6.2026).
+- Tuule-, päikese- ja salvestipargid OpenStreetMapist (tuul ≥ 40, päike ≥ 15, salvesti ≥ 5 MW).
+- Põhivõrgu projektid Fingridi arengukavast 2026–2035 (etapp ja valmimisaasta ajajoonelt), Toivila–Hikiä 2029 (Fingrid 29.10.2026), EstLink 3 Aulepast (Elering), Aurora Line 2 ja Fenno-Skan 3 (Fingrid 6.2.2026), Eleringi tugevdused ja Tallinna uus alajaam. Trass = sirge otspunktide vahel (suunda näitav).
+- Kaardil: Kasv = andmekeskused, Ilm = pargid, Salvestid = salvestid, Tulevik = projektid. Sildid tähtsuse järjekorras ilma kattumiseta, vihje hiirega (nimi, liik, omanik, olek, aasta, võimsus, allikas).
+
+**Aadress ja arvutused** — `netlify/functions/paikka.mjs` (POST `/api/paikka`, GET `/api/ruutu/{ee|fi}/z/x/y.png`) + `assets/kartta-paikka.js` ← `python3 scripts/kaart/build_paikka.py`:
+- Eesti aadressid Maa- ja Ruumiameti In-ADS-ist (võtmeta), Soome aadressid Maanmittauslaitosest, kui Netlify keskkonnamuutuja `MML_API_KEY` on seatud (tasuta võti: omatili.maanmittauslaitos.fi). Ilma võtmeta ütleb Soome otsing, et teenus avaneb peagi, ja lähikaardil on ainult märgid.
+- Kaart: valitud aadress, lähikaart (kaardiruudud + lähimad alajaamad + lähedased projektid + mõõtkava), lähim 110 kV ja põhivõrgu alajaam nime ja valdajaga (OSM; raudtee- ja tootjate alajaamad välja), tõenäoline võrguettevõtja (lähima jaotusalajaama valdaja OSM-is), Fingridi liitumislepingu taotluse piir 1.6.2026 (2 MW kogu Soomes, 1 MW kaardi piirkondades; piirkonnad georefereeritud Fingridi PDF-ist, täpsus ±5 km, piiri lähedal 8 km märge), Soome piirangupiirkond, päikesetoodang PVGIS-ist, võimsustasu kalkulaator (lugeja sisestab hinnakirja numbri), suured projektid 50 km raadiuses, „Vii asukoht hinnangu päringusse" (nähtav väli vormis, teiselt lehelt räsi `#kartoitus&p=` / `#hindamine&p=`).
+- Privaatsus: brauser räägib ainult oma päritoluga; otsing ja koordinaadid lähevad serveri kaudu, kasutaja IP-d allikatele ei edastata, midagi ei salvestata. Privaatsuspoliitika ja kaardi privaatsuslause uuendatud.
+
+**Avatud**
+- `MML_API_KEY` Netlifysse (Madis) → Soome aadressid ja Soome lähikaart.
+- Võrguettevõtja tariifiandmed (võimsustasu €/kW kuus) suurimatele ettevõtjatele allikatega, et kalkulaator saaks numbri ise täita; praegu sisestab lugeja.
+- Eesti liitumisreeglid asukohas (Elering, Elektrilevi) allikaga.
+- Esilehe 6. sammu lause „sen taakse asennettu varasto ei jonota kantaverkkoon" / „ei vaja uut põhivõrguliitumist": Fingridi 1.6.2026 reegel nõuab ≥ 2 MW (osades piirkondades ≥ 1 MW) salvestilt taotlust ka jaotusvõrgu kaudu; täpsustada asutaja otsusega.
+- Natiivkontroll: kaardi uued tekstid (`scripts/kaart/paikka.tpl.js`, `build_solmut.py` märkused, `kartta.js` UI, aadressiväljad, vormi väli, privaatsuslõigud).
+
 ## Avatud küsimused ja otsused
 
 1. **Tehniline valik**: SVG canvas'e asemel (põhjendus eespool). Kui on vaja tagasi canvas'ele, on andmefail ühilduv `scene.js`-iga.
