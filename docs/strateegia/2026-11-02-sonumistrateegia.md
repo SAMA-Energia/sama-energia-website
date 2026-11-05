@@ -89,7 +89,7 @@ Reservirida on igas plokis esimene ja seletatud. Esileht on üheksa plokki; soov
 3. **Tasuta hinnang on kategooria standard.** Powera, Enefit, Energiapartner ja Sunergia pakuvad konsultatsiooni või analüüsi, Cactos esitlust. Hinnangu olemasolu ei erista kedagi. SAMA eristub hinnangu sisuga: liitumise väärtus, piirkonna võrk, tariifi mõju, reservirida toodete kaupa ja kirjalik ei. Seepärast on hinnang esilehel nähtav kaardina, mitte ainult nupuna.
 4. **Tõend on paigaldatud ühikute arv** (5 000+, 1 300+, 300+, 676 MW, 28 000+). SAMA tõendab teise asjaga: avaliku aritmeetikaga. Süsteemihalduri arv kuupäevaga, avaldatud meetod ja näidishinnang on tõend, mida ükski konkurent avalehel ei paku. See kasvab iga kuuga koos SAMA indeksiga.
 5. **Hõivatud sõnad.** Eestis sõltumatus ja energiasõltumatus (Sunergia, Energiapartner), energiarevolutsioon ja tulevikutehnoloogia (Energiapartner), tulevikukindel ja konkurentsieelis (Alexela), kõik ühest kohast ja võtmed kätte (Sunergia), miinimum (Enefit). Soomes älykäs (Powera), uudella tavalla ja aina (Cactos), avaimet käteen ja tootjast sõltumatu hankimine (Powera). SAMA ei juhi nende sõnadega. Oluline leid: lukus hero algab Eesti lehel sama sõnaga, mida Sunergia ja Energiapartner juba kasutavad.
-6. **Kuupäevad on vabad.** Ükski konkurent ei räägi avalehel süsteemihalduri ega regulaatori kalendrist. Soomes: FCR ainult tunniturult alates 1.1.2027, lõuna salvestiliitumiste piirang 2029-ni, ühtne tariifistruktuur 1.1.2029-ks. Eestis: salvesti võrgutasu reegel 1.1.2026, Elektrilevi hinnakiri 1.6.2026, arvesti liidese andmed 1.9.2026. Kalender on SAMA strateegi hääl: kiireloomulisus tuleb faktidest, mitte survest.
+6. **Kuupäevad on vabad.** Ükski konkurent ei räägi avalehel süsteemihalduri ega regulaatori kalendrist. Soomes: FCR 2027. aastal ainult tunniturult, lõuna salvestiliitumiste piirang 2029-ni, tarbimiskohtade ühtne tariifistruktuur 1.1.2029-ks. Eestis: salvesti edastamistasu reegel 1.1.2026, Elektrilevi hinnakiri 1.6.2026, arvesti liidese andmed 1.9.2026. Kalender on SAMA strateegi hääl: kiireloomulisus tuleb faktidest, mitte survest.
 
 ### 1.5 Vaba koht
 
@@ -140,8 +140,8 @@ Iga lause on lehel kasutatav. Arvuga lausel on allikas ja registri ID.
    - ET: Enne seadet vaatame liitumist: kui suur see on, mida tariif sellega teeb ja mitu tundi kuus see vabaks jääb.
    - FI: Ennen laitetta katsomme liittymän: kuinka suuri se on, mitä tariffi sillä tekee ja montako tuntia kuussa se jää vapaaksi.
 2. **Strateeg, kuupäevaga**
-   - ET: Alates 1.1.2026 ei võeta eraldi mõõtepunktiga salvestilt võrku tagastatud energia ulatuses võrgutasu. (Elektrituruseadus § 71 lg 10¹; EE-07)
-   - FI: Fingrid hankkii taajuusohjatut reservit 1.1.2027 alkaen vain tuntimarkkinoilta. Säätökokeen läpäissyt varasto on mukana ensimmäisestä tunnista. (Fingrid, 8.9.2026 ja 29.10.2026; FI-01)
+   - ET: Alates 1.1.2026: kui salvestil on eraldi mõõtepunkt, ei võeta tagastatud energia koguse ulatuses edastamistasu. (Elektrituruseadus § 71 lg 10¹; EE-07)
+   - FI: Fingrid hankkii taajuusohjatut reservit vuonna 2027 vain tuntimarkkinoilta. Säätökokeen läpäissyt varasto on mukana ensimmäisestä tunnista. (Fingrid, 8.9.2026 ja 29.10.2026; FI-01)
 3. **Jutuvestja**
    - ET: Viljakuivati töötab paar kuud aastas. Liitumine on suur kogu aasta. Ülejäänud kuudel hoiab salvesti seda võimsust võrgule valmis.
    - FI: Kuivuri käy pari kuukautta vuodessa. Liittymä on suuri koko vuoden. Muina kuukausina varasto pitää sen tehon verkon käytettävissä.
@@ -149,8 +149,8 @@ Iga lause on lehel kasutatav. Arvuga lausel on allikas ja registri ID.
    - ET: Võimsustasu määrab üks tund kuus. Salvesti võtab selle tunni enda peale.
    - FI: Tehomaksun ratkaisee yksi tunti kuussa. Varasto ottaa sen tunnin itselleen.
 5. **Revolutsionäär**
-   - ET: Eesti vajab 2030. aastaks 1 300 MW juhitavat võimsust. Osa sellest saab seista teie arvesti taga. (Elering, varustuskindluse aruanne 2025; EE-06)
-   - FI: Etelä-Suomessa uudet yli 5 MW:n varastoliittymät ovat rajoitettuja vuoteen 2029. Liittymä, joka teillä jo on, on siksi omaisuutta. (Fingrid, 24.9.2025; FI-09)
+   - ET: Eleringi hinnangul vajab Eesti 2030. aastaks umbes 1 300 MW juhitavat võimsust. Iga salvesti, mis hoiab võimsust valmis, on osa vastusest. (Elering, varustuskindluse aruanne 2025; EE-06)
+   - FI: Fingrid rajoittaa uusien sähkövarastojen liittämistä Etelä-Suomessa vuoteen 2029. Liittymä, joka teillä jo on, on siksi omaisuutta. (Fingrid, 24.9.2025; FI-09)
 6. **Revolutsionäär, regioon**
    - ET: Iga objekt, mis juhib oma tippe ja hoiab reservi valmis, on osa Eesti võrgu kindlusest.
    - FI: Jokainen kohde, joka hallitsee huippunsa ja pitää reserviä valmiina, on osa Suomen sähköjärjestelmän joustoa.
@@ -222,7 +222,12 @@ Ostja tuleb lehele küsimustega ja plokid vastavad neile samas järjekorras. Iga
 | 7 | Aga kui ...? | KKK |
 | 8 | Mida ma pean tegema? | Vorm |
 
-**Uuringute alus.** Esimene ekraan saab suurema osa vaatamisajast, seega kannab hero sõnumit, tõendit ja esimest sammu ning järgmine plokk paistab ekraani alt (Nielsen Norman Group, Scrolling and Attention). B2B ostja teeb suurema osa uurimisest üksi, enne kui ta müüjaga räägib, seega peab leht ise seletama (Gartner, B2B ostuteekond). Kasulik info teeb ostu ostja jaoks lihtsamaks (Gartner, buyer enablement), ja otsustajad hindavad ettevõtte võimekust mõttejuhtimise järgi rohkem kui turundusmaterjali järgi (Edelman ja LinkedIn, B2B Thought Leadership Impact Report). Arvud lisatakse siia pärast esmaallikast kontrolli.
+**Uuringute alus** (kontrollitud esmaallikast 2.11.2026):
+
+- Umbes 57 % lehe vaatamisajast kulub esimesele ekraanile ja 74 % kahele esimesele (Nielsen Norman Group, Scrolling and Attention, 15.4.2018). Seepärast kannab hero sõnumit, tõendit ja esimest sammu ning järgmine plokk paistab ekraani alt.
+- B2B ostjad kulutavad võimalike tarnijatega suhtlemisele ainult 24 % ostuajast (Gartner, Commercial Strategy Guide, leht ilma kuupäevata, loetud 2.11.2026). Ülejäänud ajal uurivad nad ise, seega peab leht ise seletama.
+- Ostjad, kes saavad ostu lihtsustavat kasulikku infot, valivad kolm korda tõenäolisemalt suurema tehingu ja kahetsevad vähem (Gartner, pressiteade 29.4.2019). Seepärast on kaart esilehel sisuna, mitte ainult nupuna.
+- 73 % otsustajatest peab ettevõtte mõttejuhtimist usaldusväärsemaks aluseks tema võimekuse hindamisel kui turundusmaterjale (Edelman ja LinkedIn, B2B Thought Leadership Impact Report, veebruar 2024). Seepärast on SAMA tõend avalik aritmeetika, mitte omadussõnad.
 
 Järjekord järgib Jakubi raamistikku (hero, valupunkt, väärtus, protsess, kellele, usaldus, KKK, vorm) ühe lisandusega: **Kaart** väärtuse ja protsessi vahel. Hinnang on SAMA toode ja kategooria tavaline CTA, seega peab lugeja nägema selle sisu enne, kui ta näeb protsessi. Kaks uuendust, mida konkurentidel ei ole: **kuupäevadega kalender** muutuse plokis ja **küsimusega kaardid** kellele-plokis (iga segmendi kaart algab selle omaniku esimese küsimusega).
 
@@ -251,7 +256,7 @@ Igas plokis: eesmärk, väide, tõend, CTA, variandid ET ja FI koos mõjuga ning
 
 - **Eesmärk:** kolme sekundiga: mis see on, kellele, mida ma saan ja mis on esimene samm. Üks tõend on juba esimesel ekraanil; järgmine plokk paistab ekraani alt.
 - **Väide:** teie liitumine saab töötada teie kasuks, automaatselt.
-- **Tõend:** ET Eleringi juhitava võimsuse vajadus (EE-06). FI Fingridi reservide hulk ja kasv (FI-27).
+- **Tõend:** ET Eleringi juhitava võimsuse vajadus (EE-06). FI Fingridi reservide hulk ja kasv (FI-27). Tugevam Eesti tõend, kui registririda on lisatud: alates veebruarist 2025 hangib Elering koos Läti ja Leedu süsteemihalduritega sagedusreserve Balti tasakaalustamisvõimsuse turul (Elering, 5.2.2025; kontrollitud 2.11.2026, vt 6.2).
 - **CTA:** esmane nupp sõltub otsusest 3 (liitumise kontroll või tasuta hinnang); teisene tekstilink „Kuidas see töötab" / „Miten se toimii".
 
 **Lukus pealkiri** (asutajate otsus 10.09.2026)
@@ -289,7 +294,7 @@ Igas plokis: eesmärk, väide, tõend, CTA, variandid ET ja FI koos mõjuga ning
 <!-- copy:ET:Hero -->
 > **Saavutage energiasõltumatus, pannes elektriliitumise enda kasuks tööle.**
 > Teenige valmisolekust. Makske vähem. Otsustage ise.
-> Eesti vajab 2030. aastaks 1 300 MW juhitavat võimsust. Osa sellest saab seista teie arvesti taga. Allikas: Elering, varustuskindluse aruanne 2025.
+> Eleringi hinnangul vajab Eesti 2030. aastaks umbes 1 300 MW juhitavat võimsust. Allikas: Elering, varustuskindluse aruanne 2025.
 > [Küsige liitumise kontroll] · Kuidas see töötab
 <!-- /copy -->
 <!-- copy:FI:Hero -->
@@ -319,22 +324,22 @@ Igas plokis: eesmärk, väide, tõend, CTA, variandid ET ja FI koos mõjuga ning
   - ET pealkiri: Eesti vajab juhitavat võimsust. Teie liitumine on üks koht, kus seda hoida.
   - FI pealkiri: Suomi sähköistyy nopeammin kuin verkko kasvaa.
   - FI tõend: Fingridi mukaan andmekeskuste liitumislepinguid on ligi 5 GW ja salvestite omi üle 4 GW; kõik lepingud kokku tõstaksid tarbimist ligi 40 % võrreldes 2025. aastaga (Fingrid, 18.8.2026; FI-07).
-  - Mõju: suur pilt, revolutsionääri hääl, hea mõttejuhtimise jaoks. Eesti versioon kordab hero tõendit; Eesti desünkroniseerimine (9.2.2025) oleks tugevam pilt, kuid sellel ei ole veel registririda (tühistatud väidete nimekiri, „Not in the register yet").
+  - Mõju: suur pilt, revolutsionääri hääl, hea mõttejuhtimise jaoks. Eesti versioon kordab hero tõendit. Balti süsteemide eraldumine (8.2.2025) ja sünkroniseerimine Mandri-Euroopaga (9.2.2025) oleks tugevam pilt; see on Eleringi lehtedel kontrollitud 2.11.2026, kuid registririda puudub veel (vt 6.2).
 
 **Soovitatud tekst** (variant A)
 <!-- copy:ET:Muutus -->
 > **Liitumine on vara. Arvestitagune süsteem paneb selle teenima.**
 > Liitumise eest maksate iga kuu. Kui palju sama liitumine teie heaks teha suudab, näitavad teie tunniandmed. 2026. aastast kehtivad kolm reeglit, mis töötavad arvesti taga oleva süsteemi kasuks:
-> 1.1.2026. Eraldi mõõtepunktiga salvestilt ei võeta võrku tagastatud energia ulatuses võrgutasu. Elektrituruseadus § 71 lg 10¹.
+> 1.1.2026. Kui salvestil on eraldi mõõtepunkt, ei võeta tagastatud energia koguse ulatuses edastamistasu. Elektrituruseadus § 71 lg 10¹.
 > 1.6.2026. Elektrilevi hinnakirja võimsuspaketis on kasutusvõimsuse tasu kuu kõrgeima tunni keskmise võimsuse järgi. Elektrilevi hinnakiri, Konkurentsiameti otsus 7-3/2026-028.
 > 1.9.2026. Võrguettevõtja annab tarbijale arvesti liidese kaudu peaaegu reaalajas mõõteandmed. Kliimaministeerium, 22.1.2026.
 <!-- /copy -->
 <!-- copy:FI:Muutus -->
 > **Liittymä on omaisuutta. Mittarin takainen järjestelmä panee sen tuottamaan.**
 > Liittymästä maksatte joka kuukausi. Kuinka paljon sama liittymä voi tehdä teille, sen kertoo tuntidatanne. Nämä päivämäärät muuttavat sitä:
-> 1.1.2027. Fingrid hankkii taajuusohjatut reservit vain tuntimarkkinoilta. Fingrid, 8.9.2026.
-> 2029 asti. Uudet yli 5 MW:n varastoliittymät ovat rajoitettuja Etelä-Suomessa. Fingrid, 24.9.2025.
-> 1.1.2029. Siirtohinnoittelun rakenne yhtenäistyy; missä tehomaksu on käytössä, se lasketaan kuukauden suurimman tunnin keskitehosta. Energiavirasto, 2.2.2026.
+> 1.1.2027. Fingrid hankkii taajuusohjatut reservit vuonna 2027 vain tuntimarkkinoilta. Fingrid, 8.9.2026.
+> 2029 asti. Fingrid rajoittaa uusien sähkövarastojen liittämistä Etelä-Suomessa. Fingrid, 24.9.2025.
+> 1.1.2029. Kulutuskohteiden siirtohinnoittelun rakenne yhtenäistyy; missä tehomaksu on käytössä, se lasketaan laskutuskuukauden suurimmasta 60 minuutin keskitehosta. Energiavirasto, määräys 2.2.2026.
 <!-- /copy -->
 
 #### Plokk 2. Väärtus
@@ -546,7 +551,7 @@ Need ei ole disainimuudatused, vaid sõnumi- ja reeglivead, mis on praegu avalik
 2. **Väärtusploki järjekord.** Võimsustasu on esimene, reserv kolmas. Reserv esimeseks (G1).
 3. **KKK reservivastus** algab lausega, et keegi ei saa garanteerida. Järgmine lause ütleb, et lubadust ei anta. Asendus: meetod tugevusest (plokk 7).
 4. **Pealkirjasildid ja meta.** „Isejuhtiv aku / Itseohjautuva akku" (aku süsteemi tähenduses) ja meta „Eestis ja Soomes / Suomessa ja Virossa" (G4).
-5. **Soome valupunktilause** ütleb, et lõunasse ei ehitata uusi salvestiliitumisi enne 2029. Fingridi piirang puudutab üle 5 MW liitumisi (FI-09); lause peab seda ütlema.
+5. **Soome valupunktilause** ütleb, et lõunasse ei ehitata uusi salvestiliitumisi enne 2029. Täpselt: Fingrid jätkab salvestite liitumispiirangut Lõuna-Soomes 2029. aastani ja üle 5 MW salvestiprojektid peavad kogu Soomes esitama Fingridile päringu (Fingrid, 24.9.2025; FI-09). Lause peab ütlema seda, mitte rohkem.
 6. **Eesti eelkvalifitseeritud võimsus** on juuli 2026 seisuga (76 / ligi 490 / 580 MW). Register kannab oktoobri 2026 seisu (EE-03c); uuendada või jätta esilehelt ära.
 7. **Ülivõrdega pealkiri** „Kus salvesti end kõige kiiremini ära tasub" / „Missä varasto maksaa itsensä takaisin nopeimmin" (G6 ja tasuvusväide, tühistatud väide 7).
 8. **Eesti liitumistasu lause** (Elektrilevi 331,15 €/A, ERR 16.8.2024) ei ole väidete registris. Registririda või ära.
@@ -593,7 +598,7 @@ Iga segmendi juures: kes, esimene küsimus, hirm, otsustaja, mis veenab, mis on 
 - **Esimene küsimus:** Mida teha keskpäeva toodanguga ja kas mu liitumine kannab salvestit?
 - **Hirm:** madalad päevahinnad; liitumise piirangud; võrguettevõtja tingimused; pikk kooskõlastus.
 - **Otsustaja:** omanik või investor; finantseerija.
-- **Mis veenab:** EE salvesti võrgutasu reegel eraldi mõõtepunktiga (EE-07, hinnapakett kontrollitakse hinnangus); FI piirang teeb olemasoleva liitumise varaks (FI-09); tootmise ja hinna tunnipõhine võrdlus hinnangus.
+- **Mis veenab:** EE edastamistasu reegel salvestile (EE-07; eraldi mõõtepunkt on üks neljast seaduse tingimusest, hinnapakett kontrollitakse hinnangus); FI piirang teeb olemasoleva liitumise varaks (FI-09); tootmise ja hinna tunnipõhine võrdlus hinnangus.
 - **Esilehel:** kaart „Mida teha keskpäeva toodanguga?"
 - **Alamlehel:** päike ja salvesti koos, liitumise tingimused, maa kui vara, arendusprojektid.
 
@@ -621,17 +626,30 @@ Iga esilehel kasutatud arv. Allikas ja registrirea seis SAMA väidete registrist
 
 | ID | Turg | Fakt nagu lehel | Allikas ja kuupäev | Plokk | Kontroll 2.11.2026 |
 |---|---|---|---|---|---|
-| EE-06 | EE | Juhitava võimsuse vajadus 1 200 MW (2028), 1 300 MW (2030), umbes 2 100 MW (2035) | Elering, Eesti elektrisüsteemi varustuskindluse aruanne 2025 | Hero | registris; sõltumatu kontroll pooleli |
-| EE-07 | EE | Alates 1.1.2026 ei võeta eraldi mõõtepunktiga salvestilt tagastatud energia ulatuses võrgutasu; hinnapakett kontrollitakse hinnangus | Elektrituruseadus § 71 lg 10¹ ja § 67 lg 1¹; Eleringi juhend juuni 2026 | Muutus, Kellele (alamleht) | registris; sõltumatu kontroll pooleli |
-| EE-18 | EE | Elektrilevi võimsuspaketis (VMA2) kasutusvõimsuse tasu kuu kõrgeima tunni keskmise võimsuse järgi, 2,45 €/kW kuus käibemaksuta | [Elektrilevi võrguteenuse hinnakiri, kehtib 1.6.2026](https://public-docs.elektrilevi.ee/2/7/vorguteenuse_kehtiv_hinnakiri_71ed51b53d.pdf), Konkurentsiameti otsus 7-3/2026-028 (2.3.2026) | Muutus | registris, loetud 5.10.2026 |
-| EE-15 | EE | Alates 1.9.2026 annab võrguettevõtja tarbijale arvesti liidese kaudu peaaegu reaalajas mõõteandmed | [Kliimaministeerium, 22.1.2026](https://kliimaministeerium.ee/uudised/elektriarvestite-uleminek-saab-paindlikuma-ajakava-ja-avab-uued-voimalused-tarbimise) | Muutus | registris |
-| EE-02b, EE-03c | EE | Toodete hinnad ja eelkvalifitseeritud võimsus (allikarida väärtusplokis, arvu esilehel ei ole) | [Elering, Sagedusreservide turu kokkuvõtted](https://elering.ee/sagedusreservide-turu-kokkuvotted), leht muudetud 19.10.2026 | Väärtus | registris, loetud 21.10.2026 |
-| FI-27 | FI | Fingrid hankkii reservejä joka tunti keskimäärin noin 1 500 MW ja arvioi tarvitsevansa noin 1 200 MW lisää viiden vuoden kuluessa | [Fingrid, Reservimarkkinat tutuiksi -webinaari, 11.6.2025](https://www.fingrid.fi/globalassets/reservimarkkinat-tutuiksi-webinaari-11.6.2025-1.pdf) | Hero | registris; sõltumatu kontroll pooleli |
-| FI-01 | FI | Taajuusohjatut reservit (FCR) 1.1.2027 alkaen vain tuntimarkkinoilta | Fingrid, uutinen 8.9.2026; [Fingrid, johdon katsaus 1.1.–30.9.2026, 29.10.2026](https://www.sttinfo.fi/tiedote/72456696/fingrid-konsernin-johdon-katsaus-11-3092026?lang=fi) | Muutus | registris; sõltumatu kontroll pooleli |
-| FI-09 | FI | Uudet yli 5 MW:n varastoliittymät rajoitettu Etelä-Suomessa vuoteen 2029 | Fingrid, tiedote 24.9.2025 | Muutus, Kellele | registris; sõltumatu kontroll pooleli |
-| FI-11 | FI | Siirtohinnoittelun rakenne yhtenäistyy 1.1.2029 mennessä; missä tehomaksu on käytössä, se lasketaan kuukauden suurimman tunnin keskitehosta | Energiavirasto, päätös 2.2.2026 | Muutus | registris; sõltumatu kontroll pooleli |
-| FI-06 | FI | Energiavarastojen osuus FCR-N:n säätökokein todennetusta kapasiteetista 29 % (helmikuu 2025) | Fingrid, Energiavarastot reservimarkkinoilla, 10.2.2025 | Väärtus | registris; sõltumatu kontroll pooleli |
-| FI-07 | FI | Datakeskusten liittymissopimuksia lähes 5 GW, varastojen yli 4 GW; sopimukset nostaisivat kulutusta lähes 40 % vuoden 2025 tasosta | Fingrid, uutinen 18.8.2026; toistettu johdon katsauksessa 29.10.2026 | Muutus, variant C | registris; sõltumatu kontroll pooleli |
+| EE-06 | EE | Juhitava võimsuse vajadus umbes 1 300 MW (2030) ja umbes 2 100 MW (2035) | [Elering, Eesti elektrisüsteemi varustuskindluse aruanne 2025](https://elering.ee/sites/default/files/public/varustuskindluse%20konverentsid/2025/Elering_VKA_2025_veeb-1.pdf), 8.12.2025 | Hero | Kinnitatud. Aruande 2030. aasta baasstsenaarium arvestab salvesteid 600 MW / 1 200 MWh olemasoleva või kindlana ja loeb juhitavaks 25 % salvesti võimsusest; seda ei esitata vajaduse ega eesmärgina. |
+| EE-07 | EE | Kui salvestil on eraldi mõõtepunkt, ei võeta tagastatud energia koguse ulatuses edastamistasu (alates 1.1.2026) | [Elektrituruseadus § 71 lg 10¹, Riigi Teataja](https://www.riigiteataja.ee/public-api/api/v1/akt/130062026016/txt) | Muutus | Täpsustatud. Vabastus puudutab ainult edastamistasu ja võrgust laetud elektrit, mis tagastatakse samal perioodil, kui täidetud on üks neljast tingimusest (§ 59² lg 10 p 1 kuni 4); eraldi mõõtepunkt (§ 67 lg 1¹) on üks neist. Salvestatud elektri võrku andmine on edastamistasust vaba alates 25.3.2022 (§ 71 lg 10). |
+| EE-18 | EE | Elektrilevi võimsuspaketis (VMA2) kasutusvõimsuse tasu kuu kõrgeima tunni keskmise võimsuse järgi, 2,45 €/kW kuus käibemaksuta | [Elektrilevi võrguteenuse hinnakiri, kehtib 1.6.2026](https://public-docs.elektrilevi.ee/2/7/vorguteenuse_kehtiv_hinnakiri_71ed51b53d.pdf), Konkurentsiameti otsus 7-3/2026-028 (2.3.2026) | Muutus | Registris, loetud 5.10.2026; täna eraldi ei kontrollitud. |
+| EE-15 | EE | Alates 1.9.2026 annab võrguettevõtja tarbijale arvesti liidese kaudu peaaegu reaalajas mõõteandmed | [Kliimaministeerium, 22.1.2026](https://kliimaministeerium.ee/uudised/elektriarvestite-uleminek-saab-paindlikuma-ajakava-ja-avab-uued-voimalused-tarbimise) | Muutus | Registris; täna eraldi ei kontrollitud. |
+| EE-02b, EE-03c | EE | Toodete hinnad ja eelkvalifitseeritud võimsus (allikarida väärtusplokis, arvu esilehel ei ole) | [Elering, Sagedusreservide turu kokkuvõtted](https://elering.ee/sagedusreservide-turu-kokkuvotted) | Väärtus | Kinnitatud: leht muudetud 2.11.2026, tabel oktoober 2026 (FCR 76, aFRR 602 / 685, mFRR 1 617 / 1 657 MW). |
+| FI-27 | FI | Fingrid hankkii reservejä joka tunti keskimäärin noin 1 500 MW ja arvioi tarvitsevansa noin 1 200 MW lisää viiden vuoden kuluessa | [Fingrid, Reservimarkkinat tutuiksi -webinaari, 11.6.2025](https://www.fingrid.fi/globalassets/reservimarkkinat-tutuiksi-webinaari-11.6.2025-1.pdf) | Hero | Kinnitatud. |
+| FI-01 | FI | Taajuusohjatut reservit (FCR) vuonna 2027 vain tuntimarkkinoilta | [Fingrid, 8.9.2026](https://www.sttinfo.fi/tiedote/72301852/taajuusohjatun-kaytto-ja-hairioreservin-hankinta-keskitetaan-tuntimarkkinoille-2027?lang=fi); [Fingrid, johdon katsaus 1.1.–30.9.2026, 29.10.2026](https://www.sttinfo.fi/tiedote/72456696/fingrid-konsernin-johdon-katsaus-11-3092026?lang=fi) | Muutus | Täpsustatud: kehtib 2027. aastaks; aastaturu lisad lõpevad 31.12.2026 ja Fingrid otsustab aastaturu jätkamise pärast 2027. aastat. |
+| FI-09 | FI | Fingrid rajoittaa uusien sähkövarastojen liittämistä Etelä-Suomessa vuoteen 2029 | [Fingrid, tiedote 24.9.2025](https://www.sttinfo.fi/tiedote/71476598/fingrid-varmistaa-siirtokapasiteettia-sahkonkulutuksen-kasvulle-ja-uusille-teollisille-investoinneille-sahkovarastojen-liityntarajoitusta-jatketaan-etela-suomessa?publisherId=69819787&lang=fi) | Muutus, Kellele | Täpsustatud: piirang kehtib, kuni Hikiä ja Toivila vaheline ühendus valmib 2029; 5 MW on kogu Soome päringulävi, mitte piirangu definitsioon. |
+| FI-11 | FI | Kulutuskohteiden siirtohinnoittelun rakenne yhtenäistyy 1.1.2029; missä tehomaksu on käytössä, se lasketaan laskutuskuukauden suurimmasta 60 minuutin keskitehosta | [Energiavirasto, määräys 2340/000002/2025, annettu 2.2.2026](https://www.finlex.fi/api/media/authority-regulation/911686/mainPdf/main.pdf) | Muutus | Täpsustatud: alla 110 kV tarbimiskohtade tooted; madalpingel kuni 3×63 A arvestatakse enne maha 8 kW; tootmise ja salvestite tooteid määrus ei puuduta. |
+| FI-06 | FI | Energiavarastojen osuus FCR-N:n säätökokein todennetusta kapasiteetista 29 % (117 MW, helmikuu 2025) | [Fingrid, Energiavarastot reservimarkkinoilla, 10.2.2025](https://www.fingrid.fi/globalassets/dokumentit/fi/yhtio/toimikunnat/markkinatoimikunta/smtk125_-smtk-2025-1-energiavarastot-reservimarkkinoilla.pdf) | Väärtus | Kinnitatud. |
+| FI-07 | FI | Datakeskusten liittymissopimuksia lähes 5 GW, varastojen yli 4 GW; sopimukset nostaisivat kulutusta lähes 40 % vuoden 2025 tasosta | [Fingrid, 18.8.2026](https://www.sttinfo.fi/tiedote/72239761/sahkonkulutus-on-kaantymassa-voimakkaaseen-kasvuun-rinnalle-tarvitaan-lisaa-saatovoimaa?lang=fi) | Muutus, variant C | Kinnitatud. Andmekeskuste arv sisaldab jaotusvõrgu projekte; Fingridi järgi võtaks see vähemalt viis aastat ja kõiki projekte ei ehitata. |
+
+### 6.2 Registriridade ettepanekud
+
+Turuseire agendile, sest väidete registrit muudab tema ja need read peavad enne avalikku kasutust registris olema.
+
+1. **FI-09:** sõnastus „Fingrid jatkaa sähkövarastojen liityntärajoitusta Etelä-Suomessa vuoteen 2029 (Hikiä–Toivila); yli 5 MW:n varastohankkeet koko Suomessa lähettävät Fingridille liittymissopimustiedustelun" ja URL ülal.
+2. **FI-11:** ulatus (alla 110 kV tarbimiskohtade tooted, 60 minuti keskmine, 8 kW mahaarvamine kuni 3×63 A, tootmise ja salvestite tooted välja arvatud) ja Finlexi URL.
+3. **FI-01:** „vuonna 2027" ja aastaturu jätkamise otsus pärast 2027. aastat; URL.
+4. **EE-07:** „edastamistasu" (mitte „võrgutasu"), neli tingimust ja ekspordi vabastus alates 25.3.2022; Riigi Teataja URL.
+5. **Uus Eesti rida:** Balti süsteemid eraldusid IPS/UPS-ist 8.2.2025 ja sünkroniseeriti Mandri-Euroopaga 9.2.2025; Balti tasakaalustamisvõimsuse turg alates 4. ja 5.2.2025 (Elering, [5.2.2025](https://www.elering.ee/en/article/baltic-electricity-transmission-system-operators-launch-baltic-balancing-capacity-market), [8.2.2025](https://www.elering.ee/en/article/estonian-latvian-and-lithuanian-power-systems-disconnected-russian-ipsups-system), [9.2.2025](https://www.elering.ee/en/article/estonian-latvian-and-lithuanian-power-systems-successfully-synchronised-continental-europe)).
+6. **Uus Eesti rida:** Kiisa osaleb mFRR-is ELi erandiga kuni novembrini 2028 (Elering, [7.11.2025](https://www.elering.ee/en/article/baltic-electricity-transmission-operators-announce-plan-phase-out-balancing-resources)); roll reserviturul vähenes 25 MW võrra alates 1.7.2026 (Elering, [30.6.2026](https://www.elering.ee/artikkel/elering-vahendab-kiisa-elektrijaama-rolli-reserviturul)).
+7. **EE-06 märkus:** 600 MW / 1 200 MWh on 2030. aasta baasstsenaariumi eeldus, mitte vajadus.
+8. **Ei kasutata:** võimsusmehhanismi esimesed oksjonid 2028 on leitud ainult ERR-ist (30.9.2026), Eleringi enda lehelt mitte.
 
 ## 7. Viis otsust
 
@@ -656,4 +674,10 @@ Konkurendid, kõik loetud 2.11.2026:
 
 SAMA sisemised alused: energiasammas (11.10.2026), `claude/doktriin.md`, `claude/turuseire/claims-register.md` (2.11.2026), `claude/turuseire/2026-W45.md`, `claude/muugimaterjalid/koulutus/07-withdrawn-statements.md` (v5), `claude/otsused` (D-20261007-2, D-20261012-1, D-20261012-3), `claude/turundus/plaan-2026-10-13.md`, repo `CLAUDE.md`.
 
-Turuarvude esmaallikad on arvude registri tabelis (peatükk 6). Registris ilma URL-ita read (FI-01, FI-06, FI-09, FI-11, EE-06, EE-07) saavad URL-i sõltumatu kontrolli järel.
+Turuarvude esmaallikad on arvude registri tabelis (peatükk 6), kontrollitud 2.11.2026.
+
+Uuringud:
+- [Nielsen Norman Group, Scrolling and Attention, 15.4.2018](https://www.nngroup.com/articles/scrolling-and-attention/)
+- [Gartner, Commercial Strategy Guide](https://www.gartner.com/en/sales/trends/commercial-strategy-guide) (leht ilma kuupäevata, loetud 2.11.2026)
+- [Gartner, pressiteade 29.4.2019](https://www.gartner.com/en/newsroom/press-releases/2019-04-29-gartner-says-marketers-must-focus-on-helping-customer)
+- [Edelman ja LinkedIn, 2024 B2B Thought Leadership Impact Report](https://www.edelman.com/insights/thought-leadership-gets-b2b-buyers-back-into-game)
