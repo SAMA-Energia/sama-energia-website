@@ -392,3 +392,18 @@ When in doubt, leave it out and flag it.
   viesti oikealla, alla viiden kuvan kokonaisuus (iso kuva 2×2 + neljä; ET Ralos ×2, Soleron, kaksi omaa; FI Ralos,
   Avant Power, Gare, JSM, Scanoffice). Natiivitarkistus: ET Madis, FI Martin.
 - site.css 78,7 kt (oma tavoite 76 kt ylittyy hieman; raja 92 kt).
+
+## Perustajan päätökset 6.11.2026 (Madis) — kartta ja paikan kortti
+
+Madis 6.11.2026 (vestlus C, vastaukset kysymyksiin; päätöslokiin lisättävä):
+- Osoitehaku ja tarkka aluskartta valtion rekistereistä OMAN Netlify-funktion kautta: Viro Maa- ja Ruumiamet (In-ADS, ei avainta),
+  Suomi Maanmittauslaitos (ilmainen API-avain ympäristömuuttujana `MML_API_KEY`, ei repoon). Selain puhuu vain omalle alkuperälle;
+  "ei kolmannen osapuolen pyyntöä" pätee edelleen selaimeen (verify-pages). Google ei.
+- Kartalla ja paikan kortissa saa nimetä datakeskusten, voima- ja varastopuistojen, siirtoyhteyksien ja verkkoyhtiöiden omistajat,
+  kun nimellä on lähde ja päivä. Laajennus koskee vain kartta-aineistoa (`assets/kartta-solmut.json`, kartan kortti); muun sivuston
+  nimireegli ja vartijat (VENI, EP Energy, Energen Nordic, Roofit.Solar, kaksi rahoittajaa, mallinimet) pysyvät ennallaan.
+- Kartalle myös julkisesti ilmoitetut suunnitelmat (datakeskukset, puistot, yhteydet, verkkoinvestoinnit): jokaisella tila
+  käytössä / rakenteilla / päätetty / ilmoitettu, lähde ja päivä. Fingridin ja Eleringin liittymiskyselyjen koosteluvut pysyvät pois (5.11.2026).
+- Paikan kortti laskee: liittymisen säännöt paikassa (Fingrid 1.6.2026, Elering), verkkoyhtiö ja tehomaksun / võimsustasu säästö
+  (verkkoyhtiö nimetään), aurinkotuotto PVGIS:stä (EU JRC) ja vie paikan arviolomakkeeseen näkyvänä, muokattavana kenttänä
+  (tietosuojateksti muuttuu sen mukaan).
