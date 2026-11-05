@@ -36,6 +36,8 @@ S = {
     'fg-rajoitus': {'pub': 'Fingrid', 'date': '2025-09-26',
                     'url': 'https://www.fingrid.fi/en/news/news/2025/fingrid-secures-transmission-capacity-for-growth-in-electricity-consumption-and-new-industrial-investments--restrictions-on-new-energy-storage-facility-connections-continued-in-southern-finland'},
     'bf-google': {'pub': 'Business Finland', 'date': '2024', 'url': 'https://www.businessfinland.com/news/2024/google-purchases-land-for-future-expansion-of-its-cloud-and-data-center-infrastructure-in-finland/'},
+    'fg-q3': {'pub': 'Fingrid, johdon katsaus 1.1.–30.9.2026', 'date': '2026-10-29', 'url': 'https://www.fingrid.fi/ajankohtaista/tiedotteet/2026/fingrid-konsernin-johdon-katsaus-1.1.30.9.2026/'},
+    'el-el3p': {'pub': 'Elering, EstLink 3', 'date': '2026-06-10', 'url': 'https://www.elering.ee/estlink-3'},
     'el-el3': {'pub': 'Elering, EstLink 3 maismaaosa (riigi eriplaneering)', 'date': '2026-11-06', 'url': 'https://elering.ee/en/node/3894'},
     'err-ulemiste': {'pub': 'ERR', 'date': '2024-07-26', 'url': 'https://www.err.ee/1609407712/elering-tahab-estlink-3-tottu-ulemiste-jarve-aarde-uue-alajaama-ehitada'},
 }
@@ -164,7 +166,7 @@ LINES = [
     ('fg5', 'Herva–Nuojuankangas 400 kV', 'Herva', 'Nuojuankangas', 'con', 2026, 'fg-ksu', None, None),
     ('fg6', 'Jylkkä–Alajärvi 400+110 kV', 'Jylkkä', 'Alajärvi', 'con', 2028, 'fg-ksu', None, None),
     ('fg7', 'Alajärvi–Toivila 400+110 kV', 'Alajärvi', 'Toivila', 'con', 2028, 'fg-ksu', None, None),
-    ('fg8', 'Toivila–Hikiä 400 kV', 'Toivila', 'Hikiä', 'con', 2028, 'fg-rajoitus',
+    ('fg8', 'Toivila–Hikiä 400 kV', 'Toivila', 'Hikiä', 'con', 2029, 'fg-q3',
      'Fingrid sitoo Etelä-Suomen sähkövarastojen liittämisrajoituksen tähän yhteyteen: rajoitus jatkuu vuoteen 2029.',
      'Fingrid seob Lõuna-Soome salvestite liitumispiirangu selle ühendusega: piirang kestab 2029. aastani.'),
     ('fg9', 'Kristiinankaupunki–Nokia 400+110 kV', 'Kristiinankaupunki', 'Nokia', 'con', 2029, 'fg-ksu', None, None),
@@ -188,9 +190,9 @@ LINES = [
     ('el-tk', 'Tallinna uus alajaam–Kiisa 330 kV', 'Ülemiste', 'Kiisa', 'plan', None, 'err-ulemiste', None, None),
 ]
 LINKS = [  # rajayhteydet: piste (ja suunta), ei reittiä
-    {'id': 'estlink3', 'n': 'EstLink 3', 'o': 'Elering, Fingrid', 'mw': 700, 's': 'plan', 'y': 2040, 'at': 'Aulepa', 'to': [23.25, 59.45], 'src': 'fg-raja',
-     'note': {'fi': 'Muuttaja-asema Aulepan lähelle (Lääne-Nigula). Noin 120 km tasavirtakaapeli läntisellä Suomenlahdella; Suomen pään asema on auki, myös länsirannikon vaihtoehtoja tutkitaan. Valmis vuoteen 2040 mennessä.',
-              'et': 'Muundurjaam Aulepa lähedale (Lääne-Nigula vald). Umbes 120 km alalisvoolukaabel Soome lahe lääneosas; Soome otsa alajaam on lahtine, uuritakse ka läänerannikut. Valmib 2040. aastaks.'},
+    {'id': 'estlink3', 'n': 'EstLink 3', 'o': 'Elering, Fingrid', 'mw': 700, 's': 'plan', 'y': '2038–2040', 'at': 'Aulepa', 'to': [23.25, 59.45], 'src': 'el-el3p', 'src3': 'fg-raja',
+     'note': {'fi': 'Muuttaja-asema Aulepan lähelle (Lääne-Nigula). Noin 120 km tasavirtakaapeli läntisellä Suomenlahdella; Suomen pään asema on auki, myös länsirannikon vaihtoehtoja tutkitaan. Valmis 2038–2040.',
+              'et': 'Muundurjaam Aulepa lähedale (Lääne-Nigula vald). Umbes 120 km alalisvoolukaabel Soome lahe lääneosas; Soome otsa alajaam on lahtine, uuritakse ka läänerannikut. Valmib 2038–2040.'},
      'src2': 'el-el3'},
     {'id': 'fennoskan3', 'n': 'Fenno-Skan 3', 'o': 'Fingrid, Svenska kraftnät', 'mw': 800, 'mw0': 600, 's': 'pre', 'y': 2040, 'at': 'Rauma', 'to': [20.3, 61.1], 'src': 'fg-raja',
      'note': {'fi': 'Samalle alueelle kuin nykyiset Fenno-Skan-kaapelit, reilut 200 km. 600–800 MW, valmis vuoteen 2040 mennessä.',
@@ -270,7 +272,8 @@ for (iid, nm, a, b, st, y, src, nfi, net) in LINES:
     if y: it['y'] = y
     if approx(a, b): it['ax'] = 1
     if nfi: it['note'] = {'fi': nfi, 'et': net}
-    if src != 'fg-ksu' and iid.startswith('fg'): it['src2'] = 'fg-ksu'
+    if iid == 'fg8': it['src2'] = 'fg-rajoitus'; it['src3'] = 'fg-ksu'
+    elif src != 'fg-ksu' and iid.startswith('fg'): it['src2'] = 'fg-ksu'
     if iid.startswith('el') and src != 'el-el3': it['src2'] = 'el-el3'
     add(it)
 for x in LINKS:
@@ -278,17 +281,22 @@ for x in LINKS:
           'y': x['y'], 'p': pt(x['at']), 'to': x['to'], 'src': x['src'], 'note': x['note'], 'ax': 1}
     if 'mw0' in x: it['mw0'] = x['mw0']
     if 'src2' in x: it['src2'] = x['src2']
+    if 'src3' in x: it['src3'] = x['src3']
     add(it)
 
 # tarkistukset
 ids = [i['id'] for i in items]
 assert len(ids) == len(set(ids)), 'kaksoistunniste'
 for i in items:
-    assert i['src'] in S, i
+    assert i['src'] in S and all(i.get(k) in S for k in ('src2', 'src3') if i.get(k)), i
     assert i['s'] in STATUS, i
     for q in ([i['p']] if 'p' in i else []) + i.get('g', []):
         assert 19 < q[0] < 32.5 and 57.3 < q[1] < 70.2, (i['id'], q)
 
+def fidate(x):   # 2026-11-04 → 4.11.2026 (sama muoto kuin kartta-data.json); pelkkä vuosi sellaisenaan
+    m = re.match(r'^(\d{4})-(\d{2})-(\d{2})$', x)
+    return f'{int(m.group(3))}.{int(m.group(2))}.{m.group(1)}' if m else x
+for q in S.values(): q['date'] = fidate(q['date'])
 out = {'date': DATE, 'sources': S, 'status': STATUS, 'kind': KIND,
        'note': {'fi': 'Reitit ovat suuntaa-antavia: viiva yhdistää päätepisteet. ~ = sijainti likimääräinen.',
                 'et': 'Trassid on suunda näitavad: joon ühendab otspunkte. ~ = asukoht ligikaudne.'},

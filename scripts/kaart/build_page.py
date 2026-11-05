@@ -159,7 +159,7 @@ def page(D, lang):
     <p class="lead">{e(X["lead"])}</p>
   </div>
 </section>
-<section class="km" data-kartta data-lang="{lang}" data-home="{X["home"]}" data-pohja="/assets/kartta-pohja.json" data-v110="/assets/kartta-110.json" data-src="/assets/kartta-data.json">
+<section class="km" data-kartta data-lang="{lang}" data-home="{X["home"]}" data-pohja="/assets/kartta-pohja.json" data-v110="/assets/kartta-110.json" data-src="/assets/kartta-data.json" data-solmut="/assets/kartta-solmut.json">
   <div class="km-grid">
     <div class="km-chs">
       <p class="km-intro lead">{e(X["how"])}</p>

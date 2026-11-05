@@ -38,10 +38,16 @@
   var UI = {
     fi: { compare: 'Vertaa Viroon', compareOff: 'Vain Suomi', layer: 'Kerros', src: 'Lähde', sources: 'Lähteet', def: 'Vertailtavuus',
       pays: 'Kuka maksaa', fail: 'Karttaa ei voitu ladata. Kaikki luvut ovat tekstissä.', home: 'Suomi', other: 'Viro', map: 'Kartta',
-      me: 'Kohteenne', v110: '110 kV', loading: 'ladataan…', note110: '110 kV: kaikki OpenStreetMapiin merkityt 110 kV:n johdot, myös jakeluverkkoyhtiöiden.' },
+      me: 'Kohteenne', v110: '110 kV', loading: 'ladataan…', note110: '110 kV: kaikki OpenStreetMapiin merkityt 110 kV:n johdot, myös jakeluverkkoyhtiöiden.',
+      since: 'vuodesta', ready: 'valmis', route: 'Reitti suuntaa-antava: viiva yhdistää päätepisteet.', approx: 'Sijainti likimääräinen.',
+      osm: 'OpenStreetMap-tekijät (ODbL 1.0)', page: 'Hankesivu', osmObj: 'Kohde OpenStreetMapissa',
+      leg: { op: 'käytössä', con: 'rakenteilla', plan: 'luvitus, kaava tai selvitys' } },
     et: { compare: 'Võrdle Soomega', compareOff: 'Ainult Eesti', layer: 'Kiht', src: 'Allikas', sources: 'Allikad', def: 'Võrreldavus',
       pays: 'Kes maksab', fail: 'Kaarti ei õnnestunud laadida. Kõik arvud on tekstis.', home: 'Eesti', other: 'Soome', map: 'Kaart',
-      me: 'Teie objekt', v110: '110 kV', loading: 'laeb…', note110: '110 kV: kõik OpenStreetMapi märgitud 110 kV liinid, sh jaotusvõrguettevõtjate omad.' }
+      me: 'Teie objekt', v110: '110 kV', loading: 'laeb…', note110: '110 kV: kõik OpenStreetMapi märgitud 110 kV liinid, sh jaotusvõrguettevõtjate omad.',
+      since: 'alates', ready: 'valmib', route: 'Trass on suunda näitav: joon ühendab otspunkte.', approx: 'Asukoht ligikaudne.',
+      osm: 'OpenStreetMapi kaastöölised (ODbL 1.0)', page: 'Projekti leht', osmObj: 'Objekt OpenStreetMapis',
+      leg: { op: 'töös', con: 'ehitusel', plan: 'loamenetlus, planeering või uuring' } }
   }[LANG];
 
   var state = { layer: 0, compare: false, data: null, net: null, view: null, anim: 0, tipFor: null, feats: [], v110: 0, ready: false, zt: 0 };
@@ -148,6 +154,24 @@
     /* viivoitus samoin: noin 9 px välein ja 1,4 px paksu myös lähelle zoomattuna */
     var hp = document.getElementById(X + 'hatch');
     if (hp) { var S = 9 * k, ln = hp.firstChild; hp.setAttribute('width', f1(S)); hp.setAttribute('height', f1(S)); ln.setAttribute('y2', f1(S)); ln.style.strokeWidth = (1.4 * k).toFixed(2); }
+    if (!state.dq) state.dq = requestAnimationFrame(declutter);
+  }
+  /* päällekkäiset tunnisteet: tärkein ensin (kerroksen omat tunnisteet, sitten solmut tehon mukaan), alempi piiloon.
+     Lasketaan näytön koordinaateissa aina kun näkymä muuttuu; piilotettu kohde näkyy yhä merkkinä ja vihjeessä. */
+  function declutter() {
+    state.dq = 0;
+    var g = el.svg && el.svg.querySelector('.km-fx > g.on');
+    if (!g) return;
+    var tx = [].slice.call(g.querySelectorAll('text')), kept = [];
+    tx.forEach(function (n) { n.classList.remove('km-hid'); });
+    tx.sort(function (a, b) { return (b.hasAttribute('data-pr') ? +b.getAttribute('data-pr') : 1e5) - (a.hasAttribute('data-pr') ? +a.getAttribute('data-pr') : 1e5); });
+    tx.forEach(function (n) {
+      if (!visibleC(n.getAttribute('data-c'))) return;
+      var r = n.getBoundingClientRect();
+      if (!r.width) return;
+      if (kept.some(function (q) { return r.left < q.right + 4 && r.right > q.left - 4 && r.top < q.bottom + 2 && r.bottom > q.top - 2; })) n.classList.add('km-hid');
+      else kept.push(r);
+    });
   }
   function goView(animate) {
     var to = targetView(), from = state.view;
@@ -177,7 +201,57 @@
       });
       (L.fx || []).forEach(function (x) { var f = {}; for (var k in x) f[k] = x[k]; f.layer = i; f.c = x.c || 'X'; out.push(f); });
     });
+    var SM = state.solmut;
+    if (SM) {
+      var li = {};
+      state.data.layers.forEach(function (L, i) { li[L.id] = i; });
+      SM.items.forEach(function (it) {
+        var layer = li[ND_LAYER[it.k]];
+        if (layer != null) out.push({ t: 'nd', layer: layer, c: it.c, it: it, lab: it.n, src: it.src });
+      });
+    }
     return out;
+  }
+  /* solmut: kerros lajin mukaan, koko tehon mukaan (px, ei skaalaudu), tunniste vain suurimmille (muut vihjeessä) */
+  var ND_LAYER = { dc: 'tarbimine', wind: 'tootmine', solar: 'tootmine', bess: 'salvestid', line: 'tulevik', link: 'tulevik' };
+  var ND_HOLLOW = { per: 1, plan: 1, pre: 1, cond: 1 };
+  function ndMw(it) { return it.mw != null ? it.mw : (it.mwit != null ? it.mwit : 0); }
+  function ndSize(it) {
+    var mw = ndMw(it), k = it.k === 'dc' ? 1.05 : 1.15;
+    return mw ? Math.round(Math.min(it.k === 'dc' ? 19 : 21, Math.max(5, Math.sqrt(mw) * k)) * 10) / 10 : 5;
+  }
+  function num(n) { return String(n).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '\u00a0'); }
+  function owner(o) { return o ? o.replace(/\s*\(.*\)$/, '').replace(/\s+\d{3,}.*$/, '').replace(/[, ]+(Oyj?|AS|OÜ|AB|Inc\.?|Ltd|ltd|Holdings|Corp)\b.*$/, '').trim() : ''; }
+  function ndMwText(it) {
+    var a = it.mw0 ? num(it.mw0) + '–' + num(it.mw) + ' MW' : (it.mw != null ? num(it.mw) + ' MW' : '');
+    if (it.mwit != null) a += (a ? ' · ' : '') + 'IT ' + num(it.mwit) + ' MW';
+    return a;
+  }
+  function ndLabel(it) {
+    var mw = ndMw(it);
+    if (it.k === 'line' || it.k === 'link' || it.k === 'bess') return true;
+    if (it.k === 'dc') return mw >= 250 || /^Google/.test(it.o || '') || it.c === 'EE';
+    if (it.k === 'wind') return mw >= (it.c === 'EE' ? 90 : 190);
+    return mw >= 50;
+  }
+  function ndText(it) {
+    if (it.k === 'line') return it.n.replace(/\s*\d{3}(\+110)? kV.*$/, '') + (it.y ? ' ' + it.y : '');
+    if (it.k === 'link') return it.n + '\n' + ndMwText(it) + ' · ' + it.y;
+    var head = it.k === 'dc' && it.o ? owner(it.o) + (it.m ? ' · ' + it.m : '') : it.n;
+    return head + (ndMw(it) ? '\n' + ndMwText(it).split(' · ')[0] : '');
+  }
+  function ndTip(it) {
+    var SM = state.solmut, st = SM.status[it.s], h = [];
+    var since = it.s === 'op' ? UI.since : UI.ready, mw = ndMwText(it);
+    h.push('<b>' + esc(it.n) + '</b>');
+    h.push('<span>' + esc(t(SM.kind[it.k])) + (it.o ? ' · ' + esc(it.o) : '') + (it.m ? ' · ' + esc(it.m) : '') + '</span>');
+    h.push('<span>' + esc(t(st)) + (it.y ? ' · ' + since + ' ' + it.y : '') + (mw ? ' · ' + esc(mw) : '') + '</span>');
+    if (it.note) h.push('<span>' + esc(t(it.note)) + '</span>');
+    if (it.ax || it.route) h.push('<span class="km-tip-ax">' + esc(it.route ? UI.route : UI.approx) + '</span>');
+    var sl = function (id) { var q = SM.sources[id]; return q ? '<a href="' + esc(q.url) + '" target="_blank" rel="noopener">' + esc(/openstreetmap/.test(q.url) ? UI.osm : q.pub) + '</a> · ' + esc(q.date) : ''; };
+    h.push('<small>' + UI.src + ': ' + sl(it.src) + (it.src2 ? '; ' + sl(it.src2) : '') + (it.src3 ? '; ' + sl(it.src3) : '') +
+      (it.u ? ' · <a href="' + esc(it.u) + '" target="_blank" rel="noopener">' + esc(/datakeskusrekisteri/.test(it.u) ? UI.page : UI.osmObj) + '</a>' : '') + '</small>');
+    return h.join('');
   }
 
   /* ---------- piirto ----------
@@ -261,6 +335,19 @@
         g.fx.push('<circle class="km-ring km-ring-a"' + tip + ' cx="' + f1(c[0]) + '" cy="' + f1(c[1]) + '" r="' + f1(Math.sqrt(f.r[0]) * k) + '"/>');
         g.fx.push('<circle class="km-ring km-ring-b"' + tip + ' cx="' + f1(c[0]) + '" cy="' + f1(c[1]) + '" r="' + f1(Math.sqrt(f.r[1]) * k) + '"/>');
         g.lb.push(label(f, f.ll, 'km-lbl km-lbl-ring', tip));
+      } else if (f.t === 'nd') {
+        var it = f.it;
+        if (it.g) {
+          var dl = pathOf(it.g);
+          g.fx.push('<path class="km-nl km-s-' + it.s + '"' + tip + ' d="' + dl + '"/><path class="km-hit"' + tip + ' d="' + dl + '"/>');
+          g.lb.push(label({ ta: 'middle' }, along(it.g, 0.5), 'km-lbl km-lbl-nl', tip, ndText(it)).replace('<text ', '<text data-pr="' + ({ con: 800, op: 700, per: 600, plan: 500, pre: 400, cond: 300 }[it.s] || 300) + '" '));
+        } else {
+          var pp = xy(it.p), w = ndSize(it);
+          if (it.to) { var q = xy(it.to); g.fx.push('<path class="km-nlink"' + tip + ' d="M' + f1(pp[0]) + ' ' + f1(pp[1]) + 'L' + f1(q[0]) + ' ' + f1(q[1]) + '" marker-end="url(#' + X + 'arrow)"/>'); }
+          g.fx.push('<path class="km-pt km-nd km-nd-' + it.k + ' km-s-' + it.s + '"' + tip + ' style="stroke-width:' + w + 'px" d="' + dot(pp) + '"/>');
+          if (ND_HOLLOW[it.s]) g.fx.push('<path class="km-ndh km-nd-' + it.k + '" style="stroke-width:' + Math.max(2, w - 4) + 'px" d="' + dot(pp) + '"/>');
+          if (ndLabel(it)) g.lb.push(label({ ta: it.c === 'EE' && it.p[0] < 24.2 ? 'end' : '' }, it.p, 'km-lbl km-lbl-pt km-lbl-nd' + (it.k === 'dc' ? ' km-lbl-dc' : ''), tip, ndText(it)).replace('<text ', '<text data-pr="' + (it.k === 'link' ? 900 : Math.min(890, ndMw(it))) + '" '));
+        }
       } else if (f.t === 'pt' || f.t === 'you') {
         var p = xy(f.ll);
         var yo = f.t === 'you' ? ' data-you="1"' : '';
@@ -350,6 +437,8 @@
       if (on) { n.setAttribute('role', 'button'); n.setAttribute('aria-label', flat(t(state.feats[+n.getAttribute('data-tip')].lab))); }
     });
     el.svg.setAttribute('aria-label', UI.map + ' — ' + t(L.q));
+    legend(i);
+    if (!state.dq) state.dq = requestAnimationFrame(declutter);
     renderInset();
     caption();
     hideTip();
@@ -358,6 +447,15 @@
       var mp = root.querySelector('.km-map');
       if (mp) mp.scrollIntoView({ behavior: REDUCED ? 'auto' : 'smooth', block: 'start' });
     }
+  }
+  function ndOf(i) { return state.feats.filter(function (f) { return f.t === 'nd' && f.layer === i && visibleC(f.c); }); }
+  function legend(i) {
+    if (!el.leg) return;
+    var have = {};
+    ndOf(i).forEach(function (f) { have[f.it.s === 'op' ? 'op' : f.it.s === 'con' ? 'con' : 'plan'] = 1; });
+    var ks = ['op', 'con', 'plan'].filter(function (k) { return have[k]; });
+    el.leg.hidden = !ks.length;
+    el.leg.innerHTML = ks.map(function (k) { return '<span><i class="km-lg-' + k + '"></i>' + esc(UI.leg[k]) + '</span>'; }).join('');
   }
   function setCompare(on) {
     state.compare = !!on;
@@ -399,13 +497,17 @@
     var L = state.data.layers[state.layer], ids = [];
     [HOME].concat(state.compare ? [OTHER] : []).forEach(function (c) { if (L.big && L.big[c]) ids = ids.concat(L.big[c].src); });
     ids = ids.filter(function (x, k) { return ids.indexOf(x) === k; });
+    var SM = state.solmut, nds = [];
+    if (SM) ndOf(state.layer).forEach(function (f) { [f.it.src, f.it.src2, f.it.src3].forEach(function (id) { if (id && nds.indexOf(id) < 0) nds.push(id); }); });
+    var links = ids.map(srcLink).concat(nds.map(function (id) { var q = SM.sources[id]; return '<a href="' + esc(q.url) + '" target="_blank" rel="noopener">' + esc(/openstreetmap/.test(q.url) ? UI.osm : q.pub) + '</a> · ' + esc(q.date); }));
     el.caption.innerHTML = '<b>' + UI.layer + ' ' + (state.layer + 1) + '/' + state.data.layers.length + '</b> · ' + esc(t(L.q)) +
-      (ids.length ? ' · ' + UI.sources + ': ' + ids.map(srcLink).join('; ') : '') +
+      (links.length ? ' · ' + UI.sources + ': ' + links.join('; ') : '') +
       (el.svg && el.svg.classList.contains('show-110') ? ' · ' + esc(UI.note110) : '');
   }
 
   /* ---------- vihjeet: hiiri, kosketus, näppäimistö ---------- */
   function tipHtml(f) {
+    if (f.t === 'nd') return ndTip(f.it);
     return '<b>' + esc(flat(t(f.lab))) + '</b>' + (f.val ? '<span>' + esc(t(f.val)) + '</span>' : '') +
       (f.src ? '<small>' + UI.src + ': ' + srcLink(f.src) + '</small>' : (f.s ? '<small>' + UI.src + ': ' + esc(f.s) + '</small>' : ''));
   }
@@ -617,20 +719,28 @@
     if (!s) return null;
     try { return JSON.parse(s.textContent); } catch (e) { return null; }
   }
+  /* nimetyt solmut (assets/kartta-solmut.json, scripts/kaart/build_solmut.py): datakeskukset, puistot, kantaverkon hankkeet,
+     rajayhteydet. Valinnainen: jos tiedosto puuttuu tai ei lataudu, kartta toimii ilman niitä. */
+  function fetchSolmut() {
+    var inl = inline('kartta-solmut-json'), u = root.getAttribute('data-solmut');
+    if (inl) return Promise.resolve(inl);
+    if (!u) return Promise.resolve(null);
+    return fetch(u, { credentials: 'same-origin' }).then(function (r) { if (!r.ok) throw new Error(u); return r.json(); }).catch(function () { return null; });
+  }
   function load() {
-    var v = FRONT ? Promise.resolve(null) : fetch110().catch(function () { return null; });
+    var v = FRONT ? Promise.resolve(null) : fetch110().catch(function () { return null; }), sm = fetchSolmut();
     var a = inline('kartta-pohja-json'), b = inline('kartta-data-json');
-    if (a && b) return Promise.all([a, b, v]);
+    if (a && b) return Promise.all([a, b, v, sm]);
     return Promise.all([root.getAttribute('data-pohja'), root.getAttribute('data-src')].map(function (u) {
       return fetch(u, { credentials: 'same-origin' }).then(function (r) { if (!r.ok) throw new Error(u); return r.json(); });
-    }).concat([v]));
+    }).concat([v, sm]));
   }
   function start() {
     el.stage = pickStage();
     if (FRONT) root.classList.toggle('km-inl', el.stage.classList.contains('km-inline'));
     el.stage.setAttribute('data-state', 'loading');
     load().then(function (res) {
-      state.net = res[0]; state.data = res[1];
+      state.net = res[0]; state.data = res[1]; state.solmut = res[3] || null;
       state.feats = collect();
       el.base = document.createElementNS(NS, 'svg');
       el.base.setAttribute('class', 'km-svg km-base');
@@ -640,6 +750,7 @@
       el.svg.setAttribute('role', 'group');   /* 04.11.2026: ei 'img' — kartan kohteet ovat painikkeita (axe: nested-interactive); nimi tulee .km-stage-ryhmältä */
       [el.base, el.svg].forEach(function (g) { g.setAttribute('data-home', HOME); g.setAttribute('preserveAspectRatio', 'xMidYMid meet'); el.stage.appendChild(g); });
       mapDraw();
+      if (state.solmut) { el.leg = document.createElement('div'); el.leg.className = 'km-nleg'; el.leg.setAttribute('aria-hidden', 'true'); el.leg.hidden = true; el.stage.appendChild(el.leg); }
       if (res[2]) draw110(res[2]);
       bindTips();
       bindUi();

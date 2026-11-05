@@ -717,7 +717,7 @@ if (!/font-display:swap/.test(read('assets/fonts.css'))) err('fonts.css: font-di
    johtopäätös on karttasivulla, ja etusivulla silloin, kun etusivu käyttää generoitua lohkoa (data-kartta; v41-etusivulla ei). */
 {
   const KB = 1024, size = f => statSync(join(ROOT, f)).size;
-  for (const [f, max] of [['assets/kartta-pohja.json', 150], ['assets/kartta-110.json', 100], ['assets/kartta-data.json', 80], ['assets/kartta.js', 44], ['assets/kartta.css', 20], ['assets/kartta-paikka.js', 64]]) {
+  for (const [f, max] of [['assets/kartta-pohja.json', 150], ['assets/kartta-110.json', 100], ['assets/kartta-data.json', 80], ['assets/kartta.js', 52], ['assets/kartta.css', 22], ['assets/kartta-paikka.js', 64], ['assets/kartta-solmut.json', 90]]) {
     if (!existsSync(join(ROOT, f))) { err(`${f} puuttuu`); continue; }
     if (size(f) > max * KB) err(`${f} ${size(f)} tavua > ${max} kt`);
   }

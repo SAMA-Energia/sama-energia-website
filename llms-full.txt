@@ -1549,8 +1549,6 @@ Fingrid: Järvilinja 2 otettiin käyttöön · 26.10.2026
 
 Fingrid: Metsälinja 2 -voimajohtoyhteys vastaa sähköistyvän Suomen tarpeisiin · 29.9.2026
 
-Fingrid: Kantaverkon kehittämissuunnitelma 2026–2035 · 12/2025
-
 Elering: Elektri ülekandevõrk · 21.8.2026
 
 Elering: Eesti elektriülekandevõrgu arengukava 2026–2035 · 9.7.2026
@@ -1580,8 +1578,6 @@ Elering: 2025 turu kokkuvõte · 4.2.2026
 Elering: Sagedusreservide turu kokkuvõtted · 2.11.2026
 
 Elering: Tasakaalustamisvõimsuse kulu · 29.6.2026
-
-Elering: EstLink 3 · 10.6.2026
 
 Elering: Eesti-Läti neljas elektriühendus · 10.6.2026
 
@@ -3168,8 +3164,6 @@ Elering: Sagedusreservide turu kokkuvõtted · 2.11.2026
 
 Elering: Tasakaalustamisvõimsuse kulu · 29.6.2026
 
-Elering: EstLink 3 · 10.6.2026
-
 Elering: Eesti-Läti neljas elektriühendus · 10.6.2026
 
 Fingrid: Suomen sähköjärjestelmä (luvut 2025) · 2025
@@ -3211,8 +3205,6 @@ Fingrid: Tasepalvelun hinnoittelu joulukuussa 2026 ja 1.1.2027 alkaen · 27.10.2
 Fingrid: Järvilinja 2 otettiin käyttöön · 26.10.2026
 
 Fingrid: Metsälinja 2 -voimajohtoyhteys vastaa sähköistyvän Suomen tarpeisiin · 29.9.2026
-
-Fingrid: Kantaverkon kehittämissuunnitelma 2026–2035 · 12/2025
 
 OpenStreetMap-tekijät (ODbL 1.0): Voimajohdot OpenInfraMapin tiilistä, voimalat ja sähköasemat Overpassista · 2.11.2026
 

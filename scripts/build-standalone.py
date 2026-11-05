@@ -101,7 +101,7 @@ if(anchor){var el=document.getElementById(anchor);if(el)setTimeout(function(){el
 window.addEventListener('hashchange',go);go();})();</script>'''
     kartta_json=''
     if 'data-kartta' in html:   # /verkko/-sivun kartta: data sivun sisään, koska esikatselutiedosto ei voi hakea tiedostoja
-        for jid,f in (('kartta-pohja-json','assets/kartta-pohja.json'),('kartta-data-json','assets/kartta-data.json'),('kartta-110-json','assets/kartta-110.json')):
+        for jid,f in (('kartta-pohja-json','assets/kartta-pohja.json'),('kartta-data-json','assets/kartta-data.json'),('kartta-110-json','assets/kartta-110.json'),('kartta-solmut-json','assets/kartta-solmut.json')):
             kartta_json+=f'<script type="application/json" id="{jid}">'+open(os.path.join(ROOT,f),encoding='utf-8').read().replace('</','<\\/')+'</script>\n'
     html=html.replace('</body>','') + router + kartta_json + f'<script>{js}</script>\n' + bundle[0] + kartta_js + '\n</body>\n</html>'
     out=os.path.join(OUT,f'samaenergia-{lang}-{VER}.standalone.html'); open(out,'w',encoding='utf-8').write(html)
