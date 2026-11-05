@@ -699,16 +699,25 @@ const jsBytes = statSync(join(ROOT, 'assets/site.js')).size;
 if (cssBytes > 92 * 1024) err(`assets/site.css ${cssBytes} tavua > 92 kt`);
 if (jsBytes > 20 * 1024) err(`assets/site.js ${jsBytes} tavua > 20 kt`);
 for (const f of ['assets/site.css', 'assets/fonts.css', 'assets/site.js']) if (/googleapis|gstatic|https?:\/\//.test(read(f))) err(`${f} viittaa ulkoiseen osoitteeseen`);
+/* 5.11.2026: kartan sijaintipainike (kk-geo etusivulla, km-geo /verkko/- ja /vork/-sivulla) toimii vain, jos
+   Permissions-Policy sallii sijainnin omalle alkuperälle — geolocation=() esti sen tuotannossa kokonaan. */
+{
+  const hdr = read('_headers');
+  const pp = (hdr.match(/Permissions-Policy:([^\n]*)/) || [])[1] || '';
+  const geoPages = ['index.html', 'et/index.html', 'verkko/index.html', 'et/vork/index.html'].filter(f => existsSync(join(ROOT, f)) && /kk-geo|km-geo/.test(read(f)));
+  if (geoPages.length && !/geolocation=\(self\)/.test(pp)) err(`_headers: sivuilla ${geoPages.join(', ')} on sijaintipainike, mutta Permissions-Policy ei salli sijaintia (odotettu geolocation=(self)): "${pp.trim()}"`);
+  if (/geolocation=\([^)]*(\*|https?:)/.test(pp)) err('_headers: Permissions-Policy antaa sijainnin myös muille alkuperille');
+}
 if (!/font-display:swap/.test(read('assets/fonts.css'))) err('fonts.css: font-display: swap puuttuu');
 
 /* Yhteinen verkko -kartta (/verkko/, /vork/ ja etusivun osio; v35 2.11.–3.11.2026): sivukohtaiset tiedostot ja budjetit
-   (docs/brief/03-kaart.md: pohjatiedosto < 150 kt, 110 kV erillisenä). kartta.js 30 → 36 → 40 kt (4.11.2026: vierityszoomi, 110 kV oletuksena) ja kartta.css 16 → 20 kt 3.11.2026:
+   (docs/brief/03-kaart.md: pohjatiedosto < 150 kt, 110 kV erillisenä). kartta.js 30 → 36 → 40 → 44 kt (4.11.2026: vierityszoomi, 110 kV oletuksena; 5.11.2026: lukijan oma liittymä); kartta-paikka.js ≤ 64 kt (ladataan vasta, kun paikka valitaan) ja kartta.css 16 → 20 kt 3.11.2026:
    sama moottori palvelee nyt myös etusivua (näyttämö + puhelinlaatikko) ja piirtää pisteilmeen ja kallistuksen.
    Tekstin luvut tulevat kartta-data.json:sta (scripts/kaart/build_page.py) — tarkistetaan, että jokaisen kerroksen
    johtopäätös on karttasivulla, ja etusivulla silloin, kun etusivu käyttää generoitua lohkoa (data-kartta; v41-etusivulla ei). */
 {
   const KB = 1024, size = f => statSync(join(ROOT, f)).size;
-  for (const [f, max] of [['assets/kartta-pohja.json', 150], ['assets/kartta-110.json', 100], ['assets/kartta-data.json', 80], ['assets/kartta.js', 40], ['assets/kartta.css', 20]]) {
+  for (const [f, max] of [['assets/kartta-pohja.json', 150], ['assets/kartta-110.json', 100], ['assets/kartta-data.json', 80], ['assets/kartta.js', 44], ['assets/kartta.css', 20], ['assets/kartta-paikka.js', 64]]) {
     if (!existsSync(join(ROOT, f))) { err(`${f} puuttuu`); continue; }
     if (size(f) > max * KB) err(`${f} ${size(f)} tavua > ${max} kt`);
   }

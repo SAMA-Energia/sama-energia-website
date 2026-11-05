@@ -68,6 +68,9 @@ def build(lang):
     # jolloin kartta ei käynnisty — havaittu 3.11.2026); järjestys kuten tuotannossa: scene.js ensin, sitten kartta.js
     kartta_js=('<script>'+open(os.path.join(ROOT,'assets/kartta.js'),encoding='utf-8').read().replace('</script','<\\/script')+'</script>') if 'data-kartta' in html else ''
     html=re.sub(r'<script src="/assets/kartta\.js" defer></script>\n?','',html)
+    # paikan kortti (assets/kartta-paikka.js) ladataan sivulla vasta tarvittaessa; esikatselussa se upotetaan valmiiksi
+    if 'km-geo' in html or 'kk-geo' in html:
+        kartta_js+='<script>'+open(os.path.join(ROOT,'assets/kartta-paikka.js'),encoding='utf-8').read().replace('</script','<\\/script')+'</script>'
     html=re.sub(r'(src|href)="(/assets/[^"]+)"',lambda m:f'{m.group(1)}="{datauri(m.group(2)) or m.group(2)}"',html)
     # <picture><source srcset>: upotetaan ensimmäinen ehdokas (muuten esikatselu näyttäisi img-varakuvan)
     def src_set(m):

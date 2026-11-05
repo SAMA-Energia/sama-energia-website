@@ -191,7 +191,7 @@ Järgmine: **1.2.2027**, seejärel mai, august, november. Erakorraliselt: Fingri
 2. **Elering**: sagedusreservide turu kokkuvõtted (igakuine; tabelid 1–4); elektri ülekandevõrk; arengukava (juuli); varustuskindluse aruanne (detsember); tasakaalustamisvõimsuse kulu (muutub poolaastase etteteatamisega); EstLink 3 ja Eesti–Läti 4. ühenduse lehed.
 3. **Muuda** `assets/kartta-data.json`: väärtus, `s` (allikas tekstina), `src` (allika id), `sources` (kuupäev, URL), vajadusel `concl` ja `big`; tõsta `date` ja `next`.
 4. **OSM** (kord aastas või suurema muutuse järel): `python3 scripts/kaart/fetch_oim.py` (või `fetch_osm.py`) → `python3 scripts/kaart/build_map.py --ne <natural-earth-kaust>`; pohjafail peab jääma alla 150 kB (skript katkestab).
-5. `python3 scripts/kaart/build_page.py` → `node scripts/build-pages.mjs` → `node scripts/verify-pages.mjs` → `python3 scripts/build-standalone.py vNN` → kuvatõmmised → commit (fail + kuupäev); FI/ET tekstimuutustele natiivkontroll.
+5. `python3 scripts/kaart/build_paikka.py` (asukohakaart, vt allpool) → `python3 scripts/kaart/build_page.py` → `node scripts/build-pages.mjs` → `node scripts/verify-pages.mjs` → `python3 scripts/build-standalone.py vNN` → kuvatõmmised → commit (fail + kuupäev); FI/ET tekstimuutustele natiivkontroll.
 
 ## Viis silmatorkavat võrdlust (müügile ja esilehele)
 
@@ -202,6 +202,31 @@ Iga turg oma arvudega; viies on ainult „Ühine võrk" kaardi jaoks (võrdlus o
 3. **EE — maksjast saajaks.** Iga tarbija maksab 2026. aastal reservide eest **3,73 €/MWh**; ettevõte, mis tarbib aastas 1 GWh, maksab u **3 730 €** aastas (+ km) — ja Elering annab selle raha täies mahus reservide pakkujatele (Elering 29.6.2026). Akuga objekt saab olla pakkuja poolel (agregaatori kaudu; tulu modelleeritud, mitte lubadus).
 4. **EE — vajadus kasvab.** Balti ploki mFRR-alla vajadus kasvab 2035. aastaks **43 %** (691 → 991 MW) ja mFRR-üles **25 %** (604 → 754 MW) (Elering, AST, Litgrid 29.7.2025); Eesti tiputarbimise rekord tõusis 5.2.2026 **1 723 MW-ni**, eelmine rekord 2024. aasta algusest oli alla 1 600 MW (Elering 9.7.2026).
 5. **Ühine võrk — mõõtkava.** Soome tarbimise kasv aastaks 2030 (84,6 → 106–123 TWh, ehk + 21–38 TWh, Fingrid) on **2,6–4,6 korda** Eesti kogu aastane tarbimine (8,3 TWh, Elering/ERR 26.1.2026) — mõlemad brutotarbimine koos kadudega.
+
+## Teie objekti asukohas · Kohteenne sijainnissa (5.11.2026)
+
+Madis 5.11.2026: „kui ta näitab teie liitumist, siis ta võiks teada, kus see klient asub … muidu sellel pole mõtet". Seitsmes kiht teab nüüd kohta, kui lugeja selle annab — mitte küpsiste ega IP järgi (vt allpool).
+
+**Kuidas koht tuleb.** Nupp „Kasuta minu asukohta / Käytä sijaintiani" (brauseri oma loaküsimus, jäme täpsus, aegumine 10 s) või koha valimine kaardil (puudutus/klõps). Esilehel on nupp kaardiploki alguses (punkt on siis näha igal kihil, olek lingib viimasesse sammu) ja viimases sammus „Kus on selles pildis teie liitumine?"; /vork/ ja /verkko/ lehel viimases peatükis. Asukohta ei salvestata ega saadeta: ei küpsiseid, ei localStorage'it, kõik arvutused brauseris.
+
+**Mida kaart ütleb** (`assets/kartta-paikka.js`, laetakse alles koha valimisel, ~53 kB):
+- Soome: kas koht on Fingridi Lõuna-Soome liitumispiirangu alas või alas, kus põhivõrgus on salvestitele vaba liitumisvõimsust (samad tekstid ja allikad kui kaardi aladel, `kartta-data.json` `rg`-objektid); piirangualal lisalause, et liitumise taha paigaldatud salvesti ei oota põhivõrgu järjekorras.
+- Lähim alajaam, millel on OSM-i `voltage`-sildis 110 kV tase, ja lähim põhivõrgu alajaam (FI 400/220 kV, EE 330 kV) kaugustega; kui see on sama jaam, üks lause. Allikas OpenStreetMap (ODbL), sama valim kui kaardil (`kartta-pohja.json`, `kartta-110.json`; 110 kV tase `docs/kaart/osm/substations-*.json` sildist — 64 jaama 95-st ≥ 220/330 kV jaamast on sildistatud 110 kV tasemega).
+- Eesti: lähim suur salvestipark (Salvestid-kihi punktid allikatega), ainult kui see on alla 80 km kaugusel.
+- Mis on kogu riigis sama (börsihind, reserviturg) ja mis sõltub kohast (võrguettevõtja võrgutasud, liitumise tingimused) → kirjalik hinnang.
+
+**Miks mitte küpsiste või IP järgi.** Küpsis ei sisalda asukohta. Brauseri asukoht küsib alati brauseri enda luba, küpsisenõusolek seda ei asenda. IP-põhine asukoht vajaks kolmanda osapoole andmebaasi või serverifunktsiooni, IP-aadress on isikuandmed (EL Kohus C-582/14 Breyer) ja Soome/Eesti mobiilivõrgus näitab IP sageli operaatori sõlme (Tallinn, Helsingi), mitte objekti; ja külastaja asukoht ei ole objekti asukoht (otsustaja istub kontoris). Seega: nupp kohapeal olijale, kaardil valimine kõigile.
+
+**Päis.** `Permissions-Policy: geolocation=()` keelas brauseri asukoha täielikult (ka oma lehel) — nüüd `geolocation=(self)` (`build-pages.mjs`); `verify-pages.mjs` peatab ehituse, kui asukohanupuga lehel on asukoht keelatud või antud teistele päritoludele.
+
+**Uuendamine.** `python3 scripts/kaart/build_paikka.py` alati, kui `kartta-pohja.json`, `kartta-110.json`, `kartta-data.json` või `docs/kaart/osm/substations-*.json` muutub. Mall `scripts/kaart/paikka.tpl.js` (tekstid FI/ET), andmed lisatakse generaatoris. Eelarve 64 kB (`verify-pages.mjs`).
+
+**Järgmised sammud (otsustamiseks).**
+1. Kohanime otsing (vald/küla, kunta/kylä) staatilisest loendist ilma kolmanda osapoole päringuta — lahendab olukorra „ma ei ole objekti juures"; andmed OSM `place`-punktidest, laetakse alles otsingut avades.
+2. Võrguettevõtja ja selle tariifi struktuur asukohas (EE: jaotusvõrgu teeninduspiirkonnad; FI: Energiaviraston vastuualueet) — vajab andmetööd ja asutaja otsust ettevõtete nimetamise kohta (jaotusvõrguettevõtjad ei ole partnerid).
+3. Päikesetoodang asukohas (PVGIS, eelarvutatud võrgustik, ilma brauseri päringuta).
+4. Reaalajas hind/reserv — vajab Netlify funktsiooni (avatud otsus, vt p 4 allpool).
+5. Valitud koht vormi (nähtav, muudetav väli „Objekti asukoht"), kui lugeja vajutab kaardi CTA-d — muudab privaatsuslauset („ei saadeta, kui te seda ise vormiga ei saada"), seega asutaja otsus.
 
 ## Avatud küsimused ja otsused
 

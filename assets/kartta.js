@@ -38,10 +38,10 @@
   var UI = {
     fi: { compare: 'Vertaa Viroon', compareOff: 'Vain Suomi', layer: 'Kerros', src: 'Lähde', sources: 'Lähteet', def: 'Vertailtavuus',
       pays: 'Kuka maksaa', fail: 'Karttaa ei voitu ladata. Kaikki luvut ovat tekstissä.', home: 'Suomi', other: 'Viro', map: 'Kartta',
-      v110: '110 kV', loading: 'ladataan…', note110: '110 kV: kaikki OpenStreetMapiin merkityt 110 kV:n johdot, myös jakeluverkkoyhtiöiden.' },
+      me: 'Kohteenne', v110: '110 kV', loading: 'ladataan…', note110: '110 kV: kaikki OpenStreetMapiin merkityt 110 kV:n johdot, myös jakeluverkkoyhtiöiden.' },
     et: { compare: 'Võrdle Soomega', compareOff: 'Ainult Eesti', layer: 'Kiht', src: 'Allikas', sources: 'Allikad', def: 'Võrreldavus',
       pays: 'Kes maksab', fail: 'Kaarti ei õnnestunud laadida. Kõik arvud on tekstis.', home: 'Eesti', other: 'Soome', map: 'Kaart',
-      v110: '110 kV', loading: 'laeb…', note110: '110 kV: kõik OpenStreetMapi märgitud 110 kV liinid, sh jaotusvõrguettevõtjate omad.' }
+      me: 'Teie objekt', v110: '110 kV', loading: 'laeb…', note110: '110 kV: kõik OpenStreetMapi märgitud 110 kV liinid, sh jaotusvõrguettevõtjate omad.' }
   }[LANG];
 
   var state = { layer: 0, compare: false, data: null, net: null, view: null, anim: 0, tipFor: null, feats: [], v110: 0, ready: false, zt: 0 };
@@ -69,12 +69,21 @@
     var p1 = 58.5 * d, p2 = 67.5 * d, p0 = 63 * d, l0 = 25.5 * d;
     var n = (Math.log(m(p1)) - Math.log(m(p2))) / (Math.log(tt(p1)) - Math.log(tt(p2)));
     var F = m(p1) / (n * Math.pow(tt(p1), n)), r0 = a * F * Math.pow(tt(p0), n);
-    return function (lon, lat) {
+    var fw = function (lon, lat) {
       var r = a * F * Math.pow(tt(lat * d), n), th = n * (lon * d - l0);
       return [r * Math.sin(th), r0 - r * Math.cos(th)];
     };
+    /* käänteinen: kartan napautus → lon/lat (liittymän paikka) */
+    fw.inv = function (X, Y) {
+      var dy = r0 - Y, r = (n < 0 ? -1 : 1) * Math.sqrt(X * X + dy * dy), th = Math.atan2(X, dy), t0 = Math.pow(r / (a * F), 1 / n);
+      var phi = Math.PI / 2 - 2 * Math.atan(t0);
+      for (var i = 0; i < 10; i++) { var s = Math.sin(phi); phi = Math.PI / 2 - 2 * Math.atan(t0 * Math.pow((1 - e * s) / (1 + e * s), e / 2)); }
+      return [(th / n + l0) / d, phi / d];
+    };
+    return fw;
   })();
   function xy(ll) { var mt = state.net.meta, p = P(ll[0], ll[1]); return [(p[0] - mt.x0) / mt.unit_m, (mt.y1 - p[1]) / mt.unit_m]; }
+  function unxy(u) { var mt = state.net.meta; return P.inv(u[0] * mt.unit_m + mt.x0, mt.y1 - u[1] * mt.unit_m); }
 
   /* ---------- apurit ---------- */
   function t(o) { return o == null ? '' : (typeof o === 'string' ? o : (o[LANG] != null ? o[LANG] : o.fi)); }
@@ -112,6 +121,10 @@
     if (state.compare) return fitView(bboxView(v.both.bbox));
     var lv = L && L.view && L.view[HOME];
     if (!lv) return homeView();
+    if (state.me && L.vmode === 'scroll') {   // lukijan oma paikka: sama rajauksen koko, keskellä hänen kohteensa
+      var hw = (lv[2] - lv[0]) / 2, hh = (lv[3] - lv[1]) / 2;
+      lv = [state.me[0] - hw, state.me[1] - hh, state.me[0] + hw, state.me[1] + hh];
+    }
     var b = fitView(bboxView(lv));
     if (L.vmode !== 'scroll') return b;
     var a = homeView(), t = state.zt, ca = [a[0] + a[2] / 2, a[1] + a[3] / 2], cb = [b[0] + b[2] / 2, b[1] + b[3] / 2];
@@ -216,7 +229,7 @@
       var r = p[3] ? Math.max(4, Math.sqrt(p[3]) * 1.6) : 4;
       h.push('<path class="km-pl km-pl-' + p[2] + '" data-c="' + p[4] + '" style="stroke-width:' + f1(r) + 'px" d="' + dot(p) + '"/>');
     });
-    h.push('</g><g class="km-fx"></g>');
+    h.push('</g><g class="km-fx"></g><g class="km-mine"></g>');
     el.svg.innerHTML = h.join('');
 
     var per = state.data.layers.map(function () { return { regions: [], zones: [], fx: [], lb: [] }; });
@@ -250,9 +263,10 @@
         g.lb.push(label(f, f.ll, 'km-lbl km-lbl-ring', tip));
       } else if (f.t === 'pt' || f.t === 'you') {
         var p = xy(f.ll);
-        g.fx.push('<path class="km-pulse' + (f.t === 'you' ? ' km-pulse-you' : '') + '" data-c="' + f.c + '" d="' + dot(p) + '"/>');
-        g.fx.push('<path class="km-pt km-pt-' + (f.t === 'you' ? 'you' : f.cls) + '"' + tip + ' d="' + dot(p) + '"/>');
-        g.lb.push(label(f, f.ll, 'km-lbl km-lbl-pt', tip));
+        var yo = f.t === 'you' ? ' data-you="1"' : '';
+        g.fx.push('<path class="km-pulse' + (f.t === 'you' ? ' km-pulse-you' : '') + '"' + yo + ' data-c="' + f.c + '" d="' + dot(p) + '"/>');
+        g.fx.push('<path class="km-pt km-pt-' + (f.t === 'you' ? 'you' : f.cls) + '"' + tip + yo + ' d="' + dot(p) + '"/>');
+        g.lb.push(label(f, f.ll, 'km-lbl km-lbl-pt', tip).replace('<text ', '<text' + yo + ' '));
       }
     });
     ['regions', 'zones', 'fx'].forEach(function (k) {
@@ -515,6 +529,57 @@
       state.ro.observe(el.stage);
     }
   }
+  /* ---------- lukijan oma liittymä (5.11.2026): painike tai napautus viimeisessä luvussa → merkki, zoomaus ja paikan kortti.
+     Sijainti pysyy selaimessa: ei tallenneta, ei lähetetä; kortin aineisto assets/kartta-paikka.js ladataan vasta nyt. ---------- */
+  function siteIndex() { var k = -1; state.data.layers.forEach(function (L, i) { if (L.vmode === 'scroll') k = i; }); return k; }
+  function say(k) { var gb = root.querySelector('.km-geo'), st = root.querySelector('.km-st'); if (gb && st) st.textContent = gb.getAttribute('data-' + k) || ''; }
+  function drawMe() {
+    var g = el.svg.querySelector('.km-mine');
+    if (!g || !state.me) return;
+    var p = xy(state.me);
+    g.innerHTML = '<path class="km-pulse km-pulse-you" d="' + dot(p) + '"/><path class="km-pt km-pt-you" d="' + dot(p) + '"/>' +
+      '<text class="km-lbl km-lbl-pt km-lbl-me" x="' + f1(p[0]) + '" y="' + f1(p[1]) + '">' + esc(UI.me) + '</text>';
+    el.svg.classList.add('has-me');
+  }
+  function paikka(lon, lat) {
+    var host = root.querySelector('.km-me');
+    if (!host) return;
+    var a = root.querySelector('.km-final .btn-primary'), o = { cta: a ? a.getAttribute('href') : null };
+    if (window.SAMA_PAIKKA) { window.SAMA_PAIKKA.show(host, lon, lat, o); return; }
+    var sc = document.createElement('script');
+    sc.src = '/assets/kartta-paikka.js';
+    sc.onload = function () { if (window.SAMA_PAIKKA) window.SAMA_PAIKKA.show(host, lon, lat, o); };
+    document.head.appendChild(sc);
+  }
+  function setMe(lon, lat, k) {
+    var ex = state.net.meta.extent_lonlat;
+    if (!(lon > ex[0] && lon < ex[2] && lat > ex[1] && lat < ex[3])) { say('out'); return; }
+    state.me = [lon, lat];
+    drawMe();
+    manual = Date.now(); state.zt = 1;
+    var si = siteIndex();
+    if (si >= 0 && state.layer !== si) setLayer(si); else goView(true);
+    say(k);
+    paikka(lon, lat);
+  }
+  function bindMe() {
+    if (FRONT) return;
+    var gb = root.querySelector('.km-geo');
+    if (gb && 'geolocation' in navigator) {
+      gb.hidden = false;
+      gb.addEventListener('click', function () {
+        say('wait');
+        navigator.geolocation.getCurrentPosition(function (p) { setMe(p.coords.longitude, p.coords.latitude, 'ok'); }, function () { say('no'); },
+          { enableHighAccuracy: false, timeout: 10000, maximumAge: 600000 });
+      });
+    }
+    el.svg.addEventListener('click', function (e) {
+      var L = state.data.layers[state.layer];
+      if (!L || L.vmode !== 'scroll' || hit(e.target)) return;   // kohde = vihje, ei paikan valinta
+      var r = el.base.getBoundingClientRect(), vb = state.view;
+      setMe.apply(null, unxy([vb[0] + (e.clientX - r.left) / r.width * vb[2], vb[1] + (e.clientY - r.top) / r.height * vb[3]]).concat(['tap']));
+    });
+  }
   var chs = FRONT ? [] : [].slice.call(document.querySelectorAll('.km-ch[data-layer]'));
   function scrollSync() {
     if (!state.ready || !chs.length || Date.now() - manual < 900) return;
@@ -526,7 +591,7 @@
     var li = +chs[act].getAttribute('data-layer'), L = state.data.layers[li], zt = 0;
     if (L && L.vmode === 'scroll') {
       var r = chs[act].getBoundingClientRect();
-      zt = REDUCED ? 1 : Math.max(0, Math.min(1, (ref - r.top) / Math.max(1, r.height * 0.6)));
+      zt = (REDUCED || state.me) ? 1 : Math.max(0, Math.min(1, (ref - r.top) / Math.max(1, r.height * 0.6)));
       zt = zt * zt * (3 - 2 * zt);
     }
     if (li !== state.layer) { state.zt = zt; setLayer(li, { instant: L && L.vmode === 'scroll' }); }
@@ -578,6 +643,7 @@
       if (res[2]) draw110(res[2]);
       bindTips();
       bindUi();
+      bindMe();
       applyView(targetView());
       state.ready = true;
       setLayer(state.layer, { instant: true });

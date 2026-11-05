@@ -739,13 +739,16 @@ ${llmsParts.map(p => `# ${p.title} — ${p.url}\n\n${p.text}\n`).join('\n')}`);
 /* _headers — CSP sallii inline-lohkoista vain generoidut (shim + JSON-LD) hash-lähteinä,
    ei 'unsafe-inline'. Kaikki sivut on generoitu ennen tätä. */
 const hashList = [...INLINE_HASHES].sort().map(h => `'sha256-${h}'`).join(' ');
+/* geolocation=(self) (5.11.2026): kartan "Käytä sijaintiani / Kasuta minu asukohta" -painike käyttää selaimen
+   sijaintia vain omalla alkuperällä ja vain painikkeesta; geolocation=() esti sen kokonaan. Kolmannet osapuolet
+   (upotukset) eivät saa sijaintia. Kamera ja mikrofoni pysyvät estettyinä. */
 emit('_headers', `# GENEROITU: node scripts/build-pages.mjs — älä muokkaa käsin (CSP-hashit lasketaan inline-lohkoista)
 /*
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Permissions-Policy: camera=(), microphone=(), geolocation=(self)
   Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' ${hashList}; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
 `);
 

@@ -771,6 +771,7 @@ h1 em,h2 em{color:var(--gold-2)}
 .kk-t{margin:14px 0 0;font-size:16px;line-height:1.55;color:#BFB6A5}
 .kk-l .src{margin-top:12px;color:#8F887B}
 .kk-l .btn{margin-top:22px}
+.kk-l .kk-you .btn{margin-top:0}
 .kk-foot{margin:26px 0 0}
 .kk-attr{margin:12px 0 0;font-size:11.5px;color:#7F786C}
 #kk0:checked~.kk-maps .kk-m0,#kk1:checked~.kk-maps .kk-m1,#kk2:checked~.kk-maps .kk-m2,#kk3:checked~.kk-maps .kk-m3,#kk4:checked~.kk-maps .kk-m4,#kk5:checked~.kk-maps .kk-m5,#kk6:checked~.kk-maps .kk-m6,#kk0:checked~.kk-body .kk-l0,#kk1:checked~.kk-body .kk-l1,#kk2:checked~.kk-body .kk-l2,#kk3:checked~.kk-body .kk-l3,#kk4:checked~.kk-body .kk-l4,#kk5:checked~.kk-body .kk-l5,#kk6:checked~.kk-body .kk-l6{display:block}

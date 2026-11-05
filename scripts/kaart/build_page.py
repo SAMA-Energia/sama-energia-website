@@ -31,6 +31,10 @@ TXT = {
         'how': 'Lukekaa luku kerrallaan: kartta vaihtaa kerrosta mukana. Viekää hiiri tai sormi kartan kohteen päälle, niin näette luvun lähteen. Vertaa Viroon -painike näyttää Viron samalla määritelmällä tai kertoo, missä määritelmä eroaa.',
         'other_sum': 'Viro samalla mittarilla', 'def': 'Vertailtavuus', 'pays': 'Kuka maksaa', 'sources': 'Lähteet', 'show': 'Näytä kartalla',
         'cta': ('Pyydä maksuton kartoitus', '/yhteystiedot/'),
+        'me': {'btn': 'Käytä sijaintiani', 'hint': 'tai valitse kohta kartalta', 'priv': 'Sijaintia käytetään vain selaimessa kartan merkkiin. Sitä ei tallenneta eikä lähetetä.',
+               'wait': 'Haetaan sijaintia…', 'ok': 'Merkki on nykyisessä sijainnissa. Jos kohde on muualla, kohdan voi valita kartalta.',
+               'tap': 'Liittymän merkki on valitussa kohdassa.', 'no': 'Sijaintia ei saatu. Kohdan voi valita kartalta.',
+               'out': 'Sijainti on kartan ulkopuolella. Kohdan voi valita kartalta.'},
         'final': 'Maksuton kirjallinen arvio näyttää, mitä teidän liittymänne voi tehdä: tehomaksu, pörssisähkö ja mallinnettu reservituotto tuotteittain.',
         'map': 'Kartta', 'bar': 'Kartan kerrokset', 'compare': 'Vertaa Viroon', 'legend': 'Selite',
         'leg': ['400 kV', '220 kV', '110 kV', 'Tasavirta'],
@@ -54,6 +58,10 @@ TXT = {
         'how': 'Lugege peatükk korraga: kaart vahetab kihti kaasa. Viige hiir või sõrm kaardil objektile ja näete arvu allikat. Nupp „Võrdle Soomega“ näitab Soomet sama definitsiooniga või ütleb, kus definitsioon erineb.',
         'other_sum': 'Soome samal mõõdupuul', 'def': 'Võrreldavus', 'pays': 'Kes maksab', 'sources': 'Allikad', 'show': 'Näita kaardil',
         'cta': ('Küsi tasuta hinnangut', '/kontakt/'),
+        'me': {'btn': 'Kasuta minu asukohta', 'hint': 'või vali koht kaardil', 'priv': 'Asukohta kasutatakse ainult brauseris kaardipunkti jaoks. Seda ei salvestata ega saadeta.',
+               'wait': 'Asukoha otsimine…', 'ok': 'Punkt on praeguses asukohas. Kui objekt on mujal, saab koha valida kaardil.',
+               'tap': 'Liitumise punkt on valitud kohas.', 'no': 'Asukohta ei saadud. Koha saab valida kaardil.',
+               'out': 'Asukoht jääb kaardist välja. Koha saab valida kaardil.'},
         'final': 'Tasuta kirjalik hinnang näitab, mida teie liitumine suudab: võimsustasu, börsihind ja modelleeritud reservitulu toodete kaupa.',
         'map': 'Kaart', 'bar': 'Kaardi kihid', 'compare': 'Võrdle Soomega', 'legend': 'Legend',
         'leg': ['330–400 kV', '220 kV', '110 kV', 'Alalisvool'],
@@ -110,6 +118,10 @@ def chapter(L, i, n, D, lang):
                    f'<p class="km-def"><b>{X["def"]}:</b> {e(t(L["cmp"], lang))}</p>' + facts_html(L['facts'][other], lang) + '</details>')
     if L['id'] == 'site':
         out.append(f'  <p class="lead" style="margin-top:22px">{e(X["final"])}</p>')
+        m = X['me']
+        out.append(f'  <div class="km-me"><button type="button" class="btn btn-ghost km-geo" hidden data-wait="{e(m["wait"])}" data-ok="{e(m["ok"])}" '
+                   f'data-tap="{e(m["tap"])}" data-no="{e(m["no"])}" data-out="{e(m["out"])}">{e(m["btn"])}</button>'
+                   f'<span class="km-hint">{e(m["hint"])}</span><p class="km-priv">{e(m["priv"])}</p><p class="km-st" role="status" aria-live="polite"></p></div>')
     out.append(f'  <p class="src">{X["sources"]}: ' + '; '.join(src_link(S, sid) for sid in ids) + '</p>')
     out.append(f'  <button type="button" class="km-show" data-show-layer="{i}" hidden>{X["show"]}</button>')
     if L['id'] == 'site':

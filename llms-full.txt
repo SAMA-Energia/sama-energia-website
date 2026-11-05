@@ -123,6 +123,8 @@ Lähteet: Fingrid, johdon katsaus · 29.10.2026; Fingrid · 8.9.2026; Fingrid ·
 
 Missä teidän liittymänne on tässä kokonaisuudessa?
 Liittymänne on jo olemassa ja sen taakse asennettu sähkövarasto ei joudu kantaverkon jonoon. Kirjallinen arvio sijoittaa kohteenne tälle kartalle, jokainen luku lähteineen.
+Käytä sijaintianitai valitse kohta kartaltaSijaintia käytetään vain selaimessa kartan merkkiin. Sitä ei tallenneta eikä lähetetä.
+
 Pyydä maksuton kartoitus
 Koko kartta: Fingrid ja Elering rinnakkain
 Kartta: Natural Earth; johdot, sähköasemat ja voimalat © OpenStreetMapin tekijät
@@ -1537,6 +1539,8 @@ Reservit: tarve kasvaa 1 200 MW viidessä vuodessa (Fingrid, 11.6.2025)
 
 Maksuton kirjallinen arvio näyttää, mitä teidän liittymänne voi tehdä: tehomaksu, pörssisähkö ja mallinnettu reservituotto tuotteittain.
 
+Käytä sijaintianitai valitse kohta kartaltaSijaintia käytetään vain selaimessa kartan merkkiin. Sitä ei tallenneta eikä lähetetä.
+
 Lähteet: Fingrid: Sähkönkulutuksen liitettävyys kantaverkkoon väliaikaisesti tiukilla eteläisessä Suomessa · 21.1.2025; Fingrid: Reservimarkkinat tutuiksi -webinaari · 11.6.2025; Fingrid: Sähkövarastojen liityntärajoitusta jatketaan Etelä-Suomessa · 24.9.2025
 
 Näytä kartalla
@@ -1866,6 +1870,8 @@ Allikas: ENMAK 2035 indikatiivne maht Eleringi arengukavas 2026–2035 · 9.7.20
 
 Kus on selles pildis teie liitumine?
 Teie liitumine on juba olemas ja selle taga töötav salvesti ei vaja uut põhivõrguliitumist. Kirjalik hinnang paneb selle kaardile, iga arv allikaga.
+Kasuta minu asukohtavõi vali koht kaardilAsukohta kasutatakse ainult brauseris kaardipunkti jaoks. Seda ei salvestata ega saadeta.
+
 Küsi tasuta hinnangut
 Kogu kaart: Elering ja Fingrid kõrvuti
 Kaart: Natural Earth; liinid ja jaamad © OpenStreetMapi kaastöötajad
@@ -3197,6 +3203,8 @@ Reservide vajadus: mFRR üles 604 → 754 MW, alla 691 → 991 MW (2026 → 2035
 Tiputarbimine: rekord 1 723 MW 5.2.2026 (Elering, arengukava 2026–2035, 9.7.2026)
 
 Tasuta kirjalik hinnang näitab, mida teie liitumine suudab: võimsustasu, börsihind ja modelleeritud reservitulu toodete kaupa.
+
+Kasuta minu asukohtavõi vali koht kaardilAsukohta kasutatakse ainult brauseris kaardipunkti jaoks. Seda ei salvestata ega saadeta.
 
 Allikad: Elering: Tasakaalustamisvõimsuse kulu · 29.6.2026; Elering, AST, Litgrid: Baltic LFC block FRR dimensioning forecast 2026–2035 · 29.7.2025; Elering: Eesti elektriülekandevõrgu arengukava 2026–2035 · 9.7.2026; Elering: 2025 turu kokkuvõte · 4.2.2026
 

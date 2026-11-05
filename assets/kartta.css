@@ -38,6 +38,15 @@
 .km-show{margin-top:18px;display:inline-flex;align-items:center;gap:8px;background:transparent;border:1px solid rgba(232,209,147,.4);color:var(--k-g1);border-radius:999px;padding:10px 16px;font:600 14px/1 var(--font-body);cursor:pointer}
 .km-show:hover,.km-show:focus-visible{border-color:var(--k-g1);background:rgba(232,209,147,.06)}
 .km-final .btn{margin-top:24px}
+/* lukijan oma liittymä (5.11.2026) */
+.km-me{margin:22px 0 0}
+.km-me .km-geo{margin-top:0}
+.km-hint{margin-left:12px;color:var(--ink-3);font-size:14px}
+.km-priv{margin:10px 0 0;color:var(--ink-3);font-size:13px;line-height:1.5}
+.km-st{margin:6px 0 0;color:var(--ink-2);font-size:14px;min-height:1.4em}
+.has-me [data-you]{display:none}
+.km-mine .km-pulse{animation:km-pulse 2.4s ease-out 4}
+.km-lbl-me{fill:var(--k-g1);font-weight:600}
 /* /verkko/: kartta leveällä näytöllä kiinnitetty tekstin viereen */
 .km-map{position:sticky;top:96px;height:calc(100vh - 116px);min-height:560px;max-height:980px;display:flex;flex-direction:column;border:1px solid rgba(232,209,147,.16);border-radius:16px;background:var(--k-sea);overflow:hidden}
 .km-bar{display:flex;flex-wrap:wrap;gap:6px;padding:10px;border-bottom:1px solid rgba(232,209,147,.12);flex:none}

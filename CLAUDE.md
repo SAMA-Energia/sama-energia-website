@@ -263,3 +263,18 @@ When in doubt, leave it out and flag it.
   otsikoiden korostus pystyyn (kursiivi pois, väri kantaa), vaaleat osiot raikkaammiksi (#F7F4EE / #EFEBE3), lomakeosion
   ruskea hehku pois, Newsreader-kursiivin esilataus pois (ei enää käytössä otsikoissa).
 - AVOIN: Elecnovan tuotekuva (palvelin estää suoran latauksen); natiivitarkistus uusille FI/ET-teksteille.
+
+## Kohteen sijainti kartalla (vestlus C, haara v35-uusi-ilme, 05.11.2026)
+
+- Madis 5.11.2026: "Teidän liittymänne / Teie liitumine" ilman paikkaa ei kerro mitään. Lukija antaa paikan painikkeesta (selaimen
+  sijainti, selaimen oma lupakysely) tai napauttamalla karttaa; ei evästeitä, ei IP-paikannusta, ei tallennusta eikä lähetystä.
+  Etusivulla painike sekä kartan alussa (merkki kaikilla tasoilla, tila linkittää viimeiseen askeleeseen) että viimeisessä askeleessa;
+  /verkko/ ja /vork/ viimeisessä luvussa.
+- Paikan kortti `assets/kartta-paikka.js` (generoitu: `python3 scripts/kaart/build_paikka.py`, pohja `scripts/kaart/paikka.tpl.js`;
+  ladataan vasta paikan valinnasta): FI-aluerajoitus / vapaa kapasiteetti (Fingrid, samat tekstit kuin kartalla), lähin 110 kV:n
+  asema ja lähin kantaverkon asema (OSM), EE lähin suuri varastopuisto alle 80 km (ERR), mikä on koko maassa sama ja mikä riippuu
+  paikasta. Etusivulla kortti tulee viimeiseen askeleeseen askeleen CTA:n eteen (scene.js / scene-et.js `paikka()`).
+- `Permissions-Policy` on nyt `geolocation=(self)` (oli `()`, joka esti painikkeen tuotannossa); verify-pages vartioi.
+- Perustelut, lähteet ja seuraavat vaihtoehdot (paikkakuntahaku, verkkoyhtiö ja tariffi, PVGIS, paikka lomakkeeseen):
+  `docs/kaart/lugu.md`, osio "Teie objekti asukohas".
+- AVOIN: natiivitarkistus kortin teksteille (FI Martin, ET Madis) ja viimeisen askeleen painikeriville.

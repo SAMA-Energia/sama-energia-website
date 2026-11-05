@@ -2053,14 +2053,24 @@ function step(s){var st=s.querySelectorAll('[data-step]');if(!st.length)return;v
 function tick(){if(!c||pend)return;pend=true;requestAnimationFrame(function(){pend=false;secs.forEach(function(s){var r=s.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;if(s.getAttribute('data-live')==='map'&&!s.style.getPropertyValue('--kk-lift'))lift();step(s);});});}
 addEventListener('scroll',tick,{passive:true});addEventListener('resize',function(){lift();tick();});addEventListener('load',lift);try{document.fonts.ready.then(lift);}catch(e){}
 /* 05.11.2026: liittymä kartalle — selaimen sijainti vain painikkeesta tai kohdan valinta kartalta; sijaintia ei tallenneta eikä lähetetä */
-(function(){var sec=document.querySelector('.k-live[data-live="map"]');if(!sec)return;var cv=sec.querySelector('.cv-map'),gb=sec.querySelector('.kk-geo'),st=sec.querySelector('.kk-st');
-function say(k){if(st&&gb)st.textContent=gb.getAttribute('data-'+k)||'';}
+/* 05.11.2026 (vestlus C): paikan kortti viimeiseen askeleeseen (Teidän liittymänne / Teie liitumine, CTA:n eteen) ja sama painike
+   myös siellä; ylärivin tila linkittää sinne. Tilateksti tulee sen painikkeen viereen, jota käytettiin (napautus: viimeisessä
+   askeleessa sen tilaan, muuten ylös). Tekstit ylärivin painikkeen data-*-attribuuteista. */
+(function(){var sec=document.querySelector('.k-live[data-live="map"]');if(!sec)return;var cv=sec.querySelector('.cv-map'),gbs=sec.querySelectorAll('.kk-geo'),gb=gbs[0],ls=sec.querySelectorAll('[data-step]'),l6=ls[ls.length-1],act=null;
+function stOf(el){var y=el&&el.closest('.kk-you');return y?y.querySelector('.kk-st'):null;}
+function say(k){if(!gb)return;var st=act||stOf(gb);[].forEach.call(sec.querySelectorAll('.kk-st'),function(x){if(x!==st)x.textContent='';});if(!st)return;st.textContent=gb.getAttribute('data-'+k)||'';var g=gb.getAttribute('data-go');
+ if(g&&l6&&!l6.contains(st)&&(k==='ok'||k==='tap')){var a=document.createElement('a');a.href='#';a.className='kk-go';a.textContent=g;a.addEventListener('click',function(e){e.preventDefault();go6();});st.appendChild(document.createTextNode(' '));st.appendChild(a);}}
+function go6(){var y=l6.getBoundingClientRect().top+scrollY-line(sec)+Math.min(l6.offsetHeight,innerHeight*0.4)/2;scrollTo({top:Math.max(0,y),behavior:'smooth'});}
 function put(lon,lat,k,n){if(!c||!c._map||!c._kd){if((n||0)<25)setTimeout(function(){put(lon,lat,k,(n||0)+1);},300);return;}var b=c._map.bbox;if(!(lon>b.x0&&lon<b.x1&&lat>b.y0&&lat<b.y1)){say('out');return;}
  window.SAMA_MAP_SITE=c._ll([lon,lat]);c._you=1;var L=c._kd.layers[c._kd.layers.length-1],HU=c._mapHome()==='ee'?'EE':'FI';
  if(L&&L.view&&L.view[HU]){if(!L._v0)L._v0=L.view[HU].slice();var w=(L._v0[2]-L._v0[0])/2,h=(L._v0[3]-L._v0[1])/2;L.view[HU]=[lon-w,lat-h,lon+w,lat+h];}
- c.setMapLayers({site:1});say(k);}
-if(gb){if(!('geolocation' in navigator))gb.hidden=true;else gb.addEventListener('click',function(){start();say('wait');navigator.geolocation.getCurrentPosition(function(p){put(p.coords.longitude,p.coords.latitude,'ok');},function(){say('no');},{enableHighAccuracy:false,timeout:10000,maximumAge:600000});});}
-if(cv)cv.addEventListener('click',function(e){if(!c||!c._mapInv||!c._map)return;var r=cv.getBoundingClientRect(),M=c._mapInv,q0=M[2]+(e.clientX-r.left-M[0])/(M[4]*M[5]),q1=M[3]+(e.clientY-r.top-M[1])/M[4],b=c._map.bbox;put(b.x0+q0*(b.x1-b.x0),b.y1-q1*(b.y1-b.y0),'tap');});
+ c.setMapLayers({site:1});say(k);paikka(lon,lat);}
+/* valitun paikan kortti — mikä siinä paikassa on totta (assets/kartta-paikka.js, ladataan vasta nyt); askeleen oma CTA jää kortin alle */
+function paikka(lon,lat){if(!l6)return;var o={before:l6.querySelector('.btn-primary')};
+ if(window.SAMA_PAIKKA){window.SAMA_PAIKKA.show(l6,lon,lat,o);return;}
+ var s=document.createElement('script');s.src='/assets/kartta-paikka.js';s.onload=function(){if(window.SAMA_PAIKKA)window.SAMA_PAIKKA.show(l6,lon,lat,o);};document.head.appendChild(s);}
+[].forEach.call(gbs,function(bt){if(!('geolocation' in navigator)){bt.hidden=true;return;}bt.addEventListener('click',function(){act=stOf(bt);start();say('wait');navigator.geolocation.getCurrentPosition(function(p){put(p.coords.longitude,p.coords.latitude,'ok');},function(){say('no');},{enableHighAccuracy:false,timeout:10000,maximumAge:600000});});});
+if(cv)cv.addEventListener('click',function(e){if(!c||!c._mapInv||!c._map)return;var on=sec.querySelector('[data-step].on');act=stOf(on&&on===l6?l6.querySelector('.kk-geo'):gb);var r=cv.getBoundingClientRect(),M=c._mapInv,q0=M[2]+(e.clientX-r.left-M[0])/(M[4]*M[5]),q1=M[3]+(e.clientY-r.top-M[1])/M[4],b=c._map.bbox;put(b.x0+q0*(b.x1-b.x0),b.y1-q1*(b.y1-b.y0),'tap');});
 })();
 secs.forEach(function(s){[].forEach.call(s.querySelectorAll('[data-jump]'),function(el){el.addEventListener('click',function(e){var t=s.querySelector('[data-step="'+el.getAttribute('data-jump')+'"]');if(!t)return;e.preventDefault();var y=t.getBoundingClientRect().top+scrollY-line(s)+Math.min(t.offsetHeight,innerHeight*0.4)/2;scrollTo({top:Math.max(0,y),behavior:'smooth'});});});});
 })();
