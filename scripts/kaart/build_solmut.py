@@ -161,6 +161,7 @@ def approx(*ks): return any((k + '~') in P for k in ks)
 
 # ---------------------------------------------------------------- kantaverkon hankkeet ja rajayhteydet (käsin, lähteineen)
 # (id, nimi, lähtö, tulo, tila, valmistumisvuosi, lähde, huomio FI, huomio ET)
+RECON = {'fi': 'Nykyisen 330 kV:n johdon uusiminen EstLink 3:n vuoksi.', 'et': 'Olemasoleva 330 kV liini rekonstrueerimine EstLink 3 tõttu.'}
 LINES = [
     ('fg1', 'Huittinen–Forssa 400+110 kV', 'Huittinen', 'Forssa', 'op', 2025, 'fg-ksu', None, None),
     ('fg5', 'Herva–Nuojuankangas 400 kV', 'Herva', 'Nuojuankangas', 'con', 2026, 'fg-ksu', None, None),
@@ -179,15 +180,15 @@ LINES = [
     ('fg22', 'Seinäjoki–Hirvisuo 400+110 kV', 'Seinäjoki', 'Hirvisuo', 'cond', None, 'fg-ksu', None, None),
     ('fg23', 'Huutokoski–Kontiolahti 400+110 kV', 'Huutokoski', 'Kontiolahti', 'cond', None, 'fg-ksu', None, None),
     # Elering: EstLink 3 maismaaosa ja sen vaatimat vahvistukset
-    ('el-rehemae', 'Rehemäe–Aulepa 330 kV (uusi)', 'Rehemäe', 'Aulepa', 'plan', None, 'el-el3',
+    ('el-rehemae', 'Rehemäe–Aulepa 330 kV', 'Rehemäe', 'Aulepa', 'plan', None, 'el-el3',
      'Uusi 330 kV:n johto EstLink 3:n muuttaja-asemalle.', 'Uus 330 kV liin EstLink 3 muundurjaamani.'),
-    ('el-kr', 'Kiisa–Rakvere 330 kV (uusiminen)', 'Kiisa', 'Rakvere', 'plan', None, 'el-el3', None, None),
-    ('el-rp', 'Rakvere–Püssi 330 kV (uusiminen)', 'Rakvere', 'Püssi', 'plan', None, 'el-el3', None, None),
-    ('el-ps', 'Paide–Sopi 330 kV (uusiminen)', 'Paide', 'Sopi', 'plan', None, 'el-el3', None, None),
-    ('el-ss', 'Sopi–Sindi 330 kV (uusiminen)', 'Sopi', 'Sindi', 'plan', None, 'el-el3', None, None),
-    ('el-ta', 'Tallinna uus alajaam–Aruküla 330 kV', 'Ülemiste', 'Aruküla', 'plan', None, 'err-ulemiste',
+    ('el-kr', 'Kiisa–Rakvere 330 kV', 'Kiisa', 'Rakvere', 'plan', None, 'el-el3', RECON['fi'], RECON['et']),
+    ('el-rp', 'Rakvere–Püssi 330 kV', 'Rakvere', 'Püssi', 'plan', None, 'el-el3', RECON['fi'], RECON['et']),
+    ('el-ps', 'Paide–Sopi 330 kV', 'Paide', 'Sopi', 'plan', None, 'el-el3', RECON['fi'], RECON['et']),
+    ('el-ss', 'Sopi–Sindi 330 kV', 'Sopi', 'Sindi', 'plan', None, 'el-el3', RECON['fi'], RECON['et']),
+    ('el-ta', {'fi': 'Tallinnan uusi sähköasema–Aruküla 330 kV', 'et': 'Tallinna uus alajaam–Aruküla 330 kV'}, 'Ülemiste', 'Aruküla', 'plan', None, 'err-ulemiste',
      'Asema Ülemistejärven rannalle; tarkka paikka ratkeaa erityiskaavassa.', 'Alajaam Ülemiste järve kaldale; täpne asukoht selgub eriplaneeringus.'),
-    ('el-tk', 'Tallinna uus alajaam–Kiisa 330 kV', 'Ülemiste', 'Kiisa', 'plan', None, 'err-ulemiste', None, None),
+    ('el-tk', {'fi': 'Tallinnan uusi sähköasema–Kiisa 330 kV', 'et': 'Tallinna uus alajaam–Kiisa 330 kV'}, 'Ülemiste', 'Kiisa', 'plan', None, 'err-ulemiste', None, None),
 ]
 LINKS = [  # rajayhteydet: piste (ja suunta), ei reittiä
     {'id': 'estlink3', 'n': 'EstLink 3', 'o': 'Elering, Fingrid', 'mw': 700, 's': 'plan', 'y': '2038–2040', 'at': 'Aulepa', 'to': [23.25, 59.45], 'src': 'el-el3p', 'src3': 'fg-raja',
@@ -202,10 +203,10 @@ LINKS = [  # rajayhteydet: piste (ja suunta), ei reittiä
               'et': 'Trass Trolltjärn–Degerträsk–Louepalo–Herva, 350–400 km. Umbes 800 MW lisavõimsust Rootsiga, valmib 2036. aasta jooksul.'}},
 ]
 DC_EE = [
-    {'id': 'ee-risti', 'n': 'Risti andmekeskuse kampus', 'o': 'Sunly', 'mw': 180, 's': 'plan', 'at': 'Risti', 'src': 'sunly',
+    {'id': 'ee-risti', 'n': {'fi': 'Ristin datakeskuskampus', 'et': 'Risti andmekeskuse kampus'}, 'o': 'Sunly', 'mw': 180, 's': 'plan', 'at': 'Risti', 'src': 'sunly',
      'note': {'fi': '36 ha, kuusi rakennusta. Asemakaavahakemus 18.2.2026; sähkö Eleringin kantaverkosta saman aseman kautta kuin Ristin aurinkopuisto.',
               'et': '36 ha, kuus hoonet. Detailplaneeringu taotlus 18.2.2026; elekter Eleringi põhivõrgust sama alajaama kaudu kui Risti päikesepark.'}},
-    {'id': 'ee-lihula', 'n': 'Lihula andmekeskus', 'o': 'Evecon', 'mw': 100, 's': 'plan', 'at': 'Lihula', 'src': 'err-dc',
+    {'id': 'ee-lihula', 'n': {'fi': 'Lihulan datakeskus', 'et': 'Lihula andmekeskus'}, 'o': 'Evecon', 'mw': 100, 's': 'plan', 'at': 'Lihula', 'src': 'err-dc',
      'note': {'fi': 'Enintään 100 MW, 22,4 ha Lihulan luoteisreunalla, oma 330 kV:n sähköasema. Asemakaavan vireillepanoa haettu.',
               'et': 'Kuni 100 MW, 22,4 ha Lihula loodeküljel, oma 330 kV alajaam. Detailplaneeringu algatamist on taotletud.'}},
 ]
@@ -213,7 +214,7 @@ DC_EE = [
 # ---------------------------------------------------------------- kokoaminen
 items = []
 def add(it):
-    txt = ' '.join(str(it.get(k) or '') for k in ('n', 'o'))
+    txt = ' '.join(json.dumps(it.get(k), ensure_ascii=False) for k in ('n', 'o'))
     if BANNED.search(txt): sys.exit(f'kielletty nimi kartta-aineistossa: {txt}')
     items.append(it)
 

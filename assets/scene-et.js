@@ -1785,7 +1785,7 @@ class Component extends DCLogic {
       for (const ss of kv.ss) {
         const s = PL([ss[3], ss[4]]); if (s[0] < -4 || s[0] > w + 4 || s[1] < -4 || s[1] > h + 4) continue;
         const ca = (ss[0] === home ? 1 : (cmp ? 0.85 : 0.4));
-        g.globalAlpha = a0 * ca; g.fillStyle = ss[1] === 'conv' ? '#F3EEE1' : '#D4B574';
+        g.globalAlpha = a0 * ca * (live && this._mapCur !== 'vork' && this._mapCur !== 'site' ? 0.35 : 1); g.fillStyle = ss[1] === 'conv' ? '#F3EEE1' : '#D4B574';
         g.fillRect(s[0] - ssz / 2, s[1] - ssz / 2, ssz, ssz);
         if (z > 0.4 && ss[2] && (!live || this._mapCur === 'site')) { g.globalAlpha = a0 * ca * z; label(s[0] + 8, s[1], ss[2], { font: FONTS, color: '#CFC8B8' }); }
       }
@@ -1850,6 +1850,53 @@ class Component extends DCLogic {
             g.globalAlpha = 1;
           }
         }
+      }
+    }
+    // ---- nimetyt solmut (assets/kartta-solmut.json, scripts/kaart/build_solmut.py) — 06.11.2026, Madis: "sõlmed esile" ----
+    // datakeskus neliö, puisto ympyrä, koko tehon mukaan; ontto = luvitus, kaava tai selvitys; kantaverkon hankkeet viivoina vuosineen.
+    const ks = this._ks;
+    if (ks && kd) {
+      const LK = { dc: 'tarbimine', wind: 'tootmine', solar: 'tootmine', bess: 'salvestid', line: 'tulevik', link: 'tulevik' };
+      const LI = {}; kd.layers.forEach((l, i) => { LI[l.id] = i; });
+      const kr = Math.max(0.75, Math.min(1.6, sc / 1100));
+      const own = (o) => o ? o.replace(/\s*\(.*\)$/, '').replace(/\s+\d{3,}.*$/, '').replace(/[, ]+(Oyj?|AS|OÜ|AB|Inc\.?|Ltd|ltd|Holdings|Corp)\b.*$/, '').trim() : '';
+      const num = (n) => String(n).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+      const nm = (it) => typeof it.n === 'string' ? it.n : it.n[lang];
+      const mwOf = (it) => it.mw != null ? it.mw : (it.mwit != null ? it.mwit : 0);
+      const mwT = (it) => { let a = it.mw0 ? num(it.mw0) + '–' + num(it.mw) + ' MW' : (it.mw != null ? num(it.mw) + ' MW' : ''); if (it.mwit != null) a += (a ? ' · ' : '') + 'IT ' + num(it.mwit) + ' MW'; return a; };
+      const srcT = (it) => [it.src, it.src2, it.src3].filter(Boolean).map((id) => { const q = ks.sources[id]; return q ? q.pub + ' ' + q.date : ''; }).join('; ');
+      const info = (it) => {
+        const st = ks.status[it.s][lang], kn = ks.kind[it.k][lang], yr = it.y ? ' · ' + (it.s === 'op' ? (lang === 'et' ? 'alates ' : 'vuodesta ') : (lang === 'et' ? 'valmib ' : 'valmis ')) + it.y : '';
+        return { t: nm(it), d: kn + (it.o ? ' · ' + it.o : '') + (it.m ? ' · ' + it.m : '') + '\n' + st + yr + (mwT(it) ? ' · ' + mwT(it) : '') + (it.note ? '\n' + it.note[lang] : ''), s: srcT(it), u: it.u };
+      };
+      const labOk = (it) => { const mw = mwOf(it); if (it.k === 'line' || it.k === 'link' || it.k === 'bess') return true; if (it.k === 'dc') return mw >= 250 || /^Google/.test(it.o || '') || it.c === 'EE'; if (it.k === 'wind') return mw >= (it.c === 'EE' ? 90 : 190); return mw >= 50; };
+      for (const it of ks.items) {
+        const lid = LK[it.k], a = al(lid); if (a < 0.02 || LI[lid] == null) continue;
+        const cc = it.c === 'EE' ? 'ee' : 'fi', vis = cc === home || cmp, ca = cc === home ? 1 : (cmp ? 0.85 : 0.3);
+        const aa = a * ca * (1 - 0.45 * z), hollow = /^(per|plan|pre|cond)$/.test(it.s);
+        LP = 1 + LI[lid] - 0.5 + Math.min(0.45, (it.k === 'link' ? 900 : mwOf(it)) / 2000);
+        g.globalAlpha = aa;
+        if (it.g) {
+          const a1 = PL(it.g[0]), b1 = PL(it.g[1]);
+          g.strokeStyle = '#D4B574'; g.lineWidth = (it.s === 'con' ? 2.4 : 1.7) * Math.min(1.2, kr);
+          g.setLineDash(it.s === 'con' || it.s === 'op' ? [] : (it.s === 'cond' ? [1.5, 5] : [6, 5]));
+          g.beginPath(); g.moveTo(a1[0], a1[1]); g.lineTo(b1[0], b1[1]); g.stroke(); g.setLineDash([]);
+          const m = [(a1[0] + b1[0]) / 2, (a1[1] + b1[1]) / 2];
+          if (vis) { label(m[0], m[1], nm(it).replace(/\s*\d{3}(\+110)? kV.*$/, '') + (it.y ? ' ' + it.y : ''), { align: 'center', font: FONTS, color: '#D4B574' }); const q = info(it); q.p = m; pins.push(q); }
+        } else {
+          const s = PL(it.p); if (s[0] < -20 || s[0] > w + 20 || s[1] < -20 || s[1] > h + 20) continue;
+          const mw = mwOf(it), r = Math.max(2.2, Math.min(it.k === 'dc' ? 9 : 10, Math.sqrt(mw || 4) * (it.k === 'dc' ? 0.42 : 0.5))) * kr;
+          if (it.to) { const q = PL(it.to); g.strokeStyle = '#F3EEE1'; g.lineWidth = 1.2; g.setLineDash([4, 4]); g.lineDashOffset = -time * 10; g.beginPath(); g.moveTo(s[0], s[1]); g.lineTo(q[0], q[1]); g.stroke(); g.setLineDash([]); }
+          const col = it.k === 'dc' ? (it.s === 'con' ? '#B8975A' : '#D4B574') : (it.k === 'solar' ? '#E6C46E' : (it.k === 'bess' ? '#F3EEE1' : '#E9E2D2'));
+          g.fillStyle = col; g.strokeStyle = col; g.lineWidth = 1.4;
+          if (it.k === 'dc') { if (hollow) g.strokeRect(s[0] - r, s[1] - r, 2 * r, 2 * r); else g.fillRect(s[0] - r, s[1] - r, 2 * r, 2 * r); }
+          else { g.beginPath(); g.arc(s[0], s[1], r, 0, Math.PI * 2); if (hollow) g.stroke(); else g.fill(); }
+          if (vis) {
+            const q = info(it); q.p = s; pins.push(q);
+            if (labOk(it)) { const left = s[0] > w - 150; const head = it.k === 'dc' && it.o ? own(it.o) + (it.m ? ' · ' + it.m : '') : nm(it); label(s[0] + (left ? -r - 7 : r + 7), s[1], head + (mwT(it) ? ' · ' + mwT(it).split(' · ')[0] : '') + (it.k === 'link' ? ' · ' + it.y : ''), { font: FONTS, align: left ? 'right' : 'left', color: '#E9E2D2' }); }
+          }
+        }
+        g.globalAlpha = 1;
       }
     }
     // ---- site pulse ----
@@ -2034,7 +2081,19 @@ function loadMap(){
  if(window.SAMA_KD)c._kd=window.SAMA_KD;else fetch('/assets/kartta-data.json').then(function(r){return r.json();}).then(function(d){c._kd=d;}).catch(function(){});
  if(window.SAMA_KV)c._kv=window.SAMA_KV;else fetch('/assets/kartta-verkko.json').then(function(r){return r.json();}).then(function(d){c._kv=d;c._kvxy=null;}).catch(function(){});
  if(window.SAMA_KE)c._ke=window.SAMA_KE;else fetch('/assets/kartta-etusivu.json').then(function(r){return r.json();}).then(function(d){c._ke=d;c._kexy=null;}).catch(function(){});
+ if(window.SAMA_KS)c._ks=window.SAMA_KS;else fetch('/assets/kartta-solmut.json').then(function(r){return r.json();}).then(function(d){c._ks=d;}).catch(function(){});
+ ntip();
 }
+/* 06.11.2026: vihje hiirellä kartan solmuille ja tunnisteille (nimi, laji, omistaja, tila, teho, lähde); kosketuksessa napautus valitsee paikan */
+function ntip(){var sec=document.querySelector('.k-live[data-live="map"]'),cv=sec&&sec.querySelector('.cv-map'),box=sec&&sec.querySelector('.kk-maps');if(!cv||!box||box.querySelector('.kk-ntip'))return;
+ if(!document.getElementById('kk-ntip-css')){var st=document.createElement('style');st.id='kk-ntip-css';st.textContent='.kk-ntip{position:absolute;z-index:5;max-width:300px;padding:9px 11px;border-radius:8px;background:rgba(20,18,15,.94);border:1px solid rgba(212,181,116,.35);color:#F3EEE1;font:500 12.5px/1.45 var(--font-body,sans-serif);pointer-events:none;white-space:pre-line;transform:translate(14px,14px)}.kk-ntip b{display:block;font-weight:600;color:#D4B574}.kk-ntip small{display:block;margin-top:5px;opacity:.72;font-size:11px}.kk-ntip[hidden]{display:none}';document.head.appendChild(st);}
+ var tip=document.createElement('div');tip.className='kk-ntip';tip.hidden=true;tip.setAttribute('role','tooltip');box.appendChild(tip);
+ cv.addEventListener('pointermove',function(e){if(e.pointerType!=='mouse'||!c||!c._mapPins){tip.hidden=true;return;}var cr=cv.getBoundingClientRect(),br=box.getBoundingClientRect(),x=e.clientX-cr.left,y=e.clientY-cr.top,best=null,bd=16*16;
+  c._mapPins.forEach(function(t){var d=(t.p[0]-x)*(t.p[0]-x)+(t.p[1]-y)*(t.p[1]-y);if(d<bd){bd=d;best=t;}});
+  if(!best){tip.hidden=true;cv.style.cursor='';return;}
+  tip.textContent='';var b=document.createElement('b');b.textContent=best.t;tip.appendChild(b);if(best.d){tip.appendChild(document.createTextNode(best.d));}if(best.s){var sm=document.createElement('small');sm.textContent=best.s;tip.appendChild(sm);}
+  var lx=e.clientX-br.left,ly=e.clientY-br.top;tip.hidden=false;var tw=tip.offsetWidth,th=tip.offsetHeight;if(lx+14+tw>br.width)lx=lx-tw-28;if(ly+14+th>br.height)ly=ly-th-28;tip.style.left=Math.max(0,lx)+'px';tip.style.top=Math.max(0,ly)+'px';cv.style.cursor='help';});
+ cv.addEventListener('pointerleave',function(){tip.hidden=true;});}
 /* leveällä näytöllä kartta tarttuu jo osion yläreunasta: --kk-lift = matka osion alusta kartan luonnolliseen paikkaan */
 function lift(){var wide=false;try{wide=matchMedia('(min-width:1100px)').matches;}catch(e){}secs.forEach(function(s){if(s.getAttribute('data-live')!=='map')return;var m=s.querySelector('.kk-maps');if(!m)return;if(!wide){s.style.setProperty('--kk-lift','0px');return;}var cur=parseFloat(s.style.getPropertyValue('--kk-lift'))||0,v=Math.round(m.getBoundingClientRect().top-s.getBoundingClientRect().top+cur);if(v!==cur)s.style.setProperty('--kk-lift',v+'px');});}
 lift();

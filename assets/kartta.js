@@ -207,7 +207,7 @@
       state.data.layers.forEach(function (L, i) { li[L.id] = i; });
       SM.items.forEach(function (it) {
         var layer = li[ND_LAYER[it.k]];
-        if (layer != null) out.push({ t: 'nd', layer: layer, c: it.c, it: it, lab: it.n, src: it.src });
+        if (layer != null) out.push({ t: 'nd', layer: layer, c: it.c, it: it, lab: t(it.n), src: it.src });
       });
     }
     return out;
@@ -235,15 +235,15 @@
     return mw >= 50;
   }
   function ndText(it) {
-    if (it.k === 'line') return it.n.replace(/\s*\d{3}(\+110)? kV.*$/, '') + (it.y ? ' ' + it.y : '');
-    if (it.k === 'link') return it.n + '\n' + ndMwText(it) + ' · ' + it.y;
-    var head = it.k === 'dc' && it.o ? owner(it.o) + (it.m ? ' · ' + it.m : '') : it.n;
+    if (it.k === 'line') return t(it.n).replace(/\s*\d{3}(\+110)? kV.*$/, '') + (it.y ? ' ' + it.y : '');
+    if (it.k === 'link') return t(it.n) + '\n' + ndMwText(it) + ' · ' + it.y;
+    var head = it.k === 'dc' && it.o ? owner(it.o) + (it.m ? ' · ' + it.m : '') : t(it.n);
     return head + (ndMw(it) ? '\n' + ndMwText(it).split(' · ')[0] : '');
   }
   function ndTip(it) {
     var SM = state.solmut, st = SM.status[it.s], h = [];
     var since = it.s === 'op' ? UI.since : UI.ready, mw = ndMwText(it);
-    h.push('<b>' + esc(it.n) + '</b>');
+    h.push('<b>' + esc(t(it.n)) + '</b>');
     h.push('<span>' + esc(t(SM.kind[it.k])) + (it.o ? ' · ' + esc(it.o) : '') + (it.m ? ' · ' + esc(it.m) : '') + '</span>');
     h.push('<span>' + esc(t(st)) + (it.y ? ' · ' + since + ' ' + it.y : '') + (mw ? ' · ' + esc(mw) : '') + '</span>');
     if (it.note) h.push('<span>' + esc(t(it.note)) + '</span>');

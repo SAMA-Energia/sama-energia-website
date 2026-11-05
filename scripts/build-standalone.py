@@ -59,9 +59,10 @@ def build(lang):
     kd=open(os.path.join(ROOT,'assets/kartta-data.json'),encoding='utf-8').read()
     kv=open(os.path.join(ROOT,'assets/kartta-verkko.json'),encoding='utf-8').read()
     ke=open(os.path.join(ROOT,'assets/kartta-etusivu.json'),encoding='utf-8').read()   # etusivun 3D-kartan 110 kV ja rantaviivat (scripts/kaart/etusivu_110.py)
+    ks=open(os.path.join(ROOT,'assets/kartta-solmut.json'),encoding='utf-8').read()   # kartan nimetyt solmut (scripts/kaart/build_solmut.py)
     bundle=['']
     def inl(m):
-        if not bundle[0]: bundle[0]='<script>window.SAMA_KARTTA='+kartta+';window.SAMA_KD='+kd+';window.SAMA_KV='+kv+';window.SAMA_KE='+ke+';</script><script>'+open(os.path.join(ROOT,m.group(1).lstrip('/')),encoding='utf-8').read().replace('</script','<\\/script')+'</script>'
+        if not bundle[0]: bundle[0]='<script>window.SAMA_KARTTA='+kartta+';window.SAMA_KD='+kd+';window.SAMA_KV='+kv+';window.SAMA_KE='+ke+';window.SAMA_KS='+ks+';</script><script>'+open(os.path.join(ROOT,m.group(1).lstrip('/')),encoding='utf-8').read().replace('</script','<\\/script')+'</script>'
         return ''
     html=re.sub(r'<script src="(/assets/scene(?:-et)?\.js)" defer></script>',inl,html)
     # kartta.js tekstinä sivun loppuun kerran (ei data:-osoitteena: tiedostonäkymät estävät data:-skriptit CSP:llä,
