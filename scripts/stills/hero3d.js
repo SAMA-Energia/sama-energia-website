@@ -1221,6 +1221,54 @@ function setT(t) {
     m.material.opacity = on ? Math.sin(Math.PI * u) * 0.95 : 0;
   });
 }
+/* v49 (6.11.2026): ?export=glb — sama näyttämö Blenderiin polunseurantaa varten (scripts/blender/export-scene.mjs →
+   scripts/blender/render_hero.py, Cycles). Valot ja kamera viedään window.EXPORT_META:ssa, ei glTF:ssä; maan häivytys
+   (fadeGround) kerrotaan materiaalikohtaisesti, InstancedMesh puretaan tavallisiksi mesheiksi. Ei vaikuta muihin ajoihin. */
+if (P.get('export') === 'glb') {
+  const { GLTFExporter } = await import('three/addons/exporters/GLTFExporter.js');
+  scene.updateMatrixWorld(true);
+  const inst = []; scene.traverse((o) => { if (o.isInstancedMesh) inst.push(o); });
+  for (const im of inst) {
+    const mtx = new THREE.Matrix4();
+    for (let i = 0; i < im.count; i++) {
+      im.getMatrixAt(i, mtx);
+      const m = new THREE.Mesh(im.geometry, im.material); m.name = (im.name || 'inst') + '_' + i;
+      m.matrix.copy(im.matrix).multiply(mtx); m.matrix.decompose(m.position, m.quaternion, m.scale);
+      im.parent.add(m);
+    }
+    im.parent.remove(im);
+  }
+  const fades = {}, seen = new Map(); let n = 0;
+  scene.traverse((o) => {
+    if (!o.isMesh) return;
+    for (const m of [].concat(o.material)) {
+      if (seen.has(m)) continue;
+      const base = Object.keys(M).find((k) => M[k] === m) || m.name || 'mat';
+      m.name = base + '#' + (n++); seen.set(m, m.name);
+      const key = m.customProgramCacheKey && m.customProgramCacheKey();
+      const fm = typeof key === 'string' && key.match(/^fade([\d.]+)_([\d.]+)$/);
+      if (fm) fades[m.name] = [+fm[1], +fm[2]];
+    }
+  });
+  const lights = [];
+  scene.traverse((o) => {
+    if (!o.isLight) return;
+    const L = { type: o.type, color: o.color.toArray(), intensity: o.intensity, position: new THREE.Vector3().setFromMatrixPosition(o.matrixWorld).toArray() };
+    if (o.isDirectionalLight) L.target = o.target.position.toArray();
+    if (o.isPointLight) { L.distance = o.distance; L.decay = o.decay; }
+    if (o.isHemisphereLight) L.groundColor = o.groundColor.toArray();
+    lights.push(L); o.visible = false;
+  });
+  const glb = await new GLTFExporter().parseAsync(scene, { binary: true, onlyVisible: true, maxTextureSize: 2048 });
+  let s = ''; const u8 = new Uint8Array(glb); for (let i = 0; i < u8.length; i += 0x8000) s += String.fromCharCode.apply(null, u8.subarray(i, i + 0x8000));
+  window.EXPORT_GLB = btoa(s);
+  window.EXPORT_META = {
+    W, H, shot: SHOT, look: P.get('look') || '', bg: BGHEX, exposure: renderer.toneMappingExposure, envIntensity: scene.environmentIntensity,
+    camera: { position: cam.position.toArray(), quaternion: cam.quaternion.toArray(), left: cam.left, right: cam.right, top: cam.top, bottom: cam.bottom },
+    site: [SITE.x, SITE.z], fades, lights,
+    bloom: { threshold: bloom.luminanceMaterial.threshold, intensity: bloom.intensity },
+  };
+}
 window.STAGES = STAGES;
 if (ANIM) {
   window.FRAME = (t) => { setT(t); composer.render(); return true; };

@@ -79,6 +79,17 @@ def build(lang):
     vids=[(k,os.path.join(ROOT,f'assets/k-proc-m.{k}')) for k in ('webm','mp4')]
     if all(os.path.exists(f) for _,f in vids):
         html=html.replace('data-base="/assets/k-proc"',' '.join(f'data-inline-{k}="data:video/{k};base64,'+base64.b64encode(open(f,'rb').read()).decode()+'"' for k,f in vids))
+    # v49: kaappi 3D:nä / AR (energiavarastot): ar.js ja model-viewer tekstinä kuten kartta.js, malli upotettuna
+    # (ar.js tekee siitä blob-osoitteen); dekooderien osoitteet omaan kansioon kuten tuotannossa
+    if '/assets/ar.js' in html:
+        html=re.sub(r'<script src="/assets/ar\.js" defer></script>\n?','',html)
+        mv=open(os.path.join(ROOT,'assets/vendor/model-viewer-4.4.0.min.js'),encoding='utf-8').read().replace('</script','<\\/script')
+        kartta_js+=('<script>window.ModelViewerElement={dracoDecoderLocation:"/assets/vendor/none/",ktx2TranscoderLocation:"/assets/vendor/none/",'
+                    'lottieLoaderLocation:"/assets/vendor/none/lottie.js"};</script>'
+                    '<script type="module">'+mv+'</script>')
+        kartta_js+='<script>'+open(os.path.join(ROOT,'assets/ar.js'),encoding='utf-8').read().replace('</script','<\\/script')+'</script>'
+        glb=base64.b64encode(open(os.path.join(ROOT,'assets/3d/kaappi.glb'),'rb').read()).decode()
+        html=html.replace('data-glb="/assets/3d/kaappi.glb"',f'data-glb-inline="{glb}"')
     html=re.sub(r'poster="(/assets/[^"]+)"',lambda m:f'poster="{datauri(m.group(1)) or m.group(1)}"',html)
     # vaiheiden pysäytyskuvat (varatila, jos esikatselu estää videon)
     html=re.sub(r'data-stills="([^"]+)"',lambda m:'data-stills="'+' '.join(datauri(x) or x for x in m.group(1).split())+'"',html)
