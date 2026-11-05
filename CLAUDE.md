@@ -237,3 +237,29 @@ When in doubt, leave it out and flag it.
 - AVOIN: kuvaus 9.–11.11 (muotokuvat); ET-sivun yhteystiedot (nyt +358 ja Helsinki); Elecnova-tuotekuva; Energen Nordic (vastaus suunnitelman
   kommentissa); natiivitarkistus (FI Martin, ET Madis; muutoslistat projektin ulkopuolella); uutissivun energiakatselmuskohta (määräaika 11.10.2026
   ohi); /meist/ ja /meista/ yritysfaktoissa molemmat markkinat; main vain Madiksen OK:lla.
+
+## v44 — Madiksen palaute 5.11.2026 (haara v35-uusi-ilme)
+
+- Hero: 3D-kohdekuvat ja kohdepainikkeet pois (Madis: viljankuivuri ensimmäisenä ei ole oikea, renderöity kohtaus vie pointin).
+  Tilalle kumppaneiden tuotteet ja palvelut liikkuvana kuvavirtana: työpöydällä kaksi pystysaraketta (vastakkaiset suunnat,
+  72 s / 86 s), puhelimella yksi vaakarivi; pysäytyspainike (WCAG 2.2.2), tauko hiiren alla ja kun virta ei näy,
+  reduced-motion = paikallaan. Kuvat `assets/tarjonta/*.webp` 480×600, yhtenäinen lähes neutraali mustavalko (kumppaneiden
+  omista materiaaleista, Madiksen lupa 5.11.2026 ja 23.10.2026). Kuvateksti = ala + kumppani. Kumpikin maa vain omat kumppaninsa.
+  Elecnovan kuvapalvelin palauttaa 403 (hotlink-suojaus) — kuvaa ei kierretty, Elecnova näkyy nimellä.
+- Kumppanit aloittain: etusivu (`.k-pgrid`, FI 6 alaa, ET 4), kumppanisivu (ala–kumppani-taulukko `.pmx`: laitteet / asennus /
+  aggregaattori) ja Meistä/Meist-sivu samalla ruudukolla. Jokaisella kumppanilla kaikki sen alat (Ralos myös aurinkovoimalat,
+  Avant myös energiavarastot ja siirrettävä lataus, Gare myös katokset ja asennus, Scanoffice aurinko, lataus ja lämpöpumput).
+  ET-kumppanisivulle lisätty Elecnova-kortti (sallittu molemmilla sivuilla).
+- Liittymissopimukset ja -kyselyt pois asiakkaalle näkyvästä sisällöstä (Madis: kaikki eivät ole vahvistettuja sopimuksia,
+  osa on vain selvityksiä ja jää kesken; sekoittaa asiakkaan): kartta-data (kasvu, varastot, tuleva, kohde), etusivun karttaluku,
+  /verkko/ ja /vork/, liityntärajoitusartikkeli (kaavio 1 800 / 30 000 MW pois), uutiskortit, reservisivun kortti
+  ("Nopeus: liittymänne on jo olemassa"). Tilalle vahvistetut luvut: käytössä olevat varastot ja Fingridin rajoitus 2029.
+  Lähteet fg-ruuhka ja fg-h1 poistettu kartta-datasta. Tasokuvat kk-* renderöity uudelleen, alt-tekstit vastaavat kuvia.
+- Kartta: "Käytä sijaintiani" -painike ja kohdan valinta kartalta (napautus). Selaimen sijainti vain painikkeesta, karkea
+  tarkkuus, aikakatkaisu 10 s; sijaintia ei tallenneta eikä lähetetä (ei evästeitä, ei localStoragea; selaimen oma
+  lupakysely riittää). Merkki näkyy kaikilla tasoilla, viimeinen taso zoomaa merkkiin. Moottori: `_mapInv` (käänteinen
+  projektio), `c._you`; .kk-body ja .kk-chipsw eivät enää peitä kanvaasia (pointer-events).
+- Ulkoasu: painikkeet litteiksi (ei liukuväriä eikä hehkua, säde 8 px; tummalla kulta #D4B574, vaalealla musta),
+  otsikoiden korostus pystyyn (kursiivi pois, väri kantaa), vaaleat osiot raikkaammiksi (#F7F4EE / #EFEBE3), lomakeosion
+  ruskea hehku pois, Newsreader-kursiivin esilataus pois (ei enää käytössä otsikoissa).
+- AVOIN: Elecnovan tuotekuva (palvelin estää suoran latauksen); natiivitarkistus uusille FI/ET-teksteille.

@@ -185,7 +185,6 @@ a.partner:hover{transform:translateY(-2px);box-shadow:0 20px 34px -28px rgba(0,0
 .faq-side .lead{margin-top:14px}
 .faq-side .btn{margin-top:26px}
 .closer{position:relative;overflow:hidden}
-.closer::before{content:"";position:absolute;left:-10%;top:-30%;width:50vw;height:50vw;max-width:800px;max-height:800px;background:radial-gradient(closest-side,rgba(221,185,78,.20),rgba(221,185,78,0) 70%);pointer-events:none}
 .closer h1{font-size:clamp(36px,3.8vw,50px);line-height:1.06;letter-spacing:-.015em}
 .closer .wrap{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(32px,5vw,80px);align-items:center;position:relative}
 .closer ul{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px}
