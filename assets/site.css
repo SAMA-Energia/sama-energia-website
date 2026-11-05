@@ -666,8 +666,8 @@ h1 em,h2 em{color:var(--gold-2)}
 .k-hl:before{content:"";position:absolute;left:-3.5px;top:-3.5px;width:7px;height:7px;border-radius:50%;background:#E8D193;box-shadow:0 0 0 4px rgba(232,209,147,.16)}
 .k-hl:after{content:"";position:absolute;left:0;width:1px;height:var(--l);background:rgba(232,209,147,.5)}
 .k-hl.u:after{bottom:6px}.k-hl.d:after{top:6px}
-.k-hl span{position:absolute;left:-1px;font:500 13px/1.2 var(--font-body);letter-spacing:.01em;color:#EDE6D6;white-space:nowrap;text-shadow:0 1px 3px #0A0A09,0 0 10px #0A0A09}
-.k-hl.u span{bottom:calc(var(--l) + 11px)}.k-hl.d span{top:calc(var(--l) + 11px)}.k-hl.l span{left:auto;right:-1px}
+.k-hl span{position:absolute;left:-8px;padding:3px 7px;border-radius:4px;background:rgba(10,10,9,.66);font:500 13px/1.2 var(--font-body);letter-spacing:.01em;color:#EDE6D6;white-space:nowrap}
+.k-hl.u span{bottom:calc(var(--l) + 8px)}.k-hl.d span{top:calc(var(--l) + 8px)}.k-hl.l span{left:auto;right:-8px}
 .k-hl i,.k-hleg{display:none}
 .k-tel{font:500 16px var(--font-body);color:var(--ink);border-bottom:1px solid rgba(212,181,116,.6);padding:4px 0 2px}
 .k-tel:hover{border-color:var(--gold)}
@@ -853,14 +853,14 @@ h1 em,h2 em{color:var(--gold-2)}
 .k-pvb{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:var(--r-s);background:#F7F4EE}
 .k-pvb video,.k-pvb img{display:block;width:100%;height:auto;aspect-ratio:8/5}.k-pvb [hidden],html:not(.js) .k-pvv{display:none}
 .k-pvb .k-play{right:12px;bottom:12px;background:rgba(251,249,244,.92)}
-.k-gal{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;margin:clamp(28px,3vw,40px) 0 0;padding:0;list-style:none}
-.k-gal figure{margin:0}
-.k-gal img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r-s);background:var(--paper-3)}
-.k-gal figcaption{display:grid;gap:3px;margin-top:10px}
-.k-gal b{font:500 16.5px/1.25 var(--font-display);color:var(--ink)}.k-gal span{font-size:13.5px;line-height:1.35;color:var(--ink-3)}
-@media (max-width:1199px){.k-gal{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-left:calc(var(--gutter)*-1);margin-right:calc(var(--gutter)*-1);padding:0 var(--gutter) 8px;scroll-padding-inline:var(--gutter)}
-.k-gal li{flex:0 0 clamp(168px,24vw,240px);scroll-snap-align:start}}
+.k-pvl{position:absolute;left:12px;top:12px;margin:0;padding:6px 12px;border-radius:999px;background:rgba(251,249,244,.94);font:600 13px/1.25 var(--font-body);color:var(--ink);box-shadow:0 1px 2px rgba(18,17,15,.1)}.k-pvl[hidden]{display:none}
+.k-pvs.sw{animation:kpvsw .5s var(--ease)}@keyframes kpvsw{from{opacity:.4}to{opacity:1}}
+.k-gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:clamp(30px,3.5vw,44px) 0 0;padding:0;list-style:none}
+.k-gal figure{position:relative;margin:0;overflow:hidden;border-radius:var(--r-s);background:#151411}
+.k-gal img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.k-gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 11px;background:linear-gradient(rgba(10,10,9,0),rgba(10,10,9,.7));font:500 13px/1.3 var(--font-body);color:#F3EEE1}
+@media (max-width:1023px){.k-gal{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:1023px){.k-h2g,.k-dg,.k-pg{grid-template-columns:minmax(0,1fr)}.k-h2r{padding-top:0}
 .k-dg{row-gap:18px}.k-dgl{display:contents}.k-dg .k-lbl{order:-2;margin:0}.k-dg .k-lines{margin-top:22px}.k-dfig{order:-1;max-width:760px}.k-pv{order:-1;position:relative;top:0;max-width:760px}}
 @media (max-width:767px) and (min-height:600px){.k-pv{position:sticky;top:79px;z-index:2;padding:8px 0 10px;background:#F7F4EE;box-shadow:calc(var(--gutter)*-1) 0 0 #F7F4EE,var(--gutter) 0 0 #F7F4EE,0 12px 14px -12px rgba(18,17,15,.3)}}
-@media (max-width:560px){.k-gal li{flex-basis:58vw}.k-ps li{padding-left:50px}.k-ps .n{left:16px}}
+@media (max-width:560px){.k-gal{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-left:calc(var(--gutter)*-1);margin-right:calc(var(--gutter)*-1);padding:0 var(--gutter) 6px;scroll-padding-inline:var(--gutter)}.k-gal li{flex:0 0 86%;scroll-snap-align:start}.k-ps li{padding-left:50px}.k-ps .n{left:16px}}

@@ -79,6 +79,8 @@ def build(lang):
     if all(os.path.exists(f) for _,f in vids):
         html=html.replace('data-base="/assets/k-proc"',' '.join(f'data-inline-{k}="data:video/{k};base64,'+base64.b64encode(open(f,'rb').read()).decode()+'"' for k,f in vids))
     html=re.sub(r'poster="(/assets/[^"]+)"',lambda m:f'poster="{datauri(m.group(1)) or m.group(1)}"',html)
+    # vaiheiden pysäytyskuvat (varatila, jos esikatselu estää videon)
+    html=re.sub(r'data-stills="([^"]+)"',lambda m:'data-stills="'+' '.join(datauri(x) or x for x in m.group(1).split())+'"',html)
     html=re.sub(r'(src|href)="(/assets/[^"]+)"',lambda m:f'{m.group(1)}="{datauri(m.group(2)) or m.group(2)}"',html)
     # <picture><source srcset>: upotetaan ensimmäinen ehdokas (muuten esikatselu näyttäisi img-varakuvan)
     def src_set(m):

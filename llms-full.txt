@@ -14,12 +14,12 @@ Pyydä maksuton kartoitus Miten se toimii+358 449 654 614
 1 500 MWNiin paljon reservikapasiteettia Fingrid hankkii keskimäärin joka tunnille ja arvioi hankinnan kasvavan vuoteen 2030 mennessä 1 200 MW:lla.
 Lähde: Fingrid, Reservimarkkinat tutuiksi -webinaari · 11.6.2025
 
-1Aurinkopaneelit2Pääkeskus ja ohjausyksikkö3Energiavarasto4Liittymispiste ja mittari
+1Aurinkopaneelit2Pääkeskus ja ohjausyksikkö3Energiavarasto4Muuntamo
 
 Aurinkopaneelit
 Pääkeskus ja ohjausyksikkö
 Energiavarasto
-Liittymispiste ja mittari
+Muuntamo
 
 Passiivinen liittymä on kuluerä. Mittarin takana oleva järjestelmä panee sen tuottamaan tuloa.
 
@@ -107,44 +107,17 @@ Pyydä maksuton kartoitus
 Laaja valikoima, yksi vastuutaho.
 Jokaisella alalla meillä on useampi kumppani. Valitsemme kohteeseenne sopivimmat laitteet ja tekijät, vertaamme vaihtoehdot samoilla luvuilla ja vastaamme kokonaisuudesta alusta loppuun.
 
-EnergiavarastotRalos Oy
+Ralos Oy
 
-Energiavarastot ja mikroverkotAvant Power
+Avant Power
 
-Integroidut aurinkokatotGare Energy Oy
+Gare Energy Oy
 
-Sähköauton latausScanoffice Oy
+JSM Automaatiosähkö Oy
 
-Aurinkovoimalan asennusJSM Automaatiosähkö Oy
+Gare Energy Oy
 
-ReservimarkkinatAggregaattori kohteen mukaan
-
-Energiavarastot
-Ralos Oyteolliset energiavarastot, Tampere
-Elecnovaulkokaapit ja konttivarastot
-Avant Powerenergiavarastot ja mikroverkot
-
-Aurinkosähkö
-Ralos Oyaurinkovoimalat yrityksille
-Gare Energy Oyintegroidut aurinkokatot
-Scanoffice Oyaurinkopaneelit maahantuojalta
-
-Lataus ja mikroverkot
-Avant Powermikroverkot, siirrettävä energia ja lataus
-Scanoffice Oysähköautojen latausasemat
-Gare Energy Oyaurinkokatos ja latauspisteet
-
-Lämpöpumput
-Scanoffice Oyilma-, ilma-vesi- ja maalämpöpumput
-JSM Automaatiosähkö Oyasennus
-
-Asennus ja käyttöönotto
-JSM Automaatiosähkö Oysähkötyöt ja käyttöönotto, Pirkanmaa
-Gare Energy Oykatto-, paneeli- ja akkuasennus
-SAMAasennuspäällikkö johtaa työmaata
-
-Reservimarkkinat
-Aggregaattorivalitaan kohteen mukaan Fingridin hyväksymistä reservitoimittajista
+Scanoffice Oy
 
 Kumppanit ja tuotteet
 
@@ -1736,12 +1709,12 @@ Küsi tasuta hinnangut Kuidas see töötab+358 449 654 614
 1 300 MWNii palju juhitavat võimsust vajab Eesti Eleringi hinnangul 2030. aastaks, kuid olemas või kindlasti tulemas on sellest 751 MW.
 Allikas: Elering, varustuskindluse aruanne 2025, tabel 2.3 · 9.12.2025
 
-1Päikesepaneelid2Peakilp ja juhtseade3Energiasalvesti4Liitumispunkt ja arvesti
+1Päikesepaneelid2Peakilp ja juhtseade3Energiasalvesti4Trafojaam
 
 Päikesepaneelid
 Peakilp ja juhtseade
 Energiasalvesti
-Liitumispunkt ja arvesti
+Trafojaam
 
 Passiivne liitumine on kuluartikkel. Arvestitagune süsteem paneb selle tulu tootma.
 
@@ -1829,32 +1802,13 @@ Küsi tasuta hinnangut
 Lai valik, üks vastutaja.
 Seadmed, paigaldus ja turulepääs tulevad mitmelt partnerilt. Valime teie objektile sobivaima lahenduse, võrdleme variante samade numbritega ja vastutame terviku eest algusest lõpuni.
 
-EnergiasalvestidRalos Oy
+Ralos Oy
 
-Salvesti sees: akupangad ja juhtimineRalos Oy
+Soleron Energy
 
-PäikeseelektrijaamadRalos Oy
+Ralos Oy
 
-PäikeseelekterSAMA
-
-Energiajuhtimine ja agregeerimineSoleron Energy
-
-ReserviturgSoleron Energy
-
-Energiasalvestid
-Ralos Oytööstuslikud energiasalvestid, Tampere
-Elecnovaväliskapid ja konteinersalvestid
-
-Päikeseelekter
-Ralos Oypäikeseelektrijaamad ettevõtetele
-SAMApaigaldus katusele, maale ja katusesse integreerituna
-
-Energiajuhtimine ja reserviturg
-Soleron Energyoma EMS-tarkvara ja agregeerimine Eleringi sagedusreservidesse
-
-Paigaldus ja käikulaskmine
-SAMApaigaldusjuht juhib objekti
-Elektritööde partnerregistreeritud ettevõte teeb elektritööd ja käikulaskmise
+Ralos Oy
 
 Partnerid ja tooted
 

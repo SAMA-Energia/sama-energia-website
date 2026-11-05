@@ -337,3 +337,28 @@ When in doubt, leave it out and flag it.
 - Valikoima: `.k-gal` kuusi tuotekuvaa järjestyksessä (assets/tarjonta, v44:n kuvatekstit ala + kumppani, kumpikin maa
   vain omat kumppaninsa; ≤ 1023 px vaakarivi), kumppaniruudukko ennallaan. FI: Ralos, Avant, Gare, Scanoffice, JSM,
   reservimarkkinat; ET: Ralos ×3, SAMA, Soleron ×2. Lämpöpumpuille ei ole kuvaa.
+
+## v47 — Madiksen palaute 5.11.2026 klo 22.44 (haara v35-uusi-ilme)
+
+- Madis: prosessiosion video ei näyttänyt vaiheita eikä reagoinut hiireen (esikatselutiedostossa); Laaja valikoima:
+  miksi vain mustavalkoisia kuvia, ei alojen uutta erittelyä, näytetään mitä tarjoamme; omat kuvat ja enemmän tiimiä
+  myöhemmin; kysymys väreistä (musta + kulta), kartta sitoo designin ja tuo avaruutta. Hero: aurinkopaneeleilta oma
+  kaapeli alas pääkeskukseen ja hehkuva kuten muut; "Liitumispunkt ja arvesti" on oikeasti trafojaam; varasto seinän
+  viereen Ralosin aineiston mukaan mitoitettuna, betoniperustus näkyviin; kaapelireitit todenmukaisiksi.
+- hero3d.js `ROW` (seinämalli): kaapit hallin itäseinän vieressä sähkötilan oven pohjoispuolella, takaosa seinään päin
+  (Ralos v2.1 6.2: verkkoliitäntä kaapin takana; 5.1.2: taka 800, sivut 500, väli 100, etu 1 500 mm), perustus 300 mm
+  (5.2) ja huoltotaso seinästä kaappien eteen; rivin eteläpää 1,4 m oven saranasta. Kaapelikanava perustuksen
+  etureunassa → seinän läpivienti oven pohjoispuolella (5.2: suojaputket perustukseen); muuntamon maakaapeli →
+  läpivienti oven eteläpuolella (ei enää ovesta sisään); aurinkokaapeli `EL.solarPts`: kattohylly → kaiteen yli →
+  julkisivua pitkin nurkan ja ikkunarivin välissä → läpivienti 2,6 m:ssä. Herossa aurinkokaapeli hehkuu kuten varaston
+  viiva, videossa (kriit) himmeä olemassa oleva infra. Kaappien pistevalot kaappien eteen (+x), allasvalo uuteen
+  paikkaan. Omistaja kaappien edessä. Kamera `proc` tx 23, tz -16, vh 17.5. Video ja herotaustat renderöity uudelleen.
+- Herotarrat: 2 tekstiksi vasemmalle (`u l`), 3 kaappien yläpuolelle (`u`, x .5816 y .3743 / mx .5236 my .3967),
+  4 = Trafojaam / Muuntamo; tarroilla tumma pohja (luettava viivojen päällä). Alt-tekstit päivitetty.
+- `assets/etusivu.js`: vaiheen nimi videon kulmassa (`.k-pvl`); jos video ei käynnisty (estetty automaattitoisto,
+  virhe, ei kuvaa 6 s:ssa) vaiheiden pysäytyskuvat etenevät samalla aikataululla ja hiiri/kosketus toimii samoin;
+  esikatselutiedostossa video Blob-osoitteena (Safari) ja pysäytyskuvat upotettuina (`data-stills`).
+- Valikoima (#valik / #valikoima): kumppaniruudukko (.k-pgrid) pois etusivulta (alat on kerrottu toisessa osiossa,
+  kumppanit kumppanisivulla); kuusi kuvaa 3:2 `assets/valikoima/*.webp` alkuperäisinä väreinä (Ralosin omat kuvat ovat
+  mustavalkoisia), kuvatekstinä vain kumppanin nimi; ET: Ralos ×3, Soleron ja kaksi sivuston omaa kuvaa ilman
+  kumppanin nimeä. Omat kuvat korvaavat nämä kuvauksen (9.–11.11) jälkeen.

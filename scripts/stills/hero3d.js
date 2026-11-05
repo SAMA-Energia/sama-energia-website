@@ -26,7 +26,7 @@ const KRIIT = P.get('look') === 'kriit';
 const ANIM = P.get('anim') || '';
 const SYS = { peakilp: [14.1, 0.1, -13.5], salvesti: [21.8, 2.6, -6], liitumispunkt: [31.2, 2.5, -8.6], vork: [35.6, 9.8, -12.6], elektrik: [22.4, 1.9, -3.2], omanik: [25.3, 1.9, -2.6] };
 const SITE_LABELS = {
-  toostus: Object.assign({ paike: [8.0, 9.6, -14.9] }, SYS, TAUSTA ? { peakilp: [14.05, 1.75, -13.6], salvesti: [22.83, 2.77, -6.0], paike: [10.1, 9.85, -16.1] } : {}),
+  toostus: Object.assign({ paike: [8.0, 9.6, -14.9] }, SYS, TAUSTA ? { peakilp: [14.05, 1.75, -13.6], salvesti: [15.305, 2.77, -17.725], paike: [10.1, 9.85, -16.1] } : {}),
   kuivati: Object.assign({ paike: [11.0, 5.8, -13.3] }, SYS),
   hotell: Object.assign({ paike: [11.0, 4.9, -12.1] }, SYS),
   paike: Object.assign({ paike: [5.0, 1.8, -20.4] }, SYS),
@@ -47,7 +47,7 @@ const PRESETS = {
   scale:       { tx: 3.2, tz: 0, ty: 4.7, vh: 11.8, fx: 0.5, fy: 0.5, az: 0.3, el: 0.16, fc: [3, 0], r0: 18, r1: 32 },
   /* look=tausta: työpöydän herotausta 3:2 (teksti vasemmalla, kohde oikealla) ja puhelin 4:3 */
   bg:          { tx: 20.5, tz: -11, vh: 29.5, fx: 0.57, fy: 0.62, az: 0.62, el: 0.6, fc: [21, -11], r0: 13, r1: 31 },
-  proc:        { tx: 24.5, tz: -10.5, vh: 17.5, fx: 0.5, fy: 0.56, az: 0.62, el: 0.6, fc: [24, -10], r0: 12, r1: 24 },
+  proc:        { tx: 23, tz: -16, vh: 17.5, fx: 0.5, fy: 0.5, az: 0.62, el: 0.6, fc: [22, -15], r0: 13, r1: 26 },
   bgm:         { tx: 20.5, tz: -10.5, vh: 25.5, fx: 0.5, fy: 0.69, az: 0.62, el: 0.6, fc: [22, -10], r0: 11, r1: 27 },
 };
 const PR = Object.assign({}, PRESETS[SHOT] || PRESETS.hero);
@@ -668,25 +668,28 @@ function cabinet(x, z, rotY = 0, scale = 1) {
   box(0.006, 0.6, 0.62, M.louver, CAB.w / 2 + 0.002, 1.5, 0, g, false);
   return g;
 }
-/* Sijoittelu Ralosin ohjeen mukaan (Perusteellinen asennus- ja käyttöohje BEAST125HD v2.1, 5.1.2 ja 5.2; 5.11.2026):
-   kaappien väli 100 mm, huoltoetäisyydet edessä 1 500 mm, takana 800 mm, sivuilla 500 mm, perustus korotettu ≥ 300 mm.
-   Rivi on ≥ 8 m lähimmästä rakennuksesta (pelastuslaitosten suositus yli 50 kWh:n ulkovarastolle, ks. projektin muistio
-   suuruspaa-2026-10-06); hallin kulma (14, -11) → lähin kaapin kulma 8,07 m. Ovet (etuosa) +z-suuntaan. */
-const ROW = { n: +(P.get('n') || 4), gap: 0.1, x0: 20.7, z: -6.0, base: 0.3, edge: 0.25, front: 1.5, back: 0.8, side: 0.5 };
+/* Sijoittelu Ralosin ohjeen mukaan (Perusteellinen asennus- ja käyttöohje BEAST125HD v2.1, 5.1.2, 5.2 ja 6.2; 5.11.2026):
+   kaapit hallin itäseinän vieressä sähkötilan oven pohjoispuolella, takaosa seinään päin (verkkoliitäntä on kaapin takana,
+   6.2) ja 800 mm huoltoväli seinään; kaappien väli 100 mm; sivuilla 500 mm; edessä 1 500 mm; perustus betonia, korotus
+   300 mm, reunat 0,25 m kaappien ulkopuolella; suojaputket valetaan perustukseen ja kaapelit tuodaan kaapin pohjan
+   läpivienneistä (5.2, 6.2); huoltotaso perustuksen ympärillä (5.2). Rivin eteläpää 1,4 m oven saranasta (ovi aukeaa ulos).
+   Palo-osastoinnit ja -etäisyydet ratkaistaan kohteessa paikallisten määräysten mukaan (5.1.2). */
+const ROW = { n: +(P.get('n') || 4), gap: 0.1, wallX: HALL.x1, zS: -15.6, base: 0.3, edge: 0.25, front: 1.5, back: 0.8, side: 0.5 };
 ROW.len = ROW.n * CAB.w + (ROW.n - 1) * ROW.gap;
-ROW.xc = ROW.x0 + ROW.len / 2;
+ROW.cx = ROW.wallX + ROW.back + CAB.d / 2;            // kaapin keskikohta x
+ROW.z1 = ROW.zS - ROW.len;                            // rivin pohjoispää
+ROW.zc = (ROW.zS + ROW.z1) / 2;
+ROW.cabZ = (i) => ROW.zS - CAB.w / 2 - i * (CAB.w + ROW.gap);
 const ROWOBJ = { cabs: [] };
 function cabinetsRow() {
-  // huoltotaso (5.2: suositeltava perustuksen ympärille) = huoltoetäisyyksien alue, matala laatoitus
-  const az0 = ROW.z - CAB.d / 2 - ROW.back, az1 = ROW.z + CAB.d / 2 + ROW.front;
-  ROWOBJ.apron = box(ROW.len + 2 * ROW.side, 0.04, az1 - az0, M.apron || M.concrete, ROW.xc, 0.02, (az0 + az1) / 2, scene, false, true);
-  // perustus: betoni, korotus 300 mm, reunat 0,25 m kaappien ulkopuolella
-  ROWOBJ.found = box(ROW.len + 2 * ROW.edge, ROW.base, CAB.d + 2 * ROW.edge, M.concrete, ROW.xc, ROW.base / 2, ROW.z);
+  // huoltotaso = huoltoetäisyyksien alue seinästä kaappien eteen (5.1.2, 5.2), matala laatoitus
+  const ax0 = ROW.wallX, ax1 = ROW.cx + CAB.d / 2 + ROW.front, az0 = ROW.z1 - ROW.side, az1 = ROW.zS + ROW.side;
+  ROWOBJ.apron = box(ax1 - ax0, 0.03, az1 - az0, M.apron || M.concrete, (ax0 + ax1) / 2, 0.015, (az0 + az1) / 2, scene, false, true);
+  // perustus: betoni C25, korotus 300 mm, reunat 0,25 m kaappien ulkopuolella
+  ROWOBJ.found = box(CAB.d + 2 * ROW.edge, ROW.base, ROW.len + 2 * ROW.edge, M.concrete, ROW.cx, ROW.base / 2, ROW.zc);
   const pos = [];
   for (let i = 0; i < ROW.n; i++) {
-    const x = ROW.x0 + CAB.w / 2 + i * (CAB.w + ROW.gap);
-    const s = WRONG === 'scale' ? 2.6 : 1;
-    const c = cabinet(x + (WRONG === 'scale' ? i * (s - 1) * CAB.w : 0), ROW.z, 0, s); c.position.y = ROW.base; pos.push(c.position.clone());
+    const c = cabinet(ROW.cx, ROW.cabZ(i), Math.PI / 2, 1); c.position.y = ROW.base; pos.push(c.position.clone());
     ROWOBJ.cabs.push(c);
   }
   return pos;
@@ -741,17 +744,27 @@ function energyLine(points, r = 0.055, mat = M.energy) {
 }
 const EY = 0.04;
 const ER = Math.min(0.06, Math.max(0.016, 0.06 * PR.vh / 28)) * (KRIIT ? 1.7 : 1);
-const EL = {}, DX = TAUSTA || KRIIT ? 13.8 : 14.1;
-EL.brightPts = [[ROW.x0 + ROW.len - 0.7, EY, -7.25], [17.2, EY, -7.25], [17.2, EY, -13.5], [DX, EY, -13.5]];
-EL.gridPts = [[29.9, EY, -9.2], [29.9, EY, -10.9], [16.8, EY, -10.9], [16.8, EY, -13.9], [DX, EY, -13.9]];
+const EL = {}, WX = ROW.wallX + 0.03;
+/* varasto → pääkeskus: kaapelikanava perustuksen etureunassa, rivin eteläpäästä seinän läpivientiin oven pohjoispuolella */
+const XT = ROW.cx + CAB.d / 2 + ROW.edge + 0.14;
+EL.brightPts = [[XT, EY, ROW.z1 + 0.45], [XT, EY, ROW.zS + 0.6], [WX, EY, ROW.zS + 0.6]];
+/* muuntamo → pääkeskus: maakaapeli seinän läpivientiin oven eteläpuolella */
+EL.gridPts = [[29.9, EY, -9.2], [29.9, EY, -10.9], [16.8, EY, -10.9], [16.8, EY, -12.4], [WX, EY, -12.4]];
 EL.riserPts = [[32.5, EY, -8.6], [35.6, EY, -8.6], [35.6, EY, -12.4]];
+/* aurinkopaneelit → pääkeskus: kaapelihylly katolla paneelikentän reunasta itäreunalle, kattokaiteen yli ja julkisivua
+   pitkin alas (ikkunarivin ja nurkan välistä) sähkötilan läpivientiin 2,6 m korkeudella */
+EL.solarPts = [[11.4, 9.1, -13.65], [13.55, 9.1, -13.65], [13.55, 9.1, -11.5], [13.55, 9.62, -11.5], [14.22, 9.62, -11.5], [14.22, 2.6, -11.5], [WX, 2.6, -11.5]];
 if (!SHOW.includes('noenergy')) {
   // battery -> main switchboard (behind the meter): bright
   EL.bright = energyLine(EL.brightPts, ER, ANIM ? M.energy.clone() : M.energy);
-  // site supply: transformer/meter kiosk -> main switchboard: dim
+  // site supply: transformer kiosk -> main switchboard: dim
   EL.grid = energyLine(EL.gridPts, ER * 0.75, ANIM ? M.energyGrid.clone() : M.energyGrid);
   // kiosk -> grid riser: dim
   EL.riser = energyLine(EL.riserPts, ER * 0.75, ANIM ? EL.grid.material : M.energyGrid);
+  // rooftop solar -> main switchboard: hero hehkuu kuten varaston viiva; kriit-videossa olemassa oleva infra (himmeä)
+  EL.solar = energyLine(EL.solarPts, ER * 0.85, TAUSTA ? M.energy : M.energyGrid);
+  // läpivientilevyt seinässä
+  for (const [y, z] of [[0.35, ROW.zS + 0.6], [0.35, -12.4], [2.6, -11.5]]) box(0.04, 0.34, 0.34, M.darkMetal, ROW.wallX + 0.02, y, z, scene, false);
 }
 // ---------- MV line to the grid ----------
 function pole(x, z, hgt = 10) {
@@ -897,10 +910,10 @@ function person(o) {
 const PEOPLE = {};
 if (TAUSTA) {
   // yksi ihminen mittakaavaksi: omistaja tabletin kanssa sähkötilan oven vieressä
-  PEOPLE.owner = person({ x: 15.35, z: -15.35, rot: 0.55, top: M.coat, bottom: M.trousers, pose: 'tablet', h: 1.74 });
+  PEOPLE.owner = person({ x: 17.15, z: -17.2, rot: -1.75, top: M.coat, bottom: M.trousers, pose: 'tablet', h: 1.74 });
 } else if (KRIIT) {
   // ihmiset lisätään animaatiokerroksessa (anim=proc); stillissä omistaja oven vieressä
-  if (!ANIM) PEOPLE.owner = person({ x: 15.35, z: -15.35, rot: 0.55, top: M.coat, bottom: M.trousers, pose: 'tablet', h: 1.74 });
+  if (!ANIM) PEOPLE.owner = person({ x: 17.15, z: -17.2, rot: -1.75, top: M.coat, bottom: M.trousers, pose: 'tablet', h: 1.74 });
 } else if (!SHOW.includes('nopeople')) {
   PEOPLE.electrician = person({ x: 22.4, z: -3.2, rot: Math.PI + 0.25, top: M.navy, bottom: M.trousers, stripes: true, helmet: true, pose: 'camera' });
   PEOPLE.owner = person({ x: 25.3, z: -2.6, rot: Math.PI - 0.35, top: M.coat, bottom: M.trousers, pose: 'tablet', h: 1.72 });
@@ -965,14 +978,14 @@ sun.shadow.bias = -0.0003; sun.shadow.normalBias = 0.03; sun.shadow.radius = KRI
 scene.add(sun);
 if (LIGHT === 'dusk') {
   const fill = new THREE.DirectionalLight('#6f8fbf', 0.35); fill.position.set(SITE.x + 60, 40, SITE.z + 80); scene.add(fill);
-  for (const p of cabPos) { const l = new THREE.PointLight('#f3c77a', TAUSTA ? 0.5 : 1.2, 6, 2); l.position.set(p.x, 2.9, p.z + 1.2); scene.add(l); }
+  for (const p of cabPos) { const l = new THREE.PointLight('#f3c77a', TAUSTA ? 0.5 : 1.2, 6, 2); l.position.set(p.x + 1.4, 2.9, p.z); scene.add(l); }   // kaapit katsovat itään (+x)
   const yl = new THREE.PointLight('#ffd9a0', 30, 28, 2); yl.position.set(HALL.x1 - 1, 7.5, HALL.z1 + 2.5); scene.add(yl);
   if (SCENE === 'kuivati') yl.position.set(16.2, 6.8, -10.8);
   const lamp = (x, y, z, i, d) => { const l = new THREE.PointLight('#ffd9a0', i, d, 2); l.position.set(x, y, z); scene.add(l); };
   if (SCENE === 'kuivati') { lamp(9.6, 7.5, 0.6, 9, 18); lamp(12.9, 12.9, -4.6, 2.5, 7); }
   if (SCENE === 'hotell') { lamp(-2.95, 2.75, -5.3, 6, 9); lamp(11.6, 2.9, -7.7, 5, 8); }
   if (SCENE === 'paike') lamp(14.4, 2.6, -12.2, 5, 8);
-  if (TAUSTA) { yl.intensity = 14; lamp(14.6, 1.9, -13.6, 9, 7); lamp(23.5, 10, -8.5, 34, 26); }
+  if (TAUSTA) { yl.intensity = 14; lamp(14.6, 1.9, -13.6, 9, 7); lamp(19.2, 9.5, -15.2, 30, 24); lamp(27.0, 9, -9.0, 14, 20); }
 } else {
   const fill = new THREE.DirectionalLight('#ffffff', 0.45); fill.position.set(SITE.x + 60, 50, SITE.z + 80); scene.add(fill);
 }
@@ -1078,7 +1091,7 @@ if (ANIM === 'proc') {
   AN.flash = new THREE.Mesh(new THREE.SphereGeometry(0.16, 16, 12), basic('#FFFFFF', 0)); scene.add(AN.flash);
   AN.flashLight = new THREE.PointLight('#ffffff', 0, 7, 2); scene.add(AN.flashLight);
   // suunniteltu paikka: huoltoalue (etu 1,5 / taka 0,8 / sivut 0,5 m) ja perustuksen ääriviiva katkoviivoina
-  const az0 = ROW.z - CAB.d / 2 - ROW.back, az1 = ROW.z + CAB.d / 2 + ROW.front, ax0 = ROW.x0 - ROW.side, ax1 = ROW.x0 + ROW.len + ROW.side;
+  const ax0 = ROW.wallX, ax1 = ROW.cx + CAB.d / 2 + ROW.front, az0 = ROW.z1 - ROW.side, az1 = ROW.zS + ROW.side;
   AN.zoneFill = new THREE.Mesh(new THREE.PlaneGeometry(ax1 - ax0, az1 - az0), basic(gold, 0)); AN.zoneFill.rotation.x = -Math.PI / 2;
   AN.zoneFill.position.set((ax0 + ax1) / 2, 0.05, (az0 + az1) / 2); scene.add(AN.zoneFill);
   const dashRect = (x0, z0, x1, z1, col, y) => {
@@ -1090,7 +1103,7 @@ if (ANIM === 'proc') {
     return { g, mat };
   };
   AN.zoneLine = dashRect(ax0, az0, ax1, az1, goldDeep, 0.07);
-  AN.footLine = dashRect(ROW.x0 - ROW.edge, ROW.z - CAB.d / 2 - ROW.edge, ROW.x0 + ROW.len + ROW.edge, ROW.z + CAB.d / 2 + ROW.edge, goldDeep, 0.075);
+  AN.footLine = dashRect(ROW.cx - CAB.d / 2 - ROW.edge, ROW.z1 - ROW.edge, ROW.cx + CAB.d / 2 + ROW.edge, ROW.zS + ROW.edge, goldDeep, 0.075);
   // kaapelireitin mittaus: katkoviiva pääkeskukselta kaappien taakse (sama reitti kuin valmis kultainen viiva)
   const route = EL.brightPts.slice().reverse().map((p) => [p[0], 0.08, p[2]]);
   AN.dashes = []; { const L = polyLen(route), n = Math.floor(L / 0.5); const mat = basic(goldDeep, 1);
@@ -1100,7 +1113,7 @@ if (ANIM === 'proc') {
   // aaveet: suunnitellut kaapit läpikuultavina, kultaiset reunat
   AN.ghosts = [];
   for (let i = 0; i < ROW.n; i++) {
-    const g = new THREE.Group(); g.position.set(ROW.x0 + CAB.w / 2 + i * (CAB.w + ROW.gap), ROW.base + CAB.h / 2, ROW.z); scene.add(g);
+    const g = new THREE.Group(); g.position.set(ROW.cx, ROW.base + CAB.h / 2, ROW.cabZ(i)); g.rotation.y = Math.PI / 2; scene.add(g);
     const geo = new THREE.BoxGeometry(CAB.w, CAB.h, CAB.d);
     const body = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ color: '#FFFFFF', transparent: true, opacity: 0, depthWrite: false, roughness: 0.6 })); g.add(body);
     const edges = new THREE.LineSegments(new THREE.EdgesGeometry(geo), new THREE.LineBasicMaterial({ color: goldDeep, transparent: true, opacity: 0 })); g.add(edges);
@@ -1114,11 +1127,11 @@ if (ANIM === 'proc') {
   // energian tiet: kultainen viiva piirtyy, liittymä ja verkko kirkastuvat; markkinapulssit
   AN.brightCount = EL.bright ? EL.bright.geometry.index.count : 0;
   AN.gridE0 = EL.grid ? EL.grid.material.emissiveIntensity : 0;
-  AN.path = EL.brightPts.concat(EL.gridPts.slice().reverse().slice(1), EL.riserPts, [[35.6, 9.6, -12.6]]);
+  AN.path = EL.brightPts.concat(EL.gridPts.slice().reverse(), EL.riserPts, [[35.6, 9.6, -12.6]]);
   AN.pulses = []; for (let k = 0; k < 5; k++) { const m = new THREE.Mesh(new THREE.SphereGeometry(0.13, 12, 10), basic('#E3BE6A', 0)); scene.add(m); AN.pulses.push(m); }
   // ihmiset: omistaja (kamera → tabletti) ja sähköasentaja
-  AN.ownerCam = person({ x: 16.3, z: -15.1, rot: -0.99, top: M.coat, bottom: M.trousers, pose: 'camera', h: 1.74 });
-  AN.ownerTab = person({ x: 16.3, z: -15.1, rot: 0.63, top: M.coat, bottom: M.trousers, pose: 'tablet', h: 1.74 });
+  AN.ownerCam = person({ x: 16.7, z: -14.15, rot: -1.34, top: M.coat, bottom: M.trousers, pose: 'camera', h: 1.74 });
+  AN.ownerTab = person({ x: 17.15, z: -14.4, rot: -2.55, top: M.coat, bottom: M.trousers, pose: 'tablet', h: 1.74 });
   AN.elec = person({ x: 15.7, z: -12.15, rot: -2.28, top: M.navy, bottom: M.trousers, stripes: true, helmet: true, pose: 'camera' });
   AN.ownerCamF = fader(AN.ownerCam); AN.ownerTabF = fader(AN.ownerTab); AN.elecF = fader(AN.elec);
 }
@@ -1140,7 +1153,7 @@ function setT(t) {
   // omistaja: valokuvaa pääkeskuksen ja paikan (2–3), tabletti päätöksessä (4–5)
   AN.ownerCamF(smo(span(t, 5.6, 6.1)) * (1 - smo(span(t, 16.8, 17.2))));
   AN.ownerTabF(smo(span(t, 16.9, 17.3)));
-  AN.ownerCam.rotation.y = -0.99 + 1.62 * smo(span(t, 8.7, 9.4));
+  AN.ownerCam.rotation.y = -1.34 - 1.57 * smo(span(t, 8.7, 9.4));
   AN.elecF(smo(span(t, 11.7, 12.2)));
   // salamat
   const shots = [[6.95, AN.ownerCam, 0], [7.5, AN.ownerCam, 0], [8.05, AN.ownerCam, 0], [9.75, AN.ownerCam, 1], [10.3, AN.ownerCam, 1], [12.7, AN.elec, 0], [13.25, AN.elec, 0]];
