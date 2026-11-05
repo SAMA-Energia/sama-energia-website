@@ -4,9 +4,9 @@
 
 ## Järeldus
 
-Seitse konkurenti räägivad oma avalehel endast: seadmest, juhtsüsteemist, paigaldatud ühikute arvust või kontserni suurusest. Ükski neist ei räägi lugeja liitumisest kui varast ega seleta reserviturgu süsteemihalduri enda numbritega. See on SAMA vaba koht: **liitumise omanik on kangelane ja SAMA annab talle enne seadet kaardi** selle kohta, mida tema liitumine võrgus ja arvel teha suudab. Kaart on kirjalik ja allikatega ning selle järgi ehitab SAMA süsteemi valmis.
+Seitse konkurenti räägivad oma avalehel endast: seadmest, juhtsüsteemist, paigaldatud ühikute arvust või kontserni suurusest. Ükski neist ei räägi muutusest, mis võrgus käib, ega lugeja kohast selles. See on SAMA koht ja see on suur: **võrgu kindlus ehitatakse nüüd omanike objektidel ja tööstus saab oma elektri peremeheks. SAMA juhib seda muutust: ütleb, kuhu turg liigub, annab omanikule kaardi ja ehitab süsteemi valmis.** Selgroog on idee; kaart ja reservirida on tõend, mis hoiab idee püsti.
 
-Reservirida on igas plokis esimene ja seletatud. Esileht on üheksa plokki; soovitatud tekst on eesti keeles 576 ja soome keeles 546 sõna. Viis otsust, mis on sinu teha, on peatükis 7.
+Reservirida on igas plokis esimene ja seletatud. Esileht on üheksa plokki; soovitatud tekst on eesti keeles 593 ja soome keeles 567 sõna. Viis otsust, mis on sinu teha, on peatükis 7.
 
 ## 0. Mille pealt see on tehtud
 
@@ -91,18 +91,44 @@ Reservirida on igas plokis esimene ja seletatud. Esileht on üheksa plokki; soov
 5. **Hõivatud sõnad.** Eestis sõltumatus ja energiasõltumatus (Sunergia, Energiapartner), energiarevolutsioon ja tulevikutehnoloogia (Energiapartner), tulevikukindel ja konkurentsieelis (Alexela), kõik ühest kohast ja võtmed kätte (Sunergia), miinimum (Enefit). Soomes älykäs (Powera), uudella tavalla ja aina (Cactos), avaimet käteen ja tootjast sõltumatu hankimine (Powera). SAMA ei juhi nende sõnadega. Oluline leid: lukus hero algab Eesti lehel sama sõnaga, mida Sunergia ja Energiapartner juba kasutavad.
 6. **Kuupäevad on vabad.** Ükski konkurent ei räägi avalehel süsteemihalduri ega regulaatori kalendrist. Soomes: FCR 2027. aastal ainult tunniturult, lõuna salvestiliitumiste piirang 2029-ni, tarbimiskohtade ühtne tariifistruktuur 1.1.2029-ks. Eestis: salvesti edastamistasu reegel 1.1.2026, Elektrilevi hinnakiri 1.6.2026, arvesti liidese andmed 1.9.2026. Kalender on SAMA strateegi hääl: kiireloomulisus tuleb faktidest, mitte survest.
 
-### 1.5 Vaba koht
+### 1.5 Selgroog
+
+Selgroog on idee, mille nimel ettevõte on olemas, mitte teenus, mida ta müüb. Teenus on tõend. Kolm kihti, ülevalt alla:
+
+| Kiht | Mis see on | Lause (sisemine) | Roll |
+|---|---|---|---|
+| Idee | Miks SAMA on olemas | Võrk pööras. Selle kindlus ehitatakse nüüd omanike objektidel, objekt objekti haaval, ja tööstus saab oma elektri peremeheks. Iseseisev energia. | Revolutsionäär, strateeg |
+| Koht | Mida see omanikule tähendab | Liitumine, mille taga on salvesti ja juhtimine, on koht uues võrgus: teenib valmisolekust, maksab vähem, otsustab ise. | Jutuvestja |
+| Tõend | Miks uskuda | Kaart: süsteemihalduri arv kuupäevaga, hinnang omaniku enda tunniandmetest, avaldatud meetod, kirjalik ei, igakuine indeks. | Innovaator |
 
 Positsioon (sisemine lause, mitte lehe tekst):
 
-- **ET:** Liitumise omanikule, kes maksab liitumise eest, kuid ei tea, mida see vara võrgus ja arvel teha suudab, on SAMA arvestitaguste energiasüsteemide integraator, kes annab enne seadet kaardi: kirjaliku hinnangu omaniku enda tunniandmetest, reservirida esimesena ja allikaga. Erinevalt seadmetootjatest, paigaldajatest ja energiamüüjatest alustab SAMA liitumisest ja süsteemihalduri numbritest ning ütleb vajaduse korral kirjalikult ei.
-- **FI:** Liittymän omistajalle, joka maksaa liittymästä, mutta ei tiedä, mitä tuo omaisuus pystyy tekemään verkossa ja laskulla, SAMA on mittarin takaisten energiajärjestelmien integraattori, joka antaa ennen laitetta kartan: kirjallisen arvion omistajan omasta tuntidatasta, reservirivi ensin ja lähteineen. Toisin kuin laitevalmistajat, asentajat ja energiayhtiöt, SAMA aloittaa liittymästä ja kantaverkkoyhtiön luvuista ja sanoo tarvittaessa kirjallisesti ei.
+- **ET:** Liitumise omanikule, kes tahab oma elektri üle ise otsustada, on SAMA arvestitaguste energiasüsteemide integraator ja selle turu suuna ütleja: ta näitab, kuhu võrk ja reserviturg liiguvad, annab kaardi ja ehitab süsteemi, millega omanik võtab oma koha uues võrgus. Erinevalt seadmemüüjatest ja energiafirmadest ei müü SAMA kokkuhoidu ega seadet, vaid kohta muutuses, mida ta ise juhib.
+- **FI:** Liittymän omistajalle, joka haluaa päättää sähköstään itse, SAMA on mittarin takaisten energiajärjestelmien integraattori ja tämän markkinan suunnannäyttäjä: se kertoo, mihin verkko ja reservimarkkina liikkuvat, antaa kartan ja rakentaa järjestelmän, jolla omistaja ottaa paikkansa uudessa verkossa. Toisin kuin laitemyyjät ja energiayhtiöt, SAMA ei myy säästöä eikä laitetta vaan paikan muutoksessa, jota se itse johtaa.
 
-Miks see koht on kaitstav:
+Miks see selgroog seisab:
 
-1. **Seda ei saa kopeerida ühe lausega.** Kaart nõuab meetodit, tunniandmeid ja süsteemihalduri andmete jälgimist iga kuu. Konkurent, kes hakkaks sama ütlema, peaks avaldama oma numbrid ja oma meetodi.
-2. **See on SAMA ärimudel, mitte loosung.** SAMA valib tootja objekti järgi, agregaator opereerib, SAMA integreerib. Kirjalik ei on usutav ainult siis, kui müüja ei sõltu ühest seadmest.
-3. **See töötab mõlemal turul oma faktidega.** Soomes kannab seda liitumiste nappus ja 2027 kuni 2029 kalender, Eestis 2026. aasta jõustunud reeglid ja Eleringi juhitava võimsuse vajadus.
+1. **See on suurem kui ükski konkurent.** Seitse ettevõtet müüvad seadet, säästu või partnerlust. Muutuse juhtimist ei väida keegi, sest see nõuab avalikku seisukohta turu suuna kohta. SAMA-l on see olemas: kalender, indeks, meetod, kirjalik ei.
+2. **See on SAMA enda sõna.** Brändirida on „Ühine võrk, iseseisev energia". Sunergia ja Energiapartner kasutavad sõna „energiasõltumatus"; SAMA sõna on „iseseisev" ja „iseseisvus" ning see on vaba mõlemal turul (FI „itsenäinen energia" ei kasuta 2.11.2026 loetud konkurentidest keegi).
+3. **Seda ei saa tootefirma kopeerida.** Liikumist, millel on avalik aritmeetika all, ei kopeeri kapi müüja ühe lausega; ta peaks avaldama oma numbrid ja oma seisukoha.
+4. **See kannab mõlemat turgu oma faktidega.** Soomes: tarbimine kasvab lepingute põhjal ligi 40 %, lõuna liitumised on piiratud 2029-ni, FCR 2027 ainult tunniturult. Eestis: 2026. aasta reeglid töötavad arvestitaguse süsteemi kasuks ja Elering vajab 2035. aastaks umbes 2 100 MW juhitavat võimsust.
+5. **Sellel on piir, mis hoiab selle usutavana.** Idee ilma numbrita on loosung (punane lipp 2.2). Iga plokk kannab idee kõrval omaniku arvu ja allikat. Hääl on mitteparteiline: tulemuste, mitte kunagi poolte eest (G5).
+
+### 1.6 Selgroog üheksas plokis
+
+| # | Plokk | Mida selgroog seal teeb |
+|---|---|---|
+| 0 | Hero | Idee ja koht ühes lauses, üks süsteemihalduri arv, esimene samm |
+| 1 | Muutus | Võrk pööras kiiremini, kui arvelt paistab: muutuse mastaap kuupäevadega |
+| 2 | Väärtus | Omaniku koht uues võrgus: valmisolek esimesena, siis tipp, tund, kindlus |
+| 3 | Kaart | Kuidas SAMA juhib: suund (kalender, indeks), kaart, ehitus, kirjalik ei |
+| 4 | Kuidas see käib | Koha võtmine nelja sammuga |
+| 5 | Kellele | Neli kohta uues võrgus, igaüks omaniku esimese küsimusega |
+| 6 | Miks SAMA | Me juhime seda muutust: avaldame aritmeetika, ehitame süsteemi, ütleme ei |
+| 7 | KKK | Idee kaitse numbritega |
+| 8 | Vorm | Esimene samm oma koha võtmiseks |
+
+Valikuline lisand (otsus 1b): kolme sõna riba „Iseseisvus. Jõukus. Vabadus." muutuse ja väärtuse vahel, iga sõna ühe konkreetse lausega, mitte loeteluna (2.6 tabel annab laused). Sammas ütleb, et need kolm sõna seisavad veebilehel mõlemas keeles.
 
 ## 2. Brändi hääl
 
@@ -237,7 +263,7 @@ Soovitatud tekst, kõik nähtavad sõnad koos allikaridade ja nuppudega, jalus v
 
 | Plokk | ET sõnu | FI sõnu |
 |---|---|---|
-| 0 Hero | 40 | 44 |
+| 0 Hero | 59 | 65 |
 | 1 Muutus | 81 | 64 |
 | 2 Väärtus | 112 | 110 |
 | 3 Kaart | 47 | 45 |
@@ -246,7 +272,7 @@ Soovitatud tekst, kõik nähtavad sõnad koos allikaridade ja nuppudega, jalus v
 | 6 Miks SAMA | 36 | 34 |
 | 7 KKK | 86 | 81 |
 | 8 Vorm | 30 | 27 |
-| **Kokku** | **576** | **546** |
+| **Kokku** | **593** | **567** |
 
 ### 3.3 Plokid
 
@@ -262,44 +288,44 @@ Igas plokis: eesmärk, väide, tõend, CTA, variandid ET ja FI koos mõjuga ning
 **Lukus pealkiri** (asutajate otsus 10.09.2026)
 - ET: Saavutage energiasõltumatus, pannes elektriliitumise enda kasuks tööle.
 - FI: Saavuttakaa energiariippumattomuus laittamalla sähköliittymänne töihin omaksi eduksenne.
-- Mõju: järjepidevus, sest pealkiri on avalikul lehel alates septembrist; kannab nii tulemuse (sõltumatus) kui mehhanismi (liitumine töötab). Eestis jagab esimene sõna lehte Sunergia ja Energiapartneriga; Soomes ei kasuta 2.11.2026 loetud konkurentidest keegi sõna „energiariippumattomuus". Soome versioonist on mõttekriips eemaldatud (G6); lause on ilma selleta õige.
+- Mõju: järjepidevus, sest pealkiri on avalikul lehel alates septembrist; kannab nii tulemuse (sõltumatus) kui mehhanismi (liitumine töötab). Kannab koha kihti, mitte ideed: lugeja saab tulemuse, mitte muutust, mille osa ta on. Eestis jagab esimene sõna lehte Sunergia ja Energiapartneriga, kui SAMA enda sõna on „iseseisev". Soome versioonist on mõttekriips eemaldatud (G6); lause on ilma selleta õige.
 
-**Alternatiivid** (kuni kolm)
-- **A1. Liitumine ees**
+**Alternatiivid** (kuni kolm, selgroost)
+- **A1. Iseseisev energia algab liitumisest**
+  - ET: Iseseisev energia algab teie liitumisest.
+  - FI: Itsenäinen energia alkaa liittymästänne.
+  - Mõju: seob brändirea („Ühine võrk, iseseisev energia") omanikuga; SAMA enda sõna, mitte konkurentide „energiasõltumatus"; neli sõna, mis mahuvad telefoni ekraanile ühe reana. Idee on pealkirjas, koht ja arv juhtlõigus.
+- **A2. Tööstus võtab elektri enda kätte**
+  - ET: Eesti tööstus võtab oma elektri enda kätte. Alustage oma liitumisest.
+  - FI: Suomen teollisuus ottaa sähkönsä omiin käsiinsä. Aloittakaa liittymästänne.
+  - Mõju: kõige julgem, revolutsionääri hääl, turu nimi pealkirjas (G4 täidetud iseenesest). Risk: „tööstus" jätab talu ja kinnisvara kõrvale ning suur väide nõuab kohe suurt arvu all.
+- **A3. Liitumine on vara**
   - ET: Teie elektriliitumine on vara. Pange see enda kasuks tööle.
   - FI: Sähköliittymänne on omaisuutta. Laittakaa se töihin omaksi eduksenne.
-  - Mõju: juhib vaba kohaga, mida ükski konkurent ei ütle; kaks paralleelset lauset (sambareegel); sama tegusõna kui lukus pealkirjas, seega järjepidevus säilib. Sõltumatus liigub brändireale ja kolmele reale hero all. Risk: „vara" on abstraktne, kui hero all ei ole kohe, mida vara teeb.
-- **A2. Sambast**
-  - ET: Elekter ei ole enam ainult kulu. See on teie kinnistu tootmisvara.
-  - FI: Sähkö ei ole enää pelkkä kulu. Se on kiinteistönne tuottavaa omaisuutta.
-  - Mõju: tugevaim kategooria ümberraamimine, hea video ja LinkedIni jaoks. Ei ütle, et vara on liitumine. Kõlab loosungina, kui tõend kõrval puudub.
-- **A3. Valmisolek ees**
-  - ET: Elering hangib võrgule valmisolekut igal tunnil. Teie liitumine saab seda pakkuda.
-  - FI: Fingrid ostaa verkolle valmiutta joka tunti. Liittymänne voi tarjota sitä.
-  - Mõju: reserv juba pealkirjas (G1) ja iga leht räägib esimesest reast alates oma turu faktiga. Kangelaseks saab aga süsteemihaldur, mitte omanik. Lugeja, kes reserviturgu ei tunne, vajab kohe selgitust.
+  - Mõju: koha kiht pealkirjas, idee juhtlõigus; kõige konkreetsem ja kõige lähem lukus pealkirjale. Väiksem kui A1 ja A2: räägib omaniku varast, mitte muutusest.
 
 **Juhtlõik** (pealkirja all)
-- **L1, kolm rida** (sambast, reservireegli järjekorras)
+- **L1, koht ühe lausega** (A1 ja A2 juurde)
+  - ET: Võrgu kindlus ehitatakse nüüd objekt objekti haaval. Liitumine, mille taga on salvesti ja juhtimine, on koht uues võrgus: teenib valmisolekust, maksab vähem ja annab otsused teie kätte.
+  - FI: Sähköjärjestelmän varmuus rakennetaan nyt kohde kohteelta. Liittymä, jonka takana on varasto ja ohjaus, on paikka uudessa verkossa: se ansaitsee valmiudesta, maksaa vähemmän ja tuo päätökset teidän käsiinne.
+  - Mõju: idee (kindlus objekt objekti haaval) ja koht (kolm asja) samas hingetõmbes; väärtusplokk tõestab kolm asja üks ühele.
+- **L2, kolm rida** (lukus pealkirja või A3 juurde)
   - ET: Teenige valmisolekust. Makske vähem. Otsustage ise.
   - FI: Ansaitkaa valmiudesta. Maksakaa vähemmän. Päättäkää itse.
-  - Mõju: loetav ühe pilguga; lubab kolm asja, mida väärtusplokk tõestab.
-- **L2, lause**
-  - ET: Salvesti, oma tootmine ja juhtimine otsustavad teie arvesti taga igal tunnil: tarbida, salvestada, müüa või hoida võimsust Eleringile valmis. Teie tarbimise järgi ja automaatselt.
-  - FI: Varasto, oma tuotanto ja ohjaus päättävät mittarinne takana joka tunti: kuluttaa, varastoida, myydä vai pitää tehoa Fingridin käytettävissä. Kulutuksenne mukaan ja automaattisesti.
-  - Mõju: seletab mehhanismi juba hero's; kaks korda pikem kui L1. Soovitus: L1 hero'sse, L2 väärtusploki sissejuhatuseks.
+  - Mõju: loetav ühe pilguga; ei kanna ideed, ainult kohta.
 
-**Soovitus:** kui lukk jääb, siis lukus pealkiri + L1 + tõend. Kui avad luku, soovitan A1, sest see on ainus pealkiri, mis paneb vaba koha esimesele reale mõlemal turul.
+**Soovitus:** A1 koos L1-ga. Idee on pealkirjas, koht juhtlõigus, süsteemihalduri arv tõendina ja esimene samm nupus; järgmine plokk paistab ekraani alt.
 
-**Soovitatud tekst**
+**Soovitatud tekst** (A1 + L1)
 <!-- copy:ET:Hero -->
-> **Saavutage energiasõltumatus, pannes elektriliitumise enda kasuks tööle.**
-> Teenige valmisolekust. Makske vähem. Otsustage ise.
+> **Iseseisev energia algab teie liitumisest.**
+> Võrgu kindlus ehitatakse nüüd objekt objekti haaval. Liitumine, mille taga on salvesti ja juhtimine, on koht uues võrgus: teenib valmisolekust, maksab vähem ja annab otsused teie kätte.
 > Eleringi hinnangul vajab Eesti 2030. aastaks umbes 1 300 MW juhitavat võimsust. Allikas: Elering, varustuskindluse aruanne 2025.
 > [Küsige liitumise kontroll] · Kuidas see töötab
 <!-- /copy -->
 <!-- copy:FI:Hero -->
-> **Saavuttakaa energiariippumattomuus laittamalla sähköliittymänne töihin omaksi eduksenne.**
-> Ansaitkaa valmiudesta. Maksakaa vähemmän. Päättäkää itse.
+> **Itsenäinen energia alkaa liittymästänne.**
+> Sähköjärjestelmän varmuus rakennetaan nyt kohde kohteelta. Liittymä, jonka takana on varasto ja ohjaus, on paikka uudessa verkossa: se ansaitsee valmiudesta, maksaa vähemmän ja tuo päätökset teidän käsiinne.
 > Fingrid hankkii reservejä joka tunti keskimäärin noin 1 500 MW ja arvioi tarvitsevansa noin 1 200 MW lisää viiden vuoden kuluessa. Lähde: Fingrid, Reservimarkkinat tutuiksi, 11.6.2025.
 > [Pyytäkää liittymätarkistus] · Miten se toimii
 <!-- /copy -->
@@ -312,11 +338,11 @@ Igas plokis: eesmärk, väide, tõend, CTA, variandid ET ja FI koos mõjuga ning
 - **CTA:** tekstilink artiklile „Mida süsteemihaldurid tegelikult ennustavad" / vastav Ajankohtaista artikkel.
 
 **Variandid**
-- **A. Vara ja kalender** (soovitus, kui hero on lukus pealkiri)
+- **A. Vara ja kalender** (soovitus, kui hero on A1, A2 või lukus pealkiri)
   - ET pealkiri: Liitumine on vara. Arvestitagune süsteem paneb selle teenima.
   - FI pealkiri: Liittymä on omaisuutta. Mittarin takainen järjestelmä panee sen tuottamaan.
   - Mõju: lisab hero'le uue mõtte (vara) ja annab sellele kuupäevad. Eestis on kõik kolm kuupäeva juba jõus, mis on tugevusest kõnelemise kõige puhtam vorm: reeglid on juba omaniku poolel.
-- **B. Ainult kalender** (soovitus, kui hero on A1)
+- **B. Ainult kalender** (soovitus, kui hero on A3)
   - ET pealkiri: Mis on 2026. aastal muutunud.
   - FI pealkiri: Mitä muuttuu ja milloin.
   - Mõju: kui hero ütleb juba „liitumine on vara", ei korrata seda; plokk on puhas strateegi hääl.
@@ -653,13 +679,13 @@ Turuseire agendile, sest väidete registrit muudab tema ja need read peavad enne
 
 ## 7. Viis otsust
 
-1. **Positsioon.** Kas „liitumine on vara ja kaart enne seadet" on kogu lehe selgroog? Soovitus: jah. See on kaardil vaba, kannab mõlemat turgu ja ei vaja kogemuste nimekirja.
-2. **Hero pealkiri.** Lukk jääb või A1 („Teie elektriliitumine on vara. Pange see enda kasuks tööle." / „Sähköliittymänne on omaisuutta. Laittakaa se töihin omaksi eduksenne."). Soovitus: A1 mõlemas keeles, sest „energiasõltumatus" on Eestis Sunergia ja Energiapartneri sõna ning A1 paneb vaba koha esimesele reale. Kui lukk jääb, kaob Soome pealkirjast mõttekriips.
+1. **Selgroog.** Kas lehe selgroog on idee „võrgu kindlus ehitatakse omanike objektidel ja tööstus saab oma elektri peremeheks; SAMA juhib seda muutust" (1.5), mille all kaart ja reservirida on tõend? Soovitus: jah. See on suurem kui ükski konkurent, SAMA enda sõnadega ja kaitstud avaliku aritmeetikaga. 1b: kas kolme sõna riba (iseseisvus, jõukus, vabadus) läheb esilehele muutuse ja väärtuse vahele.
+2. **Hero pealkiri.** Lukk jääb või A1 „Iseseisev energia algab teie liitumisest." / „Itsenäinen energia alkaa liittymästänne." või A2 „Eesti tööstus võtab oma elektri enda kätte." / „Suomen teollisuus ottaa sähkönsä omiin käsiinsä." Soovitus: A1 koos juhtlõiguga L1, sest see paneb idee esimesele reale SAMA enda sõnaga ja hoiab koha ja arvu kohe all. Kui lukk jääb, kaob Soome pealkirjast mõttekriips.
 3. **Esimene uks.** Hero nupp viib liitumise kontrolli (üks kinnistu, avalikud andmed, vastus ühe päevaga) või tasuta hinnangusse (tunniandmed). Soovitus: kontroll esimeseks, hinnang teiseks. See on juba turundusplaani lehtri esimene samm; eeldus on, et keegi vastab ühe tööpäevaga.
 4. **Tõend ilma kogemuste nimekirjata.** Kas avaldame anonüümse näidishinnangu lõigu ja meetodilehe? Soovitus: jah, enne uue lehe avamist. Ilma nendeta jääb kaardiplokk lubaduseks.
 5. **Segmentide järjekord ja esimene alamleht.** Soovitus: FI põllumajandus ja kuivatid esimeseks, EE tööstus ja külmaladu esimeseks. Alternatiiv FI: kinnisvara esimeseks, kui esimesed referentsid tulevad portfellist.
 
-Väiksemad, mis ei vaja eraldi arutelu: Eesti agregaatori nimi esilehel (soovitus: ei, nimi agregaatori alamlehel); praeguse lehe kümme parandust (3.4) tehakse uue lehe ehitusel.
+Väiksemad, mis ei vaja eraldi arutelu: hero juhtlõik L1 või L2; Eesti agregaatori nimi esilehel (soovitus: ei, nimi agregaatori alamlehel); praeguse lehe kümme parandust (3.4) tehakse uue lehe ehitusel.
 
 ## 8. Allikad
 
