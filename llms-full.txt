@@ -430,6 +430,13 @@ Mitä toimitamme ja mitä laitteilta vaadimme.
 
 Laitteet valitaan kohteenne mukaan, ei varaston. Turvallisuus, takuu ja huolto ovat arviossa kirjattuina, eivät pienellä präntillä.
 
+Katsokaa varastokaappia omalla pihallanne.
+
+Puhelimen kamerakuvassa näette kaapin oikeassa koossa juuri siinä kohdassa, johon sitä suunnittelette. Tietokoneella mallia voi kääntää ja katsoa joka puolelta.
+
+Avaa kaappi 3D:nä
+Mitat ovat valmistajan tiedoista. Kaappien malli ja määrä kirjataan tarjoukseen kohteenne mukaan.
+
 Teollisuusluokan järjestelmä
 Ulkoasennukseen sopiva varastokaappi, invertteri ja ohjaus, mitoitettuna liittymänne ja kulutusprofiilinne mukaan, yhdestä yksiköstä usean yksikön puistoon.
 
@@ -2125,6 +2132,13 @@ Skemaatiline ööpäev, mitte ühe objekti mõõdetud andmed. Teie objekti tegel
 Mida me tarnime ja mida seadmetelt nõuame.
 
 Seadmed valime teie objekti järgi, mitte lao. Ohutus, garantii ja hooldus on hinnangus kirjas, mitte peenes kirjas.
+
+Vaadake salvestikappi oma hoovis.
+
+Telefoni kaamerapildis näete kappi päris suuruses täpselt seal, kuhu te seda kavandate. Arvutis saab mudelit pöörata ja igast küljest vaadata.
+
+Ava kapp 3D-vaates
+Mõõdud on tootja andmetest. Kappide mudel ja arv märgitakse pakkumisse teie objekti järgi.
 
 Tööstusklassi süsteem
 Välispaigalduseks sobiv salvestikapp, inverter ja juhtimine, mõõdetud teie liitumise ja tarbimisprofiili järgi, ühest üksusest mitme üksuse pargini.

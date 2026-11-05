@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 494 katselmoitavaa riviä — 364 uutta, 130 muutettua, joista **50 on merkitty ⚠**. Muuttumattomia ohitettiin 714.
+**Yhteenveto:** 503 katselmoitavaa riviä — 370 uutta, 133 muutettua, joista **50 on merkitty ⚠**. Muuttumattomia ohitettiin 714.
 
 **Huomio:** 1 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -100,10 +100,14 @@ Vastine mainissa: `/`
       - **Korjaus:**
 - [ ] `p` **uusi** — Jokainen vaihe lisää karttaan tason, luvun ja lähteen.
       - **Korjaus:**
+- [ ] `label` **uusi** — Kohteen osoite
+      - **Korjaus:**
+- [ ] `button` **uusi** — Hae
+      - **Korjaus:**
 - [ ] `button` **uusi** — Käytä sijaintiani
       - **Korjaus:**
-- [ ] `p` **muutettu** — Sijaintia käytetään vain selaimessa kartan merkkiin. Sitä ei tallenneta eikä lähetetä.
-      - main: Me. Tekniset ehdot ja verkkoyhtiön kanta ovat kirjallisesti kädessä ennen kuin allekirjoitatte mitään, ei sen jälkeen.
+- [ ] `p` **muutettu** — Osoitehaku kulkee palvelimemme kautta Maanmittauslaitokselle tai Viron Maa- ja Ruumiametille ja aurinkotuotto EU:n PVGIS-palvelusta. Emme tallenna sijaintia; lomakkeeseen se menee vain, jos itse viette sen sinne.
+      - main: Tarjoamamme teolliset varastot ovat LFP-kemiaa, kennotason valvonnalla varustetulla akunhallinnalla ja lämpötilanhallinnalla sekä ulko-olosuhteisiin tarkoitetussa kaapissa; vaadimme valmistajalta CE- ja kuljetussertifikaatit. Takuu- ja huoltoehdot, valvonta ja se, kuka vastaa mistäkin, ovat kirjallisessa arviossa omalla rivillään – ennen allekirjoitusta, ei sen jälkeen. Takuuehdot, huoltovälit ja se, kenelle soitatte, kirjataan samaan dokumenttiin lukujen kanssa.
       - **Korjaus:**
 - [ ] `label` **muutettu** — Verkko
       - main: Verkkoyhtiö
@@ -315,6 +319,8 @@ Vastine mainissa: `/`
       - main: Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubista tai verkkoyhtiöltänne), yhden laskun ja pääkaavion; me kirjoitamme arvion: liittymä, kulutusprofiili, tehon jako, mallinnettu reservituotto tuotteittain lähteineen.
       - ⚠ perustajan päätös 04.11.2026 (I-20261104-7) — lupaus, sama kaikilla sivuilla
       - **Korjaus:**
+- [ ] `label` **uusi** — Kohteen osoite tai paikka · valinnainen
+      - **Korjaus:**
 - [ ] `label` **muutettu** — Minulla on jo tarjous ja haluan siitä toisen mielipiteen.
       - main: Minulla on jo tarjous kädessä, haluan siihen toisen mielipiteen.
       - **Korjaus:**
@@ -490,6 +496,16 @@ Vastine mainissa: `/energiavarastot/`
 
 - [ ] `h2` **muutettu** — Mitä toimitamme ja mitä laitteilta vaadimme.
       - main: Mitä toimitamme – ja mitä laitteilta vaadimme.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Katsokaa varastokaappia omalla pihallanne.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Puhelimen kamerakuvassa näette kaapin oikeassa koossa juuri siinä kohdassa, johon sitä suunnittelette. Tietokoneella mallia voi kääntää ja katsoa joka puolelta.
+      - main: Laitteet valitaan kohteenne mukaan, ei varaston. Turvallisuus, takuu ja huolto ovat arviossa kirjattuina, eivät pienellä präntillä.
+      - **Korjaus:**
+- [ ] `button` **uusi** — Avaa kaappi 3D:nä
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Mitat ovat valmistajan tiedoista. Kaappien malli ja määrä kirjataan tarjoukseen kohteenne mukaan.
+      - main: Laitteet valitaan kohteenne mukaan, ei varaston. Turvallisuus, takuu ja huolto ovat arviossa kirjattuina, eivät pienellä präntillä.
       - **Korjaus:**
 - [ ] `p` **muutettu** — Ulkoasennukseen sopiva varastokaappi, invertteri ja ohjaus, mitoitettuna liittymänne ja kulutusprofiilinne mukaan, yhdestä yksiköstä usean yksikön puistoon.
       - main: Ulkoasennukseen sopiva varastokaappi, invertteri ja ohjaus, mitoitettuna liittymänne ja kulutusprofiilinne mukaan – yhdestä yksiköstä usean yksikön puistoon.
@@ -1433,6 +1449,19 @@ Vastine mainissa: `/yhteystiedot/`
       - **Korjaus:**
 - [ ] `p` **muutettu** — Te annatte: tuntikohtaiset kulutustietonne (CSV-lataus Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta, neuvomme miten), yhden sähkölaskun ja pääkaavion.
       - main: Te annatte: tuntikohtaiset kulutustietonne (CSV-lataus Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta – neuvomme miten), yhden sähkölaskun ja pääkaavion.
+      - **Korjaus:**
+
+---
+
+## Tietosuoja — `/tietosuoja/`
+Vastine mainissa: `/tietosuoja/`
+
+### #rev-tietosuoja-2
+
+- [ ] `h2` **uusi** — Kartan osoitehaku ja paikan tiedot
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Kun kirjoitatte osoitteen kartan hakukenttään, palvelimemme välittää hakutekstin Maanmittauslaitoksen (Suomi) tai Maa- ja Ruumiametin (Viro) osoitepalveluun ja valitun kohdan koordinaatit EU:n yhteisen tutkimuskeskuksen PVGIS-palveluun aurinkotuoton laskemiseksi. Myös lähikartan karttaruudut haetaan näistä palveluista palvelimemme kautta. Selaimenne ei ole yhteydessä näihin palveluihin, eikä IP-osoitettanne välitetä niille. Emme tallenna hakuja emmekä sijaintia. Selaimen sijaintia käytetään vain, jos painatte painiketta ja annatte luvan, ja se jää selaimeen. Lomakkeeseen paikka menee vain, jos itse viette sen sinne ja lähetätte lomakkeen.
+      - main: Yhteydenottolomakkeella antamanne tiedot: nimi, yritys, sähköposti, puhelin, kohteen sijainti, liittymä- ja kulutustiedot sekä viesti. Lisäksi sivuston tekninen palvelinloki (mm. IP-osoite ja aikaleima), jonka ylläpitopalvelu tuottaa palvelun toimittamiseksi ja tietoturvan varmistamiseksi. Sivusto ei käytä evästeitä, analytiikkaa eikä tallennettuja asetuksia.
       - **Korjaus:**
 
 ---

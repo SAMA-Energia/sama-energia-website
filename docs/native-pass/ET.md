@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 506 katselmoitavaa riviä — 394 uutta, 112 muutettua, joista **59 on merkitty ⚠**. Muuttumattomia ohitettiin 625.
+**Yhteenveto:** 515 katselmoitavaa riviä — 399 uutta, 116 muutettua, joista **59 on merkitty ⚠**. Muuttumattomia ohitettiin 625.
 
 **Huomio:** 2 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -105,9 +105,15 @@ Vastine mainissa: `/et/`
       - **Korjaus:**
 - [ ] `p` **uusi** — Iga samm lisab kaardile kihi, arvu ja allika.
       - **Korjaus:**
+- [ ] `label` **muutettu** — Objekti aadress
+      - main: Objekti asukoht
+      - **Korjaus:**
+- [ ] `button` **uusi** — Otsi
+      - **Korjaus:**
 - [ ] `button` **uusi** — Kasuta minu asukohta
       - **Korjaus:**
-- [ ] `p` **uusi** — Asukohta kasutatakse ainult brauseris kaardipunkti jaoks. Seda ei salvestata ega saadeta.
+- [ ] `p` **muutettu** — Aadressiotsing käib meie serveri kaudu Maa- ja Ruumiametisse või Soome Maanmittauslaitosesse ja päikesetoodang EL-i PVGIS-teenusest. Asukohta me ei salvesta; vormi läheb see ainult siis, kui te selle ise sinna viite.
+      - main: Liitumise eest maksate iga kuu. Sama liitumine võib ka teile tootma hakata – kui selle taga on salvesti, energia tootmine ja nutikas juhtimine, mis otsustab teie kasuks. Meie anname teile selleks kolm asja:
       - **Korjaus:**
 - [ ] `label` **uusi** — Võrk
       - **Korjaus:**
@@ -303,6 +309,9 @@ Vastine mainissa: `/et/`
       - main: Kahe tööpäevaga teate, kas ja kuidas aku end teie objektil ära tasub. Hinnang on kaks lehekülge, kirjalikult ja kohustusteta:
       - ⚠ perustajan päätös 04.11.2026 (I-20261104-7) — lupaus, sama kaikilla sivuilla
       - **Korjaus:**
+- [ ] `label` **muutettu** — Objekti aadress või asukoht · valikuline
+      - main: Objekti asukoht
+      - **Korjaus:**
 - [ ] `p` **muutettu** — Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hinnangu tegemiseks (privaatsuspoliitika).
       - main: Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hindamiseks, privaatsuspoliitikat.
       - **Korjaus:**
@@ -481,6 +490,14 @@ Vastine mainissa: `/et/energiasalvestid/`
 
 - [ ] `h2` **muutettu** — Mida me tarnime ja mida seadmetelt nõuame.
       - main: Mida me tarnime – ja mida seadmetelt nõuame.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Vaadake salvestikappi oma hoovis.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Telefoni kaamerapildis näete kappi päris suuruses täpselt seal, kuhu te seda kavandate. Arvutis saab mudelit pöörata ja igast küljest vaadata.
+      - **Korjaus:**
+- [ ] `button` **uusi** — Ava kapp 3D-vaates
+      - **Korjaus:**
+- [ ] `p` **uusi** — Mõõdud on tootja andmetest. Kappide mudel ja arv märgitakse pakkumisse teie objekti järgi.
       - **Korjaus:**
 - [ ] `p` **muutettu** — Välispaigalduseks sobiv salvestikapp, inverter ja juhtimine, mõõdetud teie liitumise ja tarbimisprofiili järgi, ühest üksusest mitme üksuse pargini.
       - main: Välispaigalduseks sobiv salvestikapp, inverter ja juhtimine, mõõdetud teie liitumise ja tarbimisprofiili järgi – ühest üksusest mitme üksuse pargini.
@@ -1481,6 +1498,11 @@ Vastine mainissa: `/et/andmekaitse/`
 
 - [ ] `p` **muutettu** — Et vastata teie pöördumisele ja valmistada ette teie soovitud hinnangut (lepingueelsed meetmed, isikuandmete kaitse üldmääruse artikli 6 lõike 1 punkt b) ning õigustatud huvi alusel (artikli 6 lõike 1 punkt f) kliendisuhte haldamiseks ja turvalisuse tagamiseks. Me ei kasuta andmeid muuks turunduseks ilma eraldi nõusolekuta.
       - main: Et vastata teie pöördumisele ja valmistada ette teie soovitud hindamist (lepingueelsed meetmed, isikuandmete kaitse üldmääruse artikli 6 lõike 1 punkt b) ning õigustatud huvi alusel (artikli 6 lõike 1 punkt f) kliendisuhte haldamiseks ja turvalisuse tagamiseks. Me ei kasuta andmeid muuks turunduseks ilma eraldi nõusolekuta.
+      - **Korjaus:**
+- [ ] `h2` **uusi** — Kaardi aadressiotsing ja asukoha andmed
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Kui kirjutate aadressi kaardi otsinguväljale, edastab meie server otsingu teksti Maa- ja Ruumiameti (Eesti) või Soome Maanmittauslaitose aadressiteenusesse ning valitud koha koordinaadid Euroopa Komisjoni Teadusuuringute Ühiskeskuse PVGIS-teenusesse päikesetoodangu arvutamiseks. Ka lähikaardi kaardiruudud laadib meie server nendest teenustest. Teie brauser nende teenustega ei suhtle ja teie IP-aadressi neile ei edastata. Me ei salvesta otsinguid ega asukohta. Brauseri asukohta kasutatakse ainult siis, kui vajutate nuppu ja annate loa, ning see jääb brauserisse. Vormi läheb asukoht ainult siis, kui te selle ise sinna viite ja vormi saadate.
+      - main: Kontaktivormil antud andmed: nimi, ettevõte, e-post, telefon, objekti asukoht, liitumis- ja tarbimisandmed ning sõnum. Lisaks veebilehe tehniline serverilogi (sh IP-aadress ja ajatempel), mille majutusteenus toodab teenuse osutamiseks ja turvalisuse tagamiseks. Sait ei kasuta küpsiseid, analüütikat ega salvestatud eelistusi.
       - **Korjaus:**
 
 ---
