@@ -27,7 +27,7 @@ mkdirSync(FR, { recursive: true });
 const require = createRequire(import.meta.url);
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.mjs': 'text/javascript', '.json': 'application/json' };
 function serve() {
-  const roots = { stills: join(ROOT, 'scripts', 'stills'), node_modules: resolve(MODULES) };
+  const roots = { stills: join(ROOT, 'scripts', 'stills'), node_modules: resolve(MODULES), assets: join(ROOT, 'assets') };   // assets/3d/kaappi.glb
   return new Promise((ok) => {
     const srv = createServer((req, res) => {
       const path = decodeURIComponent(new URL(req.url, 'http://x').pathname); const [, top, ...rest] = path.split('/');

@@ -73,7 +73,7 @@ const SKIP_OUT = { toostus: new Set(['1920', '1280']) };
 /* ---------- staattinen palvelin: /stills/ → scripts/stills, /node_modules/ → --modules ---------- */
 const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.mjs': 'text/javascript', '.json': 'application/json', '.wasm': 'application/wasm' };
 function serve() {
-  const roots = { stills: join(ROOT, 'scripts', 'stills'), node_modules: resolve(MODULES) };
+  const roots = { stills: join(ROOT, 'scripts', 'stills'), node_modules: resolve(MODULES), assets: join(ROOT, 'assets') };   // assets/3d/kaappi.glb
   return new Promise((ok) => {
     const srv = createServer((req, res) => {
       const path = decodeURIComponent(new URL(req.url, 'http://x').pathname);

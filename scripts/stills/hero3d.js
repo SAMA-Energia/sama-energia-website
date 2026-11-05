@@ -3,6 +3,7 @@ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 import { EffectComposer, RenderPass, EffectPass, BloomEffect, SMAAEffect, ToneMappingEffect, ToneMappingMode } from 'postprocessing';
 import { N8AOPostPass } from 'n8ao';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 /* SAMA Energia — hero-kohteiden three.js-näyttämö (k-hero-*.webp, k-paev*.webp, k-objekt*.webp ja k-obj-*.webp).
    Renderöinti: node scripts/render-stills.mjs (ks. tiedoston otsake). ?scene= valitsee kohteen:
@@ -667,23 +668,25 @@ function hall() {
 if (SCENE === 'toostus') hall(); else OBJECTS[SCENE]();
 
 // ---------- battery cabinet (all-in-one: PCS integrated, no separate inverter) ----------
+/* v49 (6.11.2026): tarkka malli assets/3d/kaappi.glb (scripts/3d/kaappi.py, build123d): ulkomitat 1 350 × 1 010 × 2 450 mm
+   Ralosin infopaketista; ovijako, merkkivalo, merkkilamput, näytön kansi, avainkytkin, säleikkö, jäähdytysyksikön verkko ja
+   puhallinkotelo, keskikahvat, pohjakehys trukkitaskuin, kattolevy ja takasivun läpivientilevy Ralosin tuotekuvista.
+   Sama tiedosto palvelee sivuston AR-näkymää. Materiaalit liitetään nodejen nimillä, joten tausta-/kriit-/hämäräsävyt pysyvät. */
 const CAB = { w: 1.35, d: 1.01, h: 2.45 };
+const KAAPPI = (await new GLTFLoader().loadAsync('/assets/3d/kaappi.glb')).scene;
+const KMAT = { paint: M.cab, paint2: M.cabTop, roof: M.cabTop, base: M.cabTop, dark: M.cabDark, grille: M.cabDark, mesh: M.cabDark, metal: M.metal, led: M.goldLed, seam: M.seam };
 function cabinet(x, z, rotY = 0, scale = 1) {
   const g = new THREE.Group(); g.position.set(x, 0, z); g.rotation.y = rotY; g.scale.setScalar(scale); scene.add(g);
-  const bodyH = CAB.h - 0.17;
-  const body = new THREE.Mesh(new RoundedBoxGeometry(CAB.w, bodyH, CAB.d, 3, 0.025), M.cab);
-  body.position.set(0, 0.1 + bodyH / 2, 0); body.castShadow = true; body.receiveShadow = true; g.add(body);
-  box(CAB.w + 0.05, 0.07, CAB.d + 0.06, M.cabTop, 0, 0.1 + bodyH + 0.035, 0, g);
-  box(CAB.w - 0.06, 0.1, CAB.d - 0.06, M.cabDark, 0, 0.05, 0, g);
-  const fz = CAB.d / 2 + 0.002;
-  box(0.008, bodyH - 0.12, 0.004, M.seam, 0, 0.1 + bodyH / 2, fz, g, false);
-  for (const sx of [-1, 1]) {
-    box(0.55, 0.42, 0.006, M.louver, sx * 0.33, 0.45, fz + 0.001, g, false);
-    box(0.55, 0.32, 0.006, M.louver, sx * 0.33, 1.95, fz + 0.001, g, false);
-    box(0.025, 0.24, 0.03, M.metal, sx * 0.06, 1.25, fz + 0.012, g, false);
-  }
-  box(0.16, 0.035, 0.008, M.goldLed, 0.42, 2.18, fz + 0.002, g, false).userData.led = true;
-  box(0.006, 0.6, 0.62, M.louver, CAB.w / 2 + 0.002, 1.5, 0, g, false);
+  const k = KAAPPI.clone(true);
+  k.traverse((o) => {
+    if (!o.isMesh) return;
+    const key = o.name.replace(/^kaappi_/, '');
+    o.material = KMAT[key] || M.cab;
+    const small = key === 'led' || key === 'seam' || key === 'grille' || key === 'mesh';
+    o.castShadow = !small; o.receiveShadow = true;
+    if (key === 'led') o.userData.led = true;
+  });
+  g.add(k);
   return g;
 }
 /* Sijoittelu Ralosin ohjeen mukaan (Perusteellinen asennus- ja käyttöohje BEAST125HD v2.1, 5.1.2, 5.2 ja 6.2; 5.11.2026):
