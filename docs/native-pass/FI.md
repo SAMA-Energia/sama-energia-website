@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 474 katselmoitavaa riviä — 346 uutta, 128 muutettua, joista **48 on merkitty ⚠**. Muuttumattomia ohitettiin 731.
+**Yhteenveto:** 502 katselmoitavaa riviä — 367 uutta, 135 muutettua, joista **70 on merkitty ⚠**. Muuttumattomia ohitettiin 710.
 
 **Huomio:** 1 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -32,17 +32,6 @@ Vastine mainissa: `/`
 ### #etusivu
 > Lähde tälle osiolle: Lähde: Fingrid, Reservimarkkinat tutuiksi -webinaari · 11.6.2025
 
-- [ ] `b` **muutettu** — Aurinko
-      - main: Aurinkosähkö
-      - **Korjaus:**
-- [ ] `b` **uusi** — Pääkeskus
-      - **Korjaus:**
-- [ ] `b` **uusi** — Sähkövarasto
-      - **Korjaus:**
-- [ ] `b` **uusi** — Liittymispiste
-      - **Korjaus:**
-- [ ] `b` **uusi** — Sähköverkko
-      - **Korjaus:**
 - [ ] ⚠ `h1` **muutettu** — Sähkö­liittymänne on omaisuutta. Laittakaa se töihin omaksi eduksenne.
       - main: Saavuttakaa energiariippumattomuus laittamalla sähköliittymänne töihin – omaksi eduksenne.
       - ⚠ perustajan päätös 04.11.2026 (I-20261104-3) — hero-otsikko
@@ -51,32 +40,6 @@ Vastine mainissa: `/`
       - main: Riippumaton energia lähtee siitä, että päätökset mittarinne takana tehdään teidän eduksenne ja automaattisesti. Järjestelmä – energiavarasto, energiantuotanto ja älykäs ohjaus – tekee kannattavampia päätöksiä kiinteistönne hyväksi, ilman että kenenkään teillä tarvitsee tehdä mitään.
       - ⚠ perustajan päätös 04.11.2026 (I-20261104-4) — ingressi / juhtlõik
       - **Korjaus:**
-- [ ] ⚠ `label` **uusi** — Viljankuivuri
-      - ⚠ perustajan päätös 04.11.2026 (I-20261104-5) — kohdepainikkeet
-      - **Korjaus:**
-- [ ] ⚠ `label` **muutettu** — Teollisuus ja kylmävarasto
-      - main: Teollisuus ja kylmävarastot
-      - ⚠ perustajan päätös 04.11.2026 (I-20261104-5) — kohdepainikkeet
-      - **Korjaus:**
-- [ ] ⚠ `label` **muutettu** — Hotelli ja hoivakoti
-      - main: Hotellit ja hoivakiinteistöt
-      - ⚠ perustajan päätös 04.11.2026 (I-20261104-5) — kohdepainikkeet
-      - **Korjaus:**
-- [ ] ⚠ `label` **uusi** — Aurinkopuisto
-      - ⚠ perustajan päätös 04.11.2026 (I-20261104-5) — kohdepainikkeet
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Kuivuri käy pari kuukautta vuodessa, mutta liittymä on yhtä suuri ympäri vuoden.
-      - main: Kuivuri käy pari kuukautta vuodessa, mutta liittymä on suuri koko vuoden.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Koneiden käynnistykset, kompressorit ja vuorotyö aiheuttavat tehohuippuja.
-      - main: Koneiden käynnistykset, kompressorit ja vuorotyö tekevät huippuja.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Ympärivuorokautinen kulutus, keittiö ja lämmitys sekä vaatimus, ettei sähkö saa koskaan katketa. Varavoima edellyttää saarekekäyttöön toteutettua järjestelmää ja erotettua kriittistä piiriä.
-      - main: Ympärivuorokautinen kulutus, keittiö ja lämmitys, ja velvollisuus, ettei sähkö katkea koskaan.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Olemassa oleva tuotanto saa sähkövarastosta toisen tulonlähteen.
-      - main: Olemassa oleva tuotanto saa varastosta toisen tulonlähteen.
-      - **Korjaus:**
 - [ ] `a` **muutettu** — Miten se toimii
       - main: Miten akku toimii?
       - **Korjaus:**
@@ -84,6 +47,34 @@ Vastine mainissa: `/`
       - **Korjaus:**
 - [ ] ⚠ `p` **muutettu** — Niin paljon reservikapasiteettia Fingrid hankkii keskimäärin joka tunnille ja arvioi hankinnan kasvavan vuoteen 2030 mennessä 1 200 MW:lla.
       - main: Sähköverkon on oltava tasapainossa joka sekunti. Fingrid ostaa reserviä joka tunnille, keskimäärin noin 1 500 MW, ja maksaa jo siitä, että reservi on käytettävissä – tarve kasvaa viidessä vuodessa noin 1 200 megawattia.
+      - **Korjaus:**
+- [ ] ⚠ `figcaption` **muutettu** — EnergiavarastotRalos Oy
+      - main: RalosEnergiavarastot
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `figcaption` **uusi** — Integroidut aurinkokatotGare Energy Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `figcaption` **uusi** — Aurinkovoimalan asennusJSM Automaatiosähkö Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `figcaption` **uusi** — Sähköauton latausScanoffice Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `figcaption` **uusi** — ReservimarkkinatAggregaattori kohteen mukaan
+      - **Korjaus:**
+- [ ] ⚠ `figcaption` **muutettu** — Energiavarastot ja mikroverkotAvant Power
+      - main: Energiavarastot
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `figcaption` **uusi** — AurinkovoimalatRalos Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `figcaption` **uusi** — Aurinkokatos ja latausGare Energy Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `figcaption` **uusi** — Sähkövarasto ja invertteritRalos Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
 
 ### #miten-toimii
@@ -100,6 +91,14 @@ Vastine mainissa: `/`
       - main: Taloudelliset mahdollisuudet
       - **Korjaus:**
 - [ ] `p` **uusi** — Älykkään energianhallinnan, joka muuttaa liittymän kuluerästä omaisuudeksi.
+      - **Korjaus:**
+- [ ] `b` **uusi** — Pääkeskus
+      - **Korjaus:**
+- [ ] `b` **uusi** — Sähkövarasto
+      - **Korjaus:**
+- [ ] `b` **uusi** — Liittymispiste
+      - **Korjaus:**
+- [ ] `b` **uusi** — Sähköverkko
       - **Korjaus:**
 - [ ] `p` **muutettu** — Mikä sähkölaskussanne ja kiinteistössänne muuttuu:
       - main: Mikä laskullanne ja kiinteistössänne muuttuu:
@@ -138,13 +137,18 @@ Vastine mainissa: `/`
 > Lähde tälle osiolle: Lähde: Fingrid, Suomen sähköjärjestelmä · luvut 2025
 > Lähde tälle osiolle: Lähteet: Fingrid, kehitysnäkymät · 30.9.2026; luku 2025: Fingrid · 4.3.2026
 > Lähde tälle osiolle: Lähde: Fingrid, avoin data 268 ja 267 (ennusteissa käytetty kapasiteetti) · 2.11.2026
-> Lähde tälle osiolle: Lähteet: Fingrid, avoin data 424 · 2.11.2026; Fingrid · 23.10.2026
+> Lähde tälle osiolle: Lähteet: Fingrid, avoin data 424 · 2.11.2026; Fingrid · 24.9.2025
 > Lähde tälle osiolle: Lähde: Fingrid, Power system reserves · luettu 2.11.2026
 > Lähde tälle osiolle: Lähteet: Fingrid, johdon katsaus · 29.10.2026; Fingrid · 8.9.2026; Fingrid · 24.9.2025; Energiavirasto, määräys 2340/000002/2025 · 2.2.2026
 
 - [ ] `h2` **uusi** — Kuusi karttatasoa: markkinat liittymänne ympärillä.
       - **Korjaus:**
 - [ ] `p` **uusi** — Jokainen vaihe lisää karttaan tason, luvun ja lähteen.
+      - **Korjaus:**
+- [ ] `button` **uusi** — Käytä sijaintiani
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Sijaintia käytetään vain selaimessa kartan merkkiin. Sitä ei tallenneta eikä lähetetä.
+      - main: Me. Tekniset ehdot ja verkkoyhtiön kanta ovat kirjallisesti kädessä ennen kuin allekirjoitatte mitään, ei sen jälkeen.
       - **Korjaus:**
 - [ ] `label` **muutettu** — Verkko
       - main: Verkkoyhtiö
@@ -193,9 +197,10 @@ Vastine mainissa: `/`
       - **Korjaus:**
 - [ ] ⚠ `p` **uusi** — 2 085 MWyli 1 MW:n varastoja
       - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — sopimuksia lähes 6 GW
+- [ ] `p` **uusi** — uudet varastot Etelä-Suomen kantaverkkoon vasta 2029
       - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — Fingridin arvion mukaan Suomessa on jo 2 085 MW yli megawatin sähkövarastoja ja liittymissopimuksia lähes kuuden gigawatin edestä.
+- [ ] ⚠ `p` **muutettu** — Fingridin arvion mukaan Suomessa on jo 2 085 MW yli megawatin sähkövarastoja. Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta, kun Hikiä–Toivila valmistuu vuonna 2029.
+      - main: Sähköverkon on oltava tasapainossa joka sekunti. Fingrid ostaa reserviä joka tunnille, keskimäärin noin 1 500 MW, ja maksaa jo siitä, että reservi on käytettävissä – tarve kasvaa viidessä vuodessa noin 1 200 megawattia.
       - **Korjaus:**
 - [ ] `p` **uusi** — Kuinka paljon reservejä tarvitaan?
       - **Korjaus:**
@@ -269,31 +274,57 @@ Vastine mainissa: `/`
 - [ ] `h2` **muutettu** — Laaja valikoima, yksi vastuutaho.
       - main: Laaja valikoima, yksi vastuu
       - **Korjaus:**
-- [ ] `p` **muutettu** — Perehdymme kohteeseen ennen laitevalintaa ja tunnemme markkinat: valmistajat, maahantuojat, aggregaattorit ja hinnat. Valitsemme laitteet kohteenne mukaan koko markkinoilta, kokoamme kokonaisuuden ja vastaamme projektista alusta loppuun.
-      - main: Seuraamme valmistajia, maahantuojia, aggregaattoreita ja hintoja. Kokoamme tarjouksen kohteenne tarpeen mukaan ja vertaamme vaihtoehdot samoilla luvuilla.
+- [ ] `p` **muutettu** — Jokaisella alalla meillä on useampi kumppani. Valitsemme kohteeseenne sopivimmat laitteet ja tekijät, vertaamme vaihtoehdot samoilla luvuilla ja vastaamme kokonaisuudesta alusta loppuun.
+      - main: Olemme tukenanne alusta loppuun: löydämme kohteellenne sopivimman ratkaisun ja liitämme sen aggregaattorin kautta monimarkkinapalveluun, jotta se tuottaa usealla markkinalla samaan aikaan.
       - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — Ralos Oy, Elecnova
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] `dt` **uusi** — Mikroverkot ja lataus
-      - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — Avant Power
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] `dt` **uusi** — Aurinkokatot
-      - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — Gare Energy Oy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] `dt` **uusi** — Laitteet
-      - **Korjaus:**
-- [ ] `dt` **uusi** — Sähkötyöt
-      - **Korjaus:**
-- [ ] `dd` **uusi** — valitaan kohteen mukaan Fingridin hyväksymistä reservitoimittajista
-      - **Korjaus:**
-- [ ] ⚠ `figcaption` **muutettu** — Ralos Oy · energiavarastot
+- [ ] ⚠ `li` **muutettu** — Ralos Oyteolliset energiavarastot, Tampere
       - main: RalosEnergiavarastot
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Elecnovaulkokaapit ja konttivarastot
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **muutettu** — Avant Powerenergiavarastot ja mikroverkot
+      - main: Energiavarastot
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Ralos Oyaurinkovoimalat yrityksille
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Gare Energy Oyintegroidut aurinkokatot
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Scanoffice Oyaurinkopaneelit maahantuojalta
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Lataus ja mikroverkot
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Avant Powermikroverkot, siirrettävä energia ja lataus
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Scanoffice Oysähköautojen latausasemat
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Gare Energy Oyaurinkokatos ja latauspisteet
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Lämpöpumput
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Scanoffice Oyilma-, ilma-vesi- ja maalämpöpumput
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — JSM Automaatiosähkö Oyasennus
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — JSM Automaatiosähkö Oysähkötyöt ja käyttöönotto, Pirkanmaa
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Gare Energy Oykatto-, paneeli- ja akkuasennus
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `li` **uusi** — SAMAasennuspäällikkö johtaa työmaata
+      - **Korjaus:**
+- [ ] `li` **uusi** — Aggregaattorivalitaan kohteen mukaan Fingridin hyväksymistä reservitoimittajista
       - **Korjaus:**
 
 ### #tiimi
@@ -775,7 +806,9 @@ Vastine mainissa: `/reservimarkkinat/`
 - [ ] `h3` **muutettu** — Todistettu ja turvallinen: varastot kannattelevat verkkoa jo nyt
       - main: Todistettu ja turvallinen: akut kannattelevat verkkoa jo nyt
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Fingrid oli syyskuussa 2025 sopinut noin 1 800 MW:n varastoliitynnöistä, kyselyjä on yli 30 000 MW, ja Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029. Sähkövarasto teidän liittymänne takana ei tarvitse uutta kantaverkkoliityntää: se käyttää liittymää, joka on jo olemassa, ja pääsee markkinoille kuukausissa, ei vuosissa.
+- [ ] `h3` **uusi** — Nopeus: liittymänne on jo olemassa
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta, kun Hikiä–Toivila valmistuu vuonna 2029. Sähkövarasto teidän liittymänne takana ei tarvitse uutta kantaverkkoliityntää: se käyttää liittymää, joka on jo olemassa, ja pääsee markkinoille kuukausissa, ei vuosissa.
       - main: Fingrid oli syyskuussa 2025 sopinut noin 1 800 MW:n akkuliitynnöistä, kyselyjä on yli 30 000 MW, ja Etelä-Suomessa uusia varastoliityntöjä ei tehdä ennen vuotta 2029. Akku teidän liittymänne takana ei tarvitse uutta kantaverkkoliityntää: se käyttää liittymää, joka on jo olemassa, ja pääsee markkinoille kuukausissa, ei vuosissa.
       - **Korjaus:**
 - [ ] ⚠ `p` **muutettu** — Esimerkiksi: 1 MW / 2 MWh sähkövarasto olemassa olevan teollisuuskiinteistön liittymän takana pääsee markkinoille kuukausissa, osallistuu aggregaattorin kautta FCR-D- ja muihin reserveihin ja leikkaa samalla kohteen omat kulutushuiput. Sama logiikka toimii 125 kW:n yksiköstä useisiin megawatteihin: oikea koko mitoitetaan liittymän ja kulutusprofiilin mukaan.
@@ -1277,8 +1310,64 @@ Vastine mainissa: `/meista/`
 - [ ] `p` **muutettu** — Jokainen projekti tarvitsee meidän lisäksemme neljä asiaa: markkinoillepääsyn, laitteet, asennuksen ja rahoituksen. Nämä kumppanit antavat ne.
       - main: Jokainen projekti tarvitsee meidän lisäksemme neljä asiaa: markkinoillepääsyn, laitteet, asennuksen ja rahoituksen. Nämä kumppanit antavat ne, molemmilla markkinoilla.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Aggregaattori kokoaa sähkövarastot tarjoukseksi, ohjaa niitä automaattisesti ja tilittää tuoton. Valitsemme aggregaattorin kohteen mukaan.
-      - main: Aggregaattori kokoaa akut tarjoukseksi, ohjaa niitä automaattisesti ja tilittää tuoton. Suomessa valitsemme aggregaattorin kohteen mukaan, Virossa kumppanimme on Soleron Energy.
+- [ ] ⚠ `li` **muutettu** — Ralos Oyteolliset energiavarastot, Tampere
+      - main: Energiavarastot · Tampere
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Elecnovaulkokaapit ja konttivarastot
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **muutettu** — Avant Powerenergiavarastot ja mikroverkot
+      - main: Energiavarastot, lataus ja mikroverkot
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Ralos Oyaurinkovoimalat yrityksille
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Gare Energy Oyintegroidut aurinkokatot
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Scanoffice Oyaurinkopaneelit maahantuojalta
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `h3` **muutettu** — Lataus ja mikroverkot
+      - main: Energiavarastot, lataus ja mikroverkot
+      - **Korjaus:**
+- [ ] ⚠ `li` **muutettu** — Avant Powermikroverkot, siirrettävä energia ja lataus
+      - main: Energiavarastot, lataus ja mikroverkot
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Scanoffice Oysähköautojen latausasemat
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Gare Energy Oyaurinkokatos ja latauspisteet
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Lämpöpumput
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Scanoffice Oyilma-, ilma-vesi- ja maalämpöpumput
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **muutettu** — JSM Automaatiosähkö Oyasennus
+      - main: JSM Automaatiosähkö Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **muutettu** — JSM Automaatiosähkö Oysähkötyöt ja käyttöönotto, Pirkanmaa
+      - main: Sähköasennukset ja käyttöönotto · Pirkanmaa
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Gare Energy Oykatto-, paneeli- ja akkuasennus
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `li` **muutettu** — SAMAasennuspäällikkö johtaa työmaata
+      - main: Asennuspäällikkö
+      - **Korjaus:**
+- [ ] `li` **muutettu** — Aggregaattorivalitaan kohteen mukaan Fingridin hyväksymistä reservitoimittajista
+      - main: Fingridin hyväksymä reservitoimittaja · ei sidosta yhteen
+      - **Korjaus:**
+- [ ] ⚠ `p` **muutettu** — Rahoitus. Leasingrahoitus on mahdollista järjestää yritysrahoittajien kautta. Rahoittaja ja ehdot valitaan kohteen ja ostajan mukaan, ja oman pääoman ja leasingin vertailu on arviossa samoilla luvuilla.
+      - main: Useampi valmistaja, malli kohteen mukaan. Vertailu on arviossa samoilla luvuilla.
+      - ⚠ rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)
       - **Korjaus:**
 
 ### #valmistajille
@@ -1301,11 +1390,14 @@ Vastine mainissa: `/ajankohtaista/`
 - [ ] `h3` **muutettu** — Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029. Teidän liittymänne on jo olemassa.
       - main: Etelä-Suomeen ei rakenneta uusia varastoliityntöjä ennen vuotta 2029. Teidän liittymänne on jo olemassa.
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Fingrid oli syyskuussa 2025 sopinut noin 1 800 MW:n varastoliitynnöistä (Fingrid 24.9.2025), kyselyjä on yli 30 000 MW, ja Etelä-Suomen varastoliityntärajoitus jatkuu vuoteen 2029. Mitä se tarkoittaa yritykselle, jolla on iso liittymä jo valmiina.
+- [ ] `p` **muutettu** — Fingrid jatkaa Etelä-Suomen varastoliityntärajoitusta vuoteen 2029 varmistaakseen siirtokapasiteetin kulutuksen kasvulle ja teollisille investoinneille (Fingrid 24.9.2025). Mitä se tarkoittaa yritykselle, jolla on iso liittymä jo valmiina.
       - main: Fingrid oli syyskuussa 2025 sopinut noin 1 800 MW:n akkuliitynnöistä (Fingrid 24.9.2025), kyselyjä on yli 30 000 MW, ja Etelä-Suomen liityntärajoitus jatkuu vuoteen 2029. Mitä se tarkoittaa yritykselle, jolla on iso liittymä jo valmiina.
       - **Korjaus:**
 - [ ] `h3` **muutettu** — Fingrid: sähkönkulutus kääntyy voimakkaaseen kasvuun, rinnalle tarvitaan säätövoimaa
       - main: Fingrid: sähkönkulutus kääntyy voimakkaaseen kasvuun – rinnalle tarvitaan säätövoimaa
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Fingridin tiedotteen mukaan sähkönkulutus on kääntymässä voimakkaaseen kasvuun, ja rinnalle tarvitaan lisää säätövoimaa. Uusi liityntäkapasiteetti on monin paikoin jo lähes varattu. Meidän johtopäätöksemme: olemassa oleva liittymä on omaisuutta, joka kannattaa laittaa töihin nyt.
+      - main: Fingridin tiedotteen mukaan datakeskuksilla on liittymissopimuksia lähes 5 GW, sähkökattilahankkeita on rakenteilla ja toiminnassa yli 3 GW ja sähkövarastoista on tehty liittymissopimuksia yli 4 GW; jos kaikki toteutuu, kulutus kasvaa lähes 40 % vuoteen 2025 verrattuna. Uusi liityntäkapasiteetti on monin paikoin jo lähes varattu. Meidän johtopäätöksemme: olemassa oleva liittymä on omaisuutta, joka kannattaa laittaa töihin nyt.
       - **Korjaus:**
 - [ ] ⚠ `p` **muutettu** — Noin 1 050 MW verkkoon liitettyä varastoa. Tämä on se tarjonnan kasvu, joka selittää reservihinnan liikkeen. Se on samalla syy, miksi emme lupaa yhtä tuottolukua.
       - main: Noin 1 050 MW verkkoon liitettyä varastoa. Tämä on se tarjonnan kasvu, joka selittää reservihinnan liikkeen – ja samalla syy, miksi emme lupaa yhtä tuottolukua.
@@ -1321,22 +1413,20 @@ Vastine mainissa: `/ajankohtaista/`
 
 ### #rev-ajankohtaista-liityntarajoitus-2029-1
 > Lähde tälle osiolle: Lähteet
-> Lähde tälle osiolle: Fingrid, tiedote 24.9.2025: n. 1 800 MW sovittuja liityntöjä, yli 30 000 MW kyselyjä, Etelä-Suomen rajoitus vuoteen 2029.
+> Lähde tälle osiolle: Fingrid, tiedote 24.9.2025: Etelä-Suomen varastoliityntärajoitus jatkuu vuoteen 2029, siirtokapasiteetti kulutuksen kasvulle ja teollisille investoinneille.
 > Lähde tälle osiolle: Fingrid, Reservimarkkinat tutuiksi, 11.6.2025: n. 1 500 MW tunnissa, arvio +1 200 MW viidessä vuodessa.
 > Lähde tälle osiolle: Fingrid, Energiavarastot reservimarkkinoilla, 10.2.2025: säätökokein todennettu kapasiteetti 29 % FCR-N, 13 % / 18 % FCR-D (ylös / alas), 54 % FFR.
 > Lähde tälle osiolle: Fingrid, Aggregointi reservimarkkinoilla, 3/2026: pienimmät tarjouskoot ja säätökokeet.
 
 - [ ] `h1` **uusi** — Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029. Teidän liittymänne on jo olemassa.
       - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — Fingrid kertoi syyskuussa 2025 sopineensa noin 1 800 MW:n varastoliitynnöistä, kun liityntäkyselyjä on yli 30 000 MW, ja jatkoi Etelä-Suomen varastoliityntärajoitusta vuoteen 2029. Se on huono uutinen isoille puistohankkeille ja hyvä uutinen yritykselle, jolla on jo liittymä.
+- [ ] `p` **uusi** — Fingrid jatkoi syyskuussa 2025 Etelä-Suomen varastoliityntärajoitusta vuoteen 2029 varmistaakseen siirtokapasiteetin sähkönkulutuksen kasvulle ja uusille teollisille investoinneille. Se on huono uutinen isoille puistohankkeille ja hyvä uutinen yritykselle, jolla on jo liittymä.
       - **Korjaus:**
 - [ ] `h2` **uusi** — Mitä Fingrid kertoi
       - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — Fingridin 24.9.2025 julkaiseman tiedotteen mukaan kantaverkkoon on sovittu noin 1 800 MW:n edestä sähkövarastojen liityntöjä, ja liityntäkyselyjä on kertynyt yli 30 000 MW. Määrä on niin suuri suhteessa siirtokapasiteettiin, että Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029.
+- [ ] `p` **uusi** — Fingridin 24.9.2025 julkaiseman tiedotteen mukaan Etelä-Suomen siirtokapasiteetti varataan sähkönkulutuksen kasvulle ja uusille teollisille investoinneille. Uusia sähkövarastoja liitetään alueen kantaverkkoon vasta, kun Hikiä–Toivila-yhteys valmistuu vuonna 2029.
       - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — Kyse ei ole siitä, etteikö sähkövarastoille olisi käyttöä. Päinvastoin: Fingrid hankkii tunneittain keskimäärin noin 1 500 MW reserviä ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW nykyistä enemmän. Helmikuussa 2025 energiavarastojen osuus säätökokein todennetusta kapasiteetista oli jo 29 % FCR-N-reservissä, 13 % (ylös) ja 18 % (alas) FCR-D-reservissä ja 54 % FFR-reservissä. Kysyntä kasvaa, mutta tie kantaverkkoon on tukossa.
-      - **Korjaus:**
-- [ ] `figcaption` **uusi** — Kantaverkon liityntätilanne. Lähde: Fingrid, tiedote 24.9.2025.
+- [ ] ⚠ `p` **uusi** — Kyse ei ole siitä, etteikö sähkövarastoille olisi käyttöä. Päinvastoin: Fingrid hankkii tunneittain keskimäärin noin 1 500 MW reserviä ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW nykyistä enemmän. Helmikuussa 2025 energiavarastojen osuus säätökokein todennetusta kapasiteetista oli jo 29 % FCR-N-reservissä, 13 % (ylös) ja 18 % (alas) FCR-D-reservissä ja 54 % FFR-reservissä. Kysyntä kasvaa, mutta uusi tie Etelä-Suomen kantaverkkoon aukeaa vasta vuonna 2029.
       - **Korjaus:**
 - [ ] `h2` **uusi** — Miksi tämä koskee teitä
       - **Korjaus:**

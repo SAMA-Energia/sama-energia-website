@@ -669,7 +669,7 @@ h1 em,h2 em{color:var(--gold-2)}
 .k-fc figcaption{position:absolute;left:0;right:0;bottom:0;display:grid;gap:4px;padding:72px 16px 15px;background:linear-gradient(180deg,rgba(10,10,9,0),rgba(10,10,9,.7) 42%,rgba(10,10,9,.94))}
 .k-fc b{font:400 19px/1.18 var(--font-display);color:#F3EEE1}
 .k-fc span{font:500 13px/1.3 var(--font-body);color:#D9BC7E}
-.k-fl-btn{position:absolute;right:10px;bottom:18px;z-index:3;display:grid;place-items:center;width:40px;height:40px;padding:0;border:1px solid rgba(243,238,225,.42);border-radius:50%;background:rgba(10,10,9,.8);color:#F3EEE1;cursor:pointer}
+.k-fl-btn{position:absolute;right:10px;top:16px;z-index:3;display:grid;place-items:center;width:40px;height:40px;padding:0;border:1px solid rgba(243,238,225,.42);border-radius:50%;background:rgba(10,10,9,.8);color:#F3EEE1;cursor:pointer}
 .k-fl-btn:hover{border-color:#F3EEE1}.k-fl-btn:focus-visible{outline:2px solid #E8D193;outline-offset:2px}
 .k-fl-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .k-fl-btn .i-pl,.k-fl-btn[aria-pressed=true] .i-pa{display:none}.k-fl-btn[aria-pressed=true] .i-pl{display:inline;fill:currentColor;stroke:none}
@@ -786,7 +786,7 @@ h1 em,h2 em{color:var(--gold-2)}
 }
 @media (max-width:1099px){.kk-maps{position:relative;margin:24px 0 0;aspect-ratio:4/3}.kk-m{height:100%}.kk-m img{object-position:76% 50%}}
 @media (max-width:1023px){.k-hero{--hh:auto}
-.k-hero .wrap{display:flex;flex-direction:column;min-height:0;padding-top:26px;padding-bottom:30px}
+.k-hero .wrap{display:flex;flex-direction:column;align-items:stretch;gap:0;min-height:0;padding-top:26px;padding-bottom:30px}
 .k-htxt{display:contents}
 .k-copy{order:1}.k-hero .hero-cta{order:2}.k-flow{order:3}.k-proof{order:4}
 .k-tel{display:inline-block;margin:8px 0 0}
@@ -796,7 +796,7 @@ h1 em,h2 em{color:var(--gold-2)}
 .k-fl-r .k-fl-in,.k-fl-r .k-fl-set{flex-direction:row}
 .k-fl-r .k-fl-in{width:max-content;animation:kfl 64s linear infinite}
 .k-fl-r .k-fc{width:clamp(168px,42vw,236px)}
-.k-fl-btn{right:calc(var(--gutter) + 2px);bottom:12px}
+.k-fl-btn{right:calc(var(--gutter) + 2px);top:10px}
 }
 @media (max-width:900px){.k-gives,.k-lines,.k-cards,.k-steps{grid-template-columns:1fr 1fr}.k-arved{grid-template-columns:1fr}.k-copy{max-width:640px}.k-team{grid-template-columns:1fr}}
 @media (max-width:750px){.k-copy{max-width:none}
