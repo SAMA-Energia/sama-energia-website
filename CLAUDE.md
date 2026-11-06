@@ -393,8 +393,13 @@ When in doubt, leave it out and flag it.
   lepitakse kokku tellimuse kinnitamisel (Soome kahte nädalat ei kasutata), mõõtepunkti taotlused samal päeval.
   Vaihe 1 alkaa lomakkeesta.
 - Kumppaniosio (#valik / #valikoima): H2 "Me mõtleme tervikuna." / "Ajattelemme kokonaisuutta." vasemmalla, Madiksen
-  viesti oikealla, alla viiden kuvan kokonaisuus (iso kuva 2×2 + neljä; ET Ralos ×2, Soleron, kaksi omaa; FI Ralos,
-  Avant Power, Gare, JSM, Scanoffice). Natiivitarkistus: ET Madis, FI Martin.
+  viesti oikealla. Madis 6.11. klo 9.40: osio yhä huono, kaikki kumppanit eivät näy (Elecnova puuttui), Ralosin iso kuva
+  oudossa yhteydessä. Nyt: markkinan KAIKKI kumppanit tasavertaisina kortteina (`.k-pcs` > `.k-pc`: kuva, nimi, mitä tuo;
+  linkki kumppanisivun korttiin, roolit kumppanisivun `.role`-riveistä). FI: Ralos, Elecnova, Avant Power (ensimmäinen
+  rivi = kolme varastovalmistajaa), Gare Energy, Scanoffice, JSM. ET: Ralos, Elecnova, Soleron Energy OÜ. Elecnovalla
+  nimikortti `.k-pcw` (sanamerkki + tuotevalikoima), koska elecnova-ess.com on Cloudflaren bottitarkistuksen takana
+  eikä sitä kierretä; tuotekuva Madikselta/Elecnovalta, sitten kortti kuvalliseksi. Puhelimella kortit vaakariveinä.
+  Natiivitarkistus: ET Madis, FI Martin.
 - site.css 78,7 kt (oma tavoite 76 kt ylittyy hieman; raja 92 kt).
 
 ## Perustajan päätökset 6.11.2026 (Madis) — kartta ja paikan kortti

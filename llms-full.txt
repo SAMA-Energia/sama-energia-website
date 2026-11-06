@@ -122,14 +122,23 @@ Investoinnin arvo syntyy monesta osasta. Kun tarjoamme valikoiman eri valmistaji
 Kumppanit ja tuotteet
 
 Ralos Oy
+Energiavarastot ja aurinkovoimalat
+
+ElecnovaUlkokaapit · kontit · mikroverkot
+Elecnova
+Energiavarastot ja mikroverkot
 
 Avant Power
+Energiavarastot, mikroverkot ja lataus
 
 Gare Energy Oy
-
-JSM Automaatiosähkö Oy
+Aurinkokatot, aurinkokatokset ja asennus
 
 Scanoffice Oy
+Aurinkopaneelit, lataus ja lämpöpumput
+
+JSM Automaatiosähkö Oy
+Sähkötyöt, asennus ja käyttöönotto
 
 Tiimimme.
 SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · Y-tunnus 3647683-6
@@ -1834,10 +1843,14 @@ Investeeringu väärtus tuleb paljudest osadest. Kui pakume valikut eri tootjate
 Partnerid ja tooted
 
 Ralos Oy
+Energiasalvestid ja päikeseelekter
 
-Soleron Energy
+ElecnovaVäliskapid · konteinerid · mikrovõrgud
+Elecnova
+Energiasalvestid ja mikrovõrgud
 
-Ralos Oy
+Soleron Energy OÜ
+Agregaator ja energiajuhtimine
 
 Meie meeskond.
 SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · registrikood (Y-tunnus) 3647683-6
