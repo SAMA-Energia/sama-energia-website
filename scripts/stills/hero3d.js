@@ -1006,7 +1006,7 @@ sun.shadow.bias = -0.0003; sun.shadow.normalBias = 0.03; sun.shadow.radius = KRI
 scene.add(sun);
 if (LIGHT === 'dusk') {
   const fill = new THREE.DirectionalLight('#6f8fbf', 0.35); fill.position.set(SITE.x + 60, 40, SITE.z + 80); scene.add(fill);
-  for (const p of cabPos) { const l = new THREE.PointLight('#f3c77a', TAUSTA ? 0.5 : 1.2, 6, 2); l.position.set(p.x + 1.4, 2.9, p.z); scene.add(l); }   // kaapit katsovat itään (+x)
+  for (const p of cabPos) { const l = new THREE.PointLight('#f3c77a', TAUSTA ? 0.5 : 1.2, 6, 2); l.name = 'kaappivalo'; l.position.set(p.x + 1.4, 2.9, p.z); scene.add(l); }   // kaapit katsovat itään (+x)
   const yl = new THREE.PointLight('#ffd9a0', 30, 28, 2); yl.position.set(HALL.x1 - 1, 7.5, HALL.z1 + 2.5); scene.add(yl);
   if (SCENE === 'kuivati') yl.position.set(16.2, 6.8, -10.8);
   const lamp = (x, y, z, i, d) => { const l = new THREE.PointLight('#ffd9a0', i, d, 2); l.position.set(x, y, z); scene.add(l); };
@@ -1253,7 +1253,7 @@ if (P.get('export') === 'glb') {
   const lights = [];
   scene.traverse((o) => {
     if (!o.isLight) return;
-    const L = { type: o.type, color: o.color.toArray(), intensity: o.intensity, position: new THREE.Vector3().setFromMatrixPosition(o.matrixWorld).toArray() };
+    const L = { type: o.type, name: o.name || '', color: o.color.toArray(), intensity: o.intensity, position: new THREE.Vector3().setFromMatrixPosition(o.matrixWorld).toArray() };
     if (o.isDirectionalLight) L.target = o.target.position.toArray();
     if (o.isPointLight) { L.distance = o.distance; L.decay = o.decay; }
     if (o.isHemisphereLight) L.groundColor = o.groundColor.toArray();

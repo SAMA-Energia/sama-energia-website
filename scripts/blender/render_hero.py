@@ -32,6 +32,7 @@ ap.add_argument('--post-only', action='store_true')
 ap.add_argument('--world', type=float, default=1.0, help='ympäristövalon kerroin (RoomEnvironment + hemisfääri)')
 ap.add_argument('--sun', type=float, default=1.0)
 ap.add_argument('--points', type=float, default=1.0)
+ap.add_argument('--cab', type=float, default=1.0, help='kaappien edessä olevien valojen kerroin (tuote erottuu)')
 ap.add_argument('--emit', type=float, default=1.0, help='kaapeleiden ja ikkunoiden emission kerroin')
 ap.add_argument('--exposure', type=float, default=None)
 ap.add_argument('--soft', type=float, default=0.35, help='pistevalojen säde (m): pehmeät varjot ja heijastukset')
@@ -110,7 +111,7 @@ if not args.post_only:
             o.location = tuple(p); aim(o, tuple(t - p))
         elif L['type'] == 'PointLight':
             ld = bpy.data.lights.new(f'pt{i}', 'POINT'); ld.color = col
-            ld.energy = 4 * math.pi * L['intensity'] * args.points   # three: kandela → Blender W (E = I / d²)
+            ld.energy = 4 * math.pi * L['intensity'] * args.points * (args.cab if L.get('name') == 'kaappivalo' else 1.0)   # three: kandela → Blender W (E = I / d²)
             ld.shadow_soft_size = args.soft
             o = bpy.data.objects.new(f'pt{i}', ld); sc.collection.objects.link(o)
             o.location = t2b(L['position'])
