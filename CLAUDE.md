@@ -521,3 +521,39 @@ Madis 6.11.2026 (vestlus C, vastaukset kysymyksiin; päätöslokiin lisättävä
   (+ ET Scanoffice ja "Laadimine ja soojuspumbad").
 - Avoin: Madikselta JSM:n akkuasennuskuvat, Elecnovan mediapaketti (kaappikuvat), päätös datalehdistä kumppanisivulle,
   Energen Nordicin nimeäminen EP:n kanavana (ei nimetty).
+
+## v51 — Madiksen esikatselukommentit 6.11.2026 klo 13.18 (haara v35-uusi-ilme)
+
+- Avant Power myös Viron sivustolla (Madis: "siit on puudu avant"): ET-etusivun kortti (ensimmäinen rivi = neljä varastovalmistajaa:
+  Ralos, Elecnova, EP Energy, Avant Power; toinen rivi Scanoffice ja Soleron keskitettynä), ET-kumppanisivun kortti (#avant-power,
+  kuva + logo, teksti FI-kortin käännös), matriisi ja Meist-ruudukko. FI-kumppanisivun Avant-kortille sama kuva. Korvaa v38:n "Avant Power vain FI".
+- Kumppanikortit avautuvat (Madis: "iga ettevõtte kohta saaks võtta lahti täpsema kirjelduse"): kortti on painike (Popover API, ei JS:ää;
+  Esc, taustan napautus ja Sulje-painike sulkevat, fokus palaa korttiin), paneelissa kuvat isompina, sijainti, kumppanisivun kuvaus,
+  tarjonta ja linkit kumppanisivulle ja kumppanin sivustolle. Paneelit ovat lähteessä (src/*.html, `.k-pdl`) tavallisena HTML:nä.
+  Lähteet Scanoffice (scanoffice.fi/in-english: 1984, Espoo, lähes sata ammattilaista), EP Energy (ep-equipment.com/ep-energy: Anji,
+  Zhejiang, oma tehdas ja tuotekehityskeskus; konsernin nimeä ei mainita), Ralos (discovercleantech: perustettu 2017, Tampere), Gare
+  (roofit.solar/contact-us "Find a Reseller", Suomi: Gare Energy OY, aurinkokatto.com; samassa listassa myös Ruukki), Elecnova
+  "saatavilla Suomen markkinoilla" (Madis 6.11.2026), JSM "myös Ralosin kaapit" (Madis 6.11.2026). verify-pages: linkkitarkistuksen
+  regex ei enää lue `popovertargetaction`-attribuuttia osoitteeksi.
+- Gare Energy (Madis: "aurinkokatto.com … Roofit.Solar peamine partner Soomes"): kortissa ja kumppanisivulla "Roofit.Solarin
+  jälleenmyyjä Suomessa, aurinkokatto.com". "Pääkumppani" ei ole lähteestä (Roofit.Solarin oma lista sanoo reseller, kaksi
+  suomalaista) — vaihdetaan, jos Madis antaa kirjallisen lähteen. Vartija: `nimet-1104` = EP Equipment / Energen (molemmat),
+  uusi `roofit-et` = Roofit vain Viron sivustolla kielletty.
+- Lomakeosion yhteystieto (Madis: nimi ja rooli eivät ole siinä järkeviä): etusivun, Yhteystiedot/Kontakt-sivun ja Kiitos/Aitäh-sivun
+  `.direct`-laatikko = info@samaenergia.fi + Madiksen numero, kunnes yrityksellä on oma numero. Uutisartikkelin kirjoittajakortti ja
+  yhteystietosivun tiimikortit ennallaan.
+- Prosessi (Madis: "näitlikustame päikesepaneele … drooniga mõõtmise koha … saame laenutada drooni"): vaihe 3 FI "Halutessanne
+  mittaamme katon droonilla ja suunnittelemme aurinkopaneelien sijoittelun." / ET "Soovi korral mõõdame katuse drooniga ja kavandame
+  päikesepaneelide paigutuse." Video (hero3d.js anim=proc): katto alkaa tyhjänä; 12–16,9 s drooni nousee sähköasentajan luota, mittaa
+  katon kahdella ylilennolla (keila ja kaistale) ja suunniteltu sijoittelu ilmestyy lennon perässä läpikuultavina kultaisina
+  paneeleina; vaiheessa 5 paneelit asennetaan rivi kerrallaan (23,4–25,6 s), rivikaapelit, runko ja aurinkokaapeli piirtyvät
+  (25,5–26,9 s) ja kirkastuvat käyttöönotossa. Kamera `proc` tx 8.4 tz -20.6 vh 21 (enemmän kattoa).
+- Hero (Madis: "päikesepaneelide vahel jooksevad ka juhtmed"): rivikaapelit katolla rivien välissä (himmeämpi kulta `M.energyStr`,
+  0,28 × energia, ohuempi) ja runkokaapeli rivien itäpäässä aurinkokaapelin alkuun. Herotausta renderöity uudelleen Cyclesillä
+  (v49-putki: export-scene.mjs → render_hero.py --samples 64 --world 0.8 --cab 4 --bloom 0.8 → encode_hero.py).
+- Osoitehaku (#kk-q1, Madis: ei toiminut Chromessa): esikatselutiedostossa ei ole palvelinta (/api/paikka). Netlifyn deploy preview
+  (https://deploy-preview-8--samaenergia.netlify.app/et/) toimii: haku, valinta ja merkki kartalla tarkistettu 6.11.2026.
+  build-standalone.py: vain file:-esikatselussa Viron osoitehaku suoraan In-ADS:ään (CORS sallittu) ja Viron karttaruudut
+  Maa- ja Ruumiametista; PVGIS ja MML eivät toimi esikatselussa. Suomen osoitteet vaativat edelleen MML_API_KEY:n Netlifyyn.
+- AVOIN: natiivitarkistus (FI Martin, ET Madis) paneelien teksteille, Avantin ET-tekstille ja vaiheen 3 lauseelle; Garen
+  "pääkumppani"-lähde; yrityksen oma puhelinnumero.

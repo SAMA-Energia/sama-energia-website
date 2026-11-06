@@ -71,6 +71,22 @@ def build(lang):
     html=re.sub(r'<script src="/assets/kartta\.js" defer></script>\n?','',html)
     # paikan kortti (assets/kartta-paikka.js) ladataan sivulla vasta tarvittaessa; esikatselussa se upotetaan valmiiksi
     if 'km-geo' in html or 'kk-geo' in html:
+        # Esikatselutiedostolla ei ole omaa palvelinta (/api/paikka). Madis 6.11.2026: osoitehaku ei toiminut Chromessa.
+        # Vain esikatselussa (file:): Viron osoitehaku suoraan Maa- ja Ruumiametin In-ADS:ään (CORS sallittu) ja Viron
+        # taustakartan ruudut suoraan Maa- ja Ruumiametista. PVGIS ja MML eivät salli selainkutsua / vaativat avaimen,
+        # joten ne toimivat vasta julkaistulla sivulla (Netlifyn deploy preview). Tuotantosivu ei muutu.
+        kartta_js+=('<script>(function(){if(location.protocol!=="file:")return;var F=window.fetch.bind(window);'
+            'window.fetch=function(u,o){if(u==="/api/paikka"&&o&&typeof o.body==="string"){var b;try{b=JSON.parse(o.body)}catch(e){b={}}'
+            'if(b.op==="haku"){return F("https://inaadress.maaamet.ee/inaadress/gazetteer?results=6&address="+encodeURIComponent(String(b.q||"").trim()))'
+            '.then(function(r){return r.json()}).then(function(d){var out=(d.addresses||[]).filter(function(a){return a.viitepunkt_l&&a.viitepunkt_b}).map(function(a){'
+            'return{t:a.ipikkaadress||a.pikkaadress,lon:+(+a.viitepunkt_l).toFixed(5),lat:+(+a.viitepunkt_b).toFixed(5),k:a.liikVal||"",c:"EE"}});'
+            'return new Response(JSON.stringify({results:out,fi:false}),{headers:{"Content-Type":"application/json"}})})}'
+            'return Promise.reject(new TypeError("esikatselu"))}return F(u,o)};'
+            'var T=\'img[src^="/api/ruutu/ee/"]\',fx=function(i){var p=i.getAttribute("src").split("/"),z=+p[4],x=+p[5],y=parseInt(p[6],10);'
+            'i.src="https://tiles.maaamet.ee/tm/tms/1.0.0/hallkaart@GMC/"+z+"/"+x+"/"+(Math.pow(2,z)-1-y)+".png"};'
+            'new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType!==1)return;'
+            'if(n.matches(T))fx(n);n.querySelectorAll(T).forEach(fx)})})}).observe(document.documentElement,{childList:true,subtree:true});'
+            '})();</script>')
         kartta_js+='<script>'+open(os.path.join(ROOT,'assets/kartta-paikka.js'),encoding='utf-8').read().replace('</script','<\\/script')+'</script>'
     # etusivu.js (v46) tekstinä kuten kartta.js; prosessivideo upotetaan (puhelinversio, mp4) ja juliste data-osoitteena
     if '/assets/etusivu.js' in html:

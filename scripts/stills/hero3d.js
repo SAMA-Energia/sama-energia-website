@@ -53,7 +53,7 @@ const PRESETS = {
   /* v48 (06.11.2026): muuntamo sähkötilan oven itäpuolella (NEWSITE), joten rajaus on tiiviimpi; katon paneelit näkyvät */
   bg:          { tx: 8.25, tz: -18.25, vh: 22.25, fx: 0.5, fy: 0.5, az: 0.62, el: 0.6, fc: [18.5, -15.5], r0: 11, r1: 25 },
   /* prosessivideo 4:3 (1200×900): katto paneeleineen, ovi, kaappirivi ja muuntamo samassa kuvassa */
-  proc:        { tx: 9.0, tz: -18.5, vh: 20.5, fx: 0.5, fy: 0.5, az: 0.62, el: 0.6, fc: [18.5, -15.5], r0: 13, r1: 27 },
+  proc:        { tx: 8.4, tz: -20.6, vh: 21.0, fx: 0.5, fy: 0.5, az: 0.62, el: 0.6, fc: [18.5, -15.5], r0: 13, r1: 27 },
   bgm:         { tx: 9.25, tz: -19.75, vh: 22, fx: 0.5, fy: 0.5, az: 0.62, el: 0.6, fc: [18.5, -15.5], r0: 10.5, r1: 23 },
 };
 const PR = Object.assign({}, PRESETS[SHOT] || PRESETS.hero);
@@ -199,6 +199,7 @@ M.energy = LIGHT === 'dusk' ? std({ color: '#2a2215', emissive: new THREE.Color(
   : std({ color: '#C7A45C', emissive: new THREE.Color('#D4A94F'), emissiveIntensity: 0.9, roughness: 0.35, metalness: 0.35 });
 M.energyGrid = LIGHT === 'dusk' ? std({ color: '#1a160f', emissive: new THREE.Color('#B89656'), emissiveIntensity: 2.2, roughness: 0.5 })
   : std({ color: '#97752F', emissive: new THREE.Color('#97752F'), emissiveIntensity: 0.35, roughness: 0.45, metalness: 0.3 });
+M.energyStr = M.energy.clone(); M.energyStr.emissiveIntensity = M.energy.emissiveIntensity * 0.28;   // v51: paneelirivien kaapelit katolla
 M.kiosk = std({ map: T.concrete, color: '#b9b5ad', roughness: 0.85 });
 M.kioskDoor = std({ color: '#4a4d51', roughness: 0.55, metalness: 0.35 });
 M.metal = std({ color: '#9aa0a6', roughness: 0.35, metalness: 0.85 });
@@ -611,6 +612,7 @@ function electricalRoomOpen(g) {
 
 // ---------- industrial hall ----------
 const HALL = { x0: -28, x1: 14, z0: -33, z1: -11, h: 9 };
+let ROOF = null;   // v51: katon paneelirivit (prosessivideo asentaa ne vaiheessa 5; kaapelit rivien välissä)
 function hall() {
   const g = new THREE.Group(); scene.add(g);
   const L = HALL.x1 - HALL.x0, D = HALL.z1 - HALL.z0, h = HALL.h;
@@ -660,6 +662,7 @@ function hall() {
     dmy.rotation.set(tilt, 0, 0); dmy.updateMatrix(); inst.setMatrixAt(count++, dmy.matrix);
   }
   inst.castShadow = true; inst.receiveShadow = true; g.add(inst);
+  ROOF = { inst, rows, cols, pw, pd, tilt, x0: HALL.x0 + 2, y: h + 0.45, n: rows.length * cols };
   // rooftop units
   box(3.2, 1.6, 2.2, M.darkMetal, HALL.x0 + 6, h + 0.8, HALL.z0 + 1.6, g);
   box(2.4, 1.2, 1.8, M.darkMetal, HALL.x1 - 5, h + 0.6, HALL.z0 + 1.4, g);
@@ -796,6 +799,14 @@ if (!SHOW.includes('noenergy')) {
   EL.riser = energyLine(EL.riserPts, ER * 0.75, NEWSITE ? fadeGround(M.energyGrid.clone(), R0, R1) : ANIM ? EL.grid.material : M.energyGrid);
   // rooftop solar -> main switchboard: hero hehkuu kuten varaston viiva; kriit-videossa olemassa oleva infra (himmeä)
   EL.solar = energyLine(EL.solarPts, ER * 0.85, TAUSTA ? M.energy : ANIM ? M.energyGrid.clone() : M.energyGrid);
+  /* v51 (Madis 6.11.2026: "päikesepaneelide vahel jooksevad ka juhtmed"): rivikaapelit katolla rivien välissä (paneelin
+     alareunan eteläpuolella, kamerasta näkyvällä kaistalla) ja runkokaapeli rivien itäpäässä aurinkokaapelin alkuun. */
+  if (NEWSITE && ROOF) {
+    const xW = ROOF.x0 + 0.15, xE = 11.4, yR = 9.1, zs = ROOF.rows.map((z) => z + 0.8);
+    const sm = TAUSTA ? M.energyStr : ANIM ? M.energyGrid.clone() : M.energyGrid;
+    EL.strings = zs.map((z) => energyLine([[xW, yR, z], [xE, yR, z]], ER * (TAUSTA ? 0.42 : 0.5), sm));
+    EL.trunk = energyLine([[xE, yR, zs[0]], [xE, yR, zs[zs.length - 1]]], ER * 0.7, TAUSTA ? M.energy : sm);
+  }
   if (!NEWSITE) for (const [y, z] of [[0.35, ROW.zS + 0.6], [0.35, -12.4], [2.6, -11.5]]) box(0.04, 0.34, 0.34, M.darkMetal, ROW.wallX + 0.02, y, z, scene, false);
 }
 // ---------- MV line to the grid ----------
@@ -1165,6 +1176,39 @@ if (ANIM === 'proc') {
   AN.ownerTab = person({ x: 17.15, z: -14.4, rot: -2.55, top: M.coat, bottom: M.trousers, pose: 'tablet', h: 1.74 });
   AN.elec = person({ x: 15.7, z: -12.15, rot: -2.28, top: M.navy, bottom: M.trousers, stripes: true, helmet: true, pose: 'camera' });
   AN.ownerCamF = fader(AN.ownerCam); AN.ownerTabF = fader(AN.ownerTab); AN.elecF = fader(AN.elec);
+  /* v51 (Madis 6.11.2026: "näitlikustame päikesepaneele … drooniga mõõtmise koha"): kohdekäynnillä drooni mittaa katon
+     kahdella ylilennolla; suunniteltu paneelien sijoittelu ilmestyy lennon perässä läpikuultavina kultaisina paneeleina
+     (kuten kaappien aaveet); vaiheessa 5 paneelit asennetaan rivi kerrallaan, rivikaapelit ja aurinkokaapeli piirtyvät. */
+  if (ROOF) {
+    AN.roofN = ROOF.n; ROOF.inst.count = 0;
+    const gp = new THREE.InstancedMesh(new THREE.BoxGeometry(ROOF.pw - 0.16, 0.012, ROOF.pd - 0.14), basic('#B8913F', 0), ROOF.n);
+    const P1 = { t0: 12.7, t1: 14.1, xa: 11.5, xb: -12 }, P2 = { t0: 14.5, t1: 15.9, xa: -12, xb: 11.5 };   // ylilennot katon näkyvällä osalla
+    const c01 = (v) => Math.max(0, Math.min(1, v)), list = [];
+    ROOF.rows.forEach((z, r) => { for (let i = 0; i < ROOF.cols; i++) {
+      const x = ROOF.x0 + ROOF.pw / 2 + i * (ROOF.pw + 0.05), ps = r < ROOF.rows.length - 2 ? P1 : P2;
+      list.push({ x, z, t: ps.t0 + (ps.t1 - ps.t0) * c01((x - ps.xa) / (ps.xb - ps.xa)) }); } });
+    list.sort((a, b) => a.t - b.t); AN.ghostT = list.map((o) => o.t);
+    const dm = new THREE.Object3D();
+    list.forEach((o, k) => { dm.position.set(o.x, ROOF.y + 0.03, o.z); dm.rotation.set(ROOF.tilt, 0, 0); dm.updateMatrix(); gp.setMatrixAt(k, dm.matrix); });
+    gp.count = 0; gp.frustumCulled = false; ROOF.inst.frustumCulled = false; scene.add(gp); AN.ghostPanels = gp;
+    // drooni: runko, varret, roottorit ja kultainen merkkivalo (mittakaava ×2, jotta se erottuu videossa)
+    const dg = new THREE.Group(), dmat = std({ color: '#1d1f22', roughness: 0.5, metalness: 0.3 });
+    dg.add(new THREE.Mesh(new THREE.BoxGeometry(0.34, 0.12, 0.22), dmat));
+    for (const [sx, sz] of [[1, 1], [1, -1], [-1, 1], [-1, -1]]) {
+      const arm = new THREE.Mesh(new THREE.BoxGeometry(0.4, 0.03, 0.04), dmat); arm.position.set(sx * 0.16, 0.03, sz * 0.12); arm.rotation.y = -Math.atan2(sz * 0.12, sx * 0.16); dg.add(arm);
+      const rot = new THREE.Mesh(new THREE.CircleGeometry(0.16, 24), basic('#B9B6AE', 0.4)); rot.rotation.x = -Math.PI / 2; rot.position.set(sx * 0.32, 0.07, sz * 0.24); dg.add(rot);
+    }
+    const led = new THREE.Mesh(new THREE.SphereGeometry(0.04, 10, 8), basic('#F2D58A', 1)); led.position.set(0.18, 0, 0); dg.add(led);
+    dg.scale.setScalar(2); scene.add(dg); AN.drone = dg; AN.droneF = fader(dg);
+    // mittauskeila ja kaistale katolla lennon alla
+    AN.beam = new THREE.Mesh(new THREE.ConeGeometry(3.8, 1, 4, 1, true), basic(gold, 0)); AN.beam.rotation.y = Math.PI / 4; scene.add(AN.beam);
+    AN.foot = new THREE.Mesh(new THREE.PlaneGeometry(5.4, 5.4), basic(gold, 0)); AN.foot.rotation.x = -Math.PI / 2; scene.add(AN.foot);
+    AN.dpath = [[12.0, [16.4, 0.35, -11.4]], [12.25, [16.4, 5.0, -11.4]], [12.7, [11.5, 10.9, -18.2]], [14.1, [-12, 10.9, -18.2]],
+      [14.5, [-12, 10.9, -13.6]], [15.9, [11.5, 10.9, -13.6]], [16.5, [16.4, 4.0, -11.4]], [16.85, [16.4, 0.35, -11.4]]];
+    AN.stringCount = (EL.strings || []).map((m) => m.geometry.index.count); AN.trunkCount = EL.trunk ? EL.trunk.geometry.index.count : 0;
+    AN.solarCount = EL.solar ? EL.solar.geometry.index.count : 0;
+    AN.strE0 = EL.strings && EL.strings.length ? EL.strings[0].material.emissiveIntensity : 0;
+  }
 }
 const cl01 = (v) => Math.max(0, Math.min(1, v)), smo = (v) => { v = cl01(v); return v * v * (3 - 2 * v); }, eo = (v) => 1 - Math.pow(1 - cl01(v), 3);
 const span = (t, a, b) => cl01((t - a) / (b - a));
@@ -1214,12 +1258,30 @@ function setT(t) {
     if (EL.grid) EL.grid.material.emissiveIntensity = AN.gridE0 * gb;
     if (EL.riser && EL.riser.material !== (EL.grid && EL.grid.material)) EL.riser.material.emissiveIntensity = AN.riserE0 * gb;
     // aurinkokaapeli: olemassa oleva tuotanto liittyy samaan kokonaisuuteen käyttöönotossa
-    if (EL.solar) EL.solar.material.emissiveIntensity = AN.solarE0 * (1 + 1.6 * smo(span(t, 26.6, 27.2))); }
+    if (EL.solar) EL.solar.material.emissiveIntensity = AN.solarE0 * (1 + 1.6 * smo(span(t, 26.6, 27.2)));
+    if (EL.strings && EL.strings.length) EL.strings[0].material.emissiveIntensity = AN.strE0 * (1 + 1.6 * smo(span(t, 26.6, 27.2))); }
   AN.pulses.forEach((m, k) => {
     const u = ((t - 27.3) / 2.2 - k * 0.2); const on = t >= 27.3 && u >= 0 && u <= 1;
     if (on) { const p = polyAt(AN.path, u); m.position.set(p[0], p[1] + 0.12, p[2]); }
     m.material.opacity = on ? Math.sin(Math.PI * u) * 0.95 : 0;
   });
+  // v51 · 3: drooni mittaa katon; 4: suunniteltu sijoittelu odottaa; 5: paneelit, rivikaapelit ja aurinkokaapeli
+  if (AN.drone) {
+    const DP = AN.dpath; let pos = DP[DP.length - 1][1];
+    for (let k = 1; k < DP.length; k++) if (t < DP[k][0]) { const [ta, a] = DP[k - 1], [tb, b] = DP[k], u = t <= ta ? 0 : smo(span(t, ta, tb)); pos = [a[0] + (b[0] - a[0]) * u, a[1] + (b[1] - a[1]) * u, a[2] + (b[2] - a[2]) * u]; break; }
+    AN.drone.position.set(pos[0], pos[1], pos[2]);
+    AN.droneF(smo(span(t, 11.85, 12.15)) * (1 - smo(span(t, 16.95, 17.3))));
+    const over = smo(span(t, 12.55, 12.8)) * (1 - smo(span(t, 15.85, 16.1)));
+    AN.foot.position.set(pos[0], 9.14, pos[2]); AN.foot.material.opacity = 0.16 * over;
+    const hg = Math.max(0.5, pos[1] - 9.2); AN.beam.scale.set(1, hg, 1); AN.beam.position.set(pos[0], 9.2 + hg / 2, pos[2]); AN.beam.material.opacity = 0.07 * over;
+    let gc = 0; while (gc < AN.ghostT.length && AN.ghostT[gc] <= t) gc++;
+    AN.ghostPanels.count = gc; AN.ghostPanels.material.opacity = 0.62 * (1 - smo(span(t, 24.6, 25.8)));
+    ROOF.inst.count = Math.floor(AN.roofN * eo(span(t, 23.4, 25.6)));
+    const su = eo(span(t, 25.5, 26.2));
+    (EL.strings || []).forEach((m, i) => { m.visible = su > 0.002; m.geometry.setDrawRange(0, Math.floor(AN.stringCount[i] * su / 6) * 6); });
+    if (EL.trunk) { const tu = eo(span(t, 25.8, 26.3)); EL.trunk.visible = tu > 0.002; EL.trunk.geometry.setDrawRange(0, Math.floor(AN.trunkCount * tu / 6) * 6); }
+    if (EL.solar) { const vu = eo(span(t, 26.0, 26.9)); EL.solar.visible = vu > 0.002; EL.solar.geometry.setDrawRange(0, Math.floor(AN.solarCount * vu / 6) * 6); }
+  }
 }
 /* v49 (6.11.2026): ?export=glb — sama näyttämö Blenderiin polunseurantaa varten (scripts/blender/export-scene.mjs →
    scripts/blender/render_hero.py, Cycles). Valot ja kamera viedään window.EXPORT_META:ssa, ei glTF:ssä; maan häivytys

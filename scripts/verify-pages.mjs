@@ -221,8 +221,13 @@ const GUARDS = [
   // valmistaja ilman sopimusta (Suomessa yhteistyö Gare Energy Oy:n kautta). Sallitut nimet: CLAUDE.md, sisältösäännöt.
   // 6.11.2026 perustajan päätös (Madis: „You don't have EP energy at all"): EP Energy sallittu molemmilla sivustoilla;
   // EP Equipment, Energen Nordic ja Roofit edelleen vartioitu.
-  { id: 'nimet-1104', langs: 'both', why: 'EP Equipment / Energen / Roofit — ei sivustolla ennen perustajan päätöstä (04.11.2026; EP Energy sallittu 6.11.2026)',
-    find: t => [...t.matchAll(/EP Equipment|\bEnergen\b|Roofit/gi)] },
+  // 6.11.2026 klo 13.18 (Madis, kommentti FI-esikatselussa: Gare Energy „Roofit.Solar peamine partner Soomes"): Roofit.Solar
+  // saa näkyä Suomen sivustolla Gare Energy Oy:n yhteydessä (Roofit.Solarin oma jälleenmyyjälista, Suomi: Gare Energy OY).
+  // Viron sivustolla Roofit edelleen vartioitu (ei sopimusta, Viron yhteistyö ei kulje Garen kautta).
+  { id: 'nimet-1104', langs: 'both', why: 'EP Equipment / Energen — ei sivustolla ennen perustajan päätöstä (04.11.2026; EP Energy sallittu 6.11.2026)',
+    find: t => [...t.matchAll(/EP Equipment|\bEnergen\b/gi)] },
+  { id: 'roofit-et', langs: 'et', why: 'Roofit ei Viron sivustolla (Suomessa sallittu Gare Energy Oy:n yhteydessä 6.11.2026)',
+    find: t => [...t.matchAll(/Roofit/gi)] },
   // 04.11.2026 (perustajan päätös): malli ja tekniset arvot kuuluvat tarjoukseen, eivät sivulle.
   { id: 'mallinimet-1104', langs: 'both', why: 'tuotemallin nimi näkyvässä tekstissä — malli ja tekniset arvot kuuluvat tarjoukseen (perustajan päätös 04.11.2026)',
     find: t => [...t.matchAll(/Beast\s*125|EPES\s?\d|ECO-E\d|OptiGrid|Velario/gi)] },
@@ -456,7 +461,8 @@ for (const p of pages) {
 
   /* kaikki sisäiset linkit ja resurssit osoittavat olemassa oleviin tiedostoihin; sivun sisäiset
      ankkurit olemassa olevaan id:hen samalla sivulla */
-  for (const m of html.matchAll(/(?:href|src|action)="([^"]+)"/g)) {
+  // v51: attribuutin nimen alku rajattu (popovertargetaction="hide" ei ole osoite)
+  for (const m of html.matchAll(/(?<![\w-])(?:href|src|action)="([^"]+)"/g)) {
     const u = m[1];
     if (u.startsWith('http://')) { err(`${where} — salaamaton http-linkki: ${u}`); continue; }
     if (u.startsWith('https://') || u.startsWith('mailto:') || u.startsWith('tel:') || u.startsWith('data:')) continue;
