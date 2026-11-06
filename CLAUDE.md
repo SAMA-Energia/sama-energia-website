@@ -490,3 +490,34 @@ Madis 6.11.2026 (vestlus C, vastaukset kysymyksiin; päätöslokiin lisättävä
   (ei päällekkäisyyttä 1 024 px:n näytöllä).
 - Tarkistettu 1024/1280/1440/1920/2560 × 5 vaihetta, tabletti 768, puhelin 390/360, FI ja ET: ei konsolivirheitä, ei vaakavieritystä.
   scene.js 168,7 → 181,1 kt (gzip 47,9 → 53,2 kt), ladataan edelleen vasta luvun lähestyessä.
+
+## v48c — kumppaniosio kumppaneiden koko tarjonnalla (Madis 6.11.2026 klo 10.57)
+
+- Madis: kaikki kumppanit ja niiden tarjonta eivät näy; Scanoffice puuttui (ET) ja näytti pelkältä lataukselta; EP Energy
+  puuttui kokonaan ("EP energy has obviously very good charging, everything"; EP:ltä myös trukit ja muut laitteet; Avantilta
+  tarvittaessa koko valikoima); Elecnovalta ei kuvia eikä materiaaleja; JSM:llä vain aurinkokuva, ei akkuasennusta.
+  Virheen syy (oma arvio): osio rakennettiin käsillä olevista kuvista, ei kumppaneiden tarjonnasta.
+- Etusivun kortit (`.k-pcs` 12 sarakkeen ruudukko; `.k-pc` = kuvamosaiikki `.k-pm.n1/n2/n3` + nimi linkkinä kumppanisivun
+  korttiin + kuvaus + tarjontalista `.k-pco`): FI Ralos, Elecnova, EP Energy, Avant Power (s3, neljä riviin), Scanoffice,
+  Gare Energy, JSM (s4). ET Ralos, Elecnova, EP Energy (s4), Scanoffice (o2, keskitetty pari), Soleron Energy OÜ.
+  ≤1023 px pyyhkäisyrivi (site.js scrollers + `.k-pcs`). Tekstiin lisätty "Kumppaneiden koko valikoima on käytettävissänne."
+- Perustajan päätökset 6.11.2026: EP Energy näkyy molemmilla sivustoilla (verify-pages `nimet-1104` vartioi enää EP Equipment,
+  Energen, Roofit); Scanoffice myös ET-sivustolla (`scanoffice-et`-vartija poistettu; tulkinta Madiksen viestistä, vahvistetaan).
+  Mallinimet ja tekniset arvot edelleen tarjouksessa (`mallinimet-1104`), kunnes Madis päättää datalehdistä.
+- Kuvat `assets/kumppanit/{ralos,elecnova,ep,avant,scanoffice,gare,jsm,soleron}-N.webp`. Lähteet: kumppaneiden omat sivut
+  (lupa 23.10. ja 5.11.2026); EP Energy: viralliset luettelot "EP ENERGY C&I-20251231.pdf" ja "EP ENERGY MOBILE-20251231.pdf"
+  (Gmail-ketju 19eb6a5aa27f8813, projektikuvat s. 3); Elecnova: lehdistökuva "Photo Credit: Elecnova" (TaiyangNews 3.11.2025,
+  media.assettype.com) — elecnova-ess.com ja sen tiedostopalvelin (shopsource.singoo.cc) ovat Cloudflaren bottitarkistuksen
+  takana, ei kierretty; pv magazinen Elecnova-kuva on pv magazinen oma ("Image: pv magazine"), ei käytetty. Scanoffice:
+  scanoffice.fi ilma-vesilämpöpumpun tuotekuva. JSM:n akkuasennuskuvia ei löytynyt (posti, Drive, JSM:n sivu) — pyydetty Madikselta.
+- Kuvien oma tarkistus (6.11.2026): kuvassa ei saa näkyä mallinimeä eikä nimeämätöntä valmistajaa (sama sääntö kuin tekstissä).
+  avant-2 = rajaus Avantin mikroverkkohavainnekuvasta (avanttecno.com, 2560 px) ilman tuotenimilogoa ja englanninkielisiä
+  tarroja; scanoffice-1 (etusivu, pysty) ja scanoffice-4 (ET-kumppanisivu, vaaka) rajattu niin, ettei laitteen valmistaja- ja
+  mallikilpi näy; JSM:n GREE-lämpöpumppukuva poistettu (ei kumppani, kilpailee Scanofficen valikoiman kanssa). JSM-kortin
+  pääkuva ralos-4 = Ralosin oma kuva avatusta akkukaapista (energiavarastojen asennus on JSM:n ensimmäinen ala) siihen asti,
+  kun JSM:n omat akkuasennuskuvat saadaan.
+- Kumppanisivut: EP Energy -kortti kuvalla (#ep-energy) FI/ET, Elecnova-kortille kuva, ET:hen Scanoffice omaan ryhmään
+  "Päikeseelekter, laadimine ja soojuspumbad" (#scanoffice), matriisit päivitetty (ET viisi alaa). Meistä/Meist-ruudukko: EP Energy
+  (+ ET Scanoffice ja "Laadimine ja soojuspumbad").
+- Avoin: Madikselta JSM:n akkuasennuskuvat, Elecnovan mediapaketti (kaappikuvat), päätös datalehdistä kumppanisivulle,
+  Energen Nordicin nimeäminen EP:n kanavana (ei nimetty).

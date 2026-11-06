@@ -45,6 +45,7 @@ const NO_RULE_OK = new Set([
   'flow',                   // SVG:n sisäinen: määritelty kuvituskohtaisessa <style>-lohkossa
   'k-pvv', 'k-pvs',         // etusivu.js:n koukut (prosessivideo ja sen pysäytyskuva), tyyli .k-pvb video/img
   'k-pl',                   // etusivu.js:n koukku: vaiherivien ja kuvauspaneelin (.k-pdx) kääre, ei omaa tyyliä
+  'n1',                     // .k-pm.n1: kumppanikortin yhden kuvan mosaiikki — oletusruudukko riittää (n2/n3 omat säännöt)
 ]);
 const NO_RULE_OK_RE = [/^r\d+$/, /^s\d+$/, /^bv$/, /^gv$/, /^chart-/, /^trace/, /^kd(-|$)/];   // kd = etusivun päiväkaavio, tyylit SVG:n <style>-lohkossa (scripts/paiva/build_paiva.py)
 

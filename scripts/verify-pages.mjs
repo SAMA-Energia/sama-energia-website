@@ -212,16 +212,17 @@ const GUARDS = [
   { id: 'tunnetusti-rahoitus', langs: 'both', why: '"tunnetusti" rahoituksen lähellä — todentamaton superlatiivi (03.09.2026)',
     find: t => nearMatches(t, /tunnetusti/gi, /rahoit|rahast/gi, 80) },
   /* --- kumppani- ja yritysnimet --- */
-  // 08.09: Scanoffice Oy sallittu VAIN suomenkielisellä sivustolla.
-  { id: 'scanoffice-et', langs: 'et', why: 'Scanoffice — sallittu vain FI-sivustolla (08.09.2026)',
-    find: t => [...t.matchAll(/Scanoffice/gi)] },
+  // 08.09: Scanoffice Oy sallittu VAIN suomenkielisellä sivustolla. Kumottu 6.11.2026 (Madis: „you don't even have
+  // Scanoffice there" ET-version kumppaniosiosta) — Scanoffice näkyy nyt molemmilla sivustoilla.
   // 03.09: rahoitus- ja Energen-ajan yritysnimiä ei mainita sivustolla.
   { id: 'kielletyt-nimet', langs: 'both', why: 'rahoitus-/Energen-ajan yritysnimi — ei mainita sivustolla (03.09.2026)',
     find: t => [...t.matchAll(/Grenke|Svea|Salama Sähkö/gi)] },
   // 04.11.2026: EP Energy / EP Equipment ja Energen Nordic eivät ole sivustolla ennen perustajan päätöstä; Roofit.Solar on
   // valmistaja ilman sopimusta (Suomessa yhteistyö Gare Energy Oy:n kautta). Sallitut nimet: CLAUDE.md, sisältösäännöt.
-  { id: 'nimet-1104', langs: 'both', why: 'EP Energy / EP Equipment / Energen / Roofit — ei sivustolla ennen perustajan päätöstä (04.11.2026)',
-    find: t => [...t.matchAll(/EP Energy|EP Equipment|\bEnergen\b|Roofit/gi)] },
+  // 6.11.2026 perustajan päätös (Madis: „You don't have EP energy at all"): EP Energy sallittu molemmilla sivustoilla;
+  // EP Equipment, Energen Nordic ja Roofit edelleen vartioitu.
+  { id: 'nimet-1104', langs: 'both', why: 'EP Equipment / Energen / Roofit — ei sivustolla ennen perustajan päätöstä (04.11.2026; EP Energy sallittu 6.11.2026)',
+    find: t => [...t.matchAll(/EP Equipment|\bEnergen\b|Roofit/gi)] },
   // 04.11.2026 (perustajan päätös): malli ja tekniset arvot kuuluvat tarjoukseen, eivät sivulle.
   { id: 'mallinimet-1104', langs: 'both', why: 'tuotemallin nimi näkyvässä tekstissä — malli ja tekniset arvot kuuluvat tarjoukseen (perustajan päätös 04.11.2026)',
     find: t => [...t.matchAll(/Beast\s*125|EPES\s?\d|ECO-E\d|OptiGrid|Velario/gi)] },

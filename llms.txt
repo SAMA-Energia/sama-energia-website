@@ -15,7 +15,7 @@ markets of the transmission system operators Fingrid (Finland) and Elering
 (Estonia). Team: Martin Rautio (chief executive officer), Viljar Petersell
 (installation manager) and Madis Maastik (sales director). Martin Rautio was
 appointed chief executive officer on 13 September 2026. Registered address:
-Sörnäisten Rantatie 33 C, 00500 Helsinki. Content as of 4 November 2026.
+Sörnäisten Rantatie 33 C, 00500 Helsinki. Content as of 6 November 2026.
 
 What the company says about itself, in its own documented positioning:
 
@@ -39,16 +39,20 @@ What the company says about itself, in its own documented positioning:
   days of receiving the customer's data: hourly consumption as the basis, every
   figure with its source and date, the distribution grid operator's position,
   and financing set out as own capital and leasing on the same figures.
-- Partners are shown by field, several per field. Finnish site: energy storage
-  from Ralos Oy, Elecnova and Avant Power; solar from Ralos Oy, Gare Energy Oy
-  (integrated solar roofs and solar carports) and Scanoffice Oy; charging and
-  microgrids from Avant Power, Scanoffice Oy and Gare Energy Oy; heat pumps from
-  Scanoffice Oy; installation and commissioning by JSM Automaatiosähkö Oy and
-  Gare Energy Oy under SAMA's installation manager; the aggregator is chosen per
-  site from the reserve providers approved by Fingrid. Estonian site: energy
-  storage from Ralos Oy and Elecnova, solar from Ralos Oy and SAMA's own
-  installation, energy management and aggregation by Soleron Energy. Model names
-  and technical values are given in the offer, not on the site.
+- Partners are shown by field, several per field, each with its range and
+  pictures from it. Finnish site: energy storage from Ralos Oy, Elecnova, EP
+  Energy and Avant Power; solar from Ralos Oy, Gare Energy Oy (integrated solar
+  roofs and solar carports) and Scanoffice Oy; charging, mobile energy and
+  microgrids from Elecnova, EP Energy, Avant Power, Scanoffice Oy and Gare
+  Energy Oy; heat pumps from Scanoffice Oy; installation and commissioning by
+  JSM Automaatiosähkö Oy and Gare Energy Oy under SAMA's installation manager;
+  the aggregator is chosen per site from the reserve providers approved by
+  Fingrid. Estonian site: energy storage from Ralos Oy, Elecnova and EP Energy;
+  solar from Ralos Oy, Scanoffice Oy and SAMA's own installation; charging and
+  heat pumps from EP Energy and Scanoffice Oy; energy management and
+  aggregation by Soleron Energy. The partners' whole range is available to the
+  client. Model names and technical values are given in the offer, not on the
+  site.
 - Sources cited on the site include Fingrid ("Reservimarkkinat tutuiksi"
   webinar, 11 June 2025: about 1,500 MW of reserve capacity procured per hour on
   average, with procurement expected to grow by 1,200 MW by 2030), Fingrid's
@@ -64,7 +68,7 @@ What the company says about itself, in its own documented positioning:
 
 ## Pages — Finnish (https://samaenergia.fi)
 
-- https://samaenergia.fi/ : Front page: "Sähköliittymänne on omaisuutta. Laittakaa se töihin omaksi eduksenne." A still 3D illustration behind the headline shows where the system sits on an industrial site: solar panels on the roof with their cable coming down the facade, four storage cabinets on a raised concrete foundation along the building wall next to the electrical room, a transformer substation close to the building fed by an underground cable from the grid, and the cables from the solar panels, the storage and the transformer running underground and in under the electrical room door to the main switchboard, with the control unit next to it; then how it works: the four income and saving lines (reserve market first) next to an animated schematic day (consumption and main fuse, hourly price, what the storage does hour by hour; labelled as a schematic, not measured data), the grid map in seven steps where visitors can place their own connection (browser location on request or a point chosen on the map; not stored or sent), how a project proceeds in five steps with the time each step takes next to a short silent video of the same steps (rooftop solar included), why SAMA works with several manufacturers and service partners (a solution built from the client's own decision criteria, not from selling one device) with every partner of that market shown equally (what each brings, linked to the partners page), the team, FAQ and the assessment form.
+- https://samaenergia.fi/ : Front page: "Sähköliittymänne on omaisuutta. Laittakaa se töihin omaksi eduksenne." A still 3D illustration behind the headline shows where the system sits on an industrial site: solar panels on the roof with their cable coming down the facade, four storage cabinets on a raised concrete foundation along the building wall next to the electrical room, a transformer substation close to the building fed by an underground cable from the grid, and the cables from the solar panels, the storage and the transformer running underground and in under the electrical room door to the main switchboard, with the control unit next to it; then how it works: the four income and saving lines (reserve market first) next to an animated schematic day (consumption and main fuse, hourly price, what the storage does hour by hour; labelled as a schematic, not measured data), the grid map in seven steps where visitors can place their own connection (browser location on request or a point chosen on the map; not stored or sent), how a project proceeds in five steps with the time each step takes next to a short silent video of the same steps (rooftop solar included), why SAMA works with several manufacturers and service partners (a solution built from the client's own decision criteria, not from selling one device) with every partner of that market shown with its range and pictures from it (Finland: Ralos, Elecnova, EP Energy, Avant Power, Scanoffice, Gare Energy, JSM Automaatiosähkö; Estonia: Ralos, Elecnova, EP Energy, Scanoffice, Soleron Energy), each linked to its card on the partners page, the team, FAQ and the assessment form.
 - https://samaenergia.fi/aurinkosahko/ : Solar PV for businesses: roof, integrated solar roof, ground and carport, solar with storage, storage for an existing plant; sized by hourly consumption.
 - https://samaenergia.fi/energiavarastot/ : Industrial energy storage: what one system does, the layers from the transmission grid to the cell, what is delivered, safety and warranty.
 - https://samaenergia.fi/reservimarkkinat/ : Reserve markets explained: sourced reasons, how reserve prices form, how income is modelled, what the company believes.

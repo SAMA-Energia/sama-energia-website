@@ -493,7 +493,6 @@ a.post:hover{transform:translateY(-3px);box-shadow:0 26px 44px -34px rgba(0,0,0,
 .process-cta{flex-direction:column;align-items:stretch}
 .process-cta .btn{width:100%}
 }
-@media (prefers-reduced-motion:reduce){.k-pci img{transition:none}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none !important;transition:none !important}
 .js .reveal.pre{opacity:1;transform:none}
 .steps .track{width:100%}
@@ -865,26 +864,30 @@ h1 em,h2 em{color:var(--gold-2)}
 .k-pvl{position:absolute;left:12px;top:12px;margin:0;padding:6px 12px;border-radius:999px;background:rgba(251,249,244,.94);font:600 13px/1.25 var(--font-body);color:var(--ink);box-shadow:0 1px 2px rgba(18,17,15,.1)}.k-pvl[hidden]{display:none}
 .k-pvs.sw{animation:kpvsw .5s var(--ease)}@keyframes kpvsw{from{opacity:.4}to{opacity:1}}
 /* v48: kumppaniosio = väite vasemmalla, teksti oikealla; alla markkinan kaikki kumppanit tasavertaisina kortteina
-   (kuva, nimi, mitä tuo; linkki kumppanisivun korttiin). Nimikortti .k-pcw kun tuotekuvaa ei ole (Elecnova). */
+   (kuvat kumppanin valikoimasta 1–3, nimi, kuvaus, tarjonta; nimi linkkinä kumppanisivun korttiin). 12 sarakkeen ruudukko:
+   s3 = neljä riviin, s4 = kolme, o2 = kahden kortin rivi keskitettynä; ≤1023 px pyyhkäisyrivi. */
 .k-tvg{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:18px clamp(28px,4vw,64px);align-items:start}
 .k-tvg h2{margin:0;font-size:clamp(36px,4.2vw,60px);line-height:1.04}
 .k-tvt{padding-top:8px;max-width:620px}.k-tvt .lead{margin:0}.k-tvt p+p{margin:14px 0 0}.k-tvt .k-more{margin:22px 0 0}
-.k-pcs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.6vw,22px);margin:clamp(34px,4vw,52px) 0 0;padding:0;list-style:none}
-.k-pc{display:flex;flex-direction:column;height:100%;overflow:hidden;border:1px solid var(--line);border-radius:var(--r-s);background:var(--paper-2);color:inherit;text-decoration:none;transition:border-color .3s}
-.k-pc:hover{border-color:var(--line-2)}.k-pc:focus-visible{outline:2px solid var(--gold-2);outline-offset:3px}
-.k-pci{position:relative;margin:0;aspect-ratio:3/2;overflow:hidden;background:var(--paper-3)}
-.k-pci img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
-.k-pc:hover .k-pci img{transform:scale(1.035)}
-.k-pcw{display:grid;place-content:center;justify-items:center;gap:12px;text-align:center;background:radial-gradient(120% 95% at 50% 38%,#24211a 0%,#121110 72%)}
-.k-pcw b{font:400 clamp(28px,2.6vw,38px)/1 var(--font-display);letter-spacing:-.01em;color:var(--ink);padding-bottom:9px;border-bottom:1px solid var(--gold-2)}
-.k-pcw span{font-size:13px;letter-spacing:.03em;color:var(--ink-3)}
-.k-pct{padding:16px 18px 18px}.k-pc h3{margin:0;transition:color .25s}.k-pc:hover h3{color:var(--gold)}
-.k-pct p{margin:6px 0 0;font-size:14.5px;line-height:1.45;color:var(--ink-2)}
+.k-pcs{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(14px,1.5vw,20px);margin:clamp(34px,4vw,52px) 0 0;padding:0;list-style:none}
+.k-pcs>li{display:flex;grid-column:span 4}.k-pcs>li.s3{grid-column:span 3}.k-pcs>li.o2{grid-column:3/span 4}
+.k-pc{position:relative;display:flex;flex-direction:column;width:100%;overflow:hidden;border:1px solid var(--line);border-radius:var(--r-s);background:var(--paper-2);transition:border-color .3s}
+.k-pc:hover{border-color:var(--line-2)}.k-pc:focus-within{outline:2px solid var(--gold-2);outline-offset:3px}
+.k-pm{display:grid;gap:3px;aspect-ratio:4/3;min-height:0;overflow:hidden;background:var(--paper-3)}
+.k-pm.n3{grid-template-columns:minmax(0,2fr) minmax(0,1fr);grid-template-rows:repeat(2,minmax(0,1fr))}.k-pm.n3 img:first-child{grid-row:span 2}.k-pm.n2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.k-pm img{display:block;width:100%;height:100%;min-height:0;object-fit:cover}.k-pm img.ct{object-fit:contain;background:#fff}.k-pm img.ctd{object-fit:contain;background:#11100E}
+.k-pct{display:flex;flex-direction:column;gap:8px;padding:16px 18px 18px}
+.k-pc h3{margin:0;font-size:20px}.k-pcl{color:inherit;text-decoration:none;transition:color .25s}.k-pcl:after{content:"";position:absolute;inset:0}
+.k-pc:hover .k-pcl{color:var(--gold)}.k-pcl:focus-visible{outline:none}
+.k-pct p{margin:0;font-size:14.5px;line-height:1.45;color:var(--ink-2)}
+.k-pco{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 0;padding:0;list-style:none}
+.k-pco li{padding:3px 9px;border:1px solid var(--line-2);border-radius:999px;font-size:12.5px;line-height:1.35;color:var(--ink-2)}
 @media (max-width:1023px){.k-tvg{grid-template-columns:minmax(0,1fr)}.k-tvt{padding-top:0}}
 @media (max-width:1023px){.k-h2g,.k-dg,.k-pg{grid-template-columns:minmax(0,1fr)}.k-h2r{padding-top:0}
 .k-dg{row-gap:18px}.k-dgl{display:contents}.k-dg .k-lbl{order:-2;margin:0}.k-dg .k-lines{margin-top:22px}.k-dfig{order:-1;max-width:760px}.k-pv{order:-1;position:relative;top:0;max-width:760px}}
 @media (max-width:767px) and (min-height:600px){.k-pv{position:sticky;top:79px;z-index:2;padding:8px 0 10px;background:#F7F4EE;box-shadow:calc(var(--gutter)*-1) 0 0 #F7F4EE,var(--gutter) 0 0 #F7F4EE,0 12px 14px -12px rgba(18,17,15,.3)}}
-@media (max-width:767px){.k-pcs{grid-template-columns:minmax(0,1fr);gap:10px}.k-pc{flex-direction:row}.k-pci{flex:0 0 40%;aspect-ratio:4/3}.k-pct{align-self:center;padding:12px 14px}.k-pc h3{font-size:19px}.k-pct p{font-size:13.5px}.k-pcw b{font-size:20px;padding-bottom:5px}.k-pcw span{display:none}}
+@media (max-width:1023px){.k-pcs{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-left:calc(var(--gutter)*-1);margin-right:calc(var(--gutter)*-1);padding:0 var(--gutter) 8px;scroll-padding-inline:var(--gutter)}.k-pcs>li,.k-pcs>li.s3,.k-pcs>li.o2{flex:0 0 44%;scroll-snap-align:start}}
+@media (max-width:640px){.k-pcs>li,.k-pcs>li.s3,.k-pcs>li.o2{flex-basis:84%}}
 @media (max-width:560px){.k-ps li{padding-left:50px}.k-ps .n{left:16px}.k-pdx{padding-left:50px}}
 /* v49 (6.11.2026): varastokaappi 3D:nä ja omalla pihalla oikeassa koossa (AR) — energiavarastot / energiasalvestid, assets/ar.js */
 .ar3d{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,4.5vw,64px);align-items:center;margin:0 0 clamp(44px,5vw,64px)}

@@ -118,27 +118,61 @@ Pyydä maksuton kartoitus
 
 Ajattelemme kokonaisuutta.
 Olemme valinneet yhteistyöhön parhaista parhaat. Valinnan perusteena oli se, mikä luo yrityksen investoinnille suurimman arvon.
-Investoinnin arvo syntyy monesta osasta. Kun tarjoamme valikoiman eri valmistajia, tuotteita ja palveluita, voimme rakentaa jokaiselle asiakkaalle räätälöidyn ratkaisun, joka luo asiakkaan kiinteistölle eniten arvoa. Lähtökohtana ovat teidän päätöksenne kriteerit, ei yhden laitteen myynti.
+Investoinnin arvo syntyy monesta osasta. Kun tarjoamme valikoiman eri valmistajia, tuotteita ja palveluita, voimme rakentaa jokaiselle asiakkaalle räätälöidyn ratkaisun, joka luo asiakkaan kiinteistölle eniten arvoa. Lähtökohtana ovat teidän päätöksenne kriteerit, ei yhden laitteen myynti. Kumppaneiden koko valikoima on käytettävissänne.
 Kumppanit ja tuotteet
 
 Ralos Oy
-Energiavarastot ja aurinkovoimalat
+Suomalainen energiavarastojen ja aurinkovoimaloiden toimittaja.
+Teolliset energiavarastot
+Useita akkuvaihtoehtoja
+Aurinkovoimalat
+Mikroinvertteriratkaisut
 
-ElecnovaUlkokaapit · kontit · mikroverkot
 Elecnova
-Energiavarastot ja mikroverkot
+Energiavarastojen ja mikroverkkojen valmistaja.
+Nestejäähdytetyt ulkokaapit
+Konttivarastot
+Saarekekäyttö
+Lataus ja mikroverkot
+
+EP Energy
+Energiavarastot, siirrettävä energia ja lataus. Samalta valmistajalta myös trukit ja muut laitteet.
+Energiavarastokaapit
+Konttivarastot
+Siirrettävät energiayksiköt
+Pikalaturit
+Trukit ja laitteet
 
 Avant Power
-Energiavarastot, mikroverkot ja lataus
-
-Gare Energy Oy
-Aurinkokatot, aurinkokatokset ja asennus
+Energiavarastot ja mikroverkot Avant-konsernista. Tarvittaessa Avantin koko valikoima.
+Energiavarastot
+Mikroverkot
+Mobiili energia ja lataus
+Off-grid-ratkaisut
 
 Scanoffice Oy
-Aurinkopaneelit, lataus ja lämpöpumput
+Lämpöpumppujen, aurinkosähkön ja latauksen maahantuoja.
+Ilmalämpöpumput
+Ilma-vesilämpöpumput
+Maalämpöpumput
+Aurinkopaneelit
+Latausasemat
+Ilmanvaihto
+
+Gare Energy Oy
+Aurinkokatot ja aurinkokatokset asennettuina.
+Aurinkokatot
+Aurinkokatokset
+Lataus katoksen alla
+Asennus
 
 JSM Automaatiosähkö Oy
-Sähkötyöt, asennus ja käyttöönotto
+Rekisteröity sähköurakoitsija: asennus ja käyttöönotto.
+Energiavarastojen asennus
+Aurinkovoimalat
+Lämpöpumput
+Sähkötyöt
+Käyttöönotto
 
 Tiimimme.
 SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · Y-tunnus 3647683-6
@@ -1018,6 +1052,7 @@ Kumppanit tuovat valikoiman, me tuomme kokonaisuuden: mitoituksen, vertailun, as
 Kumppanit aloittainKumppani · Energiavarastot · Aurinkosähkö · Lataus ja mikroverkot · Lämpöpumput · Reservimarkkinat
 Ralos Oy · Laitteet · Laitteet · ei · ei · ei
 Elecnova · Laitteet · ei · Laitteet · ei · ei
+EP Energy · Laitteet · ei · Laitteet · ei · ei
 Avant Power · Laitteet · ei · Laitteet · ei · ei
 Scanoffice Oy · ei · Laitteet · Laitteet · Laitteet · ei
 Gare Energy Oy · Asennus · Laitteet ja asennus · Laitteet ja asennus · ei · ei
@@ -1036,6 +1071,10 @@ Elecnova
 KiinaElecnovaEnergiavarastot ja mikroverkot · ulkokaapit, kontit ja STS-kaappi
 Nestejäähdytetyt ulkokaapit ja konttivarastot, jotka toimivat rinnan, sekä STS-kaappi saarekekäyttöön suunniteltuihin kohteisiin. Ratkaisut myös latausasemille ja mikroverkkoihin.
 elecnova-ess.com
+
+EP Energy
+KiinaEP EnergyEnergiavarastot, siirrettävä energia ja lataus · kaapit, kontit, siirrettävät yksiköt ja pikalaturit
+Energiavarastokaapit ja konttivarastot yrityksille, siirrettävät energiayksiköt työmaille ja tapahtumiin sekä akulla varustetut ja suoraan verkosta syötetyt pikalaturit. Samalta valmistajalta myös trukit ja muut laitteet.ep-unipower.com
 
 Ralos
 SuomiRalos OyEnergiavarastot ja aurinkovoimalat · Tampere
@@ -1166,6 +1205,7 @@ Jokainen projekti tarvitsee meidän lisäksemme neljä asiaa: markkinoillepääs
 Energiavarastot
 Ralos Oyteolliset energiavarastot, Tampere
 Elecnovaulkokaapit ja konttivarastot
+EP Energyenergiavarastokaapit ja konttivarastot
 Avant Powerenergiavarastot ja mikroverkot
 
 Aurinkosähkö
@@ -1175,6 +1215,7 @@ Scanoffice Oyaurinkopaneelit maahantuojalta
 
 Lataus ja mikroverkot
 Avant Powermikroverkot, siirrettävä energia ja lataus
+EP Energysiirrettävät energiayksiköt ja pikalaturit
 Scanoffice Oysähköautojen latausasemat
 Gare Energy Oyaurinkokatos ja latauspisteet
 
@@ -1839,18 +1880,45 @@ Küsi tasuta hinnangut
 
 Me mõtleme tervikuna.
 Oleme koostööks välja valinud parimatest parimad. Valiku aluseks oli see, mis loob ettevõtte investeeringule suurima väärtuse.
-Investeeringu väärtus tuleb paljudest osadest. Kui pakume valikut eri tootjatest, toodetest ja teenustest, saame igale kliendile koostada rätseplahenduse, mis loob tema kinnistule kõige rohkem väärtust. Lähtume teie otsuse kriteeriumidest, mitte ühe seadme müügist.
+Investeeringu väärtus tuleb paljudest osadest. Kui pakume valikut eri tootjatest, toodetest ja teenustest, saame igale kliendile koostada rätseplahenduse, mis loob tema kinnistule kõige rohkem väärtust. Lähtume teie otsuse kriteeriumidest, mitte ühe seadme müügist. Partnerite kogu valik on teie käsutuses.
 Partnerid ja tooted
 
 Ralos Oy
-Energiasalvestid ja päikeseelekter
+Soome energiasalvestite ja päikeseelektrijaamade tarnija.
+Tööstuslikud energiasalvestid
+Mitu akuvalikut
+Päikeseelektrijaamad
+Mikroinverterlahendused
 
-ElecnovaVäliskapid · konteinerid · mikrovõrgud
 Elecnova
-Energiasalvestid ja mikrovõrgud
+Energiasalvestite ja mikrovõrkude tootja.
+Vedelikjahutusega väliskapid
+Konteinersalvestid
+Saartalitlus
+Laadimine ja mikrovõrgud
+
+EP Energy
+Energiasalvestid, teisaldatav energia ja laadimine. Samalt tootjalt ka tõstukid ja muu tehnika.
+Salvestikapid
+Konteinersalvestid
+Teisaldatavad energiaseadmed
+Kiirlaadijad
+Tõstukid ja tehnika
+
+Scanoffice Oy
+Soojuspumpade, päikeseelektri ja laadimise maaletooja.
+Õhksoojuspumbad
+Õhk-vesisoojuspumbad
+Maasoojuspumbad
+Päikesepaneelid
+Laadimisjaamad
+Ventilatsioon
 
 Soleron Energy OÜ
-Agregaator ja energiajuhtimine
+Agregaator ja energiajuhtimine Eleringi reserviturul.
+Agregaator
+Energiajuhtimine
+Reserviturg
 
 Meie meeskond.
 SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · registrikood (Y-tunnus) 3647683-6
@@ -2678,10 +2746,12 @@ Partnerid, kellega teeme koostööd.
 
 Partnerid toovad valiku, meie toome terviku: dimensioneerimise, võrdluse, paigalduse ja ühendamise. Tooteandmed on partnerite enda materjalidest.
 
-Partnerid valdkondade kaupaPartner · Energiasalvestid · Päikeseelekter · Energiajuhtimine ja reserviturg
-Ralos Oy · Seadmed · Seadmed · ei
-Elecnova · Seadmed · ei · ei
-Soleron Energy · ei · ei · Agregaator ja EMS
+Partnerid valdkondade kaupaPartner · Energiasalvestid · Päikeseelekter · Laadimine ja mikrovõrgud · Soojuspumbad · Energiajuhtimine ja reserviturg
+Ralos Oy · Seadmed · Seadmed · ei · ei · ei
+Elecnova · Seadmed · ei · Seadmed · ei · ei
+EP Energy · Seadmed · ei · Seadmed · ei · ei
+Scanoffice Oy · ei · Seadmed · Seadmed · Seadmed · ei
+Soleron Energy · ei · ei · ei · ei · Agregaator ja EMS
 
 SAMA dimensioneerib, võrdleb ja juhib projekti igas valdkonnas. Paigaldusjuht juhib objekti ning elektritööd teeb registreeritud elektritööde partner.
 
@@ -2696,10 +2766,21 @@ HiinaElecnovaEnergiasalvestid ja mikrovõrgud · väliskapid, konteinerid ja STS
 Vedeljahutusega väliskapid ja konteinersalvestid, mis töötavad paralleelselt, ning STS-kapp saartalitluseks projekteeritud objektidele. Lahendused ka laadimisjaamadele ja mikrovõrkudele.
 elecnova-ess.com
 
+EP Energy
+HiinaEP EnergyEnergiasalvestid, teisaldatav energia ja laadimine · kapid, konteinerid, teisaldatavad seadmed ja kiirlaadijad
+Salvestikapid ja konteinersalvestid ettevõtetele, teisaldatavad energiaseadmed ehitusplatsidele ja üritustele ning akuga ja otse võrgust toidetavad kiirlaadijad. Samalt tootjalt ka tõstukid ja muu tehnika.ep-unipower.com
+
 Ralos
 SoomeRalos OyEnergiasalvestid ja päikeseelekter · Tampere
 Soome päikeseelektri ja energiasalvestite tarnija: tööstuslikud energiasalvestid sise- ja välispaigalduseks ning päikeseelektrijaamad ettevõtetele.
 ralos.fi
+
+Päikeseelekter, laadimine ja soojuspumbad
+Päikesepaneelid, laadimisjaamad ja soojuspumbad partneritelt.
+
+Scanoffice
+SoomeScanoffice OyMaaletooja · soojuspumbad, päikesepaneelid, laadimine ja ventilatsioon · Espoo
+Soome puhta energia seadmete maaletooja: õhk-, õhk-vesi- ja maasoojuspumbad, päikesepaneelid, elektriautode laadimine ja ventilatsioon.scanoffice.fi
 
 Paigaldus ja käikulaskmine
 Paigaldust juhib meie paigaldusjuht. Elektritööd ja käikulaskmise teeb registreeritud elektritööde partner.
@@ -2806,10 +2887,16 @@ Iga projekt vajab peale meie nelja asja: turulepääsu, seadmeid, paigaldust ja 
 Energiasalvestid
 Ralos Oytööstuslikud energiasalvestid, Tampere
 Elecnovaväliskapid ja konteinersalvestid
+EP Energysalvestikapid ja konteinersalvestid
 
 Päikeseelekter
 Ralos Oypäikeseelektrijaamad ettevõtetele
+Scanoffice Oypäikesepaneelid maaletoojalt
 SAMApaigaldus katusele, maale ja katusesse integreerituna
+
+Laadimine ja soojuspumbad
+EP Energyteisaldatavad energiaseadmed ja kiirlaadijad
+Scanoffice Oyõhk-, õhk-vesi- ja maasoojuspumbad ning laadimisjaamad
 
 Energiajuhtimine ja reserviturg
 Soleron Energyoma EMS-tarkvara ja agregeerimine Eleringi sagedusreservidesse
