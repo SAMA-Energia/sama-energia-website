@@ -423,3 +423,43 @@ Madis 6.11.2026 (vestlus C, vastaukset kysymyksiin; päätöslokiin lisättävä
 - Perustelut, lähteet, päivitysrutiinit ja avoimet asiat: `docs/kaart/lugu.md`, osio "Uus kaart: sõlmed, aadressiotsing ja asukoha arvutused".
 - AVOIN: MML_API_KEY Netlifyyn (Madis); verkkoyhtiöiden tehomaksut lähteineen; Viron liittymissäännöt; etusivun 6. askeleen
   "ei jonota kantaverkkoon" -lause vs. Fingrid 1.6.2026 (≥ 2 MW, osin ≥ 1 MW) — perustajan päätös; natiivitarkistus uusille teksteille.
+
+## v49 — avoimen lähdekoodin 3D-putki: tarkka kaappi, Cycles-herotausta, kaappi 3D:nä ja AR:nä (Madis 6.11.2026 klo 0.58, haara v35-uusi-ilme)
+
+- Madis: kartoitettu avoimen lähdekoodin 3D-, kuva- ja videopino otetaan käyttöön tämän sivuston rakennuksessa heti.
+  Sivustolle kuuluvat osat: tarkka tuotemalli (build123d), fysikaalinen renderöinti (Blender Cycles) ja kaappi omalla pihalla
+  oikeassa koossa (model-viewer, AR). Generatiiviset kuva- ja videomallit eivät tule sivustolle: ne näyttäisivät asennuksia,
+  joita ei ole (sääntö: ei track record -väitteitä); omat kuvat tulevat kuvauksesta 9.–11.11.
+- Kaappi: `assets/3d/kaappi.glb` ← `scripts/3d/kaappi.py` (build123d Apache-2.0, trimesh MIT; `@gltf-transform/cli` weld +
+  quantize). Ulkomitat 1 350 × 1 010 × 2 450 mm (Ralosin infopaketti 26.8.2026); ulkonäkö Ralosin tuotekuvista: kapea
+  sähkötilan ovi (merkkivalo, kolme merkkilamppua, näytön kansi, avainkytkin, korkea säleikkö), leveä akkutilan ovi
+  (jäähdytysyksikön verkko ja puhallinkotelo), keskikahvat, pohjakehys trukkitaskuin, kattolevy, takasivun läpivientilevy
+  (v2.1 6.2). 7 916 kolmiota, KHR_mesh_quantization, 208 kt, ei logoja eikä tekstejä. Nodet `kaappi_<materiaali>`:
+  hero3d.js `cabinet()` liittää omat materiaalinsa nimillä (tausta/kriit/hämärä säilyvät; `kaappi_led` = merkkivalo,
+  userData.led). render-stills.mjs ja render-proc.mjs palvelevat nyt myös /assets/.
+- Herotausta `k-tausta-*`: Blender 5.0.1 Cycles samasta näyttämöstä (rajaus, kaapit, kaapelit, muuntamo ja tarrojen
+  ankkurit ennallaan; anchors-tiedostoa ei tarvitse ajaa):
+  `node scripts/blender/export-scene.mjs --modules <three-moduulit> --out X` (hero3d.js `?export=glb`: GLB + kamera, valot,
+  maan häivytys) → `python scripts/blender/render_hero.py --scene X/bg.glb --meta X/bg.json --out Y --samples 64 --world 0.8 --cab 4 --bloom 0.8`
+  (sama `bgm`:lle) → `python3 scripts/blender/encode_hero.py Y` (samat nimet, mitat ja tiedostobudjetit kuin render-stills).
+  Sävytys = three.js:n ACES-filmikäyrä, valotus 1,12 ja hehku (kynnys 0,85, voimakkuus 1,1), joten hyväksytty sävymaailma
+  säilyy; Cycles tuo pehmeät varjot, kaapeleiden ja avoimen oven heijastuvan valon ja todellisen peittovarjostuksen.
+  Maan häivytys taustaväriin tehdään maskilla sävytyksen jälkeen → kuvan reunat kuten ennen. Riippuvuudet eivät tule
+  repoon: `uv venv -p 3.11 /tmp/bpy && uv pip install --python /tmp/bpy/bin/python bpy OpenEXR pillow`.
+  Nopea luonnos ennen Cycles-ajoa edelleen `node scripts/render-stills.mjs --tausta --preview <kansio>` (three.js).
+  `--cab 4`: kaappien edessä olevat valot (hero3d.js `kaappivalo`) nelinkertaisiksi, jotta tuote erottuu pimeästä kuten
+  three.js-kuvassa; `--bloom 0.8` kapeampi hehku kuin three.js:n mip-hehku 2400 px:n kuvassa.
+  Jos hero3d.js:n näyttämö muuttuu, aja vienti ja Cycles uudelleen (2 ytimellä bg noin 15–20 min, bgm noin 5 min).
+- Prosessivideo ja pysäytyskuvat `k-proc*` renderöity uudelleen tarkalla kaapilla (three.js, muuten ennallaan).
+- Energiavarastosivu (/energiavarastot/#toimitus, /et/energiasalvestid/#tarne): lohko `.ar3d` (site.css loppu, `assets/ar.js`).
+  Kaappikuva `assets/3d/kaappi-poster.webp` (`scripts/blender/render_poster.py`, Cycles, Khronos PBR Neutral = sama sävytys
+  kuin model-viewerissä); painike avaa mallin 3D:nä (hiiri/kosketus kääntää); puhelimessa "Näytä omalla pihalla" /
+  "Vaata oma hoovis" asettaa kaapin kamerakuvaan oikeassa koossa (`ar-scale="fixed"`). model-viewer 4.4.0 (Google,
+  Apache-2.0, 9.10.2026) omalta palvelimelta `assets/vendor/`, ladataan vasta painikkeesta (ei vaikuta LCP:hen eikä
+  muihin sivuihin). AR-tilat `webxr` (Android Chrome) ja `quick-look` (iPhone; USDZ syntyy selaimessa samasta mallista);
+  Googlen Scene Viewer -sovellus jätetty pois (ei kolmatta osapuolta). Dekooderien osoitteet ohjataan omaan kansioon;
+  vendoroidusta tiedostosta poistettu yksi latauksenaikainen WebAssembly-käännös (meshopt, ks. assets/vendor/README.txt),
+  jotta CSP pysyy ilman wasm-unsafe-evalia. Tarkistettu tuotannon otsakkeilla: 0 konsolivirhettä, 0 ulkoista pyyntöä.
+  Sivulla ei mallinimeä eikä mittoja (perustajan päätös 4.11.2026): "oikeassa koossa", "mitat ovat valmistajan tiedoista".
+- AVOIN: natiivitarkistus uusille riveille (FI Martin, ET Madis); AR kokeiltava oikealla puhelimella Netlify-esikatselussa
+  (Android Chrome ja iPhone Safari) — automaattitesti kattaa 3D-näkymän, latauksen ja ulkoiset pyynnöt, ei kameraa.
