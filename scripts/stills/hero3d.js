@@ -199,7 +199,7 @@ M.energy = LIGHT === 'dusk' ? std({ color: '#2a2215', emissive: new THREE.Color(
   : std({ color: '#C7A45C', emissive: new THREE.Color('#D4A94F'), emissiveIntensity: 0.9, roughness: 0.35, metalness: 0.35 });
 M.energyGrid = LIGHT === 'dusk' ? std({ color: '#1a160f', emissive: new THREE.Color('#B89656'), emissiveIntensity: 2.2, roughness: 0.5 })
   : std({ color: '#97752F', emissive: new THREE.Color('#97752F'), emissiveIntensity: 0.35, roughness: 0.45, metalness: 0.3 });
-M.energyStr = M.energy.clone(); M.energyStr.emissiveIntensity = M.energy.emissiveIntensity * 0.28;   // v51: paneelirivien kaapelit katolla
+M.energyStr = M.energy.clone(); M.energyStr.emissiveIntensity = M.energy.emissiveIntensity * 0.13;   // v51: paneelirivien kaapelit katolla
 M.kiosk = std({ map: T.concrete, color: '#b9b5ad', roughness: 0.85 });
 M.kioskDoor = std({ color: '#4a4d51', roughness: 0.55, metalness: 0.35 });
 M.metal = std({ color: '#9aa0a6', roughness: 0.35, metalness: 0.85 });
@@ -804,7 +804,7 @@ if (!SHOW.includes('noenergy')) {
   if (NEWSITE && ROOF) {
     const xW = ROOF.x0 + 0.15, xE = 11.4, yR = 9.1, zs = ROOF.rows.map((z) => z + 0.8);
     const sm = TAUSTA ? M.energyStr : ANIM ? M.energyGrid.clone() : M.energyGrid;
-    EL.strings = zs.map((z) => energyLine([[xW, yR, z], [xE, yR, z]], ER * (TAUSTA ? 0.42 : 0.5), sm));
+    EL.strings = zs.map((z) => energyLine([[xW, yR, z], [xE, yR, z]], ER * (TAUSTA ? 0.38 : 0.5), sm));
     EL.trunk = energyLine([[xE, yR, zs[0]], [xE, yR, zs[zs.length - 1]]], ER * 0.7, TAUSTA ? M.energy : sm);
   }
   if (!NEWSITE) for (const [y, z] of [[0.35, ROW.zS + 0.6], [0.35, -12.4], [2.6, -11.5]]) box(0.04, 0.34, 0.34, M.darkMetal, ROW.wallX + 0.02, y, z, scene, false);
