@@ -268,8 +268,22 @@ class Component extends DCLogic {
   /* ---------- Section 3: illustrated exploded stack ---------- */
   _S() {
     if (this._scn) return this._scn;
+    /* 06.11.2026: varastokerros (3) mittakaavassa, 1 yksikkö = 5,2 m. Sijoittelu kuten herossa (hero3d.js ROW) Ralosin ohjeen
+       mukaan: BEAST125HD v2.1 5.1.2 (kaappien väli 100 mm, sivuilla 500 mm, takana 800 mm, edessä 1 500 mm), 5.2 (betoniperustus
+       korotettu 300 mm, reunat 250 mm, suojaputket perustukseen), 6.2 (verkkoliitäntä kaapin takana); kaappi 1 350 × 1 010 × 2 450 mm
+       (asiakkaan infopaketti 26.8.2026). Rivin pää 1,4 m sähkötilan ovesta; kaapeli perustuksen etureunan kanavassa oven kynnyksen alle. */
+    const m = 1 / 5.2, st = { m, vw: -0.3, wt: 0.3 * m, wh: 3.2 * m, dw: 1.2 * m, dh: 2.2 * m, ue: 0.77, W: 1.35 * m, D: 1.01 * m, H: 2.45 * m, gap: 0.1 * m, base: 0.3 * m, edge: 0.25 * m };
+    st.ud0 = st.ue - 0.25 * m; st.u1 = st.ud0 - 1.4 * m; st.v0 = st.vw + 0.8 * m; st.v1 = st.v0 + st.D;
+    st.cabs = [0, 1, 2, 3].map((i) => { const b = st.u1 - i * (st.W + st.gap); return [b - st.W, st.v0, b, st.v1]; });
+    st.u0 = st.cabs[3][0];
+    st.fnd = [st.u0 - st.edge, st.v0 - st.edge, st.u1 + st.edge, st.v1 + st.edge];
+    st.apr = [st.u0 - 0.5 * m, st.vw, st.u1 + 0.5 * m, st.v1 + 1.5 * m];
+    st.ch = st.v1 + st.edge + 0.14 * m;
+    st.bat = [st.cabs[0][0] + 450 / 1350 * st.W, st.cabs[0][0] + 1340 / 1350 * st.W];   /* avoimen kaapin akkutila (kaappi.py x −225…665) */
+    const r3 = [(st.bat[0] + st.bat[1]) / 2, (st.v0 + st.v1) / 2];
     this._scn = {
-      R: [[0.82, -0.47], [-0.47, 0.82], [0.84, -0.28], [-0.44, 0.2]], Rz: [0, 0, 0, 0.7],
+      st,
+      R: [[0.82, -0.47], [-0.47, 0.82], [st.ue, st.vw + 0.02], r3], Rz: [0, 0, 0, 0.7],
       s400: [-1.25, 0.55], t400: [[-0.9, 0.55], [-0.58, 0.55]], H400: 0.5,
       g1: [-0.22, 0.55, 0.3], brk: [[-0.12, 0.46], [-0.12, 0.55], [-0.12, 0.64]], tr1: [-0.02, 0.43, 0.2, 0.67, 0.15],
       g2: [0.12, 0.32, 0.22], t110: [[0.12, -0.05], [0.12, -0.45]], H110: 0.3, g3: [0.45, -0.45, 0.2],
@@ -278,8 +292,8 @@ class Component extends DCLogic {
       ptr: [0.45, -0.3], houses: [[0.16, -0.72, 0.3, -0.6], [0.5, -0.8, 0.64, -0.68], [0.6, -0.5, 0.74, -0.38]],
       k2: [-0.36, -0.22, -0.22, -0.08, 0.12], biz: [-0.6, -0.66, -0.3, -0.42, 0.13],
       bd: [-0.25, -0.8, 0.72, 0.25, 0.3], ki: [-0.64, 0.1, -0.42, 0.3, 0.15], me: [-0.56, 0.57, -0.44, 0.67, 0.11], bnd: 0.62,
-      pad: [-0.74, -0.52, 0.66, 0.6], pcs: [0.3, -0.42, 0.56, -0.12, 0.26], cabs: [[-0.56, 0.06, -0.32, 0.34], [-0.24, 0.06, 0.0, 0.34], [0.08, 0.06, 0.32, 0.34]], cabH: 0.36, ems: [0.52, 0.38],
-      rack: [-0.62, 0.02, -0.26, 0.38, 0.7], mod: [-0.1, 0.04, 0.26, 0.36, 0.34, 0.4], cell: [0.44, -0.08, 0.56, 0.4, 0.5]
+      /* 06.11.2026: kennokerros (4) peilattu, jotta akusto on suoraan avoimen kaapin akkutilan alla (nousu R[3]) */
+      rack: [r3[0] - 0.18, r3[1] - 0.18, r3[0] + 0.18, r3[1] + 0.18, 0.7], mod: [r3[0] - 0.7, r3[1] - 0.16, r3[0] - 0.34, r3[1] + 0.16, 0.34, 0.4], cell: [r3[0] - 1.0, r3[1] - 0.28, r3[0] - 0.88, r3[1] + 0.2, 0.5]
     };
     return this._scn;
   }
@@ -289,7 +303,7 @@ class Component extends DCLogic {
   _trB(t, sz) { const u0 = t[0], v0 = t[1], u1 = t[2], v1 = t[3], H = t[4]; return { hv: [0.25, 0.5, 0.75].map((f) => [u0 + 0.075 * sz, v0 + (v1 - v0) * f, H + 0.13 * sz]), lv: [0.45, 0.65, 0.85].map((f) => [u0 + (u1 - u0) * f, v0 + 0.045 * sz, H + 0.075 * sz]) }; }
   _paths() {
     if (this._pth) return this._pth;
-    const S = this._S(), sg = (p, s) => [p[0], p[1], p[2], s];
+    const S = this._S(), sg = (p, s) => [p[0], p[1], p[2], s], st = S.st, R3 = S.R[3];
     const pa = (t, H, arm, sz) => this._patt(t[0], t[1], H, arm, sz)[1];
     const ga = (gg, arm, hf) => this._gatt(gg[0], gg[1], gg[2], arm, hf)[1];
     const po = (t, arm) => this._poatt(t[0], t[1], S.H1, arm)[1];
@@ -303,16 +317,12 @@ class Component extends DCLogic {
         { n: [[-0.17, -0.2, 0.2], [-0.17, -0.2, 0.25], [0.09, -0.2, 0.25], [0.4, -0.2, 0.25], [0.4, -0.29, 0.16]], c: 0, d: 0, w: 0.8 },
         { n: [[0.09, -0.2, 0.25], [0.09, -0.26, 0.12]], c: 0, d: 0, w: 0.8 },
         { n: [[0.09, -0.2, 0.25], [0.09, 0.035, 0.25], [0.09, 0.035, 0.07]], c: 0, d: 0, w: 0.8 },
-        { n: [[-0.17, -0.28, 0.03], [-0.17, -0.28, 0.005], [0.72, -0.28, 0.005], [0.84, -0.28, 0]], c: 0, d: 1 },
+        { n: [[-0.17, -0.28, 0.03], [-0.17, -0.28, 0.005], [0.72, -0.28, 0.005], [S.R[2][0], S.R[2][1], 0]], c: 0, d: 1 },
         { n: [[0.05, -0.66, 0.34], [-0.22, -0.66, 0.31], [-0.235, -0.44, 0.2], [-0.2, -0.34, 0.15]], c: 1, d: 0, w: 0.5 }],
-      [{ n: [[0.84, -0.28, 0], [0.84, -0.28, 0.02], [0.56, -0.28, 0.05]], c: 0, d: 1 },
-        { n: [[0.43, -0.12, 0.04], [0.43, 0.46, 0.02], [-0.44, 0.46, 0.02]], c: 1, d: 1 },
-        { n: [[0.2, 0.46, 0.02], [0.2, 0.34, 0.06]], c: 1, d: 1, w: 0.7 },
-        { n: [[-0.12, 0.46, 0.02], [-0.12, 0.34, 0.06]], c: 1, d: 1, w: 0.7 },
-        { n: [[-0.44, 0.46, 0.02], [-0.44, 0.34, 0.06]], c: 1, d: 1, w: 0.7 },
-        { n: [[0.52, 0.38, 0.17], [0.52, 0.06, 0.2], [0.52, -0.12, 0.2]], c: 2 },
-        { n: [[0.5, 0.38, 0.17], [0.32, 0.25, 0.3]], c: 2 }],
-      [{ n: [[-0.44, 0.2, 0.7], [-0.44, 0.2, 0.37], [-0.26, 0.2, 0.37], [-0.1, 0.2, 0.37], [0.14, 0.2, 0.41], [0.44, 0.04, 0.53], [0.5, 0.02, 0.53]], c: 1, d: 1 }]
+      /* 06.11.2026: kynnykseltä (nousu R[2]) kanavaan ja kanavaa pitkin rivin päähän; haarat perustuksen suojaputkiin kunkin kaapin kohdalla */
+      [{ n: [[st.ue, st.vw + 0.02, 0], [st.ue, st.ch, 0.002], [st.u0 + 0.45 * st.m, st.ch, 0.002]], c: 0, d: 1 }].concat(
+        st.cabs.map((cb) => ({ n: [[(cb[0] + cb[2]) / 2, st.ch, 0.002], [(cb[0] + cb[2]) / 2, st.fnd[3] + 0.004, 0.002]], c: 0, d: 1, w: 0.6 }))),
+      [{ n: [[R3[0], R3[1], 0.7], [R3[0], R3[1], 0.37], [R3[0] - 0.18, R3[1], 0.37], [R3[0] - 0.34, R3[1], 0.37], [R3[0] - 0.58, R3[1], 0.41], [R3[0] - 0.88, R3[1] - 0.16, 0.53], [R3[0] - 0.94, R3[1] - 0.18, 0.53]], c: 1, d: 1 }]
     ];
     return this._pth;
   }
@@ -339,7 +349,9 @@ class Component extends DCLogic {
       steel: [[120, 126, 130], EB], trafo: [[76, 88, 94], EG], conc: [[86, 84, 80], EF], cab: [[60, 65, 68], EN], pcs: [[66, 70, 74], EG],
       wall: [[64, 68, 71], EB], roof: [[44, 47, 49], EB], wood: [[100, 78, 56], EB], tree: [[34, 60, 44], EF], house: [[92, 80, 68], EB],
       hroof: [[62, 46, 42], EB], mach: [[74, 79, 82], EB], cell: [[98, 108, 118], EN], mod: [[70, 76, 82], EN], pcb: [[38, 100, 68], EN],
-      cu: [[206, 160, 92], EG], dark: [[34, 35, 36], EB], sw: [[96, 100, 104], EG], kiosk: [[82, 86, 84], EG], ins: [[150, 160, 152], EB], bol: [[190, 160, 62], EB]
+      cu: [[206, 160, 92], EG], dark: [[34, 35, 36], EB], sw: [[96, 100, 104], EG], kiosk: [[82, 86, 84], EG], ins: [[150, 160, 152], EB], bol: [[190, 160, 62], EB],
+      /* 06.11.2026: akkukaapin värit kaappi.py:stä (runko #D6D3CC, kattolevy #C6C2BA, pohjakehys #B9B5AD), yövalaistukseen hieman tummennettuina */
+      cabL: [[206, 202, 194], EN], croof: [[194, 190, 182], EN], cbase: [[170, 166, 158], EN]
     };
     K.M = M;
     const path = (pts) => { g.beginPath(); g.moveTo(pts[0][0], pts[0][1]); for (let i = 1; i < pts.length; i++) g.lineTo(pts[i][0], pts[i][1]); };
@@ -638,7 +650,7 @@ class Component extends DCLogic {
     K.ln([P(-0.47, 0.82, 0), P(-0.5, 0.67, 0)], uc, 1.2, [4, 4]);
     K.ln([P(-0.5, 0.57, 0), P(-0.5, 0.5, 0), P(-0.53, 0.3, 0)], uc, 1.2, [4, 4]);
     K.ln([P(-0.42, 0.2, 0), P(-0.32, 0.12, 0), P(-0.25, 0.02, 0)], uc, 1.2, [4, 4]);
-    K.ln([P(0.72, -0.28, 0), P(0.84, -0.28, 0)], uc, 1.2, [4, 4]);
+    K.ln([P(0.72, -0.28, 0), P(S.R[2][0], S.R[2][1], 0)], uc, 1.2, [4, 4]);
     K.kiosk(P, S.ki[0], S.ki[1], S.ki[2], S.ki[3], S.ki[4]);
     const me = S.me;
     K.shadow(P, me[0], me[1], me[2], me[3], me[4]);
@@ -721,75 +733,177 @@ class Component extends DCLogic {
     K.ln([P(u0, v1, H), P(u1, v1, H), P(u1, rv1, H)], gh, 0.8, [3, 4]);
   }
   _pl3(K, P, S) {
-    const T = K.T, q = [], add = (d, f) => q.push([d, f]), pd = S.pad;
-    K.box(P, pd[0], pd[1], pd[2], pd[3], 0, 0.018, 'conc');
-    const tc = T ? 'rgba(243,238,225,0.06)' : K.C([40, 40, 40], 1), tl = T ? 'rgba(243,238,225,0.18)' : 'rgba(255,255,255,0.08)';
-    const strip = (pts, w2, alongU) => { const a0 = pts[0], a1 = pts[1]; const d = w2 / 2; const qd = alongU ? [P(a0[0], a0[1] - d, 0.019), P(a1[0], a1[1] - d, 0.019), P(a1[0], a1[1] + d, 0.019), P(a0[0], a0[1] + d, 0.019)] : [P(a0[0] - d, a0[1], 0.019), P(a1[0] - d, a1[1], 0.019), P(a1[0] + d, a1[1], 0.019), P(a0[0] + d, a0[1], 0.019)]; K.fill(qd, tc, tl, 0.6); };
-    strip([[0.56, -0.28], [0.86, -0.28]], 0.04, true);
-    strip([[0.43, -0.12], [0.43, 0.48]], 0.05, false);
-    strip([[0.455, 0.46], [-0.47, 0.46]], 0.05, true);
-    add(-1.2, () => {
-      const B = K.box(P, -0.4, -0.88, 0.86, -0.82, 0, 0.3, 'wall');
-      const rib = T ? 'rgba(243,238,225,0.06)' : 'rgba(0,0,0,0.18)';
-      for (let i = 1; i < 30; i++) K.ln([B.fv(i / 30, 0.02), B.fv(i / 30, 0.98)], rib, 0.7);
-      K.quad(B.fv, 0.62, 0.0, 0.7, 0.5, T ? null : 'rgba(20,20,20,0.85)', T ? K.EB : 'rgba(0,0,0,0.5)', 0.8);
-      K.box(P, -0.41, -0.89, 0.87, -0.81, 0.3, 0.315, 'roof');
-    });
-    /* 04.11.2026: ei erillistä invertteriä — samalla paikalla neljäs akkukaappi (kaapit rinnan); tehoelektroniikka piirretään avoimen kaapin sisään */
-    add(0.22, () => this._cab(K, P, [0.32, -0.4, 0.56, -0.12], S.cabH, false));
-    S.cabs.forEach((cb, i) => add(cb[0] + cb[1] + 0.3, () => this._cab(K, P, cb, S.cabH, i === 0)));
-    /* 04.11.2026: ohjaus (EMS) on kaapin sisällä, ei erillistä tolppakoteloa */
-    [[-0.2, 0.58], [0.15, 0.58], [0.45, 0.58]].forEach((bb) => add(bb[0] + bb[1], () => K.cyl(P, bb[0], bb[1], 0.012, 0.018, 0.075, 'bol')));
-    q.sort((x, y) => x[0] - y[0]).forEach((e) => e[1]());
+    /* 06.11.2026 (Madis: kuva ei ollut oikean kokoinen eikä välit oikein): varastokerros mittakaavassa, ks. _S(). Hallin seinä
+       leikattuna 3,2 m:n korkeudelta ja sähkötilan ovi, huoltotaso, perustus, neljä kaappia rivissä 100 mm:n välein,
+       kaapelikanava perustuksen etureunassa oven kynnyksen alle. Ei pollareita eikä erillistä invertteriä. */
+    const T = K.T, g = K.g, s = S.st, m = s.m, zb = s.base, apz = 0.03 * m;
+    const plate = [P(-1, -1, 0), P(1, -1, 0), P(1, 1, 0), P(-1, 1, 0)];
+    g.save(); g.beginPath(); plate.forEach((q, i) => (i ? g.lineTo(q[0], q[1]) : g.moveTo(q[0], q[1]))); g.closePath(); g.clip();
+    /* huoltotaso (5.1.2, 5.2): matala laatoitus seinästä 1,5 m kaappien eteen ja 0,5 m rivin päiden yli, 1 m:n saumat */
+    const ap = s.apr;
+    K.fill([P(ap[0], ap[1], apz), P(ap[2], ap[1], apz), P(ap[2], ap[3], apz), P(ap[0], ap[3], apz)], T ? 'rgba(243,238,225,0.04)' : K.C([80, 78, 74], 1), T ? K.EF : 'rgba(255,255,255,0.08)', 0.8);
+    const jc = T ? 'rgba(243,238,225,0.06)' : 'rgba(0,0,0,0.18)';
+    for (let x = ap[0] + m; x < ap[2] - 0.01; x += m) K.ln([P(x, ap[1], apz), P(x, ap[3], apz)], jc, 0.6);
+    for (let y = ap[1] + m; y < ap[3] - 0.01; y += m) K.ln([P(ap[0], y, apz), P(ap[2], y, apz)], jc, 0.6);
+    K.shadow(P, s.cabs[3][0], s.v0, s.cabs[0][2], s.v1, zb + s.H, apz);
+    /* kaapelikanava 0,25 m: perustuksen etureunasta rivin mitalta oven kohdalle ja kynnykselle */
+    const cw2 = 0.125 * m, cz = apz + 0.002, tc = T ? 'rgba(243,238,225,0.06)' : K.C([44, 44, 44], 1), tl = T ? 'rgba(243,238,225,0.18)' : 'rgba(255,255,255,0.1)';
+    K.fill([P(s.u0 + 0.45 * m, s.ch - cw2, cz), P(s.ue + cw2, s.ch - cw2, cz), P(s.ue + cw2, s.ch + cw2, cz), P(s.u0 + 0.45 * m, s.ch + cw2, cz)], tc, tl, 0.6);
+    K.fill([P(s.ue - cw2, s.vw, cz), P(s.ue + cw2, s.vw, cz), P(s.ue + cw2, s.ch - cw2, cz), P(s.ue - cw2, s.ch - cw2, cz)], tc, tl, 0.6);
+    g.restore();
+    this._wall3(K, P, s);
+    const f = s.fnd;
+    K.box(P, f[0], f[1], f[2], f[3], 0, zb, 'conc');
+    for (let i = 3; i >= 0; i--) this._rcab(K, P, s.cabs[i], zb, i === 0);
   }
-  _cab(K, P, b, H, open) {
-    const T = K.T, u0 = b[0], v0 = b[1], u1 = b[2], v1 = b[3], zb = 0.018, z0 = zb + 0.02;
-    K.shadow(P, u0, v0, u1, v1, H, zb);
-    K.box(P, u0 - 0.008, v0 - 0.008, u1 + 0.008, v1 + 0.008, zb, z0, 'conc');
-    const dc = T ? 'rgba(91,208,141,0.4)' : 'rgba(0,0,0,0.45)';
+  _wall3(K, P, s) {
+    /* hallin seinä (sandwich-paneeli 0,25 m:n jaolla kuten herossa), leikkauspinnat kuten liittymäkerroksen rakennuksessa */
+    const T = K.T, m = s.m, u0 = -1, u1 = 1, v0 = s.vw - s.wt, v1 = s.vw, H = s.wh, F = (u, z) => P(u, v1, z);
+    K.face([F(u0, 0), F(u1, 0), F(u1, H), F(u0, H)], 'wall', 'l');
+    const rib = T ? 'rgba(243,238,225,0.06)' : 'rgba(0,0,0,0.2)';
+    for (let x = u0 + 0.25 * m; x < u1 - 0.005; x += 0.25 * m) K.ln([F(x, 0.004), F(x, H - 0.004)], rib, 0.6);
+    const cut = T ? 'rgba(212,181,116,0.28)' : K.C([110, 114, 116], 1);
+    K.fill([P(u1, v0, 0), P(u1, v1, 0), P(u1, v1, H), P(u1, v0, H)], cut, K.edge, 0.6);
+    K.fill([P(u0, v0, H), P(u1, v0, H), P(u1, v1, H), P(u0, v1, H)], cut, K.edge, 0.6);
+    /* sähkötilan ovi 1,2 × 2,2 m karmeineen, kiinni; kaapeli tulee kynnyksen alta (kuten herossa) */
+    const d0 = s.ud0, d1 = s.ud0 + s.dw, fr = 0.07 * m;
+    K.fill([F(d0 - fr, 0), F(d1 + fr, 0), F(d1 + fr, s.dh + fr), F(d0 - fr, s.dh + fr)], T ? '#0B0B09' : K.C([34, 35, 37], 1));
+    K.fill([F(d0, 0), F(d1, 0), F(d1, s.dh), F(d0, s.dh)], T ? '#141310' : K.C([80, 78, 74], 1), T ? K.EB : 'rgba(0,0,0,0.5)', 0.7);
+    K.ln([F(d1 - 0.12 * m, 1.05 * m), F(d1 - 0.28 * m, 1.05 * m)], T ? K.EB : 'rgba(196,198,200,0.9)', 1.2);
+    K.ln([P(d0, v1 + 0.004, 0.002), P(d1, v1 + 0.004, 0.002)], T ? K.EB : 'rgba(150,150,146,0.8)', 1);
+  }
+  /* kaapin piste kaappi.py:n mitoista: x −675…675 (vasemmalta oikealle edestä katsottuna), q korkeus 0…2450 perustuksen päältä,
+     d syvyys etupinnasta 0…1010 mm; palauttaa [u, v, z] */
+  _c3(S, i, x, q, d) { const s = S.st, b = s.cabs[i], k = (b[2] - b[0]) / 1350; return [b[0] + (x + 675) * k, b[3] - (d || 0) * k, s.base + q * k]; }
+  /* avoimen kaapin ovilehdet: kapea (sähkötila) 100°, sarana x −665; leveä (akkutila) 172° rivin päähän (vapaa tila oveen 1,4 m), sarana x 665. l matka saranalta,
+     w siirtymä lehden sisäpinnan normaalin suuntaan (mm) */
+  _leaf3(S, wide) {
+    const s = S.st, b = s.cabs[0], k = (b[2] - b[0]) / 1350, th = (wide ? 172 : 100) * Math.PI / 180;
+    const hu = wide ? b[2] - 10 * k : b[0] + 10 * k, hv = b[3];
+    const du = wide ? -Math.cos(th) : Math.cos(th), dv = Math.sin(th), nu = wide ? -Math.sin(th) : Math.sin(th), nv = -Math.cos(th);
+    return { k, len: wide ? 878 : 432, du, dv, nu, nv, at: (l, q, w) => [hu + (du * l + nu * (w || 0)) * k, hv + (dv * l + nv * (w || 0)) * k, s.base + q * k] };
+  }
+  _rcab(K, P, b, zb, open) {
+    /* 06.11.2026: kaappi scripts/3d/kaappi.py:n mitoista (Ralos 1 350 × 1 010 × 2 450 mm; ovijako, säleikkö, verkkosäleikkö,
+       puhallinkotelo, näytön kansi, merkkivalo, kahvat, pohjakehys trukkitaskuin, kattolevy). Avoin kaappi Ralosin kuvan
+       (assets/valikoima/ralos-kaappi-auki.webp) mukaan: sähkötila vasemmalla (johdonsuojat, ohjausyksikkö, tehoelektroniikka),
+       akkutila oikealla (akkupaketit kahdessa sarakkeessa), jäähdytysyksikkö akkutilan oven sisäpuolella. */
+    const T = K.T, g = K.g, u0 = b[0], v0 = b[1], u1 = b[2], v1 = b[3], k = (u1 - u0) / 1350;
+    const F = (x, q, d) => P(u0 + (x + 675) * k, v1 - (d || 0) * k, zb + q * k);
+    const Sd = (d, q, ins) => P(u1 - (ins || 0) * k, v1 - d * k, zb + q * k);
+    const rect = (x0, q0, x1, q1, fill, stroke, lw, d) => K.fill([F(x0, q0, d), F(x1, q0, d), F(x1, q1, d), F(x0, q1, d)], fill, stroke, lw || 0.6);
+    const px = (mm, mn) => Math.max(mn, mm * k * K.a);
+    const dk = T ? '#0B0B09' : K.C([40, 41, 44], 1), p2 = T ? '#1A1915' : K.C([192, 188, 180], 1), sm = T ? 'rgba(91,208,141,0.35)' : 'rgba(28,28,32,0.55)';
+    /* pohjakehys 110 mm, 10 mm sisennys; trukkitaskut 240 × 60 mm edessä x ±340 ja kyljessä y ±250 */
+    K.box(P, u0 + 10 * k, v0 + 10 * k, u1 - 10 * k, v1 - 10 * k, zb, zb + 110 * k, 'cbase');
+    [-340, 340].forEach((x) => rect(x - 120, 25, x + 120, 85, dk, null, 0, 10));
+    [-250, 250].forEach((y) => { const d = 505 + y; K.fill([Sd(d - 120, 25, 10), Sd(d + 120, 25, 10), Sd(d + 120, 85, 10), Sd(d - 120, 85, 10)], dk); });
+    /* runko ja kattolevy (45 mm, 15 mm ylitys) */
+    K.box(P, u0, v0, u1, v1, zb + 110 * k, zb + 2405 * k, 'cabL', true);
+    K.box(P, u0 - 15 * k, v0 - 15 * k, u1 + 15 * k, v1 + 15 * k, zb + 2405 * k, zb + 2450 * k, 'croof');
     if (!open) {
-      const B = K.box(P, u0, v0, u1, v1, z0, H, 'cab');
-      K.quad(B.fv, 0.05, 0.03, 0.95, 0.97, null, dc);
-      K.ln([B.fv(0.86, 0.45), B.fv(0.86, 0.58)], T ? K.EN : 'rgba(180,184,188,0.9)', 1.6);
-      for (let i = 0; i < 6; i++) K.ln([B.fu(0.2, 0.62 + i * 0.05), B.fu(0.8, 0.62 + i * 0.05)], dc, 0.8);
-      const HV = K.box(P, u0 + 0.05, v1, u1 - 0.07, v1 + 0.028, z0 + 0.06, z0 + 0.2, 'mach');
-      for (let i = 0; i < 7; i++) K.ln([HV.fv(0.1, 0.15 + i * 0.12), HV.fv(0.9, 0.15 + i * 0.12)], T ? 'rgba(243,238,225,0.3)' : 'rgba(0,0,0,0.4)', 0.8);
+      K.ln([F(-665, 150), F(665, 150), F(665, 2365), F(-665, 2365), F(-665, 150)], sm, 0.6);
+      K.ln([F(-225, 150), F(-225, 2365)], sm, 0.7);
+      const LX = -445, lv = T ? 'rgba(243,238,225,0.22)' : 'rgba(176,172,164,0.85)';
+      rect(LX - 125, 330, LX + 125, 1410, dk);
+      for (let q = 362; q < 1400; q += 64) K.ln([F(LX - 118, q), F(LX + 118, q)], lv, 0.6);
+      rect(LX - 165, 1695, LX + 165, 1965, p2, sm, 0.6);
+      K.dot(F(LX, 2250), px(46, 1.1), dk); K.dot(F(LX, 2250), px(28, 0.8), '#D4B574');
+      [-48, 0, 48].forEach((dx) => K.dot(F(LX + dx, 2140), px(12, 0.5), dk));
+      K.dot(F(LX, 1650), px(16, 0.6), dk);
+      rect(85, 1470, 415, 2230, dk);
+      const mc = T ? 'rgba(243,238,225,0.12)' : 'rgba(190,186,178,0.28)';
+      for (let x = 129; x < 415; x += 44) K.ln([F(x, 1476), F(x, 2224)], mc, 0.5);
+      for (let q = 1514; q < 2230; q += 44) K.ln([F(90, q), F(410, q)], mc, 0.5);
+      rect(85, 1085, 415, 1385, p2, sm, 0.6);
+      const ring = []; for (let i = 0; i <= 24; i++) { const t = i / 24 * Math.PI * 2; ring.push(F(250 + 110 * Math.cos(t), 1235 + 110 * Math.sin(t))); }
+      K.fill(ring, dk, mc, 0.5);
+      [-275, -175].forEach((x) => rect(x - 12, 1170, x + 12, 1330, T ? K.EB : K.C([150, 156, 162], 1)));
       return;
     }
-    K.fill([P(u0, v0, z0), P(u1, v0, z0), P(u1, v0, H), P(u0, v0, H)], T ? '#0B0B09' : K.C([30, 33, 35], 1));
-    K.fill([P(u0, v0, z0), P(u0, v1, z0), P(u0, v1, H), P(u0, v0, H)], T ? '#100F0D' : K.C([40, 43, 46], 1));
-    K.fill([P(u0, v0, z0), P(u1, v0, z0), P(u1, v1, z0), P(u0, v1, z0)], T ? '#0D0C0A' : K.C([26, 28, 30], 1));
-    for (let i = 0; i < 6; i++) {
-      const za = z0 + 0.015 + i * 0.036;
-      const B = K.box(P, u0 + 0.02, v0 + 0.03, u1 - 0.02, v1 - 0.025, za, za + 0.028, 'cell');
-      K.ln([B.fv(0.82, 0.3), B.fv(0.95, 0.3)], T ? K.EN : 'rgba(200,204,208,0.6)', 1);
-    }
-    /* tehoelektroniikka (PCS) kaapin sisällä, akkuhyllyjen yläpuolella */
-    const pz = z0 + 0.015 + 6 * 0.036, PM = K.box(P, u0 + 0.02, v0 + 0.03, u1 - 0.02, v1 - 0.025, pz, pz + 0.064, 'pcs');
-    for (let i = 0; i < 4; i++) K.ln([PM.fv(0.1, 0.18 + i * 0.2), PM.fv(0.52, 0.18 + i * 0.2)], T ? 'rgba(212,181,116,0.35)' : 'rgba(0,0,0,0.4)', 0.8);
-    const bz = z0 + 0.015 + 8 * 0.036;
-    const BM = K.box(P, u0 + 0.03, v0 + 0.05, u1 - 0.03, v1 - 0.03, bz, bz + 0.032, 'pcb');
-    K.quad(BM.fv, 0.1, 0.3, 0.45, 0.75, T ? '#0B0B09' : 'rgba(14,24,18,1)', null);
-    K.face([P(u1, v0, z0), P(u1, v1, z0), P(u1, v1, H), P(u1, v0, H)], 'cab', 'r');
-    K.face([P(u0, v0, H), P(u1, v0, H), P(u1, v1, H), P(u0, v1, H)], 'cab', 't');
-    K.ln([P(u0, v1, z0), P(u0, v1, H), P(u1, v1, H), P(u1, v1, z0)], T ? K.EN : 'rgba(0,0,0,0.6)', 1.2);
-    const ang = 1.92, fu = u0 + 0.24 * Math.cos(ang), fv = v1 + 0.24 * Math.sin(ang);
-    K.face([P(u0, v1, z0), P(fu, fv, z0), P(fu, fv, H), P(u0, v1, H)], 'cab', 'l');
-    const dpt = (s, qz) => P(u0 + (fu - u0) * s, v1 + (fv - v1) * s, z0 + (H - z0) * qz);
-    K.quad(dpt, 0.2, 0.55, 0.75, 0.85, T ? 'rgba(91,208,141,0.08)' : 'rgba(255,255,255,0.08)', dc, 0.7);
+    /* avoin kaappi: sisätila rajataan oviaukkoon (näkyy vain se, minkä aukosta näkee) */
+    const op = [F(-665, 150), F(665, 150), F(665, 2365), F(-665, 2365)];
+    g.save(); g.beginPath(); op.forEach((q, i) => (i ? g.lineTo(q[0], q[1]) : g.moveTo(q[0], q[1]))); g.closePath(); g.clip();
+    K.fill(op, T ? '#070706' : K.C([20, 20, 19], 1));
+    K.fill([F(-655, 150, 0), F(-655, 2365, 0), F(-655, 2365, 990), F(-655, 150, 990)], T ? '#0E0D0B' : K.C([66, 66, 63], 1));
+    K.fill([F(-655, 150, 0), F(655, 150, 0), F(655, 150, 990), F(-655, 150, 990)], T ? '#0B0B09' : K.C([36, 36, 35], 1));
+    K.fill([F(-215, 150, 0), F(-215, 2365, 0), F(-215, 2365, 990), F(-215, 150, 990)], T ? '#0E0D0B' : K.C([58, 58, 56], 1));
+    const ed = T ? 'rgba(91,208,141,0.4)' : 'rgba(0,0,0,0.5)', lt = T ? '#1A1915' : K.C([176, 176, 172], 1), ltT = T ? '#201F1A' : K.C([206, 206, 202], 1);
+    /* sähkötila: tehoelektroniikka alhaalla (rei'itetty ilmanotto), ohjausyksikkö näyttöineen, johdonsuojat asennuslevyllä */
+    K.fill([F(-640, 1250, 60), F(-250, 1250, 60), F(-250, 1250, 860), F(-640, 1250, 860)], ltT);
+    rect(-640, 200, -250, 1250, lt, ed, 0.6, 60);
+    const pf = T ? 'rgba(243,238,225,0.25)' : 'rgba(40,40,40,0.55)';
+    for (let q = 300; q < 900; q += 60) for (let x = -600; x < -290; x += 60) K.dot(F(x, q, 60), px(9, 0.45), pf);
+    K.dot(F(-300, 1170, 60), px(14, 0.7), '#5BD08D');
+    K.fill([F(-600, 1650, 80), F(-300, 1650, 80), F(-300, 1650, 280), F(-600, 1650, 280)], T ? '#1A1915' : K.C([70, 72, 74], 1));
+    rect(-600, 1350, -300, 1650, dk, ed, 0.6, 80);
+    rect(-570, 1470, -420, 1600, T ? 'rgba(91,208,141,0.25)' : 'rgba(64,120,92,0.95)', null, 0, 80);
+    rect(-640, 1750, -250, 2300, T ? '#16150F' : K.C([150, 150, 146], 1), ed, 0.6, 150);
+    [2170, 1900].forEach((qr) => {
+      rect(-630, qr - 70, -260, qr + 70, T ? '#0F0E0B' : K.C([110, 110, 106], 1), null, 0, 140);
+      for (let x = -620; x < -268; x += 36) { rect(x, qr - 60, x + 30, qr + 60, T ? '#24231E' : K.C([224, 222, 216], 1), null, 0, 120); K.dot(F(x + 15, qr + 10, 120), px(7, 0.35), dk); }
+    });
+    /* akkutila: kaksi saraketta × seitsemän akkupakettia, etupinnat 70 mm syvyydellä; tuuletin, kaapelisilmukka, merkintä */
+    const pk = T ? '#15140F' : K.C([178, 181, 184], 1), cols = [[-205, 215], [225, 645]];
+    K.fill([F(-215, 2290, 70), F(655, 2290, 70), F(655, 2290, 990), F(-215, 2290, 990)], T ? '#100F0C' : K.C([46, 46, 45], 1));
+    cols.forEach((cc) => {
+      for (let r = 0; r < 7; r++) {
+        const qa = 220 + r * 296, qb = qa + 282;
+        rect(cc[0], qa, cc[1], qb, pk, ed, 0.5, 70);
+        const ring = [], cxm = cc[0] + 105, cqm = (qa + qb) / 2;
+        for (let i = 0; i <= 16; i++) { const t = i / 16 * Math.PI * 2; ring.push(F(cxm + 62 * Math.cos(t), cqm + 62 * Math.sin(t), 70)); }
+        K.fill(ring, dk, null);
+        K.ln([F(cc[0] + 205, qb - 70, 70), F(cc[0] + 205, qa + 60, 70), F(cc[0] + 300, qa + 60, 70)], dk, px(22, 0.7));
+        rect(cc[1] - 110, qb - 95, cc[1] - 40, qb - 55, T ? '#24231E' : K.C([226, 226, 222], 1), null, 0, 70);
+      }
+    });
+    rect(215, 150, 225, 2365, dk, null, 0, 60);
+    g.restore();
+    K.ln([F(-665, 150), F(665, 150), F(665, 2365), F(-665, 2365), F(-665, 150)], sm, 0.7);
+    /* ovilehdet: sisäpinta, reuna ja yläreuna; leveän oven sisäpuolella jäähdytysyksikkö */
+    const S = this._S(), shade = (rgb, nu, nv, pts) => {
+      const f = Math.max(0.42, Math.min(0.8, 0.52 * Math.max(0, nu) + 0.74 * Math.max(0, nv)));
+      if (T) { K.fill(pts, '#15140F', K.EN, 0.8); return; }
+      let y0 = 1e9, y1 = -1e9; pts.forEach((q) => { y0 = Math.min(y0, q[1]); y1 = Math.max(y1, q[1]); });
+      const gr = g.createLinearGradient(0, y0, 0, y1 + 0.01); gr.addColorStop(0, K.C(rgb, f * 1.12)); gr.addColorStop(1, K.C(rgb, f * 0.76)); K.fill(pts, gr, K.edge, 0.6);
+    };
+    const PL = (L, l, q, w) => { const p = L.at(l, q, w); return P(p[0], p[1], p[2]); };
+    [false, true].forEach((wide) => {
+      const L = this._leaf3(S, wide), n = L.len, body = [206, 202, 194];
+      shade(body, L.nu, L.nv, [PL(L, 0, 150, 30), PL(L, n, 150, 30), PL(L, n, 2365, 30), PL(L, 0, 2365, 30)]);
+      const lq = (l0, q0, l1, q1, w, fill, stroke) => K.fill([PL(L, l0, q0, w), PL(L, l1, q0, w), PL(L, l1, q1, w), PL(L, l0, q1, w)], fill, stroke, 0.6);
+      if (!wide) {
+        lq(95, 330, 345, 1410, 30, dk);
+        const lv = T ? 'rgba(243,238,225,0.22)' : 'rgba(150,146,138,0.85)';
+        for (let q = 362; q < 1400; q += 64) K.ln([PL(L, 102, q, 30), PL(L, 338, q, 30)], lv, 0.6);
+        lq(55, 1695, 385, 1965, 30, dk);
+      } else {
+        const cu = [300, 1040, 830, 2280], dw = 220, cc2 = [170, 176, 180];   /* jäähdytysyksikkö lehden keskellä, ei peitä akkutilaa */
+        shade(cc2, L.du, L.dv, [PL(L, cu[2], cu[1], 30), PL(L, cu[2], cu[1], dw), PL(L, cu[2], cu[3], dw), PL(L, cu[2], cu[3], 30)]);
+        K.fill([PL(L, cu[0], cu[3], 30), PL(L, cu[2], cu[3], 30), PL(L, cu[2], cu[3], dw), PL(L, cu[0], cu[3], dw)], T ? '#201F1A' : K.C(cc2, 1.02), K.edge, 0.6);
+        shade(cc2, L.nu, L.nv, [PL(L, cu[0], cu[1], dw), PL(L, cu[2], cu[1], dw), PL(L, cu[2], cu[3], dw), PL(L, cu[0], cu[3], dw)]);
+        lq(cu[0] + 50, cu[1] + 90, cu[2] - 50, 1880, dw, dk);
+        const mc = T ? 'rgba(243,238,225,0.14)' : 'rgba(180,176,168,0.3)';
+        for (let q = cu[1] + 140; q < 1880; q += 50) K.ln([PL(L, cu[0] + 55, q, dw), PL(L, cu[2] - 55, q, dw)], mc, 0.5);
+        lq(cu[0] + 60, 1960, cu[2] - 60, 2200, dw, T ? '#24231E' : K.C([150, 154, 158], 1), sm);
+      }
+      K.fill([PL(L, n, 150, 0), PL(L, n, 150, 30), PL(L, n, 2365, 30), PL(L, n, 2365, 0)], T ? '#24231E' : K.C(body, 0.62), K.edge, 0.5);
+      K.fill([PL(L, 0, 2365, 0), PL(L, n, 2365, 0), PL(L, n, 2365, 30), PL(L, 0, 2365, 30)], T ? '#24231E' : K.C(body, 1.0), K.edge, 0.5);
+    });
   }
   _pl4(K, P, S) {
-    const T = K.T, r = S.rack, m = S.mod, c = S.cell, gc = T ? 'rgba(243,238,225,0.35)' : 'rgba(225,225,215,0.35)';
-    this._rack(K, P, r);
-    K.ln([P(r[2], m[1], m[4]), P(m[0], m[1], m[4])], gc, 0.8, [3, 4]);
-    K.ln([P(r[2], m[3], m[4]), P(m[0], m[3], m[4])], gc, 0.8, [3, 4]);
-    K.ln([P(r[2], m[3], m[5]), P(m[0], m[3], m[5])], gc, 0.8, [3, 4]);
+    /* 06.11.2026: peilattu — akusto oikealla avoimen kaapin akkutilan alla, moduuli ja kenno vasemmalla; piirto takaa eteen */
+    const T = K.T, r = S.rack, m = S.mod, c = S.cell, gc = T ? 'rgba(243,238,225,0.35)' : 'rgba(225,225,215,0.35)', vm = (r[1] + r[3]) / 2 - 0.08;
+    this._bigcell(K, P, c);
+    K.ln([P(m[0] + 0.09, vm, m[5] + 0.02), P(c[2], vm, m[5] + 0.02)], gc, 0.8, [3, 4]);
     this._module(K, P, m);
     const lz = m[5] + 0.1;
     K.ln([P(m[0], m[1], lz), P(m[2], m[1], lz), P(m[2], m[3], lz), P(m[0], m[3], lz), P(m[0], m[1], lz)], gc, 0.8, [3, 3]);
     [[m[2], m[1]], [m[2], m[3]], [m[0], m[3]]].forEach((cc) => K.ln([P(cc[0], cc[1], m[5] + 0.01), P(cc[0], cc[1], lz)], gc, 0.6, [2, 4]));
-    K.ln([P(0.17, 0.12, m[5] + 0.02), P(c[0], 0.12, m[5] + 0.02)], gc, 0.8, [3, 4]);
-    this._bigcell(K, P, c);
+    K.ln([P(m[2], m[1], m[4]), P(r[0], m[1], m[4])], gc, 0.8, [3, 4]);
+    K.ln([P(m[2], m[3], m[4]), P(r[0], m[3], m[4])], gc, 0.8, [3, 4]);
+    K.ln([P(m[2], m[3], m[5]), P(r[0], m[3], m[5])], gc, 0.8, [3, 4]);
+    this._rack(K, P, r);
   }
   _rack(K, P, r) {
     const T = K.T, u0 = r[0], v0 = r[1], u1 = r[2], v1 = r[3], H = r[4], pst = 0.016;
@@ -865,33 +979,33 @@ class Component extends DCLogic {
       K.quad(fu, 0.18, 0.5, 0.82, 0.78, SAMA_BG, 'rgba(212,181,116,0.6)', 0.8);
       const lv = st.gi * (0.82 + 0.12 * Math.sin(st.time * 3));
       K.quad(fu, 0.22, 0.56, 0.22 + 0.56 * lv, 0.72, 'rgba(212,181,116,0.85)', null);
-      labs.push({ t: 'b', p: P(0.12, 0.88, 0), s: 'VERKKOYHTIÖN PUOLI', al: act * act });
-      labs.push({ t: 'b', p: P(0.54, 0.36, 0), s: 'TEIDÄN PUOLENNE', al: act * act, gold: 1 });
+      labs.push({ t: 'b', p: P(-0.05, 1.0, 0), s: 'VERKKOYHTIÖN PUOLI', al: act * act, ra: 1, oy: 16 });   /* 06.11.2026: laatan verkkoyhtiön puoleisen reunan alle, ei raja- eikä reunaviivan päälle */
+      labs.push({ t: 'b', p: P(0.55, 0.34, 0), s: 'TEIDÄN PUOLENNE', al: act * act, gold: 1 });
     }
     if (k === 3) {
-      const cb = S.cabs[0], u0 = cb[0], u1 = cb[2], vf = cb[3] - 0.025, z0 = 0.038;
-      for (let i = 0; i < 6; i++) {
-        const za = z0 + 0.015 + i * 0.036, uu = u0 + 0.02 + st.lvl * (u1 - u0 - 0.04);
-        K.fill([P(u0 + 0.02, vf, za + 0.004), P(uu, vf, za + 0.004), P(uu, vf, za + 0.024), P(u0 + 0.02, vf, za + 0.024)], 'rgba(91,208,141,0.34)');
-      }
-      [S.cabs[1], S.cabs[2]].forEach((c2, i) => K.dot(P(c2[0] + 0.03, c2[3], S.cabH - 0.03), 1.8, 'rgba(91,208,141,' + (0.4 + 0.6 * blink(i * 2)).toFixed(2) + ')'));
-      const pz = z0 + 0.015 + 6 * 0.036, wf = (s, dz) => P(u0 + 0.13 + s * (u1 - u0 - 0.16), vf, pz + 0.034 + dz);
-      g.save(); g.beginPath(); const p0 = wf(0, 0); g.moveTo(p0[0], p0[1]);
-      for (let i = 1; i <= 16; i++) { const pp = wf(i / 16, 0.011 * Math.sin(i * 0.9 + st.time * 3)); g.lineTo(pp[0], pp[1]); }
-      g.strokeStyle = 'rgba(212,181,116,0.85)'; g.lineWidth = 1; g.stroke(); g.restore();
+      /* 06.11.2026: varaustila — akkupaketit sävyttyvät alhaalta ylös varaustason mukaan; merkkivalot suljetuissa kaapeissa;
+         tehoelektroniikan tilavalo; ohjausyksikön näytöllä vaihtosähkön aalto */
+      const c3 = (x, q, d, i) => { const p = this._c3(S, i || 0, x, q, d); return P(p[0], p[1], p[2]); }, lvq = 220 + st.lvl * 7 * 296;
+      [[-205, 215], [225, 645]].forEach((cc) => { for (let r = 0; r < 7; r++) { const qa = 220 + r * 296 + 8, qb = Math.min(qa + 266, lvq); if (qb > qa) K.fill([c3(cc[0] + 8, qa, 70), c3(cc[1] - 8, qa, 70), c3(cc[1] - 8, qb, 70), c3(cc[0] + 8, qb, 70)], K.light ? 'rgba(20,118,66,0.3)' : 'rgba(91,208,141,0.3)'); } });
+      [1, 2, 3].forEach((i, j) => K.dot(c3(-445, 2250, -24, i), 1.7, 'rgba(242,207,126,' + (0.3 + 0.7 * blink(j * 1.9)).toFixed(2) + ')'));
+      K.dot(c3(-300, 1170, 60), 1.4, 'rgba(91,208,141,' + (0.4 + 0.6 * blink(0.5)).toFixed(2) + ')');
+      g.save(); g.beginPath();
+      for (let i = 0; i <= 16; i++) { const pp = c3(-560 + i * 8.1, 1535 + 38 * Math.sin(i * 0.9 + st.time * 3), 80); if (i) g.lineTo(pp[0], pp[1]); else g.moveTo(pp[0], pp[1]); }
+      g.strokeStyle = 'rgba(212,181,116,0.9)'; g.lineWidth = 0.9; g.stroke(); g.restore();
     }
     if (k === 4) {
       const r = S.rack, ce = S.cell;
       for (let i = 0; i < 8; i++) { if (i === 4) continue; const za = 0.04 + i * 0.075; K.dot(P(r[2] - 0.004, r[1] + 0.06, za + 0.04), 1.6, 'rgba(91,208,141,' + (0.35 + 0.65 * blink(i * 1.3)).toFixed(2) + ')'); }
-      labs.push({ t: 'r', p: P(ce[2], ce[1], ce[4] * 0.7), al: act * act });
+      labs.push({ t: 'r', p: P(ce[0], ce[3], ce[4] * 0.7), al: act * act, left: 1 });
     }
     if (k === 1) labs.push({ t: 'tr', p: P(-0.47, 0.312, 0.3), al: act * act });
+    const c3p = (x, q, d) => this._c3(S, 0, x, q, d);
     const CL = [
-      [['400 kV', [-0.58, 0.55, 0.58], 16, -26], ['MUUNTAJA 400/110 kV', [0.1, 0.55, 0.3], 34, -46], ['110 kV', [0.12, -0.05, 0.34], 20, -26], ['110/20 kV', [0.6, -0.45, 0.25], 26, -34]],
+      [['400 kV', [-0.58, 0.55, 0.58], 16, -26], ['MUUNTAJA 400/110 kV', [0.2, 0.6, 0.1], 30, 40], ['110 kV', [0.12, -0.05, 0.34], 20, -26], ['110/20 kV', [0.6, -0.45, 0.25], 26, -34]],
       [['20 kV ILMAJOHTO', [0.45, 0.3, 0.26], 26, 44], ['MAAKAAPELI', [-0.47, 0.6, 0], 30, 30], ['MUUNTAMO', [-0.29, -0.15, 0.14], -22, 28], ['MUUT ASIAKKAAT', [0.57, -0.74, 0.16], 22, -26]],
       [['MITTARI', [-0.5, 0.62, 0.12], 20, -30], ['OMA MUUNTAMO 20/0,4 kV', [-0.53, 0.2, 0.17], 20, -40], ['PÄÄKESKUS', [-0.2, -0.16, 0.2], 26, -60], ['KUORMAT', [0.4, -0.29, 0.16], 30, -40], ['AURINKO · VALINNAINEN', [0.0, -0.69, 0.35], 26, -30]],
-      [['TEHOELEKTRONIIKKA · PCS', [-0.5, 0.315, 0.29], -34, -40], ['AKUSTOT', [-0.12, 0.2, 0.36], 20, -42], ['AKUNHALLINTA · BMS', [-0.38, 0.315, 0.16], -46, 16], ['OHJAUS · EMS', [-0.44, 0.22, 0.37], 14, -64], ['JÄÄHDYTYS', [-0.12, 0.37, 0.16], -26, 46]],
-      [['AKUSTO', [-0.44, 0.2, 0.75], 18, -26], ['MODUULI', [0.26, 0.36, 0.37], 30, 30], ['BMS-KORTTI', [0.08, 0.2, 0.42], 24, -50], ['KENNO', [0.5, 0.16, 0.56], 26, -30]]
+      [['TEHOELEKTRONIIKKA · PCS', c3p(-445, 620, 60), -44, 52], ['AKUSTOT', c3p(435, 1950, 70), 44, -58], ['AKUNHALLINTA · BMS', c3p(570, 1315, 70), 54, -4], ['OHJAUS · EMS', c3p(-445, 1560, 80), -30, -165], ['JÄÄHDYTYS', this._leaf3(S, true).at(565, 1500, 220), 36, 40]],
+      [['AKUSTO', [S.R[3][0], S.R[3][1], 0.75], 18, -26], ['MODUULI', [S.mod[2], S.mod[3], 0.37], -30, 40], ['BMS-KORTTI', [(S.mod[0] + S.mod[2]) / 2, (S.mod[1] + S.mod[3]) / 2, 0.42], -10, -64], ['KENNO', [(S.cell[0] + S.cell[2]) / 2, (S.cell[1] + S.cell[3]) / 2, 0.56], 26, -30]]
     ][k];
     if (act > 0.05) CL.forEach((cl) => labs.push({ t: 'c', p: P(cl[1][0], cl[1][1], cl[1][2]), dx: cl[2], dy: cl[3], s: cl[0], al: act * act }));
   }
@@ -904,7 +1018,7 @@ class Component extends DCLogic {
     K.dot(top, 2.2, j === 3 ? '#5BD08D' : '#D4B574'); K.dot(bot, 2.2, j === 3 ? '#5BD08D' : '#D4B574');
     g.globalAlpha = 1;
   }
-  _labDraw(g, L, map, time) {
+  _labDraw(g, L, map, time, lim) {
     const pt = (p) => map(p[0], p[1]);
     g.save();
     g.textBaseline = 'alphabetic';
@@ -916,7 +1030,7 @@ class Component extends DCLogic {
         g.font = '600 11px \"IBM Plex Sans\", sans-serif';
         /* 04.11.2026: tarra kääntyy toiselle puolelle, jos teksti menisi kanvaasin reunan yli */
         const tw = g.measureText(l.s).width, tf = g.getTransform ? g.getTransform().a : 1, cw = g.canvas.clientWidth || g.canvas.width / (tf || 1);
-        let dx = l.dx; if (dx < 0 && a[0] + dx - 18 - tw < 2) dx = -dx; else if (dx >= 0 && a[0] + dx + 18 + tw > cw - 2) dx = -dx;
+        let dx = l.dx; if (dx < 0 && a[0] + dx - 18 - tw < (lim || 2)) dx = -dx; else if (dx >= 0 && a[0] + dx + 18 + tw > cw - 2) dx = -dx;
         const ex = a[0] + dx, ey = a[1] + l.dy, sx = dx >= 0 ? 1 : -1;
         g.strokeStyle = 'rgba(243,238,225,0.5)'; g.lineWidth = 1; g.beginPath(); g.moveTo(a[0], a[1]); g.lineTo(ex, ey); g.lineTo(ex + 10 * sx, ey); g.stroke();
         g.fillStyle = '#F3EEE1'; g.beginPath(); g.arc(a[0], a[1], 2.2, 0, Math.PI * 2); g.fill();
@@ -925,7 +1039,7 @@ class Component extends DCLogic {
         g.fillStyle = 'rgba('+SAMA_BGRGB+',0.78)'; g.fillRect(sx > 0 ? tx - 4 : tx - tw - 4, ey - 8, tw + 8, 16);
         g.fillStyle = '#F3EEE1'; g.fillText(l.s, tx, ey + 4);
       } else if (l.t === 'b') {
-        g.font = '600 11px \"IBM Plex Sans\", sans-serif'; g.textAlign = 'center'; g.fillStyle = l.gold ? '#D4B574' : '#A39C8E'; g.fillText(l.s, a[0], a[1] + 4);
+        g.font = '600 11px \"IBM Plex Sans\", sans-serif'; g.textAlign = l.ra ? 'right' : 'center'; g.fillStyle = l.gold ? '#D4B574' : '#A39C8E'; g.fillText(l.s, a[0], a[1] + 4 + (l.oy || 0));
       } else if (l.t === 'p') {
         g.font = '600 13px "IBM Plex Sans", sans-serif'; g.textAlign = 'left'; g.fillStyle = '#F3EEE1'; g.fillText(l.s, l.x, l.y);
         g.font = '600 11px \"IBM Plex Sans\", sans-serif'; g.fillStyle = '#A39C8E'; g.fillText(l.s2, l.x, l.y + 17);
@@ -942,8 +1056,8 @@ class Component extends DCLogic {
         g.font = '600 11px \"IBM Plex Sans\", sans-serif'; g.textAlign = 'left'; g.fillStyle = '#F3EEE1'; g.fillText('SUURIN TEHO', mxp + 10, myp + 4);
         g.font = '600 10px \"IBM Plex Sans\", sans-serif'; g.fillStyle = '#827C71'; g.fillText('HAVAINNOLLISTUS', x0, y0 + H + 16);
       } else if (l.t === 'r') {
-        const x0 = a[0] + 34, y0 = a[1] - 30, rows = [['U', 0.62 + 0.04 * Math.sin(time * 0.9)], ['T', 0.42 + 0.03 * Math.sin(time * 0.5 + 1)], ['SOC', l.lvl]];
-        g.strokeStyle = 'rgba(243,238,225,0.35)'; g.lineWidth = 1; g.beginPath(); g.moveTo(a[0], a[1]); g.lineTo(x0 - 6, y0 + 18); g.stroke();
+        const x0 = l.left ? a[0] - 150 : a[0] + 34, y0 = a[1] - 30, rows = [['U', 0.62 + 0.04 * Math.sin(time * 0.9)], ['T', 0.42 + 0.03 * Math.sin(time * 0.5 + 1)], ['SOC', l.lvl]];
+        g.strokeStyle = 'rgba(243,238,225,0.35)'; g.lineWidth = 1; g.beginPath(); g.moveTo(a[0], a[1]); g.lineTo(l.left ? x0 + 122 : x0 - 6, y0 + 18); g.stroke();
         rows.forEach((rw, i) => {
           const y = y0 + i * 18;
           g.font = '600 11px \"IBM Plex Sans\", sans-serif'; g.textAlign = 'left'; g.fillStyle = '#A39C8E'; g.fillText(rw[0], x0, y + 4);
@@ -962,8 +1076,19 @@ class Component extends DCLogic {
     g.fillStyle = SAMA_BG; g.fillRect(0, 0, w, h);
     if (T) { g.fillStyle = 'rgba(243,238,225,0.045)'; for (let y = 12; y < h; y += 24) for (let x = 12; x < w; x += 24) g.fillRect(x - 0.6, y - 0.6, 1.2, 1.2); }
     else { const gx = (w < 640 || window.innerWidth <= 900) ? w * 0.5 : w * 0.66, rg = g.createRadialGradient(gx, h * 0.5, 0, gx, h * 0.5, w * 0.55); rg.addColorStop(0, ({ 'metsä': 'rgba(34,84,56,0.34)', 'pronssi': 'rgba(112,80,34,0.32)', 'pienoismalli': 'rgba(120,114,100,0.24)' })[SC] || 'rgba(64,60,48,0.28)'); rg.addColorStop(1, 'rgba('+SAMA_BGRGB+',0)'); g.fillStyle = rg; g.fillRect(0, 0, w, h); }
-    const a = Math.max(110, Math.min(205, h * 0.235, (w * 0.34 - 30) / 1.732));
-    const cx = w * ((w < 640 || window.innerWidth <= 900) ? 0.5 : 0.655), cy = h * 0.54, D = 1.8 * a; /* 04.11.2026: stacked layout (phone, tablet <= 900 px): centred */
+    /* 06.11.2026 (Madis: kuva ei ollut oikean kokoinen eikä välit oikein): pino mahtuu vapaaseen alaan reunavaroineen — työpöydällä
+       lukupalstan oikeasta reunasta kanvaasin oikeaan reunaan, pinottuna (puhelin, tabletti <= 900 px) koko leveydelle 16 px:n
+       reunoin. Laatta 2·1,732a leveä suurimmalla zoomilla 1,08; kerrosten väli 2,25a, jolloin laatat ja niiden sisältö eivät mene päällekkäin. */
+    const stk = w < 640 || window.innerWidth <= 900, ZM = 1.08;
+    let L0 = 0;
+    if (!stk) {
+      const key = w + 'x' + h + 'x' + window.innerWidth;
+      if (this._sldKey !== key) { const sec = c.el && c.el.closest('.k-sld'), s0 = sec && sec.querySelector('.ks-s'), cr = c.el && c.el.getBoundingClientRect(); this._sldKey = key; this._sldL = (s0 && cr) ? Math.max(0, Math.min(w * 0.5, s0.getBoundingClientRect().right - cr.left)) : w * 0.28; }
+      L0 = this._sldL;
+    }
+    const mx = stk ? 16 : Math.max(32, w * 0.04), my = stk ? 8 : 32, x0 = stk ? mx : L0 + mx, x1 = w - mx;
+    const a = Math.max(56, Math.min(stk ? 210 : 230, (x1 - x0) / (2 * 1.732 * ZM), (h - 2 * my) / (2.4 * ZM)));
+    const cx = (x0 + x1) / 2, cy = h * 0.5 + 0.12 * a * ZM, D = 2.25 * a;
     const uq = Math.max(0, Math.min(4, p * 5 - 0.5)), i0 = Math.floor(uq), f = this._sm(uq - i0), camK = i0 + f;
     const Z = this._rm ? 1.08 : 1.08 - 0.08 * Math.sin(Math.PI * f);
     const stepf = p * 5 - 0.5;
@@ -986,7 +1111,7 @@ class Component extends DCLogic {
         for (let i = before; i < labs.length; i++) { if (labs[i].t === 'r') labs[i].lvl = lvl; }
         g.globalAlpha = 1;
         const tt = [['SÄHKÖASEMAT', '400 → 110 → 20 kV'], ['JAKELUVERKKO', '20 kV'], ['LIITTYMÄ', 'MITTARI · MUUNTAMO · PÄÄKESKUS'], ['ENERGIAVARASTO', 'PCS · AKUSTOT · BMS · EMS'], ['MODUULI JA KENNO', 'U · T · SOC']][k];
-        labs.push({ t: 'p', p: P(1, -1, 0), s: tt[0], s2: tt[1], al: al * (1 - acts[k]) });
+        labs.push({ t: 'p', p: P(1, -1, 0), pl: P(-1, 1, 0), lf: [0, 1, 0, 1, 1][k], s: tt[0], s2: tt[1], al: al * (1 - acts[k]) });   /* 06.11.2026: nimi sille puolelle, jossa ei ole nousua */
       }
       if (k >= 1) {
         const pyT = py - D;
@@ -994,19 +1119,18 @@ class Component extends DCLogic {
       }
     }
     g.restore();
-    const sh = g.createLinearGradient(0, 0, w * 0.5, 0);
-    sh.addColorStop(0, 'rgba('+SAMA_BGRGB+',0.94)'); sh.addColorStop(0.7, 'rgba('+SAMA_BGRGB+',0.65)'); sh.addColorStop(1, 'rgba('+SAMA_BGRGB+',0)');
-    if (w >= 640 && window.innerWidth > 900) { g.fillStyle = sh; g.fillRect(0, 0, w * 0.5, h); }   /* 04.11.2026: pinottuna (puhelin, tabletti) näkymä keskellä, ei vasenta varjoa */
+    /* 06.11.2026: kanvaasin oma vasen varjo pois — laatta on nyt lukupalstan oikealla puolella, ja CSS-kerros (.ks-stage:after) suojaa tekstin */
     const map = (x, y) => [cx + (x - cx) * Z, cy + (y - cy) * Z];
     g.font = '600 11px \"IBM Plex Sans\", sans-serif';
     let labW = g.measureText('MITTARI · MUUNTAMO · PÄÄKESKUS').width;
     g.font = '600 13px "IBM Plex Sans", sans-serif'; labW = Math.max(labW, g.measureText('MODUULI JA KENNO').width);
     labs.forEach((l) => {
       if (l.t !== 'p') return;
+      if (l.lf) { const ml = map(l.pl[0], l.pl[1]); l.x = Math.max(ml[0] + 10, (stk ? 0 : L0) + 10); l.y = ml[1] - 36; return; }
       const m = map(l.p[0], l.p[1]), ldx = Math.max(0, m[0] + 18 + labW - (w - 24)), ldy = ldx > 0 ? ldx * 0.58 + 22 : 0;
       l.x = m[0] + 18 - ldx; l.y = m[1] + 4 - ldy;
     });
-    if (w >= 480) this._labDraw(g, labs, map, time);   /* 04.11.2026: puhelimessa ei tarroja — vaiheen teksti on kuvan alla */
+    if (w >= 480) this._labDraw(g, labs, map, time, stk ? 2 : L0 + 6);   /* 04.11.2026: puhelimessa ei tarroja — vaiheen teksti on kuvan alla; 06.11.2026: tarra ei mene lukupalstan päälle */
   }
   /* ---------- Hero and explorer: one industrial site on the 6A.3 iso kit ---------- */
   _xS() {

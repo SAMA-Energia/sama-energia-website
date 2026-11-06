@@ -468,3 +468,25 @@ Madis 6.11.2026 (vestlus C, vastaukset kysymyksiin; päätöslokiin lisättävä
   Sivulla ei mallinimeä eikä mittoja (perustajan päätös 4.11.2026): "oikeassa koossa", "mitat ovat valmistajan tiedoista".
 - AVOIN: natiivitarkistus uusille riveille (FI Martin, ET Madis); AR kokeiltava oikealla puhelimella Netlify-esikatselussa
   (Android Chrome ja iPhone Safari) — automaattitesti kattaa 3D-näkymän, latauksen ja ulkoiset pyynnöt, ei kameraa.
+
+## v50 — energiavarastosivun kerroskuva mittakaavaan (Madis 6.11.2026 klo 9.59, haara v35-uusi-ilme)
+
+- Madis: energiavarastosivun kerroskuva (/energiavarastot/#kerros ↔ /et/energiasalvestid/#kihid) ei ollut oikean kokoinen eikä
+  välit olleet oikein. Korjattu scene.js / scene-et.js (merkkijonot ainoa ero; ET:n "· HAVAINNOLLISTUS" → "· ILLUSTRATSIOON").
+- Koko ja välit: pino mahtuu vapaaseen alaan — työpöydällä lukupalstan (.ks-s) oikeasta reunasta kanvaasin oikeaan reunaan
+  reunavaroin (max(32 px, 4 %)), pinottuna (≤ 900 px) koko leveydelle 16 px:n reunoin; a = min(230, leveys/(2·1,732·1,08),
+  korkeus/(2,4·1,08)). Kerrosten väli 2,25a (oli 1,8a), laatat ja niiden sisältö eivät mene päällekkäin. Kanvaasin oma vasen
+  varjo pois (CSS-kerros suojaa tekstin). Naapurikerroksen nimi sille puolelle, jossa ei ole nousua; tarrat eivät mene lukupalstalle.
+- Varastokerros (3) mittakaavassa 1 yksikkö = 5,2 m, sijoittelu kuten herossa (hero3d.js ROW) Ralosin ohjeen mukaan: neljä
+  kaappia 1 350 × 1 010 × 2 450 mm rivissä 100 mm:n välein, takana 800 mm hallin seinään, edessä 1 500 mm, sivuilla 500 mm,
+  betoniperustus 300 mm (reunat 250 mm), huoltotaso; hallin seinä leikattuna 3,2 m:stä ja sähkötilan ovi; kaapeli perustuksen
+  etureunan kanavassa oven kynnyksen alle (nousu R[2] laskeutuu kynnykselle). Kaapin piirto kaappi.py:n mitoista (ovijako 440 | 890,
+  säleikkö, verkkosäleikkö, puhallinkotelo, näytön kansi, merkkivalo, kahvat, pohjakehys trukkitaskuin, kattolevy). Avoin kaappi
+  Ralosin kuvan (assets/valikoima/ralos-kaappi-auki.webp) mukaan: sähkötila vasemmalla (johdonsuojat, ohjausyksikkö näyttöineen,
+  tehoelektroniikka), akkutila oikealla (2 × 7 akkupakettia), jäähdytysyksikkö akkutilan oven sisäpuolella; kapea ovi 100°, leveä 172°.
+  Tarkistus: kaappi.glb renderöitynä samalla isometrisellä projektiolla osuu kanvaasin kaappeihin pikselintarkasti (ei repoon).
+- Kennokerros (4) peilattu: akusto avoimen kaapin akkutilan alla (nousu R[3]), moduuli ja kenno vasemmalla; U/T/SOC-lukemat kennon vasemmalle.
+- Liittymäkerros (2): kaapelin pää R[2] = (0,77; −0,28); VERKKOYHTIÖN PUOLI laatan reunan alle, MUUNTAJA-tarra muuntajan eteen
+  (ei päällekkäisyyttä 1 024 px:n näytöllä).
+- Tarkistettu 1024/1280/1440/1920/2560 × 5 vaihetta, tabletti 768, puhelin 390/360, FI ja ET: ei konsolivirheitä, ei vaakavieritystä.
+  scene.js 168,7 → 181,1 kt (gzip 47,9 → 53,2 kt), ladataan edelleen vasta luvun lähestyessä.
