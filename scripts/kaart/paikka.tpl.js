@@ -162,6 +162,7 @@
       last = q;
       var my = ++seq;
       say(X.wait);
+      ul.hidden = true;   /* vanhat tulokset pois, kun uusi haku alkaa */
       fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, credentials: 'same-origin', body: JSON.stringify({ op: 'haku', q: q, lang: L }) })
         .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
         .then(function (d) {
