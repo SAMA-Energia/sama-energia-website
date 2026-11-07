@@ -1,0 +1,10 @@
+{
+ "license": "OpenStreetMap contributors, ODbL 1.0; tiles OpenInfraMap",
+ "source": "OpenInfraMap vector tiles z7 (OpenStreetMap data), read 2026-11-02",
+ "tiles": "z7 x70-75 y28-39",
+ "files": {
+  "lines": "OpenInfraMap vector tiles z7, read 2026-11-02",
+  "substations": "Overpass 2026-11-02T20:51:49Z",
+  "plants": "Overpass 2026-11-02T20:47:49Z"
+ }
+}

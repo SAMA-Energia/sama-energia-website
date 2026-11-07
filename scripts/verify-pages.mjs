@@ -27,7 +27,7 @@ const PLACEHOLDER_WAIVERS = [];
 /* Pidettävä samana kuin build-pages.mjs:n PAIRS / UNPAIRED / UNLISTED / LEGACY. */
 const PAIRS = [
   ['', ''], ['aurinkosahko', 'paikeseelekter'], ['energiavarastot', 'energiasalvestid'],
-  ['reservimarkkinat', 'reserviturg'], ['aggregaattori', 'soleron-energy'], ['palvelut', 'teenused'],
+  ['reservimarkkinat', 'reserviturg'], ['aggregaattori', 'soleron-energy'], ['palvelut', 'teenused'], ['verkko', 'vork'],
   ['laitevaatimukset', 'seadmete-nouded'], ['kumppanit', 'partnerid'],
   ['meista', 'meist'], ['ajankohtaista', 'uudised'], ['yhteystiedot', 'kontakt'],
   ['tietosuoja', 'andmekaitse'], ['kiitos', 'aitah'],
@@ -212,12 +212,25 @@ const GUARDS = [
   { id: 'tunnetusti-rahoitus', langs: 'both', why: '"tunnetusti" rahoituksen lähellä — todentamaton superlatiivi (03.09.2026)',
     find: t => nearMatches(t, /tunnetusti/gi, /rahoit|rahast/gi, 80) },
   /* --- kumppani- ja yritysnimet --- */
-  // 08.09: Scanoffice Oy sallittu VAIN suomenkielisellä sivustolla.
-  { id: 'scanoffice-et', langs: 'et', why: 'Scanoffice — sallittu vain FI-sivustolla (08.09.2026)',
-    find: t => [...t.matchAll(/Scanoffice/gi)] },
+  // 08.09: Scanoffice Oy sallittu VAIN suomenkielisellä sivustolla. Kumottu 6.11.2026 (Madis: „you don't even have
+  // Scanoffice there" ET-version kumppaniosiosta) — Scanoffice näkyy nyt molemmilla sivustoilla.
   // 03.09: rahoitus- ja Energen-ajan yritysnimiä ei mainita sivustolla.
   { id: 'kielletyt-nimet', langs: 'both', why: 'rahoitus-/Energen-ajan yritysnimi — ei mainita sivustolla (03.09.2026)',
-    find: t => [...t.matchAll(/Grenke|Svea|Salama Sähkö|EP Energy/gi)] },
+    find: t => [...t.matchAll(/Grenke|Svea|Salama Sähkö/gi)] },
+  // 04.11.2026: EP Energy / EP Equipment ja Energen Nordic eivät ole sivustolla ennen perustajan päätöstä; Roofit.Solar on
+  // valmistaja ilman sopimusta (Suomessa yhteistyö Gare Energy Oy:n kautta). Sallitut nimet: CLAUDE.md, sisältösäännöt.
+  // 6.11.2026 perustajan päätös (Madis: „You don't have EP energy at all"): EP Energy sallittu molemmilla sivustoilla;
+  // EP Equipment, Energen Nordic ja Roofit edelleen vartioitu.
+  // 6.11.2026 klo 13.18 (Madis, kommentti FI-esikatselussa: Gare Energy „Roofit.Solar peamine partner Soomes"): Roofit.Solar
+  // saa näkyä Suomen sivustolla Gare Energy Oy:n yhteydessä (Roofit.Solarin oma jälleenmyyjälista, Suomi: Gare Energy OY).
+  // Viron sivustolla Roofit edelleen vartioitu (ei sopimusta, Viron yhteistyö ei kulje Garen kautta).
+  { id: 'nimet-1104', langs: 'both', why: 'EP Equipment / Energen — ei sivustolla ennen perustajan päätöstä (04.11.2026; EP Energy sallittu 6.11.2026)',
+    find: t => [...t.matchAll(/EP Equipment|\bEnergen\b/gi)] },
+  { id: 'roofit-et', langs: 'et', why: 'Roofit ei Viron sivustolla (Suomessa sallittu Gare Energy Oy:n yhteydessä 6.11.2026)',
+    find: t => [...t.matchAll(/Roofit/gi)] },
+  // 04.11.2026 (perustajan päätös): malli ja tekniset arvot kuuluvat tarjoukseen, eivät sivulle.
+  { id: 'mallinimet-1104', langs: 'both', why: 'tuotemallin nimi näkyvässä tekstissä — malli ja tekniset arvot kuuluvat tarjoukseen (perustajan päätös 04.11.2026)',
+    find: t => [...t.matchAll(/Beast\s*125|EPES\s?\d|ECO-E\d|OptiGrid|Velario/gi)] },
   /* --- viron kielen 03.09 korjaukset --- */
   // 03.09 F6: Baltian irtaantuminen tapahtui 8.2.2025, ei 9.2.
   { id: 'et-veebruar-9', langs: 'et', why: '"9. veebruaril 2025 lahkusid" — õige kuupäev on 8. veebruar (03.09.2026, F6)',
@@ -448,7 +461,8 @@ for (const p of pages) {
 
   /* kaikki sisäiset linkit ja resurssit osoittavat olemassa oleviin tiedostoihin; sivun sisäiset
      ankkurit olemassa olevaan id:hen samalla sivulla */
-  for (const m of html.matchAll(/(?:href|src|action)="([^"]+)"/g)) {
+  // v51: attribuutin nimen alku rajattu (popovertargetaction="hide" ei ole osoite)
+  for (const m of html.matchAll(/(?<![\w-])(?:href|src|action)="([^"]+)"/g)) {
     const u = m[1];
     if (u.startsWith('http://')) { err(`${where} — salaamaton http-linkki: ${u}`); continue; }
     if (u.startsWith('https://') || u.startsWith('mailto:') || u.startsWith('tel:') || u.startsWith('data:')) continue;
@@ -689,10 +703,43 @@ for (const s of UNLISTED) if (shimFi?.includes(`"#/${s}"`)) err(`shimissä ylim�
 const cssBytes = statSync(join(ROOT, 'assets/site.css')).size;
 const jsBytes = statSync(join(ROOT, 'assets/site.js')).size;
 /* CSS-raja nostettu 70 -> 76 kt: perustajan päätös 25.10.2026 (Martin, v34-katselmus G4: "75 kt on ok"). */
-if (cssBytes > 76 * 1024) err(`assets/site.css ${cssBytes} tavua > 76 kt`);
+if (cssBytes > 92 * 1024) err(`assets/site.css ${cssBytes} tavua > 92 kt`);
 if (jsBytes > 20 * 1024) err(`assets/site.js ${jsBytes} tavua > 20 kt`);
 for (const f of ['assets/site.css', 'assets/fonts.css', 'assets/site.js']) if (/googleapis|gstatic|https?:\/\//.test(read(f))) err(`${f} viittaa ulkoiseen osoitteeseen`);
+/* 5.11.2026: kartan sijaintipainike (kk-geo etusivulla, km-geo /verkko/- ja /vork/-sivulla) toimii vain, jos
+   Permissions-Policy sallii sijainnin omalle alkuperälle — geolocation=() esti sen tuotannossa kokonaan. */
+{
+  const hdr = read('_headers');
+  const pp = (hdr.match(/Permissions-Policy:([^\n]*)/) || [])[1] || '';
+  const geoPages = ['index.html', 'et/index.html', 'verkko/index.html', 'et/vork/index.html'].filter(f => existsSync(join(ROOT, f)) && /kk-geo|km-geo/.test(read(f)));
+  if (geoPages.length && !/geolocation=\(self\)/.test(pp)) err(`_headers: sivuilla ${geoPages.join(', ')} on sijaintipainike, mutta Permissions-Policy ei salli sijaintia (odotettu geolocation=(self)): "${pp.trim()}"`);
+  if (/geolocation=\([^)]*(\*|https?:)/.test(pp)) err('_headers: Permissions-Policy antaa sijainnin myös muille alkuperille');
+}
 if (!/font-display:swap/.test(read('assets/fonts.css'))) err('fonts.css: font-display: swap puuttuu');
+
+/* Yhteinen verkko -kartta (/verkko/, /vork/ ja etusivun osio; v35 2.11.–3.11.2026): sivukohtaiset tiedostot ja budjetit
+   (docs/brief/03-kaart.md: pohjatiedosto < 150 kt, 110 kV erillisenä). kartta.js 30 → 36 → 40 → 44 kt (4.11.2026: vierityszoomi, 110 kV oletuksena; 5.11.2026: lukijan oma liittymä); kartta-paikka.js ≤ 64 kt (ladataan vasta, kun paikka valitaan) ja kartta.css 16 → 20 kt 3.11.2026:
+   sama moottori palvelee nyt myös etusivua (näyttämö + puhelinlaatikko) ja piirtää pisteilmeen ja kallistuksen.
+   Tekstin luvut tulevat kartta-data.json:sta (scripts/kaart/build_page.py) — tarkistetaan, että jokaisen kerroksen
+   johtopäätös on karttasivulla, ja etusivulla silloin, kun etusivu käyttää generoitua lohkoa (data-kartta; v41-etusivulla ei). */
+{
+  const KB = 1024, size = f => statSync(join(ROOT, f)).size;
+  for (const [f, max] of [['assets/kartta-pohja.json', 150], ['assets/kartta-110.json', 100], ['assets/kartta-data.json', 80], ['assets/kartta.js', 52], ['assets/kartta.css', 22], ['assets/kartta-paikka.js', 110], ['assets/kartta-solmut.json', 90]]) {
+    if (!existsSync(join(ROOT, f))) { err(`${f} puuttuu`); continue; }
+    if (size(f) > max * KB) err(`${f} ${size(f)} tavua > ${max} kt`);
+  }
+  for (const f of ['assets/kartta.js', 'assets/kartta.css']) if (/https?:\/\//.test(read(f).replace(/\/\*[\s\S]*?\*\//g, '').replace(/'http:\/\/www\.w3\.org\/2000\/svg'/g, ''))) err(`${f} viittaa ulkoiseen osoitteeseen`);
+  try {
+    const kd = JSON.parse(read('assets/kartta-data.json'));
+    const dec = s => s.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#x27;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+    for (const [lang, file] of [['fi', 'verkko/index.html'], ['et', 'et/vork/index.html'], ['fi', 'index.html'], ['et', 'et/index.html']]) {
+      const page = dec(read(file));
+      if ((file === 'index.html' || file === 'et/index.html') && !page.includes('data-kartta')) continue;   // v41-etusivu: oma staattinen karttaosio
+      kd.layers.forEach((L, i) => { if (!page.includes(L.concl[lang])) err(`${file}: kerroksen ${i + 1} johtopäätös ei vastaa kartta-data.json:ia — aja python3 scripts/kaart/build_page.py`); });
+    }
+    for (const L of kd.layers) for (const c of ['FI', 'EE']) for (const f of L.facts[c] || []) if (!kd.sources[f.src]) err(`kartta-data.json: tuntematon lähde ${f.src}`);
+  } catch (e) { err(`kartta-data.json ei jäsenny: ${e.message}`); }
+}
 
 /* katselmusmanifesti: olemassa, jäsentyy, kohtuukokoinen, viittaa olemassa oleviin sivuihin ja osioihin */
 try {

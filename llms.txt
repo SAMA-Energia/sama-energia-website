@@ -7,86 +7,100 @@
 
 SAMA Energia Oy (Finnish business ID 3647683-6, VAT FI36476836, domiciled in
 Helsinki, Finland) is a full-scope supplier (integrator, EPC) of industrial
-battery energy storage and solar PV for businesses and landowners in Finland
-and Estonia. The company surveys, designs, procures, installs and maintains the
-behind-the-meter systems — storage, solar PV and control — and takes them to
-the reserve markets of the transmission system operators Fingrid (Finland) and
-Elering (Estonia) through an aggregator. The company was founded by Martin
-Rautio (chief executive officer) and Madis Maastik (sales director). Martin
-Rautio was appointed chief executive officer on 13 September 2026; the
-registration with the Finnish Trade Register is pending. Registered address:
-Sörnäisten Rantatie 33 C, 00500 Helsinki. Site updated 26 October 2026
-(design v5).
+energy storage and solar PV for businesses in Finland and Estonia. The company
+assesses, designs, procures, installs and follows up the system behind the
+customer's existing grid connection: energy storage, energy generation and
+smart control. Through an aggregator the storage takes part in the reserve
+markets of the transmission system operators Fingrid (Finland) and Elering
+(Estonia). Team: Martin Rautio (chief executive officer), Viljar Petersell
+(installation manager) and Madis Maastik (sales director). Martin Rautio was
+appointed chief executive officer on 13 September 2026. Registered address:
+Sörnäisten Rantatie 33 C, 00500 Helsinki. Content as of 7 November 2026.
 
 What the company says about itself, in its own documented positioning:
 
-- One battery, four jobs: peak shaving of the grid capacity charge, buying
-  electricity in cheap spot-price hours, reserve-market income for standing
-  ready, and backup power. No solar or own generation is required; an existing
-  grid connection is enough.
+- The customer's grid connection is an asset. SAMA builds a system behind it
+  (energy storage, energy generation and smart control) so that the site earns
+  from standing ready on the reserve markets, pays less for capacity and
+  electricity, and decides for itself. An existing connection is enough; a
+  storage system behind it does not need a new transmission-grid connection.
+- Typical sites shown on the front page: grain dryers, industry and cold
+  storage, hotels and care homes, solar parks.
 - Reserve markets (FFR, FCR-N, FCR-D, aFRR, mFRR in Finland; FCR, aFRR, mFRR in
-  Estonia) pay for availability. A single industrial battery reaches the market
-  through an aggregator; the Estonian site names Soleron Energy, the Finnish site
-  names no aggregator. SAMA Energia is not itself an aggregator.
+  Estonia) pay for reserved capacity. An industrial storage system reaches the
+  market through an aggregator; SAMA Energia is not itself an aggregator.
   Backup power requires an installation designed for island operation and a
   separated critical circuit; it is assessed site by site.
-- Reserve income is never guaranteed: the written assessment models it per
-  reserve product from the TSO's realised hourly prices for the hours the site's
-  own use leaves free, before the aggregator's fee, shows the future as a range,
-  labels the figure as modelled, and keeps the capacity-charge and spot-price
-  savings on a separate line because they do not depend on reserve prices.
-- The first product is a free site survey and a written assessment: every figure
-  with its source and date, the customer's own hourly consumption data as the
-  basis, the distribution grid operator's position before any capital is
-  committed, and financing set out as own capital, leasing and hire purchase on
-  the same figures. A reply within two business days.
-- Partners named on the site: Soleron Energy (aggregator, Estonia), Ralos Oy (battery units, stock in Tampere),
-  JSM Automaatiosähkö Oy (electrical installation and commissioning) and
-  Scanoffice Oy (equipment importer, Finnish site only).
-  Financing is not tied to any single provider: leasing can be arranged through
-  business financiers in Finland and Estonia and is compared with own capital on
-  the same figures in the written assessment.
-- Sources cited on the site include Fingrid's reserve-market material (e.g.
-  "Energiavarastot reservimarkkinoilla", 10 February 2025: share of prequalified
-  capacity from energy storage FCR-N 29 %, FCR-D 13 % up / 18 % down, FFR 54 %),
-  Fingrid's 24 September 2025 release on connection restrictions in southern
-  Finland until 2029, and Elering's balancing-capacity cost (3.73 EUR/MWh in
-  2026, 2.97 EUR/MWh from 2027).
+- Reserve income in the written assessment is modelled per reserve product from
+  the TSO's realised hourly prices for the hours the site's own use leaves free,
+  before the aggregator's fee; the future is shown as a range, and the
+  capacity-charge and spot-price savings are on a separate line.
+- The first product is a free written assessment, delivered within two working
+  days of receiving the customer's data: hourly consumption as the basis, every
+  figure with its source and date, the distribution grid operator's position,
+  and financing set out as own capital and leasing on the same figures.
+- Partners are shown by field, several per field, each with its range and
+  pictures from it. Finnish site: energy storage from Ralos Oy, Elecnova, EP
+  Energy and Avant Power; solar from Ralos Oy, Gare Energy Oy (integrated solar
+  roofs and solar carports) and Scanoffice Oy; charging, mobile energy and
+  microgrids from Elecnova, EP Energy, Avant Power, Scanoffice Oy and Gare
+  Energy Oy; heat pumps from Scanoffice Oy; installation and commissioning by
+  JSM Automaatiosähkö Oy and Gare Energy Oy under SAMA's installation manager;
+  the aggregator is chosen per site from the reserve providers approved by
+  Fingrid. Estonian site: energy storage from Ralos Oy, Elecnova, EP Energy and
+  Avant Power; solar from Ralos Oy, Scanoffice Oy and SAMA's own installation;
+  charging, mobile energy and microgrids from EP Energy, Avant Power and
+  Scanoffice Oy; heat pumps from Scanoffice Oy; energy management and
+  aggregation by Soleron Energy. The partners' whole range is available to the
+  client. Model names and technical values are given in the offer, not on the
+  site.
+- Sources cited on the site include Fingrid ("Reservimarkkinat tutuiksi"
+  webinar, 11 June 2025: about 1,500 MW of reserve capacity procured per hour on
+  average, with procurement expected to grow by 1,200 MW by 2030), Fingrid's
+  reserve-market material of 10 February 2025 (share of prequalified capacity
+  from energy storage FCR-N 29 %, FCR-D 13 % up / 18 % down, FFR 54 %), Fingrid's
+  24 September 2025 release on storage connections in southern Finland until
+  2029, Elering's security of supply report 2025 (table 2.3, 9 December 2025:
+  1,300 MW of dispatchable capacity needed by 2030, of which 751 MW exists or is
+  certain to come) and Elering's balancing-capacity cost (3.73 EUR/MWh in 2026,
+  2.97 EUR/MWh from 2027).
 - Privacy posture: no cookies, no analytics, no third-party scripts, fonts
   self-hosted. The contact form is the only place personal data is collected.
 
 ## Pages — Finnish (https://samaenergia.fi)
 
-- https://samaenergia.fi/ : Front page — "Saavuttakaa energiariippumattomuus laittamalla sähköliittymänne töihin omaksi eduksenne." One battery, three cash flows plus backup power; what the grid-capacity charge and the spot price actually cost, with one distribution company's published tariff as a worked example; how a permanent saving shows up in the property's value; the five steps; who it suits; FAQ; site-survey form.
-- https://samaenergia.fi/aurinkosahko/ : Solar PV for businesses: five solution types (roof, integrated solar roof, ground and carport, solar plus storage, storage for an existing plant), sized by hourly consumption, how installation proceeds, solar plus battery.
-- https://samaenergia.fi/energiavarastot/ : Industrial energy storage: one device, four jobs; a battery's day; what is delivered and why now.
-- https://samaenergia.fi/reservimarkkinat/ : Reserve markets explained; four sourced reasons; how income is estimated; honest about reserve prices; what the company believes, including where it says no.
+- https://samaenergia.fi/ : Front page: "Sähköliittymänne on omaisuutta. Laittakaa se töihin omaksi eduksenne." A still 3D illustration behind the headline shows where the system sits on an industrial site: solar panels on the roof wired row by row to a collector cable that comes down the facade, four storage cabinets on a raised concrete foundation along the building wall next to the electrical room, a transformer substation close to the building fed by an underground cable from the grid, the storage cables leaving from the back of the cabinets through the foundation and running along the wall, and the cables from the solar panels and the transformer, all entering under the electrical room door to the main switchboard, where the meter is, with the control unit next to it, so the storage sits behind the meter; then how it works: the four income and saving lines (reserve market first) next to an animated schematic day (consumption and main fuse, hourly price, what the storage does hour by hour; labelled as a schematic, not measured data), the grid map in seven steps where visitors can place their own connection (browser location on request or a point chosen on the map; not stored or sent), how a project proceeds in five steps with the time each step takes next to a short silent video of the same steps (on request the roof is measured with a drone during the site visit and the solar panel layout is planned; panels, storage and cabling are then installed), why SAMA works with several manufacturers and service partners (a solution built from the client's own decision criteria, not from selling one device) with every partner of that market shown with its range and pictures from it, each opening a fuller description with location and website (Finland: Ralos, Elecnova, EP Energy, Avant Power, Scanoffice, Gare Energy, JSM Automaatiosähkö; Estonia: Ralos, Elecnova, EP Energy, Avant Power, Scanoffice, Soleron Energy), each linked to its card on the partners page, the team, FAQ and the assessment form.
+- https://samaenergia.fi/aurinkosahko/ : Solar PV for businesses: roof, integrated solar roof, ground and carport, solar with storage, storage for an existing plant; sized by hourly consumption.
+- https://samaenergia.fi/energiavarastot/ : Industrial energy storage: what one system does, the layers from the transmission grid to the cell, what is delivered, safety and warranty.
+- https://samaenergia.fi/reservimarkkinat/ : Reserve markets explained: sourced reasons, how reserve prices form, how income is modelled, what the company believes.
 - https://samaenergia.fi/aggregaattori/ : What an aggregator does, how joining Fingrid's reserve markets proceeds, and what to check in an aggregator agreement.
-- https://samaenergia.fi/palvelut/ : Services — three things to order: assessment, project, portfolio. What each contains, what the customer supplies, what is free and what is charged when.
-- https://samaenergia.fi/kumppanit/ : Partners and products — storage cabinets, containers, hybrid cabinets, charging-station microgrids, portable units and backup switching from several manufacturers, listed by type and specification; how an offer is assembled and compared on the same figures.
-- https://samaenergia.fi/meista/ : About — why the company was founded, who is accountable for what, the partner network, company facts.
-- https://samaenergia.fi/ajankohtaista/ : Reviews with sources and dates.
-- https://samaenergia.fi/ajankohtaista/liityntarajoitus-2029/ : Review: no new storage connections in southern Finland before 2029 — your connection already exists.
-- https://samaenergia.fi/laitevaatimukset/ : Our equipment requirements — the nine-point list we ask every manufacturer to document before we offer its equipment (Finnish).
+- https://samaenergia.fi/verkko/ : Shared grid map: Fingrid and Elering figures on one map in seven chapters (grid, consumption, weather-dependent generation, storage, reserves, pipeline, your connection), every figure with source and date.
+- https://samaenergia.fi/palvelut/ : Services: assessment, project and portfolio; what each contains, what the customer supplies, what is free and what is charged.
+- https://samaenergia.fi/kumppanit/ : Partners and products by type; how an offer is assembled and compared on the same figures.
+- https://samaenergia.fi/meista/ : About: why the company was founded, who is accountable for what, the partner network, company facts.
+- https://samaenergia.fi/ajankohtaista/ : Reviews and short news with sources and dates.
+- https://samaenergia.fi/ajankohtaista/liityntarajoitus-2029/ : Review: Fingrid's restriction on new storage connections in southern Finland continues until 2029; a storage system behind an existing connection does not wait for it.
+- https://samaenergia.fi/laitevaatimukset/ : Equipment requirements: the documented list every manufacturer must meet before its equipment is offered (Finnish).
 - https://samaenergia.fi/equipment-requirements/ : The same equipment requirements in English.
-- https://samaenergia.fi/yhteystiedot/ : Contact and free site survey request.
+- https://samaenergia.fi/yhteystiedot/ : Contact and free assessment request.
 - https://samaenergia.fi/tietosuoja/ : Privacy statement (no cookies, no analytics).
 
 ## Pages — Estonian (https://samaenergia.ee)
 
-- https://samaenergia.ee/ : Avaleht — "Saavutage energiasõltumatus, pannes elektriliitumise enda kasuks tööle." Üks salvesti, kolm rahavoogu, varutoide; kuidas püsiv sääst kajastub kinnisvara väärtuses; viis sammu; kellele; KKK; hindamisvorm.
-- https://samaenergia.ee/paikeseelekter/ : Päikeseelekter ettevõtetele: viis lahendust, mõõdetud tunnitarbimise järgi; kuidas paigaldus käib; päike ja aku koos.
-- https://samaenergia.ee/energiasalvestid/ : Tööstuslik energiasalvesti: üks seade, neli tööd; aku päev; mida tarnime ja miks nüüd.
-- https://samaenergia.ee/reserviturg/ : Reserviturg lihtsalt seletatuna; neli allikatega põhjust; kuidas tulu hinnatakse; ausalt reservihindadest.
-- https://samaenergia.ee/soleron-energy/ : Mida agregaator teeb, kuidas liitumine Eleringi reservituruga käib, ja Eesti agregaatoripartner Soleron Energy.
-- https://samaenergia.ee/teenused/ : Teenused — tasuta hindamine, kirjalik hinnang, projektijuhtimine, seire; neli reeglit.
-- https://samaenergia.ee/partnerid/ : Partnerid ja tooted — energiasalvestid, konteinerid, laadimisjaamade mikrovõrgud ja varutoide mitmelt tootjalt, tüübi ja andmete järgi; kuidas pakkumine kokku pannakse.
-- https://samaenergia.ee/meist/ : Meist — miks ettevõte tehti, kes mille eest vastutab, võrgustik, ettevõte paberil.
-- https://samaenergia.ee/uudised/ : Uudised koos allikate ja kuupäevadega.
-- https://samaenergia.ee/uudised/reservitasu-2026/ : Ülevaade: alates 2026 maksate reservide eest — kummal pool arvet te olete.
-- https://samaenergia.ee/seadmete-nouded/ : Meie nõuded seadmetele — the same nine documented equipment requirements, in Estonian.
-- https://samaenergia.ee/kontakt/ : Kontakt ja tasuta hindamise küsimine.
-- https://samaenergia.ee/andmekaitse/ : Privaatsuspoliitika (privacy statement).
+- https://samaenergia.ee/ : Front page: "Teie elektriliitumine on vara. Pange see enda kasuks tööle." The same structure as the Finnish front page with Elering's figures.
+- https://samaenergia.ee/paikeseelekter/ : Solar PV for businesses, sized by hourly consumption; solar with storage.
+- https://samaenergia.ee/energiasalvestid/ : Industrial energy storage: what one system does, the layers from the grid to the cell, safety and warranty.
+- https://samaenergia.ee/reserviturg/ : Reserve market explained: sourced reasons, how reserve prices form, how income is modelled.
+- https://samaenergia.ee/soleron-energy/ : What an aggregator does, how joining Elering's reserve market proceeds, and the Estonian aggregator partner Soleron Energy.
+- https://samaenergia.ee/vork/ : Shared grid map: Elering and Fingrid figures on one map in seven chapters, every figure with source and date.
+- https://samaenergia.ee/teenused/ : Services: assessment, project and portfolio.
+- https://samaenergia.ee/partnerid/ : Partners and products by type; how an offer is assembled.
+- https://samaenergia.ee/meist/ : About: why the company was founded, who is accountable for what, company facts.
+- https://samaenergia.ee/uudised/ : Reviews and short news with sources and dates.
+- https://samaenergia.ee/uudised/reservitasu-2026/ : Review: from 2026 every consumer pays for reserves on the electricity bill; which side of the bill a storage owner is on.
+- https://samaenergia.ee/seadmete-nouded/ : The same documented equipment requirements, in Estonian.
+- https://samaenergia.ee/kontakt/ : Contact and free assessment request.
+- https://samaenergia.ee/andmekaitse/ : Privacy statement.
 
 ## Contact
 

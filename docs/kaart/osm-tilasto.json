@@ -1,0 +1,109 @@
+{
+ "EE": {
+  "110-ac": 2447.2,
+  "110-cable": 72.4,
+  "110-dc": 86.8,
+  "330-ac": 1683.4,
+  "400-dc": 11.4,
+  "plant-solar-mw": 91.8,
+  "plant-solar-n": 8.0,
+  "plant-solar-small-n": 917.0,
+  "plant-wind-mw": 697.4,
+  "plant-wind-n": 30.0,
+  "subs-110": 146.0,
+  "subs-330": 15.0
+ },
+ "FI": {
+  "110-ac": 15714.2,
+  "110-cable": 67.1,
+  "110-dc": 16.1,
+  "220-ac": 1075.0,
+  "220-cable": 0.4,
+  "400-ac": 5714.1,
+  "400-dc": 47.2,
+  "plant-solar-mw": 465.6,
+  "plant-solar-n": 23.0,
+  "plant-solar-small-n": 61.0,
+  "plant-wind-mw": 4254.2,
+  "plant-wind-n": 72.0,
+  "subs-110": 746.0,
+  "subs-220": 16.0,
+  "subs-400": 64.0
+ },
+ "LV": {
+  "110-ac": 3416.0,
+  "110-cable": 11.8,
+  "330-ac": 1849.4,
+  "330-cable": 14.7,
+  "subs-110": 20.0,
+  "subs-330": 2.0
+ },
+ "NO": {
+  "110-ac": 2308.1,
+  "110-cable": 39.9,
+  "220-ac": 29.2,
+  "400-ac": 576.3,
+  "subs-110": 1.0,
+  "subs-220": 2.0
+ },
+ "RU": {
+  "110-ac": 13300.2,
+  "110-cable": 22.1,
+  "220-ac": 1602.2,
+  "220-cable": 4.5,
+  "330-ac": 4661.5,
+  "330-cable": 55.6,
+  "400-ac": 692.2,
+  "subs-110": 423.0,
+  "subs-220": 16.0,
+  "subs-330": 39.0,
+  "subs-400": 2.0
+ },
+ "SE": {
+  "110-ac": 5421.8,
+  "110-cable": 33.0,
+  "110-dc": 0.7,
+  "220-ac": 1109.8,
+  "220-cable": 12.5,
+  "400-ac": 4181.4,
+  "400-cable": 5.6,
+  "400-dc": 73.3,
+  "subs-110": 1.0,
+  "subs-400": 17.0
+ },
+ "SEA": {
+  "110-ac": 718.2,
+  "110-dc": 78.8,
+  "330-ac": 105.3,
+  "330-dc": 189.1,
+  "400-dc": 537.4
+ },
+ "_meta": {
+  "built": "2026-11-02",
+  "h": 18837,
+  "hvdc_names": {
+   "Estlink 1": 110,
+   "Fenno-Skan": 400,
+   "HVDC Estlink 2": 400,
+   "HVDC Fenno-Skan": 400,
+   "HVDC Fenno-Skan 2": 400,
+   "HVDC Gotland 2 and 3": 110,
+   "HVDC NordBalt": 330
+  },
+  "osm": {
+   "lines": {
+    "file": "lines-2026-11-02.json",
+    "osm_base": "OpenInfraMap vector tiles z7 (OpenStreetMap data), read 2026-11-02"
+   },
+   "plants": {
+    "file": "plants-2026-11-02.json",
+    "osm_base": "2026-11-02T20:47:49Z (Overpass, maps.mail.ru)"
+   },
+   "substations": {
+    "file": "substations-2026-11-02.json",
+    "osm_base": "2026-11-02T20:51:49Z (Overpass, maps.mail.ru)"
+   }
+  },
+  "w": 17351
+ }
+}
