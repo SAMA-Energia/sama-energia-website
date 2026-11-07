@@ -14,10 +14,10 @@ Pyydä maksuton kartoitus Miten se toimii+358 449 654 614
 1 500 MWNiin paljon reservikapasiteettia Fingrid hankkii keskimäärin joka tunnille ja arvioi hankinnan kasvavan vuoteen 2030 mennessä 1 200 MW:lla.
 Lähde: Fingrid, Reservimarkkinat tutuiksi -webinaari · 11.6.2025
 
-1Aurinkopaneelit2Pääkeskus ja ohjausyksikkö3Energiavarasto4Muuntamo
+1Aurinkopaneelit2Pääkeskus, mittari ja ohjausyksikkö3Energiavarasto4Muuntamo
 
 Aurinkopaneelit
-Pääkeskus ja ohjausyksikkö
+Pääkeskus, mittari ja ohjausyksikkö
 Energiavarasto
 Muuntamo
 
@@ -38,7 +38,7 @@ Kantaverkosta kennoon, kerros kerrallaan
 Kuusi karttatasoa: markkinat liittymänne ympärillä.
 Jokainen vaihe lisää karttaan tason, luvun ja lähteen.
 Kohteen osoiteHae
-Käytä sijaintianitai valitse kohta kartaltaOsoitehaku kulkee palvelimemme kautta Maanmittauslaitokselle tai Viron Maa- ja Ruumiametille ja aurinkotuotto EU:n PVGIS-palvelusta. Emme tallenna sijaintia; lomakkeeseen se menee vain, jos itse viette sen sinne.
+Käytä sijaintianitai valitse kohta kartaltaOsoitehaku kulkee palvelimemme kautta Suomen ympäristökeskuksen (Syke) ja Viron Maa- ja Ruumiametin osoitepalveluihin ja aurinkotuotto EU:n PVGIS-palvelusta. Emme tallenna sijaintia; lomakkeeseen se menee vain, jos itse viette sen sinne.
 
 VerkkoKasvuSääVarastotReservitTulossaTeidän liittymänne
 
@@ -80,7 +80,7 @@ Lähteet: Fingrid, johdon katsaus · 29.10.2026; Fingrid · 8.9.2026; Fingrid ·
 Missä teidän liittymänne on tässä kokonaisuudessa?
 Liittymänne on jo olemassa ja sen taakse asennettu sähkövarasto ei joudu kantaverkon jonoon. Kirjallinen arvio sijoittaa kohteenne tälle kartalle, jokainen luku lähteineen.
 Kohteen osoiteHae
-Käytä sijaintianitai valitse kohta kartaltaOsoitehaku kulkee palvelimemme kautta Maanmittauslaitokselle tai Viron Maa- ja Ruumiametille ja aurinkotuotto EU:n PVGIS-palvelusta. Emme tallenna sijaintia; lomakkeeseen se menee vain, jos itse viette sen sinne.
+Käytä sijaintianitai valitse kohta kartaltaOsoitehaku kulkee palvelimemme kautta Suomen ympäristökeskuksen (Syke) ja Viron Maa- ja Ruumiametin osoitepalveluihin ja aurinkotuotto EU:n PVGIS-palvelusta. Emme tallenna sijaintia; lomakkeeseen se menee vain, jos itse viette sen sinne.
 
 Pyydä maksuton kartoitus
 Koko kartta: Fingrid ja Elering rinnakkain
@@ -143,18 +143,26 @@ Kumppanisivullaralos.fi
 
 Elecnova
 Energiavarastojen ja mikroverkkojen valmistaja.
-Nestejäähdytetyt ulkokaapit
+Neste- ja ilmajäähdytteiset kaapit
+Hybridikaappi aurinkosähköön
 Konttivarastot
 Saarekekäyttö
 Lataus ja mikroverkot
 
 Lue lisää
-Sulje
+SuljeEnergiavarastokaappi
+Sama kaappi avattuna
+Ilmajäähdytteinen kaappi
+Hybridikaappi aurinkosähköön
+STS-kaappi saarekekäyttöön
+Konttivarasto
+
 Elecnova
 Kiina · saatavilla Suomen markkinoilla
-Energiavarastojen ja mikroverkkojen valmistaja. Nestejäähdytetyt ulkokaapit ja konttivarastot, jotka toimivat rinnan, sekä STS-kaappi saarekekäyttöön suunniteltuihin kohteisiin.
-Ratkaisut myös latausasemille ja mikroverkkoihin.
-Nestejäähdytetyt ulkokaapit
+Energiavarastojen ja mikroverkkojen valmistaja. Valikoimassa ovat neste- ja ilmajäähdytteiset ulkokaapit yrityksille, hybridikaappi aurinkosähköön ja konttivarastot. Kaapit ja kontit toimivat rinnan, ja saarekekäyttöön suunniteltuihin kohteisiin on STS-kaappi.
+Lokakuussa Elecnova oli esillä Energia 2026 -messuilla Tampereella. Ratkaisut myös latausasemille ja mikroverkkoihin.
+Neste- ja ilmajäähdytteiset kaapit
+Hybridikaappi aurinkosähköön
 Konttivarastot
 Saarekekäyttö
 Lataus ja mikroverkot
@@ -1162,8 +1170,8 @@ Energiavarastot useammalta valmistajaltaKaapit, kontit, hybridikaapit, mikroverk
 Valitsemme toimittajiemme valikoimasta mallin, joka sopii kohteen tehoon, tilaan ja käyttöön. Valmistaja ja malli nimetään tarjouksessa, ja vaihtoehdot vertaillaan samoilla luvuilla.
 
 Elecnova
-KiinaElecnovaEnergiavarastot ja mikroverkot · ulkokaapit, kontit ja STS-kaappi
-Nestejäähdytetyt ulkokaapit ja konttivarastot, jotka toimivat rinnan, sekä STS-kaappi saarekekäyttöön suunniteltuihin kohteisiin. Ratkaisut myös latausasemille ja mikroverkkoihin.
+KiinaElecnovaEnergiavarastot ja mikroverkot · kaapit, hybridikaapit, kontit ja STS-kaappi
+Neste- ja ilmajäähdytteiset ulkokaapit yrityksille, hybridikaappi aurinkosähköön ja konttivarastot. Kaapit ja kontit toimivat rinnan, ja saarekekäyttöön suunniteltuihin kohteisiin on STS-kaappi. Lokakuussa Elecnova oli esillä Energia 2026 -messuilla Tampereella. Ratkaisut myös latausasemille ja mikroverkkoihin.
 elecnova-ess.com
 
 EP Energy
@@ -1642,7 +1650,7 @@ Reservit: tarve kasvaa 1 200 MW viidessä vuodessa (Fingrid, 11.6.2025)
 Maksuton kirjallinen arvio näyttää, mitä teidän liittymänne voi tehdä: tehomaksu, pörssisähkö ja mallinnettu reservituotto tuotteittain.
 
 Käytä sijaintianitai valitse kohta kartaltaKohteen osoiteHae
-Osoitehaku kulkee palvelimemme kautta Maanmittauslaitokselle tai Viron Maa- ja Ruumiametille ja aurinkotuotto EU:n PVGIS-palvelusta. Emme tallenna sijaintia; lomakkeeseen se menee vain, jos itse viette sen sinne.
+Osoitehaku kulkee palvelimemme kautta Suomen ympäristökeskuksen (Syke) ja Viron Maa- ja Ruumiametin osoitepalveluihin ja aurinkotuotto EU:n PVGIS-palvelusta. Emme tallenna sijaintia; lomakkeeseen se menee vain, jos itse viette sen sinne.
 
 Lähteet: Fingrid: Sähkönkulutuksen liitettävyys kantaverkkoon väliaikaisesti tiukilla eteläisessä Suomessa · 21.1.2025; Fingrid: Reservimarkkinat tutuiksi -webinaari · 11.6.2025; Fingrid: Sähkövarastojen liityntärajoitusta jatketaan Etelä-Suomessa · 24.9.2025
 
@@ -1845,7 +1853,7 @@ Kenelle tietoja siirretään
 Emme myy emmekä luovuta tietoja markkinointiin. Verkkopalvelun ylläpito ja lomakkeiden vastaanotto: Netlify, Inc. (Yhdysvallat); siirto EU- ja ETA-alueen ulkopuolelle suojataan EU:n hyväksymillä siirtomekanismeilla. Muut tekniset käsittelijät ovat sähköpostipalvelu ja verkkotunnuspalvelu. Arviota laadittaessa jaamme kohteen tietoja aggregaattorille vain teidän tietenne.
 
 Kartan osoitehaku ja paikan tiedot
-Kun kirjoitatte osoitteen kartan hakukenttään, palvelimemme välittää hakutekstin Maanmittauslaitoksen (Suomi) tai Maa- ja Ruumiametin (Viro) osoitepalveluun ja valitun kohdan koordinaatit EU:n yhteisen tutkimuskeskuksen PVGIS-palveluun aurinkotuoton laskemiseksi. Myös lähikartan karttaruudut haetaan näistä palveluista palvelimemme kautta. Selaimenne ei ole yhteydessä näihin palveluihin, eikä IP-osoitettanne välitetä niille. Emme tallenna hakuja emmekä sijaintia. Selaimen sijaintia käytetään vain, jos painatte painiketta ja annatte luvan, ja se jää selaimeen. Lomakkeeseen paikka menee vain, jos itse viette sen sinne ja lähetätte lomakkeen.
+Kun kirjoitatte osoitteen kartan hakukenttään, palvelimemme välittää hakutekstin osoitepalveluihin: Suomessa Suomen ympäristökeskuksen (Syke) Ryhti-järjestelmään ja Virossa Maa- ja Ruumiametille. Valitun kohdan koordinaatit se välittää EU:n yhteisen tutkimuskeskuksen PVGIS-palveluun aurinkotuoton laskemiseksi. Lähikartan karttaruudut se hakee Maanmittauslaitokselta ja Maa- ja Ruumiametilta. Selaimenne ei ole yhteydessä näihin palveluihin, eikä IP-osoitettanne välitetä niille. Emme tallenna hakuja emmekä sijaintia. Selaimen sijaintia käytetään vain, jos painatte painiketta ja annatte luvan, ja se jää selaimeen. Lomakkeeseen paikka menee vain, jos itse viette sen sinne ja lähetätte lomakkeen.
 Markkinakatsaus
 Markkinakatsaus: sähköpostiosoitteenne, jonka annatte tilatessanne. Peruste on suostumuksenne, jonka voitte peruuttaa milloin tahansa vastaamalla viestiin tai kirjoittamalla osoitteeseen info@samaenergia.fi. Säilytämme osoitteen peruutukseen asti.
 Kuinka kauan säilytämme
@@ -1868,10 +1876,10 @@ Küsi tasuta hinnangut Kuidas see töötab+358 449 654 614
 1 300 MWNii palju juhitavat võimsust vajab Eesti Eleringi hinnangul 2030. aastaks, kuid olemas või kindlasti tulemas on sellest 751 MW.
 Allikas: Elering, varustuskindluse aruanne 2025, tabel 2.3 · 9.12.2025
 
-1Päikesepaneelid2Peakilp ja juhtseade3Energiasalvesti4Trafojaam
+1Päikesepaneelid2Peakilp, arvesti ja juhtseade3Energiasalvesti4Trafojaam
 
 Päikesepaneelid
-Peakilp ja juhtseade
+Peakilp, arvesti ja juhtseade
 Energiasalvesti
 Trafojaam
 
@@ -1892,7 +1900,7 @@ Põhivõrgust akuelemendini, kiht kihi haaval
 Kuus kihti turgu teie liitumise ümber.
 Iga samm lisab kaardile kihi, arvu ja allika.
 Objekti aadressOtsi
-Kasuta minu asukohtavõi vali koht kaardilAadressiotsing käib meie serveri kaudu Maa- ja Ruumiametisse või Soome Maanmittauslaitosesse ja päikesetoodang EL-i PVGIS-teenusest. Asukohta me ei salvesta; vormi läheb see ainult siis, kui te selle ise sinna viite.
+Kasuta minu asukohtavõi vali koht kaardilAadressiotsing käib meie serveri kaudu Maa- ja Ruumiameti ja Soome keskkonnainstituudi Syke aadressiteenustesse ning päikesetoodang EL-i PVGIS-teenusest. Asukohta me ei salvesta; vormi läheb see ainult siis, kui te selle ise sinna viite.
 
 VõrkKasvIlmSalvestidReservidTulevikTeie liitumine
 
@@ -1934,7 +1942,7 @@ Allikas: ENMAK 2035 indikatiivne maht Eleringi arengukavas 2026–2035 · 9.7.20
 Kus on selles pildis teie liitumine?
 Teie liitumine on juba olemas ja selle taga töötav salvesti ei vaja uut põhivõrguliitumist. Kirjalik hinnang paneb selle kaardile, iga arv allikaga.
 Objekti aadressOtsi
-Kasuta minu asukohtavõi vali koht kaardilAadressiotsing käib meie serveri kaudu Maa- ja Ruumiametisse või Soome Maanmittauslaitosesse ja päikesetoodang EL-i PVGIS-teenusest. Asukohta me ei salvesta; vormi läheb see ainult siis, kui te selle ise sinna viite.
+Kasuta minu asukohtavõi vali koht kaardilAadressiotsing käib meie serveri kaudu Maa- ja Ruumiameti ja Soome keskkonnainstituudi Syke aadressiteenustesse ning päikesetoodang EL-i PVGIS-teenusest. Asukohta me ei salvesta; vormi läheb see ainult siis, kui te selle ise sinna viite.
 
 Küsi tasuta hinnangut
 Kogu kaart: Elering ja Fingrid kõrvuti
@@ -1997,18 +2005,26 @@ Partnerite lehelralos.fi
 
 Elecnova
 Energiasalvestite ja mikrovõrkude tootja.
-Vedelikjahutusega väliskapid
+Vedelik- ja õhkjahutusega kapid
+Hübriidkapp päikeseelektrile
 Konteinersalvestid
 Saartalitlus
 Laadimine ja mikrovõrgud
 
 Loe lähemalt
-Sulge
+SulgeSalvestikapp
+Sama kapp avatuna
+Õhkjahutusega kapp
+Hübriidkapp päikeseelektrile
+STS-kapp saartalitluseks
+Konteinersalvesti
+
 Elecnova
 Hiina
-Energiasalvestite ja mikrovõrkude tootja. Vedelikjahutusega väliskapid ja konteinersalvestid, mis töötavad paralleelselt, ning STS-kapp saartalitluseks projekteeritud objektidele.
-Lahendused ka laadimisjaamadele ja mikrovõrkudele.
-Vedelikjahutusega väliskapid
+Energiasalvestite ja mikrovõrkude tootja. Valikus on vedelik- ja õhkjahutusega väliskapid ettevõtetele, hübriidkapp päikeseelektrile ja konteinersalvestid. Kapid ja konteinerid töötavad paralleelselt. Saartalitluseks projekteeritud objektidele on STS-kapp.
+Oktoobris oli Elecnova väljas Tamperes toimunud messil Energia 2026. Lahendused ka laadimisjaamadele ja mikrovõrkudele.
+Vedelik- ja õhkjahutusega kapid
+Hübriidkapp päikeseelektrile
 Konteinersalvestid
 Saartalitlus
 Laadimine ja mikrovõrgud
@@ -2942,8 +2958,8 @@ Energiasalvestid mitmelt tootjaltKapid, konteinerid, hübriidkapid, mikrovõrgud
 Valime tarnijate valikust mudeli, mis sobib objekti võimsuse, ruumi ja kasutusega. Tootja ja mudel nimetatakse pakkumises ning variante võrreldakse samade numbritega.
 
 Elecnova
-HiinaElecnovaEnergiasalvestid ja mikrovõrgud · väliskapid, konteinerid ja STS-kapp
-Vedelikjahutusega väliskapid ja konteinersalvestid, mis töötavad paralleelselt, ning STS-kapp saartalitluseks projekteeritud objektidele. Lahendused ka laadimisjaamadele ja mikrovõrkudele.
+HiinaElecnovaEnergiasalvestid ja mikrovõrgud · kapid, hübriidkapid, konteinerid ja STS-kapp
+Vedelik- ja õhkjahutusega väliskapid ettevõtetele, hübriidkapp päikeseelektrile ja konteinersalvestid. Kapid ja konteinerid töötavad paralleelselt. Saartalitluseks projekteeritud objektidele on STS-kapp. Oktoobris oli Elecnova väljas Tamperes toimunud messil Energia 2026. Lahendused ka laadimisjaamadele ja mikrovõrkudele.
 elecnova-ess.com
 
 EP Energy
@@ -3421,7 +3437,7 @@ Tiputarbimine: rekord 1 723 MW 5.2.2026 (Elering, arengukava 2026–2035, 9.7.20
 Tasuta kirjalik hinnang näitab, mida teie liitumine suudab: võimsustasu, börsihind ja modelleeritud reservitulu toodete kaupa.
 
 Kasuta minu asukohtavõi vali koht kaardilObjekti aadressOtsi
-Aadressiotsing käib meie serveri kaudu Maa- ja Ruumiametisse või Soome Maanmittauslaitosesse ja päikesetoodang EL-i PVGIS-teenusest. Asukohta me ei salvesta; vormi läheb see ainult siis, kui te selle ise sinna viite.
+Aadressiotsing käib meie serveri kaudu Maa- ja Ruumiameti ja Soome keskkonnainstituudi Syke aadressiteenustesse ning päikesetoodang EL-i PVGIS-teenusest. Asukohta me ei salvesta; vormi läheb see ainult siis, kui te selle ise sinna viite.
 
 Allikad: Elering: Tasakaalustamisvõimsuse kulu · 29.6.2026; Elering, AST, Litgrid: Baltic LFC block FRR dimensioning forecast 2026–2035 · 29.7.2025; Elering: Eesti elektriülekandevõrgu arengukava 2026–2035 · 9.7.2026; Elering: 2025 turu kokkuvõte · 4.2.2026
 
@@ -3624,7 +3640,7 @@ Kellele andmeid edastatakse
 Me ei müü ega anna andmeid turunduseks. Veebimajutus ja vormide vastuvõtt: Netlify, Inc. (USA); edastust väljapoole EL-i ja EMP-d kaitstakse EL-i heakskiidetud edastusmehhanismidega. Teised tehnilised volitatud töötlejad on e-postiteenus ja domeeniteenus. Hinnangu koostamisel jagame objekti andmeid agregaatoriga ainult teie teadmisel.
 
 Kaardi aadressiotsing ja asukoha andmed
-Kui kirjutate aadressi kaardi otsinguväljale, edastab meie server otsingu teksti Maa- ja Ruumiameti (Eesti) või Soome Maanmittauslaitose aadressiteenusesse ning valitud koha koordinaadid Euroopa Komisjoni Teadusuuringute Ühiskeskuse PVGIS-teenusesse päikesetoodangu arvutamiseks. Ka lähikaardi kaardiruudud laadib meie server nendest teenustest. Teie brauser nende teenustega ei suhtle ja teie IP-aadressi neile ei edastata. Me ei salvesta otsinguid ega asukohta. Brauseri asukohta kasutatakse ainult siis, kui vajutate nuppu ja annate loa, ning see jääb brauserisse. Vormi läheb asukoht ainult siis, kui te selle ise sinna viite ja vormi saadate.
+Kui kirjutate aadressi kaardi otsinguväljale, edastab meie server otsingu teksti aadressiteenustesse: Eestis Maa- ja Ruumiametile ja Soomes keskkonnainstituudi Syke süsteemi Ryhti. Valitud koha koordinaadid edastab see Euroopa Komisjoni Teadusuuringute Ühiskeskuse PVGIS-teenusesse päikesetoodangu arvutamiseks. Lähikaardi kaardiruudud laadib meie server Maa- ja Ruumiametist ja Soome Maanmittauslaitosest. Teie brauser nende teenustega ei suhtle ja teie IP-aadressi neile ei edastata. Me ei salvesta otsinguid ega asukohta. Brauseri asukohta kasutatakse ainult siis, kui vajutate nuppu ja annate loa, ning see jääb brauserisse. Vormi läheb asukoht ainult siis, kui te selle ise sinna viite ja vormi saadate.
 Turuülevaade
 Turuülevaade: teie e-posti aadress, mille annate tellimisel. Aluseks on teie nõusolek, mille võite igal ajal tagasi võtta, vastates kirjale või kirjutades aadressile info@samaenergia.fi. Säilitame aadressi kuni loobumiseni.
 Kui kaua säilitame

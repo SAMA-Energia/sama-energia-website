@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 515 katselmoitavaa riviä — 399 uutta, 116 muutettua, joista **59 on merkitty ⚠**. Muuttumattomia ohitettiin 625.
+**Yhteenveto:** 582 katselmoitavaa riviä — 447 uutta, 135 muutettua, joista **66 on merkitty ⚠**. Muuttumattomia ohitettiin 627.
 
 **Huomio:** 2 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -56,7 +56,7 @@ Vastine mainissa: `/et/`
 - [ ] `li` **muutettu** — Päikesepaneelid
       - main: Päikeseelekter
       - **Korjaus:**
-- [ ] `li` **uusi** — Peakilp ja juhtseade
+- [ ] `li` **uusi** — Peakilp, arvesti ja juhtseade
       - **Korjaus:**
 - [ ] `li` **muutettu** — Energiasalvesti
       - main: Energiasalvestid
@@ -112,7 +112,7 @@ Vastine mainissa: `/et/`
       - **Korjaus:**
 - [ ] `button` **uusi** — Kasuta minu asukohta
       - **Korjaus:**
-- [ ] `p` **muutettu** — Aadressiotsing käib meie serveri kaudu Maa- ja Ruumiametisse või Soome Maanmittauslaitosesse ja päikesetoodang EL-i PVGIS-teenusest. Asukohta me ei salvesta; vormi läheb see ainult siis, kui te selle ise sinna viite.
+- [ ] `p` **muutettu** — Aadressiotsing käib meie serveri kaudu Maa- ja Ruumiameti ja Soome keskkonnainstituudi Syke aadressiteenustesse ning päikesetoodang EL-i PVGIS-teenusest. Asukohta me ei salvesta; vormi läheb see ainult siis, kui te selle ise sinna viite.
       - main: Liitumise eest maksate iga kuu. Sama liitumine võib ka teile tootma hakata – kui selle taga on salvesti, energia tootmine ja nutikas juhtimine, mis otsustab teie kasuks. Meie anname teile selleks kolm asja:
       - **Korjaus:**
 - [ ] `label` **uusi** — Võrk
@@ -214,7 +214,7 @@ Vastine mainissa: `/et/`
       - **Korjaus:**
 - [ ] `p` **uusi** — pool päeva
       - **Korjaus:**
-- [ ] `p` **muutettu** — Elektrik käib nädala jooksul kohal ning mõõdab kaablitee, kilbi ja paigalduskoha. Kinnitatud hinnaga pakkumise saate 2–5 tööpäevaga.
+- [ ] `p` **muutettu** — Elektrik käib nädala jooksul kohal ning mõõdab kaablitee, kilbi ja paigalduskoha. Soovi korral mõõdame katuse drooniga ja kavandame päikesepaneelide paigutuse. Kinnitatud hinnaga pakkumise saate 2–5 tööpäevaga.
       - main: Elektrik käib kohal, mõõdab kaablitee, kilbi ja paigalduskoha ning kinnitab hinna.
       - **Korjaus:**
 - [ ] `p` **uusi** — teie ajakava
@@ -239,12 +239,185 @@ Vastine mainissa: `/et/`
 - [ ] `p` **muutettu** — Oleme koostööks välja valinud parimatest parimad. Valiku aluseks oli see, mis loob ettevõtte investeeringule suurima väärtuse.
       - main: Arvestitagune süsteem – salvesti, tootmine ja juhtimine teie liitumise taga, teie poolel arvestit. Mitmeturuteenus – agregaator müüb sama salvesti võimsust mitmel turul korraga: teie tarbimise optimeerimine, arbitraaž börsil, reservid Eleringile. Agregaator – ettevõte, kes koondab mitme objekti salvestid üheks pakkumiseks ja maksab tulu välja. Valmisolekutasu – tasu selle eest, et salvesti on Eleringile kättesaadav, ka siis, kui ta ei tööta. Arbitraaž – ostmine odaval tunnil, müümine või kasutamine kallil.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Investeeringu väärtus tuleb paljudest osadest. Kui pakume valikut eri tootjatest, toodetest ja teenustest, saame igale kliendile koostada rätseplahenduse, mis loob tema kinnistule kõige rohkem väärtust. Lähtume teie otsuse kriteeriumidest, mitte ühe seadme müügist.
+- [ ] `p` **muutettu** — Investeeringu väärtus tuleb paljudest osadest. Kui pakume valikut eri tootjatest, toodetest ja teenustest, saame igale kliendile koostada rätseplahenduse, mis loob tema kinnistule kõige rohkem väärtust. Lähtume teie otsuse kriteeriumidest, mitte ühe seadme müügist. Partnerite kogu valik on teie käsutuses.
       - main: Arvestitagune süsteem – salvesti, tootmine ja juhtimine teie liitumise taga, teie poolel arvestit. Mitmeturuteenus – agregaator müüb sama salvesti võimsust mitmel turul korraga: teie tarbimise optimeerimine, arbitraaž börsil, reservid Eleringile. Agregaator – ettevõte, kes koondab mitme objekti salvestid üheks pakkumiseks ja maksab tulu välja. Valmisolekutasu – tasu selle eest, et salvesti on Eleringile kättesaadav, ka siis, kui ta ei tööta. Arbitraaž – ostmine odaval tunnil, müümine või kasutamine kallil.
       - **Korjaus:**
-- [ ] ⚠ `figcaption` **muutettu** — Soleron Energy
-      - main: Agregaator: Soleron Energy
+- [ ] `p` **muutettu** — Soome energiasalvestite ja päikeseelektrijaamade tarnija.
+      - main: Päikeseelekter, tööstuslikud energiasalvestid ja reservituru liitumine ettevõtetele Eestis ja Soomes.
+      - **Korjaus:**
+- [ ] `li` **muutettu** — Tööstuslikud energiasalvestid
+      - main: Energiasalvestid
+      - **Korjaus:**
+- [ ] `li` **uusi** — Mitu akuvalikut
+      - **Korjaus:**
+- [ ] `li` **muutettu** — Päikeseelektrijaamad
+      - main: Päikeseelekter
+      - **Korjaus:**
+- [ ] `li` **muutettu** — Mikroinverterlahendused
+      - main: Lahendused
+      - **Korjaus:**
+
+### #pd-ralos
+
+- [ ] `p` **uusi** — Soome · Tampere · asutatud 2017
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Soome päikeseelektri ja energiasalvestite tarnija: tööstuslikud energiasalvestid sise- ja välispaigalduseks ning päikeseelektrijaamad ettevõtetele.
+      - main: Päikeseelekter, tööstuslikud energiasalvestid ja reservituru liitumine ettevõtetele Eestis ja Soomes.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Salvestitele on mitu akuvalikut ja päikeseelektrijaamadele ka mikroinverterlahendused.
+      - main: Energiasalvestid, konteinerid, laadimine, mikrovõrgud ja päikeseelekter partneritelt. Meie paneme terviku kokku ja vastutame projekti eest algusest lõpuni.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Partnerite lehelralos.fi
+      - **Korjaus:**
+
+### #valik
+
+- [ ] ⚠ `h3` **uusi** — Elecnova
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `p` **uusi** — Energiasalvestite ja mikrovõrkude tootja.
+      - **Korjaus:**
+- [ ] `li` **uusi** — Vedelik- ja õhkjahutusega kapid
+      - **Korjaus:**
+- [ ] `li` **muutettu** — Hübriidkapp päikeseelektrile
+      - main: Päikeseelekter
+      - **Korjaus:**
+- [ ] `li` **muutettu** — Konteinersalvestid
+      - main: Energiasalvestid
+      - **Korjaus:**
+- [ ] `li` **uusi** — Saartalitlus
+      - **Korjaus:**
+- [ ] `li` **uusi** — Laadimine ja mikrovõrgud
+      - **Korjaus:**
+
+### #pd-elecnova
+
+- [ ] `figcaption` **uusi** — Salvestikapp
+      - **Korjaus:**
+- [ ] `figcaption` **uusi** — Sama kapp avatuna
+      - **Korjaus:**
+- [ ] `figcaption` **uusi** — Õhkjahutusega kapp
+      - **Korjaus:**
+- [ ] `figcaption` **uusi** — STS-kapp saartalitluseks
+      - **Korjaus:**
+- [ ] `figcaption` **muutettu** — Konteinersalvesti
+      - main: Energiasalvestid
+      - **Korjaus:**
+- [ ] `p` **uusi** — Hiina
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Energiasalvestite ja mikrovõrkude tootja. Valikus on vedelik- ja õhkjahutusega väliskapid ettevõtetele, hübriidkapp päikeseelektrile ja konteinersalvestid. Kapid ja konteinerid töötavad paralleelselt. Saartalitluseks projekteeritud objektidele on STS-kapp.
+      - main: Energiasalvestid, konteinerid, laadimine, mikrovõrgud ja päikeseelekter partneritelt. Meie paneme terviku kokku ja vastutame projekti eest algusest lõpuni.
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Oktoobris oli Elecnova väljas Tamperes toimunud messil Energia 2026. Lahendused ka laadimisjaamadele ja mikrovõrkudele.
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `p` **uusi** — Partnerite lehelelecnova-ess.com
+      - **Korjaus:**
+
+### #valik
+
+- [ ] `h3` **uusi** — EP Energy
+      - **Korjaus:**
+- [ ] `p` **uusi** — Energiasalvestid, teisaldatav energia ja laadimine. Samalt tootjalt ka tõstukid ja muu tehnika.
+      - **Korjaus:**
+- [ ] `li` **muutettu** — Salvestikapid
+      - main: Energiasalvestid
+      - **Korjaus:**
+- [ ] `li` **uusi** — Teisaldatavad energiaseadmed
+      - **Korjaus:**
+- [ ] `li` **uusi** — Kiirlaadijad
+      - **Korjaus:**
+- [ ] `li` **uusi** — Tõstukid ja tehnika
+      - **Korjaus:**
+
+### #pd-ep-energy
+
+- [ ] `p` **uusi** — Hiina · Anji, Zhejiangi provints · oma tehas ja arenduskeskus
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Salvestikapid ja konteinersalvestid ettevõtetele, teisaldatavad energiaseadmed ehitusplatsidele ja üritustele ning akuga ja otse võrgust toidetavad kiirlaadijad.
+      - main: Meie. Tehnilised tingimused ja võrguettevõtja seisukoht on kirjalikult käes enne, kui te midagi allkirjastate, mitte pärast.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Samalt tootjalt ka tõstukid ja muu tehnika.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Partnerite lehelep-unipower.com
+      - **Korjaus:**
+
+### #valik
+
+- [ ] ⚠ `h3` **uusi** — Avant Power
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Energiasalvestid ja mikrovõrgud Avanti kontsernist. Vajadusel Avanti kogu valik.
+      - main: Energiasalvestid, konteinerid, laadimine, mikrovõrgud ja päikeseelekter partneritelt. Meie paneme terviku kokku ja vastutame projekti eest algusest lõpuni.
+      - **Korjaus:**
+- [ ] `li` **uusi** — Mikrovõrgud
+      - **Korjaus:**
+- [ ] `li` **uusi** — Mobiilne energia ja laadimine
+      - **Korjaus:**
+- [ ] `li` **muutettu** — Võrguvälised lahendused
+      - main: Lahendused
+      - **Korjaus:**
+
+### #pd-avant-power
+
+- [ ] `p` **uusi** — Soome · Ylöjärvi · Avanti kontsern
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Mikrovõrk, mis ühendab energiasalvesti, kiirlaadimise, oma tootmise ja juhtimise üheks alalisvooluvõrguks: tanklatele, depoodele, logistikale, tööstusele ja põllumajandusettevõtetele.
+      - main: Liitumise eest maksate iga kuu. Sama liitumine võib ka teile tootma hakata – kui selle taga on salvesti, energia tootmine ja nutikas juhtimine, mis otsustab teie kasuks. Meie anname teile selleks kolm asja:
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Lisaks teisaldatav energiaseade ja laadimine kohtades, kus elektrivõrgust ei piisa. Vajadusel Avanti kogu valik.
+      - main: Energiasalvestid, konteinerid, laadimine, mikrovõrgud ja päikeseelekter partneritelt. Meie paneme terviku kokku ja vastutame projekti eest algusest lõpuni.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Partnerite lehelavantpower.fi
+      - **Korjaus:**
+
+### #valik
+
+- [ ] ⚠ `h3` **uusi** — Scanoffice Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `p` **uusi** — Soojuspumpade, päikeseelektri ja laadimise maaletooja.
+      - **Korjaus:**
+- [ ] `li` **uusi** — Õhksoojuspumbad
+      - **Korjaus:**
+- [ ] `li` **uusi** — Õhk-vesisoojuspumbad
+      - **Korjaus:**
+- [ ] `li` **uusi** — Maasoojuspumbad
+      - **Korjaus:**
+- [ ] `li` **uusi** — Laadimisjaamad
+      - **Korjaus:**
+- [ ] `li` **uusi** — Ventilatsioon
+      - **Korjaus:**
+
+### #pd-scanoffice
+
+- [ ] `p` **uusi** — Soome · Espoo · asutatud 1984 · ligi sada spetsialisti
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Puhta energia seadmete maaletooja ja hulgimüüja: õhk-, õhk-vesi- ja maasoojuspumbad, päikeseelektrisüsteemid, ventilatsiooniseadmed ja elektriautode laadimisjaamad.
+      - main: Energiasalvestid, konteinerid, laadimine, mikrovõrgud ja päikeseelekter partneritelt. Meie paneme terviku kokku ja vastutame projekti eest algusest lõpuni.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Partnerite lehelscanoffice.fi
+      - **Korjaus:**
+
+### #valik
+
+- [ ] `p` **uusi** — Agregaator ja energiajuhtimine Eleringi reserviturul.
+      - **Korjaus:**
+- [ ] `li` **uusi** — Agregaator
+      - **Korjaus:**
+- [ ] `li` **uusi** — Energiajuhtimine
+      - **Korjaus:**
+
+### #pd-soleron
+
+- [ ] `p` **uusi** — Eesti · agregaator Eleringi reserviturul
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Eesti ettevõte, mis keskendub energiasalvestuslahendustele ja energiajuhtimissüsteemidele: oma EMS-tarkvara salvestite ja tootmisüksuste juhtimiseks ning agregeerimine Eleringi sagedusreservidesse.
+      - main: Sõltumatu energia juhindub sellest, et otsused teie arvesti taga tehakse teie huvides ja automaatselt. Süsteem – energiasalvesti, energia tootmine ja nutikas juhtimine – teeb kasumlikumaid otsuseid teie kinnistu hüvanguks, ilma et keegi teie majast peaks midagi tegema.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Lisaks liitiumakudel põhinevate salvestite import, projekteerimine, paigaldus ja hooldus.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Partnerite lehelsoleronenergy.ee
       - **Korjaus:**
 
 ### #meeskond
@@ -1307,10 +1480,30 @@ Vastine mainissa: `/et/meist/`
 - [ ] ⚠ `li` **uusi** — Elecnovaväliskapid ja konteinersalvestid
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
+- [ ] `li` **uusi** — EP Energysalvestikapid ja konteinersalvestid
+      - **Korjaus:**
+- [ ] ⚠ `li` **muutettu** — Avant Powerenergiasalvestid ja mikrovõrgud
+      - main: Energiasalvestid, laadimine ja mikrovõrgud
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
 - [ ] ⚠ `li` **uusi** — Ralos Oypäikeseelektrijaamad ettevõtetele
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Scanoffice Oypäikesepaneelid maaletoojalt
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
 - [ ] `li` **uusi** — SAMApaigaldus katusele, maale ja katusesse integreerituna
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Laadimine ja soojuspumbad
+      - **Korjaus:**
+- [ ] `li` **uusi** — EP Energyteisaldatavad energiaseadmed ja kiirlaadijad
+      - **Korjaus:**
+- [ ] ⚠ `li` **muutettu** — Avant Powermikrovõrgud, teisaldatav energia ja laadimine
+      - main: Energiasalvestid, laadimine ja mikrovõrgud
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Scanoffice Oyõhk-, õhk-vesi- ja maasoojuspumbad ning laadimisjaamad
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
 - [ ] `h3` **uusi** — Energiajuhtimine ja reserviturg
       - **Korjaus:**
@@ -1501,7 +1694,7 @@ Vastine mainissa: `/et/andmekaitse/`
       - **Korjaus:**
 - [ ] `h2` **uusi** — Kaardi aadressiotsing ja asukoha andmed
       - **Korjaus:**
-- [ ] `p` **muutettu** — Kui kirjutate aadressi kaardi otsinguväljale, edastab meie server otsingu teksti Maa- ja Ruumiameti (Eesti) või Soome Maanmittauslaitose aadressiteenusesse ning valitud koha koordinaadid Euroopa Komisjoni Teadusuuringute Ühiskeskuse PVGIS-teenusesse päikesetoodangu arvutamiseks. Ka lähikaardi kaardiruudud laadib meie server nendest teenustest. Teie brauser nende teenustega ei suhtle ja teie IP-aadressi neile ei edastata. Me ei salvesta otsinguid ega asukohta. Brauseri asukohta kasutatakse ainult siis, kui vajutate nuppu ja annate loa, ning see jääb brauserisse. Vormi läheb asukoht ainult siis, kui te selle ise sinna viite ja vormi saadate.
+- [ ] `p` **muutettu** — Kui kirjutate aadressi kaardi otsinguväljale, edastab meie server otsingu teksti aadressiteenustesse: Eestis Maa- ja Ruumiametile ja Soomes keskkonnainstituudi Syke süsteemi Ryhti. Valitud koha koordinaadid edastab see Euroopa Komisjoni Teadusuuringute Ühiskeskuse PVGIS-teenusesse päikesetoodangu arvutamiseks. Lähikaardi kaardiruudud laadib meie server Maa- ja Ruumiametist ja Soome Maanmittauslaitosest. Teie brauser nende teenustega ei suhtle ja teie IP-aadressi neile ei edastata. Me ei salvesta otsinguid ega asukohta. Brauseri asukohta kasutatakse ainult siis, kui vajutate nuppu ja annate loa, ning see jääb brauserisse. Vormi läheb asukoht ainult siis, kui te selle ise sinna viite ja vormi saadate.
       - main: Kontaktivormil antud andmed: nimi, ettevõte, e-post, telefon, objekti asukoht, liitumis- ja tarbimisandmed ning sõnum. Lisaks veebilehe tehniline serverilogi (sh IP-aadress ja ajatempel), mille majutusteenus toodab teenuse osutamiseks ja turvalisuse tagamiseks. Sait ei kasuta küpsiseid, analüütikat ega salvestatud eelistusi.
       - **Korjaus:**
 

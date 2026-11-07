@@ -557,3 +557,43 @@ Madis 6.11.2026 (vestlus C, vastaukset kysymyksiin; päätöslokiin lisättävä
   Maa- ja Ruumiametista; PVGIS ja MML eivät toimi esikatselussa. Suomen osoitteet vaativat edelleen MML_API_KEY:n Netlifyyn.
 - AVOIN: natiivitarkistus (FI Martin, ET Madis) paneelien teksteille, Avantin ET-tekstille ja vaiheen 3 lauseelle; Garen
   "pääkumppani"-lähde; yrityksen oma puhelinnumero.
+
+## v52 — Madiksen kommentit 7.11.2026 klo 15.34 (haara v35-uusi-ilme)
+
+- Salvestin ja verkon kytkentä (Madis: "make sure that the connection between the batteries and the grid is depicted correctly"):
+  hero ja prosessivideo (scripts/stills/hero3d.js). Salvestinkaapeli ei enää kulje perustuksen etureunaa pitkin: kaapelit lähtevät
+  kaappien takaa (Ralos v2.1 §6.2 liitäntä kaapin takana, §5.2 putket valettu perustukseen, kaapelit kaapin pohjan läpi), kulkevat
+  seinän viertä ja menevät sähkötilan oven alta pääkeskukseen yhdessä aurinkokaapelin ja muuntamon kaapelin kanssa. `EL.brightPts`
+  seinän puolella (`XB = ROW.wallX + 0.28`), `EL.stubPts` = yksi lyhyt haara per kaappi takaa runkoon (näkyy animaatiossa 25,7 s
+  jälkeen), oven lehti avattu 174° (`DOOR.open = 3.04`), jotta reitti oven alta näkyy. Topologia (projektin muistiinpanot
+  Junkars/Ralos): varasto omana lähtönä pääkeskukseen, mittari ja virtamuuntajat liittymäpisteessä, ohjausyksikkö lukee mittaria;
+  varasto on mittarin takana. Herotunniste 2 FI "Pääkeskus, mittari ja ohjausyksikkö" / ET "Peakilp, arvesti ja juhtseade" (mahtuu
+  1280, 1366 ja 1920 px leveydelle tekstin viereen); alt-tekstit ja llms.txt päivitetty. Cycles uudelleen (64 näytettä) ja
+  prosessivideo + pysäytyskuvat uudelleen.
+- Osoitehaku (Madis: "the search bar for the address did not work for me"): kaksi syytä. (1) Suomen haku tarvitsi MML_API_KEY:n,
+  jota ei ole → aina "avautuu pian". (2) Esikatselutiedoston 6.11. välikappale käynnistyi vain `file:`-osoitteessa; sovelluksen
+  esikatselu ei ole file:, joten Virokaan ei toiminut. Korjaus: netlify/lib/osoite.mjs = yksi hakukoodi palvelimelle ja
+  esikatselulle. Suomi = Suomen ympäristökeskuksen (Syke) Ryhti-järjestelmän avoimet osoitteet (OGC API Features,
+  paikkatiedot.ymparisto.fi/…/ryhti_building/…/open_address, CC BY 4.0, ei avainta, CORS *): kadunnimen alku (ILIKE, suomi tai
+  ruotsi), numero, jakokirjain ja kunta (postitoimipaikka tai kuntanumero; netlify/lib/kunnat.mjs = Tilastokeskus Kunnat 2026,
+  scripts/kaart/build_kunnat.py). Pelkkä kunnan nimi → `need: 'katu'` ja ohje kirjoittaa katu ja numero (Ryhtissä ei kuntakeskuksia;
+  Overpass estetty työtilan välityspalvelimella, ei kierretty). MML:n geokoodaus poistettu; MML_API_KEY vain lähikartan ruuduille.
+  Hakulistan alla lähde (Syke vaatii lisenssinantajan ja aineiston nimen). Tietosuojateksti ja kartan lyhyt teksti (FI/ET,
+  scripts/kaart/build_page.py) päivitetty: Syke + Maa- ja Ruumiamet, ruudut Maanmittauslaitos + Maa- ja Ruumiamet.
+  build-standalone.py: välikappale AINA päällä esikatselutiedostossa, upottaa osoite.mjs + kunnat.mjs (import/export-rivit pois).
+  Testattu Nodella oikeita rajapintoja vasten 7.11.2026: "Teollisuustie 5, Seinäjoki", pienet kirjaimet, "Mannerheimvägen 1,
+  Helsingfors", "Nummelantie 10, Vihti" (postitoimipaikka VIHTI, kunta 927), "Kauppakatu 12a", postinumero, "Tööstuse 5, Rapla".
+- AVOIN (ennen mainia): Syke pyytää pitkäaikaiselle sovellukselle oman tunnisteen (ryhti.syke.fi, "Instructions for using open
+  interfaces in the Ryhti system"); tunnisteen välitystapaa ei ole sivulla — pyydetään Sykeltä ja lisätään osoite.mjs:ään.
+- Elecnovan kuvat (Madis: "pictures … could be better, especially for Elecnova … many different types of batteries, not just
+  container solutions"). Lähde: elecnovapower.com (Jiangsu Elecnova Electric, Elecnovan oma sivusto, ei bottiseinää; luettu
+  7.11.2026): tuoteperheen kuvat /uploads/image/20260203/ (ilmajäähdytteinen kaappi, hybridikaappi, STS-kaappi, kontti) ja
+  uutisen "Elecnova Showcases C&I Energy Storage Solutions at ENERGIA 2026 in Finland" (25.10.2026) tuotekuvat (kaappi kiinni ja
+  auki). Lupa: Elecnova sallii median ja tietojen käytön (Madis 23.10.2026, projektin muistiinpano v34). elecnova-ess.com,
+  DirectIndustry ja Made-in-China eivät auenneet (Cloudflare 403 / lupapyyntö ilman vastausta) — ei kierretty. Kahden kaapin
+  mallimerkintärivi ("… ECO-Energy Storage System …") poistettu (sääntö: ei mallinimiä kuvissa). Uudet tiedostot
+  assets/kumppanit/elecnova-2…6.webp ja elecnova-sarja.webp (kumppanisivun rivikuva: kontti, kaapit, hybridikaappi, STS-kaappi).
+  Etusivun kortti n3 (kaappikuva, hybridikaappi, kontti), paneelissa `.k-pgal` = kuusi tyyppiä kuvateksteineen (3 saraketta,
+  myös puhelimella). HUOM: `.k-pg` on jo prosessiosion luokka — älä käytä sitä muualla. Tekstit: neste- ja ilmajäähdytteiset
+  ulkokaapit, hybridikaappi aurinkosähköön, kontit, STS-kaappi; "Lokakuussa Elecnova oli esillä Energia 2026 -messuilla
+  Tampereella" (lähde yllä).

@@ -1,10 +1,13 @@
 /* SAMA Energia — kartan paikkapalvelu (perustajan päätös 6.11.2026, Madis: valtion rekisterit oman funktion kautta).
    Selain puhuu vain tälle omalle osoitteelle; funktio kysyy:
-     - osoitehaku: Viro Maa- ja Ruumiamet In-ADS (ei avainta), Suomi Maanmittauslaitos geokoodaus (MML_API_KEY ympäristömuuttujana);
+     - osoitehaku (netlify/lib/osoite.mjs, v52 7.11.2026): Viro Maa- ja Ruumiamet In-ADS, Suomi Suomen ympäristökeskuksen (Syke)
+       Ryhti-osoitteet (CC BY 4.0); kumpikaan ei vaadi avainta;
      - aurinkotuotto: EU JRC PVGIS (PVcalc, 1 kWp, häviöt 14 %, optimikulma);
-     - taustakartan ruudut: Maa- ja Ruumiamet (hallkaart, GMC) ja MML (taustakartta, WGS84 Pseudo-Mercator).
+     - taustakartan ruudut: Maa- ja Ruumiamet (hallkaart, GMC) ja MML (taustakartta, WGS84 Pseudo-Mercator, MML_API_KEY ympäristömuuttujana).
    Ei lokitusta, ei tallennusta, ei evästeitä. Käyttäjän IP-osoite ei välity lähteille (pyyntö lähtee palvelimelta).
    Haku ja PVGIS: POST /api/paikka { op: 'haku', q, lang } | { op: 'pv', lon, lat }. Ruudut: GET /api/ruutu/{ee|fi}/{z}/{x}/{y}.png */
+import { search as osoitehaku } from '../lib/osoite.mjs';
+
 export const config = { path: ['/api/paikka', '/api/ruutu/*'] };
 
 const UA = 'SAMA-Energia-kartta/1.0 (+https://samaenergia.fi)';
@@ -28,34 +31,8 @@ export default async (req) => {
 };
 
 async function search({ q, lang }) {
-  q = String(q || '').replace(/[\u0000-\u001f]/g, ' ').trim().slice(0, 120);
-  if (q.length < 3) return json({ results: [], fi: !!KEY() });
-  const jobs = [ee(q)];
-  if (KEY()) jobs.push(fi(q));
-  const res = await Promise.allSettled(jobs), out = [];
-  res.forEach((r) => { if (r.status === 'fulfilled') out.push(...r.value); });
-  const home = lang === 'et' ? 'EE' : 'FI';
-  out.sort((a, b) => (a.c === home ? 0 : 1) - (b.c === home ? 0 : 1) || a.r - b.r);
-  return json({ results: out.slice(0, 8).map(({ r, ...x }) => x), fi: !!KEY() });
-}
-async function ee(q) {
-  const r = await get('https://inaadress.maaamet.ee/inaadress/gazetteer?results=6&address=' + encodeURIComponent(q));
-  if (!r.ok) return [];
-  const d = await r.json();
-  return (d.addresses || []).filter((a) => a.viitepunkt_l && a.viitepunkt_b).map((a, i) => ({
-    t: a.ipikkaadress || a.pikkaadress, lon: +(+a.viitepunkt_l).toFixed(5), lat: +(+a.viitepunkt_b).toFixed(5), k: a.liikVal || '', c: 'EE', r: i
-  }));
-}
-async function fi(q) {
-  const u = 'https://avoin-paikkatieto.maanmittauslaitos.fi/geocoding/v2/pelias/search?size=6&crs=EPSG:4326&lang=fin&sources=addresses,geographic-names&text=' + encodeURIComponent(q);
-  const r = await get(u, { Authorization: basic(KEY()) });
-  if (!r.ok) return [];
-  const d = await r.json();
-  return (d.features || []).filter((f) => f.geometry && f.geometry.coordinates).map((f, i) => {
-    const p = f.properties || {};
-    const t = p.label || p['label:fin'] || [p.katunimi, p.katunumero].filter(Boolean).join(' ') + (p.kuntanimiFin ? ', ' + p.kuntanimiFin : '') || p.name;
-    return { t, lon: +(+f.geometry.coordinates[0]).toFixed(5), lat: +(+f.geometry.coordinates[1]).toFixed(5), k: p.source || '', c: 'FI', r: i };
-  });
+  const getJson = async (u) => { const r = await get(u, {}, 8000); return r.ok ? r.json() : null; };
+  return json(await osoitehaku(q, lang, getJson));
 }
 
 async function pv({ lon, lat }) {
