@@ -2222,7 +2222,7 @@ function lift(){var wide=false;try{wide=matchMedia('(min-width:1100px)').matches
 lift();
 function start(){if(c)return;c=window.SAMA_BOOT();if(document.querySelector('.k-live .cv-map')){loadMap();c._mapCmp=false;c._mapCur='vork';c.setMapLayers({vork:1});}tick();}
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){for(var i=0;i<es.length;i++)if(es[i].isIntersecting){io.disconnect();start();return;}},{rootMargin:'120% 0px 120% 0px'});secs.forEach(function(s){io.observe(s);});}else start();
-function line(s){var v=s&&s.querySelector('.kk-maps,.k-fig,.ks-stage');if(v){var r=v.getBoundingClientRect();if(r.left<innerWidth*0.3&&r.top<=110&&r.bottom<innerHeight*0.8)return r.bottom+(innerHeight-r.bottom)*0.35;}return innerHeight*0.55;}
+function line(s){var v=s&&s.querySelector('.kk-maps,.k-fig,.ks-stage');if(v){var r=v.getBoundingClientRect();if(r.left<innerWidth*0.3&&r.top<=200&&r.bottom<innerHeight*0.8)return r.bottom+(innerHeight-r.bottom)*0.35;}return innerHeight*0.55;}
 function nearest(st,s){var mid=line(s),b=-1,bd=1e9;for(var i=0;i<st.length;i++){var r=st[i].getBoundingClientRect(),d=r.top>mid?r.top-mid:(r.bottom<mid?mid-r.bottom:0);if(d<bd){bd=d;b=i;}}return b;}
 function mark(st,i){for(var k=0;k<st.length;k++)st[k].classList.toggle('on',k===i);}
 function step(s){var st=s.querySelectorAll('[data-step]');if(!st.length)return;var kind=s.getAttribute('data-live'),i;
@@ -2259,3 +2259,12 @@ secs.forEach(function(s){[].forEach.call(s.querySelectorAll('[data-jump]'),funct
 })();
 /* 06.11.2026: kartan "Vie paikka arviopyyntöön" toiselta sivulta — täytä näkyvä paikkakenttä ja siisti osoite */
 (function(){var h=location.hash,i=h.indexOf('&p=');if(i<0)return;var id=h.slice(1,i),v='';try{v=decodeURIComponent(h.slice(i+3));}catch(e){}var f=document.getElementById('f-place-a');if(f&&v)f.value=v.slice(0,200);try{history.replaceState(null,'','#'+id);}catch(e){}var t=document.getElementById(id);if(t)setTimeout(function(){t.scrollIntoView();},60);})();
+/* 8.11.2026 (v51-fix3): alle 1100 px karttatasojen painikerivi pysyy otsikon alla (sticky, vaakavieritys); kartta kiinnittyy sen alle.
+   --kk-ch = painikerivin korkeus. Aktiivinen painike vieritetään näkyviin, kun vaihe vaihtuu. */
+(function(){var mq=window.matchMedia?matchMedia('(max-width:1099px)'):null,rm=false;try{rm=matchMedia('(prefers-reduced-motion: reduce)').matches;}catch(e){}
+[].forEach.call(document.querySelectorAll('.k-kaart.k-live'),function(sec){var w=sec.querySelector('.kk-chipsw'),c=sec.querySelector('.kk-chips');if(!w||!c)return;var cur='';
+ function meas(){sec.style.setProperty('--kk-ch',w.offsetHeight+'px');}
+ function sync(){var r=sec.querySelector('.kk-r:checked');if(!r||r.id===cur)return;cur=r.id;if(!mq||!mq.matches||c.scrollWidth<=c.clientWidth)return;var l=c.querySelector('[for="'+cur+'"]');if(!l)return;
+  var x=Math.max(0,l.offsetLeft-(c.clientWidth-l.offsetWidth)/2);try{c.scrollTo({left:x,behavior:rm?'auto':'smooth'});}catch(e){c.scrollLeft=x;}}
+ meas();if(window.ResizeObserver)new ResizeObserver(meas).observe(w);else window.addEventListener('resize',meas);
+ window.addEventListener('scroll',sync,{passive:true});sec.addEventListener('change',sync);sync();});})();

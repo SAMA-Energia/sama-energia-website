@@ -952,3 +952,30 @@ h1 em,h2 em{color:var(--gold-2)}
 .k-dp figcaption{margin:12px 4px 0;font-size:12.5px;color:#8C8473}
 @media (max-width:560px){.k-dp{padding:14px 12px 12px}.k-dp .kdp-cnt b{font-size:24px}.k-dp .kdp-cnt{min-width:64px}.k-dp .kdp-cap{font-size:14px}.k-dp .kdp-cap b{font-size:19px}.k-dp .kdp-row{font-size:14px;gap:8px}.k-dp .kdp-res{padding:12px 14px}}
 @media (prefers-reduced-motion:reduce){.k-dp .kdp-f,.k-dp .kdp-res,.k-dp .kdp-cnt{transition:none}}
+/* v51-fix3 (Martin 8.11.2026): alle 1100 px karttatasojen painikerivi pysyy otsikon alla, kartta sen alla */
+@media (max-width:1099px){
+.k-kaart.is-live .kk-chipsw{position:sticky;top:79px;z-index:3;margin-top:14px;padding-top:8px;padding-bottom:8px;background:#0A0A09;box-shadow:0 10px 14px 2px #0A0A09}
+.k-kaart.is-live .kk-chips{position:relative;flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;margin-top:0;padding:2px 0;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 40px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 40px),transparent)}
+.k-kaart.is-live .kk-chips::-webkit-scrollbar{display:none}
+.k-kaart.is-live .kk-chips label{flex:none;padding:8px 13px;font-size:13.5px;white-space:nowrap}
+.k-kaart.is-live .kk-chips label:last-child{margin-right:32px}
+.k-kaart.is-live .kk-maps{top:calc(79px + var(--kk-ch,52px));height:min(36vh,400px);margin-top:0}
+}
+/* v51-fix3: liidilomakkeiden valinnainen "Mistä olette kiinnostuneita?" -ryhmä (palvelu-aurinko / -varasto / -lataus) */
+.kiinn{border:0;margin:16px 0 0;padding:0;min-width:0}
+.kiinn legend{padding:0;margin-bottom:8px;font:500 13px/1.3 var(--font-body);color:var(--ink-2)}
+.kiinn legend small{color:var(--ink-3);font-weight:400}
+.kiinn-g{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+.kiinn-o{position:relative;display:block;cursor:pointer}
+.kiinn-o input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.kiinn-b{position:relative;display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;padding:11px 12px 11px 40px;border:1px solid var(--line-2);border-radius:10px;transition:border-color .2s,background-color .2s,box-shadow .2s}
+.kiinn-b:before{content:"";position:absolute;left:13px;top:12px;width:16px;height:16px;border-radius:4px;border:1.5px solid var(--line-2);transition:background-color .2s,border-color .2s}
+.kiinn-b:after{content:"";position:absolute;left:18.5px;top:14.5px;width:5px;height:9px;border:solid #0A0A09;border-width:0 2px 2px 0;transform:rotate(45deg);opacity:0;transition:opacity .2s}
+.kiinn-b b{font:500 15px/1.25 var(--font-body);color:var(--ink)}
+.kiinn-b small{font-size:13px;line-height:1.35;color:var(--ink-3)}
+.kiinn-o:hover .kiinn-b{border-color:var(--gold-2)}
+.kiinn-o input:checked+.kiinn-b{border-color:var(--gold-2);box-shadow:inset 0 0 0 1px var(--gold-2);background:rgba(201,162,39,.08)}
+.kiinn-o input:checked+.kiinn-b:before{background:var(--gold-2);border-color:var(--gold-2)}
+.kiinn-o input:checked+.kiinn-b:after{opacity:1}
+.kiinn-o input:focus-visible+.kiinn-b{outline:2px solid var(--gold-2);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.kiinn-b,.kiinn-b:before,.kiinn-b:after{transition:none}}

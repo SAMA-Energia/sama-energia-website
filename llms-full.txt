@@ -347,6 +347,7 @@ Puhelin · valinnainen
 Pääsulake tai liittymisteho
 Kohteen osoite tai paikka · valinnainen
 
+Mistä olette kiinnostuneita? · valinnainen, voitte valita useammanAurinkosähköpaneelit ja aurinkokatotEnergiavarastoakku ja reservimarkkinatSähköauton latauslatauspisteet ja niiden teho
 Minulla on jo tarjous ja haluan siitä toisen mielipiteen.
 Pyydä maksuton kartoitus
 
@@ -1782,6 +1783,7 @@ Yritys · valinnainen
 
 Puhelin · valinnainen
 
+Mistä olette kiinnostuneita? · valinnainen, voitte valita useammanAurinkosähköpaneelit ja aurinkokatotEnergiavarastoakku ja reservimarkkinatSähköauton latauslatauspisteet ja niiden teho
 Minulla on jo tarjous kädessä, haluan siihen toisen mielipiteen.
 Viesti · valinnainen
 
@@ -2194,6 +2196,7 @@ Telefon · valikuline
 Peakaitse või liitumisvõimsus
 Objekti aadress või asukoht · valikuline
 
+Mis teid huvitab? · valikuline, võite valida mituPäikeseelekterpaneelid ja päikesekatusedEnergiasalvestiaku ja reserviturgElektriauto laadiminelaadimispunktid ja nende võimsus
 Mul on juba pakkumine käes, soovin sellele teist arvamust.
 Küsi tasuta hinnangut
 
@@ -3578,6 +3581,7 @@ Ettevõte · valikuline
 
 Telefon · valikuline
 
+Mis teid huvitab? · valikuline, võite valida mituPäikeseelekterpaneelid ja päikesekatusedEnergiasalvestiaku ja reserviturgElektriauto laadiminelaadimispunktid ja nende võimsus
 Mul on juba pakkumine käes, soovin sellele teist arvamust.
 Sõnum · valikuline
 
