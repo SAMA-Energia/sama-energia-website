@@ -792,6 +792,15 @@ const hashList = [...INLINE_HASHES].sort().map(h => `'sha256-${h}'`).join(' ');
 /* geolocation=(self) (5.11.2026): kartan "Käytä sijaintiani / Kasuta minu asukohta" -painike käyttää selaimen
    sijaintia vain omalla alkuperällä ja vain painikkeesta; geolocation=() esti sen kokonaan. Kolmannet osapuolet
    (upotukset) eivät saa sijaintia. Kamera ja mikrofoni pysyvät estettyinä. */
+/* /.well-known/security.txt (RFC 9116; 8.11.2026, v51-launch): yhteys tietoturvailmoituksille. Expires on kiinteä päivä
+   (ei buildin aika, jotta CI:n build tuottaa saman tiedoston), alle vuosi julkaisusta 9.11.2026; uusi ennen sitä —
+   verify-pages varoittaa 60 päivää ennen ja hylkää vanhentuneen. */
+const SECURITY_EXPIRES = '2027-11-08T00:00:00.000Z';
+emit('.well-known/security.txt', `Contact: mailto:info@samaenergia.fi
+Expires: ${SECURITY_EXPIRES}
+Preferred-Languages: fi, et, en
+`);
+
 emit('_headers', `# GENEROITU: node scripts/build-pages.mjs — älä muokkaa käsin (CSP-hashit lasketaan inline-lohkoista)
 /*
   Strict-Transport-Security: max-age=31536000; includeSubDomains

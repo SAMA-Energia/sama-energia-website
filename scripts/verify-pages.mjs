@@ -782,6 +782,23 @@ try {
   walk('');
 }
 
+/* /.well-known/security.txt (RFC 9116, 8.11.2026): Contact ja Expires pakollisia; vanhentunut tiedosto on virheellinen */
+{
+  const f = '.well-known/security.txt';
+  if (!existsSync(join(ROOT, f))) err(`${f} puuttuu — aja node scripts/build-pages.mjs`);
+  else {
+    const st = read(f);
+    if (!/^Contact: mailto:info@samaenergia\.fi$/m.test(st)) err(`${f}: Contact puuttuu`);
+    const ex = /^Expires: (\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(?:\.\d+)?Z)$/m.exec(st);
+    if (!ex) err(`${f}: Expires puuttuu tai ei ole ISO 8601 -muodossa`);
+    else {
+      const days = (Date.parse(ex[1]) - Date.now()) / 864e5;
+      if (days < 0) err(`${f}: Expires ${ex[1]} on mennyt — päivitä SECURITY_EXPIRES (build-pages.mjs)`);
+      else if (days < 60) console.warn(`HUOM: ${f} vanhenee ${Math.ceil(days)} päivän päästä (${ex[1]}) — päivitä SECURITY_EXPIRES`);
+    }
+  }
+}
+
 if (errors) { console.error(`\n${errors} virhettä.`); process.exit(1); }
 console.log(`OK — ${pages.length} sivua + 2 × 404 tarkistettu, ei virheitä.`);
 console.log(`HUOM (soft-404): staattisesti ei voi todentaa, että tuntematon polku palauttaa aidon
