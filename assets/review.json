@@ -305,6 +305,12 @@
   },
   {
    "page": "/meista/",
+   "sectionId": "yritys",
+   "kind": "changed",
+   "prev": "Yritys paperilla. Tiedot, joita hankintanne, kirjanpitonne tai juristinne tarvitsee. YritysSAMA Energia OyY-tunnus 3647683-6 · ALV-tunnus FI36476836 KotipaikkaHelsinkiPalvelemme Suomea ja Viroa KantaverkkoyhtiötFingrid ja EleringMolempien reservimarkkinat, aggregaattorin kautta DokumentaatioNeljällä kielelläArvio, luvat ja sopimukset teidän kielellänne"
+  },
+  {
+   "page": "/meista/",
    "sectionId": "valmistajille",
    "kind": "changed",
    "prev": "Valmistajille ja maahantuojille.Laitevalikoimamme ei ole kiinni yhdessä valmistajassa. Lista, jonka jokaisen laitteen on täytettävä, on julkinen – ja se on myös ovi uusille valmistajille ja maahantuojille.Laitevaatimuksemme In English"
@@ -681,6 +687,12 @@
    "sectionId": "vorgustik",
    "kind": "changed",
    "prev": "Võrgustik teie projekti taga. Iga projekt vajab peale meie nelja asja: turulepääsu, seadmeid, paigaldust ja rahastust. Need on partnerid, kes need annavad, mõlemal turul. Turulepääs reservituruleAgregaator koondab mitme objekti akud üheks pakkumiseks, juhib neid automaatselt ja maksab tulu välja. Eestis on meie partner Soleron Energy, Soomes valime agregaatori objekti järgi Fingridi heakskiidetud reservipakkujate seast. SoleronEestiSoleron Energy OÜAgregaator · Eleringi reserviturgEnergiasalvestus ja energiajuhtimine: oma EMS-tarkvara, agregeerimine Eleringi sagedusreservidesse, salvestite projekteerimine ja paigaldus.Kuidas agregaator töötab Energiasalvestid, laadimine ja mikrovõrgudMitu tootjat, mudel objekti järgi. Võrdlus on hinnangus samade numbritega.Partnerid ja tooted Mitu tootjatKapid, konteinerid, hübriidkapid, mikrovõrgud ja kiirlaadijadValime tarnijate valikust mudeli objekti võimsuse, ruumi ja kasutuse järgi. Tootja ja mudel nimetatakse pakkumises.Mudelid ja arvud RalosSoomeRalos OyEnergiasalvestid · TamperePäikeseelektri ja energiasalvestite tarnija: LFP-salvestid välispaigalduseks.ralos.fi Paigaldus ja käikulaskminePaigaldust juhib meie oma paigaldusjuht; elektritööd ja käikulaskmine käivad kohaliku partneri kaudu. Viljar Petersell, paigaldusjuhtTeostus ja kvaliteet objektilElektritööde ja käikulaskmise partner valitakse objekti asukoha järgi. RahastusMe ei ole seotud ühe rahastajaga. Hinnangus näitame omafinantseeringu ja liisingu kõrvuti, samade numbrite pealt. Liising või omafinantseeringRahastus korraldatakse objekti järgiLiisingrahastus on võimalik korraldada ärirahastajate kaudu Eestis ja Soomes. Rahastaja ja tingimused valitakse objekti ja ostja järgi ning kirjutatakse hinnangusse enne allkirja. Omakapitali ja liisingu võrdlus on hinnangus samade numbrite pealt, et otsus oleks lihtne."
+  },
+  {
+   "page": "/meist/",
+   "sectionId": "ettevote",
+   "kind": "changed",
+   "prev": "Ettevõte paberil. Andmed, mida teie hankeosakond, raamatupidaja või jurist küsib. EttevõteSAMA Energia OySoome registrikood (Y-tunnus) 3647683-6 · KMKR-nr FI36476836 AsukohtHelsingi, SoomeTeenindame Soomet ja Eestit SüsteemihalduridElering ja FingridMõlema reserviturg, agregaatori kaudu DokumentatsioonNeljas keelesHinnang, load ja lepingud teie keeles"
   },
   {
    "page": "/meist/",

@@ -124,17 +124,17 @@ Kymmenen valokuvaa pääkeskuksesta ja asennuspaikasta sekä lyhyt videopuhelu k
 3Kohdekäynti
 puoli päivää
 
-Sähköasentaja käy paikalla viikon sisällä ja mittaa kaapelireitin, keskuksen ja asennuspaikan. Halutessanne mittaamme katon droonilla ja suunnittelemme aurinkopaneelien sijoittelun. Vahvistetun tarjouksen saatte 2–5 arkipäivässä.
+Sähköasentaja käy paikalla viikon sisällä ja mittaa kaapelireitin, keskuksen ja asennuspaikan. Halutessanne mittaamme katon droonilla ja suunnittelemme aurinkopaneelien sijoittelun. Samalla lähetämme verkkoyhtiölle kirjallisen kyselyn liittämisestä. Vahvistetun tarjouksen saatte 2–5 arkipäivässä.
 
 4Rahoitus ja päätös
 teidän aikataulunne
 
-Kun hinta on vahvistettu, vertaamme rinnakkain kolmea vaihtoehtoa: oma pääoma, leasing ja osamaksu. Päätöksen aikataulun määräätte te.
+Kun hinta on vahvistettu ja verkkoyhtiön kirjallinen vastaus on käsissä, vertaamme rinnakkain kolmea vaihtoehtoa: oma pääoma, leasing ja osamaksu. Päätöksen aikataulun määräätte te.
 
 5Projekti, asennus, markkinat
 2–3 päivää kohteella
 
-Asennusajan määrää asentajan jono, noin kaksi viikkoa, ja kaikki muu kulkee asennuksen rinnalla. Sähköurakoitsija tekee ilmoituksen verkkoyhtiölle tilausvahvistuksen päivänä. Käyttöönoton jälkeen aggregaattori liittää sähkövaraston monimarkkinapalveluun.
+Asennusajan määrää asentajan jono, noin kaksi viikkoa, ja kaikki muu kulkee asennuksen rinnalla. Verkkoyhtiön kirjallinen vastaus on saatu jo ennen tilausta; sähköurakoitsija tekee virallisen ilmoituksen tilausvahvistuksen päivänä. Käyttöönoton jälkeen aggregaattori liittää sähkövaraston monimarkkinapalveluun.
 
 Pyydä maksuton kartoitus
 
@@ -678,7 +678,7 @@ Kolme syytä, miksi varasto kannattaa nyt, ei ensi vuonna.
 Kaikki kolme perustuvat Fingridin omiin lukuihin, ei meidän arvioihimme. Lähteet ovat jokaisen kohdan alla.
 
 Uusi tulovirta: sähkövarasto ansaitsee valmiudesta
-Sähkövarasto muuttaa kuluerän tulonlähteeksi. Varastonne ansaitsee joka tunti, jona se on valmiina tasapainottamaan verkkoa, ja erikseen silloin, kun sitä käytetään. Fingrid hankkii tunneittain keskimäärin 1 500 MW reserviä ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW lisää.
+Sähkövarasto muuttaa kuluerän tulonlähteeksi. Varastonne saa kapasiteettikorvauksen jokaiselta tunnilta, jolta sen reservitarjous hyväksytään, ja erikseen korvauksen silloin, kun sitä käytetään. Fingrid hankkii tunneittain keskimäärin 1 500 MW reserviä ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW lisää.
 Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025
 
 Todistettu ja turvallinen: varastot kannattelevat verkkoa jo nyt
@@ -1022,11 +1022,11 @@ Kymmenen valokuvaa pääkeskuksesta ja asennuspaikasta sekä lyhyt videopuhelu h
 Maksuton · yksi tunti
 
 03Kohdekäynti
-Sähköasentaja käy paikalla, mittaa kaapelireitin, keskuksen ja asennuspaikan ja vahvistaa hinnan.
+Sähköasentaja käy paikalla, mittaa kaapelireitin, keskuksen ja asennuspaikan ja vahvistaa hinnan. Samalla lähetämme verkkoyhtiölle kirjallisen kyselyn.
 Maksullinen · hyvitetään sopimuksessa
 
 04Rahoitus ja päätös
-Kun hinta on vahvistettu, asetamme rinnakkain kolme tietä: oma pääoma, leasing ja osamaksu. Näette yhden taulukon, jossa on kuukausierä, omarahoitusosuus ja se, mitä maksun jälkeen jää käteen. Rahoittajan kanssa asioimme me.
+Kun hinta on vahvistettu ja verkkoyhtiön kirjallinen vastaus on käsissä, asetamme rinnakkain kolme tietä: oma pääoma, leasing ja osamaksu. Näette yhden taulukon, jossa on kuukausierä, omarahoitusosuus ja se, mitä maksun jälkeen jää käteen. Rahoittajan kanssa asioimme me.
 Päätös on teidän
 
 05Suunnittelu, asennus, markkina
@@ -1364,7 +1364,7 @@ Kantaverkkoyhtiöt
 Fingrid ja EleringMolempien reservimarkkinat, aggregaattorin kautta
 
 Dokumentaatio
-Neljällä kielelläArvio, luvat ja sopimukset teidän kielellänne
+Neljällä kielelläSuomi, viro, englanti ja ruotsi: arvio, luvat ja sopimukset teidän kielellänne
 
 Valmistajille ja maahantuojille.
 Laitevalikoimamme ei ole kiinni yhdessä valmistajassa. Lista, jonka jokaisen laitteen on täytettävä, on julkinen. Se on myös ovi uusille valmistajille ja maahantuojille.
@@ -1415,10 +1415,10 @@ Fingrid: sähkönkulutus kääntyy voimakkaaseen kasvuun, rinnalle tarvitaan sä
 Fingridin tiedotteen mukaan sähkönkulutus on kääntymässä voimakkaaseen kasvuun, ja rinnalle tarvitaan lisää säätövoimaa. Uusi liityntäkapasiteetti on monin paikoin jo lähes varattu. Meidän johtopäätöksemme: olemassa oleva liittymä on omaisuutta, joka kannattaa laittaa töihin nyt.
 Lähde: Fingrid, tiedote · 18.8.2026
 
-Määräaika 11.10.2026
-Energiakatselmusvelvoite laajenee: raja kulutuksen, ei yrityksen koon mukaan
-Uudistettu energiatehokkuusdirektiivi (EU) 2023/1791, 11 artikla sitoo pakollisen energiakatselmuksen yli 10 TJ:n eli noin 2 800 MWh:n vuosikulutukseen. Rajan ylittävien on tehtävä katselmus 11.10.2026 mennessä, ellei niillä ole sertifioitua energianhallintajärjestelmää; kansallinen täytäntöönpano voi täsmentää rajaa ja aikataulua. Katselmuksen tiedot ovat samalla varaston ja aurinkosähkön arvion pohja.
-Lähde: Direktiivi (EU) 2023/1791 · 11 artikla
+Määräaika oli 11.10.2026
+Energiakatselmusvelvoite laajeni: raja kulutuksen, ei yrityksen koon mukaan
+Energiatehokkuuslain muutos 1382/2025 pani täytäntöön energiatehokkuusdirektiivin 11 artiklan: velvoite määräytyy nyt energiankulutuksen, ei yrityksen koon mukaan. Yrityksen, jonka energiankulutus on keskimäärin yli 2,7 GWh (10 TJ) vuodessa, piti tehdä ensimmäinen energiakatselmus 11.10.2026 mennessä ja sen jälkeen neljän vuoden välein, ellei sillä ole energianhallintajärjestelmää. Yli 23,6 GWh:n (85 TJ) kuluttajilla sertifioidun energianhallintajärjestelmän määräaika on 11.10.2027. Katselmuksen tiedot ovat samalla varaston ja aurinkosähkön arvion pohja.
+Lähteet: energiatehokkuuslaki, muutos 1382/2025 (HE 85/2025 vp); Direktiivi (EU) 2023/1791 · 11 artikla
 
 Mitä me muualla luemme.
 Emme kirjoita kaikkea itse. Nämä ovat lähteitä, joita oikeasti käytämme, ja yksi rivi siitä, miksi juuri tämä teksti on luettavien joukossa. Linkit vievät pois sivultamme.
@@ -1847,7 +1847,7 @@ ALV-tunnus FI36476836
 info@samaenergia.fi
 +358 44 965 4614
 
-Vastaamme kahden arkipäivän kuluessa, myös silloin, kun vastaus on ”ei kannata”. Työkielet: suomi, viro, englanti.
+Vastaamme kahden arkipäivän kuluessa, myös silloin, kun vastaus on ”ei kannata”. Työkielet: suomi, viro ja englanti; kirjalliset dokumentit myös ruotsiksi.
 
 # Tietosuojaseloste · SAMA Energia — https://samaenergia.fi/tietosuoja/
 
@@ -2003,17 +2003,17 @@ Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldaja
 3Objektikülastus
 pool päeva
 
-Elektrik käib nädala jooksul kohal ning mõõdab kaablitee, kilbi ja paigalduskoha. Soovi korral mõõdame katuse drooniga ja kavandame päikesepaneelide paigutuse. Kinnitatud hinnaga pakkumise saate 2–5 tööpäevaga.
+Elektrik käib nädala jooksul kohal ning mõõdab kaablitee, kilbi ja paigalduskoha. Soovi korral mõõdame katuse drooniga ja kavandame päikesepaneelide paigutuse. Samal ajal saadame võrguettevõtjale kirjaliku päringu liitumise kohta. Kinnitatud hinnaga pakkumise saate 2–5 tööpäevaga.
 
 4Rahastus ja otsus
 teie ajakava
 
-Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Otsuse aja määrate teie.
+Kui hind on kinnitatud ja võrguettevõtja kirjalik vastus käes, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Otsuse aja määrate teie.
 
 5Projekt, paigaldus, turg
 2–3 päeva objektil
 
-Paigalduse aja lepime kokku tellimuse kinnitamisel ja kõik muu kulgeb paigaldusega kõrvuti. Mõõtepunkti taotlused lähevad sisse samal päeval. Pärast kontrolle ja käivitamist viib agregaator salvesti mitmeturuteenusesse.
+Paigalduse aja lepime kokku tellimuse kinnitamisel ja kõik muu kulgeb paigaldusega kõrvuti. Võrguettevõtja kirjalik vastus on saadud juba enne tellimust; mõõtepunkti taotlused esitame tellimuse kinnitamise päeval. Pärast kontrolle ja käivitamist viib agregaator salvesti mitmeturuteenusesse.
 
 Küsi tasuta hinnangut
 
@@ -2829,11 +2829,11 @@ Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldaja
 Tasuta · üks tund
 
 03Objektikülastus
-Elektrik käib kohal, mõõdab kaablitee, kilbi ja paigalduskoha ning kinnitab hinna.
+Elektrik käib kohal, mõõdab kaablitee, kilbi ja paigalduskoha ning kinnitab hinna. Samal ajal saadame võrguettevõtjale kirjaliku päringu.
 Tasuline · arvestatakse lepingus maha
 
 04Rahastus ja otsus
-Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Näete ühte tabelit, kus on kuumakse, omafinantseering ja see, mis pärast makset alles jääb. Rahastajaga suhtleme meie.
+Kui hind on kinnitatud ja võrguettevõtja kirjalik vastus käes, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Näete ühte tabelit, kus on kuumakse, omafinantseering ja see, mis pärast makset alles jääb. Rahastajaga suhtleme meie.
 Otsus jääb teile
 
 05Projekt, paigaldus, turg
@@ -3154,7 +3154,7 @@ Süsteemihaldurid
 Elering ja FingridMõlema reserviturg, agregaatori kaudu
 
 Dokumentatsioon
-Neljas keelesHinnang, load ja lepingud teie keeles
+Neljas keelesEesti, soome, inglise ja rootsi: hinnang, load ja lepingud teie keeles
 
 Tootjatele ja maaletoojatele.
 Meie seadmevalik ei ole kinni ühes tootjas. Nimekiri, millele iga seade peab vastama, on avalik. See on ka uks uutele tootjatele ja maaletoojatele.
@@ -3210,9 +3210,9 @@ Salvesti võrgutasu arvestatakse kalendrikuu netotarbimiselt
 Elektrituruseaduse § 71 lg 10¹ järgi ei võeta edastamistasu selle elektrienergia eest, mille salvesti salvestusperioodi vältel võrgust salvestab ja samal perioodil võrku tagastab; salvestusperiood on kalendrikuu (§ 3 p 22⁴). See parandab projekti tasuvust oluliselt, kui mõõtmine vastab nõuetele.
 Allikas: Elering, hinnakiri ja tüüptingimused · ELTS § 71 lg 10¹
 
-Tähtaeg 11.10.2026
-Energiaauditi kohustus laieneb: piir tarbimise, mitte ettevõtte suuruse järgi
-Uuendatud energiatõhususe direktiiv (EL) 2023/1791 artikkel 11 seob kohustusliku energiaauditi aastase tarbimisega üle 10 TJ ehk umbes 2 800 MWh. Selle piiri ületajad peavad auditi tegema 11.10.2026-ks, kui neil pole sertifitseeritud energiajuhtimissüsteemi; riigisisene ülevõtmine võib piiri ja tähtaega täpsustada. Auditi andmed on ühtlasi salvesti ja päikeseelektri hinnangu alus.
+Tähtaeg oli 11.10.2026
+Energiaauditi kohustus laienes: piir tarbimise, mitte ettevõtte suuruse järgi
+Uuendatud energiatõhususe direktiiv (EL) 2023/1791 artikkel 11 seob kohustusliku energiaauditi aastase tarbimisega üle 10 TJ ehk umbes 2 800 MWh. Selle piiri ületajad pidid auditi tegema 11.10.2026-ks, kui neil pole sertifitseeritud energiajuhtimissüsteemi; riigisisene ülevõtmine võib piiri ja tähtaega täpsustada. Auditi andmed on ühtlasi salvesti ja päikeseelektri hinnangu alus.
 Allikas: Direktiiv (EL) 2023/1791 · artikkel 11
 
 Mida me mujal loeme.
@@ -3651,7 +3651,7 @@ KMKR FI36476836
 info@samaenergia.fi
 +358 44 965 4614
 
-Vastame kahe tööpäeva jooksul, ka siis, kui vastus on „ei tasu ära“. Töökeeled: eesti, soome, inglise.
+Vastame kahe tööpäeva jooksul, ka siis, kui vastus on „ei tasu ära“. Töökeeled: eesti, soome ja inglise; kirjalikud dokumendid ka rootsi keeles.
 
 # Privaatsuspoliitika · SAMA Energia — https://samaenergia.ee/andmekaitse/
 
