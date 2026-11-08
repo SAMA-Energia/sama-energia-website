@@ -40,8 +40,10 @@
       cta: 'Vie paikka arviopyyntöön', src: 'Lähteet', osm: 'OpenStreetMap-tekijät (ODbL 1.0)',
       attrEE: '© Maa- ja Ruumiamet', attrFI: '© Maanmittauslaitos', mapAlt: 'Lähikartta: valittu kohta ja lähimmät sähköasemat',
       q: 'Kohteen osoite', ph: 'Osoite, esim. Teollisuustie 5, Seinäjoki', go: 'Hae',
-      none: 'Osoitetta ei löytynyt. Kokeilkaa kuntaa tai valitkaa kohta kartalta.', nofi: 'Suomen osoitehaku avautuu pian. Valitkaa kohta kartalta.',
-      fail: 'Haku ei onnistunut. Valitkaa kohta kartalta.', wait: 'Haetaan…'
+      none: 'Osoitetta ei löytynyt. Tarkistakaa kadunnimi ja kunta tai valitkaa kohta kartalta.', nofi: 'Suomen osoitehaku avautuu pian. Valitkaa kohta kartalta.',
+      katu: 'Kirjoittakaa myös kadunnimi ja numero, esim. Teollisuustie 5, Seinäjoki.',
+      fail: 'Haku ei onnistunut. Valitkaa kohta kartalta.', wait: 'Haetaan…',
+      aH: 'Osoitteet', aFI: { mml: 'Maanmittauslaitos', ryhti: 'Suomen ympäristökeskus (Syke), Ryhti-osoitetiedot, CC BY 4.0' }, aEE: 'Maa- ja Ruumiamet, In-ADS'
     },
     et: {
       h: 'Teie objekti asukohas', out: 'Kaart katab Eestit ja Soomet. Valige koht maismaal.',
@@ -71,7 +73,9 @@
       attrEE: '© Maa- ja Ruumiamet', attrFI: '© Maanmittauslaitos', mapAlt: 'Lähikaart: valitud koht ja lähimad alajaamad',
       q: 'Objekti aadress', ph: 'Aadress, nt Tööstuse 5, Rapla', go: 'Otsi',
       none: 'Aadressi ei leitud. Proovige omavalitsuse nime või valige koht kaardil.', nofi: 'Soome aadressiotsing avaneb peagi. Valige koht kaardil.',
-      fail: 'Otsing ebaõnnestus. Valige koht kaardil.', wait: 'Otsin…'
+      katu: 'Soome aadressi puhul kirjutage ka tänava nimi ja majanumber, nt Teollisuustie 5, Seinäjoki.',
+      fail: 'Otsing ebaõnnestus. Valige koht kaardil.', wait: 'Otsin…',
+      aH: 'Aadressid', aFI: { mml: 'Maanmittauslaitos', ryhti: 'Soome keskkonnainstituut Syke, Ryhti aadressiandmed, CC BY 4.0' }, aEE: 'Maa- ja Ruumiamet, In-ADS'
     }
   };
   /* jakeluverkkoyhtiöksi ei tulkita kantaverkkoa, rataverkkoa, alueverkkoa eikä tuottajaa (OSM:n operator-tagi) */
@@ -140,7 +144,7 @@
       '.kk-addr ul{position:absolute;left:0;right:0;top:100%;z-index:20;margin:4px 0 0;padding:4px;list-style:none;border-radius:8px;background:#1b1915;border:1px solid rgba(212,181,116,.4);box-shadow:0 10px 30px rgba(0,0,0,.4)}' +
       '.kk-addr li button{display:block;width:100%;padding:8px 10px;text-align:left;background:none;border:0;border-radius:6px;color:#F3EEE1;font:inherit;font-size:14px;cursor:pointer}' +
       '.kk-addr li button:hover,.kk-addr li button:focus{background:rgba(212,181,116,.16);outline:none}.kk-addr li small{opacity:.65;margin-left:6px}.kk-addr p{width:100%;margin:2px 0 0;font-size:13px;opacity:.8}' +
-      '.kk-addr ul[hidden],.kk-addr p[hidden]{display:none}';
+      '.kk-addr li.kk-src{padding:6px 10px 3px;font-size:11.5px;line-height:1.4;color:#BDB6A6}.kk-addr ul[hidden],.kk-addr p[hidden]{display:none}';
     document.head.appendChild(st);
   }
 
@@ -160,13 +164,14 @@
       last = q;
       var my = ++seq;
       say(X.wait);
+      ul.hidden = true;   /* vanhat tulokset pois, kun uusi haku alkaa (v52) */
       fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, credentials: 'same-origin', body: JSON.stringify({ op: 'haku', q: q, lang: L }) })
         .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
         .then(function (d) {
           if (my !== seq) return;
           var res = d.results || [];
           ul.innerHTML = '';
-          if (!res.length) { ul.hidden = true; say(!d.fi && L === 'fi' ? X.nofi : X.none); return; }
+          if (!res.length) { ul.hidden = true; say(d.need === 'katu' ? X.katu : !d.fi && L === 'fi' ? X.nofi : X.none); return; }
           say('');
           res.forEach(function (r) {
             var li = document.createElement('li'), b = document.createElement('button');
@@ -176,6 +181,12 @@
             b.addEventListener('click', function () { ul.hidden = true; inp.value = r.t; last = r.t; onPick(r); });
             li.appendChild(b); ul.appendChild(li);
           });
+          /* lähteet: rekisterit, joista näkyvät osoitteet tulivat (palvelin: Maanmittauslaitos ja In-ADS; esikatselu: Syken Ryhti,
+             jonka CC BY 4.0 vaatii lisenssinantajan ja aineiston nimen) */
+          var cs = {}, sr = d.src || {}; res.forEach(function (r) { cs[r.c] = 1; });
+          var src = document.createElement('li'); src.className = 'kk-src';
+          src.textContent = X.aH + ': ' + [cs.FI && (X.aFI[sr.FI] || X.aFI.mml), cs.EE && X.aEE].filter(Boolean).join(' · ');
+          ul.appendChild(src);
           ul.hidden = false;
         })
         .catch(function () { if (my === seq) { ul.hidden = true; say(X.fail); } });
