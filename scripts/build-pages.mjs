@@ -173,7 +173,7 @@ function orgJsonLd(lang, canon) {
     ],
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+358 449 654 614',
+      telephone: '+358 44 965 4614',
       email: 'madis.maastik@samaenergia.fi',
       contactType: 'customer service',
       availableLanguage: ['fi', 'et'],
