@@ -31,22 +31,10 @@ Taloudelliset mahdollisuudet kohteessanne, kirjallisesti ja lähteineen.
 Mikä sähkölaskussanne ja kiinteistössänne muuttuu:
 Reservimarkkinatkapasiteettikorvaus, myös öisin.Tehomaksuthuippu alas, pääsulake kulutuksen mukaan.Energia ja siirtolataus halvoilla tunneilla, käyttö kalliilla.Kiinteistön arvopienempi kiinteä kulu, korkeampi hinta.
 
-Kiinteistön arvoYhteensä: pienempi kiinteä kulu ja korkeampi kiinteistön arvo.
-12 hvalmiudessa
-
-Periaatteellinen vuorokausi: kulutus, pääsulake, tuntihinta ja energiavaraston työ. Energiavarasto on reservissä myös öisin, ja valmiudesta maksetaan korvaus tunneittain. Aamun huipun kattaa energiavarasto, joten pääsulakkeen voi valita kulutuksen mukaan. Halvoilla tunneilla varasto latautuu ja kalliilla sen energiaa käytetään. Yhteensä: pienempi kiinteä kulu, korkeampi kiinteistön hinta.Kiinteä kulu↓
-Kiinteistön arvo↑
-
-Raidalliset jaksot: varasto on valmiudessa verkolle. Valmiudesta maksetaan tunneittain, myös öisin.
-Varasto kattaa aamun huipun, joten pääsulakkeen ja tehomaksun voi mitoittaa kulutuksen mukaan.
-Varasto latautuu halvoilla tunneilla ja antaa energiansa kalliilla.
-Yhteensä: pienempi kiinteä kulu ja korkeampi kiinteistön arvo.
-
 reservi: valmiudessa verkolle ↑↓
 korvaus valmiudesta, tunneittain
 lataus ↓
 huippu, käyttö ↑
-tuntihinta, halpa → kallis
 
 Periaatteellinen vuorokausi, ei mittausdataa.
 
@@ -1910,22 +1898,10 @@ Targa energiamajandamise, mis muudab liitumise kuluartiklist varaks.
 Mis teie arvel ja kinnistul muutub:
 Reserviturgtasu reserveeritud võimsuse eest, ka öösel.Võimsustasudtipp alla, peakaitse tarbimise järgi.Energia ja edastamineodav tund sisse, kallis välja.Kinnistu väärtusväiksem püsikulu, kõrgem hind.
 
-Kinnistu väärtusKokku: väiksem püsikulu ja kõrgem kinnistu väärtus.
-12 hvalmisolekus
-
-Põhimõtteline ööpäev: tarbimine, peakaitse, tunnihind ja salvesti töö. Salvesti on reservis ka öösel ja valmisoleku eest makstakse tasu tunni kaupa. Hommikutipu katab salvesti ja peakaitse saab valida tarbimise järgi. Odaval tunnil laeb salvesti sisse, kallil annab välja. Kokku: väiksem püsikulu, kõrgem kinnistu hind.Püsikulu↓
-Kinnistu väärtus↑
-
-Triibulised lõigud: salvesti on valmis võrgu jaoks. Valmisoleku eest makstakse tunni kaupa, ka öösel.
-Salvesti katab hommikutipu, nii et peakaitse ja võimsustasu saab valida tarbimise järgi.
-Salvesti laeb odavatel tundidel ja annab energia välja kallitel.
-Kokku: väiksem püsikulu ja kõrgem kinnistu väärtus.
-
 reserv: valmis võrgu jaoks ↑↓
 tasu valmisoleku eest, tunni kaupa
 sisse ↓
 tipp, välja ↑
-tunnihind, odav → kallis
 
 Põhimõtteline ööpäev, mitte mõõteandmed.
 
