@@ -141,6 +141,7 @@ https://samaenergia.com/*                     https://samaenergia.fi/:splat     
 # Lähde- ja työkalutiedostoja ei tarjoilla julkisesti
 /src/*                                        /404.html                                        404!
 /scripts/*                                    /404.html                                        404!
+/netlify/*                                    /404.html                                        404!
 /docs/*                                       /404.html                                        404!
 /CLAUDE.md                                    /404.html                                        404!
 /README.md                                    /404.html                                        404!

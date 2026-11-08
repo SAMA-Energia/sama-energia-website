@@ -636,7 +636,7 @@ for (const s of [...Object.keys(LEGACY.fi), ...Object.keys(LEGACY.et)]) if (FI_T
   if (!line('^https://samaenergia\\.ee/\\s+/et/index\\.html\\s+200!\\s*$')) err('_redirects: .ee-juuren pakotettu uudelleenkirjoitus puuttuu');
   if (!line('^https://samaenergia\\.ee/\\*\\s+/et/:splat\\s+200\\s*$')) err('_redirects: .ee-hostin yleinen uudelleenkirjoitus puuttuu');
   if (!line('^https://samaenergia\\.ee/\\*\\s+/et/404\\.html\\s+404\\s*$')) err('_redirects: .ee-hostin 404-sivun sääntö puuttuu');
-  for (const guard of ['/src/*', '/scripts/*', '/docs/*', '/CLAUDE.md', '/README.md', '/OHJE.md']) if (!rules.includes(`${guard} `)) err(`_redirects: suojasääntö puuttuu: ${guard}`);
+  for (const guard of ['/src/*', '/scripts/*', '/netlify/*', '/docs/*', '/CLAUDE.md', '/README.md', '/OHJE.md']) if (!rules.includes(`${guard} `)) err(`_redirects: suojasääntö puuttuu: ${guard}`);
   for (const p of pages.filter(p => p.lang === 'et')) {
     const html = read(p.url.replace(/^\//, '') + 'index.html');
     for (const m of html.matchAll(/(?:href|action)="(\/[^"]*)"/g)) {
