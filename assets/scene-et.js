@@ -1994,7 +1994,7 @@ class Component extends DCLogic {
         const st = ks.status[it.s][lang], kn = ks.kind[it.k][lang], yr = it.y ? ' · ' + (it.s === 'op' ? (lang === 'et' ? 'alates ' : 'vuodesta ') : (lang === 'et' ? 'valmib ' : 'valmis ')) + it.y : '';
         return { t: nm(it), d: kn + (it.o ? ' · ' + it.o : '') + (it.m ? ' · ' + it.m : '') + '\n' + st + yr + (mwT(it) ? ' · ' + mwT(it) : '') + (it.note ? '\n' + it.note[lang] : ''), s: srcT(it), u: it.u };
       };
-      const labOk = (it) => { const mw = mwOf(it); if (it.k === 'line' || it.k === 'link' || it.k === 'bess') return true; if (it.k === 'dc') return mw >= 500 || /^Google/.test(it.o || '') || it.c === 'EE'; if (it.k === 'wind') return mw >= (it.c === 'EE' ? 90 : 190); return mw >= 50; };
+      const labOk = (it) => { const mw = mwOf(it); if (it.k === 'line' || it.k === 'link' || it.k === 'bess') return true; if (it.k === 'dc') return mw >= 250 || /^Google/.test(it.o || '') || it.c === 'EE'; if (it.k === 'wind') return mw >= (it.c === 'EE' ? 90 : 190); return mw >= 50; };
       for (const it of ks.items) {
         const lid = LK[it.k], a = al(lid); if (a < 0.02 || LI[lid] == null) continue;
         const cc = it.c === 'EE' ? 'ee' : 'fi', vis = cc === home || cmp, ca = cc === home ? 1 : (cmp ? 0.85 : 0.3);
@@ -2018,7 +2018,7 @@ class Component extends DCLogic {
           else { g.beginPath(); g.arc(s[0], s[1], r, 0, Math.PI * 2); if (hollow) g.stroke(); else g.fill(); }
           if (vis) {
             const q = info(it); q.p = s; pins.push(q);
-            if (labOk(it)) { const left = s[0] > w - 150; const head = it.k === 'dc' ? (it.m || nm(it)) : nm(it); label(s[0] + (left ? -r - 7 : r + 7), s[1], head + (mwT(it) ? ' · ' + mwT(it).split(' · ')[0] : '') + (it.k === 'link' ? ' · ' + it.y : ''), { font: FONTS, align: left ? 'right' : 'left', color: '#E9E2D2' }); }
+            if (labOk(it)) { const left = s[0] > w - 150; const head = it.k === 'dc' && it.o ? own(it.o) + (it.m ? ' · ' + it.m : '') : nm(it); label(s[0] + (left ? -r - 7 : r + 7), s[1], head + (mwT(it) ? ' · ' + mwT(it).split(' · ')[0] : '') + (it.k === 'link' ? ' · ' + it.y : ''), { font: FONTS, align: left ? 'right' : 'left', color: '#E9E2D2' }); }
           }
         }
         g.globalAlpha = 1;

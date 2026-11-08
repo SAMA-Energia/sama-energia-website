@@ -248,7 +248,9 @@ def mwof(v):
     if not m: return None
     x = float(m.group(1)); u = m.group(2) or 'mw'
     return x / 1000 if u == 'kw' else x * 1000 if u == 'gw' else x
-KMIN = {'wind': 40, 'solar': 15, 'battery': 5}
+# 9.11.2026 Madis: mitä enemmän solmuja kartalla, sitä parempi kokonaiskuva → kaikki OSM:n puistot, joilla on teho
+# vähintään 1 MW (oli tuuli 40, aurinko 15, akku 5 MW). Tunnisteet piirretään edelleen vain isoille (scene.js labOk).
+KMIN = {'wind': 1, 'solar': 1, 'battery': 1}
 for el in plants['elements']:
     t = el.get('tags', {}); src = t.get('plant:source')
     if src not in KMIN: continue

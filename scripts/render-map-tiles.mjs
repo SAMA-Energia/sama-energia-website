@@ -38,7 +38,8 @@ const { chromium } = createRequire(import.meta.url)('playwright');
 const MAPK = ['vork', 'tarbimine', 'tootmine', 'salvestid', 'reservid', 'tulevik', 'site'];   // = K2-ohjaimen MAPK
 const VARIANTS = {
   // budjetti: 60 kt työpöytä, 46 kt puhelin (110 kV -verkko ja pisterasteri vievät tavuja; tarrat terävät jo q64:llä).
-  // Laatu haetaan q86 → q60: 8.11.2026 FI Tulossa -puhelinkuva (solmut 6.11.) ei mahtunut 46 kt:hen q64:llä (46,8 kt), q62 mahtuu.
+  // Laatu haetaan q86 → q56: 8.11.2026 FI Tulossa -puhelinkuva (solmut 6.11.) ei mahtunut 46 kt:hen q64:llä (46,8 kt), q62 mahtuu;
+  // 9.11.2026 FI Kasvu -puhelinkuva (datakeskusten nimet takaisin, Madis) 46,6 kt q60:llä → q58 mahtuu.
   fi: [{ key: 'd', css: [1440, 820], dpr: 1.5, live: 0.34, max: 60000 }, { key: 'm', css: [390, 520], dpr: 2, live: 0, max: 46000 }],
   et: [{ key: 'd', css: [1440, 820], dpr: 1.5, live: 0.34, max: 60000 }, { key: 'm', css: [390, 340], dpr: 2, live: 0, max: 46000 }],
 };
@@ -126,7 +127,7 @@ async function drawStep(arg) {
   const subs = boxes.filter((b) => !hide.has(b.n) && pri(b.t) === 0 && b.x1 > -x0 && b.x0 < w && b.y1 > 0 && b.y0 < h).map((b) => b.t);
   if (preview) return { pins, subs, clash, png: out.toDataURL('image/png') };
   let best = null;
-  for (let q = 86; q >= 60; q -= 2) {
+  for (let q = 86; q >= 56; q -= 2) {
     const url = out.toDataURL('image/webp', q / 100), bytes = Math.floor((url.length - url.indexOf(',') - 1) * 3 / 4);
     if (bytes <= max) { best = { url, q, bytes }; break; }
   }
