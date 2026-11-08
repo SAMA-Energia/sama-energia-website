@@ -153,7 +153,10 @@ function orgJsonLd(lang, canon) {
   return {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    '@id': canon + '#organization',
+    /* 8.11.2026 (v51-launch): sama tunniste molemmilla hosteilla, jotta hakukone yhdistää .fi- ja .ee-sivun samaan yritykseen;
+       sameAs = virallinen kaupparekisteritieto (YTJ). LinkedIn lisätään vasta, kun Madis antaa yrityssivun osoitteen. */
+    '@id': BASE + '/#organization',
+    sameAs: ['https://tietopalvelu.ytj.fi/yritys/3647683-6'],
     name: 'SAMA Energia',
     legalName: 'SAMA Energia Oy',
     vatID: 'FI36476836',
@@ -204,7 +207,8 @@ function faqJsonLd(pageHtml, src) {
   const list = blockAfter(pageHtml, '<div class="faq-list">');
   if (list === null) return null;
   const pairs = [...list.matchAll(/<details[^>]*>\s*<summary>([\s\S]*?)<span class="plus">[\s\S]*?<\/summary>([\s\S]*?)<\/details>/g)]
-    .map(m => [textOf(m[1]), textOf(m[2].replace(/<\/p>/g, '</p> '))]);
+    /* vastauksen lopun lisätietolinkki (a.link-arrow, esim. "Reservimarkkinat tarkemmin") ei ole osa vastausta (8.11.2026) */
+    .map(m => [textOf(m[1]), textOf(m[2].replace(/<a class="link-arrow"[^>]*>[\s\S]*?<\/a>/g, '').replace(/<\/p>/g, '</p> '))]);
   if (!pairs.length) throw new Error(`${src}: .faq-list ilman details/summary-pareja`);
   for (const [q, a] of pairs) if (!q || !a) throw new Error(`${src}: tyhjä UKK-kysymys tai -vastaus`);
   return {
@@ -676,6 +680,48 @@ function emit(relPath, content) {
 }
 
 const allUrls = [];
+/* sitemap <lastmod> (8.11.2026, v51-launch): sivun oman lähdelohkon (src/<kieli>.html, .page-div) rivien viimeisin
+   commit-päivä git blamesta, ei buildin aikaa — CI:n build tuottaa siksi saman sitemapin kuin paikallinen build.
+   Committoimaton rivi saa tämän päivän (= päivä, jonka commit saa; aja build ja commit samana päivänä).
+   Ilman gitiä <lastmod> jätetään pois. Poistettu rivi ei näy blamessa: pelkkä poisto ei siirrä päivää. */
+const lastmod = new Map();
+function blameDates(file) {
+  const r = git(['blame', '--porcelain', '--', file]);
+  if (r.status !== 0 || !r.stdout) return null;
+  const info = new Map(), byLine = [];
+  let cur = null;
+  for (const ln of r.stdout.split('\n')) {
+    const h = /^([0-9a-f]{40}) \d+ (\d+)(?: \d+)?$/.exec(ln);
+    if (h) { cur = h[1]; if (!info.has(cur)) info.set(cur, {}); byLine[+h[2]] = cur; continue; }
+    if (!cur || ln.startsWith('\t')) continue;
+    if (ln.startsWith('committer-time ')) info.get(cur).t = +ln.slice(15);
+    else if (ln.startsWith('committer-tz ')) info.get(cur).tz = ln.slice(13);
+  }
+  return { info, byLine };
+}
+function ymd(t, tz) {
+  const m = /^([+-])(\d\d)(\d\d)$/.exec(tz || '+0000');
+  const off = m ? (m[1] === '-' ? -1 : 1) * (+m[2] * 60 + +m[3]) : 0;
+  return new Date((t + off * 60) * 1000).toISOString().slice(0, 10);
+}
+function today() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+function pageLastmod(blame, source, page) {
+  if (!blame) return null;
+  const lineAt = off => source.full.slice(0, off).split('\n').length;
+  const a = lineAt(source.mainAbs + page.start), b = lineAt(source.mainAbs + page.end - 1);
+  let best = null;
+  for (let i = a; i <= b; i++) {
+    const sha = blame.byLine[i];
+    if (!sha) continue;
+    if (/^0+$/.test(sha)) return today();
+    const c = blame.info.get(sha);
+    if (c && c.t && (!best || c.t > best.t)) best = c;
+  }
+  return best ? ymd(best.t, best.tz) : null;
+}
 const langData = [];
 const sources = {};
 const llmsParts = [];
@@ -684,6 +730,7 @@ for (const lang of Object.keys(LANGS)) {
   const source = parseSource(L.src);
   sources[lang] = source;
   const pages = extractPages(source.mainInner, L.src);
+  const blame = blameDates(L.src);
 
   const expected = [...PAIRS.map(([f, e]) => (lang === 'fi' ? f : e)), ...UNPAIRED[lang]].sort();
   const actual = pages.map(p => p.slug).sort();
@@ -700,6 +747,7 @@ for (const lang of Object.keys(LANGS)) {
     emit(url.replace(/^\//, '') + 'index.html', renderPage(lang, page, source, html));
     if (!UNLISTED.has(page.slug)) {
       allUrls.push(L.abs(page.slug));
+      lastmod.set(L.abs(page.slug), pageLastmod(blame, source, page));
       llmsParts.push({ lang, slug: page.slug, title: page.title, url: L.abs(page.slug), text: plainText(page.html) });
     }
     /* katselmusmanifestiin NÄKYVÄ polku: ET-alasivut paljaalla slugilla, ET-etusivu /et/ */
@@ -724,7 +772,7 @@ emit('et/404.html', render404('et', sources));
 allUrls.sort();
 emit('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${allUrls.map(u => `  <url><loc>${u}</loc></url>`).join('\n')}
+${allUrls.map(u => `  <url><loc>${u}</loc>${lastmod.get(u) ? `<lastmod>${lastmod.get(u)}</lastmod>` : ''}</url>`).join('\n')}
 </urlset>
 `);
 
