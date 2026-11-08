@@ -214,8 +214,10 @@ const GUARDS = [
   /* --- kumppani- ja yritysnimet --- */
   // 08.09: Scanoffice Oy sallittu VAIN suomenkielisellä sivustolla. Kumottu 6.11.2026 (Madis: „you don't even have
   // Scanoffice there" ET-version kumppaniosiosta) — Scanoffice näkyy nyt molemmilla sivustoilla.
-  // 03.09: rahoitus- ja Energen-ajan yritysnimiä ei mainita sivustolla.
-  { id: 'kielletyt-nimet', langs: 'both', why: 'rahoitus-/Energen-ajan yritysnimi — ei mainita sivustolla (03.09.2026)',
+  // 03.09: rahoitus- ja Energen-ajan yritysnimiä ei mainita sivustolla. EP Energy pois listalta 6.11.2026 (Madis) ja
+  // vahvistettu päätöksellä D1 7.11.2026 (Martin: laitetoimittajien nimet EP Energy, Elecnova, Avant Power, Gare Energy ja
+  // Roofit.Solar pysyvät); Grenke, Svea ja Salama Sähkö pysyvät kiellettyinä.
+  { id: 'kielletyt-nimet', langs: 'both', why: 'rahoitus-/Energen-ajan yritysnimi — ei mainita sivustolla (03.09.2026; EP Energy sallittu, D1 7.11.2026)',
     find: t => [...t.matchAll(/Grenke|Svea|Salama Sähkö/gi)] },
   // 04.11.2026: EP Energy / EP Equipment ja Energen Nordic eivät ole sivustolla ennen perustajan päätöstä; Roofit.Solar on
   // valmistaja ilman sopimusta (Suomessa yhteistyö Gare Energy Oy:n kautta). Sallitut nimet: CLAUDE.md, sisältösäännöt.

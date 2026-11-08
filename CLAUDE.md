@@ -52,7 +52,13 @@ All customer-facing text is Finnish or Estonian and requires a
   has several suppliers and names manufacturer and model in the offer. A manufacturer is named only after
   its written confirmation, logged in R14 and the Decision Log, and added to the list above. Ready-made
   cards for pending names are kept OUTSIDE this public repo (project doc `claude/SAMA_Kumppanit_v34_odottavat.md`).
-  "EP Energy" stays on the banned-name guard until that decision is made.
+  "EP Energy" stays on the banned-name guard until that decision is made. *(Superseded by D1 below.)*
+- **Supplier names, decision D1 (Martin 07.11.2026; launch bundle 08.11.2026):** the supplier names EP Energy, Elecnova,
+  Avant Power, Gare Energy and Roofit.Solar stay on the site (reverses P1–P3 of 25.10.2026; EP Energy was already allowed by
+  Madis on 06.11.2026). State at launch: EP Energy, Elecnova and Avant Power on both sites; Gare Energy and Roofit.Solar on the
+  Finnish site only (Roofit.Solar together with Gare Energy; guard `roofit-et`); Soleron Energy on the Estonian site; Scanoffice
+  on both (06.11.2026). Never named: EP Equipment and Energen Nordic (guard `nimet-1104`), the financing companies (guard
+  `kielletyt-nimet`, which no longer lists EP Energy), VENI. Model names and technical values stay in the offer (`mallinimet-1104`).
 - Installation wording (founder decision 25.10.2026): the installation manager leads the work; electrical
   work and commissioning are done by a registered electrical contractor partner. Do not write "oma
   asennustiimi" / "paigaldusmeeskond" until there is an installation team under contract.
