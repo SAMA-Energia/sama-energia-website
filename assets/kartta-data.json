@@ -214,8 +214,8 @@
       60.9
      ],
      "t": {
-      "fi": "Fenno-Skan 1 + 2\n400 + 800 MW",
-      "et": "Fenno-Skan 1 + 2\n400 + 800 MW"
+      "fi": "Fenno-Skan 1 ja 2\n400 + 800 MW",
+      "et": "Fenno-Skan 1 ja 2\n400 + 800 MW"
      },
      "s": "Fingrid",
      "src": "fg-pohj",
@@ -466,6 +466,18 @@
      }
     ]
    },
+   "mapkey": {
+    "fi": {
+     "t": "Neliöt kartalla",
+     "v": "datakeskushankkeet; täytetyt ovat käytössä tai rakenteilla, ontot suunnitteilla, ja koko kertoo tehon",
+     "s": "Datakeskushankkeiden kansallinen rekisteri, CC BY 4.0, 4.11.2026"
+    },
+    "et": {
+     "t": "Ruudud kaardil",
+     "v": "andmekeskuste projektid; täidetud töötavad või on ehitamisel, õõnsad on kavandamisel ja suurus näitab võimsust",
+     "s": "Sunly, ERR; Soome projektid: Datakeskushankkeiden kansallinen rekisteri, CC BY 4.0, 4.11.2026"
+    }
+   },
    "base": {
     "lines": 0.35
    },
@@ -586,7 +598,10 @@
        "fi": "9 553 MW",
        "et": "9 553 MW"
       },
-      "s": "Fingrid, avoin data 268, 2.11.2026",
+      "s": {
+       "fi": "Fingrid, avoin data 268, 2.11.2026",
+       "et": "Fingrid, avaandmed 268, 2.11.2026"
+      },
       "src": "fg-od268"
      },
      {
@@ -598,7 +613,10 @@
        "fi": "2 074 MW, sisältää pientuotannon arvion · virallista kokonaislukua Fingrid ei julkaise",
        "et": "2 074 MW, sisaldab väiketootmise hinnangut · ametlikku kogusummat Fingrid ei avalda"
       },
-      "s": "Fingrid, avoin data 267, 2.11.2026",
+      "s": {
+       "fi": "Fingrid, avoin data 267, 2.11.2026",
+       "et": "Fingrid, avaandmed 267, 2.11.2026"
+      },
       "src": "fg-od267"
      },
      {
@@ -685,7 +703,10 @@
       "fi": "Tuulivoima 9 553 MW (koko Suomi)",
       "et": "Tuul 9 553 MW (kogu Soome)"
      },
-     "s": "Fingrid, avoin data 2.11.2026",
+     "s": {
+      "fi": "Fingrid, avoin data 2.11.2026",
+      "et": "Fingrid, avaandmed 2.11.2026"
+     },
      "src": "fg-od268"
     },
     {
@@ -757,7 +778,10 @@
        "fi": "2 085 MW yli 1 MW:n varastoja (arvio, sisältää noin kuukauden sisällä käyttöön tulevat)",
        "et": "2 085 MW üle 1 MW salvesteid (hinnang, sisaldab umbes kuu jooksul tööle minevaid)"
       },
-      "s": "Fingrid, avoin data 424, 2.11.2026",
+      "s": {
+       "fi": "Fingrid, avoin data 424, 2.11.2026",
+       "et": "Fingrid, avaandmed 424, 2.11.2026"
+      },
       "src": "fg-od424"
      },
      {
@@ -1172,8 +1196,8 @@
       63.3
      ],
      "t": {
-      "fi": "Reservit nyt 1 500 MW/h · +1 200 MW",
-      "et": "Reservid praegu 1 500 MW/h · +1 200 MW"
+      "fi": "Reservit nyt 1 500 MW joka tunti · +1 200 MW",
+      "et": "Reservid praegu 1 500 MW igas tunnis · +1 200 MW"
      },
      "s": "Fingrid 11.6.2025",
      "src": "fg-web",
@@ -1698,7 +1722,10 @@
    "pub": "Fingrid",
    "title": "Osa pohjoismaista sähköjärjestelmää",
    "date": "luettu 2.11.2026",
-   "url": "https://www.fingrid.fi/kantaverkko/kehittaminen/pohjoismainen-sahkojarjestelma-ja-liitynnat-muihin-jarjestelmiin/"
+   "url": "https://www.fingrid.fi/kantaverkko/kehittaminen/pohjoismainen-sahkojarjestelma-ja-liitynnat-muihin-jarjestelmiin/",
+   "et": {
+    "date": "loetud 2.11.2026"
+   }
   },
   "fg-aurora": {
    "pub": "Fingrid",
@@ -1740,19 +1767,31 @@
    "pub": "Fingrid, avoin data",
    "title": "Tuulivoimaennusteessa käytetty kokonaiskapasiteetti (aineisto 268)",
    "date": "2.11.2026",
-   "url": "https://data.fingrid.fi/datasets/268"
+   "url": "https://data.fingrid.fi/datasets/268",
+   "et": {
+    "pub": "Fingrid, avaandmed",
+    "title": "Tuulivoimaennusteessa käytetty kokonaiskapasiteetti (andmestik 268)"
+   }
   },
   "fg-od267": {
    "pub": "Fingrid, avoin data",
    "title": "Aurinkovoimaennusteessa käytetty kokonaiskapasiteetti (aineisto 267)",
    "date": "2.11.2026",
-   "url": "https://data.fingrid.fi/datasets/267"
+   "url": "https://data.fingrid.fi/datasets/267",
+   "et": {
+    "pub": "Fingrid, avaandmed",
+    "title": "Aurinkovoimaennusteessa käytetty kokonaiskapasiteetti (andmestik 267)"
+   }
   },
   "fg-od424": {
    "pub": "Fingrid, avoin data",
    "title": "Sähkövarastojen yhteenlaskettu asennettu kapasiteetti (aineisto 424)",
    "date": "2.11.2026",
-   "url": "https://data.fingrid.fi/datasets/424"
+   "url": "https://data.fingrid.fi/datasets/424",
+   "et": {
+    "pub": "Fingrid, avaandmed",
+    "title": "Sähkövarastojen yhteenlaskettu asennettu kapasiteetti (andmestik 424)"
+   }
   },
   "fg-stor": {
    "pub": "Fingrid",
@@ -1920,13 +1959,21 @@
    "pub": "OpenStreetMap-tekijät (ODbL 1.0)",
    "title": "Voimajohdot OpenInfraMapin tiilistä, voimalat ja sähköasemat Overpassista",
    "date": "2.11.2026",
-   "url": "https://www.openstreetmap.org/copyright"
+   "url": "https://www.openstreetmap.org/copyright",
+   "et": {
+    "pub": "OpenStreetMapi kaastöötajad (ODbL 1.0)",
+    "title": "liinid OpenInfraMapi kaardiruutudest, elektrijaamad ja alajaamad Overpassist"
+   }
   },
   "ne": {
    "pub": "Natural Earth",
    "title": "Rantaviivat, järvet ja maakunnat 1:10m (vapaa käyttö)",
-   "date": "5.1.1",
-   "url": "https://www.naturalearthdata.com/"
+   "date": "versio 5.1.1",
+   "url": "https://www.naturalearthdata.com/",
+   "et": {
+    "title": "rannajooned, järved ja maakonnad 1:10m (vaba kasutus)",
+    "date": "versioon 5.1.1"
+   }
   }
  }
 }

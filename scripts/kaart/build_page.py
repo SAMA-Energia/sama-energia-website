@@ -87,14 +87,21 @@ def t(o, lang):
     return o if isinstance(o, str) else o.get(lang, o.get('fi', ''))
 
 
-def src_link(S, sid):
+def src_of(S, sid, lang):
+    """Lähteen kentät sivun kielellä: sources[sid][lang] korvaa pub/title/date (v51-fix6 8.11.2026: ET-sivulla
+    avaandmed, andmestik, loetud, OSM- ja Natural Earth -kuvaukset viroksi; asiakirjojen nimet pysyvät niminä)."""
     s = S[sid]
+    return {**s, **s.get(lang, {})}
+
+
+def src_link(S, sid, lang):
+    s = src_of(S, sid, lang)
     return f'<a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["pub"])}: {e(s["title"])}</a> · {e(s["date"])}'
 
 
 def facts_html(facts, lang):
     return '<ul class="km-facts">' + ''.join(
-        f'<li><b>{e(t(f["t"], lang))}:</b> {e(t(f["v"], lang))} <small>({e(f["s"])})</small></li>' for f in facts) + '</ul>'
+        f'<li><b>{e(t(f["t"], lang))}:</b> {e(t(f["v"], lang))} <small>({e(t(f["s"], lang))})</small></li>' for f in facts) + '</ul>'
 
 
 def chapter(L, i, n, D, lang):
@@ -110,7 +117,7 @@ def chapter(L, i, n, D, lang):
            f'  <h2 id="kerros-{i + 1}-h">{e(t(L["q"], lang))}</h2>',
            f'  <p class="km-concl">{e(L["concl"][lang])}</p>',
            f'  <p class="km-fig"><b>{e(big["v"])}</b><span>{e(t(big["l"], lang))}</span></p>',
-           '  ' + facts_html(L['facts'][home], lang)]
+           '  ' + facts_html(([L['mapkey'][lang]] if L.get('mapkey') else []) + L['facts'][home], lang)]
     if L.get('pays'):
         out.append(f'  <p class="km-paysp"><b>{X["pays"]}:</b> {e(t(L["pays"][home], lang))}</p>')
     if L['id'] != 'site' and L['facts'].get(other):
@@ -122,7 +129,7 @@ def chapter(L, i, n, D, lang):
         out.append(f'  <div class="km-me"><button type="button" class="btn btn-ghost km-geo" hidden data-wait="{e(m["wait"])}" data-ok="{e(m["ok"])}" '
                    f'data-tap="{e(m["tap"])}" data-no="{e(m["no"])}" data-out="{e(m["out"])}" data-addr="{e(m["addr"])}">{e(m["btn"])}</button>'
                    f'<span class="km-hint">{e(m["hint"])}</span>{m["form"]}<p class="km-priv">{e(m["priv"])}</p><p class="km-st" role="status" aria-live="polite"></p></div>')
-    out.append(f'  <p class="src">{X["sources"]}: ' + '; '.join(src_link(S, sid) for sid in ids) + '</p>')
+    out.append(f'  <p class="src">{X["sources"]}: ' + '; '.join(src_link(S, sid, lang) for sid in ids) + '</p>')
     out.append(f'  <button type="button" class="km-show" data-show-layer="{i}" hidden>{X["show"]}</button>')
     if L['id'] == 'site':
         out.append(f'  <p><a class="btn btn-primary" href="{X["cta"][1]}">{X["cta"][0]} {ARROW}</a></p>')
@@ -184,7 +191,7 @@ def page(D, lang):
     <h2>{X["after_h"]}</h2>
     <p class="lead" style="margin-top:14px">{e(X["after"])}</p>
     <ul class="km-src-list">
-{chr(10).join(f"      <li>{src_link(S, sid)}</li>" for sid in home_first)}
+{chr(10).join(f"      <li>{src_link(S, sid, lang)}</li>" for sid in home_first)}
     </ul>
   </div>
 </section>
@@ -224,7 +231,7 @@ def front(D, lang):
     steps = []
     for i, L in enumerate(D['layers']):
         b = L['big'][home]
-        links = '; '.join(f'<a href="{e(S[sid]["url"])}" target="_blank" rel="noopener">{e(S[sid]["pub"])}</a> · {e(S[sid]["date"])}' for sid in b['src'])
+        links = '; '.join(f'<a href="{e(q["url"])}" target="_blank" rel="noopener">{e(q["pub"])}</a> · {e(q["date"])}' for q in (src_of(S, sid, lang) for sid in b['src']))
         cta = (f'<p><a class="btn btn-primary" href="{X["f_cta"][1]}">{X["f_cta"][0]} {ARROW}</a></p>' if L['id'] == 'site' else '')
         steps.append(f'        <li class="km-fs{" on" if i == 0 else ""}" data-layer="{i}"><p class="km-n">{i + 1:02d} / {n:02d}</p>'
                      f'<h3>{e(t(L["q"], lang))}</h3><p class="km-concl">{e(L["concl"][lang])}</p>'

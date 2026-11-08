@@ -557,3 +557,14 @@ Madis 6.11.2026 (vestlus C, vastaukset kysymyksiin; päätöslokiin lisättävä
   Maa- ja Ruumiametista; PVGIS ja MML eivät toimi esikatselussa. Suomen osoitteet vaativat edelleen MML_API_KEY:n Netlifyyn.
 - AVOIN: natiivitarkistus (FI Martin, ET Madis) paneelien teksteille, Avantin ET-tekstille ja vaiheen 3 lauseelle; Garen
   "pääkumppani"-lähde; yrityksen oma puhelinnumero.
+
+## v51-launch — Martinin korjaukset fix1–fix7 lähteisiin (haara v51-launch, 8.11.2026)
+
+- Haara alkaa a7336f5:stä (tuottaa katselmoidut v51-esikatselut tavu tavulta). Jokainen fix portattu lähteisiin ja tarkistettu:
+  esikatselun näkyvä teksti = Martinin fixN-referenssi kaikilla reiteillä (FI, ET). fix4 peruttu, ei portattu.
+- Kartan lähderekisteri kaksikieliseksi (fix6): `assets/kartta-data.json` `sources[id].et` korvaa ET-sivulla kentät pub/title/date
+  (avaandmed, andmestik, loetud, OSM- ja Natural Earth -kuvaukset; asiakirjojen nimet pysyvät suomeksi niminä), faktojen ja
+  pinnien `s` voi olla `{fi, et}`, ja kerroksella voi olla `mapkey: {fi: {t, v, s}, et: {…}}` = kartan merkkien selite luvun
+  faktalistan ensimmäisenä rivinä (vain oman kielen sivulla, ei toisen maan vertailussa). Lukijat: build_page.py (`src_of`),
+  kartta.js (`src()`, `t()`), scene.js ja scene-et.js (`inLang`, solmujen lähteet `ks.sources[id][lang]`). Solmurekisterin OSM-lähteen
+  ET-nimi `scripts/kaart/build_solmut.py`:ssä.

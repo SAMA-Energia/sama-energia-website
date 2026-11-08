@@ -76,13 +76,15 @@ Mistä sääriippuvainen tuotanto tulee?
 9 553 MWtuulivoimaa
 aurinkovoimaa 2 074 MW
 Fingridin arvion mukaan Suomessa on 9 553 MW tuulivoimaa ja 2 074 MW aurinkovoimaa. Sääriippuvainen tuotanto saa tuntihinnat vaihtelemaan ja sähkövarasto ansaitsee hintaeroista.
-Lähde: Fingrid, avoin data 268 ja 267 (ennusteissa käytetty kapasiteetti) · 2.11.2026
+Kartan valkoiset ympyrät ovat tuulivoimapuistoja ja kultaiset pisteet aurinkovoimaloita; koko kertoo tehon. Ne ovat OpenStreetMapiin merkittyjä voimaloita, eikä luettelo ole täydellinen: kokonaisluvut ovat Fingridin.
+Lähteet: Fingrid, avoin data 268 ja 267 (ennusteissa käytetty kapasiteetti) · 2.11.2026; voimalat kartalla: OpenStreetMap-tekijät (ODbL) · 2.11.2026
 
 Kuka jo varastoi?
 2 085 MWyli 1 MW:n varastoja
 uudet varastot Etelä-Suomen kantaverkkoon vasta 2029
 Fingridin arvion mukaan Suomessa on jo 2 085 MW yli megawatin sähkövarastoja. Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta, kun Hikiä–Toivila valmistuu vuonna 2029.
-Lähteet: Fingrid, avoin data 424 · 2.11.2026; Fingrid · 24.9.2025
+Merkitty alue etelässä on Tampere–Lahti–Lappeenranta-linjan eteläpuoli, jossa on noin puolet Suomen sähkövarastoista. Yksittäinen piste on ainoa OpenStreetMapiin merkitty suuri varasto; 2 085 MW kattaa kaikki yli megawatin varastot.
+Lähteet: Fingrid, avoin data 424 · 2.11.2026; Fingrid · 24.9.2025; Fingrid · 24.2.2026
 
 Kuinka paljon reservejä tarvitaan?
 567 → 1 100 MWmFRR alas 2026 → 2032
@@ -93,10 +95,12 @@ Mitä on tulossa?
 5,2 mrd €Fingridin investointiohjelma
 noin 2 mrd € vuosina 2026–2029
 2027: FCR hankitaan vain tuntimarkkinoilta. 2029: Hikiä–Toivila valmistuu ja Etelä-Suomen kantaverkon varastoliitynnät avautuvat. 1.1.2029: jakeluverkon tehomaksu lasketaan kuukauden suurimmasta 60 minuutin keskitehosta.
-Lähteet: Fingrid, johdon katsaus · 29.10.2026; Fingrid · 8.9.2026; Fingrid · 24.9.2025; Energiavirasto, määräys 2340/000002/2025 · 2.2.2026
+Kartalle merkityt hankkeet ovat rakenteilla tai suunnitteilla olevia kantaverkon johtoja ja rajayhteyksiä valmistumisvuosineen. Reitit ovat suuntaa-antavia: viiva yhdistää päätepisteet. Vuodeton hanke toteutuu vain, jos alueen kulutus tai tuotanto kasvaa.
+Lähteet: Fingrid, johdon katsaus · 29.10.2026; Fingrid · 8.9.2026; Fingrid · 24.9.2025; Energiavirasto, määräys 2340/000002/2025 · 2.2.2026; hankkeet kartalla: Fingrid, kantaverkon kehittämissuunnitelma 2026–2035 · 2.12.2025
 
 Missä teidän liittymänne on tässä kokonaisuudessa?
 Liittymänne on jo olemassa ja sen taakse asennettu sähkövarasto ei joudu kantaverkon jonoon. Kirjallinen arvio sijoittaa kohteenne tälle kartalle, jokainen luku lähteineen.
+Kartan kultainen piste on esimerkki, ei teidän kohteenne.
 Kohteen osoiteHae
 Käytä sijaintianitai valitse kohta kartaltaOsoitehaku kulkee palvelimemme kautta Maanmittauslaitokselle tai Viron Maa- ja Ruumiametille ja aurinkotuotto EU:n PVGIS-palvelusta. Emme tallenna sijaintia; lomakkeeseen se menee vain, jos itse viette sen sinne.
 
@@ -335,7 +339,7 @@ Verkkoyhtiön kanta ja se, mitä arvio ei kerro
 
 Lähetämme ohjeen siitä, miten annatte pääsyn tuntikohtaisiin kulutustietoihinne. Kirjallinen arvio on teillä kahden arkipäivän kuluessa tietojen saamisesta.
 
-info@samaenergia.fi+358 449 654 614
+info@samaenergia.fi+358 44 965 4614
 
 Nimi
 
@@ -584,7 +588,7 @@ Kaavamainen vuorokausi, ei yhden kohteen mitattua dataa. Kohteenne todellisen pr
 
 Mitä toimitamme ja mitä laitteilta vaadimme.
 
-Laitteet valitaan kohteenne mukaan, ei varaston. Turvallisuus, takuu ja huolto ovat arviossa kirjattuina, eivät pienellä präntillä.
+Laitteet valitaan kohteenne mukaan, ei sen mukaan, mitä varastossa on. Turvallisuus, takuu ja huolto ovat arviossa kirjattuina, eivät pienellä präntillä.
 
 Katsokaa varastokaappia omalla pihallanne.
 
@@ -655,7 +659,7 @@ Sähköverkon on oltava tasapainossa joka sekunti. Kun tuotanto ja kulutus erkan
 Varasto tasapainottaa ja ansaitsee valmiudesta. Sama tapahtuu kohteessanne jatkuvasti, automaattisesti.
 
 Viisi reserviä, joita Fingrid ostaa
-Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025: „Ylläpidosta maksetaan korvaus siitä, että reservi on käytettävissä.“
+Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025: ”Ylläpidosta maksetaan korvaus siitä, että reservi on käytettävissä.”
 
 Reservi · Mitä verkko tarvitsee · Kuinka nopeasti · Miten varasto tuottaa
 
@@ -950,7 +954,7 @@ Jokainen tilaus alkaa samasta kohdasta: maksuttomasta kirjallisesta arviosta. T�
 1 yhteyshenkilökoko projektin ajan, kartoituksesta käyttöönottoon ja seurantaan
 
 Arvio, projekti, portfolio.
-Samat viisi riviä jokaisesta tuotteesta, jotta vertailu on helppoa.
+Samat neljä riviä jokaisesta tuotteesta, jotta vertailu on helppoa.
 
 Teidän tietonne keskellä, muiden ehdot ympärillä: yksi laskelma.
 
@@ -981,7 +985,7 @@ Mitä te annatte
 Päätöksen arvion perusteella, pääsyn kohteeseen ja kaksi allekirjoitusta: EPC-sopimus meidän kanssamme ja palvelusopimus aggregaattorin kanssa.
 
 Aika
-Kohdekäynnistä käyttöönottoon riippuu verkkoyhtiön vastauksesta ja toimituksesta; odotusajat on arviossa eritelty.
+Aika kohdekäynnistä käyttöönottoon riippuu verkkoyhtiön vastauksesta ja toimituksesta; odotusajat on arviossa eritelty.
 
 Mitä sitten
 Tuotto alkaa aggregaattoriin liittämisen jälkeen; me seuraamme, että järjestelmä tekee sen, minkä arvio näytti.
@@ -1001,7 +1005,7 @@ Aika
 Arvio kohteiden määrän mukaan; ensimmäinen kohde lähtee toteutukseen, kun muut ovat vielä arviossa.
 
 Mitä sitten
-Jokainen kohde käy läpi samat neljä askelta; portfolio kasvaa kohde kerrallaan.
+Jokainen kohde käy läpi samat viisi askelta; portfolio kasvaa kohde kerrallaan.
 
 Kuvailkaa portfolionne
 
@@ -1050,13 +1054,13 @@ Laitteet valitaan kohteenne mukaan, yhdessä maahantuojien kanssa. Asennus, luva
 
 Tyypillinen tarjous markkinoilla
 
-Suullisia lupauksia ja „noin“-lukuja
+Suullisia lupauksia ja ”noin”-lukuja
 
 Takaisinmaksuaika keskimääräisillä oletuksilla
 
 Päätös ennen verkkoyhtiön vastausta
 
-Reservitulo joko vaietaan tai luvataan liikaa
+Reservitulosta joko vaietaan tai sitä luvataan liikaa
 
 Jokainen luku kirjallisesti, lähde ja päivämäärä mukana
 
@@ -1389,13 +1393,13 @@ Fingrid jatkaa Etelä-Suomen varastoliityntärajoitusta vuoteen 2029 varmistaaks
 
 Lue katsaus
 
-„Niukka hyödyke ei ole laite. Niukka hyödyke on liittymä.“
+”Niukka hyödyke ei ole laite. Niukka hyödyke on liittymä.”
 
 Mihin tämä markkina on menossa.
 Nämä eivät ole meidän ennusteitamme, vaan kantaverkkoyhtiön ja toimialan omia lukuja, jotka kuka tahansa voi tarkistaa. Jokainen tämän sivun katsaus on kirjoitettu niitä vasten.
 
 Sähkönkulutus
-84,6 → 104–159 TWh2025 → 2035. Lähteet: Fingrid, tilinpäätöstiedote · 3.3.2026; Fingrid, kehitysnäkymät Q3/2025.
+84,6 → 110–162 TWh2025 → 2035. Lähteet: Fingrid, tilinpäätöstiedote · 3.3.2026; Fingrid, kehitysnäkymät · 30.9.2026.
 
 Reservitarve
 1 500 MW joka tunnilleJa viiden vuoden päästä 1 200 MW lisää. Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025.
@@ -1539,6 +1543,7 @@ Fingridin skenaarioissa Suomen sähkönkulutus kasvaa nykyisestä alle 90 terawa
 
 106–123 TWhsähkönkulutus 2030 Fingridin skenaarioissa · 2025: 84,6 TWh
 
+Neliöt kartalla: datakeskushankkeet; täytetyt ovat käytössä tai rakenteilla, ontot suunnitteilla, ja koko kertoo tehon (Datakeskushankkeiden kansallinen rekisteri, CC BY 4.0, 4.11.2026)
 Kulutus 2025: 84,6 TWh (+1,9 %) (Fingrid, 4.3.2026)
 Ennuste: 106–123 TWh vuonna 2030 · 110–162 TWh vuonna 2035 (Fingrid, 30.9.2026)
 Tammi–syyskuu 2026: 64,8 TWh (+5,0 %) (Fingrid, 29.10.2026)
@@ -1757,7 +1762,7 @@ Elering: Eesti-Läti neljas elektriühendus · 10.6.2026
 
 OpenStreetMap-tekijät (ODbL 1.0): Voimajohdot OpenInfraMapin tiilistä, voimalat ja sähköasemat Overpassista · 2.11.2026
 
-Natural Earth: Rantaviivat, järvet ja maakunnat 1:10m (vapaa käyttö) · 5.1.1
+Natural Earth: Rantaviivat, järvet ja maakunnat 1:10m (vapaa käyttö) · versio 5.1.1
 
 # Pyydä maksuton kartoitus · SAMA Energia — https://samaenergia.fi/yhteystiedot/
 
@@ -1774,7 +1779,7 @@ Verkkoyhtiön kanta ja se, mitä arvio ei sano
 
 Te annatte: tuntikohtaiset kulutustietonne (CSV-lataus Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta, neuvomme miten), yhden sähkölaskun ja pääkaavion.
 
-info@samaenergia.fi+358 449 654 614
+info@samaenergia.fi+358 44 965 4614
 
 Nimi
 
@@ -1785,7 +1790,7 @@ Yritys · valinnainen
 Puhelin · valinnainen
 
 Mistä olette kiinnostuneita? · valinnainen, voitte valita useammanAurinkosähköpaneelit ja aurinkokatotEnergiavarastoakku ja reservimarkkinatSähköauton latauslatauspisteet ja niiden teho
-Minulla on jo tarjous kädessä, haluan siihen toisen mielipiteen.
+Minulla on jo tarjous kädessä, haluan siitä toisen mielipiteen.
 Viesti · valinnainen
 
 Nämä nopeuttavat arviota (kaikki valinnaisia) +
@@ -1842,7 +1847,7 @@ ALV-tunnus FI36476836
 info@samaenergia.fi
 +358 44 965 4614
 
-Vastaamme kahden arkipäivän kuluessa, myös silloin kun vastaus on „ei kannata“. Työkielet: suomi, viro, englanti.
+Vastaamme kahden arkipäivän kuluessa, myös silloin, kun vastaus on ”ei kannata”. Työkielet: suomi, viro, englanti.
 
 # Tietosuojaseloste · SAMA Energia — https://samaenergia.fi/tietosuoja/
 
@@ -1943,19 +1948,21 @@ Kui palju tarbimine kasvab?
 10,0 TWhaastas 2030
 2025: 7,9 TWh
 Eleringi prognoosis kasvab aastane tarbimine 7,9 teravatt-tunnilt 2025. aastal 10,0 teravatt-tunnini 2030. aastaks.
-Kaardi ruudud on andmekeskuste projektid: täidetud töötavad või on ehitamisel, õõnsad on kavandamisel, ja suurus näitab võimsust.
+Kaardi ruudud on andmekeskuste projektid: täidetud töötavad või on ehitamisel, õõnsad on kavandamisel ja suurus näitab võimsust.
 Allikad: Elering, arengukava 2026–2035 · 9.7.2026; andmekeskused: Sunly · 17.3.2026, ERR · 17.6.2026; Soome projektid: Datakeskushankkeiden kansallinen rekisteri (CC BY 4.0) · 4.11.2026
 
 Kust tuleb ilmast sõltuv tootmine?
 1 214 MWpäikesevõimsust
 tuulevõimsust 694 MW · installeeritud netovõimsus 2025
 2025. aastal oli Eestis 1 214 MW päikese- ja 694 MW tuulevõimsust. Ilmast sõltuv toodang muudab tunnihinnad kõikuvaks ja salvesti teenib hinnavahest.
-Allikas: Elering, varustuskindluse aruanne 2025 · 9.12.2025
+Kaardi valged ringid on tuulepargid ja kuldsed punktid päikesejaamad; suurus näitab võimsust. Need on OpenStreetMapi märgitud jaamad ja loetelu ei ole täielik: kogusummad on Eleringi omad.
+Allikad: Elering, varustuskindluse aruanne 2025 · 9.12.2025; jaamad kaardil: OpenStreetMapi kaastöötajad (ODbL) · 2.11.2026
 
 Kes juba salvestab?
 245 MWakuvõimsust võrgus
 juulis lisandus Aruküla 100 MW
 Eleringi teatel on võrku ühendatud 245 MW akuvõimsust (veebruar 2026) ja juulis lisandus Aruküla 100 MW park.
+Kaardi punktid on kaks suurt akuparki, millest on avalik teade (Kiisa ja Aruküla); 245 MW hõlmab kõiki veebruariks 2026 võrku ühendatud akusid.
 Allikas: ERR News 17.2.2026 ja 8.7.2026
 
 Kui palju reserve vajatakse?
@@ -1967,10 +1974,12 @@ Allikas: Elering, AST ja Litgrid, FRR dimensioning forecast · 29.7.2025
 Mis tuleb?
 1 000–1 300 MWsalvestusvõimsust lisandub 2035. aastaks
 2030: kuni 1 500 MW uut tootmisvõimsust. 2035: 1 000–1 300 MW lisanduvat salvestusvõimsust. Umbes 2038: EstLink 3 ja Eesti–Läti neljas ühendus, impordivõimekus +1 200 MW.
+Kaardile märgitud projektid on kavandatud põhivõrgu liinid ja riikidevahelised ühendused koos valmimisajaga. Trassid on suunda näitavad: joon ühendab otspunkte.
 Allikas: ENMAK 2035 indikatiivne maht Eleringi arengukavas 2026–2035 · 9.7.2026
 
 Kus on selles pildis teie liitumine?
 Teie liitumine on juba olemas ja selle taga töötav salvesti ei vaja uut põhivõrguliitumist. Kirjalik hinnang paneb selle kaardile, iga arv allikaga.
+Kaardi kuldne punkt on näide, mitte teie objekt.
 Objekti aadressOtsi
 Kasuta minu asukohtavõi vali koht kaardilAadressiotsing käib meie serveri kaudu Maa- ja Ruumiametisse või Soome Maanmittauslaitosesse ja päikesetoodang EL-i PVGIS-teenusest. Asukohta me ei salvesta; vormi läheb see ainult siis, kui te selle ise sinna viite.
 
@@ -2185,7 +2194,7 @@ Võrguettevõtja seisukoht ja see, mida hinnang ei ütle
 
 Saadame juhise, kuidas anda ligipääs tunniandmetele. Kahe tööpäevaga pärast andmete saamist on kirjalik hinnang teil.
 
-info@samaenergia.fi+358 449 654 614
+info@samaenergia.fi+358 44 965 4614
 
 Nimi
 
@@ -2226,8 +2235,8 @@ Päike + salvestikeskpäevane ülejääk õhtusse, tipud maha ja sama salvesti E
 
 Iga katuskivi, plekk, profiilplekk, lamekatus, katusesse integreeritud või maapaigaldus
 
-Viis võimalust päikeseelektriks. Üks mõõtmise põhimõte.
-Lahendus valitakse selle järgi, mis kinnistul on: korras katus, uuendamist vajav katus, õu, parkla või juba olemasolev päikesejaam. Mõõtmine lähtub alati tarbimisest, et võimalikult suur osa toodangust läheks oma kasutusse.
+Viis võimalust päikeseelektriks. Üks dimensioneerimise põhimõte.
+Lahendus valitakse selle järgi, mis kinnistul on: korras katus, uuendamist vajav katus, õu, parkla või juba olemasolev päikesejaam. Dimensioneerimine lähtub alati tarbimisest, et võimalikult suur osa toodangust läheks oma kasutusse.
 
 Milline lahendus teile sobib
 Hinnangus kontrollime iga varianti teie objekti tunnitarbimise, katuse ja liitumise järgi.
@@ -2275,7 +2284,7 @@ Suured ühtlased katusepinnad on päikesekatuse loomulik koht. Dimensioneerimine
 Kui välimus loeb
 Kui hoone välimus on oluline, sobitab katusesse integreeritud lahendus päikeseelektri hoone ilmega. Muinsuskaitsealusel hoonel lepitakse lahendus kokku muinsuskaitsega.
 
-Kui katus uuendataksepäikesekatuse hind vertub uue katusega
+Kui katus uuendataksepäikesekatuse hinda võrreldakse uue katusega
 
 Kui katus tuleb lähiaastatel nagunii uuendada, võrreldakse päikesekatuse hinda uue katusega, mitte ainult jaamaga: kate makstakse niikuinii ja jaama osa investeeringust jääb väiksemaks kui eraldi paigaldusel valmis katuse peale. Hinnangus vaadatakse läbi katusekonstruktsiooni kandevõime, kalle ja suund, lume- ja tuulekoormus, tuleohutus ja loa vajadus.
 
@@ -2320,7 +2329,7 @@ Tipud maha samast salvestist
 Kui võrguettevõtja võtab võimsustasu, lõikab salvesti kuu suurimat võimsustippu. Sääst arvutatakse hinnangus eraldi reale.
 
 Vabad tunnid Eleringi reservidesse
-Tundidel, kui salvestit omatarbeks ei vajata, pakub agregaator seda Eleringi reserviturule. Reservitulu modelleeritakse tooteti tegelikest tunnihindadest ja agregaatori tasu on eraldi real. Kuidas agregaator töötab
+Tundidel, kui salvestit omatarbeks ei vajata, pakub agregaator seda Eleringi reserviturule. Reservitulu modelleeritakse toodete kaupa tegelike tunnihindade põhjal ja agregaatori tasu on eraldi real. Kuidas agregaator töötab
 
 Allikas reservituru toimimise kohta: Elering, sagedusreservide turu kokkuvõtted
 
@@ -2752,7 +2761,7 @@ Iga tellimus algab samast kohast: tasuta kirjalikust hinnangust. Siin on kirjas,
 1 kontaktkogu projekti vältel, hinnangust käivitamise ja seireni
 
 Hinnang, projekt, portfell.
-Sama viis rida iga toote kohta, et võrdlus oleks lihtne.
+Sama neli rida iga toote kohta, et võrdlus oleks lihtne.
 
 Teie andmed keskel, teiste tingimused ümber: üks arvutus.
 
@@ -2783,7 +2792,7 @@ Mida te annate
 Otsuse hinnangu põhjal, ligipääsu objektile ja kaks allkirja: EPC-leping meiega ja teenusleping agregaatoriga.
 
 Aeg
-Objektikülastusest käivitamiseni sõltub võrguettevõtja vastusest ja tarnest; ooteajad on hinnangus eraldi välja toodud.
+Aeg objektikülastusest käivitamiseni sõltub võrguettevõtja vastusest ja tarnest; ooteajad on hinnangus eraldi välja toodud.
 
 Mis edasi
 Tulu algab pärast agregaatoriga liitumist; meie jälgime, et süsteem teeks seda, mida hinnang näitas.
@@ -2803,7 +2812,7 @@ Aeg
 Hinnang objektide arvu järgi; esimene objekt läheb töösse, kui teised on veel hinnangus.
 
 Mis edasi
-Iga objekt käib sama nelja sammu läbi; portfell kasvab objekt haaval.
+Iga objekt käib sama viie sammu läbi; portfell kasvab objekt haaval.
 
 Kirjeldage portfelli
 
@@ -3337,6 +3346,7 @@ Eleringi prognoosis kasvab Eesti aastane elektritarbimine 7,9 teravatt-tunnilt 2
 
 10,0 TWhaastane tarbimine 2030 Eleringi prognoosis · 2025: 7,9 TWh
 
+Ruudud kaardil: andmekeskuste projektid; täidetud töötavad või on ehitamisel, õõnsad on kavandamisel ja suurus näitab võimsust (Sunly, ERR; Soome projektid: Datakeskushankkeiden kansallinen rekisteri, CC BY 4.0, 4.11.2026)
 Prognoos: 10,0 TWh aastal 2030 · 11,2 TWh aastal 2035 (2025: 7,9 TWh) (Elering, arengukava 2026–2035, 9.7.2026)
 Tiputarbimine: rekord 1 723 MW 5.2.2026 · prognoos külmal talvel 1 924 MW aastal 2030 (Elering, arengukava 2026–2035, 9.7.2026)
 Import: 37 % tarbimisest kaeti 2025. aastal impordiga (Elering / ERR, 26.1.2026)
@@ -3366,8 +3376,8 @@ Taastuvenergia 2025: 68 % kodumaisest toodangust · 41 % tarbimisest (Elering / 
 
 Soome samal mõõdupuul
 Võrreldavus: Osaliselt võrreldav: Soome arvud on Fingridi prognoosides kasutatud võimsused (hinnang, mitte ametlik statistika, 2.11.2026), Eesti arvud Eleringi installeeritud netovõimsus 2025.
-Tuuleenergia: 9 553 MW (Fingrid, avoin data 268, 2.11.2026)
-Päikeseenergia: 2 074 MW, sisaldab väiketootmise hinnangut · ametlikku kogusummat Fingrid ei avalda (Fingrid, avoin data 267, 2.11.2026)
+Tuuleenergia: 9 553 MW (Fingrid, avaandmed 268, 2.11.2026)
+Päikeseenergia: 2 074 MW, sisaldab väiketootmise hinnangut · ametlikku kogusummat Fingrid ei avalda (Fingrid, avaandmed 267, 2.11.2026)
 Liidetud 2025: 1 509 MW tuule- ja päikeseenergiat (Fingrid, 4.3.2026)
 Juhitav võimsus: ilmast sõltuva tootmise kõrvale on vaja rohkem juhitavat võimsust ja paindlikkust (Fingrid, 18.8.2026)
 
@@ -3390,7 +3400,7 @@ Jaotusvõrgus: 74 MW 2025. aasta lõpus (Elektrilevi / ERR, 19.8.2026)
 
 Soome samal mõõdupuul
 Võrreldavus: Ei ole võrreldav: Soome arv on Fingridi hinnang kõigist üle 1 MW salvestitest. Eestis on Eleringi kogusumma avaldatud ainult uudises, seepärast on kaardil eraldi sildid. Arve ei tohi kokku liita.
-Võrgus praegu: 2 085 MW üle 1 MW salvesteid (hinnang, sisaldab umbes kuu jooksul tööle minevaid) (Fingrid, avoin data 424, 2.11.2026)
+Võrgus praegu: 2 085 MW üle 1 MW salvesteid (hinnang, sisaldab umbes kuu jooksul tööle minevaid) (Fingrid, avaandmed 424, 2.11.2026)
 Veebruar 2026: u 1 050 MW · 85 % üksustest alla 2 MW · 56 % jaotusvõrgus · umbes pool Tampere–Lahti–Lappeenranta joonest lõuna pool (Fingrid, 24.2.2026)
 Lõuna-Soome: uued salvestid põhivõrku alles siis, kui Hikiä–Toivila valmib 2029 · Pohjanmaal ja Põhja-Soomes vaba võimsust mitu tuhat megavatti (Fingrid, 24.9.2025)
 
@@ -3520,7 +3530,7 @@ Fingrid: Fingridin selvitys: teollisuuskulutuksen sijoittuminen lähelle sähkö
 
 Fingrid: Siirtokapasiteetin määräytyminen Aurora-käyttöönoton jälkeen (sähkömarkkinatoimikunta) · 4.12.2025
 
-Fingrid: Osa pohjoismaista sähköjärjestelmää · luettu 2.11.2026
+Fingrid: Osa pohjoismaista sähköjärjestelmää · loetud 2.11.2026
 
 Fingrid: Fingridin ajankohtaiset, neuvottelukunta · 4.3.2026
 
@@ -3530,13 +3540,13 @@ Fingrid: Fingrid-konsernin johdon katsaus 1.1.–30.9.2026 · 29.10.2026
 
 Fingrid: Sähkönkulutuksen liitettävyys kantaverkkoon väliaikaisesti tiukilla eteläisessä Suomessa · 21.1.2025
 
-Fingrid, avoin data: Tuulivoimaennusteessa käytetty kokonaiskapasiteetti (aineisto 268) · 2.11.2026
+Fingrid, avaandmed: Tuulivoimaennusteessa käytetty kokonaiskapasiteetti (andmestik 268) · 2.11.2026
 
-Fingrid, avoin data: Aurinkovoimaennusteessa käytetty kokonaiskapasiteetti (aineisto 267) · 2.11.2026
+Fingrid, avaandmed: Aurinkovoimaennusteessa käytetty kokonaiskapasiteetti (andmestik 267) · 2.11.2026
 
 Fingrid: Sähkönkulutus on kääntymässä voimakkaaseen kasvuun – rinnalle tarvitaan lisää säätövoimaa · 18.8.2026
 
-Fingrid, avoin data: Sähkövarastojen yhteenlaskettu asennettu kapasiteetti (aineisto 424) · 2.11.2026
+Fingrid, avaandmed: Sähkövarastojen yhteenlaskettu asennettu kapasiteetti (andmestik 424) · 2.11.2026
 
 Fingrid: Sähkövarastojen yhteisteho Suomessa jo yli 1 000 MW · 24.2.2026
 
@@ -3554,9 +3564,9 @@ Fingrid: Järvilinja 2 otettiin käyttöön · 26.10.2026
 
 Fingrid: Metsälinja 2 -voimajohtoyhteys vastaa sähköistyvän Suomen tarpeisiin · 29.9.2026
 
-OpenStreetMap-tekijät (ODbL 1.0): Voimajohdot OpenInfraMapin tiilistä, voimalat ja sähköasemat Overpassista · 2.11.2026
+OpenStreetMapi kaastöötajad (ODbL 1.0): liinid OpenInfraMapi kaardiruutudest, elektrijaamad ja alajaamad Overpassist · 2.11.2026
 
-Natural Earth: Rantaviivat, järvet ja maakunnat 1:10m (vapaa käyttö) · 5.1.1
+Natural Earth: rannajooned, järved ja maakonnad 1:10m (vaba kasutus) · versioon 5.1.1
 
 # Küsi tasuta hinnangut · SAMA Energia — https://samaenergia.ee/kontakt/
 
@@ -3573,7 +3583,7 @@ Võrguettevõtja seisukoht ja see, mida hinnang ei ütle
 
 Teie annate: oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt, juhendame), ühe elektriarve ja peakilbi skeemi.
 
-info@samaenergia.fi+358 449 654 614
+info@samaenergia.fi+358 44 965 4614
 
 Nimi
 

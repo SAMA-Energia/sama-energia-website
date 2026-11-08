@@ -95,7 +95,13 @@
   function t(o) { return o == null ? '' : (typeof o === 'string' ? o : (o[LANG] != null ? o[LANG] : o.fi)); }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function cname(c) { return c === HOME ? UI.home : UI.other; }
-  function src(id) { return (state.data.sources || {})[id]; }
+  function src(id) {   // sources[id][LANG] (v51-fix6): ET-sivulla lähteen kuvaus viroksi
+    var s = (state.data.sources || {})[id], o = s && s[LANG], r = {}, k;
+    if (!o) return s;
+    for (k in s) r[k] = s[k];
+    for (k in o) r[k] = o[k];
+    return r;
+  }
   function srcText(id) { var s = src(id); return s ? s.pub + ' · ' + s.date : ''; }
   function srcLink(id) { var s = src(id); return s ? '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.pub) + '</a> · ' + esc(s.date) : ''; }
   function f1(n) { return n.toFixed(1); }
@@ -190,7 +196,7 @@
     var out = [];
     state.data.layers.forEach(function (L, i) {
       (L.pins || []).forEach(function (p) {
-        var c = p.c || 'X', f = { layer: i, c: c, lab: p.t, src: p.src, s: p.s, ta: p.ta };
+        var c = p.c || 'X', f = { layer: i, c: c, lab: p.t, src: p.src, s: t(p.s), ta: p.ta };
         if (p.k === 'link') { f.t = 'ln'; f.cls = 'link'; f.ll = [p.b, p.a]; f.frac = 1 - (p.lt || 0.5); f.route = 1; }   // reitti piirtyy OSM-kaapelista; tässä tunniste ja osuma-alue
         else if (p.k === 'label') { f.t = 'lbl'; f.cls = p.green ? 'green' : (p.dim ? 'dim' : 'pin'); f.ll = p.p; }
         else if (p.k === 'ring') { f.t = 'ring'; f.ll = p.p; f.r = p.r; }

@@ -28,7 +28,8 @@ S = {
     'dkr': {'pub': 'Datakeskushankkeiden kansallinen rekisteri (CC BY 4.0)', 'date': '2026-11-04', 'url': 'https://www.datakeskusrekisteri.fi/'},
     'sunly': {'pub': 'Sunly', 'date': '2026-03-17', 'url': 'https://sunly.ee/uudised/sunly-kavandab-eestisse-baltimaade-suurimat-andmekeskust'},
     'err-dc': {'pub': 'ERR', 'date': '2026-06-17', 'url': 'https://www.err.ee/1610056444/kaks-arendajat-tunnevad-huvi-lihula-kulje-alla-andmekeskuse-rajamise-vastu'},
-    'osm': {'pub': 'OpenStreetMap-tekijät (ODbL 1.0)', 'date': '2026-11-02', 'url': 'https://www.openstreetmap.org/copyright'},
+    'osm': {'pub': 'OpenStreetMap-tekijät (ODbL 1.0)', 'date': '2026-11-02', 'url': 'https://www.openstreetmap.org/copyright',
+            'et': {'pub': 'OpenStreetMapi kaastöötajad (ODbL 1.0)'}},   # ET-sivun etusivukartan vihjeisiin (v51-fix6)
     'fg-ksu': {'pub': 'Fingrid, Kantaverkon kehittämissuunnitelma 2026–2035', 'date': '2025-12-02',
                'url': 'https://www.fingrid.fi/globalassets/dokumentit/fi/kantaverkko/kantaverkon-kehittaminen/kantaverkon-kehittamissuunnitelma-2026-2035/fingrid_kehittamissuunnitelma_a4_2.12_lr.pdf'},
     'fg-raja': {'pub': 'Fingrid, Rajajohtohankkeet (Sähkömarkkinatoimikunta)', 'date': '2026-02-06',

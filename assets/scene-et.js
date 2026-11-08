@@ -1780,6 +1780,7 @@ class Component extends DCLogic {
       return;
     }
     const lang = this._mapLang(), home = this._mapHome(), cmp = !!this._mapCmp;
+    const inLang = (o) => (o && typeof o === 'object' ? (o[lang] != null ? o[lang] : o.fi) : o);   /* {fi, et} tai merkkijono (kartta-data.json, v51-fix6) */
     const on = this._mapOn || {}, A = this._mapA || (this._mapA = {});
     const dt = Math.min(0.1, time - (this._mapT === undefined ? time : this._mapT)); this._mapT = time;
     for (const k in on) { const tgt = on[k] ? 1 : 0; A[k] = A[k] === undefined ? tgt : A[k] + (tgt - A[k]) * Math.min(1, dt * 5); }
@@ -1936,20 +1937,20 @@ class Component extends DCLogic {
             for (const d of pin._dots) { const s = P(d); if (s[0] < -4 || s[0] > w + 4 || s[1] < -4 || s[1] > h + 4) continue; g.fillRect(s[0] - r2 / 2, s[1] - r2 / 2, r2, r2); }
             const edge = pin._xy.slice(0, Math.max(2, (pin.n || 5))).map((q) => P(q));
             g.setLineDash([3, 6]); g.strokeStyle = 'rgba(212,181,116,0.7)'; g.lineWidth = 1; g.beginPath(); edge.forEach((s, i) => { if (i === 0) g.moveTo(s[0], s[1]); else g.lineTo(s[0], s[1]); }); g.stroke(); g.setLineDash([]);
-            if (showLab(pin.poly[0])) { const m = P(this._ll(pin.lp || pin.poly[2])); label(m[0], m[1] - 10, pin.t[lang], { align: 'center' }); pins.push({ p: m, t: pin.t[lang], s: pin.s }); }
+            if (showLab(pin.poly[0])) { const m = P(this._ll(pin.lp || pin.poly[2])); label(m[0], m[1] - 10, pin.t[lang], { align: 'center' }); pins.push({ p: m, t: pin.t[lang], s: inLang(pin.s) }); }
             g.globalAlpha = 1;
           } else if (k === 'link') {
             const a1 = PL(pin.a), b1 = PL(pin.b);
             g.globalAlpha = aa;
             g.globalCompositeOperation = 'lighter'; g.strokeStyle = 'rgba(212,181,116,0.16)'; g.lineWidth = 7; g.beginPath(); g.moveTo(a1[0], a1[1]); g.lineTo(b1[0], b1[1]); g.stroke(); g.globalCompositeOperation = 'source-over';
             const tt = pin.lt || 0.42, m = [a1[0] + (b1[0] - a1[0]) * tt, a1[1] + (b1[1] - a1[1]) * tt];
-            label(m[0] + 10, m[1], pin.t[lang]); pins.push({ p: m, t: pin.t[lang], s: pin.s });
+            label(m[0] + 10, m[1], pin.t[lang]); pins.push({ p: m, t: pin.t[lang], s: inLang(pin.s) });
             g.globalAlpha = 1;
           } else if (k === 'label') {
             if (!showLab(pin.p)) continue;
             const s = PL(pin.p); g.globalAlpha = aa * ctyA(pin.p);
             label(s[0], s[1], pin.t[lang], { align: 'center', color: pin.green ? '#5BD08D' : (pin.dim ? '#A39C8E' : '#F3EEE1') });
-            pins.push({ p: s, t: pin.t[lang], s: pin.s }); g.globalAlpha = 1;
+            pins.push({ p: s, t: pin.t[lang], s: inLang(pin.s) }); g.globalAlpha = 1;
           } else if (k === 'ring') {
             const s = PL(pin.p); const ca = ctyA(pin.p); g.globalAlpha = aa * ca;
             const kr = Math.max(0.9, sc / 900);
@@ -1957,20 +1958,20 @@ class Component extends DCLogic {
             g.strokeStyle = '#D4B574'; g.lineWidth = 1.4; g.beginPath(); g.arc(s[0], s[1], r0, 0, Math.PI * 2); g.stroke();
             g.setLineDash([4, 5]); g.lineDashOffset = -time * 8; g.strokeStyle = 'rgba(212,181,116,0.7)'; g.lineWidth = 1; g.beginPath(); g.arc(s[0], s[1], r1, 0, Math.PI * 2); g.stroke(); g.setLineDash([]);
             g.fillStyle = 'rgba(212,181,116,0.07)'; g.beginPath(); g.arc(s[0], s[1], r1, 0, Math.PI * 2); g.fill();
-            if (showLab(pin.p)) { label(s[0], s[1] + r1 + 12, pin.t[lang], { align: 'center' }); pins.push({ p: s, t: pin.t[lang], s: pin.s }); }
+            if (showLab(pin.p)) { label(s[0], s[1] + r1 + 12, pin.t[lang], { align: 'center' }); pins.push({ p: s, t: pin.t[lang], s: inLang(pin.s) }); }
             g.globalAlpha = 1;
           } else if (k === 'node') {
             const s = PL(pin.p); const ca = ctyA(pin.p); g.globalAlpha = aa * ca;
             const r = 4 + 1.5 * Math.sin(time * 1.2 + s[0]);
             g.strokeStyle = '#D4B574'; g.lineWidth = 1.2; g.beginPath(); g.arc(s[0], s[1], r + 4, 0, Math.PI * 2); g.stroke();
             g.fillStyle = '#D4B574'; g.beginPath(); g.arc(s[0], s[1], 2.6, 0, Math.PI * 2); g.fill();
-            if (showLab(pin.p)) { const left = s[0] > cx; label(s[0] + (left ? 12 : -12), s[1], pin.t[lang], { align: left ? 'left' : 'right', font: FONTS, color: '#CFC8B8' }); pins.push({ p: s, t: pin.t[lang], s: pin.s }); }
+            if (showLab(pin.p)) { const left = s[0] > cx; label(s[0] + (left ? 12 : -12), s[1], pin.t[lang], { align: left ? 'left' : 'right', font: FONTS, color: '#CFC8B8' }); pins.push({ p: s, t: pin.t[lang], s: inLang(pin.s) }); }
             g.globalAlpha = 1;
           } else if (k === 'point') {
             const s = PL(pin.p); const ca = ctyA(pin.p); g.globalAlpha = aa * ca;
             for (let q = 0; q < 2; q++) { const ph = (time * 0.4 + q / 2) % 1; g.strokeStyle = 'rgba(212,181,116,' + ((1 - ph) * 0.6).toFixed(3) + ')'; g.lineWidth = 1; g.beginPath(); g.arc(s[0], s[1], 4 + ph * 22, 0, Math.PI * 2); g.stroke(); }
             g.fillStyle = '#F3EEE1'; g.beginPath(); g.arc(s[0], s[1], 3.2, 0, Math.PI * 2); g.fill();
-            if (showLab(pin.p)) { label(s[0] + 12, s[1] + (pin.p[1] > 59.3 ? -8 : 8), pin.t[lang], { font: FONTS }); pins.push({ p: s, t: pin.t[lang], s: pin.s }); }
+            if (showLab(pin.p)) { label(s[0] + 12, s[1] + (pin.p[1] > 59.3 ? -8 : 8), pin.t[lang], { font: FONTS }); pins.push({ p: s, t: pin.t[lang], s: inLang(pin.s) }); }
             g.globalAlpha = 1;
           }
         }
@@ -1988,7 +1989,7 @@ class Component extends DCLogic {
       const nm = (it) => typeof it.n === 'string' ? it.n : it.n[lang];
       const mwOf = (it) => it.mw != null ? it.mw : (it.mwit != null ? it.mwit : 0);
       const mwT = (it) => { let a = it.mw0 ? num(it.mw0) + '–' + num(it.mw) + ' MW' : (it.mw != null ? num(it.mw) + ' MW' : ''); if (it.mwit != null) a += (a ? ' · ' : '') + 'IT ' + num(it.mwit) + ' MW'; return a; };
-      const srcT = (it) => [it.src, it.src2, it.src3].filter(Boolean).map((id) => { const q = ks.sources[id]; return q ? q.pub + ' ' + q.date : ''; }).join('; ');
+      const srcT = (it) => [it.src, it.src2, it.src3].filter(Boolean).map((id) => { const q = ks.sources[id], o = (q && q[lang]) || {}; return q ? (o.pub || q.pub) + ' ' + (o.date || q.date) : ''; }).join('; ');
       const info = (it) => {
         const st = ks.status[it.s][lang], kn = ks.kind[it.k][lang], yr = it.y ? ' · ' + (it.s === 'op' ? (lang === 'et' ? 'alates ' : 'vuodesta ') : (lang === 'et' ? 'valmib ' : 'valmis ')) + it.y : '';
         return { t: nm(it), d: kn + (it.o ? ' · ' + it.o : '') + (it.m ? ' · ' + it.m : '') + '\n' + st + yr + (mwT(it) ? ' · ' + mwT(it) : '') + (it.note ? '\n' + it.note[lang] : ''), s: srcT(it), u: it.u };
