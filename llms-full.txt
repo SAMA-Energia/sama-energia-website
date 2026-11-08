@@ -69,7 +69,8 @@ Kuinka paljon kulutus kasvaa?
 106–123 TWhvuonna 2030
 2025: 84,6 TWh
 Fingridin skenaarioissa sähkönkulutus kasvaa nykyisestä alle 90 terawattitunnista 106–123 terawattituntiin vuoteen 2030 mennessä.
-Lähteet: Fingrid, kehitysnäkymät · 30.9.2026; luku 2025: Fingrid · 4.3.2026
+Kartan neliöt ovat datakeskushankkeita: täytetyt ovat käytössä tai rakenteilla, ontot suunnitteilla, ja koko kertoo tehon. Fingridin mukaan liittymissopimuksen tehneiden datakeskushankkeiden suunniteltu kokonaisteho on lähes 5 GW.
+Lähteet: Fingrid, kehitysnäkymät · 30.9.2026; luku 2025: Fingrid · 4.3.2026; datakeskukset: Fingrid · 18.8.2026 ja Datakeskushankkeiden kansallinen rekisteri (CC BY 4.0) · 4.11.2026
 
 Mistä sääriippuvainen tuotanto tulee?
 9 553 MWtuulivoimaa
@@ -1942,7 +1943,8 @@ Kui palju tarbimine kasvab?
 10,0 TWhaastas 2030
 2025: 7,9 TWh
 Eleringi prognoosis kasvab aastane tarbimine 7,9 teravatt-tunnilt 2025. aastal 10,0 teravatt-tunnini 2030. aastaks.
-Allikas: Elering, arengukava 2026–2035 · 9.7.2026
+Kaardi ruudud on andmekeskuste projektid: täidetud töötavad või on ehitamisel, õõnsad on kavandamisel, ja suurus näitab võimsust.
+Allikad: Elering, arengukava 2026–2035 · 9.7.2026; andmekeskused: Sunly · 17.3.2026, ERR · 17.6.2026; Soome projektid: Datakeskushankkeiden kansallinen rekisteri (CC BY 4.0) · 4.11.2026
 
 Kust tuleb ilmast sõltuv tootmine?
 1 214 MWpäikesevõimsust

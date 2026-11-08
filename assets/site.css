@@ -979,3 +979,7 @@ h1 em,h2 em{color:var(--gold-2)}
 .kiinn-o input:checked+.kiinn-b:after{opacity:1}
 .kiinn-o input:focus-visible+.kiinn-b{outline:2px solid var(--gold-2);outline-offset:2px}
 @media (prefers-reduced-motion:reduce){.kiinn-b,.kiinn-b:before,.kiinn-b:after{transition:none}}
+/* v51-fix5 (Martin 8.11.2026): vapaa vieritys, aktiivinen karttaluku täysin näkyvissä ja muut himmeinä (fix4:n ohjattu vieritys peruttu) */
+.k-kaart.is-live .kk-l>*{transition:opacity .45s ease}
+.k-kaart.is-live .kk-body:has(.kk-l.on) .kk-l:not(.on)>*{opacity:.28}
+@media (prefers-reduced-motion:reduce){.k-kaart.is-live .kk-l>*{transition:none}}
