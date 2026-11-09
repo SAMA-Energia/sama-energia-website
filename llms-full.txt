@@ -131,8 +131,6 @@ Olemme valinneet kumppanit sen mukaan, mikä luo yrityksen investoinnille suurim
 Investoinnin arvo syntyy monesta osasta. Kun tarjoamme valikoiman eri valmistajia, tuotteita ja palveluita, voimme rakentaa jokaiselle asiakkaalle räätälöidyn ratkaisun, joka luo asiakkaan kiinteistölle eniten arvoa. Lähtökohtana ovat teidän päätöksenne kriteerit, ei yhden laitteen myynti. Kumppaneiden koko valikoima on käytettävissänne.
 Kumppanit ja tuotteet
 
-Kumppanimme
-
 Poimintoja valikoimasta
 Tekniset tiedot ovat valmistajien datalehdiltä ja tuotesivuilta.
 
@@ -279,6 +277,8 @@ Lähde: Mitsubishi Electric, Geodan-esite (Scanoffice), luettu 9.11.2026
 Koko valikoima9tuotettaKatso valikoima
 
 Valmistaja ja malli valitaan kohteenne kulutuksen, liittymän ja tilan mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla.
+
+Kumppanimme
 
 Vastuuhenkilöt nimeltä.
 Jokaisella projektin vaiheella on nimetty vastuuhenkilö, ja numerot ovat heidän omiaan.
@@ -4121,8 +4121,6 @@ Oleme partnerid valinud selle järgi, mis loob ettevõtte investeeringule suurim
 Investeeringu väärtus tuleb paljudest osadest. Kui pakume valikut eri tootjatest, toodetest ja teenustest, saame igale kliendile koostada rätseplahenduse, mis loob tema kinnistule kõige rohkem väärtust. Lähtume teie otsuse kriteeriumidest, mitte ühe seadme müügist. Partnerite kogu valik on teie käsutuses.
 Partnerid ja tooted
 
-Meie partnerid
-
 Näiteid valikust
 Tehnilised andmed on tootjate andmelehtedelt ja tootelehtedelt.
 
@@ -4269,6 +4267,8 @@ Allikas: Mitsubishi Electric, Geodan brošüür (Scanoffice), loetud 9.11.2026
 Kogu valik9toodetVaata valikut
 
 Tootja ja mudel valitakse teie objekti tarbimise, liitumise ja ruumi järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega.
+
+Meie partnerid
 
 Vastutajad nimeliselt.
 Igal projekti etapil on nimeline vastutaja ja numbrid on nende enda omad.
