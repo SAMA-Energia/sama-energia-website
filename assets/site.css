@@ -863,53 +863,17 @@ h1 em,h2 em{color:var(--gold-2)}
 .k-pvb .k-play{right:12px;bottom:12px;background:rgba(251,249,244,.92)}
 .k-pvl{position:absolute;left:12px;top:12px;margin:0;padding:6px 12px;border-radius:999px;background:rgba(251,249,244,.94);font:600 13px/1.25 var(--font-body);color:var(--ink);box-shadow:0 1px 2px rgba(18,17,15,.1)}.k-pvl[hidden]{display:none}
 .k-pvs.sw{animation:kpvsw .5s var(--ease)}@keyframes kpvsw{from{opacity:.4}to{opacity:1}}
-/* v48: kumppaniosio = väite vasemmalla, teksti oikealla; alla markkinan kaikki kumppanit tasavertaisina kortteina
-   (kuvat kumppanin valikoimasta 1–3, nimi, kuvaus, tarjonta; nimi linkkinä kumppanisivun korttiin). 12 sarakkeen ruudukko:
-   s3 = neljä riviin, s4 = kolme, o2 = kahden kortin rivi keskitettynä; ≤1023 px pyyhkäisyrivi. */
+/* v48: kumppaniosio = väite vasemmalla, teksti oikealla. Vaihtoehto draft-logot-tuotteet (9.11.2026): kumppanikortit ja
+   -paneelit (.k-pcs/.k-pc/.k-pdl) korvattu logorivillä (.k-logos) ja tuotenostolla (.k-tuo) — säännöt tiedoston lopussa. */
 .k-tvg{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:18px clamp(28px,4vw,64px);align-items:start}
 .k-tvg h2{margin:0;font-size:clamp(36px,4.2vw,60px);line-height:1.04}
 .k-tvt{padding-top:8px;max-width:620px}.k-tvt .lead{margin:0}.k-tvt p+p{margin:14px 0 0}.k-tvt .k-more{margin:22px 0 0}
-.k-pcs{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(14px,1.5vw,20px);margin:clamp(34px,4vw,52px) 0 0;padding:0;list-style:none}
-.k-pcs>li{display:flex;grid-column:span 4}.k-pcs>li.s3{grid-column:span 3}.k-pcs>li.o2{grid-column:3/span 4}
-.k-pc{position:relative;display:flex;flex-direction:column;width:100%;overflow:hidden;border:1px solid var(--line);border-radius:var(--r-s);background:var(--paper-2);transition:border-color .3s}
-.k-pc:hover{border-color:var(--line-2)}.k-pc:focus-within{outline:2px solid var(--gold-2);outline-offset:3px}
-.k-pm{display:grid;gap:3px;aspect-ratio:4/3;min-height:0;overflow:hidden;background:var(--paper-3)}
-.k-pm.n3{grid-template-columns:minmax(0,2fr) minmax(0,1fr);grid-template-rows:repeat(2,minmax(0,1fr))}.k-pm.n3 img:first-child{grid-row:span 2}.k-pm.n2{grid-template-columns:repeat(2,minmax(0,1fr))}
-.k-pm img{display:block;width:100%;height:100%;min-height:0;object-fit:cover}.k-pm img.ct{object-fit:contain;background:#fff}.k-pm img.ctd{object-fit:contain;background:#11100E}
-.k-pct{display:flex;flex-direction:column;gap:8px;padding:16px 18px 18px}
-.k-pc h3{margin:0;font-size:20px}.k-pcl{color:inherit;text-decoration:none;transition:color .25s}.k-pcl:after{content:"";position:absolute;inset:0}
-.k-pc:hover .k-pcl{color:var(--gold)}.k-pcl:focus-visible{outline:none}
-.k-pct p{margin:0;font-size:14.5px;line-height:1.45;color:var(--ink-2)}
-.k-pco{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 0;padding:0;list-style:none}
-.k-pco li{padding:3px 9px;border:1px solid var(--line-2);border-radius:999px;font-size:12.5px;line-height:1.35;color:var(--ink-2)}
-/* v51 (6.11.2026): kumppanin lisätiedot avautuvat kortista (Popover API, ei JS:ää) */
-.k-pcl{appearance:none;margin:0;padding:0;border:0;background:none;font:inherit;letter-spacing:inherit;text-align:left;cursor:pointer}.k-pct{flex:1}
-.k-pcm{margin-top:auto;padding-top:6px;font-size:13px;font-weight:500;color:var(--gold-2)}.k-pc:hover .k-pcm{color:var(--gold)}
-.k-pcm:after{content:"";display:inline-block;width:6px;height:6px;margin-left:9px;border-right:1.5px solid;border-bottom:1.5px solid;transform:translateY(-2px) rotate(-45deg)}
-.k-pdl{width:min(1040px,calc(100vw - 32px));max-height:min(90vh,760px);margin:auto;padding:0;overflow:auto;overscroll-behavior:contain;border:1px solid var(--line-2);border-radius:var(--r-s);background:var(--paper-2);color:var(--ink);box-shadow:0 30px 80px rgba(0,0,0,.5)}
-.k-pdl::backdrop{background:rgba(9,9,8,.74)}.k-pdl:popover-open{display:grid}.k-pdl-in,.k-pdl-x{grid-area:1/1}
-.k-pdl-in{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}.k-pdl .k-pm{aspect-ratio:auto;height:100%;min-height:440px}
-/* v52: Elecnovan valikoima paneelissa (kuva + kuvateksti per tuotetyyppi) */
-.k-pgal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px;align-content:start;background:var(--paper-3)}
-.k-pgal figure{display:flex;flex-direction:column;margin:0;background:var(--paper-2)}
-.k-pgal img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;background:#fff}
-.k-pgal img.ct{object-fit:contain}
-.k-pgal figcaption{padding:7px 10px 10px;font-size:13px;line-height:1.3;color:var(--ink-2)}
-.k-pdl-t{display:flex;flex-direction:column;gap:12px;padding:clamp(26px,3.2vw,44px) clamp(22px,3vw,40px)}
-.k-pc .k-pdl h3{margin:0 48px 0 0;font-family:var(--font-display);font-size:clamp(28px,2.6vw,36px);font-weight:400;line-height:1.1}
-.k-pdl-t p{margin:0;font-size:16px;line-height:1.55;color:var(--ink-2)}.k-pdl-t .k-pdl-w{font-size:13.5px;color:var(--ink-3)}
-.k-pdl-t .k-pdl-a{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:auto;padding-top:10px}.k-pdl-a a{display:inline-flex;align-items:center;gap:6px;color:var(--gold-2);font-weight:500;text-decoration:underline;text-underline-offset:3px}.k-pdl-a svg{width:14px;height:14px}
-.k-pc .k-pcw{margin:4px 0 0;font-size:13px;line-height:1.4;color:var(--ink-3)}.k-pc .k-pcy{margin:8px 0 2px}.k-pdl-t .k-pdl-k{margin:8px 0 -6px;font-family:var(--font-body);font-size:13.5px;font-weight:600;color:var(--gold-2)}.k-pdl-t .k-pdl-y{font-family:var(--font-display);font-size:19px;line-height:1.45;color:var(--ink)}.k-pdl-t .k-pdl-s{font-size:12.5px;line-height:1.5;color:var(--ink-3)}.k-pdl-s a{color:inherit;text-decoration:underline;text-underline-offset:3px}
-.k-pdl-x{position:sticky;top:12px;z-index:2;justify-self:end;align-self:start;display:grid;place-items:center;width:40px;height:40px;margin:12px;padding:0;border:1px solid var(--line-2);border-radius:50%;background:rgba(17,16,14,.86);color:var(--ink);cursor:pointer}
-.k-pdl-x svg{width:16px;height:16px}.k-pdl-x:hover{border-color:var(--gold-2)}.k-pdl-x:focus-visible{outline:2px solid var(--gold-2);outline-offset:2px}
-@media (prefers-reduced-motion:no-preference){.k-pdl:popover-open{animation:kpdl .22s ease-out}}@keyframes kpdl{from{opacity:0;transform:translateY(10px)}}
-@media (max-width:760px){.k-pdl{width:calc(100vw - 16px);max-height:calc(100dvh - 24px)}.k-pdl-in{grid-template-columns:minmax(0,1fr)}.k-pdl .k-pm{height:auto;min-height:0;aspect-ratio:16/10}.k-pgal figcaption{padding:6px 7px 8px;font-size:12px}}
+
 @media (max-width:1023px){.k-tvg{grid-template-columns:minmax(0,1fr)}.k-tvt{padding-top:0}}
 @media (max-width:1023px){.k-h2g,.k-dg,.k-pg{grid-template-columns:minmax(0,1fr)}.k-h2r{padding-top:0}
 .k-dg{row-gap:18px}.k-dgl{display:contents}.k-dg .k-lbl{order:-2;margin:0}.k-dg .k-lines{margin-top:22px}.k-dfig{order:-1;max-width:760px}.k-pv{order:-1;position:relative;top:0;max-width:760px}}
 @media (max-width:767px) and (min-height:600px){.k-pv{position:sticky;top:79px;z-index:2;padding:8px 0 10px;background:#F7F4EE;box-shadow:calc(var(--gutter)*-1) 0 0 #F7F4EE,var(--gutter) 0 0 #F7F4EE,0 12px 14px -12px rgba(18,17,15,.3)}}
-@media (max-width:1023px){.k-pcs{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-left:calc(var(--gutter)*-1);margin-right:calc(var(--gutter)*-1);padding:0 var(--gutter) 8px;scroll-padding-inline:var(--gutter)}.k-pcs>li,.k-pcs>li.s3,.k-pcs>li.o2{flex:0 0 44%;scroll-snap-align:start}}
-@media (max-width:640px){.k-pcs>li,.k-pcs>li.s3,.k-pcs>li.o2{flex-basis:84%}}
+
 @media (max-width:560px){.k-ps li{padding-left:50px}.k-ps .n{left:16px}.k-pdx{padding-left:50px}}
 /* v49 (6.11.2026): varastokaappi 3D:nä ja omalla pihalla oikeassa koossa (AR) — energiavarastot / energiasalvestid, assets/ar.js */
 .ar3d{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,4.5vw,64px);align-items:center;margin:0 0 clamp(44px,5vw,64px)}
@@ -955,3 +919,52 @@ h1 em,h2 em{color:var(--gold-2)}
 .k-kaart.is-live .kk-l>*{transition:opacity .45s ease}
 .k-kaart.is-live .kk-body:has(.kk-l.on) .kk-l:not(.on)>*{opacity:.28}
 @media (prefers-reduced-motion:reduce){.k-kaart.is-live .kk-l>*{transition:none}}
+/* Vaihtoehto draft-logot-tuotteet (Martin 9.11.2026): kumppanien logorivi ja tuotenosto etusivun kumppaniosiossa.
+   Merkintä generoidaan: logot scripts/kumppanit/build_kumppanit.py logos(), tuotteet scripts/tuotteet/build_tuotteet.py etusivu().
+   Kortti .tc = alasivujen tuotekortti tummalla pohjalla, kuva vaalealla alustalla. Valikko = radiot + :has() (ei JS:ää);
+   ilman :has()-tukea kaikki ryhmät näkyvät allekkain. */
+.k-logos{display:grid;gap:18px;margin:clamp(40px,5vw,64px) 0 0;padding:clamp(22px,2.6vw,30px) 0;border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2)}
+.k-logos-h{margin:0;font-size:13.5px;font-weight:500;color:var(--ink-3)}
+.k-logos-r{display:flex;align-items:center;justify-content:space-between;gap:24px clamp(20px,2.4vw,40px);margin:0;padding:0;list-style:none}
+@media (max-width:1180px){.k-logos-r{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 24px}}
+.k-logos-r img{display:block;max-width:100%;height:auto;opacity:.9}
+.k-tuo{margin:clamp(44px,5vw,72px) 0 0}
+.k-tuo-h{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px 32px;margin:0 0 22px}
+.k-tuo-h h3{margin:0;font-family:var(--font-display);font-size:clamp(26px,2.4vw,34px);font-weight:400;line-height:1.1}
+.k-tuo-h p{margin:8px 0 0;font-size:15px;color:var(--ink-2)}
+.k-tuo-f{display:flex;flex-wrap:wrap;gap:8px}
+.k-tuo-f input{position:absolute;opacity:0;width:1px;height:1px;margin:0;pointer-events:none}
+.k-tuo-f label{display:inline-flex;align-items:center;min-height:40px;padding:8px 16px;border:1px solid var(--line-2);border-radius:999px;font-size:14.5px;font-weight:500;color:var(--ink);cursor:pointer;user-select:none;transition:background-color .2s,border-color .2s,color .2s}
+.k-tuo-f label:hover{border-color:var(--ink-3)}
+.k-tuo-f input:checked+label{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.k-tuo-f input:focus-visible+label{outline:2px solid var(--gold-2);outline-offset:2px}
+.k-tuo-g{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:0 0 16px;padding:0;list-style:none}
+.k-tuo:has(#kt-v-varasto:checked) .k-tuo-g:not([data-c=varasto]),.k-tuo:has(#kt-v-aurinko:checked) .k-tuo-g:not([data-c=aurinko]),.k-tuo:has(#kt-v-lataus:checked) .k-tuo-g:not([data-c=lataus]),.k-tuo:has(#kt-v-lampo:checked) .k-tuo-g:not([data-c=lampo]){display:none}
+.k-tuo .tc{display:flex;flex-direction:column;min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:12px;background:var(--paper-2)}
+.k-tuo .tc-m{margin:0;aspect-ratio:1/1;background:#EDE8DE}
+.k-tuo .tc-m img{display:block;width:100%;height:100%;object-fit:contain}
+.k-tuo .tc-ph .tc-m img{object-fit:cover}
+.k-tuo .tc-b{display:flex;flex-direction:column;flex:1;padding:14px 16px 16px}
+.k-tuo .tc-mk{margin:0;font-size:13px;color:var(--ink-3)}
+.k-tuo .tc-n{margin:2px 0 0;font-family:var(--font-body);font-size:17px;font-weight:600;line-height:1.25;overflow-wrap:anywhere}
+.k-tuo .tc-t{margin:3px 0 0;font-size:14px;line-height:1.4;color:var(--ink-2)}
+.k-tuo .tc-s{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9px 12px;margin:12px 0 0;padding:11px 0 0;border-top:1px solid var(--line)}
+.k-tuo .tc-s dt{font-size:12px;color:var(--ink-3)}
+.k-tuo .tc-s dd{margin:2px 0 0;font-size:15px;font-weight:600;font-variant-numeric:tabular-nums}
+.k-tuo .tc-src{margin:auto 0 0;padding-top:12px;font-size:12px;line-height:1.45;color:var(--ink-3)}
+.k-tuo .tc-src a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.k-tuo-all a{display:flex;flex-direction:column;height:100%;min-height:260px;padding:22px;border:1px solid var(--line-2);border-radius:12px;background:var(--gold-pale);color:var(--ink);text-decoration:none;transition:border-color .25s}
+.k-tuo-all a:hover{border-color:var(--gold)}
+.k-tuo-all a:focus-visible{outline:2px solid var(--gold-2);outline-offset:3px}
+.k-tuo-k{font-size:13.5px;font-weight:500;color:var(--ink-3)}
+.k-tuo-all b{margin:auto 0 0;font-family:var(--font-display);font-size:clamp(56px,5vw,76px);font-weight:400;line-height:1;color:var(--gold-2)}
+.k-tuo-all b+span{margin-top:4px;font-size:15px;color:var(--ink-2)}
+.k-tuo-c{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-weight:500;color:var(--gold-2)}
+.k-tuo-c svg{width:16px;height:16px}
+.k-tuo-note{margin:2px 0 0;max-width:86ch;font-size:13.5px;line-height:1.55;color:var(--ink-3)}
+@media (max-width:1023px){.k-tuo-g{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-left:calc(var(--gutter)*-1);margin-right:calc(var(--gutter)*-1);padding:0 var(--gutter) 8px;scroll-padding-inline:var(--gutter)}
+.k-tuo-g>li{flex:0 0 40%;scroll-snap-align:start}}
+@media (max-width:640px){.k-tuo-g>li{flex-basis:78%}
+.k-tuo-f{flex-wrap:nowrap;overflow-x:auto;margin:0 calc(var(--gutter)*-1);padding:0 var(--gutter) 4px;scrollbar-width:none}.k-tuo-f::-webkit-scrollbar{display:none}.k-tuo-f label{flex:none}
+.k-logos-r{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));justify-items:start;gap:26px 20px}}
+@media (prefers-reduced-motion:reduce){.k-tuo-f label,.k-tuo-all a{transition:none}}

@@ -571,14 +571,14 @@ def src_html(key, L):
     h = (f'<a href="{src["url"]}" rel="noopener" target="_blank">{src[L]}</a>' if src['url'] else src[L])
     return h + (f', {stamp}' if stamp else '')
 
-def card(p, L, pre):
+def card(p, L, pre, hx='h3'):
     i = 0 if L == 'fi' else 1
     specs = ''.join(f'<div><dt>{sp[i]}</dt><dd>{n(sp[2 + i])}</dd></div>' for sp in p['s'])
     cls = 'tc' + (' tc-ph' if p.get('photo') else '')
     model = p.get('model_et') if (L == 'et' and p.get('model_et')) else p['model']
     return (f'<li class="{cls}" id="{pre}-{p["id"]}" data-c="{" ".join(p["cats"])}">'
             f'<figure class="tc-m"><img src="/assets/tuotteet/{p["id"]}.webp" alt="{html.escape(p["alt"][i], quote=True)}" width="600" height="600" loading="lazy" decoding="async"></figure>'
-            f'<div class="tc-b"><p class="tc-mk">{p["mk"]}</p><h3 class="tc-n">{model}</h3><p class="tc-t">{p["t"][i]}</p>'
+            f'<div class="tc-b"><p class="tc-mk">{p["mk"]}</p><{hx} class="tc-n">{model}</{hx}><p class="tc-t">{p["t"][i]}</p>'
             f'<dl class="tc-s">{specs}</dl>'
             f'<p class="tc-src">{TXT[L]["src"]}: {src_html(p["src"], L)}</p></div></li>')
 
@@ -710,16 +710,86 @@ BLOCKS = {
     'kaikki': dict(pre='tk', note=NOTE_KAIKKI, items=KAIKKI, muut=['varasto', 'lataus', 'aurinko', 'lampo']),
 }
 
+# ---------- etusivun tuotenosto (vaihtoehto, haara draft-logot-tuotteet, Martin 9.11.2026) ----------
+# Martin: kumppanikorttien ja -paneelien tilalle päätuotteiden esittely, valittava valikko ja 2–3 tuotetta per valinta
+# (vieritettävä), linkki koko valikoimaan. Kortit = alasivujen kortit (sama data, lähde ja päivä), etusivulla kaksi päätietoa.
+# Ryhmä: (avain, FI, ET, [(id, ohitukset)], (FI-osoite, ET-osoite), lohko, jonka tuotemäärä kerrotaan, ryhmä lohkon sisällä)
+ETUSIVU = [
+    ('varasto', 'Energiavarastot', 'Energiasalvestid',
+     [('ralos-beast-125-hd', {}), ('elecnova-eco-e418lp', {}), ('zoe-z-box-c215', {})],
+     ('/energiavarastot/#tuotteet', '/energiasalvestid/#tooted'), 'varastot', None),
+    ('aurinko', 'Aurinkosähkö', 'Päikeseelekter',
+     [('roofit-velario-slim', {}), ('gare-solar-carport', {}), ('hd-hyundai-hit', {}), ('ralos-stalker', {}), ('tongwei-725', {})],
+     ('/aurinkosahko/#tuotteet', '/paikeseelekter/#tooted'), 'aurinko', None),
+    ('lataus', 'Lataus', 'Laadimine',
+     [('zaptec-pro', {}), ('easee-charge-pro', {}), ('avant-power-optigrid', AVANT_LATAUS)],
+     ('/lataus/#latausasemat', '/laadimine/#laadimisjaamad'), 'lataus', None),
+    ('lampo', 'Lämpöpumput', 'Soojuspumbad',
+     [('me-cahv-z450', {}), ('me-large-hydrobox', {}), ('me-geodan', {})],
+     ('/kumppanit/?v=lampo#valikoima', '/partnerid/?v=lampo#valik'), 'kaikki', 'lampo'),
+]
+ETUSIVU_N = 3       # tuotetta per ryhmä (lista voi olla pidempi: kielirajatut tuotteet ohitetaan)
+ETUSIVU_SPEC = 2    # päätietoa per kortti
+ETUSIVU_TXT = {
+    'fi': dict(h='Poimintoja valikoimasta', lead='Tekniset tiedot ovat valmistajien datalehdiltä ja tuotesivuilta.',
+               note='Valmistaja ja malli valitaan kohteenne kulutuksen, liittymän ja tilan mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla.',
+               all='Koko valikoima', unit='tuotetta', cta='Katso valikoima'),
+    'et': dict(h='Näiteid valikust', lead='Tehnilised andmed on tootjate andmelehtedelt ja tootelehtedelt.',
+               note='Tootja ja mudel valitakse teie objekti tarbimise, liitumise ja ruumi järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega.',
+               all='Kogu valik', unit='toodet', cta='Vaata valikut'),
+}
+ARROW = ('<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" '
+         'aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg>')
+
+def _count(block_name, L, group=None):
+    n_ = 0
+    for it in BLOCKS[block_name]['items']:
+        p = BYID[it[0]]
+        if L in p.get('langs', ['fi', 'et']) and nakyy(p) and (group is None or group in it[1]):
+            n_ += 1
+    return n_
+
+def etusivu(L):
+    T = ETUSIVU_TXT[L]; i = 0 if L == 'fi' else 1
+    radios, panels = [], []
+    for gi, (key, fi_l, et_l, ids, urls, bname, grp) in enumerate(ETUSIVU):
+        items = [dict(BYID[pid], **ov) for pid, ov in ids
+                 if L in BYID[pid].get('langs', ['fi', 'et']) and nakyy(BYID[pid])][:ETUSIVU_N]
+        radios.append(f'<input type="radio" name="kt-v" id="kt-v-{key}" value="{key}"{" checked" if gi == 0 else ""}>'
+                      f'<label for="kt-v-{key}">{fi_l if L == "fi" else et_l}</label>')
+        cards = ''.join(card(dict(p, s=p['s'][:ETUSIVU_SPEC]), L, 'kt', hx='h4') for p in items)
+        cnt = _count(bname, L, grp)
+        cards += (f'<li class="k-tuo-all"><a href="{urls[i]}"><span class="k-tuo-k">{T["all"]}</span>'
+                  f'<b>{cnt}</b><span>{T["unit"]}</span><span class="k-tuo-c">{T["cta"]} {ARROW}</span></a></li>')
+        panels.append(f'<ul class="k-tuo-g" data-c="{key}" role="list">{cards}</ul>')
+    return (f'<div class="k-tuo"><div class="k-tuo-h"><div><h3>{T["h"]}</h3><p>{T["lead"]}</p></div>'
+            f'<div class="k-tuo-f" role="radiogroup" aria-label="{TXT[L]["group"]}">{"".join(radios)}</div></div>'
+            + ''.join(panels) + f'<p class="k-tuo-note">{T["note"]}</p></div>')
+
 def block(name, L):
+    body = etusivu(L) if name == 'etusivu' else catalog(L, name)
     return (f'<!-- tuotteet:{name}:alku — GENEROITU: python3 scripts/tuotteet/build_tuotteet.py. Muokkaa skriptiä, älä tätä lohkoa. -->'
-            + catalog(L, name) + f'<!-- tuotteet:{name}:loppu -->')
+            + body + f'<!-- tuotteet:{name}:loppu -->')
+
+# Suodatuksen CSS (alasivut.css, merkkien välissä): yksi sääntö per lohko × ryhmä. Generoitu, jotta uusi ryhmä ei jää ilman
+# sääntöä (9.11.2026 korjaus: tl- ja tk-lohkojen sekä v57–v58-ryhmien säännöt puuttuivat, suodatin ei rajannut mitään).
+# Valitsin ei oleta osion luokkaa: .tuo-f:has(radio) ~ .tuo-g. Ilman :has()-tukea kaikki kortit näkyvät.
+CSS_A = '/* tuotteet:suodatus:alku — GENEROITU: python3 scripts/tuotteet/build_tuotteet.py */'
+CSS_B = '/* tuotteet:suodatus:loppu */'
+def filter_css():
+    sel = []
+    for name, b in BLOCKS.items():
+        for c in CATS[name]:
+            if c[0] != 'kaikki':
+                sel.append(f'.tuo-f:has(#{b["pre"]}-v-{c[0]}:checked)~.tuo-g .tc:not([data-c~={c[0]}])')
+    return CSS_A + '\n' + ',\n'.join(sel) + '{display:none}\n' + CSS_B
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--check', action='store_true'); a = ap.parse_args()
     bad = 0
     for L in ('fi', 'et'):
         f = ROOT / 'src' / f'{L}.html'; s = f.read_text(encoding='utf-8'); o = s
-        for name in BLOCKS:
+        for name in list(BLOCKS) + ['etusivu']:
             b0 = f'<!-- tuotteet:{name}:alku'; e0 = f'<!-- tuotteet:{name}:loppu -->'
             i = s.find(b0); j = s.find(e0)
             if i < 0 or j < 0:
@@ -729,6 +799,15 @@ def main():
             if a.check: print(f'{f.name}: tuotelohko ei ole ajan tasalla', file=sys.stderr); bad += 1
             else: f.write_text(s, encoding='utf-8'); print(f'{f.name}: päivitetty')
         else: print(f'{f.name}: ajan tasalla')
+    f = ROOT / 'assets' / 'alasivut.css'; c = f.read_text(encoding='utf-8')
+    i = c.find('/* tuotteet:suodatus:alku'); j = c.find(CSS_B)
+    if i < 0 or j < 0:
+        print(f'{f.name}: merkit tuotteet:suodatus puuttuvat', file=sys.stderr); bad += 1
+    else:
+        c2 = c[:i] + filter_css() + c[j + len(CSS_B):]
+        if c2 != c:
+            if a.check: print(f'{f.name}: suodatus ei ole ajan tasalla', file=sys.stderr); bad += 1
+            else: f.write_text(c2, encoding='utf-8'); print(f'{f.name}: suodatus päivitetty')
     sys.exit(1 if bad else 0)
 
 if __name__ == '__main__':
