@@ -107,9 +107,9 @@ a.setAttribute('href',m[1]==='fi'?m[2]:(m[2]==='/'?'/et/':'/et'+m[2]));
 });
 }
 /* vierivät rivit ja taulukot kohdistettaviksi vain silloin, kun ne vierivät (axe: scrollable-region-focusable) */
-var scrollers=[].slice.call(d.querySelectorAll('.tbl-scroll,.k-tuo-g'));
-var fitAll=function(){scrollers.forEach(function(s){if(s.scrollWidth>s.clientWidth+1&&getComputedStyle(s).overflowX==='auto')s.tabIndex=0;else s.removeAttribute('tabindex');});};
-if(scrollers.length){fitAll();window.addEventListener('resize',fitAll);d.addEventListener('change',fitAll);}
+var scrollers=[].slice.call(d.querySelectorAll('.tbl-scroll,.k-tuo-g,.kk-chips'));
+var fitAll=function(){scrollers.forEach(function(s){if(s.scrollWidth>s.clientWidth+1&&/auto|scroll/.test(getComputedStyle(s).overflowX))s.tabIndex=0;else s.removeAttribute('tabindex');});};
+if(scrollers.length){fitAll();window.addEventListener('resize',fitAll);window.addEventListener('load',fitAll);if(d.fonts)d.fonts.ready.then(fitAll);d.addEventListener('change',fitAll);}
 /* ?v=<ryhmä> valitsee sivun tuotesuodattimen (etusivun tuotenoston linkki, esim. /kumppanit/?v=lampo) */
 var qv=/[?&]v=([a-z]+)/.exec(location.search),qr=qv&&d.querySelector('.tuo-f input[value="'+qv[1]+'"]');if(qr)qr.checked=true;
 })();
