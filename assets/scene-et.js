@@ -1523,7 +1523,7 @@ class Component extends DCLogic {
         if (k !== 5) { g2.fillStyle = 'rgba('+SAMA_BGRGB+',0.6)'; g2.fillRect(0, 0, w, h); }
         if (k === 1) {
           S.rows.forEach((r) => this._xPvRow(K, P, r, S.hall[4], 'solid')); this._xInv(K, P, S, false); this._xCarport(K, P, S);
-          L('PÄIKESEPANEELID', P(-0.36, -0.5, S.hall[4] + 0.03), 30, -58); L('PÄIKESEVARJUALUNE', P(-0.41, 0.41, 0.13), 34, 44);
+          L('PÄIKESEPANEELID', P(-0.36, -0.5, S.hall[4] + 0.03), 30, -58); L('PÄIKESEVARIKATUS', P(-0.41, 0.41, 0.13), 34, 44);
         } else if (k === 2) {
           this._xPadBox(K, P, S); S.cabs.forEach((cb) => this._xCabS(K, P, cb, S.cabH, false)); this._xPcs(K, P, S.pcs); this._xBollards(K, P, S);
           L('AKUPANGAD', P(0.53, -0.08, 0.16), 34, -40);

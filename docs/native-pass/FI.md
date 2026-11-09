@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 1110 katselmoitavaa riviä — 910 uutta, 200 muutettua, joista **223 on merkitty ⚠**. Muuttumattomia ohitettiin 689.
+**Yhteenveto:** 1118 katselmoitavaa riviä — 929 uutta, 189 muutettua, joista **233 on merkitty ⚠**. Muuttumattomia ohitettiin 686.
 
 **Huomio:** 2 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -198,7 +198,7 @@ Vastine mainissa: `/`
 - [ ] `p` **muutettu** — 2027: FCR hankitaan vain tuntimarkkinoilta. 2029: Hikiä–Toivila valmistuu; siihen asti Etelä-Suomen varastorajoitus jatkuu. 1.1.2029: jakeluverkon tehomaksu lasketaan kuukauden suurimmasta 60 minuutin keskitehosta.
       - main: Varasto on lähes koko ajan reservimarkkinoilla ja tuottaa valmiudesta; kuivauskauden huiput se pitää alhaalla. Usein nopein takaisinmaksu.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Kartalle merkityt hankkeet ovat rakenteilla tai suunnitteilla olevia kantaverkon johtoja ja rajayhteyksiä valmistumisvuosineen. Reitit ovat suuntaa-antavia: viiva yhdistää päätepisteet. Vuodeton hanke toteutuu vain, jos alueen kulutus tai tuotanto kasvaa.
+- [ ] `p` **muutettu** — Kartalle merkityt hankkeet ovat rakenteilla tai suunnitteilla olevia kantaverkon johtoja ja rajayhteyksiä valmistumisvuosineen. Reitit ovat suuntaa antavia: viiva yhdistää päätepisteet. Vuodeton hanke toteutuu vain, jos alueen kulutus tai tuotanto kasvaa.
       - main: Aikataulu rakentuu kolmesta osasta: laitteen toimitusaika, joka vahvistetaan tarjouksessa laitekohtaisesti, asennusjono ja verkkoyhtiön vastausaika. Kaikki kolme eritellään arviossa, jotta mikään ei tule yllätyksenä.
       - **Korjaus:**
 - [ ] `p` **uusi** — Missä teidän liittymänne on tässä kokonaisuudessa?
@@ -256,6 +256,18 @@ Vastine mainissa: `/`
       - **Korjaus:**
 
 ### #valikoima
+> Lähde tälle osiolle: Lähde: Ralos Oy, tekninen tiedote Ralos Beast 125, versio V10, tarkistettu 9.11.2026
+> Lähde tälle osiolle: Lähde: Elecnova, tuotesivu ECO-E418LP, luettu 9.11.2026
+> Lähde tälle osiolle: Lähde: ZOE Energy Storage, Z Box-C 215-2H -datalehti (Scanoffice), luettu 9.11.2026
+> Lähde tälle osiolle: Lähde: Roofit.Solar, Velario Slim -datalehti 2026-02 V1, luettu 9.11.2026
+> Lähde tälle osiolle: Lähde: Gare Energy Oy, Gare Solar Carport -tuotesivu, luettu 9.11.2026
+> Lähde tälle osiolle: Lähde: HD Hyundai Energy Solutions, HJT-paneelien datalehti (Scanoffice), luettu 9.11.2026
+> Lähde tälle osiolle: Lähde: Zaptec Charger AS, Zaptec Pro -tuotelehti 22.2.2023 (Scanoffice), luettu 9.11.2026
+> Lähde tälle osiolle: Lähde: Easee, Charge Pro -datalehti 10/2025, versio 1.03 (Scanoffice), luettu 9.11.2026
+> Lähde tälle osiolle: Lähde: Avant Power, OptiGrid™-sivu, kohta Kiinteät energiavarastot, luettu 9.11.2026
+> Lähde tälle osiolle: Lähde: Mitsubishi Electric, CAHV-Z450-esite (Scanoffice), luettu 9.11.2026
+> Lähde tälle osiolle: Lähde: Mitsubishi Electric, Large Hydrobox E -esite (Scanoffice), luettu 9.11.2026
+> Lähde tälle osiolle: Lähde: Mitsubishi Electric, Geodan-esite (Scanoffice), luettu 9.11.2026
 
 - [ ] `h2` **uusi** — Ajattelemme kokonaisuutta.
       - **Korjaus:**
@@ -265,200 +277,160 @@ Vastine mainissa: `/`
 - [ ] `p` **muutettu** — Investoinnin arvo syntyy monesta osasta. Kun tarjoamme valikoiman eri valmistajia, tuotteita ja palveluita, voimme rakentaa jokaiselle asiakkaalle räätälöidyn ratkaisun, joka luo asiakkaan kiinteistölle eniten arvoa. Lähtökohtana ovat teidän päätöksenne kriteerit, ei yhden laitteen myynti. Kumppaneiden koko valikoima on käytettävissänne.
       - main: Mittarin takainen järjestelmä – varasto, tuotanto ja ohjaus liittymänne takana, teidän puolellanne mittaria. Monimarkkinapalvelu – aggregaattori myy saman varaston tehoa usealla markkinalla yhtä aikaa: kulutuksenne optimointi, arbitraasi pörssissä, reservit Fingridille. Aggregaattori – yritys, joka kokoaa usean kohteen varastot yhdeksi tarjoukseksi ja tilittää tuoton. Ylläpitokorvaus – korvaus siitä, että varasto on Fingridin käytettävissä, myös silloin kun se ei tee mitään. Arbitraasi – ostetaan halvalla tunnilla, myydään tai käytetään kalliilla.
       - **Korjaus:**
-- [ ] `p` **uusi** — Suomi · Sastamala · varasto Tampereella · Pirkanmaa
+- [ ] `h3` **muutettu** — Poimintoja valikoimasta
+      - main: Laaja valikoima, yksi vastuu
       - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — Asentaa sähkövarastot myös reservimarkkinoille, Ralosin kaapit mukaan lukien.
+- [ ] `p` **uusi** — Tekniset tiedot ovat valmistajien datalehdiltä ja tuotesivuilta.
+      - **Korjaus:**
+- [ ] `label` **uusi** — Lataus
+      - **Korjaus:**
+- [ ] `label` **uusi** — Lämpöpumput
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Ralos
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
-- [ ] `li` **muutettu** — Teolliset energiavarastot
+- [ ] `h4` **uusi** — Beast 125 HD
+      - **Korjaus:**
+- [ ] `p` **uusi** — Nestejäähdytetty energiavarasto sisä- tai ulkoasennukseen
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Teho
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 125 kW
+      - **Korjaus:**
+- [ ] `dt` **muutettu** — Energia
+      - main: SAMA Energia Oy
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 261 kWh
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Elecnova
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `h4` **uusi** — ECO-E418LP
+      - **Korjaus:**
+- [ ] `p` **uusi** — Nestejäähdytetty ulkokaappi
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 100 kW (400 V)
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 418 kWh
+      - **Korjaus:**
+- [ ] `p` **uusi** — ZOE Energy Storage
+      - **Korjaus:**
+- [ ] `h4` **uusi** — Z Box-C 215-2H
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 105 kW
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 215 kWh
+      - **Korjaus:**
+- [ ] `p` **uusi** — Roofit.Solar
+      - **Korjaus:**
+- [ ] `h4` **uusi** — Velario Slim
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Aurinkokatto konesaumakattoon, Suomessa toimittaa Gare Energy Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 180 W / moduuli
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Hyötysuhde
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 19,1 %
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Gare Energy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `h4` **uusi** — Gare Solar Carport
+      - **Korjaus:**
+- [ ] `p` **uusi** — Aurinkokatos 2–8 autolle, lataus ja varasto lisävarusteena
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 8,78 kWp kahdelle autolle
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Autopaikat
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 2, 4, 6 tai 8
+      - **Korjaus:**
+- [ ] `p` **uusi** — HD Hyundai
+      - **Korjaus:**
+- [ ] `h4` **uusi** — HiT-H LE-FB
+      - **Korjaus:**
+- [ ] `p` **uusi** — Täysmusta HJT-aurinkopaneeli
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 440–460 W
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — enintään 23,0 %
+      - **Korjaus:**
+- [ ] `p` **uusi** — Zaptec
+      - **Korjaus:**
+- [ ] `h4` **uusi** — Zaptec Pro
+      - **Korjaus:**
+- [ ] `p` **uusi** — AC-latausasema yritysten ja taloyhtiöiden pysäköintiin
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — enintään 22 kW
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Kuormanhallinta
+      - **Korjaus:**
+- [ ] `dd` **uusi** — dynaaminen, myös vaiheet
+      - **Korjaus:**
+- [ ] `p` **uusi** — Easee
+      - **Korjaus:**
+- [ ] `h4` **uusi** — Charge Pro
+      - **Korjaus:**
+- [ ] `p` **uusi** — AC-latausasema suuriin latausverkostoihin
+      - **Korjaus:**
+- [ ] `dd` **uusi** — paikallinen, myös vaiheet
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Avant Power
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `h4` **muutettu** — Kiinteä energiavarasto
       - main: Energiavarastot
       - **Korjaus:**
-- [ ] `li` **uusi** — Useita akkuvaihtoehtoja
+- [ ] `p` **uusi** — Energiavarasto ja integroitu pikalataus latausasemille
       - **Korjaus:**
-- [ ] `li` **uusi** — Aurinkovoimalat
+- [ ] `dt` **uusi** — Pikalataus
       - **Korjaus:**
-- [ ] `li` **uusi** — Mikroinvertteriratkaisut
+- [ ] ⚠ `dd` **uusi** — 200–600 kW, satelliittilatausasemat
       - **Korjaus:**
-
-### #pd-ralos
-> Lähde tälle osiolle: Lähteet: Discover Cleantech, Ralos (luettu 9.11.2026); Ralos Oy, tekninen tiedote Ralos Beast 125, V10.
-
-- [ ] `p` **uusi** — Suomi · Tampere · perustettu 2017
-      - **Korjaus:**
-- [ ] `h4` **uusi** — Miksi valitsimme
-      - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Kotimainen toimittaja: laite, takuu ja huolto samalta suomalaiselta yhtiöltä. Beast-kaappeja voi kytkeä rinnan enintään 16, yhteensä 2 MW, joten sama tuote sopii yhden kaapin kohteeseen ja megawattiluokan kohteeseen. Kaappiin on saatavana varavoiman kytkin (STS) saarekekäyttöön suunniteltuihin kohteisiin.
-      - main: Esimerkki yhdestä hinnastosta: Caruna Oy:n Tehosiirto 1 PJ -tuotteessa tehomaksu on 3,57 €/kW,kk ja määräytyy kuukauden huipputehon mukaan, ja perusmaksu 58,70 €/kk ei riipu käytöstä. Varasto kattaa huipun, jolloin siirtotuote ja sulakekoko voidaan valita todellisen kulutuksen mukaan – eikä kulutuksen kasvattaminen vaadi lisää liittymistehoa.
-      - **Korjaus:**
-- [ ] `h4` **uusi** — Tausta
-      - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Tamperelainen aurinkosähköyhtiö, perustettu vuonna 2017. Toimittaa yrityksille aurinkovoimaloita omilla Ralos-paneeleilla sekä teollisia energiavarastoja sisä- ja ulkoasennukseen.
-      - main: Aurinkosähkö, teolliset energiavarastot ja reservimarkkinaliityntä yrityksille Suomessa ja Virossa.
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] `p` **uusi** — Kumppanisivullaralos.fi
-      - **Korjaus:**
-
-### #valikoima
-
-- [ ] ⚠ `h3` **uusi** — Elecnova
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] `p` **uusi** — Energiavarastojen ja mikroverkkojen valmistaja.
-      - **Korjaus:**
-- [ ] `li` **uusi** — Neste- ja ilmajäähdytteiset kaapit
-      - **Korjaus:**
-- [ ] `li` **muutettu** — Hybridikaappi aurinkosähköön
-      - main: Aurinkosähkö
-      - **Korjaus:**
-- [ ] `li` **uusi** — Konttivarastot
-      - **Korjaus:**
-- [ ] `li` **uusi** — Saarekekäyttö
-      - **Korjaus:**
-- [ ] `li` **uusi** — Lataus ja mikroverkot
-      - **Korjaus:**
-
-### #pd-elecnova
-> Lähde tälle osiolle: Lähteet: Elecnova, tuotesivu ECO-E261LP-2A (luettu 27.9.2026); Elecnovan uutinen ENERGIA 2026 -messuilta, 25.10.2026; pv magazine, 3.6.2026.
-
-- [ ] `figcaption` **muutettu** — Energiavarastokaappi
+- [ ] `dt` **muutettu** — Varasto
       - main: Energiavarastot
       - **Korjaus:**
-- [ ] `figcaption` **uusi** — Sama kaappi avattuna
+- [ ] ⚠ `dd` **uusi** — 250 tai 500 kWh
       - **Korjaus:**
-- [ ] `figcaption` **uusi** — Ilmajäähdytteinen kaappi
+- [ ] `p` **uusi** — Mitsubishi Electric
       - **Korjaus:**
-- [ ] `figcaption` **uusi** — STS-kaappi saarekekäyttöön
+- [ ] `h4` **uusi** — CAHV-Z450
       - **Korjaus:**
-- [ ] `figcaption` **uusi** — Konttivarasto
+- [ ] `p` **uusi** — Ilma-vesilämpöpumppu kiinteistöihin, R290
       - **Korjaus:**
-- [ ] `p` **uusi** — Kiina · Shanghai · saatavilla Suomen markkinoilla
+- [ ] `dt` **uusi** — Lämmitysteho
       - **Korjaus:**
-- [ ] `p` **muutettu** — Yhdeltä valmistajalta saa kaikki kokoluokat kaapista konttiin, ja kaapit ja kontit toimivat rinnan. Tuotteiden standardit ovat julkisia, esimerkiksi akkuturvallisuuden IEC 62619, palotestin UL 9540A ja verkkoon liittämisen EN 50549, joten ne voi tarkistaa ennen tarjousta.
-      - main: Lyhyen kyselyn kulutustottumuksistanne ja kohteestanne, tuntikohtaisten kulutustietojenne analyysin ja liittymispisteen tarkastuksen. Tuloksena on kirjallinen arvio: kannattaako akku kohteessanne, minkä kokoinen sen pitäisi olla ja mistä tuotto koostuu. Sitoumuksia ei synny.
+- [ ] ⚠ `dd` **uusi** — 40 kW
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Shanghailainen energiavarastojen ja mikroverkkojen valmistaja. Valikoima ulottuu ilma- ja nestejäähdytteisistä ulkokaapeista konttivarastoihin, hybridikaappiin aurinkosähköön ja STS-kaappiin saarekekäyttöön. Lokakuussa 2026 Elecnova esitteli kaappejaan Energia 2026 -messuilla Tampereella.
-      - main: Ei. Kaikki kolme kassavirtaa (tehomaksu, pörssisähkö, reservitulo) toimivat ilman aurinkoa. Liittymä riittää. Jos aurinkopaneelit ovat olemassa tai suunnitteilla, mukaan tulee neljäs mahdollisuus: oman tuotannon varastointi omaan käyttöön.
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+- [ ] `dt` **uusi** — Menovesi
       - **Korjaus:**
-- [ ] `p` **uusi** — Kumppanisivullaelecnova-ess.com
+- [ ] `dd` **uusi** — 75 °C vielä −15 °C:ssa
       - **Korjaus:**
-
-### #valikoima
-
-- [ ] ⚠ `h3` **uusi** — Avant Power
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+- [ ] `h4` **uusi** — Large Hydrobox E
       - **Korjaus:**
-- [ ] `p` **uusi** — Energiavarastot ja mikroverkot Avant-konsernista. Tarvittaessa Avantin koko valikoima.
+- [ ] `p` **uusi** — Ilma-vesilämpöpumppu suurempiin kiinteistöihin
       - **Korjaus:**
-- [ ] `li` **uusi** — Mikroverkot
+- [ ] ⚠ `dd` **uusi** — 23 kW (11,4–28 kW)
       - **Korjaus:**
-- [ ] `li` **uusi** — Mobiili energia ja lataus
+- [ ] `dt` **uusi** — SCOP, 35 °C
       - **Korjaus:**
-- [ ] `li` **muutettu** — Off-grid-ratkaisut
-      - main: Ratkaisut
+- [ ] `dd` **uusi** — 4,25
       - **Korjaus:**
-
-### #pd-avant-power
-> Lähde tälle osiolle: Lähteet: Yrittäjät, 9.1.2024; Avant Power, OptiTemp Cube 47 -esite, 6/2026.
-
-- [ ] `p` **uusi** — Suomi · Ylöjärvi · Avant Tecnon tytäryhtiö
+- [ ] `h4` **uusi** — Geodan
       - **Korjaus:**
-- [ ] `p` **muutettu** — Suomalainen valmistaja, jonka nesteeseen upotettu ja lämmitetty akku toimii pakkasessa ja helteessä: siirrettävän Cube 47 -yksikön käyttölämpötila on −30…+50 °C. Mikroverkko kokoaa varaston, pikalatauksen ja oman tuotannon yhteen varikoille, logistiikkaan ja maatiloille. Tarvittaessa käytössä on Avantin koko valikoima.
-      - main: Ei. Kaikki kolme kassavirtaa (tehomaksu, pörssisähkö, reservitulo) toimivat ilman aurinkoa. Liittymä riittää. Jos aurinkopaneelit ovat olemassa tai suunnitteilla, mukaan tulee neljäs mahdollisuus: oman tuotannon varastointi omaan käyttöön.
+- [ ] `p` **uusi** — Maalämpöpumppu
       - **Korjaus:**
-- [ ] `p` **muutettu** — Ylöjärveläisen Avant Tecnon akkuyhtiö. Avant Tecno tunnetaan pienkuormaajistaan, joita toimitetaan kaikille mantereille; henkilöstöä on noin 450, ja liikevaihto oli noin 288 miljoonaa euroa vuonna 2023. Akut valmistetaan itse omalla uppojäähdytystekniikalla, josta on haettu useita patentteja.
-      - main: Mittarin takainen järjestelmä – varasto, tuotanto ja ohjaus liittymänne takana, teidän puolellanne mittaria. Monimarkkinapalvelu – aggregaattori myy saman varaston tehoa usealla markkinalla yhtä aikaa: kulutuksenne optimointi, arbitraasi pörssissä, reservit Fingridille. Aggregaattori – yritys, joka kokoaa usean kohteen varastot yhdeksi tarjoukseksi ja tilittää tuoton. Ylläpitokorvaus – korvaus siitä, että varasto on Fingridin käytettävissä, myös silloin kun se ei tee mitään. Arbitraasi – ostetaan halvalla tunnilla, myydään tai käytetään kalliilla.
+- [ ] ⚠ `dd` **uusi** — 1,5–11 kW
       - **Korjaus:**
-- [ ] `p` **uusi** — Kumppanisivullaavantpower.fi
+- [ ] `dd` **uusi** — 5,86 kylmässä ilmastossa
       - **Korjaus:**
-
-### #valikoima
-
-- [ ] `p` **muutettu** — Lämpöpumppujen, aurinkosähkön ja latauksen maahantuoja.
-      - main: ScanofficeAurinkosähkö ja lämpöpumput
+- [ ] `p` **muutettu** — Valmistaja ja malli valitaan kohteenne kulutuksen, liittymän ja tilan mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla.
+      - main: Seuraamme valmistajia, maahantuojia, aggregaattoreita ja hintoja. Kokoamme tarjouksen kohteenne tarpeen mukaan ja vertaamme vaihtoehdot samoilla luvuilla.
       - **Korjaus:**
-- [ ] `li` **uusi** — Ilmalämpöpumput
-      - **Korjaus:**
-- [ ] `li` **uusi** — Ilma-vesilämpöpumput
-      - **Korjaus:**
-- [ ] `li` **uusi** — Maalämpöpumput
-      - **Korjaus:**
-- [ ] `li` **uusi** — Latausasemat
-      - **Korjaus:**
-- [ ] `li` **uusi** — Ilmanvaihto
-      - **Korjaus:**
-
-### #pd-scanoffice
-> Lähde tälle osiolle: Lähteet: Scanoffice Oy, In English (luettu 9.11.2026); Scanoffice Oy, Aurinkosähköjärjestelmä (luettu 27.9.2026).
-
-- [ ] `p` **uusi** — Suomi · Espoo · perustettu 1984 · lähes sata ammattilaista
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Kun kohde tarvitsee varaston lisäksi aurinkopaneeleja, lämpöpumppuja tai latausta, ne tulevat maahantuojalta, jolla on oma takuu- ja huoltopalvelu. Paneeleilla on 12 vuoden tuotetakuu ja 25 vuoden lineaarinen tehotakuu.
-      - main: Akku ei tee vain yhtä asiaa: se leikkaa huiput, ostaa halvalla ja on verkolle valmiina. Aurinkopaneeleja tai omaa tuotantoa siihen ei tarvita. Liittymä riittää.
-      - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Puhtaan energian laitteiden maahantuoja ja tukkukauppa vuodesta 1984, osa Scanoffice-konsernia. Valikoimassa ovat ilma-, ilma-vesi- ja maalämpöpumput, aurinkosähköjärjestelmät, ilmanvaihtolaitteet ja sähköautojen latausasemat, joita myyvät ja asentavat valtuutetut jälleenmyyjät koko Suomessa.
-      - main: Tarjoamamme teolliset varastot ovat LFP-kemiaa, kennotason valvonnalla varustetulla akunhallinnalla ja lämpötilanhallinnalla sekä ulko-olosuhteisiin tarkoitetussa kaapissa; vaadimme valmistajalta CE- ja kuljetussertifikaatit. Takuu- ja huoltoehdot, valvonta ja se, kuka vastaa mistäkin, ovat kirjallisessa arviossa omalla rivillään – ennen allekirjoitusta, ei sen jälkeen. Takuuehdot, huoltovälit ja se, kenelle soitatte, kirjataan samaan dokumenttiin lukujen kanssa.
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] `p` **uusi** — Kumppanisivullascanoffice.fi
-      - **Korjaus:**
-
-### #valikoima
-
-- [ ] ⚠ `h3` **uusi** — Gare Energy Oy
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] `p` **uusi** — Aurinkokatot ja aurinkokatokset asennettuina. Roofit.Solarin jälleenmyyjä Suomessa, aurinkokatto.com.
-      - **Korjaus:**
-- [ ] `li` **uusi** — Aurinkokatot
-      - **Korjaus:**
-- [ ] `li` **uusi** — Aurinkokatokset
-      - **Korjaus:**
-- [ ] `li` **uusi** — Lataus katoksen alla
-      - **Korjaus:**
-- [ ] `li` **uusi** — Asennus
-      - **Korjaus:**
-
-### #pd-gare-energy
-> Lähde tälle osiolle: Lähteet: Gare Energy Oy, yritysesittely (luettu 9.11.2026).
-
-- [ ] `p` **uusi** — Suomi · aurinkokatto.com · Roofit.Solarin virallinen kumppani Suomessa
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Kun katto uusitaan joka tapauksessa, aurinkokatto tekee katosta ja voimalasta yhden tuotteen. Gare suunnittelee ja asentaa järjestelmän ja vahvistaa sen toimivuuden ennen luovutusta. Se asentaa myös aurinkokatokset ja latauspisteet.
-      - main: Mittarin takainen järjestelmä – varasto, tuotanto ja ohjaus liittymänne takana, teidän puolellanne mittaria. Monimarkkinapalvelu – aggregaattori myy saman varaston tehoa usealla markkinalla yhtä aikaa: kulutuksenne optimointi, arbitraasi pörssissä, reservit Fingridille. Aggregaattori – yritys, joka kokoaa usean kohteen varastot yhdeksi tarjoukseksi ja tilittää tuoton. Ylläpitokorvaus – korvaus siitä, että varasto on Fingridin käytettävissä, myös silloin kun se ei tee mitään. Arbitraasi – ostetaan halvalla tunnilla, myydään tai käytetään kalliilla.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Suomalainen aurinkosähkön asennusyritys, joka on erikoistunut konesaumakattoihin. Gare on integroitujen aurinkokattojen valmistajan Roofit.Solarin virallinen kumppani Suomessa, 15 vuoden kokemuksella.
-      - main: Ei. Kaikki kolme kassavirtaa (tehomaksu, pörssisähkö, reservitulo) toimivat ilman aurinkoa. Liittymä riittää. Jos aurinkopaneelit ovat olemassa tai suunnitteilla, mukaan tulee neljäs mahdollisuus: oman tuotannon varastointi omaan käyttöön.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Kumppanisivullaaurinkokatto.com
-      - **Korjaus:**
-
-### #valikoima
-
-- [ ] `p` **uusi** — Rekisteröity sähköurakoitsija: asennus ja käyttöönotto.
-      - **Korjaus:**
-- [ ] `li` **muutettu** — Energiavarastojen asennus
-      - main: Energiavarastot
-      - **Korjaus:**
-- [ ] `li` **uusi** — Lämpöpumput
-      - **Korjaus:**
-- [ ] `li` **uusi** — Sähkötyöt
-      - **Korjaus:**
-- [ ] `li` **uusi** — Käyttöönotto
-      - **Korjaus:**
-
-### #pd-jsm
-> Lähde tälle osiolle: Lähteet: JSM Automaatiosähkö Oy, etusivu (luettu 9.11.2026).
-
-- [ ] ⚠ `p` **muutettu** — JSM asentaa sähkövarastoja myös reservimarkkinakäyttöön, Ralosin kaapit mukaan lukien. Samalta urakoitsijalta tulevat kohteen muut sähkötyöt, aurinkovoimala, lämpöpumput ja lataus, ja työtä johtaa asennuspäällikkömme.
-      - main: Ei. Kaikki kolme kassavirtaa (tehomaksu, pörssisähkö, reservitulo) toimivat ilman aurinkoa. Liittymä riittää. Jos aurinkopaneelit ovat olemassa tai suunnitteilla, mukaan tulee neljäs mahdollisuus: oman tuotannon varastointi omaan käyttöön.
-      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Yrittäjävetoinen sähkö- ja automaatiourakoitsija, jolla on yli vuosikymmenen kokemus alalta. Toimisto on Sastamalassa ja varasto Tampereella, ja toimialue kattaa koko Pirkanmaan. Asiakkaina ovat yritykset, julkinen sektori ja yksityiset.
-      - main: Ei. Kaikki kolme kassavirtaa (tehomaksu, pörssisähkö, reservitulo) toimivat ilman aurinkoa. Liittymä riittää. Jos aurinkopaneelit ovat olemassa tai suunnitteilla, mukaan tulee neljäs mahdollisuus: oman tuotannon varastointi omaan käyttöön.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Kumppanisivullajsmautomaatiosahko.fi
+- [ ] `p` **muutettu** — Kumppanimme
+      - main: Kumppanit
       - **Korjaus:**
 
 ### #tiimi
@@ -560,8 +532,6 @@ Vastine mainissa: `/`
 - [ ] `li` **muutettu** — +358 44 965 4614
       - main: +358 449 654 614
       - **Korjaus:**
-- [ ] `li` **uusi** — Lataus
-      - **Korjaus:**
 - [ ] `li` **uusi** — Yhteinen verkko: kartta
       - **Korjaus:**
 - [ ] `p` **muutettu** — Ilmoitamme sähköpostilla, kun uusi katsaus on julkaistu. Perutte vastaamalla viestiin.
@@ -637,7 +607,7 @@ Vastine mainissa: `/energiavarastot/`
 > Lähde tälle osiolle: Lähde: ZOE Energy Storage, Z Box-C 215-2H -datalehti (Scanoffice), luettu 9.11.2026
 > Lähde tälle osiolle: Lähde: Elecnova, tuotesivu ECO-E64WX, luettu 9.11.2026
 > Lähde tälle osiolle: Lähde: Elecnova, tuotesivu ECO-E20FT2170LP, luettu 9.11.2026
-> Lähde tälle osiolle: Lähde: Avant Power, OptiGrid™-tuotesivu, luettu 9.11.2026
+> Lähde tälle osiolle: Lähde: Avant Power, OptiGrid™-sivu, kohta Kiinteät energiavarastot, luettu 9.11.2026
 > Lähde tälle osiolle: Lähde: Avant Power, OptiTemp® Cube 47 -esite, 6/2026, luettu 9.11.2026
 > Lähde tälle osiolle: Lähde: Elecnova, tuotesivu ECO-STS-C125, luettu 9.11.2026
 > Lähde tälle osiolle: Lähde: Ralos Oy, ratkaisusivu Atmoce BattBank, luettu 9.11.2026
@@ -778,7 +748,7 @@ Vastine mainissa: `/energiavarastot/`
 - [ ] ⚠ `p` **uusi** — Avant Power
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
-- [ ] `h3` **muutettu** — OptiGrid™-energiavarasto
+- [ ] `h3` **muutettu** — Kiinteä energiavarasto
       - main: Energiavarastot
       - **Korjaus:**
 - [ ] `p` **uusi** — Kiinteä energiavarasto uppojäähdytyksellä, myös pikalatauksella
@@ -793,9 +763,9 @@ Vastine mainissa: `/energiavarastot/`
       - **Korjaus:**
 - [ ] `dd` **uusi** — uppojäähdytys
       - **Korjaus:**
-- [ ] `dt` **uusi** — Ohjaus
+- [ ] `dt` **uusi** — Käyttö
       - **Korjaus:**
-- [ ] `dd` **uusi** — OptiGrid Cloud
+- [ ] `dd` **uusi** — osana OptiGrid-mikroverkkoa tai itsenäisenä
       - **Korjaus:**
 - [ ] `h3` **uusi** — OptiTemp® Cube 47
       - **Korjaus:**
@@ -1080,7 +1050,7 @@ Vastine mainissa: `/energiavarastot/`
 - [ ] ⚠ `td` **uusi** — ECO-P1P20WSElecnova
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
-- [ ] `td` **uusi** — Ilmajäähdytetty akkupaketti järjestelmiin
+- [ ] `td` **uusi** — Ilmajäähdytteinen akkupaketti järjestelmiin
       - **Korjaus:**
 - [ ] ⚠ `td` **uusi** — 17,92 kWh, 64 V DC
       - **Korjaus:**
@@ -1131,7 +1101,7 @@ Vastine mainissa: `/energiavarastot/`
       - **Korjaus:**
 - [ ] `td` **uusi** — DC-verkko, energiavarastot, lataus ja OptiGrid Cloud -ohjaus, osat myös erikseen
       - **Korjaus:**
-- [ ] ⚠ `td` **uusi** — Avant Power, OptiGrid™-tuotesivu, luettu 9.11.2026
+- [ ] ⚠ `td` **uusi** — Avant Power, OptiGrid™-sivu, luettu 9.11.2026
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
 - [ ] `p` **muutettu** — Tekniset tiedot ovat valmistajien datalehdiltä ja tuotesivuilta. Varavoima koskee valittuja piirejä, jotka suunnitellaan kohdekäynnillä. Valmistaja ja malli valitaan kohteenne kulutuksen, liittymän ja tilan mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla.
@@ -1564,7 +1534,7 @@ Vastine mainissa: `/aurinko-ja-akku/`
       - **Korjaus:**
 - [ ] `dd` **uusi** — alle 65 V
       - **Korjaus:**
-- [ ] `dd` **uusi** — 12 vuotta, enintään 25
+- [ ] `dd` **uusi** — 12 vuotta, laajennettavissa 25 vuoteen
       - **Korjaus:**
 - [ ] `h3` **uusi** — HMT
       - **Korjaus:**
@@ -1588,7 +1558,7 @@ Vastine mainissa: `/aurinko-ja-akku/`
       - **Korjaus:**
 - [ ] `h3` **uusi** — MiS
       - **Korjaus:**
-- [ ] `p` **uusi** — Suurtehoinen yksivaiheinen mikroinvertteri
+- [ ] `p` **uusi** — Suuritehoinen yksivaiheinen mikroinvertteri
       - **Korjaus:**
 - [ ] `dd` **uusi** — 2 250–2 750 W
       - **Korjaus:**
@@ -1901,7 +1871,7 @@ Vastine mainissa: `/aurinko-ja-akku/`
       - **Korjaus:**
 - [ ] `td` **uusi** — Kulutus painottuu iltaan tai tehohuiput nostavat laskua
       - **Korjaus:**
-- [ ] `td` **uusi** — Siirtää keskipäivän ylijäämän iltaan, leikkaa huiput, ja vapaat tunnit tarjotaan reservimarkkinoille
+- [ ] `td` **uusi** — Siirtää keskipäivän ylijäämän iltaan, leikkaa huiput ja tarjoaa vapaat tunnit reservimarkkinoille
       - **Korjaus:**
 - [ ] `td` **uusi** — Tuntikulutuksen ja tuotannon rinnakkain, tehomaksun ja liittymän vapaan kapasiteetin
       - **Korjaus:**
@@ -2399,6 +2369,8 @@ Vastine mainissa: `/prosessi/`
       - **Korjaus:**
 - [ ] `p` **uusi** — Ketään ei lähetetä minnekään, ennen kuin tiedot ovat käsillä. Kaksi ensimmäistä askelta ovat maksuttomia, kohdekäynti hyvitetään sopimuksessa, suunnittelu ja asennus kulkevat sopimuksen mukaan.
       - **Korjaus:**
+- [ ] `p` **uusi** — Kymmenen valokuvaa pääkeskuksesta ja asennuspaikasta sekä lyhyt videopuhelu huoltohenkilönne kanssa; sähköasentaja kertoo, onnistuuko asennus ja millä ehdoin, sekä budjetin suuruusluokan.
+      - **Korjaus:**
 - [ ] `p` **uusi** — Sähköasentaja käy paikalla, mittaa kaapelireitin, keskuksen ja asennuspaikan ja vahvistaa hinnan. Samalla lähetämme verkkoyhtiölle kirjallisen kyselyn.
       - **Korjaus:**
 - [ ] ⚠ `p` **uusi** — Kun hinta on vahvistettu ja verkkoyhtiön kirjallinen vastaus on käsissä, asetamme rinnakkain kolme tietä: oma pääoma, leasing ja osamaksu. Näette yhden taulukon, jossa on kuukausierä, omarahoitusosuus ja se, mitä maksun jälkeen jää käteen. Rahoittajan kanssa asioimme me.
@@ -2882,6 +2854,9 @@ Vastine mainissa: `/yhteystiedot/`
       - **Korjaus:**
 - [ ] `label` **muutettu** — Minulla on jo tarjous kädessä, haluan siitä toisen mielipiteen.
       - main: Minulla on jo tarjous kädessä, haluan siihen toisen mielipiteen.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen (tietosuojaseloste).
+      - main: Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen, tietosuojaseloste.
       - **Korjaus:**
 
 ### #yhteystiedot-lista

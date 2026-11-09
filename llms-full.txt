@@ -83,7 +83,7 @@ Mitä on tulossa?
 5,2 mrd €Fingridin investointiohjelma
 noin 2 mrd € vuosina 2026–2029
 2027: FCR hankitaan vain tuntimarkkinoilta. 2029: Hikiä–Toivila valmistuu; siihen asti Etelä-Suomen varastorajoitus jatkuu. 1.1.2029: jakeluverkon tehomaksu lasketaan kuukauden suurimmasta 60 minuutin keskitehosta.
-Kartalle merkityt hankkeet ovat rakenteilla tai suunnitteilla olevia kantaverkon johtoja ja rajayhteyksiä valmistumisvuosineen. Reitit ovat suuntaa-antavia: viiva yhdistää päätepisteet. Vuodeton hanke toteutuu vain, jos alueen kulutus tai tuotanto kasvaa.
+Kartalle merkityt hankkeet ovat rakenteilla tai suunnitteilla olevia kantaverkon johtoja ja rajayhteyksiä valmistumisvuosineen. Reitit ovat suuntaa antavia: viiva yhdistää päätepisteet. Vuodeton hanke toteutuu vain, jos alueen kulutus tai tuotanto kasvaa.
 Lähteet: Fingrid, johdon katsaus · 29.10.2026; Fingrid · 8.9.2026; Fingrid · 24.9.2025; Energiavirasto, määräys 2340/000002/2025 · 2.2.2026; hankkeet kartalla: Fingrid, kantaverkon kehittämissuunnitelma 2026–2035 · 2.12.2025
 
 Missä teidän liittymänne on tässä kokonaisuudessa?
@@ -641,7 +641,7 @@ DC-jännite
 alle 65 V
 
 Takuu
-12 vuotta, enintään 25
+12 vuotta, laajennettavissa 25 vuoteen
 
 Lähde: Ralos Oy, tuotesivu Hoymiles MiT, luettu 9.11.2026
 
@@ -681,7 +681,7 @@ Lähde: Ralos Oy, tuotesivu Hoymiles HMS, luettu 9.11.2026
 
 Hoymiles
 MiS
-Suurtehoinen yksivaiheinen mikroinvertteri
+Suuritehoinen yksivaiheinen mikroinvertteri
 AC-teho
 2 250–2 750 W
 
@@ -883,7 +883,7 @@ Aurinkokatto · Katto on joka tapauksessa uusittava · Kate ja paneeli ovat yksi
 
 Maa-asennus ja aurinkokatos · Pihalla, pellolla tai pysäköintialueella on tilaa · Tuottaa ilman kattoa; katos suojaa samalla ajoneuvoja ja antaa paikan latauspisteille · Maapohjan ja perustukset, kaapelireitin liittymään, kaavan ja luvat
 
-Aurinkosähkö ja sähkövarasto · Kulutus painottuu iltaan tai tehohuiput nostavat laskua · Siirtää keskipäivän ylijäämän iltaan, leikkaa huiput, ja vapaat tunnit tarjotaan reservimarkkinoille · Tuntikulutuksen ja tuotannon rinnakkain, tehomaksun ja liittymän vapaan kapasiteetin
+Aurinkosähkö ja sähkövarasto · Kulutus painottuu iltaan tai tehohuiput nostavat laskua · Siirtää keskipäivän ylijäämän iltaan, leikkaa huiput ja tarjoaa vapaat tunnit reservimarkkinoille · Tuntikulutuksen ja tuotannon rinnakkain, tehomaksun ja liittymän vapaan kapasiteetin
 
 Sähkövarasto nykyiseen voimalaan · Aurinkovoimala on jo olemassa ja ylijäämä myydään halvalla verkkoon · Tekee jo maksetusta voimalasta paremman investoinnin: enemmän omaa käyttöä, huiput pois, reservit · Invertterien yhteensopivuuden, verkkoon syötön rajoituksen ja ohjausjärjestyksen
 
@@ -1343,12 +1343,12 @@ ECO-EPS-C125Elecnova · EPS-kaappi varavoimaan · 1, 3 tai 6 × 125 kW, siirto e
 PCS, BMS ja EMSElecnova · Tehoelektroniikka, akunhallinta ja energianhallinta · komponentit kokonaisuuden osiksi · Elecnova, tuotesivut PCS, BMS ja EMS, luettu 9.11.2026
 ECO-B100/120WP-2HElecnova · Ilmajäähdytteinen hybridikaappi aurinkosähkölle · 30 tai 40 kW, 100 tai 121 kWh, aurinkosähkö enintään 60 tai 80 kW · Elecnova, tuotesivu ECO-B100/120WP-2H, luettu 9.11.2026
 ECO-H3200KElecnova · PCS-Boost-kontti: tehoelektroniikka ja muuntaja suuriin varastoihin · 3 200 kW, 6–35 kV, akusto 1 000–1 500 V DC · Elecnova, tuotesivu PCS-Boost-kontti ECO-H3200K, luettu 9.11.2026
-ECO-P1P20WSElecnova · Ilmajäähdytetty akkupaketti järjestelmiin · 17,92 kWh, 64 V DC · Elecnova, tuotesivu ECO-P1P20WS, luettu 9.11.2026
+ECO-P1P20WSElecnova · Ilmajäähdytteinen akkupaketti järjestelmiin · 17,92 kWh, 64 V DC · Elecnova, tuotesivu ECO-P1P20WS, luettu 9.11.2026
 ECO-P1P52LSElecnova · Nestejäähdytetty akkupaketti järjestelmiin · 46,59 kWh, 166,4 V DC, IP65 · Elecnova, tuotesivu ECO-P1P52LS, luettu 9.11.2026
 RT5427 HV/SHVRaystech · Korkeajänniteakun moduuli · 5,43 kWh moduulia kohden, IP65 · Ralos Oy, tuotesivu Raystech RT5427 HV/SHV, luettu 9.11.2026
 M-BackupAtmoce · Varavoiman kytkentäkeskus · verkko 80 A, kuorma 63 A, IP65 · Ralos Oy, tuotesivu ATMOCE M-Backup, luettu 9.11.2026
 HiBattery 1920 ACHoymiles · Pistorasiaan kytkettävä akku mökille ja parvekevoimalalle · 1,92 kWh, 800 VA, enintään 6 akkua, IP66 · Ralos Oy, tuotesivu Hoymiles HiBattery 1920 AC, luettu 9.11.2026
-OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · DC-verkko, energiavarastot, lataus ja OptiGrid Cloud -ohjaus, osat myös erikseen · Avant Power, OptiGrid™-sivu, kohta Kiinteät energiavarastot, luettu 9.11.2026
+OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · DC-verkko, energiavarastot, lataus ja OptiGrid Cloud -ohjaus, osat myös erikseen · Avant Power, OptiGrid™-sivu, luettu 9.11.2026
 
 Tekniset tiedot ovat valmistajien datalehdiltä ja tuotesivuilta. Varavoima koskee valittuja piirejä, jotka suunnitellaan kohdekäynnillä. Valmistaja ja malli valitaan kohteenne kulutuksen, liittymän ja tilan mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla.
 
@@ -1639,7 +1639,7 @@ Muut mallit ja ratkaisut
 Tiedot valmistajien tuotesivuilta ja tiedotteista.
 
 Malli · Tyyppi · Päätiedot · Lähde
-OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · DC-verkko, energiavarastot, lataus ja OptiGrid Cloud -ohjaus, osat myös erikseen · Avant Power, OptiGrid™-sivu, kohta Kiinteät energiavarastot, luettu 9.11.2026
+OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · DC-verkko, energiavarastot, lataus ja OptiGrid Cloud -ohjaus, osat myös erikseen · Avant Power, OptiGrid™-sivu, luettu 9.11.2026
 Zaptec GoZaptec · AC-latausasema kotiin · enintään 22 kW, IP54, OCPP 1.6J · Zaptec Charger AS, Zaptec Go -tuotelehti (Scanoffice), luettu 9.11.2026
 Charge UpEasee · AC-latausasema kotiin · enintään 22 kW, IP54, IK10, OCPP 1.6J · Easee, Charge Up -datalehti (Scanoffice), luettu 9.11.2026
 AmpIN SmartAmpIN · Type 2 -latauskaapeli · taipuisa −40 °C:ssa, yli 50 000 käyttökertaa, IEC 62196-2 · Scanoffice, tuotesivu AmpIN Smart, luettu 9.11.2026
@@ -1690,7 +1690,7 @@ Varikko, logistiikka
 tai raskas kalusto · Energiavarasto ja integroitu pikalataus 200–600 kW sekä ohjaus, joka ajoittaa lataukset.
 
 Työmaa, tapahtuma tai
-tilapäinen tarve · Siirrettävä energiayksikkö, Type 2-lähtö 9 kW.
+tilapäinen tarve · Siirrettävä energiayksikkö, Type 2 -lähtö 9 kW.
 
 Velvoite. Muussa kuin asuinrakennuksessa, jonka yhteydessä on yli 20 pysäköintipaikkaa, on pitänyt olla vähintään yksi yli 3,7 kW:n latauspiste 31.12.2024 alkaen. Poikkeuksia ovat muun muassa mikroyrityksen omassa käytössä olevat rakennukset. Lähde: laki 733/2020, Moottori 30.9.2024.
 
@@ -2098,7 +2098,7 @@ Annatte pääsyn tuntikohtaisiin kulutustietoihinne (Datahubista tai verkkoyhti�
 Maksuton · aikaanne noin 20 minuuttia
 
 02Esitarkastus
-Kymmenen valokuvaa pääkeskuksesta ja asennuspaikasta sekä lyhyt videopuhelu huoltohenkilönne kanssa; sähköasentaja kertoo, onnistuuko ja millä ehdoin, ja budjetin suuruusluokan.
+Kymmenen valokuvaa pääkeskuksesta ja asennuspaikasta sekä lyhyt videopuhelu huoltohenkilönne kanssa; sähköasentaja kertoo, onnistuuko asennus ja millä ehdoin, sekä budjetin suuruusluokan.
 Maksuton · yksi tunti
 
 03Kohdekäynti
@@ -2149,7 +2149,7 @@ Pyydä maksuton kartoitus Koko valikoima
 
 Kumppanit, joiden kanssa toimimme.
 
-Valitsimme kumppanit sen mukaan, mitä ne tuovat yrityksen investoinnille: laitteet, joiden tiedot ovat julkisia, takuu ja huolto sekä osaaminen asennuksesta reservimarkkinoihin. Jokaisen kohdalla kerromme lähteineen, keitä he ovat ja miksi valitsimme heidät.
+Valitsimme kumppanit sen mukaan, mitä ne tuovat yrityksen investoinnille: laitteet, joiden tiedot ovat julkisia, takuu ja huolto sekä osaaminen asennuksesta reservimarkkinoihin. Jokaisen kohdalla kerromme lähteineen, millainen yritys se on ja miksi valitsimme sen.
 
 Kumppanit aloittainKumppani · Energiavarastot · Aurinkosähkö · Lataus ja mikroverkot · Lämpöpumput · Reservimarkkinat
 Ralos Oy · Laitteet · Laitteet · ei · ei · ei
@@ -2240,7 +2240,7 @@ Näin asennus etenee
 JSM Automaatiosähkö Oy
 Suomi · Sastamala · varasto Tampereella · Pirkanmaa
 Miksi valitsimmeJSM asentaa sähkövarastoja myös reservimarkkinakäyttöön, Ralosin kaapit mukaan lukien. Samalta urakoitsijalta tulevat kohteen muut sähkötyöt, aurinkovoimala, lämpöpumput ja lataus, ja työtä johtaa asennuspäällikkömme.
-TaustaYrittäjävetoinen sähkö- ja automaatiourakoitsija, jolla on yli vuosikymmenen kokemus alalta. Toimisto on Sastamalassa ja varasto Tampereella, ja toimialue kattaa koko Pirkanmaan. Asiakkaina ovat yritykset, julkinen sektori ja yksityiset.
+TaustaYrittäjävetoinen sähkö- ja automaatiourakoitsija, jolla on yli vuosikymmenen kokemus alalta. Toimisto on Sastamalassa ja varasto Tampereella, ja toimialue kattaa koko Pirkanmaan. Asiakkaina ovat yritykset, julkinen sektori ja yksityisasiakkaat.
 Energiavarastojen asennus
 Aurinkovoimalat
 Lämpöpumput
@@ -2256,7 +2256,7 @@ Näin valitsemme aggregaattorin
 
 Aggregaattori valitaan kohteen mukaan
 Fingridin hyväksymä reservitoimittaja
-Vertaamme reservitoimittajat kohteenne varaston ja tuotteiden mukaan. Valinnan perusteet kirjataan arvioon, ja me rakennamme yhteyden valittuun aggregaattoriin.
+Vertaamme reservitoimittajia kohteenne varaston ja tuotteiden mukaan. Valinnan perusteet kirjataan arvioon, ja me rakennamme yhteyden valittuun aggregaattoriin.
 
 Koko valikoima kuvin ja tiedoin.
 
@@ -2953,7 +2953,7 @@ DC-jännite
 alle 65 V
 
 Takuu
-12 vuotta, enintään 25
+12 vuotta, laajennettavissa 25 vuoteen
 
 Lähde: Ralos Oy, tuotesivu Hoymiles MiT, luettu 9.11.2026
 
@@ -2993,7 +2993,7 @@ Lähde: Ralos Oy, tuotesivu Hoymiles HMS, luettu 9.11.2026
 
 Hoymiles
 MiS
-Suurtehoinen yksivaiheinen mikroinvertteri
+Suuritehoinen yksivaiheinen mikroinvertteri
 AC-teho
 2 250–2 750 W
 
@@ -3250,7 +3250,7 @@ ECO-EPS-C125Elecnova · EPS-kaappi varavoimaan · 1, 3 tai 6 × 125 kW, siirto e
 PCS, BMS ja EMSElecnova · Tehoelektroniikka, akunhallinta ja energianhallinta · komponentit kokonaisuuden osiksi · Elecnova, tuotesivut PCS, BMS ja EMS, luettu 9.11.2026
 ECO-B100/120WP-2HElecnova · Ilmajäähdytteinen hybridikaappi aurinkosähkölle · 30 tai 40 kW, 100 tai 121 kWh, aurinkosähkö enintään 60 tai 80 kW · Elecnova, tuotesivu ECO-B100/120WP-2H, luettu 9.11.2026
 ECO-H3200KElecnova · PCS-Boost-kontti: tehoelektroniikka ja muuntaja suuriin varastoihin · 3 200 kW, 6–35 kV, akusto 1 000–1 500 V DC · Elecnova, tuotesivu PCS-Boost-kontti ECO-H3200K, luettu 9.11.2026
-ECO-P1P20WSElecnova · Ilmajäähdytetty akkupaketti järjestelmiin · 17,92 kWh, 64 V DC · Elecnova, tuotesivu ECO-P1P20WS, luettu 9.11.2026
+ECO-P1P20WSElecnova · Ilmajäähdytteinen akkupaketti järjestelmiin · 17,92 kWh, 64 V DC · Elecnova, tuotesivu ECO-P1P20WS, luettu 9.11.2026
 ECO-P1P52LSElecnova · Nestejäähdytetty akkupaketti järjestelmiin · 46,59 kWh, 166,4 V DC, IP65 · Elecnova, tuotesivu ECO-P1P52LS, luettu 9.11.2026
 RT5427 HV/SHVRaystech · Korkeajänniteakun moduuli · 5,43 kWh moduulia kohden, IP65 · Ralos Oy, tuotesivu Raystech RT5427 HV/SHV, luettu 9.11.2026
 M-BackupAtmoce · Varavoiman kytkentäkeskus · verkko 80 A, kuorma 63 A, IP65 · Ralos Oy, tuotesivu ATMOCE M-Backup, luettu 9.11.2026
@@ -3268,7 +3268,7 @@ Premium-aurinkosähköpaketitScanoffice · Paneelit, Sofar-invertteri ja kattoki
 NanorailRalos · Kiskoton kiinnitysjärjestelmä harjakatoille · konesauma-, lukkosauma-, profiilipelti- ja huopakatot; paneelit 28–40 mm · Ralos Oy, tuotesivu Ralos Nanorail, luettu 9.11.2026
 FLAT25Ralos · Kiskoton asennusjärjestelmä tasakatoille · katon kuorma 5,5 kg/m² · Ralos Oy, ratkaisusivu aurinkovoimalat, luettu 9.11.2026
 KiinnitysjärjestelmätAeroCompact, Esdec, Nordic Sun, Orima Solar · Paneelien kiinnitys katolle ja maahan · tasakatot, harjakatot ja maateline; palomieskytkin Santon · Scanoffice, aurinkopaneelien tuotesivut, luettu 9.11.2026
-OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · DC-verkko, energiavarastot, lataus ja OptiGrid Cloud -ohjaus, osat myös erikseen · Avant Power, OptiGrid™-sivu, kohta Kiinteät energiavarastot, luettu 9.11.2026
+OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · DC-verkko, energiavarastot, lataus ja OptiGrid Cloud -ohjaus, osat myös erikseen · Avant Power, OptiGrid™-sivu, luettu 9.11.2026
 Zaptec GoZaptec · AC-latausasema kotiin · enintään 22 kW, IP54, OCPP 1.6J · Zaptec Charger AS, Zaptec Go -tuotelehti (Scanoffice), luettu 9.11.2026
 Charge UpEasee · AC-latausasema kotiin · enintään 22 kW, IP54, IK10, OCPP 1.6J · Easee, Charge Up -datalehti (Scanoffice), luettu 9.11.2026
 AmpIN SmartAmpIN · Type 2 -latauskaapeli · taipuisa −40 °C:ssa, yli 50 000 käyttökertaa, IEC 62196-2 · Scanoffice, tuotesivu AmpIN Smart, luettu 9.11.2026
@@ -3753,7 +3753,7 @@ Valmistunut: Järvilinja 2: 305 km uutta 400 ja 110 kV:n johtoa, käytössä lok
 Seuraavaksi: Hikiä–Toivila 2029 · Metsälinja 2 Vaala–Jämsä, noin 350 km, 2030 (Fingrid, 24.9.2025; 29.9.2026)
 
 Viro samalla mittarilla
-Vertailtavuus: Suuntaa-antava: molemmat ovat kantaverkkoyhtiön suunnitelmia. Suomen luvut ovat investointeja ja valmistuvia johtoja, Viron luvut suunnittelun lähtöoletuksia.
+Vertailtavuus: Suuntaa antava: molemmat ovat kantaverkkoyhtiön suunnitelmia. Suomen luvut ovat investointeja ja valmistuvia johtoja, Viron luvut suunnittelun lähtöoletuksia.
 Uusi tuotanto: enintään 1 500 MW vuoteen 2030 mennessä (Elering, arengukava 2026–2035, 9.7.2026)
 Varastot 2035: 1 000–1 300 MW lisää (Viron energiastrategia ENMAK 2035, Eleringin suunnitelmassa) (Elering, arengukava 2026–2035, 9.7.2026)
 Varastot, perusskenaario: 600 MW / 1 200 MWh 2030 · 1 500 MW / 3 000 MWh 2035 (Elering, varustuskindluse aruanne 2025, 9.12.2025)
@@ -3920,7 +3920,7 @@ Verkkoyhtiö
 Onko kohteessa aurinkosähköä?ValitseEiKylläSuunnitteilla
 
 Pyydä maksuton kartoitus
-Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen, tietosuojaseloste.
+Vastaamme kahden arkipäivän kuluessa. Käytämme tietoja vain arvion tekemiseen (tietosuojaseloste).
 
 Tarkistakaa nimi ja sähköposti. Jos lähetys ei onnistu, voitte lähettää tiedot myös suoraan osoitteeseen info@samaenergia.fi.
 
@@ -4049,7 +4049,7 @@ Allikad: Elering, arengukava 2026–2035 · 9.7.2026; andmekeskused: Sunly · 17
 
 Kust tuleb ilmast sõltuv tootmine?
 1 214 MWpäikesevõimsust
-tuulevõimsust 694 MW · installeeritud netovõimsus 2025
+tuulevõimsust 694 MW · paigaldatud netovõimsus 2025
 2025. aastal oli Eestis 1 214 MW päikese- ja 694 MW tuulevõimsust. Ilmast sõltuv toodang muudab börsihinnad kõikuvaks ja salvesti teenib hinnavahest.
 Kaardi valged ringid on tuulepargid ja kuldsed punktid päikesejaamad; suurus näitab võimsust. Need on OpenStreetMapi märgitud jaamad ja loetelu ei ole täielik: kogusummad on Eleringi omad.
 Allikad: Elering, varustuskindluse aruanne 2025 · 9.12.2025; jaamad kaardil: OpenStreetMapi kaastöötajad (ODbL) · 2.11.2026
@@ -4070,7 +4070,7 @@ Allikas: Elering, AST ja Litgrid, FRR dimensioning forecast · 29.7.2025
 Mis tuleb?
 1 000–1 300 MWsalvestusvõimsust lisandub 2035. aastaks
 2030: kuni 1 500 MW uut tootmisvõimsust. 2035: 1 000–1 300 MW lisanduvat salvestusvõimsust. Umbes 2038: EstLink 3 ja Eesti–Läti neljas ühendus, impordivõimekus +1 200 MW.
-Kaardile märgitud projektid on kavandatud põhivõrgu liinid ja riikidevahelised ühendused koos valmimisajaga. Trassid on suunda näitavad: joon ühendab otspunkte.
+Kaardile märgitud projektid on kavandatud põhivõrgu liinid ja riikidevahelised ühendused koos valmimisajaga. Trassid on ligikaudsed: joon ühendab otspunkte.
 Allikas: ENMAK 2035 indikatiivne maht Eleringi arengukavas 2026–2035 · 9.7.2026
 
 Kus on selles pildis teie liitumine?
@@ -4089,12 +4089,12 @@ Teie annate andmed. Ülejäänu korraldame meie. Kaks esimest sammu on tasuta ja
 1Tasuta hinnang
 2 tööpäeva
 
-Täidate hinnangu vormi ja annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või võrguettevõtjalt), ühe arve ja peakilbi skeemi. Kirjaliku hinnangu saate kahe tööpäevaga pärast andmete saamist.
+Täidate hinnanguvormi ja annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendiportaalist või võrguettevõtjalt), ühe arve ja peakilbi skeemi. Kirjaliku hinnangu saate kahe tööpäevaga pärast andmete saamist.
 
 2Eelkontroll
 1–2 päeva · tasuta
 
-Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldajaga.
+Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie kinnistu hooldaja või haldajaga.
 
 3Objektikülastus
 pool päeva
@@ -4228,7 +4228,7 @@ Allikas: Avant Power, OptiGrid™ leht, statsionaarsete salvestite osa, loetud 9
 Kõik laadimislahendused7
 Mitsubishi Electric
 CAHV-Z450
-Õhk-vesi soojuspump kinnistutele, R290
+Õhk-vesisoojuspump kinnistutele, R290
 Küttevõimsus
 40 kW
 
@@ -4239,7 +4239,7 @@ Allikas: Mitsubishi Electric, CAHV-Z450 brošüür (Scanoffice), loetud 9.11.202
 
 Mitsubishi Electric
 Large Hydrobox E
-Õhk-vesi soojuspump suurematele kinnistutele
+Õhk-vesisoojuspump suurematele kinnistutele
 Küttevõimsus
 23 kW (11,4–28 kW)
 
@@ -4266,7 +4266,7 @@ Meie partnerid
 
 Vastutajad nimeliselt.
 Igal projekti etapil on nimeline vastutaja ja numbrid on nende enda omad.
-SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · registrikood (Y-tunnus) 3647683-6
+SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsingi · registrikood (Y-tunnus) 3647683-6
 Meist
 
 Madis MaastikmüügijuhtHinnang, kliendisuhe ja agregaator+358 44 965 4614
@@ -4577,7 +4577,7 @@ DC-pinge
 alla 65 V
 
 Garantii
-12 aastat, kuni 25
+12 aastat, pikendatav 25 aastani
 
 Allikas: Ralos Oy, tooteleht Hoymiles MiT, loetud 9.11.2026
 
@@ -4798,10 +4798,10 @@ blueplanetKACO · Päikeseinverterid ettevõtete objektidele · 10–125 kW, kau
 HiKu6 CS6W-MB-AGCanadian Solar · Half-cut päikesepaneel · 540 W, tootegarantii 12 a, toodangugarantii 25 a · Scanoffice, tooteleht Canadian Solar HiKu, loetud 9.11.2026
 Q.PEAK DUO ML-G11Hanwha Q CELLS · Täismust päikesepaneel · 395 Wp, kasutegur kuni 20,8 %, garantii 25 a · Scanoffice, tooteleht Hanwha Q.PEAK DUO ML-G11, loetud 9.11.2026
 ZXM7-SHLDD108ZNShine Solar · Must kahepoolne klaas-klaas paneel · kasutegur kuni 20 %, grafeenkate, toodangugarantii 30 a · Scanoffice, tooteleht ZNShine Solar ZXM7, loetud 9.11.2026
-Premium-aurinkosähköpaketitScanoffice · Paneelid, Sofari inverter ja katusekinnitused ühe tarnena · inverterid 3–50 kWp, katusekinnituste garantii 30 a · Scanoffice, tooteleht Premium päikeseelektripaketid, loetud 9.11.2026
+Premium-päikeseelektripaketidScanoffice · Paneelid, Sofari inverter ja katusekinnitused ühe tarnena · inverterid 3–50 kWp, katusekinnituste garantii 30 a · Scanoffice, tooteleht Premium päikeseelektripaketid, loetud 9.11.2026
 NanorailRalos · Rööbasteta kinnitussüsteem viilkatustele · valts-, klikkvalts-, profiilplekk- ja rullkatused; paneelid 28–40 mm · Ralos Oy, tooteleht Ralos Nanorail, loetud 9.11.2026
 FLAT25Ralos · Rööbasteta paigaldussüsteem lamekatustele · katuse koormus 5,5 kg/m² · Ralos Oy, lahenduste leht päikesejaamad, loetud 9.11.2026
-KiinnitysjärjestelmätAeroCompact, Esdec, Nordic Sun, Orima Solar · Paneelide kinnitus katusele ja maale · lamekatused, viilkatused ja maaraam; tuletõrjelüliti Santon · Scanoffice, päikesepaneelide tootelehed, loetud 9.11.2026
+KinnitussüsteemidAeroCompact, Esdec, Nordic Sun, Orima Solar · Paneelide kinnitus katusele ja maale · lamekatused, viilkatused ja maaraam; tuletõrjelüliti Santon · Scanoffice, päikesepaneelide tootelehed, loetud 9.11.2026
 
 Tehnilised andmed on tootjate andmelehtedelt ja brošüüridelt. Paneelid, jaama suurus ja inverterid valitakse teie objekti tarbimise, katuse ja liitumise järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega. Varutoide hõlmab valitud ahelaid, mis kavandatakse objektikülastusel.
 
@@ -4819,7 +4819,7 @@ Päikesekatus · Katus tuleb nagunii uuendada · Katusekate ja paneel on üks ko
 
 Maapaigaldus ja päikesevarikatus · Õuel, põllul või parklas on ruumi · Toodab ilma katuseta; varikatus kaitseb ühtlasi sõidukeid ja annab koha laadijatele · Pinnast ja vundamente, kaablitrassi liitumiseni, planeeringut ja lube
 
-Päikeseelekter ja salvesti · Tarbimine on suurem õhtul või tipud tõstavad arvet · Nihutab keskpäeva ülejäägi õhtusse, lõikab tippe ja vabad tunnid pakutakse reserviturule · Tunnitarbimist ja toodangut kõrvuti, võimsustasu ja liitumise vaba võimsust
+Päikeseelekter ja salvesti · Tarbimine on suurem õhtul või tipud tõstavad arvet · Nihutab keskpäeva ülejäägi õhtusse, lõikab tippe ja pakub vabad tunnid reserviturule · Tunnitarbimist ja toodangut kõrvuti, võimsustasu ja liitumise vaba võimsust
 
 Salvesti olemasolevale jaamale · Päikesejaam on olemas ja ülejääk müüakse odavalt võrku · Teeb juba makstud jaamast parema investeeringu: rohkem omatarbimist, tipud maha, reservid · Inverterite ühilduvust, võrku andmise piirangut ja juhtimise järjekorda
 
@@ -4852,7 +4852,7 @@ Hallile, farmile ja ärihoonele
 Suured ühtlased katusepinnad on päikesekatuse loomulik koht. Dimensioneerimine tehakse tarbimise, mitte katuse suuruse järgi.
 
 Kui välimus loeb
-Kui hoone välimus on oluline, sobitab katusesse integreeritud lahendus päikeseelektri hoone ilmega. Muinsuskaitsealusel hoonel lepitakse lahendus kokku muinsuskaitsega.
+Kui hoone välimus on oluline, sobitab katusesse integreeritud lahendus päikeseelektri hoone ilmega. Muinsuskaitsealusel hoonel lepitakse lahendus kokku Muinsuskaitseametiga.
 
 Kui katus uuendataksepäikesekatuse hinda võrreldakse uue katusega
 
@@ -5284,7 +5284,7 @@ ECO-P1P52LSElecnova · Vedelikjahutusega akupakett süsteemidesse · 46,59 kWh, 
 RT5427 HV/SHVRaystech · Kõrgepingeaku moodul · 5,43 kWh mooduli kohta, IP65 · Ralos Oy, tooteleht Raystech RT5427 HV/SHV, loetud 9.11.2026
 M-BackupAtmoce · Varutoite lülituskeskus · võrk 80 A, koormus 63 A, IP65 · Ralos Oy, tooteleht ATMOCE M-Backup, loetud 9.11.2026
 HiBattery 1920 ACHoymiles · Pistikupessa ühendatav aku suvilale ja rõdujaamale · 1,92 kWh, 800 VA, kuni 6 akut, IP66 · Ralos Oy, tooteleht Hoymiles HiBattery 1920 AC, loetud 9.11.2026
-OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · DC-võrk, energiasalvestid, laadimine ja OptiGrid Cloudi juhtimine, osad ka eraldi · Avant Power, OptiGrid™ leht, statsionaarsete salvestite osa, loetud 9.11.2026
+OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · DC-võrk, energiasalvestid, laadimine ja OptiGrid Cloudi juhtimine, osad ka eraldi · Avant Power, OptiGrid™ leht, loetud 9.11.2026
 
 Tehnilised andmed on tootjate andmelehtedelt ja tootelehtedelt. Varutoide hõlmab valitud ahelaid, mis kavandatakse objektikülastusel. Tootja ja mudel valitakse teie objekti tarbimise, liitumise ja ruumi järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega.
 
@@ -5325,7 +5325,7 @@ Näidisarvutus. Teie objekti tootlusnõue sõltub kinnisvara liigist ja asukohas
 
 Mida me tarnime ja mida seadmetelt nõuame.
 
-Seadmed valime teie objekti järgi, mitte lao. Ohutus, garantii ja hooldus on hinnangus kirjas, mitte peenes kirjas.
+Seadmed valime teie objekti järgi, mitte laoseisu järgi. Ohutus, garantii ja hooldus on hinnangus kirjas, mitte peenes kirjas.
 
 Vaadake salvestikappi oma hoovis.
 
@@ -5335,7 +5335,7 @@ Ava kapp 3D-vaates
 Mõõdud on tootja andmetest. Kappide mudel ja arv märgitakse pakkumisse teie objekti järgi.
 
 Tööstusklassi süsteem
-Välispaigalduseks sobiv salvestikapp, inverter ja juhtimine, mõõdetud teie liitumise ja tarbimisprofiili järgi, ühest üksusest mitme üksuse pargini.
+Välispaigalduseks sobiv salvestikapp, inverter ja juhtimine, dimensioneeritud teie liitumise ja tarbimisprofiili järgi, ühest üksusest mitme üksuse pargini.
 
 Ohutus ja garantii
 Nõuame tootjalt LFP-keemiat, rakutaseme jälgimisega akuhaldust, temperatuurijuhtimist, välitingimustele vastavat kappi ja CE- ning transpordisertifikaate. Paigutus kavandatakse tootja paigaldusjuhendi järgi ja kooskõlastatakse tuleohutusnõuetega. Tootja garantii ja hooldustingimused on hinnangus eraldi real. Kõik nõuded →
@@ -5416,7 +5416,7 @@ Avaleht›Laadimine
 
 Laadimine, mis mahub teie liitumisse.
 
-Kontorile mõni laadimispunkt, depoole kiirlaadijad: laadimine valitakse selle järgi, kui kaua autod seisavad ja kui palju liitumine annab. Kui liitumise võimsusest tipuks ei piisa, annab selle salvesti ning päikesekatus toodab elektrit samasse süsteemi. Laadimisjaamad on mitmelt tootjalt ja võrdlus tuleb kirjalikult samade numbritega.
+Kontorile mõni laadimispunkt, depoole kiirlaadijad: laadimine valitakse selle järgi, kui kaua autod seisavad ja kui palju liitumine annab. Kui liitumise võimsusest tipuks ei piisa, annab selle salvesti ning päikesevarikatus toodab elektrit samasse süsteemi. Laadimisjaamad on mitmelt tootjalt ja võrdlus tuleb kirjalikult samade numbritega.
 
 Küsi tasuta hinnangut Laadimisjaamad
 
@@ -5553,11 +5553,11 @@ Teised mudelid ja lahendused
 Andmed tootjate tootelehtedelt ja pressiteadetest.
 
 Mudel · Tüüp · Põhiandmed · Allikas
-OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · DC-võrk, energiasalvestid, laadimine ja OptiGrid Cloudi juhtimine, osad ka eraldi · Avant Power, OptiGrid™ leht, statsionaarsete salvestite osa, loetud 9.11.2026
+OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · DC-võrk, energiasalvestid, laadimine ja OptiGrid Cloudi juhtimine, osad ka eraldi · Avant Power, OptiGrid™ leht, loetud 9.11.2026
 Zaptec GoZaptec · AC-laadimisjaam kodule · kuni 22 kW, IP54, OCPP 1.6J · Zaptec Charger AS, Zaptec Go tooteleht (Scanoffice), loetud 9.11.2026
 Charge UpEasee · AC-laadimisjaam kodule · kuni 22 kW, IP54, IK10, OCPP 1.6J · Easee, Charge Up andmeleht (Scanoffice), loetud 9.11.2026
 AmpIN SmartAmpIN · Type 2 laadimiskaabel · painduv −40 °C juures, üle 50 000 kasutuskorra, IEC 62196-2 · Scanoffice, tooteleht AmpIN Smart, loetud 9.11.2026
-LataustolppaScanoffice · Laadimispost kahele laadijale · värvitud tsingitud teras, tarnitakse kokkupanduna · Scanoffice, tooteleht Easee laadimisjaamad ja laadimispostid, loetud 9.11.2026
+LaadimispostScanoffice · Laadimispost kahele laadijale · värvitud tsingitud teras, tarnitakse kokkupanduna · Scanoffice, tooteleht Easee laadimisjaamad ja laadimispostid, loetud 9.11.2026
 
 Tehnilised andmed on tootjate andmelehtedelt. Laadimispunktide arv, võimsus ja koormuse juhtimine valitakse parkla, kasutuse ja liitumise järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega.
 
@@ -5569,7 +5569,7 @@ Liitumine laeb salvestit ühtlaselt.
 
 Salvesti annab laadimise tippvõimsuse, kui auto ühendatakse.
 
-Päikesekatus toodab päeval elektrit salvestisse ja laadijatesse.
+Päikesevarikatus toodab päeval elektrit salvestisse ja laadijatesse.
 
 Kiirlaadijad dimensioneeritakse objekti liikluse järgi.
 
@@ -5612,7 +5612,7 @@ Kas liitumist tuleb suurendada?
 Mitte alati. Koormuse juhtimine jagab liitumise võimsuse laadimispunktide vahel ja kiirlaadimise tipu võib anda salvesti. Hinnang arvutab teie tarbimisandmetest, kas praegusest liitumisest piisab või tasub seda suurendada.
 
 AC või DC?
-AC-laadimisest piisab, kui auto seisab tunde: töökohas, hotellis ja korteriühistus. DC on vajalik, kui auto peab laadima kiiresti või sõiduk on raske: klientide parklas, depoos ja logistikas.
+AC-laadimisest piisab, kui auto seisab tunde: töökohas, hotellis ja korteriühistus. DC on vajalik, kui autot on vaja kiiresti laadida või sõiduk on raske: klientide parklas, depoos ja logistikas.
 
 Kas laadimise eest saab kasutajatelt arve esitada?
 Saab. Valiku AC-laadimisjaamades on MID-arvesti (klass B), mille näitu saab kasutada arveldamiseks. OCPP-liides ühendab laadimisjaama teie valitud laadimisteenusega.
@@ -5621,7 +5621,7 @@ Kes paigaldab ja hooldab?
 Paigaldust juhib meie paigaldusjuht, elektritööd ja kasutuselevõtu teeb registreeritud elektritööde partner. Tootja garantii kirjutatakse pakkumisse seadme kaupa ning garantii- ja hooldusküsimused käivad meie kaudu.
 
 Kas laadimise, salvesti ja päikeseelektri saab hankida koos?
-Saab ja siis valitakse need samadest tarbimisandmetest. Hinnangus on need samade numbritega ning teie otsustate, mis järjekorras need ehitatakse.
+Saab ja siis dimensioneeritakse need samade tarbimisandmete põhjal. Hinnangus on need samade numbritega ning teie otsustate, mis järjekorras need ehitatakse.
 
 Rääkige parklast ja liitumisest. Arvutame laadimise.
 Hinnang on tasuta ja võrdlus tuleb kirjalikult.
@@ -5807,7 +5807,7 @@ Kolm asja, mida agregaator teie eest teeb.
 Eleringi tüüptingimustes on agregaator eraldi määratletud teenusepakkuja, kes koondab mitme omaniku ressursid ja tohib pakkumisse võtta ainult need, mille omanik on selleks volituse andnud. Praktikas tähendab see, et salvesti on teie ja turg on agregaatori mure.
 
 Kogub salvestid üheks pakkumiseks
-Eleringi võimsusturul on miinimumpakkumine 1 MW. Agregaator kogub mitme objekti salvestid üheks pakkumiseks, nii pääseb ka väike salvesti samale turule kui suured tegijad.
+Eleringi võimsusturul on miinimumpakkumine 1 MW. Agregaator kogub mitme objekti salvestid üheks pakkumiseks, nii pääseb ka väike salvesti samale turule mis suured tegijad.
 
 Juhib salvestit automaatselt
 Tarkvara viib salvesti iga tund kõige tasuvamasse reservi ja vahetab toodet, kui hinnad liiguvad. Mida täielikumalt agregaator salvestit juhib, seda rohkem see teenib. Teie ei pea midagi tegema.
@@ -5842,7 +5842,7 @@ Mida üksik objekt peaks ise korraldama ja mida teeb agregaator.
 
 Teema · Ilma agregaatorita · Agregaatoriga
 
-Turule pääs · Miinimumpakkumine 1 MW: ühest väikesest salvestist ei piisa · Mitme objekti salvestid kogutakse üheks pakkumiseks
+Turulepääs · Miinimumpakkumine 1 MW: ühest väikesest salvestist ei piisa · Mitme objekti salvestid kogutakse üheks pakkumiseks
 
 Leping ja katsed Eleringiga · Teenusepakkuja leping, bilansivastutus, eelkvalifitseerimine ja dokumentatsioon ise · Agregaator tegutseb teenusepakkujana või selle kaudu ja korraldab katsed
 
@@ -5857,7 +5857,7 @@ Soleron Energy
 Soleron Energy OÜ
 Meie agregaatoripartner Eestis · Eleringi reserviturg
 
-Eesti ettevõte, mis keskendub energiasalvestuslahendustele ja energiajuhtimissüsteemidele: oma Soleron EMS tarkvara salvestite ja tootmisüksuste juhtimiseks, agregeerimine Eleringi sagedusreservidesse, liitiumakudel põhinevate salvestite import, projekteerimine, paigaldus ja hooldus.
+Eesti ettevõte, mis keskendub energiasalvestuslahendustele ja energiajuhtimissüsteemidele: oma Soleron EMS-tarkvara salvestite ja tootmisüksuste juhtimiseks, agregeerimine Eleringi sagedusreservidesse, liitiumakudel põhinevate salvestite import, projekteerimine, paigaldus ja hooldus.
 Soleron kirjutab reservituru seisust ka ise: nende septembri 2025 ülevaate järgi oli neil sagedusreservide turul ööpäevaringselt 4 MW võimsust ja prognoos aasta lõpuks vähemalt 20 MW juhitavat võimsust; augustis 2025 lisandus võimsusturu moodul. Neid materjale saab lugeda enne, kui te meiega üldse räägite. Me soovitame seda teha.
 Soleroni ülevaated
 
@@ -5969,7 +5969,7 @@ Te annate ligipääsu oma tunnipõhistele tarbimisandmetele (Eleringi kliendipor
 Tasuta · teie aeg umbes 20 minutit
 
 02Eelkontroll
-Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldajaga; elektrik ütleb, kas ja mis tingimustel saab. Ta annab ka eelarve suurusjärgu.
+Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie kinnistu hooldaja või haldajaga; elektrik ütleb, kas paigaldus on võimalik ja mis tingimustel, ning annab eelarve suurusjärgu.
 Tasuta · üks tund
 
 03Objektikülastus
@@ -5995,7 +5995,7 @@ Iga arv kirjalikult, koos allikaga
 Hinnangus pole ühtegi numbrit, mille päritolu te ei saaks ise üle kontrollida. Kui midagi on eeldus, on see eeldusena märgitud.
 
 Reservitulu analüüsitult, mitte arvatult
-Näitame vahemikku, sest turg muutub. Vahemik tuleb sellest, mida Elering tegelikult hangib ja mis on tulemas, mitte kellegi tundest.
+Näitame vahemikku, sest turg muutub. Vahemik tuleb sellest, mida Elering tegelikult hangib ja mis on tulemas, mitte kellegi kõhutundest.
 
 Võrguettevõtja seisukoht enne kapitali
 Tehnilised tingimused ja liitumise vastus on käes enne, kui te raha välja panete. Ooteajad on hinnangus eraldi välja toodud.
@@ -6754,7 +6754,7 @@ DC-pinge
 alla 65 V
 
 Garantii
-12 aastat, kuni 25
+12 aastat, pikendatav 25 aastani
 
 Allikas: Ralos Oy, tooteleht Hoymiles MiT, loetud 9.11.2026
 
@@ -6896,7 +6896,7 @@ Allikas: Sofar Solar, inverterite andmeleht (Scanoffice), loetud 9.11.2026
 
 Mitsubishi Electric
 CAHV-Z450
-Õhk-vesi soojuspump kinnistutele, R290
+Õhk-vesisoojuspump kinnistutele, R290
 Küttevõimsus
 40 kW
 
@@ -6913,7 +6913,7 @@ Allikas: Mitsubishi Electric, CAHV-Z450 brošüür (Scanoffice), loetud 9.11.202
 
 Mitsubishi Electric
 CAHV-R450
-Õhk-vesi soojuspump kinnistutele, R454C
+Õhk-vesisoojuspump kinnistutele, R454C
 Küttevõimsus
 40 kW (6,7–43 kW)
 
@@ -6930,7 +6930,7 @@ Allikas: Mitsubishi Electric, CAHV-R450 brošüür (Scanoffice), loetud 9.11.202
 
 Mitsubishi Electric
 Large Hydrobox E
-Õhk-vesi soojuspump suurematele kinnistutele
+Õhk-vesisoojuspump suurematele kinnistutele
 Küttevõimsus
 23 kW (11,4–28 kW)
 
@@ -7006,7 +7006,7 @@ Allikas: Mitsubishi Electric, PAC-IF013 brošüür (Scanoffice), loetud 9.11.202
 
 Mitsubishi Electric
 Ecodan E
-Õhk-vesi soojuspump
+Õhk-vesisoojuspump
 Pealevool
 kuni 70 °C
 
@@ -7065,22 +7065,22 @@ blueplanetKACO · Päikeseinverterid ettevõtete objektidele · 10–125 kW, kau
 HiKu6 CS6W-MB-AGCanadian Solar · Half-cut päikesepaneel · 540 W, tootegarantii 12 a, toodangugarantii 25 a · Scanoffice, tooteleht Canadian Solar HiKu, loetud 9.11.2026
 Q.PEAK DUO ML-G11Hanwha Q CELLS · Täismust päikesepaneel · 395 Wp, kasutegur kuni 20,8 %, garantii 25 a · Scanoffice, tooteleht Hanwha Q.PEAK DUO ML-G11, loetud 9.11.2026
 ZXM7-SHLDD108ZNShine Solar · Must kahepoolne klaas-klaas paneel · kasutegur kuni 20 %, grafeenkate, toodangugarantii 30 a · Scanoffice, tooteleht ZNShine Solar ZXM7, loetud 9.11.2026
-Premium-aurinkosähköpaketitScanoffice · Paneelid, Sofari inverter ja katusekinnitused ühe tarnena · inverterid 3–50 kWp, katusekinnituste garantii 30 a · Scanoffice, tooteleht Premium päikeseelektripaketid, loetud 9.11.2026
+Premium-päikeseelektripaketidScanoffice · Paneelid, Sofari inverter ja katusekinnitused ühe tarnena · inverterid 3–50 kWp, katusekinnituste garantii 30 a · Scanoffice, tooteleht Premium päikeseelektripaketid, loetud 9.11.2026
 NanorailRalos · Rööbasteta kinnitussüsteem viilkatustele · valts-, klikkvalts-, profiilplekk- ja rullkatused; paneelid 28–40 mm · Ralos Oy, tooteleht Ralos Nanorail, loetud 9.11.2026
 FLAT25Ralos · Rööbasteta paigaldussüsteem lamekatustele · katuse koormus 5,5 kg/m² · Ralos Oy, lahenduste leht päikesejaamad, loetud 9.11.2026
-KiinnitysjärjestelmätAeroCompact, Esdec, Nordic Sun, Orima Solar · Paneelide kinnitus katusele ja maale · lamekatused, viilkatused ja maaraam; tuletõrjelüliti Santon · Scanoffice, päikesepaneelide tootelehed, loetud 9.11.2026
-OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · DC-võrk, energiasalvestid, laadimine ja OptiGrid Cloudi juhtimine, osad ka eraldi · Avant Power, OptiGrid™ leht, statsionaarsete salvestite osa, loetud 9.11.2026
+KinnitussüsteemidAeroCompact, Esdec, Nordic Sun, Orima Solar · Paneelide kinnitus katusele ja maale · lamekatused, viilkatused ja maaraam; tuletõrjelüliti Santon · Scanoffice, päikesepaneelide tootelehed, loetud 9.11.2026
+OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · DC-võrk, energiasalvestid, laadimine ja OptiGrid Cloudi juhtimine, osad ka eraldi · Avant Power, OptiGrid™ leht, loetud 9.11.2026
 Zaptec GoZaptec · AC-laadimisjaam kodule · kuni 22 kW, IP54, OCPP 1.6J · Zaptec Charger AS, Zaptec Go tooteleht (Scanoffice), loetud 9.11.2026
 Charge UpEasee · AC-laadimisjaam kodule · kuni 22 kW, IP54, IK10, OCPP 1.6J · Easee, Charge Up andmeleht (Scanoffice), loetud 9.11.2026
 AmpIN SmartAmpIN · Type 2 laadimiskaabel · painduv −40 °C juures, üle 50 000 kasutuskorra, IEC 62196-2 · Scanoffice, tooteleht AmpIN Smart, loetud 9.11.2026
-LataustolppaScanoffice · Laadimispost kahele laadijale · värvitud tsingitud teras, tarnitakse kokkupanduna · Scanoffice, tooteleht Easee laadimisjaamad ja laadimispostid, loetud 9.11.2026
-IlmalämpöpumputMitsubishi Electric · Õhksoojuspumbad ja õhujahutid · mudeliseeriad AY, EF, FT, MSZ-LN, RW, RZ, SLZ-M, MFZ-KW ja Multisplit; jahutid HR ja MSY-TP · Scanoffice, õhksoojuspumpade tootelehed, loetud 9.11.2026
+LaadimispostScanoffice · Laadimispost kahele laadijale · värvitud tsingitud teras, tarnitakse kokkupanduna · Scanoffice, tooteleht Easee laadimisjaamad ja laadimispostid, loetud 9.11.2026
+ÕhksoojuspumbadMitsubishi Electric · Õhksoojuspumbad ja õhujahutid · mudeliseeriad AY, EF, FT, MSZ-LN, RW, RZ, SLZ-M, MFZ-KW ja Multisplit; jahutid HR ja MSY-TP · Scanoffice, õhksoojuspumpade tootelehed, loetud 9.11.2026
 EnergiansäästäjäMitsubishi Electric · Õhk-vesisoojuspump olemasoleva küttesüsteemi kõrvale · õli-, kaug- või elektrikütte kõrvale; eramud ja kinnistud · Scanoffice, tooteleht Energiansäästäjä kinnistutele, loetud 9.11.2026
 EnergypacScanoffice · Terviklik küttesüsteem eramule, ka tarbevesi · küttevõimsus 10,5–17 kW · Scanoffice, tooteleht Scanoffice-Energypac, loetud 9.11.2026
 City Multi VRFMitsubishi Electric · Küte ja jahutus suurtele kinnistutele · välisseadmest mitmesse siseseadmesse; kontorid, kaubanduskeskused ja hotellid · Scanoffice, tooteleht VRF-süsteemid, loetud 9.11.2026
-Maalämpöpumputalpha innotec · Maasoojuspumbad suurtele kinnistutele, ka jahutus · korteriühistud, tööstushallid ja ärikinnistud · Scanoffice, tooteleht maasoojuspumbad suurtele kinnistutele, loetud 9.11.2026
+Maasoojuspumbadalpha innotec · Maasoojuspumbad suurtele kinnistutele, ka jahutus · korteriühistud, tööstushallid ja ärikinnistud · Scanoffice, tooteleht maasoojuspumbad suurtele kinnistutele, loetud 9.11.2026
 LEOFlowair · Ringlusõhuseadmed hallidele · lae- või seinapaigaldus, termostaatjuhtimine kaasas · Scanoffice, tooteleht Flowair LEO, loetud 9.11.2026
-VaraajatGalmet ja Scanoffice · Puhverpaagid ja tarbeveeboilerid soojuspumpadele · puhverpaagid 100–1 500 l, tarbeveeboilerid 193–657 l · Scanoffice, tooteleht puhver- ja tarbeveeboilerid, loetud 9.11.2026
+Paagid ja boileridGalmet ja Scanoffice · Puhverpaagid ja tarbeveeboilerid soojuspumpadele · puhverpaagid 100–1 500 l, tarbeveeboilerid 193–657 l · Scanoffice, tooteleht puhver- ja tarbeveeboilerid, loetud 9.11.2026
 LossnayMitsubishi Electric ja Mobair · Soojustagastusega ventilatsiooniseade · ka Mobairi asendusõhu ventiilid · Scanoffice, ventilatsiooniseadmete tooteleht, loetud 9.11.2026
 
 Tehnilised andmed on tootjate andmelehtedelt, brošüüridelt ja tootelehtedelt. Tootja ja mudel valitakse teie objekti tarbimise, liitumise ja ruumi järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega. Väikeobjektide ja kodude tooted leiate eraldi filtri alt.
@@ -7208,7 +7208,7 @@ Vastutab paigalduse teostuse ja kvaliteedi eest objektil: paigaldus töötab ja 
 Taust: plekk-katused ja päikesesüsteemid; üle kuue aasta päikesesüsteemide ehitamist äri- ja eraobjektidel katusele, maale ja katusesse integreerituna.
 +358 40 635 3245
 
-Värbame müügi- ja paigaldusspetsialiste Eestis ja Soomes. Kirjutage aadressil info@samaenergia.fi.
+Värbame müügi- ja paigaldusspetsialiste Eestis ja Soomes. Kirjutage aadressile info@samaenergia.fi.
 
 Võrgustik teie projekti taga.
 
@@ -7370,7 +7370,7 @@ Sama rida, kaks poolt: tarbija maksab, valmisolek saab.
 
 Kes selle raha saab
 
-Selle raha eest ostab Elering reserve nendelt, kes suudavad võimsust sekunditega juurde anda või ära võtta: kiiretelt elektrijaamadelt ja salvestitelt. Salvesti sobib selleks tööks hästi: ta suudab olla korraga nii tootja kui tarbija ja reageerib kiiremini kui põletav seade.
+Selle raha eest ostab Elering reserve nendelt, kes suudavad võimsust sekunditega juurde anda või ära võtta: kiiretelt elektrijaamadelt ja salvestitelt. Salvesti sobib selleks tööks hästi: ta suudab olla korraga nii tootja kui tarbija ja reageerib kiiremini kui kütust põletav jaam.
 
 Üks tingimus on oluline: Eleringi võimsusturul on miinimumpakkumine 1 MW. Üksik väike salvesti sinna ei ulatu. Sellepärast käib liitumine agregaatori kaudu, kes koondab mitme objekti salvestid üheks pakkumiseks, läbib eelkvalifitseerimise ja juhib salvesteid automaatselt. Nii satub ka ühe tehase või kuivati salvesti samale turule, kust see raha välja makstakse.
 
@@ -7386,7 +7386,7 @@ Otsige see rida oma arvelt üles. Ta on olemas alates jaanuarist 2026. Kui te ei
 
 Võtke välja oma tunnipõhised tarbimisandmed. Aasta jagu tunniandmeid ütleb rohkem kui ükski kalkulaator: sealt on näha nii tipud, mida salvesti maha lõikaks, kui ka see, kui palju vaba võimsust liitumises seisab.
 
-Laske arvutada, mitte lubada. Küsige kirjalikku hinnangut, kus iga arvul on allikas ja kus reservitulu on modelleeritud toodete kaupa. Meilt või kelleltki teiselt, aga küsige kirjalikult.
+Laske arvutada, mitte lubada. Küsige kirjalikku hinnangut, kus igal arvul on allikas ja kus reservitulu on modelleeritud toodete kaupa. Meilt või kelleltki teiselt, aga küsige kirjalikult.
 
 Allikad
 
@@ -7414,7 +7414,7 @@ Avaleht›Ühine võrk
 
 Kaart näitab, kuhu Eesti elektrisüsteem liigub: kus võrk on, kui palju tarbimine kasvab, kust tuleb tuule- ja päikeseelekter, kes juba salvestab ja kes reservide eest maksab. Igal arvul on allikas ja kuupäev.
 
-Lugege peatükk korraga: kaart vahetab kihti kaasa. Viige hiir või sõrm kaardil objektile ja näete arvu allikat. Nupp „Võrdle Soomega“ näitab Soomet sama definitsiooniga või ütleb, kus definitsioon erineb.
+Lugege peatükk haaval: kaart vahetab kihti kaasa. Viige hiir või sõrm kaardil objektile ja näete arvu allikat. Nupp „Võrdle Soomega“ näitab Soomet sama definitsiooniga või ütleb, kus definitsioon erineb.
 
 01 / 07
 
@@ -7441,7 +7441,7 @@ Näita kaardil
 
 02 / 07
 
-Kui palju kasv tuleb?
+Kui palju kasvu tuleb?
 
 Eleringi prognoosis kasvab Eesti aastane elektritarbimine 7,9 teravatt-tunnilt 2025. aastal 10,0 teravatt-tunnini 2030. aastaks ja 11,2 teravatt-tunnini 2035. aastaks. Tiputarbimise rekord tõusis 5. veebruaril 2026 1 723 megavatini.
 
@@ -7469,14 +7469,14 @@ Kust tuleb ilmast sõltuv tootmine?
 
 Eestis on Eleringi andmetel 694 MW tuule- ja 1 214 MW päikesevõimsust. Balti põhivõrguettevõtjad näevad taastuvenergia lisandumise tõttu sagedusreservide vajaduse kiiret kasvu.
 
-1 214 MWpäikeseenergiat · tuuleenergiat 694 MW · installeeritud netovõimsus 2025
+1 214 MWpäikeseenergiat · tuuleenergiat 694 MW · paigaldatud netovõimsus 2025
 
 Tuuleenergia: 694 MW (Elering, varustuskindluse aruanne 2025, 9.12.2025)
 Päikeseenergia: 1 214 MW · +245 MW aastaga (Elering, varustuskindluse aruanne 2025, 9.12.2025)
 Taastuvenergia 2025: 68 % kodumaisest toodangust · 41 % tarbimisest (Elering / ERR, 26.1.2026)
 
 Soome samal mõõdupuul
-Võrreldavus: Osaliselt võrreldav: Soome arvud on Fingridi prognoosides kasutatud võimsused (hinnang, mitte ametlik statistika, 2.11.2026), Eesti arvud Eleringi installeeritud netovõimsus 2025.
+Võrreldavus: Osaliselt võrreldav: Soome arvud on Fingridi prognoosides kasutatud võimsused (hinnang, mitte ametlik statistika, 2.11.2026), Eesti arvud Eleringi paigaldatud netovõimsus 2025.
 Tuuleenergia: 9 553 MW (Fingrid, avaandmed 268, 2.11.2026)
 Päikeseenergia: 2 074 MW, sisaldab väiketootmise hinnangut · ametlikku kogusummat Fingrid ei avalda (Fingrid, avaandmed 267, 2.11.2026)
 Liidetud 2025: 1 509 MW tuule- ja päikeseenergiat (Fingrid, 4.3.2026)
@@ -7549,7 +7549,7 @@ Salvestid, baasstsenaarium: 600 MW / 1 200 MWh 2030 · 1 500 MW / 3 000 MWh 2035
 Ühendused: EstLink 3 (700 MW) ja Eesti–Läti neljas ühendus: impordivõimekus +1 200 MW umbes 2038. aastast (Elering, arengukava 2026–2035, 9.7.2026)
 
 Soome samal mõõdupuul
-Võrreldavus: Suunda näitav: mõlemad on põhivõrguettevõtja plaanid. Soome arvud on investeeringud ja valmivad liinid, Eesti arvud planeerimise lähteeeldused.
+Võrreldavus: Ligikaudne: mõlemad on põhivõrguettevõtja plaanid. Soome arvud on investeeringud ja valmivad liinid, Eesti arvud planeerimise lähteeeldused.
 Valminud: Järvilinja 2: 305 km uusi 400 ja 110 kV liine, kasutusel oktoobrist 2026 (Fingrid, 26.10.2026)
 Järgmisena: Hikiä–Toivila 2029 · Metsälinja 2 Vaala–Jämsä, u 350 km, 2030 (Fingrid, 24.9.2025; 29.9.2026)
 
@@ -7586,7 +7586,7 @@ Võrdle Soomega
 110 kV
 Alalisvool
 
-Kaart laeb, kui see jõuab nähtavale. Kõik arvud on ka tekstis.
+Kaart laaditakse, kui see jõuab nähtavale. Kõik arvud on ka tekstis.
 
 Alus: Natural Earth · Võrk: © OpenStreetMapi kaastöötajad (ODbL), OpenInfraMap · loetud 2.11.2026
 
@@ -7714,7 +7714,7 @@ Võrguettevõtja
 Kas objektil on päikeseelekter?ValigeEiJahPlaanis
 
 Küsi tasuta hinnangut
-Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hinnangu tegemiseks, privaatsuspoliitikat.
+Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hinnangu tegemiseks (privaatsuspoliitika).
 
 Kontrollige nime ja e-posti. Kui saatmine ei õnnestu, võite saata andmed ka otse aadressile info@samaenergia.fi.
 
@@ -7772,7 +7772,7 @@ Kellele andmeid edastatakse
 Me ei müü ega anna andmeid turunduseks. Veebimajutus ja vormide vastuvõtt: Netlify, Inc. (USA); edastust väljapoole EL-i ja EMP-d kaitstakse EL-i heakskiidetud edastusmehhanismidega. Teised tehnilised volitatud töötlejad on e-postiteenus ja domeeniteenus. Hinnangu koostamisel jagame objekti andmeid agregaatoriga ainult teie teadmisel.
 
 Kaardi aadressiotsing ja asukoha andmed
-Kui kirjutate aadressi kaardi otsinguväljale, edastab meie server otsingu teksti Maa- ja Ruumiameti (Eesti) või Soome Maanmittauslaitose aadressiteenusesse ning valitud koha koordinaadid Euroopa Komisjoni Teadusuuringute Ühiskeskuse PVGIS-teenusesse päikesetoodangu arvutamiseks. Ka lähikaardi kaardiruudud laadib meie server nendest teenustest. Teie brauser nende teenustega ei suhtle ja teie IP-aadressi neile ei edastata. Me ei salvesta otsinguid ega asukohta. Brauseri asukohta kasutatakse ainult siis, kui vajutate nuppu ja annate loa, ning see jääb brauserisse. Vormi läheb asukoht ainult siis, kui te selle ise sinna viite ja vormi saadate.
+Kui kirjutate aadressi kaardi otsinguväljale, edastab meie server otsinguteksti Maa- ja Ruumiameti (Eesti) või Soome Maanmittauslaitose aadressiteenusesse ning valitud koha koordinaadid Euroopa Komisjoni Teadusuuringute Ühiskeskuse PVGIS-teenusesse päikesetoodangu arvutamiseks. Ka lähikaardi kaardiruudud laadib meie server nendest teenustest. Teie brauser nende teenustega ei suhtle ja teie IP-aadressi neile ei edastata. Me ei salvesta otsinguid ega asukohta. Brauseri asukohta kasutatakse ainult siis, kui vajutate nuppu ja annate loa, ning see jääb brauserisse. Vormi läheb asukoht ainult siis, kui te selle ise sinna viite ja vormi saadate.
 Turuülevaade
 Turuülevaade: teie e-posti aadress, mille annate tellimisel. Aluseks on teie nõusolek, mille võite igal ajal tagasi võtta, vastates kirjale või kirjutades aadressile info@samaenergia.fi. Säilitame aadressi kuni loobumiseni.
 Kui kaua säilitame
@@ -7782,4 +7782,4 @@ Teie õigused
 Teil on õigus saada juurdepääs oma andmetele, nõuda nende parandamist, kustutamist, töötlemise piiramist või ülekandmist ning esitada vastuväiteid töötlemisele. Taotlused: info@samaenergia.fi. Teil on ka õigus esitada kaebus järelevalveasutusele: Soome andmekaitsevolinik (tietosuoja.fi) või Eesti Andmekaitse Inspektsioon (aki.ee).
 
 Muudatused
-Uuendatud 09.11.2026. Kui tingimused muutuvad, on uusim versioon alati sellel lehel.
+Uuendatud 09.11.2026. Kui privaatsuspoliitika muutub, on uusim versioon alati sellel lehel.

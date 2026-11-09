@@ -13,7 +13,7 @@ Aineisto (jokaisella kohteella lähde ja päivä):
   - Kantaverkon hankkeet: Fingrid, Kantaverkon kehittämissuunnitelma 2026–2035 (12/2025), vaihe ja valmistumisvuosi
     suunnitelman aikajanasta; rajayhteydet Fingrid 6.2.2026; EstLink 3:n Viron osa Elering (eriplaneering) ja ERR 26.7.2024.
     Päätepisteet OSM-sähköasemista (docs/kaart/osm/substations-*.json) tai paikannimistä (In-ADS, Nominatim); reitti on suora
-    viiva päätepisteiden välillä = suuntaa-antava.
+    viiva päätepisteiden välillä = suuntaa antava.
 
 Ajo:  python3 scripts/kaart/build_solmut.py      (aina kun lähdeaineisto päivittyy; tarkistus 1.2.2027 kuten kartta-data.json)
 """
@@ -302,8 +302,8 @@ def fidate(x):   # 2026-11-04 → 4.11.2026 (sama muoto kuin kartta-data.json); 
     return f'{int(m.group(3))}.{int(m.group(2))}.{m.group(1)}' if m else x
 for q in S.values(): q['date'] = fidate(q['date'])
 out = {'date': DATE, 'sources': S, 'status': STATUS, 'kind': KIND,
-       'note': {'fi': 'Reitit ovat suuntaa-antavia: viiva yhdistää päätepisteet. ~ = sijainti likimääräinen.',
-                'et': 'Trassid on suunda näitavad: joon ühendab otspunkte. ~ = asukoht ligikaudne.'},
+       'note': {'fi': 'Reitit ovat suuntaa antavia: viiva yhdistää päätepisteet. ~ = sijainti likimääräinen.',
+                'et': 'Trassid on ligikaudsed: joon ühendab otspunkte. ~ = asukoht ligikaudne.'},
        'items': items}
 blob = json.dumps(out, ensure_ascii=False, separators=(',', ':'))
 (A / 'kartta-solmut.json').write_text(blob, encoding='utf-8')

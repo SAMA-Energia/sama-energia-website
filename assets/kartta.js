@@ -39,14 +39,14 @@
     fi: { compare: 'Vertaa Viroon', compareOff: 'Vain Suomi', layer: 'Kerros', src: 'Lähde', sources: 'Lähteet', def: 'Vertailtavuus',
       pays: 'Kuka maksaa', fail: 'Karttaa ei voitu ladata. Kaikki luvut ovat tekstissä.', home: 'Suomi', other: 'Viro', map: 'Kartta',
       me: 'Kohteenne', v110: '110 kV', loading: 'ladataan…', note110: '110 kV: kaikki OpenStreetMapiin merkityt 110 kV:n johdot, myös jakeluverkkoyhtiöiden.',
-      since: 'vuodesta', ready: 'valmis', route: 'Reitti suuntaa-antava: viiva yhdistää päätepisteet.', approx: 'Sijainti likimääräinen.',
+      since: 'vuodesta', ready: 'valmis', route: 'Reitti suuntaa antava: viiva yhdistää päätepisteet.', approx: 'Sijainti likimääräinen.',
       osm: 'OpenStreetMap-tekijät (ODbL 1.0)', page: 'Hankesivu', osmObj: 'Kohde OpenStreetMapissa',
       leg: { op: 'käytössä', con: 'rakenteilla', plan: 'luvitus, kaava tai selvitys' } },
     et: { compare: 'Võrdle Soomega', compareOff: 'Ainult Eesti', layer: 'Kiht', src: 'Allikas', sources: 'Allikad', def: 'Võrreldavus',
       pays: 'Kes maksab', fail: 'Kaarti ei õnnestunud laadida. Kõik arvud on tekstis.', home: 'Eesti', other: 'Soome', map: 'Kaart',
       me: 'Teie objekt', v110: '110 kV', loading: 'laeb…', note110: '110 kV: kõik OpenStreetMapi märgitud 110 kV liinid, sh jaotusvõrguettevõtjate omad.',
-      since: 'alates', ready: 'valmib', route: 'Trass on suunda näitav: joon ühendab otspunkte.', approx: 'Asukoht ligikaudne.',
-      osm: 'OpenStreetMapi kaastöölised (ODbL 1.0)', page: 'Projekti leht', osmObj: 'Objekt OpenStreetMapis',
+      since: 'alates', ready: 'valmib', route: 'Trass on ligikaudne: joon ühendab otspunkte.', approx: 'Asukoht ligikaudne.',
+      osm: 'OpenStreetMapi kaastöötajad (ODbL 1.0)', page: 'Projekti leht', osmObj: 'Objekt OpenStreetMapis',
       leg: { op: 'töös', con: 'ehitusel', plan: 'loamenetlus, planeering või uuring' } }
   }[LANG];
 
