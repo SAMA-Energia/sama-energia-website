@@ -737,7 +737,7 @@
     "et": "Kes juba salvestab?"
    },
    "concl": {
-    "fi": "Suomessa on Fingridin arvion mukaan jo 2 085 MW yli megawatin sähkövarastoja, ja Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029.",
+    "fi": "Suomessa on Fingridin arvion mukaan jo 2 085 MW yli megawatin sähkövarastoja, ja Etelä-Suomessa Fingrid rajoittaa suurten varastojen liityntöjä vuoteen 2029.",
     "et": "Eestis on Eleringi teatel võrku ühendatud 245 MW akuvõimsust (veebruar 2026) ja juulis lisandus Aruküla 100 MW park."
    },
    "big": {
@@ -802,11 +802,26 @@
        "et": "Lõuna-Soome"
       },
       "v": {
-       "fi": "uudet varastot kantaverkkoon vasta, kun Hikiä–Toivila valmistuu 2029 · Pohjanmaalla ja Pohjois-Suomessa vapaata kapasiteettia useita tuhansia megawatteja",
-       "et": "uued salvestid põhivõrku alles siis, kui Hikiä–Toivila valmib 2029 · Pohjanmaal ja Põhja-Soomes vaba võimsust mitu tuhat megavatti"
+       "fi": "suurten varastojen liitynnät rajoitettu, kunnes Hikiä–Toivila valmistuu 2029 · Pohjanmaalla ja Pohjois-Suomessa vapaata kapasiteettia useita tuhansia megawatteja",
+       "et": "suurte salvestite liitumised piiratud, kuni Hikiä–Toivila valmib 2029 · Pohjanmaal ja Põhja-Soomes vaba võimsust mitu tuhat megavatti"
       },
       "s": "Fingrid, 24.9.2025",
       "src": "fg-2509"
+     },
+     {
+      "t": {
+       "fi": "Hakemusraja",
+       "et": "Taotluse piir"
+      },
+      "v": {
+       "fi": "Fingridin liittymissopimushakemus vähintään 2 MW:n varastoista koko Suomessa, kartalla merkityillä alueilla 1 MW:sta · pienemmät liitetään verkkoyhtiön ehdoilla",
+       "et": "Fingridi liitumislepingu taotlus vähemalt 2 MW salvestitelt kogu Soomes, kaardil märgitud piirkondades 1 MW-st · väiksemad ühendatakse võrguettevõtja tingimustel"
+      },
+      "s": {
+       "fi": "Fingrid, kartta voimassa 1.6.2026",
+       "et": "Fingrid, kaart kehtib 1.6.2026"
+      },
+      "src": "fg-lta"
      }
     ],
     "EE": [
@@ -993,8 +1008,8 @@
       "et": "Hikiä–Toivila · 2029"
      },
      "val": {
-      "fi": "avaa Etelä-Suomen kantaverkon varastoliitynnät",
-      "et": "avab Lõuna-Soome põhivõrgu salvestiliitumised"
+      "fi": "Etelä-Suomen varastorajoitus jatkuu sen valmistumiseen",
+      "et": "Lõuna-Soome salvestipiirang kestab selle valmimiseni"
      },
      "src": "fg-2509",
      "label_at": [
@@ -1263,7 +1278,7 @@
     "et": "Mis tuleb?"
    },
    "concl": {
-    "fi": "Fingrid toteuttaa 5,2 miljardin euron investointiohjelmaa: Järvilinja 2 otettiin käyttöön lokakuussa 2026, ja Etelä-Suomen varastoliitynnät avautuvat, kun Hikiä–Toivila valmistuu vuonna 2029.",
+    "fi": "Fingrid toteuttaa 5,2 miljardin euron investointiohjelmaa: Järvilinja 2 otettiin käyttöön lokakuussa 2026, ja Etelä-Suomen varastorajoitus jatkuu, kunnes Hikiä–Toivila valmistuu vuonna 2029.",
     "et": "Eleringi arengukava arvestab 2030. aastaks kuni 1 500 MW uute tootmisvõimsuste ja 2035. aastaks 1 000–1 300 MW lisanduva salvestusega. Umbes 2038. aastast kasvatavad EstLink 3 ja Eesti–Läti neljas ühendus impordivõimekust veel 1 200 MW võrra."
    },
    "big": {
@@ -1534,18 +1549,18 @@
     "et": "Kus on selles pildis teie liitumine?"
    },
    "concl": {
-    "fi": "Teidän liittymänne on jo olemassa: sen taakse asennettu sähkövarasto ei jonota kantaverkkoon. Sillä voi laskea tehomaksua, hyödyntää pörssisähkön hintaeroja ja osallistua aggregaattorin kautta reservimarkkinoille, joiden tarve kasvaa.",
-    "et": "Teie liitumine on juba olemas: selle taha paigaldatud salvesti ei vaja uut põhivõrguliitumist. Sellega saab alandada võimsustasu, kasutada börsihinna erinevusi ning osaleda agregaatori kaudu reserviturul, mille kulu maksab praegu iga tarbija."
+    "fi": "Teidän liittymänne on jo olemassa: alle 1 MW:n sähkövarasto liitetään sen taakse verkkoyhtiön ehdoilla ilman Fingridin liittymissopimushakemusta, ja useimmilla alueilla raja on 2 MW. Sillä voi laskea tehomaksua, hyödyntää pörssisähkön hintaeroja ja osallistua aggregaattorin kautta reservimarkkinoille, joiden tarve kasvaa.",
+    "et": "Teie liitumine on juba olemas: selle taha paigaldatud salvesti ühendatakse võrguettevõtja tingimustel ega vaja uut põhivõrguliitumist. Sellega saab alandada võimsustasu, kasutada börsihinna erinevusi ning osaleda agregaatori kaudu reserviturul, mille kulu maksab praegu iga tarbija."
    },
    "big": {
     "FI": {
-     "v": "2029",
+     "v": "1 MW",
      "l": {
-      "fi": "uudet varastot Etelä-Suomen kantaverkkoon vasta tästä vuodesta · liittymänne on jo olemassa",
-      "et": "uued salvestid Lõuna-Soome põhivõrku alles sellest aastast · teie liitumine on juba olemas"
+      "fi": "tätä pienempi varasto ei tarvitse Fingridin liittymissopimushakemusta missään Suomessa · useimmilla alueilla raja on 2 MW",
+      "et": "sellest väiksem salvesti ei vaja Soomes kusagil Fingridi liitumislepingu taotlust · enamikus piirkondades on piir 2 MW"
      },
      "src": [
-      "fg-2509"
+      "fg-lta"
      ]
     },
     "EE": {
@@ -1572,11 +1587,26 @@
        "et": "Lõuna-Soome"
       },
       "v": {
-       "fi": "uuden suuren kulutuksen kantaverkkoliitäntä tiukilla 2025–27 · uudet varastot kantaverkkoon 2029",
-       "et": "uue suure tarbimise põhivõrguliitumine piiratud 2025–27 · uued salvestid põhivõrku 2029"
+       "fi": "uuden suuren kulutuksen kantaverkkoliitäntä tiukilla 2025–27 · suurten varastojen liitynnät rajoitettu vuoteen 2029",
+       "et": "uue suure tarbimise põhivõrguliitumine piiratud 2025–27 · suurte salvestite liitumised piiratud 2029. aastani"
       },
       "s": "Fingrid, 21.1.2025; 24.9.2025",
       "src": "fg-2501"
+     },
+     {
+      "t": {
+       "fi": "Hakemusraja",
+       "et": "Taotluse piir"
+      },
+      "v": {
+       "fi": "Fingridin liittymissopimushakemus vähintään 2 MW:n varastoista koko Suomessa, kartalla merkityillä alueilla 1 MW:sta · pienemmät liitetään verkkoyhtiön ehdoilla",
+       "et": "Fingridi liitumislepingu taotlus vähemalt 2 MW salvestitelt kogu Soomes, kaardil märgitud piirkondades 1 MW-st · väiksemad ühendatakse võrguettevõtja tingimustel"
+      },
+      "s": {
+       "fi": "Fingrid, kartta voimassa 1.6.2026",
+       "et": "Fingrid, kaart kehtib 1.6.2026"
+      },
+      "src": "fg-lta"
      },
      {
       "t": {
@@ -1651,8 +1681,8 @@
       "et": "Lõuna-Soome põhivõrk"
      },
      "val": {
-      "fi": "uuden suuren kulutuksen liitäntä tiukilla 2025–27 ja uudet varastot kantaverkkoon 2029",
-      "et": "uue suure tarbimise liitumine piiratud 2025–27 ja uued salvestid põhivõrku 2029"
+      "fi": "uuden suuren kulutuksen liitäntä tiukilla 2025–27 ja suurten varastojen liitynnät rajoitettu vuoteen 2029",
+      "et": "uue suure tarbimise liitumine piiratud 2025–27 ja suurte salvestite liitumised piiratud 2029. aastani"
      },
      "src": "fg-2509",
      "label_at": [
@@ -1973,6 +2003,16 @@
    "et": {
     "title": "rannajooned, järved ja maakonnad 1:10m (vaba kasutus)",
     "date": "versioon 5.1.1"
+   }
+  },
+  "fg-lta": {
+   "pub": "Fingrid",
+   "title": "Liittymissopimushakemus – kartta, voimassa 1.6.2026 alkaen",
+   "date": "1.6.2026",
+   "url": "https://www.fingrid.fi/globalassets/dokumentit/fi/palvelut/kulutuksen-ja-tuotannon-liittaminen-kantaverkkoon/liittymissopimushakemus-kartta-voimassa-1.6.2026-alkaen.pdf",
+   "et": {
+    "title": "Liittymissopimushakemus – kartta, voimassa 1.6.2026 alkaen (liitumislepingu taotluse kaart)",
+    "date": "kehtib 1.6.2026"
    }
   }
  }

@@ -69,8 +69,8 @@ Lähteet: Fingrid, avoin data 268 ja 267 (ennusteissa käytetty kapasiteetti) ·
 
 Kuka jo varastoi?
 2 085 MWyli 1 MW:n varastoja
-uudet varastot Etelä-Suomen kantaverkkoon vasta 2029
-Fingridin arvion mukaan Suomessa on jo 2 085 MW yli megawatin sähkövarastoja. Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta, kun Hikiä–Toivila valmistuu vuonna 2029.
+Etelä-Suomessa suurten varastojen liitynnät rajoitettu vuoteen 2029
+Fingridin arvion mukaan Suomessa on jo 2 085 MW yli megawatin sähkövarastoja. Etelä-Suomessa Fingrid rajoittaa uusia varastoliityntöjä, kunnes Hikiä–Toivila valmistuu vuonna 2029. Rajoitus koskee hankkeita, joista tehdään Fingridille liittymissopimushakemus: vähintään 2 MW, osalla alueista 1 MW.
 Merkitty alue etelässä on Tampere–Lahti–Lappeenranta-linjan eteläpuoli, jossa on noin puolet Suomen sähkövarastoista. Yksittäinen piste on ainoa OpenStreetMapiin merkitty suuri varasto; 2 085 MW kattaa kaikki yli megawatin varastot.
 Lähteet: Fingrid, avoin data 424 · 2.11.2026; Fingrid · 24.9.2025; Fingrid · 24.2.2026
 
@@ -82,12 +82,12 @@ Lähde: Fingrid, Power system reserves · luettu 2.11.2026
 Mitä on tulossa?
 5,2 mrd €Fingridin investointiohjelma
 noin 2 mrd € vuosina 2026–2029
-2027: FCR hankitaan vain tuntimarkkinoilta. 2029: Hikiä–Toivila valmistuu ja Etelä-Suomen kantaverkon varastoliitynnät avautuvat. 1.1.2029: jakeluverkon tehomaksu lasketaan kuukauden suurimmasta 60 minuutin keskitehosta.
+2027: FCR hankitaan vain tuntimarkkinoilta. 2029: Hikiä–Toivila valmistuu; siihen asti Etelä-Suomen varastorajoitus jatkuu. 1.1.2029: jakeluverkon tehomaksu lasketaan kuukauden suurimmasta 60 minuutin keskitehosta.
 Kartalle merkityt hankkeet ovat rakenteilla tai suunnitteilla olevia kantaverkon johtoja ja rajayhteyksiä valmistumisvuosineen. Reitit ovat suuntaa-antavia: viiva yhdistää päätepisteet. Vuodeton hanke toteutuu vain, jos alueen kulutus tai tuotanto kasvaa.
 Lähteet: Fingrid, johdon katsaus · 29.10.2026; Fingrid · 8.9.2026; Fingrid · 24.9.2025; Energiavirasto, määräys 2340/000002/2025 · 2.2.2026; hankkeet kartalla: Fingrid, kantaverkon kehittämissuunnitelma 2026–2035 · 2.12.2025
 
 Missä teidän liittymänne on tässä kokonaisuudessa?
-Liittymänne on jo olemassa ja sen taakse asennettu sähkövarasto ei joudu kantaverkon jonoon. Kirjallinen arvio sijoittaa kohteenne tälle kartalle, jokainen luku lähteineen.
+Liittymänne on jo olemassa. Alle 1 MW:n varasto liitetään sen taakse verkkoyhtiön ehdoilla ilman Fingridin liittymissopimushakemusta, ja useimmilla alueilla raja on 2 MW. Kirjallinen arvio sijoittaa kohteenne tälle kartalle, jokainen luku lähteineen.
 Kartan kultainen piste on esimerkki, ei teidän kohteenne.
 Kohteen osoiteHae
 Käytä sijaintianitai valitse kohta kartaltaOsoitehaku kulkee palvelimemme kautta Maanmittauslaitokselle tai Viron Maa- ja Ruumiametille ja aurinkotuotto EU:n PVGIS-palvelusta. Emme tallenna sijaintia; lomakkeeseen se menee vain, jos itse viette sen sinne.
@@ -862,9 +862,9 @@ Liikekiinteistön hinta lasketaan nettotuotosta: jokainen euro, jolla pysyvä k�
 Järjestelmä jää liittymän taakse ja siirtyy kiinteistön mukana. Ostaja saa huipputehon hallinnan ja pääsyn reservimarkkinoille ensimmäisestä päivästä, ilman projektia ja jonotusta.
 Esimerkkilaskelma. Teidän kohteenne tuottovaatimus riippuu kiinteistötyypistä ja sijainnista. Arviossa laskemme sen teidän omilla tiedoillanne.
 
-Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029. Liittymä, jonka takana on toimiva varasto, siirtyy kiinteistön mukana.
+Alle 1 MW:n varasto ei tarvitse Fingridin liittymissopimushakemusta missään Suomessa, ja useimmilla alueilla raja on 2 MW: se liitetään olemassa olevan liittymän taakse verkkoyhtiön ehdoilla. Liittymä, jonka takana on toimiva varasto, siirtyy kiinteistön mukana.
 
-Lähde: Fingrid, tiedote · 24.9.2025
+Lähde: Fingrid, liittymissopimushakemuksen kartta · voimassa 1.6.2026
 
 Mitä toimitamme ja mitä laitteilta vaadimme.
 
@@ -1003,8 +1003,8 @@ Tämä ei ole kokeilu vaan verkon arkea. Helmikuussa 2025 energiavarastojen osuu
 Lähde: Fingrid, Energiavarastot reservimarkkinoilla · 10.2.2025
 
 Nopeus: liittymänne on jo olemassa
-Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta, kun Hikiä–Toivila valmistuu vuonna 2029. Sähkövarasto teidän liittymänne takana ei tarvitse uutta kantaverkkoliityntää: se käyttää liittymää, joka on jo olemassa, ja pääsee markkinoille kuukausissa, ei vuosissa.
-Lähde: Fingrid, tiedote · 24.9.2025
+Alle 1 MW:n sähkövarasto ei tarvitse Fingridin liittymissopimushakemusta missään Suomessa, ja useimmilla alueilla raja on 2 MW. Se liitetään olemassa olevan liittymän taakse verkkoyhtiön ehdoilla. Etelä-Suomen vuoteen 2029 jatkuva varastorajoitus koskee hakemusta vaativia hankkeita.
+Lähteet: Fingrid, liittymissopimushakemuksen kartta · voimassa 1.6.2026; Fingrid, tiedote · 24.9.2025
 
 1 MW / 2 MWhesimerkkikoko, mitoitetaan kohteen mukaan
 
@@ -1590,7 +1590,7 @@ Miksi perustimme SAMAn.
 
 Markkina muuttui nopeammin kuin tarjoukset. Me halusimme yrityksen, joka antaa asiakkaalle kartan, ei vain laitetta.
 
-Markkina muuttui. Fingrid hankkii reserviä joka tunnille ja arvioi tarvitsevansa viiden vuoden päästä noin 1 200 MW lisää; energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli helmikuussa 2025 jo 29 %, ja Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029. Jokainen näistä muuttaa sitä, mitä yksi liittymä on arvoltaan.
+Markkina muuttui. Fingrid hankkii reserviä joka tunnille ja arvioi tarvitsevansa viiden vuoden päästä noin 1 200 MW lisää; energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli helmikuussa 2025 jo 29 %, ja Etelä-Suomessa Fingrid rajoittaa suurten varastojen liityntöjä vuoteen 2029. Jokainen näistä muuttaa sitä, mitä yksi liittymä on arvoltaan.
 
 Lähteet: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025; Fingrid, Energiavarastot reservimarkkinoilla · 10.2.2025; Fingrid, tiedote · 24.9.2025. Tarkemmin Reservimarkkinat-sivulla.
 
@@ -1702,13 +1702,13 @@ Reservimarkkinat, energiavarastot, verkkomaksut ja lakimuutokset auki kirjoitett
 
 Katsaukset
 
-Reservimarkkinat3. syyskuuta 20266 min luettavaa
+ReservimarkkinatPäivitetty 9. marraskuuta 20265 min luettavaa
 
-Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029. Teidän liittymänne on jo olemassa.
+Vuoden 2029 varastorajoitus koskee suuria hankkeita. Alle megawatin varasto liitetään verkkoyhtiön ehdoilla.
 
-Fingrid jatkaa Etelä-Suomen varastoliityntärajoitusta vuoteen 2029 varmistaakseen siirtokapasiteetin kulutuksen kasvulle ja teollisille investoinneille (Fingrid 24.9.2025). Mitä se tarkoittaa yritykselle, jolla on iso liittymä jo valmiina.
+Etelä-Suomen varastorajoitus koskee hankkeita, joista tehdään Fingridille liittymissopimushakemus: 1.6.2026 alkaen vähintään 2 MW:n varastoja, osalla alueista 1 MW:n (Fingrid). Mitä se tarkoittaa yritykselle, jolla on jo liittymä.
 
-”Niukka hyödyke ei ole laite. Niukka hyödyke on liittymä.”
+”Rajan alla liittämisestä sovitaan verkkoyhtiön kanssa. Rajan yli myös Fingridin kanssa.”
 
 Lue katsaus
 
@@ -1765,29 +1765,37 @@ Kirjoittakaa osoitteeseen info@samaenergia.fi. Vastaamme kirjallisesti, ja jos k
 
 Pyydä maksuton kartoitus
 
-# Etelä-Suomen varastoliityntärajoitus jatkuu vuoteen 2029 · SAMA Energia — https://samaenergia.fi/ajankohtaista/liityntarajoitus-2029/
+# Ketä Fingridin varastorajoitus koskee · SAMA Energia — https://samaenergia.fi/ajankohtaista/liityntarajoitus-2029/
 
-Etusivu›Ajankohtaista›Liityntärajoitus 2029
+Etusivu›Ajankohtaista›Varastorajoitus 2029
 
-Reservimarkkinat3. syyskuuta 20266 min luettavaa
+Reservimarkkinat3. syyskuuta 2026Päivitetty 9. marraskuuta 20265 min luettavaa
 
-Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029. Teidän liittymänne on jo olemassa.
+Vuoden 2029 varastorajoitus koskee suuria hankkeita. Alle megawatin varasto liitetään verkkoyhtiön ehdoilla.
 
-Fingrid jatkoi syyskuussa 2025 Etelä-Suomen varastoliityntärajoitusta vuoteen 2029 varmistaakseen siirtokapasiteetin sähkönkulutuksen kasvulle ja uusille teollisille investoinneille. Se on huono uutinen isoille puistohankkeille ja hyvä uutinen yritykselle, jolla on jo liittymä.
+Fingrid jatkoi syyskuussa 2025 Etelä-Suomen sähkövarastojen liityntärajoitusta vuoteen 2029. Rajoitus koskee hankkeita, joista tehdään Fingridille liittymissopimushakemus: 1.6.2026 alkaen vähintään 2 MW:n sähkövarastoja koko Suomessa ja Tampereen, Jyväskylän ja Turun seuduilla sekä osassa Pohjanmaata jo 1 MW:n varastoja. Sitä pienempi varasto liitetään olemassa olevan liittymän taakse verkkoyhtiön ehdoilla.
 
-Mitä Fingrid kertoi
+Mitä Fingrid on päättänyt
 
-Fingridin 24.9.2025 julkaiseman tiedotteen mukaan Etelä-Suomen siirtokapasiteetti varataan sähkönkulutuksen kasvulle ja uusille teollisille investoinneille. Uusia sähkövarastoja liitetään alueen kantaverkkoon vasta, kun Hikiä–Toivila-yhteys valmistuu vuonna 2029.
+Fingridin 24.9.2025 julkaiseman tiedotteen mukaan Etelä-Suomen siirtokapasiteetti varataan sähkönkulutuksen kasvulle ja uusille teollisille investoinneille. Uusien sähkövarastojen liityntärajoitus jatkuu, kunnes Hikiä–Toivila-yhteys valmistuu vuonna 2029. Fingrid arvioi liittymissopimushakemusten perusteella liittymispisteittäin, kuinka paljon kapasiteettia varastoille voidaan osoittaa. Pohjanmaalla ja Pohjois-Suomessa kantaverkossa on vapaata liityntäkapasiteettia varastoille useita tuhansia megawatteja.
 
-Kyse ei ole siitä, etteikö sähkövarastoille olisi käyttöä. Päinvastoin: Fingrid hankkii tunneittain keskimäärin noin 1 500 MW reserviä ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW nykyistä enemmän. Helmikuussa 2025 energiavarastojen osuus säätökokein todennetusta kapasiteetista oli jo 29 % FCR-N-reservissä, 13 % (ylös) ja 18 % (alas) FCR-D-reservissä ja 54 % FFR-reservissä. Kysyntä kasvaa, mutta uusi tie Etelä-Suomen kantaverkkoon aukeaa vasta vuonna 2029.
+Hakemus tarvitaan 1.6.2026 alkaen kaikista vähintään 2 MW:n kulutuskohteista, voimalaitoksista ja sähkövarastoista koko Suomessa, myös jakeluverkon kautta liittyvistä: silloin verkkoyhtiö lähettää hakemuksen Fingridille. Fingridin kartalla merkityillä alueilla raja on väliaikaisesti 1 MW. Raja on kiristynyt: marraskuussa 2025 menettely koski vähintään 5 MW:n varastoja, Jyväskylän, Tampereen ja Turun seuduilla 1 MW:n varastoja.
 
-Miksi tämä koskee teitä
+Hakemuksia on paljon. Fingridin mukaan sähkövarastoista tehtyjä liittymissopimuksia on jo lähes kuusi gigawattia, ja moni vireillä oleva hakemus käsitellään etusijamenettelyssä, jonka on suunniteltu tulevan voimaan 1.1.2027.
 
-Puistomittakaavan varastohanke tarvitsee uuden kantaverkkoliitynnän. Teollisuuskiinteistön, viljankuivaamon tai hoivakiinteistön liittymän takana oleva sähkövarasto ei tarvitse: se käyttää liittymää, joka on jo rakennettu, maksettu ja mitoitettu. Se on ero vuosien ja kuukausien välillä.
+Mitä tämä tarkoittaa yritykselle
 
-Niukkuus siirtyi laitteesta liittymään. Laitteita saa varastosta viikoissa. Uutta varastoliityntää Etelä-Suomen kantaverkkoon ei saa ennen vuotta 2029. Jos teillä on iso liittymä, jonka keskimääräinen käyttöaste on matala, teillä on tällä hetkellä se hyödyke, josta markkinalla on pulaa.
+Useimmat Suomen sähkövarastot ovat pieniä: helmikuussa 2026 yksiköistä 85 prosenttia oli alle 2 MW:n ja 56 prosenttia jakeluverkossa. Kun varasto jää rajan alle, sitä ei liitetä Fingridin hakemuksella. Se rakennetaan liittymän taakse, joka on jo rakennettu, maksettu ja mitoitettu, ja liittämisestä sovitaan verkkoyhtiön kanssa.
 
-Niukka hyödyke ei ole laite. Niukka hyödyke on liittymä.
+Siksi ratkaiseva asiakirja on verkkoyhtiön vastaus. Lähetämme verkkoyhtiölle kohdekäynnin yhteydessä kirjallisen kyselyn liittämisestä, ja vahvistettu tarjous perustuu sen vastaukseen. Ohjausyksikkö lukee liittymispisteen mittausta ja pitää varaston tehon liittymän rajoissa.
+
+Jos varasto on vähintään 2 MW, tai kartalla merkityllä alueella vähintään 1 MW, verkkoyhtiö lähettää hakemuksen Fingridille, ja Etelä-Suomessa hanke kohtaa vuoteen 2029 jatkuvan rajoituksen. Kirjallinen arvio kertoo, kummalle reitille kohteenne kuuluu.
+
+Rajan alla liittämisestä sovitaan verkkoyhtiön kanssa. Rajan yli myös Fingridin kanssa.
+
+Miksi varastoja tarvitaan lisää
+
+Rajoitus ei johdu siitä, ettei varastoille olisi käyttöä. Fingrid hankkii tunneittain keskimäärin noin 1 500 MW reserviä ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW nykyistä enemmän. Varastoja on myös jo paljon: Fingridin arvion mukaan Suomessa on 2 085 MW yli megawatin sähkövarastoja.
 
 Mitä tämä ei tarkoita
 
@@ -1801,17 +1809,23 @@ Tarkistakaa liittymänne koko ja käyttöaste. Pääsulake tai liittymisteho ja 
 
 Ottakaa tuntikohtaiset kulutustiedot esiin. Vuoden tuntidata kertoo enemmän kuin mikään laskuri: sieltä näkyvät sekä huiput että se, kuinka suuri osa liittymästä seisoo käyttämättä.
 
-Pyytäkää laskelma, älkää lupausta. Kirjallinen arvio, jossa jokaisella luvulla on lähde ja reservituotto on mallinnettu tuotteittain. Meiltä tai joltain muulta, mutta kirjallisena.
+Pyytäkää laskelma ja verkkoyhtiön vastaus kirjallisena. Arvio, jossa jokaisella luvulla on lähde ja reservituotto on mallinnettu tuotteittain, ja ennen tilausta verkkoyhtiön kirjallinen vastaus liittämisestä. Meiltä tai joltain muulta, mutta kirjallisena.
 
 Lähteet
 
-Fingrid, tiedote 24.9.2025: Etelä-Suomen varastoliityntärajoitus jatkuu vuoteen 2029, siirtokapasiteetti kulutuksen kasvulle ja teollisille investoinneille.
+Fingrid, tiedote 24.9.2025: Etelä-Suomen varastoliityntärajoitus jatkuu, kunnes Hikiä–Toivila valmistuu 2029; kapasiteetti arvioidaan liittymispisteittäin; Pohjanmaalla ja Pohjois-Suomessa vapaata kapasiteettia.
 
-Fingrid, Reservimarkkinat tutuiksi, 11.6.2025: n. 1 500 MW tunnissa, arvio +1 200 MW viidessä vuodessa.
+Fingrid, Liittymissopimustiedustelumenettely laajenee, 20.11.2025: menettely ei koskenut alle 5 MW:n sähkövarastoja, Jyväskylän, Tampereen ja Turun seuduilla alle 1 MW:n.
 
-Fingrid, Energiavarastot reservimarkkinoilla, 10.2.2025: säätökokein todennettu kapasiteetti 29 % FCR-N, 13 % / 18 % FCR-D (ylös / alas), 54 % FFR.
+Fingrid, liittymissopimushakemuksen kartta, voimassa 1.6.2026, ja webinaari liittymissopimushakemuksista, 18.5.2026: hakemus vähintään 2 MW:n kulutuskohteista, voimalaitoksista ja sähkövarastoista koko Suomessa, jakeluverkon kautta liittyvät mukaan lukien; kartalla merkityillä alueilla väliaikaisesti 1 MW.
 
-Fingrid, Aggregointi reservimarkkinoilla, 3/2026: pienimmät tarjouskoot ja säätökokeet.
+Fingrid, Liittymissopimushakemusten käsittely ruuhkautunut, 23.10.2026: sähkövarastojen liittymissopimuksia lähes 6 GW, etusijamenettely suunniteltu 1.1.2027.
+
+Fingrid, Sähkövarastojen yhteisteho Suomessa jo yli 1 000 MW, 24.2.2026: 85 % yksiköistä alle 2 MW, 56 % jakeluverkossa.
+
+Fingrid, avoin data 424, luettu 2.11.2026: arviolta 2 085 MW yli 1 MW:n sähkövarastoja.
+
+Fingrid, Reservimarkkinat tutuiksi, 11.6.2025: noin 1 500 MW tunnissa, arvio +1 200 MW viidessä vuodessa.
 
 MM
 Madis MaastikMyyntijohtaja, SAMA Energiamadis.maastik@samaenergia.fi
@@ -1905,13 +1919,14 @@ Näytä kartalla
 
 Kuka jo varastoi?
 
-Suomessa on Fingridin arvion mukaan jo 2 085 MW yli megawatin sähkövarastoja, ja Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029.
+Suomessa on Fingridin arvion mukaan jo 2 085 MW yli megawatin sähkövarastoja, ja Etelä-Suomessa Fingrid rajoittaa suurten varastojen liityntöjä vuoteen 2029.
 
 2 085 MWyli 1 MW:n sähkövarastoja, Fingridin arvio 2.11.2026
 
 Verkossa nyt: 2 085 MW yli 1 MW:n varastoja (arvio, sisältää noin kuukauden sisällä käyttöön tulevat) (Fingrid, avoin data 424, 2.11.2026)
 Helmikuu 2026: noin 1 050 MW · 85 % yksiköistä alle 2 MW · 56 % jakeluverkossa · noin puolet Tampere–Lahti–Lappeenranta-linjan eteläpuolella (Fingrid, 24.2.2026)
-Etelä-Suomi: uudet varastot kantaverkkoon vasta, kun Hikiä–Toivila valmistuu 2029 · Pohjanmaalla ja Pohjois-Suomessa vapaata kapasiteettia useita tuhansia megawatteja (Fingrid, 24.9.2025)
+Etelä-Suomi: suurten varastojen liitynnät rajoitettu, kunnes Hikiä–Toivila valmistuu 2029 · Pohjanmaalla ja Pohjois-Suomessa vapaata kapasiteettia useita tuhansia megawatteja (Fingrid, 24.9.2025)
+Hakemusraja: Fingridin liittymissopimushakemus vähintään 2 MW:n varastoista koko Suomessa, kartalla merkityillä alueilla 1 MW:sta · pienemmät liitetään verkkoyhtiön ehdoilla (Fingrid, kartta voimassa 1.6.2026)
 
 Viro samalla mittarilla
 Vertailtavuus: Ei vertailukelpoinen: Suomen luku on Fingridin arvio kaikista yli 1 MW:n varastoista. Virossa Eleringin kokonaisluku on julkaistu vain uutisessa, joten kartalla on erilliset merkinnät. Lukuja ei pidä laskea yhteen.
@@ -1920,7 +1935,7 @@ Kiisa: 100 MW · täydellä teholla helmikuussa 2026 (ERR News, 4.2.2026)
 Aruküla: 100 MW / 200 MWh · avattiin heinäkuussa 2026 · yhdessä Kiisan kanssa 200 MW / 400 MWh (ERR News, 8.7.2026)
 Jakeluverkossa: 74 MW vuoden 2025 lopussa (Elektrilevi / ERR, 19.8.2026)
 
-Lähteet: Fingrid, avoin data: Sähkövarastojen yhteenlaskettu asennettu kapasiteetti (aineisto 424) · 2.11.2026; Fingrid: Sähkövarastojen yhteisteho Suomessa jo yli 1 000 MW · 24.2.2026; Fingrid: Sähkövarastojen liityntärajoitusta jatketaan Etelä-Suomessa · 24.9.2025
+Lähteet: Fingrid, avoin data: Sähkövarastojen yhteenlaskettu asennettu kapasiteetti (aineisto 424) · 2.11.2026; Fingrid: Sähkövarastojen yhteisteho Suomessa jo yli 1 000 MW · 24.2.2026; Fingrid: Sähkövarastojen liityntärajoitusta jatketaan Etelä-Suomessa · 24.9.2025; Fingrid: Liittymissopimushakemus – kartta, voimassa 1.6.2026 alkaen · 1.6.2026
 
 Näytä kartalla
 
@@ -1953,7 +1968,7 @@ Näytä kartalla
 
 Mitä on tulossa?
 
-Fingrid toteuttaa 5,2 miljardin euron investointiohjelmaa: Järvilinja 2 otettiin käyttöön lokakuussa 2026, ja Etelä-Suomen varastoliitynnät avautuvat, kun Hikiä–Toivila valmistuu vuonna 2029.
+Fingrid toteuttaa 5,2 miljardin euron investointiohjelmaa: Järvilinja 2 otettiin käyttöön lokakuussa 2026, ja Etelä-Suomen varastorajoitus jatkuu, kunnes Hikiä–Toivila valmistuu vuonna 2029.
 
 5,2 mrd €Fingridin investointiohjelma · noin 2 mrd € vuosina 2026–2029
 
@@ -1975,11 +1990,12 @@ Näytä kartalla
 
 Missä teidän liittymänne on tässä kokonaisuudessa?
 
-Teidän liittymänne on jo olemassa: sen taakse asennettu sähkövarasto ei jonota kantaverkkoon. Sillä voi laskea tehomaksua, hyödyntää pörssisähkön hintaeroja ja osallistua aggregaattorin kautta reservimarkkinoille, joiden tarve kasvaa.
+Teidän liittymänne on jo olemassa: alle 1 MW:n sähkövarasto liitetään sen taakse verkkoyhtiön ehdoilla ilman Fingridin liittymissopimushakemusta, ja useimmilla alueilla raja on 2 MW. Sillä voi laskea tehomaksua, hyödyntää pörssisähkön hintaeroja ja osallistua aggregaattorin kautta reservimarkkinoille, joiden tarve kasvaa.
 
-2029uudet varastot Etelä-Suomen kantaverkkoon vasta tästä vuodesta · liittymänne on jo olemassa
+1 MWtätä pienempi varasto ei tarvitse Fingridin liittymissopimushakemusta missään Suomessa · useimmilla alueilla raja on 2 MW
 
-Etelä-Suomi: uuden suuren kulutuksen kantaverkkoliitäntä tiukilla 2025–27 · uudet varastot kantaverkkoon 2029 (Fingrid, 21.1.2025; 24.9.2025)
+Etelä-Suomi: uuden suuren kulutuksen kantaverkkoliitäntä tiukilla 2025–27 · suurten varastojen liitynnät rajoitettu vuoteen 2029 (Fingrid, 21.1.2025; 24.9.2025)
+Hakemusraja: Fingridin liittymissopimushakemus vähintään 2 MW:n varastoista koko Suomessa, kartalla merkityillä alueilla 1 MW:sta · pienemmät liitetään verkkoyhtiön ehdoilla (Fingrid, kartta voimassa 1.6.2026)
 Reservit: tarve kasvaa 1 200 MW viidessä vuodessa (Fingrid, 11.6.2025)
 
 Maksuton kirjallinen arvio näyttää, mitä teidän liittymänne voi tehdä: tehomaksu, pörssisähkö ja mallinnettu reservituotto tuotteittain.
@@ -1987,7 +2003,7 @@ Maksuton kirjallinen arvio näyttää, mitä teidän liittymänne voi tehdä: te
 Käytä sijaintianitai valitse kohta kartaltaKohteen osoiteHae
 Osoitehaku kulkee palvelimemme kautta Maanmittauslaitokselle tai Viron Maa- ja Ruumiametille ja aurinkotuotto EU:n PVGIS-palvelusta. Emme tallenna sijaintia; lomakkeeseen se menee vain, jos itse viette sen sinne.
 
-Lähteet: Fingrid: Sähkönkulutuksen liitettävyys kantaverkkoon väliaikaisesti tiukilla eteläisessä Suomessa · 21.1.2025; Fingrid: Reservimarkkinat tutuiksi -webinaari · 11.6.2025; Fingrid: Sähkövarastojen liityntärajoitusta jatketaan Etelä-Suomessa · 24.9.2025
+Lähteet: Fingrid: Sähkönkulutuksen liitettävyys kantaverkkoon väliaikaisesti tiukilla eteläisessä Suomessa · 21.1.2025; Fingrid: Liittymissopimushakemus – kartta, voimassa 1.6.2026 alkaen · 1.6.2026; Fingrid: Reservimarkkinat tutuiksi -webinaari · 11.6.2025
 
 Näytä kartalla
 Pyydä maksuton kartoitus
@@ -2034,6 +2050,8 @@ Fingrid, avoin data: Sähkövarastojen yhteenlaskettu asennettu kapasiteetti (ai
 Fingrid: Sähkövarastojen yhteisteho Suomessa jo yli 1 000 MW · 24.2.2026
 
 Fingrid: Sähkövarastojen liityntärajoitusta jatketaan Etelä-Suomessa · 24.9.2025
+
+Fingrid: Liittymissopimushakemus – kartta, voimassa 1.6.2026 alkaen · 1.6.2026
 
 Fingrid: Reservimarkkinat tutuiksi -webinaari · 11.6.2025
 
@@ -2285,7 +2303,7 @@ Kaardile märgitud projektid on kavandatud põhivõrgu liinid ja riikidevahelise
 Allikas: ENMAK 2035 indikatiivne maht Eleringi arengukavas 2026–2035 · 9.7.2026
 
 Kus on selles pildis teie liitumine?
-Teie liitumine on juba olemas ja selle taga töötav salvesti ei vaja uut põhivõrguliitumist. Kirjalik hinnang paneb selle kaardile, iga arv allikaga.
+Teie liitumine on juba olemas. Selle taha paigaldatud salvesti ühendatakse võrguettevõtja tingimustel ega vaja uut põhivõrguliitumist. Kirjalik hinnang paneb selle kaardile, iga arv allikaga.
 Kaardi kuldne punkt on näide, mitte teie objekt.
 Objekti aadressOtsi
 Kasuta minu asukohtavõi vali koht kaardilAadressiotsing käib meie serveri kaudu Maa- ja Ruumiametisse või Soome Maanmittauslaitosesse ja päikesetoodang EL-i PVGIS-teenusest. Asukohta me ei salvesta; vormi läheb see ainult siis, kui te selle ise sinna viite.
@@ -4023,7 +4041,8 @@ Soome samal mõõdupuul
 Võrreldavus: Ei ole võrreldav: Soome arv on Fingridi hinnang kõigist üle 1 MW salvestitest. Eestis on Eleringi kogusumma avaldatud ainult uudises, seepärast on kaardil eraldi sildid. Arve ei tohi kokku liita.
 Võrgus praegu: 2 085 MW üle 1 MW salvesteid (hinnang, sisaldab umbes kuu jooksul tööle minevaid) (Fingrid, avaandmed 424, 2.11.2026)
 Veebruar 2026: u 1 050 MW · 85 % üksustest alla 2 MW · 56 % jaotusvõrgus · umbes pool Tampere–Lahti–Lappeenranta joonest lõuna pool (Fingrid, 24.2.2026)
-Lõuna-Soome: uued salvestid põhivõrku alles siis, kui Hikiä–Toivila valmib 2029 · Pohjanmaal ja Põhja-Soomes vaba võimsust mitu tuhat megavatti (Fingrid, 24.9.2025)
+Lõuna-Soome: suurte salvestite liitumised piiratud, kuni Hikiä–Toivila valmib 2029 · Pohjanmaal ja Põhja-Soomes vaba võimsust mitu tuhat megavatti (Fingrid, 24.9.2025)
+Taotluse piir: Fingridi liitumislepingu taotlus vähemalt 2 MW salvestitelt kogu Soomes, kaardil märgitud piirkondades 1 MW-st · väiksemad ühendatakse võrguettevõtja tingimustel (Fingrid, kaart kehtib 1.6.2026)
 
 Allikad: ERR News (Eleringi andmed): New powerful battery storage facilities to be built in Valga and Pärnu counties · 17.2.2026; ERR News: Largest battery park in continental Europe up and running in Estonia · 4.2.2026; ERR News: 100 megawatt battery park opened in Harju County · 8.7.2026; ERR (Elektrilevi andmed): Elektrilevi tahab elektrivõrku 10 aastaga investeerida ligi kaks miljardit · 19.8.2026
 
@@ -4080,7 +4099,7 @@ Näita kaardil
 
 Kus on selles pildis teie liitumine?
 
-Teie liitumine on juba olemas: selle taha paigaldatud salvesti ei vaja uut põhivõrguliitumist. Sellega saab alandada võimsustasu, kasutada börsihinna erinevusi ning osaleda agregaatori kaudu reserviturul, mille kulu maksab praegu iga tarbija.
+Teie liitumine on juba olemas: selle taha paigaldatud salvesti ühendatakse võrguettevõtja tingimustel ega vaja uut põhivõrguliitumist. Sellega saab alandada võimsustasu, kasutada börsihinna erinevusi ning osaleda agregaatori kaudu reserviturul, mille kulu maksab praegu iga tarbija.
 
 60 M€reservide kulu 2026, Eleringi prognoos · veebruar–detsember 2025: 74 M€ · raha saavad reservide pakkujad
 
@@ -4172,6 +4191,8 @@ Fingrid, avaandmed: Sähkövarastojen yhteenlaskettu asennettu kapasiteetti (and
 Fingrid: Sähkövarastojen yhteisteho Suomessa jo yli 1 000 MW · 24.2.2026
 
 Fingrid: Sähkövarastojen liityntärajoitusta jatketaan Etelä-Suomessa · 24.9.2025
+
+Fingrid: Liittymissopimushakemus – kartta, voimassa 1.6.2026 alkaen (liitumislepingu taotluse kaart) · kehtib 1.6.2026
 
 Fingrid: Reservimarkkinat tutuiksi -webinaari · 11.6.2025
 
