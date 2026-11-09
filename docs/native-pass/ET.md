@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 515 katselmoitavaa riviä — 399 uutta, 116 muutettua, joista **59 on merkitty ⚠**. Muuttumattomia ohitettiin 625.
+**Yhteenveto:** 751 katselmoitavaa riviä — 594 uutta, 157 muutettua, joista **115 on merkitty ⚠**. Muuttumattomia ohitettiin 612.
 
 **Huomio:** 2 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -56,7 +56,7 @@ Vastine mainissa: `/et/`
 - [ ] `li` **muutettu** — Päikesepaneelid
       - main: Päikeseelekter
       - **Korjaus:**
-- [ ] `li` **uusi** — Peakilp ja juhtseade
+- [ ] `li` **uusi** — Peakilp, arvesti ja juhtseade
       - **Korjaus:**
 - [ ] `li` **muutettu** — Energiasalvesti
       - main: Energiasalvestid
@@ -88,6 +88,17 @@ Vastine mainissa: `/et/`
       - **Korjaus:**
 - [ ] `b` **uusi** — Kinnistu väärtus
       - **Korjaus:**
+- [ ] `p` **uusi** — 1 / 4 · Reserviturg tasu reserveeritud võimsuse eest, ka öösel.
+      - **Korjaus:**
+- [ ] `li` **uusi** — reserv: valmis võrgu jaoks ↑↓
+      - **Korjaus:**
+- [ ] `li` **muutettu** — tasu valmisoleku eest, tunni kaupa
+      - main: Valmisolekutasu igal tunnil,
+      - **Korjaus:**
+- [ ] `li` **uusi** — sisse ↓
+      - **Korjaus:**
+- [ ] `li` **uusi** — tipp, välja ↑
+      - **Korjaus:**
 - [ ] `figcaption` **uusi** — Põhimõtteline ööpäev, mitte mõõteandmed.
       - **Korjaus:**
 - [ ] `p` **uusi** — Põhivõrgust akuelemendini, kiht kihi haaval
@@ -95,8 +106,8 @@ Vastine mainissa: `/et/`
 
 ### #vork
 > Lähde tälle osiolle: Allikas: Elering, Elektri ülekandevõrk · 21.8.2026
-> Lähde tälle osiolle: Allikas: Elering, arengukava 2026–2035 · 9.7.2026
-> Lähde tälle osiolle: Allikas: Elering, varustuskindluse aruanne 2025 · 9.12.2025
+> Lähde tälle osiolle: Allikad: Elering, arengukava 2026–2035 · 9.7.2026; andmekeskused: Sunly · 17.3.2026, ERR · 17.6.2026; Soome projektid: Datakeskushankkeiden kansallinen rekisteri (CC BY 4.0) · 4.11.2026
+> Lähde tälle osiolle: Allikad: Elering, varustuskindluse aruanne 2025 · 9.12.2025; jaamad kaardil: OpenStreetMapi kaastöötajad (ODbL) · 2.11.2026
 > Lähde tälle osiolle: Allikas: ERR News 17.2.2026 ja 8.7.2026
 > Lähde tälle osiolle: Allikas: Elering, AST ja Litgrid, FRR dimensioning forecast · 29.7.2025
 > Lähde tälle osiolle: Allikas: ENMAK 2035 indikatiivne maht Eleringi arengukavas 2026–2035 · 9.7.2026
@@ -148,6 +159,8 @@ Vastine mainissa: `/et/`
       - **Korjaus:**
 - [ ] `p` **uusi** — Eleringi prognoosis kasvab aastane tarbimine 7,9 teravatt-tunnilt 2025. aastal 10,0 teravatt-tunnini 2030. aastaks.
       - **Korjaus:**
+- [ ] `p` **uusi** — Kaardi ruudud on andmekeskuste projektid: täidetud töötavad või on ehitamisel, õõnsad on kavandamisel ja suurus näitab võimsust.
+      - **Korjaus:**
 - [ ] `p` **uusi** — Kust tuleb ilmast sõltuv tootmine?
       - **Korjaus:**
 - [ ] `p` **uusi** — 1 214 MWpäikesevõimsust
@@ -157,6 +170,9 @@ Vastine mainissa: `/et/`
 - [ ] ⚠ `p` **muutettu** — 2025. aastal oli Eestis 1 214 MW päikese- ja 694 MW tuulevõimsust. Ilmast sõltuv toodang muudab tunnihinnad kõikuvaks ja salvesti teenib hinnavahest.
       - main: Elektrivõrk peab olema tasakaalus igal sekundil. Elering ostab sagedusreserve iga päev ja maksab juba selle eest, et reserv on valmis – ja Eleringi hinnangul kasvab juhitava võimsuse vajadus 2035. aastaks ca 2 100 megavatini.
       - **Korjaus:**
+- [ ] `p` **muutettu** — Kaardi valged ringid on tuulepargid ja kuldsed punktid päikesejaamad; suurus näitab võimsust. Need on OpenStreetMapi märgitud jaamad ja loetelu ei ole täielik: kogusummad on Eleringi omad.
+      - main: Energiasalvestid, konteinerid, laadimine, mikrovõrgud ja päikeseelekter partneritelt. Meie paneme terviku kokku ja vastutame projekti eest algusest lõpuni.
+      - **Korjaus:**
 - [ ] `p` **uusi** — Kes juba salvestab?
       - **Korjaus:**
 - [ ] `p` **uusi** — 245 MWakuvõimsust võrgus
@@ -164,6 +180,9 @@ Vastine mainissa: `/et/`
 - [ ] ⚠ `p` **uusi** — juulis lisandus Aruküla 100 MW
       - **Korjaus:**
 - [ ] ⚠ `p` **uusi** — Eleringi teatel on võrku ühendatud 245 MW akuvõimsust (veebruar 2026) ja juulis lisandus Aruküla 100 MW park.
+      - **Korjaus:**
+- [ ] ⚠ `p` **muutettu** — Kaardi punktid on kaks suurt akuparki, millest on avalik teade (Kiisa ja Aruküla); 245 MW hõlmab kõiki veebruariks 2026 võrku ühendatud akusid.
+      - main: Näide ühest hinnakirjast: Elektrilevi paketis Võimsus VMA2 on võrguühenduse kasutusvõimsuse tasu 2,45 €/kW kuus ja see arvestatakse kuu kõrgeima tunni keskmise võimsuse järgi; võrguühenduse läbilaskevõime tasu 0,32 €/A kuus käib kokkulepitud amprite pealt, sõltumata kasutusest. Salvesti katab tipu, mistõttu saab peakaitsme ja võrgupaketi valida tegeliku tarbimise järgi.
       - **Korjaus:**
 - [ ] `p` **uusi** — Kui palju reserve vajatakse?
       - **Korjaus:**
@@ -180,10 +199,15 @@ Vastine mainissa: `/et/`
       - **Korjaus:**
 - [ ] ⚠ `p` **uusi** — 2030: kuni 1 500 MW uut tootmisvõimsust. 2035: 1 000–1 300 MW lisanduvat salvestusvõimsust. Umbes 2038: EstLink 3 ja Eesti–Läti neljas ühendus, impordivõimekus +1 200 MW.
       - **Korjaus:**
+- [ ] `p` **muutettu** — Kaardile märgitud projektid on kavandatud põhivõrgu liinid ja riikidevahelised ühendused koos valmimisajaga. Trassid on suunda näitavad: joon ühendab otspunkte.
+      - main: Elering maksab võrgu tasakaalustamiseks valmis olevate akude eest, ka tundidel, mil aku lihtsalt ootab. Liitumine käib agregaatori kaudu, kes on Eleringiga lepingu sõlminud teenusepakkuja.
+      - **Korjaus:**
 - [ ] `p` **uusi** — Kus on selles pildis teie liitumine?
       - **Korjaus:**
 - [ ] `p` **muutettu** — Teie liitumine on juba olemas ja selle taga töötav salvesti ei vaja uut põhivõrguliitumist. Kirjalik hinnang paneb selle kaardile, iga arv allikaga.
       - main: Liitumise eest maksate iga kuu. Sama liitumine võib ka teile tootma hakata – kui selle taga on salvesti, energia tootmine ja nutikas juhtimine, mis otsustab teie kasuks. Meie anname teile selleks kolm asja:
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kaardi kuldne punkt on näide, mitte teie objekt.
       - **Korjaus:**
 - [ ] `p` **uusi** — Kogu kaart: Elering ja Fingrid kõrvuti
       - **Korjaus:**
@@ -214,18 +238,18 @@ Vastine mainissa: `/et/`
       - **Korjaus:**
 - [ ] `p` **uusi** — pool päeva
       - **Korjaus:**
-- [ ] `p` **muutettu** — Elektrik käib nädala jooksul kohal ning mõõdab kaablitee, kilbi ja paigalduskoha. Kinnitatud hinnaga pakkumise saate 2–5 tööpäevaga.
-      - main: Elektrik käib kohal, mõõdab kaablitee, kilbi ja paigalduskoha ning kinnitab hinna.
+- [ ] `p` **muutettu** — Elektrik käib nädala jooksul kohal ning mõõdab kaablitee, kilbi ja paigalduskoha. Soovi korral mõõdame katuse drooniga ja kavandame päikesepaneelide paigutuse. Samal ajal saadame võrguettevõtjale kirjaliku päringu liitumise kohta. Kinnitatud hinnaga pakkumise saate 2–5 tööpäevaga.
+      - main: Näide ühest hinnakirjast: Elektrilevi paketis Võimsus VMA2 on võrguühenduse kasutusvõimsuse tasu 2,45 €/kW kuus ja see arvestatakse kuu kõrgeima tunni keskmise võimsuse järgi; võrguühenduse läbilaskevõime tasu 0,32 €/A kuus käib kokkulepitud amprite pealt, sõltumata kasutusest. Salvesti katab tipu, mistõttu saab peakaitsme ja võrgupaketi valida tegeliku tarbimise järgi.
       - **Korjaus:**
 - [ ] `p` **uusi** — teie ajakava
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Otsuse aja määrate teie.
+- [ ] ⚠ `p` **muutettu** — Kui hind on kinnitatud ja võrguettevõtja kirjalik vastus käes, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Otsuse aja määrate teie.
       - main: Kui hind on kinnitatud, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Näete ühte tabelit, kus on kuumakse, omafinantseering ja see, mis pärast makset alles jääb. Rahastajaga suhtleme meie.
       - ⚠ rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)
       - **Korjaus:**
 - [ ] `p` **uusi** — 2–3 päeva objektil
       - **Korjaus:**
-- [ ] `p` **muutettu** — Paigalduse aja lepime kokku tellimuse kinnitamisel ja kõik muu kulgeb paigaldusega kõrvuti. Mõõtepunkti taotlused lähevad sisse samal päeval. Pärast kontrolle ja käivitamist viib agregaator salvesti mitmeturuteenusesse.
+- [ ] `p` **muutettu** — Paigalduse aja lepime kokku tellimuse kinnitamisel ja kõik muu kulgeb paigaldusega kõrvuti. Võrguettevõtja kirjalik vastus on saadud juba enne tellimust; mõõtepunkti taotlused esitame tellimuse kinnitamise päeval. Pärast kontrolle ja käivitamist viib agregaator salvesti mitmeturuteenusesse.
       - main: Projekteerimine, võrguettevõtja tehnilised tingimused, paigaldus, kontrollid ja käivitamine; agregaator liidab salvesti mitmeturuteenusega ja meie jälgime, et süsteem teeks seda, mida hinnang näitas.
       - **Korjaus:**
 - [ ] `p` **muutettu** — 1 · Tasuta hinnang
@@ -239,12 +263,185 @@ Vastine mainissa: `/et/`
 - [ ] `p` **muutettu** — Oleme koostööks välja valinud parimatest parimad. Valiku aluseks oli see, mis loob ettevõtte investeeringule suurima väärtuse.
       - main: Arvestitagune süsteem – salvesti, tootmine ja juhtimine teie liitumise taga, teie poolel arvestit. Mitmeturuteenus – agregaator müüb sama salvesti võimsust mitmel turul korraga: teie tarbimise optimeerimine, arbitraaž börsil, reservid Eleringile. Agregaator – ettevõte, kes koondab mitme objekti salvestid üheks pakkumiseks ja maksab tulu välja. Valmisolekutasu – tasu selle eest, et salvesti on Eleringile kättesaadav, ka siis, kui ta ei tööta. Arbitraaž – ostmine odaval tunnil, müümine või kasutamine kallil.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Investeeringu väärtus tuleb paljudest osadest. Kui pakume valikut eri tootjatest, toodetest ja teenustest, saame igale kliendile koostada rätseplahenduse, mis loob tema kinnistule kõige rohkem väärtust. Lähtume teie otsuse kriteeriumidest, mitte ühe seadme müügist.
+- [ ] `p` **muutettu** — Investeeringu väärtus tuleb paljudest osadest. Kui pakume valikut eri tootjatest, toodetest ja teenustest, saame igale kliendile koostada rätseplahenduse, mis loob tema kinnistule kõige rohkem väärtust. Lähtume teie otsuse kriteeriumidest, mitte ühe seadme müügist. Partnerite kogu valik on teie käsutuses.
       - main: Arvestitagune süsteem – salvesti, tootmine ja juhtimine teie liitumise taga, teie poolel arvestit. Mitmeturuteenus – agregaator müüb sama salvesti võimsust mitmel turul korraga: teie tarbimise optimeerimine, arbitraaž börsil, reservid Eleringile. Agregaator – ettevõte, kes koondab mitme objekti salvestid üheks pakkumiseks ja maksab tulu välja. Valmisolekutasu – tasu selle eest, et salvesti on Eleringile kättesaadav, ka siis, kui ta ei tööta. Arbitraaž – ostmine odaval tunnil, müümine või kasutamine kallil.
       - **Korjaus:**
-- [ ] ⚠ `figcaption` **muutettu** — Soleron Energy
-      - main: Agregaator: Soleron Energy
+- [ ] `p` **muutettu** — Soome energiasalvestite ja päikeseelektrijaamade tarnija.
+      - main: Päikeseelekter, tööstuslikud energiasalvestid ja reservituru liitumine ettevõtetele Eestis ja Soomes.
+      - **Korjaus:**
+- [ ] `li` **muutettu** — Tööstuslikud energiasalvestid
+      - main: Energiasalvestid
+      - **Korjaus:**
+- [ ] `li` **uusi** — Mitu akuvalikut
+      - **Korjaus:**
+- [ ] `li` **muutettu** — Päikeseelektrijaamad
+      - main: Päikeseelekter
+      - **Korjaus:**
+- [ ] `li` **muutettu** — Mikroinverterlahendused
+      - main: Lahendused
+      - **Korjaus:**
+
+### #pd-ralos
+
+- [ ] `p` **uusi** — Soome · Tampere · asutatud 2017
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Soome päikeseelektri ja energiasalvestite tarnija: tööstuslikud energiasalvestid sise- ja välispaigalduseks ning päikeseelektrijaamad ettevõtetele.
+      - main: Päikeseelekter, tööstuslikud energiasalvestid ja reservituru liitumine ettevõtetele Eestis ja Soomes.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Salvestitele on mitu akuvalikut ja päikeseelektrijaamadele ka mikroinverterlahendused.
+      - main: Energiasalvestid, konteinerid, laadimine, mikrovõrgud ja päikeseelekter partneritelt. Meie paneme terviku kokku ja vastutame projekti eest algusest lõpuni.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Partnerite lehelralos.fi
+      - **Korjaus:**
+
+### #valik
+
+- [ ] ⚠ `h3` **uusi** — Elecnova
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `p` **uusi** — Energiasalvestite ja mikrovõrkude tootja.
+      - **Korjaus:**
+- [ ] `li` **uusi** — Vedelik- ja õhkjahutusega kapid
+      - **Korjaus:**
+- [ ] `li` **muutettu** — Hübriidkapp päikeseelektrile
+      - main: Päikeseelekter
+      - **Korjaus:**
+- [ ] `li` **muutettu** — Konteinersalvestid
+      - main: Energiasalvestid
+      - **Korjaus:**
+- [ ] `li` **uusi** — Saartalitlus
+      - **Korjaus:**
+- [ ] `li` **uusi** — Laadimine ja mikrovõrgud
+      - **Korjaus:**
+
+### #pd-elecnova
+
+- [ ] `figcaption` **uusi** — Salvestikapp
+      - **Korjaus:**
+- [ ] `figcaption` **uusi** — Sama kapp avatuna
+      - **Korjaus:**
+- [ ] `figcaption` **uusi** — Õhkjahutusega kapp
+      - **Korjaus:**
+- [ ] `figcaption` **uusi** — STS-kapp saartalitluseks
+      - **Korjaus:**
+- [ ] `figcaption` **muutettu** — Konteinersalvesti
+      - main: Energiasalvestid
+      - **Korjaus:**
+- [ ] `p` **uusi** — Hiina
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Energiasalvestite ja mikrovõrkude tootja. Valikus on vedelik- ja õhkjahutusega väliskapid ettevõtetele, hübriidkapp päikeseelektrile ja konteinersalvestid. Kapid ja konteinerid töötavad paralleelselt. Saartalitluseks projekteeritud objektidele on STS-kapp.
+      - main: Energiasalvestid, konteinerid, laadimine, mikrovõrgud ja päikeseelekter partneritelt. Meie paneme terviku kokku ja vastutame projekti eest algusest lõpuni.
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Oktoobris oli Elecnova väljas Tamperes toimunud messil Energia 2026. Lahendused ka laadimisjaamadele ja mikrovõrkudele.
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `p` **uusi** — Partnerite lehelelecnova-ess.com
+      - **Korjaus:**
+
+### #valik
+
+- [ ] `h3` **uusi** — EP Energy
+      - **Korjaus:**
+- [ ] `p` **uusi** — Energiasalvestid, teisaldatav energia ja laadimine. Samalt tootjalt ka tõstukid ja muu tehnika.
+      - **Korjaus:**
+- [ ] `li` **muutettu** — Salvestikapid
+      - main: Energiasalvestid
+      - **Korjaus:**
+- [ ] `li` **uusi** — Teisaldatavad energiaseadmed
+      - **Korjaus:**
+- [ ] `li` **uusi** — Kiirlaadijad
+      - **Korjaus:**
+- [ ] `li` **uusi** — Tõstukid ja tehnika
+      - **Korjaus:**
+
+### #pd-ep-energy
+
+- [ ] `p` **uusi** — Hiina · Anji, Zhejiangi provints · oma tehas ja arenduskeskus
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Salvestikapid ja konteinersalvestid ettevõtetele, teisaldatavad energiaseadmed ehitusplatsidele ja üritustele ning akuga ja otse võrgust toidetavad kiirlaadijad.
+      - main: Meie. Tehnilised tingimused ja võrguettevõtja seisukoht on kirjalikult käes enne, kui te midagi allkirjastate, mitte pärast.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Samalt tootjalt ka tõstukid ja muu tehnika.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Partnerite lehelep-unipower.com
+      - **Korjaus:**
+
+### #valik
+
+- [ ] ⚠ `h3` **uusi** — Avant Power
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Energiasalvestid ja mikrovõrgud Avanti kontsernist. Vajadusel Avanti kogu valik.
+      - main: Energiasalvestid, konteinerid, laadimine, mikrovõrgud ja päikeseelekter partneritelt. Meie paneme terviku kokku ja vastutame projekti eest algusest lõpuni.
+      - **Korjaus:**
+- [ ] `li` **uusi** — Mikrovõrgud
+      - **Korjaus:**
+- [ ] `li` **uusi** — Mobiilne energia ja laadimine
+      - **Korjaus:**
+- [ ] `li` **muutettu** — Võrguvälised lahendused
+      - main: Lahendused
+      - **Korjaus:**
+
+### #pd-avant-power
+
+- [ ] `p` **uusi** — Soome · Ylöjärvi · Avanti kontsern
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Mikrovõrk, mis ühendab energiasalvesti, kiirlaadimise, oma tootmise ja juhtimise üheks alalisvooluvõrguks: tanklatele, depoodele, logistikale, tööstusele ja põllumajandusettevõtetele.
+      - main: Liitumise eest maksate iga kuu. Sama liitumine võib ka teile tootma hakata – kui selle taga on salvesti, energia tootmine ja nutikas juhtimine, mis otsustab teie kasuks. Meie anname teile selleks kolm asja:
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Lisaks teisaldatav energiaseade ja laadimine kohtades, kus elektrivõrgust ei piisa. Vajadusel Avanti kogu valik.
+      - main: Energiasalvestid, konteinerid, laadimine, mikrovõrgud ja päikeseelekter partneritelt. Meie paneme terviku kokku ja vastutame projekti eest algusest lõpuni.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Partnerite lehelavantpower.fi
+      - **Korjaus:**
+
+### #valik
+
+- [ ] ⚠ `h3` **uusi** — Scanoffice Oy
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `p` **uusi** — Soojuspumpade, päikeseelektri ja laadimise maaletooja.
+      - **Korjaus:**
+- [ ] `li` **uusi** — Õhksoojuspumbad
+      - **Korjaus:**
+- [ ] `li` **uusi** — Õhk-vesisoojuspumbad
+      - **Korjaus:**
+- [ ] `li` **uusi** — Maasoojuspumbad
+      - **Korjaus:**
+- [ ] `li` **uusi** — Laadimisjaamad
+      - **Korjaus:**
+- [ ] `li` **uusi** — Ventilatsioon
+      - **Korjaus:**
+
+### #pd-scanoffice
+
+- [ ] `p` **uusi** — Soome · Espoo · asutatud 1984 · ligi sada spetsialisti
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Puhta energia seadmete maaletooja ja hulgimüüja: õhk-, õhk-vesi- ja maasoojuspumbad, päikeseelektrisüsteemid, ventilatsiooniseadmed ja elektriautode laadimisjaamad.
+      - main: Energiasalvestid, konteinerid, laadimine, mikrovõrgud ja päikeseelekter partneritelt. Meie paneme terviku kokku ja vastutame projekti eest algusest lõpuni.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Partnerite lehelscanoffice.fi
+      - **Korjaus:**
+
+### #valik
+
+- [ ] `p` **uusi** — Agregaator ja energiajuhtimine Eleringi reserviturul.
+      - **Korjaus:**
+- [ ] `li` **uusi** — Agregaator
+      - **Korjaus:**
+- [ ] `li` **uusi** — Energiajuhtimine
+      - **Korjaus:**
+
+### #pd-soleron
+
+- [ ] `p` **uusi** — Eesti · agregaator Eleringi reserviturul
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Eesti ettevõte, mis keskendub energiasalvestuslahendustele ja energiajuhtimissüsteemidele: oma EMS-tarkvara salvestite ja tootmisüksuste juhtimiseks ning agregeerimine Eleringi sagedusreservidesse.
+      - main: Sõltumatu energia juhindub sellest, et otsused teie arvesti taga tehakse teie huvides ja automaatselt. Süsteem – energiasalvesti, energia tootmine ja nutikas juhtimine – teeb kasumlikumaid otsuseid teie kinnistu hüvanguks, ilma et keegi teie majast peaks midagi tegema.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Lisaks liitiumakudel põhinevate salvestite import, projekteerimine, paigaldus ja hooldus.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Partnerite lehelsoleronenergy.ee
       - **Korjaus:**
 
 ### #meeskond
@@ -312,6 +509,14 @@ Vastine mainissa: `/et/`
 - [ ] `label` **muutettu** — Objekti aadress või asukoht · valikuline
       - main: Objekti asukoht
       - **Korjaus:**
+- [ ] `label` **muutettu** — Päikeseelekterpaneelid ja päikesekatused
+      - main: Päikeseelekter
+      - **Korjaus:**
+- [ ] `label` **muutettu** — Energiasalvestiaku ja reserviturg
+      - main: Energiasalvestid
+      - **Korjaus:**
+- [ ] `label` **uusi** — Elektriauto laadiminelaadimispunktid ja nende võimsus
+      - **Korjaus:**
 - [ ] `p` **muutettu** — Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hinnangu tegemiseks (privaatsuspoliitika).
       - main: Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hindamiseks, privaatsuspoliitikat.
       - **Korjaus:**
@@ -324,6 +529,9 @@ Vastine mainissa: `/et/`
 - [ ] `p` **muutettu** — Päikeseelekter, tööstuslikud energiasalvestid ja reservituruga liitumine ettevõtetele.
       - main: Päikeseelekter, tööstuslikud energiasalvestid ja reservituru liitumine ettevõtetele Eestis ja Soomes.
       - **Korjaus:**
+- [ ] `li` **muutettu** — +358 44 965 4614
+      - main: +358 449 654 614
+      - **Korjaus:**
 - [ ] `li` **uusi** — Ühine võrk: kaart
       - **Korjaus:**
 - [ ] `p` **muutettu** — Anname e-kirjaga teada, kui uus ülevaade on avaldatud. Loobumiseks vastake kirjale.
@@ -334,7 +542,7 @@ Vastine mainissa: `/et/`
 
 - [ ] `svg title` **uusi** — Põhimõtteline ööpäev: tarbimine, peakaitse, tunnihind ja salvesti töö
       - **Korjaus:**
-- [ ] `svg desc` **muutettu** — Salvesti on reservis ka öösel. Hommikutipu katab salvesti ja peakaitse saab valida tarbimise järgi. Odaval tunnil laeb salvesti sisse, kallil annab välja. Kokku: väiksem püsikulu, kõrgem kinnistu hind.
+- [ ] `svg desc` **muutettu** — Salvesti on reservis ka öösel ja valmisoleku eest makstakse tasu tunni kaupa. Hommikutipu katab salvesti ja peakaitse saab valida tarbimise järgi. Odaval tunnil laeb salvesti sisse, kallil annab välja. Kokku: väiksem püsikulu, kõrgem kinnistu hind.
       - main: Näide ühest hinnakirjast: Elektrilevi paketis Võimsus VMA2 on võrguühenduse kasutusvõimsuse tasu 2,45 €/kW kuus ja see arvestatakse kuu kõrgeima tunni keskmise võimsuse järgi; võrguühenduse läbilaskevõime tasu 0,32 €/A kuus käib kokkulepitud amprite pealt, sõltumata kasutusest. Salvesti katab tipu, mistõttu saab peakaitsme ja võrgupaketi valida tegeliku tarbimise järgi.
       - **Korjaus:**
 - [ ] `svg text` **muutettu** — Tarbimine
@@ -346,13 +554,13 @@ Vastine mainissa: `/et/`
       - **Korjaus:**
 - [ ] `svg text` **uusi** — Püsikulu
       - **Korjaus:**
-- [ ] `svg text` **uusi** — Väärtus
-      - **Korjaus:**
 - [ ] `svg text` **uusi** — Hind tunnis
       - **Korjaus:**
 - [ ] `svg text` **uusi** — odav
       - **Korjaus:**
 - [ ] `svg text` **uusi** — kallis
+      - **Korjaus:**
+- [ ] `svg text` **uusi** — Triibulised lõigud: salvesti on valmis võrgu jaoks.
       - **Korjaus:**
 - [ ] `svg text` **muutettu** — Salvesti
       - main: Energiasalvestid
@@ -365,6 +573,9 @@ Vastine mainissa: `/et/`
 - [ ] `svg text` **uusi** — tipp
       - **Korjaus:**
 - [ ] `svg text` **uusi** — välja
+      - **Korjaus:**
+- [ ] `svg text` **muutettu** — Tasu valmisoleku eest
+      - main: Valmisolekutasu igal tunnil,
       - **Korjaus:**
 - [ ] `svg text` **uusi** — öö
       - **Korjaus:**
@@ -397,6 +608,279 @@ Vastine mainissa: `/et/energiasalvestid/`
       - main: Võimsustasu alla, börsihind kasuks, reservitulu ja varutoide. Samast akust, samal päeval, automaatselt. Päikest ega oma tootmist pole vaja: liitumisest piisab.
       - **Korjaus:**
 
+### #tooted
+> Lähde tälle osiolle: Allikas: Ralos Oy, tehniline andmeleht Ralos Beast 125, versioon V10, kontrollitud 9.11.2026
+> Lähde tälle osiolle: Allikas: Elecnova, tooteleht ECO-E418LP, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Elecnova, tooteleht ECO-E101WX, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
+> Lähde tälle osiolle: Allikas: Elecnova, tooteleht ECO-E64WX, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Elecnova, tooteleht ECO-E20FT2170LP, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
+> Lähde tälle osiolle: Allikas: Avant Power, OptiTemp® Cube 47 brošüür, 6/2026, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Elecnova, tooteleht ECO-STS-C125, loetud 9.11.2026
+
+- [ ] `h2` **uusi** — Valik kapist konteinerini.
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Väliskapid, hübriidkapid, konteinerid, teisaldatavad seadmed ja STS-kapid neljalt tootjalt: Ralos, Elecnova, EP Energy ja Avant Power.
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `label` **uusi** — Kõik 13
+      - **Korjaus:**
+- [ ] `label` **uusi** — Väliskapid 4
+      - **Korjaus:**
+- [ ] `label` **uusi** — Hübriidkapid 2
+      - **Korjaus:**
+- [ ] `label` **uusi** — Konteinerid 2
+      - **Korjaus:**
+- [ ] `label` **uusi** — Teisaldatavad ja laadimine 4
+      - **Korjaus:**
+- [ ] `label` **muutettu** — Varutoide 3
+      - main: Varutoide
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Ralos
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Beast 125 HD
+      - **Korjaus:**
+- [ ] `p` **uusi** — Vedelikjahutusega salvesti sise- või välipaigalduseks
+      - **Korjaus:**
+- [ ] `dt` **muutettu** — Võimsus
+      - main: Võimsustasu alla
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 125 kW
+      - **Korjaus:**
+- [ ] `dt` **muutettu** — Energia
+      - main: SAMA Energia Oy
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 261 kWh
+      - **Korjaus:**
+- [ ] `dt` **muutettu** — Varutoide, lisavarustus
+      - main: Varutoide
+      - **Korjaus:**
+- [ ] `dd` **uusi** — STS, alla 10 ms
+      - **Korjaus:**
+- [ ] `dt` **muutettu** — Päikeseelekter, lisavarustus
+      - main: Päikeseelekter
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 2 × 63 kW
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Elecnova
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `h3` **uusi** — ECO-E418LP
+      - **Korjaus:**
+- [ ] `p` **uusi** — Vedelikjahutusega väliskapp
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 100 kW (400 V)
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 418 kWh
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Jahutus
+      - **Korjaus:**
+- [ ] `dd` **uusi** — vedelik
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Põhi
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 1,5 × 1,35 m
+      - **Korjaus:**
+- [ ] `h3` **uusi** — ECO-E101WX
+      - **Korjaus:**
+- [ ] `p` **uusi** — Õhkjahutusega väliskapp
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 100 kW
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 101 kWh
+      - **Korjaus:**
+- [ ] `dd` **uusi** — õhk
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 1,25 × 1,2 m
+      - **Korjaus:**
+- [ ] `p` **uusi** — EP Energy
+      - **Korjaus:**
+- [ ] `h3` **uusi** — EPES233
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 105 kW
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 233 kWh
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 1,45 × 1,3 m
+      - **Korjaus:**
+- [ ] `h3` **uusi** — EPHS104 / EPHS156
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Hübriidkapp päikeseelektrile
+      - main: Päikeseelekter
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 50 kW
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 104 või 156 kWh
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — kuni 100 kW
+      - **Korjaus:**
+- [ ] `dd` **uusi** — alla 10 ms
+      - **Korjaus:**
+- [ ] `h3` **uusi** — ECO-E64WX
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 25–50 kW
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 64,5 kWh
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 37,5–75 kW
+      - **Korjaus:**
+- [ ] `h3` **uusi** — ECO-E20FT2170LP
+      - **Korjaus:**
+- [ ] `p` **uusi** — 20-jalane konteinersalvesti
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 1 000 kW
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 2 170 kWh
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Kaal
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 25 t
+      - **Korjaus:**
+- [ ] `h3` **uusi** — EPES5000
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Akukonteiner suurtele objektidele
+      - main: Kui suur aku teie objektile?
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 5 015 kWh
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Pinge
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 1 040–1 500 V DC
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 44 t
+      - **Korjaus:**
+- [ ] `h3` **uusi** — EPPS93-M
+      - **Korjaus:**
+- [ ] `p` **uusi** — Teisaldatav energiaseade
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 93 kWh
+      - **Korjaus:**
+- [ ] `dt` **uusi** — DC-laadimine
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 60 kW
+      - **Korjaus:**
+- [ ] `dt` **uusi** — AC-väljund
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 33 kVA
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 1,5 t
+      - **Korjaus:**
+- [ ] `h3` **uusi** — EPPS210-M
+      - **Korjaus:**
+- [ ] `p` **uusi** — Teisaldatav energiaseade haagisel
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 217 kWh
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — kuni 240 kW
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 2,7 t
+      - **Korjaus:**
+- [ ] `h3` **uusi** — EPCS209
+      - **Korjaus:**
+- [ ] `p` **uusi** — Akuga DC-kiirlaadija
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Liitumisest
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Laadimine
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Aku
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 209 kWh
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Pistikud
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 2 × CCS2
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Avant Power
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `h3` **uusi** — OptiTemp® Cube 47
+      - **Korjaus:**
+- [ ] `p` **uusi** — Teisaldatav energiaseade töömasinatele
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 47 kWh
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 11 kW
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Kaitseaste
+      - **Korjaus:**
+- [ ] `dd` **uusi** — IP54
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 730 kg
+      - **Korjaus:**
+- [ ] `h3` **uusi** — ECO-STS-C125
+      - **Korjaus:**
+- [ ] `p` **uusi** — STS-kapp saartalitluseks
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Salvestitele
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 2, 4 või 6 × 125 kW
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Ümberlülitus
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 20 ms
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 400 V
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Tehnilised andmed on tootjate andmelehtedelt ja tootelehtedelt. Varutoide hõlmab valitud ahelaid, mis kavandatakse objektikülastusel. Tootja ja mudel valitakse teie objekti tarbimise, liitumise ja ruumi järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega.
+      - main: Nõuame tootjalt LFP-keemiat, rakutaseme jälgimisega akuhaldust, temperatuurijuhtimist, välitingimustele vastavat kappi ja CE- ning transpordisertifikaate. Tootja garantii ja hooldustingimused on hinnangus eraldi real. Kõik nõuded →
+      - **Korjaus:**
+
+### #rev-energiasalvestid-3
+> Lähde tälle osiolle: Milline osa on teie objektil suurim, selgub tarbimisandmetest. Sellepärast algab kõik tasuta hinnangust.
+
+- [ ] `td` **muutettu** — Päevasisene hinnavahe ja salvesti maht
+      - main: Päevasisene hinnavahe ja aku maht
+      - **Korjaus:**
+
+### #arve
+> Lähde tälle osiolle: Allikas: Elering, sagedusreservide turu kokkuvõte · juuli 2026, tabel 2
+> Lähde tälle osiolle: Allikas: Konkurentsiameti otsus nr 7-3/2026-028 · 2.3.2026, hinnakiri kehtib 1.6.2026 alates · käibemaksuta
+> Lähde tälle osiolle: Allikas: Konkurentsiameti otsus nr 7-3/2026-028 · 2.3.2026, pakett Võimsus VMA2 · käibemaksuta
+> Lähde tälle osiolle: Näidisarvutus. Teie objekti tootlusnõue sõltub kinnisvara liigist ja asukohast. Hinnangus arvutame selle teie enda andmetega.
+
+- [ ] `h2` **uusi** — Mis teie arvel ja kinnistul muutub.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Reserviturg: tasu reserveeritud võimsuse eest, ka öösel.
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Elering ostab sagedusreserve iga päev, ka öösel ja nädalavahetusel. Juulis 2026 oli Eestis reservitoodete pakkumiseks kvalifitseerunud 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i (üles / alla). Sinna pääseb ainult arvestitaguse salvestiga, agregaatori kaudu.
+      - ⚠ lukukorjaus: reservien osuudet ovat todennettua KAPASITEETTIA, ei tuotantoa (Fingrid 10.2.2025; vartijat reservi-*)
+      - **Korjaus:**
+- [ ] ⚠ `p` **muutettu** — Ärikinnistu hind arvutatakse puhastulust: iga euro, mille võrra püsikulu langeb, tõstab väärtust mitmekordselt. Näidisarvutus: püsiv 10 000 euro suurune aastane sääst tähendab 10 % tootlusnõude juures ligikaudu 100 000 ja 8 % juures ligikaudu 125 000 eurot kõrgemat väärtust. Arvestame ainult püsiva osa: võimsustasu ja energiakulu. Reserviturutulu sõltub turuhinnast ja seda väärtusesse ei arvestata.
+      - main: Seadmed tulevad mitmelt tootjalt ja tarneaeg kinnitatakse pakkumises seadme kaupa. Paigaldust juhib meie paigaldusjuht koos partneritega. Pärast käikulaskmist jälgivad süsteemi agregaator ja meie, hooldus käib lepingu järgi. Partnerid ja tooted
+      - **Korjaus:**
+
+### #tarne
+
+- [ ] `h2` **muutettu** — Mida me tarnime ja mida seadmetelt nõuame.
+      - main: Mida me tarnime – ja mida seadmetelt nõuame.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Vaadake salvestikappi oma hoovis.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Telefoni kaamerapildis näete kappi päris suuruses täpselt seal, kuhu te seda kavandate. Arvutis saab mudelit pöörata ja igast küljest vaadata.
+      - **Korjaus:**
+- [ ] `button` **uusi** — Ava kapp 3D-vaates
+      - **Korjaus:**
+- [ ] `p` **uusi** — Mõõdud on tootja andmetest. Kappide mudel ja arv märgitakse pakkumisse teie objekti järgi.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Välispaigalduseks sobiv salvestikapp, inverter ja juhtimine, mõõdetud teie liitumise ja tarbimisprofiili järgi, ühest üksusest mitme üksuse pargini.
+      - main: Välispaigalduseks sobiv salvestikapp, inverter ja juhtimine, mõõdetud teie liitumise ja tarbimisprofiili järgi – ühest üksusest mitme üksuse pargini.
+      - **Korjaus:**
+
+### #kellele-miks
+
+- [ ] ⚠ `h2` **uusi** — Kus salvesti end kõige kiiremini ära tasub ja miks.
+      - ⚠ perustajan päätös 10.09.2026 — varaus "usein"/"sageli" poistettu, kumoaa päätöksen D16 (08.09)
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Salvesti võimsus jagatakse mitme töö vahel: teie enda tarbimise optimeerimine (tipud, odavad tunnid), arbitraaž börsil ja reserviturg (valmisolek Eleringile). Agregaator müüb võimsust mitmel turul korraga: see on mitmeturuteenus. Kui suur osa läheb millisele tööle, määrab teie tarbimisprofiil. See on hinnangu kõige tähtsam rida.
+      - main: Aku ootab pooleldi laetuna ja on Eleringi reserviturul saadaval. Valmisoleku eest makstakse ka siis, kui aktiveerimist ei tule.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Varutoide on siin sama tähtis kui sääst. Selleks peab süsteem olema ehitatud saartalitluseks ja kriitiline ahel eraldatud; see projekteeritakse iga objekti jaoks eraldi.
+      - main: Jah, kui süsteem on ehitatud saartalitluseks: inverter, eralduslüliti ja kriitiline ahel dimensioneeritakse selleks. Hindamisel ütleme, mida see teie objektil tähendab.
+      - **Korjaus:**
+
 ### #kihid
 > Lähde tälle osiolle: Allikad: Elering, põhivõrgu pingetasemed · Elektrilevi, võrgupaketid ärikliendile · tootjate tooteinfo, loetud 1.11.2026.
 
@@ -427,80 +911,6 @@ Vastine mainissa: `/et/energiasalvestid/`
       - **Korjaus:**
 - [ ] `p` **muutettu** — Liitiumraudfosfaatelemendid (LFP) koondatakse mooduliteks ja moodulid akupankadeks. Akuhaldus mõõdab iga elemendi pinget, temperatuuri ja laetuse taset ning hoiab need lubatud vahemikus.
       - main: Nõuame tootjalt LFP-keemiat, rakutaseme jälgimisega akuhaldust, temperatuurijuhtimist, välitingimustele vastavat kappi ja CE- ning transpordisertifikaate. Tootja garantii ja hooldustingimused on hinnangus eraldi real. Kõik nõuded →
-      - **Korjaus:**
-
-### #rev-energiasalvestid-3
-> Lähde tälle osiolle: Milline osa on teie objektil suurim, selgub tarbimisandmetest. Sellepärast algab kõik tasuta hinnangust.
-
-- [ ] `td` **muutettu** — Päevasisene hinnavahe ja salvesti maht
-      - main: Päevasisene hinnavahe ja aku maht
-      - **Korjaus:**
-
-### #arve
-> Lähde tälle osiolle: Allikas: Elering, sagedusreservide turu kokkuvõte · juuli 2026, tabel 2
-> Lähde tälle osiolle: Allikas: Konkurentsiameti otsus nr 7-3/2026-028 · 2.3.2026, hinnakiri kehtib 1.6.2026 alates · käibemaksuta
-> Lähde tälle osiolle: Allikas: Konkurentsiameti otsus nr 7-3/2026-028 · 2.3.2026, pakett Võimsus VMA2 · käibemaksuta
-> Lähde tälle osiolle: Näidisarvutus. Teie objekti tootlusnõue sõltub kinnisvara liigist ja asukohast. Hinnangus arvutame selle teie enda andmetega.
-
-- [ ] `h2` **uusi** — Mis teie arvel ja kinnistul muutub.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Reserviturg: tasu reserveeritud võimsuse eest, ka öösel.
-      - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — Elering ostab sagedusreserve iga päev, ka öösel ja nädalavahetusel. Juulis 2026 oli Eestis reservitoodete pakkumiseks kvalifitseerunud 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i (üles / alla). Sinna pääseb ainult arvestitaguse salvestiga, agregaatori kaudu.
-      - ⚠ lukukorjaus: reservien osuudet ovat todennettua KAPASITEETTIA, ei tuotantoa (Fingrid 10.2.2025; vartijat reservi-*)
-      - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Ärikinnistu hind arvutatakse puhastulust: iga euro, mille võrra püsikulu langeb, tõstab väärtust mitmekordselt. Näidisarvutus: püsiv 10 000 euro suurune aastane sääst tähendab 10 % tootlusnõude juures ligikaudu 100 000 ja 8 % juures ligikaudu 125 000 eurot kõrgemat väärtust. Arvestame ainult püsiva osa: võimsustasu ja energiakulu. Reserviturutulu sõltub turuhinnast ja seda väärtusesse ei arvestata.
-      - main: Seadmed tulevad mitmelt tootjalt ja tarneaeg kinnitatakse pakkumises seadme kaupa. Paigaldust juhib meie paigaldusjuht koos partneritega. Pärast käikulaskmist jälgivad süsteemi agregaator ja meie, hooldus käib lepingu järgi. Partnerid ja tooted
-      - **Korjaus:**
-
-### #kellele-miks
-
-- [ ] ⚠ `h2` **uusi** — Kus salvesti end kõige kiiremini ära tasub ja miks.
-      - ⚠ perustajan päätös 10.09.2026 — varaus "usein"/"sageli" poistettu, kumoaa päätöksen D16 (08.09)
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Salvesti võimsus jagatakse mitme töö vahel: teie enda tarbimise optimeerimine (tipud, odavad tunnid), arbitraaž börsil ja reserviturg (valmisolek Eleringile). Agregaator müüb võimsust mitmel turul korraga: see on mitmeturuteenus. Kui suur osa läheb millisele tööle, määrab teie tarbimisprofiil. See on hinnangu kõige tähtsam rida.
-      - main: Aku ootab pooleldi laetuna ja on Eleringi reserviturul saadaval. Valmisoleku eest makstakse ka siis, kui aktiveerimist ei tule.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Varutoide on siin sama tähtis kui sääst. Selleks peab süsteem olema ehitatud saartalitluseks ja kriitiline ahel eraldatud; see projekteeritakse iga objekti jaoks eraldi.
-      - main: Jah, kui süsteem on ehitatud saartalitluseks: inverter, eralduslüliti ja kriitiline ahel dimensioneeritakse selleks. Hindamisel ütleme, mida see teie objektil tähendab.
-      - **Korjaus:**
-
-### #oopaev
-
-- [ ] `h2` **muutettu** — Kuidas salvesti päev välja näeb.
-      - main: Kuidas aku päev välja näeb.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Üks salvesti, neli tööd, üks ööpäev. Kell liigub, salvesti laeb odavalt, lõikab hommikutipu, ootab valmis ja annab energia välja siis, kui see on kallis. Terve aja on ta Eleringile kättesaadav.
-      - main: Üks aku, neli tööd, üks ööpäev. Kell liigub, aku laeb odavalt, lõikab hommikutipu, ootab valmis ja annab energia välja siis, kui see on kallis. Terve aja on ta Eleringile kättesaadav.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Salvesti laeb siis, kui börsihind on päeva madalaim. Sama energia müüakse hiljem tagasi kallilt või kasutatakse tipu ajal.
-      - main: Aku laeb siis, kui börsihind on päeva madalaim. Sama energia müüakse hiljem tagasi kallilt või kasutatakse tipu ajal.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Hommikune käivitustipp ei jõua võrguarvele: salvesti annab puuduva võimsuse ise. Võimsustasu arvestatakse tipu järgi, seega just see hetk maksab.
-      - main: Hommikune käivitustipp ei jõua võrguarvele: aku annab puuduva võimsuse ise. Võimsustasu arvestatakse tipu järgi, seega just see hetk maksab.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Salvesti ootab pooleldi laetuna ja on Eleringi reserviturul saadaval. Ta teenib valmisolekust ka siis, kui aktiveerimist ei tule.
-      - main: Aku ootab pooleldi laetuna ja on Eleringi reserviturul saadaval. Valmisoleku eest makstakse ka siis, kui aktiveerimist ei tule.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Õhtutipp ja päeva kalleim elekter langevad kokku. Salvesti annab energia välja ja laeb öösel uuesti.
-      - main: Õhtutipp ja päeva kalleim elekter langevad kokku. Aku annab energia välja ja laeb öösel uuesti.
-      - **Korjaus:**
-
-### #tarne
-
-- [ ] `h2` **muutettu** — Mida me tarnime ja mida seadmetelt nõuame.
-      - main: Mida me tarnime – ja mida seadmetelt nõuame.
-      - **Korjaus:**
-- [ ] `h3` **uusi** — Vaadake salvestikappi oma hoovis.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Telefoni kaamerapildis näete kappi päris suuruses täpselt seal, kuhu te seda kavandate. Arvutis saab mudelit pöörata ja igast küljest vaadata.
-      - **Korjaus:**
-- [ ] `button` **uusi** — Ava kapp 3D-vaates
-      - **Korjaus:**
-- [ ] `p` **uusi** — Mõõdud on tootja andmetest. Kappide mudel ja arv märgitakse pakkumisse teie objekti järgi.
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Välispaigalduseks sobiv salvestikapp, inverter ja juhtimine, mõõdetud teie liitumise ja tarbimisprofiili järgi, ühest üksusest mitme üksuse pargini.
-      - main: Välispaigalduseks sobiv salvestikapp, inverter ja juhtimine, mõõdetud teie liitumise ja tarbimisprofiili järgi – ühest üksusest mitme üksuse pargini.
       - **Korjaus:**
 
 ### #kkk
@@ -556,12 +966,113 @@ Vastine mainissa: `/et/paike-ja-aku/`
 - [ ] `b` **uusi** — Iga katus
       - **Korjaus:**
 
+### #tooted
+> Lähde tälle osiolle: Allikas: Ralos Oy, brošüür RLS-585, 6/2023
+> Lähde tälle osiolle: Allikas: Ralos Oy, brošüür RLS-480, 6/2023
+> Lähde tälle osiolle: Allikas: Ralos Oy, tehniline andmeleht Ralos Beast 125, versioon V10, kontrollitud 9.11.2026
+> Lähde tälle osiolle: Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
+> Lähde tälle osiolle: Allikas: Elecnova, tooteleht ECO-E64WX, loetud 9.11.2026
+
+- [ ] `h2` **uusi** — Paneelid ja salvestid.
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Päikesepaneelid ja päikeseelektriga koos töötavad salvestid kolmelt tootjalt: Ralos, Elecnova ja EP Energy.
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `label` **uusi** — Kõik 5
+      - **Korjaus:**
+- [ ] `label` **uusi** — Päikesepaneelid 2
+      - **Korjaus:**
+- [ ] `label` **uusi** — Päike ja salvesti 3
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Ralos
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `h3` **uusi** — RLS-585
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kahepoolne päikesepaneel, HJT-elemendid
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Võimsus
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 585 W
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Kasutegur
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 22,4 %
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Kahepoolsus
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 90 %
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Mõõdud
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 2,38 × 1,10 m
+      - **Korjaus:**
+- [ ] `h3` **uusi** — RLS-480
+      - **Korjaus:**
+- [ ] `p` **uusi** — Täismust kahepoolne päikesepaneel, HJT-elemendid
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 480 W
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 22,3 %
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 1,96 × 1,10 m
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Beast 125 HD
+      - **Korjaus:**
+- [ ] `p` **uusi** — Vedelikjahutusega salvesti sise- või välipaigalduseks
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 125 kW
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Energia
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 261 kWh
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Varutoide, lisavarustus
+      - **Korjaus:**
+- [ ] `dd` **uusi** — STS, alla 10 ms
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Päikeseelekter, lisavarustus
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 2 × 63 kW
+      - **Korjaus:**
+- [ ] `p` **uusi** — EP Energy
+      - **Korjaus:**
+- [ ] `h3` **uusi** — EPHS104 / EPHS156
+      - **Korjaus:**
+- [ ] `p` **uusi** — Hübriidkapp päikeseelektrile
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 50 kW
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 104 või 156 kWh
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — kuni 100 kW
+      - **Korjaus:**
+- [ ] `dd` **uusi** — alla 10 ms
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Elecnova
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `h3` **uusi** — ECO-E64WX
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 25–50 kW
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 64,5 kWh
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 37,5–75 kW
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Jahutus
+      - **Korjaus:**
+- [ ] `dd` **uusi** — õhk
+      - **Korjaus:**
+- [ ] `p` **uusi** — Tehnilised andmed on tootjate andmelehtedelt ja brošüüridelt. Paneelid, jaama suurus ja inverterid valitakse teie objekti tarbimise, katuse ja liitumise järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega. Varutoide hõlmab valitud ahelaid, mis kavandatakse objektikülastusel.
+      - **Korjaus:**
+
 ### #lahendused
 > Lähde tälle osiolle: Hinnangus kontrollime iga varianti teie objekti tunnitarbimise, katuse ja liitumise järgi.
 
-- [ ] `h2` **uusi** — Viis võimalust päikeseelektriks. Üks mõõtmise põhimõte.
+- [ ] `h2` **uusi** — Viis võimalust päikeseelektriks. Üks dimensioneerimise põhimõte.
       - **Korjaus:**
-- [ ] `p` **uusi** — Lahendus valitakse selle järgi, mis kinnistul on: korras katus, uuendamist vajav katus, õu, parkla või juba olemasolev päikesejaam. Mõõtmine lähtub alati tarbimisest, et võimalikult suur osa toodangust läheks oma kasutusse.
+- [ ] `p` **uusi** — Lahendus valitakse selle järgi, mis kinnistul on: korras katus, uuendamist vajav katus, õu, parkla või juba olemasolev päikesejaam. Dimensioneerimine lähtub alati tarbimisest, et võimalikult suur osa toodangust läheks oma kasutusse.
       - **Korjaus:**
 - [ ] `h3` **uusi** — Milline lahendus teile sobib
       - **Korjaus:**
@@ -714,10 +1225,10 @@ Vastine mainissa: `/et/paike-ja-aku/`
       - **Korjaus:**
 - [ ] `h3` **uusi** — Vabad tunnid Eleringi reservidesse
       - **Korjaus:**
-- [ ] `p` **uusi** — Tundidel, kui salvestit omatarbeks ei vajata, pakub agregaator seda Eleringi reserviturule. Reservitulu modelleeritakse tooteti tegelikest tunnihindadest ja agregaatori tasu on eraldi real. Kuidas agregaator töötab
+- [ ] `p` **uusi** — Tundidel, kui salvestit omatarbeks ei vajata, pakub agregaator seda Eleringi reserviturule. Reservitulu modelleeritakse toodete kaupa tegelike tunnihindade põhjal ja agregaatori tasu on eraldi real. Kuidas agregaator töötab
       - **Korjaus:**
 
-### #rev-paikeseelekter-7
+### #rev-paikeseelekter-8
 
 - [ ] `h2` **uusi** — Päike, salvesti või mõlemad?
       - **Korjaus:**
@@ -1088,7 +1599,7 @@ Vastine mainissa: `/et/protsess/`
 
 - [ ] `h2` **uusi** — Hinnang, projekt, portfell.
       - **Korjaus:**
-- [ ] `p` **uusi** — Sama viis rida iga toote kohta, et võrdlus oleks lihtne.
+- [ ] `p` **uusi** — Sama neli rida iga toote kohta, et võrdlus oleks lihtne.
       - **Korjaus:**
 - [ ] `figcaption` **uusi** — Teie andmed keskel, teiste tingimused ümber: üks arvutus.
       - **Korjaus:**
@@ -1121,7 +1632,7 @@ Vastine mainissa: `/et/protsess/`
       - **Korjaus:**
 - [ ] `dd` **uusi** — Otsuse hinnangu põhjal, ligipääsu objektile ja kaks allkirja: EPC-leping meiega ja teenusleping agregaatoriga.
       - **Korjaus:**
-- [ ] `dd` **uusi** — Objektikülastusest käivitamiseni sõltub võrguettevõtja vastusest ja tarnest; ooteajad on hinnangus eraldi välja toodud.
+- [ ] `dd` **uusi** — Aeg objektikülastusest käivitamiseni sõltub võrguettevõtja vastusest ja tarnest; ooteajad on hinnangus eraldi välja toodud.
       - **Korjaus:**
 - [ ] `dd` **uusi** — Tulu algab pärast agregaatoriga liitumist; meie jälgime, et süsteem teeks seda, mida hinnang näitas.
       - **Korjaus:**
@@ -1135,7 +1646,7 @@ Vastine mainissa: `/et/protsess/`
       - **Korjaus:**
 - [ ] `dd` **uusi** — Hinnang objektide arvu järgi; esimene objekt läheb töösse, kui teised on veel hinnangus.
       - **Korjaus:**
-- [ ] `dd` **uusi** — Iga objekt käib sama nelja sammu läbi; portfell kasvab objekt haaval.
+- [ ] `dd` **uusi** — Iga objekt käib sama viie sammu läbi; portfell kasvab objekt haaval.
       - **Korjaus:**
 
 ### #kuidas
@@ -1145,6 +1656,11 @@ Vastine mainissa: `/et/protsess/`
 - [ ] `h3` **uusi** — Tasuta hinnang
       - **Korjaus:**
 - [ ] `p` **uusi** — Kümme fotot peakilbist ja paigalduskohast ning lühike videokõne teie hooldajaga; elektrik ütleb, kas ja mis tingimustel saab. Ta annab ka eelarve suurusjärgu.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Elektrik käib kohal, mõõdab kaablitee, kilbi ja paigalduskoha ning kinnitab hinna. Samal ajal saadame võrguettevõtjale kirjaliku päringu.
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Kui hind on kinnitatud ja võrguettevõtja kirjalik vastus käes, paneme kõrvuti kolm teed: omakapital, liising ja järelmaks. Näete ühte tabelit, kus on kuumakse, omafinantseering ja see, mis pärast makset alles jääb. Rahastajaga suhtleme meie.
+      - ⚠ rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)
       - **Korjaus:**
 - [ ] ⚠ `p` **uusi** — Esimene samm ei kohusta millekski. Andmed ja arve teilt, kirjalik hinnang meilt kahe tööpäevaga pärast andmete saamist.
       - ⚠ perustajan päätös 04.11.2026 (I-20261104-7) — lupaus, sama kaikilla sivuilla
@@ -1287,6 +1803,9 @@ Vastine mainissa: `/et/meist/`
 - [ ] `p` **muutettu** — Taastuvenergia müügis alates 2014. aastast, algul Austraalias, seejärel Soomes ja Eestis: päikeseelektri lahendused kodudele ja ettevõtetele, viimastel aastatel tööstuslikud energiasalvestid, energiajuhtimine ja reserviturg. Vastutab kliendisuhete, agregaatoripartnerluste ja hinnangu eest. Tema kaudu käib kogu suhtlus enne allkirja.
       - main: Taastuvenergia müügis alates 2014. aastast, algul Austraalias, seejärel Soomes ja Eestis: päikeseelektri lahendused kodudele ja ettevõtetele, viimastel aastatel tööstuslikud energiasalvestid, energiajuhtimine ja reserviturg. Vastutab kliendisuhete, agregaatoripartnerluste ja hinnangu eest – tema kaudu käib kogu suhtlus enne allkirja.
       - **Korjaus:**
+- [ ] `p` **muutettu** — madis.maastik@samaenergia.fi+358 44 965 4614
+      - main: madis.maastik@samaenergia.fi+358 449 654 614
+      - **Korjaus:**
 - [ ] ⚠ `p` **muutettu** — Vastutab: ettevõtte suund, tegevuse planeerimine ja tarnete läbiviimine; partnerlused, lepingud ja finantseerimislahendused. Hoolitseb selle eest, et iga projekt liigub kokkulepitud järjekorras.
       - main: Vastutab: ettevõtte suund, tegevuse planeerimine ja tarnete läbiviimine – partnerlused, lepingud ja finantseerimislahendused. Hoolitseb selle eest, et iga projekt liigub kokkulepitud järjekorras.
       - ⚠ CLAUDEN KIRJOITTAMA ET-teksti 13.09.2026 — ei natiivin tarkistama. Tarkista sanavalinnat ja sävy: tämä on uusi vastuukuvaus (perustajapäätös 13.09.2026).
@@ -1307,10 +1826,30 @@ Vastine mainissa: `/et/meist/`
 - [ ] ⚠ `li` **uusi** — Elecnovaväliskapid ja konteinersalvestid
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
+- [ ] `li` **uusi** — EP Energysalvestikapid ja konteinersalvestid
+      - **Korjaus:**
+- [ ] ⚠ `li` **muutettu** — Avant Powerenergiasalvestid ja mikrovõrgud
+      - main: Energiasalvestid, laadimine ja mikrovõrgud
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
 - [ ] ⚠ `li` **uusi** — Ralos Oypäikeseelektrijaamad ettevõtetele
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Scanoffice Oypäikesepaneelid maaletoojalt
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
 - [ ] `li` **uusi** — SAMApaigaldus katusele, maale ja katusesse integreerituna
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Laadimine ja soojuspumbad
+      - **Korjaus:**
+- [ ] `li` **uusi** — EP Energyteisaldatavad energiaseadmed ja kiirlaadijad
+      - **Korjaus:**
+- [ ] ⚠ `li` **muutettu** — Avant Powermikrovõrgud, teisaldatav energia ja laadimine
+      - main: Energiasalvestid, laadimine ja mikrovõrgud
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `li` **uusi** — Scanoffice Oyõhk-, õhk-vesi- ja maasoojuspumbad ning laadimisjaamad
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
 - [ ] `h3` **uusi** — Energiajuhtimine ja reserviturg
       - **Korjaus:**
@@ -1326,6 +1865,12 @@ Vastine mainissa: `/et/meist/`
 - [ ] ⚠ `p` **muutettu** — Rahastus. Liisingrahastus on võimalik korraldada ärirahastajate kaudu. Rahastaja ja tingimused valitakse objekti ja ostja järgi ning omakapitali ja liisingu võrdlus on hinnangus samade numbrite pealt.
       - main: Mitu tootjat, mudel objekti järgi. Võrdlus on hinnangus samade numbritega.
       - ⚠ rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)
+      - **Korjaus:**
+
+### #ettevote
+
+- [ ] `dd` **muutettu** — Neljas keelesEesti, soome, inglise ja rootsi: hinnang, load ja lepingud teie keeles
+      - main: Neljas keelesHinnang, load ja lepingud teie keeles
       - **Korjaus:**
 
 ### #tootjatele
@@ -1364,11 +1909,21 @@ Vastine mainissa: `/et/uudised/`
 
 - [ ] `h2` **uusi** — Ülevaated
       - **Korjaus:**
+- [ ] `p` **uusi** — „Sama rida, kaks poolt: tarbija maksab, valmisolek saab.“
+      - **Korjaus:**
+- [ ] `figcaption` **uusi** — Kaart lehelt Ühine võrk, kus on numbrid koos allikatega.
+      - **Korjaus:**
 - [ ] `p` **muutettu** — Ajavahemikul 1.1.–31.12.2026 kestab üleminekuperiood, mille jooksul viiakse ajutiselt Estfeediga liidestatud mõõteseadmed üle AMR-süsteemi. Pärast seda peab mõõtelahendus vastama nõuetele täielikult, et salvestatud ja võrku tagastatud energiat võrgutasus õigesti käsitletaks. Mõõtmine tasub projekteerida algusest õigesti: see on odavam kui hiljem ümber ehitada.
       - main: Ajavahemikul 1.1.–31.12.2026 kestab üleminekuperiood, mille jooksul viiakse ajutiselt Estfeediga liidestatud mõõteseadmed üle AMR-süsteemi. Pärast seda peab mõõtelahendus vastama nõuetele täielikult, et salvestatud ja võrku tagastatud energiat võrgutasus õigesti käsitletaks. Mõõtmine tasub projekteerida algusest õigesti – see on odavam kui hiljem ümber ehitada.
       - **Korjaus:**
 - [ ] `p` **muutettu** — Elektrituruseaduse § 71 lg 10¹ järgi ei võeta edastamistasu selle elektrienergia eest, mille salvesti salvestusperioodi vältel võrgust salvestab ja samal perioodil võrku tagastab; salvestusperiood on kalendrikuu (§ 3 p 22⁴). See parandab projekti tasuvust oluliselt, kui mõõtmine vastab nõuetele.
       - main: Elektrituruseaduse § 71 lg 10¹ järgi ei võeta edastamistasu selle elektrienergia eest, mille salvesti salvestusperioodi vältel võrgust salvestab ja samal perioodil võrku tagastab; salvestusperiood on kalendrikuu (§ 3 p 22⁴). See parandab projekti tasuvust oluliselt – eeldusel, et mõõtmine vastab nõuetele.
+      - **Korjaus:**
+- [ ] `h3` **muutettu** — Energiaauditi kohustus laienes: piir tarbimise, mitte ettevõtte suuruse järgi
+      - main: Energiaauditi kohustus laieneb: piir tarbimise, mitte ettevõtte suuruse järgi
+      - **Korjaus:**
+- [ ] ⚠ `p` **muutettu** — Uuendatud energiatõhususe direktiiv (EL) 2023/1791 artikkel 11 seob kohustusliku energiaauditi aastase tarbimisega üle 10 TJ ehk umbes 2 800 MWh. Selle piiri ületajad pidid auditi tegema 11.10.2026-ks, kui neil pole sertifitseeritud energiajuhtimissüsteemi; riigisisene ülevõtmine võib piiri ja tähtaega täpsustada. Auditi andmed on ühtlasi salvesti ja päikeseelektri hinnangu alus.
+      - main: Uuendatud energiatõhususe direktiiv (EL) 2023/1791 artikkel 11 seob kohustusliku energiaauditi aastase tarbimisega üle 10 TJ ehk umbes 2 800 MWh. Selle piiri ületajad peavad auditi tegema 11.10.2026-ks, kui neil pole sertifitseeritud energiajuhtimissüsteemi; riigisisene ülevõtmine võib piiri ja tähtaega täpsustada. Auditi andmed on ühtlasi salvesti ja päikeseelektri hinnangu alus.
       - **Korjaus:**
 - [ ] `p` **muutettu** — Me ei kirjuta kõike ise. Need on allikad, mida me tegelikult kasutame. Iga allika juures on üks rida selle kohta, miks just see tekst on lugemisväärne. Lingid viivad meie lehelt ära.
       - main: Me ei kirjuta kõike ise. Need on allikad, mida me tegelikult kasutame, ja üks rida selle kohta, miks just see tekst on lugemisväärne. Lingid viivad meie lehelt ära.
@@ -1470,6 +2025,14 @@ Vastine mainissa: `/et/kontakt/`
 - [ ] `p` **muutettu** — Teie annate: oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt, juhendame), ühe elektriarve ja peakilbi skeemi.
       - main: Teie annate: oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt – juhendame), ühe elektriarve ja peakilbi skeemi.
       - **Korjaus:**
+- [ ] `label` **muutettu** — Päikeseelekterpaneelid ja päikesekatused
+      - main: Päikeseelekter
+      - **Korjaus:**
+- [ ] `label` **muutettu** — Energiasalvestiaku ja reserviturg
+      - main: Energiasalvestid
+      - **Korjaus:**
+- [ ] `label` **uusi** — Elektriauto laadiminelaadimispunktid ja nende võimsus
+      - **Korjaus:**
 - [ ] `p` **muutettu** — Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hinnangu tegemiseks, privaatsuspoliitikat.
       - main: Vastame kahe tööpäeva jooksul. Andmeid kasutame ainult hindamiseks, privaatsuspoliitikat.
       - **Korjaus:**
@@ -1481,6 +2044,15 @@ Vastine mainissa: `/et/kontakt/`
       - **Korjaus:**
 - [ ] `p` **muutettu** — Hinnangud, agregaatorid, kliendisuhted
       - main: Hindamine, agregaatorid, kliendisuhted
+      - **Korjaus:**
+- [ ] `p` **muutettu** — madis.maastik@samaenergia.fi+358 44 965 4614
+      - main: madis.maastik@samaenergia.fi+358 449 654 614
+      - **Korjaus:**
+- [ ] `li` **muutettu** — +358 44 965 4614
+      - main: +358 449 654 614
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Vastame kahe tööpäeva jooksul, ka siis, kui vastus on „ei tasu ära“. Töökeeled: eesti, soome ja inglise; kirjalikud dokumendid ka rootsi keeles.
+      - main: Vastame kahe tööpäeva jooksul, ka siis, kui vastus on „ei tasu ära“. Töökeeled: eesti, soome, inglise.
       - **Korjaus:**
 
 ---
@@ -1496,6 +2068,14 @@ Vastine mainissa: `/et/andmekaitse/`
 
 ### #rev-andmekaitse-2
 
+- [ ] ⚠ `p` **muutettu** — SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsingi, Soome · Soome registrikood (Y-tunnus) 3647683-6 · KMKR-nr FI36476836 · info@samaenergia.fi · +358 44 965 4614.
+      - main: SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsingi, Soome · Soome registrikood (Y-tunnus) 3647683-6 · KMKR-nr FI36476836 · info@samaenergia.fi · +358 449 654 614.
+      - ⚠ osoite vahvistettu 06.09.2026
+      - ⚠ Y-tunnus korjattu 09.09.2026: vanha 3647683-3 ei läpäissyt tarkistusmerkkilaskentaa; oikea on 3647683-6 / FI36476836
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Kontaktivormil antud andmed: nimi, ettevõte, e-post, telefon, objekti asukoht, liitumis- ja tarbimisandmed, teie vastus küsimusele „Mis teid huvitab?“ ning sõnum. Lisaks veebilehe tehniline serverilogi (sh IP-aadress ja ajatempel), mille majutusteenus toodab teenuse osutamiseks ja turvalisuse tagamiseks. Sait ei kasuta küpsiseid, analüütikat ega salvestatud eelistusi.
+      - main: Kontaktivormil antud andmed: nimi, ettevõte, e-post, telefon, objekti asukoht, liitumis- ja tarbimisandmed ning sõnum. Lisaks veebilehe tehniline serverilogi (sh IP-aadress ja ajatempel), mille majutusteenus toodab teenuse osutamiseks ja turvalisuse tagamiseks. Sait ei kasuta küpsiseid, analüütikat ega salvestatud eelistusi.
+      - **Korjaus:**
 - [ ] `p` **muutettu** — Et vastata teie pöördumisele ja valmistada ette teie soovitud hinnangut (lepingueelsed meetmed, isikuandmete kaitse üldmääruse artikli 6 lõike 1 punkt b) ning õigustatud huvi alusel (artikli 6 lõike 1 punkt f) kliendisuhte haldamiseks ja turvalisuse tagamiseks. Me ei kasuta andmeid muuks turunduseks ilma eraldi nõusolekuta.
       - main: Et vastata teie pöördumisele ja valmistada ette teie soovitud hindamist (lepingueelsed meetmed, isikuandmete kaitse üldmääruse artikli 6 lõike 1 punkt b) ning õigustatud huvi alusel (artikli 6 lõike 1 punkt f) kliendisuhte haldamiseks ja turvalisuse tagamiseks. Me ei kasuta andmeid muuks turunduseks ilma eraldi nõusolekuta.
       - **Korjaus:**
@@ -1503,6 +2083,9 @@ Vastine mainissa: `/et/andmekaitse/`
       - **Korjaus:**
 - [ ] `p` **muutettu** — Kui kirjutate aadressi kaardi otsinguväljale, edastab meie server otsingu teksti Maa- ja Ruumiameti (Eesti) või Soome Maanmittauslaitose aadressiteenusesse ning valitud koha koordinaadid Euroopa Komisjoni Teadusuuringute Ühiskeskuse PVGIS-teenusesse päikesetoodangu arvutamiseks. Ka lähikaardi kaardiruudud laadib meie server nendest teenustest. Teie brauser nende teenustega ei suhtle ja teie IP-aadressi neile ei edastata. Me ei salvesta otsinguid ega asukohta. Brauseri asukohta kasutatakse ainult siis, kui vajutate nuppu ja annate loa, ning see jääb brauserisse. Vormi läheb asukoht ainult siis, kui te selle ise sinna viite ja vormi saadate.
       - main: Kontaktivormil antud andmed: nimi, ettevõte, e-post, telefon, objekti asukoht, liitumis- ja tarbimisandmed ning sõnum. Lisaks veebilehe tehniline serverilogi (sh IP-aadress ja ajatempel), mille majutusteenus toodab teenuse osutamiseks ja turvalisuse tagamiseks. Sait ei kasuta küpsiseid, analüütikat ega salvestatud eelistusi.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Uuendatud 09.11.2026. Kui tingimused muutuvad, on uusim versioon alati sellel lehel.
+      - main: Uuendatud 08.09.2026. Kui tingimused muutuvad, on uusim versioon alati sellel lehel.
       - **Korjaus:**
 
 ---
