@@ -648,6 +648,12 @@
   },
   {
    "page": "/teenused/",
+   "sectionId": "rev-teenused-4",
+   "kind": "changed",
+   "prev": "Neli reeglit, mille järgi iga hinnang valmib.Need on samad igal objektil, väikesest suureni. Iga arv kirjalikult, koos allikagaHinnangus pole ühtegi numbrit, mille päritolu te ei saaks ise üle kontrollida. Kui midagi on eeldus, on see eeldusena märgitud. Reservitulu analüüsitult, mitte arvatultNäitame vahemikku, sest turg muutub. Vahemik tuleb sellest, mida Elering tegelikult hangib ja mis on tulemas, mitte kellegi tundest. Võrguettevõtja seisukoht enne kapitaliTehnilised tingimused ja liitumise vastus on käes enne, kui te raha välja panete. Ooteajad on hinnangus eraldi välja toodud. Juhime projekti algusest lõpuniSeadmed valime teie objekti järgi, koostöös maaletoojatega. Paigaldus, load, dokumentatsioon ja ülevaade käivad ühe kontakti kaudu. Tavaline pakkumine turul Suulised lubadused ja „umbes“ numbrid Tasuvusaeg keskmiste eelduste pealt Otsus enne võrguettevõtja vastust Reservitulu kas vaikitakse maha või lubatakse üle Iga arv kirjalikult, koos allika ja kuupäevaga Arvutus teie enda tunnipõhistest tarbimisandmetest Võrguettevõtja seisukoht käes enne kapitali sidumist Reservituru loogika selgitatud, tulu analüüsitud toodete kaupa"
+  },
+  {
+   "page": "/teenused/",
    "sectionId": "rev-teenused-5",
    "kind": "changed",
    "prev": "Esimene samm on tasuta.Küsimustik ja tarbimisandmed, ja te teate kahe tööpäevaga, kas ja kuidas edasi minna.Küsi tasuta hindamist"

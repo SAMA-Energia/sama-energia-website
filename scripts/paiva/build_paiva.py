@@ -46,21 +46,21 @@ STYLE = '.kd{display:block;width:100%;height:auto}.kd text{font:500 12px var(--f
 
 TXT = {
     'et': dict(
-        t_use='Tarbimine', t_price='Hind tunnis', t_bat='Salvesti',
+        t_use='Tarbimine', t_price='Börsihind', t_bat='Salvesti',
         f0='peakaitse praegu', f1='tarbimise järgi',
         cheap='odav', dear='kallis', res='reserv', chg='sisse', peak='tipp', dis='välja',
         v1='Püsikulu', v2='Väärtus', night='öö',
-        title='Põhimõtteline ööpäev: tarbimine, peakaitse, tunnihind ja salvesti töö',
+        title='Põhimõtteline ööpäev: tarbimine, peakaitse, börsihind ja salvesti töö',
         desc='Salvesti on reservis ka öösel. Hommikutipu katab salvesti ja peakaitse saab valida tarbimise järgi. '
-             'Odaval tunnil laeb salvesti sisse, kallil annab välja. Kokku: väiksem püsikulu, kõrgem kinnistu hind.'),
+             'Kui elekter on odav, laeb salvesti sisse; kui kallis, annab välja. Kokku: väiksem püsikulu, kõrgem kinnistu hind.'),
     'fi': dict(
-        t_use='Kulutus', t_price='Tuntihinta', t_bat='Energiavarasto',
+        t_use='Kulutus', t_price='Pörssihinta', t_bat='Energiavarasto',
         f0='pääsulake nyt', f1='kulutuksen mukaan',
         cheap='halpa', dear='kallis', res='reservi', chg='lataus', peak='huippu', dis='käyttö',
         v1='Kiinteä kulu', v2='Arvo', night='yö',
-        title='Periaatteellinen vuorokausi: kulutus, pääsulake, tuntihinta ja energiavaraston työ',
+        title='Periaatteellinen vuorokausi: kulutus, pääsulake, pörssihinta ja energiavaraston työ',
         desc='Energiavarasto on reservissä myös öisin. Aamun huipun kattaa energiavarasto, joten pääsulakkeen voi valita kulutuksen mukaan. '
-             'Halvoilla tunneilla varasto latautuu ja kalliilla sen energiaa käytetään. Yhteensä: pienempi kiinteä kulu, korkeampi kiinteistön hinta.'),
+             'Kun sähkö on halpaa, varasto latautuu, ja kun se on kallista, sen energiaa käytetään. Yhteensä: pienempi kiinteä kulu, korkeampi kiinteistön hinta.'),
 }
 
 def f(x):
@@ -196,17 +196,17 @@ def svg(lang):
 # osumamääränsä). 9.11.2026 Madis: fix2:n tumma canvas-paneeli pois → tämä vaalea SVG-versio fix1:n selkeytyksineen.
 def fix1(svg, lang):
     L = {
-        'fi': dict(kul='Kulutus', hinta='Tuntihinta', res='reservi', korv='Korvaus valmiudesta',
+        'fi': dict(kul='Kulutus', hinta='Pörssihinta', res='reservi', korv='Korvaus valmiudesta',
                    cost='Kiinteä kulu', val='Kiinteistön arvo', val_old='Arvo',
-                   leg=['reservi: valmiudessa verkolle ↑↓', 'korvaus valmiudesta, tunneittain', 'lataus ↓', 'huippu, käyttö ↑'],
+                   leg=['reservi: valmiudessa verkolle ↑↓', 'korvaus hyväksytyiltä tunneilta', 'lataus ↓', 'huippu, käyttö ↑'],
                    desc_old='Energiavarasto on reservissä myös öisin.',
-                   desc_new='Energiavarasto on reservissä myös öisin, ja valmiudesta maksetaan korvaus tunneittain.',
+                   desc_new='Energiavarasto on reservissä myös öisin. Valmiudesta maksetaan niiltä tunneilta, joilta reservitarjous hyväksytään.',
                    leg_label='Kaavion selite', key='Raidalliset jaksot: varasto on valmiudessa verkolle.', bat='Energiavarasto'),
-        'et': dict(kul='Tarbimine', hinta='Hind tunnis', res='reserv', korv='Tasu valmisoleku eest',
+        'et': dict(kul='Tarbimine', hinta='Börsihind', res='reserv', korv='Tasu valmisoleku eest',
                    cost='Püsikulu', val='Kinnistu väärtus', val_old='Väärtus',
-                   leg=['reserv: valmis võrgu jaoks ↑↓', 'tasu valmisoleku eest, tunni kaupa', 'sisse ↓', 'tipp, välja ↑'],
+                   leg=['reserv: valmis võrgu jaoks ↑↓', 'tasu vastu võetud tundide eest', 'sisse ↓', 'tipp, välja ↑'],
                    desc_old='Salvesti on reservis ka öösel.',
-                   desc_new='Salvesti on reservis ka öösel ja valmisoleku eest makstakse tasu tunni kaupa.',
+                   desc_new='Salvesti on reservis ka öösel. Valmisoleku eest makstakse nende tundide eest, mil reservipakkumine võetakse vastu.',
                    leg_label='Joonise legend', key='Triibulised lõigud: salvesti on valmis võrgu jaoks.', bat='Salvesti'),
     }[lang]
 
@@ -303,8 +303,8 @@ def fix1(svg, lang):
 
 
 def legend(lang):
-    L = {'fi': dict(leg_label='Kaavion selite', leg=['reservi: valmiudessa verkolle ↑↓', 'korvaus valmiudesta, tunneittain', 'lataus ↓', 'huippu, käyttö ↑']),
-          'et': dict(leg_label='Joonise legend', leg=['reserv: valmis võrgu jaoks ↑↓', 'tasu valmisoleku eest, tunni kaupa', 'sisse ↓', 'tipp, välja ↑'])}[lang]
+    L = {'fi': dict(leg_label='Kaavion selite', leg=['reservi: valmiudessa verkolle ↑↓', 'korvaus hyväksytyiltä tunneilta', 'lataus ↓', 'huippu, käyttö ↑']),
+          'et': dict(leg_label='Joonise legend', leg=['reserv: valmis võrgu jaoks ↑↓', 'tasu vastu võetud tundide eest', 'sisse ↓', 'tipp, välja ↑'])}[lang]
     leg = (f'<ul class="kd-leg" aria-label="{L["leg_label"]}">'
            f'<li><i class="kd-sw r"></i>{L["leg"][0]}</li><li><i class="kd-sw t"></i>{L["leg"][1]}</li>'
            f'<li><i class="kd-sw c"></i>{L["leg"][2]}</li><li><i class="kd-sw u"></i>{L["leg"][3]}</li></ul>')

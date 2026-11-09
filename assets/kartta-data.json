@@ -1038,15 +1038,15 @@
     "et": "Kui palju reserve vajatakse ja kes maksab?"
    },
    "concl": {
-    "fi": "Fingrid hankkii joka tunti keskimäärin 1 500 MW reservikapasiteettia ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW lisää, ja reservien kustannukset katetaan tasepalvelumaksuilla, joita Fingrid perii tasevastaavilta.",
+    "fi": "Fingrid hankkii joka tunti keskimäärin 1 500 MW reservikapasiteettia ja arvioi tarvitsevansa vuoteen 2030 mennessä 1 200 MW lisää, ja reservien kustannukset katetaan tasepalvelumaksuilla, joita Fingrid perii tasevastaavilta.",
     "et": "Balti põhivõrguettevõtjate prognoosis kasvab mFRR-reservi vajadus 2035. aastaks üles 604-lt 754 megavatini ja alla 691-lt 991 megavatini. Reservide kulu maksab alates 2026. aastast iga tarbija oma elektriarvel 3,73 eurot megavatt-tunni kohta."
    },
    "big": {
     "FI": {
      "v": "+1 200 MW",
      "l": {
-      "fi": "reservikapasiteettia viiden vuoden päästä · nyt keskimäärin 1 500 MW joka tunti (6/2025)",
-      "et": "reservvõimsust viie aasta pärast · praegu keskmiselt 1 500 MW igas tunnis (6/2025)"
+      "fi": "reservikapasiteettia vuoteen 2030 mennessä · nyt keskimäärin 1 500 MW joka tunti (6/2025)",
+      "et": "reservvõimsust aastaks 2030 · praegu keskmiselt 1 500 MW igas tunnis (6/2025)"
      },
      "src": [
       "fg-web"
@@ -1087,8 +1087,8 @@
        "et": "Hange praegu"
       },
       "v": {
-       "fi": "keskimäärin 1 500 MW joka tunti · viiden vuoden päästä 1 200 MW lisää",
-       "et": "keskmiselt 1 500 MW igas tunnis · viie aasta pärast 1 200 MW rohkem"
+       "fi": "keskimäärin 1 500 MW joka tunti · vuoteen 2030 mennessä 1 200 MW lisää",
+       "et": "keskmiselt 1 500 MW igas tunnis · aastaks 2030 1 200 MW rohkem"
       },
       "s": "Fingrid, 11.6.2025",
       "src": "fg-web"
@@ -1614,8 +1614,8 @@
        "et": "Reservid"
       },
       "v": {
-       "fi": "tarve kasvaa 1 200 MW viidessä vuodessa",
-       "et": "vajadus kasvab viie aastaga 1 200 MW"
+       "fi": "tarve kasvaa 1 200 MW vuoteen 2030 mennessä",
+       "et": "vajadus kasvab 2030. aastaks 1 200 MW"
       },
       "s": "Fingrid, 11.6.2025",
       "src": "fg-web"

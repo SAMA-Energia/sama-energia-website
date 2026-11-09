@@ -29,10 +29,10 @@ Taloudelliset mahdollisuudet kohteessanne, kirjallisesti ja lähteineen.
 Älykkään energianhallinnan, joka muuttaa liittymän kuluerästä omaisuudeksi.
 
 Mikä sähkölaskussanne ja kiinteistössänne muuttuu:
-Reservimarkkinatkapasiteettikorvaus, myös öisin.Tehomaksuthuippu alas, pääsulake kulutuksen mukaan.Energia ja siirtolataus halvoilla tunneilla, käyttö kalliilla.Kiinteistön arvopienempi kiinteä kulu, korkeampi hinta.
+Reservimarkkinatkapasiteettikorvaus, myös öisin.Tehomaksuthuippu alas, pääsulake kulutuksen mukaan.Energia ja siirtolataus halvalla, käyttö kalliilla.Kiinteistön arvopienempi kiinteä kulu, korkeampi hinta.
 
 reservi: valmiudessa verkolle ↑↓
-korvaus valmiudesta, tunneittain
+korvaus hyväksytyiltä tunneilta
 lataus ↓
 huippu, käyttö ↑
 
@@ -57,13 +57,13 @@ Kuinka paljon kulutus kasvaa?
 106–123 TWhvuonna 2030
 2025: 84,6 TWh
 Fingridin skenaarioissa sähkönkulutus kasvaa nykyisestä alle 90 terawattitunnista 106–123 terawattituntiin vuoteen 2030 mennessä.
-Kartan neliöt ovat datakeskushankkeita: täytetyt ovat käytössä tai rakenteilla, ontot suunnitteilla, ja koko kertoo tehon. Fingridin mukaan liittymissopimuksen tehneiden datakeskushankkeiden suunniteltu kokonaisteho on lähes 5 GW.
-Lähteet: Fingrid, kehitysnäkymät · 30.9.2026; luku 2025: Fingrid · 4.3.2026; datakeskukset: Fingrid · 18.8.2026 ja Datakeskushankkeiden kansallinen rekisteri (CC BY 4.0) · 4.11.2026
+Kartan neliöt ovat datakeskushankkeita: täytetyt ovat käytössä tai rakenteilla, ontot suunnitteilla, ja koko kertoo tehon.
+Lähteet: Fingrid, kehitysnäkymät · 30.9.2026; luku 2025: Fingrid · 4.3.2026; datakeskukset: Datakeskushankkeiden kansallinen rekisteri (CC BY 4.0) · 4.11.2026
 
 Mistä sääriippuvainen tuotanto tulee?
 9 553 MWtuulivoimaa
 aurinkovoimaa 2 074 MW
-Fingridin arvion mukaan Suomessa on 9 553 MW tuulivoimaa ja 2 074 MW aurinkovoimaa. Sääriippuvainen tuotanto saa tuntihinnat vaihtelemaan ja sähkövarasto ansaitsee hintaeroista.
+Fingridin arvion mukaan Suomessa on 9 553 MW tuulivoimaa ja 2 074 MW aurinkovoimaa. Sääriippuvainen tuotanto saa pörssihinnat vaihtelemaan ja sähkövarasto ansaitsee hintaeroista.
 Kartan valkoiset ympyrät ovat tuulivoimapuistoja ja kultaiset pisteet aurinkovoimaloita; koko kertoo tehon. Ne ovat OpenStreetMapiin merkittyjä voimaloita, eikä luettelo ole täydellinen: kokonaisluvut ovat Fingridin.
 Lähteet: Fingrid, avoin data 268 ja 267 (ennusteissa käytetty kapasiteetti) · 2.11.2026; voimalat kartalla: OpenStreetMap-tekijät (ODbL) · 2.11.2026
 
@@ -127,7 +127,7 @@ Asennusajan määrää asentajan jono, noin kaksi viikkoa, ja kaikki muu kulkee 
 Pyydä maksuton kartoitus
 
 Ajattelemme kokonaisuutta.
-Olemme valinneet yhteistyöhön parhaista parhaat. Valinnan perusteena oli se, mikä luo yrityksen investoinnille suurimman arvon.
+Olemme valinneet kumppanit sen mukaan, mikä luo yrityksen investoinnille suurimman arvon.
 Investoinnin arvo syntyy monesta osasta. Kun tarjoamme valikoiman eri valmistajia, tuotteita ja palveluita, voimme rakentaa jokaiselle asiakkaalle räätälöidyn ratkaisun, joka luo asiakkaan kiinteistölle eniten arvoa. Lähtökohtana ovat teidän päätöksenne kriteerit, ei yhden laitteen myynti. Kumppaneiden koko valikoima on käytettävissänne.
 Kumppanit ja tuotteet
 
@@ -571,10 +571,10 @@ Sähkötyö ja käyttöönotto
 Sähkötyöt tekee rekisteröity sähköurakoitsijakumppanimme: tasasähköpuolen kaapelointi, invertterit, liitäntä pääkeskukseen, suojaus ja mittaus. Käyttöönotossa järjestelmä tarkastetaan ja mitataan, ja dokumentit luovutetaan teille.
 
 Verkkoyhtiö ja viranomaiset
-Tuotannon liittämisilmoitus verkkoyhtiölle, lupa-asiat kunnan kanssa ja käyttöönottotarkastuksen dokumentaatio kulkevat meidän kautta. Te allekirjoitatte, me hoidamme muun.
+Tuotannon liittämisilmoitus verkkoyhtiölle, lupa-asiat kunnan kanssa ja käyttöönottotarkastuksen dokumentaatio kulkevat kauttamme. Te allekirjoitatte, me hoidamme muun.
 
 Näin asennus etenee.
-Neljä vaihetta. Teidän osuutenne on tiedot, päätös ja allekirjoitus; muu kulkee meidän kautta.
+Neljä vaihetta. Teidän osuutenne on tiedot, päätös ja allekirjoitus; muu kulkee kauttamme.
 
 Kartoitus ja kirjallinen arvio
 Tuntikulutus CSV-latauksena Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta, yksi lasku ja pääkaavio. Me kirjoitamme arvion: voimalan koko, oma käyttö, ylijäämä ja sama laskelma sähkövaraston kanssa.
@@ -867,7 +867,7 @@ Oma tuotanto omaan käyttöön · Ostamatta jäänyt sähkö · Aurinkopaneelit 
 Mikä laskullanne ja kiinteistössänne muuttuu.
 
 Reservimarkkinat: kapasiteettikorvaus, myös öisin.
-Fingrid hankkii reservit joka päivä, myös öisin ja viikonloppuisin. Energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli 29 % jo helmikuussa 2025. Sinne pääsee vain mittarin takaisella varastolla, aggregaattorin kautta.
+Fingrid hankkii reservit joka päivä, myös öisin ja viikonloppuisin. Energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli 29 % jo helmikuussa 2025. Varasto pääsee sinne aggregaattorin kautta.
 Lähde: Fingrid · 10.2.2025
 
 Tehomaksut: huippu alas, sulakekoko kulutuksen mukaan.
@@ -875,9 +875,9 @@ Esimerkki yhdestä hinnastosta: Caruna Oy:n Tehosiirto 1 PJ -tuotteessa tehomaks
 Oma verkkoyhtiönne hinnoittelee eri tavoin: Caruna Espoo Oy:n vastaava tehomaksu on 1,37 €/kW,kk. Arviossa laskemme teidän oman verkkoyhtiönne hinnastolla.
 Lähde: Caruna Oy, verkkopalveluhinnasto · 1.9.2024 · alv 0 %
 
-Energia ja siirto: halpa tunti sisään, kallis ulos.
-Sähköenergia menee pörssin tuntihinnalla. Varasto ostaa halvoilla tunneilla ja kattaa kalliit; aurinkovoimala tuottaa keskipäivällä ja varasto siirtää sen iltaan. Edellytys on pörssisidonnainen myyntisopimus.
-Ero syntyy pörssin tuntihinnasta, ei siirtomaksusta: pienjänniteliittymän siirto on samassa esimerkkihinnastossa kiinteä 3,52 snt/kWh. Keskijänniteliittymässä (Tehosiirto 1 KJ) myös siirrolla on kaksi hintaa: talviarkipäivänä 5,10 ja muuna aikana 1,81 snt/kWh. Silloin ajoituksella on kaksi vaikutusta.
+Energia ja siirto: halpa sähkö sisään, kallis ulos.
+Sähköenergia menee pörssihinnalla, joka vaihtuu vartin välein. Varasto latautuu, kun sähkö on halpaa, ja kattaa kalliit hetket; aurinkovoimala tuottaa keskipäivällä ja varasto siirtää sen iltaan. Edellytys on pörssisidonnainen myyntisopimus.
+Ero syntyy pörssihinnasta, ei siirtomaksusta: pienjänniteliittymän siirto on samassa esimerkkihinnastossa kiinteä 3,52 snt/kWh. Keskijänniteliittymässä (Tehosiirto 1 KJ) myös siirrolla on kaksi hintaa: talviarkipäivänä 5,10 ja muuna aikana 1,81 snt/kWh. Silloin ajoituksella on kaksi vaikutusta.
 Lähde: Caruna Oy, verkkopalveluhinnasto · 1.9.2024 · alv 0 %
 
 Kiinteistön arvo: pienempi pysyvä kulu, korkeampi hinta.
@@ -910,13 +910,13 @@ Asennus, toimitus ja huolto
 Laitteet tulevat useammalta valmistajalta, ja toimitusaika vahvistetaan tarjouksessa laitekohtaisesti. Asennusta johtaa asennuspäällikkömme yhdessä kumppaneiden kanssa. Käyttöönoton jälkeen järjestelmää valvovat aggregaattori ja me, huolto kulkee sopimuksen mukaan. Kumppanit ja tuotteet
 
 Missä varasto maksaa itsensä takaisin nopeimmin ja miksi.
-Varaston teho jaetaan usean työn kesken: oman kulutuksenne optimointi (huiput, halvat tunnit), arbitraasi pörssissä ja reservimarkkinat (valmius Fingridille). Aggregaattori myy tehoa usealla markkinalla samaan aikaan: se on monimarkkinapalvelu. Kuinka suuri osa menee millekin työlle, määrää kulutusprofiilinne. Se on kartoituksen tärkein rivi.
+Varaston teho jaetaan usean työn kesken: oman kulutuksenne optimointi (huiput, halpa sähkö), arbitraasi pörssissä ja reservimarkkinat (valmius Fingridille). Aggregaattori myy tehoa usealla markkinalla samaan aikaan: se on monimarkkinapalvelu. Kuinka suuri osa menee millekin työlle, määrää kulutusprofiilinne. Se on kartoituksen tärkein rivi.
 
 Viljankuivaamot ja maatilat
-Varasto on lähes koko ajan reservimarkkinoilla ja tuottaa valmiudesta; kuivauskauden huiput se pitää alhaalla. Usein nopein takaisinmaksu.
+Varasto on lähes koko ajan reservimarkkinoilla ja tuottaa valmiudesta; kuivauskauden huiput se pitää alhaalla.
 
 Teollisuus ja kylmävarastot
-Kylmävarastossa lisäksi ympärivuorokautinen jäähdytys. Varasto pitää kuukauden huipputehon alhaalla, ostaa halvoilla tunneilla ja on muina tunteina reservimarkkinoilla.
+Kylmävarastossa lisäksi ympärivuorokautinen jäähdytys. Varasto pitää kuukauden huipputehon alhaalla, lataa halvalla sähköllä ja on muulloin reservimarkkinoilla.
 
 Hotellit ja hoivakiinteistöt
 Varavoima on tässä yhtä tärkeä kuin säästö. Se edellyttää saarekekäyttöön toteutettua järjestelmää ja erotettua kriittistä piiriä, jotka suunnitellaan kohteittain.
@@ -951,7 +951,7 @@ Usein kysyttyä
 Toimiiko sähkövarasto varavoimana?
 Kyllä, kun järjestelmä toteutetaan saarekekäyttöön: invertteri, erotuskytkin ja kriittinen piiri mitoitetaan siihen. Kartoituksessa kerromme, mitä se kohteessanne tarkoittaa.
 
-Onko sähkövarasto turvallinen ja millainen takuu on?
+Onko sähkövarasto turvallinen ja millainen takuu sillä on?
 Tarjoamamme teolliset sähkövarastot perustuvat LFP-kemiaan. Niissä on kennotason valvonta ja lämpötilanhallinta. Kaappi on tehty ulkokäyttöön. Vaadimme valmistajalta CE- ja kuljetussertifikaatit. SAMA vastaa projektista, valmistaja antaa laitteelle takuun ja valmistajan nimi on kirjallisessa arviossa. Takuu- ja huoltoehdot sekä tiedon siitä, kenelle soitatte, näette samasta asiakirjasta ennen allekirjoitusta.
 
 Mitä tarkoittaa mittarin takainen järjestelmä?
@@ -969,7 +969,7 @@ Onko rahoitusta saatavilla?
 Kyllä. Leasingrahoitus on mahdollista järjestää, ja arviossa näytämme omarahoituksen ja leasingin vertailun samoilla luvuilla, jotta päätös on helppo.
 
 Viisi käsitettä, joita käytämme
-Mittarin takainen järjestelmä: varasto, tuotanto ja ohjaus liittymänne takana, teidän puolellanne mittaria. Monimarkkinapalvelu: aggregaattori myy saman varaston tehoa usealla markkinalla yhtä aikaa (kulutuksenne optimointi, arbitraasi pörssissä, reservit Fingridille). Aggregaattori: yritys, joka kokoaa usean kohteen varastot yhdeksi tarjoukseksi ja tilittää tuoton. Ylläpitokorvaus: korvaus siitä, että varasto on Fingridin käytettävissä, myös silloin kun se ei tee mitään. Arbitraasi: ostetaan halvalla tunnilla, myydään tai käytetään kalliilla.
+Mittarin takainen järjestelmä: varasto, tuotanto ja ohjaus liittymänne takana, teidän puolellanne mittaria. Monimarkkinapalvelu: aggregaattori myy saman varaston tehoa usealla markkinalla yhtä aikaa (kulutuksenne optimointi, arbitraasi pörssissä, reservit Fingridille). Aggregaattori: yritys, joka kokoaa usean kohteen varastot yhdeksi tarjoukseksi ja tilittää tuoton. Ylläpitokorvaus: korvaus siitä, että varasto on Fingridin käytettävissä, myös silloin kun se ei tee mitään. Arbitraasi: ostetaan, kun sähkö on halpaa, ja myydään tai käytetään, kun se on kallista.
 
 Minkä kokoinen sähkövarasto teidän kohteeseenne?
 Kartoitus vastaa siihen kirjallisesti, kulutustiedoistanne laskettuna.
@@ -986,7 +986,7 @@ Suurkuluttajalle sähkövarasto ei ole tulevaisuuden hanke vaan tämän päivän
 
 Pyydä maksuton kartoitus Mitä aggregaattori tekee
 
-~1 500 MWreserviä Fingrid hankkii keskimäärin joka tunnille ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW lisää
+~1 500 MWreserviä Fingrid hankkii keskimäärin joka tunnille ja arvioi tarvitsevansa vuoteen 2030 mennessä 1 200 MW lisää
 
 29 % · 54 %energiavarastojen osuus FCR-N- ja FFR-reservien todennetusta kapasiteetista, helmikuu 2025
 
@@ -1013,12 +1013,12 @@ aFRR · Palauttaa tasapainon automaattisesti poikkeaman jälkeen · Minuuteissa 
 
 mFRR · Kattaa suuremmat ja pidemmät poikkeamat, manuaalisesti käynnistettävä · Vartin sisällä · Energiakorvaus aktivoinnista, kapasiteettimarkkinalla myös kapasiteettikorvaus
 
-Kolme syytä, miksi varasto kannattaa nyt, ei ensi vuonna.
+Kolme syytä selvittää reservimarkkinat nyt.
 
 Kaikki kolme perustuvat Fingridin omiin lukuihin, ei meidän arvioihimme. Lähteet ovat jokaisen kohdan alla.
 
 Uusi tulovirta: sähkövarasto ansaitsee valmiudesta
-Sähkövarasto muuttaa kuluerän tulonlähteeksi. Varastonne saa kapasiteettikorvauksen jokaiselta tunnilta, jolta sen reservitarjous hyväksytään, ja erikseen korvauksen silloin, kun sitä käytetään. Fingrid hankkii tunneittain keskimäärin 1 500 MW reserviä ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW lisää.
+Sähkövarasto muuttaa kuluerän tulonlähteeksi. Varastonne saa kapasiteettikorvauksen jokaiselta tunnilta, jolta sen reservitarjous hyväksytään, ja erikseen korvauksen silloin, kun sitä käytetään. Fingrid hankkii tunneittain keskimäärin 1 500 MW reserviä ja arvioi tarvitsevansa vuoteen 2030 mennessä 1 200 MW lisää.
 Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025
 
 Todistettu ja turvallinen: varastot kannattelevat verkkoa jo nyt
@@ -1031,7 +1031,7 @@ Lähteet: Fingrid, liittymissopimushakemuksen kartta · voimassa 1.6.2026; Fingr
 
 1 MW / 2 MWhesimerkkikoko, mitoitetaan kohteen mukaan
 
-Esimerkiksi: 1 MW / 2 MWh sähkövarasto olemassa olevan teollisuuskiinteistön liittymän takana pääsee markkinoille kuukausissa, osallistuu aggregaattorin kautta FCR-D- ja muihin reserveihin ja leikkaa samalla kohteen omat kulutushuiput. Sama logiikka toimii 125 kW:n yksiköstä useisiin megawatteihin: oikea koko mitoitetaan liittymän ja kulutusprofiilin mukaan.
+Esimerkiksi: 1 MW / 2 MWh sähkövarasto olemassa olevan teollisuuskiinteistön liittymän takana osallistuu aggregaattorin kautta FCR-D- ja muihin reserveihin ja leikkaa samalla kohteen omat kulutushuiput. Sama logiikka toimii 125 kW:n yksiköstä useisiin megawatteihin: oikea koko mitoitetaan liittymän ja kulutusprofiilin mukaan.
 
 Miten tuotto arvioidaan.
 
@@ -1064,7 +1064,7 @@ Jokainen tänne rakennettu sähkövarasto on pieni askel yhteen suuntaan: energi
 
 Siksi sanomme myös rehellisesti ei, kun sähkövarasto ei kohteessanne kannata. Väärä investointi vahingoittaa juuri sitä, mihin uskomme.
 
-RiippumattomuusFingrid arvioi tarvitsevansa viiden vuoden päästä 1 200 MW nykyistä enemmän reserviä. Se kapasiteetti rakennetaan joka tapauksessa. Kysymys on vain siitä, seisooko se suomalaisten yritysten omien liittymien takana vai ostetaanko se muualta. Huoltovarmuus ei ole julistus vaan laitteita, jotka ovat fyysisesti täällä ja reagoivat sekunneissa.
+RiippumattomuusFingrid arvioi tarvitsevansa vuoteen 2030 mennessä 1 200 MW nykyistä enemmän reserviä. Se kapasiteetti rakennetaan joka tapauksessa. Kysymys on vain siitä, seisooko se suomalaisten yritysten omien liittymien takana vai ostetaanko se muualta. Huoltovarmuus ei ole julistus vaan laitteita, jotka ovat fyysisesti täällä ja reagoivat sekunneissa.
 Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025
 
 VaurausReservin ylläpidosta maksetaan korvaus joka tunnilta, ja se raha menee sille, joka reservin tarjoaa. Jos tarjoajia ovat vain suuret rahastot, raha lähtee alueelta. Jos tarjoajia ovat sastamalalainen konepaja, hämäläinen viljankuivaamo ja tamperelainen kiinteistö, raha jää tänne ja investoidaan tänne uudelleen. Meidän kantamme on tiedossa.
@@ -1285,7 +1285,7 @@ Pyydä maksuton kartoitus Takaisin reservimarkkinoihin
 
 Etusivu›Palvelut
 
-Kolme asiaa, jotka voitte meiltä tilata.
+Kirjallisesta arviosta valmiiseen järjestelmään.
 
 Jokainen tilaus alkaa samasta kohdasta: maksuttomasta kirjallisesta arviosta. Tässä on kirjattuna, mitä kukin askel sisältää, mitä te siihen annatte ja mitä sen jälkeen tapahtuu.
 
@@ -1391,24 +1391,6 @@ Tekniset ehdot ja liittymisvastaus ovat kädessä, ennen kuin laitatte rahaa kii
 
 Johdamme projektin alusta loppuun
 Laitteet valitaan kohteenne mukaan, yhdessä maahantuojien kanssa. Asennus, luvat, dokumentaatio ja tilannekuva kulkevat yhden yhteyshenkilön kautta.
-
-Tyypillinen tarjous markkinoilla
-
-Suullisia lupauksia ja ”noin”-lukuja
-
-Takaisinmaksuaika keskimääräisillä oletuksilla
-
-Päätös ennen verkkoyhtiön vastausta
-
-Reservitulosta joko vaietaan tai sitä luvataan liikaa
-
-Jokainen luku kirjallisesti, lähde ja päivämäärä mukana
-
-Laskelma teidän omista tuntikohtaisista kulutustiedoistanne
-
-Verkkoyhtiön kanta kädessä ennen pääoman sitomista
-
-Reservimarkkinoiden logiikka selitetty, tulo analysoitu tuotteittain
 
 Ensimmäinen askel on maksuton.
 Kysely ja kulutustiedot teiltä, kirjallinen arvio meiltä kahden arkipäivän kuluessa tietojen saamisesta.
@@ -1669,7 +1651,7 @@ Miksi perustimme SAMAn.
 
 Markkina muuttui nopeammin kuin tarjoukset. Me halusimme yrityksen, joka antaa asiakkaalle kartan, ei vain laitetta.
 
-Markkina muuttui. Fingrid hankkii reserviä joka tunnille ja arvioi tarvitsevansa viiden vuoden päästä noin 1 200 MW lisää; energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli helmikuussa 2025 jo 29 %, ja Etelä-Suomessa Fingrid rajoittaa suurten varastojen liityntöjä vuoteen 2029. Jokainen näistä muuttaa sitä, mitä yksi liittymä on arvoltaan.
+Markkina muuttui. Fingrid hankkii reserviä joka tunnille ja arvioi tarvitsevansa vuoteen 2030 mennessä noin 1 200 MW lisää; energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli helmikuussa 2025 jo 29 %, ja Etelä-Suomessa Fingrid rajoittaa suurten varastojen liityntöjä vuoteen 2029. Jokainen näistä muuttaa sitä, mitä yksi liittymä on arvoltaan.
 
 Lähteet: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025; Fingrid, Energiavarastot reservimarkkinoilla · 10.2.2025; Fingrid, tiedote · 24.9.2025. Tarkemmin Reservimarkkinat-sivulla.
 
@@ -1677,7 +1659,7 @@ Tarjoukset pysyivät samoina. Yritykset saivat laitelistan ja yhden takaisinmaks
 
 Mitä tavoittelemme. Että yrityksen oma liittymä on tuottava omaisuuserä eikä pelkkä kuluerä. Että päätös siitä tehdään omista luvuista, ei myyjän lupauksesta.
 
-Mistä aloitamme. Kohteista, joissa liittymä on suuri ja kulutus vaihtelee: siellä arvio on selkein ja takaisinmaksu usein lyhin. Sen jälkeen siirrymme suurempiin kokonaisuuksiin yhdessä niiden kanssa, jotka tuntevat markkinan ja oman alueensa vahvuudet. Teemme sen läpinäkyvästi ja asiakkaan kielellä: tieto ymmärrettäväksi, luvut lähteineen, päätös teidän.
+Mistä aloitamme. Kohteista, joissa liittymä on suuri ja kulutus vaihtelee: siellä arvio on selkein. Sen jälkeen siirrymme suurempiin kokonaisuuksiin yhdessä niiden kanssa, jotka tuntevat markkinan ja oman alueensa vahvuudet. Teemme sen läpinäkyvästi ja asiakkaan kielellä: tieto ymmärrettäväksi, luvut lähteineen, päätös teidän.
 
 Meidän tiimimme.
 
@@ -1800,7 +1782,7 @@ Sähkönkulutus
 84,6 → 110–162 TWh2025 → 2035. Lähteet: Fingrid, tilinpäätöstiedote · 3.3.2026; Fingrid, kehitysnäkymät · 30.9.2026.
 
 Reservitarve
-1 500 MW joka tunnilleJa viiden vuoden päästä 1 200 MW lisää. Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025.
+1 500 MW joka tunnilleJa vuoteen 2030 mennessä 1 200 MW lisää. Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025.
 
 Tuulivoimakapasiteetti
 9 433 MW → yli 30 GW2025 → 2035. Lähteet: Suomen uusiutuvat ry, Tuulivoimatilastot 2025 · 8.1.2026; Fingrid, kantaverkon kehittämissuunnitelma 2026–2035 · 2.12.2025.
@@ -1815,7 +1797,7 @@ Lähde: Fingrid, tiedote · 18.8.2026
 
 Määräaika oli 11.10.2026
 Energiakatselmusvelvoite laajeni: raja kulutuksen, ei yrityksen koon mukaan
-Energiatehokkuuslain muutos 1382/2025 pani täytäntöön energiatehokkuusdirektiivin 11 artiklan: velvoite määräytyy nyt energiankulutuksen, ei yrityksen koon mukaan. Yrityksen, jonka energiankulutus on keskimäärin yli 2,7 GWh (10 TJ) vuodessa, piti tehdä ensimmäinen energiakatselmus 11.10.2026 mennessä ja sen jälkeen neljän vuoden välein, ellei sillä ole energianhallintajärjestelmää. Yli 23,6 GWh:n (85 TJ) kuluttajilla sertifioidun energianhallintajärjestelmän määräaika on 11.10.2027. Katselmuksen tiedot ovat samalla varaston ja aurinkosähkön arvion pohja.
+Energiatehokkuuslain muutos 1382/2025 pani täytäntöön energiatehokkuusdirektiivin 11 artiklan: velvoite määräytyy nyt energiankulutuksen, ei yrityksen koon mukaan. Yrityksen, jonka energiankulutus on keskimäärin yli 10 TJ (noin 2,8 GWh) vuodessa, piti tehdä ensimmäinen energiakatselmus 11.10.2026 mennessä ja sen jälkeen neljän vuoden välein, ellei sillä ole energianhallintajärjestelmää. Yli 23,6 GWh:n (85 TJ) kuluttajilla sertifioidun energianhallintajärjestelmän määräaika on 11.10.2027. Katselmuksen tiedot ovat samalla varaston ja aurinkosähkön arvion pohja.
 Lähteet: energiatehokkuuslaki, muutos 1382/2025 (HE 85/2025 vp); Direktiivi (EU) 2023/1791 · 11 artikla
 
 Mitä me muualla luemme.
@@ -1823,7 +1805,7 @@ Emme kirjoita kaikkea itse. Nämä ovat lähteitä, joita oikeasti käytämme, j
 
 Fingrid · 11.6.2025
 Reservimarkkinat tutuiksi (PDF)
-Fingridin oma arvio reservitarpeesta: nykyisin keskimäärin 1 500 MW joka tunnille, viiden vuoden päästä 1 200 MW lisää. Suurin osa siitä, mitä sanomme kysynnän suunnasta, on tässä yhdessä kalvossa.
+Fingridin oma arvio reservitarpeesta: nykyisin keskimäärin 1 500 MW joka tunnille, vuoteen 2030 mennessä 1 200 MW lisää. Suurin osa siitä, mitä sanomme kysynnän suunnasta, on tässä yhdessä kalvossa.
 
 Fingrid · 19.11.2025
 Joulukuun 2025 volyymimaksu jäi laskuttamatta
@@ -1874,7 +1856,7 @@ Rajan alla liittämisestä sovitaan verkkoyhtiön kanssa. Rajan yli myös Fingri
 
 Miksi varastoja tarvitaan lisää
 
-Rajoitus ei johdu siitä, ettei varastoille olisi käyttöä. Fingrid hankkii tunneittain keskimäärin noin 1 500 MW reserviä ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW nykyistä enemmän. Varastoja on myös jo paljon: Fingridin arvion mukaan Suomessa on 2 085 MW yli megawatin sähkövarastoja.
+Rajoitus ei johdu siitä, ettei varastoille olisi käyttöä. Fingrid hankkii tunneittain keskimäärin noin 1 500 MW reserviä ja arvioi tarvitsevansa vuoteen 2030 mennessä 1 200 MW nykyistä enemmän. Varastoja on myös jo paljon: Fingridin arvion mukaan Suomessa on 2 085 MW yli megawatin sähkövarastoja.
 
 Mitä tämä ei tarkoita
 
@@ -1904,7 +1886,7 @@ Fingrid, Sähkövarastojen yhteisteho Suomessa jo yli 1 000 MW, 24.2.2026: 85 % 
 
 Fingrid, avoin data 424, luettu 2.11.2026: arviolta 2 085 MW yli 1 MW:n sähkövarastoja.
 
-Fingrid, Reservimarkkinat tutuiksi, 11.6.2025: noin 1 500 MW tunnissa, arvio +1 200 MW viidessä vuodessa.
+Fingrid, Reservimarkkinat tutuiksi, 11.6.2025: noin 1 500 MW tunnissa, arvio +1 200 MW vuoteen 2030 mennessä.
 
 MM
 Madis MaastikMyyntijohtaja, SAMA Energiamadis.maastik@samaenergia.fi
@@ -2022,11 +2004,11 @@ Näytä kartalla
 
 Kuinka paljon reservejä tarvitaan ja kuka maksaa?
 
-Fingrid hankkii joka tunti keskimäärin 1 500 MW reservikapasiteettia ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW lisää, ja reservien kustannukset katetaan tasepalvelumaksuilla, joita Fingrid perii tasevastaavilta.
+Fingrid hankkii joka tunti keskimäärin 1 500 MW reservikapasiteettia ja arvioi tarvitsevansa vuoteen 2030 mennessä 1 200 MW lisää, ja reservien kustannukset katetaan tasepalvelumaksuilla, joita Fingrid perii tasevastaavilta.
 
-+1 200 MWreservikapasiteettia viiden vuoden päästä · nyt keskimäärin 1 500 MW joka tunti (6/2025)
++1 200 MWreservikapasiteettia vuoteen 2030 mennessä · nyt keskimäärin 1 500 MW joka tunti (6/2025)
 
-Hankinta nyt: keskimäärin 1 500 MW joka tunti · viiden vuoden päästä 1 200 MW lisää (Fingrid, 11.6.2025)
+Hankinta nyt: keskimäärin 1 500 MW joka tunti · vuoteen 2030 mennessä 1 200 MW lisää (Fingrid, 11.6.2025)
 Velvoitteet 2026: FCR-N 128 MW · FCR-D ylös 309 / alas 298 MW · aFRR noin 50 MW · mFRR ylös 880–1 300 MW · mFRR alas 575 MW (Fingrid, Power system reserves, 2026)
 Hankintaennuste: mFRR alas 567 → 1 100 MW (2026 → 2032) · aFRR ylös 44 → 85 MW (2026 → 2028) (Fingrid, Power system reserves, 2026)
 2027: FCR hankitaan vain tuntimarkkinoilta (Fingrid, 8.9.2026)
@@ -2075,7 +2057,7 @@ Teidän liittymänne on jo olemassa: alle 1 MW:n sähkövarasto liitetään sen 
 
 Etelä-Suomi: uuden suuren kulutuksen kantaverkkoliitäntä tiukilla 2025–27 · suurten varastojen liitynnät rajoitettu vuoteen 2029 (Fingrid, 21.1.2025; 24.9.2025)
 Hakemusraja: Fingridin liittymissopimushakemus vähintään 2 MW:n varastoista koko Suomessa, kartalla merkityillä alueilla 1 MW:sta · pienemmät liitetään verkkoyhtiön ehdoilla (Fingrid, kartta voimassa 1.6.2026)
-Reservit: tarve kasvaa 1 200 MW viidessä vuodessa (Fingrid, 11.6.2025)
+Reservit: tarve kasvaa 1 200 MW vuoteen 2030 mennessä (Fingrid, 11.6.2025)
 
 Maksuton kirjallinen arvio näyttää, mitä teidän liittymänne voi tehdä: tehomaksu, pörssisähkö ja mallinnettu reservituotto tuotteittain.
 
@@ -2324,10 +2306,10 @@ Majanduslikud võimalused teie objektil, kirjalikult ja allikatega.
 Targa energiamajandamise, mis muudab liitumise kuluartiklist varaks.
 
 Mis teie arvel ja kinnistul muutub:
-Reserviturgtasu reserveeritud võimsuse eest, ka öösel.Võimsustasudtipp alla, peakaitse tarbimise järgi.Energia ja edastamineodav tund sisse, kallis välja.Kinnistu väärtusväiksem püsikulu, kõrgem hind.
+Reserviturgtasu reserveeritud võimsuse eest, ka öösel.Võimsustasudtipp alla, peakaitse tarbimise järgi.Energia ja edastamineodav elekter sisse, kallis välja.Kinnistu väärtusväiksem püsikulu, kõrgem hind.
 
 reserv: valmis võrgu jaoks ↑↓
-tasu valmisoleku eest, tunni kaupa
+tasu vastu võetud tundide eest
 sisse ↓
 tipp, välja ↑
 
@@ -2358,7 +2340,7 @@ Allikad: Elering, arengukava 2026–2035 · 9.7.2026; andmekeskused: Sunly · 17
 Kust tuleb ilmast sõltuv tootmine?
 1 214 MWpäikesevõimsust
 tuulevõimsust 694 MW · installeeritud netovõimsus 2025
-2025. aastal oli Eestis 1 214 MW päikese- ja 694 MW tuulevõimsust. Ilmast sõltuv toodang muudab tunnihinnad kõikuvaks ja salvesti teenib hinnavahest.
+2025. aastal oli Eestis 1 214 MW päikese- ja 694 MW tuulevõimsust. Ilmast sõltuv toodang muudab börsihinnad kõikuvaks ja salvesti teenib hinnavahest.
 Kaardi valged ringid on tuulepargid ja kuldsed punktid päikesejaamad; suurus näitab võimsust. Need on OpenStreetMapi märgitud jaamad ja loetelu ei ole täielik: kogusummad on Eleringi omad.
 Allikad: Elering, varustuskindluse aruanne 2025 · 9.12.2025; jaamad kaardil: OpenStreetMapi kaastöötajad (ODbL) · 2.11.2026
 
@@ -2422,7 +2404,7 @@ Paigalduse aja lepime kokku tellimuse kinnitamisel ja kõik muu kulgeb paigaldus
 Küsi tasuta hinnangut
 
 Me mõtleme tervikuna.
-Oleme koostööks välja valinud parimatest parimad. Valiku aluseks oli see, mis loob ettevõtte investeeringule suurima väärtuse.
+Oleme partnerid valinud selle järgi, mis loob ettevõtte investeeringule suurima väärtuse.
 Investeeringu väärtus tuleb paljudest osadest. Kui pakume valikut eri tootjatest, toodetest ja teenustest, saame igale kliendile koostada rätseplahenduse, mis loob tema kinnistule kõige rohkem väärtust. Lähtume teie otsuse kriteeriumidest, mitte ühe seadme müügist. Partnerite kogu valik on teie käsutuses.
 Partnerid ja tooted
 
@@ -3118,7 +3100,7 @@ Oma toodang omaks tarbeks · Ostmata jäänud elekter · Päikesepaneelide olema
 Mis teie arvel ja kinnistul muutub.
 
 Reserviturg: tasu reserveeritud võimsuse eest, ka öösel.
-Elering ostab sagedusreserve iga päev, ka öösel ja nädalavahetusel. Juulis 2026 oli Eestis reservitoodete pakkumiseks kvalifitseerunud 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i (üles / alla). Sinna pääseb ainult arvestitaguse salvestiga, agregaatori kaudu.
+Elering ostab sagedusreserve iga päev, ka öösel ja nädalavahetusel. Juulis 2026 oli Eestis reservitoodete pakkumiseks kvalifitseerunud 76 MW FCR-i ja ligi 490 / 580 MW aFRR-i (üles / alla). Salvesti pääseb sinna agregaatori kaudu.
 Allikas: Elering, sagedusreservide turu kokkuvõte · juuli 2026, tabel 2
 
 Võimsustasud: tipp alla, peakaitse tarbimise järgi.
@@ -3126,8 +3108,8 @@ Näide ühest hinnakirjast: Elektrilevi paketis Võimsus VMA2 on võrguühenduse
 Sama pakett sisaldab ka tarbimiskoha kasutusvõimsuse tasu 2,56 €/kW kuus ja võrguühenduse kuutasu 30,41 €/kuu. Hinnangus arvutame teie oma paketi ja oma võrguettevõtja hinnakirjaga.
 Allikas: Konkurentsiameti otsus nr 7-3/2026-028 · 2.3.2026, hinnakiri kehtib 1.6.2026 alates · käibemaksuta
 
-Energia ja edastamine: odav tund sisse, kallis välja.
-Elektrienergia käib börsi tunnihinnaga, edastamistasu on päeval 3,49 ja öösel 1,99 senti/kWh. Salvesti ostab odavatel tundidel ja katab kallid; päikesepark toodab keskpäeval ja salvesti nihutab selle õhtusse. Eeldus on börsihinnaga müügipakett.
+Energia ja edastamine: odav elekter sisse, kallis välja.
+Elektrienergia käib börsihinnaga, mis muutub iga veerand tunni järel. Edastamistasu on päeval 3,49 ja öösel 1,99 senti/kWh. Salvesti laeb odava elektriga ja katab kallid hetked; päikesepark toodab keskpäeval ja salvesti nihutab selle õhtusse. Eeldus on börsihinnaga müügipakett.
 Allikas: Konkurentsiameti otsus nr 7-3/2026-028 · 2.3.2026, pakett Võimsus VMA2 · käibemaksuta
 
 Kinnistu väärtus: väiksem püsikulu, kõrgem hind.
@@ -3156,13 +3138,13 @@ Paigaldus, tarne ja hooldus
 Seadmed tulevad mitmelt tootjalt ja tarneaeg kinnitatakse pakkumises seadme kaupa. Paigaldust juhib meie paigaldusjuht koos partneritega. Pärast käikulaskmist jälgivad süsteemi agregaator ja meie, hooldus käib lepingu järgi. Partnerid ja tooted
 
 Kus salvesti end kõige kiiremini ära tasub ja miks.
-Salvesti võimsus jagatakse mitme töö vahel: teie enda tarbimise optimeerimine (tipud, odavad tunnid), arbitraaž börsil ja reserviturg (valmisolek Eleringile). Agregaator müüb võimsust mitmel turul korraga: see on mitmeturuteenus. Kui suur osa läheb millisele tööle, määrab teie tarbimisprofiil. See on hinnangu kõige tähtsam rida.
+Salvesti võimsus jagatakse mitme töö vahel: teie enda tarbimise optimeerimine (tipud, odav elekter), arbitraaž börsil ja reserviturg (valmisolek Eleringile). Agregaator müüb võimsust mitmel turul korraga: see on mitmeturuteenus. Kui suur osa läheb millisele tööle, määrab teie tarbimisprofiil. See on hinnangu kõige tähtsam rida.
 
 Viljakuivatid ja maaettevõtted
-Salvesti on peaaegu kogu aeg reserviturul ja teenib valmisoleku pealt; kuivatushooaja tipud hoiab ta madalal. Sageli kiireim tasuvus.
+Salvesti on peaaegu kogu aeg reserviturul ja teenib valmisoleku pealt; kuivatushooaja tipud hoiab ta madalal.
 
 Tööstus ja külmlaod
-Külmlaos lisandub ööpäevaringne jahutus. Salvesti hoiab kuu tippvõimsuse madalal, ostab odavatel tundidel ja on ülejäänud tundidel reserviturul.
+Külmlaos lisandub ööpäevaringne jahutus. Salvesti hoiab kuu tippvõimsuse madalal, laeb odava elektriga ja on ülejäänud ajal reserviturul.
 
 Hotellid ja hooldekodud
 Varutoide on siin sama tähtis kui sääst. Selleks peab süsteem olema ehitatud saartalitluseks ja kriitiline ahel eraldatud; see projekteeritakse iga objekti jaoks eraldi.
@@ -3232,7 +3214,9 @@ Suurtarbijale ei ole salvesti tuleviku projekt, vaid tänane tuluallikas. See te
 
 Küsi tasuta hinnangut Meie agregaatoripartner Soleron Energy
 
-76 · 491 / 579 MWFCR-i ja aFRR-i (üles / alla) pakkumiseks kvalifitseerunud võimsus Eestis, juuli 2026
+76 MWFCR-i pakkumiseks kvalifitseerunud võimsus Eestis, juuli 2026
+
+491 / 579 MWaFRR-i pakkumiseks kvalifitseerunud võimsus Eestis (üles / alla), juuli 2026
 
 60 M€reservide kulu 2026, Eleringi prognoos (veebruar–detsember 2025: 74 M€)
 
@@ -3255,7 +3239,7 @@ aFRR · Taastab tasakaalu automaatselt pärast kõrvalekallet · Minutitega · T
 
 mFRR · Katab suuremad ja pikemad kõrvalekalded, käsitsi käivitatav · Kuni veerand tunniga · Tasu aktiveeritud energia eest, võimsusturul ka reserveeritud võimsuse eest
 
-Kolm põhjust, miks salvesti tasub ära nüüd, mitte järgmisel aastal.
+Kolm põhjust reserviturgu nüüd uurida.
 
 Kõik kolm põhinevad Eleringi ja Kliimaministeeriumi enda arvudel, mitte meie hinnangutel. Allikad on iga punkti all.
 
@@ -3273,7 +3257,7 @@ Allikad: sünkroniseerimine (Euroopa Komisjoni esindus Eestis · 9.2.2025); kval
 
 1 MW / 2 MWhnäidissuurus, dimensioneeritakse objekti järgi
 
-Näiteks: 1 MW / 2 MWh salvesti olemasoleva tööstushoone liitumise taga pääseb turule kuudega, osaleb agregaatori kaudu Eleringi reservides ja lõikab samal ajal objekti enda tarbimistipud. Sama loogika töötab 125 kW üksusest mitme megavatini: õige suurus dimensioneeritakse liitumise ja tarbimisprofiili järgi.
+Näiteks: 1 MW / 2 MWh salvesti olemasoleva tööstushoone liitumise taga osaleb agregaatori kaudu Eleringi reservides ja lõikab samal ajal objekti enda tarbimistipud. Sama loogika töötab 125 kW üksusest mitme megavatini: õige suurus dimensioneeritakse liitumise ja tarbimisprofiili järgi.
 
 Kuidas tulu hinnatakse.
 
@@ -3488,7 +3472,7 @@ Küsi tasuta hinnangut Tagasi reservituru juurde
 
 Avaleht›Teenused
 
-Kolm asja, mida saate meilt tellida.
+Kirjalikust hinnangust valmis süsteemini.
 
 Iga tellimus algab samast kohast: tasuta kirjalikust hinnangust. Siin on kirjas, mida iga samm sisaldab, mida te selleks annate ja mis edasi saab.
 
@@ -3594,24 +3578,6 @@ Tehnilised tingimused ja liitumise vastus on käes enne, kui te raha välja pane
 
 Juhime projekti algusest lõpuni
 Seadmed valime teie objekti järgi, koostöös maaletoojatega. Paigaldus, load, dokumentatsioon ja ülevaade käivad ühe kontakti kaudu.
-
-Tavaline pakkumine turul
-
-Suulised lubadused ja „umbes“ numbrid
-
-Tasuvusaeg keskmiste eelduste pealt
-
-Otsus enne võrguettevõtja vastust
-
-Reservitulu kas vaikitakse maha või lubatakse üle
-
-Iga arv kirjalikult, koos allika ja kuupäevaga
-
-Arvutus teie enda tunnipõhistest tarbimisandmetest
-
-Võrguettevõtja seisukoht käes enne kapitali sidumist
-
-Reservituru loogika selgitatud, tulu analüüsitud toodete kaupa
 
 Esimene samm on tasuta.
 Küsimustik ja tarbimisandmed teilt, kirjalik hinnang meilt kahe tööpäevaga pärast andmete saamist.
@@ -3860,7 +3826,7 @@ Pakkumised jäid samaks. Ettevõtted said tabeli seadmetega ja ühe tasuvusaja n
 
 Mida taotleme. Et ettevõtte oma liitumine oleks teeniv vara, mitte pelgalt kuluartikkel. Et otsus selle üle tehtaks oma numbrite, mitte müüja lubaduse pealt.
 
-Kust alustame. Objektidest, kus liitumine on suur ja tarbimine kõikuv: seal on hinnang kõige selgem ja tasuvusaeg sageli lühim. Seejärel liigume suuremate tervikute juurde koos nendega, kes tunnevad turgu ja oma piirkonna tugevusi. Teeme seda läbipaistvalt ja kliendi keeles: teave arusaadavaks, arvud koos allikatega, otsus teie.
+Kust alustame. Objektidest, kus liitumine on suur ja tarbimine kõikuv: seal on hinnang kõige selgem. Seejärel liigume suuremate tervikute juurde koos nendega, kes tunnevad turgu ja oma piirkonna tugevusi. Teeme seda läbipaistvalt ja kliendi keeles: teave arusaadavaks, arvud koos allikatega, otsus teie.
 
 Meie meeskond.
 
@@ -3995,10 +3961,10 @@ Salvesti võrgutasu arvestatakse kalendrikuu netotarbimiselt
 Elektrituruseaduse § 71 lg 10¹ järgi ei võeta edastamistasu selle elektrienergia eest, mille salvesti salvestusperioodi vältel võrgust salvestab ja samal perioodil võrku tagastab; salvestusperiood on kalendrikuu (§ 3 p 22⁴). See parandab projekti tasuvust oluliselt, kui mõõtmine vastab nõuetele.
 Allikas: Elering, hinnakiri ja tüüptingimused · ELTS § 71 lg 10¹
 
-Tähtaeg oli 11.10.2026
-Energiaauditi kohustus laienes: piir tarbimise, mitte ettevõtte suuruse järgi
-Uuendatud energiatõhususe direktiiv (EL) 2023/1791 artikkel 11 seob kohustusliku energiaauditi aastase tarbimisega üle 10 TJ ehk umbes 2 800 MWh. Selle piiri ületajad pidid auditi tegema 11.10.2026-ks, kui neil pole sertifitseeritud energiajuhtimissüsteemi; riigisisene ülevõtmine võib piiri ja tähtaega täpsustada. Auditi andmed on ühtlasi salvesti ja päikeseelektri hinnangu alus.
-Allikas: Direktiiv (EL) 2023/1791 · artikkel 11
+Eelnõu 17.7.2026
+Energiaauditi kohustus: piir tarbimise, mitte ettevõtte suuruse järgi
+Uuendatud energiatõhususe direktiiv (EL) 2023/1791 artikkel 11 seob kohustusliku energiaauditi aastase energiakasutusega üle 10 TJ ehk umbes 2 800 MWh. Direktiivi ülevõtmise tähtaeg oli 11.10.2026. Eesti eelnõu (17.7.2026) järgi teeb ettevõtja, kelle aastane energiakasutus on üle 10 TJ, energiaauditi kuue kuu jooksul pärast sätte jõustumist ja seejärel iga nelja aasta tagant. Üle 85 TJ kasutav ettevõtja rakendab alates 11.10.2027 sertifitseeritud energiajuhtimissüsteemi. Auditi andmed on ühtlasi salvesti ja päikeseelektri hinnangu alus.
+Allikad: Direktiiv (EL) 2023/1791 · artikkel 11; energiamajanduse korralduse seaduse jt muutmise eelnõu · 17.7.2026, § 28 ja § 38
 
 Mida me mujal loeme.
 Me ei kirjuta kõike ise. Need on allikad, mida me tegelikult kasutame. Iga allika juures on üks rida selle kohta, miks just see tekst on lugemisväärne. Lingid viivad meie lehelt ära.
@@ -4210,7 +4176,7 @@ Kes maksab: Iga elektritarbija maksab alates 2026. aastast arvel tasakaalustamis
 
 Soome samal mõõdupuul
 Võrreldavus: Osaliselt võrreldav: Soome arvud on Fingridi riiklikud kohustused ja hange, Eesti vajadus on Balti ühise juhtimisploki (Eesti, Läti, Leedu) dimensioneerimine. Eelkvalifitseeritud võimsus on pakkumine, mitte vajadus.
-Hange praegu: keskmiselt 1 500 MW igas tunnis · viie aasta pärast 1 200 MW rohkem (Fingrid, 11.6.2025)
+Hange praegu: keskmiselt 1 500 MW igas tunnis · aastaks 2030 1 200 MW rohkem (Fingrid, 11.6.2025)
 Kohustused 2026: FCR-N 128 MW · FCR-D üles 309 / alla 298 MW · aFRR u 50 MW · mFRR üles 880–1 300 MW · mFRR alla 575 MW (Fingrid, Power system reserves, 2026)
 Hankeprognoos: mFRR alla 567 → 1 100 MW (2026 → 2032) · aFRR üles 44 → 85 MW (2026 → 2028) (Fingrid, Power system reserves, 2026)
 2027: FCR hangitakse ainult tunniturult (Fingrid, 8.9.2026)
@@ -4272,7 +4238,7 @@ Alalisvool
 
 Kaart laeb, kui see jõuab nähtavale. Kõik arvud on ka tekstis.
 
-Alus: Natural Earth · Võrk: © OpenStreetMapi kaastöölised (ODbL), OpenInfraMap · loetud 2.11.2026
+Alus: Natural Earth · Võrk: © OpenStreetMapi kaastöötajad (ODbL), OpenInfraMap · loetud 2.11.2026
 
 Allikad ja uuendamine.
 
