@@ -131,158 +131,151 @@ Olemme valinneet kumppanit sen mukaan, mikä luo yrityksen investoinnille suurim
 Investoinnin arvo syntyy monesta osasta. Kun tarjoamme valikoiman eri valmistajia, tuotteita ja palveluita, voimme rakentaa jokaiselle asiakkaalle räätälöidyn ratkaisun, joka luo asiakkaan kiinteistölle eniten arvoa. Lähtökohtana ovat teidän päätöksenne kriteerit, ei yhden laitteen myynti. Kumppaneiden koko valikoima on käytettävissänne.
 Kumppanit ja tuotteet
 
-Ralos Oy
-Suomi · Sastamala · varasto Tampereella · Pirkanmaa
-Asentaa sähkövarastot myös reservimarkkinoille, Ralosin kaapit mukaan lukien.
-Teolliset energiavarastot
-Useita akkuvaihtoehtoja
-Aurinkovoimalat
-Mikroinvertteriratkaisut
+Poimintoja valikoimasta
+Tekniset tiedot ovat valmistajien datalehdiltä ja tuotesivuilta.
 
-Lue lisää
-Sulje
-Ralos Oy
-Suomi · Tampere · perustettu 2017
-Miksi valitsimme
-Kotimainen toimittaja: laite, takuu ja huolto samalta suomalaiselta yhtiöltä. Beast-kaappeja voi kytkeä rinnan enintään 16, yhteensä 2 MW, joten sama tuote sopii yhden kaapin kohteeseen ja megawattiluokan kohteeseen. Kaappiin on saatavana varavoiman kytkin (STS) saarekekäyttöön suunniteltuihin kohteisiin.
-Tausta
-Tamperelainen aurinkosähköyhtiö, perustettu vuonna 2017. Toimittaa yrityksille aurinkovoimaloita omilla Ralos-paneeleilla sekä teollisia energiavarastoja sisä- ja ulkoasennukseen.
-Teolliset energiavarastot
-Useita akkuvaihtoehtoja
-Aurinkovoimalat
-Mikroinvertteriratkaisut
+EnergiavarastotAurinkosähköLatausLämpöpumput
+Kaikki tuotteet
 
-Lähteet: Discover Cleantech, Ralos (luettu 9.11.2026); Ralos Oy, tekninen tiedote Ralos Beast 125, V10.
-Kumppanisivullaralos.fi
+Ralos
+Beast 125 HD
+Nestejäähdytetty energiavarasto sisä- tai ulkoasennukseen
+Teho
+125 kW
+
+Energia
+261 kWh
+
+Lähde: Ralos Oy, tekninen tiedote Ralos Beast 125, versio V10, tarkistettu 9.11.2026
 
 Elecnova
-Energiavarastojen ja mikroverkkojen valmistaja.
-Neste- ja ilmajäähdytteiset kaapit
-Hybridikaappi aurinkosähköön
-Konttivarastot
-Saarekekäyttö
-Lataus ja mikroverkot
+ECO-E418LP
+Nestejäähdytetty ulkokaappi
+Teho
+100 kW (400 V)
 
-Lue lisää
-SuljeEnergiavarastokaappi
-Sama kaappi avattuna
-Ilmajäähdytteinen kaappi
-Hybridikaappi aurinkosähköön
-STS-kaappi saarekekäyttöön
-Konttivarasto
+Energia
+418 kWh
 
-Elecnova
-Kiina · Shanghai · saatavilla Suomen markkinoilla
-Miksi valitsimme
-Yhdeltä valmistajalta saa kaikki kokoluokat kaapista konttiin, ja kaapit ja kontit toimivat rinnan. Tuotteiden standardit ovat julkisia, esimerkiksi akkuturvallisuuden IEC 62619, palotestin UL 9540A ja verkkoon liittämisen EN 50549, joten ne voi tarkistaa ennen tarjousta.
-Tausta
-Shanghailainen energiavarastojen ja mikroverkkojen valmistaja. Valikoima ulottuu ilma- ja nestejäähdytteisistä ulkokaapeista konttivarastoihin, hybridikaappiin aurinkosähköön ja STS-kaappiin saarekekäyttöön. Lokakuussa 2026 Elecnova esitteli kaappejaan Energia 2026 -messuilla Tampereella.
-Neste- ja ilmajäähdytteiset kaapit
-Hybridikaappi aurinkosähköön
-Konttivarastot
-Saarekekäyttö
-Lataus ja mikroverkot
+Lähde: Elecnova, tuotesivu ECO-E418LP, luettu 9.11.2026
 
-Lähteet: Elecnova, tuotesivu ECO-E261LP-2A (luettu 27.9.2026); Elecnovan uutinen ENERGIA 2026 -messuilta, 25.10.2026; pv magazine, 3.6.2026.
-Kumppanisivullaelecnova-ess.com
+ZOE Energy Storage
+Z Box-C 215-2H
+Nestejäähdytetty ulkokaappi
+Teho
+105 kW
+
+Energia
+215 kWh
+
+Lähde: ZOE Energy Storage, Z Box-C 215-2H -datalehti (Scanoffice), luettu 9.11.2026
+
+Kaikki energiavarastot20
+Roofit.Solar
+Velario Slim
+Aurinkokatto konesaumakattoon, Suomessa toimittaa Gare Energy Oy
+Teho
+180 W / moduuli
+
+Hyötysuhde
+19,1 %
+
+Lähde: Roofit.Solar, Velario Slim -datalehti 2026-02 V1, luettu 9.11.2026
+
+Gare Energy
+Gare Solar Carport
+Aurinkokatos 2–8 autolle, lataus ja varasto lisävarusteena
+Teho
+8,78 kWp kahdelle autolle
+
+Autopaikat
+2, 4, 6 tai 8
+
+Lähde: Gare Energy Oy, Gare Solar Carport -tuotesivu, luettu 9.11.2026
+
+HD Hyundai
+HiT-H LE-FB
+Täysmusta HJT-aurinkopaneeli
+Teho
+440–460 W
+
+Hyötysuhde
+enintään 23,0 %
+
+Lähde: HD Hyundai Energy Solutions, HJT-paneelien datalehti (Scanoffice), luettu 9.11.2026
+
+Koko aurinkosähkövalikoima28
+Zaptec
+Zaptec Pro
+AC-latausasema yritysten ja taloyhtiöiden pysäköintiin
+Teho
+enintään 22 kW
+
+Kuormanhallinta
+dynaaminen, myös vaiheet
+
+Lähde: Zaptec Charger AS, Zaptec Pro -tuotelehti 22.2.2023 (Scanoffice), luettu 9.11.2026
+
+Easee
+Charge Pro
+AC-latausasema suuriin latausverkostoihin
+Teho
+enintään 22 kW
+
+Kuormanhallinta
+paikallinen, myös vaiheet
+
+Lähde: Easee, Charge Pro -datalehti 10/2025, versio 1.03 (Scanoffice), luettu 9.11.2026
 
 Avant Power
-Energiavarastot ja mikroverkot Avant-konsernista. Tarvittaessa Avantin koko valikoima.
-Energiavarastot
-Mikroverkot
-Mobiili energia ja lataus
-Off-grid-ratkaisut
+Kiinteä energiavarasto
+Energiavarasto ja integroitu pikalataus latausasemille
+Pikalataus
+200–600 kW, satelliittilatausasemat
 
-Lue lisää
-Sulje
-Avant Power
-Suomi · Ylöjärvi · Avant Tecnon tytäryhtiö
-Miksi valitsimme
-Suomalainen valmistaja, jonka nesteeseen upotettu ja lämmitetty akku toimii pakkasessa ja helteessä: siirrettävän Cube 47 -yksikön käyttölämpötila on −30…+50 °C. Mikroverkko kokoaa varaston, pikalatauksen ja oman tuotannon yhteen varikoille, logistiikkaan ja maatiloille. Tarvittaessa käytössä on Avantin koko valikoima.
-Tausta
-Ylöjärveläisen Avant Tecnon akkuyhtiö. Avant Tecno tunnetaan pienkuormaajistaan, joita toimitetaan kaikille mantereille; henkilöstöä on noin 450, ja liikevaihto oli noin 288 miljoonaa euroa vuonna 2023. Akut valmistetaan itse omalla uppojäähdytystekniikalla, josta on haettu useita patentteja.
-Energiavarastot
-Mikroverkot
-Mobiili energia ja lataus
-Off-grid-ratkaisut
+Varasto
+250 tai 500 kWh
 
-Lähteet: Yrittäjät, 9.1.2024; Avant Power, OptiTemp Cube 47 -esite, 6/2026.
-Kumppanisivullaavantpower.fi
+Lähde: Avant Power, OptiGrid™-sivu, kohta Kiinteät energiavarastot, luettu 9.11.2026
 
-Scanoffice Oy
-Lämpöpumppujen, aurinkosähkön ja latauksen maahantuoja.
-Ilmalämpöpumput
-Ilma-vesilämpöpumput
-Maalämpöpumput
-Aurinkopaneelit
-Latausasemat
-Ilmanvaihto
+Kaikki latausratkaisut8
+Mitsubishi Electric
+CAHV-Z450
+Ilma-vesilämpöpumppu kiinteistöihin, R290
+Lämmitysteho
+40 kW
 
-Lue lisää
-Sulje
-Scanoffice Oy
-Suomi · Espoo · perustettu 1984 · lähes sata ammattilaista
-Miksi valitsimme
-Kun kohde tarvitsee varaston lisäksi aurinkopaneeleja, lämpöpumppuja tai latausta, ne tulevat maahantuojalta, jolla on oma takuu- ja huoltopalvelu. Paneeleilla on 12 vuoden tuotetakuu ja 25 vuoden lineaarinen tehotakuu.
-Tausta
-Puhtaan energian laitteiden maahantuoja ja tukkukauppa vuodesta 1984, osa Scanoffice-konsernia. Valikoimassa ovat ilma-, ilma-vesi- ja maalämpöpumput, aurinkosähköjärjestelmät, ilmanvaihtolaitteet ja sähköautojen latausasemat, joita myyvät ja asentavat valtuutetut jälleenmyyjät koko Suomessa.
-Ilmalämpöpumput
-Ilma-vesilämpöpumput
-Maalämpöpumput
-Aurinkopaneelit
-Latausasemat
-Ilmanvaihto
+Menovesi
+75 °C vielä −15 °C:ssa
 
-Lähteet: Scanoffice Oy, In English (luettu 9.11.2026); Scanoffice Oy, Aurinkosähköjärjestelmä (luettu 27.9.2026).
-Kumppanisivullascanoffice.fi
+Lähde: Mitsubishi Electric, CAHV-Z450-esite (Scanoffice), luettu 9.11.2026
 
-Gare Energy Oy
-Aurinkokatot ja aurinkokatokset asennettuina. Roofit.Solarin jälleenmyyjä Suomessa, aurinkokatto.com.
-Aurinkokatot
-Aurinkokatokset
-Lataus katoksen alla
-Asennus
+Mitsubishi Electric
+Large Hydrobox E
+Ilma-vesilämpöpumppu suurempiin kiinteistöihin
+Lämmitysteho
+23 kW (11,4–28 kW)
 
-Lue lisää
-Sulje
-Gare Energy Oy
-Suomi · aurinkokatto.com · Roofit.Solarin virallinen kumppani Suomessa
-Miksi valitsimme
-Kun katto uusitaan joka tapauksessa, aurinkokatto tekee katosta ja voimalasta yhden tuotteen. Gare suunnittelee ja asentaa järjestelmän ja vahvistaa sen toimivuuden ennen luovutusta. Se asentaa myös aurinkokatokset ja latauspisteet.
-Tausta
-Suomalainen aurinkosähkön asennusyritys, joka on erikoistunut konesaumakattoihin. Gare on integroitujen aurinkokattojen valmistajan Roofit.Solarin virallinen kumppani Suomessa, 15 vuoden kokemuksella.
-Aurinkokatot
-Aurinkokatokset
-Lataus katoksen alla
-Asennus
+SCOP, 35 °C
+4,25
 
-Lähteet: Gare Energy Oy, yritysesittely (luettu 9.11.2026).
-Kumppanisivullaaurinkokatto.com
+Lähde: Mitsubishi Electric, Large Hydrobox E -esite (Scanoffice), luettu 9.11.2026
 
-JSM Automaatiosähkö Oy
-Rekisteröity sähköurakoitsija: asennus ja käyttöönotto.
-Energiavarastojen asennus
-Aurinkovoimalat
-Lämpöpumput
-Sähkötyöt
-Käyttöönotto
+Mitsubishi Electric
+Geodan
+Maalämpöpumppu
+Lämmitysteho
+1,5–11 kW
 
-Lue lisää
-Sulje
-JSM Automaatiosähkö Oy
-Suomi · Sastamala · varasto Tampereella · Pirkanmaa
-Miksi valitsimme
-JSM asentaa sähkövarastoja myös reservimarkkinakäyttöön, Ralosin kaapit mukaan lukien. Samalta urakoitsijalta tulevat kohteen muut sähkötyöt, aurinkovoimala, lämpöpumput ja lataus, ja työtä johtaa asennuspäällikkömme.
-Tausta
-Yrittäjävetoinen sähkö- ja automaatiourakoitsija, jolla on yli vuosikymmenen kokemus alalta. Toimisto on Sastamalassa ja varasto Tampereella, ja toimialue kattaa koko Pirkanmaan. Asiakkaina ovat yritykset, julkinen sektori ja yksityiset.
-Energiavarastojen asennus
-Aurinkovoimalat
-Lämpöpumput
-Sähkötyöt
-Käyttöönotto
+SCOP, 35 °C
+5,86 kylmässä ilmastossa
 
-Lähteet: JSM Automaatiosähkö Oy, etusivu (luettu 9.11.2026).
-Kumppanisivullajsmautomaatiosahko.fi
+Lähde: Mitsubishi Electric, Geodan-esite (Scanoffice), luettu 9.11.2026
+
+Kaikki lämpöpumput9
+Valmistaja ja malli valitaan kohteenne kulutuksen, liittymän ja tilan mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla.
+
+Kumppanimme
 
 Vastuuhenkilöt nimeltä.
 Jokaisella projektin vaiheella on nimetty vastuuhenkilö, ja numerot ovat heidän omiaan.
@@ -1114,7 +1107,7 @@ Paino
 Lähde: Elecnova, tuotesivu ECO-E20FT2170LP, luettu 9.11.2026
 
 Avant Power
-OptiGrid™-energiavarasto
+Kiinteä energiavarasto
 Kiinteä energiavarasto uppojäähdytyksellä, myös pikalatauksella
 Koot
 200 kW / 250 kWh tai 400 kW / 500 kWh
@@ -1125,10 +1118,10 @@ integroitu, 200–600 kW
 Jäähdytys
 uppojäähdytys
 
-Ohjaus
-OptiGrid Cloud
+Käyttö
+osana OptiGrid-mikroverkkoa tai itsenäisenä
 
-Lähde: Avant Power, OptiGrid™-tuotesivu, luettu 9.11.2026
+Lähde: Avant Power, OptiGrid™-sivu, kohta Kiinteät energiavarastot, luettu 9.11.2026
 
 Avant Power
 OptiTemp® Cube 47
@@ -1355,7 +1348,7 @@ ECO-P1P52LSElecnova · Nestejäähdytetty akkupaketti järjestelmiin · 46,59 kW
 RT5427 HV/SHVRaystech · Korkeajänniteakun moduuli · 5,43 kWh moduulia kohden, IP65 · Ralos Oy, tuotesivu Raystech RT5427 HV/SHV, luettu 9.11.2026
 M-BackupAtmoce · Varavoiman kytkentäkeskus · verkko 80 A, kuorma 63 A, IP65 · Ralos Oy, tuotesivu ATMOCE M-Backup, luettu 9.11.2026
 HiBattery 1920 ACHoymiles · Pistorasiaan kytkettävä akku mökille ja parvekevoimalalle · 1,92 kWh, 800 VA, enintään 6 akkua, IP66 · Ralos Oy, tuotesivu Hoymiles HiBattery 1920 AC, luettu 9.11.2026
-OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · DC-verkko, energiavarastot, lataus ja OptiGrid Cloud -ohjaus, osat myös erikseen · Avant Power, OptiGrid™-tuotesivu, luettu 9.11.2026
+OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · DC-verkko, energiavarastot, lataus ja OptiGrid Cloud -ohjaus, osat myös erikseen · Avant Power, OptiGrid™-sivu, kohta Kiinteät energiavarastot, luettu 9.11.2026
 
 Tekniset tiedot ovat valmistajien datalehdiltä ja tuotesivuilta. Varavoima koskee valittuja piirejä, jotka suunnitellaan kohdekäynnillä. Valmistaja ja malli valitaan kohteenne kulutuksen, liittymän ja tilan mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla.
 
@@ -1544,7 +1537,7 @@ OCPP 1.6J
 Lähde: Easee, Charge Pro -datalehti 10/2025, versio 1.03 (Scanoffice), luettu 9.11.2026
 
 Avant Power
-OptiGrid™-energiavarasto
+Kiinteä energiavarasto
 Energiavarasto ja integroitu pikalataus latausasemille
 Pikalataus
 200–600 kW, satelliittilatausasemat
@@ -1555,10 +1548,10 @@ Varasto
 Teho
 200 tai 400 kW
 
-Ohjaus
-OptiGrid Cloud
+Käyttö
+osana OptiGrid-mikroverkkoa tai itsenäisenä
 
-Lähde: Avant Power, OptiGrid™-tuotesivu, luettu 9.11.2026
+Lähde: Avant Power, OptiGrid™-sivu, kohta Kiinteät energiavarastot, luettu 9.11.2026
 
 Avant Power
 OptiTemp® Cube 47
@@ -1646,7 +1639,7 @@ Muut mallit ja ratkaisut
 Tiedot valmistajien tuotesivuilta ja tiedotteista.
 
 Malli · Tyyppi · Päätiedot · Lähde
-OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · DC-verkko, energiavarastot, lataus ja OptiGrid Cloud -ohjaus, osat myös erikseen · Avant Power, OptiGrid™-tuotesivu, luettu 9.11.2026
+OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · DC-verkko, energiavarastot, lataus ja OptiGrid Cloud -ohjaus, osat myös erikseen · Avant Power, OptiGrid™-sivu, kohta Kiinteät energiavarastot, luettu 9.11.2026
 Zaptec GoZaptec · AC-latausasema kotiin · enintään 22 kW, IP54, OCPP 1.6J · Zaptec Charger AS, Zaptec Go -tuotelehti (Scanoffice), luettu 9.11.2026
 Charge UpEasee · AC-latausasema kotiin · enintään 22 kW, IP54, IK10, OCPP 1.6J · Easee, Charge Up -datalehti (Scanoffice), luettu 9.11.2026
 AmpIN SmartAmpIN · Type 2 -latauskaapeli · taipuisa −40 °C:ssa, yli 50 000 käyttökertaa, IEC 62196-2 · Scanoffice, tuotesivu AmpIN Smart, luettu 9.11.2026
@@ -2390,7 +2383,7 @@ Paino
 Lähde: Elecnova, tuotesivu ECO-E20FT2170LP, luettu 9.11.2026
 
 Avant Power
-OptiGrid™-energiavarasto
+Kiinteä energiavarasto
 Kiinteä energiavarasto uppojäähdytyksellä, myös pikalatauksella
 Koot
 200 kW / 250 kWh tai 400 kW / 500 kWh
@@ -2401,10 +2394,10 @@ integroitu, 200–600 kW
 Jäähdytys
 uppojäähdytys
 
-Ohjaus
-OptiGrid Cloud
+Käyttö
+osana OptiGrid-mikroverkkoa tai itsenäisenä
 
-Lähde: Avant Power, OptiGrid™-tuotesivu, luettu 9.11.2026
+Lähde: Avant Power, OptiGrid™-sivu, kohta Kiinteät energiavarastot, luettu 9.11.2026
 
 Avant Power
 OptiTemp® Cube 47
@@ -3275,7 +3268,7 @@ Premium-aurinkosähköpaketitScanoffice · Paneelit, Sofar-invertteri ja kattoki
 NanorailRalos · Kiskoton kiinnitysjärjestelmä harjakatoille · konesauma-, lukkosauma-, profiilipelti- ja huopakatot; paneelit 28–40 mm · Ralos Oy, tuotesivu Ralos Nanorail, luettu 9.11.2026
 FLAT25Ralos · Kiskoton asennusjärjestelmä tasakatoille · katon kuorma 5,5 kg/m² · Ralos Oy, ratkaisusivu aurinkovoimalat, luettu 9.11.2026
 KiinnitysjärjestelmätAeroCompact, Esdec, Nordic Sun, Orima Solar · Paneelien kiinnitys katolle ja maahan · tasakatot, harjakatot ja maateline; palomieskytkin Santon · Scanoffice, aurinkopaneelien tuotesivut, luettu 9.11.2026
-OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · DC-verkko, energiavarastot, lataus ja OptiGrid Cloud -ohjaus, osat myös erikseen · Avant Power, OptiGrid™-tuotesivu, luettu 9.11.2026
+OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · DC-verkko, energiavarastot, lataus ja OptiGrid Cloud -ohjaus, osat myös erikseen · Avant Power, OptiGrid™-sivu, kohta Kiinteät energiavarastot, luettu 9.11.2026
 Zaptec GoZaptec · AC-latausasema kotiin · enintään 22 kW, IP54, OCPP 1.6J · Zaptec Charger AS, Zaptec Go -tuotelehti (Scanoffice), luettu 9.11.2026
 Charge UpEasee · AC-latausasema kotiin · enintään 22 kW, IP54, IK10, OCPP 1.6J · Easee, Charge Up -datalehti (Scanoffice), luettu 9.11.2026
 AmpIN SmartAmpIN · Type 2 -latauskaapeli · taipuisa −40 °C:ssa, yli 50 000 käyttökertaa, IEC 62196-2 · Scanoffice, tuotesivu AmpIN Smart, luettu 9.11.2026
@@ -4125,131 +4118,151 @@ Oleme partnerid valinud selle järgi, mis loob ettevõtte investeeringule suurim
 Investeeringu väärtus tuleb paljudest osadest. Kui pakume valikut eri tootjatest, toodetest ja teenustest, saame igale kliendile koostada rätseplahenduse, mis loob tema kinnistule kõige rohkem väärtust. Lähtume teie otsuse kriteeriumidest, mitte ühe seadme müügist. Partnerite kogu valik on teie käsutuses.
 Partnerid ja tooted
 
-Ralos Oy
-Eesti · Tallinn · agregaator Eleringi reserviturul
-Eesti agregaator, kelle oma tarkvara juhib salvestit Eleringi reservides.
-Tööstuslikud energiasalvestid
-Mitu akuvalikut
-Päikeseelektrijaamad
-Mikroinverterlahendused
+Näiteid valikust
+Tehnilised andmed on tootjate andmelehtedelt ja tootelehtedelt.
 
-Loe lähemalt
-Sulge
-Ralos Oy
-Soome · Tampere · asutatud 2017
-Miks me nad valisime
-Seadme, garantii ja hoolduse eest vastutab üks tootja. Beasti kappe saab ühendada paralleelselt kuni 16, kokku 2 MW, seega sobib sama toode nii ühe kapiga objektile kui ka megavatisele objektile. Saartalitluseks projekteeritud objektidele on kapile saadaval varutoite lüliti (STS).
-Taust
-Tamperes tegutsev päikeseenergiaettevõte, asutatud 2017. aastal. Tarnib ettevõtetele päikeseelektrijaamu oma Ralose paneelidega ning tööstuslikke energiasalvesteid sise- ja välipaigalduseks.
-Tööstuslikud energiasalvestid
-Mitu akuvalikut
-Päikeseelektrijaamad
-Mikroinverterlahendused
+EnergiasalvestidPäikeseelekterLaadimineSoojuspumbad
+Kõik tooted
 
-Allikad: Discover Cleantech, Ralos (loetud 9.11.2026); Ralos Oy, tehniline andmeleht Ralos Beast 125, V10.
-Partnerite lehelralos.fi
+Ralos
+Beast 125 HD
+Vedelikjahutusega salvesti sise- või välipaigalduseks
+Võimsus
+125 kW
+
+Energia
+261 kWh
+
+Allikas: Ralos Oy, tehniline andmeleht Ralos Beast 125, versioon V10, kontrollitud 9.11.2026
 
 Elecnova
-Energiasalvestite ja mikrovõrkude tootja.
-Vedelik- ja õhkjahutusega kapid
-Hübriidkapp päikeseelektrile
-Konteinersalvestid
-Saartalitlus
-Laadimine ja mikrovõrgud
+ECO-E418LP
+Vedelikjahutusega väliskapp
+Võimsus
+100 kW (400 V)
 
-Loe lähemalt
-SulgeSalvestikapp
-Sama kapp avatuna
-Õhkjahutusega kapp
-Hübriidkapp päikeseelektrile
-STS-kapp saartalitluseks
-Konteinersalvesti
+Energia
+418 kWh
 
-Elecnova
-Hiina · Shanghai
-Miks me nad valisime
-Ühelt tootjalt saab kõik suurused kapist konteinerini ning kapid ja konteinerid töötavad paralleelselt. Toodete standardid on avalikud, näiteks akuohutuse IEC 62619, tulekatse UL 9540A ja võrguühenduse EN 50549. Neid saab kontrollida enne pakkumist.
-Taust
-Shanghais tegutsev energiasalvestite ja mikrovõrkude tootja. Valik ulatub õhk- ja vedelikjahutusega väliskappidest konteinersalvestite, päikeseelektri hübriidkapi ja saartalitluse STS-kapini. Oktoobris 2026 tutvustas Elecnova oma kappe Tamperes messil Energia 2026.
-Vedelik- ja õhkjahutusega kapid
-Hübriidkapp päikeseelektrile
-Konteinersalvestid
-Saartalitlus
-Laadimine ja mikrovõrgud
+Allikas: Elecnova, tooteleht ECO-E418LP, loetud 9.11.2026
 
-Allikad: Elecnova, tooteleht ECO-E261LP-2A (loetud 27.9.2026); Elecnova uudis messilt ENERGIA 2026, 25.10.2026; pv magazine, 3.6.2026.
-Partnerite lehelelecnova-ess.com
+ZOE Energy Storage
+Z Box-C 215-2H
+Vedelikjahutusega väliskapp
+Võimsus
+105 kW
+
+Energia
+215 kWh
+
+Allikas: ZOE Energy Storage, Z Box-C 215-2H andmeleht (Scanoffice), loetud 9.11.2026
+
+Kõik energiasalvestid20
+HD Hyundai
+HiT-H LE-FB
+Täismust HJT-päikesepaneel
+Võimsus
+440–460 W
+
+Kasutegur
+kuni 23,0 %
+
+Allikas: HD Hyundai Energy Solutions, HJT-paneelide andmeleht (Scanoffice), loetud 9.11.2026
+
+Ralos
+Stalker 2.0
+Kaheteljeline päikesejälgija mikroinverteritega
+Võimsus
+3,72 kWp
+
+Paneelid
+6 × Hanersun 620 Wp, kahepoolne
+
+Allikas: Ralos Oy, tooteleht Ralos Stalker 2.0, loetud 9.11.2026
+
+Tongwei
+TWMNF-66HD 725 Wp
+Kahepoolne klaas-klaas paneel suurtele objektidele, TNC-elemendid
+Võimsus
+725 Wp
+
+Kasutegur
+23,3 %
+
+Allikas: Ralos Oy, tooteleht Tongwei 725 Wp, loetud 9.11.2026
+
+Kogu päikeseelektri valik25
+Zaptec
+Zaptec Pro
+Vahelduvvoolu laadimisjaam ettevõtete ja korteriühistute parklasse
+Võimsus
+kuni 22 kW
+
+Koormuse juhtimine
+dünaamiline, ka faasid
+
+Allikas: Zaptec Charger AS, Zaptec Pro tooteleht 22.2.2023 (Scanoffice), loetud 9.11.2026
+
+Easee
+Charge Pro
+Vahelduvvoolu laadimisjaam suurtele laadimisvõrkudele
+Võimsus
+kuni 22 kW
+
+Koormuse juhtimine
+kohalik, ka faasid
+
+Allikas: Easee, Charge Pro andmeleht 10/2025, versioon 1.03 (Scanoffice), loetud 9.11.2026
 
 Avant Power
-Energiasalvestid ja mikrovõrgud Avanti kontsernist. Vajadusel Avanti kogu valik.
-Energiasalvestid
-Mikrovõrgud
-Mobiilne energia ja laadimine
-Võrguvälised lahendused
+Statsionaarne energiasalvesti
+Salvesti ja integreeritud kiirlaadimine laadimisjaamadele
+Kiirlaadimine
+200–600 kW, satelliitlaadijad
 
-Loe lähemalt
-Sulge
-Avant Power
-Soome · Ylöjärvi · Avant Tecno tütarettevõte
-Miks me nad valisime
-Vedelikku sukeldatud ja köetav aku töötab nii pakases kui ka palavuses: teisaldatava Cube 47 töötemperatuur on −30…+50 °C. Mikrovõrk ühendab salvesti, kiirlaadimise ja oma tootmise depoodes, logistikas ja põllumajanduses. Vajadusel on kasutada Avanti kogu valik.
-Taust
-Ylöjärvil tegutseva Avant Tecno akuettevõte. Avant Tecno on tuntud kompaktlaadurite poolest, mida tarnitakse kõigile mandritele. Töötajaid on umbes 450 ja käive oli 2023. aastal umbes 288 miljonit eurot. Akud valmistatakse ise oma sukeljahutustehnoloogiaga, millele on taotletud mitu patenti.
-Energiasalvestid
-Mikrovõrgud
-Mobiilne energia ja laadimine
-Võrguvälised lahendused
+Salvesti
+250 või 500 kWh
 
-Allikad: Yrittäjät, 9.1.2024; Avant Power, OptiTemp Cube 47 brošüür, 6/2026.
-Partnerite lehelavantpower.fi
+Allikas: Avant Power, OptiGrid™ leht, statsionaarsete salvestite osa, loetud 9.11.2026
 
-Scanoffice Oy
-Soojuspumpade, päikeseelektri ja laadimise maaletooja.
-Õhksoojuspumbad
-Õhk-vesisoojuspumbad
-Maasoojuspumbad
-Päikesepaneelid
-Laadimisjaamad
-Ventilatsioon
+Kõik laadimislahendused7
+Mitsubishi Electric
+CAHV-Z450
+Õhk-vesi soojuspump kinnistutele, R290
+Küttevõimsus
+40 kW
 
-Loe lähemalt
-Sulge
-Scanoffice Oy
-Soome · Espoo · asutatud 1984 · ligi sada spetsialisti
-Miks me nad valisime
-Kui objekt vajab lisaks salvestile päikesepaneele, soojuspumpasid või laadimist, tulevad need maaletoojalt, kellel on oma garantii- ja hooldusteenus. Paneelidel on 12-aastane tootegarantii ja 25-aastane lineaarne võimsusgarantii.
-Taust
-Puhta energia seadmete maaletooja ja hulgimüüja aastast 1984, osa Scanoffice’i kontsernist. Valikus on õhk-, õhk-vesi- ja maasoojuspumbad, päikeseelektrisüsteemid, ventilatsiooniseadmed ja elektriautode laadimisjaamad.
-Õhksoojuspumbad
-Õhk-vesisoojuspumbad
-Maasoojuspumbad
-Päikesepaneelid
-Laadimisjaamad
-Ventilatsioon
+Pealevool
+75 °C ka −15 °C juures
 
-Allikad: Scanoffice Oy, In English (loetud 9.11.2026); Scanoffice Oy, Aurinkosähköjärjestelmä (loetud 27.9.2026).
-Partnerite lehelscanoffice.fi
+Allikas: Mitsubishi Electric, CAHV-Z450 brošüür (Scanoffice), loetud 9.11.2026
 
-Soleron Energy OÜ
-Agregaator ja energiajuhtimine Eleringi reserviturul.
-Agregaator
-Energiajuhtimine
-Reserviturg
+Mitsubishi Electric
+Large Hydrobox E
+Õhk-vesi soojuspump suurematele kinnistutele
+Küttevõimsus
+23 kW (11,4–28 kW)
 
-Loe lähemalt
-Sulge
-Soleron Energy OÜ
-Eesti · Tallinn · agregaator Eleringi reserviturul
-Miks me nad valisime
-Eesti agregaator, kelle oma juhtimistarkvara pakub salvesti võimsust Eleringi sagedusreservidesse ööpäev läbi. SAMA ehitab ja ühendab süsteemi, Soleron juhib seda turul.
-Taust
-Tallinnas tegutsev ettevõte, mille põhifookus on nutikad energiajuhtimis- ja salvestuslahendused. Soleron pakub võtmed kätte lahendusi projekteerimisest ja paigaldusest hoolduse ja süsteemi monitooringuni ning agregeerib salvesteid Eleringi sagedusreservidesse oma EMS-tarkvaraga.
-Agregaator
-Energiajuhtimine
-Reserviturg
+SCOP, 35 °C
+4,25
 
-Allikad: Soleron Energy, avaleht (loetud 9.11.2026); Soleron Energy, Soleron Energy sagedusreservide turul, 10.9.2025; Elektriala, 7.11.2025.
-Partnerite lehelsoleronenergy.ee
+Allikas: Mitsubishi Electric, Large Hydrobox E brošüür (Scanoffice), loetud 9.11.2026
+
+Mitsubishi Electric
+Geodan
+Maasoojuspump
+Küttevõimsus
+1,5–11 kW
+
+SCOP, 35 °C
+5,86 külmas kliimas
+
+Allikas: Mitsubishi Electric, Geodan brošüür (Scanoffice), loetud 9.11.2026
+
+Kõik soojuspumbad9
+Tootja ja mudel valitakse teie objekti tarbimise, liitumise ja ruumi järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega.
+
+Meie partnerid
 
 Vastutajad nimeliselt.
 Igal projekti etapil on nimeline vastutaja ja numbrid on nende enda omad.
@@ -5030,7 +5043,7 @@ Kaal
 Allikas: Elecnova, tooteleht ECO-E20FT2170LP, loetud 9.11.2026
 
 Avant Power
-OptiGrid™ energiasalvesti
+Statsionaarne energiasalvesti
 Statsionaarne salvesti sukeljahutusega, ka kiirlaadimisega
 Suurused
 200 kW / 250 kWh või 400 kW / 500 kWh
@@ -5041,10 +5054,10 @@ integreeritud, 200–600 kW
 Jahutus
 sukeljahutus
 
-Juhtimine
-OptiGrid Cloud
+Kasutus
+OptiGridi mikrovõrgu osana või iseseisvalt
 
-Allikas: Avant Power, OptiGrid™ tooteleht, loetud 9.11.2026
+Allikas: Avant Power, OptiGrid™ leht, statsionaarsete salvestite osa, loetud 9.11.2026
 
 Avant Power
 OptiTemp® Cube 47
@@ -5271,7 +5284,7 @@ ECO-P1P52LSElecnova · Vedelikjahutusega akupakett süsteemidesse · 46,59 kWh, 
 RT5427 HV/SHVRaystech · Kõrgepingeaku moodul · 5,43 kWh mooduli kohta, IP65 · Ralos Oy, tooteleht Raystech RT5427 HV/SHV, loetud 9.11.2026
 M-BackupAtmoce · Varutoite lülituskeskus · võrk 80 A, koormus 63 A, IP65 · Ralos Oy, tooteleht ATMOCE M-Backup, loetud 9.11.2026
 HiBattery 1920 ACHoymiles · Pistikupessa ühendatav aku suvilale ja rõdujaamale · 1,92 kWh, 800 VA, kuni 6 akut, IP66 · Ralos Oy, tooteleht Hoymiles HiBattery 1920 AC, loetud 9.11.2026
-OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · DC-võrk, energiasalvestid, laadimine ja OptiGrid Cloudi juhtimine, osad ka eraldi · Avant Power, OptiGrid™ tooteleht, loetud 9.11.2026
+OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · DC-võrk, energiasalvestid, laadimine ja OptiGrid Cloudi juhtimine, osad ka eraldi · Avant Power, OptiGrid™ leht, statsionaarsete salvestite osa, loetud 9.11.2026
 
 Tehnilised andmed on tootjate andmelehtedelt ja tootelehtedelt. Varutoide hõlmab valitud ahelaid, mis kavandatakse objektikülastusel. Tootja ja mudel valitakse teie objekti tarbimise, liitumise ja ruumi järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega.
 
@@ -5455,7 +5468,7 @@ OCPP 1.6J
 Allikas: Easee, Charge Pro andmeleht 10/2025, versioon 1.03 (Scanoffice), loetud 9.11.2026
 
 Avant Power
-OptiGrid™ energiasalvesti
+Statsionaarne energiasalvesti
 Salvesti ja integreeritud kiirlaadimine laadimisjaamadele
 Kiirlaadimine
 200–600 kW, satelliitlaadijad
@@ -5466,10 +5479,10 @@ Salvesti
 Võimsus
 200 või 400 kW
 
-Juhtimine
-OptiGrid Cloud
+Kasutus
+OptiGridi mikrovõrgu osana või iseseisvalt
 
-Allikas: Avant Power, OptiGrid™ tooteleht, loetud 9.11.2026
+Allikas: Avant Power, OptiGrid™ leht, statsionaarsete salvestite osa, loetud 9.11.2026
 
 Avant Power
 OptiTemp® Cube 47
@@ -5540,7 +5553,7 @@ Teised mudelid ja lahendused
 Andmed tootjate tootelehtedelt ja pressiteadetest.
 
 Mudel · Tüüp · Põhiandmed · Allikas
-OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · DC-võrk, energiasalvestid, laadimine ja OptiGrid Cloudi juhtimine, osad ka eraldi · Avant Power, OptiGrid™ tooteleht, loetud 9.11.2026
+OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · DC-võrk, energiasalvestid, laadimine ja OptiGrid Cloudi juhtimine, osad ka eraldi · Avant Power, OptiGrid™ leht, statsionaarsete salvestite osa, loetud 9.11.2026
 Zaptec GoZaptec · AC-laadimisjaam kodule · kuni 22 kW, IP54, OCPP 1.6J · Zaptec Charger AS, Zaptec Go tooteleht (Scanoffice), loetud 9.11.2026
 Charge UpEasee · AC-laadimisjaam kodule · kuni 22 kW, IP54, IK10, OCPP 1.6J · Easee, Charge Up andmeleht (Scanoffice), loetud 9.11.2026
 AmpIN SmartAmpIN · Type 2 laadimiskaabel · painduv −40 °C juures, üle 50 000 kasutuskorra, IEC 62196-2 · Scanoffice, tooteleht AmpIN Smart, loetud 9.11.2026
@@ -6222,7 +6235,7 @@ Kaal
 Allikas: Elecnova, tooteleht ECO-E20FT2170LP, loetud 9.11.2026
 
 Avant Power
-OptiGrid™ energiasalvesti
+Statsionaarne energiasalvesti
 Statsionaarne salvesti sukeljahutusega, ka kiirlaadimisega
 Suurused
 200 kW / 250 kWh või 400 kW / 500 kWh
@@ -6233,10 +6246,10 @@ integreeritud, 200–600 kW
 Jahutus
 sukeljahutus
 
-Juhtimine
-OptiGrid Cloud
+Kasutus
+OptiGridi mikrovõrgu osana või iseseisvalt
 
-Allikas: Avant Power, OptiGrid™ tooteleht, loetud 9.11.2026
+Allikas: Avant Power, OptiGrid™ leht, statsionaarsete salvestite osa, loetud 9.11.2026
 
 Avant Power
 OptiTemp® Cube 47
@@ -7056,7 +7069,7 @@ Premium-aurinkosähköpaketitScanoffice · Paneelid, Sofari inverter ja katuseki
 NanorailRalos · Rööbasteta kinnitussüsteem viilkatustele · valts-, klikkvalts-, profiilplekk- ja rullkatused; paneelid 28–40 mm · Ralos Oy, tooteleht Ralos Nanorail, loetud 9.11.2026
 FLAT25Ralos · Rööbasteta paigaldussüsteem lamekatustele · katuse koormus 5,5 kg/m² · Ralos Oy, lahenduste leht päikesejaamad, loetud 9.11.2026
 KiinnitysjärjestelmätAeroCompact, Esdec, Nordic Sun, Orima Solar · Paneelide kinnitus katusele ja maale · lamekatused, viilkatused ja maaraam; tuletõrjelüliti Santon · Scanoffice, päikesepaneelide tootelehed, loetud 9.11.2026
-OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · DC-võrk, energiasalvestid, laadimine ja OptiGrid Cloudi juhtimine, osad ka eraldi · Avant Power, OptiGrid™ tooteleht, loetud 9.11.2026
+OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · DC-võrk, energiasalvestid, laadimine ja OptiGrid Cloudi juhtimine, osad ka eraldi · Avant Power, OptiGrid™ leht, statsionaarsete salvestite osa, loetud 9.11.2026
 Zaptec GoZaptec · AC-laadimisjaam kodule · kuni 22 kW, IP54, OCPP 1.6J · Zaptec Charger AS, Zaptec Go tooteleht (Scanoffice), loetud 9.11.2026
 Charge UpEasee · AC-laadimisjaam kodule · kuni 22 kW, IP54, IK10, OCPP 1.6J · Easee, Charge Up andmeleht (Scanoffice), loetud 9.11.2026
 AmpIN SmartAmpIN · Type 2 laadimiskaabel · painduv −40 °C juures, üle 50 000 kasutuskorra, IEC 62196-2 · Scanoffice, tooteleht AmpIN Smart, loetud 9.11.2026

@@ -747,3 +747,52 @@ on valikoimassa useamman valmistajan kautta; "kõiki tooteid ei leidnud valikus,
   ZNShine Solar, Scanoffice Premium -paketit, AmpIN Smart, Energiansäästäjä, Energypac, City Multi VRF, alpha innotec, Flowair LEO,
   varaajat. Jätetty pois: Avant TER47 (puolustusala), Mitsubishi AP (myynti päättynyt), Wedoton Comfort (saatavilla 2027),
   lisävarusteet ja kulutustarvikkeet. llms.txt: EP-maininta rivinvaihdon yli poistettu; vartija tarkistaa nyt myös llms-tiedostot.
+
+## v59 — logorivi ja tuotenosto etusivulle (Martin 9.11.2026; tehty haarassa draft-logot-tuotteet, viety v51-launchiin ja draftiin 9.11.2026 klo 21.30 jälkeen)
+
+Martin 9.11.2026: kumppaniosion kortit ja paneelit (jokaisella oma kortti ja linkit kumppanin sivuille) vaihtoehtoisesti
+logoina yhdessä rivissä; paneelien tilalle päätuotteiden esittely, valittava valikko ja 2–3 tuotetta per valinta (vieritettävä)
+tai tuotekatalogit. Tehty omaan haaraan vertailtavaksi draftin rinnalla (Netlifyn deploy preview PR:stä draftiin); draft ennallaan.
+
+- Järjestys (Martin 9.11.2026 klo 19.19): tuotenosto ensin, logorivi sen alla.
+- Logorivi (`.k-logos`, `scripts/kumppanit/build_kumppanit.py` `logos()`, merkit `kumppanit:logot:alku/loppu`): FI Ralos,
+  Elecnova, Avant Power, Scanoffice, Gare Energy, JSM; ET Ralos, Elecnova, Avant Power, Scanoffice, Soleron. Ei linkkejä.
+  Logot `assets/kumppanit/logot/<id>.svg`: kumppaneiden omilta sivuilta 9.11.2026 (ralos.fi R-merkki + jakokuvan sanamerkki,
+  elecnovapower.com, scanoffice.fi ilman 40-vuotislisäystä "vuodesta 1984", aurinkokatto.com garelogo, jsmautomaatiosahko.fi
+  ilman sulkukaaria, soleronenergy.ee; Avant Power = repossa ollut logo-avant-power.png), renderöity selaimessa isoksi ja
+  jäljitetty yksivärisiksi vektoreiksi (potrace), väri #EFE8D8 = osion teksti. Optinen koko: leveys × korkeus ≈ `LOGO_ALA`,
+  korkeus `LOGO_H`, tasaus `LOGO_SKAALA`. EP Energy jää pois `PIILOTETUT`-listan kautta. `front()` ohittaa korttien
+  päivityksen, kun etusivulla ei ole `.k-pc`-kortteja.
+- Tuotenosto (`.k-tuo`, `scripts/tuotteet/build_tuotteet.py` `ETUSIVU`/`etusivu()`, merkit `tuotteet:etusivu:alku/loppu`):
+  radiot + `:has()` (ei JS:ää; ilman tukea kaikki ryhmät allekkain), ryhmät Energiavarastot / Aurinkosähkö / Lataus /
+  Lämpöpumput, kolme korttia (alasivujen kortti, kaksi päätietoa, lähde ja päivä) + "Koko valikoima" -kortti tuotemäärällä
+  ja linkillä alasivun valikoimaan (lämpöpumput: /kumppanit/?v=lampo#valikoima ↔ /partnerid/?v=lampo#valik). FI aurinko:
+  Velario Slim, Gare Solar Carport, HD Hyundai; ET: HD Hyundai, Ralos Stalker 2.0, Tongwei 725 (kielirajatut ohitetaan).
+  ≤ 1023 px kortit pyyhkäisyrivinä, ≤ 640 px valikko vaakavieritteinen.
+- site.css: `.k-pcs/.k-pc/.k-pdl/.k-pm/.k-pgal`-säännöt poistettu (−5,3 kt), uudet `.k-logos`/`.k-tuo` lopussa; 87,8 kt.
+  site.js: scrollers `.k-tuo-g` (oli `.k-pcs`), `?v=<ryhmä>` valitsee sivun tuotesuodattimen.
+- Korjaus (koskee myös draftia): alasivut.css:n suodatussäännöt kattoivat vain tv- ja ta-lohkojen vanhat ryhmät, ja valitsin
+  `.tuo:has(...)` ei osunut kumppanisivun `section#valikoima`:an → /kumppanit/-, /lataus/- ja v57–v58-ryhmien suodattimet eivät
+  rajanneet mitään (draft 9.11.2026: "Lämpöpumput" näytti 58/58). Nyt säännöt generoidaan CATS × BLOCKS:sta
+  (`filter_css()`, merkit `tuotteet:suodatus:alku/loppu` alasivut.css:ssä), valitsin `.tuo-f:has(radio)~.tuo-g`.
+- Uudet näkyvät tekstit natiivitarkistukseen: FI "Kumppanimme", "Poimintoja valikoimasta", "Koko valikoima", "tuotetta",
+  "Katso valikoima"; ET "Meie partnerid", "Näiteid valikust", "Kogu valik", "toodet", "Vaata valikut". Muut lauseet ovat
+  alasivujen valikoiman hyväksyttyjä lauseita.
+- Martin 9.11.2026 klo 21.30: "We like this design more than the previous one" → draftiin. Iso tyhjä "Koko valikoima" -kortti pois;
+  tilalle ryhmän pieni painike korttien alla (`.k-tuo-more`: FI "Kaikki energiavarastot" / "Koko aurinkosähkövalikoima" /
+  "Kaikki latausratkaisut" / "Kaikki lämpöpumput" + määrä; ET "Kõik energiasalvestid" / "Kogu päikeseelektri valik" /
+  "Kõik laadimislahendused" / "Kõik soojuspumbad"). Valikon perään "Kaikki tuotteet" / "Kõik tooted" → /kumppanit/#valikoima ↔
+  /partnerid/#valik (`.k-tuo-allp`). Kolme korttia rivissä (kuva 4:3, puhelimella 1:1). Koko kortti on linkki tuotteeseen sen omalla
+  sivulla (`<lohkon pre>-<id>`, esim. /energiavarastot/#tv-ralos-beast-125-hd, lämpöpumput /kumppanit/#tk-…): mallinimen linkki
+  `.tc-a` venytetään `::after`-kerroksella, lähdelinkki (`.tc-src`, z-index 2) pysyy klikattavana. Kohdekortti korostuu
+  alasivulla (`.tc:target`, alasivut.css). Ryhmä = `.k-tuo-p` (paneeli: lista + painike).
+- Avant Power korjattu (Martin 9.11.2026 klo 21.31: "Optigrid is their aggregation service … we want to show their battery
+  storage"): tarkistettu avantpower.fi/optigrid 9.11.2026 — OptiGrid™ on Avantin mikroverkko- ja energianhallinta-alusta
+  (DC-verkko, varastot, lataus, OptiGrid Cloud -pilviohjaus, joka voi viedä ylimääräisen kapasiteetin sähkömarkkinoille);
+  varasto on oma tuotteensa ("Kiinteät energiavarastot … saatavilla erikseen", toimii myös itsenäisenä). Kortti nyt id
+  `avant-power-bess`, malli "Kiinteä energiavarasto" / "Statsionaarne energiasalvesti", kuva Avantin BESS-tuotekuvasta
+  (BESS-1.avif, neliörajaus; vanha `avant-power-optigrid.webp` = OptiGrid-havainnekuvan rajaus poistettu), päätieto "Käyttö:
+  osana OptiGrid-mikroverkkoa tai itsenäisenä" (oli "Ohjaus: OptiGrid Cloud"), lähteen nimi "OptiGrid™-sivu, kohta Kiinteät
+  energiavarastot". Energiavarastosivun tuoterivikuvan alt korjattu samaan. Taulukon rivi "OptiGrid™ — Mikroverkko …" on oikein ja jää.
+- AVOIN: natiivitarkistus (yllä luetellut + ryhmäpainikkeet, "Kaikki tuotteet" / "Kõik tooted", "Käyttö" / "Kasutus" ja sen arvo,
+  "Statsionaarne energiasalvesti"); logojen käyttö kumppanin ilmeohjeen mukaan (pyydä tarvittaessa viralliset vektorilogot).
