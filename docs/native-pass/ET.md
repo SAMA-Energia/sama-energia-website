@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 869 katselmoitavaa riviä — 699 uutta, 170 muutettua, joista **154 on merkitty ⚠**. Muuttumattomia ohitettiin 609.
+**Yhteenveto:** 999 katselmoitavaa riviä — 829 uutta, 170 muutettua, joista **187 on merkitty ⚠**. Muuttumattomia ohitettiin 609.
 
 **Huomio:** 2 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -348,35 +348,6 @@ Vastine mainissa: `/et/`
 
 ### #valik
 
-- [ ] `h3` **uusi** — EP Energy
-      - **Korjaus:**
-- [ ] `p` **uusi** — Energiasalvestid, teisaldatav energia ja laadimine. Samalt tootjalt ka tõstukid ja muu tehnika.
-      - **Korjaus:**
-- [ ] `li` **muutettu** — Salvestikapid
-      - main: Energiasalvestid
-      - **Korjaus:**
-- [ ] `li` **uusi** — Teisaldatavad energiaseadmed
-      - **Korjaus:**
-- [ ] `li` **uusi** — Kiirlaadijad
-      - **Korjaus:**
-- [ ] `li` **uusi** — Tõstukid ja tehnika
-      - **Korjaus:**
-
-### #pd-ep-energy
-> Lähde tälle osiolle: Allikad: EP Energy, kataloogid C&I Energy Storage Solutions ja Mobile Energy & Storage Charging Solutions, 12/2025.
-
-- [ ] `p` **uusi** — Hiina · Anji, Zhejiang · Euroopa kontor Belgias aastast 2011
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Lisaks kappidele ja konteineritele teisaldatavad energiaseadmed ja akuga kiirlaadijad: salvesti ja laadimine ka ehitusplatsile ja kohtadesse, kus liitumisest ei piisa. Turustus ja tugi Euroopas käib Belgia kaudu.
-      - main: Elering maksab võrgu tasakaalustamiseks valmis olevate akude eest, ka tundidel, mil aku lihtsalt ootab. Liitumine käib agregaatori kaudu, kes on Eleringiga lepingu sõlminud teenusepakkuja.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Liitiumakude tootja, kellel on üle 17 aasta kogemust: kõigepealt elektriliste tõstukite ja laotehnika akud, alates 2022. aastast ka energiasalvestid. Aastas valmib umbes 200 000 akut ja kasutuses on neid üle 600 000. Euroopa kontor on Belgias aastast 2011, ladu on Brüsselis ja kontor Kölnis.
-      - **Korjaus:**
-- [ ] `p` **uusi** — Partnerite lehelep-unipower.com
-      - **Korjaus:**
-
-### #valik
-
 - [ ] ⚠ `h3` **uusi** — Avant Power
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
@@ -631,34 +602,44 @@ Vastine mainissa: `/et/energiasalvestid/`
 
 ### #tooted
 > Lähde tälle osiolle: Allikas: Ralos Oy, tehniline andmeleht Ralos Beast 125, versioon V10, kontrollitud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Ralos Mini-Beast 50, loetud 9.11.2026
 > Lähde tälle osiolle: Allikas: Elecnova, tooteleht ECO-E418LP, loetud 9.11.2026
 > Lähde tälle osiolle: Allikas: Elecnova, tooteleht ECO-E101WX, loetud 9.11.2026
-> Lähde tälle osiolle: Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
 > Lähde tälle osiolle: Allikas: ZOE Energy Storage, Z Box-C 215-2H andmeleht (Scanoffice), loetud 9.11.2026
 > Lähde tälle osiolle: Allikas: Elecnova, tooteleht ECO-E64WX, loetud 9.11.2026
 > Lähde tälle osiolle: Allikas: Elecnova, tooteleht ECO-E20FT2170LP, loetud 9.11.2026
-> Lähde tälle osiolle: Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
+> Lähde tälle osiolle: Allikas: Avant Power, OptiGrid™ tooteleht, loetud 9.11.2026
 > Lähde tälle osiolle: Allikas: Avant Power, OptiTemp® Cube 47 brošüür, 6/2026, loetud 9.11.2026
 > Lähde tälle osiolle: Allikas: Elecnova, tooteleht ECO-STS-C125, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Hoymiles HiOne, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: SolaX, brošüürid X3-Hybrid G4 ja Triple Power T30 (Scanoffice), loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Hoymiles LB-16D-G3, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Enershare CORE, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Pytes PiLV1, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Pytes V16, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht ATMOCE M-ELV, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Raystech RT16076MPlus, loetud 9.11.2026
 > Lähde tälle osiolle: Andmed tootjate tootelehtedelt ja pressiteadetest.
 
 - [ ] `h2` **uusi** — Valik kapist konteinerini.
       - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — Väliskapid, hübriidkapid, konteinerid, teisaldatavad seadmed ja varutoitekapid viielt tootjalt: Ralos, Elecnova, EP Energy, Avant Power ja ZOE Energy Storage. Laadimisjaamad on laadimise lehel.
+- [ ] ⚠ `p` **uusi** — Väliskappidest ja suurtest salvestitest teisaldatavate seadmete ja väikeobjektide akudeni: Ralos, Elecnova, Avant Power ja ZOE Energy Storage ning Ralose ja Scanoffice Oy kaudu Hoymiles, Pytes, Enershare, Atmoce, Raystech ja SolaX. Laadimisjaamad on laadimise lehel.
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
-- [ ] `label` **uusi** — Kõik 14
+- [ ] `label` **uusi** — Kõik 18
       - **Korjaus:**
-- [ ] `label` **uusi** — Väliskapid 5
+- [ ] `label` **uusi** — Väliskapid 4
       - **Korjaus:**
 - [ ] `label` **uusi** — Hübriidkapid 2
       - **Korjaus:**
-- [ ] `label` **uusi** — Konteinerid 2
+- [ ] `label` **uusi** — Konteinerid ja suured salvestid 2
       - **Korjaus:**
-- [ ] `label` **uusi** — Teisaldatavad ja laadimine 4
+- [ ] `label` **uusi** — Teisaldatavad 1
       - **Korjaus:**
 - [ ] `label` **muutettu** — Varutoide 3
       - main: Varutoide
+      - **Korjaus:**
+- [ ] `label` **uusi** — Väikeobjektid 8
       - **Korjaus:**
 - [ ] ⚠ `p` **uusi** — Ralos
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
@@ -686,6 +667,18 @@ Vastine mainissa: `/et/energiasalvestid/`
       - main: Päikeseelekter
       - **Korjaus:**
 - [ ] ⚠ `dd` **uusi** — 2 × 63 kW
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Mini-Beast 50
+      - **Korjaus:**
+- [ ] `p` **uusi** — Salvesti keskmistele kinnistutele, hübriidinverteriga
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 50 kW
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 102 kWh
+      - **Korjaus:**
+- [ ] `dd` **uusi** — oma väljund, UPS-funktsioon
+      - **Korjaus:**
+- [ ] `dd` **uusi** — otse inverterisse
       - **Korjaus:**
 - [ ] ⚠ `p` **uusi** — Elecnova
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
@@ -718,38 +711,20 @@ Vastine mainissa: `/et/energiasalvestid/`
       - **Korjaus:**
 - [ ] `dd` **uusi** — 1,25 × 1,2 m
       - **Korjaus:**
-- [ ] `p` **uusi** — EP Energy
-      - **Korjaus:**
-- [ ] `h3` **uusi** — EPES233
-      - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — 105 kW
-      - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — 233 kWh
-      - **Korjaus:**
-- [ ] `dd` **uusi** — 1,45 × 1,3 m
-      - **Korjaus:**
 - [ ] `p` **uusi** — ZOE Energy Storage
       - **Korjaus:**
 - [ ] `h3` **uusi** — Z Box-C 215-2H
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 105 kW
       - **Korjaus:**
 - [ ] ⚠ `dd` **uusi** — 215 kWh
       - **Korjaus:**
 - [ ] `dd` **uusi** — 1,34 × 1,40 m
       - **Korjaus:**
-- [ ] `h3` **uusi** — EPHS104 / EPHS156
+- [ ] `h3` **uusi** — ECO-E64WX
       - **Korjaus:**
 - [ ] `p` **muutettu** — Hübriidkapp päikeseelektrile
       - main: Päikeseelekter
-      - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — 50 kW
-      - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — 104 või 156 kWh
-      - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — kuni 100 kW
-      - **Korjaus:**
-- [ ] `dd` **uusi** — alla 10 ms
-      - **Korjaus:**
-- [ ] `h3` **uusi** — ECO-E64WX
       - **Korjaus:**
 - [ ] ⚠ `dd` **uusi** — 25–50 kW
       - **Korjaus:**
@@ -769,63 +744,27 @@ Vastine mainissa: `/et/energiasalvestid/`
       - **Korjaus:**
 - [ ] `dd` **uusi** — 25 t
       - **Korjaus:**
-- [ ] `h3` **uusi** — EPES5000
-      - **Korjaus:**
-- [ ] `p` **muutettu** — Akukonteiner suurtele objektidele
-      - main: Kui suur aku teie objektile?
-      - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — 5 015 kWh
-      - **Korjaus:**
-- [ ] `dt` **uusi** — Pinge
-      - **Korjaus:**
-- [ ] `dd` **uusi** — 1 040–1 500 V DC
-      - **Korjaus:**
-- [ ] `dd` **uusi** — 44 t
-      - **Korjaus:**
-- [ ] `h3` **uusi** — EPPS93-M
-      - **Korjaus:**
-- [ ] `p` **uusi** — Teisaldatav energiaseade
-      - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — 93 kWh
-      - **Korjaus:**
-- [ ] `dt` **uusi** — DC-laadimine
-      - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — 60 kW
-      - **Korjaus:**
-- [ ] `dt` **uusi** — AC-väljund
-      - **Korjaus:**
-- [ ] `dd` **uusi** — 33 kVA
-      - **Korjaus:**
-- [ ] `dd` **uusi** — 1,5 t
-      - **Korjaus:**
-- [ ] `h3` **uusi** — EPPS210-M
-      - **Korjaus:**
-- [ ] `p` **uusi** — Teisaldatav energiaseade haagisel
-      - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — 217 kWh
-      - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — kuni 240 kW
-      - **Korjaus:**
-- [ ] `dd` **uusi** — 2,7 t
-      - **Korjaus:**
-- [ ] `h3` **uusi** — EPCS209
-      - **Korjaus:**
-- [ ] `p` **uusi** — Akuga DC-kiirlaadija
-      - **Korjaus:**
-- [ ] `dt` **uusi** — Liitumisest
-      - **Korjaus:**
-- [ ] `dt` **uusi** — Laadimine
-      - **Korjaus:**
-- [ ] `dt` **uusi** — Aku
-      - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — 209 kWh
-      - **Korjaus:**
-- [ ] `dt` **uusi** — Pistikud
-      - **Korjaus:**
-- [ ] `dd` **uusi** — 2 × CCS2
-      - **Korjaus:**
 - [ ] ⚠ `p` **uusi** — Avant Power
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `h3` **muutettu** — OptiGrid™ energiasalvesti
+      - main: Energiasalvestid
+      - **Korjaus:**
+- [ ] `p` **uusi** — Statsionaarne salvesti sukeljahutusega, ka kiirlaadimisega
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Suurused
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 200 kW / 250 kWh või 400 kW / 500 kWh
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Kiirlaadimine
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — integreeritud, 200–600 kW
+      - **Korjaus:**
+- [ ] `dd` **uusi** — sukeljahutus
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Juhtimine
+      - **Korjaus:**
+- [ ] `dd` **uusi** — OptiGrid Cloud
       - **Korjaus:**
 - [ ] `h3` **uusi** — OptiTemp® Cube 47
       - **Korjaus:**
@@ -853,7 +792,119 @@ Vastine mainissa: `/et/energiasalvestid/`
       - **Korjaus:**
 - [ ] `dd` **uusi** — 20 ms
       - **Korjaus:**
+- [ ] `dt` **uusi** — Pinge
+      - **Korjaus:**
 - [ ] `dd` **uusi** — 400 V
+      - **Korjaus:**
+- [ ] `p` **uusi** — Hoymiles
+      - **Korjaus:**
+- [ ] `h3` **uusi** — HiOne
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kolmefaasiline all-in-one salvesti kodule ja väikeettevõttele
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 8–20 kW
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 8–32 kWh tornis, kuni 64 kWh
+      - **Korjaus:**
+- [ ] `dd` **uusi** — IP66
+      - **Korjaus:**
+- [ ] `dt` **muutettu** — Garantii
+      - main: Ohutus ja garantii
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 10 aastat
+      - **Korjaus:**
+- [ ] `p` **uusi** — SolaX
+      - **Korjaus:**
+- [ ] `h3` **uusi** — X3-Hybrid G4 ja T30
+      - **Korjaus:**
+- [ ] `p` **uusi** — Hübriidinverter ja aku kodule ja väikeobjektidele
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 5–15 kW
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Aku
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 3,1–12,3 kWh
+      - **Korjaus:**
+- [ ] `dd` **uusi** — IP65
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Paralleelis
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — kuni 150 kW
+      - **Korjaus:**
+- [ ] `h3` **uusi** — LB-16D-G3
+      - **Korjaus:**
+- [ ] `p` **uusi** — Madalpingeaku hübriidinverterile
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 16 kWh
+      - **Korjaus:**
+- [ ] `dt` **muutettu** — Laiendus
+      - main: Lahendused
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — kuni 16 paralleelis, 256 kWh
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 51,2 V
+      - **Korjaus:**
+- [ ] `p` **uusi** — Enershare
+      - **Korjaus:**
+- [ ] `h3` **uusi** — CORE
+      - **Korjaus:**
+- [ ] `p` **uusi** — Virnastatav kõrgepingeaku
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 9,6–25,6 kWh tornis
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — kuni 153,6 kWh
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Tsüklid
+      - **Korjaus:**
+- [ ] `dd` **uusi** — vähemalt 6 000
+      - **Korjaus:**
+- [ ] `p` **uusi** — Pytes
+      - **Korjaus:**
+- [ ] `h3` **uusi** — PiLV1
+      - **Korjaus:**
+- [ ] `p` **uusi** — Virnastatav madalpingeaku
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 5,12–30,72 kWh tornis
+      - **Korjaus:**
+- [ ] `dd` **uusi** — kuni 8 torni
+      - **Korjaus:**
+- [ ] `h3` **uusi** — V16
+      - **Korjaus:**
+- [ ] `p` **uusi** — Madalpingeaku ka välipaigalduseks
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 16,07 kWh
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Tühjendusvõimsus
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — pidev 10,24 kW
+      - **Korjaus:**
+- [ ] `dd` **uusi** — vähemalt 8 000
+      - **Korjaus:**
+- [ ] `p` **uusi** — Atmoce
+      - **Korjaus:**
+- [ ] `h3` **uusi** — M-ELV
+      - **Korjaus:**
+- [ ] `p` **uusi** — Madalpingeaku integreeritud inverteriga
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 7 kWh
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 4,5 kVA pidev
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — kuni 126 kWh
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 15 aastat
+      - **Korjaus:**
+- [ ] `p` **uusi** — Raystech
+      - **Korjaus:**
+- [ ] `h3` **uusi** — RT16076MPlus
+      - **Korjaus:**
+- [ ] `p` **uusi** — Madalpingeaku
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 14,95 kWh
+      - **Korjaus:**
+- [ ] `dd` **uusi** — üle 16 000
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 124 kg
       - **Korjaus:**
 - [ ] `h3` **uusi** — Teised mudelid ja lahendused
       - **Korjaus:**
@@ -918,6 +969,8 @@ Vastine mainissa: `/et/energiasalvestid/`
       - **Korjaus:**
 - [ ] `td` **uusi** — Vedelikjahutusega 20-jalane akukonteiner
       - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — 5 015 kWh
+      - **Korjaus:**
 - [ ] ⚠ `td` **uusi** — Elecnova, tooteleht ECO-B20FT5015LP-2, loetud 9.11.2026
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
@@ -949,6 +1002,34 @@ Vastine mainissa: `/et/energiasalvestid/`
 - [ ] `td` **uusi** — komponendid terviklahenduse osadeks
       - **Korjaus:**
 - [ ] ⚠ `td` **uusi** — Elecnova, tootelehed PCS, BMS ja EMS, loetud 9.11.2026
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `td` **uusi** — RT5427 HV/SHVRaystech
+      - **Korjaus:**
+- [ ] `td` **uusi** — Kõrgepingeaku moodul
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — 5,43 kWh mooduli kohta, IP65
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — Ralos Oy, tooteleht Raystech RT5427 HV/SHV, loetud 9.11.2026
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `td` **uusi** — M-BackupAtmoce
+      - **Korjaus:**
+- [ ] `td` **uusi** — Varutoite lülituskeskus
+      - **Korjaus:**
+- [ ] `td` **uusi** — võrk 80 A, koormus 63 A, IP65
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — Ralos Oy, tooteleht ATMOCE M-Backup, loetud 9.11.2026
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — OptiGrid™Avant Power
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `td` **uusi** — Mikrovõrk laadimisjaamadele ja kinnistutele
+      - **Korjaus:**
+- [ ] `td` **uusi** — DC-võrk, energiasalvestid, laadimine ja OptiGrid Cloudi juhtimine, osad ka eraldi
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — Avant Power, OptiGrid™ tooteleht, loetud 9.11.2026
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
 - [ ] `p` **muutettu** — Tehnilised andmed on tootjate andmelehtedelt ja tootelehtedelt. Varutoide hõlmab valitud ahelaid, mis kavandatakse objektikülastusel. Tootja ja mudel valitakse teie objekti tarbimise, liitumise ja ruumi järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega.
@@ -1106,44 +1187,59 @@ Vastine mainissa: `/et/paike-ja-aku/`
       - **Korjaus:**
 
 ### #tooted
-> Lähde tälle osiolle: Allikas: Ralos Oy, brošüür RLS-585, 6/2023
 > Lähde tälle osiolle: Allikas: Ralos Oy, brošüür RLS-480, 6/2023
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Hanersun HiTouch 450 Wp, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Hanersun HiTouch 500 Wp, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Hanersun HiTouch 620 Wp, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Hanersun HiTouch 725 Wp, loetud 9.11.2026
 > Lähde tälle osiolle: Allikas: HT-SAAE, andmeleht HT72-18X(ND)-F (Scanoffice), loetud 9.11.2026
 > Lähde tälle osiolle: Allikas: HT-SAAE, brošüürid HT54- ja HT60-18X(ND)-F (Scanoffice), loetud 9.11.2026
 > Lähde tälle osiolle: Allikas: HD Hyundai Energy Solutions, HJT-paneelide andmeleht (Scanoffice), loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Over Easy xM-3, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Hoymiles MiT, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Hoymiles HMT, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Hoymiles HMS, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Hoymiles MiS, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Atmoce mikroinverterid, loetud 9.11.2026
 > Lähde tälle osiolle: Allikas: APsystems, QT2 andmeleht, versioon 1.0, 7.10.2023 (Scanoffice), loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Hoymiles HiT, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: Ralos Oy, tootelehed Hoymiles HYT ja HAT, loetud 9.11.2026
 > Lähde tälle osiolle: Allikas: Sofar Solar, inverterite andmeleht (Scanoffice), loetud 9.11.2026
 > Lähde tälle osiolle: Allikas: Ralos Oy, tehniline andmeleht Ralos Beast 125, versioon V10, kontrollitud 9.11.2026
-> Lähde tälle osiolle: Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
+> Lähde tälle osiolle: Allikas: Ralos Oy, tooteleht Ralos Mini-Beast 50, loetud 9.11.2026
 > Lähde tälle osiolle: Allikas: Elecnova, tooteleht ECO-E64WX, loetud 9.11.2026
+> Lähde tälle osiolle: Allikas: SolaX, brošüürid X3-Hybrid G4 ja Triple Power T30 (Scanoffice), loetud 9.11.2026
+> Lähde tälle osiolle: Andmed tootjate tootelehtedelt ja pressiteadetest.
 
 - [ ] `h2` **uusi** — Paneelid, inverterid ja salvestid.
       - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — Päikesepaneelid, inverterid ja päikeseelektriga koos töötavad salvestid: Ralos, HT-SAAE, HD Hyundai, APsystems, Sofar Solar, Elecnova ja EP Energy. HT-SAAE, HD Hyundai, APsystemsi ja Sofar Solari seadmed tulevad Scanoffice Oy kaudu.
+- [ ] ⚠ `p` **uusi** — Paneelid, mikroinverterid, inverterid ja salvestid kahe partneri kaudu: Ralos (ka Hanersun, Over Easy, Hoymiles ja Atmoce) ning Scanoffice Oy (HT-SAAE, HD Hyundai, APsystems, Sofar Solar ja SolaX). Lisaks Elecnova hübriidkapp.
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
-- [ ] `label` **uusi** — Kõik 10
+- [ ] `label` **uusi** — Kõik 22
       - **Korjaus:**
-- [ ] `label` **uusi** — Päikesepaneelid 5
+- [ ] `label` **uusi** — Päikesepaneelid 9
       - **Korjaus:**
-- [ ] `label` **uusi** — Inverterid 2
+- [ ] `label` **uusi** — Mikroinverterid 6
       - **Korjaus:**
-- [ ] `label` **uusi** — Päike ja salvesti 3
+- [ ] `label` **uusi** — Inverterid 3
+      - **Korjaus:**
+- [ ] `label` **uusi** — Päike ja salvesti 4
       - **Korjaus:**
 - [ ] ⚠ `p` **uusi** — Ralos
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
-- [ ] `h3` **uusi** — RLS-585
+- [ ] `h3` **uusi** — RLS-480
       - **Korjaus:**
-- [ ] `p` **uusi** — Kahepoolne päikesepaneel, HJT-elemendid
+- [ ] `p` **uusi** — Täismust kahepoolne päikesepaneel, HJT-elemendid
       - **Korjaus:**
 - [ ] `dt` **uusi** — Võimsus
       - **Korjaus:**
-- [ ] `dd` **uusi** — 585 W
+- [ ] `dd` **uusi** — 480 W
       - **Korjaus:**
 - [ ] `dt` **uusi** — Kasutegur
       - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — 22,4 %
+- [ ] ⚠ `dd` **uusi** — 22,3 %
       - **Korjaus:**
 - [ ] `dt` **uusi** — Kahepoolsus
       - **Korjaus:**
@@ -1151,17 +1247,47 @@ Vastine mainissa: `/et/paike-ja-aku/`
       - **Korjaus:**
 - [ ] `dt` **uusi** — Mõõdud
       - **Korjaus:**
-- [ ] `dd` **uusi** — 2,38 × 1,10 m
-      - **Korjaus:**
-- [ ] `h3` **uusi** — RLS-480
-      - **Korjaus:**
-- [ ] `p` **uusi** — Täismust kahepoolne päikesepaneel, HJT-elemendid
-      - **Korjaus:**
-- [ ] `dd` **uusi** — 480 W
-      - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — 22,3 %
-      - **Korjaus:**
 - [ ] `dd` **uusi** — 1,96 × 1,10 m
+      - **Korjaus:**
+- [ ] `p` **uusi** — Hanersun
+      - **Korjaus:**
+- [ ] `h3` **uusi** — HiTouch 450 Wp
+      - **Korjaus:**
+- [ ] `p` **uusi** — Täismust päikesepaneel
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 450 Wp
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 22,5 %
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Garantii
+      - **Korjaus:**
+- [ ] `dd` **uusi** — toode 15 a, võimsus 30 a
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 1,76 × 1,13 m
+      - **Korjaus:**
+- [ ] `h3` **uusi** — HiTouch 500 Wp
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 500 Wp
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 1,96 × 1,13 m
+      - **Korjaus:**
+- [ ] `h3` **uusi** — HiTouch 620 Wp
+      - **Korjaus:**
+- [ ] `p` **uusi** — Suure võimsusega päikesepaneel lamekatustele
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 620 Wp
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 23 %
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 2,38 × 1,13 m
+      - **Korjaus:**
+- [ ] `h3` **uusi** — HiTouch 725 Wp
+      - **Korjaus:**
+- [ ] `p` **uusi** — Suure võimsusega päikesepaneel suurtele objektidele
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 725 Wp
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 23,3 %
       - **Korjaus:**
 - [ ] `p` **uusi** — HT-SAAE
       - **Korjaus:**
@@ -1197,31 +1323,133 @@ Vastine mainissa: `/et/paike-ja-aku/`
       - **Korjaus:**
 - [ ] ⚠ `dd` **uusi** — kuni 23,0 %
       - **Korjaus:**
-- [ ] `dt` **uusi** — Garantii
-      - **Korjaus:**
 - [ ] `dd` **uusi** — 30 aastat, ka võimsus
       - **Korjaus:**
-- [ ] `dd` **uusi** — 1,76 × 1,13 m
+- [ ] `p` **uusi** — Over Easy
       - **Korjaus:**
-- [ ] `p` **uusi** — APsystems
+- [ ] `h3` **uusi** — xM-3
       - **Korjaus:**
-- [ ] `h3` **uusi** — QT2
+- [ ] `p` **uusi** — Kahepoolne päikesejaam rohekatusele
       - **Korjaus:**
-- [ ] `p` **uusi** — Kolmefaasiline mikroinverter neljale paneelile
+- [ ] `dd` **uusi** — 256 W seadme kohta
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 95 %
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 1,58 × 1,49 m
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Kaal
+      - **Korjaus:**
+- [ ] `dd` **uusi** — umbes 28 kg
+      - **Korjaus:**
+- [ ] `p` **uusi** — Hoymiles
+      - **Korjaus:**
+- [ ] `h3` **uusi** — MiT
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kolmefaasiline mikroinverter tööstusobjektidele
       - **Korjaus:**
 - [ ] `dt` **uusi** — AC-võimsus
       - **Korjaus:**
-- [ ] `dd` **uusi** — 2 000 VA
+- [ ] `dd` **uusi** — 3 000–5 000 W
       - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — 97 %
+- [ ] ⚠ `dd` **uusi** — 96,5 % (CEC)
+      - **Korjaus:**
+- [ ] `dt` **uusi** — DC-pinge
+      - **Korjaus:**
+- [ ] `dd` **uusi** — alla 65 V
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 12 aastat, kuni 25
+      - **Korjaus:**
+- [ ] `h3` **uusi** — HMT
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kolmefaasiline mikroinverter neljale paneelile
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 1 600–2 000 W
       - **Korjaus:**
 - [ ] `dt` **uusi** — Kaitseaste
       - **Korjaus:**
 - [ ] `dd` **uusi** — IP67
       - **Korjaus:**
+- [ ] `h3` **uusi** — HMS
+      - **Korjaus:**
+- [ ] `p` **uusi** — Ühefaasiline mikroinverter
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 400–2 000 W
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Pinge
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 230 V
+      - **Korjaus:**
+- [ ] `h3` **uusi** — MiS
+      - **Korjaus:**
+- [ ] `p` **uusi** — Suure võimsusega ühefaasiline mikroinverter
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 2 250–2 750 W
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Paneelid
+      - **Korjaus:**
+- [ ] `dd` **uusi** — üle 600 W
+      - **Korjaus:**
+- [ ] `p` **uusi** — Atmoce
+      - **Korjaus:**
+- [ ] `h3` **uusi** — MI-seeria
+      - **Korjaus:**
+- [ ] `p` **uusi** — Mikroinverter väikeelamutele
+      - **Korjaus:**
+- [ ] `dd` **uusi** — kuni 700 W
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — tipp 97,4 %
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 25 aastat
+      - **Korjaus:**
+- [ ] `p` **uusi** — APsystems
+      - **Korjaus:**
+- [ ] `h3` **uusi** — QT2
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 2 000 VA
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 97 %
+      - **Korjaus:**
 - [ ] `dt` **uusi** — Töötemperatuur
       - **Korjaus:**
 - [ ] `dd` **uusi** — −40…+65 °C
+      - **Korjaus:**
+- [ ] `h3` **uusi** — HiT-(5–20)L-G3
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kolmefaasiline hübriidinverter madalpingeakudele
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 5–20 kW
+      - **Korjaus:**
+- [ ] `dt` **uusi** — MPPT
+      - **Korjaus:**
+- [ ] `dd` **uusi** — kuni 4
+      - **Korjaus:**
+- [ ] `dt` **uusi** — DC/AC
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — kuni 200 %
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Asümmeetria
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 100 %
+      - **Korjaus:**
+- [ ] `h3` **uusi** — HYT-HV ja HAT-HV
+      - **Korjaus:**
+- [ ] `p` **uusi** — Hübriid- ja akuinverterid kõrgepingeakudele
+      - **Korjaus:**
+- [ ] `dt` **uusi** — HYT, võimsus
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 5–12 kW
+      - **Korjaus:**
+- [ ] `dt` **uusi** — HAT, võimsus
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 5–10 kW
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Akupinge
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 170–600 V
+      - **Korjaus:**
+- [ ] `dt` **uusi** — HAT
+      - **Korjaus:**
+- [ ] `dd` **uusi** — aku järelpaigaldus
       - **Korjaus:**
 - [ ] `p` **uusi** — Sofar Solar
       - **Korjaus:**
@@ -1232,8 +1460,6 @@ Vastine mainissa: `/et/paike-ja-aku/`
 - [ ] ⚠ `dd` **uusi** — 3,3–70 kW
       - **Korjaus:**
 - [ ] ⚠ `dd` **uusi** — kuni 98,6 %
-      - **Korjaus:**
-- [ ] `dt` **uusi** — MPPT
       - **Korjaus:**
 - [ ] `dd` **uusi** — 2 või 3
       - **Korjaus:**
@@ -1257,24 +1483,24 @@ Vastine mainissa: `/et/paike-ja-aku/`
       - **Korjaus:**
 - [ ] ⚠ `dd` **uusi** — 2 × 63 kW
       - **Korjaus:**
-- [ ] `p` **uusi** — EP Energy
+- [ ] `h3` **uusi** — Mini-Beast 50
       - **Korjaus:**
-- [ ] `h3` **uusi** — EPHS104 / EPHS156
-      - **Korjaus:**
-- [ ] `p` **uusi** — Hübriidkapp päikeseelektrile
+- [ ] `p` **uusi** — Salvesti keskmistele kinnistutele, hübriidinverteriga
       - **Korjaus:**
 - [ ] ⚠ `dd` **uusi** — 50 kW
       - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — 104 või 156 kWh
+- [ ] ⚠ `dd` **uusi** — 102 kWh
       - **Korjaus:**
-- [ ] ⚠ `dd` **uusi** — kuni 100 kW
+- [ ] `dd` **uusi** — oma väljund, UPS-funktsioon
       - **Korjaus:**
-- [ ] `dd` **uusi** — alla 10 ms
+- [ ] `dd` **uusi** — otse inverterisse
       - **Korjaus:**
 - [ ] ⚠ `p` **uusi** — Elecnova
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
 - [ ] `h3` **uusi** — ECO-E64WX
+      - **Korjaus:**
+- [ ] `p` **uusi** — Hübriidkapp päikeseelektrile
       - **Korjaus:**
 - [ ] ⚠ `dd` **uusi** — 25–50 kW
       - **Korjaus:**
@@ -1285,6 +1511,67 @@ Vastine mainissa: `/et/paike-ja-aku/`
 - [ ] `dt` **uusi** — Jahutus
       - **Korjaus:**
 - [ ] `dd` **uusi** — õhk
+      - **Korjaus:**
+- [ ] `p` **uusi** — SolaX
+      - **Korjaus:**
+- [ ] `h3` **uusi** — X3-Hybrid G4 ja T30
+      - **Korjaus:**
+- [ ] `p` **uusi** — Hübriidinverter ja aku kodule ja väikeobjektidele
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 5–15 kW
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Aku
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 3,1–12,3 kWh
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Paralleelis
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — kuni 150 kW
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Teised mudelid ja lahendused
+      - **Korjaus:**
+- [ ] `th` **uusi** — Mudel
+      - **Korjaus:**
+- [ ] `th` **uusi** — Tüüp
+      - **Korjaus:**
+- [ ] `th` **uusi** — Põhiandmed
+      - **Korjaus:**
+- [ ] `th` **uusi** — Allikas
+      - **Korjaus:**
+- [ ] `td` **uusi** — M-CombinerAtmoce
+      - **Korjaus:**
+- [ ] `td` **uusi** — Ühenduskarp päikeseelektrile ja akudele
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — päikeseelekter kuni 30 kW, akud kuni 42 kWh
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — Ralos Oy, tooteleht ATMOCE M-Combiner, loetud 9.11.2026
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `td` **uusi** — HYD 5–20KTL-3PHSofar Solar
+      - **Korjaus:**
+- [ ] `td` **uusi** — Kolmefaasiline hübriidinverter akudele
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — Scanoffice, tooteleht Sofar salvesti ja hübriidinverter, loetud 9.11.2026
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — FLAT25Ralos
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `td` **uusi** — Rööbasteta paigaldussüsteem lamekatustele
+      - **Korjaus:**
+- [ ] `td` **uusi** — katuse koormus 5,5 kg/m²
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — Ralos Oy, lahenduste leht päikesejaamad, loetud 9.11.2026
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `td` **uusi** — KiinnitysjärjestelmätAeroCompact, Esdec, Nordic Sun, Orima Solar
+      - **Korjaus:**
+- [ ] `td` **uusi** — Paneelide kinnitus katusele ja maale
+      - **Korjaus:**
+- [ ] `td` **uusi** — lamekatused, viilkatused ja maaraam; tuletõrjelüliti Santon
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — Scanoffice, päikesepaneelide tootelehed, loetud 9.11.2026
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
 - [ ] `p` **uusi** — Tehnilised andmed on tootjate andmelehtedelt ja brošüüridelt. Paneelid, jaama suurus ja inverterid valitakse teie objekti tarbimise, katuse ja liitumise järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega. Varutoide hõlmab valitud ahelaid, mis kavandatakse objektikülastusel.
       - **Korjaus:**
@@ -2107,8 +2394,6 @@ Vastine mainissa: `/et/meist/`
 - [ ] ⚠ `li` **uusi** — Elecnovaväliskapid ja konteinersalvestid
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
-- [ ] `li` **uusi** — EP Energysalvestikapid ja konteinersalvestid
-      - **Korjaus:**
 - [ ] ⚠ `li` **muutettu** — Avant Powerenergiasalvestid ja mikrovõrgud
       - main: Energiasalvestid, laadimine ja mikrovõrgud
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
@@ -2122,8 +2407,6 @@ Vastine mainissa: `/et/meist/`
 - [ ] `li` **uusi** — SAMApaigaldus katusele, maale ja katusesse integreerituna
       - **Korjaus:**
 - [ ] `h3` **uusi** — Laadimine ja soojuspumbad
-      - **Korjaus:**
-- [ ] `li` **uusi** — EP Energyteisaldatavad energiaseadmed ja kiirlaadijad
       - **Korjaus:**
 - [ ] ⚠ `li` **muutettu** — Avant Powermikrovõrgud, teisaldatav energia ja laadimine
       - main: Energiasalvestid, laadimine ja mikrovõrgud
