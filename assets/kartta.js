@@ -380,7 +380,7 @@
     var p = xy(ll), a = f.ta === 'end' || f.ta === 'middle' ? ' km-ta-' + f.ta : '', x = f1(p[0]);
     var lines = String(txt == null ? t(f.lab) : txt).split('\n');
     return '<text class="' + cls + a + '"' + tip + ' x="' + x + '" y="' + f1(p[1]) + '">' +
-      lines.map(function (ln, k) { return k ? '<tspan x="' + x + '" dy="1.2em">' + esc(ln) + '</tspan>' : esc(ln); }).join('') + '</text>';
+      lines.map(function (ln, k) { return k ? '<tspan font-size="0"> </tspan><tspan x="' + x + '" dy="1.2em">' + esc(ln) + '</tspan>' : esc(ln); }).join('') /* nollalevyinen väli: näkyvä teksti = aria-label */ + '</text>';
   }
 
   /* ---------- 110 kV: koko verkko näkyy oletuksena (Madis 4.11.2026: muutkin johdot, saaret mukaan); painike piilottaa ---------- */
@@ -440,7 +440,7 @@
     el.svg.querySelectorAll('.km-fx [data-tip]').forEach(function (n) {
       var on = n.parentNode.classList.contains('on') && visibleC(n.getAttribute('data-c')) && n.tagName.toLowerCase() === 'text';
       n.setAttribute('tabindex', on ? '0' : '-1');
-      if (on) { n.setAttribute('role', 'button'); n.setAttribute('aria-label', flat(t(state.feats[+n.getAttribute('data-tip')].lab))); }
+      if (on) { n.setAttribute('role', 'button'); n.setAttribute('aria-label', String(t(state.feats[+n.getAttribute('data-tip')].lab)).replace(/\n/g, ' ')); /* = näkyvä teksti (axe label-content-name-mismatch) */ }
     });
     el.svg.setAttribute('aria-label', UI.map + ' — ' + t(L.q));
     legend(i);
