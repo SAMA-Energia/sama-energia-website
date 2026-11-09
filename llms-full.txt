@@ -904,7 +904,7 @@ Teollisuusluokan järjestelmä
 Ulkoasennukseen sopiva varastokaappi, invertteri ja ohjaus, mitoitettuna liittymänne ja kulutusprofiilinne mukaan, yhdestä yksiköstä usean yksikön puistoon.
 
 Turvallisuus ja takuu
-Vaadimme valmistajalta LFP-kemiaa, kennotason valvonnalla varustettua akunhallintaa, lämpötilanhallintaa, ulko-olosuhteisiin tarkoitettua kaappia sekä CE- ja kuljetussertifikaatteja. Valmistajan takuu ja huoltoehdot ovat arviossa omalla rivillään. Kaikki vaatimukset →
+Vaadimme valmistajalta LFP-kemiaa, kennotason valvonnalla varustettua akunhallintaa, lämpötilanhallintaa, ulko-olosuhteisiin tarkoitettua kaappia sekä CE- ja kuljetussertifikaatteja. Sijoitus suunnitellaan valmistajan asennusohjeen ja Pelastusopiston paloturvallisuusohjeen (12/2025) mukaan. Valmistajan takuu ja huoltoehdot ovat arviossa omalla rivillään. Kaikki vaatimukset →
 
 Asennus, toimitus ja huolto
 Laitteet tulevat useammalta valmistajalta, ja toimitusaika vahvistetaan tarjouksessa laitekohtaisesti. Asennusta johtaa asennuspäällikkömme yhdessä kumppaneiden kanssa. Käyttöönoton jälkeen järjestelmää valvovat aggregaattori ja me, huolto kulkee sopimuksen mukaan. Kumppanit ja tuotteet
@@ -1083,7 +1083,7 @@ Etusivu›Laitevaatimukset
 
 Laitevaatimuksemme.
 
-Tämän listan pyydämme jokaiselta valmistajalta dokumentoituna, ennen kuin tarjoamme sen laitetta. Se koskee jokaista kohdetta, johon asennamme. Tuotelukuja täällä ei ole: ne ovat arviossa kohteen mukaan.
+Tämän listan pyydämme jokaiselta valmistajalta dokumentoituna, ennen kuin tarjoamme sen laitetta. Se koskee jokaista kohdetta, johon asennamme. Mallien päätiedot ovat valikoimassa, ja kohteen luvut lasketaan arviossa.
 
 01Kemia
 LFP eli litiumrautafosfaatti: vakaa teollinen akkukemia ulkoasennukseen.
@@ -1104,7 +1104,7 @@ CE-vaatimustenmukaisuus, teollisten litiumakkujen turvallisuusstandardi (esim. I
 Avoin rajapinta aggregaattorille ja valvonnalle (esim. Modbus TCP/IP), jotta ohjaus ei ole yhdestä toimittajasta kiinni.
 
 07Verkko
-Verkkoyhtiön liittymis- ja suojausvaatimusten täyttäminen; valmistaja toimittaa tiedot, joita liittymishakemus tarvitsee.
+Fingridin sähkövarastojen järjestelmätekniset vaatimukset (SJV2024) sekä verkkoyhtiön liittymis- ja suojausvaatimukset; valmistaja toimittaa laitetodistukset ja tiedot, joita vaatimustenmukaisuusilmoitus ja liittymishakemus tarvitsevat.
 
 08Takuu
 Kirjalliset takuuehdot vuosina ja sykleinä, sallittu kapasiteetin lasku ja se, kuka vastaa mistäkin viasta (arviossa omalla rivillään).
@@ -1126,7 +1126,7 @@ Home›Equipment requirements
 
 Our equipment requirements.
 
-This is the list we ask every manufacturer to document before we offer its equipment. It applies to every site where we install. No product figures here: those are in the site assessment.
+This is the list we ask every manufacturer to document before we offer its equipment. It applies to every site where we install. Model data is in the product range (in Finnish); site figures are calculated in the assessment.
 
 01Chemistry
 LFP (lithium iron phosphate): a stable industrial battery chemistry for outdoor installation.
@@ -1147,7 +1147,7 @@ CE conformity, the industrial lithium battery safety standard (e.g. IEC 62619) a
 Open interface for the aggregator and monitoring (e.g. Modbus TCP/IP), so control does not depend on a single supplier.
 
 07Grid
-Compliance with the distribution operator’s connection and protection requirements; the manufacturer supplies the data the connection application needs.
+Fingrid’s system technical requirements for electricity storage (SJV2024) and the distribution operator’s connection and protection requirements; the manufacturer supplies the equipment certificates and data needed for the declaration of conformity and the connection application.
 
 08Warranty
 Written warranty terms in years and cycles, permitted capacity degradation, and who is liable for which failure (a separate line in the assessment).
@@ -3132,7 +3132,7 @@ Tööstusklassi süsteem
 Välispaigalduseks sobiv salvestikapp, inverter ja juhtimine, mõõdetud teie liitumise ja tarbimisprofiili järgi, ühest üksusest mitme üksuse pargini.
 
 Ohutus ja garantii
-Nõuame tootjalt LFP-keemiat, rakutaseme jälgimisega akuhaldust, temperatuurijuhtimist, välitingimustele vastavat kappi ja CE- ning transpordisertifikaate. Tootja garantii ja hooldustingimused on hinnangus eraldi real. Kõik nõuded →
+Nõuame tootjalt LFP-keemiat, rakutaseme jälgimisega akuhaldust, temperatuurijuhtimist, välitingimustele vastavat kappi ja CE- ning transpordisertifikaate. Paigutus kavandatakse tootja paigaldusjuhendi järgi ja kooskõlastatakse tuleohutusnõuetega. Tootja garantii ja hooldustingimused on hinnangus eraldi real. Kõik nõuded →
 
 Paigaldus, tarne ja hooldus
 Seadmed tulevad mitmelt tootjalt ja tarneaeg kinnitatakse pakkumises seadme kaupa. Paigaldust juhib meie paigaldusjuht koos partneritega. Pärast käikulaskmist jälgivad süsteemi agregaator ja meie, hooldus käib lepingu järgi. Partnerid ja tooted
@@ -3314,7 +3314,7 @@ Avaleht›Nõuded seadmetele
 
 Meie nõuded seadmetele.
 
-Selle nimekirja küsime igalt tootjalt dokumenteerituna enne, kui tema seadet pakume. See kehtib igal objektil, kuhu paigaldame. Tootenumbreid siin ei ole: need on hinnangus objekti järgi.
+Selle nimekirja küsime igalt tootjalt dokumenteerituna enne, kui tema seadet pakume. See kehtib igal objektil, kuhu paigaldame. Mudelite põhinäitajad on valikus ja objekti numbrid arvutatakse hinnangus.
 
 01Keemia
 LFP ehk liitiumraudfosfaat: stabiilne tööstuslik akukeemia välispaigalduseks.
