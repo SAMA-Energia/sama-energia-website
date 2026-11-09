@@ -1708,9 +1708,11 @@ Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029. Teid�
 
 Fingrid jatkaa Etelä-Suomen varastoliityntärajoitusta vuoteen 2029 varmistaakseen siirtokapasiteetin kulutuksen kasvulle ja teollisille investoinneille (Fingrid 24.9.2025). Mitä se tarkoittaa yritykselle, jolla on iso liittymä jo valmiina.
 
+”Niukka hyödyke ei ole laite. Niukka hyödyke on liittymä.”
+
 Lue katsaus
 
-”Niukka hyödyke ei ole laite. Niukka hyödyke on liittymä.”
+Kartta Yhteinen verkko -sivulta, jossa luvut lähteineen.
 
 Mihin tämä markkina on menossa.
 Nämä eivät ole meidän ennusteitamme, vaan kantaverkkoyhtiön ja toimialan omia lukuja, jotka kuka tahansa voi tarkistaa. Jokainen tämän sivun katsaus on kirjoitettu niitä vasten.
@@ -3798,9 +3800,11 @@ Alates 2026 maksate reservide eest. Küsimus on, kummal pool arvet te olete.
 
 1. jaanuaril 2026 lisandus Eesti elektriarvele rida, mida seal varem ei olnud: tasakaalustamisvõimsuse kulu, 3,73 €/MWh. Seda maksavad kõik. Saab see, kes reservi pakub. Mida see tähendab ettevõttele, kelle liitumine on suur ja tarbimine kõikuv.
 
+„Sama rida, kaks poolt: tarbija maksab, valmisolek saab.“
+
 Loe ülevaadet
 
-„Sama rida, kaks poolt: tarbija maksab, valmisolek saab.“
+Kaart lehelt Ühine võrk, kus on numbrid koos allikatega.
 
 Kuhu see turg liigub.
 Need ei ole meie prognoosid, vaid süsteemihalduri enda arvud, mida igaüks saab kontrollida. Iga selle lehe ülevaade on kirjutatud nende vastu.
