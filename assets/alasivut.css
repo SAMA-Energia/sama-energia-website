@@ -102,6 +102,8 @@
 .tuo-f input:focus-visible+label{outline:2px solid var(--gold-deep);outline-offset:2px}
 .tuo-g{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
 .tc{display:flex;flex-direction:column;min-width:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;scroll-margin-top:96px}
+/* etusivun tuotenoston linkki osoittaa korttiin (#tv-…, #ta-…, #tl-…, #tk-…): kortti korostuu (9.11.2026) */
+.tc:target{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
 .tc-m{margin:0;aspect-ratio:1/1;background:#fff;border-bottom:1px solid var(--line)}
 .tc-m img{display:block;width:100%;height:100%;object-fit:contain}
 .tc-ph .tc-m img{object-fit:cover}

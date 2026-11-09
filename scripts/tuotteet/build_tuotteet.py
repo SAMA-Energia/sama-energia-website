@@ -88,7 +88,7 @@ SRC = {
     'r-h725': dict(fi='Ralos Oy, tuotesivu Hanersun HiTouch 725 Wp', et='Ralos Oy, tooteleht Hanersun HiTouch 725 Wp', url='https://ralos.fi/tuotteet/hanersun-725'),
     'r-overeasy': dict(fi='Ralos Oy, tuotesivu Over Easy xM-3', et='Ralos Oy, tooteleht Over Easy xM-3', url='https://ralos.fi/tuotteet/overeasy-xm'),
     'r-av': dict(fi='Ralos Oy, ratkaisusivu aurinkovoimalat', et='Ralos Oy, lahenduste leht päikesejaamad', url='https://ralos.fi/ratkaisut/aurinkovoimalat'),
-    'avant-ogs': dict(fi='Avant Power, OptiGrid™-tuotesivu', et='Avant Power, OptiGrid™ tooteleht', url='https://avantpower.fi/optigrid/'),
+    'avant-ogs': dict(fi='Avant Power, OptiGrid™-sivu, kohta Kiinteät energiavarastot', et='Avant Power, OptiGrid™ leht, statsionaarsete salvestite osa', url='https://avantpower.fi/optigrid/'),
     'gare-carport': dict(fi='Gare Energy Oy, Gare Solar Carport -tuotesivu', et='Gare Energy Oy, Gare Solar Carport', url='https://aurinkokatto.com/carport-autokatos-gare-energy/'),
     'easee-max': dict(fi='Easee, Charge Max -datalehti (Scanoffice)', et='Easee, Charge Max andmeleht (Scanoffice)', url='https://scanoffice.fi/wp-content/uploads/2026/02/Datalehti_Charge_Max.pdf'),
     'easee-up': dict(fi='Easee, Charge Up -datalehti (Scanoffice)', et='Easee, Charge Up andmeleht (Scanoffice)', url='https://scanoffice.fi/wp-content/uploads/2026/02/Datalehti_Charge_Up.pdf'),
@@ -424,12 +424,16 @@ P = [
          s=[('Teho', 'Võimsus', '256 W yksikköä kohden', '256 W seadme kohta'), ('Kaksipuolisuus', 'Kahepoolsus', '95 %', '95 %'),
             ('Koko', 'Mõõdud', '1,58 × 1,49 m', '1,58 × 1,49 m'), ('Paino', 'Kaal', 'noin 28 kg', 'umbes 28 kg')]),
     # v57b: Avant Powerin kiinteä energiavarasto ja integroitu pikalataus (avantpower.fi/optigrid, luettu 9.11.2026)
-    dict(id='avant-power-optigrid', mk='Avant Power', model='OptiGrid™-energiavarasto', model_et='OptiGrid™ energiasalvesti', cats=['kontti'], src='avant-ogs', photo=True,
-         alt=('Avant Powerin OptiGrid-havainnekuva: energiavarasto, verkkoliitäntä ja älykäs lataus, kuva: Avant Power', 'Avant Poweri OptiGridi illustratsioon: energiasalvesti, võrguühendus ja nutikas laadimine, foto: Avant Power'),
+    # 9.11.2026 (Martin): tuote on Avant Powerin kiinteä energiavarasto, ei OptiGrid. OptiGrid™ on Avantin mikroverkko- ja
+    # energianhallinta-alusta (DC-verkko, varastot, lataus, OptiGrid Cloud), jossa varasto on "saatavilla erikseen" ja toimii
+    # myös itsenäisenä (avantpower.fi/optigrid, Energiavarastointi-ikkuna, luettu 9.11.2026). Kuva = Avantin BESS-tuotekuva
+    # (wp-content/uploads/2026/09/BESS-1.avif), rajattu neliöksi; aiempi kuva oli OptiGrid-havainnekuvan rajaus.
+    dict(id='avant-power-bess', mk='Avant Power', model='Kiinteä energiavarasto', model_et='Statsionaarne energiasalvesti', cats=['kontti'], src='avant-ogs', photo=True,
+         alt=('Avant Powerin kiinteä energiavarasto, vihreä ulkokotelo, kuva: Avant Power', 'Avant Poweri statsionaarne energiasalvesti, roheline välikorpus, foto: Avant Power'),
          t=('Kiinteä energiavarasto uppojäähdytyksellä, myös pikalatauksella', 'Statsionaarne salvesti sukeljahutusega, ka kiirlaadimisega'),
          s=[('Koot', 'Suurused', '200 kW / 250 kWh tai 400 kW / 500 kWh', '200 kW / 250 kWh või 400 kW / 500 kWh'),
             ('Pikalataus', 'Kiirlaadimine', 'integroitu, 200–600 kW', 'integreeritud, 200–600 kW'),
-            ('Jäähdytys', 'Jahutus', 'uppojäähdytys', 'sukeljahutus'), ('Ohjaus', 'Juhtimine', 'OptiGrid Cloud', 'OptiGrid Cloud')]),
+            ('Jäähdytys', 'Jahutus', 'uppojäähdytys', 'sukeljahutus'), ('Käyttö', 'Kasutus', 'osana OptiGrid-mikroverkkoa tai itsenäisenä', 'OptiGridi mikrovõrgu osana või iseseisvalt')]),
     # v57b: Gare Energy Oy (vain FI) ja Scanofficen kotilataus ja -akut
     dict(id='gare-solar-carport', mk='Gare Energy', model='Gare Solar Carport', cats=['katos'], src='gare-carport', photo=True, langs=['fi'],
          alt=('Gare Solar Carport -aurinkokatos autojen päällä, kuva: Gare Energy Oy', ''),
@@ -571,14 +575,14 @@ def src_html(key, L):
     h = (f'<a href="{src["url"]}" rel="noopener" target="_blank">{src[L]}</a>' if src['url'] else src[L])
     return h + (f', {stamp}' if stamp else '')
 
-def card(p, L, pre, hx='h3'):
+def card(p, L, pre, hx='h3', href=None):
     i = 0 if L == 'fi' else 1
     specs = ''.join(f'<div><dt>{sp[i]}</dt><dd>{n(sp[2 + i])}</dd></div>' for sp in p['s'])
     cls = 'tc' + (' tc-ph' if p.get('photo') else '')
     model = p.get('model_et') if (L == 'et' and p.get('model_et')) else p['model']
     return (f'<li class="{cls}" id="{pre}-{p["id"]}" data-c="{" ".join(p["cats"])}">'
             f'<figure class="tc-m"><img src="/assets/tuotteet/{p["id"]}.webp" alt="{html.escape(p["alt"][i], quote=True)}" width="600" height="600" loading="lazy" decoding="async"></figure>'
-            f'<div class="tc-b"><p class="tc-mk">{p["mk"]}</p><{hx} class="tc-n">{model}</{hx}><p class="tc-t">{p["t"][i]}</p>'
+            f'<div class="tc-b"><p class="tc-mk">{p["mk"]}</p><{hx} class="tc-n">{f'<a class="tc-a" href="{href}">{model}</a>' if href else model}</{hx}><p class="tc-t">{p["t"][i]}</p>'
             f'<dl class="tc-s">{specs}</dl>'
             f'<p class="tc-src">{TXT[L]["src"]}: {src_html(p["src"], L)}</p></div></li>')
 
@@ -674,7 +678,7 @@ def catalog(L, name):
             + f'<p class="tuo-note">{note}</p>')
 
 VARASTOT = ['ralos-beast-125-hd', 'ralos-mini-beast-50', 'elecnova-eco-e418lp', 'elecnova-eco-e101wx', 'zoe-z-box-c215', 'ep-energy-epes233', 'ep-energy-ephs',
-            'elecnova-eco-e64wx', 'elecnova-eco-e20ft2170lp', 'avant-power-optigrid', 'ep-energy-epes5000', 'ep-energy-epps93-m', 'ep-energy-epps210-m',
+            'elecnova-eco-e64wx', 'elecnova-eco-e20ft2170lp', 'avant-power-bess', 'ep-energy-epes5000', 'ep-energy-epps93-m', 'ep-energy-epps210-m',
             'ep-energy-epcs209', 'avant-power-cube-47', 'elecnova-eco-sts-c125', 'atmoce-battbank',
             'hoymiles-hione', 'solax-x3-t30', 'hoymiles-lb-16d-g3', 'enershare-core', 'enershare-active16', 'pytes-pilv1', 'pytes-v16', 'atmoce-m-elv', 'raystech-rt16076mplus']
 CUBE_LATAUS = dict(s=[('Lataus', 'Laadimine', 'Type 2 -kaapeli, 9 kW, lisävaruste', 'Type 2 kaabel, 9 kW, lisavarustus'), ('Energia', 'Energia', '47 kWh', '47 kWh'),
@@ -682,8 +686,8 @@ CUBE_LATAUS = dict(s=[('Lataus', 'Laadimine', 'Type 2 -kaapeli, 9 kW, lisävarus
                    t=('Siirrettävä energiayksikkö ja lataus työkoneille', 'Teisaldatav energiaseade ja laadimine töömasinatele'))
 AVANT_LATAUS = dict(t=('Energiavarasto ja integroitu pikalataus latausasemille', 'Salvesti ja integreeritud kiirlaadimine laadimisjaamadele'),
                     s=[('Pikalataus', 'Kiirlaadimine', '200–600 kW, satelliittilatausasemat', '200–600 kW, satelliitlaadijad'), ('Varasto', 'Salvesti', '250 tai 500 kWh', '250 või 500 kWh'),
-                       ('Teho', 'Võimsus', '200 tai 400 kW', '200 või 400 kW'), ('Ohjaus', 'Juhtimine', 'OptiGrid Cloud', 'OptiGrid Cloud')])
-LATAUS = [('zaptec-pro', ['ac']), ('easee-charge-pro', ['ac']), ('avant-power-optigrid', ['dc', 'akku'], AVANT_LATAUS), ('ep-energy-epcp-dc', ['dc']),
+                       ('Teho', 'Võimsus', '200 tai 400 kW', '200 või 400 kW'), ('Käyttö', 'Kasutus', 'osana OptiGrid-mikroverkkoa tai itsenäisenä', 'OptiGridi mikrovõrgu osana või iseseisvalt')])
+LATAUS = [('zaptec-pro', ['ac']), ('easee-charge-pro', ['ac']), ('avant-power-bess', ['dc', 'akku'], AVANT_LATAUS), ('ep-energy-epcp-dc', ['dc']),
           ('ep-energy-epcs209', ['dc', 'akku']), ('ep-energy-epps210-m', ['dc', 'siirrettava']), ('ep-energy-epps93-m', ['dc', 'siirrettava']),
           ('avant-power-cube-47', ['ac', 'siirrettava'], CUBE_LATAUS), ('gare-solar-carport', ['katos']), ('easee-charge-max', ['ac', 'koti']), ('beny-bcp', ['ac', 'koti']), ('raedian-nora', ['ac', 'koti'])]
 AURINKO = [('ralos-rls-480', ['paneeli']), ('ralos-rls-525', ['paneeli']), ('ralos-rls-585', ['paneeli']), ('hanersun-450', ['paneeli']), ('hanersun-500', ['paneeli']),
@@ -697,7 +701,7 @@ LAMPO = ['me-cahv-z450', 'me-cahv-r450', 'me-large-hydrobox', 'me-p-sarja', 'me-
 def _kaikki_varasto(pid):
     c = BYID[pid]['cats']
     return (['varasto'] + [k for k in ('siirrettava', 'varavoima', 'pieni') if k in c]
-            + (['lataus'] if pid in ('ep-energy-epcs209', 'ep-energy-epps210-m', 'ep-energy-epps93-m', 'avant-power-cube-47', 'avant-power-optigrid') else []))
+            + (['lataus'] if pid in ('ep-energy-epcs209', 'ep-energy-epps210-m', 'ep-energy-epps93-m', 'avant-power-cube-47', 'avant-power-bess') else []))
 KAIKKI = ([(pid, _kaikki_varasto(pid)) for pid in VARASTOT]
           + [('zaptec-pro', ['lataus']), ('easee-charge-pro', ['lataus']), ('ep-energy-epcp-dc', ['lataus']), ('gare-solar-carport', ['lataus', 'aurinko']),
              ('easee-charge-max', ['lataus', 'pieni']), ('beny-bcp', ['lataus', 'pieni']), ('raedian-nora', ['lataus', 'pieni'])]
@@ -722,7 +726,7 @@ ETUSIVU = [
      [('roofit-velario-slim', {}), ('gare-solar-carport', {}), ('hd-hyundai-hit', {}), ('ralos-stalker', {}), ('tongwei-725', {})],
      ('/aurinkosahko/#tuotteet', '/paikeseelekter/#tooted'), 'aurinko', None),
     ('lataus', 'Lataus', 'Laadimine',
-     [('zaptec-pro', {}), ('easee-charge-pro', {}), ('avant-power-optigrid', AVANT_LATAUS)],
+     [('zaptec-pro', {}), ('easee-charge-pro', {}), ('avant-power-bess', AVANT_LATAUS)],
      ('/lataus/#latausasemat', '/laadimine/#laadimisjaamad'), 'lataus', None),
     ('lampo', 'Lämpöpumput', 'Soojuspumbad',
      [('me-cahv-z450', {}), ('me-large-hydrobox', {}), ('me-geodan', {})],
@@ -733,11 +737,16 @@ ETUSIVU_SPEC = 2    # päätietoa per kortti
 ETUSIVU_TXT = {
     'fi': dict(h='Poimintoja valikoimasta', lead='Tekniset tiedot ovat valmistajien datalehdiltä ja tuotesivuilta.',
                note='Valmistaja ja malli valitaan kohteenne kulutuksen, liittymän ja tilan mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla.',
-               all='Koko valikoima', unit='tuotetta', cta='Katso valikoima'),
+               allp='Kaikki tuotteet', allp_url='/kumppanit/#valikoima'),
     'et': dict(h='Näiteid valikust', lead='Tehnilised andmed on tootjate andmelehtedelt ja tootelehtedelt.',
                note='Tootja ja mudel valitakse teie objekti tarbimise, liitumise ja ruumi järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega.',
-               all='Kogu valik', unit='toodet', cta='Vaata valikut'),
+               allp='Kõik tooted', allp_url='/partnerid/#valik'),
 }
+# Ryhmän painike korttien alla (Martin 9.11.2026 klo 21.30: iso tyhjä "Koko valikoima" -kortti pois, tilalle pieni painike)
+ETUSIVU_MORE = {'varasto': ('Kaikki energiavarastot', 'Kõik energiasalvestid'),
+                'aurinko': ('Koko aurinkosähkövalikoima', 'Kogu päikeseelektri valik'),
+                'lataus': ('Kaikki latausratkaisut', 'Kõik laadimislahendused'),
+                'lampo': ('Kaikki lämpöpumput', 'Kõik soojuspumbad')}
 ARROW = ('<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" '
          'aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg>')
 
@@ -757,13 +766,16 @@ def etusivu(L):
                  if L in BYID[pid].get('langs', ['fi', 'et']) and nakyy(BYID[pid])][:ETUSIVU_N]
         radios.append(f'<input type="radio" name="kt-v" id="kt-v-{key}" value="{key}"{" checked" if gi == 0 else ""}>'
                       f'<label for="kt-v-{key}">{fi_l if L == "fi" else et_l}</label>')
-        cards = ''.join(card(dict(p, s=p['s'][:ETUSIVU_SPEC]), L, 'kt', hx='h4') for p in items)
+        # kortti vie tuotteeseen sen omalla sivulla: sivun valikoiman kortin id = <lohkon pre>-<id> (scroll-margin + :target)
+        page = urls[i].split('#')[0].split('?')[0]
+        pre = BLOCKS[bname]['pre']
+        cards = ''.join(card(dict(p, s=p['s'][:ETUSIVU_SPEC]), L, 'kt', hx='h4', href=f'{page}#{pre}-{p["id"]}') for p in items)
         cnt = _count(bname, L, grp)
-        cards += (f'<li class="k-tuo-all"><a href="{urls[i]}"><span class="k-tuo-k">{T["all"]}</span>'
-                  f'<b>{cnt}</b><span>{T["unit"]}</span><span class="k-tuo-c">{T["cta"]} {ARROW}</span></a></li>')
-        panels.append(f'<ul class="k-tuo-g" data-c="{key}" role="list">{cards}</ul>')
+        panels.append(f'<div class="k-tuo-p" data-c="{key}"><ul class="k-tuo-g" role="list">{cards}</ul>'
+                      f'<a class="k-tuo-more" href="{urls[i]}">{ETUSIVU_MORE[key][i]}<span>{cnt}</span>{ARROW}</a></div>')
     return (f'<div class="k-tuo"><div class="k-tuo-h"><div><h3>{T["h"]}</h3><p>{T["lead"]}</p></div>'
-            f'<div class="k-tuo-f" role="radiogroup" aria-label="{TXT[L]["group"]}">{"".join(radios)}</div></div>'
+            f'<div class="k-tuo-nav"><div class="k-tuo-f" role="radiogroup" aria-label="{TXT[L]["group"]}">{"".join(radios)}</div>'
+            f'<a class="k-tuo-allp" href="{T["allp_url"]}">{T["allp"]}{ARROW}</a></div></div>'
             + ''.join(panels) + f'<p class="k-tuo-note">{T["note"]}</p></div>')
 
 def block(name, L):

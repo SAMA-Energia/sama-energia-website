@@ -748,7 +748,7 @@ on valikoimassa useamman valmistajan kautta; "kõiki tooteid ei leidnud valikus,
   varaajat. Jätetty pois: Avant TER47 (puolustusala), Mitsubishi AP (myynti päättynyt), Wedoton Comfort (saatavilla 2027),
   lisävarusteet ja kulutustarvikkeet. llms.txt: EP-maininta rivinvaihdon yli poistettu; vartija tarkistaa nyt myös llms-tiedostot.
 
-## Vaihtoehto: logorivi ja tuotenosto etusivulle (Martin 9.11.2026, haara draft-logot-tuotteet — EI draftissa)
+## v59 — logorivi ja tuotenosto etusivulle (Martin 9.11.2026; tehty haarassa draft-logot-tuotteet, viety v51-launchiin ja draftiin 9.11.2026 klo 21.30 jälkeen)
 
 Martin 9.11.2026: kumppaniosion kortit ja paneelit (jokaisella oma kortti ja linkit kumppanin sivuille) vaihtoehtoisesti
 logoina yhdessä rivissä; paneelien tilalle päätuotteiden esittely, valittava valikko ja 2–3 tuotetta per valinta (vieritettävä)
@@ -778,5 +778,21 @@ tai tuotekatalogit. Tehty omaan haaraan vertailtavaksi draftin rinnalla (Netlify
 - Uudet näkyvät tekstit natiivitarkistukseen: FI "Kumppanimme", "Poimintoja valikoimasta", "Koko valikoima", "tuotetta",
   "Katso valikoima"; ET "Meie partnerid", "Näiteid valikust", "Kogu valik", "toodet", "Vaata valikut". Muut lauseet ovat
   alasivujen valikoiman hyväksyttyjä lauseita.
-- AVOIN: valinta tämän ja draftin välillä (Martin, Madis); logojen käyttö kumppanin ilmeohjeen mukaan (pyydä tarvittaessa
-  viralliset vektorilogot: Ralosin koko logo, Elecnovan iso sanamerkki); natiivitarkistus.
+- Martin 9.11.2026 klo 21.30: "We like this design more than the previous one" → draftiin. Iso tyhjä "Koko valikoima" -kortti pois;
+  tilalle ryhmän pieni painike korttien alla (`.k-tuo-more`: FI "Kaikki energiavarastot" / "Koko aurinkosähkövalikoima" /
+  "Kaikki latausratkaisut" / "Kaikki lämpöpumput" + määrä; ET "Kõik energiasalvestid" / "Kogu päikeseelektri valik" /
+  "Kõik laadimislahendused" / "Kõik soojuspumbad"). Valikon perään "Kaikki tuotteet" / "Kõik tooted" → /kumppanit/#valikoima ↔
+  /partnerid/#valik (`.k-tuo-allp`). Kolme korttia rivissä (kuva 4:3, puhelimella 1:1). Koko kortti on linkki tuotteeseen sen omalla
+  sivulla (`<lohkon pre>-<id>`, esim. /energiavarastot/#tv-ralos-beast-125-hd, lämpöpumput /kumppanit/#tk-…): mallinimen linkki
+  `.tc-a` venytetään `::after`-kerroksella, lähdelinkki (`.tc-src`, z-index 2) pysyy klikattavana. Kohdekortti korostuu
+  alasivulla (`.tc:target`, alasivut.css). Ryhmä = `.k-tuo-p` (paneeli: lista + painike).
+- Avant Power korjattu (Martin 9.11.2026 klo 21.31: "Optigrid is their aggregation service … we want to show their battery
+  storage"): tarkistettu avantpower.fi/optigrid 9.11.2026 — OptiGrid™ on Avantin mikroverkko- ja energianhallinta-alusta
+  (DC-verkko, varastot, lataus, OptiGrid Cloud -pilviohjaus, joka voi viedä ylimääräisen kapasiteetin sähkömarkkinoille);
+  varasto on oma tuotteensa ("Kiinteät energiavarastot … saatavilla erikseen", toimii myös itsenäisenä). Kortti nyt id
+  `avant-power-bess`, malli "Kiinteä energiavarasto" / "Statsionaarne energiasalvesti", kuva Avantin BESS-tuotekuvasta
+  (BESS-1.avif, neliörajaus; vanha `avant-power-optigrid.webp` = OptiGrid-havainnekuvan rajaus poistettu), päätieto "Käyttö:
+  osana OptiGrid-mikroverkkoa tai itsenäisenä" (oli "Ohjaus: OptiGrid Cloud"), lähteen nimi "OptiGrid™-sivu, kohta Kiinteät
+  energiavarastot". Energiavarastosivun tuoterivikuvan alt korjattu samaan. Taulukon rivi "OptiGrid™ — Mikroverkko …" on oikein ja jää.
+- AVOIN: natiivitarkistus (yllä luetellut + ryhmäpainikkeet, "Kaikki tuotteet" / "Kõik tooted", "Käyttö" / "Kasutus" ja sen arvo,
+  "Statsionaarne energiasalvesti"); logojen käyttö kumppanin ilmeohjeen mukaan (pyydä tarvittaessa viralliset vektorilogot).
