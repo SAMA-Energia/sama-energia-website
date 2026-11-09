@@ -2345,7 +2345,7 @@ Kaardi valged ringid on tuulepargid ja kuldsed punktid päikesejaamad; suurus n�
 Allikad: Elering, varustuskindluse aruanne 2025 · 9.12.2025; jaamad kaardil: OpenStreetMapi kaastöötajad (ODbL) · 2.11.2026
 
 Kes juba salvestab?
-245 MWakuvõimsust võrgus
+245 MWakuvõimsust võrgus veebruaris 2026
 juulis lisandus Aruküla 100 MW
 Eleringi teatel on võrku ühendatud 245 MW akuvõimsust (veebruar 2026) ja juulis lisandus Aruküla 100 MW park.
 Kaardi punktid on kaks suurt akuparki, millest on avalik teade (Kiisa ja Aruküla); 245 MW hõlmab kõiki veebruariks 2026 võrku ühendatud akusid.
