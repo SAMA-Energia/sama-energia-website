@@ -68,6 +68,16 @@
 .tuo-rivi{margin:clamp(20px,3vw,36px) auto -1px;max-width:1400px;padding:0 clamp(8px,2.5vw,32px);position:relative;z-index:1}
 .tuo-rivi img{display:block;width:100%;height:auto}
 
+/* ---------- aurinkosähkö: alkukuva oikealla, periaatteet rivinä, osioiden kuvat ---------- */
+.lt .subhero-kuva .wrap{grid-template-columns:minmax(0,7fr) minmax(0,5fr);align-items:center}
+.sh-kuva,.sec-kuva{margin:0;border-radius:14px;overflow:hidden;background:var(--paper-3);aspect-ratio:3/2}
+.sh-kuva img,.sec-kuva img{display:block;width:100%;height:100%;object-fit:cover}
+.lt .subhero-kuva .wrap+.wrap{display:block}
+.lt .subhero .facts-row{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px clamp(24px,3vw,40px);margin-top:clamp(28px,3.4vw,44px);border-top:1px solid var(--line);padding-top:20px}
+.lt .subhero .facts-row div{grid-template-columns:minmax(0,1fr);gap:6px}
+.lt .intro-kuva{grid-template-columns:minmax(0,7fr) minmax(0,5fr);align-items:center}
+.lt .intro-kuva .lead{margin-top:16px}
+
 /* ---------- tuotevalikoima ---------- */
 .tuo{background:var(--paper-2);border-top:1px solid var(--line)}
 .lt .tuo{padding-top:clamp(36px,4vw,56px)}
@@ -99,10 +109,12 @@
 .tc-src a:hover{border-bottom-color:currentColor}
 .tuo-note{margin-top:18px;max-width:86ch;font-size:14px;line-height:1.55;color:var(--ink-2)}
 /* suodatus (selaimet ilman :has() näyttävät kaikki) */
-.tuo:has(#tv-v-kaappi:checked) .tc:not([data-c~=kaappi]),.tuo:has(#tv-v-hybridi:checked) .tc:not([data-c~=hybridi]),.tuo:has(#tv-v-kontti:checked) .tc:not([data-c~=kontti]),.tuo:has(#tv-v-siirrettava:checked) .tc:not([data-c~=siirrettava]),.tuo:has(#tv-v-varavoima:checked) .tc:not([data-c~=varavoima]){display:none}
+.tuo:has(#ta-v-paneeli:checked) .tc:not([data-c~=paneeli]),.tuo:has(#ta-v-katto:checked) .tc:not([data-c~=katto]),.tuo:has(#ta-v-hybridi:checked) .tc:not([data-c~=hybridi]),.tuo:has(#tv-v-kaappi:checked) .tc:not([data-c~=kaappi]),.tuo:has(#tv-v-hybridi:checked) .tc:not([data-c~=hybridi]),.tuo:has(#tv-v-kontti:checked) .tc:not([data-c~=kontti]),.tuo:has(#tv-v-siirrettava:checked) .tc:not([data-c~=siirrettava]),.tuo:has(#tv-v-varavoima:checked) .tc:not([data-c~=varavoima]){display:none}
 
 @media (max-width:1023px){
-  .sh-g,.tuo-h{grid-template-columns:minmax(0,1fr);align-items:start}
+  .sh-g,.tuo-h,.lt .subhero-kuva .wrap,.lt .intro-kuva{grid-template-columns:minmax(0,1fr);align-items:start}
+  .lt .subhero .facts-row{grid-template-columns:minmax(0,1fr)}
+  .sh-kuva{max-width:640px}
   .lt .subhero-tuo h1{max-width:20ch}
 }
 @media (max-width:700px){

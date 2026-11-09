@@ -32,6 +32,9 @@ SRC = {
     'el-sts': dict(fi='Elecnova, tuotesivu ECO-STS-C125', et='Elecnova, tooteleht ECO-STS-C125', url='https://www.elecnova-ess.com/eco-sts-c125-246in'),
     'ep-ci': dict(fi='EP Energy, luettelo C&amp;I Energy Storage Solutions, 12/2025', et='EP Energy, kataloog C&amp;I Energy Storage Solutions, 12/2025', url=None),
     'ep-mob': dict(fi='EP Energy, luettelo Mobile Energy &amp; Storage Charging Solutions, 12/2025', et='EP Energy, kataloog Mobile Energy &amp; Storage Charging Solutions, 12/2025', url=None),
+    'ralos-585': dict(fi='Ralos Oy, esite RLS-585, 6/2023', et='Ralos Oy, brošüür RLS-585, 6/2023', url=None),
+    'ralos-480': dict(fi='Ralos Oy, esite RLS-480, 6/2023', et='Ralos Oy, brošüür RLS-480, 6/2023', url=None),
+    'roofit-vs': dict(fi='Roofit.Solar, Velario Slim -datalehti 2026-02 V1', et='Roofit.Solar, Velario Slim andmeleht 2026-02 V1', url='https://roofit.solar/wp-content/uploads/2026/04/velario-slim-datasheets-2026-02-v1.pdf'),
     'avant-cube': dict(fi='Avant Power, OptiTemp® Cube 47 -esite, 6/2026', et='Avant Power, OptiTemp® Cube 47 brošüür, 6/2026', url='https://avanttecno.com/fi/wp-content/uploads/sites/7/2026/08/avant-power-cube47-esite-A4-FI-web.pdf'),
 }
 
@@ -111,16 +114,47 @@ P = [
          t=('STS-kaappi saarekekäyttöön', 'STS-kapp saartalitluseks'),
          s=[('Varastoille', 'Salvestitele', '2, 4 tai 6 × 125 kW', '2, 4 või 6 × 125 kW'), ('Siirto', 'Ümberlülitus', '20 ms', '20 ms'),
             ('Kotelointi', 'Kaitseaste', 'IP54', 'IP54'), ('Jännite', 'Pinge', '400 V', '400 V')]),
+    # aurinkosähkö (v53): paneelit ja aurinkokatto; Roofit.Solar vain Suomen sivustolla (Gare Energy Oy, vartija roofit-et)
+    dict(id='ralos-rls-585', mk='Ralos', model='RLS-585', cats=['paneeli'], src='ralos-585',
+         alt=('Ralosin kaksipuolinen aurinkopaneeli RLS-585 edestä ja takaa, kuva: Ralos Oy', 'Ralose kahepoolne päikesepaneel RLS-585 eest ja tagant, foto: Ralos Oy'),
+         t=('Kaksipuolinen aurinkopaneeli, HJT-kennot', 'Kahepoolne päikesepaneel, HJT-elemendid'),
+         s=[('Teho', 'Võimsus', '585 W', '585 W'), ('Hyötysuhde', 'Kasutegur', '22,4 %', '22,4 %'),
+            ('Kaksipuolisuus', 'Kahepoolsus', '90 %', '90 %'), ('Koko', 'Mõõdud', '2,38 × 1,10 m', '2,38 × 1,10 m')]),
+    dict(id='ralos-rls-480', mk='Ralos', model='RLS-480', cats=['paneeli'], src='ralos-480',
+         alt=('Ralosin täysmusta kaksipuolinen aurinkopaneeli RLS-480, kuva: Ralos Oy', 'Ralose täismust kahepoolne päikesepaneel RLS-480, foto: Ralos Oy'),
+         t=('Täysmusta kaksipuolinen aurinkopaneeli, HJT-kennot', 'Täismust kahepoolne päikesepaneel, HJT-elemendid'),
+         s=[('Teho', 'Võimsus', '480 W', '480 W'), ('Hyötysuhde', 'Kasutegur', '22,3 %', '22,3 %'),
+            ('Kaksipuolisuus', 'Kahepoolsus', '90 %', '90 %'), ('Koko', 'Mõõdud', '1,96 × 1,10 m', '1,96 × 1,10 m')]),
+    dict(id='roofit-velario-slim', mk='Roofit.Solar', model='Velario Slim', cats=['katto'], src='roofit-vs', photo=True, langs=['fi'],
+         alt=('Aurinkokatto omakotitalossa, kuva: Gare Energy Oy', ''),
+         t=('Aurinkokatto konesaumakattoon, Suomessa toimittaa Gare Energy Oy', ''),
+         s=[('Teho', '', '180 W / moduuli', ''), ('Hyötysuhde', '', '19,1 %', ''),
+            ('Paloluokka', '', 'BROOF(t2)', ''), ('Kattokaltevuus', '', 'vähintään 10°', '')]),
 ]
 
-CATS = [
-    ('kaikki', 'Kaikki', 'Kõik'),
-    ('kaappi', 'Ulkokaapit', 'Väliskapid'),
-    ('hybridi', 'Hybridikaapit', 'Hübriidkapid'),
-    ('kontti', 'Kontit', 'Konteinerid'),
-    ('siirrettava', 'Siirrettävät ja lataus', 'Teisaldatavad ja laadimine'),
-    ('varavoima', 'Varavoima', 'Varutoide'),
-]
+CATS = {
+    'varastot': [
+        ('kaikki', 'Kaikki', 'Kõik'),
+        ('kaappi', 'Ulkokaapit', 'Väliskapid'),
+        ('hybridi', 'Hybridikaapit', 'Hübriidkapid'),
+        ('kontti', 'Kontit', 'Konteinerid'),
+        ('siirrettava', 'Siirrettävät ja lataus', 'Teisaldatavad ja laadimine'),
+        ('varavoima', 'Varavoima', 'Varutoide'),
+    ],
+    'aurinko': [
+        ('kaikki', 'Kaikki', 'Kõik'),
+        ('paneeli', 'Aurinkopaneelit', 'Päikesepaneelid'),
+        ('katto', 'Aurinkokatto', 'Päikesekatus'),
+        ('hybridi', 'Aurinko ja varasto', 'Päike ja salvesti'),
+    ],
+}
+
+NOTE_AURINKO = {
+    'fi': 'Tekniset tiedot ovat valmistajien datalehdiltä ja esitteistä. Paneelit, voimalan koko ja invertterit valitaan kohteenne kulutuksen, katon ja liittymän mukaan, '
+          'ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla. Varavoima koskee valittuja piirejä, jotka suunnitellaan kohdekäynnillä.',
+    'et': 'Tehnilised andmed on tootjate andmelehtedelt ja brošüüridelt. Paneelid, jaama suurus ja inverterid valitakse teie objekti tarbimise, katuse ja liitumise järgi '
+          'ning variante võrreldakse kirjalikus hinnangus samade numbritega. Varutoide hõlmab valitud ahelaid, mis kavandatakse objektikülastusel.',
+}
 
 TXT = {
     'fi': dict(src='Lähde', read='luettu', checked='tarkistettu', group='Tuoteryhmä', tab='Näytä',
@@ -147,27 +181,36 @@ def card(p, L, pre):
             f'<dl class="tc-s">{specs}</dl>'
             f'<p class="tc-src">{TXT[L]["src"]}: {s_html}</p></div></li>')
 
-def catalog(L, pre, ids):
+BYID = {p['id']: p for p in P}
+
+def catalog(L, name):
+    b = BLOCKS[name]; pre = b['pre']; cats = CATS[name]
     i = 1 if L == 'fi' else 2
-    items = [p for p in P if p['id'] in ids]
-    cnt = {c[0]: (len(items) if c[0] == 'kaikki' else sum(1 for p in items if c[0] in p['cats'])) for c in CATS}
+    items = [(BYID[pid], pc) for pid, pc in b['items'] if L in BYID[pid].get('langs', ['fi', 'et'])]
+    cnt = {c[0]: (len(items) if c[0] == 'kaikki' else sum(1 for _, pc in items if c[0] in pc)) for c in cats}
     chips = ''.join(
         f'<input type="radio" name="{pre}-v" id="{pre}-v-{c[0]}" value="{c[0]}"{" checked" if c[0] == "kaikki" else ""}>'
         f'<label for="{pre}-v-{c[0]}">{c[i]} <span>{cnt[c[0]]}</span></label>'
-        for c in CATS if cnt[c[0]])
-    cards = ''.join(card(p, L, pre) for p in items)
+        for c in cats if cnt[c[0]])
+    cards = ''.join(card(dict(p, cats=pc), L, pre) for p, pc in items)
+    note = b.get('note', {}).get(L) or TXT[L]['note']
     return (f'<div class="tuo-f" role="radiogroup" aria-label="{TXT[L]["group"]}">{chips}</div>'
             f'<ul class="tuo-g" role="list">{cards}</ul>'
-            f'<p class="tuo-note">{TXT[L]["note"]}</p>')
+            f'<p class="tuo-note">{note}</p>')
 
+VARASTOT = ['ralos-beast-125-hd', 'elecnova-eco-e418lp', 'elecnova-eco-e101wx', 'ep-energy-epes233', 'ep-energy-ephs', 'elecnova-eco-e64wx',
+            'elecnova-eco-e20ft2170lp', 'ep-energy-epes5000', 'ep-energy-epps93-m', 'ep-energy-epps210-m', 'ep-energy-epcs209',
+            'avant-power-cube-47', 'elecnova-eco-sts-c125']
 BLOCKS = {
-    'varastot': dict(pre='tv', ids=[p['id'] for p in P]),
+    'varastot': dict(pre='tv', items=[(pid, BYID[pid]['cats']) for pid in VARASTOT]),
+    'aurinko': dict(pre='ta', note=NOTE_AURINKO, items=[
+        ('ralos-rls-585', ['paneeli']), ('ralos-rls-480', ['paneeli']), ('roofit-velario-slim', ['katto']),
+        ('ralos-beast-125-hd', ['hybridi']), ('ep-energy-ephs', ['hybridi']), ('elecnova-eco-e64wx', ['hybridi'])]),
 }
 
 def block(name, L):
-    b = BLOCKS[name]
     return (f'<!-- tuotteet:{name}:alku — GENEROITU: python3 scripts/tuotteet/build_tuotteet.py. Muokkaa skriptiä, älä tätä lohkoa. -->'
-            + catalog(L, b['pre'], b['ids']) + f'<!-- tuotteet:{name}:loppu -->')
+            + catalog(L, name) + f'<!-- tuotteet:{name}:loppu -->')
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--check', action='store_true'); a = ap.parse_args()

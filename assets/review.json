@@ -46,6 +46,17 @@
   },
   {
    "page": "/aurinkosahko/",
+   "sectionId": "tuotteet",
+   "kind": "new"
+  },
+  {
+   "page": "/aurinkosahko/",
+   "sectionId": "ratkaisut",
+   "kind": "changed",
+   "prev": "Viisi tapaa tuottaa aurinkosähköä. Yksi mitoitusperiaate.Ratkaisu valitaan sen mukaan, mitä kiinteistössä on: kunnossa oleva katto, uusittava katto, piha tai pysäköintialue, tai jo olemassa oleva aurinkovoimala. Mitoitus lähtee aina kulutuksesta, jotta mahdollisimman suuri osa tuotannosta käytetään itse. Mikä ratkaisu sopii teilleKartoitus tarkistaa jokaisen vaihtoehdon kohteenne tuntikulutuksesta, katosta ja liittymästä. RatkaisuSopii, kunMitä se tekeeKartoitus tarkistaa Aurinkovoimala katolleKatto on kunnossa ja kestää vielä vuosikymmeniäTuottaa päiväsähköä omaan käyttöön ja pienentää ostettua sähköäKulutusprofiilin, katon kunnon ja kantavuuden, varjostuksen ja liittymän AurinkokattoKatto on joka tapauksessa uusittavaKate ja paneeli ovat yksi rakenne: uusi katto ja voimala samalla investoinnillaKaton rakenteen, kaltevuuden ja suunnan, luvat ja rakennuksen ilmeen Maa-asennus ja aurinkokatosPihalla, pellolla tai pysäköintialueella on tilaaTuottaa ilman kattoa; katos suojaa samalla ajoneuvoja ja antaa paikan latauspisteilleMaapohjan ja perustukset, kaapelireitin liittymään, kaavan ja luvat Aurinkosähkö ja sähkövarastoKulutus painottuu iltaan tai tehohuiput nostavat laskuaSiirtää keskipäivän ylijäämän iltaan, leikkaa huiput, ja vapaat tunnit tarjotaan reservimarkkinoilleTuntikulutuksen ja tuotannon rinnakkain, tehomaksun ja liittymän vapaan kapasiteetin Sähkövarasto nykyiseen voimalaanAurinkovoimala on jo olemassa ja ylijäämä myydään halvalla verkkoonTekee jo maksetusta voimalasta paremman investoinnin: enemmän omaa käyttöä, huiput pois, reservitInvertterien yhteensopivuuden, verkkoon syötön rajoituksen ja ohjausjärjestyksen"
+  },
+  {
+   "page": "/aurinkosahko/",
    "sectionId": "toiminta",
    "kind": "changed",
    "prev": "Miten aurinkosähkö toimii yrityksen liittymässä.Aurinkovoimala tuottaa eniten kesäpäivän keskellä. Investoinnin kannattavuuden ratkaisee se, kuinka suuri osa tuotannosta käytetään itse, ja se riippuu kohteenne kulutusprofiilista, ei katon koosta. Siksi mitoitus alkaa 12 kuukauden tuntikulutuksesta. Tuotanto ja kulutus tunneittainAsetamme kohteenne tuntikulutuksen ja voimalan tuntituotannon rinnakkain koko vuodelta. Siitä näkyy, kuinka suuri osa tuotannosta menee suoraan omaan käyttöön, kuinka paljon jää yli ja millä voimalan koolla oma käyttö on suurin. Oma käyttö ennen myyntiäOstetussa kilowattitunnissa maksatte energian lisäksi siirron ja verot. Myydystä ylijäämästä saatte vain energian hinnan, usein juuri niinä tunteina, joina se on halvin. Itse käytetty kilowattitunti on siis arvokkaampi kuin myyty, ja mitoitus tähtää omaan käyttöön. Suunta, kaltevuus, varjot ja invertteriEtelään suunnattu lape tuottaa eniten keskipäivällä. Itä-länsi-asennus tasakatolla jakaa tuotannon aamuun ja iltaan ja sopii usein paremmin yrityksen kulutukseen. Varjostus, lumikuorma ja invertterin mitoitus paneelitehoon nähden käydään läpi kartoituksessa. Verkkoyhtiö, luvat ja liittymäTuotannon liittämisestä sovitaan verkkoyhtiönne kanssa ennen asennusta, ja luvan tarve riippuu kunnasta ja rakennuksesta. Hoidamme ilmoitukset, liittymisasiat ja dokumentaation ja tarkistamme samalla, mitä liittymänne sallii, jos myöhemmin lisätään akku tai latauspisteitä. Kartoitus näyttääennen kuin mitään tilataan Kirjallisessa arviossa on voimalan koko ja tuotantoarvio tunneittain, oman käytön osuus ja ylijäämä, ostetun sähkön vähenemä teidän hinnoillanne ja rinnalla sama laskelma akun kanssa. Jokaisen luvun vieressä on lähde ja jakso. Jos aurinkosähkö ei kannata kohteessanne, arvio sanoo sen."
@@ -70,7 +81,7 @@
   },
   {
    "page": "/aurinkosahko/",
-   "sectionId": "rev-aurinkosahko-7",
+   "sectionId": "rev-aurinkosahko-8",
    "kind": "changed",
    "prev": "Aurinkoa, akkua vai molemmat?Kartoitus vastaa kulutustiedoistanne, mikä yhdistelmä kannattaa juuri teillä.Pyydä maksuton kartoitus"
   },
@@ -417,6 +428,11 @@
   },
   {
    "page": "/paikeseelekter/",
+   "sectionId": "tooted",
+   "kind": "new"
+  },
+  {
+   "page": "/paikeseelekter/",
    "sectionId": "lahendused",
    "kind": "changed",
    "prev": "Viis võimalust päikeseelektriks. Üks mõõtmise põhimõte.Lahendus valitakse selle järgi, mis kinnistul on: korras katus, uuendamist vajav katus, õu või parkla, või juba olemasolev päikesejaam. Mõõtmine lähtub alati tarbimisest, et võimalikult suur osa toodangust läheks oma kasutusse. Milline lahendus teile sobibHindamine kontrollib iga varianti teie objekti tunnitarbimise, katuse ja liitumise järgi. LahendusSobib, kuiMida see teebHindamine kontrollib Päikesejaam katuseleKatus on korras ja peab veel aastakümneidToodab päevast elektrit oma tarbeks ja vähendab ostetud elektritTarbimisprofiili, katuse seisukorda ja kandevõimet, varjusid ja liitumist PäikesekatusKatus tuleb nagunii uuendadaKatusekate ja paneel on üks konstruktsioon: uus katus ja jaam ühe investeeringugaKatuse konstruktsiooni, kallet ja suunda, lube ja hoone välimust Maapaigaldus ja päikesevarikatusÕuel, põllul või parklas on ruumiToodab ilma katuseta; varikatus kaitseb ühtlasi sõidukeid ja annab koha laadijatelePinnast ja vundamente, kaablitrassi liitumiseni, planeeringut ja lube Päikeseelekter ja salvestiTarbimine on suurem õhtul või tipud tõstavad arvetNihutab keskpäeva ülejäägi õhtusse, lõikab tippe ja vabad tunnid pakutakse reservituruleTunnitarbimist ja toodangut kõrvuti, võimsustasu ja liitumise vaba võimsust Salvesti olemasolevale jaamalePäikesejaam on olemas ja ülejääk müüakse odavalt võrkuTeeb juba makstud jaamast parema investeeringu: rohkem omatarbimist, tipud maha, reservidInverterite ühilduvust, võrku andmise piirangut ja juhtimise järjekorda"
@@ -447,7 +463,7 @@
   },
   {
    "page": "/paikeseelekter/",
-   "sectionId": "rev-paikeseelekter-7",
+   "sectionId": "rev-paikeseelekter-8",
    "kind": "changed",
    "prev": "Päike, aku või mõlemad?Hindamine vastab teie tarbimisandmetest, milline kombinatsioon just teil ära tasub.Küsi tasuta hindamist"
   },

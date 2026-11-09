@@ -376,6 +376,115 @@ Aurinko + varastokeskipäivän ylijäämä iltaan, huiput pois ja sama varasto F
 
 Jokainen kattotiili, pelti, profiilipelti, tasakatto, kattoon integroitu tai maa-asennus
 
+Paneelit, aurinkokatto ja varasto.
+
+Aurinkopaneelit, aurinkokatto ja aurinkosähkön kanssa toimivat varastot neljältä valmistajalta: Ralos, Roofit.Solar, Elecnova ja EP Energy. Roofit.Solarin aurinkokattoja toimittaa Suomessa Gare Energy Oy.
+
+Kaikki 6Aurinkopaneelit 2Aurinkokatto 1Aurinko ja varasto 3
+Ralos
+RLS-585
+Kaksipuolinen aurinkopaneeli, HJT-kennot
+Teho
+585 W
+
+Hyötysuhde
+22,4 %
+
+Kaksipuolisuus
+90 %
+
+Koko
+2,38 × 1,10 m
+
+Lähde: Ralos Oy, esite RLS-585, 6/2023
+
+Ralos
+RLS-480
+Täysmusta kaksipuolinen aurinkopaneeli, HJT-kennot
+Teho
+480 W
+
+Hyötysuhde
+22,3 %
+
+Kaksipuolisuus
+90 %
+
+Koko
+1,96 × 1,10 m
+
+Lähde: Ralos Oy, esite RLS-480, 6/2023
+
+Roofit.Solar
+Velario Slim
+Aurinkokatto konesaumakattoon, Suomessa toimittaa Gare Energy Oy
+Teho
+180 W / moduuli
+
+Hyötysuhde
+19,1 %
+
+Paloluokka
+BROOF(t2)
+
+Kattokaltevuus
+vähintään 10°
+
+Lähde: Roofit.Solar, Velario Slim -datalehti 2026-02 V1, luettu 9.11.2026
+
+Ralos
+Beast 125 HD
+Nestejäähdytetty energiavarasto sisä- tai ulkoasennukseen
+Teho
+125 kW
+
+Energia
+261 kWh
+
+Varavoima, optio
+STS, alle 10 ms
+
+Aurinkosähkö, optio
+2 × 63 kW
+
+Lähde: Ralos Oy, tekninen tiedote Ralos Beast 125, versio V10, tarkistettu 9.11.2026
+
+EP Energy
+EPHS104 / EPHS156
+Hybridikaappi aurinkosähköön
+Teho
+50 kW
+
+Energia
+104 tai 156 kWh
+
+Aurinkosähkö
+enintään 100 kW
+
+Varavoima
+alle 10 ms
+
+Lähde: EP Energy, luettelo C&I Energy Storage Solutions, 12/2025
+
+Elecnova
+ECO-E64WX
+Hybridikaappi aurinkosähköön
+Teho
+25–50 kW
+
+Energia
+64,5 kWh
+
+Aurinkosähkö
+37,5–75 kW
+
+Jäähdytys
+ilma
+
+Lähde: Elecnova, tuotesivu ECO-E64WX, luettu 9.11.2026
+
+Tekniset tiedot ovat valmistajien datalehdiltä ja esitteistä. Paneelit, voimalan koko ja invertterit valitaan kohteenne kulutuksen, katon ja liittymän mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla. Varavoima koskee valittuja piirejä, jotka suunnitellaan kohdekäynnillä.
+
 Viisi tapaa tuottaa aurinkosähköä. Yksi mitoitusperiaate.
 Ratkaisu valitaan sen mukaan, mitä kiinteistössä on: kunnossa oleva katto, uusittava katto, piha tai pysäköintialue, tai jo olemassa oleva aurinkovoimala. Mitoitus lähtee aina kulutuksesta, jotta mahdollisimman suuri osa tuotannosta käytetään itse.
 
@@ -2438,6 +2547,98 @@ Tarbiminedimensioneerimise lähtekoht, mitte katuse suurus: võimalikult suur os
 Päike + salvestikeskpäevane ülejääk õhtusse, tipud maha ja sama salvesti Eleringi reservidesse
 
 Iga katuskivi, plekk, profiilplekk, lamekatus, katusesse integreeritud või maapaigaldus
+
+Paneelid ja salvestid.
+
+Päikesepaneelid ja päikeseelektriga koos töötavad salvestid kolmelt tootjalt: Ralos, Elecnova ja EP Energy.
+
+Kõik 5Päikesepaneelid 2Päike ja salvesti 3
+Ralos
+RLS-585
+Kahepoolne päikesepaneel, HJT-elemendid
+Võimsus
+585 W
+
+Kasutegur
+22,4 %
+
+Kahepoolsus
+90 %
+
+Mõõdud
+2,38 × 1,10 m
+
+Allikas: Ralos Oy, brošüür RLS-585, 6/2023
+
+Ralos
+RLS-480
+Täismust kahepoolne päikesepaneel, HJT-elemendid
+Võimsus
+480 W
+
+Kasutegur
+22,3 %
+
+Kahepoolsus
+90 %
+
+Mõõdud
+1,96 × 1,10 m
+
+Allikas: Ralos Oy, brošüür RLS-480, 6/2023
+
+Ralos
+Beast 125 HD
+Vedelikjahutusega salvesti sise- või välipaigalduseks
+Võimsus
+125 kW
+
+Energia
+261 kWh
+
+Varutoide, lisavarustus
+STS, alla 10 ms
+
+Päikeseelekter, lisavarustus
+2 × 63 kW
+
+Allikas: Ralos Oy, tehniline andmeleht Ralos Beast 125, versioon V10, kontrollitud 9.11.2026
+
+EP Energy
+EPHS104 / EPHS156
+Hübriidkapp päikeseelektrile
+Võimsus
+50 kW
+
+Energia
+104 või 156 kWh
+
+Päikeseelekter
+kuni 100 kW
+
+Varutoide
+alla 10 ms
+
+Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
+
+Elecnova
+ECO-E64WX
+Hübriidkapp päikeseelektrile
+Võimsus
+25–50 kW
+
+Energia
+64,5 kWh
+
+Päikeseelekter
+37,5–75 kW
+
+Jahutus
+õhk
+
+Allikas: Elecnova, tooteleht ECO-E64WX, loetud 9.11.2026
+
+Tehnilised andmed on tootjate andmelehtedelt ja brošüüridelt. Paneelid, jaama suurus ja inverterid valitakse teie objekti tarbimise, katuse ja liitumise järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega. Varutoide hõlmab valitud ahelaid, mis kavandatakse objektikülastusel.
 
 Viis võimalust päikeseelektriks. Üks dimensioneerimise põhimõte.
 Lahendus valitakse selle järgi, mis kinnistul on: korras katus, uuendamist vajav katus, õu, parkla või juba olemasolev päikesejaam. Dimensioneerimine lähtub alati tarbimisest, et võimalikult suur osa toodangust läheks oma kasutusse.
