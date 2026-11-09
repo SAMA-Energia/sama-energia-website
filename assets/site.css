@@ -889,6 +889,12 @@ h1 em,h2 em{color:var(--gold-2)}
 .k-pdl{width:min(1040px,calc(100vw - 32px));max-height:min(90vh,760px);margin:auto;padding:0;overflow:auto;overscroll-behavior:contain;border:1px solid var(--line-2);border-radius:var(--r-s);background:var(--paper-2);color:var(--ink);box-shadow:0 30px 80px rgba(0,0,0,.5)}
 .k-pdl::backdrop{background:rgba(9,9,8,.74)}.k-pdl:popover-open{display:grid}.k-pdl-in,.k-pdl-x{grid-area:1/1}
 .k-pdl-in{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}.k-pdl .k-pm{aspect-ratio:auto;height:100%;min-height:440px}
+/* v52: Elecnovan valikoima paneelissa (kuva + kuvateksti per tuotetyyppi) */
+.k-pgal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px;align-content:start;background:var(--paper-3)}
+.k-pgal figure{display:flex;flex-direction:column;margin:0;background:var(--paper-2)}
+.k-pgal img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;background:#fff}
+.k-pgal img.ct{object-fit:contain}
+.k-pgal figcaption{padding:7px 10px 10px;font-size:13px;line-height:1.3;color:var(--ink-2)}
 .k-pdl-t{display:flex;flex-direction:column;gap:12px;padding:clamp(26px,3.2vw,44px) clamp(22px,3vw,40px)}
 .k-pc .k-pdl h3{margin:0 48px 0 0;font-family:var(--font-display);font-size:clamp(28px,2.6vw,36px);font-weight:400;line-height:1.1}
 .k-pdl-t p{margin:0;font-size:16px;line-height:1.55;color:var(--ink-2)}.k-pdl-t .k-pdl-w{font-size:13.5px;color:var(--ink-3)}
@@ -896,7 +902,7 @@ h1 em,h2 em{color:var(--gold-2)}
 .k-pdl-x{position:sticky;top:12px;z-index:2;justify-self:end;align-self:start;display:grid;place-items:center;width:40px;height:40px;margin:12px;padding:0;border:1px solid var(--line-2);border-radius:50%;background:rgba(17,16,14,.86);color:var(--ink);cursor:pointer}
 .k-pdl-x svg{width:16px;height:16px}.k-pdl-x:hover{border-color:var(--gold-2)}.k-pdl-x:focus-visible{outline:2px solid var(--gold-2);outline-offset:2px}
 @media (prefers-reduced-motion:no-preference){.k-pdl:popover-open{animation:kpdl .22s ease-out}}@keyframes kpdl{from{opacity:0;transform:translateY(10px)}}
-@media (max-width:760px){.k-pdl{width:calc(100vw - 16px);max-height:calc(100dvh - 24px)}.k-pdl-in{grid-template-columns:minmax(0,1fr)}.k-pdl .k-pm{height:auto;min-height:0;aspect-ratio:16/10}}
+@media (max-width:760px){.k-pdl{width:calc(100vw - 16px);max-height:calc(100dvh - 24px)}.k-pdl-in{grid-template-columns:minmax(0,1fr)}.k-pdl .k-pm{height:auto;min-height:0;aspect-ratio:16/10}.k-pgal figcaption{padding:6px 7px 8px;font-size:12px}}
 @media (max-width:1023px){.k-tvg{grid-template-columns:minmax(0,1fr)}.k-tvt{padding-top:0}}
 @media (max-width:1023px){.k-h2g,.k-dg,.k-pg{grid-template-columns:minmax(0,1fr)}.k-h2r{padding-top:0}
 .k-dg{row-gap:18px}.k-dgl{display:contents}.k-dg .k-lbl{order:-2;margin:0}.k-dg .k-lines{margin-top:22px}.k-dfig{order:-1;max-width:760px}.k-pv{order:-1;position:relative;top:0;max-width:760px}}

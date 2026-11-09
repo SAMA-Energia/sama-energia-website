@@ -607,7 +607,9 @@ function electricalRoomOpen(g) {
   DOOR.pivot = new THREE.Group(); DOOR.pivot.position.set(HALL.x1 + 0.06, 0, -14.2); g.add(DOOR.pivot);
   box(1.2, 2.2, 0.06, M.door, 0.6, 1.1, 0, DOOR.pivot);
   DOOR.set = (phi) => { DOOR.pivot.rotation.y = phi - Math.PI / 2; };
-  DOOR.set(ANIM ? 0 : 1.745);
+  // v52: ovi auki lähes seinää vasten (174°), jotta varaston kaapeli seinän vierellä oven ja kaappirivin välissä näkyy
+  DOOR.open = 3.04;
+  DOOR.set(ANIM ? 0 : DOOR.open);
 }
 
 // ---------- industrial hall ----------
@@ -776,8 +778,14 @@ const DX = HALL.x1 - 0.02;                                  // kynnys: viiva pä
 const XT = ROW.cx + CAB.d / 2 + ROW.edge + 0.14;
 const ZB = -13.95, ZG = -13.6, ZS = -13.25;
 if (NEWSITE) {
-  /* varasto → pääkeskus: kaapelikanava perustuksen etureunassa koko rivin mitalta, rivin eteläpäästä oven kohdalle ja kynnyksen alta sisään */
-  EL.brightPts = [[XT, EY, ROW.z1 + 0.45], [XT, EY, ZB], [DX, EY, ZB]];
+  /* v52 (Madis 7.11.2026: "make sure that the connection between the batteries and the grid is depicted correctly"):
+     Ralos v2.1 6.2 — verkkoliitäntä on kaapin takana ja kaapelit tuodaan kaapin pohjan läpivienneistä perustukseen valettuihin
+     suojaputkiin (5.2). Varaston kaapeli kulkee siksi kaappien takaa, seinän ja perustuksen välistä (huoltoväli 800 mm), oven
+     kohdalle ja kynnyksen alta pääkeskukselle; jokaiselta kaapilta oma lähtö perustuksen läpi. Aiempi viiva huoltotason poikki
+     kaappien edessä oli väärin. Mittari (liittymispiste) ja ohjausyksikkö ovat pääkeskuksessa: varasto on mittarin takana. */
+  const XB = ROW.wallX + 0.28;
+  EL.brightPts = [[XB, EY, ROW.z1 + 0.5], [XB, EY, ZB], [DX, EY, ZB]];
+  EL.stubPts = Array.from({ length: ROW.n }, (_, i) => [[ROW.cx - CAB.d / 2 + 0.2, EY, ROW.cabZ(i)], [XB, EY, ROW.cabZ(i)]]);
   /* muuntamo → pääkeskus: pienjännitemaakaapeli suoraan länteen oveen */
   EL.gridPts = [[KX - 1.0, EY, ZG], [DX, EY, ZG]];
   /* verkko → muuntamo: keskijännitemaakaapeli idästä (häivytetään maan mukana) */
@@ -793,6 +801,7 @@ if (NEWSITE) {
 if (!SHOW.includes('noenergy')) {
   // battery -> main switchboard (behind the meter): bright
   EL.bright = energyLine(EL.brightPts, ER, ANIM ? M.energy.clone() : M.energy);
+  EL.stubs = (EL.stubPts || []).map((pp) => energyLine(pp, ER * 0.85, EL.bright.material));
   // site supply: transformer kiosk -> main switchboard: dim
   EL.grid = energyLine(EL.gridPts, ER * 0.75, ANIM ? M.energyGrid.clone() : M.energyGrid);
   // grid -> kiosk: dim; NEWSITE: maakaapeli häipyy pimeään maan kanssa
@@ -1224,7 +1233,7 @@ function setT(t) {
     m.material.opacity = env(t, 0.9, 5.3, 0.6) * Math.sin(Math.PI * ph) * 0.95;
   });
   // ovi aukeaa esitarkastuksessa
-  DOOR.set(1.745 * eo(span(t, 5.9, 6.7)));
+  DOOR.set(DOOR.open * eo(span(t, 5.9, 6.9)));
   // omistaja: valokuvaa pääkeskuksen ja paikan (2–3), tabletti päätöksessä (4–5)
   AN.ownerCamF(smo(span(t, 5.6, 6.1)) * (1 - smo(span(t, 16.8, 17.2))));
   AN.ownerTabF(smo(span(t, 16.9, 17.3)));
@@ -1253,6 +1262,7 @@ function setT(t) {
   AN.apronF(smo(span(t, 22.0, 22.8)));
   AN.cabF.forEach(({ c, f }, i) => { const u = span(t, 23.2 + 0.55 * i, 23.95 + 0.55 * i); f(smo(span(t, 23.2 + 0.55 * i, 23.5 + 0.55 * i))); c.position.y = ROW.base + 1.1 * (1 - eo(u)); });
   if (EL.bright) { const u = eo(span(t, 25.9, 26.9)); EL.bright.visible = u > 0.002; EL.bright.geometry.setDrawRange(0, Math.floor(AN.brightCount * u / 6) * 6); }
+  (EL.stubs || []).forEach((m) => { m.visible = t >= 25.7; });
   { const le = AN.led0 * smo(span(t, 26.4, 27.0)); AN.leds.forEach((m) => { m.emissiveIntensity = le; }); }
   { const gb = 1 + 2.2 * smo(span(t, 26.9, 27.5));
     if (EL.grid) EL.grid.material.emissiveIntensity = AN.gridE0 * gb;

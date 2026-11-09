@@ -14,10 +14,10 @@ Pyydä maksuton kartoitus Miten se toimii+358 44 965 4614
 1 500 MWNiin paljon reservikapasiteettia Fingrid hankkii keskimäärin joka tunnille ja arvioi hankinnan kasvavan vuoteen 2030 mennessä 1 200 MW:lla.
 Lähde: Fingrid, Reservimarkkinat tutuiksi -webinaari · 11.6.2025
 
-1Aurinkopaneelit2Pääkeskus ja ohjausyksikkö3Energiavarasto4Muuntamo
+1Aurinkopaneelit2Pääkeskus, mittari ja ohjausyksikkö3Energiavarasto4Muuntamo
 
 Aurinkopaneelit
-Pääkeskus ja ohjausyksikkö
+Pääkeskus, mittari ja ohjausyksikkö
 Energiavarasto
 Muuntamo
 
@@ -153,18 +153,26 @@ Kumppanisivullaralos.fi
 
 Elecnova
 Energiavarastojen ja mikroverkkojen valmistaja.
-Nestejäähdytetyt ulkokaapit
+Neste- ja ilmajäähdytteiset kaapit
+Hybridikaappi aurinkosähköön
 Konttivarastot
 Saarekekäyttö
 Lataus ja mikroverkot
 
 Lue lisää
-Sulje
+SuljeEnergiavarastokaappi
+Sama kaappi avattuna
+Ilmajäähdytteinen kaappi
+Hybridikaappi aurinkosähköön
+STS-kaappi saarekekäyttöön
+Konttivarasto
+
 Elecnova
 Kiina · saatavilla Suomen markkinoilla
-Energiavarastojen ja mikroverkkojen valmistaja. Nestejäähdytetyt ulkokaapit ja konttivarastot, jotka toimivat rinnan, sekä STS-kaappi saarekekäyttöön suunniteltuihin kohteisiin.
-Ratkaisut myös latausasemille ja mikroverkkoihin.
-Nestejäähdytetyt ulkokaapit
+Energiavarastojen ja mikroverkkojen valmistaja. Valikoimassa ovat neste- ja ilmajäähdytteiset ulkokaapit yrityksille, hybridikaappi aurinkosähköön ja konttivarastot. Kaapit ja kontit toimivat rinnan, ja saarekekäyttöön suunniteltuihin kohteisiin on STS-kaappi.
+Lokakuussa Elecnova oli esillä Energia 2026 -messuilla Tampereella. Ratkaisut myös latausasemille ja mikroverkkoihin.
+Neste- ja ilmajäähdytteiset kaapit
+Hybridikaappi aurinkosähköön
 Konttivarastot
 Saarekekäyttö
 Lataus ja mikroverkot
@@ -1173,8 +1181,8 @@ Energiavarastot useammalta valmistajaltaKaapit, kontit, hybridikaapit, mikroverk
 Valitsemme toimittajiemme valikoimasta mallin, joka sopii kohteen tehoon, tilaan ja käyttöön. Valmistaja ja malli nimetään tarjouksessa, ja vaihtoehdot vertaillaan samoilla luvuilla.
 
 Elecnova
-KiinaElecnovaEnergiavarastot ja mikroverkot · ulkokaapit, kontit ja STS-kaappi
-Nestejäähdytetyt ulkokaapit ja konttivarastot, jotka toimivat rinnan, sekä STS-kaappi saarekekäyttöön suunniteltuihin kohteisiin. Ratkaisut myös latausasemille ja mikroverkkoihin.
+KiinaElecnovaEnergiavarastot ja mikroverkot · kaapit, hybridikaapit, kontit ja STS-kaappi
+Neste- ja ilmajäähdytteiset ulkokaapit yrityksille, hybridikaappi aurinkosähköön ja konttivarastot. Kaapit ja kontit toimivat rinnan, ja saarekekäyttöön suunniteltuihin kohteisiin on STS-kaappi. Lokakuussa Elecnova oli esillä Energia 2026 -messuilla Tampereella. Ratkaisut myös latausasemille ja mikroverkkoihin.
 elecnova-ess.com
 
 EP Energy
@@ -1881,10 +1889,10 @@ Küsi tasuta hinnangut Kuidas see töötab+358 44 965 4614
 1 300 MWNii palju juhitavat võimsust vajab Eesti Eleringi hinnangul 2030. aastaks, kuid olemas või kindlasti tulemas on sellest 751 MW.
 Allikas: Elering, varustuskindluse aruanne 2025, tabel 2.3 · 9.12.2025
 
-1Päikesepaneelid2Peakilp ja juhtseade3Energiasalvesti4Trafojaam
+1Päikesepaneelid2Peakilp, arvesti ja juhtseade3Energiasalvesti4Trafojaam
 
 Päikesepaneelid
-Peakilp ja juhtseade
+Peakilp, arvesti ja juhtseade
 Energiasalvesti
 Trafojaam
 
@@ -2020,18 +2028,26 @@ Partnerite lehelralos.fi
 
 Elecnova
 Energiasalvestite ja mikrovõrkude tootja.
-Vedelikjahutusega väliskapid
+Vedelik- ja õhkjahutusega kapid
+Hübriidkapp päikeseelektrile
 Konteinersalvestid
 Saartalitlus
 Laadimine ja mikrovõrgud
 
 Loe lähemalt
-Sulge
+SulgeSalvestikapp
+Sama kapp avatuna
+Õhkjahutusega kapp
+Hübriidkapp päikeseelektrile
+STS-kapp saartalitluseks
+Konteinersalvesti
+
 Elecnova
 Hiina
-Energiasalvestite ja mikrovõrkude tootja. Vedelikjahutusega väliskapid ja konteinersalvestid, mis töötavad paralleelselt, ning STS-kapp saartalitluseks projekteeritud objektidele.
-Lahendused ka laadimisjaamadele ja mikrovõrkudele.
-Vedelikjahutusega väliskapid
+Energiasalvestite ja mikrovõrkude tootja. Valikus on vedelik- ja õhkjahutusega väliskapid ettevõtetele, hübriidkapp päikeseelektrile ja konteinersalvestid. Kapid ja konteinerid töötavad paralleelselt. Saartalitluseks projekteeritud objektidele on STS-kapp.
+Oktoobris oli Elecnova väljas Tamperes toimunud messil Energia 2026. Lahendused ka laadimisjaamadele ja mikrovõrkudele.
+Vedelik- ja õhkjahutusega kapid
+Hübriidkapp päikeseelektrile
 Konteinersalvestid
 Saartalitlus
 Laadimine ja mikrovõrgud
@@ -2966,8 +2982,8 @@ Energiasalvestid mitmelt tootjaltKapid, konteinerid, hübriidkapid, mikrovõrgud
 Valime tarnijate valikust mudeli, mis sobib objekti võimsuse, ruumi ja kasutusega. Tootja ja mudel nimetatakse pakkumises ning variante võrreldakse samade numbritega.
 
 Elecnova
-HiinaElecnovaEnergiasalvestid ja mikrovõrgud · väliskapid, konteinerid ja STS-kapp
-Vedelikjahutusega väliskapid ja konteinersalvestid, mis töötavad paralleelselt, ning STS-kapp saartalitluseks projekteeritud objektidele. Lahendused ka laadimisjaamadele ja mikrovõrkudele.
+HiinaElecnovaEnergiasalvestid ja mikrovõrgud · kapid, hübriidkapid, konteinerid ja STS-kapp
+Vedelik- ja õhkjahutusega väliskapid ettevõtetele, hübriidkapp päikeseelektrile ja konteinersalvestid. Kapid ja konteinerid töötavad paralleelselt. Saartalitluseks projekteeritud objektidele on STS-kapp. Oktoobris oli Elecnova väljas Tamperes toimunud messil Energia 2026. Lahendused ka laadimisjaamadele ja mikrovõrkudele.
 elecnova-ess.com
 
 EP Energy
