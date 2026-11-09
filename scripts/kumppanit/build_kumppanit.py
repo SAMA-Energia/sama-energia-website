@@ -233,9 +233,45 @@ def block(L):
     return '\n      '.join(out)
 
 
+# ---------------------------------------------------------------- etusivun logorivi
+# Vaihtoehto (haara draft-logot-tuotteet, Martin 9.11.2026): kumppanikorttien ja -paneelien tilalle logot yhdessä rivissä,
+# ilman linkkejä kumppaneiden sivuille. Logot kumppaneiden omilta sivuilta 9.11.2026 (Avant Power: repossa ollut logo),
+# jäljitetty yksivärisiksi vektoreiksi (potrace) osion tekstin sävyyn: assets/kumppanit/logot/<id>.svg.
+# Nimisäännöt kuten muualla: Gare Energy ja JSM vain FI, Soleron vain ET, EP Energy piilossa.
+LOGOT = {
+ 'fi': ['ralos', 'elecnova', 'avant-power', 'scanoffice', 'gare-energy', 'jsm'],
+ 'et': ['ralos', 'elecnova', 'avant-power', 'scanoffice', 'soleron'],
+}
+LOGO_ALA = 3900  # optinen koko: leveys × korkeus px, jotta pitkä sanamerkki ja neliömäinen merkki näyttävät yhtä suurilta
+LOGO_H = (17, 40)
+LOGO_SKAALA = {'elecnova': 0.88, 'ralos': 1.06}  # silmämääräinen tasaus: Elecnovan lihava sanamerkki, Ralosin ohut
+LOGO_LABEL = {'fi': 'Kumppanimme', 'et': 'Meie partnerid'}
+
+
+def logo_size(pid):
+    m = re.search(r'viewBox="0 0 (\d+(?:\.\d+)?) (\d+(?:\.\d+)?)"', open(ROOT + f'assets/kumppanit/logot/{pid}.svg', encoding='utf-8').read())
+    w, h = float(m.group(1)), float(m.group(2))
+    hh = min(max((LOGO_ALA * h / w) ** 0.5, LOGO_H[0]), LOGO_H[1]) * LOGO_SKAALA.get(pid, 1)
+    return round(hh * w / h), round(hh)
+
+
+def logos(L):
+    li = []
+    for pid in LOGOT[L]:
+        if pid in PIILOTETUT:
+            continue
+        w, h = logo_size(pid)
+        li.append(f'<li><img src="/assets/kumppanit/logot/{pid}.svg" alt="{html.escape(P[pid]["name"], quote=True)}" '
+                  f'width="{w}" height="{h}" loading="lazy" decoding="async"></li>')
+    return (f'<div class="k-logos"><p class="k-logos-h" id="kl-h">{LOGO_LABEL[L]}</p>'
+            f'<ul class="k-logos-r" aria-labelledby="kl-h">' + ''.join(li) + '</ul></div>')
+
+
 # ---------------------------------------------------------------- etusivu
 def front(s, L):
     t = T[L]
+    if 'class="k-pc"' not in s:   # vaihtoehto: etusivulla logorivi korttien sijaan
+        return s
     for pid, p in P.items():
         if (p.get('only') and p['only'] != L) or pid in PIILOTETUT:
             continue
@@ -277,6 +313,10 @@ def build(check=False):
             sys.exit(f'{L}: merkit {A} puuttuvat')
         i = s.index(A) + len(A); j = s.index(B)
         s = s[:i] + '\n      ' + block(L) + '\n      ' + s[j:]
+        A2 = '<!-- kumppanit:logot:alku -->'; B2 = '<!-- kumppanit:logot:loppu -->'
+        if A2 in s:
+            i = s.index(A2) + len(A2); j = s.index(B2)
+            s = s[:i] + logos(L) + s[j:]
         if s != s0:
             changed.append(L)
             if not check:
