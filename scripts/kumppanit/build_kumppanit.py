@@ -133,7 +133,7 @@ P = {
     fi=dict(w='Suomi · Sastamala · varasto Tampereella · Pirkanmaa',
             y='Asentaa sähkövarastot myös reservimarkkinoille, Ralosin kaapit mukaan lukien.',
             why='JSM asentaa sähkövarastoja myös reservimarkkinakäyttöön, Ralosin kaapit mukaan lukien. Samalta urakoitsijalta tulevat kohteen muut sähkötyöt, aurinkovoimala, lämpöpumput ja lataus, ja työtä johtaa asennuspäällikkömme.',
-            bg='Yrittäjävetoinen sähkö- ja automaatiourakoitsija, jolla on yli vuosikymmenen kokemus alalta. Toimisto on Sastamalassa ja varasto Tampereella, ja toimialue kattaa koko Pirkanmaan. Asiakkaina ovat yritykset, julkinen sektori ja yksityiset.',
+            bg='Yrittäjävetoinen sähkö- ja automaatiourakoitsija, jolla on yli vuosikymmenen kokemus alalta. Toimisto on Sastamalassa ja varasto Tampereella, ja toimialue kattaa koko Pirkanmaan. Asiakkaina ovat yritykset, julkinen sektori ja yksityisasiakkaat.',
             o=['Energiavarastojen asennus', 'Aurinkovoimalat', 'Lämpöpumput', 'Sähkötyöt', 'Käyttöönotto'])),
  'soleron': dict(
     name='Soleron Energy OÜ', site=('https://soleronenergy.ee/', 'soleronenergy.ee'), src=['sol-web', 'sol-blog', 'sol-ea'], cat=False, only='et',
@@ -162,7 +162,7 @@ GROUPS = {
    ('Pääsy reservimarkkinoille', 'Aggregaattori kokoaa sähkövarastot tarjoukseksi, ohjaa niitä automaattisesti ja tilittää tuoton.',
     ('/aggregaattori/', 'Näin valitsemme aggregaattorin'), [],
     ('Aggregaattori valitaan kohteen mukaan', 'Fingridin hyväksymä reservitoimittaja',
-     'Vertaamme reservitoimittajat kohteenne varaston ja tuotteiden mukaan. Valinnan perusteet kirjataan arvioon, ja me rakennamme yhteyden valittuun aggregaattoriin.')),
+     'Vertaamme reservitoimittajia kohteenne varaston ja tuotteiden mukaan. Valinnan perusteet kirjataan arvioon, ja me rakennamme yhteyden valittuun aggregaattoriin.')),
  ],
  'et': [
    ('Energiasalvestid ja mikrovõrgud', 'Kapist konteinerini ja laadimisjaama mikrovõrguni. Valime mudeli objekti võimsuse, energia, ruumi ja kasutuse järgi ning variante võrreldakse pakkumises samade numbritega.',

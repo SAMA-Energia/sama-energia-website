@@ -343,7 +343,7 @@
    },
    "q": {
     "fi": "Kuinka paljon kasvua tulee?",
-    "et": "Kui palju kasv tuleb?"
+    "et": "Kui palju kasvu tuleb?"
    },
    "concl": {
     "fi": "Fingridin skenaarioissa Suomen sähkönkulutus kasvaa nykyisestä alle 90 terawattitunnista 106–123 terawattituntiin vuoteen 2030 mennessä ja 110–162 terawattituntiin vuoteen 2035 mennessä.",
@@ -576,7 +576,7 @@
      "v": "1 214 MW",
      "l": {
       "fi": "aurinkovoimaa · tuulivoimaa 694 MW · asennettu nettoteho 2025",
-      "et": "päikeseenergiat · tuuleenergiat 694 MW · installeeritud netovõimsus 2025"
+      "et": "päikeseenergiat · tuuleenergiat 694 MW · paigaldatud netovõimsus 2025"
      },
      "src": [
       "el-vka"
@@ -585,7 +585,7 @@
    },
    "cmp": {
     "fi": "Osittain vertailukelpoinen: Suomen luvut ovat Fingridin ennusteissa käyttämiä kapasiteetteja (arvio, ei virallinen tilasto, 2.11.2026), Viron luvut Eleringin asennettua nettotehoa 2025.",
-    "et": "Osaliselt võrreldav: Soome arvud on Fingridi prognoosides kasutatud võimsused (hinnang, mitte ametlik statistika, 2.11.2026), Eesti arvud Eleringi installeeritud netovõimsus 2025."
+    "et": "Osaliselt võrreldav: Soome arvud on Fingridi prognoosides kasutatud võimsused (hinnang, mitte ametlik statistika, 2.11.2026), Eesti arvud Eleringi paigaldatud netovõimsus 2025."
    },
    "facts": {
     "FI": [
@@ -1304,8 +1304,8 @@
     }
    },
    "cmp": {
-    "fi": "Suuntaa-antava: molemmat ovat kantaverkkoyhtiön suunnitelmia. Suomen luvut ovat investointeja ja valmistuvia johtoja, Viron luvut suunnittelun lähtöoletuksia.",
-    "et": "Suunda näitav: mõlemad on põhivõrguettevõtja plaanid. Soome arvud on investeeringud ja valmivad liinid, Eesti arvud planeerimise lähteeeldused."
+    "fi": "Suuntaa antava: molemmat ovat kantaverkkoyhtiön suunnitelmia. Suomen luvut ovat investointeja ja valmistuvia johtoja, Viron luvut suunnittelun lähtöoletuksia.",
+    "et": "Ligikaudne: mõlemad on põhivõrguettevõtja plaanid. Soome arvud on investeeringud ja valmivad liinid, Eesti arvud planeerimise lähteeeldused."
    },
    "facts": {
     "FI": [

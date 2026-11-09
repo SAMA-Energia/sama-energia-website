@@ -796,3 +796,16 @@ tai tuotekatalogit. Tehty omaan haaraan vertailtavaksi draftin rinnalla (Netlify
   energiavarastot". Energiavarastosivun tuoterivikuvan alt korjattu samaan. Taulukon rivi "OptiGrid™ — Mikroverkko …" on oikein ja jää.
 - AVOIN: natiivitarkistus (yllä luetellut + ryhmäpainikkeet, "Kaikki tuotteet" / "Kõik tooted", "Käyttö" / "Kasutus" ja sen arvo,
   "Statsionaarne energiasalvesti"); logojen käyttö kumppanin ilmeohjeen mukaan (pyydä tarvittaessa viralliset vektorilogot).
+
+## v59c — kielitarkistus FI/ET ja tietosuojatarkistus (Martin 10.11.2026, haara v51-launch)
+
+- Koko sivuston näkyvä teksti luettu läpi molemmilla kielillä (Voikko + hunspell-et apuna). Korjattu selvät virheet lähteisiin ja
+  generaattoreihin: FI "suuntaa antava", "suuritehoinen", "ilmajäähdytteinen", Type 2 -lähtö, lataussivun kuvaus (ei enää 120–360 kW:n
+  pikalatureita, jotka olivat EP Energyn), pilkut ja sijamuodot; ET Soome tootenimed tabelis eestikeelseks (`MUUT`-rivin malli voi olla
+  `(fi, et)`), "õhk-vesisoojuspump", "turulepääs", "päikesevarikatus" laadimise lehel, "Helsingi", privaatsuspoliitika sõnastus,
+  "ligikaudne" (oli "suunda näitav"), "paigaldatud netovõimsus" jt. OptiGrid-taulukkorivin lähde omaksi (`avant-ogp`).
+- Tarkistettu: sivusto ei aseta evästeitä eikä selaimen tallennusta (paitsi `?review=1`-katselmustilan sessionStorage); kartan osoitehaku
+  ei tallenna hakuja (funktio lokittaa vain virhekoodin); yritystiedot, tietosuojaseloste ja kartta-aineistojen lähdemerkinnät ovat sivuilla.
+- Lomake-ilmoitukset menevät Netlifystä Madikselle (madis.maastik@samaenergia.fi, Martin 10.11.2026).
+- AVOIN natiivitarkistukseen (perustajan valinta, ei korjattu): FI "Akulla varustettu pikalaturi" -osio lataussivulla kuvaa tuotetyyppiä,
+  jota valikoimassa ei nyt näy (EP piilossa); Gare-taustan "15 vuoden kokemuksella"; ET "Ta võtab tasu" (võrguettevõtja), "peakilbi joonis/skeem".
