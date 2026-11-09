@@ -32,11 +32,12 @@ def build(lang):
         m=re.search(r'<main id="main">([\s\S]*?)</main>',h)
         if not m: continue
         body=m.group(1).strip()
-        body=re.sub(r'^<div class="page"',f'<div class="page" data-route="{slug}"',body,count=1)
+        body=re.sub(r'^<div class="page( lt)?"',lambda m:f'<div class="page{m.group(1) or ""}" data-route="{slug}"',body,count=1)
         divs.append((slug,body))
         if slug=='': shell=h
     css=inline_urls(open(os.path.join(ROOT,'assets/fonts.css')).read())+'\n'+inline_urls(open(os.path.join(ROOT,'assets/site.css')).read())
     css+='\n'+open(os.path.join(ROOT,'assets/kartta.css'),encoding='utf-8').read()   # /verkko/ ja /vork/ (sivukohtainen tyylitiedosto)
+    css+='\n'+open(os.path.join(ROOT,'assets/alasivut.css'),encoding='utf-8').read()   # v53: alasivut vaaleina (.page.lt) ja tuotevalikoima
     css+='\n.page[data-route]{display:none}.page[data-route].on{display:block}'
     js=open(os.path.join(ROOT,'assets/site.js')).read()
     head=shell[:shell.find('<body')]

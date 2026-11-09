@@ -418,7 +418,7 @@ ${jsonld}${ICON}
 ${THEME}
 ${PRELOADS}${front && HERO_IMG_PRELOAD ? '\n' + HERO_IMG_PRELOAD : ''}
 <link href="/assets/fonts.css" rel="stylesheet">
-<link href="/assets/site.css" rel="stylesheet">${assets ? '\n' + PAGE_ASSETS[assets] : ''}`;
+<link href="/assets/site.css" rel="stylesheet">${front ? '' : '\n<link href="/assets/alasivut.css" rel="stylesheet">'}${assets ? '\n' + PAGE_ASSETS[assets] : ''}`;
 }
 
 const MARKER = L => `<!-- GENEROITU TIEDOSTO — ÄLÄ MUOKKAA TÄTÄ TIEDOSTOA: kaikki tekstit muokataan tiedostoissa src/fi.html ja src/et.html; build ylikirjoittaa tämän tiedoston. / GENEREERITUD FAIL — ÄRA MUUDA SEDA FAILI: kõik tekstid muudetakse failides src/et.html ja src/fi.html; build kirjutab selle faili üle. Lähde/allikas: ${L.src} · node scripts/build-pages.mjs -->`;
@@ -448,7 +448,8 @@ function renderPage(lang, page, source, annotatedHtml) {
 
   /* authoring-attribuutit pois julkaistusta sivusta */
   if (page.assets && !PAGE_ASSETS[page.assets]) throw new Error(`${L.src}: ${page.slug} — tuntematon data-assets="${page.assets}"`);
-  const cleanOpen = page.openTag.replace(/ data-(slug|title|desc|noindex|lang|assets)="[^"]*"/g, '');
+  /* v53 (Madis 9.11.2026: "Hele põhi, tume ainult päis ja jalus"): alasivut saavat luokan lt = vaalea teema (assets/alasivut.css). */
+  const cleanOpen = page.openTag.replace(/ data-(slug|title|desc|noindex|lang|assets)="[^"]*"/g, '').replace(/^<div class="page"/, isFront ? '<div class="page"' : '<div class="page lt"');
   const pageHtml = cleanOpen + annotatedHtml.slice(page.openTag.length);
 
   const { pre, post } = chrome(lang, source, page, fiAbs, etAbs);

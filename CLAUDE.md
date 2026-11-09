@@ -43,7 +43,7 @@ All customer-facing text is Finnish or Estonian and requires a
 - Partner names permitted after written confirmation (R14): Elecnova (both sites) and Avant Power (Finnish site only) — decision
   I-20261023-1, 23.10.2026; Gare Energy Oy (Finnish site only; integrated solar roofs, aurinkokatto.com) — founder line 02.11.2026,
   recorded under v38 below. Name only: model names and technical values belong in the offer, not on the page (founder decision
-  04.11.2026, below). Soleron Energy is named on the Estonian site only, as each market argues with its own facts (applied
+  04.11.2026, below; *superseded 9.11.2026 by the product catalogue decision in the v53 section*). Soleron Energy is named on the Estonian site only, as each market argues with its own facts (applied
   04.11.2026). Roofit.Solar (manufacturer without a contract; the Finnish cooperation runs through Gare Energy Oy), EP Energy /
   EP Equipment and Energen Nordic are not named on either site until the founder decides. `verify-pages.mjs` guards `nimet-1104`
   and `mallinimet-1104` fail the build if these names or product model names reappear in visible text.
@@ -58,7 +58,9 @@ All customer-facing text is Finnish or Estonian and requires a
   Madis on 06.11.2026). State at launch: EP Energy, Elecnova and Avant Power on both sites; Gare Energy and Roofit.Solar on the
   Finnish site only (Roofit.Solar together with Gare Energy; guard `roofit-et`); Soleron Energy on the Estonian site; Scanoffice
   on both (06.11.2026). Never named: EP Equipment and Energen Nordic (guard `nimet-1104`), the financing companies (guard
-  `kielletyt-nimet`, which no longer lists EP Energy), VENI. Model names and technical values stay in the offer (`mallinimet-1104`).
+  `kielletyt-nimet`, which no longer lists EP Energy), VENI. ~~Model names and technical values stay in the offer (`mallinimet-1104`).~~
+  Superseded 9.11.2026 (Madis): product photo, manufacturer, model and key specs from the manufacturer datasheet, with source and
+  date, are shown in the subpage product catalogue; guard `mallinimet-1104` removed (see v53).
 - Installation wording (founder decision 25.10.2026): the installation manager leads the work; electrical
   work and commissioning are done by a registered electrical contractor partner. Do not write "oma
   asennustiimi" / "paigaldusmeeskond" until there is an installation team under contract.
@@ -574,3 +576,62 @@ Madis 6.11.2026 (vestlus C, vastaukset kysymyksiin; päätöslokiin lisättävä
   faktalistan ensimmäisenä rivinä (vain oman kielen sivulla, ei toisen maan vertailussa). Lukijat: build_page.py (`src_of`),
   kartta.js (`src()`, `t()`), scene.js ja scene-et.js (`inLang`, solmujen lähteet `ks.sources[id][lang]`). Solmurekisterin OSM-lähteen
   ET-nimi `scripts/kaart/build_solmut.py`:ssä.
+
+## v52 — Madiksen kommentit 7.11.2026 klo 15.34 (haara v35-uusi-ilme; portattu v51-launchiin 9.11.2026, c0c262a)
+
+- Salvestin ja verkon kytkentä (Madis: "make sure that the connection between the batteries and the grid is depicted correctly"):
+  hero ja prosessivideo (scripts/stills/hero3d.js). Salvestinkaapeli ei enää kulje perustuksen etureunaa pitkin: kaapelit lähtevät
+  kaappien takaa (Ralos v2.1 §6.2 liitäntä kaapin takana, §5.2 putket valettu perustukseen, kaapelit kaapin pohjan läpi), kulkevat
+  seinän viertä ja menevät sähkötilan oven alta pääkeskukseen yhdessä aurinkokaapelin ja muuntamon kaapelin kanssa. `EL.brightPts`
+  seinän puolella (`XB = ROW.wallX + 0.28`), `EL.stubPts` = yksi lyhyt haara per kaappi takaa runkoon (näkyy animaatiossa 25,7 s
+  jälkeen), oven lehti avattu 174° (`DOOR.open = 3.04`), jotta reitti oven alta näkyy. Topologia (projektin muistiinpanot
+  Junkars/Ralos): varasto omana lähtönä pääkeskukseen, mittari ja virtamuuntajat liittymäpisteessä, ohjausyksikkö lukee mittaria;
+  varasto on mittarin takana. Herotunniste 2 FI "Pääkeskus, mittari ja ohjausyksikkö" / ET "Peakilp, arvesti ja juhtseade" (mahtuu
+  1280, 1366 ja 1920 px leveydelle tekstin viereen); alt-tekstit ja llms.txt päivitetty. Cycles uudelleen (64 näytettä) ja
+  prosessivideo + pysäytyskuvat uudelleen.
+- Elecnovan kuvat (Madis: "pictures … could be better, especially for Elecnova … many different types of batteries, not just
+  container solutions"). Lähde: elecnovapower.com (Jiangsu Elecnova Electric, Elecnovan oma sivusto, ei bottiseinää; luettu
+  7.11.2026): tuoteperheen kuvat /uploads/image/20260203/ (ilmajäähdytteinen kaappi, hybridikaappi, STS-kaappi, kontti) ja
+  uutisen "Elecnova Showcases C&I Energy Storage Solutions at ENERGIA 2026 in Finland" (25.10.2026) tuotekuvat (kaappi kiinni ja
+  auki). Lupa: Elecnova sallii median ja tietojen käytön (Madis 23.10.2026, projektin muistiinpano v34). elecnova-ess.com,
+  DirectIndustry ja Made-in-China eivät auenneet (Cloudflare 403 / lupapyyntö ilman vastausta) — ei kierretty. Kahden kaapin
+  mallimerkintärivi ("… ECO-Energy Storage System …") poistettu (sääntö: ei mallinimiä kuvissa). Uudet tiedostot
+  assets/kumppanit/elecnova-2…6.webp ja elecnova-sarja.webp (kumppanisivun rivikuva: kontti, kaapit, hybridikaappi, STS-kaappi).
+  Etusivun kortti n3 (kaappikuva, hybridikaappi, kontti), paneelissa `.k-pgal` = kuusi tyyppiä kuvateksteineen (3 saraketta,
+  myös puhelimella). HUOM: `.k-pg` on jo prosessiosion luokka — älä käytä sitä muualla. Tekstit: neste- ja ilmajäähdytteiset
+  ulkokaapit, hybridikaappi aurinkosähköön, kontit, STS-kaappi; "Lokakuussa Elecnova oli esillä Energia 2026 -messuilla
+  Tampereella" (lähde yllä).
+- Osoitehaku: v52:n Syke/Ryhti-haku on v51-launchissa vain esikatselutiedostossa (scripts/esikatselu/); julkaistulla sivulla
+  haku kulkee /api/paikka-funktion kautta (Maanmittauslaitos + Maa- ja Ruumiamet, MML_API_KEY Netlifyssä).
+
+## v53 — alasivut vaaleiksi ja tuotevalikoima (Madis 9.11.2026, haara v51-launch)
+
+Madis 9.11.2026 klo 1.44 (sivusto "näyttää koulutyöltä", uutissivu liian tumma, energiavarasto- ja aurinkosivuilla ei tuotteita eikä
+kuvia, liian opettavainen, "black and yellow" kaikkialla). Vastaukset kysymyksiin 9.11.2026: (1) yksi julkaisu, kun alasivut on tehty;
+(2) tuotteet = "Foto, tootja, mudel, põhinäitajad" (kuva, valmistaja, malli, päätiedot valmistajan datalehdeltä lähteineen) — kumoaa
+4.11.2026 linjauksen ja vartijan `mallinimet-1104`; (3) "Hele põhi, tume ainult päis ja jalus".
+
+- Vaalea teema: `assets/alasivut.css` (ladataan kaikille paitsi etusivulle; build-pages.mjs `head()`), alasivun `.page`-div saa
+  luokan `lt` (build-pages.mjs `cleanOpen`; build-standalone.py hyväksyy `page lt` ja liittää alasivut.css:n). Sävyt = etusivun
+  `.k-chalk`; painikkeet grafiittina, kulta vain linkeissä ja otsikon korostuksessa. Tummat paneelit (.example, .post.featured,
+  .value.featured, .vote, .newsstrip …) vaaleiksi. Upotetut tummat näkymät: `.k-sld` (kerros kerrallaan, pyöristetty paneeli) ja
+  verkko-sivun karttapaneeli `.km-map`/`.km-inline` saavat omat tummat muuttujansa; verkko-sivun luvut ovat vaalealla.
+  Viisi alasivun SVG-kaaviota (chart-scale, chart-yield, sysdiag, orbit, mg-svg) väritetty vaaleiksi lähteissä (`data-lt="1"`).
+  Budjetti alasivut.css ≤ 40 kt (verify-pages). site.css ennallaan.
+- Tuotevalikoima: `scripts/tuotteet/build_tuotteet.py` (data + HTML; merkit `tuotteet:<lohko>:alku/loppu`; `--check`).
+  Energiavarastot/energiasalvestid: 13 tuotetta (Ralos Beast 125 HD; Elecnova ECO-E418LP, ECO-E101WX, ECO-E64WX, ECO-E20FT2170LP,
+  ECO-STS-C125; EP Energy EPES233, EPHS104/156, EPES5000, EPPS93-M, EPPS210-M, EPCS209; Avant Power OptiTemp Cube 47), suodatus
+  radiopainikkeilla ja `:has()` (ilman :has()-tukea kaikki näkyvät). Lähteet ja päivät kortissa:
+  Ralos = tekninen tiedote Beast 125 V10 (Junkars-tarjouksen liite 3.9.2026, Outlook), tarkistettu 9.11.2026;
+  Elecnova = elecnova-ess.com-tuotesivut, luettu 9.11.2026 (ECO-E418LP: ENERGIA 2026 -messujen malli, Elecnovan uutinen 25.10.2026);
+  EP Energy = luettelot "C&I Energy Storage Solutions" ja "Mobile Energy & Storage Charging Solutions" 12/2025 (Gmail 19eb6a5aa27f8813;
+  valmistajan asiakirja, ei Energen-materiaalia; EP Equipment -nimeä ei näytetä); Avant = OptiTemp Cube 47 -esite 6/2026 (avanttecno.com).
+  EPES261L jätetty pois (ENF 27.9.2026: ei enää tuotannossa; EPES233 on uusi malli).
+- Tuotekuvat `assets/tuotteet/<id>.webp` 600×600: Elecnovan renderöinnit elecnovapower.com /uploads/image/20260203/ (ECO-E101WX,
+  ECO-E64WX, ECO-E20FT2170LP-2, STS), ECO-E418LP = Elecnovan messukuva (kumppanit/elecnova-2), EP Energyn kuvat luetteloista
+  (pdfimages + alfamaski), Avantin kuva esitteestä, Ralos = kumppanit/ralos-kaapit. Alkukuva `rivi-{2400,1600,m}.webp` = kuuden
+  tuotteen rivi oikeassa mittasuhteessa (korkeudet datalehdiltä). Lupa: kumppaneiden omat materiaalit (23.10., 5.11. ja 9.11.2026).
+- Energiavarastosivu uudelleen: alkukuva tuoterivinä, valikoima heti alussa, sitten rahavirtataulukko, "Mikä laskullanne muuttuu",
+  toimitus + 3D/AR, kohteet, kerros kerrallaan (upotettu tumma), UKK, CTA. Päiväkaavio poistettu (sama kuin etusivulla).
+- Kumppanisivu: "Valmistaja, malli ja tekniset tiedot ovat tarjouksessa." → linkki valikoimaan (FI/ET).
+- AVOIN: aurinkosähkösivun tuotteet ja kuvat, uutissivun uusi ilme, natiivitarkistus uusille lauseille.

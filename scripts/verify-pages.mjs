@@ -230,9 +230,10 @@ const GUARDS = [
     find: t => [...t.matchAll(/EP Equipment|\bEnergen\b/gi)] },
   { id: 'roofit-et', langs: 'et', why: 'Roofit ei Viron sivustolla (Suomessa sallittu Gare Energy Oy:n yhteydessä 6.11.2026)',
     find: t => [...t.matchAll(/Roofit/gi)] },
-  // 04.11.2026 (perustajan päätös): malli ja tekniset arvot kuuluvat tarjoukseen, eivät sivulle.
-  { id: 'mallinimet-1104', langs: 'both', why: 'tuotemallin nimi näkyvässä tekstissä — malli ja tekniset arvot kuuluvat tarjoukseen (perustajan päätös 04.11.2026)',
-    find: t => [...t.matchAll(/Beast\s*125|EPES\s?\d|ECO-E\d|OptiGrid|Velario/gi)] },
+  // mallinimet-1104 poistettu 9.11.2026: perustajan päätös (Madis 9.11.2026, "Foto, tootja, mudel, põhinäitajad") kumoaa
+  // 4.11.2026 linjauksen. Tuotteen kuva, valmistaja, malli ja päätiedot valmistajan datalehdeltä lähteineen näytetään
+  // alasivujen tuotevalikoimassa (scripts/tuotteet/build_tuotteet.py). Valmistajanimien vartijat (nimet-1104, roofit-et,
+  // kielletyt-nimet) pysyvät.
   /* --- viron kielen 03.09 korjaukset --- */
   // 03.09 F6: Baltian irtaantuminen tapahtui 8.2.2025, ei 9.2.
   { id: 'et-veebruar-9', langs: 'et', why: '"9. veebruaril 2025 lahkusid" — õige kuupäev on 8. veebruar (03.09.2026, F6)',
@@ -707,7 +708,9 @@ const jsBytes = statSync(join(ROOT, 'assets/site.js')).size;
 /* CSS-raja nostettu 70 -> 76 kt: perustajan päätös 25.10.2026 (Martin, v34-katselmus G4: "75 kt on ok"). */
 if (cssBytes > 92 * 1024) err(`assets/site.css ${cssBytes} tavua > 92 kt`);
 if (jsBytes > 20 * 1024) err(`assets/site.js ${jsBytes} tavua > 20 kt`);
-for (const f of ['assets/site.css', 'assets/fonts.css', 'assets/site.js']) if (/googleapis|gstatic|https?:\/\//.test(read(f))) err(`${f} viittaa ulkoiseen osoitteeseen`);
+for (const f of ['assets/site.css', 'assets/fonts.css', 'assets/site.js', 'assets/alasivut.css']) if (/googleapis|gstatic|https?:\/\//.test(read(f))) err(`${f} viittaa ulkoiseen osoitteeseen`);
+/* v53: alasivujen vaalea teema ja tuotevalikoima omassa tiedostossaan (ladataan vain alasivuille). */
+{ const b = statSync(join(ROOT, 'assets/alasivut.css')).size; if (b > 40 * 1024) err(`assets/alasivut.css ${b} tavua > 40 kt`); }
 /* 5.11.2026: kartan sijaintipainike (kk-geo etusivulla, km-geo /verkko/- ja /vork/-sivulla) toimii vain, jos
    Permissions-Policy sallii sijainnin omalle alkuperälle — geolocation=() esti sen tuotannossa kokonaan. */
 {

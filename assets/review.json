@@ -82,7 +82,7 @@
   },
   {
    "page": "/energiavarastot/",
-   "sectionId": "kerros",
+   "sectionId": "tuotteet",
    "kind": "new"
   },
   {
@@ -98,20 +98,19 @@
   },
   {
    "page": "/energiavarastot/",
+   "sectionId": "toimitus",
+   "kind": "changed",
+   "prev": "Mitä toimitamme – ja mitä laitteilta vaadimme. Laitteet valitaan kohteenne mukaan, ei varaston. Turvallisuus, takuu ja huolto ovat arviossa kirjattuina, eivät pienellä präntillä. Teollisuusluokan järjestelmäUlkoasennukseen sopiva varastokaappi, invertteri ja ohjaus, mitoitettuna liittymänne ja kulutusprofiilinne mukaan – yhdestä yksiköstä usean yksikön puistoon. Turvallisuus ja takuuVaadimme valmistajalta LFP-kemiaa, kennotason valvonnalla varustettua akunhallintaa, lämpötilanhallintaa, ulko-olosuhteisiin tarkoitettua kaappia sekä CE- ja kuljetussertifikaatteja. Valmistajan takuu ja huoltoehdot ovat arviossa omalla rivillään. Kaikki vaatimukset → Asennus, toimitus ja huoltoLaitteet tulevat useammalta valmistajalta, ja toimitusaika vahvistetaan tarjouksessa laitekohtaisesti. Asennusta johtaa asennuspäällikkömme yhdessä kumppaneiden kanssa. Käyttöönoton jälkeen järjestelmää valvovat aggregaattori ja me, huolto kulkee sopimuksen mukaan. Kumppanit ja tuotteet"
+  },
+  {
+   "page": "/energiavarastot/",
    "sectionId": "kenelle-miksi",
    "kind": "new"
   },
   {
    "page": "/energiavarastot/",
-   "sectionId": "paiva",
-   "kind": "changed",
-   "prev": "Miltä akun päivä näyttää. Yksi akku, neljä työtä, yksi vuorokausi. Kello kulkee, akku lataa halvalla, leikkaa aamuhuipun, odottaa valmiina ja purkaa energian silloin, kun se on kallista. Koko ajan se on Fingridin käytettävissä. KulutuksenneTehomaksurajaHuippu, jonka akku leikkaaPörssihinta (tunti)Akku odottaa, tuottaa reservissä 00–05Akku lataa, kun pörssihinta on päivän alin. Sama energia myydään myöhemmin kalliilla tai käytetään huipun aikana. 07–09Aamun käynnistyshuippu ei päädy verkkolaskulle: akku antaa puuttuvan tehon itse. Tehomaksu lasketaan huipun mukaan, joten juuri tämä hetki maksaa. 10–16Akku odottaa puoliksi ladattuna ja on Fingridin reservimarkkinoiden käytettävissä. Valmiudesta maksetaan silloinkin, kun aktivointia ei tule. 17–20Iltahuippu ja päivän kallein sähkö osuvat yhteen. Akku purkaa energian ja lataa yöllä uudelleen. Kaavamainen vuorokausi, ei yhden kohteen mitattua dataa. Kohteenne todellisen profiilin piirrämme arvioon tuntikohtaisista kulutustiedoistanne."
-  },
-  {
-   "page": "/energiavarastot/",
-   "sectionId": "toimitus",
-   "kind": "changed",
-   "prev": "Mitä toimitamme – ja mitä laitteilta vaadimme. Laitteet valitaan kohteenne mukaan, ei varaston. Turvallisuus, takuu ja huolto ovat arviossa kirjattuina, eivät pienellä präntillä. Teollisuusluokan järjestelmäUlkoasennukseen sopiva varastokaappi, invertteri ja ohjaus, mitoitettuna liittymänne ja kulutusprofiilinne mukaan – yhdestä yksiköstä usean yksikön puistoon. Turvallisuus ja takuuVaadimme valmistajalta LFP-kemiaa, kennotason valvonnalla varustettua akunhallintaa, lämpötilanhallintaa, ulko-olosuhteisiin tarkoitettua kaappia sekä CE- ja kuljetussertifikaatteja. Valmistajan takuu ja huoltoehdot ovat arviossa omalla rivillään. Kaikki vaatimukset → Asennus, toimitus ja huoltoLaitteet tulevat useammalta valmistajalta, ja toimitusaika vahvistetaan tarjouksessa laitekohtaisesti. Asennusta johtaa asennuspäällikkömme yhdessä kumppaneiden kanssa. Käyttöönoton jälkeen järjestelmää valvovat aggregaattori ja me, huolto kulkee sopimuksen mukaan. Kumppanit ja tuotteet"
+   "sectionId": "kerros",
+   "kind": "new"
   },
   {
    "page": "/energiavarastot/",
@@ -460,7 +459,7 @@
   },
   {
    "page": "/energiasalvestid/",
-   "sectionId": "kihid",
+   "sectionId": "tooted",
    "kind": "new"
   },
   {
@@ -476,20 +475,19 @@
   },
   {
    "page": "/energiasalvestid/",
+   "sectionId": "tarne",
+   "kind": "changed",
+   "prev": "Mida me tarnime – ja mida seadmetelt nõuame. Seadmed valime teie objekti järgi, mitte lao. Ohutus, garantii ja hooldus on hinnangus kirjas, mitte peenes kirjas. Tööstusklassi süsteemVälispaigalduseks sobiv salvestikapp, inverter ja juhtimine, mõõdetud teie liitumise ja tarbimisprofiili järgi – ühest üksusest mitme üksuse pargini. Ohutus ja garantiiNõuame tootjalt LFP-keemiat, rakutaseme jälgimisega akuhaldust, temperatuurijuhtimist, välitingimustele vastavat kappi ja CE- ning transpordisertifikaate. Tootja garantii ja hooldustingimused on hinnangus eraldi real. Kõik nõuded → Paigaldus, tarne ja hooldusSeadmed tulevad mitmelt tootjalt ja tarneaeg kinnitatakse pakkumises seadme kaupa. Paigaldust juhib meie paigaldusjuht koos partneritega. Pärast käikulaskmist jälgivad süsteemi agregaator ja meie, hooldus käib lepingu järgi. Partnerid ja tooted"
+  },
+  {
+   "page": "/energiasalvestid/",
    "sectionId": "kellele-miks",
    "kind": "new"
   },
   {
    "page": "/energiasalvestid/",
-   "sectionId": "oopaev",
-   "kind": "changed",
-   "prev": "Kuidas aku päev välja näeb. Üks aku, neli tööd, üks ööpäev. Kell liigub, aku laeb odavalt, lõikab hommikutipu, ootab valmis ja annab energia välja siis, kui see on kallis. Terve aja on ta Eleringile kättesaadav. Teie tarbimineVõimsustasu piirTipp, mille aku maha lõikabBörsihind (tund)Aku ootab, teenib reserviturul 00–05Aku laeb siis, kui börsihind on päeva madalaim. Sama energia müüakse hiljem tagasi kallilt või kasutatakse tipu ajal. 07–09Hommikune käivitustipp ei jõua võrguarvele: aku annab puuduva võimsuse ise. Võimsustasu arvestatakse tipu järgi, seega just see hetk maksab. 10–16Aku ootab pooleldi laetuna ja on Eleringi reserviturul saadaval. Valmisoleku eest makstakse ka siis, kui aktiveerimist ei tule. 17–20Õhtutipp ja päeva kalleim elekter langevad kokku. Aku annab energia välja ja laeb öösel uuesti. Skemaatiline ööpäev, mitte ühe objekti mõõdetud andmed. Teie objekti tegeliku profiili joonistame hinnangus teie tunnipõhistest tarbimisandmetest."
-  },
-  {
-   "page": "/energiasalvestid/",
-   "sectionId": "tarne",
-   "kind": "changed",
-   "prev": "Mida me tarnime – ja mida seadmetelt nõuame. Seadmed valime teie objekti järgi, mitte lao. Ohutus, garantii ja hooldus on hinnangus kirjas, mitte peenes kirjas. Tööstusklassi süsteemVälispaigalduseks sobiv salvestikapp, inverter ja juhtimine, mõõdetud teie liitumise ja tarbimisprofiili järgi – ühest üksusest mitme üksuse pargini. Ohutus ja garantiiNõuame tootjalt LFP-keemiat, rakutaseme jälgimisega akuhaldust, temperatuurijuhtimist, välitingimustele vastavat kappi ja CE- ning transpordisertifikaate. Tootja garantii ja hooldustingimused on hinnangus eraldi real. Kõik nõuded → Paigaldus, tarne ja hooldusSeadmed tulevad mitmelt tootjalt ja tarneaeg kinnitatakse pakkumises seadme kaupa. Paigaldust juhib meie paigaldusjuht koos partneritega. Pärast käikulaskmist jälgivad süsteemi agregaator ja meie, hooldus käib lepingu järgi. Partnerid ja tooted"
+   "sectionId": "kihid",
+   "kind": "new"
   },
   {
    "page": "/energiasalvestid/",

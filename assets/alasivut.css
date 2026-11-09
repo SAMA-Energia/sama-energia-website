@@ -1,0 +1,118 @@
+/* SAMA Energia — alasivut.css (v53, 9.11.2026). Alasivut vaaleina, tumma vain ylä- ja alapalkki
+   (Madis 9.11.2026: "Hele põhi, tume ainult päis ja jalus"). build-pages.mjs antaa alasivun .page-divlle
+   luokan lt ja lataa tämän tiedoston kaikille sivuille paitsi etusivulle. Sävyt = etusivun vaalea osio
+   .k-chalk; kulta vain korostuksena (linkit, otsikon korostus). Tumma .k-sld ja verkko-sivun kartta ovat
+   upotettuja näkymiä omine tummine sävyineen. Tuotevalikoima (.tuo, .tc) = scripts/tuotteet/build_tuotteet.py. */
+
+/* ---------- sävyt ---------- */
+.lt{--paper:#F7F4EE;--paper-2:#EFEBE3;--paper-3:#E7E1D6;--card:#FFFEFB;--ink:#12110F;--ink-2:#4A453C;--ink-3:#6B655A;--line:#DED7C9;--line-2:#C9C1B1;--gold:#8A6A2A;--gold-2:#8A6A2A;--gold-deep:#7A5E22;--gold-soft:#E9DFC6;--gold-pale:#EFE7D3;background:var(--paper);color:var(--ink);color-scheme:light}
+.lt .k-sld,.lt .km-map,.lt .km-inline{--paper:#0B0B0A;--paper-2:#11100E;--paper-3:#1A1815;--card:#16140F;--ink:#F3EEE1;--ink-2:#CFC8B8;--ink-3:#A9A294;--line:#26241F;--line-2:#3A372F;--gold:#D4B574;--gold-2:#C7A45C;--gold-deep:#D4B574;--gold-soft:#1E1A10;--gold-pale:#16130C;--k-g1:#E8D193;--k-g2:#C7A45C;--k-g3:#97752F;--k-blue:#BFD3E6;--k-free:#7DB394;color:var(--ink);color-scheme:dark}
+/* verkko: luvut vaalealla, kartta tummana paneelina */
+.lt .km{--k-g1:#7A5E22;--k-g2:#8A6A2A;--k-g3:#97752F;--k-blue:#2F5B80;--k-free:#2E7D5B}
+.lt .km-show{border-color:rgba(18,17,15,.28);color:var(--ink)}
+.lt .km-paysp{background:rgba(138,106,42,.06)}
+
+/* ---------- painikkeet ja linkit ---------- */
+.lt .btn-primary{background:#12110F;color:#F7F3EA}
+.lt .btn-primary:hover{background:#2C2924}.lt .btn-primary:active{background:#000}
+.lt .btn-ghost{color:#12110F;border-color:rgba(18,17,15,.28)}
+.lt .btn-ghost:hover{border-color:#12110F;background:rgba(18,17,15,.04)}
+.lt .btn:focus-visible{outline-color:#12110F}
+.lt .src a,.lt .sources-list a,.lt .article .prose a,.lt .prod dd a{border-bottom-color:rgba(122,94,34,.35)}
+.lt .k-sld .btn-primary{background:#D4B574;color:#14120D}
+
+/* ---------- tummat paneelit vaaleiksi ---------- */
+.lt .example,.lt .post.featured,.lt .value.featured,.lt .compare-col.sama{background:var(--card);border-color:var(--line);box-shadow:0 1px 0 rgba(18,17,15,.04)}
+.lt .example{border-left:3px solid var(--gold-2)}
+.lt .post.featured,.lt .value.featured{border-top:3px solid var(--gold-2)}
+.lt .vote,.lt .newsstrip{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.lt .vote::before{display:none}
+.lt .vote .lead,.lt .vote .cols p,.lt .newsstrip p{color:var(--ink-2)}
+.lt .vote .cols b{color:var(--ink)}
+.lt .vote .cols div{background:var(--paper)}
+.lt .vote .src{color:var(--ink-3)}.lt .vote .src a{border-bottom-color:rgba(122,94,34,.35)}
+.lt .quote blockquote{color:var(--ink)}.lt .quote figcaption{color:var(--ink-2)}
+.lt .person .photo,.lt .direct .photo,.lt .authorcard .av{background:linear-gradient(160deg,#E7E1D6,#D6CDBB)}
+.lt .person .photo::after{box-shadow:inset 0 0 0 2px rgba(255,255,255,.55)}
+.lt .partner .pimg{background:#fff}
+.lt .ccard.co{border-color:#CDBB8C}
+.lt .orbit-fig{background:radial-gradient(85% 70% at 50% 46%,#FFFEFB 0%,#EFEBE3 72%)}
+.lt .faq details[open] summary .plus{color:#F7F4EE}
+.lt .field input,.lt .field select,.lt .field textarea{background:#FFFEFB}
+.lt .form .err{color:#A33A26}
+.lt .form,.lt .structure{box-shadow:0 30px 60px -44px rgba(18,17,15,.3)}
+.lt a.partner:hover,.lt a.post:hover{box-shadow:0 22px 44px -30px rgba(18,17,15,.35)}
+.lt .ar3d-fig{background:radial-gradient(110% 80% at 50% 40%,#FFFFFF 0%,#EFEBE3 74%)}
+/* verkko: osoitehaku vaalealla (kartta-paikka.js lisää tumman perustyylin) */
+.lt .kk-addr input{background:#FFFEFB;border-color:var(--line-2);color:var(--ink)}
+.lt .kk-addr ul{background:#FFFEFB;border-color:var(--line-2);box-shadow:0 12px 30px -8px rgba(18,17,15,.22)}
+.lt .kk-addr li button{color:var(--ink)}
+.lt .kk-addr li button:hover,.lt .kk-addr li button:focus{background:rgba(138,106,42,.1)}
+.lt .kk-addr li.kk-src{color:var(--ink-3)}
+
+/* ---------- rytmi: vähemmän tyhjää, kaikki vasemmalle ---------- */
+.lt .section{padding:clamp(56px,6.4vw,92px) 0}
+.lt .intro-split{align-items:start;margin-bottom:clamp(28px,3.4vw,44px)}
+.lt .subhero{background:var(--paper)}
+
+/* ---------- upotettu tumma näkymä (kerros kerrallaan) ---------- */
+.lt .k-sld{width:calc(100% - 2*clamp(10px,2vw,28px));max-width:1440px;margin:clamp(20px,3vw,40px) auto;border-radius:18px}
+
+/* ---------- energiavarastot: alkukuva = valikoima rivissä ---------- */
+.lt .subhero-tuo{padding:clamp(28px,4vw,52px) 0 0;border-bottom:0}
+.lt .subhero-tuo .wrap{display:block}
+.sh-g{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:20px clamp(32px,5vw,72px);align-items:end}
+.lt .subhero-tuo h1{max-width:16ch}
+.lt .subhero-tuo .lead{margin-top:0;max-width:52ch}
+.sh-g .hero-cta{margin-top:22px}
+.tuo-rivi{margin:clamp(20px,3vw,36px) auto -1px;max-width:1400px;padding:0 clamp(8px,2.5vw,32px);position:relative;z-index:1}
+.tuo-rivi img{display:block;width:100%;height:auto}
+
+/* ---------- tuotevalikoima ---------- */
+.tuo{background:var(--paper-2);border-top:1px solid var(--line)}
+.lt .tuo{padding-top:clamp(36px,4vw,56px)}
+.tuo .wrap{max-width:1400px}
+.tuo-h{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:12px clamp(32px,5vw,72px);align-items:end;margin-bottom:22px}
+.tuo-h h2{font-size:clamp(30px,3.2vw,42px)}
+.tuo-h .lead{font-size:16.5px;max-width:52ch}
+.tuo-f{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.tuo-f input{position:absolute;opacity:0;width:1px;height:1px;margin:0;pointer-events:none}
+.tuo-f label{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:8px 15px;border:1px solid var(--line-2);border-radius:999px;background:var(--card);font:500 14.5px/1.2 var(--font-body);color:var(--ink);cursor:pointer;user-select:none;transition:background-color .2s,border-color .2s,color .2s}
+.tuo-f label span{font:600 12.5px/1 var(--font-body);color:var(--ink-3);font-variant-numeric:tabular-nums}
+.tuo-f label:hover{border-color:var(--ink)}
+.tuo-f input:checked+label{background:var(--ink);border-color:var(--ink);color:#F7F4EE}
+.tuo-f input:checked+label span{color:#CFC8B8}
+.tuo-f input:focus-visible+label{outline:2px solid var(--gold-deep);outline-offset:2px}
+.tuo-g{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:14px}
+.tc{display:flex;flex-direction:column;min-width:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;scroll-margin-top:96px}
+.tc-m{margin:0;aspect-ratio:1/1;background:#fff;border-bottom:1px solid var(--line)}
+.tc-m img{display:block;width:100%;height:100%;object-fit:contain}
+.tc-ph .tc-m img{object-fit:cover}
+.tc-b{display:flex;flex-direction:column;flex:1;padding:13px 15px 15px}
+.tc-mk{font:500 13px/1.3 var(--font-body);color:var(--ink-3)}
+.tc .tc-n{margin:2px 0 0;font:600 17px/1.25 var(--font-body);letter-spacing:-.005em;color:var(--ink);overflow-wrap:anywhere}
+.tc-t{margin-top:3px;font-size:14px;line-height:1.4;color:var(--ink-2)}
+.tc-s{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9px 12px;margin:12px 0 0;padding:11px 0 0;border-top:1px solid var(--line)}
+.tc-s dt{font:500 12px/1.3 var(--font-body);color:var(--ink-3)}
+.tc-s dd{margin:2px 0 0;font:600 15px/1.3 var(--font-body);color:var(--ink);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.tc-src{margin-top:auto;padding-top:12px;font-size:12px;line-height:1.45;color:var(--ink-3)}
+.tc-src a{color:var(--gold-deep);border-bottom:1px solid rgba(122,94,34,.3)}
+.tc-src a:hover{border-bottom-color:currentColor}
+.tuo-note{margin-top:18px;max-width:86ch;font-size:14px;line-height:1.55;color:var(--ink-2)}
+/* suodatus (selaimet ilman :has() näyttävät kaikki) */
+.tuo:has(#tv-v-kaappi:checked) .tc:not([data-c~=kaappi]),.tuo:has(#tv-v-hybridi:checked) .tc:not([data-c~=hybridi]),.tuo:has(#tv-v-kontti:checked) .tc:not([data-c~=kontti]),.tuo:has(#tv-v-siirrettava:checked) .tc:not([data-c~=siirrettava]),.tuo:has(#tv-v-varavoima:checked) .tc:not([data-c~=varavoima]){display:none}
+
+@media (max-width:1023px){
+  .sh-g,.tuo-h{grid-template-columns:minmax(0,1fr);align-items:start}
+  .lt .subhero-tuo h1{max-width:20ch}
+}
+@media (max-width:700px){
+  .lt .section{padding:52px 0}
+  .tuo-f{flex-wrap:nowrap;overflow-x:auto;margin-left:calc(-1*var(--gutter));margin-right:calc(-1*var(--gutter));padding:0 var(--gutter) 4px;scrollbar-width:none}
+  .tuo-f::-webkit-scrollbar{display:none}
+  .tuo-f label{flex:none}
+  .tuo-g{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:min(78%,300px);overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(-1*var(--gutter));padding:0 var(--gutter) 8px;scroll-padding:0 var(--gutter)}
+  .tc{scroll-snap-align:start}
+  .lt .k-sld{width:100%;border-radius:0;margin:0}
+}
+@media (prefers-reduced-motion:reduce){.tuo-f label{transition:none}}

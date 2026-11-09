@@ -489,25 +489,233 @@ Tehomaksu alas, pörssisähkö hyödyksi, reservitulo ja varavoima, kun kohteess
 
 Pyydä maksuton kartoitus
 
-Kantaverkosta kennoon, kerros kerrallaan.
-Liittymä on jo rakennettu ja maksettu. Näin sähkö kulkee teille ja näin mittarin takana tehdään päätökset.
+Valikoima kaapista konttiin.
 
-Sähköasemilla jännite lasketaan askel kerrallaan.
-Fingridin kantaverkko toimii 400, 220 ja 110 kilovoltin jännitteillä. Sähköasemilla jännite lasketaan 400 kilovoltista 110 kilovolttiin ja edelleen jakeluverkkoon.
+Ulkokaapit, hybridikaapit, kontit, siirrettävät yksiköt ja STS-kaapit neljältä valmistajalta: Ralos, Elecnova, EP Energy ja Avant Power.
 
-Jakeluverkko tuo sähkön liittymäänne.
-Keskijänniteverkko (20 kV) ja pienjänniteverkko (0,4 kV) ovat verkkoyhtiön. Se laskuttaa siirrosta ja tehosta: esimerkiksi Caruna Oy:n Tehosiirto 1 PJ -tuotteessa tehomaksu on 3,57 €/kW kuukaudessa kuukauden huipputehon mukaan (hinnasto 1.9.2024, alv 0 %).
+Kaikki 13Ulkokaapit 4Hybridikaapit 2Kontit 2Siirrettävät ja lataus 4Varavoima 3
+Ralos
+Beast 125 HD
+Nestejäähdytetty energiavarasto sisä- tai ulkoasennukseen
+Teho
+125 kW
 
-Mittari on raja. Sen takana päätökset ovat teidän.
-Keskijänniteliittymässä oma muuntamo 20/0,4 kV, pääkeskus, kuormat ja mahdollinen oma tuotanto ovat kaikki mittarin takana, samoin energiavarasto.
+Energia
+261 kWh
 
-Energiavarasto: yksi kaappi, kaikki osat sisällä.
-Yksi ulkokaappi kokoaa tehoelektroniikan (PCS), LFP-akustot, akunhallinnan (BMS), nestejäähdytyksen ja ohjauksen (EMS). Teho ja energia mitoitetaan kulutustiedoistanne, ja kaappeja liitetään rinnan kohteen mukaan.
+Varavoima, optio
+STS, alle 10 ms
 
-Kennoista moduuleiksi, moduuleista akustoiksi.
-Litiumrautafosfaattikennot (LFP) kootaan moduuleiksi ja moduulit akustoiksi. Akunhallinta mittaa jokaisen kennon jännitteen, lämpötilan ja varaustilan ja pitää ne sallitulla alueella.
+Aurinkosähkö, optio
+2 × 63 kW
 
-Lähteet: Fingrid, kantaverkon jännitetasot · Caruna Oy, verkkopalveluhinnasto 1.9.2024 · valmistajien tuotetiedotteet, luettu 1.11.2026.
+Lähde: Ralos Oy, tekninen tiedote Ralos Beast 125, versio V10, tarkistettu 9.11.2026
+
+Elecnova
+ECO-E418LP
+Nestejäähdytetty ulkokaappi
+Teho
+100 kW (400 V)
+
+Energia
+418 kWh
+
+Jäähdytys
+neste
+
+Pohja
+1,5 × 1,35 m
+
+Lähde: Elecnova, tuotesivu ECO-E418LP, luettu 9.11.2026
+
+Elecnova
+ECO-E101WX
+Ilmajäähdytteinen ulkokaappi
+Teho
+100 kW
+
+Energia
+101 kWh
+
+Jäähdytys
+ilma
+
+Pohja
+1,25 × 1,2 m
+
+Lähde: Elecnova, tuotesivu ECO-E101WX, luettu 9.11.2026
+
+EP Energy
+EPES233
+Nestejäähdytetty ulkokaappi
+Teho
+105 kW
+
+Energia
+233 kWh
+
+Jäähdytys
+neste
+
+Pohja
+1,45 × 1,3 m
+
+Lähde: EP Energy, luettelo C&I Energy Storage Solutions, 12/2025
+
+EP Energy
+EPHS104 / EPHS156
+Hybridikaappi aurinkosähköön
+Teho
+50 kW
+
+Energia
+104 tai 156 kWh
+
+Aurinkosähkö
+enintään 100 kW
+
+Varavoima
+alle 10 ms
+
+Lähde: EP Energy, luettelo C&I Energy Storage Solutions, 12/2025
+
+Elecnova
+ECO-E64WX
+Hybridikaappi aurinkosähköön
+Teho
+25–50 kW
+
+Energia
+64,5 kWh
+
+Aurinkosähkö
+37,5–75 kW
+
+Jäähdytys
+ilma
+
+Lähde: Elecnova, tuotesivu ECO-E64WX, luettu 9.11.2026
+
+Elecnova
+ECO-E20FT2170LP
+20 jalan konttivarasto
+Teho
+1 000 kW
+
+Energia
+2 170 kWh
+
+Jäähdytys
+neste
+
+Paino
+25 t
+
+Lähde: Elecnova, tuotesivu ECO-E20FT2170LP, luettu 9.11.2026
+
+EP Energy
+EPES5000
+Akustokontti suuriin kohteisiin
+Energia
+5 015 kWh
+
+Jännite
+1 040–1 500 V DC
+
+Jäähdytys
+neste
+
+Paino
+44 t
+
+Lähde: EP Energy, luettelo C&I Energy Storage Solutions, 12/2025
+
+EP Energy
+EPPS93-M
+Siirrettävä energiayksikkö
+Energia
+93 kWh
+
+DC-lataus
+60 kW
+
+AC-ulostulo
+33 kVA
+
+Paino
+1,5 t
+
+Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
+
+EP Energy
+EPPS210-M
+Siirrettävä energiayksikkö perävaunulla
+Energia
+217 kWh
+
+DC-lataus
+enintään 240 kW
+
+AC-ulostulo
+125 kW
+
+Paino
+2,7 t
+
+Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
+
+EP Energy
+EPCS209
+Akulla varustettu DC-pikalaturi
+Liittymästä
+60 kW
+
+Lataus
+enintään 240 kW
+
+Akku
+209 kWh
+
+Liittimet
+2 × CCS2
+
+Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
+
+Avant Power
+OptiTemp® Cube 47
+Siirrettävä energiayksikkö työkoneille
+Energia
+47 kWh
+
+Teho
+11 kW
+
+Kotelointi
+IP54
+
+Paino
+730 kg
+
+Lähde: Avant Power, OptiTemp® Cube 47 -esite, 6/2026, luettu 9.11.2026
+
+Elecnova
+ECO-STS-C125
+STS-kaappi saarekekäyttöön
+Varastoille
+2, 4 tai 6 × 125 kW
+
+Siirto
+20 ms
+
+Kotelointi
+IP54
+
+Jännite
+400 V
+
+Lähde: Elecnova, tuotesivu ECO-STS-C125, luettu 9.11.2026
+
+Tekniset tiedot ovat valmistajien datalehdiltä ja tuotesivuilta. Varavoima koskee valittuja piirejä, jotka suunnitellaan kohdekäynnillä. Valmistaja ja malli valitaan kohteenne kulutuksen, liittymän ja tilan mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla.
 
 Mistä kukin kassavirta riippuu
 Mikä osa on kohteessanne suurin, selviää kulutustiedoista. Siksi kaikki alkaa maksuttomasta kartoituksesta.
@@ -549,39 +757,6 @@ Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029. Liitt
 
 Lähde: Fingrid, tiedote · 24.9.2025
 
-Missä varasto maksaa itsensä takaisin nopeimmin ja miksi.
-Varaston teho jaetaan usean työn kesken: oman kulutuksenne optimointi (huiput, halvat tunnit), arbitraasi pörssissä ja reservimarkkinat (valmius Fingridille). Aggregaattori myy tehoa usealla markkinalla samaan aikaan: se on monimarkkinapalvelu. Kuinka suuri osa menee millekin työlle, määrää kulutusprofiilinne. Se on kartoituksen tärkein rivi.
-
-Viljankuivaamot ja maatilat
-Varasto on lähes koko ajan reservimarkkinoilla ja tuottaa valmiudesta; kuivauskauden huiput se pitää alhaalla. Usein nopein takaisinmaksu.
-
-Teollisuus ja kylmävarastot
-Kylmävarastossa lisäksi ympärivuorokautinen jäähdytys. Varasto pitää kuukauden huipputehon alhaalla, ostaa halvoilla tunneilla ja on muina tunteina reservimarkkinoilla.
-
-Hotellit ja hoivakiinteistöt
-Varavoima on tässä yhtä tärkeä kuin säästö. Se edellyttää saarekekäyttöön toteutettua järjestelmää ja erotettua kriittistä piiriä, jotka suunnitellaan kohteittain.
-
-Aurinkopuistot, maanomistajat ja kiinteistösalkut
-Vapaa maa liittymän lähellä on itsessään omaisuutta, jolle voimala ja varasto rakennetaan; salkku saa yhden kumppanin, joka laskee kaikki kohteet läpi.
-
-Ettekö löytänyt omaa kohdettanne? Kuvailkaa se meille. Kartoitus kertoo, mikä jako kohteessanne toimii.Pyydä maksuton kartoitus
-
-Miltä sähkövaraston päivä näyttää.
-
-Yksi sähkövarasto, neljä työtä, yksi vuorokausi. Kello kulkee, varasto lataa halvalla, leikkaa aamuhuipun, odottaa valmiina ja purkaa energian silloin, kun se on kallista. Koko ajan se on Fingridin käytettävissä.
-
-KulutuksenneTehomaksurajaHuippu, jonka varasto leikkaaPörssihinta (tunti)Varasto odottaa, tuottaa reservissä
-
-00–05Varasto lataa, kun pörssihinta on päivän alin. Sama energia myydään myöhemmin kalliilla tai käytetään huipun aikana.
-
-07–09Aamun käynnistyshuippu ei päädy verkkolaskulle: varasto antaa puuttuvan tehon itse. Tehomaksu lasketaan huipun mukaan, joten juuri tämä hetki maksaa.
-
-10–16Varasto odottaa puoliksi ladattuna ja on Fingridin reservimarkkinoiden käytettävissä. Se ansaitsee valmiudesta silloinkin, kun aktivointia ei tule.
-
-17–20Iltahuippu ja päivän kallein sähkö osuvat yhteen. Varasto purkaa energian ja lataa yöllä uudelleen.
-
-Kaavamainen vuorokausi, ei yhden kohteen mitattua dataa. Kohteenne todellisen profiilin piirrämme arvioon tuntikohtaisista kulutustiedoistanne.
-
 Mitä toimitamme ja mitä laitteilta vaadimme.
 
 Laitteet valitaan kohteenne mukaan, ei sen mukaan, mitä varastossa on. Turvallisuus, takuu ja huolto ovat arviossa kirjattuina, eivät pienellä präntillä.
@@ -601,6 +776,43 @@ Vaadimme valmistajalta LFP-kemiaa, kennotason valvonnalla varustettua akunhallin
 
 Asennus, toimitus ja huolto
 Laitteet tulevat useammalta valmistajalta, ja toimitusaika vahvistetaan tarjouksessa laitekohtaisesti. Asennusta johtaa asennuspäällikkömme yhdessä kumppaneiden kanssa. Käyttöönoton jälkeen järjestelmää valvovat aggregaattori ja me, huolto kulkee sopimuksen mukaan. Kumppanit ja tuotteet
+
+Missä varasto maksaa itsensä takaisin nopeimmin ja miksi.
+Varaston teho jaetaan usean työn kesken: oman kulutuksenne optimointi (huiput, halvat tunnit), arbitraasi pörssissä ja reservimarkkinat (valmius Fingridille). Aggregaattori myy tehoa usealla markkinalla samaan aikaan: se on monimarkkinapalvelu. Kuinka suuri osa menee millekin työlle, määrää kulutusprofiilinne. Se on kartoituksen tärkein rivi.
+
+Viljankuivaamot ja maatilat
+Varasto on lähes koko ajan reservimarkkinoilla ja tuottaa valmiudesta; kuivauskauden huiput se pitää alhaalla. Usein nopein takaisinmaksu.
+
+Teollisuus ja kylmävarastot
+Kylmävarastossa lisäksi ympärivuorokautinen jäähdytys. Varasto pitää kuukauden huipputehon alhaalla, ostaa halvoilla tunneilla ja on muina tunteina reservimarkkinoilla.
+
+Hotellit ja hoivakiinteistöt
+Varavoima on tässä yhtä tärkeä kuin säästö. Se edellyttää saarekekäyttöön toteutettua järjestelmää ja erotettua kriittistä piiriä, jotka suunnitellaan kohteittain.
+
+Aurinkopuistot, maanomistajat ja kiinteistösalkut
+Vapaa maa liittymän lähellä on itsessään omaisuutta, jolle voimala ja varasto rakennetaan; salkku saa yhden kumppanin, joka laskee kaikki kohteet läpi.
+
+Ettekö löytänyt omaa kohdettanne? Kuvailkaa se meille. Kartoitus kertoo, mikä jako kohteessanne toimii.Pyydä maksuton kartoitus
+
+Kantaverkosta kennoon, kerros kerrallaan.
+Liittymä on jo rakennettu ja maksettu. Näin sähkö kulkee teille ja näin mittarin takana tehdään päätökset.
+
+Sähköasemilla jännite lasketaan askel kerrallaan.
+Fingridin kantaverkko toimii 400, 220 ja 110 kilovoltin jännitteillä. Sähköasemilla jännite lasketaan 400 kilovoltista 110 kilovolttiin ja edelleen jakeluverkkoon.
+
+Jakeluverkko tuo sähkön liittymäänne.
+Keskijänniteverkko (20 kV) ja pienjänniteverkko (0,4 kV) ovat verkkoyhtiön. Se laskuttaa siirrosta ja tehosta: esimerkiksi Caruna Oy:n Tehosiirto 1 PJ -tuotteessa tehomaksu on 3,57 €/kW kuukaudessa kuukauden huipputehon mukaan (hinnasto 1.9.2024, alv 0 %).
+
+Mittari on raja. Sen takana päätökset ovat teidän.
+Keskijänniteliittymässä oma muuntamo 20/0,4 kV, pääkeskus, kuormat ja mahdollinen oma tuotanto ovat kaikki mittarin takana, samoin energiavarasto.
+
+Energiavarasto: yksi kaappi, kaikki osat sisällä.
+Yksi ulkokaappi kokoaa tehoelektroniikan (PCS), LFP-akustot, akunhallinnan (BMS), nestejäähdytyksen ja ohjauksen (EMS). Teho ja energia mitoitetaan kulutustiedoistanne, ja kaappeja liitetään rinnan kohteen mukaan.
+
+Kennoista moduuleiksi, moduuleista akustoiksi.
+Litiumrautafosfaattikennot (LFP) kootaan moduuleiksi ja moduulit akustoiksi. Akunhallinta mittaa jokaisen kennon jännitteen, lämpötilan ja varaustilan ja pitää ne sallitulla alueella.
+
+Lähteet: Fingrid, kantaverkon jännitetasot · Caruna Oy, verkkopalveluhinnasto 1.9.2024 · valmistajien tuotetiedotteet, luettu 1.11.2026.
 
 Usein kysyttyä
 
@@ -1086,7 +1298,7 @@ Valikoima kohteen tarpeen mukaan.
 Lähdemme liikkeelle siitä, mitä kohteenne tarvitsee, emme siitä, mitä varastossa on. Taulukko näyttää, mistä vaihtoehdot kootaan. Lopullinen kokoonpano lasketaan kartoituksessa kulutustiedoistanne. Jokainen malli käy läpi laitevaatimuksemme ennen kuin se on tarjouksessa.
 
 Tarve ja ratkaisu
-Valmistaja, malli ja tekniset tiedot ovat tarjouksessa.
+Mallit ja tekniset tiedot: valikoima energiavarastosivulla.
 
 Kohteen tarve · Ratkaisu
 
@@ -1178,7 +1390,7 @@ Energiavarastot, kontit ja mikroverkot
 Kaappikoosta konttiin ja latausaseman mikroverkkoon. Toimimme useamman valmistajan kanssa ja valitsemme mallin kohteen tehon, energian, tilan ja käytön mukaan.
 
 Energiavarastot useammalta valmistajaltaKaapit, kontit, hybridikaapit, mikroverkot, siirrettävät yksiköt ja pikalaturit
-Valitsemme toimittajiemme valikoimasta mallin, joka sopii kohteen tehoon, tilaan ja käyttöön. Valmistaja ja malli nimetään tarjouksessa, ja vaihtoehdot vertaillaan samoilla luvuilla.
+Valitsemme toimittajiemme valikoimasta mallin, joka sopii kohteen tehoon, tilaan ja käyttöön. Mallit päätietoineen ovat energiavarastosivulla, ja vaihtoehdot vertaillaan tarjouksessa samoilla luvuilla.
 
 Elecnova
 KiinaElecnovaEnergiavarastot ja mikroverkot · kaapit, hybridikaapit, kontit ja STS-kaappi
@@ -2340,25 +2552,233 @@ Võimsustasu alla, börsihind kasuks, reservitulu ja varutoide, kui objektil on 
 
 Küsi tasuta hinnangut
 
-Põhivõrgust akuelemendini, kiht kihi haaval.
-Liitumine on juba ehitatud ja kinni makstud. Nii jõuab elekter teieni ja nii tehakse otsused arvesti taga.
+Valik kapist konteinerini.
 
-Alajaamades alandatakse pinget samm-sammult.
-Eleringi põhivõrk töötab 330 ja 110 kilovoldi pingel. Alajaamades alandatakse pinge 330 kilovoldilt 110 kilovoldile ja sealt edasi jaotusvõrku.
+Väliskapid, hübriidkapid, konteinerid, teisaldatavad seadmed ja STS-kapid neljalt tootjalt: Ralos, Elecnova, EP Energy ja Avant Power.
 
-Jaotusvõrk toob elektri teie liitumiseni.
-Keskpingevõrk (10 kV) ja madalpingevõrk (0,4 kV) kuuluvad võrguettevõtjale. Ta võtab tasu edastatud energia eest ja ärikliendilt ka võimsuse eest: Elektrilevi arveldab võimsustasu kuu suurima tunnikeskmise võimsuse järgi.
+Kõik 13Väliskapid 4Hübriidkapid 2Konteinerid 2Teisaldatavad ja laadimine 4Varutoide 3
+Ralos
+Beast 125 HD
+Vedelikjahutusega salvesti sise- või välipaigalduseks
+Võimsus
+125 kW
 
-Arvesti on piir. Selle taga otsustate teie.
-Keskpingeliitumisel on oma alajaam 10/0,4 kV, peakilp, tarbijad ja võimalik oma tootmine kõik arvesti taga, samuti energiasalvesti.
+Energia
+261 kWh
 
-Energiasalvesti: üks kapp, kõik osad sees.
-Üks välikapp koondab jõuelektroonika (PCS), LFP-akupangad, akuhalduse (BMS), vedelikjahutuse ja juhtimise (EMS). Võimsus ja energia dimensioneeritakse teie tarbimisandmetest ning kappe ühendatakse paralleelselt vastavalt objektile.
+Varutoide, lisavarustus
+STS, alla 10 ms
 
-Elementidest moodulid, moodulitest akupangad.
-Liitiumraudfosfaatelemendid (LFP) koondatakse mooduliteks ja moodulid akupankadeks. Akuhaldus mõõdab iga elemendi pinget, temperatuuri ja laetuse taset ning hoiab need lubatud vahemikus.
+Päikeseelekter, lisavarustus
+2 × 63 kW
 
-Allikad: Elering, põhivõrgu pingetasemed · Elektrilevi, võrgupaketid ärikliendile · tootjate tooteinfo, loetud 1.11.2026.
+Allikas: Ralos Oy, tehniline andmeleht Ralos Beast 125, versioon V10, kontrollitud 9.11.2026
+
+Elecnova
+ECO-E418LP
+Vedelikjahutusega väliskapp
+Võimsus
+100 kW (400 V)
+
+Energia
+418 kWh
+
+Jahutus
+vedelik
+
+Põhi
+1,5 × 1,35 m
+
+Allikas: Elecnova, tooteleht ECO-E418LP, loetud 9.11.2026
+
+Elecnova
+ECO-E101WX
+Õhkjahutusega väliskapp
+Võimsus
+100 kW
+
+Energia
+101 kWh
+
+Jahutus
+õhk
+
+Põhi
+1,25 × 1,2 m
+
+Allikas: Elecnova, tooteleht ECO-E101WX, loetud 9.11.2026
+
+EP Energy
+EPES233
+Vedelikjahutusega väliskapp
+Võimsus
+105 kW
+
+Energia
+233 kWh
+
+Jahutus
+vedelik
+
+Põhi
+1,45 × 1,3 m
+
+Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
+
+EP Energy
+EPHS104 / EPHS156
+Hübriidkapp päikeseelektrile
+Võimsus
+50 kW
+
+Energia
+104 või 156 kWh
+
+Päikeseelekter
+kuni 100 kW
+
+Varutoide
+alla 10 ms
+
+Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
+
+Elecnova
+ECO-E64WX
+Hübriidkapp päikeseelektrile
+Võimsus
+25–50 kW
+
+Energia
+64,5 kWh
+
+Päikeseelekter
+37,5–75 kW
+
+Jahutus
+õhk
+
+Allikas: Elecnova, tooteleht ECO-E64WX, loetud 9.11.2026
+
+Elecnova
+ECO-E20FT2170LP
+20-jalane konteinersalvesti
+Võimsus
+1 000 kW
+
+Energia
+2 170 kWh
+
+Jahutus
+vedelik
+
+Kaal
+25 t
+
+Allikas: Elecnova, tooteleht ECO-E20FT2170LP, loetud 9.11.2026
+
+EP Energy
+EPES5000
+Akukonteiner suurtele objektidele
+Energia
+5 015 kWh
+
+Pinge
+1 040–1 500 V DC
+
+Jahutus
+vedelik
+
+Kaal
+44 t
+
+Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
+
+EP Energy
+EPPS93-M
+Teisaldatav energiaseade
+Energia
+93 kWh
+
+DC-laadimine
+60 kW
+
+AC-väljund
+33 kVA
+
+Kaal
+1,5 t
+
+Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
+
+EP Energy
+EPPS210-M
+Teisaldatav energiaseade haagisel
+Energia
+217 kWh
+
+DC-laadimine
+kuni 240 kW
+
+AC-väljund
+125 kW
+
+Kaal
+2,7 t
+
+Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
+
+EP Energy
+EPCS209
+Akuga DC-kiirlaadija
+Liitumisest
+60 kW
+
+Laadimine
+kuni 240 kW
+
+Aku
+209 kWh
+
+Pistikud
+2 × CCS2
+
+Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
+
+Avant Power
+OptiTemp® Cube 47
+Teisaldatav energiaseade töömasinatele
+Energia
+47 kWh
+
+Võimsus
+11 kW
+
+Kaitseaste
+IP54
+
+Kaal
+730 kg
+
+Allikas: Avant Power, OptiTemp® Cube 47 brošüür, 6/2026, loetud 9.11.2026
+
+Elecnova
+ECO-STS-C125
+STS-kapp saartalitluseks
+Salvestitele
+2, 4 või 6 × 125 kW
+
+Ümberlülitus
+20 ms
+
+Kaitseaste
+IP54
+
+Pinge
+400 V
+
+Allikas: Elecnova, tooteleht ECO-STS-C125, loetud 9.11.2026
+
+Tehnilised andmed on tootjate andmelehtedelt ja tootelehtedelt. Varutoide hõlmab valitud ahelaid, mis kavandatakse objektikülastusel. Tootja ja mudel valitakse teie objekti tarbimise, liitumise ja ruumi järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega.
 
 Millest iga rahavoog sõltub
 Milline osa on teie objektil suurim, selgub tarbimisandmetest. Sellepärast algab kõik tasuta hinnangust.
@@ -2395,39 +2815,6 @@ Kinnistu väärtus: väiksem püsikulu, kõrgem hind.
 Süsteem jääb liitumise taha ja liigub kinnisvaraga kaasa. Ostja saab tippvõimsuse juhtimise ja pääsu reserviturule esimesest päevast, ilma projekti ja järjekorrata.
 Näidisarvutus. Teie objekti tootlusnõue sõltub kinnisvara liigist ja asukohast. Hinnangus arvutame selle teie enda andmetega.
 
-Kus salvesti end kõige kiiremini ära tasub ja miks.
-Salvesti võimsus jagatakse mitme töö vahel: teie enda tarbimise optimeerimine (tipud, odavad tunnid), arbitraaž börsil ja reserviturg (valmisolek Eleringile). Agregaator müüb võimsust mitmel turul korraga: see on mitmeturuteenus. Kui suur osa läheb millisele tööle, määrab teie tarbimisprofiil. See on hinnangu kõige tähtsam rida.
-
-Viljakuivatid ja maaettevõtted
-Salvesti on peaaegu kogu aeg reserviturul ja teenib valmisoleku pealt; kuivatushooaja tipud hoiab ta madalal. Sageli kiireim tasuvus.
-
-Tööstus ja külmlaod
-Külmlaos lisandub ööpäevaringne jahutus. Salvesti hoiab kuu tippvõimsuse madalal, ostab odavatel tundidel ja on ülejäänud tundidel reserviturul.
-
-Hotellid ja hooldekodud
-Varutoide on siin sama tähtis kui sääst. Selleks peab süsteem olema ehitatud saartalitluseks ja kriitiline ahel eraldatud; see projekteeritakse iga objekti jaoks eraldi.
-
-Päikesepargid, maaomanikud ja kinnisvaraportfellid
-Vaba maa liitumise lähedal on ise vara, millele jaam ja salvesti ehitatakse; portfell saab ühe partneri, kes kõik objektid läbi arvutab.
-
-Ei leidnud oma objekti? Kirjeldage seda meile. Hinnang ütleb, milline jaotus teie objektil töötab.Küsi tasuta hinnangut
-
-Kuidas salvesti päev välja näeb.
-
-Üks salvesti, neli tööd, üks ööpäev. Kell liigub, salvesti laeb odavalt, lõikab hommikutipu, ootab valmis ja annab energia välja siis, kui see on kallis. Terve aja on ta Eleringile kättesaadav.
-
-Teie tarbimineVõimsustasu piirTipp, mille salvesti maha lõikabBörsihind (tund)Salvesti ootab, teenib reserviturul
-
-00–05Salvesti laeb siis, kui börsihind on päeva madalaim. Sama energia müüakse hiljem tagasi kallilt või kasutatakse tipu ajal.
-
-07–09Hommikune käivitustipp ei jõua võrguarvele: salvesti annab puuduva võimsuse ise. Võimsustasu arvestatakse tipu järgi, seega just see hetk maksab.
-
-10–16Salvesti ootab pooleldi laetuna ja on Eleringi reserviturul saadaval. Ta teenib valmisolekust ka siis, kui aktiveerimist ei tule.
-
-17–20Õhtutipp ja päeva kalleim elekter langevad kokku. Salvesti annab energia välja ja laeb öösel uuesti.
-
-Skemaatiline ööpäev, mitte ühe objekti mõõdetud andmed. Teie objekti tegeliku profiili joonistame hinnangus teie tunnipõhistest tarbimisandmetest.
-
 Mida me tarnime ja mida seadmetelt nõuame.
 
 Seadmed valime teie objekti järgi, mitte lao. Ohutus, garantii ja hooldus on hinnangus kirjas, mitte peenes kirjas.
@@ -2447,6 +2834,43 @@ Nõuame tootjalt LFP-keemiat, rakutaseme jälgimisega akuhaldust, temperatuuriju
 
 Paigaldus, tarne ja hooldus
 Seadmed tulevad mitmelt tootjalt ja tarneaeg kinnitatakse pakkumises seadme kaupa. Paigaldust juhib meie paigaldusjuht koos partneritega. Pärast käikulaskmist jälgivad süsteemi agregaator ja meie, hooldus käib lepingu järgi. Partnerid ja tooted
+
+Kus salvesti end kõige kiiremini ära tasub ja miks.
+Salvesti võimsus jagatakse mitme töö vahel: teie enda tarbimise optimeerimine (tipud, odavad tunnid), arbitraaž börsil ja reserviturg (valmisolek Eleringile). Agregaator müüb võimsust mitmel turul korraga: see on mitmeturuteenus. Kui suur osa läheb millisele tööle, määrab teie tarbimisprofiil. See on hinnangu kõige tähtsam rida.
+
+Viljakuivatid ja maaettevõtted
+Salvesti on peaaegu kogu aeg reserviturul ja teenib valmisoleku pealt; kuivatushooaja tipud hoiab ta madalal. Sageli kiireim tasuvus.
+
+Tööstus ja külmlaod
+Külmlaos lisandub ööpäevaringne jahutus. Salvesti hoiab kuu tippvõimsuse madalal, ostab odavatel tundidel ja on ülejäänud tundidel reserviturul.
+
+Hotellid ja hooldekodud
+Varutoide on siin sama tähtis kui sääst. Selleks peab süsteem olema ehitatud saartalitluseks ja kriitiline ahel eraldatud; see projekteeritakse iga objekti jaoks eraldi.
+
+Päikesepargid, maaomanikud ja kinnisvaraportfellid
+Vaba maa liitumise lähedal on ise vara, millele jaam ja salvesti ehitatakse; portfell saab ühe partneri, kes kõik objektid läbi arvutab.
+
+Ei leidnud oma objekti? Kirjeldage seda meile. Hinnang ütleb, milline jaotus teie objektil töötab.Küsi tasuta hinnangut
+
+Põhivõrgust akuelemendini, kiht kihi haaval.
+Liitumine on juba ehitatud ja kinni makstud. Nii jõuab elekter teieni ja nii tehakse otsused arvesti taga.
+
+Alajaamades alandatakse pinget samm-sammult.
+Eleringi põhivõrk töötab 330 ja 110 kilovoldi pingel. Alajaamades alandatakse pinge 330 kilovoldilt 110 kilovoldile ja sealt edasi jaotusvõrku.
+
+Jaotusvõrk toob elektri teie liitumiseni.
+Keskpingevõrk (10 kV) ja madalpingevõrk (0,4 kV) kuuluvad võrguettevõtjale. Ta võtab tasu edastatud energia eest ja ärikliendilt ka võimsuse eest: Elektrilevi arveldab võimsustasu kuu suurima tunnikeskmise võimsuse järgi.
+
+Arvesti on piir. Selle taga otsustate teie.
+Keskpingeliitumisel on oma alajaam 10/0,4 kV, peakilp, tarbijad ja võimalik oma tootmine kõik arvesti taga, samuti energiasalvesti.
+
+Energiasalvesti: üks kapp, kõik osad sees.
+Üks välikapp koondab jõuelektroonika (PCS), LFP-akupangad, akuhalduse (BMS), vedelikjahutuse ja juhtimise (EMS). Võimsus ja energia dimensioneeritakse teie tarbimisandmetest ning kappe ühendatakse paralleelselt vastavalt objektile.
+
+Elementidest moodulid, moodulitest akupangad.
+Liitiumraudfosfaatelemendid (LFP) koondatakse mooduliteks ja moodulid akupankadeks. Akuhaldus mõõdab iga elemendi pinget, temperatuuri ja laetuse taset ning hoiab need lubatud vahemikus.
+
+Allikad: Elering, põhivõrgu pingetasemed · Elektrilevi, võrgupaketid ärikliendile · tootjate tooteinfo, loetud 1.11.2026.
 
 Korduma kippuvad küsimused
 
@@ -2889,7 +3313,7 @@ Valik objekti vajaduse järgi.
 Lähtume sellest, mida teie objekt vajab, mitte sellest, mis laos on. Tabel näitab, millest variandid kokku pannakse. Lõpliku lahenduse arvutame hinnangus teie tarbimisandmetest. Iga mudel läbib meie seadmenõuded enne, kui see pakkumisse jõuab.
 
 Vajadus ja lahendus
-Tootja, mudel ja tehnilised andmed on pakkumises.
+Mudelid ja tehnilised andmed: valik energiasalvestite lehel.
 
 Objekti vajadus · Lahendus
 
@@ -2979,7 +3403,7 @@ Energiasalvestid, konteinerid ja mikrovõrgud
 Kapist konteinerini ja laadimisjaama mikrovõrguni. Teeme koostööd mitme tootjaga ja valime mudeli objekti võimsuse, energia, ruumi ja kasutuse järgi.
 
 Energiasalvestid mitmelt tootjaltKapid, konteinerid, hübriidkapid, mikrovõrgud, teisaldatavad seadmed ja kiirlaadijad
-Valime tarnijate valikust mudeli, mis sobib objekti võimsuse, ruumi ja kasutusega. Tootja ja mudel nimetatakse pakkumises ning variante võrreldakse samade numbritega.
+Valime tarnijate valikust mudeli, mis sobib objekti võimsuse, ruumi ja kasutusega. Mudelid koos põhinäitajatega on energiasalvestite lehel ning variante võrreldakse pakkumises samade numbritega.
 
 Elecnova
 HiinaElecnovaEnergiasalvestid ja mikrovõrgud · kapid, hübriidkapid, konteinerid ja STS-kapp
