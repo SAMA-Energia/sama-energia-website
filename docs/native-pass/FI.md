@@ -20,9 +20,9 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 757 katselmoitavaa riviä — 584 uutta, 173 muutettua, joista **105 on merkitty ⚠**. Muuttumattomia ohitettiin 695.
+**Yhteenveto:** 773 katselmoitavaa riviä — 585 uutta, 188 muutettua, joista **119 on merkitty ⚠**. Muuttumattomia ohitettiin 684.
 
-**Huomio:** 1 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
+**Huomio:** 2 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
 ---
 
@@ -88,8 +88,7 @@ Vastine mainissa: `/`
       - **Korjaus:**
 - [ ] `li` **uusi** — reservi: valmiudessa verkolle ↑↓
       - **Korjaus:**
-- [ ] `li` **muutettu** — korvaus valmiudesta, tunneittain
-      - main: Valmiuskorvaus joka tunnilta,
+- [ ] `li` **uusi** — korvaus hyväksytyiltä tunneilta
       - **Korjaus:**
 - [ ] `li` **uusi** — lataus ↓
       - **Korjaus:**
@@ -102,7 +101,7 @@ Vastine mainissa: `/`
 
 ### #verkko
 > Lähde tälle osiolle: Lähde: Fingrid, Suomen sähköjärjestelmä · luvut 2025
-> Lähde tälle osiolle: Lähteet: Fingrid, kehitysnäkymät · 30.9.2026; luku 2025: Fingrid · 4.3.2026; datakeskukset: Fingrid · 18.8.2026 ja Datakeskushankkeiden kansallinen rekisteri (CC BY 4.0) · 4.11.2026
+> Lähde tälle osiolle: Lähteet: Fingrid, kehitysnäkymät · 30.9.2026; luku 2025: Fingrid · 4.3.2026; datakeskukset: Datakeskushankkeiden kansallinen rekisteri (CC BY 4.0) · 4.11.2026
 > Lähde tälle osiolle: Lähteet: Fingrid, avoin data 268 ja 267 (ennusteissa käytetty kapasiteetti) · 2.11.2026; voimalat kartalla: OpenStreetMap-tekijät (ODbL) · 2.11.2026
 > Lähde tälle osiolle: Lähteet: Fingrid, avoin data 424 · 2.11.2026; Fingrid · 24.9.2025; Fingrid · 24.2.2026
 > Lähde tälle osiolle: Lähde: Fingrid, Power system reserves · luettu 2.11.2026
@@ -155,8 +154,8 @@ Vastine mainissa: `/`
 - [ ] `p` **muutettu** — Fingridin skenaarioissa sähkönkulutus kasvaa nykyisestä alle 90 terawattitunnista 106–123 terawattituntiin vuoteen 2030 mennessä.
       - main: Sähköverkon on oltava tasapainossa joka sekunti. Fingrid ostaa reserviä joka tunnille, keskimäärin noin 1 500 MW, ja maksaa jo siitä, että reservi on käytettävissä – tarve kasvaa viidessä vuodessa noin 1 200 megawattia.
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Kartan neliöt ovat datakeskushankkeita: täytetyt ovat käytössä tai rakenteilla, ontot suunnitteilla, ja koko kertoo tehon. Fingridin mukaan liittymissopimuksen tehneiden datakeskushankkeiden suunniteltu kokonaisteho on lähes 5 GW.
-      - main: Ketään ei lähetetä minnekään ennen kuin tiedot ovat käsillä. Kaksi ensimmäistä askelta ovat maksuttomia, kohdekäynti hyvitetään sopimuksessa, suunnittelu ja asennus kulkevat sopimuksen mukaan.
+- [ ] `p` **muutettu** — Kartan neliöt ovat datakeskushankkeita: täytetyt ovat käytössä tai rakenteilla, ontot suunnitteilla, ja koko kertoo tehon.
+      - main: Ei. Kaikki kolme kassavirtaa (tehomaksu, pörssisähkö, reservitulo) toimivat ilman aurinkoa. Liittymä riittää. Jos aurinkopaneelit ovat olemassa tai suunnitteilla, mukaan tulee neljäs mahdollisuus: oman tuotannon varastointi omaan käyttöön.
       - **Korjaus:**
 - [ ] `p` **uusi** — Mistä sääriippuvainen tuotanto tulee?
       - **Korjaus:**
@@ -164,7 +163,7 @@ Vastine mainissa: `/`
       - **Korjaus:**
 - [ ] ⚠ `p` **uusi** — aurinkovoimaa 2 074 MW
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Fingridin arvion mukaan Suomessa on 9 553 MW tuulivoimaa ja 2 074 MW aurinkovoimaa. Sääriippuvainen tuotanto saa tuntihinnat vaihtelemaan ja sähkövarasto ansaitsee hintaeroista.
+- [ ] ⚠ `p` **muutettu** — Fingridin arvion mukaan Suomessa on 9 553 MW tuulivoimaa ja 2 074 MW aurinkovoimaa. Sääriippuvainen tuotanto saa pörssihinnat vaihtelemaan ja sähkövarasto ansaitsee hintaeroista.
       - main: Sähköenergia menee pörssin tuntihinnalla. Varasto ostaa halvoilla tunneilla ja kattaa kalliit; aurinkovoimala tuottaa keskipäivällä ja varasto siirtää sen iltaan. Edellytys on pörssisidonnainen myyntisopimus.
       - **Korjaus:**
 - [ ] `p` **muutettu** — Kartan valkoiset ympyrät ovat tuulivoimapuistoja ja kultaiset pisteet aurinkovoimaloita; koko kertoo tehon. Ne ovat OpenStreetMapiin merkittyjä voimaloita, eikä luettelo ole täydellinen: kokonaisluvut ovat Fingridin.
@@ -174,10 +173,11 @@ Vastine mainissa: `/`
       - **Korjaus:**
 - [ ] ⚠ `p` **uusi** — 2 085 MWyli 1 MW:n varastoja
       - **Korjaus:**
-- [ ] `p` **uusi** — uudet varastot Etelä-Suomen kantaverkkoon vasta 2029
+- [ ] `p` **muutettu** — Etelä-Suomessa suurten varastojen liitynnät rajoitettu vuoteen 2029
+      - main: Etelä-Suomeen ei rakenneta uusia varastoliityntöjä ennen vuotta 2029 – liittymä, jonka takana on toimiva varasto, siirtyy kiinteistön mukana.
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Fingridin arvion mukaan Suomessa on jo 2 085 MW yli megawatin sähkövarastoja. Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta, kun Hikiä–Toivila valmistuu vuonna 2029.
-      - main: Sähköverkon on oltava tasapainossa joka sekunti. Fingrid ostaa reserviä joka tunnille, keskimäärin noin 1 500 MW, ja maksaa jo siitä, että reservi on käytettävissä – tarve kasvaa viidessä vuodessa noin 1 200 megawattia.
+- [ ] ⚠ `p` **muutettu** — Fingridin arvion mukaan Suomessa on jo 2 085 MW yli megawatin sähkövarastoja. Etelä-Suomessa Fingrid rajoittaa uusia varastoliityntöjä, kunnes Hikiä–Toivila valmistuu vuonna 2029. Rajoitus koskee hankkeita, joista tehdään Fingridille liittymissopimushakemus: vähintään 2 MW, osalla alueista 1 MW.
+      - main: Taata ei voi kukaan: reservin hinta muodostuu markkinoilla joka päivä, ja markkina, jolle tulee lisää tarjoajia, ei pysy paikallaan. Siksi emme lupaa lukua. Kirjallisessa arviossa reservituotto mallinnetaan tuotteittain Fingridin toteutuneista tuntihinnoista niille tunneille, jotka oma käyttönne jättää vapaiksi, ennen aggregaattorin palkkiota. Tuleva näytetään vaihteluvälinä. Se on mallinnettu luku, ei lupaus. Erillisellä rivillä on tehomaksu- ja pörssisähkösäästö, joka ei riipu markkinasta. Näin päätös syntyy tietoisesti: ei pelosta eikä uskosta, vaan omista luvuistanne.
       - **Korjaus:**
 - [ ] ⚠ `p` **muutettu** — Merkitty alue etelässä on Tampere–Lahti–Lappeenranta-linjan eteläpuoli, jossa on noin puolet Suomen sähkövarastoista. Yksittäinen piste on ainoa OpenStreetMapiin merkitty suuri varasto; 2 085 MW kattaa kaikki yli megawatin varastot.
       - main: Ei. Kaikki kolme kassavirtaa (tehomaksu, pörssisähkö, reservitulo) toimivat ilman aurinkoa. Liittymä riittää. Jos aurinkopaneelit ovat olemassa tai suunnitteilla, mukaan tulee neljäs mahdollisuus: oman tuotannon varastointi omaan käyttöön.
@@ -195,16 +195,16 @@ Vastine mainissa: `/`
       - **Korjaus:**
 - [ ] `p` **uusi** — noin 2 mrd € vuosina 2026–2029
       - **Korjaus:**
-- [ ] `p` **muutettu** — 2027: FCR hankitaan vain tuntimarkkinoilta. 2029: Hikiä–Toivila valmistuu ja Etelä-Suomen kantaverkon varastoliitynnät avautuvat. 1.1.2029: jakeluverkon tehomaksu lasketaan kuukauden suurimmasta 60 minuutin keskitehosta.
-      - main: Aikataulu rakentuu kolmesta osasta: laitteen toimitusaika, joka vahvistetaan tarjouksessa laitekohtaisesti, asennusjono ja verkkoyhtiön vastausaika. Kaikki kolme eritellään arviossa, jotta mikään ei tule yllätyksenä.
+- [ ] `p` **muutettu** — 2027: FCR hankitaan vain tuntimarkkinoilta. 2029: Hikiä–Toivila valmistuu; siihen asti Etelä-Suomen varastorajoitus jatkuu. 1.1.2029: jakeluverkon tehomaksu lasketaan kuukauden suurimmasta 60 minuutin keskitehosta.
+      - main: Varasto on lähes koko ajan reservimarkkinoilla ja tuottaa valmiudesta; kuivauskauden huiput se pitää alhaalla. Usein nopein takaisinmaksu.
       - **Korjaus:**
 - [ ] `p` **muutettu** — Kartalle merkityt hankkeet ovat rakenteilla tai suunnitteilla olevia kantaverkon johtoja ja rajayhteyksiä valmistumisvuosineen. Reitit ovat suuntaa-antavia: viiva yhdistää päätepisteet. Vuodeton hanke toteutuu vain, jos alueen kulutus tai tuotanto kasvaa.
       - main: Aikataulu rakentuu kolmesta osasta: laitteen toimitusaika, joka vahvistetaan tarjouksessa laitekohtaisesti, asennusjono ja verkkoyhtiön vastausaika. Kaikki kolme eritellään arviossa, jotta mikään ei tule yllätyksenä.
       - **Korjaus:**
 - [ ] `p` **uusi** — Missä teidän liittymänne on tässä kokonaisuudessa?
       - **Korjaus:**
-- [ ] `p` **muutettu** — Liittymänne on jo olemassa ja sen taakse asennettu sähkövarasto ei joudu kantaverkon jonoon. Kirjallinen arvio sijoittaa kohteenne tälle kartalle, jokainen luku lähteineen.
-      - main: Lyhyen kyselyn kulutustottumuksistanne ja kohteestanne, tuntikohtaisten kulutustietojenne analyysin ja liittymispisteen tarkastuksen. Tuloksena on kirjallinen arvio: kannattaako akku kohteessanne, minkä kokoinen sen pitäisi olla ja mistä tuotto koostuu. Sitoumuksia ei synny.
+- [ ] ⚠ `p` **muutettu** — Liittymänne on jo olemassa. Alle 1 MW:n varasto liitetään sen taakse verkkoyhtiön ehdoilla ilman Fingridin liittymissopimushakemusta, ja useimmilla alueilla raja on 2 MW. Kirjallinen arvio sijoittaa kohteenne tälle kartalle, jokainen luku lähteineen.
+      - main: Aikataulu rakentuu kolmesta osasta: laitteen toimitusaika, joka vahvistetaan tarjouksessa laitekohtaisesti, asennusjono ja verkkoyhtiön vastausaika. Kaikki kolme eritellään arviossa, jotta mikään ei tule yllätyksenä.
       - **Korjaus:**
 - [ ] `p` **uusi** — Kartan kultainen piste on esimerkki, ei teidän kohteenne.
       - **Korjaus:**
@@ -259,13 +259,16 @@ Vastine mainissa: `/`
 
 - [ ] `h2` **uusi** — Ajattelemme kokonaisuutta.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Olemme valinneet yhteistyöhön parhaista parhaat. Valinnan perusteena oli se, mikä luo yrityksen investoinnille suurimman arvon.
+- [ ] `p` **muutettu** — Olemme valinneet kumppanit sen mukaan, mikä luo yrityksen investoinnille suurimman arvon.
       - main: Vapaa maa liittymän lähellä on itsessään omaisuutta, jolle voimala ja varasto rakennetaan; salkku saa yhden kumppanin, joka laskee kaikki kohteet läpi.
       - **Korjaus:**
 - [ ] `p` **muutettu** — Investoinnin arvo syntyy monesta osasta. Kun tarjoamme valikoiman eri valmistajia, tuotteita ja palveluita, voimme rakentaa jokaiselle asiakkaalle räätälöidyn ratkaisun, joka luo asiakkaan kiinteistölle eniten arvoa. Lähtökohtana ovat teidän päätöksenne kriteerit, ei yhden laitteen myynti. Kumppaneiden koko valikoima on käytettävissänne.
       - main: Mittarin takainen järjestelmä – varasto, tuotanto ja ohjaus liittymänne takana, teidän puolellanne mittaria. Monimarkkinapalvelu – aggregaattori myy saman varaston tehoa usealla markkinalla yhtä aikaa: kulutuksenne optimointi, arbitraasi pörssissä, reservit Fingridille. Aggregaattori – yritys, joka kokoaa usean kohteen varastot yhdeksi tarjoukseksi ja tilittää tuoton. Ylläpitokorvaus – korvaus siitä, että varasto on Fingridin käytettävissä, myös silloin kun se ei tee mitään. Arbitraasi – ostetaan halvalla tunnilla, myydään tai käytetään kalliilla.
       - **Korjaus:**
-- [ ] `p` **uusi** — Suomalainen energiavarastojen ja aurinkovoimaloiden toimittaja.
+- [ ] `p` **uusi** — Suomi · Sastamala · varasto Tampereella · Pirkanmaa
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Asentaa sähkövarastot myös reservimarkkinoille, Ralosin kaapit mukaan lukien.
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
 - [ ] `li` **muutettu** — Teolliset energiavarastot
       - main: Energiavarastot
@@ -278,13 +281,20 @@ Vastine mainissa: `/`
       - **Korjaus:**
 
 ### #pd-ralos
+> Lähde tälle osiolle: Lähteet: Discover Cleantech, Ralos (luettu 9.11.2026); Ralos Oy, tekninen tiedote Ralos Beast 125, V10.
 
 - [ ] `p` **uusi** — Suomi · Tampere · perustettu 2017
       - **Korjaus:**
-- [ ] `p` **muutettu** — Suomalainen aurinkosähkön ja energiavarastojen toimittaja: teolliset energiavarastot sisä- ja ulkoasennukseen sekä aurinkovoimalat yrityksille.
-      - main: Aurinkosähkö, teolliset energiavarastot ja reservimarkkinaliityntä yrityksille Suomessa ja Virossa.
+- [ ] `h4` **uusi** — Miksi valitsimme
       - **Korjaus:**
-- [ ] `p` **uusi** — Varastoihin on tarjolla useita akkuvaihtoehtoja ja aurinkovoimaloihin myös mikroinvertteriratkaisut.
+- [ ] ⚠ `p` **muutettu** — Kotimainen toimittaja: laite, takuu ja huolto samalta suomalaiselta yhtiöltä. Beast-kaappeja voi kytkeä rinnan enintään 16, yhteensä 2 MW, joten sama tuote sopii yhden kaapin kohteeseen ja megawattiluokan kohteeseen. Kaappiin on saatavana varavoiman kytkin (STS) saarekekäyttöön suunniteltuihin kohteisiin.
+      - main: Esimerkki yhdestä hinnastosta: Caruna Oy:n Tehosiirto 1 PJ -tuotteessa tehomaksu on 3,57 €/kW,kk ja määräytyy kuukauden huipputehon mukaan, ja perusmaksu 58,70 €/kk ei riipu käytöstä. Varasto kattaa huipun, jolloin siirtotuote ja sulakekoko voidaan valita todellisen kulutuksen mukaan – eikä kulutuksen kasvattaminen vaadi lisää liittymistehoa.
+      - **Korjaus:**
+- [ ] `h4` **uusi** — Tausta
+      - **Korjaus:**
+- [ ] ⚠ `p` **muutettu** — Tamperelainen aurinkosähköyhtiö, perustettu vuonna 2017. Toimittaa yrityksille aurinkovoimaloita omilla Ralos-paneeleilla sekä teollisia energiavarastoja sisä- ja ulkoasennukseen.
+      - main: Aurinkosähkö, teolliset energiavarastot ja reservimarkkinaliityntä yrityksille Suomessa ja Virossa.
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
 - [ ] `p` **uusi** — Kumppanisivullaralos.fi
       - **Korjaus:**
@@ -309,6 +319,7 @@ Vastine mainissa: `/`
       - **Korjaus:**
 
 ### #pd-elecnova
+> Lähde tälle osiolle: Lähteet: Elecnova, tuotesivu ECO-E261LP-2A (luettu 27.9.2026); Elecnovan uutinen ENERGIA 2026 -messuilta, 25.10.2026; pv magazine, 3.6.2026.
 
 - [ ] `figcaption` **muutettu** — Energiavarastokaappi
       - main: Energiavarastot
@@ -321,12 +332,13 @@ Vastine mainissa: `/`
       - **Korjaus:**
 - [ ] `figcaption` **uusi** — Konttivarasto
       - **Korjaus:**
-- [ ] `p` **uusi** — Kiina · saatavilla Suomen markkinoilla
+- [ ] `p` **uusi** — Kiina · Shanghai · saatavilla Suomen markkinoilla
       - **Korjaus:**
-- [ ] `p` **muutettu** — Energiavarastojen ja mikroverkkojen valmistaja. Valikoimassa ovat neste- ja ilmajäähdytteiset ulkokaapit yrityksille, hybridikaappi aurinkosähköön ja konttivarastot. Kaapit ja kontit toimivat rinnan, ja saarekekäyttöön suunniteltuihin kohteisiin on STS-kaappi.
+- [ ] `p` **muutettu** — Yhdeltä valmistajalta saa kaikki kokoluokat kaapista konttiin, ja kaapit ja kontit toimivat rinnan. Tuotteiden standardit ovat julkisia, esimerkiksi akkuturvallisuuden IEC 62619, palotestin UL 9540A ja verkkoon liittämisen EN 50549, joten ne voi tarkistaa ennen tarjousta.
+      - main: Lyhyen kyselyn kulutustottumuksistanne ja kohteestanne, tuntikohtaisten kulutustietojenne analyysin ja liittymispisteen tarkastuksen. Tuloksena on kirjallinen arvio: kannattaako akku kohteessanne, minkä kokoinen sen pitäisi olla ja mistä tuotto koostuu. Sitoumuksia ei synny.
+      - **Korjaus:**
+- [ ] ⚠ `p` **muutettu** — Shanghailainen energiavarastojen ja mikroverkkojen valmistaja. Valikoima ulottuu ilma- ja nestejäähdytteisistä ulkokaapeista konttivarastoihin, hybridikaappiin aurinkosähköön ja STS-kaappiin saarekekäyttöön. Lokakuussa 2026 Elecnova esitteli kaappejaan Energia 2026 -messuilla Tampereella.
       - main: Ei. Kaikki kolme kassavirtaa (tehomaksu, pörssisähkö, reservitulo) toimivat ilman aurinkoa. Liittymä riittää. Jos aurinkopaneelit ovat olemassa tai suunnitteilla, mukaan tulee neljäs mahdollisuus: oman tuotannon varastointi omaan käyttöön.
-      - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — Lokakuussa Elecnova oli esillä Energia 2026 -messuilla Tampereella. Ratkaisut myös latausasemille ja mikroverkkoihin.
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
 - [ ] `p` **uusi** — Kumppanisivullaelecnova-ess.com
@@ -349,13 +361,15 @@ Vastine mainissa: `/`
       - **Korjaus:**
 
 ### #pd-ep-energy
+> Lähde tälle osiolle: Lähteet: EP Energy, luettelot C&I Energy Storage Solutions ja Mobile Energy & Storage Charging Solutions, 12/2025.
 
-- [ ] `p` **uusi** — Kiina · Anji, Zhejiangin maakunta · oma tehdas ja tuotekehityskeskus
+- [ ] `p` **uusi** — Kiina · Anji, Zhejiang · Euroopan toimisto Belgiassa vuodesta 2011
       - **Korjaus:**
-- [ ] `p` **muutettu** — Energiavarastokaapit ja konttivarastot yrityksille, siirrettävät energiayksiköt työmaille ja tapahtumiin sekä akulla varustetut ja suoraan verkosta syötetyt pikalaturit.
-      - main: Aurinkosähkö, teolliset energiavarastot ja reservimarkkinaliityntä yrityksille Suomessa ja Virossa.
+- [ ] `p` **muutettu** — Kiinteiden kaappien ja konttien lisäksi siirrettävät energiayksiköt ja akulla varustetut pikalaturit: varasto ja lataus myös työmaalle ja kohteisiin, joissa liittymä ei riitä. Jakelu ja tuki Euroopassa hoituvat Belgiasta.
+      - main: Mittarin takainen järjestelmä – varasto, tuotanto ja ohjaus liittymänne takana, teidän puolellanne mittaria. Monimarkkinapalvelu – aggregaattori myy saman varaston tehoa usealla markkinalla yhtä aikaa: kulutuksenne optimointi, arbitraasi pörssissä, reservit Fingridille. Aggregaattori – yritys, joka kokoaa usean kohteen varastot yhdeksi tarjoukseksi ja tilittää tuoton. Ylläpitokorvaus – korvaus siitä, että varasto on Fingridin käytettävissä, myös silloin kun se ei tee mitään. Arbitraasi – ostetaan halvalla tunnilla, myydään tai käytetään kalliilla.
       - **Korjaus:**
-- [ ] `p` **uusi** — Samalta valmistajalta saatavilla myös trukit ja muut laitteet.
+- [ ] `p` **muutettu** — Litiumakkujen valmistaja, jolla on yli 17 vuoden kokemus: ensin sähkökäyttöisiin trukkeihin ja varastolaitteisiin, vuodesta 2022 myös energiavarastoihin. Akkuja valmistuu noin 200 000 vuodessa, ja niitä on käytössä yli 600 000. Euroopan toimisto on ollut Belgiassa vuodesta 2011, varasto on Brysselissä ja toimisto Kölnissä.
+      - main: Se osa sähköjärjestelmäänne, joka on verkkoyhtiön mittarin takana ja teidän omanne: energiavarasto, aurinkopaneelit ja ohjaus, joka päättää, milloin kulutetaan, varastoidaan, myydään tai pidetään tehoa verkon käytettävissä. Englanniksi behind-the-meter. Verkkoyhtiö näkee vain mittarilukeman – siitä, mitä sen takana tapahtuu, päätätte te.
       - **Korjaus:**
 - [ ] `p` **uusi** — Kumppanisivullaep-unipower.com
       - **Korjaus:**
@@ -376,14 +390,15 @@ Vastine mainissa: `/`
       - **Korjaus:**
 
 ### #pd-avant-power
+> Lähde tälle osiolle: Lähteet: Yrittäjät, 9.1.2024; Avant Power, OptiTemp Cube 47 -esite, 6/2026.
 
-- [ ] `p` **uusi** — Suomi · Ylöjärvi · Avant-konserni
+- [ ] `p` **uusi** — Suomi · Ylöjärvi · Avant Tecnon tytäryhtiö
       - **Korjaus:**
-- [ ] `p` **muutettu** — Mikroverkko, joka yhdistää energiavaraston, pikalatauksen, oman tuotannon ja ohjauksen yhdeksi tasavirtaverkoksi: huoltoasemille, varikoille, logistiikkaan, teollisuuteen ja maatiloille.
-      - main: Akku ei tee vain yhtä asiaa: se leikkaa huiput, ostaa halvalla ja on verkolle valmiina. Aurinkopaneeleja tai omaa tuotantoa siihen ei tarvita. Liittymä riittää.
+- [ ] `p` **muutettu** — Suomalainen valmistaja, jonka nesteeseen upotettu ja lämmitetty akku toimii pakkasessa ja helteessä: siirrettävän Cube 47 -yksikön käyttölämpötila on −30…+50 °C. Mikroverkko kokoaa varaston, pikalatauksen ja oman tuotannon yhteen varikoille, logistiikkaan ja maatiloille. Tarvittaessa käytössä on Avantin koko valikoima.
+      - main: Ei. Kaikki kolme kassavirtaa (tehomaksu, pörssisähkö, reservitulo) toimivat ilman aurinkoa. Liittymä riittää. Jos aurinkopaneelit ovat olemassa tai suunnitteilla, mukaan tulee neljäs mahdollisuus: oman tuotannon varastointi omaan käyttöön.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Lisäksi siirrettävä energiayksikkö ja lataus kohteisiin, joissa sähköverkko ei riitä. Tarvittaessa saatavilla Avantin koko valikoima.
-      - main: Aurinkosähkö, teolliset energiavarastot ja reservimarkkinaliityntä yrityksille Suomessa ja Virossa.
+- [ ] `p` **muutettu** — Ylöjärveläisen Avant Tecnon akkuyhtiö. Avant Tecno tunnetaan pienkuormaajistaan, joita toimitetaan kaikille mantereille; henkilöstöä on noin 450, ja liikevaihto oli noin 288 miljoonaa euroa vuonna 2023. Akut valmistetaan itse omalla uppojäähdytystekniikalla, josta on haettu useita patentteja.
+      - main: Mittarin takainen järjestelmä – varasto, tuotanto ja ohjaus liittymänne takana, teidän puolellanne mittaria. Monimarkkinapalvelu – aggregaattori myy saman varaston tehoa usealla markkinalla yhtä aikaa: kulutuksenne optimointi, arbitraasi pörssissä, reservit Fingridille. Aggregaattori – yritys, joka kokoaa usean kohteen varastot yhdeksi tarjoukseksi ja tilittää tuoton. Ylläpitokorvaus – korvaus siitä, että varasto on Fingridin käytettävissä, myös silloin kun se ei tee mitään. Arbitraasi – ostetaan halvalla tunnilla, myydään tai käytetään kalliilla.
       - **Korjaus:**
 - [ ] `p` **uusi** — Kumppanisivullaavantpower.fi
       - **Korjaus:**
@@ -405,11 +420,16 @@ Vastine mainissa: `/`
       - **Korjaus:**
 
 ### #pd-scanoffice
+> Lähde tälle osiolle: Lähteet: Scanoffice Oy, In English (luettu 9.11.2026); Scanoffice Oy, Aurinkosähköjärjestelmä (luettu 27.9.2026).
 
 - [ ] `p` **uusi** — Suomi · Espoo · perustettu 1984 · lähes sata ammattilaista
       - **Korjaus:**
-- [ ] `p` **muutettu** — Puhtaan energian laitteiden maahantuoja ja tukkukauppa: ilma-, ilma-vesi- ja maalämpöpumput, aurinkosähköjärjestelmät, ilmanvaihtolaitteet ja sähköautojen latausasemat.
+- [ ] `p` **muutettu** — Kun kohde tarvitsee varaston lisäksi aurinkopaneeleja, lämpöpumppuja tai latausta, ne tulevat maahantuojalta, jolla on oma takuu- ja huoltopalvelu. Paneeleilla on 12 vuoden tuotetakuu ja 25 vuoden lineaarinen tehotakuu.
       - main: Akku ei tee vain yhtä asiaa: se leikkaa huiput, ostaa halvalla ja on verkolle valmiina. Aurinkopaneeleja tai omaa tuotantoa siihen ei tarvita. Liittymä riittää.
+      - **Korjaus:**
+- [ ] ⚠ `p` **muutettu** — Puhtaan energian laitteiden maahantuoja ja tukkukauppa vuodesta 1984, osa Scanoffice-konsernia. Valikoimassa ovat ilma-, ilma-vesi- ja maalämpöpumput, aurinkosähköjärjestelmät, ilmanvaihtolaitteet ja sähköautojen latausasemat, joita myyvät ja asentavat valtuutetut jälleenmyyjät koko Suomessa.
+      - main: Tarjoamamme teolliset varastot ovat LFP-kemiaa, kennotason valvonnalla varustetulla akunhallinnalla ja lämpötilanhallinnalla sekä ulko-olosuhteisiin tarkoitetussa kaapissa; vaadimme valmistajalta CE- ja kuljetussertifikaatit. Takuu- ja huoltoehdot, valvonta ja se, kuka vastaa mistäkin, ovat kirjallisessa arviossa omalla rivillään – ennen allekirjoitusta, ei sen jälkeen. Takuuehdot, huoltovälit ja se, kenelle soitatte, kirjataan samaan dokumenttiin lukujen kanssa.
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
 - [ ] `p` **uusi** — Kumppanisivullascanoffice.fi
       - **Korjaus:**
@@ -431,12 +451,15 @@ Vastine mainissa: `/`
       - **Korjaus:**
 
 ### #pd-gare-energy
+> Lähde tälle osiolle: Lähteet: Gare Energy Oy, yritysesittely (luettu 9.11.2026).
 
-- [ ] `p` **uusi** — Suomi · aurinkokatto.com
+- [ ] `p` **uusi** — Suomi · aurinkokatto.com · Roofit.Solarin virallinen kumppani Suomessa
       - **Korjaus:**
-- [ ] `p` **uusi** — Roofit.Solar-aurinkokattojen jälleenmyyjä Suomessa. Konesaumakatto, jonka pinta tuottaa sähköä: järkevä, kun katto uusitaan joka tapauksessa.
+- [ ] `p` **muutettu** — Kun katto uusitaan joka tapauksessa, aurinkokatto tekee katosta ja voimalasta yhden tuotteen. Gare suunnittelee ja asentaa järjestelmän ja vahvistaa sen toimivuuden ennen luovutusta. Se asentaa myös aurinkokatokset ja latauspisteet.
+      - main: Mittarin takainen järjestelmä – varasto, tuotanto ja ohjaus liittymänne takana, teidän puolellanne mittaria. Monimarkkinapalvelu – aggregaattori myy saman varaston tehoa usealla markkinalla yhtä aikaa: kulutuksenne optimointi, arbitraasi pörssissä, reservit Fingridille. Aggregaattori – yritys, joka kokoaa usean kohteen varastot yhdeksi tarjoukseksi ja tilittää tuoton. Ylläpitokorvaus – korvaus siitä, että varasto on Fingridin käytettävissä, myös silloin kun se ei tee mitään. Arbitraasi – ostetaan halvalla tunnilla, myydään tai käytetään kalliilla.
       - **Korjaus:**
-- [ ] `p` **uusi** — Lisäksi aurinkokatos latauspisteille sekä paneelien, akkujen ja latauspisteiden asennus.
+- [ ] `p` **muutettu** — Suomalainen aurinkosähkön asennusyritys, joka on erikoistunut konesaumakattoihin. Gare on integroitujen aurinkokattojen valmistajan Roofit.Solarin virallinen kumppani Suomessa, 15 vuoden kokemuksella.
+      - main: Ei. Kaikki kolme kassavirtaa (tehomaksu, pörssisähkö, reservitulo) toimivat ilman aurinkoa. Liittymä riittää. Jos aurinkopaneelit ovat olemassa tai suunnitteilla, mukaan tulee neljäs mahdollisuus: oman tuotannon varastointi omaan käyttöön.
       - **Korjaus:**
 - [ ] `p` **uusi** — Kumppanisivullaaurinkokatto.com
       - **Korjaus:**
@@ -456,14 +479,14 @@ Vastine mainissa: `/`
       - **Korjaus:**
 
 ### #pd-jsm
+> Lähde tälle osiolle: Lähteet: JSM Automaatiosähkö Oy, etusivu (luettu 9.11.2026).
 
-- [ ] `p` **uusi** — Suomi · Sastamala · varasto Tampereella
-      - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Rekisteröity sähköurakoitsija. Asentaa ja ottaa käyttöön energiavarastot, myös Ralosin kaapit, sekä aurinkovoimalat.
-      - main: Sähköenergia menee pörssin tuntihinnalla. Varasto ostaa halvoilla tunneilla ja kattaa kalliit; aurinkovoimala tuottaa keskipäivällä ja varasto siirtää sen iltaan. Edellytys on pörssisidonnainen myyntisopimus.
+- [ ] ⚠ `p` **muutettu** — JSM asentaa sähkövarastoja myös reservimarkkinakäyttöön, Ralosin kaapit mukaan lukien. Samalta urakoitsijalta tulevat kohteen muut sähkötyöt, aurinkovoimala, lämpöpumput ja lataus, ja työtä johtaa asennuspäällikkömme.
+      - main: Ei. Kaikki kolme kassavirtaa (tehomaksu, pörssisähkö, reservitulo) toimivat ilman aurinkoa. Liittymä riittää. Jos aurinkopaneelit ovat olemassa tai suunnitteilla, mukaan tulee neljäs mahdollisuus: oman tuotannon varastointi omaan käyttöön.
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
-- [ ] `p` **uusi** — Lisäksi lämpöpumput, sähköautojen lataus ja kohteen muut sähkötyöt.
+- [ ] `p` **muutettu** — Yrittäjävetoinen sähkö- ja automaatiourakoitsija, jolla on yli vuosikymmenen kokemus alalta. Toimisto on Sastamalassa ja varasto Tampereella, ja toimialue kattaa koko Pirkanmaan. Asiakkaina ovat yritykset, julkinen sektori ja yksityiset.
+      - main: Ei. Kaikki kolme kassavirtaa (tehomaksu, pörssisähkö, reservitulo) toimivat ilman aurinkoa. Liittymä riittää. Jos aurinkopaneelit ovat olemassa tai suunnitteilla, mukaan tulee neljäs mahdollisuus: oman tuotannon varastointi omaan käyttöön.
       - **Korjaus:**
 - [ ] `p` **uusi** — Kumppanisivullajsmautomaatiosahko.fi
       - **Korjaus:**
@@ -574,10 +597,10 @@ Vastine mainissa: `/`
 
 ### #miten-toimii
 
-- [ ] `svg title` **uusi** — Periaatteellinen vuorokausi: kulutus, pääsulake, tuntihinta ja energiavaraston työ
+- [ ] `svg title` **uusi** — Periaatteellinen vuorokausi: kulutus, pääsulake, pörssihinta ja energiavaraston työ
       - **Korjaus:**
-- [ ] `svg desc` **muutettu** — Energiavarasto on reservissä myös öisin, ja valmiudesta maksetaan korvaus tunneittain. Aamun huipun kattaa energiavarasto, joten pääsulakkeen voi valita kulutuksen mukaan. Halvoilla tunneilla varasto latautuu ja kalliilla sen energiaa käytetään. Yhteensä: pienempi kiinteä kulu, korkeampi kiinteistön hinta.
-      - main: Mittarin takainen järjestelmä – varasto, tuotanto ja ohjaus liittymänne takana, teidän puolellanne mittaria. Monimarkkinapalvelu – aggregaattori myy saman varaston tehoa usealla markkinalla yhtä aikaa: kulutuksenne optimointi, arbitraasi pörssissä, reservit Fingridille. Aggregaattori – yritys, joka kokoaa usean kohteen varastot yhdeksi tarjoukseksi ja tilittää tuoton. Ylläpitokorvaus – korvaus siitä, että varasto on Fingridin käytettävissä, myös silloin kun se ei tee mitään. Arbitraasi – ostetaan halvalla tunnilla, myydään tai käytetään kalliilla.
+- [ ] `svg desc` **muutettu** — Energiavarasto on reservissä myös öisin. Valmiudesta maksetaan niiltä tunneilta, joilta reservitarjous hyväksytään. Aamun huipun kattaa energiavarasto, joten pääsulakkeen voi valita kulutuksen mukaan. Kun sähkö on halpaa, varasto latautuu, ja kun se on kallista, sen energiaa käytetään. Yhteensä: pienempi kiinteä kulu, korkeampi kiinteistön hinta.
+      - main: Liikekiinteistön hinta lasketaan nettotuotosta: jokainen euro, jolla pysyvä käyttökulu laskee, nostaa arvoa moninkertaisesti. Esimerkkilaskelma: pysyvä 10 000 euron vuosisäästö tarkoittaa 10 %:n tuottovaatimuksella noin 100 000 ja 8 %:n vaatimuksella noin 125 000 euroa korkeampaa arvoa. Laskemme vain pysyvän osan – tehomaksun ja energiakulun; reservimarkkinatuotto riippuu markkinahinnasta, eikä sitä lasketa arvoon.
       - **Korjaus:**
 - [ ] `svg text` **muutettu** — Kulutus
       - main: Vuosikulutus
@@ -588,7 +611,7 @@ Vastine mainissa: `/`
       - **Korjaus:**
 - [ ] `svg text` **uusi** — Kiinteä kulu
       - **Korjaus:**
-- [ ] `svg text` **uusi** — Tuntihinta
+- [ ] `svg text` **uusi** — Pörssihinta
       - **Korjaus:**
 - [ ] `svg text` **uusi** — halpa
       - **Korjaus:**
@@ -862,25 +885,31 @@ Vastine mainissa: `/energiavarastot/`
 > Lähde tälle osiolle: Lähde: Fingrid · 10.2.2025
 > Lähde tälle osiolle: Lähde: Caruna Oy, verkkopalveluhinnasto · 1.9.2024 · alv 0 %
 > Lähde tälle osiolle: Esimerkkilaskelma. Teidän kohteenne tuottovaatimus riippuu kiinteistötyypistä ja sijainnista. Arviossa laskemme sen teidän omilla tiedoillanne.
-> Lähde tälle osiolle: Lähde: Fingrid, tiedote · 24.9.2025
+> Lähde tälle osiolle: Lähde: Fingrid, liittymissopimushakemuksen kartta · voimassa 1.6.2026
 
 - [ ] `h2` **uusi** — Mikä laskullanne ja kiinteistössänne muuttuu.
       - **Korjaus:**
 - [ ] `h3` **uusi** — Reservimarkkinat: kapasiteettikorvaus, myös öisin.
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Fingrid hankkii reservit joka päivä, myös öisin ja viikonloppuisin. Energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli 29 % jo helmikuussa 2025. Sinne pääsee vain mittarin takaisella varastolla, aggregaattorin kautta.
+- [ ] ⚠ `p` **muutettu** — Fingrid hankkii reservit joka päivä, myös öisin ja viikonloppuisin. Energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli 29 % jo helmikuussa 2025. Varasto pääsee sinne aggregaattorin kautta.
       - main: Yksi akku, neljä työtä, yksi vuorokausi. Kello kulkee, akku lataa halvalla, leikkaa aamuhuipun, odottaa valmiina ja purkaa energian silloin, kun se on kallista. Koko ajan se on Fingridin käytettävissä.
       - **Korjaus:**
 - [ ] ⚠ `p` **muutettu** — Esimerkki yhdestä hinnastosta: Caruna Oy:n Tehosiirto 1 PJ -tuotteessa tehomaksu on 3,57 €/kW,kk ja määräytyy kuukauden huipputehon mukaan, ja perusmaksu 58,70 €/kk ei riipu käytöstä. Varasto kattaa huipun, jolloin siirtotuote ja sulakekoko voidaan valita todellisen kulutuksen mukaan, eikä kulutuksen kasvattaminen vaadi lisää liittymistehoa.
       - main: Yksi akku, neljä työtä, yksi vuorokausi. Kello kulkee, akku lataa halvalla, leikkaa aamuhuipun, odottaa valmiina ja purkaa energian silloin, kun se on kallista. Koko ajan se on Fingridin käytettävissä.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Ero syntyy pörssin tuntihinnasta, ei siirtomaksusta: pienjänniteliittymän siirto on samassa esimerkkihinnastossa kiinteä 3,52 snt/kWh. Keskijänniteliittymässä (Tehosiirto 1 KJ) myös siirrolla on kaksi hintaa: talviarkipäivänä 5,10 ja muuna aikana 1,81 snt/kWh. Silloin ajoituksella on kaksi vaikutusta.
+- [ ] `h3` **uusi** — Energia ja siirto: halpa sähkö sisään, kallis ulos.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Sähköenergia menee pörssihinnalla, joka vaihtuu vartin välein. Varasto latautuu, kun sähkö on halpaa, ja kattaa kalliit hetket; aurinkovoimala tuottaa keskipäivällä ja varasto siirtää sen iltaan. Edellytys on pörssisidonnainen myyntisopimus.
+      - main: Laitteet valitaan kohteenne mukaan, ei varaston. Turvallisuus, takuu ja huolto ovat arviossa kirjattuina, eivät pienellä präntillä.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Ero syntyy pörssihinnasta, ei siirtomaksusta: pienjänniteliittymän siirto on samassa esimerkkihinnastossa kiinteä 3,52 snt/kWh. Keskijänniteliittymässä (Tehosiirto 1 KJ) myös siirrolla on kaksi hintaa: talviarkipäivänä 5,10 ja muuna aikana 1,81 snt/kWh. Silloin ajoituksella on kaksi vaikutusta.
       - main: Tehomaksu alas, pörssisähkö hyödyksi, reservitulo ja varavoima. Samasta akusta, samana päivänä, automaattisesti. Aurinkoa tai omaa tuotantoa ei tarvita: liittymä riittää.
       - **Korjaus:**
 - [ ] ⚠ `p` **muutettu** — Liikekiinteistön hinta lasketaan nettotuotosta: jokainen euro, jolla pysyvä käyttökulu laskee, nostaa arvoa moninkertaisesti. Esimerkkilaskelma: pysyvä 10 000 euron vuosisäästö tarkoittaa 10 %:n tuottovaatimuksella noin 100 000 ja 8 %:n vaatimuksella noin 125 000 euroa korkeampaa arvoa. Laskemme vain pysyvän osan: tehomaksun ja energiakulun. Reservimarkkinatuotto riippuu markkinahinnasta, eikä sitä lasketa arvoon.
       - main: Vaadimme valmistajalta LFP-kemiaa, kennotason valvonnalla varustettua akunhallintaa, lämpötilanhallintaa, ulko-olosuhteisiin tarkoitettua kaappia sekä CE- ja kuljetussertifikaatteja. Valmistajan takuu ja huoltoehdot ovat arviossa omalla rivillään. Kaikki vaatimukset →
       - **Korjaus:**
-- [ ] `p` **uusi** — Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029. Liittymä, jonka takana on toimiva varasto, siirtyy kiinteistön mukana.
+- [ ] ⚠ `p` **muutettu** — Alle 1 MW:n varasto ei tarvitse Fingridin liittymissopimushakemusta missään Suomessa, ja useimmilla alueilla raja on 2 MW: se liitetään olemassa olevan liittymän taakse verkkoyhtiön ehdoilla. Liittymä, jonka takana on toimiva varasto, siirtyy kiinteistön mukana.
+      - main: Vaadimme valmistajalta LFP-kemiaa, kennotason valvonnalla varustettua akunhallintaa, lämpötilanhallintaa, ulko-olosuhteisiin tarkoitettua kaappia sekä CE- ja kuljetussertifikaatteja. Valmistajan takuu ja huoltoehdot ovat arviossa omalla rivillään. Kaikki vaatimukset →
       - **Korjaus:**
 
 ### #toimitus
@@ -904,14 +933,23 @@ Vastine mainissa: `/energiavarastot/`
 - [ ] `p` **muutettu** — Ulkoasennukseen sopiva varastokaappi, invertteri ja ohjaus, mitoitettuna liittymänne ja kulutusprofiilinne mukaan, yhdestä yksiköstä usean yksikön puistoon.
       - main: Ulkoasennukseen sopiva varastokaappi, invertteri ja ohjaus, mitoitettuna liittymänne ja kulutusprofiilinne mukaan – yhdestä yksiköstä usean yksikön puistoon.
       - **Korjaus:**
+- [ ] `p` **muutettu** — Vaadimme valmistajalta LFP-kemiaa, kennotason valvonnalla varustettua akunhallintaa, lämpötilanhallintaa, ulko-olosuhteisiin tarkoitettua kaappia sekä CE- ja kuljetussertifikaatteja. Sijoitus suunnitellaan valmistajan asennusohjeen ja Pelastusopiston paloturvallisuusohjeen (12/2025) mukaan. Valmistajan takuu ja huoltoehdot ovat arviossa omalla rivillään. Kaikki vaatimukset →
+      - main: Vaadimme valmistajalta LFP-kemiaa, kennotason valvonnalla varustettua akunhallintaa, lämpötilanhallintaa, ulko-olosuhteisiin tarkoitettua kaappia sekä CE- ja kuljetussertifikaatteja. Valmistajan takuu ja huoltoehdot ovat arviossa omalla rivillään. Kaikki vaatimukset →
+      - **Korjaus:**
 
 ### #kenelle-miksi
 
 - [ ] ⚠ `h2` **uusi** — Missä varasto maksaa itsensä takaisin nopeimmin ja miksi.
       - ⚠ perustajan päätös 10.09.2026 — varaus "usein"/"sageli" poistettu, kumoaa päätöksen D16 (08.09)
       - **Korjaus:**
-- [ ] `p` **muutettu** — Varaston teho jaetaan usean työn kesken: oman kulutuksenne optimointi (huiput, halvat tunnit), arbitraasi pörssissä ja reservimarkkinat (valmius Fingridille). Aggregaattori myy tehoa usealla markkinalla samaan aikaan: se on monimarkkinapalvelu. Kuinka suuri osa menee millekin työlle, määrää kulutusprofiilinne. Se on kartoituksen tärkein rivi.
+- [ ] `p` **muutettu** — Varaston teho jaetaan usean työn kesken: oman kulutuksenne optimointi (huiput, halpa sähkö), arbitraasi pörssissä ja reservimarkkinat (valmius Fingridille). Aggregaattori myy tehoa usealla markkinalla samaan aikaan: se on monimarkkinapalvelu. Kuinka suuri osa menee millekin työlle, määrää kulutusprofiilinne. Se on kartoituksen tärkein rivi.
       - main: Laitteet tulevat useammalta valmistajalta, ja toimitusaika vahvistetaan tarjouksessa laitekohtaisesti. Asennusta johtaa asennuspäällikkömme yhdessä kumppaneiden kanssa. Käyttöönoton jälkeen järjestelmää valvovat aggregaattori ja me, huolto kulkee sopimuksen mukaan. Kumppanit ja tuotteet
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Varasto on lähes koko ajan reservimarkkinoilla ja tuottaa valmiudesta; kuivauskauden huiput se pitää alhaalla.
+      - main: Akku odottaa puoliksi ladattuna ja on Fingridin reservimarkkinoiden käytettävissä. Valmiudesta maksetaan silloinkin, kun aktivointia ei tule.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Kylmävarastossa lisäksi ympärivuorokautinen jäähdytys. Varasto pitää kuukauden huipputehon alhaalla, lataa halvalla sähköllä ja on muulloin reservimarkkinoilla.
+      - main: Tehomaksu alas, pörssisähkö hyödyksi, reservitulo ja varavoima. Samasta akusta, samana päivänä, automaattisesti. Aurinkoa tai omaa tuotantoa ei tarvita: liittymä riittää.
       - **Korjaus:**
 - [ ] `p` **muutettu** — Varavoima on tässä yhtä tärkeä kuin säästö. Se edellyttää saarekekäyttöön toteutettua järjestelmää ja erotettua kriittistä piiriä, jotka suunnitellaan kohteittain.
       - main: Kyllä, kun järjestelmä toteutetaan saarekekäyttöön: invertteri, erotuskytkin ja kriittinen piiri mitoitetaan siihen. Kartoituksessa kerromme, mitä se kohteessanne tarkoittaa.
@@ -952,7 +990,7 @@ Vastine mainissa: `/energiavarastot/`
 - [ ] `summary` **muutettu** — Toimiiko sähkövarasto varavoimana?
       - main: Toimiiko akku varavoimana?
       - **Korjaus:**
-- [ ] `summary` **uusi** — Onko sähkövarasto turvallinen ja millainen takuu on?
+- [ ] `summary` **uusi** — Onko sähkövarasto turvallinen ja millainen takuu sillä on?
       - **Korjaus:**
 - [ ] `p` **muutettu** — Tarjoamamme teolliset sähkövarastot perustuvat LFP-kemiaan. Niissä on kennotason valvonta ja lämpötilanhallinta. Kaappi on tehty ulkokäyttöön. Vaadimme valmistajalta CE- ja kuljetussertifikaatit. SAMA vastaa projektista, valmistaja antaa laitteelle takuun ja valmistajan nimi on kirjallisessa arviossa. Takuu- ja huoltoehdot sekä tiedon siitä, kenelle soitatte, näette samasta asiakirjasta ennen allekirjoitusta.
       - main: Vaadimme valmistajalta LFP-kemiaa, kennotason valvonnalla varustettua akunhallintaa, lämpötilanhallintaa, ulko-olosuhteisiin tarkoitettua kaappia sekä CE- ja kuljetussertifikaatteja. Valmistajan takuu ja huoltoehdot ovat arviossa omalla rivillään. Kaikki vaatimukset →
@@ -960,7 +998,7 @@ Vastine mainissa: `/energiavarastot/`
 - [ ] `p` **muutettu** — Se osa sähköjärjestelmäänne, joka on verkkoyhtiön mittarin takana ja teidän omanne: energiavarasto, aurinkopaneelit ja ohjaus, joka päättää, milloin kulutetaan, varastoidaan, myydään tai pidetään tehoa verkon käytettävissä. Englanniksi behind-the-meter. Verkkoyhtiö näkee vain mittarilukeman. Siitä, mitä sen takana tapahtuu, päätätte te.
       - main: Laitteet tulevat useammalta valmistajalta, ja toimitusaika vahvistetaan tarjouksessa laitekohtaisesti. Asennusta johtaa asennuspäällikkömme yhdessä kumppaneiden kanssa. Käyttöönoton jälkeen järjestelmää valvovat aggregaattori ja me, huolto kulkee sopimuksen mukaan. Kumppanit ja tuotteet
       - **Korjaus:**
-- [ ] `p` **muutettu** — Mittarin takainen järjestelmä: varasto, tuotanto ja ohjaus liittymänne takana, teidän puolellanne mittaria. Monimarkkinapalvelu: aggregaattori myy saman varaston tehoa usealla markkinalla yhtä aikaa (kulutuksenne optimointi, arbitraasi pörssissä, reservit Fingridille). Aggregaattori: yritys, joka kokoaa usean kohteen varastot yhdeksi tarjoukseksi ja tilittää tuoton. Ylläpitokorvaus: korvaus siitä, että varasto on Fingridin käytettävissä, myös silloin kun se ei tee mitään. Arbitraasi: ostetaan halvalla tunnilla, myydään tai käytetään kalliilla.
+- [ ] `p` **muutettu** — Mittarin takainen järjestelmä: varasto, tuotanto ja ohjaus liittymänne takana, teidän puolellanne mittaria. Monimarkkinapalvelu: aggregaattori myy saman varaston tehoa usealla markkinalla yhtä aikaa (kulutuksenne optimointi, arbitraasi pörssissä, reservit Fingridille). Aggregaattori: yritys, joka kokoaa usean kohteen varastot yhdeksi tarjoukseksi ja tilittää tuoton. Ylläpitokorvaus: korvaus siitä, että varasto on Fingridin käytettävissä, myös silloin kun se ei tee mitään. Arbitraasi: ostetaan, kun sähkö on halpaa, ja myydään tai käytetään, kun se on kallista.
       - main: Laitteet tulevat useammalta valmistajalta, ja toimitusaika vahvistetaan tarjouksessa laitekohtaisesti. Asennusta johtaa asennuspäällikkömme yhdessä kumppaneiden kanssa. Käyttöönoton jälkeen järjestelmää valvovat aggregaattori ja me, huolto kulkee sopimuksen mukaan. Kumppanit ja tuotteet
       - **Korjaus:**
 
@@ -1231,11 +1269,11 @@ Vastine mainissa: `/aurinko-ja-akku/`
       - **Korjaus:**
 - [ ] `h3` **uusi** — Verkkoyhtiö ja viranomaiset
       - **Korjaus:**
-- [ ] `p` **uusi** — Tuotannon liittämisilmoitus verkkoyhtiölle, lupa-asiat kunnan kanssa ja käyttöönottotarkastuksen dokumentaatio kulkevat meidän kautta. Te allekirjoitatte, me hoidamme muun.
+- [ ] `p` **uusi** — Tuotannon liittämisilmoitus verkkoyhtiölle, lupa-asiat kunnan kanssa ja käyttöönottotarkastuksen dokumentaatio kulkevat kauttamme. Te allekirjoitatte, me hoidamme muun.
       - **Korjaus:**
 - [ ] `h2` **uusi** — Näin asennus etenee.
       - **Korjaus:**
-- [ ] `p` **uusi** — Neljä vaihetta. Teidän osuutenne on tiedot, päätös ja allekirjoitus; muu kulkee meidän kautta.
+- [ ] `p` **uusi** — Neljä vaihetta. Teidän osuutenne on tiedot, päätös ja allekirjoitus; muu kulkee kauttamme.
       - **Korjaus:**
 - [ ] `h3` **uusi** — Kartoitus ja kirjallinen arvio
       - **Korjaus:**
@@ -1327,17 +1365,17 @@ Vastine mainissa: `/reservimarkkinat/`
 ### #neljä-syytä
 > Lähde tälle osiolle: Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025
 > Lähde tälle osiolle: Lähde: Fingrid, Energiavarastot reservimarkkinoilla · 10.2.2025
-> Lähde tälle osiolle: Lähde: Fingrid, tiedote · 24.9.2025
+> Lähde tälle osiolle: Lähteet: Fingrid, liittymissopimushakemuksen kartta · voimassa 1.6.2026; Fingrid, tiedote · 24.9.2025
 
-- [ ] `h2` **muutettu** — Kolme syytä, miksi varasto kannattaa nyt, ei ensi vuonna.
-      - main: Neljä syytä, miksi akku kannattaa nyt, ei ensi vuonna.
+- [ ] `h2` **muutettu** — Kolme syytä selvittää reservimarkkinat nyt.
+      - main: Reservimarkkinat selkokielellä.
       - **Korjaus:**
 - [ ] `p` **muutettu** — Kaikki kolme perustuvat Fingridin omiin lukuihin, ei meidän arvioihimme. Lähteet ovat jokaisen kohdan alla.
       - main: Kaikki neljä perustuvat Fingridin ja Eleringin omiin lukuihin, ei meidän arvioihimme. Lähteet ovat jokaisen kohdan alla.
       - **Korjaus:**
 - [ ] `h3` **uusi** — Uusi tulovirta: sähkövarasto ansaitsee valmiudesta
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Sähkövarasto muuttaa kuluerän tulonlähteeksi. Varastonne saa kapasiteettikorvauksen jokaiselta tunnilta, jolta sen reservitarjous hyväksytään, ja erikseen korvauksen silloin, kun sitä käytetään. Fingrid hankkii tunneittain keskimäärin 1 500 MW reserviä ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW lisää.
+- [ ] ⚠ `p` **muutettu** — Sähkövarasto muuttaa kuluerän tulonlähteeksi. Varastonne saa kapasiteettikorvauksen jokaiselta tunnilta, jolta sen reservitarjous hyväksytään, ja erikseen korvauksen silloin, kun sitä käytetään. Fingrid hankkii tunneittain keskimäärin 1 500 MW reserviä ja arvioi tarvitsevansa vuoteen 2030 mennessä 1 200 MW lisää.
       - main: Akku muuttaa kuluerän tulonlähteeksi. Fingrid maksaa joka tunti siitä, että akkunne on valmiina tasapainottamaan verkkoa, ja erikseen siitä, kun sitä käytetään. Fingrid hankkii tunneittain keskimäärin 1 500 MW reserviä ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW lisää.
       - **Korjaus:**
 - [ ] `h3` **muutettu** — Todistettu ja turvallinen: varastot kannattelevat verkkoa jo nyt
@@ -1345,10 +1383,10 @@ Vastine mainissa: `/reservimarkkinat/`
       - **Korjaus:**
 - [ ] `h3` **uusi** — Nopeus: liittymänne on jo olemassa
       - **Korjaus:**
-- [ ] `p` **muutettu** — Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta, kun Hikiä–Toivila valmistuu vuonna 2029. Sähkövarasto teidän liittymänne takana ei tarvitse uutta kantaverkkoliityntää: se käyttää liittymää, joka on jo olemassa, ja pääsee markkinoille kuukausissa, ei vuosissa.
-      - main: Fingrid oli syyskuussa 2025 sopinut noin 1 800 MW:n akkuliitynnöistä, kyselyjä on yli 30 000 MW, ja Etelä-Suomessa uusia varastoliityntöjä ei tehdä ennen vuotta 2029. Akku teidän liittymänne takana ei tarvitse uutta kantaverkkoliityntää: se käyttää liittymää, joka on jo olemassa, ja pääsee markkinoille kuukausissa, ei vuosissa.
+- [ ] ⚠ `p` **muutettu** — Alle 1 MW:n sähkövarasto ei tarvitse Fingridin liittymissopimushakemusta missään Suomessa, ja useimmilla alueilla raja on 2 MW. Se liitetään olemassa olevan liittymän taakse verkkoyhtiön ehdoilla. Etelä-Suomen vuoteen 2029 jatkuva varastorajoitus koskee hakemusta vaativia hankkeita.
+      - main: Suurkuluttajalle akku ei ole tulevaisuuden hanke vaan tämän päivän tulonlähde. Fingrid maksaa valmiudesta, ohjaus on automaattista, ja liittymä, jota akku tarvitsee, on teillä jo olemassa.
       - **Korjaus:**
-- [ ] ⚠ `p` **muutettu** — Esimerkiksi: 1 MW / 2 MWh sähkövarasto olemassa olevan teollisuuskiinteistön liittymän takana pääsee markkinoille kuukausissa, osallistuu aggregaattorin kautta FCR-D- ja muihin reserveihin ja leikkaa samalla kohteen omat kulutushuiput. Sama logiikka toimii 125 kW:n yksiköstä useisiin megawatteihin: oikea koko mitoitetaan liittymän ja kulutusprofiilin mukaan.
+- [ ] ⚠ `p` **muutettu** — Esimerkiksi: 1 MW / 2 MWh sähkövarasto olemassa olevan teollisuuskiinteistön liittymän takana osallistuu aggregaattorin kautta FCR-D- ja muihin reserveihin ja leikkaa samalla kohteen omat kulutushuiput. Sama logiikka toimii 125 kW:n yksiköstä useisiin megawatteihin: oikea koko mitoitetaan liittymän ja kulutusprofiilin mukaan.
       - main: Esimerkiksi: 1 MW / 2 MWh akkuvarasto olemassa olevan teollisuuskiinteistön liittymän takana pääsee markkinoille kuukausissa, osallistuu aggregaattorin kautta FCR-D- ja muihin reserveihin ja leikkaa samalla kohteen omat kulutushuiput. Sama logiikka toimii 125 kW:n yksiköstä useisiin megawatteihin: oikea koko mitoitetaan liittymän ja kulutusprofiilin mukaan.
       - **Korjaus:**
 
@@ -1383,6 +1421,10 @@ Vastine mainissa: `/reservimarkkinat/`
       - **Korjaus:**
 - [ ] `p` **muutettu** — Siksi sanomme myös rehellisesti ei, kun sähkövarasto ei kohteessanne kannata. Väärä investointi vahingoittaa juuri sitä, mihin uskomme.
       - main: Siksi sanomme myös rehellisesti ei, kun akku ei kohteessanne kannata. Väärä investointi vahingoittaa juuri sitä, mihin uskomme.
+      - **Korjaus:**
+- [ ] ⚠ `p` **muutettu** — Fingrid arvioi tarvitsevansa vuoteen 2030 mennessä 1 200 MW nykyistä enemmän reserviä. Se kapasiteetti rakennetaan joka tapauksessa. Kysymys on vain siitä, seisooko se suomalaisten yritysten omien liittymien takana vai ostetaanko se muualta. Huoltovarmuus ei ole julistus vaan laitteita, jotka ovat fyysisesti täällä ja reagoivat sekunneissa.
+      - main: Fingrid arvioi tarvitsevansa viiden vuoden päästä 1 200 MW nykyistä enemmän reserviä. Se kapasiteetti rakennetaan joka tapauksessa. Kysymys on vain siitä, seisooko se suomalaisten yritysten omien liittymien takana vai ostetaanko se muualta. Huoltovarmuus ei ole julistus vaan laitteita, jotka ovat fyysisesti täällä ja reagoivat sekunneissa.
+      - ⚠ lähdettä ei löytynyt automaattisesti (ei osion lähderiviä, ei "Lähde:"-mainintaa tekstissä) — varmista näkyvä lähde ennen julkaisua
       - **Korjaus:**
 
 ### #rev-reservimarkkinat-7
@@ -1581,7 +1623,7 @@ Vastine mainissa: `/prosessi/`
 
 ### #rev-palvelut-1
 
-- [ ] `h1` **uusi** — Kolme asiaa, jotka voitte meiltä tilata.
+- [ ] `h1` **uusi** — Kirjallisesta arviosta valmiiseen järjestelmään.
       - **Korjaus:**
 - [ ] `p` **uusi** — Jokainen tilaus alkaa samasta kohdasta: maksuttomasta kirjallisesta arviosta. Tässä on kirjattuna, mitä kukin askel sisältää, mitä te siihen annatte ja mitä sen jälkeen tapahtuu.
       - **Korjaus:**
@@ -1699,7 +1741,7 @@ Vastine mainissa: `/prosessi/`
 
 - [ ] `h1` **uusi** — Laitevaatimuksemme.
       - **Korjaus:**
-- [ ] `p` **uusi** — Tämän listan pyydämme jokaiselta valmistajalta dokumentoituna, ennen kuin tarjoamme sen laitetta. Se koskee jokaista kohdetta, johon asennamme. Tuotelukuja täällä ei ole: ne ovat arviossa kohteen mukaan.
+- [ ] `p` **uusi** — Tämän listan pyydämme jokaiselta valmistajalta dokumentoituna, ennen kuin tarjoamme sen laitetta. Se koskee jokaista kohdetta, johon asennamme. Mallien päätiedot ovat valikoimassa, ja kohteen luvut lasketaan arviossa.
       - **Korjaus:**
 
 ### #rev-laitevaatimukset-2
@@ -1730,7 +1772,7 @@ Vastine mainissa: `/prosessi/`
       - **Korjaus:**
 - [ ] `dt` **uusi** — 07Verkko
       - **Korjaus:**
-- [ ] `dd` **uusi** — Verkkoyhtiön liittymis- ja suojausvaatimusten täyttäminen; valmistaja toimittaa tiedot, joita liittymishakemus tarvitsee.
+- [ ] `dd` **uusi** — Fingridin sähkövarastojen järjestelmätekniset vaatimukset (SJV2024) sekä verkkoyhtiön liittymis- ja suojausvaatimukset; valmistaja toimittaa laitetodistukset ja tiedot, joita vaatimustenmukaisuusilmoitus ja liittymishakemus tarvitsevat.
       - **Korjaus:**
 - [ ] `dt` **uusi** — 08Takuu
       - **Korjaus:**
@@ -1762,7 +1804,7 @@ Vastine mainissa: `/prosessi/`
 
 - [ ] `h1` **uusi** — Our equipment requirements.
       - **Korjaus:**
-- [ ] `p` **uusi** — This is the list we ask every manufacturer to document before we offer its equipment. It applies to every site where we install. No product figures here: those are in the site assessment.
+- [ ] `p` **uusi** — This is the list we ask every manufacturer to document before we offer its equipment. It applies to every site where we install. Model data is in the product range (in Finnish); site figures are calculated in the assessment.
       - **Korjaus:**
 
 ### #rev-equipment-requirements-2
@@ -1793,7 +1835,7 @@ Vastine mainissa: `/prosessi/`
       - **Korjaus:**
 - [ ] `dt` **uusi** — 07Grid
       - **Korjaus:**
-- [ ] `dd` **uusi** — Compliance with the distribution operator’s connection and protection requirements; the manufacturer supplies the data the connection application needs.
+- [ ] `dd` **uusi** — Fingrid’s system technical requirements for electricity storage (SJV2024) and the distribution operator’s connection and protection requirements; the manufacturer supplies the equipment certificates and data needed for the declaration of conformity and the connection application.
       - **Korjaus:**
 - [ ] `dt` **uusi** — 08Warranty
       - **Korjaus:**
@@ -1825,7 +1867,7 @@ Vastine mainissa: `/meista/`
 ### #miksi
 > Lähde tälle osiolle: Lähteet: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025; Fingrid, Energiavarastot reservimarkkinoilla · 10.2.2025; Fingrid, tiedote · 24.9.2025. Tarkemmin Reservimarkkinat-sivulla.
 
-- [ ] ⚠ `p` **muutettu** — Markkina muuttui. Fingrid hankkii reserviä joka tunnille ja arvioi tarvitsevansa viiden vuoden päästä noin 1 200 MW lisää; energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli helmikuussa 2025 jo 29 %, ja Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029. Jokainen näistä muuttaa sitä, mitä yksi liittymä on arvoltaan.
+- [ ] ⚠ `p` **muutettu** — Markkina muuttui. Fingrid hankkii reserviä joka tunnille ja arvioi tarvitsevansa vuoteen 2030 mennessä noin 1 200 MW lisää; energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli helmikuussa 2025 jo 29 %, ja Etelä-Suomessa Fingrid rajoittaa suurten varastojen liityntöjä vuoteen 2029. Jokainen näistä muuttaa sitä, mitä yksi liittymä on arvoltaan.
       - main: Markkina muuttui. Fingrid hankkii reserviä joka tunnille ja arvioi tarvitsevansa viiden vuoden päästä noin 1 200 MW lisää; energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli helmikuussa 2025 jo 29 %, ja Etelä-Suomeen ei tehdä uusia varastoliityntöjä ennen vuotta 2029. Jokainen näistä muuttaa sitä, mitä yksi liittymä on arvoltaan.
       - **Korjaus:**
 - [ ] `p` **muutettu** — Tarjoukset pysyivät samoina. Yritykset saivat laitelistan ja yhden takaisinmaksuluvun ilman lähdettä, skenaariota ja verkkoyhtiön kantaa. Meitä kiinnosti toinen kysymys: mitä teidän liittymänne oikeasti pystyy tuottamaan ja mikä siihen vaikuttaa.
@@ -1833,6 +1875,9 @@ Vastine mainissa: `/meista/`
       - **Korjaus:**
 - [ ] `p` **muutettu** — Mitä tavoittelemme. Että yrityksen oma liittymä on tuottava omaisuuserä eikä pelkkä kuluerä. Että päätös siitä tehdään omista luvuista, ei myyjän lupauksesta.
       - main: Mitä tavoittelemme. Että yrityksen oma liittymä on tuottava omaisuuserä eikä pelkkä kuluerä – ja että päätös siitä tehdään omista luvuista, ei myyjän lupauksesta.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Mistä aloitamme. Kohteista, joissa liittymä on suuri ja kulutus vaihtelee: siellä arvio on selkein. Sen jälkeen siirrymme suurempiin kokonaisuuksiin yhdessä niiden kanssa, jotka tuntevat markkinan ja oman alueensa vahvuudet. Teemme sen läpinäkyvästi ja asiakkaan kielellä: tieto ymmärrettäväksi, luvut lähteineen, päätös teidän.
+      - main: Mistä aloitamme. Kohteista, joissa liittymä on suuri ja kulutus vaihtelee: siellä arvio on selkein ja takaisinmaksu usein lyhin. Sen jälkeen siirrymme suurempiin kokonaisuuksiin yhdessä niiden kanssa, jotka tuntevat markkinan ja oman alueensa vahvuudet. Teemme sen läpinäkyvästi ja asiakkaan kielellä: tieto ymmärrettäväksi, luvut lähteineen, päätös teidän.
       - **Korjaus:**
 
 ### #kuka
@@ -1943,18 +1988,20 @@ Vastine mainissa: `/ajankohtaista/`
 
 - [ ] `h2` **uusi** — Katsaukset
       - **Korjaus:**
-- [ ] `h3` **muutettu** — Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029. Teidän liittymänne on jo olemassa.
-      - main: Etelä-Suomeen ei rakenneta uusia varastoliityntöjä ennen vuotta 2029. Teidän liittymänne on jo olemassa.
+- [ ] `h3` **uusi** — Vuoden 2029 varastorajoitus koskee suuria hankkeita. Alle megawatin varasto liitetään verkkoyhtiön ehdoilla.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Fingrid jatkaa Etelä-Suomen varastoliityntärajoitusta vuoteen 2029 varmistaakseen siirtokapasiteetin kulutuksen kasvulle ja teollisille investoinneille (Fingrid 24.9.2025). Mitä se tarkoittaa yritykselle, jolla on iso liittymä jo valmiina.
+- [ ] ⚠ `p` **muutettu** — Etelä-Suomen varastorajoitus koskee hankkeita, joista tehdään Fingridille liittymissopimushakemus: 1.6.2026 alkaen vähintään 2 MW:n varastoja, osalla alueista 1 MW:n (Fingrid). Mitä se tarkoittaa yritykselle, jolla on jo liittymä.
       - main: Fingrid oli syyskuussa 2025 sopinut noin 1 800 MW:n akkuliitynnöistä (Fingrid 24.9.2025), kyselyjä on yli 30 000 MW, ja Etelä-Suomen liityntärajoitus jatkuu vuoteen 2029. Mitä se tarkoittaa yritykselle, jolla on iso liittymä jo valmiina.
       - **Korjaus:**
-- [ ] `p` **uusi** — ”Niukka hyödyke ei ole laite. Niukka hyödyke on liittymä.”
+- [ ] `p` **uusi** — ”Rajan alla liittämisestä sovitaan verkkoyhtiön kanssa. Rajan yli myös Fingridin kanssa.”
       - **Korjaus:**
 - [ ] `figcaption` **uusi** — Kartta Yhteinen verkko -sivulta, jossa luvut lähteineen.
       - **Korjaus:**
 - [ ] ⚠ `dd` **muutettu** — 84,6 → 110–162 TWh2025 → 2035. Lähteet: Fingrid, tilinpäätöstiedote · 3.3.2026; Fingrid, kehitysnäkymät · 30.9.2026.
       - main: 84,6 → 104–159 TWh2025 → 2035. Lähteet: Fingrid, tilinpäätöstiedote · 3.3.2026; Fingrid, kehitysnäkymät Q3/2025.
+      - **Korjaus:**
+- [ ] ⚠ `dd` **muutettu** — 1 500 MW joka tunnilleJa vuoteen 2030 mennessä 1 200 MW lisää. Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025.
+      - main: 1 500 MW joka tunnilleJa viiden vuoden päästä 1 200 MW lisää. Lähde: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025.
       - **Korjaus:**
 - [ ] `h3` **muutettu** — Fingrid: sähkönkulutus kääntyy voimakkaaseen kasvuun, rinnalle tarvitaan säätövoimaa
       - main: Fingrid: sähkönkulutus kääntyy voimakkaaseen kasvuun – rinnalle tarvitaan säätövoimaa
@@ -1965,8 +2012,11 @@ Vastine mainissa: `/ajankohtaista/`
 - [ ] `h3` **muutettu** — Energiakatselmusvelvoite laajeni: raja kulutuksen, ei yrityksen koon mukaan
       - main: Energiakatselmusvelvoite laajenee: raja kulutuksen, ei yrityksen koon mukaan
       - **Korjaus:**
-- [ ] `p` **muutettu** — Energiatehokkuuslain muutos 1382/2025 pani täytäntöön energiatehokkuusdirektiivin 11 artiklan: velvoite määräytyy nyt energiankulutuksen, ei yrityksen koon mukaan. Yrityksen, jonka energiankulutus on keskimäärin yli 2,7 GWh (10 TJ) vuodessa, piti tehdä ensimmäinen energiakatselmus 11.10.2026 mennessä ja sen jälkeen neljän vuoden välein, ellei sillä ole energianhallintajärjestelmää. Yli 23,6 GWh:n (85 TJ) kuluttajilla sertifioidun energianhallintajärjestelmän määräaika on 11.10.2027. Katselmuksen tiedot ovat samalla varaston ja aurinkosähkön arvion pohja.
+- [ ] `p` **muutettu** — Energiatehokkuuslain muutos 1382/2025 pani täytäntöön energiatehokkuusdirektiivin 11 artiklan: velvoite määräytyy nyt energiankulutuksen, ei yrityksen koon mukaan. Yrityksen, jonka energiankulutus on keskimäärin yli 10 TJ (noin 2,8 GWh) vuodessa, piti tehdä ensimmäinen energiakatselmus 11.10.2026 mennessä ja sen jälkeen neljän vuoden välein, ellei sillä ole energianhallintajärjestelmää. Yli 23,6 GWh:n (85 TJ) kuluttajilla sertifioidun energianhallintajärjestelmän määräaika on 11.10.2027. Katselmuksen tiedot ovat samalla varaston ja aurinkosähkön arvion pohja.
       - main: Uudistettu energiatehokkuusdirektiivi (EU) 2023/1791, 11 artikla sitoo pakollisen energiakatselmuksen yli 10 TJ:n eli noin 2 800 MWh:n vuosikulutukseen. Rajan ylittävien on tehtävä katselmus 11.10.2026 mennessä, ellei niillä ole sertifioitua energianhallintajärjestelmää; kansallinen täytäntöönpano voi täsmentää rajaa ja aikataulua. Katselmuksen tiedot ovat samalla varaston ja aurinkosähkön arvion pohja.
+      - **Korjaus:**
+- [ ] ⚠ `p` **muutettu** — Fingridin oma arvio reservitarpeesta: nykyisin keskimäärin 1 500 MW joka tunnille, vuoteen 2030 mennessä 1 200 MW lisää. Suurin osa siitä, mitä sanomme kysynnän suunnasta, on tässä yhdessä kalvossa.
+      - main: Fingridin oma arvio reservitarpeesta: nykyisin keskimäärin 1 500 MW joka tunnille, viiden vuoden päästä 1 200 MW lisää. Suurin osa siitä, mitä sanomme kysynnän suunnasta, on tässä yhdessä kalvossa.
       - **Korjaus:**
 - [ ] ⚠ `p` **muutettu** — Noin 1 050 MW verkkoon liitettyä varastoa. Tämä on se tarjonnan kasvu, joka selittää reservihinnan liikkeen. Se on samalla syy, miksi emme lupaa yhtä tuottolukua.
       - main: Noin 1 050 MW verkkoon liitettyä varastoa. Tämä on se tarjonnan kasvu, joka selittää reservihinnan liikkeen – ja samalla syy, miksi emme lupaa yhtä tuottolukua.
@@ -1982,26 +2032,37 @@ Vastine mainissa: `/ajankohtaista/`
 
 ### #rev-ajankohtaista-liityntarajoitus-2029-1
 > Lähde tälle osiolle: Lähteet
-> Lähde tälle osiolle: Fingrid, tiedote 24.9.2025: Etelä-Suomen varastoliityntärajoitus jatkuu vuoteen 2029, siirtokapasiteetti kulutuksen kasvulle ja teollisille investoinneille.
-> Lähde tälle osiolle: Fingrid, Reservimarkkinat tutuiksi, 11.6.2025: n. 1 500 MW tunnissa, arvio +1 200 MW viidessä vuodessa.
-> Lähde tälle osiolle: Fingrid, Energiavarastot reservimarkkinoilla, 10.2.2025: säätökokein todennettu kapasiteetti 29 % FCR-N, 13 % / 18 % FCR-D (ylös / alas), 54 % FFR.
-> Lähde tälle osiolle: Fingrid, Aggregointi reservimarkkinoilla, 3/2026: pienimmät tarjouskoot ja säätökokeet.
+> Lähde tälle osiolle: Fingrid, tiedote 24.9.2025: Etelä-Suomen varastoliityntärajoitus jatkuu, kunnes Hikiä–Toivila valmistuu 2029; kapasiteetti arvioidaan liittymispisteittäin; Pohjanmaalla ja Pohjois-Suomessa vapaata kapasiteettia.
+> Lähde tälle osiolle: Fingrid, Liittymissopimustiedustelumenettely laajenee, 20.11.2025: menettely ei koskenut alle 5 MW:n sähkövarastoja, Jyväskylän, Tampereen ja Turun seuduilla alle 1 MW:n.
+> Lähde tälle osiolle: Fingrid, liittymissopimushakemuksen kartta, voimassa 1.6.2026, ja webinaari liittymissopimushakemuksista, 18.5.2026: hakemus vähintään 2 MW:n kulutuskohteista, voimalaitoksista ja sähkövarastoista koko Suomessa, jakeluverkon kautta liittyvät mukaan lukien; kartalla merkityillä alueilla väliaikaisesti 1 MW.
+> Lähde tälle osiolle: Fingrid, Liittymissopimushakemusten käsittely ruuhkautunut, 23.10.2026: sähkövarastojen liittymissopimuksia lähes 6 GW, etusijamenettely suunniteltu 1.1.2027.
+> Lähde tälle osiolle: Fingrid, Sähkövarastojen yhteisteho Suomessa jo yli 1 000 MW, 24.2.2026: 85 % yksiköistä alle 2 MW, 56 % jakeluverkossa.
+> Lähde tälle osiolle: Fingrid, avoin data 424, luettu 2.11.2026: arviolta 2 085 MW yli 1 MW:n sähkövarastoja.
+> Lähde tälle osiolle: Fingrid, Reservimarkkinat tutuiksi, 11.6.2025: noin 1 500 MW tunnissa, arvio +1 200 MW vuoteen 2030 mennessä.
 
-- [ ] `h1` **uusi** — Etelä-Suomen kantaverkkoon uusia varastoja liitetään vasta vuonna 2029. Teidän liittymänne on jo olemassa.
+- [ ] `h1` **uusi** — Vuoden 2029 varastorajoitus koskee suuria hankkeita. Alle megawatin varasto liitetään verkkoyhtiön ehdoilla.
       - **Korjaus:**
-- [ ] `p` **uusi** — Fingrid jatkoi syyskuussa 2025 Etelä-Suomen varastoliityntärajoitusta vuoteen 2029 varmistaakseen siirtokapasiteetin sähkönkulutuksen kasvulle ja uusille teollisille investoinneille. Se on huono uutinen isoille puistohankkeille ja hyvä uutinen yritykselle, jolla on jo liittymä.
+- [ ] ⚠ `p` **uusi** — Fingrid jatkoi syyskuussa 2025 Etelä-Suomen sähkövarastojen liityntärajoitusta vuoteen 2029. Rajoitus koskee hankkeita, joista tehdään Fingridille liittymissopimushakemus: 1.6.2026 alkaen vähintään 2 MW:n sähkövarastoja koko Suomessa ja Tampereen, Jyväskylän ja Turun seuduilla sekä osassa Pohjanmaata jo 1 MW:n varastoja. Sitä pienempi varasto liitetään olemassa olevan liittymän taakse verkkoyhtiön ehdoilla.
       - **Korjaus:**
-- [ ] `h2` **uusi** — Mitä Fingrid kertoi
+- [ ] `h2` **uusi** — Mitä Fingrid on päättänyt
       - **Korjaus:**
-- [ ] `p` **uusi** — Fingridin 24.9.2025 julkaiseman tiedotteen mukaan Etelä-Suomen siirtokapasiteetti varataan sähkönkulutuksen kasvulle ja uusille teollisille investoinneille. Uusia sähkövarastoja liitetään alueen kantaverkkoon vasta, kun Hikiä–Toivila-yhteys valmistuu vuonna 2029.
+- [ ] `p` **uusi** — Fingridin 24.9.2025 julkaiseman tiedotteen mukaan Etelä-Suomen siirtokapasiteetti varataan sähkönkulutuksen kasvulle ja uusille teollisille investoinneille. Uusien sähkövarastojen liityntärajoitus jatkuu, kunnes Hikiä–Toivila-yhteys valmistuu vuonna 2029. Fingrid arvioi liittymissopimushakemusten perusteella liittymispisteittäin, kuinka paljon kapasiteettia varastoille voidaan osoittaa. Pohjanmaalla ja Pohjois-Suomessa kantaverkossa on vapaata liityntäkapasiteettia varastoille useita tuhansia megawatteja.
       - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — Kyse ei ole siitä, etteikö sähkövarastoille olisi käyttöä. Päinvastoin: Fingrid hankkii tunneittain keskimäärin noin 1 500 MW reserviä ja arvioi tarvitsevansa viiden vuoden päästä 1 200 MW nykyistä enemmän. Helmikuussa 2025 energiavarastojen osuus säätökokein todennetusta kapasiteetista oli jo 29 % FCR-N-reservissä, 13 % (ylös) ja 18 % (alas) FCR-D-reservissä ja 54 % FFR-reservissä. Kysyntä kasvaa, mutta uusi tie Etelä-Suomen kantaverkkoon aukeaa vasta vuonna 2029.
+- [ ] ⚠ `p` **uusi** — Hakemus tarvitaan 1.6.2026 alkaen kaikista vähintään 2 MW:n kulutuskohteista, voimalaitoksista ja sähkövarastoista koko Suomessa, myös jakeluverkon kautta liittyvistä: silloin verkkoyhtiö lähettää hakemuksen Fingridille. Fingridin kartalla merkityillä alueilla raja on väliaikaisesti 1 MW. Raja on kiristynyt: marraskuussa 2025 menettely koski vähintään 5 MW:n varastoja, Jyväskylän, Tampereen ja Turun seuduilla 1 MW:n varastoja.
       - **Korjaus:**
-- [ ] `h2` **uusi** — Miksi tämä koskee teitä
+- [ ] `p` **uusi** — Hakemuksia on paljon. Fingridin mukaan sähkövarastoista tehtyjä liittymissopimuksia on jo lähes kuusi gigawattia, ja moni vireillä oleva hakemus käsitellään etusijamenettelyssä, jonka on suunniteltu tulevan voimaan 1.1.2027.
       - **Korjaus:**
-- [ ] `p` **uusi** — Puistomittakaavan varastohanke tarvitsee uuden kantaverkkoliitynnän. Teollisuuskiinteistön, viljankuivaamon tai hoivakiinteistön liittymän takana oleva sähkövarasto ei tarvitse: se käyttää liittymää, joka on jo rakennettu, maksettu ja mitoitettu. Se on ero vuosien ja kuukausien välillä.
+- [ ] `h2` **uusi** — Mitä tämä tarkoittaa yritykselle
       - **Korjaus:**
-- [ ] `p` **uusi** — Niukkuus siirtyi laitteesta liittymään. Laitteita saa varastosta viikoissa. Uutta varastoliityntää Etelä-Suomen kantaverkkoon ei saa ennen vuotta 2029. Jos teillä on iso liittymä, jonka keskimääräinen käyttöaste on matala, teillä on tällä hetkellä se hyödyke, josta markkinalla on pulaa.
+- [ ] ⚠ `p` **uusi** — Useimmat Suomen sähkövarastot ovat pieniä: helmikuussa 2026 yksiköistä 85 prosenttia oli alle 2 MW:n ja 56 prosenttia jakeluverkossa. Kun varasto jää rajan alle, sitä ei liitetä Fingridin hakemuksella. Se rakennetaan liittymän taakse, joka on jo rakennettu, maksettu ja mitoitettu, ja liittämisestä sovitaan verkkoyhtiön kanssa.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Siksi ratkaiseva asiakirja on verkkoyhtiön vastaus. Lähetämme verkkoyhtiölle kohdekäynnin yhteydessä kirjallisen kyselyn liittämisestä, ja vahvistettu tarjous perustuu sen vastaukseen. Ohjausyksikkö lukee liittymispisteen mittausta ja pitää varaston tehon liittymän rajoissa.
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Jos varasto on vähintään 2 MW, tai kartalla merkityllä alueella vähintään 1 MW, verkkoyhtiö lähettää hakemuksen Fingridille, ja Etelä-Suomessa hanke kohtaa vuoteen 2029 jatkuvan rajoituksen. Kirjallinen arvio kertoo, kummalle reitille kohteenne kuuluu.
+      - **Korjaus:**
+- [ ] `h2` **uusi** — Miksi varastoja tarvitaan lisää
+      - **Korjaus:**
+- [ ] ⚠ `p` **uusi** — Rajoitus ei johdu siitä, ettei varastoille olisi käyttöä. Fingrid hankkii tunneittain keskimäärin noin 1 500 MW reserviä ja arvioi tarvitsevansa vuoteen 2030 mennessä 1 200 MW nykyistä enemmän. Varastoja on myös jo paljon: Fingridin arvion mukaan Suomessa on 2 085 MW yli megawatin sähkövarastoja.
       - **Korjaus:**
 - [ ] `h2` **uusi** — Mitä tämä ei tarkoita
       - **Korjaus:**
@@ -2015,7 +2076,7 @@ Vastine mainissa: `/ajankohtaista/`
       - **Korjaus:**
 - [ ] `li` **uusi** — Ottakaa tuntikohtaiset kulutustiedot esiin. Vuoden tuntidata kertoo enemmän kuin mikään laskuri: sieltä näkyvät sekä huiput että se, kuinka suuri osa liittymästä seisoo käyttämättä.
       - **Korjaus:**
-- [ ] `li` **uusi** — Pyytäkää laskelma, älkää lupausta. Kirjallinen arvio, jossa jokaisella luvulla on lähde ja reservituotto on mallinnettu tuotteittain. Meiltä tai joltain muulta, mutta kirjallisena.
+- [ ] `li` **uusi** — Pyytäkää laskelma ja verkkoyhtiön vastaus kirjallisena. Arvio, jossa jokaisella luvulla on lähde ja reservituotto on mallinnettu tuotteittain, ja ennen tilausta verkkoyhtiön kirjallinen vastaus liittämisestä. Meiltä tai joltain muulta, mutta kirjallisena.
       - **Korjaus:**
 
 ### #rev-ajankohtaista-liityntarajoitus-2029-2

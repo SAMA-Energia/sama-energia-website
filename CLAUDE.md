@@ -646,3 +646,36 @@ kuvia, liian opettavainen, "black and yellow" kaikkialla). Vastaukset kysymyksii
   mukana) ja 21 (päiväkaavion kuvaus ja selite) päivitetty. Natiivilistat docs/native-pass päivitetty (PLAYWRIGHT_CORE=/opt/npm-tools/…).
 - AVOIN: Madiksen päätökset 1–21 ja lauseiden luku; muut alasivut kuviin, kun kuvauksen (9.–11.11) kuvat tulevat; Avant OptiGrid
   ilman julkisia kW/kWh-lukuja (ei korttia); Elecnova ECO-E261LP-2A ilman varmistettua tuotekuvaa (ei korttia).
+
+## v56 — Fingridin raja, kumppanien tausta ja alasivujen viimeistely (Madis 9.11.2026 klo 3.06 ja 3.12, haara v51-launch)
+
+Madis: (3.06) kumppaneiden taustaa ja valinnan perusteita ei ole kerrottu kunnolla; (3.12) 2029-artikkeli ei pidä paikkaansa alle
+5 MW:n liittymillä; kaikki osat ammattimaisiksi, korkein taso, ei kysymyksiä Madikselle, jos muutos vahvistaa kokonaisuutta;
+katso kilpailijat; asiakkaan luottamus syntyy kokonaisuudesta.
+
+- Fingridin raja: Etelä-Suomen varastorajoitus (Fingrid 24.9.2025) toteutuu liittymissopimushakemusten kautta. 20.11.2025 menettely
+  ei koskenut alle 5 MW:n varastoja (Jyväskylän, Tampereen ja Turun seuduilla alle 1 MW:n); 1.6.2026 alkaen hakemus tarvitaan
+  vähintään 2 MW:n kulutuksesta, tuotannosta ja varastoista koko Suomessa, myös jakeluverkon kautta, ja kartan alueilla
+  (Tampere–Jyväskylä, Turku, osa Pohjanmaata) jo 1 MW:sta (Fingrid, sivu päivitetty 7.5.2026; kartta 1.6.2026; webinaari 18.5.2026).
+  Hakemusten käsittely ruuhkautunut, etusijamenettely suunniteltu 1.1.2027 (Fingrid 23.10.2026). Artikkeli
+  ajankohtaista/liityntarajoitus-2029 kirjoitettu uudelleen (merkintä "Päivitetty 9.11.2026", osoite ennallaan), samoin uutiskortti,
+  reservimarkkinoiden nopeuskortti, energiavarastosivun huomautus, Meistä, etusivun karttatasot 3/5/6 ja kartta-data.json (lähde
+  `fg-lta`, rivi Hakemusraja / Taotluse piir). Älä palauta väitettä "uudet varastot kantaverkkoon vasta 2029" ilman rajaa.
+- Kumppanit: `scripts/kumppanit/build_kumppanit.py` (`--check`) on ainoa tietolähde kumppanisivun profiileille
+  (merkit `kumppanit:profiilit:alku/loppu`) sekä etusivun korteille ja paneeleille. Jokaisella kumppanilla sijainti, Miksi valitsimme /
+  Miks me nad valisime, Tausta / Taust, tarjonta, linkit ja lähteet päivämäärineen. Perustelut ovat Clauden ehdotus avoimista
+  lähteistä (lukulistan päätös 22). Gare: "Roofit.Solarin virallinen kumppani Suomessa" (aurinkokatto.com/yritysesittely 9.11.2026).
+  Avant: Yrittäjät 9.1.2024 (noin 450 henkeä, liikevaihto noin 288 milj. € 2023). EP: luettelo 12/2025 (yli 17 vuotta, noin 200 000
+  akkua/v, yli 600 000 käytössä, Belgia 2011). Kumppanisivulla kumppanit heti alkuun, vanhat kortit ja sanamerkit pois.
+- Alasivut (alasivut.css): ikonilaatat ja korttikehykset pois (principle, benefit, agg-step, step, process-cta), vaiheiden numerot
+  Newsreaderilla, versaalit pois taulukoista ja selitteistä. Palvelut/Teenused: H1 "Kirjallisesta arviosta valmiiseen järjestelmään" /
+  "Kirjalikust hinnangust valmis süsteemini", "tyypillinen tarjous" -vertailu pois. Laitevaatimukset: SJV2024 (Fingrid 15.1.2025).
+  Energiavarastot: sijoitus valmistajan ohjeen ja Pelastusopiston ohjeen (12/2025) mukaan.
+- Tarkkuuspäätökset toteutettu (lukulista): 1, 2 (pörssihinta vartin välein 1.10.2025 alkaen; reservit tunneittain ennallaan), 4
+  (1 200 MW vuoteen 2030 mennessä), 6, 8a–b, 10, 12, 13 (ET: eelnõu 17.7.2026, 10 TJ / 85 TJ), 14, 20, 21. Avoinna: 8c (Viljarin
+  "mestari"), 11 ja 15 (kartta), 16 (LinkedIn), 22 (perustelut), 25 (turvallisuuslauseet).
+- Lukulista versio 3 (artefakti LZyjrfRh2pqqPrZdC7cePR): v56-rivit merkitty "v56", uudet sivut mukana, päätösten tila.
+- Kilpailijahavainnot (9.11.2026): Cactos (Kempele, oma valmistus, 400+ kohdetta, OK Tanska 3.11.2026, STT), Powera (yritysfaktat,
+  takuu, omistus, varovaiset tuottolupaukset), W.EG Eesti (yritystiedot, takuu, EAS-tuki, tehdyt työt); markkinan luottamusongelma:
+  Fingridille satoja valituksia kotiakkujen myynnistä Fingridin nimissä (MTV). SAMAn ero: valmistajista riippumaton, lähteet ja
+  päivämäärät, kirjallinen arvio, aggregaattori kohteen mukaan.

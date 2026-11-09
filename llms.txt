@@ -83,8 +83,8 @@ What the company says about itself, in its own documented positioning:
 - https://samaenergia.fi/reservimarkkinat/ : Reserve markets explained: sourced reasons, how reserve prices form, how income is modelled, what the company believes.
 - https://samaenergia.fi/aggregaattori/ : What an aggregator does, how joining Fingrid's reserve markets proceeds, and what to check in an aggregator agreement.
 - https://samaenergia.fi/verkko/ : Shared grid map: Fingrid and Elering figures on one map in seven chapters (grid, consumption, weather-dependent generation, storage, reserves, pipeline, your connection), every figure with source and date.
-- https://samaenergia.fi/palvelut/ : Services: assessment, project and portfolio; what each contains, what the customer supplies, what is free and what is charged.
-- https://samaenergia.fi/kumppanit/ : Partners and products by type; how an offer is assembled and compared on the same figures.
+- https://samaenergia.fi/palvelut/ : Services from written assessment to a finished system: assessment, project and portfolio; what each contains, what the customer supplies, what is free and what is charged.
+- https://samaenergia.fi/kumppanit/ : Partners: who each partner is (sourced background) and why SAMA chose them; partners by field; how an offer is assembled and compared on the same figures.
 - https://samaenergia.fi/meista/ : About: why the company was founded, who is accountable for what, the partner network, company facts.
 - https://samaenergia.fi/ajankohtaista/ : Reviews and short news with sources and dates.
 - https://samaenergia.fi/ajankohtaista/liityntarajoitus-2029/ : Review: Fingrid's restriction on new storage connections in southern Finland continues until 2029 and applies to projects that need a Fingrid connection agreement application (from 1 June 2026: 2 MW and above, 1 MW in areas marked on Fingrid's map); smaller storage behind an existing connection is connected on the network company's terms.
@@ -102,7 +102,7 @@ What the company says about itself, in its own documented positioning:
 - https://samaenergia.ee/soleron-energy/ : What an aggregator does, how joining Elering's reserve market proceeds, and the Estonian aggregator partner Soleron Energy.
 - https://samaenergia.ee/vork/ : Shared grid map: Elering and Fingrid figures on one map in seven chapters, every figure with source and date.
 - https://samaenergia.ee/teenused/ : Services: assessment, project and portfolio.
-- https://samaenergia.ee/partnerid/ : Partners and products by type; how an offer is assembled.
+- https://samaenergia.ee/partnerid/ : Partners: who each partner is (sourced background) and why SAMA chose them; how an offer is assembled.
 - https://samaenergia.ee/meist/ : About: why the company was founded, who is accountable for what, company facts.
 - https://samaenergia.ee/uudised/ : Reviews and short news with sources and dates.
 - https://samaenergia.ee/uudised/reservitasu-2026/ : Review: from 2026 every consumer pays for reserves on the electricity bill; which side of the bill a storage owner is on.
