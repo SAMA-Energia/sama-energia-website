@@ -738,3 +738,12 @@ on valikoimassa useamman valmistajan kautta; "kõiki tooteid ei leidnud valikus,
 - Lataussivun luvut ja taulukko: pikalataus Avant Powerin varaston kautta (200–600 kW), siirrettävä yksikkö Type 2 9 kW.
 - Energiavarastosivun tuoterivikuva ilman EP:tä (Elecnova-kontti, ZOE, ECO-E101WX, ECO-E64WX, Cube 47), mitat 2400×640 / 1200×506.
 
+- v58b: kumppanien sivukartat ja tuotekatalogit käyty läpi 9.11.2026 (ralos.fi/sitemap.xml ja /tuotekatalogi, scanoffice.fi/sitemap.xml,
+  avantpower.fi/sitemap.xml, aurinkokatto.com/page-sitemap.xml, elecnova-ess.com tuotevalikko). Uudet kortit: Ralos RLS-525, Tongwei
+  725 Wp, Ralos Stalker 2.0 (uusi suodatin Aurinkoseuraaja), Atmoce BattBank, Enershare Active16, Raedian Nora, Roofit.Solar NuClick 2.0
+  (vain FI). HYT-HV ja HAT-HV erotettu: HYT kortiksi, HAT taulukkoon omalla lähteellään. RLS-480:n lähde = nykyinen tuotesivu.
+  Taulukkoon: Elecnova ECO-B100/120WP-2H, ECO-H3200K (PCS-Boost-kontti), akkupaketit ECO-P1P20WS ja ECO-P1P52LS; Hoymiles HiBattery
+  1920 AC (valmistajasivun kuva tekoälyllä tehty), HMT-2250-6T, DTSU666; Ralos Nanorail; KACO blueplanet, Canadian Solar, Hanwha Q CELLS,
+  ZNShine Solar, Scanoffice Premium -paketit, AmpIN Smart, Energiansäästäjä, Energypac, City Multi VRF, alpha innotec, Flowair LEO,
+  varaajat. Jätetty pois: Avant TER47 (puolustusala), Mitsubishi AP (myynti päättynyt), Wedoton Comfort (saatavilla 2027),
+  lisävarusteet ja kulutustarvikkeet. llms.txt: EP-maininta rivinvaihdon yli poistettu; vartija tarkistaa nyt myös llms-tiedostot.

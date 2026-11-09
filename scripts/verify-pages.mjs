@@ -234,7 +234,7 @@ const GUARDS = [
   // Palautus perustajan päätöksellä: poista tämä vartija, PIILOTETUT_VALMISTAJAT (scripts/tuotteet/build_tuotteet.py) ja
   // PIILOTETUT (scripts/kumppanit/build_kumppanit.py) ja palauta etusivun kortit tiedostoista scripts/kumppanit/piilotetut/.
   { id: 'ep-piilossa', langs: 'both', why: 'EP Energy ei sivustolla toistaiseksi (perustajan päätös 9.11.2026)',
-    find: t => [...t.matchAll(/EP Energy|\bEP(?:ES|HS|CS|PS|CP)[-\d]/g)] },
+    find: t => [...t.matchAll(/EP\s+Energy|\bEP(?:ES|HS|CS|PS|CP)\s*[-\d]/g)] },
   // mallinimet-1104 poistettu 9.11.2026: perustajan päätös (Madis 9.11.2026, "Foto, tootja, mudel, põhinäitajad") kumoaa
   // 4.11.2026 linjauksen. Tuotteen kuva, valmistaja, malli ja päätiedot valmistajan datalehdeltä lähteineen näytetään
   // alasivujen tuotevalikoimassa (scripts/tuotteet/build_tuotteet.py). Valmistajanimien vartijat (nimet-1104, roofit-et,
@@ -345,6 +345,8 @@ for (const lang of ['fi', 'et']) {
 }
 /* llms.txt: englanninkielinen tiivistelmä ei saa kantaa kumoutunutta titteliä (13.09.2026).
    Perustajapäätös Martin Rautio 13.09.2026; hallituksen päätös ja kaupparekisteri-ilmoitus seuraavat. */
+/* EP Energy ei sivustolla toistaiseksi (perustajan päätös 9.11.2026): myös llms-tiedostot, rivinvaihto mukaan lukien */
+for (const f of ['llms.txt', 'llms-full.txt']) if (/\bEP\s+Energy|\bEP(?:ES|HS|CS|PS|CP)\s*[-\d]/.test(read(f))) err(`${f}: EP Energy mainittu (perustajan päätös 9.11.2026)`);
 if (/finance director/i.test(read('llms.txt'))) err('llms.txt — "finance director": kumoutunut titteli, Martin Rautio on chief executive officer (perustajapäätös 13.09.2026)');
 
 /* ================= sisältövartijat loppuvat ================= */
