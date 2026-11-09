@@ -26,7 +26,7 @@ const PLACEHOLDER_WAIVERS = [];
 
 /* Pidettävä samana kuin build-pages.mjs:n PAIRS / UNPAIRED / UNLISTED / LEGACY. */
 const PAIRS = [
-  ['', ''], ['aurinkosahko', 'paikeseelekter'], ['energiavarastot', 'energiasalvestid'],
+  ['', ''], ['aurinkosahko', 'paikeseelekter'], ['energiavarastot', 'energiasalvestid'], ['lataus', 'laadimine'],
   ['reservimarkkinat', 'reserviturg'], ['aggregaattori', 'soleron-energy'], ['palvelut', 'teenused'], ['verkko', 'vork'],
   ['laitevaatimukset', 'seadmete-nouded'], ['kumppanit', 'partnerid'],
   ['meista', 'meist'], ['ajankohtaista', 'uudised'], ['yhteystiedot', 'kontakt'],

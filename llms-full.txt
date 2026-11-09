@@ -309,13 +309,14 @@ Käyttöönotto
 Lähteet: JSM Automaatiosähkö Oy, etusivu (luettu 9.11.2026).
 Kumppanisivullajsmautomaatiosahko.fi
 
-Tiimimme.
+Vastuuhenkilöt nimeltä.
+Jokaisella projektin vaiheella on nimetty vastuuhenkilö, ja numerot ovat heidän omiaan.
 SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · Y-tunnus 3647683-6
 Meistä
 
-MRMartin Rautiotoimitusjohtaja
-VPViljar Petersellasennuspäällikkö
-MMMadis Maastikmyyntijohtaja
+Madis MaastikmyyntijohtajaKartoitus, arvio, asiakassuhde ja aggregaattori+358 44 965 4614
+Martin RautiotoimitusjohtajaSopimukset, kumppanuudet ja toimitukset+358 40 701 9099
+Viljar PetersellasennuspäällikköAsennuksen toteutus ja laatu kohteella+358 40 635 3245
 
 Vaikeat kysymykset, suorat vastaukset.
 
@@ -399,11 +400,11 @@ Aurinko + varastokeskipäivän ylijäämä iltaan, huiput pois ja sama varasto F
 
 Jokainen kattotiili, pelti, profiilipelti, tasakatto, kattoon integroitu tai maa-asennus
 
-Paneelit, aurinkokatto ja varasto.
+Paneelit, invertterit, aurinkokatto ja varasto.
 
-Aurinkopaneelit, aurinkokatto ja aurinkosähkön kanssa toimivat varastot neljältä valmistajalta: Ralos, Roofit.Solar, Elecnova ja EP Energy. Roofit.Solarin aurinkokattoja toimittaa Suomessa Gare Energy Oy.
+Aurinkopaneelit, invertterit, aurinkokatto ja aurinkosähkön kanssa toimivat varastot: Ralos, HT-SAAE, HD Hyundai, APsystems, Sofar Solar, Roofit.Solar, Elecnova ja EP Energy. Roofit.Solarin aurinkokattoja toimittaa Suomessa Gare Energy Oy, ja HT-SAAE:n, HD Hyundain, APsystemsin ja Sofar Solarin laitteita Scanoffice Oy.
 
-Kaikki 6Aurinkopaneelit 2Aurinkokatto 1Aurinko ja varasto 3
+Kaikki 11Aurinkopaneelit 5Aurinkokatto 1Invertterit 2Aurinko ja varasto 3
 Ralos
 RLS-585
 Kaksipuolinen aurinkopaneeli, HJT-kennot
@@ -438,6 +439,57 @@ Koko
 
 Lähde: Ralos Oy, esite RLS-480, 6/2023
 
+HT-SAAE
+HT72-18X(ND)-F
+Kaksipuolinen kaksilasinen paneeli, TOPCon-kennot
+Teho
+585–605 W
+
+Hyötysuhde
+enintään 23,4 %
+
+Kaksipuolisuus
+80 %
+
+Koko
+2,28 × 1,13 m
+
+Lähde: HT-SAAE, datalehti HT72-18X(ND)-F (Scanoffice), luettu 9.11.2026
+
+HT-SAAE
+HT54 / HT60-18X(ND)-F
+Täysmusta kaksilasinen paneeli, TOPCon-kennot
+Teho
+440–505 W
+
+Hyötysuhde
+enintään 23,3 %
+
+Kaksipuolisuus
+80 %
+
+Koko
+1,76 tai 1,91 × 1,13 m
+
+Lähde: HT-SAAE, esitteet HT54- ja HT60-18X(ND)-F (Scanoffice), luettu 9.11.2026
+
+HD Hyundai
+HiT-H LE-FB
+Täysmusta HJT-aurinkopaneeli
+Teho
+440–460 W
+
+Hyötysuhde
+enintään 23,0 %
+
+Takuu
+30 vuotta, myös teho
+
+Koko
+1,76 × 1,13 m
+
+Lähde: HD Hyundai Energy Solutions, HJT-paneelien datalehti (Scanoffice), luettu 9.11.2026
+
 Roofit.Solar
 Velario Slim
 Aurinkokatto konesaumakattoon, Suomessa toimittaa Gare Energy Oy
@@ -454,6 +506,40 @@ Kattokaltevuus
 vähintään 10°
 
 Lähde: Roofit.Solar, Velario Slim -datalehti 2026-02 V1, luettu 9.11.2026
+
+APsystems
+QT2
+Kolmivaiheinen mikroinvertteri neljälle paneelille
+AC-teho
+2 000 VA
+
+Hyötysuhde
+97 %
+
+Kotelointi
+IP67
+
+Käyttölämpötila
+−40…+65 °C
+
+Lähde: APsystems, QT2-datalehti, versio 1.0, 7.10.2023 (Scanoffice), luettu 9.11.2026
+
+Sofar Solar
+KTL-X, KTL-G2 ja KTL
+Kolmivaiheiset verkkoinvertterit
+Teho
+3,3–70 kW
+
+Hyötysuhde
+enintään 98,6 %
+
+MPPT
+2 tai 3
+
+Kotelointi
+IP65
+
+Lähde: Sofar Solar, invertterien datalehti (Scanoffice), luettu 9.11.2026
 
 Ralos
 Beast 125 HD
@@ -623,9 +709,9 @@ Pyydä maksuton kartoitus
 
 Valikoima kaapista konttiin.
 
-Ulkokaapit, hybridikaapit, kontit, siirrettävät yksiköt ja STS-kaapit neljältä valmistajalta: Ralos, Elecnova, EP Energy ja Avant Power.
+Ulkokaapit, hybridikaapit, kontit, siirrettävät yksiköt ja varavoimakaapit viideltä valmistajalta: Ralos, Elecnova, EP Energy, Avant Power ja ZOE Energy Storage. Latausasemat ovat lataussivulla.
 
-Kaikki 13Ulkokaapit 4Hybridikaapit 2Kontit 2Siirrettävät ja lataus 4Varavoima 3
+Kaikki 14Ulkokaapit 5Hybridikaapit 2Kontit 2Siirrettävät ja lataus 4Varavoima 3
 Ralos
 Beast 125 HD
 Nestejäähdytetty energiavarasto sisä- tai ulkoasennukseen
@@ -693,6 +779,23 @@ Pohja
 1,45 × 1,3 m
 
 Lähde: EP Energy, luettelo C&I Energy Storage Solutions, 12/2025
+
+ZOE Energy Storage
+Z Box-C 215-2H
+Nestejäähdytetty ulkokaappi
+Teho
+105 kW
+
+Energia
+215 kWh
+
+Jäähdytys
+neste
+
+Pohja
+1,34 × 1,40 m
+
+Lähde: ZOE Energy Storage, Z Box-C 215-2H -datalehti (Scanoffice), luettu 9.11.2026
 
 EP Energy
 EPHS104 / EPHS156
@@ -847,6 +950,21 @@ Jännite
 
 Lähde: Elecnova, tuotesivu ECO-STS-C125, luettu 9.11.2026
 
+Muut mallit ja ratkaisut
+Tiedot valmistajien tuotesivuilta ja tiedotteista.
+
+Malli · Tyyppi · Päätiedot · Lähde
+ECO-E261LP-2AElecnova · Nestejäähdytetty ulkokaappi · 125 kW, 261 kWh · Elecnova, tuotesivu ECO-E261LP-2A, luettu 9.11.2026
+ECO-E241WP-2AElecnova · Ilmajäähdytteinen ulkokaappi · 125 kW, 241 kWh · Elecnova, tuotesivu ECO-E241WP-2A, luettu 9.11.2026
+ECO-E233LSElecnova · Nestejäähdytetty ulkokaappi · 100 kW, 233 kWh · Elecnova, tuotesivu ECO-E233LS, luettu 9.11.2026
+ECO-E215WSElecnova · Ilmajäähdytteinen ulkokaappi · 100 kW, 215 kWh · Elecnova, tuotesivu ECO-E215WS, luettu 9.11.2026
+ECO-B418LP-2NElecnova · Nestejäähdytetty akustokaappi, tehoelektroniikka erikseen · 418 kWh · Elecnova, tuotesivu ECO-B418LP-2N, luettu 9.11.2026
+ECO-B372LSElecnova · Nestejäähdytetty akustokaappi, tehoelektroniikka erikseen · 372 kWh · Elecnova, tuotesivu ECO-B372LS, luettu 9.11.2026
+ECO-B20FT5015LP-2Elecnova · Nestejäähdytetty 20 jalan akustokontti · 5 015 kWh · Elecnova, tuotesivu ECO-B20FT5015LP-2, luettu 9.11.2026
+ECO-B20FT3404WSElecnova · Ilmajäähdytteinen 20 jalan akustokontti · 3 404 kWh · Elecnova, tuotesivu ECO-B20FT3404WS, luettu 9.11.2026
+ECO-EPS-C125Elecnova · EPS-kaappi varavoimaan · 1, 3 tai 6 × 125 kW, siirto enintään 20 s · Elecnova, tuotesivu ECO-EPS-C125, luettu 9.11.2026
+PCS, BMS ja EMSElecnova · Tehoelektroniikka, akunhallinta ja energianhallinta · komponentit kokonaisuuden osiksi · Elecnova, tuotesivut PCS, BMS ja EMS, luettu 9.11.2026
+
 Tekniset tiedot ovat valmistajien datalehdiltä ja tuotesivuilta. Varavoima koskee valittuja piirejä, jotka suunnitellaan kohdekäynnillä. Valmistaja ja malli valitaan kohteenne kulutuksen, liittymän ja tilan mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla.
 
 Mistä kukin kassavirta riippuu
@@ -973,6 +1091,225 @@ Mittarin takainen järjestelmä: varasto, tuotanto ja ohjaus liittymänne takana
 
 Minkä kokoinen sähkövarasto teidän kohteeseenne?
 Kartoitus vastaa siihen kirjallisesti, kulutustiedoistanne laskettuna.
+
+Pyydä maksuton kartoitus
+
+# Sähköauton lataus yrityksille · SAMA Energia — https://samaenergia.fi/lataus/
+
+Etusivu›Lataus
+
+Lataus, joka mahtuu liittymäänne.
+
+Toimistolle muutama latauspiste, varikolle pikalaturit: lataus valitaan sen mukaan, kauanko autot seisovat ja paljonko liittymä antaa. Kun liittymän teho ei riitä huippuun, varasto antaa sen, ja aurinkokatos tuottaa sähköä samaan järjestelmään. Latausasemat ovat neljältä valmistajalta, ja vertailu tulee kirjallisena samoilla luvuilla.
+
+Pyydä maksuton kartoitus Latausasemat
+
+22 kWAC-latauspiste pysäköintiin. Kuormanhallinta jakaa liittymän tehon latauspisteiden kesken.
+
+360 kWDC-pikalaturi kahdella CCS2-liittimellä varikoille ja raskaalle kalustolle.
+
+240 kWautoon akulla varustetusta pikalaturista, vaikka verkosta otetaan 60 kW.
+
+Lähteet: valmistajien datalehdet, valikoima alla.
+
+Latausasemat neljältä valmistajalta.
+
+AC-latausasemat pysäköintiin, DC-pikalaturit, akulla varustetut laturit ja siirrettävät yksiköt: Zaptec, Easee, EP Energy ja Avant Power. Zaptecin ja Easeen latausasemat toimittaa Scanoffice Oy.
+
+Kaikki 7AC-lataus 3DC-pikalataus 4Akulla varustetut 1Siirrettävät 3
+Zaptec
+Zaptec Pro
+AC-latausasema yritysten ja taloyhtiöiden pysäköintiin
+Teho
+enintään 22 kW
+
+Kuormanhallinta
+dynaaminen, myös vaiheet
+
+Mittari
+MID, luokka B
+
+Rajapinta
+OCPP 1.6J
+
+Lähde: Zaptec Charger AS, Zaptec Pro -tuotelehti 22.2.2023 (Scanoffice), luettu 9.11.2026
+
+Easee
+Charge Pro
+AC-latausasema suuriin latausverkostoihin
+Teho
+enintään 22 kW
+
+Kuormanhallinta
+paikallinen, myös vaiheet
+
+Mittari
+MID, luokka B
+
+Rajapinta
+OCPP 1.6J
+
+Lähde: Easee, Charge Pro -datalehti 10/2025, versio 1.03 (Scanoffice), luettu 9.11.2026
+
+EP Energy
+EPCP-DC120–360
+DC-pikalaturi kahdella CCS2-liittimellä
+Teho
+120–360 kW
+
+Liittimet
+2 × CCS2
+
+Jännite
+200–1 000 V DC
+
+Käyttölämpötila
+−30…+55 °C
+
+Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
+
+EP Energy
+EPCS209
+Akulla varustettu DC-pikalaturi
+Liittymästä
+60 kW
+
+Lataus
+enintään 240 kW
+
+Akku
+209 kWh
+
+Liittimet
+2 × CCS2
+
+Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
+
+EP Energy
+EPPS210-M
+Siirrettävä energiayksikkö perävaunulla
+Energia
+217 kWh
+
+DC-lataus
+enintään 240 kW
+
+AC-ulostulo
+125 kW
+
+Paino
+2,7 t
+
+Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
+
+EP Energy
+EPPS93-M
+Siirrettävä energiayksikkö
+Energia
+93 kWh
+
+DC-lataus
+60 kW
+
+AC-ulostulo
+33 kVA
+
+Paino
+1,5 t
+
+Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
+
+Avant Power
+OptiTemp® Cube 47
+Siirrettävä energiayksikkö ja lataus työkoneille
+Lataus
+Type 2 -kaapeli, 9 kW, lisävaruste
+
+Energia
+47 kWh
+
+Teho
+11 kW
+
+Paino
+730 kg
+
+Lähde: Avant Power, OptiTemp® Cube 47 -esite, 6/2026, luettu 9.11.2026
+
+Muut mallit ja ratkaisut
+Tiedot valmistajien tuotesivuilta ja tiedotteista.
+
+Malli · Tyyppi · Päätiedot · Lähde
+OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · tuotanto, varasto, työkoneiden ja autojen lataus sekä hukkalämmön talteenotto, kokoonpano kohteen mukaan · Avant Tecno, tiedote OptiGrid™-mikroverkosta 1.7.2025, luettu 9.11.2026
+
+Tekniset tiedot ovat valmistajien datalehdiltä. Latauspisteiden määrä, teho ja kuormanhallinta mitoitetaan pysäköinnin, käytön ja liittymän mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla.
+
+Latausasema: varasto ottaa huipun.
+
+Pikalaturi tarvitsee suuren tehon lyhyeksi ajaksi. Kun liittymän koko rajoittaa latausta, paikallinen varasto antaa huipputehon ja latautuu tasaisesti liittymästä ja aurinkosähköstä. Näin lataustehoa voi kasvattaa, vaikka liittymää ei kasvatettaisi samassa suhteessa.
+
+Liittymä lataa varastoa tasaisesti.
+
+Varasto antaa latauksen huipputehon, kun auto kytketään.
+
+Aurinkokatos tuottaa päivällä sähköä varastoon ja latureihin.
+
+Pikalaturit mitoitetaan kohteen liikenteen mukaan.
+
+Ohjaus ennustaa kulutuksen, tuotannon ja hinnan ja ajoittaa lataukset.
+
+Mikroverkko latausasemalle
+Latausasemille, varikoille, huoltoasemille ja logistiikkakeskuksille: varasto, integroitu pikalataus ja ohjaus, joka ennustaa kulutuksen, tuotannon ja hinnan.
+
+Akulla varustettu pikalaturi
+DC-pikalaturi ottaa verkosta vähemmän tehoa kuin antaa autoon. Erotuksen antaa sisäänrakennettu akku.
+
+Aurinkokatos
+Katos suojaa autoja ja tuottaa sähköä varastoon ja latureihin. Voimalan koko mitoitetaan kohteen kulutuksen ja tilan mukaan. Asennusta johtaa asennuspäällikkömme, ja sähkötyöt tekee rekisteröity sähköurakoitsijakumppanimme.
+Näin asennus etenee
+
+Mitä lataus vaatii.
+
+Ratkaisu riippuu siitä, kauanko autot seisovat, montako niitä on ja paljonko liittymä antaa. Kartoitus laskee tämän kulutustiedoistanne.
+
+Käyttö ja ratkaisu
+Tehot valmistajien datalehdiltä, valikoima yllä.
+
+Käyttö · Ratkaisu
+
+Työpaikka, hotelli
+tai taloyhtiö · AC-latauspisteet, enintään 22 kW. Kuormanhallinta jakaa liittymän tehon latauspisteiden kesken, ja pisteitä voidaan lisätä vaiheittain.
+
+Asiakaspysäköinti,
+kauppa tai ravintola · DC-pikalaturi. Kun liittymä ei riitä huippuun, akulla varustettu pikalaturi tai erillinen varasto antaa erotuksen.
+
+Varikko, logistiikka
+tai raskas kalusto · DC-pikalaturit 120–360 kW, varasto ja ohjaus, joka ajoittaa lataukset.
+
+Työmaa, tapahtuma tai
+tilapäinen tarve · Siirrettävä energiayksikkö: DC-lataus enintään 240 kW tai Type 2-lähtö 9 kW.
+
+Velvoite. Muussa kuin asuinrakennuksessa, jonka yhteydessä on yli 20 pysäköintipaikkaa, on pitänyt olla vähintään yksi yli 3,7 kW:n latauspiste 31.12.2024 alkaen. Poikkeuksia ovat muun muassa mikroyrityksen omassa käytössä olevat rakennukset. Lähde: laki 733/2020, Moottori 30.9.2024.
+
+Kysyttyä latauksesta.
+
+Pitääkö liittymää kasvattaa?
+Ei aina. Kuormanhallinta jakaa liittymän tehon latauspisteiden kesken, ja pikalatauksen huipun voi antaa varasto. Kartoitus laskee kulutustiedoistanne, riittääkö nykyinen liittymä vai kannattaako sitä kasvattaa.
+
+AC vai DC?
+AC riittää, kun auto seisoo tunteja: työpaikalla, hotellissa ja taloyhtiössä. DC tarvitaan, kun auton pitää latautua nopeasti tai ajoneuvo on raskas: asiakaspysäköinnissä, varikolla ja logistiikassa.
+
+Voiko latauksen laskuttaa käyttäjiltä?
+Voi. Valikoiman AC-latausasemissa on MID-mittari (luokka B), jonka lukemaa voi käyttää laskutukseen, ja OCPP-rajapinta liittää latausaseman valitsemaanne latauspalveluun.
+
+Kuka asentaa ja huoltaa?
+Asennusta johtaa asennuspäällikkömme, ja sähkötyöt ja käyttöönoton tekee rekisteröity sähköurakoitsijakumppanimme. Valmistajan takuu kirjataan tarjoukseen laitekohtaisesti, ja takuu- ja huoltoasiat hoidetaan meidän kauttamme.
+
+Voiko latauksen, varaston ja aurinkosähkön hankkia yhdessä?
+Voi, ja silloin ne mitoitetaan samasta kulutusdatasta. Arviossa ne näkyvät samoilla luvuilla, ja päätätte itse, missä järjestyksessä ne rakennetaan.
+
+Kertokaa pysäköinnistä ja liittymästä. Laskemme latauksen.
+Kartoitus on maksuton, ja vertailu tulee kirjallisena.
 
 Pyydä maksuton kartoitus
 
@@ -1403,9 +1740,9 @@ Etusivu›Kumppanit ja tuotteet
 
 Useita valmistajia. Yksi tarjous kohteenne mukaan.
 
-Tunnemme markkinan: valmistajat, maahantuojat, aggregaattorit ja hintatason. Meillä on useita laitetoimittajia, ja niiden kautta tarjoamme energiavarastot siirrettävästä yksiköstä konttiin, latausasemien varastot ja mikroverkot, aurinkosähkön ja asennuksen. Kokoamme tarjouksen kohteenne kulutuksen, liittymän ja tavoitteiden mukaan, valitsemme toimittajien valikoimasta parhaiten sopivan laitteen ja vertaamme vaihtoehdot samoilla luvuilla.
+Tunnemme markkinan: valmistajat, maahantuojat, aggregaattorit ja hintatason. Meillä on useita laitetoimittajia, ja niiden kautta tarjoamme energiavarastot siirrettävästä yksiköstä konttiin, latausasemat ja mikroverkot, aurinkosähkön, lämpöpumput ja asennuksen. Kokoamme tarjouksen kohteenne kulutuksen, liittymän ja tavoitteiden mukaan, valitsemme toimittajien valikoimasta parhaiten sopivan laitteen ja vertaamme vaihtoehdot samoilla luvuilla.
 
-Pyydä maksuton kartoitus Valikoima tarpeen mukaan
+Pyydä maksuton kartoitus Koko valikoima
 
 Kumppanit, joiden kanssa toimimme.
 
@@ -1532,34 +1869,594 @@ Aggregaattori valitaan kohteen mukaan
 Fingridin hyväksymä reservitoimittaja
 Vertaamme reservitoimittajat kohteenne varaston ja tuotteiden mukaan. Valinnan perusteet kirjataan arvioon, ja me rakennamme yhteyden valittuun aggregaattoriin.
 
-Valikoima kohteen tarpeen mukaan.
+Koko valikoima kuvin ja tiedoin.
 
-Lähdemme liikkeelle siitä, mitä kohteenne tarvitsee, emme siitä, mitä varastossa on. Taulukko näyttää, mistä vaihtoehdot kootaan. Lopullinen kokoonpano lasketaan kartoituksessa kulutustiedoistanne. Jokainen malli käy läpi laitevaatimuksemme ennen kuin se on tarjouksessa.
+Energiavarastot, latausasemat, aurinkosähkö ja lämpöpumput kumppaneidemme kautta: valmistaja, malli ja päätiedot valmistajan datalehdeltä lähteineen. Lopullinen kokoonpano lasketaan kartoituksessa kulutustiedoistanne, ja jokainen energiavarasto käy läpi laitevaatimuksemme ennen kuin se on tarjouksessa.
 
-Tarve ja ratkaisu
-Mallit ja tekniset tiedot: valikoima energiavarastosivulla.
+Kaikki 34Energiavarastot 14Lataus 7Aurinkosähkö 8Lämpöpumput 9Siirrettävät 4Varavoima 3
+Ralos
+Beast 125 HD
+Nestejäähdytetty energiavarasto sisä- tai ulkoasennukseen
+Teho
+125 kW
 
-Kohteen tarve · Ratkaisu
+Energia
+261 kWh
 
-Yrityksen liittymä,
-100 kW–1 MW · Nestejäähdytetty ulkokaappi useammalta valmistajalta, esimerkiksi Ralos Oy. Kaappeja rinnan kohteen mukaan.
+Varavoima, optio
+STS, alle 10 ms
 
-Pienempi kohde · Hybridikaappi pienempään liittymään.
+Aurinkosähkö, optio
+2 × 63 kW
 
-Suuri kohde tai
-oma muuntamo · Konttivarasto.
+Lähde: Ralos Oy, tekninen tiedote Ralos Beast 125, versio V10, tarkistettu 9.11.2026
 
-Latausasema, varikko
-tai huoltoasema · Mikroverkko ja pikalataus tai akulla varustettu DC-pikalaturi. Aurinkokatoksen asennusta johtaa asennuspäällikkömme.
+Elecnova
+ECO-E418LP
+Nestejäähdytetty ulkokaappi
+Teho
+100 kW (400 V)
 
-Työmaa, tapahtuma tai
-tilapäinen tehontarve · Siirrettävä yksikkö.
+Energia
+418 kWh
+
+Jäähdytys
+neste
+
+Pohja
+1,5 × 1,35 m
+
+Lähde: Elecnova, tuotesivu ECO-E418LP, luettu 9.11.2026
+
+Elecnova
+ECO-E101WX
+Ilmajäähdytteinen ulkokaappi
+Teho
+100 kW
+
+Energia
+101 kWh
+
+Jäähdytys
+ilma
+
+Pohja
+1,25 × 1,2 m
+
+Lähde: Elecnova, tuotesivu ECO-E101WX, luettu 9.11.2026
+
+EP Energy
+EPES233
+Nestejäähdytetty ulkokaappi
+Teho
+105 kW
+
+Energia
+233 kWh
+
+Jäähdytys
+neste
+
+Pohja
+1,45 × 1,3 m
+
+Lähde: EP Energy, luettelo C&I Energy Storage Solutions, 12/2025
+
+ZOE Energy Storage
+Z Box-C 215-2H
+Nestejäähdytetty ulkokaappi
+Teho
+105 kW
+
+Energia
+215 kWh
+
+Jäähdytys
+neste
+
+Pohja
+1,34 × 1,40 m
+
+Lähde: ZOE Energy Storage, Z Box-C 215-2H -datalehti (Scanoffice), luettu 9.11.2026
+
+EP Energy
+EPHS104 / EPHS156
+Hybridikaappi aurinkosähköön
+Teho
+50 kW
+
+Energia
+104 tai 156 kWh
+
+Aurinkosähkö
+enintään 100 kW
 
 Varavoima
-sähkökatkossa · Siirtokytkin (STS) saarekekäyttöön. Varmennetut piirit ja saarekekäyttö suunnitellaan kohteittain.
+alle 10 ms
 
-Aurinkosähkö ja
-lämpöpumput · Paneelit, invertterit ja lämpöpumput: Scanoffice Oy. Asennusta johtaa asennuspäällikkömme, sähkötyöt tekee JSM Automaatiosähkö Oy.
+Lähde: EP Energy, luettelo C&I Energy Storage Solutions, 12/2025
+
+Elecnova
+ECO-E64WX
+Hybridikaappi aurinkosähköön
+Teho
+25–50 kW
+
+Energia
+64,5 kWh
+
+Aurinkosähkö
+37,5–75 kW
+
+Jäähdytys
+ilma
+
+Lähde: Elecnova, tuotesivu ECO-E64WX, luettu 9.11.2026
+
+Elecnova
+ECO-E20FT2170LP
+20 jalan konttivarasto
+Teho
+1 000 kW
+
+Energia
+2 170 kWh
+
+Jäähdytys
+neste
+
+Paino
+25 t
+
+Lähde: Elecnova, tuotesivu ECO-E20FT2170LP, luettu 9.11.2026
+
+EP Energy
+EPES5000
+Akustokontti suuriin kohteisiin
+Energia
+5 015 kWh
+
+Jännite
+1 040–1 500 V DC
+
+Jäähdytys
+neste
+
+Paino
+44 t
+
+Lähde: EP Energy, luettelo C&I Energy Storage Solutions, 12/2025
+
+EP Energy
+EPPS93-M
+Siirrettävä energiayksikkö
+Energia
+93 kWh
+
+DC-lataus
+60 kW
+
+AC-ulostulo
+33 kVA
+
+Paino
+1,5 t
+
+Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
+
+EP Energy
+EPPS210-M
+Siirrettävä energiayksikkö perävaunulla
+Energia
+217 kWh
+
+DC-lataus
+enintään 240 kW
+
+AC-ulostulo
+125 kW
+
+Paino
+2,7 t
+
+Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
+
+EP Energy
+EPCS209
+Akulla varustettu DC-pikalaturi
+Liittymästä
+60 kW
+
+Lataus
+enintään 240 kW
+
+Akku
+209 kWh
+
+Liittimet
+2 × CCS2
+
+Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
+
+Avant Power
+OptiTemp® Cube 47
+Siirrettävä energiayksikkö työkoneille
+Energia
+47 kWh
+
+Teho
+11 kW
+
+Kotelointi
+IP54
+
+Paino
+730 kg
+
+Lähde: Avant Power, OptiTemp® Cube 47 -esite, 6/2026, luettu 9.11.2026
+
+Elecnova
+ECO-STS-C125
+STS-kaappi saarekekäyttöön
+Varastoille
+2, 4 tai 6 × 125 kW
+
+Siirto
+20 ms
+
+Kotelointi
+IP54
+
+Jännite
+400 V
+
+Lähde: Elecnova, tuotesivu ECO-STS-C125, luettu 9.11.2026
+
+Zaptec
+Zaptec Pro
+AC-latausasema yritysten ja taloyhtiöiden pysäköintiin
+Teho
+enintään 22 kW
+
+Kuormanhallinta
+dynaaminen, myös vaiheet
+
+Mittari
+MID, luokka B
+
+Rajapinta
+OCPP 1.6J
+
+Lähde: Zaptec Charger AS, Zaptec Pro -tuotelehti 22.2.2023 (Scanoffice), luettu 9.11.2026
+
+Easee
+Charge Pro
+AC-latausasema suuriin latausverkostoihin
+Teho
+enintään 22 kW
+
+Kuormanhallinta
+paikallinen, myös vaiheet
+
+Mittari
+MID, luokka B
+
+Rajapinta
+OCPP 1.6J
+
+Lähde: Easee, Charge Pro -datalehti 10/2025, versio 1.03 (Scanoffice), luettu 9.11.2026
+
+EP Energy
+EPCP-DC120–360
+DC-pikalaturi kahdella CCS2-liittimellä
+Teho
+120–360 kW
+
+Liittimet
+2 × CCS2
+
+Jännite
+200–1 000 V DC
+
+Käyttölämpötila
+−30…+55 °C
+
+Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
+
+Ralos
+RLS-585
+Kaksipuolinen aurinkopaneeli, HJT-kennot
+Teho
+585 W
+
+Hyötysuhde
+22,4 %
+
+Kaksipuolisuus
+90 %
+
+Koko
+2,38 × 1,10 m
+
+Lähde: Ralos Oy, esite RLS-585, 6/2023
+
+Ralos
+RLS-480
+Täysmusta kaksipuolinen aurinkopaneeli, HJT-kennot
+Teho
+480 W
+
+Hyötysuhde
+22,3 %
+
+Kaksipuolisuus
+90 %
+
+Koko
+1,96 × 1,10 m
+
+Lähde: Ralos Oy, esite RLS-480, 6/2023
+
+HT-SAAE
+HT72-18X(ND)-F
+Kaksipuolinen kaksilasinen paneeli, TOPCon-kennot
+Teho
+585–605 W
+
+Hyötysuhde
+enintään 23,4 %
+
+Kaksipuolisuus
+80 %
+
+Koko
+2,28 × 1,13 m
+
+Lähde: HT-SAAE, datalehti HT72-18X(ND)-F (Scanoffice), luettu 9.11.2026
+
+HT-SAAE
+HT54 / HT60-18X(ND)-F
+Täysmusta kaksilasinen paneeli, TOPCon-kennot
+Teho
+440–505 W
+
+Hyötysuhde
+enintään 23,3 %
+
+Kaksipuolisuus
+80 %
+
+Koko
+1,76 tai 1,91 × 1,13 m
+
+Lähde: HT-SAAE, esitteet HT54- ja HT60-18X(ND)-F (Scanoffice), luettu 9.11.2026
+
+HD Hyundai
+HiT-H LE-FB
+Täysmusta HJT-aurinkopaneeli
+Teho
+440–460 W
+
+Hyötysuhde
+enintään 23,0 %
+
+Takuu
+30 vuotta, myös teho
+
+Koko
+1,76 × 1,13 m
+
+Lähde: HD Hyundai Energy Solutions, HJT-paneelien datalehti (Scanoffice), luettu 9.11.2026
+
+Roofit.Solar
+Velario Slim
+Aurinkokatto konesaumakattoon, Suomessa toimittaa Gare Energy Oy
+Teho
+180 W / moduuli
+
+Hyötysuhde
+19,1 %
+
+Paloluokka
+BROOF(t2)
+
+Kattokaltevuus
+vähintään 10°
+
+Lähde: Roofit.Solar, Velario Slim -datalehti 2026-02 V1, luettu 9.11.2026
+
+APsystems
+QT2
+Kolmivaiheinen mikroinvertteri neljälle paneelille
+AC-teho
+2 000 VA
+
+Hyötysuhde
+97 %
+
+Kotelointi
+IP67
+
+Käyttölämpötila
+−40…+65 °C
+
+Lähde: APsystems, QT2-datalehti, versio 1.0, 7.10.2023 (Scanoffice), luettu 9.11.2026
+
+Sofar Solar
+KTL-X, KTL-G2 ja KTL
+Kolmivaiheiset verkkoinvertterit
+Teho
+3,3–70 kW
+
+Hyötysuhde
+enintään 98,6 %
+
+MPPT
+2 tai 3
+
+Kotelointi
+IP65
+
+Lähde: Sofar Solar, invertterien datalehti (Scanoffice), luettu 9.11.2026
+
+Mitsubishi Electric
+CAHV-Z450
+Ilma-vesilämpöpumppu kiinteistöihin, R290
+Lämmitysteho
+40 kW
+
+Menovesi
+75 °C vielä −15 °C:ssa
+
+Kylmäaine
+R290
+
+Kytkentä
+useita yksiköitä rinnan
+
+Lähde: Mitsubishi Electric, CAHV-Z450-esite (Scanoffice), luettu 9.11.2026
+
+Mitsubishi Electric
+CAHV-R450
+Ilma-vesilämpöpumppu kiinteistöihin, R454C
+Lämmitysteho
+40 kW (6,7–43 kW)
+
+Menovesi
+70 °C vielä −20 °C:ssa
+
+Kylmäaine
+R454C
+
+Ohjaus
+Modbus tai BACnet
+
+Lähde: Mitsubishi Electric, CAHV-R450-esite (Scanoffice), luettu 9.11.2026
+
+Mitsubishi Electric
+Large Hydrobox E
+Ilma-vesilämpöpumppu suurempiin kiinteistöihin
+Lämmitysteho
+23 kW (11,4–28 kW)
+
+SCOP, 35 °C
+4,25
+
+Lämmitys
+−28 °C:een asti
+
+Jäähdytys
+20 kW
+
+Lähde: Mitsubishi Electric, Large Hydrobox E -esite (Scanoffice), luettu 9.11.2026
+
+Mitsubishi Electric
+P-sarja
+Ilmalämpöpumput suuriin tiloihin: PCA, PKA, PLA ja PEAD
+Lämmitysteho
+nimellinen 8–27 kW
+
+SCOP
+enintään 4,8
+
+Kylmäaine
+R32
+
+Järjestelmät
+myös Twin ja Triple
+
+Lähde: Mitsubishi Electric, P-sarjan ilmalämpöpumput -esite (Scanoffice), luettu 9.11.2026
+
+Mitsubishi Electric
+WDH
+Kiertoilmakoje halleihin ja teollisuustiloihin
+Lämmitysteho
+nimellinen 8–27 kW
+
+Kytkentä
+1–3 laitetta ulkoyksikköön
+
+Jäähdytys
+7,1–27 kW
+
+Lähde: Mitsubishi Electric, WDH-esite (Scanoffice), luettu 9.11.2026
+
+Mitsubishi Electric
+IDH125-D / IDH250-D
+Kiertoilmakoje suuriin halleihin
+Lämmitysteho
+nimellinen 14–27 kW
+
+Ilmavirta
+2 750–4 100 m³/h
+
+Kylmäaine
+R410A tai R32
+
+Lähde: Mitsubishi Electric, IDH-esite (Scanoffice), luettu 9.11.2026
+
+Mitsubishi Electric
+PAC-IF013B-E
+Tuloilmalämpöpumppu ilmanvaihtokoneeseen
+Lämmitysteho
+nimellinen 4,1–27 kW
+
+Lämmitys
+−28 °C:een asti
+
+Kylmäaine
+R32
+
+Lähde: Mitsubishi Electric, PAC-IF013-esite (Scanoffice), luettu 9.11.2026
+
+Mitsubishi Electric
+Ecodan E
+Ilma-vesilämpöpumppu
+Menovesi
+enintään 70 °C
+
+Lämmitys
+−30 °C:een asti
+
+Kylmäaine
+R32
+
+Lähde: Mitsubishi Electric, Ecodan E -esite (Scanoffice), luettu 9.11.2026
+
+Mitsubishi Electric
+Geodan
+Maalämpöpumppu
+Lämmitysteho
+1,5–11 kW
+
+SCOP, 35 °C
+5,86 kylmässä ilmastossa
+
+Energialuokka
+A+++
+
+Kylmäaine
+R32
+
+Lähde: Mitsubishi Electric, Geodan-esite (Scanoffice), luettu 9.11.2026
+
+Muut mallit ja ratkaisut
+Tiedot valmistajien tuotesivuilta ja tiedotteista.
+
+Malli · Tyyppi · Päätiedot · Lähde
+ECO-E261LP-2AElecnova · Nestejäähdytetty ulkokaappi · 125 kW, 261 kWh · Elecnova, tuotesivu ECO-E261LP-2A, luettu 9.11.2026
+ECO-E241WP-2AElecnova · Ilmajäähdytteinen ulkokaappi · 125 kW, 241 kWh · Elecnova, tuotesivu ECO-E241WP-2A, luettu 9.11.2026
+ECO-E233LSElecnova · Nestejäähdytetty ulkokaappi · 100 kW, 233 kWh · Elecnova, tuotesivu ECO-E233LS, luettu 9.11.2026
+ECO-E215WSElecnova · Ilmajäähdytteinen ulkokaappi · 100 kW, 215 kWh · Elecnova, tuotesivu ECO-E215WS, luettu 9.11.2026
+ECO-B418LP-2NElecnova · Nestejäähdytetty akustokaappi, tehoelektroniikka erikseen · 418 kWh · Elecnova, tuotesivu ECO-B418LP-2N, luettu 9.11.2026
+ECO-B372LSElecnova · Nestejäähdytetty akustokaappi, tehoelektroniikka erikseen · 372 kWh · Elecnova, tuotesivu ECO-B372LS, luettu 9.11.2026
+ECO-B20FT5015LP-2Elecnova · Nestejäähdytetty 20 jalan akustokontti · 5 015 kWh · Elecnova, tuotesivu ECO-B20FT5015LP-2, luettu 9.11.2026
+ECO-B20FT3404WSElecnova · Ilmajäähdytteinen 20 jalan akustokontti · 3 404 kWh · Elecnova, tuotesivu ECO-B20FT3404WS, luettu 9.11.2026
+ECO-EPS-C125Elecnova · EPS-kaappi varavoimaan · 1, 3 tai 6 × 125 kW, siirto enintään 20 s · Elecnova, tuotesivu ECO-EPS-C125, luettu 9.11.2026
+PCS, BMS ja EMSElecnova · Tehoelektroniikka, akunhallinta ja energianhallinta · komponentit kokonaisuuden osiksi · Elecnova, tuotesivut PCS, BMS ja EMS, luettu 9.11.2026
+OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · tuotanto, varasto, työkoneiden ja autojen lataus sekä hukkalämmön talteenotto, kokoonpano kohteen mukaan · Avant Tecno, tiedote OptiGrid™-mikroverkosta 1.7.2025, luettu 9.11.2026
+
+Tekniset tiedot ovat valmistajien datalehdiltä, esitteistä ja tuotesivuilta. Valmistaja ja malli valitaan kohteenne kulutuksen, liittymän ja tilan mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla. Kotitalouksien latausasemat, akut ja ilmalämpöpumput saatte samoilta kumppaneilta pyynnöstä.
 
 Näin kokoamme tarjouksen.
 
@@ -1584,30 +2481,6 @@ Projektinjohto SAMAlta
 Tarjouksen hinta on vertailtu useamman valmistajan kesken ennen kuin näette sen.
 
 Pyydä maksuton kartoitus
-
-Latausasema: varasto ottaa huipun.
-
-Pikalaturi tarvitsee suuren tehon lyhyeksi ajaksi. Kun liittymän koko rajoittaa latausta, paikallinen varasto antaa huipputehon ja latautuu tasaisesti liittymästä ja aurinkosähköstä. Näin lataustehoa voi kasvattaa, vaikka liittymää ei kasvatettaisi samassa suhteessa.
-
-Liittymä lataa varastoa tasaisesti.
-
-Varasto antaa latauksen huipputehon, kun auto kytketään.
-
-Aurinkokatos tuottaa päivällä sähköä varastoon ja latureihin.
-
-Pikalaturit mitoitetaan kohteen liikenteen mukaan.
-
-Ohjaus ennustaa kulutuksen, tuotannon ja hinnan ja ajoittaa lataukset.
-
-Mikroverkko latausasemalle
-Latausasemille, varikoille, huoltoasemille ja logistiikkakeskuksille: varasto, integroitu pikalataus ja ohjaus, joka ennustaa kulutuksen, tuotannon ja hinnan.
-
-Akulla varustettu pikalaturi
-DC-pikalaturi ottaa verkosta vähemmän tehoa kuin antaa autoon. Erotuksen antaa sisäänrakennettu akku.
-
-Aurinkokatos
-Katos suojaa autoja ja tuottaa sähköä varastoon ja latureihin. Voimalan koko mitoitetaan kohteen kulutuksen ja tilan mukaan. Asennusta johtaa asennuspäällikkömme, ja sähkötyöt tekee rekisteröity sähköurakoitsijakumppanimme.
-Näin asennus etenee
 
 Kysyttyä valikoimasta.
 
@@ -1639,59 +2512,76 @@ Pyydä maksuton kartoitus
 
 Etusivu›Meistä
 
-Perustimme yrityksen, jonka olisimme itse halunneet palkata.
+Yhteinen verkko, itsenäinen energia.
 
-SAMA Energia on teollisten energiavarastojen ja aurinkosähkön kokonaistoimittaja yrityksille: kartoitamme, suunnittelemme, hankimme, asennamme ja ylläpidämme mittarin takaiset järjestelmät (energiavarasto, aurinkosähkö ja ohjaus) ja viemme ne aggregaattorin kautta reservimarkkinoille. Työmme alkaa laskelmasta, ei tarjouksesta.
+SAMA Energia suunnittelee ja toteuttaa yrityksille sähköliittymän taakse rakennettavat energiajärjestelmät: energiavaraston, aurinkosähkön, latauksen ja ohjauksen. Valitsemme laitteet useammalta valmistajalta, liitämme järjestelmän aggregaattorin kautta reservimarkkinoille ja kannamme projektista yhden vastuun. Palvelemme Suomea ja Viroa.
 
 EPCkartoitus, suunnittelu, hankinta, asennus ja liittäminen yhden vastuunkantajan käsissä
 
 FI + EEyksi tiimi kahdella markkinalla, Fingridin ja Eleringin säännöissä, molemmilla kielillä
 
-Miksi perustimme SAMAn.
+2 arkipäivääkirjallinen arvio tietojen saamisesta, maksutta ja ilman sitoumuksia
 
-Markkina muuttui nopeammin kuin tarjoukset. Me halusimme yrityksen, joka antaa asiakkaalle kartan, ei vain laitetta.
+Miksi SAMA on olemassa.
 
-Markkina muuttui. Fingrid hankkii reserviä joka tunnille ja arvioi tarvitsevansa vuoteen 2030 mennessä noin 1 200 MW lisää; energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli helmikuussa 2025 jo 29 %, ja Etelä-Suomessa Fingrid rajoittaa suurten varastojen liityntöjä vuoteen 2029. Jokainen näistä muuttaa sitä, mitä yksi liittymä on arvoltaan.
+Tunnemme markkinan ja kokoamme ratkaisun asiakkaan tarpeen mukaan. Tavoitteemme on olla yritysten kokonaisvaltainen kumppani energiamarkkinalla.
+
+Yhteinen verkko. Jaamme saman sähköverkon ja saman taajuuden. Kun yrityksen liittymä joustaa silloin, kun verkko sitä tarvitsee, se tukee koko järjestelmää, ja reservimarkkinat maksavat tästä joustosta. Itsenäisyys syntyy osallistumisesta: oma tuotanto, oma varasto ja oma päätösvalta yhteisen verkon sisällä. Yhteinen verkko -kartta näyttää, miten Suomen ja Viron verkot, kulutus ja varastot kehittyvät.
+
+Markkina muuttuu. Fingrid hankkii reserviä joka tunnille ja arvioi tarvitsevansa vuoteen 2030 mennessä noin 1 200 MW lisää; energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli helmikuussa 2025 jo 29 %, ja Etelä-Suomessa Fingrid rajoittaa suurten varastojen liityntöjä vuoteen 2029. Jokainen näistä muuttaa sitä, mitä yksi liittymä on arvoltaan.
 
 Lähteet: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025; Fingrid, Energiavarastot reservimarkkinoilla · 10.2.2025; Fingrid, tiedote · 24.9.2025. Tarkemmin Reservimarkkinat-sivulla.
 
-Tarjoukset pysyivät samoina. Yritykset saivat laitelistan ja yhden takaisinmaksuluvun ilman lähdettä, skenaariota ja verkkoyhtiön kantaa. Meitä kiinnosti toinen kysymys: mitä teidän liittymänne oikeasti pystyy tuottamaan ja mikä siihen vaikuttaa.
+Tieto ensin, päätös teidän. Hyvin perillä oleva asiakas tekee itselleen parhaat päätökset. Siksi jokaisella luvulla on lähde ja päivä, vaihtoehdot näkyvät rinnakkain samoilla luvuilla ja päätös on teidän.
 
-Mitä tavoittelemme. Että yrityksen oma liittymä on tuottava omaisuuserä eikä pelkkä kuluerä. Että päätös siitä tehdään omista luvuista, ei myyjän lupauksesta.
+Mitä tavoittelemme. Että yrityksen oma liittymä on tuottava omaisuuserä eikä pelkkä kuluerä. Että päätös siitä tehdään omista luvuista.
 
-Mistä aloitamme. Kohteista, joissa liittymä on suuri ja kulutus vaihtelee: siellä arvio on selkein. Sen jälkeen siirrymme suurempiin kokonaisuuksiin yhdessä niiden kanssa, jotka tuntevat markkinan ja oman alueensa vahvuudet. Teemme sen läpinäkyvästi ja asiakkaan kielellä: tieto ymmärrettäväksi, luvut lähteineen, päätös teidän.
+Miten toimimme.
 
-Meidän tiimimme.
+Kuusi käytäntöä, jotka pätevät jokaisessa projektissa ensimmäisestä yhteydenotosta käyttöönottoon.
 
-Jokaisessa vaiheessa on nimetty vastuuhenkilö, ja saatte heihin suoran yhteyden. Alla olevat numerot ovat heidän omiaan, eivät vaihteen.
+Kirjallinen arvio kahdessa arkipäivässä
+Maksuton kartoitus päättyy kirjalliseen arvioon kahden arkipäivän kuluessa tietojen saamisesta. Se kertoo, kannattaako järjestelmä kohteessanne, minkä kokoinen sen pitäisi olla ja mistä tuotto koostuu.
 
-MM
+Jokainen luku lähteineen
+Hinnat, tuotot ja tekniset arvot ovat arviossa lähteineen ja päivämäärineen. Reservituotto mallinnetaan toteutuneista tuntihinnoista, ja tulevat vuodet näytetään vaihteluvälinä.
+
+Valmistajista riippumaton
+Valitsemme laitteet useammalta valmistajalta kohteen mukaan ja vertaamme ne samoilla luvuilla. Jokainen energiavarasto käy läpi julkiset laitevaatimuksemme.
+
+Aggregaattori kohteen mukaan
+Valitsemme aggregaattorin kohteenne mukaan Fingridin hyväksymistä reservitoimittajista ja rakennamme liitännän. Aggregaattori ohjaa varastoa reservimarkkinoilla.
+
+Yksi vastuu, yksi yhteyshenkilö
+Projektinjohto on meillä: toimitus, asennus, verkkoyhtiön ilmoitukset ja aggregaattorisopimus. Asennusta johtaa asennuspäällikkömme, ja sähkötyöt tekee rekisteröity sähköurakoitsijakumppanimme.
+
+Kaksi markkinaa, neljä kieltä
+Suomessa Fingridin ja Virossa Eleringin säännöin. Arvio, luvat ja sopimukset suomeksi, viroksi, englanniksi tai ruotsiksi.
+
+Kuka vastaa mistäkin.
+
+Jokaisella projektin vaiheella on nimetty vastuuhenkilö, ja saatte heihin suoran yhteyden. Numerot ovat heidän omiaan, eivät vaihteen.
+
 Madis Maastik
 Myyntijohtaja
-
-Uusiutuvan energian myynnissä vuodesta 2014, ensin Australiassa, sitten Suomessa ja Virossa: aurinkosähköratkaisut kodeille ja yrityksille, viime vuosina teolliset energiavarastot, energianhallinta ja reservimarkkinat. Vastaa asiakassuhteista, aggregaattorikumppanuuksista ja arviosta. Hänen kauttaan kulkee kaikki yhteydenpito ennen allekirjoitusta.
-Lue lisää
-Näkee mittarin takaiset järjestelmät ja hajautetun verkon turvallisuus- ja talouskysymyksenä: arvoketju enemmän omiin käsiin, innovatiivisesti ja tasapainoisesti. Laaja myyntitausta erilaisista uusiutuvan energian hankkeista ja eri aurinkojärjestelmien tuntemus; viimeiset pari kolme vuotta yhä syvemmin energian varastoinnissa ja ohjauksessa. Näkee siinä suuren mahdollisuuden ja suuren tulevaisuuden.
-
+Vastaa kartoituksesta ja kirjallisesta arviosta, asiakassuhteista ja aggregaattorikumppanuuksista. Kaikki yhteydenpito ennen allekirjoitusta kulkee hänen kauttaan.
+Tausta: uusiutuvan energian myynnissä vuodesta 2014, ensin Australiassa, sitten Suomessa ja Virossa: aurinkosähkö kodeille ja yrityksille, viime vuosina teolliset energiavarastot, energianhallinta ja reservimarkkinat.
 madis.maastik@samaenergia.fi
 +358 44 965 4614
 
-MR
 Martin Rautio
 Toimitusjohtaja
-
-Vastaa: yhtiön suunta, toiminnan suunnittelu ja toimitusten läpivienti; kumppanuudet, sopimukset ja rahoitusjärjestelyt. Huolehtii siitä, että jokainen hanke etenee sovitussa järjestyksessä.
+Vastaa yhtiön suunnasta ja toiminnan suunnittelusta, kumppanuuksista, sopimuksista ja rahoitusjärjestelyistä sekä siitä, että jokainen toimitus etenee sovitussa järjestyksessä.
 martin.rautio@samaenergia.fi
 +358 40 701 9099
 
-VP
 Viljar Petersell
 Asennuspäällikkö
-
-Peltikattojen ja aurinkojärjestelmien mestari. Yli kuusi vuotta aurinkojärjestelmien rakentamista yritys- ja yksityiskohteissa (katolle, maahan ja kattoon integroituna) sekä tausta hienotöissä, joissa tarkkuus ratkaisee. Vastaa asennuksen toteutuksesta ja laadusta: asennus toimii ja jättää kiinteistölle myös esteettisen arvon.
+Vastaa asennuksen toteutuksesta ja laadusta kohteella: asennus toimii ja jättää kiinteistölle myös esteettisen arvon.
+Tausta: peltikatot ja aurinkojärjestelmät; yli kuusi vuotta aurinkojärjestelmien rakentamista yritys- ja yksityiskohteissa katolle, maahan ja kattoon integroituna.
 +358 40 635 3245
 
-Kasvamme. Jos teillä on myynti- tai asennustausta ja kiinnostus energiamarkkinaan, kirjoittakaa info@samaenergia.fi.
+Rekrytoimme myynnin ja asennuksen osaajia Suomessa ja Virossa. Kirjoittakaa osoitteeseen info@samaenergia.fi.
 
 Verkosto projektinne takana.
 
@@ -1726,6 +2616,8 @@ SAMAasennuspäällikkö johtaa työmaata
 Reservimarkkinat
 Aggregaattorivalitaan kohteen mukaan Fingridin hyväksymistä reservitoimittajista
 
+Koko valikoima kuvin ja datalehden tiedoin
+
 Rahoitus. Leasingrahoitus on mahdollista järjestää yritysrahoittajien kautta. Rahoittaja ja ehdot valitaan kohteen ja ostajan mukaan, ja oman pääoman ja leasingin vertailu on arviossa samoilla luvuilla.
 
 Yritys paperilla.
@@ -1736,7 +2628,7 @@ Yritys
 SAMA Energia OyY-tunnus 3647683-6 · ALV-tunnus FI36476836
 
 Kotipaikka
-HelsinkiPalvelemme Suomea ja Viroa
+HelsinkiSörnäisten Rantatie 33 C, 00500 Helsinki · palvelemme Suomea ja Viroa
 
 Kantaverkkoyhtiöt
 Fingrid ja EleringMolempien reservimarkkinat, aggregaattorin kautta
@@ -2214,26 +3106,20 @@ Jos kulutustiedot tai tarjous ovat käsillä, lähettäkää ne heti osoitteesee
 
 Yhteystiedot
 
-MM
 Madis Maastik
 Myyntijohtaja
-
 Kartoitus, aggregaattorit, asiakassuhteet
 madis.maastik@samaenergia.fi
 +358 44 965 4614
 
-MR
 Martin Rautio
 Toimitusjohtaja
-
 Suunta, kumppanuudet, sopimukset ja rahoitus
 martin.rautio@samaenergia.fi
 +358 40 701 9099
 
-VP
 Viljar Petersell
 Asennuspäällikkö
-
 Asennus, kohde, toteutus ja laatu
 +358 40 635 3245
 
@@ -2559,13 +3445,14 @@ Reserviturg
 Allikad: Soleron Energy, avaleht (loetud 9.11.2026); Soleron Energy, Soleron Energy sagedusreservide turul, 10.9.2025; Elektriala, 7.11.2025.
 Partnerite lehelsoleronenergy.ee
 
-Meie meeskond.
+Vastutajad nimeliselt.
+Igal projekti etapil on nimeline vastutaja ja numbrid on nende enda omad.
 SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · registrikood (Y-tunnus) 3647683-6
 Meist
 
-MRMartin Rautiotegevjuht
-VPViljar Petersellpaigaldusjuht
-MMMadis Maastikmüügijuht
+Madis MaastikmüügijuhtHinnang, kliendisuhe ja agregaator+358 44 965 4614
+Martin RautiotegevjuhtLepingud, partnerlused ja tarned+358 40 701 9099
+Viljar PetersellpaigaldusjuhtPaigalduse teostus ja kvaliteet objektil+358 40 635 3245
 
 Rasked küsimused, otsesed vastused.
 
@@ -2649,11 +3536,11 @@ Päike + salvestikeskpäevane ülejääk õhtusse, tipud maha ja sama salvesti E
 
 Iga katuskivi, plekk, profiilplekk, lamekatus, katusesse integreeritud või maapaigaldus
 
-Paneelid ja salvestid.
+Paneelid, inverterid ja salvestid.
 
-Päikesepaneelid ja päikeseelektriga koos töötavad salvestid kolmelt tootjalt: Ralos, Elecnova ja EP Energy.
+Päikesepaneelid, inverterid ja päikeseelektriga koos töötavad salvestid: Ralos, HT-SAAE, HD Hyundai, APsystems, Sofar Solar, Elecnova ja EP Energy. HT-SAAE, HD Hyundai, APsystemsi ja Sofar Solari seadmed tulevad Scanoffice Oy kaudu.
 
-Kõik 5Päikesepaneelid 2Päike ja salvesti 3
+Kõik 10Päikesepaneelid 5Inverterid 2Päike ja salvesti 3
 Ralos
 RLS-585
 Kahepoolne päikesepaneel, HJT-elemendid
@@ -2687,6 +3574,91 @@ Mõõdud
 1,96 × 1,10 m
 
 Allikas: Ralos Oy, brošüür RLS-480, 6/2023
+
+HT-SAAE
+HT72-18X(ND)-F
+Kahepoolne kaheklaasiline paneel, TOPCon-elemendid
+Võimsus
+585–605 W
+
+Kasutegur
+kuni 23,4 %
+
+Kahepoolsus
+80 %
+
+Mõõdud
+2,28 × 1,13 m
+
+Allikas: HT-SAAE, andmeleht HT72-18X(ND)-F (Scanoffice), loetud 9.11.2026
+
+HT-SAAE
+HT54 / HT60-18X(ND)-F
+Täismust kaheklaasiline paneel, TOPCon-elemendid
+Võimsus
+440–505 W
+
+Kasutegur
+kuni 23,3 %
+
+Kahepoolsus
+80 %
+
+Mõõdud
+1,76 või 1,91 × 1,13 m
+
+Allikas: HT-SAAE, brošüürid HT54- ja HT60-18X(ND)-F (Scanoffice), loetud 9.11.2026
+
+HD Hyundai
+HiT-H LE-FB
+Täismust HJT-päikesepaneel
+Võimsus
+440–460 W
+
+Kasutegur
+kuni 23,0 %
+
+Garantii
+30 aastat, ka võimsus
+
+Mõõdud
+1,76 × 1,13 m
+
+Allikas: HD Hyundai Energy Solutions, HJT-paneelide andmeleht (Scanoffice), loetud 9.11.2026
+
+APsystems
+QT2
+Kolmefaasiline mikroinverter neljale paneelile
+AC-võimsus
+2 000 VA
+
+Kasutegur
+97 %
+
+Kaitseaste
+IP67
+
+Töötemperatuur
+−40…+65 °C
+
+Allikas: APsystems, QT2 andmeleht, versioon 1.0, 7.10.2023 (Scanoffice), loetud 9.11.2026
+
+Sofar Solar
+KTL-X, KTL-G2 ja KTL
+Kolmefaasilised võrguinverterid
+Võimsus
+3,3–70 kW
+
+Kasutegur
+kuni 98,6 %
+
+MPPT
+2 või 3
+
+Kaitseaste
+IP65
+
+Allikas: Sofar Solar, inverterite andmeleht (Scanoffice), loetud 9.11.2026
 
 Ralos
 Beast 125 HD
@@ -2856,9 +3828,9 @@ Küsi tasuta hinnangut
 
 Valik kapist konteinerini.
 
-Väliskapid, hübriidkapid, konteinerid, teisaldatavad seadmed ja STS-kapid neljalt tootjalt: Ralos, Elecnova, EP Energy ja Avant Power.
+Väliskapid, hübriidkapid, konteinerid, teisaldatavad seadmed ja varutoitekapid viielt tootjalt: Ralos, Elecnova, EP Energy, Avant Power ja ZOE Energy Storage. Laadimisjaamad on laadimise lehel.
 
-Kõik 13Väliskapid 4Hübriidkapid 2Konteinerid 2Teisaldatavad ja laadimine 4Varutoide 3
+Kõik 14Väliskapid 5Hübriidkapid 2Konteinerid 2Teisaldatavad ja laadimine 4Varutoide 3
 Ralos
 Beast 125 HD
 Vedelikjahutusega salvesti sise- või välipaigalduseks
@@ -2926,6 +3898,23 @@ Põhi
 1,45 × 1,3 m
 
 Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
+
+ZOE Energy Storage
+Z Box-C 215-2H
+Vedelikjahutusega väliskapp
+Võimsus
+105 kW
+
+Energia
+215 kWh
+
+Jahutus
+vedelik
+
+Põhi
+1,34 × 1,40 m
+
+Allikas: ZOE Energy Storage, Z Box-C 215-2H andmeleht (Scanoffice), loetud 9.11.2026
 
 EP Energy
 EPHS104 / EPHS156
@@ -3080,6 +4069,21 @@ Pinge
 
 Allikas: Elecnova, tooteleht ECO-STS-C125, loetud 9.11.2026
 
+Teised mudelid ja lahendused
+Andmed tootjate tootelehtedelt ja pressiteadetest.
+
+Mudel · Tüüp · Põhiandmed · Allikas
+ECO-E261LP-2AElecnova · Vedelikjahutusega väliskapp · 125 kW, 261 kWh · Elecnova, tooteleht ECO-E261LP-2A, loetud 9.11.2026
+ECO-E241WP-2AElecnova · Õhkjahutusega väliskapp · 125 kW, 241 kWh · Elecnova, tooteleht ECO-E241WP-2A, loetud 9.11.2026
+ECO-E233LSElecnova · Vedelikjahutusega väliskapp · 100 kW, 233 kWh · Elecnova, tooteleht ECO-E233LS, loetud 9.11.2026
+ECO-E215WSElecnova · Õhkjahutusega väliskapp · 100 kW, 215 kWh · Elecnova, tooteleht ECO-E215WS, loetud 9.11.2026
+ECO-B418LP-2NElecnova · Vedelikjahutusega akukapp, jõuelektroonika eraldi · 418 kWh · Elecnova, tooteleht ECO-B418LP-2N, loetud 9.11.2026
+ECO-B372LSElecnova · Vedelikjahutusega akukapp, jõuelektroonika eraldi · 372 kWh · Elecnova, tooteleht ECO-B372LS, loetud 9.11.2026
+ECO-B20FT5015LP-2Elecnova · Vedelikjahutusega 20-jalane akukonteiner · 5 015 kWh · Elecnova, tooteleht ECO-B20FT5015LP-2, loetud 9.11.2026
+ECO-B20FT3404WSElecnova · Õhkjahutusega 20-jalane akukonteiner · 3 404 kWh · Elecnova, tooteleht ECO-B20FT3404WS, loetud 9.11.2026
+ECO-EPS-C125Elecnova · EPS-kapp varutoiteks · 1, 3 või 6 × 125 kW, ümberlülitus kuni 20 s · Elecnova, tooteleht ECO-EPS-C125, loetud 9.11.2026
+PCS, BMS ja EMSElecnova · Jõuelektroonika, akuhaldus ja energiahaldus · komponendid terviklahenduse osadeks · Elecnova, tootelehed PCS, BMS ja EMS, loetud 9.11.2026
+
 Tehnilised andmed on tootjate andmelehtedelt ja tootelehtedelt. Varutoide hõlmab valitud ahelaid, mis kavandatakse objektikülastusel. Tootja ja mudel valitakse teie objekti tarbimise, liitumise ja ruumi järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega.
 
 Millest iga rahavoog sõltub
@@ -3201,6 +4205,223 @@ Arvestitagune süsteem: salvesti, tootmine ja juhtimine teie liitumise taga, tei
 
 Kui suur salvesti teie objektile?
 Hinnang vastab sellele kirjalikult, teie tarbimisandmetest arvutatuna.
+
+Küsi tasuta hinnangut
+
+# Elektriauto laadimine ettevõtetele · SAMA Energia — https://samaenergia.ee/laadimine/
+
+Avaleht›Laadimine
+
+Laadimine, mis mahub teie liitumisse.
+
+Kontorile mõni laadimispunkt, depoole kiirlaadijad: laadimine valitakse selle järgi, kui kaua autod seisavad ja kui palju liitumine annab. Kui liitumise võimsusest tipuks ei piisa, annab selle salvesti ning päikesekatus toodab elektrit samasse süsteemi. Laadimisjaamad on neljalt tootjalt ja võrdlus tuleb kirjalikult samade numbritega.
+
+Küsi tasuta hinnangut Laadimisjaamad
+
+22 kWAC-laadimispunkt parklasse. Koormuse juhtimine jagab liitumise võimsuse laadimispunktide vahel.
+
+360 kWDC-kiirlaadija kahe CCS2-pistikuga depoodele ja raskele tehnikale.
+
+240 kWautole akuga kiirlaadijast, kuigi võrgust võetakse 60 kW.
+
+Allikad: tootjate andmelehed, valik allpool.
+
+Laadimisjaamad neljalt tootjalt.
+
+AC-laadimisjaamad parklasse, DC-kiirlaadijad, akuga laadijad ja teisaldatavad seadmed: Zaptec, Easee, EP Energy ja Avant Power. Zapteci ja Easee laadimisjaamad tulevad Scanoffice Oy kaudu.
+
+Kõik 7AC-laadimine 3DC-kiirlaadimine 4Akuga laadijad 1Teisaldatavad 3
+Zaptec
+Zaptec Pro
+Vahelduvvoolu laadimisjaam ettevõtete ja korteriühistute parklasse
+Võimsus
+kuni 22 kW
+
+Koormuse juhtimine
+dünaamiline, ka faasid
+
+Arvesti
+MID, klass B
+
+Liides
+OCPP 1.6J
+
+Allikas: Zaptec Charger AS, Zaptec Pro tooteleht 22.2.2023 (Scanoffice), loetud 9.11.2026
+
+Easee
+Charge Pro
+Vahelduvvoolu laadimisjaam suurtele laadimisvõrkudele
+Võimsus
+kuni 22 kW
+
+Koormuse juhtimine
+kohalik, ka faasid
+
+Arvesti
+MID, klass B
+
+Liides
+OCPP 1.6J
+
+Allikas: Easee, Charge Pro andmeleht 10/2025, versioon 1.03 (Scanoffice), loetud 9.11.2026
+
+EP Energy
+EPCP-DC120–360
+DC-kiirlaadija kahe CCS2-pistikuga
+Võimsus
+120–360 kW
+
+Pistikud
+2 × CCS2
+
+Pinge
+200–1 000 V DC
+
+Töötemperatuur
+−30…+55 °C
+
+Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
+
+EP Energy
+EPCS209
+Akuga DC-kiirlaadija
+Liitumisest
+60 kW
+
+Laadimine
+kuni 240 kW
+
+Aku
+209 kWh
+
+Pistikud
+2 × CCS2
+
+Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
+
+EP Energy
+EPPS210-M
+Teisaldatav energiaseade haagisel
+Energia
+217 kWh
+
+DC-laadimine
+kuni 240 kW
+
+AC-väljund
+125 kW
+
+Kaal
+2,7 t
+
+Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
+
+EP Energy
+EPPS93-M
+Teisaldatav energiaseade
+Energia
+93 kWh
+
+DC-laadimine
+60 kW
+
+AC-väljund
+33 kVA
+
+Kaal
+1,5 t
+
+Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
+
+Avant Power
+OptiTemp® Cube 47
+Teisaldatav energiaseade ja laadimine töömasinatele
+Laadimine
+Type 2 kaabel, 9 kW, lisavarustus
+
+Energia
+47 kWh
+
+Võimsus
+11 kW
+
+Kaal
+730 kg
+
+Allikas: Avant Power, OptiTemp® Cube 47 brošüür, 6/2026, loetud 9.11.2026
+
+Teised mudelid ja lahendused
+Andmed tootjate tootelehtedelt ja pressiteadetest.
+
+Mudel · Tüüp · Põhiandmed · Allikas
+OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · tootmine, salvesti, töömasinate ja autode laadimine ning heitsoojuse kasutamine, koosseis objekti järgi · Avant Tecno, pressiteade OptiGrid™ mikrovõrgust 1.7.2025, loetud 9.11.2026
+
+Tehnilised andmed on tootjate andmelehtedelt. Laadimispunktide arv, võimsus ja koormuse juhtimine valitakse parkla, kasutuse ja liitumise järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega.
+
+Laadimisjaam: salvesti võtab tipu.
+
+Kiirlaadija vajab suurt võimsust lühikeseks ajaks. Kui liitumise suurus piirab laadimist, annab kohalik salvesti tippvõimsuse ning laeb end liitumisest ja päikeseelektrist ühtlaselt. Nii saab laadimisvõimsust kasvatada ka siis, kui liitumist samas mahus ei suurendata.
+
+Liitumine laeb salvestit ühtlaselt.
+
+Salvesti annab laadimise tippvõimsuse, kui auto ühendatakse.
+
+Päikesekatus toodab päeval elektrit salvestisse ja laadijatesse.
+
+Kiirlaadijad dimensioneeritakse objekti liikluse järgi.
+
+Juhtimine prognoosib tarbimist, tootmist ja hinda ning ajastab laadimise.
+
+Mikrovõrk laadimisjaamale
+Laadimisjaamadele, depoodele, tanklatele ja logistikakeskustele: salvesti, integreeritud kiirlaadimine ja juhtimine, mis prognoosib tarbimist, tootmist ja hinda.
+
+Akuga kiirlaadija
+DC-kiirlaadija võtab võrgust vähem võimsust, kui annab autole. Vahe tuleb sisseehitatud akust.
+
+Päikesevarikatus
+Varikatus kaitseb autosid ja toodab elektrit salvestisse ja laadijatesse. Jaama suurus arvutatakse objekti tarbimise ja ruumi järgi. Paigaldust juhib meie paigaldusjuht, elektritööd teeb registreeritud elektritööde partner.
+Nii paigaldus käib
+
+Mida laadimine vajab.
+
+Lahendus sõltub sellest, kui kaua autod seisavad, kui palju neid on ja kui palju liitumine annab. Hinnang arvutab selle teie tarbimisandmetest.
+
+Kasutus ja lahendus
+Võimsused tootjate andmelehtedelt, valik eespool.
+
+Kasutus · Lahendus
+
+Töökoht, hotell
+või korteriühistu · AC-laadimispunktid, kuni 22 kW. Koormuse juhtimine jagab liitumise võimsuse laadimispunktide vahel ja punkte saab lisada etapiti.
+
+Klientide parkla,
+kauplus või restoran · DC-kiirlaadija. Kui liitumisest tipuks ei piisa, annab vahe akuga kiirlaadija või eraldi salvesti.
+
+Depoo, logistika
+või raske tehnika · DC-kiirlaadijad 120–360 kW, salvesti ja juhtimine, mis ajastab laadimise.
+
+Ehitusplats, üritus või
+ajutine vajadus · Teisaldatav energiaseade: DC-laadimine kuni 240 kW või Type 2 väljund 9 kW.
+
+Küsimusi laadimisest.
+
+Kas liitumist tuleb suurendada?
+Mitte alati. Koormuse juhtimine jagab liitumise võimsuse laadimispunktide vahel ja kiirlaadimise tipu võib anda salvesti. Hinnang arvutab teie tarbimisandmetest, kas praegusest liitumisest piisab või tasub seda suurendada.
+
+AC või DC?
+AC-laadimisest piisab, kui auto seisab tunde: töökohas, hotellis ja korteriühistus. DC on vajalik, kui auto peab laadima kiiresti või sõiduk on raske: klientide parklas, depoos ja logistikas.
+
+Kas laadimise eest saab kasutajatelt arve esitada?
+Saab. Valiku AC-laadimisjaamades on MID-arvesti (klass B), mille näitu saab kasutada arveldamiseks. OCPP-liides ühendab laadimisjaama teie valitud laadimisteenusega.
+
+Kes paigaldab ja hooldab?
+Paigaldust juhib meie paigaldusjuht, elektritööd ja kasutuselevõtu teeb registreeritud elektritööde partner. Tootja garantii kirjutatakse pakkumisse seadme kaupa ning garantii- ja hooldusküsimused käivad meie kaudu.
+
+Kas laadimise, salvesti ja päikeseelektri saab hankida koos?
+Saab ja siis valitakse need samadest tarbimisandmetest. Hinnangus on need samade numbritega ning teie otsustate, mis järjekorras need ehitatakse.
+
+Rääkige parklast ja liitumisest. Arvutame laadimise.
+Hinnang on tasuta ja võrdlus tuleb kirjalikult.
 
 Küsi tasuta hinnangut
 
@@ -3590,9 +4811,9 @@ Avaleht›Partnerid ja tooted
 
 Mitu tootjat. Üks pakkumine teie objekti järgi.
 
-Tunneme turgu: tootjaid, maaletoojaid, agregaatoreid ja hinnataset. Meil on mitu seadmetarnijat ja nende kaudu pakume energiasalvesteid teisaldatavast seadmest konteinerini, laadimisjaamade salvesteid ja mikrovõrke, päikeseelektrit ja paigaldust. Paneme pakkumise kokku teie objekti tarbimise, liitumise ja eesmärkide järgi, valime tarnijate valikust kõige sobivama seadme ja võrdleme variante samade numbritega.
+Tunneme turgu: tootjaid, maaletoojaid, agregaatoreid ja hinnataset. Meil on mitu seadmetarnijat ja nende kaudu pakume energiasalvesteid teisaldatavast seadmest konteinerini, laadimisjaamu ja mikrovõrke, päikeseelektrit, soojuspumpasid ja paigaldust. Paneme pakkumise kokku teie objekti tarbimise, liitumise ja eesmärkide järgi, valime tarnijate valikust kõige sobivama seadme ja võrdleme variante samade numbritega.
 
-Küsi tasuta hinnangut Valik vajaduse järgi
+Küsi tasuta hinnangut Kogu valik
 
 Partnerid, kellega teeme koostööd.
 
@@ -3700,33 +4921,577 @@ Reserviturg
 Kuidas agregaator töötab soleronenergy.ee
 Allikad: Soleron Energy, avaleht (loetud 9.11.2026); Soleron Energy, Soleron Energy sagedusreservide turul, 10.9.2025; Elektriala, 7.11.2025.
 
-Valik objekti vajaduse järgi.
+Kogu valik piltide ja andmetega.
 
-Lähtume sellest, mida teie objekt vajab, mitte sellest, mis laos on. Tabel näitab, millest variandid kokku pannakse. Lõpliku lahenduse arvutame hinnangus teie tarbimisandmetest. Iga mudel läbib meie seadmenõuded enne, kui see pakkumisse jõuab.
+Energiasalvestid, laadimisjaamad, päikeseelekter ja soojuspumbad meie partnerite kaudu: tootja, mudel ja põhiandmed tootja andmelehelt koos allikaga. Lõpliku lahenduse arvutame hinnangus teie tarbimisandmetest ning iga energiasalvesti läbib meie seadmenõuded enne, kui see pakkumisse jõuab.
 
-Vajadus ja lahendus
-Mudelid ja tehnilised andmed: valik energiasalvestite lehel.
+Kõik 33Energiasalvestid 14Laadimine 7Päikeseelekter 7Soojuspumbad 9Teisaldatavad 4Varutoide 3
+Ralos
+Beast 125 HD
+Vedelikjahutusega salvesti sise- või välipaigalduseks
+Võimsus
+125 kW
 
-Objekti vajadus · Lahendus
+Energia
+261 kWh
 
-Ettevõtte liitumine,
-100 kW–1 MW · Vedelikjahutusega väliskapp mitmelt tootjalt, näiteks Ralos Oy. Kappe paralleelselt objekti järgi.
+Varutoide, lisavarustus
+STS, alla 10 ms
 
-Väiksem objekt · Hübriidkapp väiksemale liitumisele.
+Päikeseelekter, lisavarustus
+2 × 63 kW
 
-Suur objekt või
-oma alajaam · Konteinersalvesti.
+Allikas: Ralos Oy, tehniline andmeleht Ralos Beast 125, versioon V10, kontrollitud 9.11.2026
 
-Laadimisjaam, depoo
-või tankla · Mikrovõrk ja kiirlaadimine või akuga DC-kiirlaadija. Päikesevarikatuse paigaldust juhib meie paigaldusjuht.
+Elecnova
+ECO-E418LP
+Vedelikjahutusega väliskapp
+Võimsus
+100 kW (400 V)
 
-Ehitusplats, üritus või
-ajutine võimsusvajadus · Teisaldatav seade.
+Energia
+418 kWh
+
+Jahutus
+vedelik
+
+Põhi
+1,5 × 1,35 m
+
+Allikas: Elecnova, tooteleht ECO-E418LP, loetud 9.11.2026
+
+Elecnova
+ECO-E101WX
+Õhkjahutusega väliskapp
+Võimsus
+100 kW
+
+Energia
+101 kWh
+
+Jahutus
+õhk
+
+Põhi
+1,25 × 1,2 m
+
+Allikas: Elecnova, tooteleht ECO-E101WX, loetud 9.11.2026
+
+EP Energy
+EPES233
+Vedelikjahutusega väliskapp
+Võimsus
+105 kW
+
+Energia
+233 kWh
+
+Jahutus
+vedelik
+
+Põhi
+1,45 × 1,3 m
+
+Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
+
+ZOE Energy Storage
+Z Box-C 215-2H
+Vedelikjahutusega väliskapp
+Võimsus
+105 kW
+
+Energia
+215 kWh
+
+Jahutus
+vedelik
+
+Põhi
+1,34 × 1,40 m
+
+Allikas: ZOE Energy Storage, Z Box-C 215-2H andmeleht (Scanoffice), loetud 9.11.2026
+
+EP Energy
+EPHS104 / EPHS156
+Hübriidkapp päikeseelektrile
+Võimsus
+50 kW
+
+Energia
+104 või 156 kWh
+
+Päikeseelekter
+kuni 100 kW
 
 Varutoide
-elektrikatkestuse ajal · Ümberlüliti (STS) saartalitlusele. Kriitilised ahelad ja saartalitlus projekteeritakse iga objekti jaoks eraldi.
+alla 10 ms
 
-Päikeseelekter · Paneelid ja inverterid objekti järgi. Paigaldust juhib meie paigaldusjuht, elektritööd teeb registreeritud elektritööde partner.
+Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
+
+Elecnova
+ECO-E64WX
+Hübriidkapp päikeseelektrile
+Võimsus
+25–50 kW
+
+Energia
+64,5 kWh
+
+Päikeseelekter
+37,5–75 kW
+
+Jahutus
+õhk
+
+Allikas: Elecnova, tooteleht ECO-E64WX, loetud 9.11.2026
+
+Elecnova
+ECO-E20FT2170LP
+20-jalane konteinersalvesti
+Võimsus
+1 000 kW
+
+Energia
+2 170 kWh
+
+Jahutus
+vedelik
+
+Kaal
+25 t
+
+Allikas: Elecnova, tooteleht ECO-E20FT2170LP, loetud 9.11.2026
+
+EP Energy
+EPES5000
+Akukonteiner suurtele objektidele
+Energia
+5 015 kWh
+
+Pinge
+1 040–1 500 V DC
+
+Jahutus
+vedelik
+
+Kaal
+44 t
+
+Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
+
+EP Energy
+EPPS93-M
+Teisaldatav energiaseade
+Energia
+93 kWh
+
+DC-laadimine
+60 kW
+
+AC-väljund
+33 kVA
+
+Kaal
+1,5 t
+
+Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
+
+EP Energy
+EPPS210-M
+Teisaldatav energiaseade haagisel
+Energia
+217 kWh
+
+DC-laadimine
+kuni 240 kW
+
+AC-väljund
+125 kW
+
+Kaal
+2,7 t
+
+Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
+
+EP Energy
+EPCS209
+Akuga DC-kiirlaadija
+Liitumisest
+60 kW
+
+Laadimine
+kuni 240 kW
+
+Aku
+209 kWh
+
+Pistikud
+2 × CCS2
+
+Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
+
+Avant Power
+OptiTemp® Cube 47
+Teisaldatav energiaseade töömasinatele
+Energia
+47 kWh
+
+Võimsus
+11 kW
+
+Kaitseaste
+IP54
+
+Kaal
+730 kg
+
+Allikas: Avant Power, OptiTemp® Cube 47 brošüür, 6/2026, loetud 9.11.2026
+
+Elecnova
+ECO-STS-C125
+STS-kapp saartalitluseks
+Salvestitele
+2, 4 või 6 × 125 kW
+
+Ümberlülitus
+20 ms
+
+Kaitseaste
+IP54
+
+Pinge
+400 V
+
+Allikas: Elecnova, tooteleht ECO-STS-C125, loetud 9.11.2026
+
+Zaptec
+Zaptec Pro
+Vahelduvvoolu laadimisjaam ettevõtete ja korteriühistute parklasse
+Võimsus
+kuni 22 kW
+
+Koormuse juhtimine
+dünaamiline, ka faasid
+
+Arvesti
+MID, klass B
+
+Liides
+OCPP 1.6J
+
+Allikas: Zaptec Charger AS, Zaptec Pro tooteleht 22.2.2023 (Scanoffice), loetud 9.11.2026
+
+Easee
+Charge Pro
+Vahelduvvoolu laadimisjaam suurtele laadimisvõrkudele
+Võimsus
+kuni 22 kW
+
+Koormuse juhtimine
+kohalik, ka faasid
+
+Arvesti
+MID, klass B
+
+Liides
+OCPP 1.6J
+
+Allikas: Easee, Charge Pro andmeleht 10/2025, versioon 1.03 (Scanoffice), loetud 9.11.2026
+
+EP Energy
+EPCP-DC120–360
+DC-kiirlaadija kahe CCS2-pistikuga
+Võimsus
+120–360 kW
+
+Pistikud
+2 × CCS2
+
+Pinge
+200–1 000 V DC
+
+Töötemperatuur
+−30…+55 °C
+
+Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
+
+Ralos
+RLS-585
+Kahepoolne päikesepaneel, HJT-elemendid
+Võimsus
+585 W
+
+Kasutegur
+22,4 %
+
+Kahepoolsus
+90 %
+
+Mõõdud
+2,38 × 1,10 m
+
+Allikas: Ralos Oy, brošüür RLS-585, 6/2023
+
+Ralos
+RLS-480
+Täismust kahepoolne päikesepaneel, HJT-elemendid
+Võimsus
+480 W
+
+Kasutegur
+22,3 %
+
+Kahepoolsus
+90 %
+
+Mõõdud
+1,96 × 1,10 m
+
+Allikas: Ralos Oy, brošüür RLS-480, 6/2023
+
+HT-SAAE
+HT72-18X(ND)-F
+Kahepoolne kaheklaasiline paneel, TOPCon-elemendid
+Võimsus
+585–605 W
+
+Kasutegur
+kuni 23,4 %
+
+Kahepoolsus
+80 %
+
+Mõõdud
+2,28 × 1,13 m
+
+Allikas: HT-SAAE, andmeleht HT72-18X(ND)-F (Scanoffice), loetud 9.11.2026
+
+HT-SAAE
+HT54 / HT60-18X(ND)-F
+Täismust kaheklaasiline paneel, TOPCon-elemendid
+Võimsus
+440–505 W
+
+Kasutegur
+kuni 23,3 %
+
+Kahepoolsus
+80 %
+
+Mõõdud
+1,76 või 1,91 × 1,13 m
+
+Allikas: HT-SAAE, brošüürid HT54- ja HT60-18X(ND)-F (Scanoffice), loetud 9.11.2026
+
+HD Hyundai
+HiT-H LE-FB
+Täismust HJT-päikesepaneel
+Võimsus
+440–460 W
+
+Kasutegur
+kuni 23,0 %
+
+Garantii
+30 aastat, ka võimsus
+
+Mõõdud
+1,76 × 1,13 m
+
+Allikas: HD Hyundai Energy Solutions, HJT-paneelide andmeleht (Scanoffice), loetud 9.11.2026
+
+APsystems
+QT2
+Kolmefaasiline mikroinverter neljale paneelile
+AC-võimsus
+2 000 VA
+
+Kasutegur
+97 %
+
+Kaitseaste
+IP67
+
+Töötemperatuur
+−40…+65 °C
+
+Allikas: APsystems, QT2 andmeleht, versioon 1.0, 7.10.2023 (Scanoffice), loetud 9.11.2026
+
+Sofar Solar
+KTL-X, KTL-G2 ja KTL
+Kolmefaasilised võrguinverterid
+Võimsus
+3,3–70 kW
+
+Kasutegur
+kuni 98,6 %
+
+MPPT
+2 või 3
+
+Kaitseaste
+IP65
+
+Allikas: Sofar Solar, inverterite andmeleht (Scanoffice), loetud 9.11.2026
+
+Mitsubishi Electric
+CAHV-Z450
+Õhk-vesi soojuspump kinnistutele, R290
+Küttevõimsus
+40 kW
+
+Pealevool
+75 °C ka −15 °C juures
+
+Külmaaine
+R290
+
+Ühendus
+mitu seadet paralleelis
+
+Allikas: Mitsubishi Electric, CAHV-Z450 brošüür (Scanoffice), loetud 9.11.2026
+
+Mitsubishi Electric
+CAHV-R450
+Õhk-vesi soojuspump kinnistutele, R454C
+Küttevõimsus
+40 kW (6,7–43 kW)
+
+Pealevool
+70 °C ka −20 °C juures
+
+Külmaaine
+R454C
+
+Juhtimine
+Modbus või BACnet
+
+Allikas: Mitsubishi Electric, CAHV-R450 brošüür (Scanoffice), loetud 9.11.2026
+
+Mitsubishi Electric
+Large Hydrobox E
+Õhk-vesi soojuspump suurematele kinnistutele
+Küttevõimsus
+23 kW (11,4–28 kW)
+
+SCOP, 35 °C
+4,25
+
+Küte
+kuni −28 °C
+
+Jahutus
+20 kW
+
+Allikas: Mitsubishi Electric, Large Hydrobox E brošüür (Scanoffice), loetud 9.11.2026
+
+Mitsubishi Electric
+P-seeria
+Õhksoojuspumbad suurtesse ruumidesse: PCA, PKA, PLA ja PEAD
+Küttevõimsus
+nimivõimsus 8–27 kW
+
+SCOP
+kuni 4,8
+
+Külmaaine
+R32
+
+Süsteemid
+ka Twin ja Triple
+
+Allikas: Mitsubishi Electric, P-seeria õhksoojuspumpade brošüür (Scanoffice), loetud 9.11.2026
+
+Mitsubishi Electric
+WDH
+Ringlusõhuseade hallidele ja tööstusruumidele
+Küttevõimsus
+nimivõimsus 8–27 kW
+
+Ühendus
+1–3 seadet välisseadmele
+
+Jahutus
+7,1–27 kW
+
+Allikas: Mitsubishi Electric, WDH brošüür (Scanoffice), loetud 9.11.2026
+
+Mitsubishi Electric
+IDH125-D / IDH250-D
+Ringlusõhuseade suurtele hallidele
+Küttevõimsus
+nimivõimsus 14–27 kW
+
+Õhuvool
+2 750–4 100 m³/h
+
+Külmaaine
+R410A või R32
+
+Allikas: Mitsubishi Electric, IDH brošüür (Scanoffice), loetud 9.11.2026
+
+Mitsubishi Electric
+PAC-IF013B-E
+Sissepuhkeõhu soojuspump ventilatsiooniseadmele
+Küttevõimsus
+nimivõimsus 4,1–27 kW
+
+Küte
+kuni −28 °C
+
+Külmaaine
+R32
+
+Allikas: Mitsubishi Electric, PAC-IF013 brošüür (Scanoffice), loetud 9.11.2026
+
+Mitsubishi Electric
+Ecodan E
+Õhk-vesi soojuspump
+Pealevool
+kuni 70 °C
+
+Küte
+kuni −30 °C
+
+Külmaaine
+R32
+
+Allikas: Mitsubishi Electric, Ecodan E brošüür (Scanoffice), loetud 9.11.2026
+
+Mitsubishi Electric
+Geodan
+Maasoojuspump
+Küttevõimsus
+1,5–11 kW
+
+SCOP, 35 °C
+5,86 külmas kliimas
+
+Energiaklass
+A+++
+
+Külmaaine
+R32
+
+Allikas: Mitsubishi Electric, Geodan brošüür (Scanoffice), loetud 9.11.2026
+
+Teised mudelid ja lahendused
+Andmed tootjate tootelehtedelt ja pressiteadetest.
+
+Mudel · Tüüp · Põhiandmed · Allikas
+ECO-E261LP-2AElecnova · Vedelikjahutusega väliskapp · 125 kW, 261 kWh · Elecnova, tooteleht ECO-E261LP-2A, loetud 9.11.2026
+ECO-E241WP-2AElecnova · Õhkjahutusega väliskapp · 125 kW, 241 kWh · Elecnova, tooteleht ECO-E241WP-2A, loetud 9.11.2026
+ECO-E233LSElecnova · Vedelikjahutusega väliskapp · 100 kW, 233 kWh · Elecnova, tooteleht ECO-E233LS, loetud 9.11.2026
+ECO-E215WSElecnova · Õhkjahutusega väliskapp · 100 kW, 215 kWh · Elecnova, tooteleht ECO-E215WS, loetud 9.11.2026
+ECO-B418LP-2NElecnova · Vedelikjahutusega akukapp, jõuelektroonika eraldi · 418 kWh · Elecnova, tooteleht ECO-B418LP-2N, loetud 9.11.2026
+ECO-B372LSElecnova · Vedelikjahutusega akukapp, jõuelektroonika eraldi · 372 kWh · Elecnova, tooteleht ECO-B372LS, loetud 9.11.2026
+ECO-B20FT5015LP-2Elecnova · Vedelikjahutusega 20-jalane akukonteiner · 5 015 kWh · Elecnova, tooteleht ECO-B20FT5015LP-2, loetud 9.11.2026
+ECO-B20FT3404WSElecnova · Õhkjahutusega 20-jalane akukonteiner · 3 404 kWh · Elecnova, tooteleht ECO-B20FT3404WS, loetud 9.11.2026
+ECO-EPS-C125Elecnova · EPS-kapp varutoiteks · 1, 3 või 6 × 125 kW, ümberlülitus kuni 20 s · Elecnova, tooteleht ECO-EPS-C125, loetud 9.11.2026
+PCS, BMS ja EMSElecnova · Jõuelektroonika, akuhaldus ja energiahaldus · komponendid terviklahenduse osadeks · Elecnova, tootelehed PCS, BMS ja EMS, loetud 9.11.2026
+OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · tootmine, salvesti, töömasinate ja autode laadimine ning heitsoojuse kasutamine, koosseis objekti järgi · Avant Tecno, pressiteade OptiGrid™ mikrovõrgust 1.7.2025, loetud 9.11.2026
+
+Tehnilised andmed on tootjate andmelehtedelt, brošüüridelt ja tootelehtedelt. Tootja ja mudel valitakse teie objekti tarbimise, liitumise ja ruumi järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega. Kodumajapidamiste laadijad, akud ja õhksoojuspumbad saate samadelt partneritelt soovi korral.
 
 Nii paneme pakkumise kokku.
 
@@ -3751,30 +5516,6 @@ Projektijuhtimine SAMA-lt
 Pakkumise hind on enne teieni jõudmist mitme tootja vahel võrreldud.
 
 Küsi tasuta hinnangut
-
-Laadimisjaam: salvesti võtab tipu.
-
-Kiirlaadija vajab suurt võimsust lühikeseks ajaks. Kui liitumise suurus piirab laadimist, annab kohalik salvesti tippvõimsuse ning laeb end liitumisest ja päikeseelektrist ühtlaselt. Nii saab laadimisvõimsust kasvatada ka siis, kui liitumist samas mahus ei suurendata.
-
-Liitumine laeb salvestit ühtlaselt.
-
-Salvesti annab laadimise tippvõimsuse, kui auto ühendatakse.
-
-Päikesekatus toodab päeval elektrit salvestisse ja laadijatesse.
-
-Kiirlaadijad dimensioneeritakse objekti liikluse järgi.
-
-Juhtimine prognoosib tarbimist, tootmist ja hinda ning ajastab laadimise.
-
-Mikrovõrk laadimisjaamale
-Laadimisjaamadele, depoodele, tanklatele ja logistikakeskustele: salvesti, integreeritud kiirlaadimine ja juhtimine, mis prognoosib tarbimist, tootmist ja hinda.
-
-Akuga kiirlaadija
-DC-kiirlaadija võtab võrgust vähem võimsust, kui annab autole. Vahe tuleb sisseehitatud akust.
-
-Päikesevarikatus
-Varikatus kaitseb autosid ja toodab elektrit salvestisse ja laadijatesse. Jaama suurus arvutatakse objekti tarbimise ja ruumi järgi. Paigaldust juhib meie paigaldusjuht, elektritööd teeb registreeritud elektritööde partner.
-Nii paigaldus käib
 
 Küsimused valiku kohta.
 
@@ -3806,59 +5547,76 @@ Küsi tasuta hinnangut
 
 Avaleht›Meist
 
-Me tegime ettevõtte, mida ise oleksime tahtnud palgata.
+Ühine võrk, iseseisev energia.
 
-SAMA Energia on tööstuslike energiasalvestite ja päikeseelektri süsteemiintegraator ettevõtetele. Teeme töö võtmed kätte: hindame, projekteerime, hangime, paigaldame ja hooldame arvestitaguseid süsteeme ning viime need agregaatori kaudu reserviturule. Meie töö algab arvutusest, mitte pakkumisest.
+SAMA Energia projekteerib ja ehitab ettevõtetele elektriliitumise taha energiasüsteeme: energiasalvesti, päikeseelektri, laadimise ja juhtimise. Valime seadmed mitmelt tootjalt, ühendame süsteemi agregaatori kaudu reservituruga ja kanname projekti eest ühte vastutust. Teenindame Eestit ja Soomet.
 
 EPChinnang, projekteerimine, hange, paigaldus ja liitumine ühe vastutaja käes
 
 EE + FIüks meeskond kahel turul, Eleringi ja Fingridi reeglites, mõlemas keeles
 
-Miks me SAMA tegime.
+2 tööpäevakirjalik hinnang pärast andmete saamist, tasuta ja kohustusteta
 
-Turg muutus kiiremini kui pakkumised. Meie tahtsime ettevõtet, mis annab kliendile kaardi, mitte ainult seadme.
+Miks SAMA on olemas.
 
-Turg muutus. Alates 2025. aasta veebruarist hoiab Eesti oma võrgu sagedust ise ja Elering ostab reserve iga päev; alates 2026 maksavad reservide eest kõik tarbijad. Alates 1.1.2026 arvestatakse elektrituruseaduse muudatuse järgi salvesti võrgutasu kalendrikuu netotarbimiselt. Iga selline muutus muudab seda, mida üks liitumine väärt on.
+Tunneme turgu ja paneme lahenduse kokku kliendi vajaduse järgi. Meie eesmärk on olla ettevõtete terviklik partner energiaturul.
+
+Ühine võrk. Jagame sama elektrivõrku ja sama sagedust. Kui ettevõtte liitumine paindub siis, kui võrk seda vajab, toetab see kogu süsteemi ning reserviturg maksab selle paindlikkuse eest. Iseseisvus sünnib osalemisest: oma tootmine, oma salvesti ja oma otsustusõigus ühise võrgu sees. Ühise võrgu kaart näitab, kuidas Eesti ja Soome võrgud, tarbimine ja salvestid arenevad.
+
+Turg muutub. Alates 2025. aasta veebruarist hoiab Eesti oma võrgu sagedust ise ja Elering ostab reserve iga päev; alates 2026 maksavad reservide eest kõik tarbijad. Alates 1.1.2026 arvestatakse elektrituruseaduse muudatuse järgi salvesti võrgutasu kalendrikuu netotarbimiselt. Iga selline muutus muudab seda, mida üks liitumine väärt on.
 
 Allikad: Elering, tasakaalustamisvõimsuse kulu · 2026; Elering, hinnakiri ja tüüptingimused · ELTS § 71 lg 10¹, salvestusperiood on kalendrikuu; Kliimaministeerium · 11.09.2024. Täpsemalt Reserviturg-lehel.
 
-Pakkumised jäid samaks. Ettevõtted said tabeli seadmetega ja ühe tasuvusaja numbri ilma allika, stsenaariumi ja võrguettevõtja seisukohata. Meid huvitas teine küsimus: mida teie liitumine tegelikult teenida saab ja mis seda mõjutab.
+Teave enne, otsus teie. Hästi informeeritud klient teeb endale parimad otsused. Seepärast on igal numbril allikas ja kuupäev, variandid on kõrvuti samade numbritega ja otsus jääb teile.
 
-Mida taotleme. Et ettevõtte oma liitumine oleks teeniv vara, mitte pelgalt kuluartikkel. Et otsus selle üle tehtaks oma numbrite, mitte müüja lubaduse pealt.
+Mida taotleme. Et ettevõtte oma liitumine oleks teeniv vara, mitte pelgalt kuluartikkel. Et otsus selle üle tehtaks oma numbrite pealt.
 
-Kust alustame. Objektidest, kus liitumine on suur ja tarbimine kõikuv: seal on hinnang kõige selgem. Seejärel liigume suuremate tervikute juurde koos nendega, kes tunnevad turgu ja oma piirkonna tugevusi. Teeme seda läbipaistvalt ja kliendi keeles: teave arusaadavaks, arvud koos allikatega, otsus teie.
+Kuidas me töötame.
 
-Meie meeskond.
+Kuus tava, mis kehtivad igas projektis esimesest kontaktist kasutuselevõtuni.
 
-Igal projektil on nimeline vastutaja igas etapis ja te saate nendega otse ühendust. Numbrid all on nende omad, mitte keskjaama omad.
+Kirjalik hinnang kahe tööpäevaga
+Tasuta hinnang lõpeb kirjaliku hinnanguga kahe tööpäeva jooksul pärast andmete saamist. See ütleb, kas süsteem tasub end teie objektil ära, kui suur see peaks olema ja millest tulu koosneb.
 
-MM
+Iga number koos allikaga
+Hinnad, tulud ja tehnilised väärtused on hinnangus koos allika ja kuupäevaga. Reservitulu modelleeritakse tegelikest tunnihindadest ja tulevikku näidatakse vahemikuna.
+
+Tootjatest sõltumatu
+Valime seadmed mitmelt tootjalt objekti järgi ja võrdleme neid samade numbritega. Iga energiasalvesti läbib meie avalikud seadmenõuded.
+
+Agregaator objekti järgi
+Valime agregaatori teie objekti järgi ja ehitame ühenduse. Agregaator juhib salvestit reserviturul.
+
+Üks vastutus, üks kontaktisik
+Projektijuhtimine on meie käes: tarne, paigaldus, võrguettevõtja taotlused ja agregaatorileping. Paigaldust juhib meie paigaldusjuht, elektritööd teeb registreeritud elektritööde partner.
+
+Kaks turgu, neli keelt
+Eestis Eleringi ja Soomes Fingridi reeglite järgi. Hinnang, load ja lepingud eesti, soome, inglise või rootsi keeles.
+
+Kes mille eest vastutab.
+
+Igal projekti etapil on nimeline vastutaja ja te saate nendega otse ühendust. Numbrid on nende enda omad, mitte keskjaama omad.
+
 Madis Maastik
 Müügijuht
-
-Taastuvenergia müügis alates 2014. aastast, algul Austraalias, seejärel Soomes ja Eestis: päikeseelektri lahendused kodudele ja ettevõtetele, viimastel aastatel tööstuslikud energiasalvestid, energiajuhtimine ja reserviturg. Vastutab kliendisuhete, agregaatoripartnerluste ja hinnangu eest. Tema kaudu käib kogu suhtlus enne allkirja.
-Loe edasi
-Näeb arvestitaguseid süsteeme ja hajutatud võrku julgeoleku ja majanduse küsimusena: väärtusahel rohkem enda kätte, innovaatiliselt ja tasakaalukalt. Lai müügitaust erinevate taastuvenergia projektidega ja eri päikesesüsteemide tundmine; viimased kaks-kolm aastat üha sügavamalt energiasalvestuses ja energia juhtimises. Näeb selles suurt võimalust ja suurt tulevikku.
-
+Vastutab hinnangu, kliendisuhete ja agregaatoripartnerluste eest. Kogu suhtlus enne allkirja käib tema kaudu.
+Taust: taastuvenergia müügis alates 2014. aastast, algul Austraalias, seejärel Soomes ja Eestis: päikeseelektri lahendused kodudele ja ettevõtetele, viimastel aastatel tööstuslikud energiasalvestid, energiajuhtimine ja reserviturg.
 madis.maastik@samaenergia.fi
 +358 44 965 4614
 
-MR
 Martin Rautio
 Tegevjuht
-
-Vastutab: ettevõtte suund, tegevuse planeerimine ja tarnete läbiviimine; partnerlused, lepingud ja finantseerimislahendused. Hoolitseb selle eest, et iga projekt liigub kokkulepitud järjekorras.
+Vastutab ettevõtte suuna ja tegevuse planeerimise, partnerluste, lepingute ja finantseerimislahenduste eest ning selle eest, et iga tarne liigub kokkulepitud järjekorras.
 martin.rautio@samaenergia.fi
 +358 40 701 9099
 
-VP
 Viljar Petersell
 Paigaldusjuht
-
-Plekk-katuste ja päikesesüsteemide meister. Üle kuue aasta päikesesüsteemide ehitamist äri- ja eraobjektidel (katusel, maal ja katusesse integreerituna) ning taust filigraansetes töödes, kus täpsus loeb. Vastutab paigalduse teostuse ja kvaliteedi eest: paigaldus töötab ja jätab kinnistule ka esteetilise väärtuse.
+Vastutab paigalduse teostuse ja kvaliteedi eest objektil: paigaldus töötab ja jätab kinnistule ka esteetilise väärtuse.
+Taust: plekk-katused ja päikesesüsteemid; üle kuue aasta päikesesüsteemide ehitamist äri- ja eraobjektidel katusele, maale ja katusesse integreerituna.
 +358 40 635 3245
 
-Kasvame. Kui teil on müügi- või paigaldustaust ja huvi energiaturu vastu, kirjutage info@samaenergia.fi.
+Värbame müügi- ja paigaldusspetsialiste Eestis ja Soomes. Kirjutage aadressil info@samaenergia.fi.
 
 Võrgustik teie projekti taga.
 
@@ -3887,6 +5645,8 @@ Paigaldus ja käikulaskmine
 Viljar Petersellpaigaldusjuht, juhib objekti
 Elektritööde partnervalitakse objekti asukoha järgi, teeb elektritööd ja käikulaskmise
 
+Kogu valik piltide ja andmelehe andmetega
+
 Rahastus. Liisingrahastus on võimalik korraldada ärirahastajate kaudu. Rahastaja ja tingimused valitakse objekti ja ostja järgi ning omakapitali ja liisingu võrdlus on hinnangus samade numbrite pealt.
 
 Ettevõte paberil.
@@ -3897,7 +5657,7 @@ Ettevõte
 SAMA Energia OySoome registrikood (Y-tunnus) 3647683-6 · KMKR-nr FI36476836
 
 Asukoht
-Helsingi, SoomeTeenindame Soomet ja Eestit
+Helsingi, SoomeSörnäisten Rantatie 33 C, 00500 Helsingi · teenindame Eestit ja Soomet
 
 Süsteemihaldurid
 Elering ja FingridMõlema reserviturg, agregaatori kaudu
@@ -4374,26 +6134,20 @@ Kui teil on tarbimisandmed või pakkumine käepärast, saatke need kohe aadressi
 
 Kontaktid
 
-MM
 Madis Maastik
 Müügijuht
-
 Hinnangud, agregaatorid, kliendisuhted
 madis.maastik@samaenergia.fi
 +358 44 965 4614
 
-MR
 Martin Rautio
 Tegevjuht
-
 Suund, partnerlused, lepingud ja rahastus
 martin.rautio@samaenergia.fi
 +358 40 701 9099
 
-VP
 Viljar Petersell
 Paigaldusjuht
-
 Paigaldus, objekt, teostus ja kvaliteet
 +358 40 635 3245
 

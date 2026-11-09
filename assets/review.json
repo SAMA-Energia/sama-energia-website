@@ -131,8 +131,37 @@
   {
    "page": "/energiavarastot/",
    "sectionId": "rev-energiavarastot-9",
-   "kind": "changed",
-   "prev": "Minkä kokoinen akku teidän kohteeseenne?Kartoitus vastaa siihen kirjallisesti, kulutustiedoistanne laskettuna.Pyydä maksuton kartoitus"
+   "kind": "new"
+  },
+  {
+   "page": "/lataus/",
+   "sectionId": "rev-lataus-1",
+   "kind": "new"
+  },
+  {
+   "page": "/lataus/",
+   "sectionId": "latausasemat",
+   "kind": "new"
+  },
+  {
+   "page": "/lataus/",
+   "sectionId": "mikroverkko",
+   "kind": "new"
+  },
+  {
+   "page": "/lataus/",
+   "sectionId": "tarve",
+   "kind": "new"
+  },
+  {
+   "page": "/lataus/",
+   "sectionId": "ukk-lataus",
+   "kind": "new"
+  },
+  {
+   "page": "/lataus/",
+   "sectionId": "rev-lataus-6",
+   "kind": "new"
   },
   {
    "page": "/reservimarkkinat/",
@@ -274,31 +303,25 @@
   },
   {
    "page": "/kumppanit/",
+   "sectionId": "rev-kumppanit-1",
+   "kind": "changed",
+   "prev": "Etusivu›Kumppanit ja tuotteet Useita valmistajia. Yksi tarjous kohteenne mukaan. Tunnemme markkinan: valmistajat, maahantuojat, aggregaattorit ja hintatason. Meillä on useita laitetoimittajia, ja niiden kautta tarjoamme energiavarastot siirrettävästä yksiköstä konttiin, latausasemien varastot ja mikroverkot, aurinkosähkön ja asennuksen. Kokoamme tarjouksen kohteenne kulutuksen, liittymän ja tavoitteiden mukaan, valitsemme toimittajien valikoimasta parhaiten sopivan laitteen ja vertaamme vaihtoehdot samoilla luvuilla. Pyydä maksuton kartoitus Valikoima tarpeen mukaan 47 kWh–5 MWhvarastokoot siirrettävästä yksiköstä 20 jalan konttiin 200–600 kWpikalatausteho latausaseman mikroverkossa Lähteet: valmistajien tuotesivut, luettu 23.10.2026. Valmistaja ja malli nimetään tarjouksessa."
+  },
+  {
+   "page": "/kumppanit/",
    "sectionId": "kumppanit",
    "kind": "new"
   },
   {
    "page": "/kumppanit/",
    "sectionId": "valikoima",
-   "kind": "changed",
-   "prev": "Valikoima kohteen tarpeen mukaan. Lähdemme liikkeelle siitä, mitä kohteenne tarvitsee, emme siitä, mitä varastossa on. Taulukko näyttää, mistä vaihtoehdot kootaan. Lopullinen kokoonpano lasketaan kartoituksessa kulutustiedoistanne. Jokainen malli käy läpi laitevaatimuksemme ennen kuin se on tarjouksessa. Tarve ja ratkaisuTekniset tiedot valmistajien tuotesivuilta ja tuotetiedotteista, luettu 23.10.2026. Valmistaja ja malli nimetään tarjouksessa. Kohteen tarveRatkaisuTeho ja energia Yrityksen liittymä,100 kW–1 MWNestejäähdytetty ulkokaappi useammalta valmistajalta, esimerkiksi Ralos Beast 125 HD (Ralos Oy). Kaappeja rinnan kohteen mukaan.125 kW / 261 kWh kaappia kohden Pienempi kohdeHybridikaappi pienempään liittymään.50 kW / 104 tai 156 kWh Suuri kohde taioma muuntamoKonttivarasto, 20 jalan kontti.1 000 kW / 2 170 kWh (400 V)noin 5 MWh 20 jalan kontissa Latausasema, varikkotai huoltoasemaMikroverkko ja pikalataus tai akulla varustettu DC-pikalaturi. Aurinkokatoksen asennusta johtaa asennuspäällikkömme.Mikroverkko: varasto 200 kW / 250 kWh tai 400 kW / 500 kWh, pikalataus 200–600 kWDC-pikalaturi: 209 kWh, autoon enintään 240 kW Työmaa, tapahtuma taitilapäinen tehontarveSiirrettävä yksikkö.11 kW / 47 kWh60 kW / 93 kWh tai 240 kW / 209 kWh VaravoimasähkökatkossaSiirtokytkin (STS) saarekekäyttöön. Varmennetut piirit ja saarekekäyttö suunnitellaan kohteittain.2–6 kaappia, vaihto 20 ms Aurinkosähkö jalämpöpumputPaneelit, invertterit ja lämpöpumput: Scanoffice Oy. Asennusta johtaa asennuspäällikkömme, sähkötyöt tekee JSM Automaatiosähkö Oy.Mitoitus kulutuksen ja katon mukaan"
-  },
-  {
-   "page": "/kumppanit/",
-   "sectionId": "kokoaminen",
    "kind": "new"
-  },
-  {
-   "page": "/kumppanit/",
-   "sectionId": "lataus",
-   "kind": "changed",
-   "prev": "Latausasema: varasto ottaa huipun. Pikalaturi tarvitsee suuren tehon lyhyeksi ajaksi. Kun liittymän koko rajoittaa latausta, paikallinen varasto antaa huipputehon ja latautuu tasaisesti liittymästä ja aurinkosähköstä. Näin lataustehoa voi kasvattaa, vaikka liittymää ei kasvatettaisi samassa suhteessa. Liittymä lataa varastoa tasaisesti. Varasto antaa latauksen huipputehon, kun auto kytketään. Aurinkokatos tuottaa päivällä sähköä varastoon ja latureihin. Pikalaturit mitoitetaan kohteen liikenteen mukaan. Ohjaus ennustaa kulutuksen, tuotannon ja hinnan ja ajoittaa lataukset. Mikroverkko latausasemalleLatausasemille, varikoille, huoltoasemille ja logistiikkakeskuksille: varasto 200 kW / 250 kWh tai 400 kW / 500 kWh, integroitu pikalataus 200–600 kW ja ohjaus, joka ennustaa kulutuksen, tuotannon ja hinnan.Lähde: valmistajan tuotesivu, luettu 23.10.2026. Akulla varustettu pikalaturiDC-pikalaturi: verkosta enintään 60 kW, autoon enintään 240 kW tai 2 × 120 kW. Erotuksen antaa 209 kWh:n akku. Kaksi CCS2-liitintä.Lähde: valmistajan tuotesivu, luettu 23.10.2026. AurinkokatosKatos suojaa autoja ja tuottaa sähköä varastoon ja latureihin. Voimalan koko mitoitetaan kohteen kulutuksen ja tilan mukaan. Asennusta johtaa asennuspäällikkömme, ja sähkötyöt tekee rekisteröity sähköurakoitsijakumppanimme.Näin asennus etenee"
   },
   {
    "page": "/kumppanit/",
    "sectionId": "ukk-kumppanit",
    "kind": "changed",
-   "prev": "Näin kokoamme tarjouksen. Vertailu on meidän työtämme. Saatte valmiin vertailun samoilla luvuilla ja perustelun sille, miksi suosittelemme juuri sitä vaihtoehtoa. 01Tarve ensinKulutus tunneittain, liittymä, tila ja tavoitteet. Kartoitus kertoo, mitä kohde tarvitsee: varaston koon, latauksen, aurinkosähkön tai varavoiman.Maksuton kartoitus 02Vaihtoehdot toimittajiltaValitsemme valikoimasta mallit, jotka sopivat kohteen tehoon, tilaan ja käyttöön, ja pyydämme ajantasaiset hinnat ja toimitusajat.Useampi valmistaja 03Vertailu samoilla luvuillaLaite, asennus, takuu, reservimarkkinakelpoisuus ja toimitusaika rinnakkain kirjallisessa arviossa.Kirjallinen arvio 04Yksi vastuu toteutuksestaToimitamme, asennamme ja liitämme järjestelmän sekä hoidamme verkkoyhtiön ilmoitukset ja aggregaattorisopimuksen. Teillä on yksi yhteyshenkilö.Projektinjohto SAMAlta Tarjouksen hinta on vertailtu useamman valmistajan kesken ennen kuin näette sen. Pyydä maksuton kartoitus Kumppanit, joiden kanssa toimimme. Kumppanit tuovat valikoiman, me tuomme kokonaisuuden: mitoituksen, vertailun, asennuksen ja liittämisen. Tuotetiedot ovat kumppaneiden omista materiaaleista, lähteineen. Energiavarastot, kontit ja mikroverkotKaappikoosta konttiin ja latausaseman mikroverkkoon. Toimimme useamman valmistajan kanssa ja valitsemme mallin kohteen tehon, energian, tilan ja käytön mukaan. Energiavarastot useammalta valmistajaltaKaapit, kontit, hybridikaapit, mikroverkot, siirrettävät yksiköt ja pikalaturitValitsemme toimittajiemme valikoimasta mallin, joka sopii kohteen tehoon, tilaan ja käyttöön. Valmistaja ja malli nimetään tarjouksessa, ja vaihtoehdot vertaillaan samoilla luvuilla. Ulkokaappi125 kW / 261 kWh · nestejäähdytysHybridikaappi50 kW / 104 tai 156 kWhKonttivarasto1 000 kW / 2 170 kWh tai noin 5 MWh · 20 jalan konttiMikroverkko200 kW / 250 kWh tai 400 kW / 500 kWh, pikalataus 200–600 kWSiirrettävä yksikkö11 kW / 47 kWh – 240 kW / 209 kWhDC-pikalaturi209 kWh:n akku, autoon enintään 240 kW Lähteet: valmistajien tuotesivut, luettu 23.10.2026. RalosSuomiRalos OyEnergiavarastot · TampereSuomalainen aurinkosähkön ja energiavarastojen toimittaja: Ralos Beast 125 HD -energiavarasto ulkoasennukseen, STS-varavoimakytkentä mukana. Ralos Beast 125 HD125 kW / 261 kWh · IP54, STS alle 10 ms Lähde: Ralos Oy, Ralos Beast 125 tekninen tiedote V10. ralos.fi Aurinkosähkö ja lämpöpumputPaneelit, invertterit ja lämpöpumput maahantuojalta. Voimalan ja aurinkokaton asennusta johtaa asennuspäällikkömme. ScanofficeSuomiScanoffice OyLaitteiden maahantuoja · EspooKotimainen puhtaan energian laitteiden maahantuoja: lämpöpumput, aurinkopaneelit, sähköautojen lataus ja ilmanvaihto.scanoffice.fi Asennus ja käyttöönottoAsennusta johtaa asennuspäällikkömme. Sähkötyöt ja käyttöönoton tekee rekisteröity sähköurakoitsijakumppanimme. SAMASuomiAsennuksen johtoAsennuspäällikkö · katto- ja sähkötyö saman johdon allaAsennuspäällikkömme johtaa työmaan: yksi aikataulu toimintanne mukaan ja yksi dokumentaatio.Näin asennus etenee JSMSuomiJSM Automaatiosähkö OySähköasennukset ja käyttöönotto · PirkanmaaSähköurakoitsija Sastamalasta, varasto Tampereella. Aurinkosähkö, akustot ja reservimarkkina-akut, lämpöpumput ja sähköautojen lataus.jsmautomaatiosahko.fi Pääsy reservimarkkinoilleAggregaattori kokoaa akut tarjoukseksi, ohjaa niitä automaattisesti ja tilittää tuoton. SuomiAggregaattori valitaan kohteen mukaanFingridin hyväksymä reservitoimittajaVertaamme reservitoimittajat kohteenne akun ja tuotteiden mukaan. Valinnan perusteet kirjataan arvioon, ja me rakennamme yhteyden valittuun aggregaattoriin.Näin valitsemme aggregaattorin SoleronViroSoleron Energy OÜAggregaattori · Eleringin reservimarkkinatVirolainen energiavarasto- ja energianhallintayhtiö: oma EMS-ohjelmisto ja aggregointi Eleringin taajuusreserveihin.soleronenergy.ee Kysyttyä valikoimasta. Miksi tarjoatte useampaa merkkiä?Koska kohteet eroavat toisistaan: liittymä, kulutus, tila ja tavoitteet. Laajan valikoiman ansiosta tarjous kootaan kohteen tarpeen mukaan. Vertailu samoilla luvuilla on kirjallisessa arviossa. Voimmeko pyytää tiettyä valmistajaa tai mallia?Voitte. Laskemme pyytämänne mallin samoilla luvuilla kuin muut vaihtoehdot, ja arviosta näkee erot. Kuka vastaa takuusta ja huollosta?Valmistajan takuu kulkee maahantuojan tai valmistajan kautta, ja ehdot kirjataan tarjoukseen laitekohtaisesti. Takuu- ja huoltoasiat hoidetaan meidän kauttamme: teillä on yksi yhteyshenkilö. Missä näkyvät hinnat?Tarjouksessa, kohteellenne laskettuina: laite, asennus, rahti ja liittäminen omilla riveillään. Sopivatko laitteet reservimarkkinoille?Reservimarkkinakelpoisuus todennetaan aggregaattorin kanssa laite- ja tuotekohtaisesti säätökokein. Arvio kertoo, mihin reservituotteisiin kohteenne järjestelmä on tarkoitus liittää. Olemme valmistaja tai maahantuoja. Miten pääsemme valikoimaan?Laitevaatimuksemme ovat julkiset. Jos laitteenne täyttää ne, kirjoittakaa osoitteeseen info@samaenergia.fi.Laitevaatimuksemme"
+   "prev": "Kumppanit, joiden kanssa toimimme. Kumppanit tuovat valikoiman, me tuomme kokonaisuuden: mitoituksen, vertailun, asennuksen ja liittämisen. Tuotetiedot ovat kumppaneiden omista materiaaleista, lähteineen. Energiavarastot, kontit ja mikroverkotKaappikoosta konttiin ja latausaseman mikroverkkoon. Toimimme useamman valmistajan kanssa ja valitsemme mallin kohteen tehon, energian, tilan ja käytön mukaan. Energiavarastot useammalta valmistajaltaKaapit, kontit, hybridikaapit, mikroverkot, siirrettävät yksiköt ja pikalaturitValitsemme toimittajiemme valikoimasta mallin, joka sopii kohteen tehoon, tilaan ja käyttöön. Valmistaja ja malli nimetään tarjouksessa, ja vaihtoehdot vertaillaan samoilla luvuilla. Ulkokaappi125 kW / 261 kWh · nestejäähdytysHybridikaappi50 kW / 104 tai 156 kWhKonttivarasto1 000 kW / 2 170 kWh tai noin 5 MWh · 20 jalan konttiMikroverkko200 kW / 250 kWh tai 400 kW / 500 kWh, pikalataus 200–600 kWSiirrettävä yksikkö11 kW / 47 kWh – 240 kW / 209 kWhDC-pikalaturi209 kWh:n akku, autoon enintään 240 kW Lähteet: valmistajien tuotesivut, luettu 23.10.2026. RalosSuomiRalos OyEnergiavarastot · TampereSuomalainen aurinkosähkön ja energiavarastojen toimittaja: Ralos Beast 125 HD -energiavarasto ulkoasennukseen, STS-varavoimakytkentä mukana. Ralos Beast 125 HD125 kW / 261 kWh · IP54, STS alle 10 ms Lähde: Ralos Oy, Ralos Beast 125 tekninen tiedote V10. ralos.fi Aurinkosähkö ja lämpöpumputPaneelit, invertterit ja lämpöpumput maahantuojalta. Voimalan ja aurinkokaton asennusta johtaa asennuspäällikkömme. ScanofficeSuomiScanoffice OyLaitteiden maahantuoja · EspooKotimainen puhtaan energian laitteiden maahantuoja: lämpöpumput, aurinkopaneelit, sähköautojen lataus ja ilmanvaihto.scanoffice.fi Asennus ja käyttöönottoAsennusta johtaa asennuspäällikkömme. Sähkötyöt ja käyttöönoton tekee rekisteröity sähköurakoitsijakumppanimme. SAMASuomiAsennuksen johtoAsennuspäällikkö · katto- ja sähkötyö saman johdon allaAsennuspäällikkömme johtaa työmaan: yksi aikataulu toimintanne mukaan ja yksi dokumentaatio.Näin asennus etenee JSMSuomiJSM Automaatiosähkö OySähköasennukset ja käyttöönotto · PirkanmaaSähköurakoitsija Sastamalasta, varasto Tampereella. Aurinkosähkö, akustot ja reservimarkkina-akut, lämpöpumput ja sähköautojen lataus.jsmautomaatiosahko.fi Pääsy reservimarkkinoilleAggregaattori kokoaa akut tarjoukseksi, ohjaa niitä automaattisesti ja tilittää tuoton. SuomiAggregaattori valitaan kohteen mukaanFingridin hyväksymä reservitoimittajaVertaamme reservitoimittajat kohteenne akun ja tuotteiden mukaan. Valinnan perusteet kirjataan arvioon, ja me rakennamme yhteyden valittuun aggregaattoriin.Näin valitsemme aggregaattorin SoleronViroSoleron Energy OÜAggregaattori · Eleringin reservimarkkinatVirolainen energiavarasto- ja energianhallintayhtiö: oma EMS-ohjelmisto ja aggregointi Eleringin taajuusreserveihin.soleronenergy.ee Kysyttyä valikoimasta. Miksi tarjoatte useampaa merkkiä?Koska kohteet eroavat toisistaan: liittymä, kulutus, tila ja tavoitteet. Laajan valikoiman ansiosta tarjous kootaan kohteen tarpeen mukaan. Vertailu samoilla luvuilla on kirjallisessa arviossa. Voimmeko pyytää tiettyä valmistajaa tai mallia?Voitte. Laskemme pyytämänne mallin samoilla luvuilla kuin muut vaihtoehdot, ja arviosta näkee erot. Kuka vastaa takuusta ja huollosta?Valmistajan takuu kulkee maahantuojan tai valmistajan kautta, ja ehdot kirjataan tarjoukseen laitekohtaisesti. Takuu- ja huoltoasiat hoidetaan meidän kauttamme: teillä on yksi yhteyshenkilö. Missä näkyvät hinnat?Tarjouksessa, kohteellenne laskettuina: laite, asennus, rahti ja liittäminen omilla riveillään. Sopivatko laitteet reservimarkkinoille?Reservimarkkinakelpoisuus todennetaan aggregaattorin kanssa laite- ja tuotekohtaisesti säätökokein. Arvio kertoo, mihin reservituotteisiin kohteenne järjestelmä on tarkoitus liittää. Olemme valmistaja tai maahantuoja. Miten pääsemme valikoimaan?Laitevaatimuksemme ovat julkiset. Jos laitteenne täyttää ne, kirjoittakaa osoitteeseen info@samaenergia.fi.Laitevaatimuksemme"
   },
   {
    "page": "/meista/",
@@ -311,6 +334,11 @@
    "sectionId": "miksi",
    "kind": "changed",
    "prev": "Miksi perustimme SAMAn. Markkina muuttui nopeammin kuin tarjoukset. Me halusimme yrityksen, joka antaa asiakkaalle kartan, ei vain laitetta. Markkina muuttui. Fingrid hankkii reserviä joka tunnille ja arvioi tarvitsevansa viiden vuoden päästä noin 1 200 MW lisää; energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli helmikuussa 2025 jo 29 %, ja Etelä-Suomeen ei tehdä uusia varastoliityntöjä ennen vuotta 2029. Jokainen näistä muuttaa sitä, mitä yksi liittymä on arvoltaan. Lähteet: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025; Fingrid, Energiavarastot reservimarkkinoilla · 10.2.2025; Fingrid, tiedote · 24.9.2025. Tarkemmin Reservimarkkinat-sivulla. Tarjoukset pysyivät samoina. Yritykset saivat laitelistan ja yhden takaisinmaksuluvun – ilman lähdettä, skenaariota ja verkkoyhtiön kantaa. Meitä kiinnosti toinen kysymys: mitä teidän liittymänne oikeasti pystyy tuottamaan ja mikä siihen vaikuttaa. Mitä tavoittelemme. Että yrityksen oma liittymä on tuottava omaisuuserä eikä pelkkä kuluerä – ja että päätös siitä tehdään omista luvuista, ei myyjän lupauksesta. Mistä aloitamme. Kohteista, joissa liittymä on suuri ja kulutus vaihtelee: siellä arvio on selkein ja takaisinmaksu usein lyhin. Sen jälkeen siirrymme suurempiin kokonaisuuksiin yhdessä niiden kanssa, jotka tuntevat markkinan ja oman alueensa vahvuudet. Teemme sen läpinäkyvästi ja asiakkaan kielellä: tieto ymmärrettäväksi, luvut lähteineen, päätös teidän."
+  },
+  {
+   "page": "/meista/",
+   "sectionId": "toimintatapa",
+   "kind": "new"
   },
   {
    "page": "/meista/",
@@ -527,6 +555,36 @@
    "prev": "Kui suur aku teie objektile?Hindamine vastab sellele kirjalikult, teie tarbimisandmetest arvutatuna.Küsi tasuta hindamist"
   },
   {
+   "page": "/laadimine/",
+   "sectionId": "rev-laadimine-1",
+   "kind": "new"
+  },
+  {
+   "page": "/laadimine/",
+   "sectionId": "laadimisjaamad",
+   "kind": "new"
+  },
+  {
+   "page": "/laadimine/",
+   "sectionId": "mikrovork",
+   "kind": "new"
+  },
+  {
+   "page": "/laadimine/",
+   "sectionId": "vajadus",
+   "kind": "new"
+  },
+  {
+   "page": "/laadimine/",
+   "sectionId": "kkk-laadimine",
+   "kind": "new"
+  },
+  {
+   "page": "/laadimine/",
+   "sectionId": "rev-laadimine-6",
+   "kind": "new"
+  },
+  {
    "page": "/reserviturg/",
    "sectionId": "rev-reserviturg-1",
    "kind": "changed",
@@ -672,29 +730,23 @@
   {
    "page": "/partnerid/",
    "sectionId": "valik",
-   "kind": "changed",
-   "prev": "Valik objekti vajaduse järgi. Lähtume sellest, mida teie objekt vajab, mitte sellest, mis laos on. Tabel näitab, millest variandid kokku pannakse. Lõpliku lahenduse arvutame hindamisel teie tarbimisandmetest. Iga mudel läbib meie seadmenõuded enne, kui see pakkumisse jõuab. Vajadus ja lahendusTehnilised andmed tootjate tootelehtedelt ja tooteteadetest, loetud 23.10.2026. Tootja ja mudel nimetatakse pakkumises. Objekti vajadusLahendusVõimsus ja energia Ettevõtte liitumine,100 kW–1 MWVedeljahutusega väliskapp mitmelt tootjalt, näiteks Ralos Beast 125 HD (Ralos Oy). Kappe paralleelselt objekti järgi.125 kW / 261 kWh kapi kohta Väiksem objektHübriidkapp väiksemale liitumisele.50 kW / 104 või 156 kWh Suur objekt võioma alajaamKonteinersalvesti, 20-jalane konteiner.1 000 kW / 2 170 kWh (400 V)umbes 5 MWh 20-jalases konteineris Laadimisjaam, depoovõi tanklaMikrovõrk ja kiirlaadimine või akuga DC-kiirlaadija. Päikesevarikatuse paigaldust juhib meie paigaldusjuht.Mikrovõrk: salvesti 200 kW / 250 kWh või 400 kW / 500 kWh, kiirlaadimine 200–600 kWDC-kiirlaadija: 209 kWh, autole kuni 240 kW Ehitusplats, üritus võiajutine võimsusvajadusTeisaldatav seade.11 kW / 47 kWh60 kW / 93 kWh või 240 kW / 209 kWh Varutoideelektrikatkestuse ajalÜmberlüliti (STS) saartalitlusele. Kriitilised ahelad ja saartalitlus projekteeritakse iga objekti jaoks eraldi.2–6 kappi, lülitusaeg 20 ms PäikeseelekterPaneelid ja inverterid objekti järgi. Paigaldust juhib meie paigaldusjuht, elektritööd teeb registreeritud elektritööde partner.Suurus tarbimise ja katuse järgi"
-  },
-  {
-   "page": "/partnerid/",
-   "sectionId": "kokkupanek",
    "kind": "new"
   },
   {
    "page": "/partnerid/",
-   "sectionId": "laadimine",
+   "sectionId": "kokkupanek",
    "kind": "changed",
-   "prev": "Laadimisjaam: salvesti võtab tipu. Kiirlaadija vajab suurt võimsust lühikeseks ajaks. Kui liitumise suurus piirab laadimist, annab kohalik salvesti tippvõimsuse ning laeb end liitumisest ja päikeseelektrist ühtlaselt. Nii saab laadimisvõimsust kasvatada ka siis, kui liitumist samas mahus ei suurendata. Liitumine laeb salvestit ühtlaselt. Salvesti annab laadimise tippvõimsuse, kui auto ühendatakse. Päikesekatus toodab päeval elektrit salvestisse ja laadijatesse. Kiirlaadijad dimensioneeritakse objekti liikluse järgi. Juhtimine prognoosib tarbimist, tootmist ja hinda ning ajastab laadimise. Mikrovõrk laadimisjaamaleLaadimisjaamadele, depoodele, tanklatele ja logistikakeskustele: salvesti 200 kW / 250 kWh või 400 kW / 500 kWh, integreeritud kiirlaadimine 200–600 kW ja juhtimine, mis prognoosib tarbimist, tootmist ja hinda.Allikas: tootja tooteleht, loetud 23.10.2026. Akuga kiirlaadijaDC-kiirlaadija: võrgust kuni 60 kW, autole kuni 240 kW või 2 × 120 kW. Vahe annab 209 kWh aku. Kaks CCS2-pistikut.Allikas: tootja tooteleht, loetud 23.10.2026. PäikesevarikatusVarikatus kaitseb autosid ja toodab elektrit salvestisse ja laadijatesse. Jaama suurus arvutatakse objekti tarbimise ja ruumi järgi. Paigaldust juhib meie paigaldusjuht, elektritööd teeb registreeritud elektritööde partner.Nii paigaldus käib"
+   "prev": "Nii paneme pakkumise kokku. Võrdlus on meie töö. Saate valmis võrdluse samade numbritega ja põhjenduse, miks soovitame just seda varianti. 01Kõigepealt vajadusTunnipõhine tarbimine, liitumine, ruum ja eesmärgid. Hindamine näitab, mida objekt vajab: salvesti suurust, laadimist, päikeseelektrit või varutoidet.Tasuta hindamine 02Variandid tarnijateltValime valikust objekti võimsusele, ruumile ja kasutusele sobivad mudelid ning küsime ajakohased hinnad ja tarneajad.Mitu tootjat 03Võrdlus samade numbritegaSeade, paigaldus, garantii, sobivus reserviturule ja tarneaeg kõrvuti kirjalikus hinnangus.Kirjalik hinnang 04Üks vastutajaTarnime, paigaldame ja ühendame süsteemi ning korraldame võrguettevõtja teavitused ja agregaatorilepingu. Teil on üks kontaktisik.Projektijuhtimine SAMA-lt Pakkumise hind on enne teieni jõudmist mitme tootja vahel võrreldud. Küsi tasuta hindamist"
   },
   {
    "page": "/partnerid/",
    "sectionId": "kkk-partnerid",
    "kind": "changed",
-   "prev": "Nii paneme pakkumise kokku. Võrdlus on meie töö. Saate valmis võrdluse samade numbritega ja põhjenduse, miks soovitame just seda varianti. 01Kõigepealt vajadusTunnipõhine tarbimine, liitumine, ruum ja eesmärgid. Hindamine näitab, mida objekt vajab: salvesti suurust, laadimist, päikeseelektrit või varutoidet.Tasuta hindamine 02Variandid tarnijateltValime valikust objekti võimsusele, ruumile ja kasutusele sobivad mudelid ning küsime ajakohased hinnad ja tarneajad.Mitu tootjat 03Võrdlus samade numbritegaSeade, paigaldus, garantii, sobivus reserviturule ja tarneaeg kõrvuti kirjalikus hinnangus.Kirjalik hinnang 04Üks vastutajaTarnime, paigaldame ja ühendame süsteemi ning korraldame võrguettevõtja teavitused ja agregaatorilepingu. Teil on üks kontaktisik.Projektijuhtimine SAMA-lt Pakkumise hind on enne teieni jõudmist mitme tootja vahel võrreldud. Küsi tasuta hindamist Partnerid, kellega teeme koostööd. Partnerid toovad valiku, meie toome terviku: dimensioneerimise, võrdluse, paigalduse ja ühendamise. Tooteandmed on partnerite enda materjalidest, koos allikatega. Energiasalvestid, konteinerid ja mikrovõrgudKapist konteinerini ja laadimisjaama mikrovõrguni. Teeme koostööd mitme tootjaga ja valime mudeli objekti võimsuse, energia, ruumi ja kasutuse järgi. Energiasalvestid mitmelt tootjaltKapid, konteinerid, hübriidkapid, mikrovõrgud, teisaldatavad seadmed ja kiirlaadijadValime tarnijate valikust mudeli, mis sobib objekti võimsuse, ruumi ja kasutusega. Tootja ja mudel nimetatakse pakkumises ning variante võrreldakse samade numbritega. Väliskapp125 kW / 261 kWh · vedeljahutusHübriidkapp50 kW / 104 või 156 kWhKonteinersalvesti1 000 kW / 2 170 kWh või umbes 5 MWh · 20-jalane konteinerMikrovõrk200 kW / 250 kWh või 400 kW / 500 kWh, kiirlaadimine 200–600 kWTeisaldatav seade11 kW / 47 kWh – 240 kW / 209 kWhDC-kiirlaadija209 kWh aku, autole kuni 240 kW Allikad: tootjate tootelehed, loetud 23.10.2026. RalosSoomeRalos OyEnergiasalvestid · TampereSoome päikeseelektri ja energiasalvestite tarnija: Ralos Beast 125 HD energiasalvesti välispaigalduseks, STS-varutoitelüliti kaasas. Ralos Beast 125 HD125 kW / 261 kWh · IP54, STS alla 10 ms Allikas: Ralos Oy, Ralos Beast 125 tehniline infoleht V10. ralos.fi Paigaldus ja käikulaskminePaigaldust juhib meie paigaldusjuht. Elektritööd ja käikulaskmise teeb registreeritud elektritööde partner. SAMAPaigalduse juhtiminePaigaldusjuht · katuse- ja elektritöö sama juhtimise allPaigaldusjuht juhib objekti: üks ajakava teie tegevuse järgi ja üks dokumentatsioon.Nii paigaldus käib Turulepääs reservituruleAgregaator koondab mitme objekti salvestid üheks pakkumiseks, juhib neid automaatselt ja maksab tulu välja. SoleronEestiSoleron Energy OÜAgregaator · Eleringi reserviturgEnergiasalvestus ja energiajuhtimine: oma EMS-tarkvara, agregeerimine Eleringi sagedusreservidesse, salvestite projekteerimine ja paigaldus.Kuidas agregaator töötab Küsimused valiku kohta. Miks pakute mitut kaubamärki?Sest objektid on erinevad: liitumine, tarbimine, ruum ja eesmärgid. Laia valiku toel paneme pakkumise kokku objekti vajaduse järgi. Võrdlus samade numbritega on kirjalikus hinnangus. Kas saame küsida kindlat tootjat või mudelit?Saate. Arvutame teie soovitud mudeli samade numbritega nagu teised variandid ja hinnangust on erinevused näha. Kes vastutab garantii ja hoolduse eest?Tootja garantii kehtib maaletooja või tootja kaudu ning tingimused kirjutatakse pakkumisse seadme kaupa. Garantii- ja hooldusküsimused käivad meie kaudu: teil on üks kontaktisik. Kus on hinnad?Pakkumises, teie objektile arvutatuna: seade, paigaldus, transport ja ühendamine eraldi ridadel. Kas seadmed sobivad reserviturule?Sobivus reserviturule kinnitatakse agregaatoriga seadme ja toote kaupa reguleerimiskatsetega. Hinnang näitab, millistele reservitoodetele teie objekti süsteem kavatsetakse ühendada. Oleme tootja või maaletooja. Kuidas pääseda valikusse?Meie seadmenõuded on avalikud. Kui teie seade vastab neile, kirjutage aadressile info@samaenergia.fi.Meie seadmenõuded"
+   "prev": "Partnerid, kellega teeme koostööd. Partnerid toovad valiku, meie toome terviku: dimensioneerimise, võrdluse, paigalduse ja ühendamise. Tooteandmed on partnerite enda materjalidest, koos allikatega. Energiasalvestid, konteinerid ja mikrovõrgudKapist konteinerini ja laadimisjaama mikrovõrguni. Teeme koostööd mitme tootjaga ja valime mudeli objekti võimsuse, energia, ruumi ja kasutuse järgi. Energiasalvestid mitmelt tootjaltKapid, konteinerid, hübriidkapid, mikrovõrgud, teisaldatavad seadmed ja kiirlaadijadValime tarnijate valikust mudeli, mis sobib objekti võimsuse, ruumi ja kasutusega. Tootja ja mudel nimetatakse pakkumises ning variante võrreldakse samade numbritega. Väliskapp125 kW / 261 kWh · vedeljahutusHübriidkapp50 kW / 104 või 156 kWhKonteinersalvesti1 000 kW / 2 170 kWh või umbes 5 MWh · 20-jalane konteinerMikrovõrk200 kW / 250 kWh või 400 kW / 500 kWh, kiirlaadimine 200–600 kWTeisaldatav seade11 kW / 47 kWh – 240 kW / 209 kWhDC-kiirlaadija209 kWh aku, autole kuni 240 kW Allikad: tootjate tootelehed, loetud 23.10.2026. RalosSoomeRalos OyEnergiasalvestid · TampereSoome päikeseelektri ja energiasalvestite tarnija: Ralos Beast 125 HD energiasalvesti välispaigalduseks, STS-varutoitelüliti kaasas. Ralos Beast 125 HD125 kW / 261 kWh · IP54, STS alla 10 ms Allikas: Ralos Oy, Ralos Beast 125 tehniline infoleht V10. ralos.fi Paigaldus ja käikulaskminePaigaldust juhib meie paigaldusjuht. Elektritööd ja käikulaskmise teeb registreeritud elektritööde partner. SAMAPaigalduse juhtiminePaigaldusjuht · katuse- ja elektritöö sama juhtimise allPaigaldusjuht juhib objekti: üks ajakava teie tegevuse järgi ja üks dokumentatsioon.Nii paigaldus käib Turulepääs reservituruleAgregaator koondab mitme objekti salvestid üheks pakkumiseks, juhib neid automaatselt ja maksab tulu välja. SoleronEestiSoleron Energy OÜAgregaator · Eleringi reserviturgEnergiasalvestus ja energiajuhtimine: oma EMS-tarkvara, agregeerimine Eleringi sagedusreservidesse, salvestite projekteerimine ja paigaldus.Kuidas agregaator töötab Küsimused valiku kohta. Miks pakute mitut kaubamärki?Sest objektid on erinevad: liitumine, tarbimine, ruum ja eesmärgid. Laia valiku toel paneme pakkumise kokku objekti vajaduse järgi. Võrdlus samade numbritega on kirjalikus hinnangus. Kas saame küsida kindlat tootjat või mudelit?Saate. Arvutame teie soovitud mudeli samade numbritega nagu teised variandid ja hinnangust on erinevused näha. Kes vastutab garantii ja hoolduse eest?Tootja garantii kehtib maaletooja või tootja kaudu ning tingimused kirjutatakse pakkumisse seadme kaupa. Garantii- ja hooldusküsimused käivad meie kaudu: teil on üks kontaktisik. Kus on hinnad?Pakkumises, teie objektile arvutatuna: seade, paigaldus, transport ja ühendamine eraldi ridadel. Kas seadmed sobivad reserviturule?Sobivus reserviturule kinnitatakse agregaatoriga seadme ja toote kaupa reguleerimiskatsetega. Hinnang näitab, millistele reservitoodetele teie objekti süsteem kavatsetakse ühendada. Oleme tootja või maaletooja. Kuidas pääseda valikusse?Meie seadmenõuded on avalikud. Kui teie seade vastab neile, kirjutage aadressile info@samaenergia.fi.Meie seadmenõuded"
   },
   {
    "page": "/partnerid/",
-   "sectionId": "rev-partnerid-7",
+   "sectionId": "rev-partnerid-6",
    "kind": "changed",
    "prev": "Rääkige meile oma objektist. Paneme variandid kokku.Hindamine on tasuta ja võrdlus tuleb kirjalikult.Küsi tasuta hindamist"
   },
@@ -709,6 +761,11 @@
    "sectionId": "miks",
    "kind": "changed",
    "prev": "Miks me SAMA tegime. Turg muutus kiiremini kui pakkumised. Meie tahtsime ettevõtet, mis annab kliendile kaardi, mitte ainult seadme. Turg muutus. Alates 2025. aasta veebruarist hoiab Eesti oma võrgu sagedust ise ja Elering ostab reserve iga päev; alates 2026 maksavad reservide eest kõik tarbijad, ja 1.1.2026 jõustunud elektrituruseaduse muudatuse järgi arvestatakse salvesti võrgutasu kalendrikuu netotarbimiselt. Iga selline muutus muudab seda, mida üks liitumine väärt on. Allikad: Elering, tasakaalustamisvõimsuse kulu · 2026; Elering, hinnakiri ja tüüptingimused · ELTS § 71 lg 10¹, salvestusperiood on kalendrikuu; Kliimaministeerium · 11.09.2024. Täpsemalt Reserviturg-lehel. Pakkumised jäid samaks. Ettevõtted said tabeli seadmetega ja ühe tasuvusaja numbri – ilma allika, stsenaariumi ja võrguettevõtja seisukohata. Meid huvitas teine küsimus: mida teie liitumine tegelikult teenida saab ja mis seda mõjutab. Mida taotleme. Et ettevõtte oma liitumine oleks teeniv vara, mitte pelgalt kuluartikkel – ja et otsus selle üle tehtaks oma numbrite, mitte müüja lubaduse pealt. Kust alustame. Objektidest, kus liitumine on suur ja tarbimine kõikuv: seal on hinnang kõige selgem ja tasuvusaeg sageli lühim. Seejärel liigume suuremate tervikute juurde koos nendega, kes tunnevad turgu ja oma piirkonna tugevusi. Teeme seda läbipaistvalt ja kliendi keeles: teave arusaadavaks, arvud koos allikatega, otsus teie."
+  },
+  {
+   "page": "/meist/",
+   "sectionId": "tooviis",
+   "kind": "new"
   },
   {
    "page": "/meist/",
@@ -736,7 +793,7 @@
   },
   {
    "page": "/meist/",
-   "sectionId": "rev-meist-7",
+   "sectionId": "rev-meist-8",
    "kind": "changed",
    "prev": "Kirjutage või helistage otse.Vastab inimene, kes ka töö teeb.Kontakt ja hindamine"
   },
