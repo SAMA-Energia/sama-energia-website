@@ -719,3 +719,22 @@ on valikoimassa useamman valmistajan kautta; "kõiki tooteid ei leidnud valikus,
 - Etusivun tiimiosio: "Vastuuhenkilöt nimeltä." / "Vastutajad nimeliselt.", vastuu ja suora numero (hyväksytyt numerot
   3.9.2026), ei nimikirjainlaatikoita (`.k-av` poistettu). Yhteystietosivun kortit samaan muotoon. Valokuvat lisätään
   kuvauksen jälkeen (`.person`-kortteihin `<img>` nimen yläpuolelle).
+
+## v58 — EP Energy piiloon, muut tuotteet valikoimaan (perustajan päätös 9.11.2026 klo 12.59, haara v51-launch)
+
+- EP Energy ei näy sivustolla toistaiseksi (tuotekortit, kumppaniprofiili, etusivun kortti, kumppanimatriisi, Meistä-ruudukko, llms.txt,
+  tuoterivikuva). Data säilyy: `PIILOTETUT_VALMISTAJAT` (scripts/tuotteet/build_tuotteet.py), `PIILOTETUT` (scripts/kumppanit/build_kumppanit.py),
+  etusivun kortit `scripts/kumppanit/piilotetut/ep-energy-{fi,et}.html`. Vartija `ep-piilossa` kaataa buildin, jos nimi tai EP-mallikoodi
+  palaa näkyviin. Palautus perustajan päätöksellä: poista vartija ja kaksi piilotuslistaa, palauta kortit, aja generaattorit.
+- Ralos: koko tuotekatalogi (ralos.fi/tuotekatalogi, luettu 9.11.2026): Mini-Beast 50 (50 kW / 102 kWh), Hoymiles HiOne, LB-16D-G3,
+  HiT, HYT/HAT, MiT, HMT, HMS ja MiS, Atmoce M-ELV ja mikroinvertterit, Enershare CORE, Pytes PiLV1 ja V16, Raystech RT16076MPlus,
+  Hanersun HiTouch 450/500/620/725, Over Easy xM-3. Taulukossa Raystech RT5427 (valmistajasivun kuva on tekoälyllä tehty, ei käytetä),
+  Atmoce M-Backup ja M-Combiner, FLAT25. RLS-585 piilossa (ei Raloksen katalogissa 9.11.2026).
+- Avant Power: OptiGrid™-energiavarasto 200 kW / 250 kWh tai 400 kW / 500 kWh, uppojäähdytys, integroitu pikalataus 200–600 kW
+  (avantpower.fi/optigrid, luettu 9.11.2026). Pikalatauslaitteen valmistajaa ei nimetä. Kortin kuva = Avantin OptiGrid-havainnekuvan rajaus.
+- Gare Energy Oy (vain FI): Gare Solar Carport. Scanoffice: Easee Charge Max, BENY BCP, SolaX X3-Hybrid G4 + T30 korteiksi; Zaptec Go,
+  Easee Charge Up, lataustolppa, Sofar HYD, ilmalämpöpumppujen mallisarjat, Lossnay/Mobair ja kiinnitysjärjestelmät taulukkoon.
+  Suodattimet Pienkohteet / Kotiin.
+- Lataussivun luvut ja taulukko: pikalataus Avant Powerin varaston kautta (200–600 kW), siirrettävä yksikkö Type 2 9 kW.
+- Energiavarastosivun tuoterivikuva ilman EP:tä (Elecnova-kontti, ZOE, ECO-E101WX, ECO-E64WX, Cube 47), mitat 2400×640 / 1200×506.
+

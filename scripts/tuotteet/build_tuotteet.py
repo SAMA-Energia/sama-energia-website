@@ -64,6 +64,43 @@ SRC = {
     'el-eps': dict(fi='Elecnova, tuotesivu ECO-EPS-C125', et='Elecnova, tooteleht ECO-EPS-C125', url='https://www.elecnova-ess.com/eco-eps-c125-136in'),
     'el-comp': dict(fi='Elecnova, tuotesivut PCS, BMS ja EMS', et='Elecnova, tootelehed PCS, BMS ja EMS', url='https://www.elecnova-ess.com/eco-pcs'),
     'avant-og': dict(fi='Avant Tecno, tiedote OptiGrid™-mikroverkosta 1.7.2025', et='Avant Tecno, pressiteade OptiGrid™ mikrovõrgust 1.7.2025', url='https://avanttecno.com/news-and-events/avant-power-expands-operations-optigridmicrogrid-revolutionizes-energy-and-charging-solutions/'),
+    # v57b (Madis 9.11.2026 klo 12.59): Raloksen koko tuotekatalogi, Avant Powerin kiinteä varasto ja lataus, Gare Solar Carport, Scanofficen kotilataus ja -akut
+    'r-minibeast': dict(fi='Ralos Oy, tuotesivu Ralos Mini-Beast 50', et='Ralos Oy, tooteleht Ralos Mini-Beast 50', url='https://ralos.fi/tuotteet/ralos-mini-beast-50-energiavarasto'),
+    'r-hione': dict(fi='Ralos Oy, tuotesivu Hoymiles HiOne', et='Ralos Oy, tooteleht Hoymiles HiOne', url='https://ralos.fi/tuotteet/hoymiles-hione-all-in-one'),
+    'r-lb16': dict(fi='Ralos Oy, tuotesivu Hoymiles LB-16D-G3', et='Ralos Oy, tooteleht Hoymiles LB-16D-G3', url='https://ralos.fi/tuotteet/hoymiles-lb-16d-g3'),
+    'r-enershare': dict(fi='Ralos Oy, tuotesivu Enershare CORE', et='Ralos Oy, tooteleht Enershare CORE', url='https://ralos.fi/tuotteet/enershare'),
+    'r-pilv1': dict(fi='Ralos Oy, tuotesivu Pytes PiLV1', et='Ralos Oy, tooteleht Pytes PiLV1', url='https://ralos.fi/tuotteet/pytes-pilv1-pinottava-matalajanniteakusto'),
+    'r-v16': dict(fi='Ralos Oy, tuotesivu Pytes V16', et='Ralos Oy, tooteleht Pytes V16', url='https://ralos.fi/tuotteet/pytes-v16'),
+    'r-melv': dict(fi='Ralos Oy, tuotesivu ATMOCE M-ELV', et='Ralos Oy, tooteleht ATMOCE M-ELV', url='https://ralos.fi/tuotteet/atmoce-m-elv'),
+    'r-rt16076': dict(fi='Ralos Oy, tuotesivu Raystech RT16076MPlus', et='Ralos Oy, tooteleht Raystech RT16076MPlus', url='https://ralos.fi/tuotteet/raystech-rt16076mplus'),
+    'r-rt5427': dict(fi='Ralos Oy, tuotesivu Raystech RT5427 HV/SHV', et='Ralos Oy, tooteleht Raystech RT5427 HV/SHV', url='https://ralos.fi/tuotteet/raystech-rt5427-hv-shv'),
+    'r-hit': dict(fi='Ralos Oy, tuotesivu Hoymiles HiT', et='Ralos Oy, tooteleht Hoymiles HiT', url='https://ralos.fi/tuotteet/hoymiles-hit-matalajannitehybridi-invertterit'),
+    'r-hyt': dict(fi='Ralos Oy, tuotesivut Hoymiles HYT ja HAT', et='Ralos Oy, tootelehed Hoymiles HYT ja HAT', url='https://ralos.fi/tuotteet/hoymiles-hyt-hybridi-invertterit'),
+    'r-mit': dict(fi='Ralos Oy, tuotesivu Hoymiles MiT', et='Ralos Oy, tooteleht Hoymiles MiT', url='https://ralos.fi/tuotteet/hoymiles-mit'),
+    'r-hmt': dict(fi='Ralos Oy, tuotesivu Hoymiles HMT', et='Ralos Oy, tooteleht Hoymiles HMT', url='https://ralos.fi/tuotteet/hoymiles-hmt'),
+    'r-hms': dict(fi='Ralos Oy, tuotesivu Hoymiles HMS', et='Ralos Oy, tooteleht Hoymiles HMS', url='https://ralos.fi/tuotteet/hoymiles-hms'),
+    'r-mis': dict(fi='Ralos Oy, tuotesivu Hoymiles MiS', et='Ralos Oy, tooteleht Hoymiles MiS', url='https://ralos.fi/tuotteet/hoymiles-mis'),
+    'r-atmoce': dict(fi='Ralos Oy, tuotesivu Atmoce-mikroinvertterit', et='Ralos Oy, tooteleht Atmoce mikroinverterid', url='https://ralos.fi/tuotteet/atmoce'),
+    'r-mbackup': dict(fi='Ralos Oy, tuotesivu ATMOCE M-Backup', et='Ralos Oy, tooteleht ATMOCE M-Backup', url='https://ralos.fi/tuotteet/atmoce-m-backup-varavoiman-kytkentakeskus'),
+    'r-mcomb': dict(fi='Ralos Oy, tuotesivu ATMOCE M-Combiner', et='Ralos Oy, tooteleht ATMOCE M-Combiner', url='https://ralos.fi/tuotteet/atmoce-m-combiner'),
+    'r-h450': dict(fi='Ralos Oy, tuotesivu Hanersun HiTouch 450 Wp', et='Ralos Oy, tooteleht Hanersun HiTouch 450 Wp', url='https://ralos.fi/tuotteet/hanersun-450'),
+    'r-h500': dict(fi='Ralos Oy, tuotesivu Hanersun HiTouch 500 Wp', et='Ralos Oy, tooteleht Hanersun HiTouch 500 Wp', url='https://ralos.fi/tuotteet/hanersun-500'),
+    'r-h620': dict(fi='Ralos Oy, tuotesivu Hanersun HiTouch 620 Wp', et='Ralos Oy, tooteleht Hanersun HiTouch 620 Wp', url='https://ralos.fi/tuotteet/hanersun-620w'),
+    'r-h725': dict(fi='Ralos Oy, tuotesivu Hanersun HiTouch 725 Wp', et='Ralos Oy, tooteleht Hanersun HiTouch 725 Wp', url='https://ralos.fi/tuotteet/hanersun-725'),
+    'r-overeasy': dict(fi='Ralos Oy, tuotesivu Over Easy xM-3', et='Ralos Oy, tooteleht Over Easy xM-3', url='https://ralos.fi/tuotteet/overeasy-xm'),
+    'r-av': dict(fi='Ralos Oy, ratkaisusivu aurinkovoimalat', et='Ralos Oy, lahenduste leht päikesejaamad', url='https://ralos.fi/ratkaisut/aurinkovoimalat'),
+    'avant-ogs': dict(fi='Avant Power, OptiGrid™-tuotesivu', et='Avant Power, OptiGrid™ tooteleht', url='https://avantpower.fi/optigrid/'),
+    'gare-carport': dict(fi='Gare Energy Oy, Gare Solar Carport -tuotesivu', et='Gare Energy Oy, Gare Solar Carport', url='https://aurinkokatto.com/carport-autokatos-gare-energy/'),
+    'easee-max': dict(fi='Easee, Charge Max -datalehti (Scanoffice)', et='Easee, Charge Max andmeleht (Scanoffice)', url='https://scanoffice.fi/wp-content/uploads/2026/02/Datalehti_Charge_Max.pdf'),
+    'easee-up': dict(fi='Easee, Charge Up -datalehti (Scanoffice)', et='Easee, Charge Up andmeleht (Scanoffice)', url='https://scanoffice.fi/wp-content/uploads/2026/02/Datalehti_Charge_Up.pdf'),
+    'zaptec-go': dict(fi='Zaptec Charger AS, Zaptec Go -tuotelehti (Scanoffice)', et='Zaptec Charger AS, Zaptec Go tooteleht (Scanoffice)', url='https://scanoffice.fi/wp-content/uploads/2023/11/Datalehti_Zaptec_Go.pdf'),
+    'beny': dict(fi='BENY, latausaseman esite (Scanoffice)', et='BENY, laadimisjaama brošüür (Scanoffice)', url='https://scanoffice.fi/wp-content/uploads/2022/09/Esite_ZJBeny-3.pdf'),
+    'solax': dict(fi='SolaX, esitteet X3-Hybrid G4 ja Triple Power T30 (Scanoffice)', et='SolaX, brošüürid X3-Hybrid G4 ja Triple Power T30 (Scanoffice)', url='https://scanoffice.fi/aurinkopaneelit/tuotteet/solax-sahkovarasto-ja-hybridi-invertteri/'),
+    'so-sofar-hyd': dict(fi='Scanoffice, tuotesivu Sofar-sähkövarasto ja hybridi-invertteri', et='Scanoffice, tooteleht Sofar salvesti ja hübriidinverter', url='https://scanoffice.fi/aurinkopaneelit/tuotteet/aurinkopaneelin-akku-sofar-solar-sahkovarasto-ja-hybridi-invertteri/'),
+    'so-ilp': dict(fi='Scanoffice, ilmalämpöpumput-tuotesivut', et='Scanoffice, õhksoojuspumpade tootelehed', url='https://scanoffice.fi/ilmalampopumput/'),
+    'so-iv': dict(fi='Scanoffice, ilmanvaihtolaitteet-tuotesivu', et='Scanoffice, ventilatsiooniseadmete tooteleht', url='https://scanoffice.fi/ilmanvaihtolaitteet/'),
+    'so-kiinn': dict(fi='Scanoffice, aurinkopaneelien tuotesivut', et='Scanoffice, päikesepaneelide tootelehed', url='https://scanoffice.fi/aurinkopaneelit/'),
+    'so-tolppa': dict(fi='Scanoffice, tuotesivu Easee-latausasemat ja lataustolpat', et='Scanoffice, tooteleht Easee laadimisjaamad ja laadimispostid', url='https://scanoffice.fi/sahkoauton-latausasemat/tuotteet/easee-sahkoauton-latausasemat/'),
     'avant-cube': dict(fi='Avant Power, OptiTemp® Cube 47 -esite, 6/2026', et='Avant Power, OptiTemp® Cube 47 brošüür, 6/2026', url='https://avanttecno.com/fi/wp-content/uploads/sites/7/2026/08/avant-power-cube47-esite-A4-FI-web.pdf'),
 }
 
@@ -251,6 +288,135 @@ P = [
          t=('Maalämpöpumppu', 'Maasoojuspump'),
          s=[('Lämmitysteho', 'Küttevõimsus', '1,5–11 kW', '1,5–11 kW'), ('SCOP, 35 °C', 'SCOP, 35 °C', '5,86 kylmässä ilmastossa', '5,86 külmas kliimas'),
             ('Energialuokka', 'Energiaklass', 'A+++', 'A+++'), ('Kylmäaine', 'Külmaaine', 'R32', 'R32')]),
+    # v57b: Raloksen tuotekatalogi (ralos.fi/tuotekatalogi, luettu 9.11.2026)
+    dict(id='ralos-mini-beast-50', mk='Ralos', model='Mini-Beast 50', cats=['hybridi', 'varavoima'], src='r-minibeast',
+         alt=('Ralos Mini-Beast 50 -energiavarastokaappi, kuva: Ralos Oy', 'Ralos Mini-Beast 50 salvestikapp, foto: Ralos Oy'),
+         t=('Energiavarasto keskisuuriin kiinteistöihin, hybridi-invertterillä', 'Salvesti keskmistele kinnistutele, hübriidinverteriga'),
+         s=[('Teho', 'Võimsus', '50 kW', '50 kW'), ('Energia', 'Energia', '102 kWh', '102 kWh'),
+            ('Varavoima', 'Varutoide', 'oma lähtö, UPS-toiminto', 'oma väljund, UPS-funktsioon'), ('Aurinkosähkö', 'Päikeseelekter', 'suoraan invertteriin', 'otse inverterisse')]),
+    dict(id='hoymiles-hione', mk='Hoymiles', model='HiOne', cats=['pieni'], src='r-hione',
+         alt=('Hoymiles HiOne -energiavarasto, kuva: Hoymiles', 'Hoymiles HiOne salvesti, foto: Hoymiles'),
+         t=('Kolmivaiheinen all-in-one-varasto kotiin ja pieneen yritykseen', 'Kolmefaasiline all-in-one salvesti kodule ja väikeettevõttele'),
+         s=[('Teho', 'Võimsus', '8–20 kW', '8–20 kW'), ('Energia', 'Energia', '8–32 kWh tornissa, enintään 64 kWh', '8–32 kWh tornis, kuni 64 kWh'),
+            ('Kotelointi', 'Kaitseaste', 'IP66', 'IP66'), ('Takuu', 'Garantii', '10 vuotta', '10 aastat')]),
+    dict(id='hoymiles-lb-16d-g3', mk='Hoymiles', model='LB-16D-G3', cats=['pieni'], src='r-lb16',
+         alt=('Hoymiles LB-16D-G3 -akku, kuva: Hoymiles', 'Hoymiles LB-16D-G3 aku, foto: Hoymiles'),
+         t=('Matalajänniteakku hybridi-invertterille', 'Madalpingeaku hübriidinverterile'),
+         s=[('Energia', 'Energia', '16 kWh', '16 kWh'), ('Laajennus', 'Laiendus', 'enintään 16 rinnan, 256 kWh', 'kuni 16 paralleelis, 256 kWh'),
+            ('Jännite', 'Pinge', '51,2 V', '51,2 V'), ('Kotelointi', 'Kaitseaste', 'IP65', 'IP65')]),
+    dict(id='enershare-core', mk='Enershare', model='CORE', cats=['pieni'], src='r-enershare', white=True,
+         alt=('Enershare CORE -akkutorni, kuva: Enershare', 'Enershare CORE akutorn, foto: Enershare'),
+         t=('Pinottava korkeajänniteakku', 'Virnastatav kõrgepingeaku'),
+         s=[('Energia', 'Energia', '9,6–25,6 kWh tornissa', '9,6–25,6 kWh tornis'), ('Rinnan', 'Paralleelis', 'enintään 153,6 kWh', 'kuni 153,6 kWh'),
+            ('Syklit', 'Tsüklid', 'vähintään 6 000', 'vähemalt 6 000'), ('Kotelointi', 'Kaitseaste', 'IP65', 'IP65')]),
+    dict(id='pytes-pilv1', mk='Pytes', model='PiLV1', cats=['pieni'], src='r-pilv1',
+         alt=('Pytes PiLV1 -akkutorni, kuva: Pytes', 'Pytes PiLV1 akutorn, foto: Pytes'),
+         t=('Pinottava matalajänniteakku', 'Virnastatav madalpingeaku'),
+         s=[('Energia', 'Energia', '5,12–30,72 kWh tornissa', '5,12–30,72 kWh tornis'), ('Rinnan', 'Paralleelis', 'enintään 8 tornia', 'kuni 8 torni'),
+            ('Jännite', 'Pinge', '51,2 V', '51,2 V'), ('Syklit', 'Tsüklid', 'vähintään 6 000', 'vähemalt 6 000')]),
+    dict(id='pytes-v16', mk='Pytes', model='V16', cats=['pieni'], src='r-v16',
+         alt=('Pytes V16 -akku, kuva: Pytes', 'Pytes V16 aku, foto: Pytes'),
+         t=('Matalajänniteakku myös ulkoasennukseen', 'Madalpingeaku ka välipaigalduseks'),
+         s=[('Energia', 'Energia', '16,07 kWh', '16,07 kWh'), ('Purkuteho', 'Tühjendusvõimsus', 'jatkuva 10,24 kW', 'pidev 10,24 kW'),
+            ('Kotelointi', 'Kaitseaste', 'IP66', 'IP66'), ('Syklit', 'Tsüklid', 'vähintään 8 000', 'vähemalt 8 000')]),
+    dict(id='atmoce-m-elv', mk='Atmoce', model='M-ELV', cats=['pieni'], src='r-melv',
+         alt=('Atmoce M-ELV -akku, kuva: Atmoce', 'Atmoce M-ELV aku, foto: Atmoce'),
+         t=('Matalajänniteakku integroidulla invertterillä', 'Madalpingeaku integreeritud inverteriga'),
+         s=[('Energia', 'Energia', '7 kWh', '7 kWh'), ('Teho', 'Võimsus', '4,5 kVA jatkuva', '4,5 kVA pidev'),
+            ('Laajennus', 'Laiendus', 'enintään 126 kWh', 'kuni 126 kWh'), ('Takuu', 'Garantii', '15 vuotta', '15 aastat')]),
+    dict(id='raystech-rt16076mplus', mk='Raystech', model='RT16076MPlus', cats=['pieni'], src='r-rt16076',
+         alt=('Raystech RT16076MPlus -akku, kuva: Raystech', 'Raystech RT16076MPlus aku, foto: Raystech'),
+         t=('Matalajänniteakku', 'Madalpingeaku'),
+         s=[('Energia', 'Energia', '14,95 kWh', '14,95 kWh'), ('Syklit', 'Tsüklid', 'yli 16 000', 'üle 16 000'),
+            ('Kotelointi', 'Kaitseaste', 'IP65', 'IP65'), ('Paino', 'Kaal', '124 kg', '124 kg')]),
+    dict(id='hoymiles-hit', mk='Hoymiles', model='HiT-(5–20)L-G3', cats=['invertteri'], src='r-hit',
+         alt=('Hoymiles HiT -hybridi-invertteri, kuva: Hoymiles', 'Hoymiles HiT hübriidinverter, foto: Hoymiles'),
+         t=('Kolmivaiheinen hybridi-invertteri matalajänniteakuille', 'Kolmefaasiline hübriidinverter madalpingeakudele'),
+         s=[('Teho', 'Võimsus', '5–20 kW', '5–20 kW'), ('MPPT', 'MPPT', 'enintään 4', 'kuni 4'),
+            ('DC/AC', 'DC/AC', 'enintään 200 %', 'kuni 200 %'), ('Epäsymmetria', 'Asümmeetria', '100 %', '100 %')]),
+    dict(id='hoymiles-hyt-hat', mk='Hoymiles', model='HYT-HV ja HAT-HV', cats=['invertteri'], src='r-hyt',
+         alt=('Hoymiles HYT- ja HAT-invertteri, kuva: Hoymiles', 'Hoymiles HYT ja HAT inverter, foto: Hoymiles'),
+         t=('Hybridi- ja akkuinvertterit korkeajänniteakuille', 'Hübriid- ja akuinverterid kõrgepingeakudele'),
+         s=[('HYT, teho', 'HYT, võimsus', '5–12 kW', '5–12 kW'), ('HAT, teho', 'HAT, võimsus', '5–10 kW', '5–10 kW'),
+            ('Akkujännite', 'Akupinge', '170–600 V', '170–600 V'), ('HAT', 'HAT', 'akun jälkiasennus', 'aku järelpaigaldus')]),
+    dict(id='hoymiles-mit', mk='Hoymiles', model='MiT', cats=['mikro'], src='r-mit',
+         alt=('Hoymiles MiT -mikroinvertteri, kuva: Hoymiles', 'Hoymiles MiT mikroinverter, foto: Hoymiles'),
+         t=('Kolmivaiheinen mikroinvertteri teollisuuskohteisiin', 'Kolmefaasiline mikroinverter tööstusobjektidele'),
+         s=[('AC-teho', 'AC-võimsus', '3 000–5 000 W', '3 000–5 000 W'), ('Hyötysuhde', 'Kasutegur', '96,5 % (CEC)', '96,5 % (CEC)'),
+            ('DC-jännite', 'DC-pinge', 'alle 65 V', 'alla 65 V'), ('Takuu', 'Garantii', '12 vuotta, enintään 25', '12 aastat, kuni 25')]),
+    dict(id='hoymiles-hmt', mk='Hoymiles', model='HMT', cats=['mikro'], src='r-hmt',
+         alt=('Hoymiles HMT -mikroinvertteri, kuva: Hoymiles', 'Hoymiles HMT mikroinverter, foto: Hoymiles'),
+         t=('Kolmivaiheinen mikroinvertteri neljälle paneelille', 'Kolmefaasiline mikroinverter neljale paneelile'),
+         s=[('AC-teho', 'AC-võimsus', '1 600–2 000 W', '1 600–2 000 W'), ('Hyötysuhde', 'Kasutegur', '96,5 % (CEC)', '96,5 % (CEC)'),
+            ('DC-jännite', 'DC-pinge', 'alle 65 V', 'alla 65 V'), ('Kotelointi', 'Kaitseaste', 'IP67', 'IP67')]),
+    dict(id='hoymiles-hms', mk='Hoymiles', model='HMS', cats=['mikro'], src='r-hms',
+         alt=('Hoymiles HMS -mikroinvertteri, kuva: Hoymiles', 'Hoymiles HMS mikroinverter, foto: Hoymiles'),
+         t=('Yksivaiheinen mikroinvertteri', 'Ühefaasiline mikroinverter'),
+         s=[('AC-teho', 'AC-võimsus', '400–2 000 W', '400–2 000 W'), ('Hyötysuhde', 'Kasutegur', '96,5 % (CEC)', '96,5 % (CEC)'),
+            ('DC-jännite', 'DC-pinge', 'alle 65 V', 'alla 65 V'), ('Jännite', 'Pinge', '230 V', '230 V')]),
+    dict(id='hoymiles-mis', mk='Hoymiles', model='MiS', cats=['mikro'], src='r-mis',
+         alt=('Hoymiles MiS -mikroinvertteri, kuva: Hoymiles', 'Hoymiles MiS mikroinverter, foto: Hoymiles'),
+         t=('Suurtehoinen yksivaiheinen mikroinvertteri', 'Suure võimsusega ühefaasiline mikroinverter'),
+         s=[('AC-teho', 'AC-võimsus', '2 250–2 750 W', '2 250–2 750 W'), ('Hyötysuhde', 'Kasutegur', '96,5 % (CEC)', '96,5 % (CEC)'),
+            ('DC-jännite', 'DC-pinge', 'alle 65 V', 'alla 65 V'), ('Paneelit', 'Paneelid', 'yli 600 W', 'üle 600 W')]),
+    dict(id='atmoce-mi', mk='Atmoce', model='MI-sarja', model_et='MI-seeria', cats=['mikro'], src='r-atmoce',
+         alt=('Atmoce-mikroinvertteri, kuva: Atmoce', 'Atmoce mikroinverter, foto: Atmoce'),
+         t=('Mikroinvertteri pientaloihin', 'Mikroinverter väikeelamutele'),
+         s=[('Paneelit', 'Paneelid', 'enintään 700 W', 'kuni 700 W'), ('Hyötysuhde', 'Kasutegur', 'huippu 97,4 %', 'tipp 97,4 %'),
+            ('Kotelointi', 'Kaitseaste', 'IP67', 'IP67'), ('Takuu', 'Garantii', '25 vuotta', '25 aastat')]),
+    dict(id='hanersun-450', mk='Hanersun', model='HiTouch 450 Wp', cats=['paneeli'], src='r-h450',
+         alt=('Hanersun HiTouch -aurinkopaneeli, kuva: Hanersun', 'Hanersun HiTouch päikesepaneel, foto: Hanersun'),
+         t=('Täysmusta aurinkopaneeli', 'Täismust päikesepaneel'),
+         s=[('Teho', 'Võimsus', '450 Wp', '450 Wp'), ('Hyötysuhde', 'Kasutegur', '22,5 %', '22,5 %'),
+            ('Takuu', 'Garantii', 'tuote 15 v, teho 30 v', 'toode 15 a, võimsus 30 a'), ('Koko', 'Mõõdud', '1,76 × 1,13 m', '1,76 × 1,13 m')]),
+    dict(id='hanersun-500', mk='Hanersun', model='HiTouch 500 Wp', cats=['paneeli'], src='r-h500',
+         alt=('Hanersun HiTouch -aurinkopaneeli, kuva: Hanersun', 'Hanersun HiTouch päikesepaneel, foto: Hanersun'),
+         t=('Täysmusta aurinkopaneeli', 'Täismust päikesepaneel'),
+         s=[('Teho', 'Võimsus', '500 Wp', '500 Wp'), ('Hyötysuhde', 'Kasutegur', '22,5 %', '22,5 %'),
+            ('Takuu', 'Garantii', 'tuote 15 v, teho 30 v', 'toode 15 a, võimsus 30 a'), ('Koko', 'Mõõdud', '1,96 × 1,13 m', '1,96 × 1,13 m')]),
+    dict(id='hanersun-620', mk='Hanersun', model='HiTouch 620 Wp', cats=['paneeli'], src='r-h620',
+         alt=('Hanersun HiTouch 620 -aurinkopaneeli edestä ja takaa, kuva: Hanersun', 'Hanersun HiTouch 620 päikesepaneel eest ja tagant, foto: Hanersun'),
+         t=('Suuritehoinen aurinkopaneeli tasakatoille', 'Suure võimsusega päikesepaneel lamekatustele'),
+         s=[('Teho', 'Võimsus', '620 Wp', '620 Wp'), ('Hyötysuhde', 'Kasutegur', '23 %', '23 %'),
+            ('Takuu', 'Garantii', 'tuote 15 v, teho 30 v', 'toode 15 a, võimsus 30 a'), ('Koko', 'Mõõdud', '2,38 × 1,13 m', '2,38 × 1,13 m')]),
+    dict(id='hanersun-725', mk='Hanersun', model='HiTouch 725 Wp', cats=['paneeli'], src='r-h725',
+         alt=('Hanersun HiTouch 725 -aurinkopaneeli edestä ja takaa, kuva: Hanersun', 'Hanersun HiTouch 725 päikesepaneel eest ja tagant, foto: Hanersun'),
+         t=('Suuritehoinen aurinkopaneeli suuriin kohteisiin', 'Suure võimsusega päikesepaneel suurtele objektidele'),
+         s=[('Teho', 'Võimsus', '725 Wp', '725 Wp'), ('Hyötysuhde', 'Kasutegur', '23,3 %', '23,3 %'),
+            ('Takuu', 'Garantii', 'tuote 15 v, teho 30 v', 'toode 15 a, võimsus 30 a'), ('Koko', 'Mõõdud', '2,38 × 1,13 m', '2,38 × 1,13 m')]),
+    dict(id='overeasy-xm3', mk='Over Easy', model='xM-3', cats=['paneeli'], src='r-overeasy',
+         alt=('Over Easy xM-3 -paneelirivit viherkatolle, kuva: Over Easy', 'Over Easy xM-3 paneeliread rohekatusele, foto: Over Easy'),
+         t=('Kaksipuolinen aurinkovoimala viherkatolle', 'Kahepoolne päikesejaam rohekatusele'),
+         s=[('Teho', 'Võimsus', '256 W yksikköä kohden', '256 W seadme kohta'), ('Kaksipuolisuus', 'Kahepoolsus', '95 %', '95 %'),
+            ('Koko', 'Mõõdud', '1,58 × 1,49 m', '1,58 × 1,49 m'), ('Paino', 'Kaal', 'noin 28 kg', 'umbes 28 kg')]),
+    # v57b: Avant Powerin kiinteä energiavarasto ja integroitu pikalataus (avantpower.fi/optigrid, luettu 9.11.2026)
+    dict(id='avant-power-optigrid', mk='Avant Power', model='OptiGrid™-energiavarasto', model_et='OptiGrid™ energiasalvesti', cats=['kontti'], src='avant-ogs', photo=True,
+         alt=('Avant Powerin OptiGrid-havainnekuva: energiavarasto, verkkoliitäntä ja älykäs lataus, kuva: Avant Power', 'Avant Poweri OptiGridi illustratsioon: energiasalvesti, võrguühendus ja nutikas laadimine, foto: Avant Power'),
+         t=('Kiinteä energiavarasto uppojäähdytyksellä, myös pikalatauksella', 'Statsionaarne salvesti sukeljahutusega, ka kiirlaadimisega'),
+         s=[('Koot', 'Suurused', '200 kW / 250 kWh tai 400 kW / 500 kWh', '200 kW / 250 kWh või 400 kW / 500 kWh'),
+            ('Pikalataus', 'Kiirlaadimine', 'integroitu, 200–600 kW', 'integreeritud, 200–600 kW'),
+            ('Jäähdytys', 'Jahutus', 'uppojäähdytys', 'sukeljahutus'), ('Ohjaus', 'Juhtimine', 'OptiGrid Cloud', 'OptiGrid Cloud')]),
+    # v57b: Gare Energy Oy (vain FI) ja Scanofficen kotilataus ja -akut
+    dict(id='gare-solar-carport', mk='Gare Energy', model='Gare Solar Carport', cats=['katos'], src='gare-carport', photo=True, langs=['fi'],
+         alt=('Gare Solar Carport -aurinkokatos autojen päällä, kuva: Gare Energy Oy', ''),
+         t=('Aurinkokatos 2–8 autolle, lataus ja varasto lisävarusteena', ''),
+         s=[('Teho', '', '8,78 kWp kahdelle autolle', ''), ('Autopaikat', '', '2, 4, 6 tai 8', ''),
+            ('Pinnoite', '', 'Magnelis', ''), ('Takuu', '', 'rakenne 10 v, paneelit 25 v', '')]),
+    dict(id='easee-charge-max', mk='Easee', model='Charge Max', cats=['koti'], src='easee-max',
+         alt=('Easee Charge Max -latausasema, kuva: Easee', 'Easee Charge Max laadimisjaam, foto: Easee'),
+         t=('AC-latausasema kotiin ja pieneen kohteeseen', 'AC-laadimisjaam kodule ja väikeobjektile'),
+         s=[('Teho', 'Võimsus', 'enintään 22 kW', 'kuni 22 kW'), ('Mittari', 'Arvesti', 'MID, luokka B', 'MID, klass B'),
+            ('Kotelointi', 'Kaitseaste', 'IP54, IK10', 'IP54, IK10'), ('Rajapinta', 'Liides', 'OCPP 1.6J', 'OCPP 1.6J')]),
+    dict(id='beny-bcp', mk='BENY', model='BCP-sarja', model_et='BCP-seeria', cats=['koti'], src='beny',
+         alt=('BENY-latausasema latauskaapelilla, kuva: BENY', 'BENY laadimisjaam laadimiskaabliga, foto: BENY'),
+         t=('AC-latausasema kotiin ja vapaa-ajan kohteisiin', 'AC-laadimisjaam kodule ja puhkeobjektidele'),
+         s=[('Teho', 'Võimsus', 'enintään 22 kW', 'kuni 22 kW'), ('Kuormanhallinta', 'Koormuse juhtimine', 'dynaaminen, myös langaton', 'dünaamiline, ka juhtmevaba'),
+            ('Ohjaus', 'Juhtimine', 'puhelinsovellus', 'telefonirakendus')]),
+    dict(id='solax-x3-t30', mk='SolaX', model='X3-Hybrid G4 ja T30', cats=['pieni'], src='solax',
+         alt=('SolaX-hybridi-invertteri ja akku, kuva: SolaX', 'SolaX hübriidinverter ja aku, foto: SolaX'),
+         t=('Hybridi-invertteri ja akku kotiin ja pienkohteisiin', 'Hübriidinverter ja aku kodule ja väikeobjektidele'),
+         s=[('Teho', 'Võimsus', '5–15 kW', '5–15 kW'), ('Akku', 'Aku', '3,1–12,3 kWh', '3,1–12,3 kWh'),
+            ('Kotelointi', 'Kaitseaste', 'IP65', 'IP65'), ('Rinnan', 'Paralleelis', 'enintään 150 kW', 'kuni 150 kW')]),
 ]
 
 CATS = {
@@ -258,14 +424,17 @@ CATS = {
         ('kaikki', 'Kaikki', 'Kõik'),
         ('kaappi', 'Ulkokaapit', 'Väliskapid'),
         ('hybridi', 'Hybridikaapit', 'Hübriidkapid'),
-        ('kontti', 'Kontit', 'Konteinerid'),
-        ('siirrettava', 'Siirrettävät ja lataus', 'Teisaldatavad ja laadimine'),
+        ('kontti', 'Kontit ja suuret varastot', 'Konteinerid ja suured salvestid'),
+        ('siirrettava', 'Siirrettävät', 'Teisaldatavad'),
         ('varavoima', 'Varavoima', 'Varutoide'),
+        ('pieni', 'Pienkohteet', 'Väikeobjektid'),
     ],
     'aurinko': [
         ('kaikki', 'Kaikki', 'Kõik'),
         ('paneeli', 'Aurinkopaneelit', 'Päikesepaneelid'),
         ('katto', 'Aurinkokatto', 'Päikesekatus'),
+        ('katos', 'Aurinkokatos', 'Päikesevarjualune'),
+        ('mikro', 'Mikroinvertterit', 'Mikroinverterid'),
         ('invertteri', 'Invertterit', 'Inverterid'),
         ('hybridi', 'Aurinko ja varasto', 'Päike ja salvesti'),
     ],
@@ -273,8 +442,10 @@ CATS = {
         ('kaikki', 'Kaikki', 'Kõik'),
         ('ac', 'AC-lataus', 'AC-laadimine'),
         ('dc', 'DC-pikalataus', 'DC-kiirlaadimine'),
-        ('akku', 'Akulla varustetut', 'Akuga laadijad'),
+        ('akku', 'Varaston kanssa', 'Salvestiga'),
         ('siirrettava', 'Siirrettävät', 'Teisaldatavad'),
+        ('katos', 'Aurinkokatos', 'Päikesevarjualune'),
+        ('koti', 'Kotiin', 'Kodule'),
     ],
     'kaikki': [
         ('kaikki', 'Kaikki', 'Kõik'),
@@ -284,8 +455,16 @@ CATS = {
         ('lampo', 'Lämpöpumput', 'Soojuspumbad'),
         ('siirrettava', 'Siirrettävät', 'Teisaldatavad'),
         ('varavoima', 'Varavoima', 'Varutoide'),
+        ('pieni', 'Pienkohteet', 'Väikeobjektid'),
     ],
 }
+
+# Valmistajat ja tuotteet, joita ei näytetä julkisesti (data säilyy, palautus yhdellä rivillä):
+#  * EP Energy: piilossa perustajan päätöksellä 9.11.2026 klo 12.59; palautus perustajan päätöksellä
+#  * Ralos RLS-585: ei Raloksen tuotekatalogissa 9.11.2026
+PIILOTETUT_VALMISTAJAT = {'EP Energy'}
+PIILOTETUT = {'ralos-rls-585'}
+def nakyy(p): return p['mk'] not in PIILOTETUT_VALMISTAJAT and p['id'] not in PIILOTETUT
 
 NOTE_AURINKO = {
     'fi': 'Tekniset tiedot ovat valmistajien datalehdiltä ja esitteistä. Paneelit, voimalan koko ja invertterit valitaan kohteenne kulutuksen, katon ja liittymän mukaan, '
@@ -301,9 +480,9 @@ NOTE_LATAUS = {
 }
 NOTE_KAIKKI = {
     'fi': 'Tekniset tiedot ovat valmistajien datalehdiltä, esitteistä ja tuotesivuilta. Valmistaja ja malli valitaan kohteenne kulutuksen, liittymän ja tilan mukaan, '
-          'ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla. Kotitalouksien latausasemat, akut ja ilmalämpöpumput saatte samoilta kumppaneilta pyynnöstä.',
+          'ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla. Pienkohteiden ja kotien tuotteet löytyvät omalla suodattimellaan.',
     'et': 'Tehnilised andmed on tootjate andmelehtedelt, brošüüridelt ja tootelehtedelt. Tootja ja mudel valitakse teie objekti tarbimise, liitumise ja ruumi järgi '
-          'ning variante võrreldakse kirjalikus hinnangus samade numbritega. Kodumajapidamiste laadijad, akud ja õhksoojuspumbad saate samadelt partneritelt soovi korral.',
+          'ning variante võrreldakse kirjalikus hinnangus samade numbritega. Väikeobjektide ja kodude tooted leiate eraldi filtri alt.',
 }
 
 TXT = {
@@ -351,12 +530,24 @@ MUUT = [
     ('Elecnova', 'ECO-B20FT3404WS', ('Ilmajäähdytteinen 20 jalan akustokontti', 'Õhkjahutusega 20-jalane akukonteiner'), ('3 404 kWh', '3 404 kWh'), 'el-b3404', ['varasto']),
     ('Elecnova', 'ECO-EPS-C125', ('EPS-kaappi varavoimaan', 'EPS-kapp varutoiteks'), ('1, 3 tai 6 × 125 kW, siirto enintään 20 s', '1, 3 või 6 × 125 kW, ümberlülitus kuni 20 s'), 'el-eps', ['varasto', 'varavoima']),
     ('Elecnova', 'PCS, BMS ja EMS', ('Tehoelektroniikka, akunhallinta ja energianhallinta', 'Jõuelektroonika, akuhaldus ja energiahaldus'), ('komponentit kokonaisuuden osiksi', 'komponendid terviklahenduse osadeks'), 'el-comp', ['varasto']),
+    ('Raystech', 'RT5427 HV/SHV', ('Korkeajänniteakun moduuli', 'Kõrgepingeaku moodul'), ('5,43 kWh moduulia kohden, IP65', '5,43 kWh mooduli kohta, IP65'), 'r-rt5427', ['varasto']),
+    ('Atmoce', 'M-Backup', ('Varavoiman kytkentäkeskus', 'Varutoite lülituskeskus'), ('verkko 80 A, kuorma 63 A, IP65', 'võrk 80 A, koormus 63 A, IP65'), 'r-mbackup', ['varasto']),
+    ('Atmoce', 'M-Combiner', ('Kytkentäkotelo aurinkosähkölle ja akuille', 'Ühenduskarp päikeseelektrile ja akudele'), ('aurinkosähkö enintään 30 kW, akut enintään 42 kWh', 'päikeseelekter kuni 30 kW, akud kuni 42 kWh'), 'r-mcomb', ['aurinko']),
+    ('Sofar Solar', 'HYD 5–20KTL-3PH', ('Kolmivaiheinen hybridi-invertteri akuille', 'Kolmefaasiline hübriidinverter akudele'), ('5–20 kW', '5–20 kW'), 'so-sofar-hyd', ['aurinko']),
+    ('Ralos', 'FLAT25', ('Kiskoton asennusjärjestelmä tasakatoille', 'Rööbasteta paigaldussüsteem lamekatustele'), ('katon kuorma 5,5 kg/m²', 'katuse koormus 5,5 kg/m²'), 'r-av', ['aurinko']),
+    ('AeroCompact, Esdec, Nordic Sun, Orima Solar', 'Kiinnitysjärjestelmät', ('Paneelien kiinnitys katolle ja maahan', 'Paneelide kinnitus katusele ja maale'), ('tasakatot, harjakatot ja maateline; palomieskytkin Santon', 'lamekatused, viilkatused ja maaraam; tuletõrjelüliti Santon'), 'so-kiinn', ['aurinko']),
     ('Avant Power', 'OptiGrid™', ('Mikroverkko latausasemille ja kiinteistöille', 'Mikrovõrk laadimisjaamadele ja kinnistutele'),
-     ('tuotanto, varasto, työkoneiden ja autojen lataus sekä hukkalämmön talteenotto, kokoonpano kohteen mukaan', 'tootmine, salvesti, töömasinate ja autode laadimine ning heitsoojuse kasutamine, koosseis objekti järgi'), 'avant-og', ['lataus']),
+     ('DC-verkko, energiavarastot, lataus ja OptiGrid Cloud -ohjaus, osat myös erikseen', 'DC-võrk, energiasalvestid, laadimine ja OptiGrid Cloudi juhtimine, osad ka eraldi'), 'avant-ogs', ['lataus', 'varasto']),
+    ('Zaptec', 'Zaptec Go', ('AC-latausasema kotiin', 'AC-laadimisjaam kodule'), ('enintään 22 kW, IP54, OCPP 1.6J', 'kuni 22 kW, IP54, OCPP 1.6J'), 'zaptec-go', ['lataus']),
+    ('Easee', 'Charge Up', ('AC-latausasema kotiin', 'AC-laadimisjaam kodule'), ('enintään 22 kW, IP54, IK10, OCPP 1.6J', 'kuni 22 kW, IP54, IK10, OCPP 1.6J'), 'easee-up', ['lataus']),
+    ('Scanoffice', 'Lataustolppa', ('Lataustolppa kahdelle latauslaitteelle', 'Laadimispost kahele laadijale'), ('maalattu galvanoitu teräs, toimitetaan koottuna', 'värvitud tsingitud teras, tarnitakse kokkupanduna'), 'so-tolppa', ['lataus']),
+    ('Mitsubishi Electric', 'Ilmalämpöpumput', ('Ilmalämpöpumput ja ilmanjäähdyttimet', 'Õhksoojuspumbad ja õhujahutid'),
+     ('mallisarjat AY, EF, FT, MSZ-LN, RW, RZ, SLZ-M, MFZ-KW ja Multisplit; jäähdyttimet HR ja MSY-TP', 'mudeliseeriad AY, EF, FT, MSZ-LN, RW, RZ, SLZ-M, MFZ-KW ja Multisplit; jahutid HR ja MSY-TP'), 'so-ilp', ['lampo']),
+    ('Mitsubishi Electric ja Mobair', 'Lossnay', ('Lämmöntalteenottava ilmanvaihtolaite', 'Soojustagastusega ventilatsiooniseade'), ('myös Mobair-korvausilmaventtiilit', 'ka Mobairi asendusõhu ventiilid'), 'so-iv', ['lampo']),
 ]
 
 def muut(L, groups):
-    rows = [r for r in MUUT if set(r[5]) & set(groups)]
+    rows = [r for r in MUUT if set(r[5]) & set(groups) and r[0] not in PIILOTETUT_VALMISTAJAT]
     if not rows: return ''
     i = 0 if L == 'fi' else 1; c = TXT[L]['cols']
     body = ''.join(f'<tr><td><b>{r[1]}</b><span>{r[0]}</span></td><td>{r[2][i]}</td><td>{n(r[3][i])}</td><td class="tuo-xs">{src_html(r[4], L)}</td></tr>' for r in rows)
@@ -369,7 +560,7 @@ def catalog(L, name):
     items = []
     for it in b['items']:
         pid, pc = it[0], it[1]; ov = it[2] if len(it) > 2 else {}
-        if L in BYID[pid].get('langs', ['fi', 'et']): items.append((dict(BYID[pid], **ov), pc))
+        if L in BYID[pid].get('langs', ['fi', 'et']) and nakyy(BYID[pid]): items.append((dict(BYID[pid], **ov), pc))
     cnt = {c[0]: (len(items) if c[0] == 'kaikki' else sum(1 for _, pc in items if c[0] in pc)) for c in cats}
     chips = ''.join(
         f'<input type="radio" name="{pre}-v" id="{pre}-v-{c[0]}" value="{c[0]}"{" checked" if c[0] == "kaikki" else ""}>'
@@ -382,28 +573,40 @@ def catalog(L, name):
             + muut(L, b.get('muut', []))
             + f'<p class="tuo-note">{note}</p>')
 
-VARASTOT = ['ralos-beast-125-hd', 'elecnova-eco-e418lp', 'elecnova-eco-e101wx', 'ep-energy-epes233', 'zoe-z-box-c215', 'ep-energy-ephs', 'elecnova-eco-e64wx',
-            'elecnova-eco-e20ft2170lp', 'ep-energy-epes5000', 'ep-energy-epps93-m', 'ep-energy-epps210-m', 'ep-energy-epcs209',
-            'avant-power-cube-47', 'elecnova-eco-sts-c125']
+VARASTOT = ['ralos-beast-125-hd', 'ralos-mini-beast-50', 'elecnova-eco-e418lp', 'elecnova-eco-e101wx', 'zoe-z-box-c215', 'ep-energy-epes233', 'ep-energy-ephs',
+            'elecnova-eco-e64wx', 'elecnova-eco-e20ft2170lp', 'avant-power-optigrid', 'ep-energy-epes5000', 'ep-energy-epps93-m', 'ep-energy-epps210-m',
+            'ep-energy-epcs209', 'avant-power-cube-47', 'elecnova-eco-sts-c125',
+            'hoymiles-hione', 'solax-x3-t30', 'hoymiles-lb-16d-g3', 'enershare-core', 'pytes-pilv1', 'pytes-v16', 'atmoce-m-elv', 'raystech-rt16076mplus']
 CUBE_LATAUS = dict(s=[('Lataus', 'Laadimine', 'Type 2 -kaapeli, 9 kW, lisävaruste', 'Type 2 kaabel, 9 kW, lisavarustus'), ('Energia', 'Energia', '47 kWh', '47 kWh'),
                       ('Teho', 'Võimsus', '11 kW', '11 kW'), ('Paino', 'Kaal', '730 kg', '730 kg')],
                    t=('Siirrettävä energiayksikkö ja lataus työkoneille', 'Teisaldatav energiaseade ja laadimine töömasinatele'))
-LATAUS = [('zaptec-pro', ['ac']), ('easee-charge-pro', ['ac']), ('ep-energy-epcp-dc', ['dc']), ('ep-energy-epcs209', ['dc', 'akku']),
-          ('ep-energy-epps210-m', ['dc', 'siirrettava']), ('ep-energy-epps93-m', ['dc', 'siirrettava']), ('avant-power-cube-47', ['ac', 'siirrettava'], CUBE_LATAUS)]
-AURINKO = [('ralos-rls-585', ['paneeli']), ('ralos-rls-480', ['paneeli']), ('ht-s-ht72', ['paneeli']), ('ht-s-ht54', ['paneeli']), ('hd-hyundai-hit', ['paneeli']),
-           ('roofit-velario-slim', ['katto']), ('apsystems-qt2', ['invertteri']), ('sofar-ktl', ['invertteri']),
-           ('ralos-beast-125-hd', ['hybridi']), ('ep-energy-ephs', ['hybridi']), ('elecnova-eco-e64wx', ['hybridi'])]
+AVANT_LATAUS = dict(t=('Energiavarasto ja integroitu pikalataus latausasemille', 'Salvesti ja integreeritud kiirlaadimine laadimisjaamadele'),
+                    s=[('Pikalataus', 'Kiirlaadimine', '200–600 kW, satelliittilatausasemat', '200–600 kW, satelliitlaadijad'), ('Varasto', 'Salvesti', '250 tai 500 kWh', '250 või 500 kWh'),
+                       ('Teho', 'Võimsus', '200 tai 400 kW', '200 või 400 kW'), ('Ohjaus', 'Juhtimine', 'OptiGrid Cloud', 'OptiGrid Cloud')])
+LATAUS = [('zaptec-pro', ['ac']), ('easee-charge-pro', ['ac']), ('avant-power-optigrid', ['dc', 'akku'], AVANT_LATAUS), ('ep-energy-epcp-dc', ['dc']),
+          ('ep-energy-epcs209', ['dc', 'akku']), ('ep-energy-epps210-m', ['dc', 'siirrettava']), ('ep-energy-epps93-m', ['dc', 'siirrettava']),
+          ('avant-power-cube-47', ['ac', 'siirrettava'], CUBE_LATAUS), ('gare-solar-carport', ['katos']), ('easee-charge-max', ['ac', 'koti']), ('beny-bcp', ['ac', 'koti'])]
+AURINKO = [('ralos-rls-480', ['paneeli']), ('ralos-rls-585', ['paneeli']), ('hanersun-450', ['paneeli']), ('hanersun-500', ['paneeli']), ('hanersun-620', ['paneeli']),
+           ('hanersun-725', ['paneeli']), ('ht-s-ht72', ['paneeli']), ('ht-s-ht54', ['paneeli']), ('hd-hyundai-hit', ['paneeli']), ('overeasy-xm3', ['paneeli']),
+           ('roofit-velario-slim', ['katto']), ('gare-solar-carport', ['katos']),
+           ('hoymiles-mit', ['mikro']), ('hoymiles-hmt', ['mikro']), ('hoymiles-hms', ['mikro']), ('hoymiles-mis', ['mikro']), ('atmoce-mi', ['mikro']), ('apsystems-qt2', ['mikro']),
+           ('hoymiles-hit', ['invertteri']), ('hoymiles-hyt-hat', ['invertteri']), ('sofar-ktl', ['invertteri']),
+           ('ralos-beast-125-hd', ['hybridi']), ('ralos-mini-beast-50', ['hybridi']), ('ep-energy-ephs', ['hybridi']), ('elecnova-eco-e64wx', ['hybridi']), ('solax-x3-t30', ['hybridi'])]
 LAMPO = ['me-cahv-z450', 'me-cahv-r450', 'me-large-hydrobox', 'me-p-sarja', 'me-wdh', 'me-idh', 'me-pac-if013', 'me-ecodan-e', 'me-geodan']
-KAIKKI = ([(pid, ['varasto'] + (['siirrettava'] if 'siirrettava' in BYID[pid]['cats'] else []) + (['varavoima'] if 'varavoima' in BYID[pid]['cats'] else [])
-            + (['lataus'] if pid in ('ep-energy-epcs209', 'ep-energy-epps210-m', 'ep-energy-epps93-m', 'avant-power-cube-47') else [])) for pid in VARASTOT]
-          + [('zaptec-pro', ['lataus']), ('easee-charge-pro', ['lataus']), ('ep-energy-epcp-dc', ['lataus'])]
-          + [(pid, ['aurinko']) for pid, _ in AURINKO if pid not in VARASTOT]
-          + [(pid, ['lampo']) for pid in LAMPO])
+def _kaikki_varasto(pid):
+    c = BYID[pid]['cats']
+    return (['varasto'] + [k for k in ('siirrettava', 'varavoima', 'pieni') if k in c]
+            + (['lataus'] if pid in ('ep-energy-epcs209', 'ep-energy-epps210-m', 'ep-energy-epps93-m', 'avant-power-cube-47', 'avant-power-optigrid') else []))
+KAIKKI = ([(pid, _kaikki_varasto(pid)) for pid in VARASTOT]
+          + [('zaptec-pro', ['lataus']), ('easee-charge-pro', ['lataus']), ('ep-energy-epcp-dc', ['lataus']), ('gare-solar-carport', ['lataus', 'aurinko']),
+             ('easee-charge-max', ['lataus', 'pieni']), ('beny-bcp', ['lataus', 'pieni'])]
+          + [(pid, ['aurinko'] + (['pieni'] if pid in ('hoymiles-hms', 'atmoce-mi') else [])) for pid, _ in AURINKO if pid not in VARASTOT and pid != 'gare-solar-carport']
+          + [(pid, ['lampo'] + (['pieni'] if pid in ('me-ecodan-e', 'me-geodan') else [])) for pid in LAMPO])
 BLOCKS = {
     'varastot': dict(pre='tv', items=[(pid, BYID[pid]['cats']) for pid in VARASTOT], muut=['varasto']),
-    'aurinko': dict(pre='ta', note=NOTE_AURINKO, items=AURINKO),
+    'aurinko': dict(pre='ta', note=NOTE_AURINKO, items=AURINKO, muut=['aurinko']),
     'lataus': dict(pre='tl', note=NOTE_LATAUS, items=LATAUS, muut=['lataus']),
-    'kaikki': dict(pre='tk', note=NOTE_KAIKKI, items=KAIKKI, muut=['varasto', 'lataus']),
+    'kaikki': dict(pre='tk', note=NOTE_KAIKKI, items=KAIKKI, muut=['varasto', 'lataus', 'aurinko', 'lampo']),
 }
 
 def block(name, L):

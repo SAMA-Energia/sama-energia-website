@@ -147,6 +147,10 @@ P = {
 }
 
 # ryhmät: (otsikko, ingressi, linkki, kumppanit, tekstiprofiili)
+# Piilossa perustajan päätöksellä 9.11.2026 klo 12.59. Palautus perustajan päätöksellä: poista id tästä ja
+# palauta etusivun kortti tiedostosta scripts/kumppanit/piilotetut/<id>-<kieli>.html.
+PIILOTETUT = {'ep-energy'}
+
 GROUPS = {
  'fi': [
    ('Energiavarastot ja mikroverkot', 'Kaapista konttiin ja latausaseman mikroverkkoon. Valitsemme mallin kohteen tehon, energian, tilan ja käytön mukaan, ja vaihtoehdot vertaillaan tarjouksessa samoilla luvuilla.',
@@ -219,6 +223,8 @@ def block(L):
         out.append(f'<div class="prt-g"><div class="prt-gh"><h3>{h}</h3><div><p>{intro}</p>'
                    f'<p class="prt-gl"><a class="link-arrow" href="{lk[0]}">{lk[1]} {ARROW}</a></p></div></div>')
         for pid in ids:
+            if pid in PIILOTETUT:
+                continue
             out.append(profile(pid, L))
         if tp:
             out.append(text_profile(tp))
@@ -231,7 +237,7 @@ def block(L):
 def front(s, L):
     t = T[L]
     for pid, p in P.items():
-        if p.get('only') and p['only'] != L:
+        if (p.get('only') and p['only'] != L) or pid in PIILOTETUT:
             continue
         d = p[L]
         m = re.search(r'(<article class="k-pc">.*?popovertarget="pd-' + re.escape(pid) + r'".*?</article>)', s, re.S)

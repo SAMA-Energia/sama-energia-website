@@ -186,31 +186,6 @@ Lataus ja mikroverkot
 Lähteet: Elecnova, tuotesivu ECO-E261LP-2A (luettu 27.9.2026); Elecnovan uutinen ENERGIA 2026 -messuilta, 25.10.2026; pv magazine, 3.6.2026.
 Kumppanisivullaelecnova-ess.com
 
-EP Energy
-Energiavarastot, siirrettävä energia ja lataus. Samalta valmistajalta myös trukit ja muut laitteet.
-Energiavarastokaapit
-Konttivarastot
-Siirrettävät energiayksiköt
-Pikalaturit
-Trukit ja laitteet
-
-Lue lisää
-Sulje
-EP Energy
-Kiina · Anji, Zhejiang · Euroopan toimisto Belgiassa vuodesta 2011
-Miksi valitsimme
-Kiinteiden kaappien ja konttien lisäksi siirrettävät energiayksiköt ja akulla varustetut pikalaturit: varasto ja lataus myös työmaalle ja kohteisiin, joissa liittymä ei riitä. Jakelu ja tuki Euroopassa hoituvat Belgiasta.
-Tausta
-Litiumakkujen valmistaja, jolla on yli 17 vuoden kokemus: ensin sähkökäyttöisiin trukkeihin ja varastolaitteisiin, vuodesta 2022 myös energiavarastoihin. Akkuja valmistuu noin 200 000 vuodessa, ja niitä on käytössä yli 600 000. Euroopan toimisto on ollut Belgiassa vuodesta 2011, varasto on Brysselissä ja toimisto Kölnissä.
-Energiavarastokaapit
-Konttivarastot
-Siirrettävät energiayksiköt
-Pikalaturit
-Trukit ja laitteet
-
-Lähteet: EP Energy, luettelot C&I Energy Storage Solutions ja Mobile Energy & Storage Charging Solutions, 12/2025.
-Kumppanisivullaep-unipower.com
-
 Avant Power
 Energiavarastot ja mikroverkot Avant-konsernista. Tarvittaessa Avantin koko valikoima.
 Energiavarastot
@@ -402,26 +377,9 @@ Jokainen kattotiili, pelti, profiilipelti, tasakatto, kattoon integroitu tai maa
 
 Paneelit, invertterit, aurinkokatto ja varasto.
 
-Aurinkopaneelit, invertterit, aurinkokatto ja aurinkosähkön kanssa toimivat varastot: Ralos, HT-SAAE, HD Hyundai, APsystems, Sofar Solar, Roofit.Solar, Elecnova ja EP Energy. Roofit.Solarin aurinkokattoja toimittaa Suomessa Gare Energy Oy, ja HT-SAAE:n, HD Hyundain, APsystemsin ja Sofar Solarin laitteita Scanoffice Oy.
+Paneelit, mikroinvertterit, invertterit, aurinkokatto, aurinkokatos ja varastot kolmen kumppanin kautta: Ralos (myös Hanersun, Over Easy, Hoymiles ja Atmoce), Scanoffice Oy (HT-SAAE, HD Hyundai, APsystems, Sofar Solar ja SolaX) ja Gare Energy Oy (Roofit.Solar ja Gare Solar Carport). Lisäksi Elecnovan hybridikaappi.
 
-Kaikki 11Aurinkopaneelit 5Aurinkokatto 1Invertterit 2Aurinko ja varasto 3
-Ralos
-RLS-585
-Kaksipuolinen aurinkopaneeli, HJT-kennot
-Teho
-585 W
-
-Hyötysuhde
-22,4 %
-
-Kaksipuolisuus
-90 %
-
-Koko
-2,38 × 1,10 m
-
-Lähde: Ralos Oy, esite RLS-585, 6/2023
-
+Kaikki 24Aurinkopaneelit 9Aurinkokatto 1Aurinkokatos 1Mikroinvertterit 6Invertterit 3Aurinko ja varasto 4
 Ralos
 RLS-480
 Täysmusta kaksipuolinen aurinkopaneeli, HJT-kennot
@@ -438,6 +396,74 @@ Koko
 1,96 × 1,10 m
 
 Lähde: Ralos Oy, esite RLS-480, 6/2023
+
+Hanersun
+HiTouch 450 Wp
+Täysmusta aurinkopaneeli
+Teho
+450 Wp
+
+Hyötysuhde
+22,5 %
+
+Takuu
+tuote 15 v, teho 30 v
+
+Koko
+1,76 × 1,13 m
+
+Lähde: Ralos Oy, tuotesivu Hanersun HiTouch 450 Wp, luettu 9.11.2026
+
+Hanersun
+HiTouch 500 Wp
+Täysmusta aurinkopaneeli
+Teho
+500 Wp
+
+Hyötysuhde
+22,5 %
+
+Takuu
+tuote 15 v, teho 30 v
+
+Koko
+1,96 × 1,13 m
+
+Lähde: Ralos Oy, tuotesivu Hanersun HiTouch 500 Wp, luettu 9.11.2026
+
+Hanersun
+HiTouch 620 Wp
+Suuritehoinen aurinkopaneeli tasakatoille
+Teho
+620 Wp
+
+Hyötysuhde
+23 %
+
+Takuu
+tuote 15 v, teho 30 v
+
+Koko
+2,38 × 1,13 m
+
+Lähde: Ralos Oy, tuotesivu Hanersun HiTouch 620 Wp, luettu 9.11.2026
+
+Hanersun
+HiTouch 725 Wp
+Suuritehoinen aurinkopaneeli suuriin kohteisiin
+Teho
+725 Wp
+
+Hyötysuhde
+23,3 %
+
+Takuu
+tuote 15 v, teho 30 v
+
+Koko
+2,38 × 1,13 m
+
+Lähde: Ralos Oy, tuotesivu Hanersun HiTouch 725 Wp, luettu 9.11.2026
 
 HT-SAAE
 HT72-18X(ND)-F
@@ -490,6 +516,23 @@ Koko
 
 Lähde: HD Hyundai Energy Solutions, HJT-paneelien datalehti (Scanoffice), luettu 9.11.2026
 
+Over Easy
+xM-3
+Kaksipuolinen aurinkovoimala viherkatolle
+Teho
+256 W yksikköä kohden
+
+Kaksipuolisuus
+95 %
+
+Koko
+1,58 × 1,49 m
+
+Paino
+noin 28 kg
+
+Lähde: Ralos Oy, tuotesivu Over Easy xM-3, luettu 9.11.2026
+
 Roofit.Solar
 Velario Slim
 Aurinkokatto konesaumakattoon, Suomessa toimittaa Gare Energy Oy
@@ -507,6 +550,108 @@ vähintään 10°
 
 Lähde: Roofit.Solar, Velario Slim -datalehti 2026-02 V1, luettu 9.11.2026
 
+Gare Energy
+Gare Solar Carport
+Aurinkokatos 2–8 autolle, lataus ja varasto lisävarusteena
+Teho
+8,78 kWp kahdelle autolle
+
+Autopaikat
+2, 4, 6 tai 8
+
+Pinnoite
+Magnelis
+
+Takuu
+rakenne 10 v, paneelit 25 v
+
+Lähde: Gare Energy Oy, Gare Solar Carport -tuotesivu, luettu 9.11.2026
+
+Hoymiles
+MiT
+Kolmivaiheinen mikroinvertteri teollisuuskohteisiin
+AC-teho
+3 000–5 000 W
+
+Hyötysuhde
+96,5 % (CEC)
+
+DC-jännite
+alle 65 V
+
+Takuu
+12 vuotta, enintään 25
+
+Lähde: Ralos Oy, tuotesivu Hoymiles MiT, luettu 9.11.2026
+
+Hoymiles
+HMT
+Kolmivaiheinen mikroinvertteri neljälle paneelille
+AC-teho
+1 600–2 000 W
+
+Hyötysuhde
+96,5 % (CEC)
+
+DC-jännite
+alle 65 V
+
+Kotelointi
+IP67
+
+Lähde: Ralos Oy, tuotesivu Hoymiles HMT, luettu 9.11.2026
+
+Hoymiles
+HMS
+Yksivaiheinen mikroinvertteri
+AC-teho
+400–2 000 W
+
+Hyötysuhde
+96,5 % (CEC)
+
+DC-jännite
+alle 65 V
+
+Jännite
+230 V
+
+Lähde: Ralos Oy, tuotesivu Hoymiles HMS, luettu 9.11.2026
+
+Hoymiles
+MiS
+Suurtehoinen yksivaiheinen mikroinvertteri
+AC-teho
+2 250–2 750 W
+
+Hyötysuhde
+96,5 % (CEC)
+
+DC-jännite
+alle 65 V
+
+Paneelit
+yli 600 W
+
+Lähde: Ralos Oy, tuotesivu Hoymiles MiS, luettu 9.11.2026
+
+Atmoce
+MI-sarja
+Mikroinvertteri pientaloihin
+Paneelit
+enintään 700 W
+
+Hyötysuhde
+huippu 97,4 %
+
+Kotelointi
+IP67
+
+Takuu
+25 vuotta
+
+Lähde: Ralos Oy, tuotesivu Atmoce-mikroinvertterit, luettu 9.11.2026
+
 APsystems
 QT2
 Kolmivaiheinen mikroinvertteri neljälle paneelille
@@ -523,6 +668,40 @@ Käyttölämpötila
 −40…+65 °C
 
 Lähde: APsystems, QT2-datalehti, versio 1.0, 7.10.2023 (Scanoffice), luettu 9.11.2026
+
+Hoymiles
+HiT-(5–20)L-G3
+Kolmivaiheinen hybridi-invertteri matalajänniteakuille
+Teho
+5–20 kW
+
+MPPT
+enintään 4
+
+DC/AC
+enintään 200 %
+
+Epäsymmetria
+100 %
+
+Lähde: Ralos Oy, tuotesivu Hoymiles HiT, luettu 9.11.2026
+
+Hoymiles
+HYT-HV ja HAT-HV
+Hybridi- ja akkuinvertterit korkeajänniteakuille
+HYT, teho
+5–12 kW
+
+HAT, teho
+5–10 kW
+
+Akkujännite
+170–600 V
+
+HAT
+akun jälkiasennus
+
+Lähde: Ralos Oy, tuotesivut Hoymiles HYT ja HAT, luettu 9.11.2026
 
 Sofar Solar
 KTL-X, KTL-G2 ja KTL
@@ -558,22 +737,22 @@ Aurinkosähkö, optio
 
 Lähde: Ralos Oy, tekninen tiedote Ralos Beast 125, versio V10, tarkistettu 9.11.2026
 
-EP Energy
-EPHS104 / EPHS156
-Hybridikaappi aurinkosähköön
+Ralos
+Mini-Beast 50
+Energiavarasto keskisuuriin kiinteistöihin, hybridi-invertterillä
 Teho
 50 kW
 
 Energia
-104 tai 156 kWh
-
-Aurinkosähkö
-enintään 100 kW
+102 kWh
 
 Varavoima
-alle 10 ms
+oma lähtö, UPS-toiminto
 
-Lähde: EP Energy, luettelo C&I Energy Storage Solutions, 12/2025
+Aurinkosähkö
+suoraan invertteriin
+
+Lähde: Ralos Oy, tuotesivu Ralos Mini-Beast 50, luettu 9.11.2026
 
 Elecnova
 ECO-E64WX
@@ -591,6 +770,32 @@ Jäähdytys
 ilma
 
 Lähde: Elecnova, tuotesivu ECO-E64WX, luettu 9.11.2026
+
+SolaX
+X3-Hybrid G4 ja T30
+Hybridi-invertteri ja akku kotiin ja pienkohteisiin
+Teho
+5–15 kW
+
+Akku
+3,1–12,3 kWh
+
+Kotelointi
+IP65
+
+Rinnan
+enintään 150 kW
+
+Lähde: SolaX, esitteet X3-Hybrid G4 ja Triple Power T30 (Scanoffice), luettu 9.11.2026
+
+Muut mallit ja ratkaisut
+Tiedot valmistajien tuotesivuilta ja tiedotteista.
+
+Malli · Tyyppi · Päätiedot · Lähde
+M-CombinerAtmoce · Kytkentäkotelo aurinkosähkölle ja akuille · aurinkosähkö enintään 30 kW, akut enintään 42 kWh · Ralos Oy, tuotesivu ATMOCE M-Combiner, luettu 9.11.2026
+HYD 5–20KTL-3PHSofar Solar · Kolmivaiheinen hybridi-invertteri akuille · 5–20 kW · Scanoffice, tuotesivu Sofar-sähkövarasto ja hybridi-invertteri, luettu 9.11.2026
+FLAT25Ralos · Kiskoton asennusjärjestelmä tasakatoille · katon kuorma 5,5 kg/m² · Ralos Oy, ratkaisusivu aurinkovoimalat, luettu 9.11.2026
+KiinnitysjärjestelmätAeroCompact, Esdec, Nordic Sun, Orima Solar · Paneelien kiinnitys katolle ja maahan · tasakatot, harjakatot ja maateline; palomieskytkin Santon · Scanoffice, aurinkopaneelien tuotesivut, luettu 9.11.2026
 
 Tekniset tiedot ovat valmistajien datalehdiltä ja esitteistä. Paneelit, voimalan koko ja invertterit valitaan kohteenne kulutuksen, katon ja liittymän mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla. Varavoima koskee valittuja piirejä, jotka suunnitellaan kohdekäynnillä.
 
@@ -709,9 +914,9 @@ Pyydä maksuton kartoitus
 
 Valikoima kaapista konttiin.
 
-Ulkokaapit, hybridikaapit, kontit, siirrettävät yksiköt ja varavoimakaapit viideltä valmistajalta: Ralos, Elecnova, EP Energy, Avant Power ja ZOE Energy Storage. Latausasemat ovat lataussivulla.
+Ulkokaapeista ja suurista varastoista siirrettäviin yksiköihin ja pienkohteiden akkuihin: Ralos, Elecnova, Avant Power ja ZOE Energy Storage sekä Raloksen ja Scanoffice Oy:n kautta Hoymiles, Pytes, Enershare, Atmoce, Raystech ja SolaX. Latausasemat ovat lataussivulla.
 
-Kaikki 14Ulkokaapit 5Hybridikaapit 2Kontit 2Siirrettävät ja lataus 4Varavoima 3
+Kaikki 18Ulkokaapit 4Hybridikaapit 2Kontit ja suuret varastot 2Siirrettävät 1Varavoima 3Pienkohteet 8
 Ralos
 Beast 125 HD
 Nestejäähdytetty energiavarasto sisä- tai ulkoasennukseen
@@ -728,6 +933,23 @@ Aurinkosähkö, optio
 2 × 63 kW
 
 Lähde: Ralos Oy, tekninen tiedote Ralos Beast 125, versio V10, tarkistettu 9.11.2026
+
+Ralos
+Mini-Beast 50
+Energiavarasto keskisuuriin kiinteistöihin, hybridi-invertterillä
+Teho
+50 kW
+
+Energia
+102 kWh
+
+Varavoima
+oma lähtö, UPS-toiminto
+
+Aurinkosähkö
+suoraan invertteriin
+
+Lähde: Ralos Oy, tuotesivu Ralos Mini-Beast 50, luettu 9.11.2026
 
 Elecnova
 ECO-E418LP
@@ -763,23 +985,6 @@ Pohja
 
 Lähde: Elecnova, tuotesivu ECO-E101WX, luettu 9.11.2026
 
-EP Energy
-EPES233
-Nestejäähdytetty ulkokaappi
-Teho
-105 kW
-
-Energia
-233 kWh
-
-Jäähdytys
-neste
-
-Pohja
-1,45 × 1,3 m
-
-Lähde: EP Energy, luettelo C&I Energy Storage Solutions, 12/2025
-
 ZOE Energy Storage
 Z Box-C 215-2H
 Nestejäähdytetty ulkokaappi
@@ -796,23 +1001,6 @@ Pohja
 1,34 × 1,40 m
 
 Lähde: ZOE Energy Storage, Z Box-C 215-2H -datalehti (Scanoffice), luettu 9.11.2026
-
-EP Energy
-EPHS104 / EPHS156
-Hybridikaappi aurinkosähköön
-Teho
-50 kW
-
-Energia
-104 tai 156 kWh
-
-Aurinkosähkö
-enintään 100 kW
-
-Varavoima
-alle 10 ms
-
-Lähde: EP Energy, luettelo C&I Energy Storage Solutions, 12/2025
 
 Elecnova
 ECO-E64WX
@@ -848,73 +1036,22 @@ Paino
 
 Lähde: Elecnova, tuotesivu ECO-E20FT2170LP, luettu 9.11.2026
 
-EP Energy
-EPES5000
-Akustokontti suuriin kohteisiin
-Energia
-5 015 kWh
+Avant Power
+OptiGrid™-energiavarasto
+Kiinteä energiavarasto uppojäähdytyksellä, myös pikalatauksella
+Koot
+200 kW / 250 kWh tai 400 kW / 500 kWh
 
-Jännite
-1 040–1 500 V DC
+Pikalataus
+integroitu, 200–600 kW
 
 Jäähdytys
-neste
+uppojäähdytys
 
-Paino
-44 t
+Ohjaus
+OptiGrid Cloud
 
-Lähde: EP Energy, luettelo C&I Energy Storage Solutions, 12/2025
-
-EP Energy
-EPPS93-M
-Siirrettävä energiayksikkö
-Energia
-93 kWh
-
-DC-lataus
-60 kW
-
-AC-ulostulo
-33 kVA
-
-Paino
-1,5 t
-
-Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
-
-EP Energy
-EPPS210-M
-Siirrettävä energiayksikkö perävaunulla
-Energia
-217 kWh
-
-DC-lataus
-enintään 240 kW
-
-AC-ulostulo
-125 kW
-
-Paino
-2,7 t
-
-Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
-
-EP Energy
-EPCS209
-Akulla varustettu DC-pikalaturi
-Liittymästä
-60 kW
-
-Lataus
-enintään 240 kW
-
-Akku
-209 kWh
-
-Liittimet
-2 × CCS2
-
-Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
+Lähde: Avant Power, OptiGrid™-tuotesivu, luettu 9.11.2026
 
 Avant Power
 OptiTemp® Cube 47
@@ -950,6 +1087,142 @@ Jännite
 
 Lähde: Elecnova, tuotesivu ECO-STS-C125, luettu 9.11.2026
 
+Hoymiles
+HiOne
+Kolmivaiheinen all-in-one-varasto kotiin ja pieneen yritykseen
+Teho
+8–20 kW
+
+Energia
+8–32 kWh tornissa, enintään 64 kWh
+
+Kotelointi
+IP66
+
+Takuu
+10 vuotta
+
+Lähde: Ralos Oy, tuotesivu Hoymiles HiOne, luettu 9.11.2026
+
+SolaX
+X3-Hybrid G4 ja T30
+Hybridi-invertteri ja akku kotiin ja pienkohteisiin
+Teho
+5–15 kW
+
+Akku
+3,1–12,3 kWh
+
+Kotelointi
+IP65
+
+Rinnan
+enintään 150 kW
+
+Lähde: SolaX, esitteet X3-Hybrid G4 ja Triple Power T30 (Scanoffice), luettu 9.11.2026
+
+Hoymiles
+LB-16D-G3
+Matalajänniteakku hybridi-invertterille
+Energia
+16 kWh
+
+Laajennus
+enintään 16 rinnan, 256 kWh
+
+Jännite
+51,2 V
+
+Kotelointi
+IP65
+
+Lähde: Ralos Oy, tuotesivu Hoymiles LB-16D-G3, luettu 9.11.2026
+
+Enershare
+CORE
+Pinottava korkeajänniteakku
+Energia
+9,6–25,6 kWh tornissa
+
+Rinnan
+enintään 153,6 kWh
+
+Syklit
+vähintään 6 000
+
+Kotelointi
+IP65
+
+Lähde: Ralos Oy, tuotesivu Enershare CORE, luettu 9.11.2026
+
+Pytes
+PiLV1
+Pinottava matalajänniteakku
+Energia
+5,12–30,72 kWh tornissa
+
+Rinnan
+enintään 8 tornia
+
+Jännite
+51,2 V
+
+Syklit
+vähintään 6 000
+
+Lähde: Ralos Oy, tuotesivu Pytes PiLV1, luettu 9.11.2026
+
+Pytes
+V16
+Matalajänniteakku myös ulkoasennukseen
+Energia
+16,07 kWh
+
+Purkuteho
+jatkuva 10,24 kW
+
+Kotelointi
+IP66
+
+Syklit
+vähintään 8 000
+
+Lähde: Ralos Oy, tuotesivu Pytes V16, luettu 9.11.2026
+
+Atmoce
+M-ELV
+Matalajänniteakku integroidulla invertterillä
+Energia
+7 kWh
+
+Teho
+4,5 kVA jatkuva
+
+Laajennus
+enintään 126 kWh
+
+Takuu
+15 vuotta
+
+Lähde: Ralos Oy, tuotesivu ATMOCE M-ELV, luettu 9.11.2026
+
+Raystech
+RT16076MPlus
+Matalajänniteakku
+Energia
+14,95 kWh
+
+Syklit
+yli 16 000
+
+Kotelointi
+IP65
+
+Paino
+124 kg
+
+Lähde: Ralos Oy, tuotesivu Raystech RT16076MPlus, luettu 9.11.2026
+
 Muut mallit ja ratkaisut
 Tiedot valmistajien tuotesivuilta ja tiedotteista.
 
@@ -964,6 +1237,9 @@ ECO-B20FT5015LP-2Elecnova · Nestejäähdytetty 20 jalan akustokontti · 5 015 k
 ECO-B20FT3404WSElecnova · Ilmajäähdytteinen 20 jalan akustokontti · 3 404 kWh · Elecnova, tuotesivu ECO-B20FT3404WS, luettu 9.11.2026
 ECO-EPS-C125Elecnova · EPS-kaappi varavoimaan · 1, 3 tai 6 × 125 kW, siirto enintään 20 s · Elecnova, tuotesivu ECO-EPS-C125, luettu 9.11.2026
 PCS, BMS ja EMSElecnova · Tehoelektroniikka, akunhallinta ja energianhallinta · komponentit kokonaisuuden osiksi · Elecnova, tuotesivut PCS, BMS ja EMS, luettu 9.11.2026
+RT5427 HV/SHVRaystech · Korkeajänniteakun moduuli · 5,43 kWh moduulia kohden, IP65 · Ralos Oy, tuotesivu Raystech RT5427 HV/SHV, luettu 9.11.2026
+M-BackupAtmoce · Varavoiman kytkentäkeskus · verkko 80 A, kuorma 63 A, IP65 · Ralos Oy, tuotesivu ATMOCE M-Backup, luettu 9.11.2026
+OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · DC-verkko, energiavarastot, lataus ja OptiGrid Cloud -ohjaus, osat myös erikseen · Avant Power, OptiGrid™-tuotesivu, luettu 9.11.2026
 
 Tekniset tiedot ovat valmistajien datalehdiltä ja tuotesivuilta. Varavoima koskee valittuja piirejä, jotka suunnitellaan kohdekäynnillä. Valmistaja ja malli valitaan kohteenne kulutuksen, liittymän ja tilan mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla.
 
@@ -1100,23 +1376,23 @@ Etusivu›Lataus
 
 Lataus, joka mahtuu liittymäänne.
 
-Toimistolle muutama latauspiste, varikolle pikalaturit: lataus valitaan sen mukaan, kauanko autot seisovat ja paljonko liittymä antaa. Kun liittymän teho ei riitä huippuun, varasto antaa sen, ja aurinkokatos tuottaa sähköä samaan järjestelmään. Latausasemat ovat neljältä valmistajalta, ja vertailu tulee kirjallisena samoilla luvuilla.
+Toimistolle muutama latauspiste, varikolle pikalaturit: lataus valitaan sen mukaan, kauanko autot seisovat ja paljonko liittymä antaa. Kun liittymän teho ei riitä huippuun, varasto antaa sen, ja aurinkokatos tuottaa sähköä samaan järjestelmään. Latausasemat ovat useammalta valmistajalta, ja vertailu tulee kirjallisena samoilla luvuilla.
 
 Pyydä maksuton kartoitus Latausasemat
 
 22 kWAC-latauspiste pysäköintiin. Kuormanhallinta jakaa liittymän tehon latauspisteiden kesken.
 
-360 kWDC-pikalaturi kahdella CCS2-liittimellä varikoille ja raskaalle kalustolle.
+600 kWpikalataus energiavarastoon integroituna latausasemille ja varikoille, valittavissa 200–600 kW.
 
-240 kWautoon akulla varustetusta pikalaturista, vaikka verkosta otetaan 60 kW.
+9 kWType 2 -lataus siirrettävästä energiayksiköstä työmaalle, jolla verkkoa ei ole.
 
 Lähteet: valmistajien datalehdet, valikoima alla.
 
-Latausasemat neljältä valmistajalta.
+Latausasemat useammalta valmistajalta.
 
-AC-latausasemat pysäköintiin, DC-pikalaturit, akulla varustetut laturit ja siirrettävät yksiköt: Zaptec, Easee, EP Energy ja Avant Power. Zaptecin ja Easeen latausasemat toimittaa Scanoffice Oy.
+AC-latausasemat pysäköintiin ja kotiin, energiavarastoon integroitu pikalataus, siirrettävä energiayksikkö ja aurinkokatos: Zaptec, Easee ja BENY Scanoffice Oy:n kautta, Avant Power sekä Gare Energy Oy.
 
-Kaikki 7AC-lataus 3DC-pikalataus 4Akulla varustetut 1Siirrettävät 3
+Kaikki 7AC-lataus 5DC-pikalataus 1Varaston kanssa 1Siirrettävät 1Aurinkokatos 1Kotiin 2
 Zaptec
 Zaptec Pro
 AC-latausasema yritysten ja taloyhtiöiden pysäköintiin
@@ -1151,73 +1427,22 @@ OCPP 1.6J
 
 Lähde: Easee, Charge Pro -datalehti 10/2025, versio 1.03 (Scanoffice), luettu 9.11.2026
 
-EP Energy
-EPCP-DC120–360
-DC-pikalaturi kahdella CCS2-liittimellä
+Avant Power
+OptiGrid™-energiavarasto
+Energiavarasto ja integroitu pikalataus latausasemille
+Pikalataus
+200–600 kW, satelliittilatausasemat
+
+Varasto
+250 tai 500 kWh
+
 Teho
-120–360 kW
+200 tai 400 kW
 
-Liittimet
-2 × CCS2
+Ohjaus
+OptiGrid Cloud
 
-Jännite
-200–1 000 V DC
-
-Käyttölämpötila
-−30…+55 °C
-
-Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
-
-EP Energy
-EPCS209
-Akulla varustettu DC-pikalaturi
-Liittymästä
-60 kW
-
-Lataus
-enintään 240 kW
-
-Akku
-209 kWh
-
-Liittimet
-2 × CCS2
-
-Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
-
-EP Energy
-EPPS210-M
-Siirrettävä energiayksikkö perävaunulla
-Energia
-217 kWh
-
-DC-lataus
-enintään 240 kW
-
-AC-ulostulo
-125 kW
-
-Paino
-2,7 t
-
-Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
-
-EP Energy
-EPPS93-M
-Siirrettävä energiayksikkö
-Energia
-93 kWh
-
-DC-lataus
-60 kW
-
-AC-ulostulo
-33 kVA
-
-Paino
-1,5 t
-
-Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
+Lähde: Avant Power, OptiGrid™-tuotesivu, luettu 9.11.2026
 
 Avant Power
 OptiTemp® Cube 47
@@ -1236,11 +1461,62 @@ Paino
 
 Lähde: Avant Power, OptiTemp® Cube 47 -esite, 6/2026, luettu 9.11.2026
 
+Gare Energy
+Gare Solar Carport
+Aurinkokatos 2–8 autolle, lataus ja varasto lisävarusteena
+Teho
+8,78 kWp kahdelle autolle
+
+Autopaikat
+2, 4, 6 tai 8
+
+Pinnoite
+Magnelis
+
+Takuu
+rakenne 10 v, paneelit 25 v
+
+Lähde: Gare Energy Oy, Gare Solar Carport -tuotesivu, luettu 9.11.2026
+
+Easee
+Charge Max
+AC-latausasema kotiin ja pieneen kohteeseen
+Teho
+enintään 22 kW
+
+Mittari
+MID, luokka B
+
+Kotelointi
+IP54, IK10
+
+Rajapinta
+OCPP 1.6J
+
+Lähde: Easee, Charge Max -datalehti (Scanoffice), luettu 9.11.2026
+
+BENY
+BCP-sarja
+AC-latausasema kotiin ja vapaa-ajan kohteisiin
+Teho
+enintään 22 kW
+
+Kuormanhallinta
+dynaaminen, myös langaton
+
+Ohjaus
+puhelinsovellus
+
+Lähde: BENY, latausaseman esite (Scanoffice), luettu 9.11.2026
+
 Muut mallit ja ratkaisut
 Tiedot valmistajien tuotesivuilta ja tiedotteista.
 
 Malli · Tyyppi · Päätiedot · Lähde
-OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · tuotanto, varasto, työkoneiden ja autojen lataus sekä hukkalämmön talteenotto, kokoonpano kohteen mukaan · Avant Tecno, tiedote OptiGrid™-mikroverkosta 1.7.2025, luettu 9.11.2026
+OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · DC-verkko, energiavarastot, lataus ja OptiGrid Cloud -ohjaus, osat myös erikseen · Avant Power, OptiGrid™-tuotesivu, luettu 9.11.2026
+Zaptec GoZaptec · AC-latausasema kotiin · enintään 22 kW, IP54, OCPP 1.6J · Zaptec Charger AS, Zaptec Go -tuotelehti (Scanoffice), luettu 9.11.2026
+Charge UpEasee · AC-latausasema kotiin · enintään 22 kW, IP54, IK10, OCPP 1.6J · Easee, Charge Up -datalehti (Scanoffice), luettu 9.11.2026
+LataustolppaScanoffice · Lataustolppa kahdelle latauslaitteelle · maalattu galvanoitu teräs, toimitetaan koottuna · Scanoffice, tuotesivu Easee-latausasemat ja lataustolpat, luettu 9.11.2026
 
 Tekniset tiedot ovat valmistajien datalehdiltä. Latauspisteiden määrä, teho ja kuormanhallinta mitoitetaan pysäköinnin, käytön ja liittymän mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla.
 
@@ -1281,13 +1557,13 @@ Työpaikka, hotelli
 tai taloyhtiö · AC-latauspisteet, enintään 22 kW. Kuormanhallinta jakaa liittymän tehon latauspisteiden kesken, ja pisteitä voidaan lisätä vaiheittain.
 
 Asiakaspysäköinti,
-kauppa tai ravintola · DC-pikalaturi. Kun liittymä ei riitä huippuun, akulla varustettu pikalaturi tai erillinen varasto antaa erotuksen.
+kauppa tai ravintola · Pikalataus energiavaraston rinnalla: kun liittymä ei riitä huippuun, varasto antaa erotuksen.
 
 Varikko, logistiikka
-tai raskas kalusto · DC-pikalaturit 120–360 kW, varasto ja ohjaus, joka ajoittaa lataukset.
+tai raskas kalusto · Energiavarasto ja integroitu pikalataus 200–600 kW sekä ohjaus, joka ajoittaa lataukset.
 
 Työmaa, tapahtuma tai
-tilapäinen tarve · Siirrettävä energiayksikkö: DC-lataus enintään 240 kW tai Type 2-lähtö 9 kW.
+tilapäinen tarve · Siirrettävä energiayksikkö, Type 2-lähtö 9 kW.
 
 Velvoite. Muussa kuin asuinrakennuksessa, jonka yhteydessä on yli 20 pysäköintipaikkaa, on pitänyt olla vähintään yksi yli 3,7 kW:n latauspiste 31.12.2024 alkaen. Poikkeuksia ovat muun muassa mikroyrityksen omassa käytössä olevat rakennukset. Lähde: laki 733/2020, Moottori 30.9.2024.
 
@@ -1751,7 +2027,6 @@ Valitsimme kumppanit sen mukaan, mitä ne tuovat yrityksen investoinnille: laitt
 Kumppanit aloittainKumppani · Energiavarastot · Aurinkosähkö · Lataus ja mikroverkot · Lämpöpumput · Reservimarkkinat
 Ralos Oy · Laitteet · Laitteet · ei · ei · ei
 Elecnova · Laitteet · ei · Laitteet · ei · ei
-EP Energy · Laitteet · ei · Laitteet · ei · ei
 Avant Power · Laitteet · ei · Laitteet · ei · ei
 Scanoffice Oy · ei · Laitteet · Laitteet · Laitteet · ei
 Gare Energy Oy · Asennus · Laitteet ja asennus · Laitteet ja asennus · ei · ei
@@ -1788,19 +2063,6 @@ Lataus ja mikroverkot
 
 Mallit valikoimassa elecnova-ess.com
 Lähteet: Elecnova, tuotesivu ECO-E261LP-2A (luettu 27.9.2026); Elecnovan uutinen ENERGIA 2026 -messuilta, 25.10.2026; pv magazine, 3.6.2026.
-
-EP Energy
-Kiina · Anji, Zhejiang · Euroopan toimisto Belgiassa vuodesta 2011
-Miksi valitsimmeKiinteiden kaappien ja konttien lisäksi siirrettävät energiayksiköt ja akulla varustetut pikalaturit: varasto ja lataus myös työmaalle ja kohteisiin, joissa liittymä ei riitä. Jakelu ja tuki Euroopassa hoituvat Belgiasta.
-TaustaLitiumakkujen valmistaja, jolla on yli 17 vuoden kokemus: ensin sähkökäyttöisiin trukkeihin ja varastolaitteisiin, vuodesta 2022 myös energiavarastoihin. Akkuja valmistuu noin 200 000 vuodessa, ja niitä on käytössä yli 600 000. Euroopan toimisto on ollut Belgiassa vuodesta 2011, varasto on Brysselissä ja toimisto Kölnissä.
-Energiavarastokaapit
-Konttivarastot
-Siirrettävät energiayksiköt
-Pikalaturit
-Trukit ja laitteet
-
-Mallit valikoimassa ep-unipower.com
-Lähteet: EP Energy, luettelot C&I Energy Storage Solutions ja Mobile Energy & Storage Charging Solutions, 12/2025.
 
 Avant Power
 Suomi · Ylöjärvi · Avant Tecnon tytäryhtiö
@@ -1873,7 +2135,7 @@ Koko valikoima kuvin ja tiedoin.
 
 Energiavarastot, latausasemat, aurinkosähkö ja lämpöpumput kumppaneidemme kautta: valmistaja, malli ja päätiedot valmistajan datalehdeltä lähteineen. Lopullinen kokoonpano lasketaan kartoituksessa kulutustiedoistanne, ja jokainen energiavarasto käy läpi laitevaatimuksemme ennen kuin se on tarjouksessa.
 
-Kaikki 34Energiavarastot 14Lataus 7Aurinkosähkö 8Lämpöpumput 9Siirrettävät 4Varavoima 3
+Kaikki 51Energiavarastot 18Lataus 7Aurinkosähkö 20Lämpöpumput 9Siirrettävät 1Varavoima 3Pienkohteet 14
 Ralos
 Beast 125 HD
 Nestejäähdytetty energiavarasto sisä- tai ulkoasennukseen
@@ -1890,6 +2152,23 @@ Aurinkosähkö, optio
 2 × 63 kW
 
 Lähde: Ralos Oy, tekninen tiedote Ralos Beast 125, versio V10, tarkistettu 9.11.2026
+
+Ralos
+Mini-Beast 50
+Energiavarasto keskisuuriin kiinteistöihin, hybridi-invertterillä
+Teho
+50 kW
+
+Energia
+102 kWh
+
+Varavoima
+oma lähtö, UPS-toiminto
+
+Aurinkosähkö
+suoraan invertteriin
+
+Lähde: Ralos Oy, tuotesivu Ralos Mini-Beast 50, luettu 9.11.2026
 
 Elecnova
 ECO-E418LP
@@ -1925,23 +2204,6 @@ Pohja
 
 Lähde: Elecnova, tuotesivu ECO-E101WX, luettu 9.11.2026
 
-EP Energy
-EPES233
-Nestejäähdytetty ulkokaappi
-Teho
-105 kW
-
-Energia
-233 kWh
-
-Jäähdytys
-neste
-
-Pohja
-1,45 × 1,3 m
-
-Lähde: EP Energy, luettelo C&I Energy Storage Solutions, 12/2025
-
 ZOE Energy Storage
 Z Box-C 215-2H
 Nestejäähdytetty ulkokaappi
@@ -1958,23 +2220,6 @@ Pohja
 1,34 × 1,40 m
 
 Lähde: ZOE Energy Storage, Z Box-C 215-2H -datalehti (Scanoffice), luettu 9.11.2026
-
-EP Energy
-EPHS104 / EPHS156
-Hybridikaappi aurinkosähköön
-Teho
-50 kW
-
-Energia
-104 tai 156 kWh
-
-Aurinkosähkö
-enintään 100 kW
-
-Varavoima
-alle 10 ms
-
-Lähde: EP Energy, luettelo C&I Energy Storage Solutions, 12/2025
 
 Elecnova
 ECO-E64WX
@@ -2010,73 +2255,22 @@ Paino
 
 Lähde: Elecnova, tuotesivu ECO-E20FT2170LP, luettu 9.11.2026
 
-EP Energy
-EPES5000
-Akustokontti suuriin kohteisiin
-Energia
-5 015 kWh
+Avant Power
+OptiGrid™-energiavarasto
+Kiinteä energiavarasto uppojäähdytyksellä, myös pikalatauksella
+Koot
+200 kW / 250 kWh tai 400 kW / 500 kWh
 
-Jännite
-1 040–1 500 V DC
+Pikalataus
+integroitu, 200–600 kW
 
 Jäähdytys
-neste
+uppojäähdytys
 
-Paino
-44 t
+Ohjaus
+OptiGrid Cloud
 
-Lähde: EP Energy, luettelo C&I Energy Storage Solutions, 12/2025
-
-EP Energy
-EPPS93-M
-Siirrettävä energiayksikkö
-Energia
-93 kWh
-
-DC-lataus
-60 kW
-
-AC-ulostulo
-33 kVA
-
-Paino
-1,5 t
-
-Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
-
-EP Energy
-EPPS210-M
-Siirrettävä energiayksikkö perävaunulla
-Energia
-217 kWh
-
-DC-lataus
-enintään 240 kW
-
-AC-ulostulo
-125 kW
-
-Paino
-2,7 t
-
-Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
-
-EP Energy
-EPCS209
-Akulla varustettu DC-pikalaturi
-Liittymästä
-60 kW
-
-Lataus
-enintään 240 kW
-
-Akku
-209 kWh
-
-Liittimet
-2 × CCS2
-
-Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
+Lähde: Avant Power, OptiGrid™-tuotesivu, luettu 9.11.2026
 
 Avant Power
 OptiTemp® Cube 47
@@ -2112,6 +2306,142 @@ Jännite
 
 Lähde: Elecnova, tuotesivu ECO-STS-C125, luettu 9.11.2026
 
+Hoymiles
+HiOne
+Kolmivaiheinen all-in-one-varasto kotiin ja pieneen yritykseen
+Teho
+8–20 kW
+
+Energia
+8–32 kWh tornissa, enintään 64 kWh
+
+Kotelointi
+IP66
+
+Takuu
+10 vuotta
+
+Lähde: Ralos Oy, tuotesivu Hoymiles HiOne, luettu 9.11.2026
+
+SolaX
+X3-Hybrid G4 ja T30
+Hybridi-invertteri ja akku kotiin ja pienkohteisiin
+Teho
+5–15 kW
+
+Akku
+3,1–12,3 kWh
+
+Kotelointi
+IP65
+
+Rinnan
+enintään 150 kW
+
+Lähde: SolaX, esitteet X3-Hybrid G4 ja Triple Power T30 (Scanoffice), luettu 9.11.2026
+
+Hoymiles
+LB-16D-G3
+Matalajänniteakku hybridi-invertterille
+Energia
+16 kWh
+
+Laajennus
+enintään 16 rinnan, 256 kWh
+
+Jännite
+51,2 V
+
+Kotelointi
+IP65
+
+Lähde: Ralos Oy, tuotesivu Hoymiles LB-16D-G3, luettu 9.11.2026
+
+Enershare
+CORE
+Pinottava korkeajänniteakku
+Energia
+9,6–25,6 kWh tornissa
+
+Rinnan
+enintään 153,6 kWh
+
+Syklit
+vähintään 6 000
+
+Kotelointi
+IP65
+
+Lähde: Ralos Oy, tuotesivu Enershare CORE, luettu 9.11.2026
+
+Pytes
+PiLV1
+Pinottava matalajänniteakku
+Energia
+5,12–30,72 kWh tornissa
+
+Rinnan
+enintään 8 tornia
+
+Jännite
+51,2 V
+
+Syklit
+vähintään 6 000
+
+Lähde: Ralos Oy, tuotesivu Pytes PiLV1, luettu 9.11.2026
+
+Pytes
+V16
+Matalajänniteakku myös ulkoasennukseen
+Energia
+16,07 kWh
+
+Purkuteho
+jatkuva 10,24 kW
+
+Kotelointi
+IP66
+
+Syklit
+vähintään 8 000
+
+Lähde: Ralos Oy, tuotesivu Pytes V16, luettu 9.11.2026
+
+Atmoce
+M-ELV
+Matalajänniteakku integroidulla invertterillä
+Energia
+7 kWh
+
+Teho
+4,5 kVA jatkuva
+
+Laajennus
+enintään 126 kWh
+
+Takuu
+15 vuotta
+
+Lähde: Ralos Oy, tuotesivu ATMOCE M-ELV, luettu 9.11.2026
+
+Raystech
+RT16076MPlus
+Matalajänniteakku
+Energia
+14,95 kWh
+
+Syklit
+yli 16 000
+
+Kotelointi
+IP65
+
+Paino
+124 kg
+
+Lähde: Ralos Oy, tuotesivu Raystech RT16076MPlus, luettu 9.11.2026
+
 Zaptec
 Zaptec Pro
 AC-latausasema yritysten ja taloyhtiöiden pysäköintiin
@@ -2146,39 +2476,53 @@ OCPP 1.6J
 
 Lähde: Easee, Charge Pro -datalehti 10/2025, versio 1.03 (Scanoffice), luettu 9.11.2026
 
-EP Energy
-EPCP-DC120–360
-DC-pikalaturi kahdella CCS2-liittimellä
+Gare Energy
+Gare Solar Carport
+Aurinkokatos 2–8 autolle, lataus ja varasto lisävarusteena
 Teho
-120–360 kW
+8,78 kWp kahdelle autolle
 
-Liittimet
-2 × CCS2
+Autopaikat
+2, 4, 6 tai 8
 
-Jännite
-200–1 000 V DC
+Pinnoite
+Magnelis
 
-Käyttölämpötila
-−30…+55 °C
+Takuu
+rakenne 10 v, paneelit 25 v
 
-Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
+Lähde: Gare Energy Oy, Gare Solar Carport -tuotesivu, luettu 9.11.2026
 
-Ralos
-RLS-585
-Kaksipuolinen aurinkopaneeli, HJT-kennot
+Easee
+Charge Max
+AC-latausasema kotiin ja pieneen kohteeseen
 Teho
-585 W
+enintään 22 kW
 
-Hyötysuhde
-22,4 %
+Mittari
+MID, luokka B
 
-Kaksipuolisuus
-90 %
+Kotelointi
+IP54, IK10
 
-Koko
-2,38 × 1,10 m
+Rajapinta
+OCPP 1.6J
 
-Lähde: Ralos Oy, esite RLS-585, 6/2023
+Lähde: Easee, Charge Max -datalehti (Scanoffice), luettu 9.11.2026
+
+BENY
+BCP-sarja
+AC-latausasema kotiin ja vapaa-ajan kohteisiin
+Teho
+enintään 22 kW
+
+Kuormanhallinta
+dynaaminen, myös langaton
+
+Ohjaus
+puhelinsovellus
+
+Lähde: BENY, latausaseman esite (Scanoffice), luettu 9.11.2026
 
 Ralos
 RLS-480
@@ -2196,6 +2540,74 @@ Koko
 1,96 × 1,10 m
 
 Lähde: Ralos Oy, esite RLS-480, 6/2023
+
+Hanersun
+HiTouch 450 Wp
+Täysmusta aurinkopaneeli
+Teho
+450 Wp
+
+Hyötysuhde
+22,5 %
+
+Takuu
+tuote 15 v, teho 30 v
+
+Koko
+1,76 × 1,13 m
+
+Lähde: Ralos Oy, tuotesivu Hanersun HiTouch 450 Wp, luettu 9.11.2026
+
+Hanersun
+HiTouch 500 Wp
+Täysmusta aurinkopaneeli
+Teho
+500 Wp
+
+Hyötysuhde
+22,5 %
+
+Takuu
+tuote 15 v, teho 30 v
+
+Koko
+1,96 × 1,13 m
+
+Lähde: Ralos Oy, tuotesivu Hanersun HiTouch 500 Wp, luettu 9.11.2026
+
+Hanersun
+HiTouch 620 Wp
+Suuritehoinen aurinkopaneeli tasakatoille
+Teho
+620 Wp
+
+Hyötysuhde
+23 %
+
+Takuu
+tuote 15 v, teho 30 v
+
+Koko
+2,38 × 1,13 m
+
+Lähde: Ralos Oy, tuotesivu Hanersun HiTouch 620 Wp, luettu 9.11.2026
+
+Hanersun
+HiTouch 725 Wp
+Suuritehoinen aurinkopaneeli suuriin kohteisiin
+Teho
+725 Wp
+
+Hyötysuhde
+23,3 %
+
+Takuu
+tuote 15 v, teho 30 v
+
+Koko
+2,38 × 1,13 m
+
+Lähde: Ralos Oy, tuotesivu Hanersun HiTouch 725 Wp, luettu 9.11.2026
 
 HT-SAAE
 HT72-18X(ND)-F
@@ -2248,6 +2660,23 @@ Koko
 
 Lähde: HD Hyundai Energy Solutions, HJT-paneelien datalehti (Scanoffice), luettu 9.11.2026
 
+Over Easy
+xM-3
+Kaksipuolinen aurinkovoimala viherkatolle
+Teho
+256 W yksikköä kohden
+
+Kaksipuolisuus
+95 %
+
+Koko
+1,58 × 1,49 m
+
+Paino
+noin 28 kg
+
+Lähde: Ralos Oy, tuotesivu Over Easy xM-3, luettu 9.11.2026
+
 Roofit.Solar
 Velario Slim
 Aurinkokatto konesaumakattoon, Suomessa toimittaa Gare Energy Oy
@@ -2265,6 +2694,91 @@ vähintään 10°
 
 Lähde: Roofit.Solar, Velario Slim -datalehti 2026-02 V1, luettu 9.11.2026
 
+Hoymiles
+MiT
+Kolmivaiheinen mikroinvertteri teollisuuskohteisiin
+AC-teho
+3 000–5 000 W
+
+Hyötysuhde
+96,5 % (CEC)
+
+DC-jännite
+alle 65 V
+
+Takuu
+12 vuotta, enintään 25
+
+Lähde: Ralos Oy, tuotesivu Hoymiles MiT, luettu 9.11.2026
+
+Hoymiles
+HMT
+Kolmivaiheinen mikroinvertteri neljälle paneelille
+AC-teho
+1 600–2 000 W
+
+Hyötysuhde
+96,5 % (CEC)
+
+DC-jännite
+alle 65 V
+
+Kotelointi
+IP67
+
+Lähde: Ralos Oy, tuotesivu Hoymiles HMT, luettu 9.11.2026
+
+Hoymiles
+HMS
+Yksivaiheinen mikroinvertteri
+AC-teho
+400–2 000 W
+
+Hyötysuhde
+96,5 % (CEC)
+
+DC-jännite
+alle 65 V
+
+Jännite
+230 V
+
+Lähde: Ralos Oy, tuotesivu Hoymiles HMS, luettu 9.11.2026
+
+Hoymiles
+MiS
+Suurtehoinen yksivaiheinen mikroinvertteri
+AC-teho
+2 250–2 750 W
+
+Hyötysuhde
+96,5 % (CEC)
+
+DC-jännite
+alle 65 V
+
+Paneelit
+yli 600 W
+
+Lähde: Ralos Oy, tuotesivu Hoymiles MiS, luettu 9.11.2026
+
+Atmoce
+MI-sarja
+Mikroinvertteri pientaloihin
+Paneelit
+enintään 700 W
+
+Hyötysuhde
+huippu 97,4 %
+
+Kotelointi
+IP67
+
+Takuu
+25 vuotta
+
+Lähde: Ralos Oy, tuotesivu Atmoce-mikroinvertterit, luettu 9.11.2026
+
 APsystems
 QT2
 Kolmivaiheinen mikroinvertteri neljälle paneelille
@@ -2281,6 +2795,40 @@ Käyttölämpötila
 −40…+65 °C
 
 Lähde: APsystems, QT2-datalehti, versio 1.0, 7.10.2023 (Scanoffice), luettu 9.11.2026
+
+Hoymiles
+HiT-(5–20)L-G3
+Kolmivaiheinen hybridi-invertteri matalajänniteakuille
+Teho
+5–20 kW
+
+MPPT
+enintään 4
+
+DC/AC
+enintään 200 %
+
+Epäsymmetria
+100 %
+
+Lähde: Ralos Oy, tuotesivu Hoymiles HiT, luettu 9.11.2026
+
+Hoymiles
+HYT-HV ja HAT-HV
+Hybridi- ja akkuinvertterit korkeajänniteakuille
+HYT, teho
+5–12 kW
+
+HAT, teho
+5–10 kW
+
+Akkujännite
+170–600 V
+
+HAT
+akun jälkiasennus
+
+Lähde: Ralos Oy, tuotesivut Hoymiles HYT ja HAT, luettu 9.11.2026
 
 Sofar Solar
 KTL-X, KTL-G2 ja KTL
@@ -2454,9 +3002,20 @@ ECO-B20FT5015LP-2Elecnova · Nestejäähdytetty 20 jalan akustokontti · 5 015 k
 ECO-B20FT3404WSElecnova · Ilmajäähdytteinen 20 jalan akustokontti · 3 404 kWh · Elecnova, tuotesivu ECO-B20FT3404WS, luettu 9.11.2026
 ECO-EPS-C125Elecnova · EPS-kaappi varavoimaan · 1, 3 tai 6 × 125 kW, siirto enintään 20 s · Elecnova, tuotesivu ECO-EPS-C125, luettu 9.11.2026
 PCS, BMS ja EMSElecnova · Tehoelektroniikka, akunhallinta ja energianhallinta · komponentit kokonaisuuden osiksi · Elecnova, tuotesivut PCS, BMS ja EMS, luettu 9.11.2026
-OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · tuotanto, varasto, työkoneiden ja autojen lataus sekä hukkalämmön talteenotto, kokoonpano kohteen mukaan · Avant Tecno, tiedote OptiGrid™-mikroverkosta 1.7.2025, luettu 9.11.2026
+RT5427 HV/SHVRaystech · Korkeajänniteakun moduuli · 5,43 kWh moduulia kohden, IP65 · Ralos Oy, tuotesivu Raystech RT5427 HV/SHV, luettu 9.11.2026
+M-BackupAtmoce · Varavoiman kytkentäkeskus · verkko 80 A, kuorma 63 A, IP65 · Ralos Oy, tuotesivu ATMOCE M-Backup, luettu 9.11.2026
+M-CombinerAtmoce · Kytkentäkotelo aurinkosähkölle ja akuille · aurinkosähkö enintään 30 kW, akut enintään 42 kWh · Ralos Oy, tuotesivu ATMOCE M-Combiner, luettu 9.11.2026
+HYD 5–20KTL-3PHSofar Solar · Kolmivaiheinen hybridi-invertteri akuille · 5–20 kW · Scanoffice, tuotesivu Sofar-sähkövarasto ja hybridi-invertteri, luettu 9.11.2026
+FLAT25Ralos · Kiskoton asennusjärjestelmä tasakatoille · katon kuorma 5,5 kg/m² · Ralos Oy, ratkaisusivu aurinkovoimalat, luettu 9.11.2026
+KiinnitysjärjestelmätAeroCompact, Esdec, Nordic Sun, Orima Solar · Paneelien kiinnitys katolle ja maahan · tasakatot, harjakatot ja maateline; palomieskytkin Santon · Scanoffice, aurinkopaneelien tuotesivut, luettu 9.11.2026
+OptiGrid™Avant Power · Mikroverkko latausasemille ja kiinteistöille · DC-verkko, energiavarastot, lataus ja OptiGrid Cloud -ohjaus, osat myös erikseen · Avant Power, OptiGrid™-tuotesivu, luettu 9.11.2026
+Zaptec GoZaptec · AC-latausasema kotiin · enintään 22 kW, IP54, OCPP 1.6J · Zaptec Charger AS, Zaptec Go -tuotelehti (Scanoffice), luettu 9.11.2026
+Charge UpEasee · AC-latausasema kotiin · enintään 22 kW, IP54, IK10, OCPP 1.6J · Easee, Charge Up -datalehti (Scanoffice), luettu 9.11.2026
+LataustolppaScanoffice · Lataustolppa kahdelle latauslaitteelle · maalattu galvanoitu teräs, toimitetaan koottuna · Scanoffice, tuotesivu Easee-latausasemat ja lataustolpat, luettu 9.11.2026
+IlmalämpöpumputMitsubishi Electric · Ilmalämpöpumput ja ilmanjäähdyttimet · mallisarjat AY, EF, FT, MSZ-LN, RW, RZ, SLZ-M, MFZ-KW ja Multisplit; jäähdyttimet HR ja MSY-TP · Scanoffice, ilmalämpöpumput-tuotesivut, luettu 9.11.2026
+LossnayMitsubishi Electric ja Mobair · Lämmöntalteenottava ilmanvaihtolaite · myös Mobair-korvausilmaventtiilit · Scanoffice, ilmanvaihtolaitteet-tuotesivu, luettu 9.11.2026
 
-Tekniset tiedot ovat valmistajien datalehdiltä, esitteistä ja tuotesivuilta. Valmistaja ja malli valitaan kohteenne kulutuksen, liittymän ja tilan mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla. Kotitalouksien latausasemat, akut ja ilmalämpöpumput saatte samoilta kumppaneilta pyynnöstä.
+Tekniset tiedot ovat valmistajien datalehdiltä, esitteistä ja tuotesivuilta. Valmistaja ja malli valitaan kohteenne kulutuksen, liittymän ja tilan mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla. Pienkohteiden ja kotien tuotteet löytyvät omalla suodattimellaan.
 
 Näin kokoamme tarjouksen.
 
@@ -2590,7 +3149,6 @@ Jokainen projekti tarvitsee meidän lisäksemme neljä asiaa: markkinoillepääs
 Energiavarastot
 Ralos Oyteolliset energiavarastot, Tampere
 Elecnovaulkokaapit ja konttivarastot
-EP Energyenergiavarastokaapit ja konttivarastot
 Avant Powerenergiavarastot ja mikroverkot
 
 Aurinkosähkö
@@ -2600,7 +3158,6 @@ Scanoffice Oyaurinkopaneelit maahantuojalta
 
 Lataus ja mikroverkot
 Avant Powermikroverkot, siirrettävä energia ja lataus
-EP Energysiirrettävät energiayksiköt ja pikalaturit
 Scanoffice Oysähköautojen latausasemat
 Gare Energy Oyaurinkokatos ja latauspisteet
 
@@ -3349,31 +3906,6 @@ Laadimine ja mikrovõrgud
 Allikad: Elecnova, tooteleht ECO-E261LP-2A (loetud 27.9.2026); Elecnova uudis messilt ENERGIA 2026, 25.10.2026; pv magazine, 3.6.2026.
 Partnerite lehelelecnova-ess.com
 
-EP Energy
-Energiasalvestid, teisaldatav energia ja laadimine. Samalt tootjalt ka tõstukid ja muu tehnika.
-Salvestikapid
-Konteinersalvestid
-Teisaldatavad energiaseadmed
-Kiirlaadijad
-Tõstukid ja tehnika
-
-Loe lähemalt
-Sulge
-EP Energy
-Hiina · Anji, Zhejiang · Euroopa kontor Belgias aastast 2011
-Miks me nad valisime
-Lisaks kappidele ja konteineritele teisaldatavad energiaseadmed ja akuga kiirlaadijad: salvesti ja laadimine ka ehitusplatsile ja kohtadesse, kus liitumisest ei piisa. Turustus ja tugi Euroopas käib Belgia kaudu.
-Taust
-Liitiumakude tootja, kellel on üle 17 aasta kogemust: kõigepealt elektriliste tõstukite ja laotehnika akud, alates 2022. aastast ka energiasalvestid. Aastas valmib umbes 200 000 akut ja kasutuses on neid üle 600 000. Euroopa kontor on Belgias aastast 2011, ladu on Brüsselis ja kontor Kölnis.
-Salvestikapid
-Konteinersalvestid
-Teisaldatavad energiaseadmed
-Kiirlaadijad
-Tõstukid ja tehnika
-
-Allikad: EP Energy, kataloogid C&I Energy Storage Solutions ja Mobile Energy & Storage Charging Solutions, 12/2025.
-Partnerite lehelep-unipower.com
-
 Avant Power
 Energiasalvestid ja mikrovõrgud Avanti kontsernist. Vajadusel Avanti kogu valik.
 Energiasalvestid
@@ -3538,26 +4070,9 @@ Iga katuskivi, plekk, profiilplekk, lamekatus, katusesse integreeritud või maap
 
 Paneelid, inverterid ja salvestid.
 
-Päikesepaneelid, inverterid ja päikeseelektriga koos töötavad salvestid: Ralos, HT-SAAE, HD Hyundai, APsystems, Sofar Solar, Elecnova ja EP Energy. HT-SAAE, HD Hyundai, APsystemsi ja Sofar Solari seadmed tulevad Scanoffice Oy kaudu.
+Paneelid, mikroinverterid, inverterid ja salvestid kahe partneri kaudu: Ralos (ka Hanersun, Over Easy, Hoymiles ja Atmoce) ning Scanoffice Oy (HT-SAAE, HD Hyundai, APsystems, Sofar Solar ja SolaX). Lisaks Elecnova hübriidkapp.
 
-Kõik 10Päikesepaneelid 5Inverterid 2Päike ja salvesti 3
-Ralos
-RLS-585
-Kahepoolne päikesepaneel, HJT-elemendid
-Võimsus
-585 W
-
-Kasutegur
-22,4 %
-
-Kahepoolsus
-90 %
-
-Mõõdud
-2,38 × 1,10 m
-
-Allikas: Ralos Oy, brošüür RLS-585, 6/2023
-
+Kõik 22Päikesepaneelid 9Mikroinverterid 6Inverterid 3Päike ja salvesti 4
 Ralos
 RLS-480
 Täismust kahepoolne päikesepaneel, HJT-elemendid
@@ -3574,6 +4089,74 @@ Mõõdud
 1,96 × 1,10 m
 
 Allikas: Ralos Oy, brošüür RLS-480, 6/2023
+
+Hanersun
+HiTouch 450 Wp
+Täismust päikesepaneel
+Võimsus
+450 Wp
+
+Kasutegur
+22,5 %
+
+Garantii
+toode 15 a, võimsus 30 a
+
+Mõõdud
+1,76 × 1,13 m
+
+Allikas: Ralos Oy, tooteleht Hanersun HiTouch 450 Wp, loetud 9.11.2026
+
+Hanersun
+HiTouch 500 Wp
+Täismust päikesepaneel
+Võimsus
+500 Wp
+
+Kasutegur
+22,5 %
+
+Garantii
+toode 15 a, võimsus 30 a
+
+Mõõdud
+1,96 × 1,13 m
+
+Allikas: Ralos Oy, tooteleht Hanersun HiTouch 500 Wp, loetud 9.11.2026
+
+Hanersun
+HiTouch 620 Wp
+Suure võimsusega päikesepaneel lamekatustele
+Võimsus
+620 Wp
+
+Kasutegur
+23 %
+
+Garantii
+toode 15 a, võimsus 30 a
+
+Mõõdud
+2,38 × 1,13 m
+
+Allikas: Ralos Oy, tooteleht Hanersun HiTouch 620 Wp, loetud 9.11.2026
+
+Hanersun
+HiTouch 725 Wp
+Suure võimsusega päikesepaneel suurtele objektidele
+Võimsus
+725 Wp
+
+Kasutegur
+23,3 %
+
+Garantii
+toode 15 a, võimsus 30 a
+
+Mõõdud
+2,38 × 1,13 m
+
+Allikas: Ralos Oy, tooteleht Hanersun HiTouch 725 Wp, loetud 9.11.2026
 
 HT-SAAE
 HT72-18X(ND)-F
@@ -3626,6 +4209,108 @@ Mõõdud
 
 Allikas: HD Hyundai Energy Solutions, HJT-paneelide andmeleht (Scanoffice), loetud 9.11.2026
 
+Over Easy
+xM-3
+Kahepoolne päikesejaam rohekatusele
+Võimsus
+256 W seadme kohta
+
+Kahepoolsus
+95 %
+
+Mõõdud
+1,58 × 1,49 m
+
+Kaal
+umbes 28 kg
+
+Allikas: Ralos Oy, tooteleht Over Easy xM-3, loetud 9.11.2026
+
+Hoymiles
+MiT
+Kolmefaasiline mikroinverter tööstusobjektidele
+AC-võimsus
+3 000–5 000 W
+
+Kasutegur
+96,5 % (CEC)
+
+DC-pinge
+alla 65 V
+
+Garantii
+12 aastat, kuni 25
+
+Allikas: Ralos Oy, tooteleht Hoymiles MiT, loetud 9.11.2026
+
+Hoymiles
+HMT
+Kolmefaasiline mikroinverter neljale paneelile
+AC-võimsus
+1 600–2 000 W
+
+Kasutegur
+96,5 % (CEC)
+
+DC-pinge
+alla 65 V
+
+Kaitseaste
+IP67
+
+Allikas: Ralos Oy, tooteleht Hoymiles HMT, loetud 9.11.2026
+
+Hoymiles
+HMS
+Ühefaasiline mikroinverter
+AC-võimsus
+400–2 000 W
+
+Kasutegur
+96,5 % (CEC)
+
+DC-pinge
+alla 65 V
+
+Pinge
+230 V
+
+Allikas: Ralos Oy, tooteleht Hoymiles HMS, loetud 9.11.2026
+
+Hoymiles
+MiS
+Suure võimsusega ühefaasiline mikroinverter
+AC-võimsus
+2 250–2 750 W
+
+Kasutegur
+96,5 % (CEC)
+
+DC-pinge
+alla 65 V
+
+Paneelid
+üle 600 W
+
+Allikas: Ralos Oy, tooteleht Hoymiles MiS, loetud 9.11.2026
+
+Atmoce
+MI-seeria
+Mikroinverter väikeelamutele
+Paneelid
+kuni 700 W
+
+Kasutegur
+tipp 97,4 %
+
+Kaitseaste
+IP67
+
+Garantii
+25 aastat
+
+Allikas: Ralos Oy, tooteleht Atmoce mikroinverterid, loetud 9.11.2026
+
 APsystems
 QT2
 Kolmefaasiline mikroinverter neljale paneelile
@@ -3642,6 +4327,40 @@ Töötemperatuur
 −40…+65 °C
 
 Allikas: APsystems, QT2 andmeleht, versioon 1.0, 7.10.2023 (Scanoffice), loetud 9.11.2026
+
+Hoymiles
+HiT-(5–20)L-G3
+Kolmefaasiline hübriidinverter madalpingeakudele
+Võimsus
+5–20 kW
+
+MPPT
+kuni 4
+
+DC/AC
+kuni 200 %
+
+Asümmeetria
+100 %
+
+Allikas: Ralos Oy, tooteleht Hoymiles HiT, loetud 9.11.2026
+
+Hoymiles
+HYT-HV ja HAT-HV
+Hübriid- ja akuinverterid kõrgepingeakudele
+HYT, võimsus
+5–12 kW
+
+HAT, võimsus
+5–10 kW
+
+Akupinge
+170–600 V
+
+HAT
+aku järelpaigaldus
+
+Allikas: Ralos Oy, tootelehed Hoymiles HYT ja HAT, loetud 9.11.2026
 
 Sofar Solar
 KTL-X, KTL-G2 ja KTL
@@ -3677,22 +4396,22 @@ Päikeseelekter, lisavarustus
 
 Allikas: Ralos Oy, tehniline andmeleht Ralos Beast 125, versioon V10, kontrollitud 9.11.2026
 
-EP Energy
-EPHS104 / EPHS156
-Hübriidkapp päikeseelektrile
+Ralos
+Mini-Beast 50
+Salvesti keskmistele kinnistutele, hübriidinverteriga
 Võimsus
 50 kW
 
 Energia
-104 või 156 kWh
-
-Päikeseelekter
-kuni 100 kW
+102 kWh
 
 Varutoide
-alla 10 ms
+oma väljund, UPS-funktsioon
 
-Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
+Päikeseelekter
+otse inverterisse
+
+Allikas: Ralos Oy, tooteleht Ralos Mini-Beast 50, loetud 9.11.2026
 
 Elecnova
 ECO-E64WX
@@ -3710,6 +4429,32 @@ Jahutus
 õhk
 
 Allikas: Elecnova, tooteleht ECO-E64WX, loetud 9.11.2026
+
+SolaX
+X3-Hybrid G4 ja T30
+Hübriidinverter ja aku kodule ja väikeobjektidele
+Võimsus
+5–15 kW
+
+Aku
+3,1–12,3 kWh
+
+Kaitseaste
+IP65
+
+Paralleelis
+kuni 150 kW
+
+Allikas: SolaX, brošüürid X3-Hybrid G4 ja Triple Power T30 (Scanoffice), loetud 9.11.2026
+
+Teised mudelid ja lahendused
+Andmed tootjate tootelehtedelt ja pressiteadetest.
+
+Mudel · Tüüp · Põhiandmed · Allikas
+M-CombinerAtmoce · Ühenduskarp päikeseelektrile ja akudele · päikeseelekter kuni 30 kW, akud kuni 42 kWh · Ralos Oy, tooteleht ATMOCE M-Combiner, loetud 9.11.2026
+HYD 5–20KTL-3PHSofar Solar · Kolmefaasiline hübriidinverter akudele · 5–20 kW · Scanoffice, tooteleht Sofar salvesti ja hübriidinverter, loetud 9.11.2026
+FLAT25Ralos · Rööbasteta paigaldussüsteem lamekatustele · katuse koormus 5,5 kg/m² · Ralos Oy, lahenduste leht päikesejaamad, loetud 9.11.2026
+KiinnitysjärjestelmätAeroCompact, Esdec, Nordic Sun, Orima Solar · Paneelide kinnitus katusele ja maale · lamekatused, viilkatused ja maaraam; tuletõrjelüliti Santon · Scanoffice, päikesepaneelide tootelehed, loetud 9.11.2026
 
 Tehnilised andmed on tootjate andmelehtedelt ja brošüüridelt. Paneelid, jaama suurus ja inverterid valitakse teie objekti tarbimise, katuse ja liitumise järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega. Varutoide hõlmab valitud ahelaid, mis kavandatakse objektikülastusel.
 
@@ -3828,9 +4573,9 @@ Küsi tasuta hinnangut
 
 Valik kapist konteinerini.
 
-Väliskapid, hübriidkapid, konteinerid, teisaldatavad seadmed ja varutoitekapid viielt tootjalt: Ralos, Elecnova, EP Energy, Avant Power ja ZOE Energy Storage. Laadimisjaamad on laadimise lehel.
+Väliskappidest ja suurtest salvestitest teisaldatavate seadmete ja väikeobjektide akudeni: Ralos, Elecnova, Avant Power ja ZOE Energy Storage ning Ralose ja Scanoffice Oy kaudu Hoymiles, Pytes, Enershare, Atmoce, Raystech ja SolaX. Laadimisjaamad on laadimise lehel.
 
-Kõik 14Väliskapid 5Hübriidkapid 2Konteinerid 2Teisaldatavad ja laadimine 4Varutoide 3
+Kõik 18Väliskapid 4Hübriidkapid 2Konteinerid ja suured salvestid 2Teisaldatavad 1Varutoide 3Väikeobjektid 8
 Ralos
 Beast 125 HD
 Vedelikjahutusega salvesti sise- või välipaigalduseks
@@ -3847,6 +4592,23 @@ Päikeseelekter, lisavarustus
 2 × 63 kW
 
 Allikas: Ralos Oy, tehniline andmeleht Ralos Beast 125, versioon V10, kontrollitud 9.11.2026
+
+Ralos
+Mini-Beast 50
+Salvesti keskmistele kinnistutele, hübriidinverteriga
+Võimsus
+50 kW
+
+Energia
+102 kWh
+
+Varutoide
+oma väljund, UPS-funktsioon
+
+Päikeseelekter
+otse inverterisse
+
+Allikas: Ralos Oy, tooteleht Ralos Mini-Beast 50, loetud 9.11.2026
 
 Elecnova
 ECO-E418LP
@@ -3882,23 +4644,6 @@ Põhi
 
 Allikas: Elecnova, tooteleht ECO-E101WX, loetud 9.11.2026
 
-EP Energy
-EPES233
-Vedelikjahutusega väliskapp
-Võimsus
-105 kW
-
-Energia
-233 kWh
-
-Jahutus
-vedelik
-
-Põhi
-1,45 × 1,3 m
-
-Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
-
 ZOE Energy Storage
 Z Box-C 215-2H
 Vedelikjahutusega väliskapp
@@ -3915,23 +4660,6 @@ Põhi
 1,34 × 1,40 m
 
 Allikas: ZOE Energy Storage, Z Box-C 215-2H andmeleht (Scanoffice), loetud 9.11.2026
-
-EP Energy
-EPHS104 / EPHS156
-Hübriidkapp päikeseelektrile
-Võimsus
-50 kW
-
-Energia
-104 või 156 kWh
-
-Päikeseelekter
-kuni 100 kW
-
-Varutoide
-alla 10 ms
-
-Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
 
 Elecnova
 ECO-E64WX
@@ -3967,73 +4695,22 @@ Kaal
 
 Allikas: Elecnova, tooteleht ECO-E20FT2170LP, loetud 9.11.2026
 
-EP Energy
-EPES5000
-Akukonteiner suurtele objektidele
-Energia
-5 015 kWh
+Avant Power
+OptiGrid™ energiasalvesti
+Statsionaarne salvesti sukeljahutusega, ka kiirlaadimisega
+Suurused
+200 kW / 250 kWh või 400 kW / 500 kWh
 
-Pinge
-1 040–1 500 V DC
+Kiirlaadimine
+integreeritud, 200–600 kW
 
 Jahutus
-vedelik
+sukeljahutus
 
-Kaal
-44 t
+Juhtimine
+OptiGrid Cloud
 
-Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
-
-EP Energy
-EPPS93-M
-Teisaldatav energiaseade
-Energia
-93 kWh
-
-DC-laadimine
-60 kW
-
-AC-väljund
-33 kVA
-
-Kaal
-1,5 t
-
-Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
-
-EP Energy
-EPPS210-M
-Teisaldatav energiaseade haagisel
-Energia
-217 kWh
-
-DC-laadimine
-kuni 240 kW
-
-AC-väljund
-125 kW
-
-Kaal
-2,7 t
-
-Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
-
-EP Energy
-EPCS209
-Akuga DC-kiirlaadija
-Liitumisest
-60 kW
-
-Laadimine
-kuni 240 kW
-
-Aku
-209 kWh
-
-Pistikud
-2 × CCS2
-
-Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
+Allikas: Avant Power, OptiGrid™ tooteleht, loetud 9.11.2026
 
 Avant Power
 OptiTemp® Cube 47
@@ -4069,6 +4746,142 @@ Pinge
 
 Allikas: Elecnova, tooteleht ECO-STS-C125, loetud 9.11.2026
 
+Hoymiles
+HiOne
+Kolmefaasiline all-in-one salvesti kodule ja väikeettevõttele
+Võimsus
+8–20 kW
+
+Energia
+8–32 kWh tornis, kuni 64 kWh
+
+Kaitseaste
+IP66
+
+Garantii
+10 aastat
+
+Allikas: Ralos Oy, tooteleht Hoymiles HiOne, loetud 9.11.2026
+
+SolaX
+X3-Hybrid G4 ja T30
+Hübriidinverter ja aku kodule ja väikeobjektidele
+Võimsus
+5–15 kW
+
+Aku
+3,1–12,3 kWh
+
+Kaitseaste
+IP65
+
+Paralleelis
+kuni 150 kW
+
+Allikas: SolaX, brošüürid X3-Hybrid G4 ja Triple Power T30 (Scanoffice), loetud 9.11.2026
+
+Hoymiles
+LB-16D-G3
+Madalpingeaku hübriidinverterile
+Energia
+16 kWh
+
+Laiendus
+kuni 16 paralleelis, 256 kWh
+
+Pinge
+51,2 V
+
+Kaitseaste
+IP65
+
+Allikas: Ralos Oy, tooteleht Hoymiles LB-16D-G3, loetud 9.11.2026
+
+Enershare
+CORE
+Virnastatav kõrgepingeaku
+Energia
+9,6–25,6 kWh tornis
+
+Paralleelis
+kuni 153,6 kWh
+
+Tsüklid
+vähemalt 6 000
+
+Kaitseaste
+IP65
+
+Allikas: Ralos Oy, tooteleht Enershare CORE, loetud 9.11.2026
+
+Pytes
+PiLV1
+Virnastatav madalpingeaku
+Energia
+5,12–30,72 kWh tornis
+
+Paralleelis
+kuni 8 torni
+
+Pinge
+51,2 V
+
+Tsüklid
+vähemalt 6 000
+
+Allikas: Ralos Oy, tooteleht Pytes PiLV1, loetud 9.11.2026
+
+Pytes
+V16
+Madalpingeaku ka välipaigalduseks
+Energia
+16,07 kWh
+
+Tühjendusvõimsus
+pidev 10,24 kW
+
+Kaitseaste
+IP66
+
+Tsüklid
+vähemalt 8 000
+
+Allikas: Ralos Oy, tooteleht Pytes V16, loetud 9.11.2026
+
+Atmoce
+M-ELV
+Madalpingeaku integreeritud inverteriga
+Energia
+7 kWh
+
+Võimsus
+4,5 kVA pidev
+
+Laiendus
+kuni 126 kWh
+
+Garantii
+15 aastat
+
+Allikas: Ralos Oy, tooteleht ATMOCE M-ELV, loetud 9.11.2026
+
+Raystech
+RT16076MPlus
+Madalpingeaku
+Energia
+14,95 kWh
+
+Tsüklid
+üle 16 000
+
+Kaitseaste
+IP65
+
+Kaal
+124 kg
+
+Allikas: Ralos Oy, tooteleht Raystech RT16076MPlus, loetud 9.11.2026
+
 Teised mudelid ja lahendused
 Andmed tootjate tootelehtedelt ja pressiteadetest.
 
@@ -4083,6 +4896,9 @@ ECO-B20FT5015LP-2Elecnova · Vedelikjahutusega 20-jalane akukonteiner · 5 015 k
 ECO-B20FT3404WSElecnova · Õhkjahutusega 20-jalane akukonteiner · 3 404 kWh · Elecnova, tooteleht ECO-B20FT3404WS, loetud 9.11.2026
 ECO-EPS-C125Elecnova · EPS-kapp varutoiteks · 1, 3 või 6 × 125 kW, ümberlülitus kuni 20 s · Elecnova, tooteleht ECO-EPS-C125, loetud 9.11.2026
 PCS, BMS ja EMSElecnova · Jõuelektroonika, akuhaldus ja energiahaldus · komponendid terviklahenduse osadeks · Elecnova, tootelehed PCS, BMS ja EMS, loetud 9.11.2026
+RT5427 HV/SHVRaystech · Kõrgepingeaku moodul · 5,43 kWh mooduli kohta, IP65 · Ralos Oy, tooteleht Raystech RT5427 HV/SHV, loetud 9.11.2026
+M-BackupAtmoce · Varutoite lülituskeskus · võrk 80 A, koormus 63 A, IP65 · Ralos Oy, tooteleht ATMOCE M-Backup, loetud 9.11.2026
+OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · DC-võrk, energiasalvestid, laadimine ja OptiGrid Cloudi juhtimine, osad ka eraldi · Avant Power, OptiGrid™ tooteleht, loetud 9.11.2026
 
 Tehnilised andmed on tootjate andmelehtedelt ja tootelehtedelt. Varutoide hõlmab valitud ahelaid, mis kavandatakse objektikülastusel. Tootja ja mudel valitakse teie objekti tarbimise, liitumise ja ruumi järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega.
 
@@ -4214,23 +5030,23 @@ Avaleht›Laadimine
 
 Laadimine, mis mahub teie liitumisse.
 
-Kontorile mõni laadimispunkt, depoole kiirlaadijad: laadimine valitakse selle järgi, kui kaua autod seisavad ja kui palju liitumine annab. Kui liitumise võimsusest tipuks ei piisa, annab selle salvesti ning päikesekatus toodab elektrit samasse süsteemi. Laadimisjaamad on neljalt tootjalt ja võrdlus tuleb kirjalikult samade numbritega.
+Kontorile mõni laadimispunkt, depoole kiirlaadijad: laadimine valitakse selle järgi, kui kaua autod seisavad ja kui palju liitumine annab. Kui liitumise võimsusest tipuks ei piisa, annab selle salvesti ning päikesekatus toodab elektrit samasse süsteemi. Laadimisjaamad on mitmelt tootjalt ja võrdlus tuleb kirjalikult samade numbritega.
 
 Küsi tasuta hinnangut Laadimisjaamad
 
 22 kWAC-laadimispunkt parklasse. Koormuse juhtimine jagab liitumise võimsuse laadimispunktide vahel.
 
-360 kWDC-kiirlaadija kahe CCS2-pistikuga depoodele ja raskele tehnikale.
+600 kWkiirlaadimine salvestisse integreerituna laadimisjaamadele ja depoodele, valitav 200–600 kW.
 
-240 kWautole akuga kiirlaadijast, kuigi võrgust võetakse 60 kW.
+9 kWType 2 laadimine teisaldatavast energiaseadmest ehitusplatsile, kus võrku pole.
 
 Allikad: tootjate andmelehed, valik allpool.
 
-Laadimisjaamad neljalt tootjalt.
+Laadimisjaamad mitmelt tootjalt.
 
-AC-laadimisjaamad parklasse, DC-kiirlaadijad, akuga laadijad ja teisaldatavad seadmed: Zaptec, Easee, EP Energy ja Avant Power. Zapteci ja Easee laadimisjaamad tulevad Scanoffice Oy kaudu.
+AC-laadimisjaamad parklasse ja koju, salvestisse integreeritud kiirlaadimine ja teisaldatav energiaseade: Zaptec, Easee ja BENY Scanoffice Oy kaudu ning Avant Power.
 
-Kõik 7AC-laadimine 3DC-kiirlaadimine 4Akuga laadijad 1Teisaldatavad 3
+Kõik 6AC-laadimine 5DC-kiirlaadimine 1Salvestiga 1Teisaldatavad 1Kodule 2
 Zaptec
 Zaptec Pro
 Vahelduvvoolu laadimisjaam ettevõtete ja korteriühistute parklasse
@@ -4265,73 +5081,22 @@ OCPP 1.6J
 
 Allikas: Easee, Charge Pro andmeleht 10/2025, versioon 1.03 (Scanoffice), loetud 9.11.2026
 
-EP Energy
-EPCP-DC120–360
-DC-kiirlaadija kahe CCS2-pistikuga
+Avant Power
+OptiGrid™ energiasalvesti
+Salvesti ja integreeritud kiirlaadimine laadimisjaamadele
+Kiirlaadimine
+200–600 kW, satelliitlaadijad
+
+Salvesti
+250 või 500 kWh
+
 Võimsus
-120–360 kW
+200 või 400 kW
 
-Pistikud
-2 × CCS2
+Juhtimine
+OptiGrid Cloud
 
-Pinge
-200–1 000 V DC
-
-Töötemperatuur
-−30…+55 °C
-
-Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
-
-EP Energy
-EPCS209
-Akuga DC-kiirlaadija
-Liitumisest
-60 kW
-
-Laadimine
-kuni 240 kW
-
-Aku
-209 kWh
-
-Pistikud
-2 × CCS2
-
-Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
-
-EP Energy
-EPPS210-M
-Teisaldatav energiaseade haagisel
-Energia
-217 kWh
-
-DC-laadimine
-kuni 240 kW
-
-AC-väljund
-125 kW
-
-Kaal
-2,7 t
-
-Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
-
-EP Energy
-EPPS93-M
-Teisaldatav energiaseade
-Energia
-93 kWh
-
-DC-laadimine
-60 kW
-
-AC-väljund
-33 kVA
-
-Kaal
-1,5 t
-
-Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
+Allikas: Avant Power, OptiGrid™ tooteleht, loetud 9.11.2026
 
 Avant Power
 OptiTemp® Cube 47
@@ -4350,11 +5115,45 @@ Kaal
 
 Allikas: Avant Power, OptiTemp® Cube 47 brošüür, 6/2026, loetud 9.11.2026
 
+Easee
+Charge Max
+AC-laadimisjaam kodule ja väikeobjektile
+Võimsus
+kuni 22 kW
+
+Arvesti
+MID, klass B
+
+Kaitseaste
+IP54, IK10
+
+Liides
+OCPP 1.6J
+
+Allikas: Easee, Charge Max andmeleht (Scanoffice), loetud 9.11.2026
+
+BENY
+BCP-seeria
+AC-laadimisjaam kodule ja puhkeobjektidele
+Võimsus
+kuni 22 kW
+
+Koormuse juhtimine
+dünaamiline, ka juhtmevaba
+
+Juhtimine
+telefonirakendus
+
+Allikas: BENY, laadimisjaama brošüür (Scanoffice), loetud 9.11.2026
+
 Teised mudelid ja lahendused
 Andmed tootjate tootelehtedelt ja pressiteadetest.
 
 Mudel · Tüüp · Põhiandmed · Allikas
-OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · tootmine, salvesti, töömasinate ja autode laadimine ning heitsoojuse kasutamine, koosseis objekti järgi · Avant Tecno, pressiteade OptiGrid™ mikrovõrgust 1.7.2025, loetud 9.11.2026
+OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · DC-võrk, energiasalvestid, laadimine ja OptiGrid Cloudi juhtimine, osad ka eraldi · Avant Power, OptiGrid™ tooteleht, loetud 9.11.2026
+Zaptec GoZaptec · AC-laadimisjaam kodule · kuni 22 kW, IP54, OCPP 1.6J · Zaptec Charger AS, Zaptec Go tooteleht (Scanoffice), loetud 9.11.2026
+Charge UpEasee · AC-laadimisjaam kodule · kuni 22 kW, IP54, IK10, OCPP 1.6J · Easee, Charge Up andmeleht (Scanoffice), loetud 9.11.2026
+LataustolppaScanoffice · Laadimispost kahele laadijale · värvitud tsingitud teras, tarnitakse kokkupanduna · Scanoffice, tooteleht Easee laadimisjaamad ja laadimispostid, loetud 9.11.2026
 
 Tehnilised andmed on tootjate andmelehtedelt. Laadimispunktide arv, võimsus ja koormuse juhtimine valitakse parkla, kasutuse ja liitumise järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega.
 
@@ -4395,13 +5194,13 @@ Töökoht, hotell
 või korteriühistu · AC-laadimispunktid, kuni 22 kW. Koormuse juhtimine jagab liitumise võimsuse laadimispunktide vahel ja punkte saab lisada etapiti.
 
 Klientide parkla,
-kauplus või restoran · DC-kiirlaadija. Kui liitumisest tipuks ei piisa, annab vahe akuga kiirlaadija või eraldi salvesti.
+kauplus või restoran · Kiirlaadimine salvesti kõrval: kui liitumisest tipuks ei piisa, annab vahe salvesti.
 
 Depoo, logistika
-või raske tehnika · DC-kiirlaadijad 120–360 kW, salvesti ja juhtimine, mis ajastab laadimise.
+või raske tehnika · Salvesti ja integreeritud kiirlaadimine 200–600 kW ning juhtimine, mis ajastab laadimise.
 
 Ehitusplats, üritus või
-ajutine vajadus · Teisaldatav energiaseade: DC-laadimine kuni 240 kW või Type 2 väljund 9 kW.
+ajutine vajadus · Teisaldatav energiaseade, Type 2 väljund 9 kW.
 
 Küsimusi laadimisest.
 
@@ -4822,7 +5621,6 @@ Valisime partnerid selle järgi, mida nad ettevõtte investeeringule annavad: se
 Partnerid valdkondade kaupaPartner · Energiasalvestid · Päikeseelekter · Laadimine ja mikrovõrgud · Soojuspumbad · Energiajuhtimine ja reserviturg
 Ralos Oy · Seadmed · Seadmed · ei · ei · ei
 Elecnova · Seadmed · ei · Seadmed · ei · ei
-EP Energy · Seadmed · ei · Seadmed · ei · ei
 
 Avant Power · Seadmed · ei · Seadmed · ei · ei
 Scanoffice Oy · ei · Seadmed · Seadmed · Seadmed · ei
@@ -4858,19 +5656,6 @@ Laadimine ja mikrovõrgud
 
 Mudelid valikus elecnova-ess.com
 Allikad: Elecnova, tooteleht ECO-E261LP-2A (loetud 27.9.2026); Elecnova uudis messilt ENERGIA 2026, 25.10.2026; pv magazine, 3.6.2026.
-
-EP Energy
-Hiina · Anji, Zhejiang · Euroopa kontor Belgias aastast 2011
-Miks me nad valisimeLisaks kappidele ja konteineritele teisaldatavad energiaseadmed ja akuga kiirlaadijad: salvesti ja laadimine ka ehitusplatsile ja kohtadesse, kus liitumisest ei piisa. Turustus ja tugi Euroopas käib Belgia kaudu.
-TaustLiitiumakude tootja, kellel on üle 17 aasta kogemust: kõigepealt elektriliste tõstukite ja laotehnika akud, alates 2022. aastast ka energiasalvestid. Aastas valmib umbes 200 000 akut ja kasutuses on neid üle 600 000. Euroopa kontor on Belgias aastast 2011, ladu on Brüsselis ja kontor Kölnis.
-Salvestikapid
-Konteinersalvestid
-Teisaldatavad energiaseadmed
-Kiirlaadijad
-Tõstukid ja tehnika
-
-Mudelid valikus ep-unipower.com
-Allikad: EP Energy, kataloogid C&I Energy Storage Solutions ja Mobile Energy & Storage Charging Solutions, 12/2025.
 
 Avant Power
 Soome · Ylöjärvi · Avant Tecno tütarettevõte
@@ -4925,7 +5710,7 @@ Kogu valik piltide ja andmetega.
 
 Energiasalvestid, laadimisjaamad, päikeseelekter ja soojuspumbad meie partnerite kaudu: tootja, mudel ja põhiandmed tootja andmelehelt koos allikaga. Lõpliku lahenduse arvutame hinnangus teie tarbimisandmetest ning iga energiasalvesti läbib meie seadmenõuded enne, kui see pakkumisse jõuab.
 
-Kõik 33Energiasalvestid 14Laadimine 7Päikeseelekter 7Soojuspumbad 9Teisaldatavad 4Varutoide 3
+Kõik 49Energiasalvestid 18Laadimine 6Päikeseelekter 18Soojuspumbad 9Teisaldatavad 1Varutoide 3Väikeobjektid 14
 Ralos
 Beast 125 HD
 Vedelikjahutusega salvesti sise- või välipaigalduseks
@@ -4942,6 +5727,23 @@ Päikeseelekter, lisavarustus
 2 × 63 kW
 
 Allikas: Ralos Oy, tehniline andmeleht Ralos Beast 125, versioon V10, kontrollitud 9.11.2026
+
+Ralos
+Mini-Beast 50
+Salvesti keskmistele kinnistutele, hübriidinverteriga
+Võimsus
+50 kW
+
+Energia
+102 kWh
+
+Varutoide
+oma väljund, UPS-funktsioon
+
+Päikeseelekter
+otse inverterisse
+
+Allikas: Ralos Oy, tooteleht Ralos Mini-Beast 50, loetud 9.11.2026
 
 Elecnova
 ECO-E418LP
@@ -4977,23 +5779,6 @@ Põhi
 
 Allikas: Elecnova, tooteleht ECO-E101WX, loetud 9.11.2026
 
-EP Energy
-EPES233
-Vedelikjahutusega väliskapp
-Võimsus
-105 kW
-
-Energia
-233 kWh
-
-Jahutus
-vedelik
-
-Põhi
-1,45 × 1,3 m
-
-Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
-
 ZOE Energy Storage
 Z Box-C 215-2H
 Vedelikjahutusega väliskapp
@@ -5010,23 +5795,6 @@ Põhi
 1,34 × 1,40 m
 
 Allikas: ZOE Energy Storage, Z Box-C 215-2H andmeleht (Scanoffice), loetud 9.11.2026
-
-EP Energy
-EPHS104 / EPHS156
-Hübriidkapp päikeseelektrile
-Võimsus
-50 kW
-
-Energia
-104 või 156 kWh
-
-Päikeseelekter
-kuni 100 kW
-
-Varutoide
-alla 10 ms
-
-Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
 
 Elecnova
 ECO-E64WX
@@ -5062,73 +5830,22 @@ Kaal
 
 Allikas: Elecnova, tooteleht ECO-E20FT2170LP, loetud 9.11.2026
 
-EP Energy
-EPES5000
-Akukonteiner suurtele objektidele
-Energia
-5 015 kWh
+Avant Power
+OptiGrid™ energiasalvesti
+Statsionaarne salvesti sukeljahutusega, ka kiirlaadimisega
+Suurused
+200 kW / 250 kWh või 400 kW / 500 kWh
 
-Pinge
-1 040–1 500 V DC
+Kiirlaadimine
+integreeritud, 200–600 kW
 
 Jahutus
-vedelik
+sukeljahutus
 
-Kaal
-44 t
+Juhtimine
+OptiGrid Cloud
 
-Allikas: EP Energy, kataloog C&I Energy Storage Solutions, 12/2025
-
-EP Energy
-EPPS93-M
-Teisaldatav energiaseade
-Energia
-93 kWh
-
-DC-laadimine
-60 kW
-
-AC-väljund
-33 kVA
-
-Kaal
-1,5 t
-
-Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
-
-EP Energy
-EPPS210-M
-Teisaldatav energiaseade haagisel
-Energia
-217 kWh
-
-DC-laadimine
-kuni 240 kW
-
-AC-väljund
-125 kW
-
-Kaal
-2,7 t
-
-Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
-
-EP Energy
-EPCS209
-Akuga DC-kiirlaadija
-Liitumisest
-60 kW
-
-Laadimine
-kuni 240 kW
-
-Aku
-209 kWh
-
-Pistikud
-2 × CCS2
-
-Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
+Allikas: Avant Power, OptiGrid™ tooteleht, loetud 9.11.2026
 
 Avant Power
 OptiTemp® Cube 47
@@ -5164,6 +5881,142 @@ Pinge
 
 Allikas: Elecnova, tooteleht ECO-STS-C125, loetud 9.11.2026
 
+Hoymiles
+HiOne
+Kolmefaasiline all-in-one salvesti kodule ja väikeettevõttele
+Võimsus
+8–20 kW
+
+Energia
+8–32 kWh tornis, kuni 64 kWh
+
+Kaitseaste
+IP66
+
+Garantii
+10 aastat
+
+Allikas: Ralos Oy, tooteleht Hoymiles HiOne, loetud 9.11.2026
+
+SolaX
+X3-Hybrid G4 ja T30
+Hübriidinverter ja aku kodule ja väikeobjektidele
+Võimsus
+5–15 kW
+
+Aku
+3,1–12,3 kWh
+
+Kaitseaste
+IP65
+
+Paralleelis
+kuni 150 kW
+
+Allikas: SolaX, brošüürid X3-Hybrid G4 ja Triple Power T30 (Scanoffice), loetud 9.11.2026
+
+Hoymiles
+LB-16D-G3
+Madalpingeaku hübriidinverterile
+Energia
+16 kWh
+
+Laiendus
+kuni 16 paralleelis, 256 kWh
+
+Pinge
+51,2 V
+
+Kaitseaste
+IP65
+
+Allikas: Ralos Oy, tooteleht Hoymiles LB-16D-G3, loetud 9.11.2026
+
+Enershare
+CORE
+Virnastatav kõrgepingeaku
+Energia
+9,6–25,6 kWh tornis
+
+Paralleelis
+kuni 153,6 kWh
+
+Tsüklid
+vähemalt 6 000
+
+Kaitseaste
+IP65
+
+Allikas: Ralos Oy, tooteleht Enershare CORE, loetud 9.11.2026
+
+Pytes
+PiLV1
+Virnastatav madalpingeaku
+Energia
+5,12–30,72 kWh tornis
+
+Paralleelis
+kuni 8 torni
+
+Pinge
+51,2 V
+
+Tsüklid
+vähemalt 6 000
+
+Allikas: Ralos Oy, tooteleht Pytes PiLV1, loetud 9.11.2026
+
+Pytes
+V16
+Madalpingeaku ka välipaigalduseks
+Energia
+16,07 kWh
+
+Tühjendusvõimsus
+pidev 10,24 kW
+
+Kaitseaste
+IP66
+
+Tsüklid
+vähemalt 8 000
+
+Allikas: Ralos Oy, tooteleht Pytes V16, loetud 9.11.2026
+
+Atmoce
+M-ELV
+Madalpingeaku integreeritud inverteriga
+Energia
+7 kWh
+
+Võimsus
+4,5 kVA pidev
+
+Laiendus
+kuni 126 kWh
+
+Garantii
+15 aastat
+
+Allikas: Ralos Oy, tooteleht ATMOCE M-ELV, loetud 9.11.2026
+
+Raystech
+RT16076MPlus
+Madalpingeaku
+Energia
+14,95 kWh
+
+Tsüklid
+üle 16 000
+
+Kaitseaste
+IP65
+
+Kaal
+124 kg
+
+Allikas: Ralos Oy, tooteleht Raystech RT16076MPlus, loetud 9.11.2026
+
 Zaptec
 Zaptec Pro
 Vahelduvvoolu laadimisjaam ettevõtete ja korteriühistute parklasse
@@ -5198,39 +6051,36 @@ OCPP 1.6J
 
 Allikas: Easee, Charge Pro andmeleht 10/2025, versioon 1.03 (Scanoffice), loetud 9.11.2026
 
-EP Energy
-EPCP-DC120–360
-DC-kiirlaadija kahe CCS2-pistikuga
+Easee
+Charge Max
+AC-laadimisjaam kodule ja väikeobjektile
 Võimsus
-120–360 kW
+kuni 22 kW
 
-Pistikud
-2 × CCS2
+Arvesti
+MID, klass B
 
-Pinge
-200–1 000 V DC
+Kaitseaste
+IP54, IK10
 
-Töötemperatuur
-−30…+55 °C
+Liides
+OCPP 1.6J
 
-Allikas: EP Energy, kataloog Mobile Energy & Storage Charging Solutions, 12/2025
+Allikas: Easee, Charge Max andmeleht (Scanoffice), loetud 9.11.2026
 
-Ralos
-RLS-585
-Kahepoolne päikesepaneel, HJT-elemendid
+BENY
+BCP-seeria
+AC-laadimisjaam kodule ja puhkeobjektidele
 Võimsus
-585 W
+kuni 22 kW
 
-Kasutegur
-22,4 %
+Koormuse juhtimine
+dünaamiline, ka juhtmevaba
 
-Kahepoolsus
-90 %
+Juhtimine
+telefonirakendus
 
-Mõõdud
-2,38 × 1,10 m
-
-Allikas: Ralos Oy, brošüür RLS-585, 6/2023
+Allikas: BENY, laadimisjaama brošüür (Scanoffice), loetud 9.11.2026
 
 Ralos
 RLS-480
@@ -5248,6 +6098,74 @@ Mõõdud
 1,96 × 1,10 m
 
 Allikas: Ralos Oy, brošüür RLS-480, 6/2023
+
+Hanersun
+HiTouch 450 Wp
+Täismust päikesepaneel
+Võimsus
+450 Wp
+
+Kasutegur
+22,5 %
+
+Garantii
+toode 15 a, võimsus 30 a
+
+Mõõdud
+1,76 × 1,13 m
+
+Allikas: Ralos Oy, tooteleht Hanersun HiTouch 450 Wp, loetud 9.11.2026
+
+Hanersun
+HiTouch 500 Wp
+Täismust päikesepaneel
+Võimsus
+500 Wp
+
+Kasutegur
+22,5 %
+
+Garantii
+toode 15 a, võimsus 30 a
+
+Mõõdud
+1,96 × 1,13 m
+
+Allikas: Ralos Oy, tooteleht Hanersun HiTouch 500 Wp, loetud 9.11.2026
+
+Hanersun
+HiTouch 620 Wp
+Suure võimsusega päikesepaneel lamekatustele
+Võimsus
+620 Wp
+
+Kasutegur
+23 %
+
+Garantii
+toode 15 a, võimsus 30 a
+
+Mõõdud
+2,38 × 1,13 m
+
+Allikas: Ralos Oy, tooteleht Hanersun HiTouch 620 Wp, loetud 9.11.2026
+
+Hanersun
+HiTouch 725 Wp
+Suure võimsusega päikesepaneel suurtele objektidele
+Võimsus
+725 Wp
+
+Kasutegur
+23,3 %
+
+Garantii
+toode 15 a, võimsus 30 a
+
+Mõõdud
+2,38 × 1,13 m
+
+Allikas: Ralos Oy, tooteleht Hanersun HiTouch 725 Wp, loetud 9.11.2026
 
 HT-SAAE
 HT72-18X(ND)-F
@@ -5300,6 +6218,108 @@ Mõõdud
 
 Allikas: HD Hyundai Energy Solutions, HJT-paneelide andmeleht (Scanoffice), loetud 9.11.2026
 
+Over Easy
+xM-3
+Kahepoolne päikesejaam rohekatusele
+Võimsus
+256 W seadme kohta
+
+Kahepoolsus
+95 %
+
+Mõõdud
+1,58 × 1,49 m
+
+Kaal
+umbes 28 kg
+
+Allikas: Ralos Oy, tooteleht Over Easy xM-3, loetud 9.11.2026
+
+Hoymiles
+MiT
+Kolmefaasiline mikroinverter tööstusobjektidele
+AC-võimsus
+3 000–5 000 W
+
+Kasutegur
+96,5 % (CEC)
+
+DC-pinge
+alla 65 V
+
+Garantii
+12 aastat, kuni 25
+
+Allikas: Ralos Oy, tooteleht Hoymiles MiT, loetud 9.11.2026
+
+Hoymiles
+HMT
+Kolmefaasiline mikroinverter neljale paneelile
+AC-võimsus
+1 600–2 000 W
+
+Kasutegur
+96,5 % (CEC)
+
+DC-pinge
+alla 65 V
+
+Kaitseaste
+IP67
+
+Allikas: Ralos Oy, tooteleht Hoymiles HMT, loetud 9.11.2026
+
+Hoymiles
+HMS
+Ühefaasiline mikroinverter
+AC-võimsus
+400–2 000 W
+
+Kasutegur
+96,5 % (CEC)
+
+DC-pinge
+alla 65 V
+
+Pinge
+230 V
+
+Allikas: Ralos Oy, tooteleht Hoymiles HMS, loetud 9.11.2026
+
+Hoymiles
+MiS
+Suure võimsusega ühefaasiline mikroinverter
+AC-võimsus
+2 250–2 750 W
+
+Kasutegur
+96,5 % (CEC)
+
+DC-pinge
+alla 65 V
+
+Paneelid
+üle 600 W
+
+Allikas: Ralos Oy, tooteleht Hoymiles MiS, loetud 9.11.2026
+
+Atmoce
+MI-seeria
+Mikroinverter väikeelamutele
+Paneelid
+kuni 700 W
+
+Kasutegur
+tipp 97,4 %
+
+Kaitseaste
+IP67
+
+Garantii
+25 aastat
+
+Allikas: Ralos Oy, tooteleht Atmoce mikroinverterid, loetud 9.11.2026
+
 APsystems
 QT2
 Kolmefaasiline mikroinverter neljale paneelile
@@ -5316,6 +6336,40 @@ Töötemperatuur
 −40…+65 °C
 
 Allikas: APsystems, QT2 andmeleht, versioon 1.0, 7.10.2023 (Scanoffice), loetud 9.11.2026
+
+Hoymiles
+HiT-(5–20)L-G3
+Kolmefaasiline hübriidinverter madalpingeakudele
+Võimsus
+5–20 kW
+
+MPPT
+kuni 4
+
+DC/AC
+kuni 200 %
+
+Asümmeetria
+100 %
+
+Allikas: Ralos Oy, tooteleht Hoymiles HiT, loetud 9.11.2026
+
+Hoymiles
+HYT-HV ja HAT-HV
+Hübriid- ja akuinverterid kõrgepingeakudele
+HYT, võimsus
+5–12 kW
+
+HAT, võimsus
+5–10 kW
+
+Akupinge
+170–600 V
+
+HAT
+aku järelpaigaldus
+
+Allikas: Ralos Oy, tootelehed Hoymiles HYT ja HAT, loetud 9.11.2026
 
 Sofar Solar
 KTL-X, KTL-G2 ja KTL
@@ -5489,9 +6543,20 @@ ECO-B20FT5015LP-2Elecnova · Vedelikjahutusega 20-jalane akukonteiner · 5 015 k
 ECO-B20FT3404WSElecnova · Õhkjahutusega 20-jalane akukonteiner · 3 404 kWh · Elecnova, tooteleht ECO-B20FT3404WS, loetud 9.11.2026
 ECO-EPS-C125Elecnova · EPS-kapp varutoiteks · 1, 3 või 6 × 125 kW, ümberlülitus kuni 20 s · Elecnova, tooteleht ECO-EPS-C125, loetud 9.11.2026
 PCS, BMS ja EMSElecnova · Jõuelektroonika, akuhaldus ja energiahaldus · komponendid terviklahenduse osadeks · Elecnova, tootelehed PCS, BMS ja EMS, loetud 9.11.2026
-OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · tootmine, salvesti, töömasinate ja autode laadimine ning heitsoojuse kasutamine, koosseis objekti järgi · Avant Tecno, pressiteade OptiGrid™ mikrovõrgust 1.7.2025, loetud 9.11.2026
+RT5427 HV/SHVRaystech · Kõrgepingeaku moodul · 5,43 kWh mooduli kohta, IP65 · Ralos Oy, tooteleht Raystech RT5427 HV/SHV, loetud 9.11.2026
+M-BackupAtmoce · Varutoite lülituskeskus · võrk 80 A, koormus 63 A, IP65 · Ralos Oy, tooteleht ATMOCE M-Backup, loetud 9.11.2026
+M-CombinerAtmoce · Ühenduskarp päikeseelektrile ja akudele · päikeseelekter kuni 30 kW, akud kuni 42 kWh · Ralos Oy, tooteleht ATMOCE M-Combiner, loetud 9.11.2026
+HYD 5–20KTL-3PHSofar Solar · Kolmefaasiline hübriidinverter akudele · 5–20 kW · Scanoffice, tooteleht Sofar salvesti ja hübriidinverter, loetud 9.11.2026
+FLAT25Ralos · Rööbasteta paigaldussüsteem lamekatustele · katuse koormus 5,5 kg/m² · Ralos Oy, lahenduste leht päikesejaamad, loetud 9.11.2026
+KiinnitysjärjestelmätAeroCompact, Esdec, Nordic Sun, Orima Solar · Paneelide kinnitus katusele ja maale · lamekatused, viilkatused ja maaraam; tuletõrjelüliti Santon · Scanoffice, päikesepaneelide tootelehed, loetud 9.11.2026
+OptiGrid™Avant Power · Mikrovõrk laadimisjaamadele ja kinnistutele · DC-võrk, energiasalvestid, laadimine ja OptiGrid Cloudi juhtimine, osad ka eraldi · Avant Power, OptiGrid™ tooteleht, loetud 9.11.2026
+Zaptec GoZaptec · AC-laadimisjaam kodule · kuni 22 kW, IP54, OCPP 1.6J · Zaptec Charger AS, Zaptec Go tooteleht (Scanoffice), loetud 9.11.2026
+Charge UpEasee · AC-laadimisjaam kodule · kuni 22 kW, IP54, IK10, OCPP 1.6J · Easee, Charge Up andmeleht (Scanoffice), loetud 9.11.2026
+LataustolppaScanoffice · Laadimispost kahele laadijale · värvitud tsingitud teras, tarnitakse kokkupanduna · Scanoffice, tooteleht Easee laadimisjaamad ja laadimispostid, loetud 9.11.2026
+IlmalämpöpumputMitsubishi Electric · Õhksoojuspumbad ja õhujahutid · mudeliseeriad AY, EF, FT, MSZ-LN, RW, RZ, SLZ-M, MFZ-KW ja Multisplit; jahutid HR ja MSY-TP · Scanoffice, õhksoojuspumpade tootelehed, loetud 9.11.2026
+LossnayMitsubishi Electric ja Mobair · Soojustagastusega ventilatsiooniseade · ka Mobairi asendusõhu ventiilid · Scanoffice, ventilatsiooniseadmete tooteleht, loetud 9.11.2026
 
-Tehnilised andmed on tootjate andmelehtedelt, brošüüridelt ja tootelehtedelt. Tootja ja mudel valitakse teie objekti tarbimise, liitumise ja ruumi järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega. Kodumajapidamiste laadijad, akud ja õhksoojuspumbad saate samadelt partneritelt soovi korral.
+Tehnilised andmed on tootjate andmelehtedelt, brošüüridelt ja tootelehtedelt. Tootja ja mudel valitakse teie objekti tarbimise, liitumise ja ruumi järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega. Väikeobjektide ja kodude tooted leiate eraldi filtri alt.
 
 Nii paneme pakkumise kokku.
 
@@ -5625,7 +6690,6 @@ Iga projekt vajab peale meie nelja asja: turulepääsu, seadmeid, paigaldust ja 
 Energiasalvestid
 Ralos Oytööstuslikud energiasalvestid, Tampere
 Elecnovaväliskapid ja konteinersalvestid
-EP Energysalvestikapid ja konteinersalvestid
 Avant Powerenergiasalvestid ja mikrovõrgud
 
 Päikeseelekter
@@ -5634,7 +6698,6 @@ Scanoffice Oypäikesepaneelid maaletoojalt
 SAMApaigaldus katusele, maale ja katusesse integreerituna
 
 Laadimine ja soojuspumbad
-EP Energyteisaldatavad energiaseadmed ja kiirlaadijad
 Avant Powermikrovõrgud, teisaldatav energia ja laadimine
 Scanoffice Oyõhk-, õhk-vesi- ja maasoojuspumbad ning laadimisjaamad
 

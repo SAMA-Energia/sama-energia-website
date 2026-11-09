@@ -230,6 +230,11 @@ const GUARDS = [
     find: t => [...t.matchAll(/EP Equipment|\bEnergen\b/gi)] },
   { id: 'roofit-et', langs: 'et', why: 'Roofit ei Viron sivustolla (Suomessa sallittu Gare Energy Oy:n yhteydessä 6.11.2026)',
     find: t => [...t.matchAll(/Roofit/gi)] },
+  // 9.11.2026 klo 12.59 (perustajan päätös): EP Energy ei näy sivustolla toistaiseksi.
+  // Palautus perustajan päätöksellä: poista tämä vartija, PIILOTETUT_VALMISTAJAT (scripts/tuotteet/build_tuotteet.py) ja
+  // PIILOTETUT (scripts/kumppanit/build_kumppanit.py) ja palauta etusivun kortit tiedostoista scripts/kumppanit/piilotetut/.
+  { id: 'ep-piilossa', langs: 'both', why: 'EP Energy ei sivustolla toistaiseksi (perustajan päätös 9.11.2026)',
+    find: t => [...t.matchAll(/EP Energy|\bEP(?:ES|HS|CS|PS|CP)[-\d]/g)] },
   // mallinimet-1104 poistettu 9.11.2026: perustajan päätös (Madis 9.11.2026, "Foto, tootja, mudel, põhinäitajad") kumoaa
   // 4.11.2026 linjauksen. Tuotteen kuva, valmistaja, malli ja päätiedot valmistajan datalehdeltä lähteineen näytetään
   // alasivujen tuotevalikoimassa (scripts/tuotteet/build_tuotteet.py). Valmistajanimien vartijat (nimet-1104, roofit-et,
