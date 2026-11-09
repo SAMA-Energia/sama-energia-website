@@ -119,6 +119,37 @@
 /* suodatus (selaimet ilman :has() näyttävät kaikki) */
 .tuo:has(#ta-v-paneeli:checked) .tc:not([data-c~=paneeli]),.tuo:has(#ta-v-katto:checked) .tc:not([data-c~=katto]),.tuo:has(#ta-v-hybridi:checked) .tc:not([data-c~=hybridi]),.tuo:has(#tv-v-kaappi:checked) .tc:not([data-c~=kaappi]),.tuo:has(#tv-v-hybridi:checked) .tc:not([data-c~=hybridi]),.tuo:has(#tv-v-kontti:checked) .tc:not([data-c~=kontti]),.tuo:has(#tv-v-siirrettava:checked) .tc:not([data-c~=siirrettava]),.tuo:has(#tv-v-varavoima:checked) .tc:not([data-c~=varavoima]){display:none}
 
+/* v56 kumppaniprofiilit: tausta ja miksi valitsimme (scripts/kumppanit/build_kumppanit.py) */
+.lt .prt{display:grid;gap:clamp(56px,6vw,88px);margin-top:clamp(44px,5vw,72px)}
+.lt .prt-gh{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(20px,4vw,64px);align-items:end;padding-bottom:20px;border-bottom:1px solid var(--ink)}
+.lt .prt-gh h3{margin:0;font-family:var(--font-display);font-weight:400;font-size:clamp(26px,2.3vw,32px);line-height:1.12;letter-spacing:-.005em}
+.lt .prt-gh p{margin:0;max-width:64ch;color:var(--ink-2);font-size:16px;line-height:1.55}
+.lt .prt-gh .prt-gl{margin-top:8px}.lt .prt-gl .link-arrow{padding:0;margin:0;font-size:14.5px}
+.lt .prof{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(20px,4vw,64px);align-items:start;padding:clamp(30px,3.4vw,46px) 0;border-bottom:1px solid var(--line);scroll-margin-top:96px}
+.lt .prof-i{margin:0;aspect-ratio:3/2;overflow:hidden;border-radius:12px;background:var(--paper-3)}
+.lt .prof-i img{display:block;width:100%;height:100%;object-fit:cover}
+.lt .prof-b{display:grid;gap:0;align-content:start;min-width:0}
+.lt .prof-n{margin:0;font-family:var(--font-display);font-weight:400;font-size:clamp(28px,2.4vw,34px);line-height:1.08;letter-spacing:-.01em}
+.lt .prof-w{margin:8px 0 0;font-size:14px;line-height:1.45;color:var(--ink-3)}
+.lt .prof-k{margin:22px 0 6px;font-family:var(--font-body);font-size:13.5px;font-weight:600;line-height:1.3;color:var(--gold-deep)}
+.lt .prof-y{margin:0;max-width:60ch;font-family:var(--font-display);font-size:clamp(18px,1.45vw,20px);line-height:1.45;color:var(--ink)}
+.lt .prof-t{margin:0;max-width:66ch;font-size:15.5px;line-height:1.6;color:var(--ink-2)}
+.lt .prof-x .prof-t{margin-top:14px}
+.lt .prof-o{display:flex;flex-wrap:wrap;gap:6px 8px;margin:20px 0 0;padding:0;list-style:none}
+.lt .prof-o li{padding:4px 10px;border:1px solid var(--line-2);border-radius:999px;font-size:13px;line-height:1.35;color:var(--ink-2);background:var(--card)}
+.lt .prof-f{display:grid;gap:10px;margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+.lt .prof-l{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0}
+.lt .prof-l a{display:inline-flex;align-items:center;gap:6px;font-size:14.5px;font-weight:600;color:var(--ink);text-decoration:underline;text-decoration-color:var(--line-2);text-underline-offset:4px}
+.lt .prof-l a:hover{text-decoration-color:var(--gold-deep)}.lt .prof-l svg{width:14px;height:14px;flex:none}
+.lt .prof-s{margin:0;font-size:12.5px;line-height:1.55;color:var(--ink-3)}
+.lt .prof-s a{color:inherit;text-decoration:underline;text-decoration-color:var(--line-2);text-underline-offset:3px}
+.lt .prof-x{grid-template-columns:minmax(0,4fr) minmax(0,8fr)}.lt .prof-x .prof-b{grid-column:2}
+@media (max-width:860px){
+  .lt .prt-gh,.lt .prof,.lt .prof-x{grid-template-columns:minmax(0,1fr)}
+  .lt .prof-x .prof-b{grid-column:auto}
+  .lt .prof-i{aspect-ratio:16/10}
+}
+
 @media (max-width:1023px){
   .sh-g,.tuo-h,.lt .subhero-kuva .wrap,.lt .intro-kuva{grid-template-columns:minmax(0,1fr);align-items:start}
   .lt .subhero .facts-row{grid-template-columns:minmax(0,1fr)}
