@@ -679,3 +679,43 @@ katso kilpailijat; asiakkaan luottamus syntyy kokonaisuudesta.
   takuu, omistus, varovaiset tuottolupaukset), W.EG Eesti (yritystiedot, takuu, EAS-tuki, tehdyt työt); markkinan luottamusongelma:
   Fingridille satoja valituksia kotiakkujen myynnistä Fingridin nimissä (MTV). SAMAn ero: valmistajista riippumaton, lähteet ja
   päivämäärät, kirjallinen arvio, aggregaattori kohteen mukaan.
+
+## v57 — lataus, koko valikoima ja Meistä (Madis 9.11.2026 klo 12.14 ja 12.25, haara v51-launch)
+
+Madis: Meistä-osio ja se, mitä itsestämme kirjoitamme, on amatööritasoa; tuotteiden kohdalla ei ole latausasemia, vaikka niitä
+on valikoimassa useamman valmistajan kautta; "kõiki tooteid ei leidnud valikus, pane kõik tooted üles".
+
+- Uusi sivupari /lataus/ ↔ /laadimine/ (PAIRS molemmissa skripteissä, NAV_KEY ratkaisut/lahendused, valikko, mobiilivalikko,
+  alatunniste, _redirects, llms.txt). Sivu: hero ja kolme lukua datalehdiltä → valikoima (`tuotteet:lataus`, suodatin AC / DC /
+  akulla / siirrettävät) → mikroverkko-osio (siirretty kumppanisivulta, id #mikroverkko / #mikrovork) → käyttö ja ratkaisu
+  -taulukko → UKK → CTA. FI-sivulla latauspistevelvoite: laki 733/2020, yli 20 pysäköintipaikan muut kuin asuinrakennukset,
+  vähintään yksi yli 3,7 kW:n latauspiste 31.12.2024 alkaen (Moottori 30.9.2024). ET-sivulla ei velvoitetta: Viro päätti olla
+  siirtämättä direktiivin pysäköintivaatimusta (ERR 16.9.2026), joten ET argumentoi ilman sitä.
+- Tuotegeneraattori (`scripts/tuotteet/build_tuotteet.py`): lohkot varastot, aurinko, lataus ja kaikki (kumppanisivun koko
+  valikoima, suodatin energiavarastot / lataus / aurinkosähkö / lämpöpumput / siirrettävät / varavoima). Lohkon rivi voi olla
+  `(id, ryhmät, ohitukset)`; ohitukset korvaavat kortin kentät (esim. Cube 47 lataussivulla Type 2 -lähdöllä). `MUUT` = taulukko
+  malleista, joista ei ole käyttökelpoista tuotekuvaa (Elecnovan kuvapalvelin on bottitarkistuksen takana, ei kierretä):
+  Elecnova ECO-E261LP-2A, -E241WP-2A, -E233LS, -E215WS, -B418LP-2N, -B372LS, -B20FT5015LP-2, -B20FT3404WS, EPS-kaappi,
+  PCS/BMS/EMS sekä Avant Power OptiGrid (tiedote 1.7.2025, ei julkisia kW/kWh-arvoja). Otsikko "Muut mallit ja ratkaisut",
+  ei mainintaa puuttuvista kuvista (ei heikkouden kautta).
+- Uudet tuotteet ja lähteet (luettu 9.11.2026): Zaptec Pro (tuotelehti 22.2.2023), Easee Charge Pro (10/2025 v1.03), EP Energy
+  EPCP-DC120–360 (Mobile-luettelo 12/2025), ZOE Energy Storage Z Box-C 215-2H, HT-SAAE HT72-18X(ND)-F ja HT54/HT60-18X(ND)-F,
+  HD Hyundai HiT-H LE-FB, APsystems QT2 (v1.0 7.10.2023), Sofar Solar KTL-sarja, Mitsubishi Electric CAHV-Z450, CAHV-R450,
+  Large Hydrobox E, P-sarja, WDH, IDH125-D/250-D, PAC-IF013B-E, Ecodan E ja Geodan — kaikki Scanofficen datalehdiltä/esitteistä
+  paitsi EP. Kuvat `assets/tuotteet/<id>.webp` 600×600 (Scanofficen tuotekuvat; EP luettelosta), valmistelu
+  scratchpadin prep57.py:n tapaan (leikkaus alfasta, keskitys, seinälaitteet pystykeskelle).
+- Rajaus: valikoimassa ovat yrityskohteisiin sopivat tuotteet. Kotitalouksien latausasemat (Zaptec Go, Easee Charge Up/Max,
+  BENY), kotiakut (SolaX, Sofar HYD) ja ilmalämpöpumput mainitaan huomautuksessa ("saatte samoilta kumppaneilta pyynnöstä").
+  Fronius-sivu on Scanofficella poistunut (uudelleenohjaus), CAHV-P500-sivu virheellinen: ei mukana.
+- Uudet valmistajanimet sivustolla (tuotekortit, Madiksen 9.11.2026 ohje): Zaptec, Easee, ZOE Energy Storage, HT-SAAE,
+  HD Hyundai, APsystems, Sofar Solar, Mitsubishi Electric. Toimittaja kaikissa Scanoffice Oy (molemmat sivustot, kuten
+  kumppanisivulla 6.11.2026). Easeen datalehdessä on tavaramerkkihuomautus: vahvistus Scanofficelta lukulistan päätöksenä.
+- Meistä/Meist uudelleen: H1 = brändilinja "Yhteinen verkko, itsenäinen energia." / "Ühine võrk, iseseisev energia.", ingressi
+  mitä teemme, kolme faktaa (EPC, FI + EE, kirjallinen arvio kahdessa arkipäivässä); Miksi SAMA on olemassa (yhteinen verkko,
+  markkina muuttuu -kappale lähteineen ennallaan, tieto ensin ja päätös teidän, mitä tavoittelemme); uusi osio Miten toimimme
+  (kuusi käytäntöä, kaikki jo sivustolla luvattuja); Kuka vastaa mistäkin (Vastaa + Tausta hyväksytyistä bioista, ei
+  nimikirjainpaikkoja, ei "mestari" -sanaa eikä "Lue lisää" -lohkoa); verkosto + linkki koko valikoimaan; kotipaikkaan osoite.
+  Poistettu: kilpailijoiden heikkouksien kautta kerrottu "Tarjoukset pysyivät samoina" ja aloitussuunnitelma "Mistä aloitamme".
+- Etusivun tiimiosio: "Vastuuhenkilöt nimeltä." / "Vastutajad nimeliselt.", vastuu ja suora numero (hyväksytyt numerot
+  3.9.2026), ei nimikirjainlaatikoita (`.k-av` poistettu). Yhteystietosivun kortit samaan muotoon. Valokuvat lisätään
+  kuvauksen jälkeen (`.person`-kortteihin `<img>` nimen yläpuolelle).

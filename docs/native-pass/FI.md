@@ -20,7 +20,7 @@ Muuttumattomat merkkijonot on jätetty pois: ne ovat jo julkaistuja.
 
 _Generoitu: `node scripts/native-pass.mjs` generoiduista sivuista. Älä muokkaa käsin — kirjoita korjaukset **Korjaus:**-riveille._
 
-**Yhteenveto:** 773 katselmoitavaa riviä — 585 uutta, 188 muutettua, joista **119 on merkitty ⚠**. Muuttumattomia ohitettiin 684.
+**Yhteenveto:** 881 katselmoitavaa riviä — 678 uutta, 203 muutettua, joista **156 on merkitty ⚠**. Muuttumattomia ohitettiin 689.
 
 **Huomio:** 2 luvun kohdalla lähdettä ei löytynyt automaattisesti. Osalla lähde on tekstissä sanallisesti ("Fingridin 24.9.2025 julkaiseman tiedotteen mukaan"), jolloin merkintä on aiheeton — mutta jokainen on silmäiltävä, koska repo-sääntö on: ei lukuja ilman dokumentoitua lähdettä.
 
@@ -493,19 +493,20 @@ Vastine mainissa: `/`
 
 ### #tiimi
 
-- [ ] `h2` **uusi** — Tiimimme.
+- [ ] `h2` **uusi** — Vastuuhenkilöt nimeltä.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Jokaisella projektin vaiheella on nimetty vastuuhenkilö, ja numerot ovat heidän omiaan.
       - **Korjaus:**
 - [ ] ⚠ `p` **muutettu** — SAMA Energia Oy · Sörnäisten Rantatie 33 C, 00500 Helsinki · Y-tunnus 3647683-6
       - main: Sörnäisten Rantatie 33 C, 00500 Helsinki
       - ⚠ osoite vahvistettu 06.09.2026
       - ⚠ Y-tunnus korjattu 09.09.2026: vanha 3647683-3 ei läpäissyt tarkistusmerkkilaskentaa; oikea on 3647683-6 / FI36476836
       - **Korjaus:**
-- [ ] `li` **uusi** — MRMartin Rautiotoimitusjohtaja
+- [ ] `li` **uusi** — Madis MaastikmyyntijohtajaKartoitus, arvio, asiakassuhde ja aggregaattori+358 44 965 4614
       - **Korjaus:**
-- [ ] `li` **uusi** — VPViljar Petersellasennus­päällikkö
+- [ ] `li` **uusi** — Martin RautiotoimitusjohtajaSopimukset, kumppanuudet ja toimitukset+358 40 701 9099
       - **Korjaus:**
-- [ ] `li` **muutettu** — MMMadis Maastikmyyntijohtaja
-      - main: Madis Maastik
+- [ ] `li` **uusi** — Viljar Petersellasennus­päällikköAsennuksen toteutus ja laatu kohteella+358 40 635 3245
       - **Korjaus:**
 
 ### #ukk
@@ -589,6 +590,8 @@ Vastine mainissa: `/`
 - [ ] `li` **muutettu** — +358 44 965 4614
       - main: +358 449 654 614
       - **Korjaus:**
+- [ ] `li` **uusi** — Lataus
+      - **Korjaus:**
 - [ ] `li` **uusi** — Yhteinen verkko: kartta
       - **Korjaus:**
 - [ ] `p` **muutettu** — Ilmoitamme sähköpostilla, kun uusi katsaus on julkaistu. Perutte vastaamalla viestiin.
@@ -661,20 +664,23 @@ Vastine mainissa: `/energiavarastot/`
 > Lähde tälle osiolle: Lähde: Elecnova, tuotesivu ECO-E418LP, luettu 9.11.2026
 > Lähde tälle osiolle: Lähde: Elecnova, tuotesivu ECO-E101WX, luettu 9.11.2026
 > Lähde tälle osiolle: Lähde: EP Energy, luettelo C&I Energy Storage Solutions, 12/2025
+> Lähde tälle osiolle: Lähde: ZOE Energy Storage, Z Box-C 215-2H -datalehti (Scanoffice), luettu 9.11.2026
 > Lähde tälle osiolle: Lähde: Elecnova, tuotesivu ECO-E64WX, luettu 9.11.2026
 > Lähde tälle osiolle: Lähde: Elecnova, tuotesivu ECO-E20FT2170LP, luettu 9.11.2026
 > Lähde tälle osiolle: Lähde: EP Energy, luettelo Mobile Energy & Storage Charging Solutions, 12/2025
 > Lähde tälle osiolle: Lähde: Avant Power, OptiTemp® Cube 47 -esite, 6/2026, luettu 9.11.2026
 > Lähde tälle osiolle: Lähde: Elecnova, tuotesivu ECO-STS-C125, luettu 9.11.2026
+> Lähde tälle osiolle: Tiedot valmistajien tuotesivuilta ja tiedotteista.
 
 - [ ] `h2` **uusi** — Valikoima kaapista konttiin.
       - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — Ulkokaapit, hybridikaapit, kontit, siirrettävät yksiköt ja STS-kaapit neljältä valmistajalta: Ralos, Elecnova, EP Energy ja Avant Power.
+- [ ] ⚠ `p` **muutettu** — Ulkokaapit, hybridikaapit, kontit, siirrettävät yksiköt ja varavoimakaapit viideltä valmistajalta: Ralos, Elecnova, EP Energy, Avant Power ja ZOE Energy Storage. Latausasemat ovat lataussivulla.
+      - main: Yksi akku, neljä työtä, yksi vuorokausi. Kello kulkee, akku lataa halvalla, leikkaa aamuhuipun, odottaa valmiina ja purkaa energian silloin, kun se on kallista. Koko ajan se on Fingridin käytettävissä.
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
-- [ ] `label` **uusi** — Kaikki 13
+- [ ] `label` **uusi** — Kaikki 14
       - **Korjaus:**
-- [ ] `label` **uusi** — Ulkokaapit 4
+- [ ] `label` **uusi** — Ulkokaapit 5
       - **Korjaus:**
 - [ ] `label` **uusi** — Hybridikaapit 2
       - **Korjaus:**
@@ -751,6 +757,14 @@ Vastine mainissa: `/energiavarastot/`
 - [ ] ⚠ `dd` **uusi** — 233 kWh
       - **Korjaus:**
 - [ ] `dd` **uusi** — 1,45 × 1,3 m
+      - **Korjaus:**
+- [ ] `p` **uusi** — ZOE Energy Storage
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Z Box-C 215-2H
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 215 kWh
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 1,34 × 1,40 m
       - **Korjaus:**
 - [ ] `h3` **uusi** — EPHS104 / EPHS156
       - **Korjaus:**
@@ -869,6 +883,104 @@ Vastine mainissa: `/energiavarastot/`
 - [ ] `dd` **uusi** — 20 ms
       - **Korjaus:**
 - [ ] `dd` **uusi** — 400 V
+      - **Korjaus:**
+- [ ] `h3` **muutettu** — Muut mallit ja ratkaisut
+      - main: Ratkaisut
+      - **Korjaus:**
+- [ ] `th` **uusi** — Malli
+      - **Korjaus:**
+- [ ] `th` **uusi** — Tyyppi
+      - **Korjaus:**
+- [ ] `th` **uusi** — Päätiedot
+      - **Korjaus:**
+- [ ] `th` **uusi** — Lähde
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — ECO-E261LP-2AElecnova
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — 125 kW, 261 kWh
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — Elecnova, tuotesivu ECO-E261LP-2A, luettu 9.11.2026
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — ECO-E241WP-2AElecnova
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — 125 kW, 241 kWh
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — Elecnova, tuotesivu ECO-E241WP-2A, luettu 9.11.2026
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — ECO-E233LSElecnova
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — 100 kW, 233 kWh
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — Elecnova, tuotesivu ECO-E233LS, luettu 9.11.2026
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — ECO-E215WSElecnova
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — 100 kW, 215 kWh
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — Elecnova, tuotesivu ECO-E215WS, luettu 9.11.2026
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — ECO-B418LP-2NElecnova
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `td` **uusi** — Nestejäähdytetty akustokaappi, tehoelektroniikka erikseen
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — Elecnova, tuotesivu ECO-B418LP-2N, luettu 9.11.2026
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — ECO-B372LSElecnova
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — 372 kWh
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — Elecnova, tuotesivu ECO-B372LS, luettu 9.11.2026
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — ECO-B20FT5015LP-2Elecnova
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `td` **uusi** — Nestejäähdytetty 20 jalan akustokontti
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — Elecnova, tuotesivu ECO-B20FT5015LP-2, luettu 9.11.2026
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — ECO-B20FT3404WSElecnova
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `td` **uusi** — Ilmajäähdytteinen 20 jalan akustokontti
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — 3 404 kWh
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — Elecnova, tuotesivu ECO-B20FT3404WS, luettu 9.11.2026
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — ECO-EPS-C125Elecnova
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `td` **muutettu** — EPS-kaappi varavoimaan
+      - main: Varavoima
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — 1, 3 tai 6 × 125 kW, siirto enintään 20 s
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — Elecnova, tuotesivu ECO-EPS-C125, luettu 9.11.2026
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — PCS, BMS ja EMSElecnova
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
+      - **Korjaus:**
+- [ ] `td` **uusi** — Tehoelektroniikka, akunhallinta ja energianhallinta
+      - **Korjaus:**
+- [ ] `td` **uusi** — komponentit kokonaisuuden osiksi
+      - **Korjaus:**
+- [ ] ⚠ `td` **uusi** — Elecnova, tuotesivut PCS, BMS ja EMS, luettu 9.11.2026
+      - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
 - [ ] `p` **muutettu** — Tekniset tiedot ovat valmistajien datalehdiltä ja tuotesivuilta. Varavoima koskee valittuja piirejä, jotka suunnitellaan kohdekäynnillä. Valmistaja ja malli valitaan kohteenne kulutuksen, liittymän ja tilan mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla.
       - main: Laitteet valitaan kohteenne mukaan, ei varaston. Turvallisuus, takuu ja huolto ovat arviossa kirjattuina, eivät pienellä präntillä.
@@ -1029,21 +1141,28 @@ Vastine mainissa: `/aurinko-ja-akku/`
 ### #tuotteet
 > Lähde tälle osiolle: Lähde: Ralos Oy, esite RLS-585, 6/2023
 > Lähde tälle osiolle: Lähde: Ralos Oy, esite RLS-480, 6/2023
+> Lähde tälle osiolle: Lähde: HT-SAAE, datalehti HT72-18X(ND)-F (Scanoffice), luettu 9.11.2026
+> Lähde tälle osiolle: Lähde: HT-SAAE, esitteet HT54- ja HT60-18X(ND)-F (Scanoffice), luettu 9.11.2026
+> Lähde tälle osiolle: Lähde: HD Hyundai Energy Solutions, HJT-paneelien datalehti (Scanoffice), luettu 9.11.2026
 > Lähde tälle osiolle: Lähde: Roofit.Solar, Velario Slim -datalehti 2026-02 V1, luettu 9.11.2026
+> Lähde tälle osiolle: Lähde: APsystems, QT2-datalehti, versio 1.0, 7.10.2023 (Scanoffice), luettu 9.11.2026
+> Lähde tälle osiolle: Lähde: Sofar Solar, invertterien datalehti (Scanoffice), luettu 9.11.2026
 > Lähde tälle osiolle: Lähde: Ralos Oy, tekninen tiedote Ralos Beast 125, versio V10, tarkistettu 9.11.2026
 > Lähde tälle osiolle: Lähde: EP Energy, luettelo C&I Energy Storage Solutions, 12/2025
 > Lähde tälle osiolle: Lähde: Elecnova, tuotesivu ECO-E64WX, luettu 9.11.2026
 
-- [ ] `h2` **uusi** — Paneelit, aurinkokatto ja varasto.
+- [ ] `h2` **uusi** — Paneelit, invertterit, aurinkokatto ja varasto.
       - **Korjaus:**
-- [ ] ⚠ `p` **uusi** — Aurinkopaneelit, aurinkokatto ja aurinkosähkön kanssa toimivat varastot neljältä valmistajalta: Ralos, Roofit.Solar, Elecnova ja EP Energy. Roofit.Solarin aurinkokattoja toimittaa Suomessa Gare Energy Oy.
+- [ ] ⚠ `p` **uusi** — Aurinkopaneelit, invertterit, aurinkokatto ja aurinkosähkön kanssa toimivat varastot: Ralos, HT-SAAE, HD Hyundai, APsystems, Sofar Solar, Roofit.Solar, Elecnova ja EP Energy. Roofit.Solarin aurinkokattoja toimittaa Suomessa Gare Energy Oy, ja HT-SAAE:n, HD Hyundain, APsystemsin ja Sofar Solarin laitteita Scanoffice Oy.
       - ⚠ kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026
       - **Korjaus:**
-- [ ] `label` **uusi** — Kaikki 6
+- [ ] `label` **uusi** — Kaikki 11
       - **Korjaus:**
-- [ ] `label` **uusi** — Aurinkopaneelit 2
+- [ ] `label` **uusi** — Aurinkopaneelit 5
       - **Korjaus:**
 - [ ] `label` **uusi** — Aurinkokatto 1
+      - **Korjaus:**
+- [ ] `label` **uusi** — Invertterit 2
       - **Korjaus:**
 - [ ] `label` **uusi** — Aurinko ja varasto 3
       - **Korjaus:**
@@ -1080,6 +1199,46 @@ Vastine mainissa: `/aurinko-ja-akku/`
       - **Korjaus:**
 - [ ] `dd` **uusi** — 1,96 × 1,10 m
       - **Korjaus:**
+- [ ] `p` **uusi** — HT-SAAE
+      - **Korjaus:**
+- [ ] `h3` **uusi** — HT72-18X(ND)-F
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kaksipuolinen kaksilasinen paneeli, TOPCon-kennot
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 585–605 W
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — enintään 23,4 %
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 80 %
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 2,28 × 1,13 m
+      - **Korjaus:**
+- [ ] `h3` **uusi** — HT54 / HT60-18X(ND)-F
+      - **Korjaus:**
+- [ ] `p` **uusi** — Täysmusta kaksilasinen paneeli, TOPCon-kennot
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 440–505 W
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — enintään 23,3 %
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 1,76 tai 1,91 × 1,13 m
+      - **Korjaus:**
+- [ ] `p` **uusi** — HD Hyundai
+      - **Korjaus:**
+- [ ] `h3` **uusi** — HiT-H LE-FB
+      - **Korjaus:**
+- [ ] `p` **uusi** — Täysmusta HJT-aurinkopaneeli
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 440–460 W
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — enintään 23,0 %
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Takuu
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 30 vuotta, myös teho
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 1,76 × 1,13 m
+      - **Korjaus:**
 - [ ] `p` **uusi** — Roofit.Solar
       - **Korjaus:**
 - [ ] `h3` **uusi** — Velario Slim
@@ -1098,6 +1257,42 @@ Vastine mainissa: `/aurinko-ja-akku/`
 - [ ] `dt` **uusi** — Kattokaltevuus
       - **Korjaus:**
 - [ ] `dd` **uusi** — vähintään 10°
+      - **Korjaus:**
+- [ ] `p` **uusi** — APsystems
+      - **Korjaus:**
+- [ ] `h3` **uusi** — QT2
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kolmivaiheinen mikroinvertteri neljälle paneelille
+      - **Korjaus:**
+- [ ] `dt` **uusi** — AC-teho
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 2 000 VA
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 97 %
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Kotelointi
+      - **Korjaus:**
+- [ ] `dd` **uusi** — IP67
+      - **Korjaus:**
+- [ ] `dt` **uusi** — Käyttölämpötila
+      - **Korjaus:**
+- [ ] `dd` **uusi** — −40…+65 °C
+      - **Korjaus:**
+- [ ] `p` **uusi** — Sofar Solar
+      - **Korjaus:**
+- [ ] `h3` **uusi** — KTL-X, KTL-G2 ja KTL
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kolmivaiheiset verkkoinvertterit
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — 3,3–70 kW
+      - **Korjaus:**
+- [ ] ⚠ `dd` **uusi** — enintään 98,6 %
+      - **Korjaus:**
+- [ ] `dt` **uusi** — MPPT
+      - **Korjaus:**
+- [ ] `dd` **uusi** — 2 tai 3
+      - **Korjaus:**
+- [ ] `dd` **uusi** — IP65
       - **Korjaus:**
 - [ ] `h3` **uusi** — Beast 125 HD
       - **Korjaus:**
@@ -1860,39 +2055,101 @@ Vastine mainissa: `/meista/`
 
 ### #rev-meista-1
 
-- [ ] `p` **muutettu** — SAMA Energia on teollisten energiavarastojen ja aurinkosähkön kokonaistoimittaja yrityksille: kartoitamme, suunnittelemme, hankimme, asennamme ja ylläpidämme mittarin takaiset järjestelmät (energiavarasto, aurinkosähkö ja ohjaus) ja viemme ne aggregaattorin kautta reservimarkkinoille. Työmme alkaa laskelmasta, ei tarjouksesta.
+- [ ] `h1` **uusi** — Yhteinen verkko, itsenäinen energia.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — SAMA Energia suunnittelee ja toteuttaa yrityksille sähköliittymän taakse rakennettavat energiajärjestelmät: energiavaraston, aurinkosähkön, latauksen ja ohjauksen. Valitsemme laitteet useammalta valmistajalta, liitämme järjestelmän aggregaattorin kautta reservimarkkinoille ja kannamme projektista yhden vastuun. Palvelemme Suomea ja Viroa.
       - main: SAMA Energia on teollisten energiavarastojen ja aurinkosähkön kokonaistoimittaja yrityksille: kartoitamme, suunnittelemme, hankimme, asennamme ja ylläpidämme mittarin takaiset järjestelmät – energiavarasto, aurinkosähkö ja ohjaus – ja viemme ne aggregaattorin kautta reservimarkkinoille. Työmme alkaa laskelmasta, ei tarjouksesta.
+      - **Korjaus:**
+- [ ] `b` **uusi** — 2 arkipäivää
       - **Korjaus:**
 
 ### #miksi
 > Lähde tälle osiolle: Lähteet: Fingrid, Reservimarkkinat tutuiksi · 11.6.2025; Fingrid, Energiavarastot reservimarkkinoilla · 10.2.2025; Fingrid, tiedote · 24.9.2025. Tarkemmin Reservimarkkinat-sivulla.
 
-- [ ] ⚠ `p` **muutettu** — Markkina muuttui. Fingrid hankkii reserviä joka tunnille ja arvioi tarvitsevansa vuoteen 2030 mennessä noin 1 200 MW lisää; energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli helmikuussa 2025 jo 29 %, ja Etelä-Suomessa Fingrid rajoittaa suurten varastojen liityntöjä vuoteen 2029. Jokainen näistä muuttaa sitä, mitä yksi liittymä on arvoltaan.
+- [ ] `h2` **uusi** — Miksi SAMA on olemassa.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Tunnemme markkinan ja kokoamme ratkaisun asiakkaan tarpeen mukaan. Tavoitteemme on olla yritysten kokonaisvaltainen kumppani energiamarkkinalla.
+      - main: Markkina muuttui nopeammin kuin tarjoukset. Me halusimme yrityksen, joka antaa asiakkaalle kartan, ei vain laitetta.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Yhteinen verkko. Jaamme saman sähköverkon ja saman taajuuden. Kun yrityksen liittymä joustaa silloin, kun verkko sitä tarvitsee, se tukee koko järjestelmää, ja reservimarkkinat maksavat tästä joustosta. Itsenäisyys syntyy osallistumisesta: oma tuotanto, oma varasto ja oma päätösvalta yhteisen verkon sisällä. Yhteinen verkko -kartta näyttää, miten Suomen ja Viron verkot, kulutus ja varastot kehittyvät.
+      - main: Mistä aloitamme. Kohteista, joissa liittymä on suuri ja kulutus vaihtelee: siellä arvio on selkein ja takaisinmaksu usein lyhin. Sen jälkeen siirrymme suurempiin kokonaisuuksiin yhdessä niiden kanssa, jotka tuntevat markkinan ja oman alueensa vahvuudet. Teemme sen läpinäkyvästi ja asiakkaan kielellä: tieto ymmärrettäväksi, luvut lähteineen, päätös teidän.
+      - **Korjaus:**
+- [ ] ⚠ `p` **muutettu** — Markkina muuttuu. Fingrid hankkii reserviä joka tunnille ja arvioi tarvitsevansa vuoteen 2030 mennessä noin 1 200 MW lisää; energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli helmikuussa 2025 jo 29 %, ja Etelä-Suomessa Fingrid rajoittaa suurten varastojen liityntöjä vuoteen 2029. Jokainen näistä muuttaa sitä, mitä yksi liittymä on arvoltaan.
       - main: Markkina muuttui. Fingrid hankkii reserviä joka tunnille ja arvioi tarvitsevansa viiden vuoden päästä noin 1 200 MW lisää; energiavarastojen osuus FCR-N-reservin säätökokein todennetusta kapasiteetista oli helmikuussa 2025 jo 29 %, ja Etelä-Suomeen ei tehdä uusia varastoliityntöjä ennen vuotta 2029. Jokainen näistä muuttaa sitä, mitä yksi liittymä on arvoltaan.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Tarjoukset pysyivät samoina. Yritykset saivat laitelistan ja yhden takaisinmaksuluvun ilman lähdettä, skenaariota ja verkkoyhtiön kantaa. Meitä kiinnosti toinen kysymys: mitä teidän liittymänne oikeasti pystyy tuottamaan ja mikä siihen vaikuttaa.
-      - main: Tarjoukset pysyivät samoina. Yritykset saivat laitelistan ja yhden takaisinmaksuluvun – ilman lähdettä, skenaariota ja verkkoyhtiön kantaa. Meitä kiinnosti toinen kysymys: mitä teidän liittymänne oikeasti pystyy tuottamaan ja mikä siihen vaikuttaa.
+- [ ] `p` **muutettu** — Tieto ensin, päätös teidän. Hyvin perillä oleva asiakas tekee itselleen parhaat päätökset. Siksi jokaisella luvulla on lähde ja päivä, vaihtoehdot näkyvät rinnakkain samoilla luvuilla ja päätös on teidän.
+      - main: Mistä aloitamme. Kohteista, joissa liittymä on suuri ja kulutus vaihtelee: siellä arvio on selkein ja takaisinmaksu usein lyhin. Sen jälkeen siirrymme suurempiin kokonaisuuksiin yhdessä niiden kanssa, jotka tuntevat markkinan ja oman alueensa vahvuudet. Teemme sen läpinäkyvästi ja asiakkaan kielellä: tieto ymmärrettäväksi, luvut lähteineen, päätös teidän.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Mitä tavoittelemme. Että yrityksen oma liittymä on tuottava omaisuuserä eikä pelkkä kuluerä. Että päätös siitä tehdään omista luvuista, ei myyjän lupauksesta.
+- [ ] `p` **muutettu** — Mitä tavoittelemme. Että yrityksen oma liittymä on tuottava omaisuuserä eikä pelkkä kuluerä. Että päätös siitä tehdään omista luvuista.
       - main: Mitä tavoittelemme. Että yrityksen oma liittymä on tuottava omaisuuserä eikä pelkkä kuluerä – ja että päätös siitä tehdään omista luvuista, ei myyjän lupauksesta.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Mistä aloitamme. Kohteista, joissa liittymä on suuri ja kulutus vaihtelee: siellä arvio on selkein. Sen jälkeen siirrymme suurempiin kokonaisuuksiin yhdessä niiden kanssa, jotka tuntevat markkinan ja oman alueensa vahvuudet. Teemme sen läpinäkyvästi ja asiakkaan kielellä: tieto ymmärrettäväksi, luvut lähteineen, päätös teidän.
+
+### #toimintatapa
+
+- [ ] `h2` **muutettu** — Miten toimimme.
+      - main: Meidän tiimimme.
+      - **Korjaus:**
+- [ ] `p` **uusi** — Kuusi käytäntöä, jotka pätevät jokaisessa projektissa ensimmäisestä yhteydenotosta käyttöönottoon.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Kirjallinen arvio kahdessa arkipäivässä
+      - **Korjaus:**
+- [ ] ⚠ `p` **muutettu** — Maksuton kartoitus päättyy kirjalliseen arvioon kahden arkipäivän kuluessa tietojen saamisesta. Se kertoo, kannattaako järjestelmä kohteessanne, minkä kokoinen sen pitäisi olla ja mistä tuotto koostuu.
       - main: Mistä aloitamme. Kohteista, joissa liittymä on suuri ja kulutus vaihtelee: siellä arvio on selkein ja takaisinmaksu usein lyhin. Sen jälkeen siirrymme suurempiin kokonaisuuksiin yhdessä niiden kanssa, jotka tuntevat markkinan ja oman alueensa vahvuudet. Teemme sen läpinäkyvästi ja asiakkaan kielellä: tieto ymmärrettäväksi, luvut lähteineen, päätös teidän.
+      - ⚠ perustajan päätös 04.11.2026 (I-20261104-7) — lupaus, sama kaikilla sivuilla
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Jokainen luku lähteineen
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Hinnat, tuotot ja tekniset arvot ovat arviossa lähteineen ja päivämäärineen. Reservituotto mallinnetaan toteutuneista tuntihinnoista, ja tulevat vuodet näytetään vaihteluvälinä.
+      - main: Mistä aloitamme. Kohteista, joissa liittymä on suuri ja kulutus vaihtelee: siellä arvio on selkein ja takaisinmaksu usein lyhin. Sen jälkeen siirrymme suurempiin kokonaisuuksiin yhdessä niiden kanssa, jotka tuntevat markkinan ja oman alueensa vahvuudet. Teemme sen läpinäkyvästi ja asiakkaan kielellä: tieto ymmärrettäväksi, luvut lähteineen, päätös teidän.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Valmistajista riippumaton
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Valitsemme laitteet useammalta valmistajalta kohteen mukaan ja vertaamme ne samoilla luvuilla. Jokainen energiavarasto käy läpi julkiset laitevaatimuksemme.
+      - main: Useampi valmistaja, malli kohteen mukaan. Vertailu on arviossa samoilla luvuilla.
+      - **Korjaus:**
+- [ ] `h3` **muutettu** — Aggregaattori kohteen mukaan
+      - main: Aggregaattori valitaan kohteen mukaan
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Valitsemme aggregaattorin kohteenne mukaan Fingridin hyväksymistä reservitoimittajista ja rakennamme liitännän. Aggregaattori ohjaa varastoa reservimarkkinoilla.
+      - main: Aggregaattori kokoaa akut tarjoukseksi, ohjaa niitä automaattisesti ja tilittää tuoton. Suomessa valitsemme aggregaattorin kohteen mukaan, Virossa kumppanimme on Soleron Energy.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Yksi vastuu, yksi yhteyshenkilö
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Projektinjohto on meillä: toimitus, asennus, verkkoyhtiön ilmoitukset ja aggregaattorisopimus. Asennusta johtaa asennuspäällikkömme, ja sähkötyöt tekee rekisteröity sähköurakoitsijakumppanimme.
+      - main: SAMA Energia on teollisten energiavarastojen ja aurinkosähkön kokonaistoimittaja yrityksille: kartoitamme, suunnittelemme, hankimme, asennamme ja ylläpidämme mittarin takaiset järjestelmät – energiavarasto, aurinkosähkö ja ohjaus – ja viemme ne aggregaattorin kautta reservimarkkinoille. Työmme alkaa laskelmasta, ei tarjouksesta.
+      - **Korjaus:**
+- [ ] `h3` **uusi** — Kaksi markkinaa, neljä kieltä
+      - **Korjaus:**
+- [ ] `p` **uusi** — Suomessa Fingridin ja Virossa Eleringin säännöin. Arvio, luvat ja sopimukset suomeksi, viroksi, englanniksi tai ruotsiksi.
       - **Korjaus:**
 
 ### #kuka
 
-- [ ] `p` **muutettu** — Uusiutuvan energian myynnissä vuodesta 2014, ensin Australiassa, sitten Suomessa ja Virossa: aurinkosähköratkaisut kodeille ja yrityksille, viime vuosina teolliset energiavarastot, energianhallinta ja reservimarkkinat. Vastaa asiakassuhteista, aggregaattorikumppanuuksista ja arviosta. Hänen kauttaan kulkee kaikki yhteydenpito ennen allekirjoitusta.
+- [ ] `h2` **uusi** — Kuka vastaa mistäkin.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Jokaisella projektin vaiheella on nimetty vastuuhenkilö, ja saatte heihin suoran yhteyden. Numerot ovat heidän omiaan, eivät vaihteen.
+      - main: Jokaisessa vaiheessa on nimetty vastuuhenkilö, ja saatte heihin suoran yhteyden. Alla olevat numerot ovat heidän omiaan, eivät vaihteen.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Vastaa kartoituksesta ja kirjallisesta arviosta, asiakassuhteista ja aggregaattorikumppanuuksista. Kaikki yhteydenpito ennen allekirjoitusta kulkee hänen kauttaan.
+      - main: Uusiutuvan energian myynnissä vuodesta 2014, ensin Australiassa, sitten Suomessa ja Virossa: aurinkosähköratkaisut kodeille ja yrityksille, viime vuosina teolliset energiavarastot, energianhallinta ja reservimarkkinat. Vastaa asiakassuhteista, aggregaattorikumppanuuksista ja arviosta – hänen kauttaan kulkee kaikki yhteydenpito ennen allekirjoitusta.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Tausta: uusiutuvan energian myynnissä vuodesta 2014, ensin Australiassa, sitten Suomessa ja Virossa: aurinkosähkö kodeille ja yrityksille, viime vuosina teolliset energiavarastot, energianhallinta ja reservimarkkinat.
       - main: Uusiutuvan energian myynnissä vuodesta 2014, ensin Australiassa, sitten Suomessa ja Virossa: aurinkosähköratkaisut kodeille ja yrityksille, viime vuosina teolliset energiavarastot, energianhallinta ja reservimarkkinat. Vastaa asiakassuhteista, aggregaattorikumppanuuksista ja arviosta – hänen kauttaan kulkee kaikki yhteydenpito ennen allekirjoitusta.
       - **Korjaus:**
 - [ ] `p` **muutettu** — madis.maastik@samaenergia.fi+358 44 965 4614
       - main: madis.maastik@samaenergia.fi+358 449 654 614
       - **Korjaus:**
-- [ ] `p` **muutettu** — Vastaa: yhtiön suunta, toiminnan suunnittelu ja toimitusten läpivienti; kumppanuudet, sopimukset ja rahoitusjärjestelyt. Huolehtii siitä, että jokainen hanke etenee sovitussa järjestyksessä.
+- [ ] `p` **muutettu** — Vastaa yhtiön suunnasta ja toiminnan suunnittelusta, kumppanuuksista, sopimuksista ja rahoitusjärjestelyistä sekä siitä, että jokainen toimitus etenee sovitussa järjestyksessä.
       - main: Vastaa: yhtiön suunta, toiminnan suunnittelu ja toimitusten läpivienti – kumppanuudet, sopimukset ja rahoitusjärjestelyt. Huolehtii siitä, että jokainen hanke etenee sovitussa järjestyksessä.
       - **Korjaus:**
-- [ ] `p` **muutettu** — Peltikattojen ja aurinkojärjestelmien mestari. Yli kuusi vuotta aurinkojärjestelmien rakentamista yritys- ja yksityiskohteissa (katolle, maahan ja kattoon integroituna) sekä tausta hienotöissä, joissa tarkkuus ratkaisee. Vastaa asennuksen toteutuksesta ja laadusta: asennus toimii ja jättää kiinteistölle myös esteettisen arvon.
+- [ ] `p` **muutettu** — Vastaa asennuksen toteutuksesta ja laadusta kohteella: asennus toimii ja jättää kiinteistölle myös esteettisen arvon.
       - main: Peltikattojen ja aurinkojärjestelmien mestari. Yli kuusi vuotta aurinkojärjestelmien rakentamista yritys- ja yksityiskohteissa – katolle, maahan ja kattoon integroituna – sekä tausta hienotöissä, joissa tarkkuus ratkaisee. Vastaa asennuksen toteutuksesta ja laadusta: asennus toimii ja jättää kiinteistölle myös esteettisen arvon.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Tausta: peltikatot ja aurinkojärjestelmät; yli kuusi vuotta aurinkojärjestelmien rakentamista yritys- ja yksityiskohteissa katolle, maahan ja kattoon integroituna.
+      - main: Peltikattojen ja aurinkojärjestelmien mestari. Yli kuusi vuotta aurinkojärjestelmien rakentamista yritys- ja yksityiskohteissa – katolle, maahan ja kattoon integroituna – sekä tausta hienotöissä, joissa tarkkuus ratkaisee. Vastaa asennuksen toteutuksesta ja laadusta: asennus toimii ja jättää kiinteistölle myös esteettisen arvon.
+      - **Korjaus:**
+- [ ] `p` **muutettu** — Rekrytoimme myynnin ja asennuksen osaajia Suomessa ja Virossa. Kirjoittakaa osoitteeseen info@samaenergia.fi.
+      - main: Kasvamme. Jos teillä on myynti- tai asennustausta ja kiinnostus energiamarkkinaan, kirjoittakaa info@samaenergia.fi.
       - **Korjaus:**
 
 ### #verkosto
@@ -1960,6 +2217,8 @@ Vastine mainissa: `/meista/`
 - [ ] `li` **muutettu** — Aggregaattorivalitaan kohteen mukaan Fingridin hyväksymistä reservitoimittajista
       - main: Fingridin hyväksymä reservitoimittaja · ei sidosta yhteen
       - **Korjaus:**
+- [ ] `p` **uusi** — Koko valikoima kuvin ja datalehden tiedoin
+      - **Korjaus:**
 - [ ] ⚠ `p` **muutettu** — Rahoitus. Leasingrahoitus on mahdollista järjestää yritysrahoittajien kautta. Rahoittaja ja ehdot valitaan kohteen ja ostajan mukaan, ja oman pääoman ja leasingin vertailu on arviossa samoilla luvuilla.
       - main: Useampi valmistaja, malli kohteen mukaan. Vertailu on arviossa samoilla luvuilla.
       - ⚠ rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)
@@ -1967,6 +2226,10 @@ Vastine mainissa: `/meista/`
 
 ### #yritys
 
+- [ ] ⚠ `dd` **muutettu** — HelsinkiSörnäisten Rantatie 33 C, 00500 Helsinki · palvelemme Suomea ja Viroa
+      - main: Sörnäisten Rantatie 33 C, 00500 Helsinki
+      - ⚠ osoite vahvistettu 06.09.2026
+      - **Korjaus:**
 - [ ] `dd` **muutettu** — Neljällä kielelläSuomi, viro, englanti ja ruotsi: arvio, luvat ja sopimukset teidän kielellänne
       - main: Neljällä kielelläArvio, luvat ja sopimukset teidän kielellänne
       - **Korjaus:**
