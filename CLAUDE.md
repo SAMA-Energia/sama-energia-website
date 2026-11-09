@@ -634,4 +634,15 @@ kuvia, liian opettavainen, "black and yellow" kaikkialla). Vastaukset kysymyksii
 - Energiavarastosivu uudelleen: alkukuva tuoterivinä, valikoima heti alussa, sitten rahavirtataulukko, "Mikä laskullanne muuttuu",
   toimitus + 3D/AR, kohteet, kerros kerrallaan (upotettu tumma), UKK, CTA. Päiväkaavio poistettu (sama kuin etusivulla).
 - Kumppanisivu: "Valmistaja, malli ja tekniset tiedot ovat tarjouksessa." → linkki valikoimaan (FI/ET).
-- AVOIN: aurinkosähkösivun tuotteet ja kuvat, uutissivun uusi ilme, natiivitarkistus uusille lauseille.
+- Aurinkosähkö/päikeseelekter: alkukuva `assets/valikoima/ralos-katot.webp` (Ralosin ilmakuva), periaatteet rivinä (.facts-row),
+  valikoima lohkossa `tuotteet:aurinko` (Ralos RLS-585 ja RLS-480 = Ralosin esitteet 6/2023, Roofit.Solar Velario Slim = datalehti
+  2026-02 V1 vain FI, Gare Energy Oy:n kautta, kuva Garen aurinkokattokuvasta; Ralos Beast 125 HD, EP Energy EPHS, Elecnova ECO-E64WX).
+  FI-osioihin kuvat valikoima/gare-katto (Gare Energy) ja valikoima/jsm-asentajat (JSM); ET-sivulla ei Garen eikä JSM:n kuvia
+  (nimet vain Suomen sivustolla).
+- Ajankohtaista/uudised: pääkatsauksen kortissa kartta (`assets/uutiset/*.webp`, rajattu tasokuvista kk-fi-d6 ja kk-ee-d4, OSM- ja
+  Natural Earth -merkintä kuvan kulmassa), kuvateksti viittaa Yhteinen verkko / Ühine võrk -sivun lähteisiin; lainaus tekstin alle.
+- Lukulista (artefakti LZyjrfRh2pqqPrZdC7cePR, versio 2, 9.11.2026): vertailu katselmoituun v51:een (`v51-orig`), siirretyt
+  muuttumattomat rivit suodatettu, tuotekortit omana osionaan generaattorista, alt-tekstit piilotekstien osiossa; päätökset 17 (v52
+  mukana) ja 21 (päiväkaavion kuvaus ja selite) päivitetty. Natiivilistat docs/native-pass päivitetty (PLAYWRIGHT_CORE=/opt/npm-tools/…).
+- AVOIN: Madiksen päätökset 1–21 ja lauseiden luku; muut alasivut kuviin, kun kuvauksen (9.–11.11) kuvat tulevat; Avant OptiGrid
+  ilman julkisia kW/kWh-lukuja (ei korttia); Elecnova ECO-E261LP-2A ilman varmistettua tuotekuvaa (ei korttia).
