@@ -754,6 +754,7 @@ Martin 9.11.2026: kumppaniosion kortit ja paneelit (jokaisella oma kortti ja lin
 logoina yhdessä rivissä; paneelien tilalle päätuotteiden esittely, valittava valikko ja 2–3 tuotetta per valinta (vieritettävä)
 tai tuotekatalogit. Tehty omaan haaraan vertailtavaksi draftin rinnalla (Netlifyn deploy preview PR:stä draftiin); draft ennallaan.
 
+- Järjestys (Martin 9.11.2026 klo 19.19): tuotenosto ensin, logorivi sen alla.
 - Logorivi (`.k-logos`, `scripts/kumppanit/build_kumppanit.py` `logos()`, merkit `kumppanit:logot:alku/loppu`): FI Ralos,
   Elecnova, Avant Power, Scanoffice, Gare Energy, JSM; ET Ralos, Elecnova, Avant Power, Scanoffice, Soleron. Ei linkkejä.
   Logot `assets/kumppanit/logot/<id>.svg`: kumppaneiden omilta sivuilta 9.11.2026 (ralos.fi R-merkki + jakokuvan sanamerkki,
