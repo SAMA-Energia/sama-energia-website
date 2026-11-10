@@ -809,3 +809,6 @@ tai tuotekatalogit. Tehty omaan haaraan vertailtavaksi draftin rinnalla (Netlify
 - Lomake-ilmoitukset menevät Netlifystä Madikselle (madis.maastik@samaenergia.fi, Martin 10.11.2026).
 - AVOIN natiivitarkistukseen (perustajan valinta, ei korjattu): FI "Akulla varustettu pikalaturi" -osio lataussivulla kuvaa tuotetyyppiä,
   jota valikoimassa ei nyt näy (EP piilossa); Gare-taustan "15 vuoden kokemuksella"; ET "Ta võtab tasu" (võrguettevõtja), "peakilbi joonis/skeem".
+- JULKAISU 10.11.2026 (perustajan päätös, Martin klo 3.55): v51-launch → main ennen Madiksen "publish"-hyväksyntää ja natiivitarkistusta,
+  kuten v34 26.10.2026. Poikkeaa päätöksestä I-20261104-1 ("main vain Madiksen OK:lla") ja Language-säännöstä; korjaukset jatkokommiteissa.
+  Tietosuojasivujen päivämäärä ja llms.txt 10.11.2026. Palautus tarvittaessa Netlifyn aiempaan tuotantodeployhin (941e6ef).

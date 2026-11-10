@@ -3988,7 +3988,7 @@ Oikeutenne
 Teillä on oikeus saada pääsy tietoihinne, pyytää niiden oikaisua, poistoa, käsittelyn rajoittamista tai siirtoa sekä vastustaa käsittelyä. Pyynnöt: info@samaenergia.fi. Teillä on myös oikeus tehdä valitus valvontaviranomaiselle: Tietosuojavaltuutetun toimisto, tietosuoja.fi.
 
 Muutokset
-Päivitetty 09.11.2026. Jos seloste muuttuu, uusin versio on aina tällä sivulla.
+Päivitetty 10.11.2026. Jos seloste muuttuu, uusin versio on aina tällä sivulla.
 
 # SAMA Energia · Ühine võrk, iseseisev energia — https://samaenergia.ee/
 
@@ -7782,4 +7782,4 @@ Teie õigused
 Teil on õigus saada juurdepääs oma andmetele, nõuda nende parandamist, kustutamist, töötlemise piiramist või ülekandmist ning esitada vastuväiteid töötlemisele. Taotlused: info@samaenergia.fi. Teil on ka õigus esitada kaebus järelevalveasutusele: Soome andmekaitsevolinik (tietosuoja.fi) või Eesti Andmekaitse Inspektsioon (aki.ee).
 
 Muudatused
-Uuendatud 09.11.2026. Kui privaatsuspoliitika muutub, on uusim versioon alati sellel lehel.
+Uuendatud 10.11.2026. Kui privaatsuspoliitika muutub, on uusim versioon alati sellel lehel.
