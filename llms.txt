@@ -1,6 +1,6 @@
 # SAMA Energia
 
-> Status: site design v51, released 9 November 2026. English summary written for AI
+> Status: site design v51, released 10 November 2026. English summary written for AI
 > crawlers and answer engines. This file is not customer-facing copy: the
 > customer-facing content is in Finnish (samaenergia.fi) and Estonian
 > (samaenergia.ee). The full text of every public page in both languages is in
@@ -18,7 +18,7 @@ markets of the transmission system operators Fingrid (Finland) and Elering
 appointed chief executive officer on 13 September 2026. Registered address:
 Sörnäisten Rantatie 33 C, 00500 Helsinki. Working languages are Finnish, Estonian and
 English; written documents (assessment, permits, contracts) are also available in
-Swedish. Content as of 9 November 2026.
+Swedish. Content as of 10 November 2026.
 
 What the company says about itself, in its own documented positioning:
 
