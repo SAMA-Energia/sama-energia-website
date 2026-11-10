@@ -26,8 +26,8 @@ const PLACEHOLDER_WAIVERS = [];
 
 /* Pidettävä samana kuin build-pages.mjs:n PAIRS / UNPAIRED / UNLISTED / LEGACY. */
 const PAIRS = [
-  ['', ''], ['aurinkosahko', 'paikeseelekter'], ['energiavarastot', 'energiasalvestid'],
-  ['reservimarkkinat', 'reserviturg'], ['aggregaattori', 'soleron-energy'], ['palvelut', 'teenused'],
+  ['', ''], ['aurinkosahko', 'paikeseelekter'], ['energiavarastot', 'energiasalvestid'], ['lataus', 'laadimine'],
+  ['reservimarkkinat', 'reserviturg'], ['aggregaattori', 'soleron-energy'], ['palvelut', 'teenused'], ['verkko', 'vork'],
   ['laitevaatimukset', 'seadmete-nouded'], ['kumppanit', 'partnerid'],
   ['meista', 'meist'], ['ajankohtaista', 'uudised'], ['yhteystiedot', 'kontakt'],
   ['tietosuoja', 'andmekaitse'], ['kiitos', 'aitah'],
@@ -212,12 +212,33 @@ const GUARDS = [
   { id: 'tunnetusti-rahoitus', langs: 'both', why: '"tunnetusti" rahoituksen lähellä — todentamaton superlatiivi (03.09.2026)',
     find: t => nearMatches(t, /tunnetusti/gi, /rahoit|rahast/gi, 80) },
   /* --- kumppani- ja yritysnimet --- */
-  // 08.09: Scanoffice Oy sallittu VAIN suomenkielisellä sivustolla.
-  { id: 'scanoffice-et', langs: 'et', why: 'Scanoffice — sallittu vain FI-sivustolla (08.09.2026)',
-    find: t => [...t.matchAll(/Scanoffice/gi)] },
-  // 03.09: rahoitus- ja Energen-ajan yritysnimiä ei mainita sivustolla.
-  { id: 'kielletyt-nimet', langs: 'both', why: 'rahoitus-/Energen-ajan yritysnimi — ei mainita sivustolla (03.09.2026)',
-    find: t => [...t.matchAll(/Grenke|Svea|Salama Sähkö|EP Energy/gi)] },
+  // 08.09: Scanoffice Oy sallittu VAIN suomenkielisellä sivustolla. Kumottu 6.11.2026 (Madis: „you don't even have
+  // Scanoffice there" ET-version kumppaniosiosta) — Scanoffice näkyy nyt molemmilla sivustoilla.
+  // 03.09: rahoitus- ja Energen-ajan yritysnimiä ei mainita sivustolla. EP Energy pois listalta 6.11.2026 (Madis) ja
+  // vahvistettu päätöksellä D1 7.11.2026 (Martin: laitetoimittajien nimet EP Energy, Elecnova, Avant Power, Gare Energy ja
+  // Roofit.Solar pysyvät); Grenke, Svea ja Salama Sähkö pysyvät kiellettyinä.
+  { id: 'kielletyt-nimet', langs: 'both', why: 'rahoitus-/Energen-ajan yritysnimi — ei mainita sivustolla (03.09.2026; EP Energy sallittu, D1 7.11.2026)',
+    find: t => [...t.matchAll(/Grenke|Svea|Salama Sähkö/gi)] },
+  // 04.11.2026: EP Energy / EP Equipment ja Energen Nordic eivät ole sivustolla ennen perustajan päätöstä; Roofit.Solar on
+  // valmistaja ilman sopimusta (Suomessa yhteistyö Gare Energy Oy:n kautta). Sallitut nimet: CLAUDE.md, sisältösäännöt.
+  // 6.11.2026 perustajan päätös (Madis: „You don't have EP energy at all"): EP Energy sallittu molemmilla sivustoilla;
+  // EP Equipment, Energen Nordic ja Roofit edelleen vartioitu.
+  // 6.11.2026 klo 13.18 (Madis, kommentti FI-esikatselussa: Gare Energy „Roofit.Solar peamine partner Soomes"): Roofit.Solar
+  // saa näkyä Suomen sivustolla Gare Energy Oy:n yhteydessä (Roofit.Solarin oma jälleenmyyjälista, Suomi: Gare Energy OY).
+  // Viron sivustolla Roofit edelleen vartioitu (ei sopimusta, Viron yhteistyö ei kulje Garen kautta).
+  { id: 'nimet-1104', langs: 'both', why: 'EP Equipment / Energen — ei sivustolla ennen perustajan päätöstä (04.11.2026; EP Energy sallittu 6.11.2026)',
+    find: t => [...t.matchAll(/EP Equipment|\bEnergen\b/gi)] },
+  { id: 'roofit-et', langs: 'et', why: 'Roofit ei Viron sivustolla (Suomessa sallittu Gare Energy Oy:n yhteydessä 6.11.2026)',
+    find: t => [...t.matchAll(/Roofit/gi)] },
+  // 9.11.2026 klo 12.59 (perustajan päätös): EP Energy ei näy sivustolla toistaiseksi.
+  // Palautus perustajan päätöksellä: poista tämä vartija, PIILOTETUT_VALMISTAJAT (scripts/tuotteet/build_tuotteet.py) ja
+  // PIILOTETUT (scripts/kumppanit/build_kumppanit.py) ja palauta etusivun kortit tiedostoista scripts/kumppanit/piilotetut/.
+  { id: 'ep-piilossa', langs: 'both', why: 'EP Energy ei sivustolla toistaiseksi (perustajan päätös 9.11.2026)',
+    find: t => [...t.matchAll(/EP\s+Energy|\bEP(?:ES|HS|CS|PS|CP)\s*[-\d]/g)] },
+  // mallinimet-1104 poistettu 9.11.2026: perustajan päätös (Madis 9.11.2026, "Foto, tootja, mudel, põhinäitajad") kumoaa
+  // 4.11.2026 linjauksen. Tuotteen kuva, valmistaja, malli ja päätiedot valmistajan datalehdeltä lähteineen näytetään
+  // alasivujen tuotevalikoimassa (scripts/tuotteet/build_tuotteet.py). Valmistajanimien vartijat (nimet-1104, roofit-et,
+  // kielletyt-nimet) pysyvät.
   /* --- viron kielen 03.09 korjaukset --- */
   // 03.09 F6: Baltian irtaantuminen tapahtui 8.2.2025, ei 9.2.
   { id: 'et-veebruar-9', langs: 'et', why: '"9. veebruaril 2025 lahkusid" — õige kuupäev on 8. veebruar (03.09.2026, F6)',
@@ -324,6 +345,8 @@ for (const lang of ['fi', 'et']) {
 }
 /* llms.txt: englanninkielinen tiivistelmä ei saa kantaa kumoutunutta titteliä (13.09.2026).
    Perustajapäätös Martin Rautio 13.09.2026; hallituksen päätös ja kaupparekisteri-ilmoitus seuraavat. */
+/* EP Energy ei sivustolla toistaiseksi (perustajan päätös 9.11.2026): myös llms-tiedostot, rivinvaihto mukaan lukien */
+for (const f of ['llms.txt', 'llms-full.txt']) if (/\bEP\s+Energy|\bEP(?:ES|HS|CS|PS|CP)\s*[-\d]/.test(read(f))) err(`${f}: EP Energy mainittu (perustajan päätös 9.11.2026)`);
 if (/finance director/i.test(read('llms.txt'))) err('llms.txt — "finance director": kumoutunut titteli, Martin Rautio on chief executive officer (perustajapäätös 13.09.2026)');
 
 /* ================= sisältövartijat loppuvat ================= */
@@ -448,7 +471,8 @@ for (const p of pages) {
 
   /* kaikki sisäiset linkit ja resurssit osoittavat olemassa oleviin tiedostoihin; sivun sisäiset
      ankkurit olemassa olevaan id:hen samalla sivulla */
-  for (const m of html.matchAll(/(?:href|src|action)="([^"]+)"/g)) {
+  // v51: attribuutin nimen alku rajattu (popovertargetaction="hide" ei ole osoite)
+  for (const m of html.matchAll(/(?<![\w-])(?:href|src|action)="([^"]+)"/g)) {
     const u = m[1];
     if (u.startsWith('http://')) { err(`${where} — salaamaton http-linkki: ${u}`); continue; }
     if (u.startsWith('https://') || u.startsWith('mailto:') || u.startsWith('tel:') || u.startsWith('data:')) continue;
@@ -620,7 +644,7 @@ for (const s of [...Object.keys(LEGACY.fi), ...Object.keys(LEGACY.et)]) if (FI_T
   if (!line('^https://samaenergia\\.ee/\\s+/et/index\\.html\\s+200!\\s*$')) err('_redirects: .ee-juuren pakotettu uudelleenkirjoitus puuttuu');
   if (!line('^https://samaenergia\\.ee/\\*\\s+/et/:splat\\s+200\\s*$')) err('_redirects: .ee-hostin yleinen uudelleenkirjoitus puuttuu');
   if (!line('^https://samaenergia\\.ee/\\*\\s+/et/404\\.html\\s+404\\s*$')) err('_redirects: .ee-hostin 404-sivun sääntö puuttuu');
-  for (const guard of ['/src/*', '/scripts/*', '/docs/*', '/CLAUDE.md', '/README.md', '/OHJE.md']) if (!rules.includes(`${guard} `)) err(`_redirects: suojasääntö puuttuu: ${guard}`);
+  for (const guard of ['/src/*', '/scripts/*', '/netlify/*', '/docs/*', '/CLAUDE.md', '/README.md', '/OHJE.md']) if (!rules.includes(`${guard} `)) err(`_redirects: suojasääntö puuttuu: ${guard}`);
   for (const p of pages.filter(p => p.lang === 'et')) {
     const html = read(p.url.replace(/^\//, '') + 'index.html');
     for (const m of html.matchAll(/(?:href|action)="(\/[^"]*)"/g)) {
@@ -689,10 +713,45 @@ for (const s of UNLISTED) if (shimFi?.includes(`"#/${s}"`)) err(`shimissä ylim�
 const cssBytes = statSync(join(ROOT, 'assets/site.css')).size;
 const jsBytes = statSync(join(ROOT, 'assets/site.js')).size;
 /* CSS-raja nostettu 70 -> 76 kt: perustajan päätös 25.10.2026 (Martin, v34-katselmus G4: "75 kt on ok"). */
-if (cssBytes > 76 * 1024) err(`assets/site.css ${cssBytes} tavua > 76 kt`);
+if (cssBytes > 92 * 1024) err(`assets/site.css ${cssBytes} tavua > 92 kt`);
 if (jsBytes > 20 * 1024) err(`assets/site.js ${jsBytes} tavua > 20 kt`);
-for (const f of ['assets/site.css', 'assets/fonts.css', 'assets/site.js']) if (/googleapis|gstatic|https?:\/\//.test(read(f))) err(`${f} viittaa ulkoiseen osoitteeseen`);
+for (const f of ['assets/site.css', 'assets/fonts.css', 'assets/site.js', 'assets/alasivut.css']) if (/googleapis|gstatic|https?:\/\//.test(read(f))) err(`${f} viittaa ulkoiseen osoitteeseen`);
+/* v53: alasivujen vaalea teema ja tuotevalikoima omassa tiedostossaan (ladataan vain alasivuille). */
+{ const b = statSync(join(ROOT, 'assets/alasivut.css')).size; if (b > 40 * 1024) err(`assets/alasivut.css ${b} tavua > 40 kt`); }
+/* 5.11.2026: kartan sijaintipainike (kk-geo etusivulla, km-geo /verkko/- ja /vork/-sivulla) toimii vain, jos
+   Permissions-Policy sallii sijainnin omalle alkuperälle — geolocation=() esti sen tuotannossa kokonaan. */
+{
+  const hdr = read('_headers');
+  const pp = (hdr.match(/Permissions-Policy:([^\n]*)/) || [])[1] || '';
+  const geoPages = ['index.html', 'et/index.html', 'verkko/index.html', 'et/vork/index.html'].filter(f => existsSync(join(ROOT, f)) && /kk-geo|km-geo/.test(read(f)));
+  if (geoPages.length && !/geolocation=\(self\)/.test(pp)) err(`_headers: sivuilla ${geoPages.join(', ')} on sijaintipainike, mutta Permissions-Policy ei salli sijaintia (odotettu geolocation=(self)): "${pp.trim()}"`);
+  if (/geolocation=\([^)]*(\*|https?:)/.test(pp)) err('_headers: Permissions-Policy antaa sijainnin myös muille alkuperille');
+}
 if (!/font-display:swap/.test(read('assets/fonts.css'))) err('fonts.css: font-display: swap puuttuu');
+
+/* Yhteinen verkko -kartta (/verkko/, /vork/ ja etusivun osio; v35 2.11.–3.11.2026): sivukohtaiset tiedostot ja budjetit
+   (docs/brief/03-kaart.md: pohjatiedosto < 150 kt, 110 kV erillisenä). kartta.js 30 → 36 → 40 → 44 kt (4.11.2026: vierityszoomi, 110 kV oletuksena; 5.11.2026: lukijan oma liittymä); kartta-paikka.js ≤ 64 kt (ladataan vasta, kun paikka valitaan) ja kartta.css 16 → 20 kt 3.11.2026:
+   sama moottori palvelee nyt myös etusivua (näyttämö + puhelinlaatikko) ja piirtää pisteilmeen ja kallistuksen.
+   Tekstin luvut tulevat kartta-data.json:sta (scripts/kaart/build_page.py) — tarkistetaan, että jokaisen kerroksen
+   johtopäätös on karttasivulla, ja etusivulla silloin, kun etusivu käyttää generoitua lohkoa (data-kartta; v41-etusivulla ei). */
+{
+  const KB = 1024, size = f => statSync(join(ROOT, f)).size;
+  for (const [f, max] of [['assets/kartta-pohja.json', 150], ['assets/kartta-110.json', 100], ['assets/kartta-data.json', 80], ['assets/kartta.js', 52], ['assets/kartta.css', 22], ['assets/kartta-paikka.js', 110], ['assets/kartta-solmut.json', 90]]) {
+    if (!existsSync(join(ROOT, f))) { err(`${f} puuttuu`); continue; }
+    if (size(f) > max * KB) err(`${f} ${size(f)} tavua > ${max} kt`);
+  }
+  for (const f of ['assets/kartta.js', 'assets/kartta.css']) if (/https?:\/\//.test(read(f).replace(/\/\*[\s\S]*?\*\//g, '').replace(/'http:\/\/www\.w3\.org\/2000\/svg'/g, ''))) err(`${f} viittaa ulkoiseen osoitteeseen`);
+  try {
+    const kd = JSON.parse(read('assets/kartta-data.json'));
+    const dec = s => s.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#x27;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+    for (const [lang, file] of [['fi', 'verkko/index.html'], ['et', 'et/vork/index.html'], ['fi', 'index.html'], ['et', 'et/index.html']]) {
+      const page = dec(read(file));
+      if ((file === 'index.html' || file === 'et/index.html') && !page.includes('data-kartta')) continue;   // v41-etusivu: oma staattinen karttaosio
+      kd.layers.forEach((L, i) => { if (!page.includes(L.concl[lang])) err(`${file}: kerroksen ${i + 1} johtopäätös ei vastaa kartta-data.json:ia — aja python3 scripts/kaart/build_page.py`); });
+    }
+    for (const L of kd.layers) for (const c of ['FI', 'EE']) for (const f of L.facts[c] || []) if (!kd.sources[f.src]) err(`kartta-data.json: tuntematon lähde ${f.src}`);
+  } catch (e) { err(`kartta-data.json ei jäsenny: ${e.message}`); }
+}
 
 /* katselmusmanifesti: olemassa, jäsentyy, kohtuukokoinen, viittaa olemassa oleviin sivuihin ja osioihin */
 try {
@@ -731,6 +790,23 @@ try {
     }
   };
   walk('');
+}
+
+/* /.well-known/security.txt (RFC 9116, 8.11.2026): Contact ja Expires pakollisia; vanhentunut tiedosto on virheellinen */
+{
+  const f = '.well-known/security.txt';
+  if (!existsSync(join(ROOT, f))) err(`${f} puuttuu — aja node scripts/build-pages.mjs`);
+  else {
+    const st = read(f);
+    if (!/^Contact: mailto:info@samaenergia\.fi$/m.test(st)) err(`${f}: Contact puuttuu`);
+    const ex = /^Expires: (\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(?:\.\d+)?Z)$/m.exec(st);
+    if (!ex) err(`${f}: Expires puuttuu tai ei ole ISO 8601 -muodossa`);
+    else {
+      const days = (Date.parse(ex[1]) - Date.now()) / 864e5;
+      if (days < 0) err(`${f}: Expires ${ex[1]} on mennyt — päivitä SECURITY_EXPIRES (build-pages.mjs)`);
+      else if (days < 60) console.warn(`HUOM: ${f} vanhenee ${Math.ceil(days)} päivän päästä (${ex[1]}) — päivitä SECURITY_EXPIRES`);
+    }
+  }
 }
 
 if (errors) { console.error(`\n${errors} virhettä.`); process.exit(1); }

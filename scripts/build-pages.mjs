@@ -37,9 +37,11 @@ const PAIRS = [
   ['', ''],
   ['aurinkosahko', 'paikeseelekter'],
   ['energiavarastot', 'energiasalvestid'],
+  ['lataus', 'laadimine'],
   ['reservimarkkinat', 'reserviturg'],
   ['aggregaattori', 'soleron-energy'],
   ['palvelut', 'teenused'],
+  ['verkko', 'vork'],
   ['laitevaatimukset', 'seadmete-nouded'],
   ['kumppanit', 'partnerid'],
   ['meista', 'meist'],
@@ -86,8 +88,8 @@ const publicSlugs = lang => [
 
 /* Päävalikon aktiivinen kohta: sivu -> data-nav-avain (pudotusvalikko tai suora linkki). */
 const NAV_KEY = {
-  fi: { 'aurinkosahko': 'ratkaisut', 'energiavarastot': 'ratkaisut', 'palvelut': 'ratkaisut', 'kumppanit': 'ratkaisut', 'reservimarkkinat': 'reservimarkkinat', 'aggregaattori': 'reservimarkkinat', 'ajankohtaista': 'ajankohtaista', 'ajankohtaista/liityntarajoitus-2029': 'ajankohtaista', 'meista': 'meista', 'yhteystiedot': 'yhteystiedot' },
-  et: { 'paikeseelekter': 'lahendused', 'energiasalvestid': 'lahendused', 'teenused': 'lahendused', 'partnerid': 'lahendused', 'reserviturg': 'reserviturg', 'soleron-energy': 'reserviturg', 'uudised': 'uudised', 'uudised/reservitasu-2026': 'uudised', 'meist': 'meist', 'kontakt': 'kontakt' },
+  fi: { 'aurinkosahko': 'ratkaisut', 'energiavarastot': 'ratkaisut', 'lataus': 'ratkaisut', 'palvelut': 'ratkaisut', 'verkko': 'reservimarkkinat', 'kumppanit': 'ratkaisut', 'reservimarkkinat': 'reservimarkkinat', 'aggregaattori': 'reservimarkkinat', 'ajankohtaista': 'ajankohtaista', 'ajankohtaista/liityntarajoitus-2029': 'ajankohtaista', 'meista': 'meista', 'yhteystiedot': 'yhteystiedot' },
+  et: { 'paikeseelekter': 'lahendused', 'energiasalvestid': 'lahendused', 'laadimine': 'lahendused', 'teenused': 'lahendused', 'vork': 'reserviturg', 'partnerid': 'lahendused', 'reserviturg': 'reserviturg', 'soleron-energy': 'reserviturg', 'uudised': 'uudised', 'uudised/reservitasu-2026': 'uudised', 'meist': 'meist', 'kontakt': 'kontakt' },
 };
 
 /* Legacy-hash-shim: vanhat #/-osoitteet (sekä v4:n että v5-luonnoksen #/slug-muodot) ohjataan
@@ -113,6 +115,7 @@ function textOf(html) {
     .replace(/<!--[\s\S]*?-->/g, '')
     .replace(/<svg[\s\S]*?<\/svg>/g, '')
     .replace(/<[^>]+>/g, '')
+    .replace(/&shy;/g, '')
     .replace(/&nbsp;/g, ' ')
     .replace(/&amp;/g, '&')
     .replace(/&lt;/g, '<')
@@ -151,7 +154,10 @@ function orgJsonLd(lang, canon) {
   return {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    '@id': canon + '#organization',
+    /* 8.11.2026 (v51-launch): sama tunniste molemmilla hosteilla, jotta hakukone yhdistää .fi- ja .ee-sivun samaan yritykseen;
+       sameAs = virallinen kaupparekisteritieto (YTJ). LinkedIn lisätään vasta, kun Madis antaa yrityssivun osoitteen. */
+    '@id': BASE + '/#organization',
+    sameAs: ['https://tietopalvelu.ytj.fi/yritys/3647683-6'],
     name: 'SAMA Energia',
     legalName: 'SAMA Energia Oy',
     vatID: 'FI36476836',
@@ -171,7 +177,7 @@ function orgJsonLd(lang, canon) {
     ],
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+358 449 654 614',
+      telephone: '+358 44 965 4614',
       email: 'madis.maastik@samaenergia.fi',
       contactType: 'customer service',
       availableLanguage: ['fi', 'et'],
@@ -202,7 +208,8 @@ function faqJsonLd(pageHtml, src) {
   const list = blockAfter(pageHtml, '<div class="faq-list">');
   if (list === null) return null;
   const pairs = [...list.matchAll(/<details[^>]*>\s*<summary>([\s\S]*?)<span class="plus">[\s\S]*?<\/summary>([\s\S]*?)<\/details>/g)]
-    .map(m => [textOf(m[1]), textOf(m[2].replace(/<\/p>/g, '</p> '))]);
+    /* vastauksen lopun lisätietolinkki (a.link-arrow, esim. "Reservimarkkinat tarkemmin") ei ole osa vastausta (8.11.2026) */
+    .map(m => [textOf(m[1]), textOf(m[2].replace(/<a class="link-arrow"[^>]*>[\s\S]*?<\/a>/g, '').replace(/<\/p>/g, '</p> '))]);
   if (!pairs.length) throw new Error(`${src}: .faq-list ilman details/summary-pareja`);
   for (const [q, a] of pairs) if (!q || !a) throw new Error(`${src}: tyhjä UKK-kysymys tai -vastaus`);
   return {
@@ -267,12 +274,12 @@ const THEME = '<meta name="theme-color" content="#FFFFFF">';
 /* Kriittiset esilataukset: otsikkofontti (pysty + kursiivi, jokaisessa h1:ssä on kursiivi) ja
    leipäfontti. Latin-osajoukot kattavat suomen ja viron perusmerkit; latin-ext latautuu tarvittaessa. */
 const PRELOADS = [
-  '<link rel="preload" href="/assets/fonts/newsreader-latin-variable-normal.woff2" as="font" type="font/woff2" crossorigin>',
-  '<link rel="preload" href="/assets/fonts/newsreader-latin-variable-italic.woff2" as="font" type="font/woff2" crossorigin>',
+  '<link rel="preload" href="/assets/fonts/newsreader-latin-o36-normal.woff2" as="font" type="font/woff2" crossorigin>',
   '<link rel="preload" href="/assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>',
 ].join('\n');
 /* Etusivujen hero-kuvakokeilu (05.09.2026): kuva on LCP-ehdokas, esiladataan vain etusivuilla. */
-const HERO_IMG_PRELOAD = '<link rel="preload" as="image" href="/assets/hero-voimalinja-sky.webp" fetchpriority="high">';
+/* v35 (02.11.2026): etusivun hero on piirros, ei valokuvaa — esilatausta ei tarvita. */
+const HERO_IMG_PRELOAD = '';
 
 /* ---------- lähteen paloittelu ---------- */
 
@@ -336,6 +343,7 @@ function extractPages(mainInner, file) {
       title: attr('data-title'),
       desc: attr('data-desc'),
       noindex: / data-noindex="1"/.test(m[2]),
+      assets: attrOpt('data-assets'),
       openTag: m[0],
       start: m.index,
       end,
@@ -384,7 +392,10 @@ function chrome(lang, source, page, fiAbs, etAbs) {
   return { pre, post };
 }
 
-function head(lang, { title, desc, canon, fiAbs, etAbs, unpaired, noindex, jsonld, front, docLang = lang }) {
+/* Sivukohtaiset lisätyylit: data-assets="kartta" -> /assets/kartta.css (vain /verkko/ ja /vork/; ei kasvata site.css:n budjettia). */
+const PAGE_ASSETS = { kartta: '<link href="/assets/kartta.css" rel="stylesheet">' };
+
+function head(lang, { title, desc, canon, fiAbs, etAbs, unpaired, noindex, jsonld, front, docLang = lang, assets }) {
   const L = LANGS[lang];
   const M = langMeta(lang, docLang);
   const ogAbs = (lang === 'fi' ? BASE : ET_BASE) + L.og;
@@ -406,9 +417,9 @@ ${canon ? `<link rel="canonical" href="${canon}">\n${alternates.join('\n')}` : '
 <meta name="twitter:card" content="summary_large_image">
 ${jsonld}${ICON}
 ${THEME}
-${PRELOADS}${front ? '\n' + HERO_IMG_PRELOAD : ''}
+${PRELOADS}${front && HERO_IMG_PRELOAD ? '\n' + HERO_IMG_PRELOAD : ''}
 <link href="/assets/fonts.css" rel="stylesheet">
-<link href="/assets/site.css" rel="stylesheet">`;
+<link href="/assets/site.css" rel="stylesheet">${front ? '' : '\n<link href="/assets/alasivut.css" rel="stylesheet">'}${assets ? '\n' + PAGE_ASSETS[assets] : ''}`;
 }
 
 const MARKER = L => `<!-- GENEROITU TIEDOSTO — ÄLÄ MUOKKAA TÄTÄ TIEDOSTOA: kaikki tekstit muokataan tiedostoissa src/fi.html ja src/et.html; build ylikirjoittaa tämän tiedoston. / GENEREERITUD FAIL — ÄRA MUUDA SEDA FAILI: kõik tekstid muudetakse failides src/et.html ja src/fi.html; build kirjutab selle faili üle. Lähde/allikas: ${L.src} · node scripts/build-pages.mjs -->`;
@@ -437,7 +448,9 @@ function renderPage(lang, page, source, annotatedHtml) {
   const canon = L.abs(page.slug);
 
   /* authoring-attribuutit pois julkaistusta sivusta */
-  const cleanOpen = page.openTag.replace(/ data-(slug|title|desc|noindex|lang)="[^"]*"/g, '');
+  if (page.assets && !PAGE_ASSETS[page.assets]) throw new Error(`${L.src}: ${page.slug} — tuntematon data-assets="${page.assets}"`);
+  /* v53 (Madis 9.11.2026: "Hele põhi, tume ainult päis ja jalus"): alasivut saavat luokan lt = vaalea teema (assets/alasivut.css). */
+  const cleanOpen = page.openTag.replace(/ data-(slug|title|desc|noindex|lang|assets)="[^"]*"/g, '').replace(/^<div class="page"/, isFront ? '<div class="page"' : '<div class="page lt"');
   const pageHtml = cleanOpen + annotatedHtml.slice(page.openTag.length);
 
   const { pre, post } = chrome(lang, source, page, fiAbs, etAbs);
@@ -447,7 +460,7 @@ function renderPage(lang, page, source, annotatedHtml) {
   const doc = `<!DOCTYPE html>
 <html lang="${langMeta(lang, docLang).htmlLang}">
 <head>
-${head(lang, { title: page.title, desc: page.desc, canon, fiAbs, etAbs, unpaired, noindex: page.noindex, jsonld, front: isFront, docLang })}
+${head(lang, { title: page.title, desc: page.desc, canon, fiAbs, etAbs, unpaired, noindex: page.noindex, jsonld, front: isFront, docLang, assets: page.assets })}
 </head>
 <body class="t3">${pre}<main id="main">
 ${pageHtml}
@@ -462,8 +475,8 @@ ${shim}<script src="/assets/site.js"></script>
 /* 404-sivut: FI-versio juuressa (/404.html), ET-versio et/404.html (.ee-hostin sääntö _redirectsissä).
    Kumpikin kaksikielinen, oma kieli ensin; noindex; ei canonicalia. */
 const NOT_FOUND = {
-  fi: { title: 'Sivua ei löytynyt · Lehte ei leitud — SAMA Energia', desc: 'Sivua ei löytynyt. Osoite on voinut muuttua — etusivulta löydätte kaiken.', h: 'Sivua ei löytynyt.', p: 'Osoite on voinut muuttua — sivusto siirtyi uusiin osoitteisiin. Etusivulta löydätte kaiken.', btn: 'Suomeksi etusivulle', href: '/' },
-  et: { title: 'Lehte ei leitud · Sivua ei löytynyt — SAMA Energia', desc: 'Lehte ei leitud. Aadress võib olla muutunud — avalehelt leiate kõik.', h: 'Lehte ei leitud.', p: 'Aadress võib olla muutunud — sait kolis uutele aadressidele. Avalehelt leiate kõik.', btn: 'Eesti keeles avalehele', href: '/et/' },
+  fi: { title: 'Sivua ei löytynyt · Lehte ei leitud · SAMA Energia', desc: 'Sivua ei löytynyt. Osoite on voinut muuttua. Etusivulta löydätte kaiken.', h: 'Sivua ei löytynyt.', p: 'Osoite on voinut muuttua, sillä sivusto siirtyi uusiin osoitteisiin. Etusivulta löydätte kaiken.', btn: 'Suomeksi etusivulle', href: '/' },
+  et: { title: 'Lehte ei leitud · Sivua ei löytynyt · SAMA Energia', desc: 'Lehte ei leitud. Aadress võib olla muutunud. Avalehelt leiate kõik.', h: 'Lehte ei leitud.', p: 'Aadress võib olla muutunud, sest sait kolis uutele aadressidele. Avalehelt leiate kõik.', btn: 'Eesti keeles avalehele', href: '/et/' },
 };
 function render404(lang, sources) {
   const L = LANGS[lang];
@@ -512,6 +525,7 @@ function plainText(pageHtml) {
     .replace(/<br\s*\/?>/g, '\n')
     .replace(/<\/(td|th)>/g, ' · ')
     .replace(/<[^>]+>/g, '')
+    .replace(/&shy;/g, '')
     .replace(/&nbsp;/g, ' ')
     .replace(/&amp;/g, '&')
     .replace(/&lt;/g, '<')
@@ -668,6 +682,48 @@ function emit(relPath, content) {
 }
 
 const allUrls = [];
+/* sitemap <lastmod> (8.11.2026, v51-launch): sivun oman lähdelohkon (src/<kieli>.html, .page-div) rivien viimeisin
+   commit-päivä git blamesta, ei buildin aikaa — CI:n build tuottaa siksi saman sitemapin kuin paikallinen build.
+   Committoimaton rivi saa tämän päivän (= päivä, jonka commit saa; aja build ja commit samana päivänä).
+   Ilman gitiä <lastmod> jätetään pois. Poistettu rivi ei näy blamessa: pelkkä poisto ei siirrä päivää. */
+const lastmod = new Map();
+function blameDates(file) {
+  const r = git(['blame', '--porcelain', '--', file]);
+  if (r.status !== 0 || !r.stdout) return null;
+  const info = new Map(), byLine = [];
+  let cur = null;
+  for (const ln of r.stdout.split('\n')) {
+    const h = /^([0-9a-f]{40}) \d+ (\d+)(?: \d+)?$/.exec(ln);
+    if (h) { cur = h[1]; if (!info.has(cur)) info.set(cur, {}); byLine[+h[2]] = cur; continue; }
+    if (!cur || ln.startsWith('\t')) continue;
+    if (ln.startsWith('committer-time ')) info.get(cur).t = +ln.slice(15);
+    else if (ln.startsWith('committer-tz ')) info.get(cur).tz = ln.slice(13);
+  }
+  return { info, byLine };
+}
+function ymd(t, tz) {
+  const m = /^([+-])(\d\d)(\d\d)$/.exec(tz || '+0000');
+  const off = m ? (m[1] === '-' ? -1 : 1) * (+m[2] * 60 + +m[3]) : 0;
+  return new Date((t + off * 60) * 1000).toISOString().slice(0, 10);
+}
+function today() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+function pageLastmod(blame, source, page) {
+  if (!blame) return null;
+  const lineAt = off => source.full.slice(0, off).split('\n').length;
+  const a = lineAt(source.mainAbs + page.start), b = lineAt(source.mainAbs + page.end - 1);
+  let best = null;
+  for (let i = a; i <= b; i++) {
+    const sha = blame.byLine[i];
+    if (!sha) continue;
+    if (/^0+$/.test(sha)) return today();
+    const c = blame.info.get(sha);
+    if (c && c.t && (!best || c.t > best.t)) best = c;
+  }
+  return best ? ymd(best.t, best.tz) : null;
+}
 const langData = [];
 const sources = {};
 const llmsParts = [];
@@ -676,6 +732,7 @@ for (const lang of Object.keys(LANGS)) {
   const source = parseSource(L.src);
   sources[lang] = source;
   const pages = extractPages(source.mainInner, L.src);
+  const blame = blameDates(L.src);
 
   const expected = [...PAIRS.map(([f, e]) => (lang === 'fi' ? f : e)), ...UNPAIRED[lang]].sort();
   const actual = pages.map(p => p.slug).sort();
@@ -692,6 +749,7 @@ for (const lang of Object.keys(LANGS)) {
     emit(url.replace(/^\//, '') + 'index.html', renderPage(lang, page, source, html));
     if (!UNLISTED.has(page.slug)) {
       allUrls.push(L.abs(page.slug));
+      lastmod.set(L.abs(page.slug), pageLastmod(blame, source, page));
       llmsParts.push({ lang, slug: page.slug, title: page.title, url: L.abs(page.slug), text: plainText(page.html) });
     }
     /* katselmusmanifestiin NÄKYVÄ polku: ET-alasivut paljaalla slugilla, ET-etusivu /et/ */
@@ -716,7 +774,7 @@ emit('et/404.html', render404('et', sources));
 allUrls.sort();
 emit('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${allUrls.map(u => `  <url><loc>${u}</loc></url>`).join('\n')}
+${allUrls.map(u => `  <url><loc>${u}</loc>${lastmod.get(u) ? `<lastmod>${lastmod.get(u)}</lastmod>` : ''}</url>`).join('\n')}
 </urlset>
 `);
 
@@ -729,16 +787,31 @@ emit('llms-full.txt', `# SAMA Energia — full text of every public page (Finnis
 ${llmsParts.map(p => `# ${p.title} — ${p.url}\n\n${p.text}\n`).join('\n')}`);
 
 /* _headers — CSP sallii inline-lohkoista vain generoidut (shim + JSON-LD) hash-lähteinä,
-   ei 'unsafe-inline'. Kaikki sivut on generoitu ennen tätä. */
+   ei 'unsafe-inline'. Kaikki sivut on generoitu ennen tätä.
+   08.11.2026 (v51-launch): img-src blob: — 3D-katselimen AR-tilan (Android WebXR) kuvakkeet ovat blob-kuvia; malli itse
+   ladataan tiedostona. object-src 'none' ja COOP same-origin: kovennus, ei vaikutusta sivuihin. /api/* kulkee 'self'-sääntöjen alla. */
 const hashList = [...INLINE_HASHES].sort().map(h => `'sha256-${h}'`).join(' ');
+/* geolocation=(self) (5.11.2026): kartan "Käytä sijaintiani / Kasuta minu asukohta" -painike käyttää selaimen
+   sijaintia vain omalla alkuperällä ja vain painikkeesta; geolocation=() esti sen kokonaan. Kolmannet osapuolet
+   (upotukset) eivät saa sijaintia. Kamera ja mikrofoni pysyvät estettyinä. */
+/* /.well-known/security.txt (RFC 9116; 8.11.2026, v51-launch): yhteys tietoturvailmoituksille. Expires on kiinteä päivä
+   (ei buildin aika, jotta CI:n build tuottaa saman tiedoston), alle vuosi julkaisusta 9.11.2026; uusi ennen sitä —
+   verify-pages varoittaa 60 päivää ennen ja hylkää vanhentuneen. */
+const SECURITY_EXPIRES = '2027-11-08T00:00:00.000Z';
+emit('.well-known/security.txt', `Contact: mailto:info@samaenergia.fi
+Expires: ${SECURITY_EXPIRES}
+Preferred-Languages: fi, et, en
+`);
+
 emit('_headers', `# GENEROITU: node scripts/build-pages.mjs — älä muokkaa käsin (CSP-hashit lasketaan inline-lohkoista)
 /*
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' ${hashList}; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  Cross-Origin-Opener-Policy: same-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(self)
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self' ${hashList}; font-src 'self'; connect-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
 `);
 
 /* assets/review.json — katselmustilan manifesti */

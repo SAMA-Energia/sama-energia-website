@@ -7,7 +7,7 @@
  * docs/ on seurattu mutta _redirects palauttaa /docs/* -> 404!, joten sitä ei koskaan tarjoilla.
  *
  * Sisältö: jokainen asiakkaalle näkyvä merkkijono, joka MUUTTUU kun draft julkaistaan —
- * eli mikä tahansa teksti, jota ei ole mainissa (b74d5ab) sellaisenaan. Missä mainissa on
+ * eli mikä tahansa teksti, jota ei ole mainissa (MAIN) sellaisenaan. Missä mainissa on
  * lähin vastine, se näytetään rinnalla. Ryhmittely sivuittain sivujärjestyksessä.
  *
  * Teksti poimitaan GENEROIDUISTA sivuista (ei lähteistä eikä käsin), jotta katselmoitava
@@ -23,7 +23,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { execFileSync } from 'node:child_process';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const MAIN = 'b74d5ab';
+const MAIN = '941e6ef'; // main = julkaistu sivusto (päivitetty 04.11.2026, aiemmin b74d5ab)
 const OUT = join(ROOT, 'docs', 'native-pass');
 
 /* Sivut FI/ET-paketteihin, sivujärjestyksessä. new = tämän haaran polku,
@@ -68,7 +68,11 @@ const PAGES = {
    Lista on tarkoituksella eksplisiittinen ja päivätty — jokainen kohta on projektin
    päätöslokista tai verify-pages.mjs:n sisältövartijasta. */
 const FOUNDER_MARKS = [
-  [/omaksi eduksenne|enda kasuks tööle/i, 'perustajan päätös 10.09.2026 — hero-otsikko (FI sai ajatusviivan; ET avoin, ks. kohta 2)'],
+  // 04.11.2026: konseptin 1 etusivu (päätösloki I-20261104-3…7).
+  [/omaksi eduksenne|enda kasuks tööle/i, 'perustajan päätös 04.11.2026 (I-20261104-3) — hero-otsikko'],
+  [/rakentaa liittymänne taakse järjestelmän|ehitab teie liitumise taha süsteemi/i, 'perustajan päätös 04.11.2026 (I-20261104-4) — ingressi / juhtlõik'],
+  [/^(Viljankuivuri|Teraviljakuivati|Teollisuus ja kylmävarasto|Tööstus ja külmladu|Hotelli ja hoivakoti|Hotell ja hooldekodu|Aurinkopuisto|Päikesepark)$/, 'perustajan päätös 04.11.2026 (I-20261104-5) — kohdepainikkeet'],
+  [/kahden arkipäivän kuluessa tietojen saamisesta|kahe tööpäevaga pärast andmete saamist/i, 'perustajan päätös 04.11.2026 (I-20261104-7) — lupaus, sama kaikilla sivuilla'],
   [/maksaa itsensä takaisin nopeimmin|end kõige kiiremini ära tasub/i, 'perustajan päätös 10.09.2026 — varaus "usein"/"sageli" poistettu, kumoaa päätöksen D16 (08.09)'],
   [/Myyntijohtaja|Müügijuht|Asennuspäällikkö|Paigaldusjuht/, 'tittelit hyväksytty 03.09.2026; "perustaja"/"asutaja" pudotettu 08.09.2026 (vartija titteli-perustaja)'],
   // 13.09.2026: Martin Raution titteli. Perustajapäätös Martin Rautio 13.09.2026; hallituksen
@@ -79,7 +83,7 @@ const FOUNDER_MARKS = [
   // natiivin tarkistamia — Madisin natiivitarkistus on nimenomaan näitä kahta riviä varten.
   [/ettevõtte suund, tegevuse planeerimine|Suund, partnerlused, lepingud ja rahastus/,
    'CLAUDEN KIRJOITTAMA ET-teksti 13.09.2026 — ei natiivin tarkistama. Tarkista sanavalinnat ja sävy: tämä on uusi vastuukuvaus (perustajapäätös 13.09.2026).'],
-  [/Soleron Energy|Ralos|JSM Automaatiosähkö|Scanoffice/, 'kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); VENI Energia poistettu 21.10.2026'],
+  [/Soleron Energy|Ralos|JSM Automaatiosähkö|Scanoffice|Elecnova|Avant Power|Gare Energy/, 'kumppaninimet: sallittu lista, perustajan päätös 03.09. ja 08.09.2026 (Scanoffice vain FI); Elecnova (molemmat) ja Avant Power (FI) I-20261023-1; Gare Energy Oy (FI) 02.11.2026; VENI Energia poistettu 21.10.2026'],
   [/leasing|omalla pääomalla|oma kapitaliga|liisin/i, 'rahoitus kuvataan yleisesti — rahoitusyhtiöitä ei nimetä (perustajan päätös 03.09.2026 ilta)'],
   [/Sörnäisten Rantatie/, 'osoite vahvistettu 06.09.2026'],
   [/kvalifitseerunud|kvalifitseeritud|säätökokein todennettu|prekvalifioitu/i, 'lukukorjaus: reservien osuudet ovat todennettua KAPASITEETTIA, ei tuotantoa (Fingrid 10.2.2025; vartijat reservi-*)'],
@@ -116,7 +120,7 @@ async function loadPlaywright() {
   process.exit(2);
 }
 
-/* ---------- staattinen palvelin: nykyinen puu tai mainin (b74d5ab) versio ---------- */
+/* ---------- staattinen palvelin: nykyinen puu tai mainin (MAIN) versio ---------- */
 const MIME = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.png': 'image/png', '.webp': 'image/webp', '.woff2': 'font/woff2', '.svg': 'image/svg+xml', '.json': 'application/json', '.txt': 'text/plain; charset=utf-8' };
 const ET_TOP = new Set(readdirSync(join(ROOT, 'et')).filter(d => statSync(join(ROOT, 'et', d)).isDirectory()));
 function serve(fromGitRef) {
@@ -167,6 +171,20 @@ function extract() {
     if (seen.has(key)) continue;
     seen.add(key);
     out.push({ tag: el.tagName.toLowerCase(), zone, section: sec ? '#' + sec.id : '', text: t, isSrc });
+  }
+  /* v46 (5.11.2026): etusivun päiväkaavion SVG-tekstit (nimiöt, title, desc) ja toistopainikkeiden nimet
+     ovat asiakkaalle näkyviä tai ruudunlukijan lukemia, vaikka ne ovat SVG:ssä tai attribuuteissa. */
+  const extra = [];
+  for (const el of document.querySelectorAll('svg.kd title, svg.kd desc, svg.kd text')) extra.push([el, 'svg ' + el.tagName.toLowerCase(), el.textContent]);
+  for (const el of document.querySelectorAll('.k-play')) for (const at of ['data-p', 'data-r']) extra.push([el, 'button ' + at, el.getAttribute(at) || '']);
+  for (const [el, tag, raw] of extra) {
+    const t = norm(raw);
+    if (!t || t.length < 2 || /^[\d\s↑↓]+$/.test(t)) continue;
+    const sec = el.closest('section[id],article[id],div[id]');
+    const key = 'main|' + t;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push({ tag, zone: 'main', section: sec ? '#' + sec.id : '', text: t, isSrc: false });
   }
   return out;
 }

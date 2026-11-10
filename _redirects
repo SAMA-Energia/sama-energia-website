@@ -37,12 +37,16 @@ https://samaenergia.fi/paikeseelekter/*       https://samaenergia.ee/paikeseelek
 https://www.samaenergia.fi/paikeseelekter/*   https://samaenergia.ee/paikeseelekter/:splat     301!
 https://samaenergia.fi/energiasalvestid/*     https://samaenergia.ee/energiasalvestid/:splat   301!
 https://www.samaenergia.fi/energiasalvestid/*  https://samaenergia.ee/energiasalvestid/:splat  301!
+https://samaenergia.fi/laadimine/*            https://samaenergia.ee/laadimine/:splat          301!
+https://www.samaenergia.fi/laadimine/*        https://samaenergia.ee/laadimine/:splat          301!
 https://samaenergia.fi/reserviturg/*          https://samaenergia.ee/reserviturg/:splat        301!
 https://www.samaenergia.fi/reserviturg/*      https://samaenergia.ee/reserviturg/:splat        301!
 https://samaenergia.fi/soleron-energy/*       https://samaenergia.ee/soleron-energy/:splat     301!
 https://www.samaenergia.fi/soleron-energy/*   https://samaenergia.ee/soleron-energy/:splat     301!
 https://samaenergia.fi/teenused/*             https://samaenergia.ee/teenused/:splat           301!
 https://www.samaenergia.fi/teenused/*         https://samaenergia.ee/teenused/:splat           301!
+https://samaenergia.fi/vork/*                 https://samaenergia.ee/vork/:splat               301!
+https://www.samaenergia.fi/vork/*             https://samaenergia.ee/vork/:splat               301!
 https://samaenergia.fi/meist/*                https://samaenergia.ee/meist/:splat              301!
 https://www.samaenergia.fi/meist/*            https://samaenergia.ee/meist/:splat              301!
 https://samaenergia.fi/uudised/*              https://samaenergia.ee/uudised/:splat            301!
@@ -72,12 +76,16 @@ https://samaenergia.ee/aurinkosahko/*         https://samaenergia.fi/aurinkosahk
 https://www.samaenergia.ee/aurinkosahko/*     https://samaenergia.fi/aurinkosahko/:splat       301!
 https://samaenergia.ee/energiavarastot/*      https://samaenergia.fi/energiavarastot/:splat    301!
 https://www.samaenergia.ee/energiavarastot/*  https://samaenergia.fi/energiavarastot/:splat    301!
+https://samaenergia.ee/lataus/*               https://samaenergia.fi/lataus/:splat             301!
+https://www.samaenergia.ee/lataus/*           https://samaenergia.fi/lataus/:splat             301!
 https://samaenergia.ee/reservimarkkinat/*     https://samaenergia.fi/reservimarkkinat/:splat   301!
 https://www.samaenergia.ee/reservimarkkinat/*  https://samaenergia.fi/reservimarkkinat/:splat  301!
 https://samaenergia.ee/aggregaattori/*        https://samaenergia.fi/aggregaattori/:splat      301!
 https://www.samaenergia.ee/aggregaattori/*    https://samaenergia.fi/aggregaattori/:splat      301!
 https://samaenergia.ee/palvelut/*             https://samaenergia.fi/palvelut/:splat           301!
 https://www.samaenergia.ee/palvelut/*         https://samaenergia.fi/palvelut/:splat           301!
+https://samaenergia.ee/verkko/*               https://samaenergia.fi/verkko/:splat             301!
+https://www.samaenergia.ee/verkko/*           https://samaenergia.fi/verkko/:splat             301!
 https://samaenergia.ee/laitevaatimukset/*     https://samaenergia.fi/laitevaatimukset/:splat   301!
 https://www.samaenergia.ee/laitevaatimukset/* https://samaenergia.fi/laitevaatimukset/:splat   301!
 https://samaenergia.ee/equipment-requirements/*  https://samaenergia.fi/equipment-requirements/:splat  301!
@@ -122,9 +130,11 @@ https://samaenergia.com/*                     https://samaenergia.fi/:splat     
 # samoilla kanonisen muotoisilla URL:eilla kuin tuotanto.
 /paikeseelekter/*                             /et/paikeseelekter/:splat                        200
 /energiasalvestid/*                           /et/energiasalvestid/:splat                      200
+/laadimine/*                                  /et/laadimine/:splat                             200
 /reserviturg/*                                /et/reserviturg/:splat                           200
 /soleron-energy/*                             /et/soleron-energy/:splat                        200
 /teenused/*                                   /et/teenused/:splat                              200
+/vork/*                                       /et/vork/:splat                                  200
 /meist/*                                      /et/meist/:splat                                 200
 /uudised/*                                    /et/uudised/:splat                               200
 /seadmete-nouded/*                            /et/seadmete-nouded/:splat                       200
@@ -136,6 +146,7 @@ https://samaenergia.com/*                     https://samaenergia.fi/:splat     
 # Lähde- ja työkalutiedostoja ei tarjoilla julkisesti
 /src/*                                        /404.html                                        404!
 /scripts/*                                    /404.html                                        404!
+/netlify/*                                    /404.html                                        404!
 /docs/*                                       /404.html                                        404!
 /CLAUDE.md                                    /404.html                                        404!
 /README.md                                    /404.html                                        404!
