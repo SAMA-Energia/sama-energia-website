@@ -736,10 +736,10 @@ ETUSIVU = [
 ETUSIVU_N = 3       # tuotetta per ryhmä (lista voi olla pidempi: kielirajatut tuotteet ohitetaan)
 ETUSIVU_SPEC = 2    # päätietoa per kortti
 ETUSIVU_TXT = {
-    'fi': dict(h='Poimintoja valikoimasta', lead='Tekniset tiedot ovat valmistajien datalehdiltä ja tuotesivuilta.',
+    'fi': dict(h='Poimintoja valikoimasta', lead='Laitteet, joilla liittymänne pannaan töihin.',
                note='Valmistaja ja malli valitaan kohteenne kulutuksen, liittymän ja tilan mukaan, ja vaihtoehdot vertaillaan kirjallisessa arviossa samoilla luvuilla.',
                allp='Kaikki tuotteet', allp_url='/kumppanit/#valikoima'),
-    'et': dict(h='Näiteid valikust', lead='Tehnilised andmed on tootjate andmelehtedelt ja tootelehtedelt.',
+    'et': dict(h='Näiteid valikust', lead='Seadmed, millega teie liitumine tööle pannakse.',
                note='Tootja ja mudel valitakse teie objekti tarbimise, liitumise ja ruumi järgi ning variante võrreldakse kirjalikus hinnangus samade numbritega.',
                allp='Kõik tooted', allp_url='/partnerid/#valik'),
 }

@@ -7,11 +7,11 @@
 
 Sähköliittymänne on omaisuutta. Laittakaa se töihin omaksi eduksenne.
 
-SAMA rakentaa liittymänne taakse järjestelmän: energiavaraston, energiantuotannon ja älykkään ohjauksen. Ansaitkaa reservimarkkinoilla, maksakaa vähemmän ja päättäkää itse.
+SAMA rakentaa liittymänne taakse järjestelmän: energiavaraston, energiantuotannon ja älykkään ohjauksen. Ansaitkaa pitämällä sähköverkkoa tasapainossa, maksakaa vähemmän ja päättäkää itse omasta energiastanne.
 
 Pyydä maksuton kartoitus Miten se toimii+358 44 965 4614
 
-1 500 MWNiin paljon reservikapasiteettia Fingrid hankkii keskimäärin joka tunnille ja arvioi hankinnan kasvavan vuoteen 2030 mennessä 1 200 MW:lla.
+1 500 MWNiin paljon joustoa Fingrid ostaa keskimäärin joka tunti pitääkseen Suomen sähköverkon tasapainossa, ja tarve kasvaa vuoteen 2030 mennessä 1 200 MW:lla. Osa siitä voi tulla teidän kiinteistöstänne.
 Lähde: Fingrid, Reservimarkkinat tutuiksi -webinaari · 11.6.2025
 
 1Aurinkopaneelit2Pääkeskus, mittari ja ohjausyksikkö3Energiavarasto4Muuntamo
@@ -23,10 +23,10 @@ Muuntamo
 
 Passiivinen liittymä on kuluerä. Mittarin takana oleva järjestelmä panee sen tuottamaan tuloa.
 
-Liittymästä maksatte joka kuukausi. Jotta se alkaisi tuottaa, annamme teille kolme asiaa:
-Kokonaiskuvan siitä, mitä markkinoilla tapahtuu ja mihin suuntaan ne liikkuvat.
-Taloudelliset mahdollisuudet kohteessanne, kirjallisesti ja lähteineen.
-Älykkään energianhallinnan, joka muuttaa liittymän kuluerästä omaisuudeksi.
+Liittymästä maksatte joka kuukausi. Kun sen taakse rakennetaan varasto, päätös tuottaa kolmella tasolla:
+Yrityksellenne tuloa siitä, että pidätte verkon tasapainossa, pienemmän sähkölaskun ja päätösvallan omasta energiastanne.
+Paikkakunnallenne työtä paikallisille asentajille ja tasaisemman kuormituksen lähiverkkoon, kun kulutushuiput katetaan varastosta.
+Suomelle joustoa, jota tuuli- ja aurinkosähkö tarvitsevat. Mitä enemmän joustoa tulee kotimaisista kohteista, sitä enemmän puhdasta sähköä verkko pystyy ottamaan vastaan ja sitä suurempi osa reservimaksuista jää suomalaisille yrityksille.
 
 Mikä sähkölaskussanne ja kiinteistössänne muuttuu:
 Reservimarkkinatkapasiteettikorvaus, myös öisin.Tehomaksuthuippu alas, pääsulake kulutuksen mukaan.Energia ja siirtolataus halvalla, käyttö kalliilla.Kiinteistön arvopienempi kiinteä kulu, korkeampi hinta.
@@ -41,7 +41,7 @@ Periaatteellinen vuorokausi, ei mittausdataa.
 Kantaverkosta kennoon, kerros kerrallaan
 
 Kuusi karttatasoa: markkinat liittymänne ympärillä.
-Jokainen vaihe lisää karttaan tason, luvun ja lähteen.
+Suomen sähköjärjestelmä rakentuu juuri nyt uudelleen. Katsokaa, mitä liittymänne ympärillä tapahtuu ja mihin te siinä sijoitutte.
 Kohteen osoiteHae
 Käytä sijaintianitai valitse kohta kartaltaOsoitehaku kulkee palvelimemme kautta Maanmittauslaitokselle tai Viron Maa- ja Ruumiametille ja aurinkotuotto EU:n PVGIS-palvelusta. Emme tallenna sijaintia; lomakkeeseen se menee vain, jos itse viette sen sinne.
 
@@ -87,7 +87,7 @@ Kartalle merkityt hankkeet ovat rakenteilla tai suunnitteilla olevia kantaverkon
 Lähteet: Fingrid, johdon katsaus · 29.10.2026; Fingrid · 8.9.2026; Fingrid · 24.9.2025; Energiavirasto, määräys 2340/000002/2025 · 2.2.2026; hankkeet kartalla: Fingrid, kantaverkon kehittämissuunnitelma 2026–2035 · 2.12.2025
 
 Missä teidän liittymänne on tässä kokonaisuudessa?
-Liittymänne on jo olemassa. Alle 1 MW:n varasto liitetään sen taakse verkkoyhtiön ehdoilla ilman Fingridin liittymissopimushakemusta, ja useimmilla alueilla raja on 2 MW. Kirjallinen arvio sijoittaa kohteenne tälle kartalle, jokainen luku lähteineen.
+Liittymänne on jo olemassa. Alle 1 MW:n varasto liitetään sen taakse verkkoyhtiön ehdoilla ilman Fingridin liittymissopimushakemusta, ja useimmilla alueilla raja on 2 MW. Kartoituksessa näytämme, mitä tämä kaikki tarkoittaa juuri teidän kohteellenne.
 Kartan kultainen piste on esimerkki, ei teidän kohteenne.
 Kohteen osoiteHae
 Käytä sijaintianitai valitse kohta kartaltaOsoitehaku kulkee palvelimemme kautta Maanmittauslaitokselle tai Viron Maa- ja Ruumiametille ja aurinkotuotto EU:n PVGIS-palvelusta. Emme tallenna sijaintia; lomakkeeseen se menee vain, jos itse viette sen sinne.
@@ -132,7 +132,7 @@ Investoinnin arvo syntyy monesta osasta. Kun tarjoamme valikoiman eri valmistaji
 Kumppanit ja tuotteet
 
 Poimintoja valikoimasta
-Tekniset tiedot ovat valmistajien datalehdiltä ja tuotesivuilta.
+Laitteet, joilla liittymänne pannaan töihin.
 
 EnergiavarastotAurinkosähköLatausLämpöpumput
 Kaikki tuotteet
@@ -293,7 +293,7 @@ Jos ette löydä kysymystänne täältä, kysykää suoraan. Vastaamme kirjallis
 Pyydä maksuton kartoitus
 
 Paljonko sähkövarasto tuottaa reservimarkkinoilla?
-Se riippuu neljästä asiasta: aggregaattorin ohjaus, oma käyttönne, markkinoiden määrä (FCR-N, FCR-D, FFR, aFRR, mFRR ja pörssi) ja liittymänne. Arviossa laskemme nämä kohteenne osalta ja näytämme vaihteluvälin, emme yhtä lukua.
+Se riippuu neljästä asiasta: aggregaattorin ohjaus, oma käyttönne, markkinoiden määrä (FCR-N, FCR-D, FFR, aFRR, mFRR ja pörssi) ja liittymänne. Kartoituksessa laskemme ne teidän kohteellenne ja näytämme, mitä varasto voi vuodessa tuottaa ja millä vaihteluvälillä.
 Reservimarkkinat tarkemmin
 
 Mitä maksuton kartoitus sisältää?
@@ -301,7 +301,7 @@ Lyhyen kyselyn kulutustottumuksistanne ja kohteestanne, tuntikohtaisten kulutust
 Näin kartoitus etenee
 
 Paljonko tällainen järjestelmä maksaa?
-Arviossa on haarukka, joka riippuu liittymänne koosta ja kulutusprofiilistanne, ei yhtä toiveikasta lukua. Kaikki, mikä vaikuttaa hintaan, on avattu samassa dokumentissa.
+Hinta riippuu liittymänne koosta ja kulutuksestanne. Kartoituksessa saatte samassa dokumentissa hinnan haarukan ja sen, mitä järjestelmä teille tuottaa.
 Mistä hinta muodostuu
 
 Tarvitseeko sähkövarasto aurinkopaneeleja tai omaa tuotantoa?
@@ -318,12 +318,12 @@ Miten reservihinnat muodostuvat
 
 Aloitetaan kulutustiedoistanne.
 
-Kahden arkipäivän kuluessa tietojen saamisesta tiedätte, kannattaako sähkövarasto kohteessanne ja miten. Saatte kaksisivuisen kirjallisen arvion ilman sitoumuksia:
+Kahden arkipäivän kuluessa tietojen saamisesta tiedätte, mitä liittymänne voi tuottaa ja miten se tehdään. Saatte kaksisivuisen arvion ilman sitoumuksia:
 
-Liittymä ja kulutusprofiili tuntikohtaisista tiedoistanne
-Tehon jako oman kulutuksen, arbitraasin ja reservimarkkinoiden kesken
-Mallinnettu reservituotto tuotteittain lähteineen
-Verkkoyhtiön kanta ja se, mitä arvio ei kerro
+Mitä liittymänne voi tuottaa ja säästää
+Miten varaston teho jaetaan omaan käyttöön, pörssiin ja reservimarkkinoille
+Reservituoton arvio markkinoittain
+Verkkoyhtiön kanta ja seuraavat askeleet
 
 Lähetämme ohjeen siitä, miten annatte pääsyn tuntikohtaisiin kulutustietoihinne. Kirjallinen arvio on teillä kahden arkipäivän kuluessa tietojen saamisesta.
 
@@ -2042,7 +2042,7 @@ MaksutonArvio
 Jokaiselle yritykselle, jolla on oma sähköliittymä, myös silloin, kun tarjous on jo kädessä.
 
 Mitä sisältää
-Kaksi sivua: liittymä ja kulutusprofiili, tehon jako oman kulutuksen, arbitraasin ja reservimarkkinan kesken, mallinnettu reservituotto tuotteittain lähteineen, verkkoyhtiön kanta ja se, mitä arvio ei sano.
+Kaksi sivua: mitä liittymänne voi tuottaa ja säästää, miten varaston teho jaetaan, reservituoton arvio markkinoittain sekä verkkoyhtiön kanta ja seuraavat askeleet.
 
 Mitä te annatte
 Tuntikohtaiset kulutustietonne (CSV-lataus Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta, neuvomme miten), yhden sähkölaskun ja pääkaavion.
@@ -3886,9 +3886,9 @@ Aloitetaan kulutustiedoistanne.
 
 Kirjallinen arvio kahden arkipäivän kuluessa tietojen saamisesta kertoo, kannattaako sähkövarasto kohteessanne ja miten. Arvio on kaksi sivua ilman sitoumuksia:
 
-Liittymä ja kulutusprofiili tuntikohtaisista tiedoistanne
-Tehon jako oman kulutuksen, arbitraasin ja reservimarkkinan kesken
-Mallinnettu reservituotto tuotteittain lähteineen
+Mitä liittymänne voi tuottaa ja säästää
+Miten varaston teho jaetaan omaan käyttöön, pörssiin ja reservimarkkinoille
+Reservituoton arvio markkinoittain
 Verkkoyhtiön kanta ja se, mitä arvio ei sano
 
 Te annatte: tuntikohtaiset kulutustietonne (CSV-lataus Datahubin asiakasportaalista tai verkkoyhtiönne palvelusta, neuvomme miten), yhden sähkölaskun ja pääkaavion.
@@ -3994,11 +3994,11 @@ Päivitetty 10.11.2026. Jos seloste muuttuu, uusin versio on aina tällä sivull
 
 Teie elektriliitumine on vara. Pange see enda kasuks tööle.
 
-SAMA ehitab teie liitumise taha süsteemi: energiasalvesti, energia tootmise ja nutika juhtimise. Teenige valmisolekust, makske vähem ja otsustage ise.
+SAMA ehitab teie liitumise taha süsteemi: energiasalvesti, energia tootmise ja nutika juhtimise. Teenige võrgu tasakaalus hoidmisest, makske vähem ja otsustage ise oma energia üle.
 
 Küsi tasuta hinnangut Kuidas see töötab+358 44 965 4614
 
-1 300 MWNii palju juhitavat võimsust vajab Eesti Eleringi hinnangul 2030. aastaks, kuid olemas või kindlasti tulemas on sellest 751 MW.
+1 300 MWNii palju juhitavat võimsust vajab Eesti Eleringi hinnangul 2030. aastaks, kuid olemas või kindlasti tulemas on sellest 751 MW. Ülejäänu saavad katta ka ettevõtete salvestid.
 Allikas: Elering, varustuskindluse aruanne 2025, tabel 2.3 · 9.12.2025
 
 1Päikesepaneelid2Peakilp, arvesti ja juhtseade3Energiasalvesti4Trafojaam
@@ -4010,10 +4010,10 @@ Trafojaam
 
 Passiivne liitumine on kuluartikkel. Arvestitagune süsteem paneb selle tulu tootma.
 
-Liitumise eest maksate iga kuu. Et see hakkaks tootma, anname teile kolm asja:
-Tervikliku ülevaate sellest, mis turul toimub ja mis suunas see liigub.
-Majanduslikud võimalused teie objektil, kirjalikult ja allikatega.
-Targa energiamajandamise, mis muudab liitumise kuluartiklist varaks.
+Liitumise eest maksate iga kuu. Kui selle taha ehitatakse salvesti, annab otsus tulemuse kolmel tasandil:
+Teie ettevõttele tulu sellest, et hoiate võrku tasakaalus, väiksema elektriarve ja otsustusõiguse oma energia üle.
+Teie kogukonnale tööd kohalikele paigaldajatele ja ühtlasema koormuse kohalikule võrgule, kui tarbimistipud kaetakse salvestist.
+Eestile paindlikkust, mida tuule- ja päikeseelekter vajavad. Mida rohkem paindlikkust tuleb kodumaistest objektidest, seda rohkem puhast elektrit suudab võrk vastu võtta ja seda suurem osa reservitasudest jääb Eesti ettevõtetele.
 
 Mis teie arvel ja kinnistul muutub:
 Reserviturgtasu reserveeritud võimsuse eest, ka öösel.Võimsustasudtipp alla, peakaitse tarbimise järgi.Energia ja edastamineodav elekter sisse, kallis välja.Kinnistu väärtusväiksem püsikulu, kõrgem hind.
@@ -4028,7 +4028,7 @@ Põhimõtteline ööpäev, mitte mõõteandmed.
 Põhivõrgust akuelemendini, kiht kihi haaval
 
 Kuus kihti turgu teie liitumise ümber.
-Iga samm lisab kaardile kihi, arvu ja allika.
+Eesti elektrisüsteem ehitatakse praegu ümber. Vaadake, mis teie liitumise ümber toimub ja kuhu te selles paigutute.
 Objekti aadressOtsi
 Kasuta minu asukohtavõi vali koht kaardilAadressiotsing käib meie serveri kaudu Maa- ja Ruumiametisse või Soome Maanmittauslaitosesse ja päikesetoodang EL-i PVGIS-teenusest. Asukohta me ei salvesta; vormi läheb see ainult siis, kui te selle ise sinna viite.
 
@@ -4074,7 +4074,7 @@ Kaardile märgitud projektid on kavandatud põhivõrgu liinid ja riikidevahelise
 Allikas: ENMAK 2035 indikatiivne maht Eleringi arengukavas 2026–2035 · 9.7.2026
 
 Kus on selles pildis teie liitumine?
-Teie liitumine on juba olemas. Selle taha paigaldatud salvesti ühendatakse võrguettevõtja tingimustel ega vaja uut põhivõrguliitumist. Kirjalik hinnang paneb selle kaardile, iga arv allikaga.
+Teie liitumine on juba olemas. Selle taha paigaldatud salvesti ühendatakse võrguettevõtja tingimustel ega vaja uut põhivõrguliitumist. Hinnangus näitame, mida see kõik teie objekti jaoks tähendab.
 Kaardi kuldne punkt on näide, mitte teie objekt.
 Objekti aadressOtsi
 Kasuta minu asukohtavõi vali koht kaardilAadressiotsing käib meie serveri kaudu Maa- ja Ruumiametisse või Soome Maanmittauslaitosesse ja päikesetoodang EL-i PVGIS-teenusest. Asukohta me ei salvesta; vormi läheb see ainult siis, kui te selle ise sinna viite.
@@ -4119,7 +4119,7 @@ Investeeringu väärtus tuleb paljudest osadest. Kui pakume valikut eri tootjate
 Partnerid ja tooted
 
 Näiteid valikust
-Tehnilised andmed on tootjate andmelehtedelt ja tootelehtedelt.
+Seadmed, millega teie liitumine tööle pannakse.
 
 EnergiasalvestidPäikeseelekterLaadimineSoojuspumbad
 Kõik tooted
@@ -4280,7 +4280,7 @@ Kui teie küsimust siin pole, küsige otse. Vastame kirjalikult.
 Küsi tasuta hinnangut
 
 Kui palju salvesti reserviturul teenib?
-See sõltub neljast asjast: agregaatori juhtimine, teie oma kasutus, turgude arv (FCR, aFRR, mFRR ja börs) ja teie liitumine. Hinnangus arvutame need teie objekti kohta läbi ja näitame vahemikku, mitte ühte numbrit.
+See sõltub neljast asjast: agregaatori juhtimine, teie oma kasutus, turgude arv (FCR, aFRR, mFRR ja börs) ja teie liitumine. Hinnangus arvutame need teie objekti jaoks läbi ja näitame, mida salvesti aastas toota võib ja millises vahemikus.
 Reserviturg lähemalt
 
 Mida tasuta hinnang sisaldab?
@@ -4288,7 +4288,7 @@ Lühikest küsimustikku, teie tunnipõhiste tarbimisandmete analüüsi ja liitum
 Kuidas hinnang käib
 
 Kui palju selline süsteem maksab?
-Hinnangus on vahemik, mis sõltub teie liitumise suurusest ja tarbimisprofiilist, mitte üks lootusrikas number. Kõik, mis hinda mõjutab, on samas dokumendis lahti kirjutatud.
+Hind sõltub teie liitumise suurusest ja tarbimisest. Hinnangus näete samas dokumendis hinnavahemikku ja seda, mida süsteem teile toodab.
 Millest hind koosneb
 
 Kas salvesti vajab päikesepaneele või oma tootmist?
@@ -4305,12 +4305,12 @@ Kuidas reservihinnad kujunevad
 
 Alustame teie tarbimisandmetest.
 
-Kahe tööpäevaga pärast andmete saamist teate, kas ja kuidas salvesti end teie objektil ära tasub. Hinnang on kahe lehekülje pikkune, kirjalik ja kohustusteta:
+Kahe tööpäevaga pärast andmete saamist teate, mida teie liitumine toota võib ja kuidas see tehakse. Hinnang on kahe lehekülje pikkune ja kohustusteta:
 
-Liitumine ja tarbimisprofiil teie tunnipõhistest andmetest
-Võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel
-Modelleeritud reservitulu toodete kaupa allikatega
-Võrguettevõtja seisukoht ja see, mida hinnang ei ütle
+Mida teie liitumine toota ja säästa võib
+Kuidas salvesti võimsus jaotub enda tarbimise, börsi ja reservituru vahel
+Reservitulu hinnang turgude kaupa
+Võrguettevõtja seisukoht ja järgmised sammud
 
 Saadame juhise, kuidas anda ligipääs tunniandmetele. Kahe tööpäevaga pärast andmete saamist on kirjalik hinnang teil.
 
@@ -5913,7 +5913,7 @@ TasutaHinnang
 Igale ettevõttele, kellel on oma elektriliitumine, ka siis, kui pakkumine on juba käes.
 
 Mida sisaldab
-Kaks lehekülge: liitumine ja tarbimisprofiil, võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel, modelleeritud reservitulu toodete kaupa allikatega, võrguettevõtja seisukoht ja see, mida hinnang ei ütle.
+Kaks lehekülge: mida teie liitumine toota ja säästa võib, kuidas salvesti võimsus jaotub, reservitulu hinnang turgude kaupa ning võrguettevõtja seisukoht ja järgmised sammud.
 
 Mida te annate
 Oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt, juhendame), ühe elektriarve ja peakilbi skeemi.
@@ -7680,10 +7680,10 @@ Alustame teie tarbimisandmetest.
 
 Kirjalik hinnang kahe tööpäevaga pärast andmete saamist näitab, kas ja kuidas salvesti end teie objektil ära tasub. Hinnang on kaks lehekülge ja kohustusteta:
 
-Liitumine ja tarbimisprofiil teie tunnipõhistest andmetest
-Võimsuse jaotus enda tarbimise, arbitraaži ja reservituru vahel
-Modelleeritud reservitulu toodete kaupa allikatega
-Võrguettevõtja seisukoht ja see, mida hinnang ei ütle
+Mida teie liitumine toota ja säästa võib
+Kuidas salvesti võimsus jaotub enda tarbimise, börsi ja reservituru vahel
+Reservitulu hinnang turgude kaupa
+Võrguettevõtja seisukoht ja järgmised sammud
 
 Teie annate: oma tunnipõhised tarbimisandmed (CSV Eleringi kliendiportaalist või teie võrguettevõtjalt, juhendame), ühe elektriarve ja peakilbi skeemi.
 
