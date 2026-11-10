@@ -812,3 +812,14 @@ tai tuotekatalogit. Tehty omaan haaraan vertailtavaksi draftin rinnalla (Netlify
 - JULKAISU 10.11.2026 (perustajan päätös, Martin klo 3.55): v51-launch → main ennen Madiksen "publish"-hyväksyntää ja natiivitarkistusta,
   kuten v34 26.10.2026. Poikkeaa päätöksestä I-20261104-1 ("main vain Madiksen OK:lla") ja Language-säännöstä; korjaukset jatkokommiteissa.
   Tietosuojasivujen päivämäärä ja llms.txt 10.11.2026. Palautus tarvittaessa Netlifyn aiempaan tuotantodeployhin (941e6ef).
+
+## v60 — etusivun tuotenosto ja kartan faktakorjaukset (Madis 10.11.2026 klo 12.44)
+
+- Etusivun tuotenosto, Energiavarastot: Ralos Beast 125 HD, Hoymiles HiOne, ZOE Z Box-C (oli Elecnova ECO-E418LP keskellä); `ETUSIVU`.
+- Kartta: Kalannin aurinkopuisto yhtenä pisteenä Helenin tiedotteen 31.8.2026 tiedoin (noin 204 MWp, käyttöönotto 2026; OSM:n seitsemän
+  osa-aluetta yhdistetty, `build_solmut.py`). Investointitarra "Investoinnit 5,2 mrd € · Hikiä–Toivila 2029" siirretty Oulusta
+  Etelä-Suomeen johdon viereen (`kartta-data.json`). Moottori piirtää tarran rivinvaihdon " · ":nä (oli "EstLink 1350 MW · 2006" →
+  "EstLink 1 · 350 MW · 2006"; scene.js ja scene-et.js `label`). Tasokuvat kk-*.webp renderöity uudelleen.
+- Julkaistu mainiin Madiksen päätöksellä 10.11.2026 ("Avalda päris lehele").
+- AVOIN: LinkedIn-yrityssivun osoite (sameAs), Cube 47:n kaksi lähdettä, BattBankin myyntikanava, ET-sivun Scanoffice-tuotteet,
+  kumppaniperustelut ja turvallisuuslauseet (Madiksen vahvistus).
