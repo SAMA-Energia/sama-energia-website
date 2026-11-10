@@ -721,7 +721,7 @@ BLOCKS = {
 # Ryhmä: (avain, FI, ET, [(id, ohitukset)], (FI-osoite, ET-osoite), lohko, jonka tuotemäärä kerrotaan, ryhmä lohkon sisällä)
 ETUSIVU = [
     ('varasto', 'Energiavarastot', 'Energiasalvestid',
-     [('ralos-beast-125-hd', {}), ('elecnova-eco-e418lp', {}), ('zoe-z-box-c215', {})],
+     [('ralos-beast-125-hd', {}), ('hoymiles-hione', {}), ('zoe-z-box-c215', {})],   # Madis 10.11.2026: Ralos, Hoymiles ja ZOE
      ('/energiavarastot/#tuotteet', '/energiasalvestid/#tooted'), 'varastot', None),
     ('aurinko', 'Aurinkosähkö', 'Päikeseelekter',
      [('roofit-velario-slim', {}), ('gare-solar-carport', {}), ('hd-hyundai-hit', {}), ('ralos-stalker', {}), ('tongwei-725', {})],

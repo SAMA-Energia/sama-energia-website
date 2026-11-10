@@ -40,6 +40,8 @@ S = {
     'fg-q3': {'pub': 'Fingrid, johdon katsaus 1.1.–30.9.2026', 'date': '2026-10-29', 'url': 'https://www.fingrid.fi/ajankohtaista/tiedotteet/2026/fingrid-konsernin-johdon-katsaus-1.1.30.9.2026/'},
     'el-el3p': {'pub': 'Elering, EstLink 3', 'date': '2026-06-10', 'url': 'https://www.elering.ee/estlink-3'},
     'el-el3': {'pub': 'Elering, EstLink 3 maismaaosa (riigi eriplaneering)', 'date': '2026-11-06', 'url': 'https://elering.ee/en/node/3894'},
+    'helen-kalanti': {'pub': 'Helen, Suomen suurimman aurinkopuiston käyttöönotto etenee Uudessakaupungissa', 'date': '2026-08-31',
+                      'url': 'https://www.helen.fi/en/news/2026/commissioning-of-finlands-largest-solar-park-progresses-in-uusikaupunki'},
     'err-ulemiste': {'pub': 'ERR', 'date': '2024-07-26', 'url': 'https://www.err.ee/1609407712/elering-tahab-estlink-3-tottu-ulemiste-jarve-aarde-uue-alajaama-ehitada'},
 }
 
@@ -251,6 +253,7 @@ def mwof(v):
 # 9.11.2026 Madis: mitä enemmän solmuja kartalla, sitä parempi kokonaiskuva → kaikki OSM:n puistot, joilla on teho
 # vähintään 1 MW (oli tuuli 40, aurinko 15, akku 5 MW). Tunnisteet piirretään edelleen vain isoille (scene.js labOk).
 KMIN = {'wind': 1, 'solar': 1, 'battery': 1}
+kal = []
 for el in plants['elements']:
     t = el.get('tags', {}); src = t.get('plant:source')
     if src not in KMIN: continue
@@ -260,6 +263,8 @@ for el in plants['elements']:
     if lon is None: continue
     c = country(lon, lat)
     if c not in ('FI', 'EE'): continue
+    # Kalanti (Uusikaupunki): OSM:ssä seitsemän osa-aluetta ("alue 6" neljästi) → yksi piste Helenin julkaisemalla teholla (alla)
+    if (t.get('name') or '').startswith('Helen Aurinkopuisto Kalanti'): kal.append((lon, lat)); continue
     k = {'wind': 'wind', 'solar': 'solar', 'battery': 'bess'}[src]
     it = {'id': f'osm-{el["type"][0]}{el["id"]}', 'k': k, 'c': c, 'n': t.get('name') or KIND[k]['fi' if c == 'FI' else 'et'],
           'mw': round(mw, 1), 's': 'op', 'p': [round(lon, 4), round(lat, 4)], 'src': 'osm',
@@ -267,6 +272,14 @@ for el in plants['elements']:
     if t.get('operator'): it['o'] = t['operator']
     if t.get('start_date', '')[:4].isdigit(): it['y'] = int(t['start_date'][:4])
     add(it)
+
+# Helenin Kalannin aurinkopuisto yhtenä pisteenä: osa-alueiden keskipiste, teho Helenin tiedotteesta 31.8.2026
+if kal:
+    add({'id': 'helen-kalanti', 'k': 'solar', 'c': 'FI', 'n': {'fi': 'Kalannin aurinkopuisto', 'et': 'Kalanti päikesepark'}, 'o': 'Helen',
+         'mw': 204, 's': 'con', 'y': 2026, 'p': [round(sum(x for x, _ in kal) / len(kal), 4), round(sum(y for _, y in kal) / len(kal), 4)],
+         'src': 'helen-kalanti', 'u': 'https://www.helen.fi/en/news/2026/commissioning-of-finlands-largest-solar-park-progresses-in-uusikaupunki',
+         'note': {'fi': 'Noin 204 MWp, noin 360 000 paneelia, yli 200 GWh vuodessa. Käyttöönotto aikataulussa 2026.',
+                  'et': 'Umbes 204 MWp, umbes 360 000 paneeli, üle 200 GWh aastas. Kasutuselevõtt graafikus 2026.'}})
 
 # kantaverkon hankkeet
 for (iid, nm, a, b, st, y, src, nfi, net) in LINES:

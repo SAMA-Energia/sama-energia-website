@@ -1827,7 +1827,7 @@ class Component extends DCLogic {
     /* 04.11.2026: tunnisteet jonoon ja piirto lopuksi tärkeysjärjestyksessä (kohde > valittu kerros > pohjakerros);
        päällekkäinen alemman tärkeyden tunniste jätetään pois, kuten tasokuvissa (puhelimella Fenno-Skan vs. varastoalue). */
     const LQ = []; let LP = 0;
-    const label = (x, y, txt, opt) => { LQ.push([x, y, txt, opt || {}, g.globalAlpha, LP]); };
+    const label = (x, y, txt, opt) => { LQ.push([x, y, String(txt).replace(/\s*\n\s*/g, ' · '), opt || {}, g.globalAlpha, LP]); };   /* yksirivinen tarra: rivinvaihto → " · " (EstLink 1 · 350 MW · 2006) */
     const drawLabel = (x, y, txt, opt) => {
       opt = opt || {};
       g.font = opt.font || FONT; g.textAlign = opt.align || 'left'; g.textBaseline = 'middle';

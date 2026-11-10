@@ -148,16 +148,16 @@ Energia
 
 Lähde: Ralos Oy, tekninen tiedote Ralos Beast 125, versio V10, tarkistettu 9.11.2026
 
-Elecnova
-ECO-E418LP
-Nestejäähdytetty ulkokaappi
+Hoymiles
+HiOne
+Kolmivaiheinen all-in-one-varasto kotiin ja pieneen yritykseen
 Teho
-100 kW (400 V)
+8–20 kW
 
 Energia
-418 kWh
+8–32 kWh tornissa, enintään 64 kWh
 
-Lähde: Elecnova, tuotesivu ECO-E418LP, luettu 9.11.2026
+Lähde: Ralos Oy, tuotesivu Hoymiles HiOne, luettu 9.11.2026
 
 ZOE Energy Storage
 Z Box-C 215-2H
@@ -4135,16 +4135,16 @@ Energia
 
 Allikas: Ralos Oy, tehniline andmeleht Ralos Beast 125, versioon V10, kontrollitud 9.11.2026
 
-Elecnova
-ECO-E418LP
-Vedelikjahutusega väliskapp
+Hoymiles
+HiOne
+Kolmefaasiline all-in-one salvesti kodule ja väikeettevõttele
 Võimsus
-100 kW (400 V)
+8–20 kW
 
 Energia
-418 kWh
+8–32 kWh tornis, kuni 64 kWh
 
-Allikas: Elecnova, tooteleht ECO-E418LP, loetud 9.11.2026
+Allikas: Ralos Oy, tooteleht Hoymiles HiOne, loetud 9.11.2026
 
 ZOE Energy Storage
 Z Box-C 215-2H
